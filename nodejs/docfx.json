@@ -13,7 +13,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "ThirdPartyNotices",
+          "toc.yml"
         ]
       },
       {
@@ -21,11 +22,19 @@
           "**/*.yml"
         ],
         "src": "breadcrumb",
-        "dest": "breadcrumb",
+        "dest": "msteams-client-docs-ref-typescript/breadcrumb",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "docs-ref-autogen",
+        "dest": "msteams-client-docs-ref-typescript",
+        "exclude": []
       }
     ],
     "resource": [
@@ -43,7 +52,8 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/toc.yml"
+      "breadcrumb_path": "~/msteams-client-docs-ref-typescript/breadcrumb/toc.yml",
+      "toc_path": "~/msteams-client-docs-ref-typescript/toc.json"
     },
     "fileMetadata": {},
     "template": [],
