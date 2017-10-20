@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.TeamType
+    name: TeamType
+    fullName: TeamType
+    children:
+      - microsoftteams.microsoftTeams.TeamType.Standard
+      - microsoftteams.microsoftTeams.TeamType.Edu
+      - microsoftteams.microsoftTeams.TeamType.Class
+      - microsoftteams.microsoftTeams.TeamType.Plc
+      - microsoftteams.microsoftTeams.TeamType.Staff
+    langs:
+      - typeScript
+    type: enum
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.TeamType.Standard
+    name: Standard
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: 0
+  - uid: microsoftteams.microsoftTeams.TeamType.Edu
+    name: Edu
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: 1
+  - uid: microsoftteams.microsoftTeams.TeamType.Class
+    name: Class
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: 2
+  - uid: microsoftteams.microsoftTeams.TeamType.Plc
+    name: Plc
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: 3
+  - uid: microsoftteams.microsoftTeams.TeamType.Staff
+    name: Staff
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+    numericValue: 4

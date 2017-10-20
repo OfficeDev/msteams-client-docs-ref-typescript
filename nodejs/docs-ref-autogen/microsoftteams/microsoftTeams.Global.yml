@@ -1,0 +1,794 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.Global
+    package: microsoftteams
+    name: Global
+    children:
+      - microsoftteams.microsoftTeams.authenticate
+      - microsoftteams.microsoftTeams.closeAuthenticationWindow
+      - microsoftteams.microsoftTeams.createMessageRequest
+      - microsoftteams.microsoftTeams.createMessageResponse
+      - microsoftteams.microsoftTeams.ensureInitialized
+      - microsoftteams.microsoftTeams.flushMessageQueue
+      - microsoftteams.microsoftTeams.getAuthToken
+      - microsoftteams.microsoftTeams.getContext
+      - microsoftteams.microsoftTeams.getMruTabInstances
+      - microsoftteams.microsoftTeams.getSettings
+      - microsoftteams.microsoftTeams.getTabInstances
+      - microsoftteams.microsoftTeams.getTargetMessageQueue
+      - microsoftteams.microsoftTeams.getTargetOrigin
+      - microsoftteams.microsoftTeams.getUser
+      - microsoftteams.microsoftTeams.handleChildMessage
+      - microsoftteams.microsoftTeams.handleFailure
+      - microsoftteams.microsoftTeams.handleFullScreenChange
+      - microsoftteams.microsoftTeams.handleParentMessage
+      - microsoftteams.microsoftTeams.handleRemove
+      - microsoftteams.microsoftTeams.handleSave
+      - microsoftteams.microsoftTeams.handleSuccess
+      - microsoftteams.microsoftTeams.handleThemeChange
+      - microsoftteams.microsoftTeams.initialize
+      - microsoftteams.microsoftTeams.navigateCrossDomain
+      - microsoftteams.microsoftTeams.navigateToTab
+      - microsoftteams.microsoftTeams.notifyFailure
+      - microsoftteams.microsoftTeams.notifySuccess
+      - microsoftteams.microsoftTeams.openAuthenticationWindow
+      - microsoftteams.microsoftTeams.processMessage
+      - microsoftteams.microsoftTeams.registerFullScreenHandler
+      - microsoftteams.microsoftTeams.registerOnRemoveHandler
+      - microsoftteams.microsoftTeams.registerOnSaveHandler
+      - microsoftteams.microsoftTeams.registerOnThemeChangeHandler
+      - microsoftteams.microsoftTeams.sendMessageRequest
+      - microsoftteams.microsoftTeams.sendMessageResponse
+      - microsoftteams.microsoftTeams.setSettings
+      - microsoftteams.microsoftTeams.setValidityState
+      - microsoftteams.microsoftTeams.shareDeepLink
+      - microsoftteams.microsoftTeams.startAuthenticationWindowMonitor
+      - microsoftteams.microsoftTeams.stopAuthenticationWindowMonitor
+      - microsoftteams.microsoftTeams.updateRelationships
+      - microsoftteams.microsoftTeams.waitForMessageQueue
+    type: package
+    langs:
+      - typeScript
+  - uid: microsoftteams.microsoftTeams.authenticate
+    name: authenticate
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Initiates an authentication request, which opens a new window with the
+      specified settings.
+    syntax:
+      content: 'function authenticate(authenticateParameters: AuthenticateParameters)'
+      parameters:
+        - id: authenticateParameters
+          type:
+            - '@microsoftteams.microsoftTeams.AuthenticateParameters'
+          description: |
+            A set of values that configure the authentication pop-up.
+  - uid: microsoftteams.microsoftTeams.closeAuthenticationWindow
+    name: closeAuthenticationWindow
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function closeAuthenticationWindow()
+      parameters: []
+  - uid: microsoftteams.microsoftTeams.createMessageRequest
+    name: createMessageRequest
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createMessageRequest(func: string, args: any[])'
+      parameters:
+        - id: func
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - '@microsoftteams.microsoftTeams.MessageRequest'
+  - uid: microsoftteams.microsoftTeams.createMessageResponse
+    name: createMessageResponse
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createMessageResponse(id: number, args: any[])'
+      parameters:
+        - id: id
+          type:
+            - number
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - '@microsoftteams.microsoftTeams.MessageResponse'
+  - uid: microsoftteams.microsoftTeams.ensureInitialized
+    name: ensureInitialized
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function ensureInitialized(expectedFrameContexts: string[])'
+      parameters:
+        - id: expectedFrameContexts
+          type:
+            - 'string[]'
+          description: ''
+  - uid: microsoftteams.microsoftTeams.flushMessageQueue
+    name: flushMessageQueue
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function flushMessageQueue(targetWindow: Window)'
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+  - uid: microsoftteams.microsoftTeams.getAuthToken
+    name: getAuthToken
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Requests an Azure AD token to be issued on behalf of the app. The token is
+      acquired from the cache
+
+      if it is not expired. Otherwise a request is sent to Azure AD to obtain a
+      new token.
+    syntax:
+      content: 'function getAuthToken(authTokenRequest: AuthTokenRequest)'
+      parameters:
+        - id: authTokenRequest
+          type:
+            - '@microsoftteams.microsoftTeams.AuthTokenRequest'
+          description: |
+            A set of values that configure the token request.
+  - uid: microsoftteams.microsoftTeams.getContext
+    name: getContext
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Retrieves the current context the frame is running in.
+    syntax:
+      content: 'function getContext(callback: (context: Context) => void)'
+      parameters:
+        - id: callback
+          type:
+            - '(context: Context) => void'
+          description: |
+            The callback to invoke when the <xref:Context> object is retrieved.
+  - uid: microsoftteams.microsoftTeams.getMruTabInstances
+    name: getMruTabInstances
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Allows an app to retrieve the most recently used tabs for this user.
+    syntax:
+      content: >-
+        function getMruTabInstances(callback: (tabInfo: TabInformation) => void,
+        tabInstanceParameters: TabInstanceParameters)
+      parameters:
+        - id: callback
+          type:
+            - '(tabInfo: TabInformation) => void'
+          description: >-
+            The callback to invoke when the <xref:TabInformation> object is
+            retrieved.
+        - id: tabInstanceParameters
+          type:
+            - '@microsoftteams.microsoftTeams.TabInstanceParameters'
+          description: >
+            Flags that specify whether to scope call to favorite teams or
+            channels.
+  - uid: microsoftteams.microsoftTeams.getSettings
+    name: getSettings
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Gets the settings for the current instance.
+    syntax:
+      content: 'function getSettings(callback: (settings: Settings) => void)'
+      parameters:
+        - id: callback
+          type:
+            - '(settings: Settings) => void'
+          description: |
+            The callback to invoke when the <xref:Settings> object is retrieved.
+  - uid: microsoftteams.microsoftTeams.getTabInstances
+    name: getTabInstances
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Allows an app to retrieve for this user tabs that are owned by this app.
+
+      If no TabInstanceParameters are passed, the app defaults to favorite teams
+      and favorite channels.
+    syntax:
+      content: >-
+        function getTabInstances(callback: (tabInfo: TabInformation) => void,
+        tabInstanceParameters: TabInstanceParameters)
+      parameters:
+        - id: callback
+          type:
+            - '(tabInfo: TabInformation) => void'
+          description: >-
+            The callback to invoke when the <xref:TabInstanceParameters> object
+            is retrieved.
+        - id: tabInstanceParameters
+          type:
+            - '@microsoftteams.microsoftTeams.TabInstanceParameters'
+          description: >
+            Flags that specify whether to scope call to favorite teams or
+            channels.
+  - uid: microsoftteams.microsoftTeams.getTargetMessageQueue
+    name: getTargetMessageQueue
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getTargetMessageQueue(targetWindow: Window)'
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+      return:
+        type:
+          - '@microsoftteams.microsoftTeams.MessageRequest[]'
+  - uid: microsoftteams.microsoftTeams.getTargetOrigin
+    name: getTargetOrigin
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getTargetOrigin(targetWindow: Window)'
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.getUser
+    name: getUser
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Requests the decoded Azure AD user identity on behalf of the app.
+    syntax:
+      content: 'function getUser(userRequest: UserRequest)'
+      parameters:
+        - id: userRequest
+          type:
+            - '@microsoftteams.microsoftTeams.UserRequest'
+          description: ''
+  - uid: microsoftteams.microsoftTeams.handleChildMessage
+    name: handleChildMessage
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleChildMessage(evt: MessageEvent)'
+      parameters:
+        - id: evt
+          type:
+            - MessageEvent
+          description: ''
+  - uid: microsoftteams.microsoftTeams.handleFailure
+    name: handleFailure
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleFailure(reason?: string)'
+      parameters:
+        - id: reason
+          type:
+            - string
+          description: ''
+          optional: true
+  - uid: microsoftteams.microsoftTeams.handleFullScreenChange
+    name: handleFullScreenChange
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleFullScreenChange(isFullScreen: boolean)'
+      parameters:
+        - id: isFullScreen
+          type:
+            - boolean
+          description: ''
+  - uid: microsoftteams.microsoftTeams.handleParentMessage
+    name: handleParentMessage
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleParentMessage(evt: MessageEvent)'
+      parameters:
+        - id: evt
+          type:
+            - MessageEvent
+          description: ''
+  - uid: microsoftteams.microsoftTeams.handleRemove
+    name: handleRemove
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function handleRemove()
+      parameters: []
+  - uid: microsoftteams.microsoftTeams.handleSave
+    name: handleSave
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function handleSave()
+      parameters: []
+  - uid: microsoftteams.microsoftTeams.handleSuccess
+    name: handleSuccess
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleSuccess(result?: string)'
+      parameters:
+        - id: result
+          type:
+            - string
+          description: ''
+          optional: true
+  - uid: microsoftteams.microsoftTeams.handleThemeChange
+    name: handleThemeChange
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleThemeChange(theme: string)'
+      parameters:
+        - id: theme
+          type:
+            - string
+          description: ''
+  - uid: microsoftteams.microsoftTeams.initialize
+    name: initialize
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: |-
+      Initializes the library. This must be called before any other SDK calls
+      but after the frame is loaded successfully.
+    syntax:
+      content: function initialize()
+      parameters: []
+  - uid: microsoftteams.microsoftTeams.navigateCrossDomain
+    name: navigateCrossDomain
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Navigates the frame to a new cross-domain URL. The domain of this URL must
+      match at least one of the
+
+      valid domains specified in the validDomains block of the manifest;
+      otherwise, an exception will be
+
+      thrown. This function needs to be used only when navigating the frame to a
+      URL in a different domain
+
+      than the current one in a way that keeps the app informed of the change
+      and allows the SDK to
+
+      continue working.
+    syntax:
+      content: 'function navigateCrossDomain(url: string)'
+      parameters:
+        - id: url
+          type:
+            - string
+          description: |
+            The URL to navigate the frame to.
+  - uid: microsoftteams.microsoftTeams.navigateToTab
+    name: navigateToTab
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Navigates the Microsoft Teams app to the specified tab instance.
+    syntax:
+      content: 'function navigateToTab(tabInstance: TabInstance)'
+      parameters:
+        - id: tabInstance
+          type:
+            - '@microsoftteams.microsoftTeams.TabInstance'
+          description: |
+            The tab instance to navigate to.
+  - uid: microsoftteams.microsoftTeams.notifyFailure
+    name: notifyFailure
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Notifies the frame that initiated this authentication request that the
+      request failed.
+
+      This function is usable only on the authentication window.
+
+      This call causes the authentication window to be closed.
+    syntax:
+      content: 'function notifyFailure(reason?: string)'
+      parameters:
+        - id: reason
+          type:
+            - string
+          description: >
+            Specifies a reason for the authentication failure. If specified, the
+            frame that initiated the authentication pop-up receives this value
+            in its callback.
+          optional: true
+  - uid: microsoftteams.microsoftTeams.notifySuccess
+    name: notifySuccess
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Notifies the frame that initiated this authentication request that the
+      request was successful.
+
+      This function is usable only on the authentication window.
+
+      This call causes the authentication window to be closed.
+    syntax:
+      content: 'function notifySuccess(result?: string)'
+      parameters:
+        - id: result
+          type:
+            - string
+          description: >
+            Specifies a result for the authentication. If specified, the frame
+            that initiated the authentication pop-up receives this value in its
+            callback.
+          optional: true
+  - uid: microsoftteams.microsoftTeams.openAuthenticationWindow
+    name: openAuthenticationWindow
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function openAuthenticationWindow(authenticateParameters:
+        AuthenticateParameters)
+      parameters:
+        - id: authenticateParameters
+          type:
+            - '@microsoftteams.microsoftTeams.AuthenticateParameters'
+          description: ''
+  - uid: microsoftteams.microsoftTeams.processMessage
+    name: processMessage
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function processMessage(evt: MessageEvent)'
+      parameters:
+        - id: evt
+          type:
+            - MessageEvent
+          description: ''
+  - uid: microsoftteams.microsoftTeams.registerFullScreenHandler
+    name: registerFullScreenHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for changes from or to full-screen view for a tab.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: >-
+        function registerFullScreenHandler(handler: (isFullScreen: boolean) =>
+        void)
+      parameters:
+        - id: handler
+          type:
+            - '(isFullScreen: boolean) => void'
+          description: >
+            The handler to invoke when the user toggles full-screen view for a
+            tab.
+  - uid: microsoftteams.microsoftTeams.registerOnRemoveHandler
+    name: registerOnRemoveHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for user attempts to remove content. This handler
+      should be used
+
+      to remove the underlying resource powering the content.
+
+      The object passed to the handler must be used to indicate whether to
+      proceed with the removal.
+
+      Only one handler may be registered at a time. Subsequent registrations
+      will override the first.
+    syntax:
+      content: 'function registerOnRemoveHandler(handler: (evt: RemoveEvent) => void)'
+      parameters:
+        - id: handler
+          type:
+            - '(evt: RemoveEvent) => void'
+          description: |
+            The handler to invoke when the user selects the remove button.
+  - uid: microsoftteams.microsoftTeams.registerOnSaveHandler
+    name: registerOnSaveHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for when the user attempts to save the settings. This
+      handler should be used
+
+      to create or update the underlying resource powering the content.
+
+      The object passed to the handler must be used to notify whether to proceed
+      with the save.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerOnSaveHandler(handler: (evt: SaveEvent) => void)'
+      parameters:
+        - id: handler
+          type:
+            - '(evt: SaveEvent) => void'
+          description: |
+            The handler to invoke when the user selects the save button.
+  - uid: microsoftteams.microsoftTeams.registerOnThemeChangeHandler
+    name: registerOnThemeChangeHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for theme changes.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'
+      parameters:
+        - id: handler
+          type:
+            - '(theme: string) => void'
+          description: |
+            The handler to invoke when the user changes their theme.
+  - uid: microsoftteams.microsoftTeams.sendMessageRequest
+    name: sendMessageRequest
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendMessageRequest(targetWindow: Window, actionName: string,
+        args?: any[])
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+        - id: actionName
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+          optional: true
+      return:
+        type:
+          - number
+  - uid: microsoftteams.microsoftTeams.sendMessageResponse
+    name: sendMessageResponse
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendMessageResponse(targetWindow: Window, id: number, args?:
+        any[])
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+        - id: id
+          type:
+            - number
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+          optional: true
+  - uid: microsoftteams.microsoftTeams.setSettings
+    name: setSettings
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Sets the settings for the current instance.
+
+      This is an asynchronous operation; calls to getSettings are not guaranteed
+      to reflect the changed state.
+    syntax:
+      content: 'function setSettings(settings: Settings)'
+      parameters:
+        - id: settings
+          type:
+            - '@microsoftteams.microsoftTeams.Settings'
+          description: |
+            The desired settings for this instance.
+  - uid: microsoftteams.microsoftTeams.setValidityState
+    name: setValidityState
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Sets the validity state for the settings.
+
+      The initial value is false, so the user cannot save the settings until
+      this is called with true.
+    syntax:
+      content: 'function setValidityState(validityState: boolean)'
+      parameters:
+        - id: validityState
+          type:
+            - boolean
+          description: |
+            Indicates whether the save or remove button is enabled for the user.
+  - uid: microsoftteams.microsoftTeams.shareDeepLink
+    name: shareDeepLink
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Shares a deep link that a user can use to navigate back to a specific
+      state in this page.
+    syntax:
+      content: 'function shareDeepLink(deepLinkParameters: DeepLinkParameters)'
+      parameters:
+        - id: deepLinkParameters
+          type:
+            - '@microsoftteams.microsoftTeams.DeepLinkParameters'
+          description: |
+            ID and label for the link and fallback URL.
+  - uid: microsoftteams.microsoftTeams.startAuthenticationWindowMonitor
+    name: startAuthenticationWindowMonitor
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function startAuthenticationWindowMonitor()
+      parameters: []
+  - uid: microsoftteams.microsoftTeams.stopAuthenticationWindowMonitor
+    name: stopAuthenticationWindowMonitor
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function stopAuthenticationWindowMonitor()
+      parameters: []
+  - uid: microsoftteams.microsoftTeams.updateRelationships
+    name: updateRelationships
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function updateRelationships(messageSource: Window, messageOrigin:
+        string)
+      parameters:
+        - id: messageSource
+          type:
+            - Window
+          description: ''
+        - id: messageOrigin
+          type:
+            - string
+          description: ''
+  - uid: microsoftteams.microsoftTeams.waitForMessageQueue
+    name: waitForMessageQueue
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function waitForMessageQueue(targetWindow: Window, callback: () => void)'
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+        - id: callback
+          type:
+            - () => void
+          description: ''

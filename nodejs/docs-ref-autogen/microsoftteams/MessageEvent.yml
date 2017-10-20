@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.MessageEvent
+    name: MessageEvent
+    fullName: MessageEvent
+    children:
+      - microsoftteams.MessageEvent.originalEvent
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.MessageEvent.originalEvent
+    name: originalEvent
+    fullName: originalEvent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: MessageEvent originalEvent
+      return:
+        type:
+          - MessageEvent

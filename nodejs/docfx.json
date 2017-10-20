@@ -3,8 +3,10 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
+        "src": "docs-ref-autogen",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -12,6 +14,17 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "breadcrumb",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
         ]
       }
     ],
@@ -29,9 +42,11 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "~/breadcrumb/toc.yml"
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "msteams-ref-typescript"
+    "dest": "_site"
   }
 }

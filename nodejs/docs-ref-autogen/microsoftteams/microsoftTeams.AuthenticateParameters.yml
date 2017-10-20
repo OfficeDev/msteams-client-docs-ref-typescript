@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.AuthenticateParameters
+    name: AuthenticateParameters
+    fullName: AuthenticateParameters
+    children:
+      - microsoftteams.microsoftTeams.AuthenticateParameters.failureCallback
+      - microsoftteams.microsoftTeams.AuthenticateParameters.height
+      - microsoftteams.microsoftTeams.AuthenticateParameters.successCallback
+      - microsoftteams.microsoftTeams.AuthenticateParameters.url
+      - microsoftteams.microsoftTeams.AuthenticateParameters.width
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.AuthenticateParameters.failureCallback
+    name: failureCallback
+    fullName: failureCallback
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A function that is called if the authentication fails, with the reason for
+      the failure returned from the authentication pop-up.
+    syntax:
+      content: '(reason?: string) => void failureCallback'
+      return:
+        type:
+          - '(reason?: string) => void'
+  - uid: microsoftteams.microsoftTeams.AuthenticateParameters.height
+    name: height
+    fullName: height
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The preferred height for the pop-up. This value can be ignored if outside
+      the acceptable bounds.
+    syntax:
+      content: number height
+      return:
+        type:
+          - number
+  - uid: microsoftteams.microsoftTeams.AuthenticateParameters.successCallback
+    name: successCallback
+    fullName: successCallback
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A function that is called if the authentication succeeds, with the result
+      returned from the authentication pop-up.
+    syntax:
+      content: '(result?: string) => void successCallback'
+      return:
+        type:
+          - '(result?: string) => void'
+  - uid: microsoftteams.microsoftTeams.AuthenticateParameters.url
+    name: url
+    fullName: url
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The URL for the authentication pop-up.
+    syntax:
+      content: string url
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.AuthenticateParameters.width
+    name: width
+    fullName: width
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The preferred width for the pop-up. This value can be ignored if outside
+      the acceptable bounds.
+    syntax:
+      content: number width
+      return:
+        type:
+          - number

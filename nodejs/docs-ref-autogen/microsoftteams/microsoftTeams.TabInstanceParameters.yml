@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.TabInstanceParameters
+    name: TabInstanceParameters
+    fullName: TabInstanceParameters
+    children:
+      - microsoftteams.microsoftTeams.TabInstanceParameters.favoriteChannelsOnly
+      - microsoftteams.microsoftTeams.TabInstanceParameters.favoriteTeamsOnly
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.TabInstanceParameters.favoriteChannelsOnly
+    name: favoriteChannelsOnly
+    fullName: favoriteChannelsOnly
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Flag allowing to select favorite channels only
+    syntax:
+      content: boolean favoriteChannelsOnly
+      return:
+        type:
+          - boolean
+  - uid: microsoftteams.microsoftTeams.TabInstanceParameters.favoriteTeamsOnly
+    name: favoriteTeamsOnly
+    fullName: favoriteTeamsOnly
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Flag allowing to select favorite teams only
+    syntax:
+      content: boolean favoriteTeamsOnly
+      return:
+        type:
+          - boolean

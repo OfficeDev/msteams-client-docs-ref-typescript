@@ -1,0 +1,225 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.Context
+    name: Context
+    fullName: Context
+    children:
+      - microsoftteams.microsoftTeams.Context.channelId
+      - microsoftteams.microsoftTeams.Context.channelName
+      - microsoftteams.microsoftTeams.Context.entityId
+      - microsoftteams.microsoftTeams.Context.groupId
+      - microsoftteams.microsoftTeams.Context.isFullScreen
+      - microsoftteams.microsoftTeams.Context.locale
+      - microsoftteams.microsoftTeams.Context.subEntityId
+      - microsoftteams.microsoftTeams.Context.teamId
+      - microsoftteams.microsoftTeams.Context.teamName
+      - microsoftteams.microsoftTeams.Context.teamType
+      - microsoftteams.microsoftTeams.Context.theme
+      - microsoftteams.microsoftTeams.Context.tid
+      - microsoftteams.microsoftTeams.Context.upn
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.Context.channelId
+    name: channelId
+    fullName: channelId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The Microsoft Teams ID for the channel with which the content is
+      associated.
+    syntax:
+      content: string channelId
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.channelName
+    name: channelName
+    fullName: channelName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name for the channel with which the content is associated.
+    syntax:
+      content: string channelName
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.entityId
+    name: entityId
+    fullName: entityId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The developer-defined unique ID for the entity this content points to.
+    syntax:
+      content: string entityId
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.groupId
+    name: groupId
+    fullName: groupId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The Office 365 group ID for the team with which the content is associated.
+
+      This field is available only when the identity permission is requested in
+      the manifest.
+    syntax:
+      content: string groupId
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.isFullScreen
+    name: isFullScreen
+    fullName: isFullScreen
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Indication whether the tab is in full-screen mode.
+    syntax:
+      content: boolean isFullScreen
+      return:
+        type:
+          - boolean
+  - uid: microsoftteams.microsoftTeams.Context.locale
+    name: locale
+    fullName: locale
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      The current locale that the user has configured for the app formatted as
+      languageId-countryId (for example, en-us).
+    syntax:
+      content: string locale
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.subEntityId
+    name: subEntityId
+    fullName: subEntityId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The developer-defined unique ID for the sub-entity this content points to.
+
+      This field should be used to restore to a specific state within an entity,
+      such as scrolling to or activating a specific piece of content.
+    syntax:
+      content: string subEntityId
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.teamId
+    name: teamId
+    fullName: teamId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The Microsoft Teams ID for the team with which the content is associated.
+    syntax:
+      content: string teamId
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.teamName
+    name: teamName
+    fullName: teamName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The name for the team with which the content is associated.
+    syntax:
+      content: string teamName
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.teamType
+    name: teamType
+    fullName: teamType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the team.
+    syntax:
+      content: TeamType teamType
+      return:
+        type:
+          - '@microsoftteams.microsoftTeams.TeamType'
+  - uid: microsoftteams.microsoftTeams.Context.theme
+    name: theme
+    fullName: theme
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The current UI theme.
+    syntax:
+      content: string theme
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.tid
+    name: tid
+    fullName: tid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The Azure AD tenant ID of the current user.
+
+      Because a malicious party can host malicious content in a browser, this
+      value should
+
+      be used only as a hint as to who the user is and never as proof of
+      identity.
+
+      This field is available only when the identity permission is requested in
+      the manifest.
+    syntax:
+      content: string tid
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Context.upn
+    name: upn
+    fullName: upn
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The UPN of the current user.
+
+      Because a malicious party can host malicious content in a browser, this
+      value should
+
+      be used only as a hint as to who the user is and never as proof of
+      identity.
+
+      This field is available only when the identity permission is requested in
+      the manifest.
+    syntax:
+      content: string upn
+      return:
+        type:
+          - string

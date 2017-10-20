@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.Settings
+    name: Settings
+    fullName: Settings
+    children:
+      - microsoftteams.microsoftTeams.Settings.contentUrl
+      - microsoftteams.microsoftTeams.Settings.entityId
+      - microsoftteams.microsoftTeams.Settings.removeUrl
+      - microsoftteams.microsoftTeams.Settings.suggestedDisplayName
+      - microsoftteams.microsoftTeams.Settings.websiteUrl
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.Settings.contentUrl
+    name: contentUrl
+    fullName: contentUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Sets the URL to use for the content of this instance.
+    syntax:
+      content: string contentUrl
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Settings.entityId
+    name: entityId
+    fullName: entityId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The developer-defined unique ID for the entity to which this content
+      points.
+    syntax:
+      content: string entityId
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Settings.removeUrl
+    name: removeUrl
+    fullName: removeUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Sets the URL for the removal configuration experience.
+    syntax:
+      content: string removeUrl
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Settings.suggestedDisplayName
+    name: suggestedDisplayName
+    fullName: suggestedDisplayName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A suggested display name for the new content.
+
+      In the settings for an existing instance being updated, this call has no
+      effect.
+    syntax:
+      content: string suggestedDisplayName
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.Settings.websiteUrl
+    name: websiteUrl
+    fullName: websiteUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Sets the URL to use for the external link to view the underlying resource
+      in a browser.
+    syntax:
+      content: string websiteUrl
+      return:
+        type:
+          - string

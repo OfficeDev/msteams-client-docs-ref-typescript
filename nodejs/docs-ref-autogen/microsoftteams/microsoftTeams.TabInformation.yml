@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.TabInformation
+    name: TabInformation
+    fullName: TabInformation
+    children:
+      - microsoftteams.microsoftTeams.TabInformation.teamTabs
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.TabInformation.teamTabs
+    name: teamTabs
+    fullName: teamTabs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'TabInstance[] teamTabs'
+      return:
+        type:
+          - '@microsoftteams.microsoftTeams.TabInstance[]'

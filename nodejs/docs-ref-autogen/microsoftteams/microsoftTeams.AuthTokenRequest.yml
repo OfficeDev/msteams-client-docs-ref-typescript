@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.AuthTokenRequest
+    name: AuthTokenRequest
+    fullName: AuthTokenRequest
+    children:
+      - microsoftteams.microsoftTeams.AuthTokenRequest.failureCallback
+      - microsoftteams.microsoftTeams.AuthTokenRequest.resources
+      - microsoftteams.microsoftTeams.AuthTokenRequest.successCallback
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.AuthTokenRequest.failureCallback
+    name: failureCallback
+    fullName: failureCallback
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A function that is called if the token request fails, with the reason for
+      the failure.
+    syntax:
+      content: '(reason: string) => void failureCallback'
+      return:
+        type:
+          - '(reason: string) => void'
+  - uid: microsoftteams.microsoftTeams.AuthTokenRequest.resources
+    name: resources
+    fullName: resources
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      An array of resource URIs identifying the target resources for which the
+      token should be requested.
+    syntax:
+      content: 'string[] resources'
+      return:
+        type:
+          - 'string[]'
+  - uid: microsoftteams.microsoftTeams.AuthTokenRequest.successCallback
+    name: successCallback
+    fullName: successCallback
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A function that is called if the token request succeeds, with the
+      resulting token.
+    syntax:
+      content: '(token: string) => void successCallback'
+      return:
+        type:
+          - '(token: string) => void'

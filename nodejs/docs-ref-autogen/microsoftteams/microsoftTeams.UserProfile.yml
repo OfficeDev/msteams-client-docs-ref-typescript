@@ -1,0 +1,261 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.UserProfile
+    name: UserProfile
+    fullName: UserProfile
+    children:
+      - microsoftteams.microsoftTeams.UserProfile.amr
+      - microsoftteams.microsoftTeams.UserProfile.aud
+      - microsoftteams.microsoftTeams.UserProfile.exp
+      - microsoftteams.microsoftTeams.UserProfile.family_name
+      - microsoftteams.microsoftTeams.UserProfile.given_name
+      - microsoftteams.microsoftTeams.UserProfile.iat
+      - microsoftteams.microsoftTeams.UserProfile.iss
+      - microsoftteams.microsoftTeams.UserProfile.nbf
+      - microsoftteams.microsoftTeams.UserProfile.oid
+      - microsoftteams.microsoftTeams.UserProfile.sub
+      - microsoftteams.microsoftTeams.UserProfile.tid
+      - microsoftteams.microsoftTeams.UserProfile.unique_name
+      - microsoftteams.microsoftTeams.UserProfile.upn
+      - microsoftteams.microsoftTeams.UserProfile.ver
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.UserProfile.amr
+    name: amr
+    fullName: amr
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Identifies how the subject of the token was authenticated.
+    syntax:
+      content: 'string[] amr'
+      return:
+        type:
+          - 'string[]'
+  - uid: microsoftteams.microsoftTeams.UserProfile.aud
+    name: aud
+    fullName: aud
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The intended recipient of the token. The application that receives the
+      token must verify that the audience
+
+      value is correct and reject any tokens intended for a different audience.
+    syntax:
+      content: string aud
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.exp
+    name: exp
+    fullName: exp
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Defines the time interval within which a token is valid. The service that
+      validates the token should verify
+
+      that the current date is within the token lifetime; otherwise it should
+      reject the token. The service might
+
+      allow for up to five minutes beyond the token lifetime to account for any
+      differences in clock time ("time
+
+      skew") between Azure AD and the service.
+    syntax:
+      content: number exp
+      return:
+        type:
+          - number
+  - uid: microsoftteams.microsoftTeams.UserProfile.family_name
+    name: family_name
+    fullName: family_name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Provides the last name, surname, or family name of the user as defined in
+      the Azure AD user object.
+    syntax:
+      content: string family_name
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.given_name
+    name: given_name
+    fullName: given_name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Provides the first or "given" name of the user, as set on the Azure AD
+      user object.
+    syntax:
+      content: string given_name
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.iat
+    name: iat
+    fullName: iat
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Stores the time at which the token was issued. It is often used to measure
+      token freshness.
+    syntax:
+      content: number iat
+      return:
+        type:
+          - number
+  - uid: microsoftteams.microsoftTeams.UserProfile.iss
+    name: iss
+    fullName: iss
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Identifies the security token service (STS) that constructs and returns
+      the token. In the tokens that Azure AD
+
+      returns, the issuer is sts.windows.net. The GUID in the issuer claim value
+      is the tenant ID of the Azure AD
+
+      directory. The tenant ID is an immutable and reliable identifier of the
+      directory.
+    syntax:
+      content: string iss
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.nbf
+    name: nbf
+    fullName: nbf
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: number nbf
+      return:
+        type:
+          - number
+  - uid: microsoftteams.microsoftTeams.UserProfile.oid
+    name: oid
+    fullName: oid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Contains a unique identifier of an object in Azure AD. This value is
+      immutable and cannot be reassigned or
+
+      reused. Use the object ID to identify an object in queries to Azure AD.
+    syntax:
+      content: string oid
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.sub
+    name: sub
+    fullName: sub
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Identifies the principal about which the token asserts information, such
+      as the user of an application.
+
+      This value is immutable and cannot be reassigned or reused, so it can be
+      used to perform authorization
+
+      checks safely. Because the subject is always present in the tokens the
+      Azure AD issues, we recommended
+
+      using this value in a general-purpose authorization system.
+    syntax:
+      content: string sub
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.tid
+    name: tid
+    fullName: tid
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      An immutable, non-reusable identifier that identifies the directory tenant
+      that issued the token. You can
+
+      use this value to access tenant-specific directory resources in a
+      multitenant application. For example,
+
+      you can use this value to identify the tenant in a call to the Graph API.
+    syntax:
+      content: string tid
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.unique_name
+    name: unique_name
+    fullName: unique_name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Provides a human-readable value that identifies the subject of the token.
+      This value is not guaranteed to
+
+      be unique within a tenant and is designed to be used only for display
+      purposes.
+    syntax:
+      content: string unique_name
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.upn
+    name: upn
+    fullName: upn
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Stores the user name of the user principal.
+    syntax:
+      content: string upn
+      return:
+        type:
+          - string
+  - uid: microsoftteams.microsoftTeams.UserProfile.ver
+    name: ver
+    fullName: ver
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Stores the version number of the token.
+    syntax:
+      content: string ver
+      return:
+        type:
+          - string

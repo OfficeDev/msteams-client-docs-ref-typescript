@@ -1,0 +1,43 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.UserRequest
+    name: UserRequest
+    fullName: UserRequest
+    children:
+      - microsoftteams.microsoftTeams.UserRequest.failureCallback
+      - microsoftteams.microsoftTeams.UserRequest.successCallback
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.UserRequest.failureCallback
+    name: failureCallback
+    fullName: failureCallback
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A function that is called if the token request fails, with the reason for
+      the failure.
+    syntax:
+      content: '(reason: string) => void failureCallback'
+      return:
+        type:
+          - '(reason: string) => void'
+  - uid: microsoftteams.microsoftTeams.UserRequest.successCallback
+    name: successCallback
+    fullName: successCallback
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A function that is called if the token request succeeds, with the
+      resulting token.
+    syntax:
+      content: '(user: UserProfile) => void successCallback'
+      return:
+        type:
+          - '(user: UserProfile) => void'

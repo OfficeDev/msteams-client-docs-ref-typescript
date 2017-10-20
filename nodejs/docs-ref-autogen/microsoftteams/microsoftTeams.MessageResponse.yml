@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: microsoftteams.microsoftTeams.MessageResponse
+    name: MessageResponse
+    fullName: MessageResponse
+    children:
+      - microsoftteams.microsoftTeams.MessageResponse.args
+      - microsoftteams.microsoftTeams.MessageResponse.id
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: microsoftteams
+  - uid: microsoftteams.microsoftTeams.MessageResponse.args
+    name: args
+    fullName: args
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'any[] args'
+      return:
+        type:
+          - 'any[]'
+  - uid: microsoftteams.microsoftTeams.MessageResponse.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: number id
+      return:
+        type:
+          - number
