@@ -191,7 +191,7 @@ items:
     syntax:
       content: >-
         function getMruTabInstances(callback: (tabInfo: TabInformation) => void,
-        tabInstanceParameters: TabInstanceParameters)
+        tabInstanceParameters?: TabInstanceParameters)
       parameters:
         - id: callback
           type:
@@ -202,9 +202,9 @@ items:
         - id: tabInstanceParameters
           type:
             - '@microsoftteams.microsoftTeams.TabInstanceParameters'
-          description: >
-            Flags that specify whether to scope call to favorite teams or
-            channels.
+          description: |
+            OPTIONAL Ignored, kept for future use
+          optional: true
   - uid: microsoftteams.microsoftTeams.getSettings
     name: getSettings
     children: []
@@ -234,7 +234,7 @@ items:
     syntax:
       content: >-
         function getTabInstances(callback: (tabInfo: TabInformation) => void,
-        tabInstanceParameters: TabInstanceParameters)
+        tabInstanceParameters?: TabInstanceParameters)
       parameters:
         - id: callback
           type:
@@ -246,8 +246,9 @@ items:
           type:
             - '@microsoftteams.microsoftTeams.TabInstanceParameters'
           description: >
-            Flags that specify whether to scope call to favorite teams or
-            channels.
+            OPTIONAL Flags that specify whether to scope call to favorite teams
+            or channels.
+          optional: true
   - uid: microsoftteams.microsoftTeams.getTargetMessageQueue
     name: getTargetMessageQueue
     children: []
