@@ -11,6 +11,13 @@ items:
       - typeScript
     type: class
     summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 471
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: master
     package: microsoftteams
   - uid: microsoftteams.microsoftTeams.RemoveEventImpl.notified
     name: notified

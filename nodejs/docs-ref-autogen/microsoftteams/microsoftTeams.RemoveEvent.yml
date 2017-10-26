@@ -10,6 +10,13 @@ items:
       - typeScript
     type: interface
     summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 421
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: master
     package: microsoftteams
   - uid: microsoftteams.microsoftTeams.RemoveEvent.notifyFailure
     name: notifyFailure
