@@ -6,7 +6,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "src": "docs-ref-autogen",
+        "src": ["docs-ref-autogen","overview"],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -19,8 +19,7 @@
       },
       {
         "files": [
-          "**/*.yml",
-          "**/*.md"
+          "**/*.yml"
         ],
         "src": "breadcrumb",
         "dest": "msteams-client-docs-ref-typescript/breadcrumb",
