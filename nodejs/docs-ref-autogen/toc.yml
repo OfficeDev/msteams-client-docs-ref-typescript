@@ -1,5 +1,5 @@
 - name: Client SDK reference
-  href: overview/client-sdk-reference.md
+  href: ~/overview/client-sdk-reference.md
   items:
     - uid: microsoftteams
       name: microsoftteams
