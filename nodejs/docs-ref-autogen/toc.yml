@@ -1,44 +1,41 @@
-- name: Client SDK reference
-  href: ~/overview/client-sdk-reference.md
+- uid: microsoftteams
+  name: microsoftteams
   items:
-    - uid: microsoftteams
-      name: microsoftteams
-      items:
-        - uid: microsoftteams.microsoftTeams.AuthenticateParameters
-          name: AuthenticateParameters
-        - uid: microsoftteams.microsoftTeams.AuthTokenRequest
-          name: AuthTokenRequest
-        - uid: microsoftteams.microsoftTeams.Context
-          name: Context
-        - uid: microsoftteams.microsoftTeams.DeepLinkParameters
-          name: DeepLinkParameters
-        - uid: microsoftteams.microsoftTeams.Global
-          name: Global
-        - uid: microsoftteams.MessageEvent
-          name: MessageEvent
-        - uid: microsoftteams.microsoftTeams.MessageRequest
-          name: MessageRequest
-        - uid: microsoftteams.microsoftTeams.MessageResponse
-          name: MessageResponse
-        - uid: microsoftteams.microsoftTeams.RemoveEvent
-          name: RemoveEvent
-        - uid: microsoftteams.microsoftTeams.RemoveEventImpl
-          name: RemoveEventImpl
-        - uid: microsoftteams.microsoftTeams.SaveEvent
-          name: SaveEvent
-        - uid: microsoftteams.microsoftTeams.SaveEventImpl
-          name: SaveEventImpl
-        - uid: microsoftteams.microsoftTeams.Settings
-          name: Settings
-        - uid: microsoftteams.microsoftTeams.TabInformation
-          name: TabInformation
-        - uid: microsoftteams.microsoftTeams.TabInstance
-          name: TabInstance
-        - uid: microsoftteams.microsoftTeams.TabInstanceParameters
-          name: TabInstanceParameters
-        - uid: microsoftteams.microsoftTeams.TeamType
-          name: TeamType
-        - uid: microsoftteams.microsoftTeams.UserProfile
-          name: UserProfile
-        - uid: microsoftteams.microsoftTeams.UserRequest
-          name: UserRequest
+    - uid: microsoftteams.microsoftTeams.AuthenticateParameters
+      name: AuthenticateParameters
+    - uid: microsoftteams.microsoftTeams.AuthTokenRequest
+      name: AuthTokenRequest
+    - uid: microsoftteams.microsoftTeams.Context
+      name: Context
+    - uid: microsoftteams.microsoftTeams.DeepLinkParameters
+      name: DeepLinkParameters
+    - uid: microsoftteams.microsoftTeams.Global
+      name: Global
+    - uid: microsoftteams.MessageEvent
+      name: MessageEvent
+    - uid: microsoftteams.microsoftTeams.MessageRequest
+      name: MessageRequest
+    - uid: microsoftteams.microsoftTeams.MessageResponse
+      name: MessageResponse
+    - uid: microsoftteams.microsoftTeams.RemoveEvent
+      name: RemoveEvent
+    - uid: microsoftteams.microsoftTeams.RemoveEventImpl
+      name: RemoveEventImpl
+    - uid: microsoftteams.microsoftTeams.SaveEvent
+      name: SaveEvent
+    - uid: microsoftteams.microsoftTeams.SaveEventImpl
+      name: SaveEventImpl
+    - uid: microsoftteams.microsoftTeams.Settings
+      name: Settings
+    - uid: microsoftteams.microsoftTeams.TabInformation
+      name: TabInformation
+    - uid: microsoftteams.microsoftTeams.TabInstance
+      name: TabInstance
+    - uid: microsoftteams.microsoftTeams.TabInstanceParameters
+      name: TabInstanceParameters
+    - uid: microsoftteams.microsoftTeams.TeamType
+      name: TeamType
+    - uid: microsoftteams.microsoftTeams.UserProfile
+      name: UserProfile
+    - uid: microsoftteams.microsoftTeams.UserRequest
+      name: UserRequest
