@@ -6,7 +6,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "src": ["docs-ref-autogen","overview"],
+        "src": "docs-ref-autogen",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -35,7 +35,16 @@
         "src": "docs-ref-autogen",
         "dest": "msteams-client-docs-ref-typescript",
         "exclude": []
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "overview",
+        "dest": "msteams-client-docs-ref-typescript",
+        "exclude": []
       }
+
     ],
     "resource": [
       {
