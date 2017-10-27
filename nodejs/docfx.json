@@ -19,7 +19,8 @@
       },
       {
         "files": [
-          "**/*.yml"
+          "**/*.yml",
+          "**/*.md"
         ],
         "src": "breadcrumb",
         "dest": "msteams-client-docs-ref-typescript/breadcrumb",
