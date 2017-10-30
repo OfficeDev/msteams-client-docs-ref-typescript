@@ -1,5 +1,7 @@
-
-- name: Docs
-  href: /
-  homepage: /
+- name: Microsoft Teams
+  tocHref: /
+  topicHref: /microsoftteams/
   items:
+  - name: Microsoft Teams Platform
+    tocHref: /javascript/api/
+    topicHref: /microsoftteams/platform/index

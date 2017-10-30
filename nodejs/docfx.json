@@ -61,6 +61,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "extendBreadcrumb": "true",
       "breadcrumb_path": "/javascript/api/msteams-client-docs-ref-typescript/breadcrumb/toc.json",
       "toc_path": "/javascript/api/msteams-client-docs-ref-typescript/toc.json"
     },
