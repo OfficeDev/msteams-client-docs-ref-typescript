@@ -1,12 +1,12 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.DeepLinkParameters
+  - uid: msteams-client.microsoftTeams.DeepLinkParameters
     name: DeepLinkParameters
     fullName: DeepLinkParameters
     children:
-      - microsoftteams.microsoftTeams.DeepLinkParameters.subEntityId
-      - microsoftteams.microsoftTeams.DeepLinkParameters.subEntityLabel
-      - microsoftteams.microsoftTeams.DeepLinkParameters.subEntityWebUrl
+      - msteams-client.microsoftTeams.DeepLinkParameters.subEntityId
+      - msteams-client.microsoftTeams.DeepLinkParameters.subEntityLabel
+      - msteams-client.microsoftTeams.DeepLinkParameters.subEntityWebUrl
     langs:
       - typeScript
     type: interface
@@ -18,8 +18,8 @@ items:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.DeepLinkParameters.subEntityId
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.DeepLinkParameters.subEntityId
     name: subEntityId
     fullName: subEntityId
     children: []
@@ -37,7 +37,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.DeepLinkParameters.subEntityLabel
+  - uid: msteams-client.microsoftTeams.DeepLinkParameters.subEntityLabel
     name: subEntityLabel
     fullName: subEntityLabel
     children: []
@@ -52,7 +52,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.DeepLinkParameters.subEntityWebUrl
+  - uid: msteams-client.microsoftTeams.DeepLinkParameters.subEntityWebUrl
     name: subEntityWebUrl
     fullName: subEntityWebUrl
     children: []

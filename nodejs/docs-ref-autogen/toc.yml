@@ -1,41 +1,41 @@
-- uid: microsoftteams
-  name: microsoftteams
+- uid: msteams-client
+  name: msteams-client
   items:
-    - uid: microsoftteams.microsoftTeams.AuthenticateParameters
+    - uid: msteams-client.microsoftTeams.AuthenticateParameters
       name: AuthenticateParameters
-    - uid: microsoftteams.microsoftTeams.AuthTokenRequest
+    - uid: msteams-client.microsoftTeams.AuthTokenRequest
       name: AuthTokenRequest
-    - uid: microsoftteams.microsoftTeams.Context
+    - uid: msteams-client.microsoftTeams.Context
       name: Context
-    - uid: microsoftteams.microsoftTeams.DeepLinkParameters
+    - uid: msteams-client.microsoftTeams.DeepLinkParameters
       name: DeepLinkParameters
-    - uid: microsoftteams.microsoftTeams.Global
+    - uid: msteams-client.microsoftTeams.Global
       name: Global
-    - uid: microsoftteams.MessageEvent
+    - uid: msteams-client.MessageEvent
       name: MessageEvent
-    - uid: microsoftteams.microsoftTeams.MessageRequest
+    - uid: msteams-client.microsoftTeams.MessageRequest
       name: MessageRequest
-    - uid: microsoftteams.microsoftTeams.MessageResponse
+    - uid: msteams-client.microsoftTeams.MessageResponse
       name: MessageResponse
-    - uid: microsoftteams.microsoftTeams.RemoveEvent
+    - uid: msteams-client.microsoftTeams.RemoveEvent
       name: RemoveEvent
-    - uid: microsoftteams.microsoftTeams.RemoveEventImpl
+    - uid: msteams-client.microsoftTeams.RemoveEventImpl
       name: RemoveEventImpl
-    - uid: microsoftteams.microsoftTeams.SaveEvent
+    - uid: msteams-client.microsoftTeams.SaveEvent
       name: SaveEvent
-    - uid: microsoftteams.microsoftTeams.SaveEventImpl
+    - uid: msteams-client.microsoftTeams.SaveEventImpl
       name: SaveEventImpl
-    - uid: microsoftteams.microsoftTeams.Settings
+    - uid: msteams-client.microsoftTeams.Settings
       name: Settings
-    - uid: microsoftteams.microsoftTeams.TabInformation
+    - uid: msteams-client.microsoftTeams.TabInformation
       name: TabInformation
-    - uid: microsoftteams.microsoftTeams.TabInstance
+    - uid: msteams-client.microsoftTeams.TabInstance
       name: TabInstance
-    - uid: microsoftteams.microsoftTeams.TabInstanceParameters
+    - uid: msteams-client.microsoftTeams.TabInstanceParameters
       name: TabInstanceParameters
-    - uid: microsoftteams.microsoftTeams.TeamType
+    - uid: msteams-client.microsoftTeams.TeamType
       name: TeamType
-    - uid: microsoftteams.microsoftTeams.UserProfile
+    - uid: msteams-client.microsoftTeams.UserProfile
       name: UserProfile
-    - uid: microsoftteams.microsoftTeams.UserRequest
+    - uid: msteams-client.microsoftTeams.UserRequest
       name: UserRequest

@@ -1,55 +1,55 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.Global
-    package: microsoftteams
+  - uid: msteams-client.microsoftTeams.Global
+    package: msteams-client
     name: Global
     children:
-      - microsoftteams.microsoftTeams.authenticate
-      - microsoftteams.microsoftTeams.closeAuthenticationWindow
-      - microsoftteams.microsoftTeams.createMessageRequest
-      - microsoftteams.microsoftTeams.createMessageResponse
-      - microsoftteams.microsoftTeams.ensureInitialized
-      - microsoftteams.microsoftTeams.flushMessageQueue
-      - microsoftteams.microsoftTeams.getAuthToken
-      - microsoftteams.microsoftTeams.getContext
-      - microsoftteams.microsoftTeams.getMruTabInstances
-      - microsoftteams.microsoftTeams.getSettings
-      - microsoftteams.microsoftTeams.getTabInstances
-      - microsoftteams.microsoftTeams.getTargetMessageQueue
-      - microsoftteams.microsoftTeams.getTargetOrigin
-      - microsoftteams.microsoftTeams.getUser
-      - microsoftteams.microsoftTeams.handleChildMessage
-      - microsoftteams.microsoftTeams.handleFailure
-      - microsoftteams.microsoftTeams.handleFullScreenChange
-      - microsoftteams.microsoftTeams.handleParentMessage
-      - microsoftteams.microsoftTeams.handleRemove
-      - microsoftteams.microsoftTeams.handleSave
-      - microsoftteams.microsoftTeams.handleSuccess
-      - microsoftteams.microsoftTeams.handleThemeChange
-      - microsoftteams.microsoftTeams.initialize
-      - microsoftteams.microsoftTeams.navigateCrossDomain
-      - microsoftteams.microsoftTeams.navigateToTab
-      - microsoftteams.microsoftTeams.notifyFailure
-      - microsoftteams.microsoftTeams.notifySuccess
-      - microsoftteams.microsoftTeams.openAuthenticationWindow
-      - microsoftteams.microsoftTeams.processMessage
-      - microsoftteams.microsoftTeams.registerFullScreenHandler
-      - microsoftteams.microsoftTeams.registerOnRemoveHandler
-      - microsoftteams.microsoftTeams.registerOnSaveHandler
-      - microsoftteams.microsoftTeams.registerOnThemeChangeHandler
-      - microsoftteams.microsoftTeams.sendMessageRequest
-      - microsoftteams.microsoftTeams.sendMessageResponse
-      - microsoftteams.microsoftTeams.setSettings
-      - microsoftteams.microsoftTeams.setValidityState
-      - microsoftteams.microsoftTeams.shareDeepLink
-      - microsoftteams.microsoftTeams.startAuthenticationWindowMonitor
-      - microsoftteams.microsoftTeams.stopAuthenticationWindowMonitor
-      - microsoftteams.microsoftTeams.updateRelationships
-      - microsoftteams.microsoftTeams.waitForMessageQueue
+      - msteams-client.microsoftTeams.authenticate
+      - msteams-client.microsoftTeams.closeAuthenticationWindow
+      - msteams-client.microsoftTeams.createMessageRequest
+      - msteams-client.microsoftTeams.createMessageResponse
+      - msteams-client.microsoftTeams.ensureInitialized
+      - msteams-client.microsoftTeams.flushMessageQueue
+      - msteams-client.microsoftTeams.getAuthToken
+      - msteams-client.microsoftTeams.getContext
+      - msteams-client.microsoftTeams.getMruTabInstances
+      - msteams-client.microsoftTeams.getSettings
+      - msteams-client.microsoftTeams.getTabInstances
+      - msteams-client.microsoftTeams.getTargetMessageQueue
+      - msteams-client.microsoftTeams.getTargetOrigin
+      - msteams-client.microsoftTeams.getUser
+      - msteams-client.microsoftTeams.handleChildMessage
+      - msteams-client.microsoftTeams.handleFailure
+      - msteams-client.microsoftTeams.handleFullScreenChange
+      - msteams-client.microsoftTeams.handleParentMessage
+      - msteams-client.microsoftTeams.handleRemove
+      - msteams-client.microsoftTeams.handleSave
+      - msteams-client.microsoftTeams.handleSuccess
+      - msteams-client.microsoftTeams.handleThemeChange
+      - msteams-client.microsoftTeams.initialize
+      - msteams-client.microsoftTeams.navigateCrossDomain
+      - msteams-client.microsoftTeams.navigateToTab
+      - msteams-client.microsoftTeams.notifyFailure
+      - msteams-client.microsoftTeams.notifySuccess
+      - msteams-client.microsoftTeams.openAuthenticationWindow
+      - msteams-client.microsoftTeams.processMessage
+      - msteams-client.microsoftTeams.registerFullScreenHandler
+      - msteams-client.microsoftTeams.registerOnRemoveHandler
+      - msteams-client.microsoftTeams.registerOnSaveHandler
+      - msteams-client.microsoftTeams.registerOnThemeChangeHandler
+      - msteams-client.microsoftTeams.sendMessageRequest
+      - msteams-client.microsoftTeams.sendMessageResponse
+      - msteams-client.microsoftTeams.setSettings
+      - msteams-client.microsoftTeams.setValidityState
+      - msteams-client.microsoftTeams.shareDeepLink
+      - msteams-client.microsoftTeams.startAuthenticationWindowMonitor
+      - msteams-client.microsoftTeams.stopAuthenticationWindowMonitor
+      - msteams-client.microsoftTeams.updateRelationships
+      - msteams-client.microsoftTeams.waitForMessageQueue
     type: package
     langs:
       - typeScript
-  - uid: microsoftteams.microsoftTeams.authenticate
+  - uid: msteams-client.microsoftTeams.authenticate
     name: authenticate
     children: []
     type: function
@@ -63,10 +63,10 @@ items:
       parameters:
         - id: authenticateParameters
           type:
-            - '@microsoftteams.microsoftTeams.AuthenticateParameters'
+            - '@msteams-client.microsoftTeams.AuthenticateParameters'
           description: |
             A set of values that configure the authentication pop-up.
-  - uid: microsoftteams.microsoftTeams.closeAuthenticationWindow
+  - uid: msteams-client.microsoftTeams.closeAuthenticationWindow
     name: closeAuthenticationWindow
     children: []
     type: function
@@ -76,7 +76,7 @@ items:
     syntax:
       content: function closeAuthenticationWindow()
       parameters: []
-  - uid: microsoftteams.microsoftTeams.createMessageRequest
+  - uid: msteams-client.microsoftTeams.createMessageRequest
     name: createMessageRequest
     children: []
     type: function
@@ -96,8 +96,8 @@ items:
           description: ''
       return:
         type:
-          - '@microsoftteams.microsoftTeams.MessageRequest'
-  - uid: microsoftteams.microsoftTeams.createMessageResponse
+          - '@msteams-client.microsoftTeams.MessageRequest'
+  - uid: msteams-client.microsoftTeams.createMessageResponse
     name: createMessageResponse
     children: []
     type: function
@@ -117,8 +117,8 @@ items:
           description: ''
       return:
         type:
-          - '@microsoftteams.microsoftTeams.MessageResponse'
-  - uid: microsoftteams.microsoftTeams.ensureInitialized
+          - '@msteams-client.microsoftTeams.MessageResponse'
+  - uid: msteams-client.microsoftTeams.ensureInitialized
     name: ensureInitialized
     children: []
     type: function
@@ -132,7 +132,7 @@ items:
           type:
             - 'string[]'
           description: ''
-  - uid: microsoftteams.microsoftTeams.flushMessageQueue
+  - uid: msteams-client.microsoftTeams.flushMessageQueue
     name: flushMessageQueue
     children: []
     type: function
@@ -146,7 +146,7 @@ items:
           type:
             - Window
           description: ''
-  - uid: microsoftteams.microsoftTeams.getAuthToken
+  - uid: msteams-client.microsoftTeams.getAuthToken
     name: getAuthToken
     children: []
     type: function
@@ -163,10 +163,10 @@ items:
       parameters:
         - id: authTokenRequest
           type:
-            - '@microsoftteams.microsoftTeams.AuthTokenRequest'
+            - '@msteams-client.microsoftTeams.AuthTokenRequest'
           description: |
             A set of values that configure the token request.
-  - uid: microsoftteams.microsoftTeams.getContext
+  - uid: msteams-client.microsoftTeams.getContext
     name: getContext
     children: []
     type: function
@@ -181,7 +181,7 @@ items:
             - '(context: Context) => void'
           description: |
             The callback to invoke when the <xref:Context> object is retrieved.
-  - uid: microsoftteams.microsoftTeams.getMruTabInstances
+  - uid: msteams-client.microsoftTeams.getMruTabInstances
     name: getMruTabInstances
     children: []
     type: function
@@ -201,11 +201,11 @@ items:
             retrieved.
         - id: tabInstanceParameters
           type:
-            - '@microsoftteams.microsoftTeams.TabInstanceParameters'
+            - '@msteams-client.microsoftTeams.TabInstanceParameters'
           description: |
             OPTIONAL Ignored, kept for future use
           optional: true
-  - uid: microsoftteams.microsoftTeams.getSettings
+  - uid: msteams-client.microsoftTeams.getSettings
     name: getSettings
     children: []
     type: function
@@ -220,7 +220,7 @@ items:
             - '(settings: Settings) => void'
           description: |
             The callback to invoke when the <xref:Settings> object is retrieved.
-  - uid: microsoftteams.microsoftTeams.getTabInstances
+  - uid: msteams-client.microsoftTeams.getTabInstances
     name: getTabInstances
     children: []
     type: function
@@ -244,12 +244,12 @@ items:
             is retrieved.
         - id: tabInstanceParameters
           type:
-            - '@microsoftteams.microsoftTeams.TabInstanceParameters'
+            - '@msteams-client.microsoftTeams.TabInstanceParameters'
           description: >
             OPTIONAL Flags that specify whether to scope call to favorite teams
             or channels.
           optional: true
-  - uid: microsoftteams.microsoftTeams.getTargetMessageQueue
+  - uid: msteams-client.microsoftTeams.getTargetMessageQueue
     name: getTargetMessageQueue
     children: []
     type: function
@@ -265,8 +265,8 @@ items:
           description: ''
       return:
         type:
-          - '@microsoftteams.microsoftTeams.MessageRequest[]'
-  - uid: microsoftteams.microsoftTeams.getTargetOrigin
+          - '@msteams-client.microsoftTeams.MessageRequest[]'
+  - uid: msteams-client.microsoftTeams.getTargetOrigin
     name: getTargetOrigin
     children: []
     type: function
@@ -283,7 +283,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.getUser
+  - uid: msteams-client.microsoftTeams.getUser
     name: getUser
     children: []
     type: function
@@ -295,9 +295,9 @@ items:
       parameters:
         - id: userRequest
           type:
-            - '@microsoftteams.microsoftTeams.UserRequest'
+            - '@msteams-client.microsoftTeams.UserRequest'
           description: ''
-  - uid: microsoftteams.microsoftTeams.handleChildMessage
+  - uid: msteams-client.microsoftTeams.handleChildMessage
     name: handleChildMessage
     children: []
     type: function
@@ -311,7 +311,7 @@ items:
           type:
             - MessageEvent
           description: ''
-  - uid: microsoftteams.microsoftTeams.handleFailure
+  - uid: msteams-client.microsoftTeams.handleFailure
     name: handleFailure
     children: []
     type: function
@@ -326,7 +326,7 @@ items:
             - string
           description: ''
           optional: true
-  - uid: microsoftteams.microsoftTeams.handleFullScreenChange
+  - uid: msteams-client.microsoftTeams.handleFullScreenChange
     name: handleFullScreenChange
     children: []
     type: function
@@ -340,7 +340,7 @@ items:
           type:
             - boolean
           description: ''
-  - uid: microsoftteams.microsoftTeams.handleParentMessage
+  - uid: msteams-client.microsoftTeams.handleParentMessage
     name: handleParentMessage
     children: []
     type: function
@@ -354,7 +354,7 @@ items:
           type:
             - MessageEvent
           description: ''
-  - uid: microsoftteams.microsoftTeams.handleRemove
+  - uid: msteams-client.microsoftTeams.handleRemove
     name: handleRemove
     children: []
     type: function
@@ -364,7 +364,7 @@ items:
     syntax:
       content: function handleRemove()
       parameters: []
-  - uid: microsoftteams.microsoftTeams.handleSave
+  - uid: msteams-client.microsoftTeams.handleSave
     name: handleSave
     children: []
     type: function
@@ -374,7 +374,7 @@ items:
     syntax:
       content: function handleSave()
       parameters: []
-  - uid: microsoftteams.microsoftTeams.handleSuccess
+  - uid: msteams-client.microsoftTeams.handleSuccess
     name: handleSuccess
     children: []
     type: function
@@ -389,7 +389,7 @@ items:
             - string
           description: ''
           optional: true
-  - uid: microsoftteams.microsoftTeams.handleThemeChange
+  - uid: msteams-client.microsoftTeams.handleThemeChange
     name: handleThemeChange
     children: []
     type: function
@@ -403,7 +403,7 @@ items:
           type:
             - string
           description: ''
-  - uid: microsoftteams.microsoftTeams.initialize
+  - uid: msteams-client.microsoftTeams.initialize
     name: initialize
     children: []
     type: function
@@ -415,7 +415,7 @@ items:
     syntax:
       content: function initialize()
       parameters: []
-  - uid: microsoftteams.microsoftTeams.navigateCrossDomain
+  - uid: msteams-client.microsoftTeams.navigateCrossDomain
     name: navigateCrossDomain
     children: []
     type: function
@@ -443,7 +443,7 @@ items:
             - string
           description: |
             The URL to navigate the frame to.
-  - uid: microsoftteams.microsoftTeams.navigateToTab
+  - uid: msteams-client.microsoftTeams.navigateToTab
     name: navigateToTab
     children: []
     type: function
@@ -455,10 +455,10 @@ items:
       parameters:
         - id: tabInstance
           type:
-            - '@microsoftteams.microsoftTeams.TabInstance'
+            - '@msteams-client.microsoftTeams.TabInstance'
           description: |
             The tab instance to navigate to.
-  - uid: microsoftteams.microsoftTeams.notifyFailure
+  - uid: msteams-client.microsoftTeams.notifyFailure
     name: notifyFailure
     children: []
     type: function
@@ -482,7 +482,7 @@ items:
             frame that initiated the authentication pop-up receives this value
             in its callback.
           optional: true
-  - uid: microsoftteams.microsoftTeams.notifySuccess
+  - uid: msteams-client.microsoftTeams.notifySuccess
     name: notifySuccess
     children: []
     type: function
@@ -506,7 +506,7 @@ items:
             that initiated the authentication pop-up receives this value in its
             callback.
           optional: true
-  - uid: microsoftteams.microsoftTeams.openAuthenticationWindow
+  - uid: msteams-client.microsoftTeams.openAuthenticationWindow
     name: openAuthenticationWindow
     children: []
     type: function
@@ -520,9 +520,9 @@ items:
       parameters:
         - id: authenticateParameters
           type:
-            - '@microsoftteams.microsoftTeams.AuthenticateParameters'
+            - '@msteams-client.microsoftTeams.AuthenticateParameters'
           description: ''
-  - uid: microsoftteams.microsoftTeams.processMessage
+  - uid: msteams-client.microsoftTeams.processMessage
     name: processMessage
     children: []
     type: function
@@ -536,7 +536,7 @@ items:
           type:
             - MessageEvent
           description: ''
-  - uid: microsoftteams.microsoftTeams.registerFullScreenHandler
+  - uid: msteams-client.microsoftTeams.registerFullScreenHandler
     name: registerFullScreenHandler
     children: []
     type: function
@@ -558,7 +558,7 @@ items:
           description: >
             The handler to invoke when the user toggles full-screen view for a
             tab.
-  - uid: microsoftteams.microsoftTeams.registerOnRemoveHandler
+  - uid: msteams-client.microsoftTeams.registerOnRemoveHandler
     name: registerOnRemoveHandler
     children: []
     type: function
@@ -583,7 +583,7 @@ items:
             - '(evt: RemoveEvent) => void'
           description: |
             The handler to invoke when the user selects the remove button.
-  - uid: microsoftteams.microsoftTeams.registerOnSaveHandler
+  - uid: msteams-client.microsoftTeams.registerOnSaveHandler
     name: registerOnSaveHandler
     children: []
     type: function
@@ -608,7 +608,7 @@ items:
             - '(evt: SaveEvent) => void'
           description: |
             The handler to invoke when the user selects the save button.
-  - uid: microsoftteams.microsoftTeams.registerOnThemeChangeHandler
+  - uid: msteams-client.microsoftTeams.registerOnThemeChangeHandler
     name: registerOnThemeChangeHandler
     children: []
     type: function
@@ -627,7 +627,7 @@ items:
             - '(theme: string) => void'
           description: |
             The handler to invoke when the user changes their theme.
-  - uid: microsoftteams.microsoftTeams.sendMessageRequest
+  - uid: msteams-client.microsoftTeams.sendMessageRequest
     name: sendMessageRequest
     children: []
     type: function
@@ -655,7 +655,7 @@ items:
       return:
         type:
           - number
-  - uid: microsoftteams.microsoftTeams.sendMessageResponse
+  - uid: msteams-client.microsoftTeams.sendMessageResponse
     name: sendMessageResponse
     children: []
     type: function
@@ -680,7 +680,7 @@ items:
             - 'any[]'
           description: ''
           optional: true
-  - uid: microsoftteams.microsoftTeams.setSettings
+  - uid: msteams-client.microsoftTeams.setSettings
     name: setSettings
     children: []
     type: function
@@ -696,10 +696,10 @@ items:
       parameters:
         - id: settings
           type:
-            - '@microsoftteams.microsoftTeams.Settings'
+            - '@msteams-client.microsoftTeams.Settings'
           description: |
             The desired settings for this instance.
-  - uid: microsoftteams.microsoftTeams.setValidityState
+  - uid: msteams-client.microsoftTeams.setValidityState
     name: setValidityState
     children: []
     type: function
@@ -718,7 +718,7 @@ items:
             - boolean
           description: |
             Indicates whether the save or remove button is enabled for the user.
-  - uid: microsoftteams.microsoftTeams.shareDeepLink
+  - uid: msteams-client.microsoftTeams.shareDeepLink
     name: shareDeepLink
     children: []
     type: function
@@ -732,10 +732,10 @@ items:
       parameters:
         - id: deepLinkParameters
           type:
-            - '@microsoftteams.microsoftTeams.DeepLinkParameters'
+            - '@msteams-client.microsoftTeams.DeepLinkParameters'
           description: |
             ID and label for the link and fallback URL.
-  - uid: microsoftteams.microsoftTeams.startAuthenticationWindowMonitor
+  - uid: msteams-client.microsoftTeams.startAuthenticationWindowMonitor
     name: startAuthenticationWindowMonitor
     children: []
     type: function
@@ -745,7 +745,7 @@ items:
     syntax:
       content: function startAuthenticationWindowMonitor()
       parameters: []
-  - uid: microsoftteams.microsoftTeams.stopAuthenticationWindowMonitor
+  - uid: msteams-client.microsoftTeams.stopAuthenticationWindowMonitor
     name: stopAuthenticationWindowMonitor
     children: []
     type: function
@@ -755,7 +755,7 @@ items:
     syntax:
       content: function stopAuthenticationWindowMonitor()
       parameters: []
-  - uid: microsoftteams.microsoftTeams.updateRelationships
+  - uid: msteams-client.microsoftTeams.updateRelationships
     name: updateRelationships
     children: []
     type: function
@@ -775,7 +775,7 @@ items:
           type:
             - string
           description: ''
-  - uid: microsoftteams.microsoftTeams.waitForMessageQueue
+  - uid: msteams-client.microsoftTeams.waitForMessageQueue
     name: waitForMessageQueue
     children: []
     type: function

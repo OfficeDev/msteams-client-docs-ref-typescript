@@ -1,32 +1,32 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.SaveEvent
-    name: SaveEvent
-    fullName: SaveEvent
+  - uid: msteams-client.microsoftTeams.RemoveEvent
+    name: RemoveEvent
+    fullName: RemoveEvent
     children:
-      - microsoftteams.microsoftTeams.SaveEvent.notifyFailure
-      - microsoftteams.microsoftTeams.SaveEvent.notifySuccess
+      - msteams-client.microsoftTeams.RemoveEvent.notifyFailure
+      - msteams-client.microsoftTeams.RemoveEvent.notifySuccess
     langs:
       - typeScript
     type: interface
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 408
+      startLine: 421
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.SaveEvent.notifyFailure
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.RemoveEvent.notifyFailure
     name: notifyFailure
     children: []
     type: method
     langs:
       - typeScript
     summary: >-
-      Indicates that creation of the underlying resource failed and that the
-      settings cannot be saved.
+      Indicates that removal of the underlying resource failed and that the
+      content cannot be removed.
     syntax:
       content: 'function notifyFailure(reason?: string)'
       parameters:
@@ -37,15 +37,15 @@ items:
             Specifies a reason for the failure. If provided, this string is
             displayed to the user; otherwise a generic error is displayed.
           optional: true
-  - uid: microsoftteams.microsoftTeams.SaveEvent.notifySuccess
+  - uid: msteams-client.microsoftTeams.RemoveEvent.notifySuccess
     name: notifySuccess
     children: []
     type: method
     langs:
       - typeScript
     summary: >-
-      Indicates that the underlying resource has been created and the settings
-      can be saved.
+      Indicates that the underlying resource has been removed and the content
+      can be removed.
     syntax:
       content: function notifySuccess()
       parameters: []

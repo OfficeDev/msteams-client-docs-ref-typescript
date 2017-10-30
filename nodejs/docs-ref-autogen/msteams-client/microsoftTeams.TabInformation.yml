@@ -1,10 +1,10 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.TabInformation
+  - uid: msteams-client.microsoftTeams.TabInformation
     name: TabInformation
     fullName: TabInformation
     children:
-      - microsoftteams.microsoftTeams.TabInformation.teamTabs
+      - msteams-client.microsoftTeams.TabInformation.teamTabs
     langs:
       - typeScript
     type: interface
@@ -16,8 +16,8 @@ items:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.TabInformation.teamTabs
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.TabInformation.teamTabs
     name: teamTabs
     fullName: teamTabs
     children: []
@@ -29,4 +29,4 @@ items:
       content: 'TabInstance[] teamTabs'
       return:
         type:
-          - '@microsoftteams.microsoftTeams.TabInstance[]'
+          - '@msteams-client.microsoftTeams.TabInstance[]'

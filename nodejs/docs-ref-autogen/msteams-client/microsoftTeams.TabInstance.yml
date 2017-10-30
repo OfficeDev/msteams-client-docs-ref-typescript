@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.TabInstance
+  - uid: msteams-client.microsoftTeams.TabInstance
     name: TabInstance
     fullName: TabInstance
     children:
-      - microsoftteams.microsoftTeams.TabInstance.channelId
-      - microsoftteams.microsoftTeams.TabInstance.channelIsFavorite
-      - microsoftteams.microsoftTeams.TabInstance.channelName
-      - microsoftteams.microsoftTeams.TabInstance.entityId
-      - microsoftteams.microsoftTeams.TabInstance.groupId
-      - microsoftteams.microsoftTeams.TabInstance.internalTabInstanceId
-      - microsoftteams.microsoftTeams.TabInstance.lastViewUnixEpochTime
-      - microsoftteams.microsoftTeams.TabInstance.tabName
-      - microsoftteams.microsoftTeams.TabInstance.teamId
-      - microsoftteams.microsoftTeams.TabInstance.teamIsFavorite
-      - microsoftteams.microsoftTeams.TabInstance.teamName
-      - microsoftteams.microsoftTeams.TabInstance.url
-      - microsoftteams.microsoftTeams.TabInstance.websiteUrl
+      - msteams-client.microsoftTeams.TabInstance.channelId
+      - msteams-client.microsoftTeams.TabInstance.channelIsFavorite
+      - msteams-client.microsoftTeams.TabInstance.channelName
+      - msteams-client.microsoftTeams.TabInstance.entityId
+      - msteams-client.microsoftTeams.TabInstance.groupId
+      - msteams-client.microsoftTeams.TabInstance.internalTabInstanceId
+      - msteams-client.microsoftTeams.TabInstance.lastViewUnixEpochTime
+      - msteams-client.microsoftTeams.TabInstance.tabName
+      - msteams-client.microsoftTeams.TabInstance.teamId
+      - msteams-client.microsoftTeams.TabInstance.teamIsFavorite
+      - msteams-client.microsoftTeams.TabInstance.teamName
+      - msteams-client.microsoftTeams.TabInstance.url
+      - msteams-client.microsoftTeams.TabInstance.websiteUrl
     langs:
       - typeScript
     type: interface
@@ -28,8 +28,8 @@ items:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.TabInstance.channelId
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.TabInstance.channelId
     name: channelId
     fullName: channelId
     children: []
@@ -42,7 +42,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.channelIsFavorite
+  - uid: msteams-client.microsoftTeams.TabInstance.channelIsFavorite
     name: channelIsFavorite
     fullName: channelIsFavorite
     children: []
@@ -55,7 +55,7 @@ items:
       return:
         type:
           - boolean
-  - uid: microsoftteams.microsoftTeams.TabInstance.channelName
+  - uid: msteams-client.microsoftTeams.TabInstance.channelName
     name: channelName
     fullName: channelName
     children: []
@@ -68,7 +68,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.entityId
+  - uid: msteams-client.microsoftTeams.TabInstance.entityId
     name: entityId
     fullName: entityId
     children: []
@@ -81,7 +81,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.groupId
+  - uid: msteams-client.microsoftTeams.TabInstance.groupId
     name: groupId
     fullName: groupId
     children: []
@@ -94,7 +94,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.internalTabInstanceId
+  - uid: msteams-client.microsoftTeams.TabInstance.internalTabInstanceId
     name: internalTabInstanceId
     fullName: internalTabInstanceId
     children: []
@@ -107,7 +107,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.lastViewUnixEpochTime
+  - uid: msteams-client.microsoftTeams.TabInstance.lastViewUnixEpochTime
     name: lastViewUnixEpochTime
     fullName: lastViewUnixEpochTime
     children: []
@@ -120,7 +120,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.tabName
+  - uid: msteams-client.microsoftTeams.TabInstance.tabName
     name: tabName
     fullName: tabName
     children: []
@@ -133,7 +133,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.teamId
+  - uid: msteams-client.microsoftTeams.TabInstance.teamId
     name: teamId
     fullName: teamId
     children: []
@@ -146,7 +146,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.teamIsFavorite
+  - uid: msteams-client.microsoftTeams.TabInstance.teamIsFavorite
     name: teamIsFavorite
     fullName: teamIsFavorite
     children: []
@@ -159,7 +159,7 @@ items:
       return:
         type:
           - boolean
-  - uid: microsoftteams.microsoftTeams.TabInstance.teamName
+  - uid: msteams-client.microsoftTeams.TabInstance.teamName
     name: teamName
     fullName: teamName
     children: []
@@ -172,7 +172,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.url
+  - uid: msteams-client.microsoftTeams.TabInstance.url
     name: url
     fullName: url
     children: []
@@ -185,7 +185,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.TabInstance.websiteUrl
+  - uid: msteams-client.microsoftTeams.TabInstance.websiteUrl
     name: websiteUrl
     fullName: websiteUrl
     children: []

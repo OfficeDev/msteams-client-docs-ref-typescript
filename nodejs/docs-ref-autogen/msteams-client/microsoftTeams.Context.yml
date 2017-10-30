@@ -1,22 +1,22 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.Context
+  - uid: msteams-client.microsoftTeams.Context
     name: Context
     fullName: Context
     children:
-      - microsoftteams.microsoftTeams.Context.channelId
-      - microsoftteams.microsoftTeams.Context.channelName
-      - microsoftteams.microsoftTeams.Context.entityId
-      - microsoftteams.microsoftTeams.Context.groupId
-      - microsoftteams.microsoftTeams.Context.isFullScreen
-      - microsoftteams.microsoftTeams.Context.locale
-      - microsoftteams.microsoftTeams.Context.subEntityId
-      - microsoftteams.microsoftTeams.Context.teamId
-      - microsoftteams.microsoftTeams.Context.teamName
-      - microsoftteams.microsoftTeams.Context.teamType
-      - microsoftteams.microsoftTeams.Context.theme
-      - microsoftteams.microsoftTeams.Context.tid
-      - microsoftteams.microsoftTeams.Context.upn
+      - msteams-client.microsoftTeams.Context.channelId
+      - msteams-client.microsoftTeams.Context.channelName
+      - msteams-client.microsoftTeams.Context.entityId
+      - msteams-client.microsoftTeams.Context.groupId
+      - msteams-client.microsoftTeams.Context.isFullScreen
+      - msteams-client.microsoftTeams.Context.locale
+      - msteams-client.microsoftTeams.Context.subEntityId
+      - msteams-client.microsoftTeams.Context.teamId
+      - msteams-client.microsoftTeams.Context.teamName
+      - msteams-client.microsoftTeams.Context.teamType
+      - msteams-client.microsoftTeams.Context.theme
+      - msteams-client.microsoftTeams.Context.tid
+      - msteams-client.microsoftTeams.Context.upn
     langs:
       - typeScript
     type: interface
@@ -28,8 +28,8 @@ items:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.Context.channelId
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.Context.channelId
     name: channelId
     fullName: channelId
     children: []
@@ -44,7 +44,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.channelName
+  - uid: msteams-client.microsoftTeams.Context.channelName
     name: channelName
     fullName: channelName
     children: []
@@ -57,7 +57,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.entityId
+  - uid: msteams-client.microsoftTeams.Context.entityId
     name: entityId
     fullName: entityId
     children: []
@@ -70,7 +70,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.groupId
+  - uid: msteams-client.microsoftTeams.Context.groupId
     name: groupId
     fullName: groupId
     children: []
@@ -87,7 +87,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.isFullScreen
+  - uid: msteams-client.microsoftTeams.Context.isFullScreen
     name: isFullScreen
     fullName: isFullScreen
     children: []
@@ -100,7 +100,7 @@ items:
       return:
         type:
           - boolean
-  - uid: microsoftteams.microsoftTeams.Context.locale
+  - uid: msteams-client.microsoftTeams.Context.locale
     name: locale
     fullName: locale
     children: []
@@ -115,7 +115,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.subEntityId
+  - uid: msteams-client.microsoftTeams.Context.subEntityId
     name: subEntityId
     fullName: subEntityId
     children: []
@@ -132,7 +132,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.teamId
+  - uid: msteams-client.microsoftTeams.Context.teamId
     name: teamId
     fullName: teamId
     children: []
@@ -145,7 +145,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.teamName
+  - uid: msteams-client.microsoftTeams.Context.teamName
     name: teamName
     fullName: teamName
     children: []
@@ -158,7 +158,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.teamType
+  - uid: msteams-client.microsoftTeams.Context.teamType
     name: teamType
     fullName: teamType
     children: []
@@ -170,8 +170,8 @@ items:
       content: TeamType teamType
       return:
         type:
-          - '@microsoftteams.microsoftTeams.TeamType'
-  - uid: microsoftteams.microsoftTeams.Context.theme
+          - '@msteams-client.microsoftTeams.TeamType'
+  - uid: msteams-client.microsoftTeams.Context.theme
     name: theme
     fullName: theme
     children: []
@@ -184,7 +184,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.tid
+  - uid: msteams-client.microsoftTeams.Context.tid
     name: tid
     fullName: tid
     children: []
@@ -207,7 +207,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.Context.upn
+  - uid: msteams-client.microsoftTeams.Context.upn
     name: upn
     fullName: upn
     children: []

@@ -1,23 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.UserProfile
+  - uid: msteams-client.microsoftTeams.UserProfile
     name: UserProfile
     fullName: UserProfile
     children:
-      - microsoftteams.microsoftTeams.UserProfile.amr
-      - microsoftteams.microsoftTeams.UserProfile.aud
-      - microsoftteams.microsoftTeams.UserProfile.exp
-      - microsoftteams.microsoftTeams.UserProfile.family_name
-      - microsoftteams.microsoftTeams.UserProfile.given_name
-      - microsoftteams.microsoftTeams.UserProfile.iat
-      - microsoftteams.microsoftTeams.UserProfile.iss
-      - microsoftteams.microsoftTeams.UserProfile.nbf
-      - microsoftteams.microsoftTeams.UserProfile.oid
-      - microsoftteams.microsoftTeams.UserProfile.sub
-      - microsoftteams.microsoftTeams.UserProfile.tid
-      - microsoftteams.microsoftTeams.UserProfile.unique_name
-      - microsoftteams.microsoftTeams.UserProfile.upn
-      - microsoftteams.microsoftTeams.UserProfile.ver
+      - msteams-client.microsoftTeams.UserProfile.amr
+      - msteams-client.microsoftTeams.UserProfile.aud
+      - msteams-client.microsoftTeams.UserProfile.exp
+      - msteams-client.microsoftTeams.UserProfile.family_name
+      - msteams-client.microsoftTeams.UserProfile.given_name
+      - msteams-client.microsoftTeams.UserProfile.iat
+      - msteams-client.microsoftTeams.UserProfile.iss
+      - msteams-client.microsoftTeams.UserProfile.nbf
+      - msteams-client.microsoftTeams.UserProfile.oid
+      - msteams-client.microsoftTeams.UserProfile.sub
+      - msteams-client.microsoftTeams.UserProfile.tid
+      - msteams-client.microsoftTeams.UserProfile.unique_name
+      - msteams-client.microsoftTeams.UserProfile.upn
+      - msteams-client.microsoftTeams.UserProfile.ver
     langs:
       - typeScript
     type: interface
@@ -29,8 +29,8 @@ items:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.UserProfile.amr
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.UserProfile.amr
     name: amr
     fullName: amr
     children: []
@@ -43,7 +43,7 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: microsoftteams.microsoftTeams.UserProfile.aud
+  - uid: msteams-client.microsoftTeams.UserProfile.aud
     name: aud
     fullName: aud
     children: []
@@ -60,7 +60,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.exp
+  - uid: msteams-client.microsoftTeams.UserProfile.exp
     name: exp
     fullName: exp
     children: []
@@ -83,7 +83,7 @@ items:
       return:
         type:
           - number
-  - uid: microsoftteams.microsoftTeams.UserProfile.family_name
+  - uid: msteams-client.microsoftTeams.UserProfile.family_name
     name: family_name
     fullName: family_name
     children: []
@@ -98,7 +98,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.given_name
+  - uid: msteams-client.microsoftTeams.UserProfile.given_name
     name: given_name
     fullName: given_name
     children: []
@@ -113,7 +113,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.iat
+  - uid: msteams-client.microsoftTeams.UserProfile.iat
     name: iat
     fullName: iat
     children: []
@@ -128,7 +128,7 @@ items:
       return:
         type:
           - number
-  - uid: microsoftteams.microsoftTeams.UserProfile.iss
+  - uid: msteams-client.microsoftTeams.UserProfile.iss
     name: iss
     fullName: iss
     children: []
@@ -149,7 +149,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.nbf
+  - uid: msteams-client.microsoftTeams.UserProfile.nbf
     name: nbf
     fullName: nbf
     children: []
@@ -162,7 +162,7 @@ items:
       return:
         type:
           - number
-  - uid: microsoftteams.microsoftTeams.UserProfile.oid
+  - uid: msteams-client.microsoftTeams.UserProfile.oid
     name: oid
     fullName: oid
     children: []
@@ -179,7 +179,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.sub
+  - uid: msteams-client.microsoftTeams.UserProfile.sub
     name: sub
     fullName: sub
     children: []
@@ -202,7 +202,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.tid
+  - uid: msteams-client.microsoftTeams.UserProfile.tid
     name: tid
     fullName: tid
     children: []
@@ -222,7 +222,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.unique_name
+  - uid: msteams-client.microsoftTeams.UserProfile.unique_name
     name: unique_name
     fullName: unique_name
     children: []
@@ -240,7 +240,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.upn
+  - uid: msteams-client.microsoftTeams.UserProfile.upn
     name: upn
     fullName: upn
     children: []
@@ -253,7 +253,7 @@ items:
       return:
         type:
           - string
-  - uid: microsoftteams.microsoftTeams.UserProfile.ver
+  - uid: msteams-client.microsoftTeams.UserProfile.ver
     name: ver
     fullName: ver
     children: []

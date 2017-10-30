@@ -1,25 +1,25 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.SaveEventImpl
-    name: SaveEventImpl
-    fullName: SaveEventImpl
+  - uid: msteams-client.microsoftTeams.RemoveEventImpl
+    name: RemoveEventImpl
+    fullName: RemoveEventImpl
     children:
-      - microsoftteams.microsoftTeams.SaveEventImpl.notified
-      - microsoftteams.microsoftTeams.SaveEventImpl.notifyFailure
-      - microsoftteams.microsoftTeams.SaveEventImpl.notifySuccess
+      - msteams-client.microsoftTeams.RemoveEventImpl.notified
+      - msteams-client.microsoftTeams.RemoveEventImpl.notifyFailure
+      - msteams-client.microsoftTeams.RemoveEventImpl.notifySuccess
     langs:
       - typeScript
     type: class
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 434
+      startLine: 471
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.SaveEventImpl.notified
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.RemoveEventImpl.notified
     name: notified
     fullName: notified
     children: []
@@ -32,7 +32,7 @@ items:
       return:
         type:
           - boolean
-  - uid: microsoftteams.microsoftTeams.SaveEventImpl.notifyFailure
+  - uid: msteams-client.microsoftTeams.RemoveEventImpl.notifyFailure
     name: notifyFailure
     children: []
     type: method
@@ -47,7 +47,7 @@ items:
             - string
           description: ''
           optional: true
-  - uid: microsoftteams.microsoftTeams.SaveEventImpl.notifySuccess
+  - uid: msteams-client.microsoftTeams.RemoveEventImpl.notifySuccess
     name: notifySuccess
     children: []
     type: method

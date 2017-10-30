@@ -1,11 +1,11 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.UserRequest
+  - uid: msteams-client.microsoftTeams.UserRequest
     name: UserRequest
     fullName: UserRequest
     children:
-      - microsoftteams.microsoftTeams.UserRequest.failureCallback
-      - microsoftteams.microsoftTeams.UserRequest.successCallback
+      - msteams-client.microsoftTeams.UserRequest.failureCallback
+      - msteams-client.microsoftTeams.UserRequest.successCallback
     langs:
       - typeScript
     type: interface
@@ -17,8 +17,8 @@ items:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.UserRequest.failureCallback
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.UserRequest.failureCallback
     name: failureCallback
     fullName: failureCallback
     children: []
@@ -33,7 +33,7 @@ items:
       return:
         type:
           - '(reason: string) => void'
-  - uid: microsoftteams.microsoftTeams.UserRequest.successCallback
+  - uid: msteams-client.microsoftTeams.UserRequest.successCallback
     name: successCallback
     fullName: successCallback
     children: []

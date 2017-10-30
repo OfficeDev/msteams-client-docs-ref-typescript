@@ -1,14 +1,14 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.TeamType
+  - uid: msteams-client.microsoftTeams.TeamType
     name: TeamType
     fullName: TeamType
     children:
-      - microsoftteams.microsoftTeams.TeamType.Standard
-      - microsoftteams.microsoftTeams.TeamType.Edu
-      - microsoftteams.microsoftTeams.TeamType.Class
-      - microsoftteams.microsoftTeams.TeamType.Plc
-      - microsoftteams.microsoftTeams.TeamType.Staff
+      - msteams-client.microsoftTeams.TeamType.Standard
+      - msteams-client.microsoftTeams.TeamType.Edu
+      - msteams-client.microsoftTeams.TeamType.Class
+      - msteams-client.microsoftTeams.TeamType.Plc
+      - msteams-client.microsoftTeams.TeamType.Staff
     langs:
       - typeScript
     type: enum
@@ -20,8 +20,8 @@ items:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.TeamType.Standard
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.TeamType.Standard
     name: Standard
     children: []
     langs:
@@ -29,7 +29,7 @@ items:
     summary: ''
     type: field
     numericValue: 0
-  - uid: microsoftteams.microsoftTeams.TeamType.Edu
+  - uid: msteams-client.microsoftTeams.TeamType.Edu
     name: Edu
     children: []
     langs:
@@ -37,7 +37,7 @@ items:
     summary: ''
     type: field
     numericValue: 1
-  - uid: microsoftteams.microsoftTeams.TeamType.Class
+  - uid: msteams-client.microsoftTeams.TeamType.Class
     name: Class
     children: []
     langs:
@@ -45,7 +45,7 @@ items:
     summary: ''
     type: field
     numericValue: 2
-  - uid: microsoftteams.microsoftTeams.TeamType.Plc
+  - uid: msteams-client.microsoftTeams.TeamType.Plc
     name: Plc
     children: []
     langs:
@@ -53,7 +53,7 @@ items:
     summary: ''
     type: field
     numericValue: 3
-  - uid: microsoftteams.microsoftTeams.TeamType.Staff
+  - uid: msteams-client.microsoftTeams.TeamType.Staff
     name: Staff
     children: []
     langs:

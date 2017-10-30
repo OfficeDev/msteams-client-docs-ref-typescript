@@ -1,12 +1,12 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: microsoftteams.microsoftTeams.AuthTokenRequest
+  - uid: msteams-client.microsoftTeams.AuthTokenRequest
     name: AuthTokenRequest
     fullName: AuthTokenRequest
     children:
-      - microsoftteams.microsoftTeams.AuthTokenRequest.failureCallback
-      - microsoftteams.microsoftTeams.AuthTokenRequest.resources
-      - microsoftteams.microsoftTeams.AuthTokenRequest.successCallback
+      - msteams-client.microsoftTeams.AuthTokenRequest.failureCallback
+      - msteams-client.microsoftTeams.AuthTokenRequest.resources
+      - msteams-client.microsoftTeams.AuthTokenRequest.successCallback
     langs:
       - typeScript
     type: interface
@@ -18,8 +18,8 @@ items:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
-    package: microsoftteams
-  - uid: microsoftteams.microsoftTeams.AuthTokenRequest.failureCallback
+    package: msteams-client
+  - uid: msteams-client.microsoftTeams.AuthTokenRequest.failureCallback
     name: failureCallback
     fullName: failureCallback
     children: []
@@ -34,7 +34,7 @@ items:
       return:
         type:
           - '(reason: string) => void'
-  - uid: microsoftteams.microsoftTeams.AuthTokenRequest.resources
+  - uid: msteams-client.microsoftTeams.AuthTokenRequest.resources
     name: resources
     fullName: resources
     children: []
@@ -49,7 +49,7 @@ items:
       return:
         type:
           - 'string[]'
-  - uid: microsoftteams.microsoftTeams.AuthTokenRequest.successCallback
+  - uid: msteams-client.microsoftTeams.AuthTokenRequest.successCallback
     name: successCallback
     fullName: successCallback
     children: []
