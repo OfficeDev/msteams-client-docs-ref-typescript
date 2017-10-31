@@ -29,7 +29,7 @@
   ],
   "JoinTOCPlugin": [
     {
-      "TopLevelTOC": "nodejs/overview/toc.yml",
+      "TopLevelTOC": "nodejs/overview/referencestoc.yml",
       "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json"
     }

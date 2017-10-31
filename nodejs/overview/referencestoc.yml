@@ -1,9 +1,8 @@
 - name: References
   uid: msteams.landingPage.references
-  landingPageType: Root
   items:
   - name: Client SDK reference
-    uid: msteams-client
+    uid: msteams.client.sdk
     landingPageType: Service
     children:
-    - 'msteams-client.*'
+    - msteams-client
