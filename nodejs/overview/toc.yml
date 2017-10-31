@@ -1,0 +1,10 @@
+### YamlMime:ManagedReference
+- name: References
+  uid: msteams.landingPage.references
+  landingPageType: Root
+  items:
+  - name: Client SDK reference
+    uid: msteams-client
+    landingPageType: Service
+    children:
+    - 'msteams-client.*'

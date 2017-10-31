@@ -3,7 +3,8 @@
     {
       "customized_tasks": {
         "docset_prebuild": [
-          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
         ]
       },
       "docset_name": "msteams-client-docs-ref-typescript",
@@ -28,9 +29,13 @@
   ],
   "JoinTOCPlugin": [
     {
-      "TopLevelTOC": "nodejs/docs-ref-autogen/toc.yml",
+      "TopLevelTOC": "nodejs/overview/toc.yml",
+      "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json"
     }
+  ],
+  "DiffFolder": [
+    "nodejs"
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],
