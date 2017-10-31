@@ -23,11 +23,11 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 870
+      startLine: 878
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
-        branch: master
+        branch: prakash-docHide
     package: msteams-client
   - uid: msteams-client.microsoftTeams.Context.channelId
     name: channelId

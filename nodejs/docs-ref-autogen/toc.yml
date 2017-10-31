@@ -19,12 +19,8 @@
       name: MessageResponse
     - uid: msteams-client.microsoftTeams.RemoveEvent
       name: RemoveEvent
-    - uid: msteams-client.microsoftTeams.RemoveEventImpl
-      name: RemoveEventImpl
     - uid: msteams-client.microsoftTeams.SaveEvent
       name: SaveEvent
-    - uid: msteams-client.microsoftTeams.SaveEventImpl
-      name: SaveEventImpl
     - uid: msteams-client.microsoftTeams.Settings
       name: Settings
     - uid: msteams-client.microsoftTeams.TabInformation

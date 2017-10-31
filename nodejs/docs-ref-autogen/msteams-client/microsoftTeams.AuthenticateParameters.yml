@@ -15,11 +15,11 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 732
+      startLine: 740
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
-        branch: master
+        branch: prakash-docHide
     package: msteams-client
   - uid: msteams-client.microsoftTeams.AuthenticateParameters.failureCallback
     name: failureCallback
