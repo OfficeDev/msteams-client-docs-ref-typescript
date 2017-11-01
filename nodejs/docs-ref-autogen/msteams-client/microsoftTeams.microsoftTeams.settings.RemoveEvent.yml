@@ -20,6 +20,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams.settings
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent.notifyFailure
     name: notifyFailure
@@ -40,6 +41,7 @@ items:
             Specifies a reason for the failure. If provided, this string is
             displayed to the user; otherwise a generic error is displayed.
           optional: true
+    module: microsoftTeams.settings
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent.notifySuccess
     name: notifySuccess
@@ -53,3 +55,4 @@ items:
     syntax:
       content: function notifySuccess()
       parameters: []
+    module: microsoftTeams.settings

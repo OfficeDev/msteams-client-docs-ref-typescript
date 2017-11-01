@@ -29,6 +29,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.channelId
     name: channelId
     fullName: channelId
@@ -42,6 +43,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.channelIsFavorite
     name: channelIsFavorite
     fullName: channelIsFavorite
@@ -55,6 +57,7 @@ items:
       return:
         type:
           - boolean
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.channelName
     name: channelName
     fullName: channelName
@@ -68,6 +71,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.entityId
     name: entityId
     fullName: entityId
@@ -81,6 +85,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.groupId
     name: groupId
     fullName: groupId
@@ -94,6 +99,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.internalTabInstanceId
     name: internalTabInstanceId
     fullName: internalTabInstanceId
@@ -107,6 +113,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.lastViewUnixEpochTime
     name: lastViewUnixEpochTime
     fullName: lastViewUnixEpochTime
@@ -120,6 +127,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.tabName
     name: tabName
     fullName: tabName
@@ -133,6 +141,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.teamId
     name: teamId
     fullName: teamId
@@ -146,6 +155,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.teamIsFavorite
     name: teamIsFavorite
     fullName: teamIsFavorite
@@ -159,6 +169,7 @@ items:
       return:
         type:
           - boolean
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.teamName
     name: teamName
     fullName: teamName
@@ -172,6 +183,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.url
     name: url
     fullName: url
@@ -185,6 +197,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstance.websiteUrl
     name: websiteUrl
     fullName: websiteUrl
@@ -198,3 +211,4 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams

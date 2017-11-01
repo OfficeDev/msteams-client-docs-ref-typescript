@@ -21,6 +21,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TeamType.Standard
     name: Standard
     children: []
@@ -29,6 +30,7 @@ items:
     summary: ''
     type: field
     numericValue: 0
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TeamType.Edu
     name: Edu
     children: []
@@ -37,6 +39,7 @@ items:
     summary: ''
     type: field
     numericValue: 1
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TeamType.Class
     name: Class
     children: []
@@ -45,6 +48,7 @@ items:
     summary: ''
     type: field
     numericValue: 2
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TeamType.Plc
     name: Plc
     children: []
@@ -53,6 +57,7 @@ items:
     summary: ''
     type: field
     numericValue: 3
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TeamType.Staff
     name: Staff
     children: []
@@ -61,3 +66,4 @@ items:
     summary: ''
     type: field
     numericValue: 4
+    module: microsoftTeams

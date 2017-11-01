@@ -22,6 +22,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams.settings
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEventImpl.notified
     name: notified
@@ -36,6 +37,7 @@ items:
       return:
         type:
           - boolean
+    module: microsoftTeams.settings
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEventImpl.notifyFailure
     name: notifyFailure
@@ -52,6 +54,7 @@ items:
             - string
           description: ''
           optional: true
+    module: microsoftTeams.settings
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEventImpl.notifySuccess
     name: notifySuccess
@@ -63,3 +66,4 @@ items:
     syntax:
       content: function notifySuccess()
       parameters: []
+    module: microsoftTeams.settings

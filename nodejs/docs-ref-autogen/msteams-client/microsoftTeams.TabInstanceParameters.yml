@@ -18,6 +18,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstanceParameters.favoriteChannelsOnly
     name: favoriteChannelsOnly
     fullName: favoriteChannelsOnly
@@ -31,6 +32,7 @@ items:
       return:
         type:
           - boolean
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.TabInstanceParameters.favoriteTeamsOnly
     name: favoriteTeamsOnly
     fullName: favoriteTeamsOnly
@@ -44,3 +46,4 @@ items:
       return:
         type:
           - boolean
+    module: microsoftTeams

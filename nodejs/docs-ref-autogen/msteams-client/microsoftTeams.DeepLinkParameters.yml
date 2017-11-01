@@ -19,6 +19,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.DeepLinkParameters.subEntityId
     name: subEntityId
     fullName: subEntityId
@@ -37,6 +38,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.DeepLinkParameters.subEntityLabel
     name: subEntityLabel
     fullName: subEntityLabel
@@ -52,6 +54,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.DeepLinkParameters.subEntityWebUrl
     name: subEntityWebUrl
     fullName: subEntityWebUrl
@@ -69,3 +72,4 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams

@@ -25,6 +25,8 @@ items:
       - msteams-client.microsoftTeams.TabInstanceParameters
       - msteams-client.MessageEvent
       - msteams-client.microsoftTeams.microsoftTeams.authentication.Global
+      - msteams-client.microsoftTeams.microsoftTeams.settings.Global
+      - msteams-client.microsoftTeams.Global
     type: package
     langs:
       - typeScript
@@ -68,4 +70,8 @@ references:
   - uid: msteams-client.MessageEvent
     name: MessageEvent
   - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.Global
+    name: Global
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Global
+    name: Global
+  - uid: msteams-client.microsoftTeams.Global
     name: Global

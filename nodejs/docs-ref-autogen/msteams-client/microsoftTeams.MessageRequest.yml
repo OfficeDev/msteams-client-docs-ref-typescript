@@ -19,6 +19,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.MessageRequest.args
     name: args
     fullName: args
@@ -32,6 +33,7 @@ items:
       return:
         type:
           - 'any[]'
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.MessageRequest.func
     name: func
     fullName: func
@@ -45,6 +47,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams
   - uid: msteams-client.microsoftTeams.MessageRequest.id
     name: id
     fullName: id
@@ -58,3 +61,4 @@ items:
       return:
         type:
           - number
+    module: microsoftTeams

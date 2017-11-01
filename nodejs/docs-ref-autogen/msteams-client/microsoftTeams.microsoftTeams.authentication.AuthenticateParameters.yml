@@ -27,6 +27,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.failureCallback
     name: failureCallback
@@ -43,6 +44,7 @@ items:
       return:
         type:
           - '(reason?: string) => void'
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.height
     name: height
@@ -59,6 +61,7 @@ items:
       return:
         type:
           - number
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.successCallback
     name: successCallback
@@ -75,6 +78,7 @@ items:
       return:
         type:
           - '(result?: string) => void'
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.url
     name: url
@@ -89,6 +93,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.width
     name: width
@@ -105,3 +110,4 @@ items:
       return:
         type:
           - number
+    module: microsoftTeams.authentication

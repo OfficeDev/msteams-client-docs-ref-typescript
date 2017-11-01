@@ -44,6 +44,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.amr
     name: amr
@@ -58,6 +59,7 @@ items:
       return:
         type:
           - 'string[]'
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.aud
     name: aud
@@ -76,6 +78,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.exp
     name: exp
@@ -100,6 +103,7 @@ items:
       return:
         type:
           - number
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.family_name
     name: family_name
@@ -116,6 +120,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.given_name
     name: given_name
@@ -132,6 +137,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.iat
     name: iat
@@ -148,6 +154,7 @@ items:
       return:
         type:
           - number
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.iss
     name: iss
@@ -170,6 +177,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.nbf
     name: nbf
@@ -184,6 +192,7 @@ items:
       return:
         type:
           - number
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.oid
     name: oid
@@ -202,6 +211,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.sub
     name: sub
@@ -226,6 +236,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.tid
     name: tid
@@ -247,6 +258,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.unique_name
     name: unique_name
@@ -266,6 +278,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.upn
     name: upn
@@ -280,6 +293,7 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile.ver
     name: ver
@@ -294,3 +308,4 @@ items:
       return:
         type:
           - string
+    module: microsoftTeams.authentication

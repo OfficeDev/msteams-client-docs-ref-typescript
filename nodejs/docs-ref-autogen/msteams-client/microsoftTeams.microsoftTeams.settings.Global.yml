@@ -1,0 +1,151 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Global
+    package: msteams-client
+    name: Global
+    module: microsoftTeams.settings
+    children:
+      - msteams-client.microsoftTeams.microsoftTeams.settings.getSettings
+      - msteams-client.microsoftTeams.microsoftTeams.settings.handleRemove
+      - msteams-client.microsoftTeams.microsoftTeams.settings.handleSave
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.registerOnRemoveHandler
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.registerOnSaveHandler
+      - msteams-client.microsoftTeams.microsoftTeams.settings.setSettings
+      - msteams-client.microsoftTeams.microsoftTeams.settings.setValidityState
+    type: package
+    langs:
+      - typeScript
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.getSettings
+    name: getSettings
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Gets the settings for the current instance.
+    syntax:
+      content: 'function getSettings(callback: (settings: Settings) => void)'
+      parameters:
+        - id: callback
+          type:
+            - '(settings: Settings) => void'
+          description: |
+            The callback to invoke when the <xref:Settings> object is retrieved.
+    module: microsoftTeams.settings
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.handleRemove
+    name: handleRemove
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function handleRemove()
+      parameters: []
+    module: microsoftTeams.settings
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.handleSave
+    name: handleSave
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function handleSave()
+      parameters: []
+    module: microsoftTeams.settings
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.registerOnRemoveHandler
+    name: registerOnRemoveHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for user attempts to remove content. This handler
+      should be used
+
+      to remove the underlying resource powering the content.
+
+      The object passed to the handler must be used to indicate whether to
+      proceed with the removal.
+
+      Only one handler may be registered at a time. Subsequent registrations
+      will override the first.
+    syntax:
+      content: 'function registerOnRemoveHandler(handler: (evt: RemoveEvent) => void)'
+      parameters:
+        - id: handler
+          type:
+            - '(evt: RemoveEvent) => void'
+          description: |
+            The handler to invoke when the user selects the remove button.
+    module: microsoftTeams.settings
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.registerOnSaveHandler
+    name: registerOnSaveHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for when the user attempts to save the settings. This
+      handler should be used
+
+      to create or update the underlying resource powering the content.
+
+      The object passed to the handler must be used to notify whether to proceed
+      with the save.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerOnSaveHandler(handler: (evt: SaveEvent) => void)'
+      parameters:
+        - id: handler
+          type:
+            - '(evt: SaveEvent) => void'
+          description: |
+            The handler to invoke when the user selects the save button.
+    module: microsoftTeams.settings
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.setSettings
+    name: setSettings
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Sets the settings for the current instance.
+
+      This is an asynchronous operation; calls to getSettings are not guaranteed
+      to reflect the changed state.
+    syntax:
+      content: 'function setSettings(settings: Settings)'
+      parameters:
+        - id: settings
+          type:
+            - '@msteams-client.microsoftTeams.microsoftTeams.settings.Settings'
+          description: |
+            The desired settings for this instance.
+    module: microsoftTeams.settings
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.setValidityState
+    name: setValidityState
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Sets the validity state for the settings.
+
+      The initial value is false, so the user cannot save the settings until
+      this is called with true.
+    syntax:
+      content: 'function setValidityState(validityState: boolean)'
+      parameters:
+        - id: validityState
+          type:
+            - boolean
+          description: |
+            Indicates whether the save or remove button is enabled for the user.
+    module: microsoftTeams.settings

@@ -23,6 +23,7 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthTokenRequest.failureCallback
     name: failureCallback
@@ -39,6 +40,7 @@ items:
       return:
         type:
           - '(reason: string) => void'
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthTokenRequest.resources
     name: resources
@@ -55,6 +57,7 @@ items:
       return:
         type:
           - 'string[]'
+    module: microsoftTeams.authentication
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthTokenRequest.successCallback
     name: successCallback
@@ -71,3 +74,4 @@ items:
       return:
         type:
           - '(token: string) => void'
+    module: microsoftTeams.authentication
