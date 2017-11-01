@@ -1,0 +1,10 @@
+- name: API Reference
+  uid: msteams.js.sdk.landingpage.reference
+  landingPageType: Root
+  expanded: true
+  items:
+    - name: Client SDK
+      uid: msteams.js.sdk.landingpage.server
+      topicHref: ~/overview/client-sdk-reference.md
+      children:
+        - msteams-client
