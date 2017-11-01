@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
+    name: SaveEvent
+    fullName: SaveEvent
+    children:
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifyFailure
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifySuccess
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 408
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: prakash-docHide
+    package: msteams-client
+    module: microsoftTeams.settings
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifyFailure
+    name: notifyFailure
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Indicates that creation of the underlying resource failed and that the
+      settings cannot be saved.
+    syntax:
+      content: 'function notifyFailure(reason?: string)'
+      parameters:
+        - id: reason
+          type:
+            - string
+          description: >
+            Specifies a reason for the failure. If provided, this string is
+            displayed to the user; otherwise a generic error is displayed.
+          optional: true
+    module: microsoftTeams.settings
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifySuccess
+    name: notifySuccess
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Indicates that the underlying resource has been created and the settings
+      can be saved.
+    syntax:
+      content: function notifySuccess()
+      parameters: []
+    module: microsoftTeams.settings

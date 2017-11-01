@@ -1,0 +1,214 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.TabInstance
+    name: TabInstance
+    fullName: TabInstance
+    children:
+      - msteams-client.microsoftTeams.TabInstance.channelId
+      - msteams-client.microsoftTeams.TabInstance.channelIsFavorite
+      - msteams-client.microsoftTeams.TabInstance.channelName
+      - msteams-client.microsoftTeams.TabInstance.entityId
+      - msteams-client.microsoftTeams.TabInstance.groupId
+      - msteams-client.microsoftTeams.TabInstance.internalTabInstanceId
+      - msteams-client.microsoftTeams.TabInstance.lastViewUnixEpochTime
+      - msteams-client.microsoftTeams.TabInstance.tabName
+      - msteams-client.microsoftTeams.TabInstance.teamId
+      - msteams-client.microsoftTeams.TabInstance.teamIsFavorite
+      - msteams-client.microsoftTeams.TabInstance.teamName
+      - msteams-client.microsoftTeams.TabInstance.url
+      - msteams-client.microsoftTeams.TabInstance.websiteUrl
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 56
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: prakash-docHide
+    package: msteams-client
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.channelId
+    name: channelId
+    fullName: channelId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string channelId
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.channelIsFavorite
+    name: channelIsFavorite
+    fullName: channelIsFavorite
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: boolean channelIsFavorite
+      return:
+        type:
+          - boolean
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.channelName
+    name: channelName
+    fullName: channelName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string channelName
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.entityId
+    name: entityId
+    fullName: entityId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string entityId
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.groupId
+    name: groupId
+    fullName: groupId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string groupId
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.internalTabInstanceId
+    name: internalTabInstanceId
+    fullName: internalTabInstanceId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string internalTabInstanceId
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.lastViewUnixEpochTime
+    name: lastViewUnixEpochTime
+    fullName: lastViewUnixEpochTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string lastViewUnixEpochTime
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.tabName
+    name: tabName
+    fullName: tabName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string tabName
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.teamId
+    name: teamId
+    fullName: teamId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string teamId
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.teamIsFavorite
+    name: teamIsFavorite
+    fullName: teamIsFavorite
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: boolean teamIsFavorite
+      return:
+        type:
+          - boolean
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.teamName
+    name: teamName
+    fullName: teamName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string teamName
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.url
+    name: url
+    fullName: url
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string url
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstance.websiteUrl
+    name: websiteUrl
+    fullName: websiteUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string websiteUrl
+      return:
+        type:
+          - string
+    module: microsoftTeams

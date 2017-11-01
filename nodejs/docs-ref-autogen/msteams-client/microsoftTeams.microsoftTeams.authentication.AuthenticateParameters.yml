@@ -1,0 +1,113 @@
+### YamlMime:UniversalReference
+items:
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+    name: AuthenticateParameters
+    fullName: AuthenticateParameters
+    children:
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.failureCallback
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.height
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.successCallback
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.url
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.width
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 740
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: prakash-docHide
+    package: msteams-client
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.failureCallback
+    name: failureCallback
+    fullName: failureCallback
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A function that is called if the authentication fails, with the reason for
+      the failure returned from the authentication pop-up.
+    syntax:
+      content: '(reason?: string) => void failureCallback'
+      return:
+        type:
+          - '(reason?: string) => void'
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.height
+    name: height
+    fullName: height
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The preferred height for the pop-up. This value can be ignored if outside
+      the acceptable bounds.
+    syntax:
+      content: number height
+      return:
+        type:
+          - number
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.successCallback
+    name: successCallback
+    fullName: successCallback
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      A function that is called if the authentication succeeds, with the result
+      returned from the authentication pop-up.
+    syntax:
+      content: '(result?: string) => void successCallback'
+      return:
+        type:
+          - '(result?: string) => void'
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.url
+    name: url
+    fullName: url
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The URL for the authentication pop-up.
+    syntax:
+      content: string url
+      return:
+        type:
+          - string
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.width
+    name: width
+    fullName: width
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The preferred width for the pop-up. This value can be ignored if outside
+      the acceptable bounds.
+    syntax:
+      content: number width
+      return:
+        type:
+          - number
+    module: microsoftTeams.authentication
