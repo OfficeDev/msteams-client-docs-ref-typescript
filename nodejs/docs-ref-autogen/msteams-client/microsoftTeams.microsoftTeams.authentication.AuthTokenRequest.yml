@@ -17,7 +17,7 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 759
+      startLine: 767
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
