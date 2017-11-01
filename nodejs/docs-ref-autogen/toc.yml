@@ -68,15 +68,8 @@
         - uid: msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
           name: RemoveEvent
           items: []
-        - uid: >-
-            msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEventImpl
-          name: RemoveEventImpl
-          items: []
         - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
           name: SaveEvent
-          items: []
-        - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl
-          name: SaveEventImpl
           items: []
         - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings
           name: Settings
