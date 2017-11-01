@@ -15,7 +15,7 @@ items:
       path: MicrosoftTeams.ts
       startLine: 946
       remote:
-        path: 0/src\MicrosoftTeams.ts
+        path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
