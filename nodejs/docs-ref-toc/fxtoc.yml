@@ -5,6 +5,6 @@
   items:
     - name: Client SDK
       uid: msteams.js.sdk.landingpage.server
-      topicHref: ~/overview/client-sdk-reference.md
+      topicHref: ~/docs-ref-autogen/overview/msteams/client-sdk.md
       children:
         - msteams-client
