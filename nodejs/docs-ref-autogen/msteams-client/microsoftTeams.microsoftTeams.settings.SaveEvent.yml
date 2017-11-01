@@ -1,11 +1,13 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: msteams-client.microsoftTeams.SaveEvent
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
     name: SaveEvent
     fullName: SaveEvent
     children:
-      - msteams-client.microsoftTeams.SaveEvent.notifyFailure
-      - msteams-client.microsoftTeams.SaveEvent.notifySuccess
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifyFailure
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifySuccess
     langs:
       - typeScript
     type: interface
@@ -16,9 +18,10 @@ items:
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
-        branch: prakash-docHide
+        branch: master
     package: msteams-client
-  - uid: msteams-client.microsoftTeams.SaveEvent.notifyFailure
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifyFailure
     name: notifyFailure
     children: []
     type: method
@@ -37,7 +40,8 @@ items:
             Specifies a reason for the failure. If provided, this string is
             displayed to the user; otherwise a generic error is displayed.
           optional: true
-  - uid: msteams-client.microsoftTeams.SaveEvent.notifySuccess
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifySuccess
     name: notifySuccess
     children: []
     type: method

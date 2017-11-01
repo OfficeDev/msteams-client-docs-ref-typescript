@@ -1,14 +1,17 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: msteams-client.microsoftTeams.Settings
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings
     name: Settings
     fullName: Settings
     children:
-      - msteams-client.microsoftTeams.Settings.contentUrl
-      - msteams-client.microsoftTeams.Settings.entityId
-      - msteams-client.microsoftTeams.Settings.removeUrl
-      - msteams-client.microsoftTeams.Settings.suggestedDisplayName
-      - msteams-client.microsoftTeams.Settings.websiteUrl
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.Settings.contentUrl
+      - msteams-client.microsoftTeams.microsoftTeams.settings.Settings.entityId
+      - msteams-client.microsoftTeams.microsoftTeams.settings.Settings.removeUrl
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.Settings.suggestedDisplayName
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.Settings.websiteUrl
     langs:
       - typeScript
     type: interface
@@ -19,9 +22,9 @@ items:
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
-        branch: prakash-docHide
+        branch: master
     package: msteams-client
-  - uid: msteams-client.microsoftTeams.Settings.contentUrl
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings.contentUrl
     name: contentUrl
     fullName: contentUrl
     children: []
@@ -34,7 +37,7 @@ items:
       return:
         type:
           - string
-  - uid: msteams-client.microsoftTeams.Settings.entityId
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings.entityId
     name: entityId
     fullName: entityId
     children: []
@@ -49,7 +52,7 @@ items:
       return:
         type:
           - string
-  - uid: msteams-client.microsoftTeams.Settings.removeUrl
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings.removeUrl
     name: removeUrl
     fullName: removeUrl
     children: []
@@ -62,7 +65,8 @@ items:
       return:
         type:
           - string
-  - uid: msteams-client.microsoftTeams.Settings.suggestedDisplayName
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.Settings.suggestedDisplayName
     name: suggestedDisplayName
     fullName: suggestedDisplayName
     children: []
@@ -79,7 +83,7 @@ items:
       return:
         type:
           - string
-  - uid: msteams-client.microsoftTeams.Settings.websiteUrl
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings.websiteUrl
     name: websiteUrl
     fullName: websiteUrl
     children: []

@@ -1,37 +1,62 @@
 - uid: msteams-client
   name: msteams-client
   items:
-    - uid: msteams-client.microsoftTeams.AuthenticateParameters
+    - uid: >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
       name: AuthenticateParameters
-    - uid: msteams-client.microsoftTeams.AuthTokenRequest
+      items: []
+    - uid: >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthTokenRequest
       name: AuthTokenRequest
+      items: []
     - uid: msteams-client.microsoftTeams.Context
       name: Context
+      items: []
     - uid: msteams-client.microsoftTeams.DeepLinkParameters
       name: DeepLinkParameters
-    - uid: msteams-client.microsoftTeams.Global
+      items: []
+    - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.Global
       name: Global
+      items: []
     - uid: msteams-client.MessageEvent
       name: MessageEvent
+      items: []
     - uid: msteams-client.microsoftTeams.MessageRequest
       name: MessageRequest
+      items: []
     - uid: msteams-client.microsoftTeams.MessageResponse
       name: MessageResponse
-    - uid: msteams-client.microsoftTeams.RemoveEvent
+      items: []
+    - uid: msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
       name: RemoveEvent
-    - uid: msteams-client.microsoftTeams.SaveEvent
+      items: []
+    - uid: msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEventImpl
+      name: RemoveEventImpl
+      items: []
+    - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
       name: SaveEvent
-    - uid: msteams-client.microsoftTeams.Settings
+      items: []
+    - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl
+      name: SaveEventImpl
+      items: []
+    - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings
       name: Settings
+      items: []
     - uid: msteams-client.microsoftTeams.TabInformation
       name: TabInformation
+      items: []
     - uid: msteams-client.microsoftTeams.TabInstance
       name: TabInstance
+      items: []
     - uid: msteams-client.microsoftTeams.TabInstanceParameters
       name: TabInstanceParameters
+      items: []
     - uid: msteams-client.microsoftTeams.TeamType
       name: TeamType
-    - uid: msteams-client.microsoftTeams.UserProfile
+      items: []
+    - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile
       name: UserProfile
-    - uid: msteams-client.microsoftTeams.UserRequest
+      items: []
+    - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.UserRequest
       name: UserRequest
+      items: []

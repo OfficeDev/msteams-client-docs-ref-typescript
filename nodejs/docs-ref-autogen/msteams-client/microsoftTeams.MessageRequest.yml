@@ -17,7 +17,7 @@ items:
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
-        branch: prakash-docHide
+        branch: master
     package: msteams-client
   - uid: msteams-client.microsoftTeams.MessageRequest.args
     name: args

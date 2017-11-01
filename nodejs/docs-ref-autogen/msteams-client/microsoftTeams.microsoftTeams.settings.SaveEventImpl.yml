@@ -1,0 +1,65 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl
+    name: SaveEventImpl
+    fullName: SaveEventImpl
+    children:
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl.notified
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl.notifyFailure
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl.notifySuccess
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 434
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: master
+    package: msteams-client
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl.notified
+    name: notified
+    fullName: notified
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: boolean notified
+      return:
+        type:
+          - boolean
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl.notifyFailure
+    name: notifyFailure
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function notifyFailure(reason?: string)'
+      parameters:
+        - id: reason
+          type:
+            - string
+          description: ''
+          optional: true
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl.notifySuccess
+    name: notifySuccess
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function notifySuccess()
+      parameters: []

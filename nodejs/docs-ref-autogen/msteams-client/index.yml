@@ -4,13 +4,17 @@ items:
     name: msteams-client
     summary: ''
     children:
-      - msteams-client.microsoftTeams.AuthTokenRequest
-      - msteams-client.microsoftTeams.AuthenticateParameters
-      - msteams-client.microsoftTeams.UserProfile
-      - msteams-client.microsoftTeams.UserRequest
-      - msteams-client.microsoftTeams.RemoveEvent
-      - msteams-client.microsoftTeams.SaveEvent
-      - msteams-client.microsoftTeams.Settings
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthTokenRequest
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+      - msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile
+      - msteams-client.microsoftTeams.microsoftTeams.authentication.UserRequest
+      - msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEventImpl
+      - msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl
+      - msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
+      - msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
+      - msteams-client.microsoftTeams.microsoftTeams.settings.Settings
       - msteams-client.microsoftTeams.TeamType
       - msteams-client.microsoftTeams.Context
       - msteams-client.microsoftTeams.DeepLinkParameters
@@ -20,24 +24,30 @@ items:
       - msteams-client.microsoftTeams.TabInstance
       - msteams-client.microsoftTeams.TabInstanceParameters
       - msteams-client.MessageEvent
-      - msteams-client.microsoftTeams.Global
+      - msteams-client.microsoftTeams.microsoftTeams.authentication.Global
     type: package
     langs:
       - typeScript
 references:
-  - uid: msteams-client.microsoftTeams.AuthTokenRequest
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthTokenRequest
     name: AuthTokenRequest
-  - uid: msteams-client.microsoftTeams.AuthenticateParameters
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
     name: AuthenticateParameters
-  - uid: msteams-client.microsoftTeams.UserProfile
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile
     name: UserProfile
-  - uid: msteams-client.microsoftTeams.UserRequest
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.UserRequest
     name: UserRequest
-  - uid: msteams-client.microsoftTeams.RemoveEvent
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEventImpl
+    name: RemoveEventImpl
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEventImpl
+    name: SaveEventImpl
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
     name: RemoveEvent
-  - uid: msteams-client.microsoftTeams.SaveEvent
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
     name: SaveEvent
-  - uid: msteams-client.microsoftTeams.Settings
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings
     name: Settings
   - uid: msteams-client.microsoftTeams.TeamType
     name: TeamType
@@ -57,5 +67,5 @@ references:
     name: TabInstanceParameters
   - uid: msteams-client.MessageEvent
     name: MessageEvent
-  - uid: msteams-client.microsoftTeams.Global
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.Global
     name: Global

@@ -1,11 +1,13 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: msteams-client.microsoftTeams.RemoveEvent
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
     name: RemoveEvent
     fullName: RemoveEvent
     children:
-      - msteams-client.microsoftTeams.RemoveEvent.notifyFailure
-      - msteams-client.microsoftTeams.RemoveEvent.notifySuccess
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent.notifyFailure
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent.notifySuccess
     langs:
       - typeScript
     type: interface
@@ -16,9 +18,10 @@ items:
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
-        branch: prakash-docHide
+        branch: master
     package: msteams-client
-  - uid: msteams-client.microsoftTeams.RemoveEvent.notifyFailure
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent.notifyFailure
     name: notifyFailure
     children: []
     type: method
@@ -37,7 +40,8 @@ items:
             Specifies a reason for the failure. If provided, this string is
             displayed to the user; otherwise a generic error is displayed.
           optional: true
-  - uid: msteams-client.microsoftTeams.RemoveEvent.notifySuccess
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent.notifySuccess
     name: notifySuccess
     children: []
     type: method

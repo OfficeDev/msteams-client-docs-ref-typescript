@@ -1,27 +1,34 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: msteams-client.microsoftTeams.AuthenticateParameters
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
     name: AuthenticateParameters
     fullName: AuthenticateParameters
     children:
-      - msteams-client.microsoftTeams.AuthenticateParameters.failureCallback
-      - msteams-client.microsoftTeams.AuthenticateParameters.height
-      - msteams-client.microsoftTeams.AuthenticateParameters.successCallback
-      - msteams-client.microsoftTeams.AuthenticateParameters.url
-      - msteams-client.microsoftTeams.AuthenticateParameters.width
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.failureCallback
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.height
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.successCallback
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.url
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.width
     langs:
       - typeScript
     type: interface
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 740
+      startLine: 732
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
-        branch: prakash-docHide
+        branch: master
     package: msteams-client
-  - uid: msteams-client.microsoftTeams.AuthenticateParameters.failureCallback
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.failureCallback
     name: failureCallback
     fullName: failureCallback
     children: []
@@ -36,7 +43,8 @@ items:
       return:
         type:
           - '(reason?: string) => void'
-  - uid: msteams-client.microsoftTeams.AuthenticateParameters.height
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.height
     name: height
     fullName: height
     children: []
@@ -51,7 +59,8 @@ items:
       return:
         type:
           - number
-  - uid: msteams-client.microsoftTeams.AuthenticateParameters.successCallback
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.successCallback
     name: successCallback
     fullName: successCallback
     children: []
@@ -66,7 +75,8 @@ items:
       return:
         type:
           - '(result?: string) => void'
-  - uid: msteams-client.microsoftTeams.AuthenticateParameters.url
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.url
     name: url
     fullName: url
     children: []
@@ -79,7 +89,8 @@ items:
       return:
         type:
           - string
-  - uid: msteams-client.microsoftTeams.AuthenticateParameters.width
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters.width
     name: width
     fullName: width
     children: []
