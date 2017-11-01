@@ -14,11 +14,11 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 784
+      startLine: 776
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
-        branch: prakash-docHide
+        branch: master
     package: msteams-client
     module: microsoftTeams.authentication
   - uid: >-
