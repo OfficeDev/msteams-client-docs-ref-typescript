@@ -17,6 +17,7 @@
   - name: Libraries
     items:
     - name: Client SDK reference
+      uid: msteams.client.sdk.overview
       href: /microsoftteams/platform/reference/library/client-sdk-javascript
       children:
       - msteams-client
