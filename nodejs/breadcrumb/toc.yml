@@ -1,0 +1,7 @@
+- name: Microsoft Teams
+  tocHref: /
+  topicHref: /microsoftteams/
+  items:
+  - name: Microsoft Teams Platform
+    tocHref: /javascript/api/
+    topicHref: /microsoftteams/platform/index

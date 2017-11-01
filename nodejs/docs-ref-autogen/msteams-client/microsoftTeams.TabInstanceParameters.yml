@@ -1,0 +1,49 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.TabInstanceParameters
+    name: TabInstanceParameters
+    fullName: TabInstanceParameters
+    children:
+      - msteams-client.microsoftTeams.TabInstanceParameters.favoriteChannelsOnly
+      - msteams-client.microsoftTeams.TabInstanceParameters.favoriteTeamsOnly
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 80
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: master
+    package: msteams-client
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstanceParameters.favoriteChannelsOnly
+    name: favoriteChannelsOnly
+    fullName: favoriteChannelsOnly
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Flag allowing to select favorite channels only
+    syntax:
+      content: boolean favoriteChannelsOnly
+      return:
+        type:
+          - boolean
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.TabInstanceParameters.favoriteTeamsOnly
+    name: favoriteTeamsOnly
+    fullName: favoriteTeamsOnly
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Flag allowing to select favorite teams only
+    syntax:
+      content: boolean favoriteTeamsOnly
+      return:
+        type:
+          - boolean
+    module: microsoftTeams

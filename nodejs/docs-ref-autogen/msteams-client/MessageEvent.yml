@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.MessageEvent
+    name: MessageEvent
+    fullName: MessageEvent
+    children:
+      - msteams-client.MessageEvent.originalEvent
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 2
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: master
+    package: msteams-client
+    module: Global
+  - uid: msteams-client.MessageEvent.originalEvent
+    name: originalEvent
+    fullName: originalEvent
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: MessageEvent originalEvent
+      return:
+        type:
+          - MessageEvent
+    module: Global

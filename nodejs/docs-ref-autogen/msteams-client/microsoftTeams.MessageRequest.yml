@@ -1,0 +1,64 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.MessageRequest
+    name: MessageRequest
+    fullName: MessageRequest
+    children:
+      - msteams-client.microsoftTeams.MessageRequest.args
+      - msteams-client.microsoftTeams.MessageRequest.func
+      - msteams-client.microsoftTeams.MessageRequest.id
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 41
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: master
+    package: msteams-client
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.MessageRequest.args
+    name: args
+    fullName: args
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'any[] args'
+      return:
+        type:
+          - 'any[]'
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.MessageRequest.func
+    name: func
+    fullName: func
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: string func
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.MessageRequest.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: number id
+      return:
+        type:
+          - number
+    module: microsoftTeams

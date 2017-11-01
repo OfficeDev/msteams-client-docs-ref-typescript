@@ -1,0 +1,504 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.Global
+    package: msteams-client
+    name: Global
+    module: microsoftTeams
+    children:
+      - msteams-client.microsoftTeams.createMessageRequest
+      - msteams-client.microsoftTeams.createMessageResponse
+      - msteams-client.microsoftTeams.ensureInitialized
+      - msteams-client.microsoftTeams.flushMessageQueue
+      - msteams-client.microsoftTeams.getContext
+      - msteams-client.microsoftTeams.getMruTabInstances
+      - msteams-client.microsoftTeams.getTabInstances
+      - msteams-client.microsoftTeams.getTargetMessageQueue
+      - msteams-client.microsoftTeams.getTargetOrigin
+      - msteams-client.microsoftTeams.handleChildMessage
+      - msteams-client.microsoftTeams.handleFullScreenChange
+      - msteams-client.microsoftTeams.handleParentMessage
+      - msteams-client.microsoftTeams.handleThemeChange
+      - msteams-client.microsoftTeams.initialize
+      - msteams-client.microsoftTeams.navigateCrossDomain
+      - msteams-client.microsoftTeams.navigateToTab
+      - msteams-client.microsoftTeams.processMessage
+      - msteams-client.microsoftTeams.registerFullScreenHandler
+      - msteams-client.microsoftTeams.registerOnThemeChangeHandler
+      - msteams-client.microsoftTeams.sendMessageRequest
+      - msteams-client.microsoftTeams.sendMessageResponse
+      - msteams-client.microsoftTeams.shareDeepLink
+      - msteams-client.microsoftTeams.updateRelationships
+      - msteams-client.microsoftTeams.waitForMessageQueue
+    type: package
+    langs:
+      - typeScript
+  - uid: msteams-client.microsoftTeams.createMessageRequest
+    name: createMessageRequest
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createMessageRequest(func: string, args: any[])'
+      parameters:
+        - id: func
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - '@msteams-client.microsoftTeams.MessageRequest'
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.createMessageResponse
+    name: createMessageResponse
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function createMessageResponse(id: number, args: any[])'
+      parameters:
+        - id: id
+          type:
+            - number
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - '@msteams-client.microsoftTeams.MessageResponse'
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.ensureInitialized
+    name: ensureInitialized
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function ensureInitialized(expectedFrameContexts: string[])'
+      parameters:
+        - id: expectedFrameContexts
+          type:
+            - 'string[]'
+          description: ''
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.flushMessageQueue
+    name: flushMessageQueue
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function flushMessageQueue(targetWindow: Window)'
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.getContext
+    name: getContext
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Retrieves the current context the frame is running in.
+    syntax:
+      content: 'function getContext(callback: (context: Context) => void)'
+      parameters:
+        - id: callback
+          type:
+            - '(context: Context) => void'
+          description: |
+            The callback to invoke when the <xref:Context> object is retrieved.
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.getMruTabInstances
+    name: getMruTabInstances
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Allows an app to retrieve the most recently used tabs for this user.
+    syntax:
+      content: >-
+        function getMruTabInstances(callback: (tabInfo: TabInformation) => void,
+        tabInstanceParameters?: TabInstanceParameters)
+      parameters:
+        - id: callback
+          type:
+            - '(tabInfo: TabInformation) => void'
+          description: >-
+            The callback to invoke when the <xref:TabInformation> object is
+            retrieved.
+        - id: tabInstanceParameters
+          type:
+            - '@msteams-client.microsoftTeams.TabInstanceParameters'
+          description: |
+            OPTIONAL Ignored, kept for future use
+          optional: true
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.getTabInstances
+    name: getTabInstances
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Allows an app to retrieve for this user tabs that are owned by this app.
+
+      If no TabInstanceParameters are passed, the app defaults to favorite teams
+      and favorite channels.
+    syntax:
+      content: >-
+        function getTabInstances(callback: (tabInfo: TabInformation) => void,
+        tabInstanceParameters?: TabInstanceParameters)
+      parameters:
+        - id: callback
+          type:
+            - '(tabInfo: TabInformation) => void'
+          description: >-
+            The callback to invoke when the <xref:TabInstanceParameters> object
+            is retrieved.
+        - id: tabInstanceParameters
+          type:
+            - '@msteams-client.microsoftTeams.TabInstanceParameters'
+          description: >
+            OPTIONAL Flags that specify whether to scope call to favorite teams
+            or channels.
+          optional: true
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.getTargetMessageQueue
+    name: getTargetMessageQueue
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getTargetMessageQueue(targetWindow: Window)'
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+      return:
+        type:
+          - '@msteams-client.microsoftTeams.MessageRequest[]'
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.getTargetOrigin
+    name: getTargetOrigin
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function getTargetOrigin(targetWindow: Window)'
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.handleChildMessage
+    name: handleChildMessage
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleChildMessage(evt: MessageEvent)'
+      parameters:
+        - id: evt
+          type:
+            - MessageEvent
+          description: ''
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.handleFullScreenChange
+    name: handleFullScreenChange
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleFullScreenChange(isFullScreen: boolean)'
+      parameters:
+        - id: isFullScreen
+          type:
+            - boolean
+          description: ''
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.handleParentMessage
+    name: handleParentMessage
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleParentMessage(evt: MessageEvent)'
+      parameters:
+        - id: evt
+          type:
+            - MessageEvent
+          description: ''
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.handleThemeChange
+    name: handleThemeChange
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleThemeChange(theme: string)'
+      parameters:
+        - id: theme
+          type:
+            - string
+          description: ''
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.initialize
+    name: initialize
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: |-
+      Initializes the library. This must be called before any other SDK calls
+      but after the frame is loaded successfully.
+    syntax:
+      content: function initialize()
+      parameters: []
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.navigateCrossDomain
+    name: navigateCrossDomain
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Navigates the frame to a new cross-domain URL. The domain of this URL must
+      match at least one of the
+
+      valid domains specified in the validDomains block of the manifest;
+      otherwise, an exception will be
+
+      thrown. This function needs to be used only when navigating the frame to a
+      URL in a different domain
+
+      than the current one in a way that keeps the app informed of the change
+      and allows the SDK to
+
+      continue working.
+    syntax:
+      content: 'function navigateCrossDomain(url: string)'
+      parameters:
+        - id: url
+          type:
+            - string
+          description: |
+            The URL to navigate the frame to.
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.navigateToTab
+    name: navigateToTab
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Navigates the Microsoft Teams app to the specified tab instance.
+    syntax:
+      content: 'function navigateToTab(tabInstance: TabInstance)'
+      parameters:
+        - id: tabInstance
+          type:
+            - '@msteams-client.microsoftTeams.TabInstance'
+          description: |
+            The tab instance to navigate to.
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.processMessage
+    name: processMessage
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function processMessage(evt: MessageEvent)'
+      parameters:
+        - id: evt
+          type:
+            - MessageEvent
+          description: ''
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.registerFullScreenHandler
+    name: registerFullScreenHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for changes from or to full-screen view for a tab.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: >-
+        function registerFullScreenHandler(handler: (isFullScreen: boolean) =>
+        void)
+      parameters:
+        - id: handler
+          type:
+            - '(isFullScreen: boolean) => void'
+          description: >
+            The handler to invoke when the user toggles full-screen view for a
+            tab.
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.registerOnThemeChangeHandler
+    name: registerOnThemeChangeHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for theme changes.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'
+      parameters:
+        - id: handler
+          type:
+            - '(theme: string) => void'
+          description: |
+            The handler to invoke when the user changes their theme.
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.sendMessageRequest
+    name: sendMessageRequest
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendMessageRequest(targetWindow: Window, actionName: string,
+        args?: any[])
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+        - id: actionName
+          type:
+            - string
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+          optional: true
+      return:
+        type:
+          - number
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.sendMessageResponse
+    name: sendMessageResponse
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function sendMessageResponse(targetWindow: Window, id: number, args?:
+        any[])
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+        - id: id
+          type:
+            - number
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+          optional: true
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.shareDeepLink
+    name: shareDeepLink
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Shares a deep link that a user can use to navigate back to a specific
+      state in this page.
+    syntax:
+      content: 'function shareDeepLink(deepLinkParameters: DeepLinkParameters)'
+      parameters:
+        - id: deepLinkParameters
+          type:
+            - '@msteams-client.microsoftTeams.DeepLinkParameters'
+          description: |
+            ID and label for the link and fallback URL.
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.updateRelationships
+    name: updateRelationships
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function updateRelationships(messageSource: Window, messageOrigin:
+        string)
+      parameters:
+        - id: messageSource
+          type:
+            - Window
+          description: ''
+        - id: messageOrigin
+          type:
+            - string
+          description: ''
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.waitForMessageQueue
+    name: waitForMessageQueue
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function waitForMessageQueue(targetWindow: Window, callback: () => void)'
+      parameters:
+        - id: targetWindow
+          type:
+            - Window
+          description: ''
+        - id: callback
+          type:
+            - () => void
+          description: ''
+    module: microsoftTeams
