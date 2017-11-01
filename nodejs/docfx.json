@@ -41,7 +41,7 @@
           "**/*.md"
         ],
         "src": "overview",
-        "dest": "msteams-client-docs-ref-typescript",
+        "dest": "overview",
         "exclude": []
       }
 
