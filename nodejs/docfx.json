@@ -7,6 +7,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-autogen",
+        "dest": "api",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -22,7 +23,7 @@
           "**/*.yml"
         ],
         "src": "breadcrumb",
-        "dest": "msteams-client-docs-ref-typescript/breadcrumb",
+        "dest": "api/msteams-client-docs-ref-typescript/breadcrumb",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -33,7 +34,7 @@
           "toc.yml"
         ],
         "src": "docs-ref-autogen",
-        "dest": "msteams-client-docs-ref-typescript",
+        "dest": "api/msteams-client-docs-ref-typescript",
         "exclude": []
       },
       {
@@ -41,7 +42,7 @@
           "**/*.md"
         ],
         "src": "overview",
-        "dest": "overview",
+        "dest": "api/overview",
         "exclude": []
       }
 
@@ -55,7 +56,8 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "dest": "api"
       }
     ],
     "overwrite": [],
