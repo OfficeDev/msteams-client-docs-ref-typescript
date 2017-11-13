@@ -64,13 +64,14 @@
     "globalMetadata": {
       "ms.topic": "reference",
       "author": "charlesprakash",
+      "ms.author": "o365devx",
       "manager": "billbl",
       "ms.suite": "office365",
       "ms.prod": "msteams",
       "searchScope": [
         "Teams"
       ],
-      "ms.date": "10/05/2017",
+      "ms.date": "11/13/2017",
       "titleSuffix": "Teams",
       "extendBreadcrumb": "true",
       "breadcrumb_path": "/javascript/api/msteams-client-docs-ref-typescript/breadcrumb/toc.json",
