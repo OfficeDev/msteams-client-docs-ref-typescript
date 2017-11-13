@@ -45,7 +45,6 @@
         "dest": "api/overview",
         "exclude": []
       }
-
     ],
     "resource": [
       {
@@ -63,6 +62,15 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ms.topic": "reference",
+      "manager": "billbl",
+      "ms.suite": "office365",
+      "ms.prod": "msteams",
+      "searchScope": [
+        "Teams"
+      ],
+      "ms.date": "10/05/2017",
+      "titleSuffix": "Teams",
       "extendBreadcrumb": "true",
       "breadcrumb_path": "/javascript/api/msteams-client-docs-ref-typescript/breadcrumb/toc.json",
       "toc_path": "/javascript/api/msteams-client-docs-ref-typescript/toc.json"
