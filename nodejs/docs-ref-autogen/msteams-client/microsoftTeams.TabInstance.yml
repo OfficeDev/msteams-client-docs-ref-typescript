@@ -20,10 +20,10 @@ items:
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Represents information about a tab instance
     source:
       path: MicrosoftTeams.ts
-      startLine: 56
+      startLine: 62
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
@@ -37,7 +37,9 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The Microsoft Teams ID for the channel with which the content is
+      associated.
     syntax:
       content: string channelId
       return:
@@ -51,7 +53,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Is this tab in a favorite channel?
     syntax:
       content: boolean channelIsFavorite
       return:
@@ -65,7 +67,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The name for the channel with which the content is associated.
     syntax:
       content: string channelName
       return:
@@ -79,7 +81,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The developer-defined unique ID for the entity this content points to.
     syntax:
       content: string entityId
       return:
@@ -93,7 +95,11 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: >-
+      The Office 365 group ID for the team with which the content is associated.
+
+      This field is available only when the identity permission is requested in
+      the manifest.
     syntax:
       content: string groupId
       return:
@@ -107,7 +113,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: 'Internal: do not use'
     syntax:
       content: string internalTabInstanceId
       return:
@@ -121,7 +127,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Last viewed time of this tab. null means unknown
     syntax:
       content: string lastViewUnixEpochTime
       return:
@@ -135,7 +141,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The name of the tab
     syntax:
       content: string tabName
       return:
@@ -149,7 +155,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The Microsoft Teams ID for the team with which the content is associated.
     syntax:
       content: string teamId
       return:
@@ -163,7 +169,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Is this tab in a favorite team?
     syntax:
       content: boolean teamIsFavorite
       return:
@@ -177,7 +183,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: The name for the team with which the content is associated.
     syntax:
       content: string teamName
       return:
@@ -191,7 +197,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Content URL of this tab
     syntax:
       content: string url
       return:
@@ -205,7 +211,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: ''
+    summary: Website URL of this tab
     syntax:
       content: string websiteUrl
       return:
