@@ -63,6 +63,7 @@ items:
       - typeScript
     type: property
     summary: Sets the URL for the removal configuration experience.
+    optional: true
     syntax:
       content: string removeUrl
       return:
@@ -82,6 +83,7 @@ items:
 
       In the settings for an existing instance being updated, this call has no
       effect.
+    optional: true
     syntax:
       content: string suggestedDisplayName
       return:
@@ -98,6 +100,7 @@ items:
     summary: >-
       Sets the URL to use for the external link to view the underlying resource
       in a browser.
+    optional: true
     syntax:
       content: string websiteUrl
       return:

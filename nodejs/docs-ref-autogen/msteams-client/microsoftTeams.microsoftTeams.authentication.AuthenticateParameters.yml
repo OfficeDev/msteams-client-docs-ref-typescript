@@ -21,7 +21,7 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 798
+      startLine: 804
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
@@ -39,6 +39,7 @@ items:
     summary: >-
       A function that is called if the authentication fails, with the reason for
       the failure returned from the authentication pop-up.
+    optional: true
     syntax:
       content: '(reason?: string) => void failureCallback'
       return:
@@ -56,6 +57,7 @@ items:
     summary: >-
       The preferred height for the pop-up. This value can be ignored if outside
       the acceptable bounds.
+    optional: true
     syntax:
       content: number height
       return:
@@ -73,6 +75,7 @@ items:
     summary: >-
       A function that is called if the authentication succeeds, with the result
       returned from the authentication pop-up.
+    optional: true
     syntax:
       content: '(result?: string) => void successCallback'
       return:
@@ -105,6 +108,7 @@ items:
     summary: >-
       The preferred width for the pop-up. This value can be ignored if outside
       the acceptable bounds.
+    optional: true
     syntax:
       content: number width
       return:

@@ -13,7 +13,7 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 1012
+      startLine: 1033
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
@@ -67,6 +67,7 @@ items:
       the page.
 
       This URL should lead directly to the sub-entity.
+    optional: true
     syntax:
       content: string subEntityWebUrl
       return:

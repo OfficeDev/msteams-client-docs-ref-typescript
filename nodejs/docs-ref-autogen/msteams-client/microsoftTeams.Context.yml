@@ -23,7 +23,7 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 936
+      startLine: 957
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
@@ -40,6 +40,7 @@ items:
     summary: >-
       The Microsoft Teams ID for the channel with which the content is
       associated.
+    optional: true
     syntax:
       content: string channelId
       return:
@@ -54,6 +55,7 @@ items:
       - typeScript
     type: property
     summary: The name for the channel with which the content is associated.
+    optional: true
     syntax:
       content: string channelName
       return:
@@ -86,6 +88,7 @@ items:
 
       This field is available only when the identity permission is requested in
       the manifest.
+    optional: true
     syntax:
       content: string groupId
       return:
@@ -100,6 +103,7 @@ items:
       - typeScript
     type: property
     summary: Indication whether the tab is in full-screen mode.
+    optional: true
     syntax:
       content: boolean isFullScreen
       return:
@@ -134,6 +138,7 @@ items:
 
       This field should be used to restore to a specific state within an entity,
       such as scrolling to or activating a specific piece of content.
+    optional: true
     syntax:
       content: string subEntityId
       return:
@@ -148,6 +153,7 @@ items:
       - typeScript
     type: property
     summary: The Microsoft Teams ID for the team with which the content is associated.
+    optional: true
     syntax:
       content: string teamId
       return:
@@ -162,6 +168,7 @@ items:
       - typeScript
     type: property
     summary: The name for the team with which the content is associated.
+    optional: true
     syntax:
       content: string teamName
       return:
@@ -176,6 +183,7 @@ items:
       - typeScript
     type: property
     summary: The type of the team.
+    optional: true
     syntax:
       content: TeamType teamType
       return:
@@ -190,6 +198,7 @@ items:
       - typeScript
     type: property
     summary: The current UI theme.
+    optional: true
     syntax:
       content: string theme
       return:
@@ -214,6 +223,7 @@ items:
 
       This field is available only when the identity permission is requested in
       the manifest.
+    optional: true
     syntax:
       content: string tid
       return:
@@ -238,6 +248,7 @@ items:
 
       This field is available only when the identity permission is requested in
       the manifest.
+    optional: true
     syntax:
       content: string upn
       return:

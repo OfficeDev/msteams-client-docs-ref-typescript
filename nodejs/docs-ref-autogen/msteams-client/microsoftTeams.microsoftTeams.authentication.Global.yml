@@ -8,8 +8,6 @@ items:
       - msteams-client.microsoftTeams.microsoftTeams.authentication.authenticate
       - >-
         msteams-client.microsoftTeams.microsoftTeams.authentication.closeAuthenticationWindow
-      - msteams-client.microsoftTeams.microsoftTeams.authentication.getAuthToken
-      - msteams-client.microsoftTeams.microsoftTeams.authentication.getUser
       - >-
         msteams-client.microsoftTeams.microsoftTeams.authentication.handleFailure
       - >-
@@ -57,44 +55,6 @@ items:
     syntax:
       content: function closeAuthenticationWindow()
       parameters: []
-    module: microsoftTeams.authentication
-  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.getAuthToken
-    name: getAuthToken
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: >-
-      Requests an Azure AD token to be issued on behalf of the app. The token is
-      acquired from the cache
-
-      if it is not expired. Otherwise a request is sent to Azure AD to obtain a
-      new token.
-    syntax:
-      content: 'function getAuthToken(authTokenRequest: AuthTokenRequest)'
-      parameters:
-        - id: authTokenRequest
-          type:
-            - >-
-              @msteams-client.microsoftTeams.microsoftTeams.authentication.AuthTokenRequest
-          description: |
-            A set of values that configure the token request.
-    module: microsoftTeams.authentication
-  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.getUser
-    name: getUser
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: Requests the decoded Azure AD user identity on behalf of the app.
-    syntax:
-      content: 'function getUser(userRequest: UserRequest)'
-      parameters:
-        - id: userRequest
-          type:
-            - >-
-              @msteams-client.microsoftTeams.microsoftTeams.authentication.UserRequest
-          description: ''
     module: microsoftTeams.authentication
   - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.handleFailure
     name: handleFailure
