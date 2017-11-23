@@ -16,6 +16,9 @@
         - uid: msteams-client.microsoftTeams.DeepLinkParameters
           name: DeepLinkParameters
           items: []
+        - uid: msteams-client.microsoftTeams.FilePreviewParameters
+          name: FilePreviewParameters
+          items: []
         - uid: msteams-client.microsoftTeams.Global
           name: Global
           items: []

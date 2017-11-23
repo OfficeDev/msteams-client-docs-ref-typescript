@@ -12,6 +12,7 @@ items:
       - msteams-client.microsoftTeams.TeamType
       - msteams-client.microsoftTeams.Context
       - msteams-client.microsoftTeams.DeepLinkParameters
+      - msteams-client.microsoftTeams.FilePreviewParameters
       - msteams-client.microsoftTeams.MessageRequest
       - msteams-client.microsoftTeams.MessageResponse
       - msteams-client.microsoftTeams.TabInformation
@@ -40,6 +41,8 @@ references:
     name: Context
   - uid: msteams-client.microsoftTeams.DeepLinkParameters
     name: DeepLinkParameters
+  - uid: msteams-client.microsoftTeams.FilePreviewParameters
+    name: FilePreviewParameters
   - uid: msteams-client.microsoftTeams.MessageRequest
     name: MessageRequest
   - uid: msteams-client.microsoftTeams.MessageResponse
