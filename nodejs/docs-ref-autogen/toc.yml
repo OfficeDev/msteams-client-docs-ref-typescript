@@ -16,6 +16,9 @@
         - uid: msteams-client.microsoftTeams.DeepLinkParameters
           name: DeepLinkParameters
           items: []
+        - uid: msteams-client.microsoftTeams.FilePreviewParameters
+          name: FilePreviewParameters
+          items: []
         - uid: msteams-client.microsoftTeams.Global
           name: Global
           items: []
@@ -44,20 +47,8 @@
             msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
           name: AuthenticateParameters
           items: []
-        - uid: >-
-            msteams-client.microsoftTeams.microsoftTeams.authentication.AuthTokenRequest
-          name: AuthTokenRequest
-          items: []
         - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.Global
           name: Global
-          items: []
-        - uid: >-
-            msteams-client.microsoftTeams.microsoftTeams.authentication.UserProfile
-          name: UserProfile
-          items: []
-        - uid: >-
-            msteams-client.microsoftTeams.microsoftTeams.authentication.UserRequest
-          name: UserRequest
           items: []
     - uid: msteams-client.microsoftTeams.settings
       name: microsoftTeams.settings

@@ -40,6 +40,7 @@ items:
     summary: >-
       The Microsoft Teams ID for the channel with which the content is
       associated.
+    optional: true
     syntax:
       content: string channelId
       return:
@@ -54,6 +55,7 @@ items:
       - typeScript
     type: property
     summary: Is this tab in a favorite channel?
+    optional: true
     syntax:
       content: boolean channelIsFavorite
       return:
@@ -68,6 +70,7 @@ items:
       - typeScript
     type: property
     summary: The name for the channel with which the content is associated.
+    optional: true
     syntax:
       content: string channelName
       return:
@@ -82,6 +85,7 @@ items:
       - typeScript
     type: property
     summary: The developer-defined unique ID for the entity this content points to.
+    optional: true
     syntax:
       content: string entityId
       return:
@@ -100,6 +104,7 @@ items:
 
       This field is available only when the identity permission is requested in
       the manifest.
+    optional: true
     syntax:
       content: string groupId
       return:
@@ -114,6 +119,7 @@ items:
       - typeScript
     type: property
     summary: 'Internal: do not use'
+    optional: true
     syntax:
       content: string internalTabInstanceId
       return:
@@ -128,6 +134,7 @@ items:
       - typeScript
     type: property
     summary: Last viewed time of this tab. null means unknown
+    optional: true
     syntax:
       content: string lastViewUnixEpochTime
       return:
@@ -156,6 +163,7 @@ items:
       - typeScript
     type: property
     summary: The Microsoft Teams ID for the team with which the content is associated.
+    optional: true
     syntax:
       content: string teamId
       return:
@@ -170,6 +178,7 @@ items:
       - typeScript
     type: property
     summary: Is this tab in a favorite team?
+    optional: true
     syntax:
       content: boolean teamIsFavorite
       return:
@@ -184,6 +193,7 @@ items:
       - typeScript
     type: property
     summary: The name for the team with which the content is associated.
+    optional: true
     syntax:
       content: string teamName
       return:
@@ -198,6 +208,7 @@ items:
       - typeScript
     type: property
     summary: Content URL of this tab
+    optional: true
     syntax:
       content: string url
       return:
@@ -212,6 +223,7 @@ items:
       - typeScript
     type: property
     summary: Website URL of this tab
+    optional: true
     syntax:
       content: string websiteUrl
       return:

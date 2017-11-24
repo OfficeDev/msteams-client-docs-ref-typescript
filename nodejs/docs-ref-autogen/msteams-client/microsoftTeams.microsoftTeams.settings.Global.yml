@@ -25,11 +25,11 @@ items:
       - typeScript
     summary: Gets the settings for the current instance.
     syntax:
-      content: 'function getSettings(callback: (settings: Settings) => void)'
+      content: 'function getSettings(callback: (instanceSettings: Settings) => void)'
       parameters:
         - id: callback
           type:
-            - '(settings: Settings) => void'
+            - '(instanceSettings: Settings) => void'
           description: |
             The callback to invoke when the <xref:Settings> object is retrieved.
     module: microsoftTeams.settings
@@ -121,13 +121,12 @@ items:
       This is an asynchronous operation; calls to getSettings are not guaranteed
       to reflect the changed state.
     syntax:
-      content: 'function setSettings(settings: Settings)'
+      content: 'function setSettings(instanceSettings: Settings)'
       parameters:
-        - id: settings
+        - id: instanceSettings
           type:
             - '@msteams-client.microsoftTeams.microsoftTeams.settings.Settings'
-          description: |
-            The desired settings for this instance.
+          description: ''
     module: microsoftTeams.settings
   - uid: msteams-client.microsoftTeams.microsoftTeams.settings.setValidityState
     name: setValidityState
