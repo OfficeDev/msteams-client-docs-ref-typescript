@@ -52,8 +52,14 @@ items:
       - typeScript
     summary: ''
     syntax:
-      content: function handleSave()
-      parameters: []
+      content: 'function handleSave(result?: SaveParameters)'
+      parameters:
+        - id: result
+          type:
+            - >-
+              @msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
+          description: ''
+          optional: true
     module: microsoftTeams.settings
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.settings.registerOnRemoveHandler

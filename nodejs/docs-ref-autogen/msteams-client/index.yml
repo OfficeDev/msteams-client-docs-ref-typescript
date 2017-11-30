@@ -8,6 +8,7 @@ items:
         msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
       - msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
       - msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
+      - msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
       - msteams-client.microsoftTeams.microsoftTeams.settings.Settings
       - msteams-client.microsoftTeams.TeamType
       - msteams-client.microsoftTeams.Context
@@ -33,6 +34,8 @@ references:
     name: RemoveEvent
   - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
     name: SaveEvent
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
+    name: SaveParameters
   - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings
     name: Settings
   - uid: msteams-client.microsoftTeams.TeamType

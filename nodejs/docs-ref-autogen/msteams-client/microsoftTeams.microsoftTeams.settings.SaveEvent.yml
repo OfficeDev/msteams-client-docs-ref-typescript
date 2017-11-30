@@ -8,6 +8,7 @@ items:
         msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifyFailure
       - >-
         msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.notifySuccess
+      - msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.result
     langs:
       - typeScript
     type: interface
@@ -55,4 +56,21 @@ items:
     syntax:
       content: function notifySuccess()
       parameters: []
+    module: microsoftTeams.settings
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent.result
+    name: result
+    fullName: result
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Object containing properties passed as arguments to the settings.save
+      event.
+    syntax:
+      content: SaveParameters result
+      return:
+        type:
+          - >-
+            @msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
     module: microsoftTeams.settings

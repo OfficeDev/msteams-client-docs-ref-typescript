@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
+    name: SaveParameters
+    fullName: SaveParameters
+    children:
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters.webhookUrl
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    source:
+      path: MicrosoftTeams.ts
+      startLine: 559
+      remote:
+        path: src\MicrosoftTeams.ts
+        repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
+        branch: master
+    package: msteams-client
+    module: microsoftTeams.settings
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters.webhookUrl
+    name: webhookUrl
+    fullName: webhookUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Connector's webhook Url returned as arguments to settings.save event as
+      part of user clicking on Save
+    optional: true
+    syntax:
+      content: string webhookUrl
+      return:
+        type:
+          - string
+    module: microsoftTeams.settings
