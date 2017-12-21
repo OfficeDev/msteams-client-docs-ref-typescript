@@ -13,6 +13,7 @@ items:
       - msteams-client.microsoftTeams.Context.subEntityId
       - msteams-client.microsoftTeams.Context.teamId
       - msteams-client.microsoftTeams.Context.teamName
+      - msteams-client.microsoftTeams.Context.teamSiteUrl
       - msteams-client.microsoftTeams.Context.teamType
       - msteams-client.microsoftTeams.Context.theme
       - msteams-client.microsoftTeams.Context.tid
@@ -171,6 +172,21 @@ items:
     optional: true
     syntax:
       content: string teamName
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.Context.teamSiteUrl
+    name: teamSiteUrl
+    fullName: teamSiteUrl
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The root ShatePoint folder associated with the team.
+    optional: true
+    syntax:
+      content: string teamSiteUrl
       return:
         type:
           - string
