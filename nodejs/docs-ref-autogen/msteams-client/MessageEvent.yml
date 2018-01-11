@@ -27,7 +27,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: MessageEvent originalEvent
+      content: 'originalEvent: MessageEvent'
       return:
         type:
           - MessageEvent

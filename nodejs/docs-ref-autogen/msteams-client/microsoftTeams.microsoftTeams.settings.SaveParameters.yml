@@ -32,7 +32,7 @@ items:
       part of user clicking on Save
     optional: true
     syntax:
-      content: string webhookUrl
+      content: 'webhookUrl?: string'
       return:
         type:
           - string

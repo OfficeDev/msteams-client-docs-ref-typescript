@@ -42,7 +42,7 @@ items:
       associated.
     optional: true
     syntax:
-      content: string channelId
+      content: 'channelId?: string'
       return:
         type:
           - string
@@ -57,7 +57,7 @@ items:
     summary: Is this tab in a favorite channel?
     optional: true
     syntax:
-      content: boolean channelIsFavorite
+      content: 'channelIsFavorite?: boolean'
       return:
         type:
           - boolean
@@ -72,7 +72,7 @@ items:
     summary: The name for the channel with which the content is associated.
     optional: true
     syntax:
-      content: string channelName
+      content: 'channelName?: string'
       return:
         type:
           - string
@@ -87,7 +87,7 @@ items:
     summary: The developer-defined unique ID for the entity this content points to.
     optional: true
     syntax:
-      content: string entityId
+      content: 'entityId?: string'
       return:
         type:
           - string
@@ -106,7 +106,7 @@ items:
       the manifest.
     optional: true
     syntax:
-      content: string groupId
+      content: 'groupId?: string'
       return:
         type:
           - string
@@ -121,7 +121,7 @@ items:
     summary: 'Internal: do not use'
     optional: true
     syntax:
-      content: string internalTabInstanceId
+      content: 'internalTabInstanceId?: string'
       return:
         type:
           - string
@@ -136,7 +136,7 @@ items:
     summary: Last viewed time of this tab. null means unknown
     optional: true
     syntax:
-      content: string lastViewUnixEpochTime
+      content: 'lastViewUnixEpochTime?: string'
       return:
         type:
           - string
@@ -150,7 +150,7 @@ items:
     type: property
     summary: The name of the tab
     syntax:
-      content: string tabName
+      content: 'tabName: string'
       return:
         type:
           - string
@@ -165,7 +165,7 @@ items:
     summary: The Microsoft Teams ID for the team with which the content is associated.
     optional: true
     syntax:
-      content: string teamId
+      content: 'teamId?: string'
       return:
         type:
           - string
@@ -180,7 +180,7 @@ items:
     summary: Is this tab in a favorite team?
     optional: true
     syntax:
-      content: boolean teamIsFavorite
+      content: 'teamIsFavorite?: boolean'
       return:
         type:
           - boolean
@@ -195,7 +195,7 @@ items:
     summary: The name for the team with which the content is associated.
     optional: true
     syntax:
-      content: string teamName
+      content: 'teamName?: string'
       return:
         type:
           - string
@@ -210,7 +210,7 @@ items:
     summary: Content URL of this tab
     optional: true
     syntax:
-      content: string url
+      content: 'url?: string'
       return:
         type:
           - string
@@ -225,7 +225,7 @@ items:
     summary: Website URL of this tab
     optional: true
     syntax:
-      content: string websiteUrl
+      content: 'websiteUrl?: string'
       return:
         type:
           - string

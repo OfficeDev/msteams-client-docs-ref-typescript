@@ -34,7 +34,7 @@ items:
     type: property
     summary: Sets the URL to use for the content of this instance.
     syntax:
-      content: string contentUrl
+      content: 'contentUrl: string'
       return:
         type:
           - string
@@ -50,7 +50,7 @@ items:
       The developer-defined unique ID for the entity to which this content
       points.
     syntax:
-      content: string entityId
+      content: 'entityId: string'
       return:
         type:
           - string
@@ -65,7 +65,7 @@ items:
     summary: Sets the URL for the removal configuration experience.
     optional: true
     syntax:
-      content: string removeUrl
+      content: 'removeUrl?: string'
       return:
         type:
           - string
@@ -85,7 +85,7 @@ items:
       effect.
     optional: true
     syntax:
-      content: string suggestedDisplayName
+      content: 'suggestedDisplayName?: string'
       return:
         type:
           - string
@@ -102,7 +102,7 @@ items:
       in a browser.
     optional: true
     syntax:
-      content: string websiteUrl
+      content: 'websiteUrl?: string'
       return:
         type:
           - string

@@ -68,7 +68,7 @@ items:
       Object containing properties passed as arguments to the settings.save
       event.
     syntax:
-      content: SaveParameters result
+      content: 'result: SaveParameters'
       return:
         type:
           - >-

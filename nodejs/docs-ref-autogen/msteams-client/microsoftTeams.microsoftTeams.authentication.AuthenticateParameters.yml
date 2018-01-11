@@ -41,7 +41,7 @@ items:
       the failure returned from the authentication pop-up.
     optional: true
     syntax:
-      content: '(reason?: string) => void failureCallback'
+      content: 'failureCallback?: (reason?: string) => void'
       return:
         type:
           - '(reason?: string) => void'
@@ -59,7 +59,7 @@ items:
       the acceptable bounds.
     optional: true
     syntax:
-      content: number height
+      content: 'height?: number'
       return:
         type:
           - number
@@ -77,7 +77,7 @@ items:
       returned from the authentication pop-up.
     optional: true
     syntax:
-      content: '(result?: string) => void successCallback'
+      content: 'successCallback?: (result?: string) => void'
       return:
         type:
           - '(result?: string) => void'
@@ -92,7 +92,7 @@ items:
     type: property
     summary: The URL for the authentication pop-up.
     syntax:
-      content: string url
+      content: 'url: string'
       return:
         type:
           - string
@@ -110,7 +110,7 @@ items:
       the acceptable bounds.
     optional: true
     syntax:
-      content: number width
+      content: 'width?: number'
       return:
         type:
           - number

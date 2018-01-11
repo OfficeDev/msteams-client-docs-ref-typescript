@@ -27,7 +27,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: 'TabInstance[] teamTabs'
+      content: 'teamTabs: TabInstance[]'
       return:
         type:
           - '@msteams-client.microsoftTeams.TabInstance[]'
