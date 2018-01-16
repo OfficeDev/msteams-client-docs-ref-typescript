@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.settings
+    name: microsoftTeams.settings
+    summary: ''
+    langs:
+      - typeScript
+    type: module
+    children:
+      - msteams-client.microsoftTeams.microsoftTeams.settings.Global
+      - msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
+      - msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
+      - msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
+      - msteams-client.microsoftTeams.microsoftTeams.settings.Settings
+references:
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Global
+    name: Global
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
+    name: RemoveEvent
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveEvent
+    name: SaveEvent
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
+    name: SaveParameters
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings
+    name: Settings

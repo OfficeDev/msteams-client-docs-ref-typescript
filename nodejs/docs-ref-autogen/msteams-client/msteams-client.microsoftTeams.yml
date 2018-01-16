@@ -1,0 +1,40 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams
+    name: microsoftTeams
+    summary: ''
+    langs:
+      - typeScript
+    type: module
+    children:
+      - msteams-client.microsoftTeams.Context
+      - msteams-client.microsoftTeams.DeepLinkParameters
+      - msteams-client.microsoftTeams.FilePreviewParameters
+      - msteams-client.microsoftTeams.Global
+      - msteams-client.microsoftTeams.MessageRequest
+      - msteams-client.microsoftTeams.MessageResponse
+      - msteams-client.microsoftTeams.TabInformation
+      - msteams-client.microsoftTeams.TabInstance
+      - msteams-client.microsoftTeams.TabInstanceParameters
+      - msteams-client.microsoftTeams.TeamType
+references:
+  - uid: msteams-client.microsoftTeams.Context
+    name: Context
+  - uid: msteams-client.microsoftTeams.DeepLinkParameters
+    name: DeepLinkParameters
+  - uid: msteams-client.microsoftTeams.FilePreviewParameters
+    name: FilePreviewParameters
+  - uid: msteams-client.microsoftTeams.Global
+    name: Global
+  - uid: msteams-client.microsoftTeams.MessageRequest
+    name: MessageRequest
+  - uid: msteams-client.microsoftTeams.MessageResponse
+    name: MessageResponse
+  - uid: msteams-client.microsoftTeams.TabInformation
+    name: TabInformation
+  - uid: msteams-client.microsoftTeams.TabInstance
+    name: TabInstance
+  - uid: msteams-client.microsoftTeams.TabInstanceParameters
+    name: TabInstanceParameters
+  - uid: msteams-client.microsoftTeams.TeamType
+    name: TeamType

@@ -1,12 +1,14 @@
 - uid: msteams-client
   name: msteams-client
   items:
-    - name: Global
+    - uid: msteams-client.Global
+      name: Global
       items:
         - uid: msteams-client.MessageEvent
           name: MessageEvent
           items: []
-    - name: microsoftTeams
+    - uid: msteams-client.microsoftTeams
+      name: microsoftTeams
       items:
         - uid: msteams-client.microsoftTeams.Context
           name: Context
@@ -38,7 +40,8 @@
         - uid: msteams-client.microsoftTeams.TeamType
           name: TeamType
           items: []
-    - name: microsoftTeams.authentication
+    - uid: msteams-client.microsoftTeams.authentication
+      name: microsoftTeams.authentication
       items:
         - uid: >-
             msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
@@ -47,7 +50,8 @@
         - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.Global
           name: Global
           items: []
-    - name: microsoftTeams.settings
+    - uid: msteams-client.microsoftTeams.settings
+      name: microsoftTeams.settings
       items:
         - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Global
           name: Global

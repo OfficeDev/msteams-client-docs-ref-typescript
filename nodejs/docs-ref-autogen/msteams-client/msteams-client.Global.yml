@@ -1,0 +1,13 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.Global
+    name: Global
+    summary: ''
+    langs:
+      - typeScript
+    type: module
+    children:
+      - msteams-client.MessageEvent
+references:
+  - uid: msteams-client.MessageEvent
+    name: MessageEvent

@@ -1,0 +1,18 @@
+### YamlMime:UniversalReference
+items:
+  - uid: msteams-client.microsoftTeams.authentication
+    name: microsoftTeams.authentication
+    summary: ''
+    langs:
+      - typeScript
+    type: module
+    children:
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+      - msteams-client.microsoftTeams.microsoftTeams.authentication.Global
+references:
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+    name: AuthenticateParameters
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.Global
+    name: Global
