@@ -9,10 +9,278 @@ items:
     children:
       - >-
         msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
-      - msteams-client.microsoftTeams.microsoftTeams.authentication.Global
+      - msteams-client.microsoftTeams.microsoftTeams.authentication.authenticate
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.closeAuthenticationWindow
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.handleFailure
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.handleSuccess
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.notifyFailure
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.notifySuccess
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.openAuthenticationWindow
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.redirectIfWin32Outlook
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.registerAuthenticationHandlers
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.startAuthenticationWindowMonitor
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.stopAuthenticationWindowMonitor
+      - >-
+        msteams-client.microsoftTeams.microsoftTeams.authentication.updateUrlParameter
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.authenticate
+    name: authenticate
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Initiates an authentication request, which opens a new window with the
+      specified settings.
+    syntax:
+      content: 'function authenticate(authenticateParameters?: AuthenticateParameters)'
+      parameters:
+        - id: authenticateParameters
+          type:
+            - >-
+              @msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+          description: ''
+          optional: true
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.closeAuthenticationWindow
+    name: closeAuthenticationWindow
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function closeAuthenticationWindow()
+      parameters: []
+    module: microsoftTeams.authentication
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.handleFailure
+    name: handleFailure
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleFailure(reason?: string)'
+      parameters:
+        - id: reason
+          type:
+            - string
+          description: ''
+          optional: true
+    module: microsoftTeams.authentication
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.handleSuccess
+    name: handleSuccess
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function handleSuccess(result?: string)'
+      parameters:
+        - id: result
+          type:
+            - string
+          description: ''
+          optional: true
+    module: microsoftTeams.authentication
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.notifyFailure
+    name: notifyFailure
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Notifies the frame that initiated this authentication request that the
+      request failed.
+
+      This function is usable only on the authentication window.
+
+      This call causes the authentication window to be closed.
+    syntax:
+      content: 'function notifyFailure(reason?: string, callbackUrl?: string)'
+      parameters:
+        - id: reason
+          type:
+            - string
+          description: ''
+          optional: true
+        - id: callbackUrl
+          type:
+            - string
+          description: >
+            Specifies the url to redirect back to if the client is Win32
+            Outlook.
+          optional: true
+    module: microsoftTeams.authentication
+  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.notifySuccess
+    name: notifySuccess
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Notifies the frame that initiated this authentication request that the
+      request was successful.
+
+      This function is usable only on the authentication window.
+
+      This call causes the authentication window to be closed.
+    syntax:
+      content: 'function notifySuccess(result?: string, callbackUrl?: string)'
+      parameters:
+        - id: result
+          type:
+            - string
+          description: >-
+            Specifies a result for the authentication. If specified, the frame
+            that initiated the authentication pop-up receives this value in its
+            callback.
+          optional: true
+        - id: callbackUrl
+          type:
+            - string
+          description: >
+            Specifies the url to redirect back to if the client is Win32
+            Outlook.
+          optional: true
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.openAuthenticationWindow
+    name: openAuthenticationWindow
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function openAuthenticationWindow(authenticateParameters:
+        AuthenticateParameters)
+      parameters:
+        - id: authenticateParameters
+          type:
+            - >-
+              @msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+          description: ''
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.redirectIfWin32Outlook
+    name: redirectIfWin32Outlook
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Validates that the callbackUrl param is a valid connector url, appends the
+      result/reason and authSuccess/authFailure as URL fragments and redirects
+      the window
+    syntax:
+      content: >-
+        function redirectIfWin32Outlook(callbackUrl?: string, key?: string,
+        value?: string)
+      parameters:
+        - id: callbackUrl
+          type:
+            - string
+          description: the connectors url to redirect to
+          optional: true
+        - id: key
+          type:
+            - string
+          description: '"result" in case of success and "reason" in case of failure'
+          optional: true
+        - id: value
+          type:
+            - string
+          description: |
+            the value of the passed result/reason parameter
+          optional: true
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.registerAuthenticationHandlers
+    name: registerAuthenticationHandlers
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Registers the authentication handlers
+    syntax:
+      content: >-
+        function registerAuthenticationHandlers(authenticateParameters:
+        AuthenticateParameters)
+      parameters:
+        - id: authenticateParameters
+          type:
+            - >-
+              @msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+          description: |
+            A set of values that configure the authentication pop-up.
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.startAuthenticationWindowMonitor
+    name: startAuthenticationWindowMonitor
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function startAuthenticationWindowMonitor()
+      parameters: []
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.stopAuthenticationWindowMonitor
+    name: stopAuthenticationWindowMonitor
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function stopAuthenticationWindowMonitor()
+      parameters: []
+    module: microsoftTeams.authentication
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.updateUrlParameter
+    name: updateUrlParameter
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Appends either result or reason as a fragment to the 'callbackUrl'
+    syntax:
+      content: 'function updateUrlParameter(uri: string, key: string, value: string)'
+      parameters:
+        - id: uri
+          type:
+            - string
+          description: the url to modify
+        - id: key
+          type:
+            - string
+          description: the fragment key
+        - id: value
+          type:
+            - string
+          description: |
+            the fragment value
+      return:
+        type:
+          - string
+    module: microsoftTeams.authentication
 references:
   - uid: >-
       msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
     name: AuthenticateParameters
-  - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.Global
-    name: Global

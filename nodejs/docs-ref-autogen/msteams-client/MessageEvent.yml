@@ -17,7 +17,6 @@ items:
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
         branch: master
     package: msteams-client
-    module: Global
   - uid: msteams-client.MessageEvent.originalEvent
     name: originalEvent
     fullName: originalEvent
@@ -31,4 +30,3 @@ items:
       return:
         type:
           - MessageEvent
-    module: Global

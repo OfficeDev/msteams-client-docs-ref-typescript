@@ -1,12 +1,6 @@
 - uid: msteams-client
   name: msteams-client
   items:
-    - uid: msteams-client.Global
-      name: Global
-      items:
-        - uid: msteams-client.MessageEvent
-          name: MessageEvent
-          items: []
     - uid: msteams-client.microsoftTeams
       name: microsoftTeams
       items:
@@ -18,9 +12,6 @@
           items: []
         - uid: msteams-client.microsoftTeams.FilePreviewParameters
           name: FilePreviewParameters
-          items: []
-        - uid: msteams-client.microsoftTeams.Global
-          name: Global
           items: []
         - uid: msteams-client.microsoftTeams.MessageRequest
           name: MessageRequest
@@ -47,15 +38,9 @@
             msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
           name: AuthenticateParameters
           items: []
-        - uid: msteams-client.microsoftTeams.microsoftTeams.authentication.Global
-          name: Global
-          items: []
     - uid: msteams-client.microsoftTeams.settings
       name: microsoftTeams.settings
       items:
-        - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Global
-          name: Global
-          items: []
         - uid: msteams-client.microsoftTeams.microsoftTeams.settings.RemoveEvent
           name: RemoveEvent
           items: []
@@ -68,3 +53,6 @@
         - uid: msteams-client.microsoftTeams.microsoftTeams.settings.Settings
           name: Settings
           items: []
+    - uid: msteams-client.MessageEvent
+      name: MessageEvent
+      items: []
