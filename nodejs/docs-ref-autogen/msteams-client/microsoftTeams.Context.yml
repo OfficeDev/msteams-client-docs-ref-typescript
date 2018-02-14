@@ -10,6 +10,7 @@ items:
       - msteams-client.microsoftTeams.Context.groupId
       - msteams-client.microsoftTeams.Context.isFullScreen
       - msteams-client.microsoftTeams.Context.locale
+      - msteams-client.microsoftTeams.Context.sessionId
       - msteams-client.microsoftTeams.Context.subEntityId
       - msteams-client.microsoftTeams.Context.teamId
       - msteams-client.microsoftTeams.Context.teamName
@@ -123,6 +124,23 @@ items:
       languageId-countryId (for example, en-us).
     syntax:
       content: 'locale: string'
+      return:
+        type:
+          - string
+    module: microsoftTeams
+  - uid: msteams-client.microsoftTeams.Context.sessionId
+    name: sessionId
+    fullName: sessionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Unique ID for the current Teams session for use in correlating telemetry
+      data.
+    optional: true
+    syntax:
+      content: 'sessionId?: string'
       return:
         type:
           - string
