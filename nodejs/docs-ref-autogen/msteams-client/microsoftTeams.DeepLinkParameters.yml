@@ -13,7 +13,7 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 1095
+      startLine: 1177
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
@@ -34,7 +34,7 @@ items:
       This field should be used to restore to a specific state within an entity,
       such as scrolling to or activating a specific piece of content.
     syntax:
-      content: string subEntityId
+      content: 'subEntityId: string'
       return:
         type:
           - string
@@ -50,7 +50,7 @@ items:
       The label for the sub-entity that should be displayed when the deep link
       is rendered in a client.
     syntax:
-      content: string subEntityLabel
+      content: 'subEntityLabel: string'
       return:
         type:
           - string
@@ -69,7 +69,7 @@ items:
       This URL should lead directly to the sub-entity.
     optional: true
     syntax:
-      content: string subEntityWebUrl
+      content: 'subEntityWebUrl?: string'
       return:
         type:
           - string

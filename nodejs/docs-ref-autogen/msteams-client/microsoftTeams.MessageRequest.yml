@@ -30,7 +30,7 @@ items:
     summary: ''
     optional: true
     syntax:
-      content: 'any[] args'
+      content: 'args?: any[]'
       return:
         type:
           - 'any[]'
@@ -44,7 +44,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: string func
+      content: 'func: string'
       return:
         type:
           - string
@@ -58,7 +58,7 @@ items:
     type: property
     summary: ''
     syntax:
-      content: number id
+      content: 'id: number'
       return:
         type:
           - number

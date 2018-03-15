@@ -18,7 +18,7 @@ items:
     summary: ''
     source:
       path: MicrosoftTeams.ts
-      startLine: 1114
+      startLine: 1196
       remote:
         path: src\MicrosoftTeams.ts
         repo: 'https://github.com/OfficeDev/microsoft-teams-library-js.git'
@@ -35,7 +35,7 @@ items:
     summary: An optional description of the file.
     optional: true
     syntax:
-      content: string description
+      content: 'description?: string'
       return:
         type:
           - string
@@ -52,7 +52,7 @@ items:
       Mobile clients and offer it for download by the user
     optional: true
     syntax:
-      content: string downloadUrl
+      content: 'downloadUrl?: string'
       return:
         type:
           - string
@@ -66,7 +66,7 @@ items:
     type: property
     summary: The developer-defined unique ID for the file.
     syntax:
-      content: string entityId
+      content: 'entityId: string'
       return:
         type:
           - string
@@ -82,7 +82,7 @@ items:
       A url to the source of the file, used to open the content in the user's
       default browser
     syntax:
-      content: string objectUrl
+      content: 'objectUrl: string'
       return:
         type:
           - string
@@ -96,7 +96,7 @@ items:
     type: property
     summary: The display name of the file.
     syntax:
-      content: string title
+      content: 'title: string'
       return:
         type:
           - string
@@ -110,7 +110,7 @@ items:
     type: property
     summary: 'The file extension; e.g. pptx, docx, etc.'
     syntax:
-      content: string type
+      content: 'type: string'
       return:
         type:
           - string
@@ -127,7 +127,7 @@ items:
       and desktop clients
     optional: true
     syntax:
-      content: string webEditUrl
+      content: 'webEditUrl?: string'
       return:
         type:
           - string
@@ -144,7 +144,7 @@ items:
       and desktop clients
     optional: true
     syntax:
-      content: string webPreviewUrl
+      content: 'webPreviewUrl?: string'
       return:
         type:
           - string

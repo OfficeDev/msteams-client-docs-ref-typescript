@@ -29,7 +29,7 @@ items:
     summary: Flag allowing to select favorite channels only
     optional: true
     syntax:
-      content: boolean favoriteChannelsOnly
+      content: 'favoriteChannelsOnly?: boolean'
       return:
         type:
           - boolean
@@ -44,7 +44,7 @@ items:
     summary: Flag allowing to select favorite teams only
     optional: true
     syntax:
-      content: boolean favoriteTeamsOnly
+      content: 'favoriteTeamsOnly?: boolean'
       return:
         type:
           - boolean
