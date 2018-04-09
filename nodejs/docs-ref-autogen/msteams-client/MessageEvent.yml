@@ -30,3 +30,9 @@ items:
       return:
         type:
           - MessageEvent
+references:
+  - uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
+    spec.typeScript:
+      - name: SaveParameters
+        fullName: SaveParameters
+        uid: msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters

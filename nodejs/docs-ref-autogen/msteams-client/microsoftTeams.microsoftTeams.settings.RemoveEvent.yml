@@ -56,3 +56,11 @@ items:
       content: function notifySuccess()
       parameters: []
     module: microsoftTeams.settings
+references:
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+    spec.typeScript:
+      - name: AuthenticateParameters
+        fullName: AuthenticateParameters
+        uid: >-
+          msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters

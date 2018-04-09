@@ -63,3 +63,11 @@ items:
         type:
           - number
     module: microsoftTeams
+references:
+  - uid: >-
+      msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+    spec.typeScript:
+      - name: AuthenticateParameters
+        fullName: AuthenticateParameters
+        uid: >-
+          msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters

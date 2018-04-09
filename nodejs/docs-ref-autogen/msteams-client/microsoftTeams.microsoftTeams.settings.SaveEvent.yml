@@ -71,6 +71,5 @@ items:
       content: 'result: SaveParameters'
       return:
         type:
-          - >-
-            @msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
+          - msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
     module: microsoftTeams.settings

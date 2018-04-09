@@ -47,7 +47,7 @@ items:
         - id: authenticateParameters
           type:
             - >-
-              @msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+              msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
           description: ''
           optional: true
     module: microsoftTeams.authentication
@@ -172,7 +172,7 @@ items:
         - id: authenticateParameters
           type:
             - >-
-              @msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+              msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
           description: ''
     module: microsoftTeams.authentication
   - uid: >-
@@ -224,7 +224,7 @@ items:
         - id: authenticateParameters
           type:
             - >-
-              @msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
+              msteams-client.microsoftTeams.microsoftTeams.authentication.AuthenticateParameters
           description: |
             A set of values that configure the authentication pop-up.
     module: microsoftTeams.authentication

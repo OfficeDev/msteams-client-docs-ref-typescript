@@ -64,7 +64,7 @@ items:
           description: ''
       return:
         type:
-          - '@msteams-client.microsoftTeams.MessageRequest'
+          - msteams-client.microsoftTeams.MessageRequest
     module: microsoftTeams
   - uid: msteams-client.microsoftTeams.createMessageResponse
     name: createMessageResponse
@@ -86,7 +86,7 @@ items:
           description: ''
       return:
         type:
-          - '@msteams-client.microsoftTeams.MessageResponse'
+          - msteams-client.microsoftTeams.MessageResponse
     module: microsoftTeams
   - uid: msteams-client.microsoftTeams.ensureInitialized
     name: ensureInitialized
@@ -154,7 +154,7 @@ items:
             retrieved.
         - id: tabInstanceParameters
           type:
-            - '@msteams-client.microsoftTeams.TabInstanceParameters'
+            - msteams-client.microsoftTeams.TabInstanceParameters
           description: |
             OPTIONAL Ignored, kept for future use
           optional: true
@@ -183,7 +183,7 @@ items:
             is retrieved.
         - id: tabInstanceParameters
           type:
-            - '@msteams-client.microsoftTeams.TabInstanceParameters'
+            - msteams-client.microsoftTeams.TabInstanceParameters
           description: >
             OPTIONAL Flags that specify whether to scope call to favorite teams
             or channels.
@@ -205,7 +205,7 @@ items:
           description: ''
       return:
         type:
-          - '@msteams-client.microsoftTeams.MessageRequest[]'
+          - 'msteams-client.microsoftTeams.MessageRequest[]'
     module: microsoftTeams
   - uid: msteams-client.microsoftTeams.getTargetOrigin
     name: getTargetOrigin
@@ -365,7 +365,7 @@ items:
       parameters:
         - id: tabInstance
           type:
-            - '@msteams-client.microsoftTeams.TabInstance'
+            - msteams-client.microsoftTeams.TabInstance
           description: |
             The tab instance to navigate to.
     module: microsoftTeams
@@ -381,7 +381,7 @@ items:
       parameters:
         - id: filePreviewParameters
           type:
-            - '@msteams-client.microsoftTeams.FilePreviewParameters'
+            - msteams-client.microsoftTeams.FilePreviewParameters
           description: ''
     module: microsoftTeams
   - uid: msteams-client.microsoftTeams.processMessage
@@ -538,7 +538,7 @@ items:
       parameters:
         - id: deepLinkParameters
           type:
-            - '@msteams-client.microsoftTeams.DeepLinkParameters'
+            - msteams-client.microsoftTeams.DeepLinkParameters
           description: |
             ID and label for the link and fallback URL.
     module: microsoftTeams

@@ -30,5 +30,5 @@ items:
       content: 'teamTabs: TabInstance[]'
       return:
         type:
-          - '@msteams-client.microsoftTeams.TabInstance[]'
+          - 'msteams-client.microsoftTeams.TabInstance[]'
     module: microsoftTeams

@@ -222,7 +222,7 @@ items:
       content: 'teamType?: TeamType'
       return:
         type:
-          - '@msteams-client.microsoftTeams.TeamType'
+          - msteams-client.microsoftTeams.TeamType
     module: microsoftTeams
   - uid: msteams-client.microsoftTeams.Context.theme
     name: theme

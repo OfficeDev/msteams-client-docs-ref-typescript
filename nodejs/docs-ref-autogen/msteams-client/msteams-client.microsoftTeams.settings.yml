@@ -60,7 +60,7 @@ items:
         - id: result
           type:
             - >-
-              @msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
+              msteams-client.microsoftTeams.microsoftTeams.settings.SaveParameters
           description: ''
           optional: true
     module: microsoftTeams.settings
@@ -134,7 +134,7 @@ items:
       parameters:
         - id: instanceSettings
           type:
-            - '@msteams-client.microsoftTeams.microsoftTeams.settings.Settings'
+            - msteams-client.microsoftTeams.microsoftTeams.settings.Settings
           description: ''
     module: microsoftTeams.settings
   - uid: msteams-client.microsoftTeams.microsoftTeams.settings.setValidityState
