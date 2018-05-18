@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.O365ConnectorCardImage
+    name: O365ConnectorCardImage
+    fullName: O365ConnectorCardImage
+    children:
+      - botbuilder-teams.O365ConnectorCardImage.image
+      - botbuilder-teams.O365ConnectorCardImage.constructor
+      - botbuilder-teams.O365ConnectorCardImage.title
+      - botbuilder-teams.O365ConnectorCardImage.toImage
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      Card builder class that simplifies building O365 connector card section
+      images.
+    package: botbuilder-teams
+  - uid: botbuilder-teams.O365ConnectorCardImage.image
+    name: image
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: URL for the image.
+    syntax:
+      content: 'function image(url: string)'
+      parameters:
+        - id: url
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardImage
+  - uid: botbuilder-teams.O365ConnectorCardImage.constructor
+    name: O365ConnectorCardImage
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Creates a new O365 connector card section image.
+    syntax:
+      content: 'new O365ConnectorCardImage(session?: Session)'
+      parameters:
+        - id: session
+          type:
+            - Session
+          description: |
+            (Optional) will be used to localize any text.
+          optional: true
+  - uid: botbuilder-teams.O365ConnectorCardImage.title
+    name: title
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Alternative text for the image.
+    syntax:
+      content: 'function title(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardImage
+  - uid: botbuilder-teams.O365ConnectorCardImage.toImage
+    name: toImage
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Returns the JSON for the current image.
+    syntax:
+      content: function toImage()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardImage
+references:
+  - uid: botbuilder-teams.O365ConnectorCardImage
+    spec.typeScript:
+      - name: O365ConnectorCardImage
+        fullName: O365ConnectorCardImage
+        uid: botbuilder-teams.O365ConnectorCardImage
+  - uid: botbuilder-teams.IO365ConnectorCardImage
+    spec.typeScript:
+      - name: IO365ConnectorCardImage
+        fullName: IO365ConnectorCardImage
+        uid: botbuilder-teams.IO365ConnectorCardImage

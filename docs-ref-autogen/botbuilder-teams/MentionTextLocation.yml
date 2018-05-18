@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.MentionTextLocation
+    name: MentionTextLocation
+    fullName: MentionTextLocation
+    children:
+      - botbuilder-teams.MentionTextLocation.AppendText
+      - botbuilder-teams.MentionTextLocation.PrependText
+    langs:
+      - typeScript
+    type: enum
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.MentionTextLocation.AppendText
+    name: AppendText
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field
+  - uid: botbuilder-teams.MentionTextLocation.PrependText
+    name: PrependText
+    children: []
+    langs:
+      - typeScript
+    summary: ''
+    type: field

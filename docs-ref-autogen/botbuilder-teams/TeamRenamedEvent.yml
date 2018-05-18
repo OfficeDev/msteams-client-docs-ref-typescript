@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.TeamRenamedEvent
+    name: TeamRenamedEvent
+    fullName: TeamRenamedEvent
+    children:
+      - botbuilder-teams.TeamRenamedEvent.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.TeamRenamedEvent.constructor
+    name: TeamRenamedEvent
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new TeamRenamedEvent(team: TeamInfo, tenant: TenantInfo)'
+      parameters:
+        - id: team
+          type:
+            - botbuilder-teams.TeamInfo
+          description: ''
+        - id: tenant
+          type:
+            - botbuilder-teams.TenantInfo
+          description: ''
+references:
+  - uid: botbuilder-teams.TeamInfo
+    spec.typeScript:
+      - name: TeamInfo
+        fullName: TeamInfo
+        uid: botbuilder-teams.TeamInfo
+  - uid: botbuilder-teams.TenantInfo
+    spec.typeScript:
+      - name: TenantInfo
+        fullName: TenantInfo
+        uid: botbuilder-teams.TenantInfo

@@ -1,0 +1,41 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.TeamMention
+    name: TeamMention
+    fullName: TeamMention
+    children:
+      - botbuilder-teams.TeamMention.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    extends:
+      name: botbuilder-teams.MentionEntity
+    package: botbuilder-teams
+  - uid: botbuilder-teams.TeamMention.constructor
+    name: TeamMention
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: |-
+      Initialize a new instance of at mention team entity
+       @param {TeamInfo} team - The team to at mention. Team must have id and name values
+    syntax:
+      content: 'new TeamMention(team: TeamInfo)'
+      parameters:
+        - id: team
+          type:
+            - botbuilder-teams.TeamInfo
+          description: ''
+references:
+  - uid: botbuilder-teams.MentionEntity
+    spec.typeScript:
+      - name: MentionEntity
+        fullName: MentionEntity
+        uid: botbuilder-teams.MentionEntity
+  - uid: botbuilder-teams.TeamInfo
+    spec.typeScript:
+      - name: TeamInfo
+        fullName: TeamInfo
+        uid: botbuilder-teams.TeamInfo

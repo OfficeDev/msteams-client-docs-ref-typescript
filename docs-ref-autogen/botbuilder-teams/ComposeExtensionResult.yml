@@ -1,0 +1,94 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.ComposeExtensionResult
+    name: ComposeExtensionResult
+    fullName: ComposeExtensionResult
+    children:
+      - botbuilder-teams.ComposeExtensionResult.attachmentLayout
+      - botbuilder-teams.ComposeExtensionResult.attachments
+      - botbuilder-teams.ComposeExtensionResult.suggestedActions
+      - botbuilder-teams.ComposeExtensionResult.text
+      - botbuilder-teams.ComposeExtensionResult.type
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.ComposeExtensionResult.attachmentLayout
+    name: attachmentLayout
+    fullName: attachmentLayout
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'attachmentLayout?: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.ComposeExtensionResult.attachments
+    name: attachments
+    fullName: attachments
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'attachments?: ComposeExtensionAttachment[]'
+      return:
+        type:
+          - 'botbuilder-teams.ComposeExtensionAttachment[]'
+  - uid: botbuilder-teams.ComposeExtensionResult.suggestedActions
+    name: suggestedActions
+    fullName: suggestedActions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'suggestedActions?: ISuggestedActions'
+      return:
+        type:
+          - ISuggestedActions
+  - uid: botbuilder-teams.ComposeExtensionResult.text
+    name: text
+    fullName: text
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'text?: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.ComposeExtensionResult.type
+    name: type
+    fullName: type
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'type?: string'
+      return:
+        type:
+          - string
+references:
+  - uid: 'botbuilder-teams.ComposeExtensionAttachment[]'
+    spec.typeScript:
+      - name: ComposeExtensionAttachment
+        fullName: ComposeExtensionAttachment
+        uid: botbuilder-teams.ComposeExtensionAttachment
+      - name: '[]'
+        fullName: '[]'

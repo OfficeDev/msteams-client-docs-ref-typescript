@@ -1,0 +1,27 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.StripBotAtMentions
+    name: StripBotAtMentions
+    fullName: StripBotAtMentions
+    children:
+      - botbuilder-teams.StripBotAtMentions.botbuilder
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.StripBotAtMentions.botbuilder
+    name: botbuilder
+    fullName: botbuilder
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Called in series once an incoming message has been bound to a session.
+      Executed after [receive](#receive) middleware.
+    syntax:
+      content: 'public botbuilder: ISessionMiddleware | ISessionMiddleware[]'
+      return:
+        type:
+          - 'ISessionMiddleware | ISessionMiddleware[]'

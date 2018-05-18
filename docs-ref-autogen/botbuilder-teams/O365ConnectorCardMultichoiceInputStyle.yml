@@ -1,0 +1,14 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.O365ConnectorCardMultichoiceInputStyle
+    name: O365ConnectorCardMultichoiceInputStyle
+    fullName: O365ConnectorCardMultichoiceInputStyle
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+
+      "O365ConnectorCardMultichoiceInputStyle" is a type alias. It refers to
+      "compact" and "expanded".
+    package: botbuilder-teams

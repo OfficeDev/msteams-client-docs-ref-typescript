@@ -1,0 +1,172 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.ComposeExtensionResponse
+    name: ComposeExtensionResponse
+    fullName: ComposeExtensionResponse
+    children:
+      - botbuilder-teams.ComposeExtensionResponse.actions
+      - botbuilder-teams.ComposeExtensionResponse.attachments
+      - botbuilder-teams.ComposeExtensionResponse.auth
+      - botbuilder-teams.ComposeExtensionResponse.constructor
+      - botbuilder-teams.ComposeExtensionResponse.config
+      - botbuilder-teams.ComposeExtensionResponse.message
+      - botbuilder-teams.ComposeExtensionResponse.result
+      - botbuilder-teams.ComposeExtensionResponse.text
+      - botbuilder-teams.ComposeExtensionResponse.toResponse
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.ComposeExtensionResponse.actions
+    name: actions
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function actions(list: CardAction[])'
+      parameters:
+        - id: list
+          type:
+            - 'CardAction[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.ComposeExtensionResponse
+  - uid: botbuilder-teams.ComposeExtensionResponse.attachments
+    name: attachments
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function attachments(list: ComposeExtensionAttachment[])'
+      parameters:
+        - id: list
+          type:
+            - 'botbuilder-teams.ComposeExtensionAttachment[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.ComposeExtensionResponse
+  - uid: botbuilder-teams.ComposeExtensionResponse.auth
+    name: auth
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: static function auth()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.ComposeExtensionResponse
+  - uid: botbuilder-teams.ComposeExtensionResponse.constructor
+    name: ComposeExtensionResponse
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new ComposeExtensionResponse(type: string)'
+      parameters:
+        - id: type
+          type:
+            - string
+          description: ''
+  - uid: botbuilder-teams.ComposeExtensionResponse.config
+    name: config
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: static function config()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.ComposeExtensionResponse
+  - uid: botbuilder-teams.ComposeExtensionResponse.message
+    name: message
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: static function message()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.ComposeExtensionResponse
+  - uid: botbuilder-teams.ComposeExtensionResponse.result
+    name: result
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'static function result(attachmentLayout: string)'
+      parameters:
+        - id: attachmentLayout
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.ComposeExtensionResponse
+  - uid: botbuilder-teams.ComposeExtensionResponse.text
+    name: text
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function text(text: string)'
+      parameters:
+        - id: text
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.ComposeExtensionResponse
+  - uid: botbuilder-teams.ComposeExtensionResponse.toResponse
+    name: toResponse
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function toResponse()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IComposeExtensionResponse
+references:
+  - uid: botbuilder-teams.ComposeExtensionResponse
+    spec.typeScript:
+      - name: ComposeExtensionResponse
+        fullName: ComposeExtensionResponse
+        uid: botbuilder-teams.ComposeExtensionResponse
+  - uid: 'botbuilder-teams.ComposeExtensionAttachment[]'
+    spec.typeScript:
+      - name: ComposeExtensionAttachment
+        fullName: ComposeExtensionAttachment
+        uid: botbuilder-teams.ComposeExtensionAttachment
+      - name: '[]'
+        fullName: '[]'
+  - uid: botbuilder-teams.IComposeExtensionResponse
+    spec.typeScript:
+      - name: IComposeExtensionResponse
+        fullName: IComposeExtensionResponse
+        uid: botbuilder-teams.IComposeExtensionResponse

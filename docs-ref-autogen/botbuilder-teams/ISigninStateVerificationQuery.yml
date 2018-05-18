@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.ISigninStateVerificationQuery
+    name: ISigninStateVerificationQuery
+    fullName: ISigninStateVerificationQuery
+    children:
+      - botbuilder-teams.ISigninStateVerificationQuery.state
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.ISigninStateVerificationQuery.state
+    name: state
+    fullName: state
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'state: string'
+      return:
+        type:
+          - string

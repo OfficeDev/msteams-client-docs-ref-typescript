@@ -1,0 +1,61 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IO365ConnectorCardActionCard
+    name: IO365ConnectorCardActionCard
+    fullName: IO365ConnectorCardActionCard
+    children:
+      - botbuilder-teams.IO365ConnectorCardActionCard.actions
+      - botbuilder-teams.IO365ConnectorCardActionCard.inputs
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: botbuilder-teams.IO365ConnectorCardActionBase
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IO365ConnectorCardActionCard.actions
+    name: actions
+    fullName: actions
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'actions: IO365ConnectorCardActionBase[]'
+      return:
+        type:
+          - 'botbuilder-teams.IO365ConnectorCardActionBase[]'
+  - uid: botbuilder-teams.IO365ConnectorCardActionCard.inputs
+    name: inputs
+    fullName: inputs
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'inputs: IO365ConnectorCardInputBase[]'
+      return:
+        type:
+          - 'botbuilder-teams.IO365ConnectorCardInputBase[]'
+references:
+  - uid: botbuilder-teams.IO365ConnectorCardActionBase
+    spec.typeScript:
+      - name: IO365ConnectorCardActionBase
+        fullName: IO365ConnectorCardActionBase
+        uid: botbuilder-teams.IO365ConnectorCardActionBase
+  - uid: 'botbuilder-teams.IO365ConnectorCardActionBase[]'
+    spec.typeScript:
+      - name: IO365ConnectorCardActionBase
+        fullName: IO365ConnectorCardActionBase
+        uid: botbuilder-teams.IO365ConnectorCardActionBase
+      - name: '[]'
+        fullName: '[]'
+  - uid: 'botbuilder-teams.IO365ConnectorCardInputBase[]'
+    spec.typeScript:
+      - name: IO365ConnectorCardInputBase
+        fullName: IO365ConnectorCardInputBase
+        uid: botbuilder-teams.IO365ConnectorCardInputBase
+      - name: '[]'
+        fullName: '[]'

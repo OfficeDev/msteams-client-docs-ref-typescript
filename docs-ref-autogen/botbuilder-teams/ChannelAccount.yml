@@ -1,0 +1,95 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.ChannelAccount
+    name: ChannelAccount
+    fullName: ChannelAccount
+    children:
+      - botbuilder-teams.ChannelAccount.email
+      - botbuilder-teams.ChannelAccount.givenName
+      - botbuilder-teams.ChannelAccount.id
+      - botbuilder-teams.ChannelAccount.objectId
+      - botbuilder-teams.ChannelAccount.surname
+      - botbuilder-teams.ChannelAccount.userPrincipalName
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.ChannelAccount.email
+    name: email
+    fullName: email
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'email: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.ChannelAccount.givenName
+    name: givenName
+    fullName: givenName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'givenName: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.ChannelAccount.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'id: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.ChannelAccount.objectId
+    name: objectId
+    fullName: objectId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'objectId: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.ChannelAccount.surname
+    name: surname
+    fullName: surname
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'surname: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.ChannelAccount.userPrincipalName
+    name: userPrincipalName
+    fullName: userPrincipalName
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'userPrincipalName: string'
+      return:
+        type:
+          - string

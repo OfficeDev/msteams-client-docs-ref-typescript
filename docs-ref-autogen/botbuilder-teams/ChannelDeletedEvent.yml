@@ -1,0 +1,52 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.ChannelDeletedEvent
+    name: ChannelDeletedEvent
+    fullName: ChannelDeletedEvent
+    children:
+      - botbuilder-teams.ChannelDeletedEvent.constructor
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.ChannelDeletedEvent.constructor
+    name: ChannelDeletedEvent
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        new ChannelDeletedEvent(channel: ChannelInfo, team: TeamInfo, tenant:
+        TenantInfo)
+      parameters:
+        - id: channel
+          type:
+            - botbuilder-teams.ChannelInfo
+          description: ''
+        - id: team
+          type:
+            - botbuilder-teams.TeamInfo
+          description: ''
+        - id: tenant
+          type:
+            - botbuilder-teams.TenantInfo
+          description: ''
+references:
+  - uid: botbuilder-teams.ChannelInfo
+    spec.typeScript:
+      - name: ChannelInfo
+        fullName: ChannelInfo
+        uid: botbuilder-teams.ChannelInfo
+  - uid: botbuilder-teams.TeamInfo
+    spec.typeScript:
+      - name: TeamInfo
+        fullName: TeamInfo
+        uid: botbuilder-teams.TeamInfo
+  - uid: botbuilder-teams.TenantInfo
+    spec.typeScript:
+      - name: TenantInfo
+        fullName: TenantInfo
+        uid: botbuilder-teams.TenantInfo

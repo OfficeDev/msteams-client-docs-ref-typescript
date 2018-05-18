@@ -1,0 +1,167 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.O365ConnectorCardTextInput
+    name: O365ConnectorCardTextInput
+    fullName: O365ConnectorCardTextInput
+    children:
+      - botbuilder-teams.O365ConnectorCardTextInput.id
+      - botbuilder-teams.O365ConnectorCardTextInput.isMultiline
+      - botbuilder-teams.O365ConnectorCardTextInput.isRequired
+      - botbuilder-teams.O365ConnectorCardTextInput.maxLength
+      - botbuilder-teams.O365ConnectorCardTextInput.constructor
+      - botbuilder-teams.O365ConnectorCardTextInput.title
+      - botbuilder-teams.O365ConnectorCardTextInput.toInput
+      - botbuilder-teams.O365ConnectorCardTextInput.value
+    langs:
+      - typeScript
+    type: class
+    summary: Card builder class that simplifies building O365 connector text inputs.
+    package: botbuilder-teams
+  - uid: botbuilder-teams.O365ConnectorCardTextInput.id
+    name: id
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Input Id. It must be unique per entire O365 connector card.
+    syntax:
+      content: 'function id(inputId: string)'
+      parameters:
+        - id: inputId
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardTextInput
+  - uid: botbuilder-teams.O365ConnectorCardTextInput.isMultiline
+    name: isMultiline
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Define if text input is allowed for multiple lines. Default value is
+      false.
+    syntax:
+      content: 'function isMultiline(flag: boolean)'
+      parameters:
+        - id: flag
+          type:
+            - boolean
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardTextInput
+  - uid: botbuilder-teams.O365ConnectorCardTextInput.isRequired
+    name: isRequired
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Define if this input is a required field. Default value is false.
+    syntax:
+      content: 'function isRequired(flag: boolean)'
+      parameters:
+        - id: flag
+          type:
+            - boolean
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardTextInput
+  - uid: botbuilder-teams.O365ConnectorCardTextInput.maxLength
+    name: maxLength
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Maximum length of text input. Default value is unlimited.
+    syntax:
+      content: 'function maxLength(len: number)'
+      parameters:
+        - id: len
+          type:
+            - number
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardTextInput
+  - uid: botbuilder-teams.O365ConnectorCardTextInput.constructor
+    name: O365ConnectorCardTextInput
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Creates a new O365 connector card TextInput object.
+    syntax:
+      content: 'new O365ConnectorCardTextInput(session?: Session)'
+      parameters:
+        - id: session
+          type:
+            - Session
+          description: |
+            (Optional) will be used to localize any text.
+          optional: true
+  - uid: botbuilder-teams.O365ConnectorCardTextInput.title
+    name: title
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Input title that will be shown as the placeholder.
+    syntax:
+      content: 'function title(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardTextInput
+  - uid: botbuilder-teams.O365ConnectorCardTextInput.toInput
+    name: toInput
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Returns the JSON for the current input.
+    syntax:
+      content: function toInput()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardTextInput
+  - uid: botbuilder-teams.O365ConnectorCardTextInput.value
+    name: value
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Default value for this input field.
+    syntax:
+      content: 'function value(text: string)'
+      parameters:
+        - id: text
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardTextInput
+references:
+  - uid: botbuilder-teams.O365ConnectorCardTextInput
+    spec.typeScript:
+      - name: O365ConnectorCardTextInput
+        fullName: O365ConnectorCardTextInput
+        uid: botbuilder-teams.O365ConnectorCardTextInput
+  - uid: botbuilder-teams.IO365ConnectorCardTextInput
+    spec.typeScript:
+      - name: IO365ConnectorCardTextInput
+        fullName: IO365ConnectorCardTextInput
+        uid: botbuilder-teams.IO365ConnectorCardTextInput

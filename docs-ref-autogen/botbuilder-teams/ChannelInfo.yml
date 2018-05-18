@@ -1,0 +1,60 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.ChannelInfo
+    name: ChannelInfo
+    fullName: ChannelInfo
+    children:
+      - botbuilder-teams.ChannelInfo.constructor
+      - botbuilder-teams.ChannelInfo.id
+      - botbuilder-teams.ChannelInfo.name
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.ChannelInfo.constructor
+    name: ChannelInfo
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new ChannelInfo(name: string, id: string)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: id
+          type:
+            - string
+          description: ''
+  - uid: botbuilder-teams.ChannelInfo.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.ChannelInfo.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string

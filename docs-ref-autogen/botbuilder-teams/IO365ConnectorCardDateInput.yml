@@ -1,0 +1,34 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IO365ConnectorCardDateInput
+    name: IO365ConnectorCardDateInput
+    fullName: IO365ConnectorCardDateInput
+    children:
+      - botbuilder-teams.IO365ConnectorCardDateInput.includeTime
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    extends:
+      name: botbuilder-teams.IO365ConnectorCardInputBase
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IO365ConnectorCardDateInput.includeTime
+    name: includeTime
+    fullName: includeTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'includeTime?: boolean'
+      return:
+        type:
+          - boolean
+references:
+  - uid: botbuilder-teams.IO365ConnectorCardInputBase
+    spec.typeScript:
+      - name: IO365ConnectorCardInputBase
+        fullName: IO365ConnectorCardInputBase
+        uid: botbuilder-teams.IO365ConnectorCardInputBase

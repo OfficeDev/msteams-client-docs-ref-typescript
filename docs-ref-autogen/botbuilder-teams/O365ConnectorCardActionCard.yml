@@ -1,0 +1,170 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.O365ConnectorCardActionCard
+    name: O365ConnectorCardActionCard
+    fullName: O365ConnectorCardActionCard
+    children:
+      - botbuilder-teams.O365ConnectorCardActionCard.actions
+      - botbuilder-teams.O365ConnectorCardActionCard.id
+      - botbuilder-teams.O365ConnectorCardActionCard.inputs
+      - botbuilder-teams.O365ConnectorCardActionCard.name
+      - botbuilder-teams.O365ConnectorCardActionCard.constructor
+      - botbuilder-teams.O365ConnectorCardActionCard.toAction
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      Card builder class that simplifies building O365 connector ActionCard
+      action.
+    package: botbuilder-teams
+  - uid: botbuilder-teams.O365ConnectorCardActionCard.actions
+    name: actions
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: >-
+      Set of actions contained in this ActionCard whose each item can be any
+      type of other actions except O365ConnectorCardActionCard, as nested
+      ActionCard is forbidden.
+    syntax:
+      content: >-
+        function actions(list: IO365ConnectorCardActionBase[] |
+        IIsO365ConnectorCardActionBase[])
+      parameters:
+        - id: list
+          type:
+            - >-
+              botbuilder-teams.IO365ConnectorCardActionBase[] |
+              botbuilder-teams.IIsO365ConnectorCardActionBase[]
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardActionCard
+  - uid: botbuilder-teams.O365ConnectorCardActionCard.id
+    name: id
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Action Id.
+    syntax:
+      content: 'function id(actionId: string)'
+      parameters:
+        - id: actionId
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardActionCard
+  - uid: botbuilder-teams.O365ConnectorCardActionCard.inputs
+    name: inputs
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Set of inputs contained in this ActionCard.
+    syntax:
+      content: >-
+        function inputs(list: IO365ConnectorCardInputBase[] |
+        IIsO365ConnectorCardInputBase[])
+      parameters:
+        - id: list
+          type:
+            - >-
+              botbuilder-teams.IO365ConnectorCardInputBase[] |
+              botbuilder-teams.IIsO365ConnectorCardInputBase[]
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardActionCard
+  - uid: botbuilder-teams.O365ConnectorCardActionCard.name
+    name: name
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Name of the action that will be used as button title.
+    syntax:
+      content: 'function name(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardActionCard
+  - uid: botbuilder-teams.O365ConnectorCardActionCard.constructor
+    name: O365ConnectorCardActionCard
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Creates a new O365 connector card ActionCard action object.
+    syntax:
+      content: 'new O365ConnectorCardActionCard(session?: Session)'
+      parameters:
+        - id: session
+          type:
+            - Session
+          description: |
+            (Optional) will be used to localize any text.
+          optional: true
+  - uid: botbuilder-teams.O365ConnectorCardActionCard.toAction
+    name: toAction
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Returns the JSON for the current action.
+    syntax:
+      content: function toAction()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardActionCard
+references:
+  - uid: >-
+      botbuilder-teams.IO365ConnectorCardActionBase[] |
+      botbuilder-teams.IIsO365ConnectorCardActionBase[]
+    spec.typeScript:
+      - name: IO365ConnectorCardActionBase
+        fullName: IO365ConnectorCardActionBase
+        uid: botbuilder-teams.IO365ConnectorCardActionBase
+      - name: '[] | '
+        fullName: '[] | '
+      - name: IIsO365ConnectorCardActionBase
+        fullName: IIsO365ConnectorCardActionBase
+        uid: botbuilder-teams.IIsO365ConnectorCardActionBase
+      - name: '[]'
+        fullName: '[]'
+  - uid: botbuilder-teams.O365ConnectorCardActionCard
+    spec.typeScript:
+      - name: O365ConnectorCardActionCard
+        fullName: O365ConnectorCardActionCard
+        uid: botbuilder-teams.O365ConnectorCardActionCard
+  - uid: >-
+      botbuilder-teams.IO365ConnectorCardInputBase[] |
+      botbuilder-teams.IIsO365ConnectorCardInputBase[]
+    spec.typeScript:
+      - name: IO365ConnectorCardInputBase
+        fullName: IO365ConnectorCardInputBase
+        uid: botbuilder-teams.IO365ConnectorCardInputBase
+      - name: '[] | '
+        fullName: '[] | '
+      - name: IIsO365ConnectorCardInputBase
+        fullName: IIsO365ConnectorCardInputBase
+        uid: botbuilder-teams.IIsO365ConnectorCardInputBase
+      - name: '[]'
+        fullName: '[]'
+  - uid: botbuilder-teams.IO365ConnectorCardActionCard
+    spec.typeScript:
+      - name: IO365ConnectorCardActionCard
+        fullName: IO365ConnectorCardActionCard
+        uid: botbuilder-teams.IO365ConnectorCardActionCard

@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IO365ConnectorCardActionQuery
+    name: IO365ConnectorCardActionQuery
+    fullName: IO365ConnectorCardActionQuery
+    children:
+      - botbuilder-teams.IO365ConnectorCardActionQuery.actionId
+      - botbuilder-teams.IO365ConnectorCardActionQuery.body
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IO365ConnectorCardActionQuery.actionId
+    name: actionId
+    fullName: actionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'actionId: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.IO365ConnectorCardActionQuery.body
+    name: body
+    fullName: body
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'body: string'
+      return:
+        type:
+          - string

@@ -1,1 +1,210 @@
-[]
+- uid: botbuilder-teams
+  name: botbuilder-teams
+  items:
+    - uid: botbuilder-teams.ChannelAccount
+      name: ChannelAccount
+      items: []
+    - uid: botbuilder-teams.ChannelCreatedEvent
+      name: ChannelCreatedEvent
+      items: []
+    - uid: botbuilder-teams.ChannelDeletedEvent
+      name: ChannelDeletedEvent
+      items: []
+    - uid: botbuilder-teams.ChannelInfo
+      name: ChannelInfo
+      items: []
+    - uid: botbuilder-teams.ChannelMention
+      name: ChannelMention
+      items: []
+    - uid: botbuilder-teams.ChannelRenamedEvent
+      name: ChannelRenamedEvent
+      items: []
+    - uid: botbuilder-teams.ComposeExtensionAttachment
+      name: ComposeExtensionAttachment
+      items: []
+    - uid: botbuilder-teams.ComposeExtensionHandlerType
+      name: ComposeExtensionHandlerType
+      items: []
+    - uid: botbuilder-teams.ComposeExtensionParameter
+      name: ComposeExtensionParameter
+      items: []
+    - uid: botbuilder-teams.ComposeExtensionQuery
+      name: ComposeExtensionQuery
+      items: []
+    - uid: botbuilder-teams.ComposeExtensionQueryOptions
+      name: ComposeExtensionQueryOptions
+      items: []
+    - uid: botbuilder-teams.ComposeExtensionResponse
+      name: ComposeExtensionResponse
+      items: []
+    - uid: botbuilder-teams.ComposeExtensionResult
+      name: ComposeExtensionResult
+      items: []
+    - uid: botbuilder-teams.ConversationList
+      name: ConversationList
+      items: []
+    - uid: botbuilder-teams.IComposeExtensionResponse
+      name: IComposeExtensionResponse
+      items: []
+    - uid: botbuilder-teams.IInvokeEvent
+      name: IInvokeEvent
+      items: []
+    - uid: botbuilder-teams.IIsO365ConnectorCardActionBase
+      name: IIsO365ConnectorCardActionBase
+      items: []
+    - uid: botbuilder-teams.IIsO365ConnectorCardFact
+      name: IIsO365ConnectorCardFact
+      items: []
+    - uid: botbuilder-teams.IIsO365ConnectorCardImage
+      name: IIsO365ConnectorCardImage
+      items: []
+    - uid: botbuilder-teams.IIsO365ConnectorCardInputBase
+      name: IIsO365ConnectorCardInputBase
+      items: []
+    - uid: botbuilder-teams.IIsO365ConnectorCardMultichoiceInputChoice
+      name: IIsO365ConnectorCardMultichoiceInputChoice
+      items: []
+    - uid: botbuilder-teams.IIsO365ConnectorCardSection
+      name: IIsO365ConnectorCardSection
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCard
+      name: IO365ConnectorCard
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardActionBase
+      name: IO365ConnectorCardActionBase
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardActionCard
+      name: IO365ConnectorCardActionCard
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardActionQuery
+      name: IO365ConnectorCardActionQuery
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardDateInput
+      name: IO365ConnectorCardDateInput
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardFact
+      name: IO365ConnectorCardFact
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardHttpPOST
+      name: IO365ConnectorCardHttpPOST
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardImage
+      name: IO365ConnectorCardImage
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardInputBase
+      name: IO365ConnectorCardInputBase
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardMultichoiceInput
+      name: IO365ConnectorCardMultichoiceInput
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice
+      name: IO365ConnectorCardMultichoiceInputChoice
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardOpenUri
+      name: IO365ConnectorCardOpenUri
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardOpenUriTarget
+      name: IO365ConnectorCardOpenUriTarget
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardSection
+      name: IO365ConnectorCardSection
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardTextInput
+      name: IO365ConnectorCardTextInput
+      items: []
+    - uid: botbuilder-teams.IO365ConnectorCardViewAction
+      name: IO365ConnectorCardViewAction
+      items: []
+    - uid: botbuilder-teams.ISigninStateVerificationQuery
+      name: ISigninStateVerificationQuery
+      items: []
+    - uid: botbuilder-teams.MembersAddedEvent
+      name: MembersAddedEvent
+      items: []
+    - uid: botbuilder-teams.MembersRemovedEvent
+      name: MembersRemovedEvent
+      items: []
+    - uid: botbuilder-teams.MentionEntity
+      name: MentionEntity
+      items: []
+    - uid: botbuilder-teams.MentionTextLocation
+      name: MentionTextLocation
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCard
+      name: O365ConnectorCard
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardActionCard
+      name: O365ConnectorCardActionCard
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardActionHandlerType
+      name: O365ConnectorCardActionHandlerType
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardDateInput
+      name: O365ConnectorCardDateInput
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardFact
+      name: O365ConnectorCardFact
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardHttpPOST
+      name: O365ConnectorCardHttpPOST
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardImage
+      name: O365ConnectorCardImage
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardMultichoiceInput
+      name: O365ConnectorCardMultichoiceInput
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardMultichoiceInputChoice
+      name: O365ConnectorCardMultichoiceInputChoice
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardMultichoiceInputStyle
+      name: O365ConnectorCardMultichoiceInputStyle
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardOpenUri
+      name: O365ConnectorCardOpenUri
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardOpenUriOS
+      name: O365ConnectorCardOpenUriOS
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardSection
+      name: O365ConnectorCardSection
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardTextInput
+      name: O365ConnectorCardTextInput
+      items: []
+    - uid: botbuilder-teams.O365ConnectorCardViewAction
+      name: O365ConnectorCardViewAction
+      items: []
+    - uid: botbuilder-teams.SigninStateVerificationHandlerType
+      name: SigninStateVerificationHandlerType
+      items: []
+    - uid: botbuilder-teams.StripBotAtMentions
+      name: StripBotAtMentions
+      items: []
+    - uid: botbuilder-teams.TeamEventBase
+      name: TeamEventBase
+      items: []
+    - uid: botbuilder-teams.TeamInfo
+      name: TeamInfo
+      items: []
+    - uid: botbuilder-teams.TeamMention
+      name: TeamMention
+      items: []
+    - uid: botbuilder-teams.TeamRenamedEvent
+      name: TeamRenamedEvent
+      items: []
+    - uid: botbuilder-teams.TeamsChannelData
+      name: TeamsChannelData
+      items: []
+    - uid: botbuilder-teams.TeamsChatConnector
+      name: TeamsChatConnector
+      items: []
+    - uid: botbuilder-teams.TeamsMessage
+      name: TeamsMessage
+      items: []
+    - uid: botbuilder-teams.TenantInfo
+      name: TenantInfo
+      items: []
+    - uid: botbuilder-teams.UserMention
+      name: UserMention
+      items: []

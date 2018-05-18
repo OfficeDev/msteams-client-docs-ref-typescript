@@ -1,0 +1,113 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.O365ConnectorCardViewAction
+    name: O365ConnectorCardViewAction
+    fullName: O365ConnectorCardViewAction
+    children:
+      - botbuilder-teams.O365ConnectorCardViewAction.id
+      - botbuilder-teams.O365ConnectorCardViewAction.name
+      - botbuilder-teams.O365ConnectorCardViewAction.constructor
+      - botbuilder-teams.O365ConnectorCardViewAction.target
+      - botbuilder-teams.O365ConnectorCardViewAction.toAction
+    langs:
+      - typeScript
+    type: class
+    summary: >-
+      Card builder class that simplifies building O365 connector ViewAction
+      action.
+    package: botbuilder-teams
+  - uid: botbuilder-teams.O365ConnectorCardViewAction.id
+    name: id
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Action Id.
+    syntax:
+      content: 'function id(actionId: string)'
+      parameters:
+        - id: actionId
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardViewAction
+  - uid: botbuilder-teams.O365ConnectorCardViewAction.name
+    name: name
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Name of the action that will be used as button title.
+    syntax:
+      content: 'function name(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardViewAction
+  - uid: botbuilder-teams.O365ConnectorCardViewAction.constructor
+    name: O365ConnectorCardViewAction
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Creates a new O365 connector card ViewAction action object.
+    syntax:
+      content: 'new O365ConnectorCardViewAction(session?: Session)'
+      parameters:
+        - id: session
+          type:
+            - Session
+          description: |
+            (Optional) will be used to localize any text.
+          optional: true
+  - uid: botbuilder-teams.O365ConnectorCardViewAction.target
+    name: target
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Target URL.
+    syntax:
+      content: 'function target(targetUrl: string)'
+      parameters:
+        - id: targetUrl
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardViewAction
+  - uid: botbuilder-teams.O365ConnectorCardViewAction.toAction
+    name: toAction
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Returns the JSON for the current action.
+    syntax:
+      content: function toAction()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardViewAction
+references:
+  - uid: botbuilder-teams.O365ConnectorCardViewAction
+    spec.typeScript:
+      - name: O365ConnectorCardViewAction
+        fullName: O365ConnectorCardViewAction
+        uid: botbuilder-teams.O365ConnectorCardViewAction
+  - uid: botbuilder-teams.IO365ConnectorCardViewAction
+    spec.typeScript:
+      - name: IO365ConnectorCardViewAction
+        fullName: IO365ConnectorCardViewAction
+        uid: botbuilder-teams.IO365ConnectorCardViewAction

@@ -1,0 +1,39 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice
+    name: IO365ConnectorCardMultichoiceInputChoice
+    fullName: IO365ConnectorCardMultichoiceInputChoice
+    children:
+      - botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice.display
+      - botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice.value
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice.display
+    name: display
+    fullName: display
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'display: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice.value
+    name: value
+    fullName: value
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'value: string'
+      return:
+        type:
+          - string

@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IIsO365ConnectorCardMultichoiceInputChoice
+    name: IIsO365ConnectorCardMultichoiceInputChoice
+    fullName: IIsO365ConnectorCardMultichoiceInputChoice
+    children:
+      - botbuilder-teams.IIsO365ConnectorCardMultichoiceInputChoice.toChoice
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IIsO365ConnectorCardMultichoiceInputChoice.toChoice
+    name: toChoice
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function toChoice()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice
+references:
+  - uid: botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice
+    spec.typeScript:
+      - name: IO365ConnectorCardMultichoiceInputChoice
+        fullName: IO365ConnectorCardMultichoiceInputChoice
+        uid: botbuilder-teams.IO365ConnectorCardMultichoiceInputChoice

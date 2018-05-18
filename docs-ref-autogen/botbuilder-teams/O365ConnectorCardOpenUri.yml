@@ -1,0 +1,183 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri
+    name: O365ConnectorCardOpenUri
+    fullName: O365ConnectorCardOpenUri
+    children:
+      - botbuilder-teams.O365ConnectorCardOpenUri.android
+      - botbuilder-teams.O365ConnectorCardOpenUri.default
+      - botbuilder-teams.O365ConnectorCardOpenUri.id
+      - botbuilder-teams.O365ConnectorCardOpenUri.iOS
+      - botbuilder-teams.O365ConnectorCardOpenUri.name
+      - botbuilder-teams.O365ConnectorCardOpenUri.constructor
+      - botbuilder-teams.O365ConnectorCardOpenUri.targets
+      - botbuilder-teams.O365ConnectorCardOpenUri.toAction
+      - botbuilder-teams.O365ConnectorCardOpenUri.windowsPhone
+    langs:
+      - typeScript
+    type: class
+    summary: Card builder class that simplifies building O365 connector OpenUri action.
+    package: botbuilder-teams
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.android
+    name: android
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Target URL for Android devices.
+    syntax:
+      content: 'function android(targetUrl: string)'
+      parameters:
+        - id: targetUrl
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardOpenUri
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.default
+    name: default
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Default target URL. It will be also used for desktop / web clients.
+    syntax:
+      content: 'function default(targetUrl: string)'
+      parameters:
+        - id: targetUrl
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardOpenUri
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.id
+    name: id
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Action Id.
+    syntax:
+      content: 'function id(actionId: string)'
+      parameters:
+        - id: actionId
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardOpenUri
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.iOS
+    name: iOS
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Target URL for iOS devices.
+    syntax:
+      content: 'function iOS(targetUrl: string)'
+      parameters:
+        - id: targetUrl
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardOpenUri
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.name
+    name: name
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Name of the action that will be used as button title.
+    syntax:
+      content: 'function name(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardOpenUri
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.constructor
+    name: O365ConnectorCardOpenUri
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Creates a new O365 connector card OpenUri action object.
+    syntax:
+      content: 'new O365ConnectorCardOpenUri(session?: Session)'
+      parameters:
+        - id: session
+          type:
+            - Session
+          description: |
+            (Optional) will be used to localize any text.
+          optional: true
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.targets
+    name: targets
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Directly assign target urls associated different platforms.
+    syntax:
+      content: 'function targets(platformUrlMap: function)'
+      parameters:
+        - id: platformUrlMap
+          type:
+            - function
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardOpenUri
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.toAction
+    name: toAction
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Returns the JSON for the current action.
+    syntax:
+      content: function toAction()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardOpenUri
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri.windowsPhone
+    name: windowsPhone
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Target URL for Windows phone.
+    syntax:
+      content: 'function windowsPhone(targetUrl: string)'
+      parameters:
+        - id: targetUrl
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCardOpenUri
+references:
+  - uid: botbuilder-teams.O365ConnectorCardOpenUri
+    spec.typeScript:
+      - name: O365ConnectorCardOpenUri
+        fullName: O365ConnectorCardOpenUri
+        uid: botbuilder-teams.O365ConnectorCardOpenUri
+  - uid: botbuilder-teams.IO365ConnectorCardOpenUri
+    spec.typeScript:
+      - name: IO365ConnectorCardOpenUri
+        fullName: IO365ConnectorCardOpenUri
+        uid: botbuilder-teams.IO365ConnectorCardOpenUri

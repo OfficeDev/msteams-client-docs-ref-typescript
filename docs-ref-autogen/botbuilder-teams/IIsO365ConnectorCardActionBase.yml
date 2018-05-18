@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IIsO365ConnectorCardActionBase
+    name: IIsO365ConnectorCardActionBase
+    fullName: IIsO365ConnectorCardActionBase
+    children:
+      - botbuilder-teams.IIsO365ConnectorCardActionBase.toAction
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IIsO365ConnectorCardActionBase.toAction
+    name: toAction
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function toAction()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardActionBase
+references:
+  - uid: botbuilder-teams.IO365ConnectorCardActionBase
+    spec.typeScript:
+      - name: IO365ConnectorCardActionBase
+        fullName: IO365ConnectorCardActionBase
+        uid: botbuilder-teams.IO365ConnectorCardActionBase

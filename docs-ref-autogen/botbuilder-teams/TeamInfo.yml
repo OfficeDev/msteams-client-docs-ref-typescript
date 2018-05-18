@@ -1,0 +1,98 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.TeamInfo
+    name: TeamInfo
+    fullName: TeamInfo
+    children:
+      - botbuilder-teams.TeamInfo.aadGroupId
+      - botbuilder-teams.TeamInfo.id
+      - botbuilder-teams.TeamInfo.name
+      - botbuilder-teams.TeamInfo.constructor
+      - botbuilder-teams.TeamInfo.constructor_1
+    langs:
+      - typeScript
+    type: class
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.TeamInfo.aadGroupId
+    name: aadGroupId
+    fullName: aadGroupId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'aadGroupId?: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.TeamInfo.id
+    name: id
+    fullName: id
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'id?: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.TeamInfo.name
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+  - uid: botbuilder-teams.TeamInfo.constructor
+    name: TeamInfo
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new TeamInfo(name: string, id: string)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: id
+          type:
+            - string
+          description: ''
+  - uid: botbuilder-teams.TeamInfo.constructor_1
+    name: TeamInfo
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'new TeamInfo(name: string, id: string, aadGroupId: string)'
+      parameters:
+        - id: name
+          type:
+            - string
+          description: ''
+        - id: id
+          type:
+            - string
+          description: ''
+        - id: aadGroupId
+          type:
+            - string
+          description: ''

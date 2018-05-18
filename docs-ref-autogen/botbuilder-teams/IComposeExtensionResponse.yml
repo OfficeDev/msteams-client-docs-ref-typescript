@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IComposeExtensionResponse
+    name: IComposeExtensionResponse
+    fullName: IComposeExtensionResponse
+    children:
+      - botbuilder-teams.IComposeExtensionResponse.composeExtension
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IComposeExtensionResponse.composeExtension
+    name: composeExtension
+    fullName: composeExtension
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    optional: true
+    syntax:
+      content: 'composeExtension?: ComposeExtensionResult'
+      return:
+        type:
+          - botbuilder-teams.ComposeExtensionResult
+references:
+  - uid: botbuilder-teams.ComposeExtensionResult
+    spec.typeScript:
+      - name: ComposeExtensionResult
+        fullName: ComposeExtensionResult
+        uid: botbuilder-teams.ComposeExtensionResult

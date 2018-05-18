@@ -1,0 +1,12 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.SigninStateVerificationHandlerType
+    name: SigninStateVerificationHandlerType
+    fullName: SigninStateVerificationHandlerType
+    children: []
+    langs:
+      - typeScript
+    type: class
+    summary: |+
+
+    package: botbuilder-teams

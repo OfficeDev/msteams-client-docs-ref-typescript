@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IIsO365ConnectorCardInputBase
+    name: IIsO365ConnectorCardInputBase
+    fullName: IIsO365ConnectorCardInputBase
+    children:
+      - botbuilder-teams.IIsO365ConnectorCardInputBase.toInput
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IIsO365ConnectorCardInputBase.toInput
+    name: toInput
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function toInput()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardInputBase
+references:
+  - uid: botbuilder-teams.IO365ConnectorCardInputBase
+    spec.typeScript:
+      - name: IO365ConnectorCardInputBase
+        fullName: IO365ConnectorCardInputBase
+        uid: botbuilder-teams.IO365ConnectorCardInputBase

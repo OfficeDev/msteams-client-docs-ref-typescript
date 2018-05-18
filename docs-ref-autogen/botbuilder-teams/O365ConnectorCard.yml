@@ -1,0 +1,208 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.O365ConnectorCard
+    name: O365ConnectorCard
+    fullName: O365ConnectorCard
+    children:
+      - botbuilder-teams.O365ConnectorCard.constructor
+      - botbuilder-teams.O365ConnectorCard.potentialAction
+      - botbuilder-teams.O365ConnectorCard.sections
+      - botbuilder-teams.O365ConnectorCard.summary
+      - botbuilder-teams.O365ConnectorCard.text
+      - botbuilder-teams.O365ConnectorCard.themeColor
+      - botbuilder-teams.O365ConnectorCard.title
+      - botbuilder-teams.O365ConnectorCard.toAttachment
+    langs:
+      - typeScript
+    type: class
+    summary: Card builder class that simplifies building O365 connector cards.
+    package: botbuilder-teams
+  - uid: botbuilder-teams.O365ConnectorCard.constructor
+    name: O365ConnectorCard
+    children: []
+    type: constructor
+    langs:
+      - typeScript
+    summary: Creates a new O365 connector card.
+    syntax:
+      content: 'new O365ConnectorCard(session?: Session)'
+      parameters:
+        - id: session
+          type:
+            - Session
+          description: |
+            (Optional) will be used to localize any text.
+          optional: true
+  - uid: botbuilder-teams.O365ConnectorCard.potentialAction
+    name: potentialAction
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Set of actions for the current card.
+    syntax:
+      content: >-
+        function potentialAction(list: IO365ConnectorCardActionBase[] |
+        IIsO365ConnectorCardActionBase[])
+      parameters:
+        - id: list
+          type:
+            - >-
+              botbuilder-teams.IO365ConnectorCardActionBase[] |
+              botbuilder-teams.IIsO365ConnectorCardActionBase[]
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCard
+  - uid: botbuilder-teams.O365ConnectorCard.sections
+    name: sections
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Set of sections for the current card.
+    syntax:
+      content: >-
+        function sections(list: IO365ConnectorCardSection[] |
+        IIsO365ConnectorCardSection[])
+      parameters:
+        - id: list
+          type:
+            - >-
+              botbuilder-teams.IO365ConnectorCardSection[] |
+              botbuilder-teams.IIsO365ConnectorCardSection[]
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCard
+  - uid: botbuilder-teams.O365ConnectorCard.summary
+    name: summary
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Summary for the card.
+    syntax:
+      content: 'function summary(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCard
+  - uid: botbuilder-teams.O365ConnectorCard.text
+    name: text
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Text for the card.
+    syntax:
+      content: 'function text(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCard
+  - uid: botbuilder-teams.O365ConnectorCard.themeColor
+    name: themeColor
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Theme color for the card.
+    syntax:
+      content: 'function themeColor(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCard
+  - uid: botbuilder-teams.O365ConnectorCard.title
+    name: title
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Title of the card.
+    syntax:
+      content: 'function title(text: string | string[], args: any[])'
+      parameters:
+        - id: text
+          type:
+            - 'string | string[]'
+          description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+      return:
+        type:
+          - botbuilder-teams.O365ConnectorCard
+  - uid: botbuilder-teams.O365ConnectorCard.toAttachment
+    name: toAttachment
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: Returns the JSON for the card
+    syntax:
+      content: function toAttachment()
+      parameters: []
+      return:
+        type:
+          - IAttachment
+references:
+  - uid: >-
+      botbuilder-teams.IO365ConnectorCardActionBase[] |
+      botbuilder-teams.IIsO365ConnectorCardActionBase[]
+    spec.typeScript:
+      - name: IO365ConnectorCardActionBase
+        fullName: IO365ConnectorCardActionBase
+        uid: botbuilder-teams.IO365ConnectorCardActionBase
+      - name: '[] | '
+        fullName: '[] | '
+      - name: IIsO365ConnectorCardActionBase
+        fullName: IIsO365ConnectorCardActionBase
+        uid: botbuilder-teams.IIsO365ConnectorCardActionBase
+      - name: '[]'
+        fullName: '[]'
+  - uid: botbuilder-teams.O365ConnectorCard
+    spec.typeScript:
+      - name: O365ConnectorCard
+        fullName: O365ConnectorCard
+        uid: botbuilder-teams.O365ConnectorCard
+  - uid: >-
+      botbuilder-teams.IO365ConnectorCardSection[] |
+      botbuilder-teams.IIsO365ConnectorCardSection[]
+    spec.typeScript:
+      - name: IO365ConnectorCardSection
+        fullName: IO365ConnectorCardSection
+        uid: botbuilder-teams.IO365ConnectorCardSection
+      - name: '[] | '
+        fullName: '[] | '
+      - name: IIsO365ConnectorCardSection
+        fullName: IIsO365ConnectorCardSection
+        uid: botbuilder-teams.IIsO365ConnectorCardSection
+      - name: '[]'
+        fullName: '[]'

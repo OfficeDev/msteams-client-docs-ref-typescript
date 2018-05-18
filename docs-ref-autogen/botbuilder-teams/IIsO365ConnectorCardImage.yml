@@ -1,0 +1,31 @@
+### YamlMime:UniversalReference
+items:
+  - uid: botbuilder-teams.IIsO365ConnectorCardImage
+    name: IIsO365ConnectorCardImage
+    fullName: IIsO365ConnectorCardImage
+    children:
+      - botbuilder-teams.IIsO365ConnectorCardImage.toImage
+    langs:
+      - typeScript
+    type: interface
+    summary: ''
+    package: botbuilder-teams
+  - uid: botbuilder-teams.IIsO365ConnectorCardImage.toImage
+    name: toImage
+    children: []
+    type: method
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: function toImage()
+      parameters: []
+      return:
+        type:
+          - botbuilder-teams.IO365ConnectorCardImage
+references:
+  - uid: botbuilder-teams.IO365ConnectorCardImage
+    spec.typeScript:
+      - name: IO365ConnectorCardImage
+        fullName: IO365ConnectorCardImage
+        uid: botbuilder-teams.IO365ConnectorCardImage
