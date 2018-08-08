@@ -6,9 +6,49 @@ ms.date: 08/08/2018
 ---
 # Microsoft Teams JavaScript client SDK
 
-## Using the Microsoft Teams JavaScript client SDK
+The Microsoft Teams JavaScript client SDK is part of the Microsoft Teams developer platform. It makes it easy to integrate your own services with Teams, whether you develop custom apps for your enterprise or SaaS applications for teams around the world. See [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) for full documentation on the platform and on the SDK.
 
+## Finding the Microsoft Teams JavaScript client SDK
 
+The Teams client SDK is distributed as an npm package. It can be found here:
+[](https://www.npmjs.com/package/@microsoft/teams-js/v/1.3.3)
+
+## Installation
+
+You can install the package using npm or yarn:
+
+* `npm install --save @microsoft/teams-js`
+* `yarn add @microsoft/teams-js`
+
+## Use
+
+If you are using any dependency loader or module bundler such as:
+
+* [RequireJS](http://requirejs.org/)
+* [SystemJS](https://github.com/systemjs/systemjs)
+* [browserify](http://browserify.org/)
+* [webpack](https://webpack.github.io/)
+
+you can use `import` syntax to import specific modules. For example:
+
+```typescript
+import * as microsoftTeams from "@microsoft/teams-js";
+```
+
+You can also reference the entire library in html pages using a script tag.  There are three ways to do this:
+
+```html
+<!-- Microsoft Teams JavaScript API (via CDN) -->
+<script src="https://unpkg.com/@microsoft/teams-js@1.3.3/dist/MicrosoftTeams.min.js" integrity="sha384-g1iQyAjC6TaAEj70a8TEV96chNDvgDxIjqEdppo/wph3gPqZ60d7lA1mxDUkAETe" crossorigin="anonymous"></script>
+
+<!-- Microsoft Teams JavaScript API (via npm) -->
+<script src="node_modules/@microsoft/teams-js@1.3.3/dist/MicrosoftTeams.min.js"></script>
+
+<!-- Microsoft Teams JavaScript API (via local) -->
+<script src="MicrosoftTeams.min.js"></script>
+```
+
+The first method, using unpkg, is probably the most practical unless you have security concerns using a 3rd party service like unpkg.com.  The final option using a local copy is the most secure, but requires hosting and updating a local copy of the SDK files.
 
 ## Reference
 
@@ -18,3 +58,5 @@ The following sections contain reference pages for all the elements of the Teams
     [microsoftTeams module](/javascript/api/msteams-client)
     [microsoftTeams.authentication module](/javascript/api/msteams-client/msteams-client.microsoftteams.authentication)
     [microsoftTeams.settings module](/javascript/api/msteams-client/msteams-client.microsoftteams.settings)
+
+And remember that [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) has full documentation on using the platform and the SDK.
