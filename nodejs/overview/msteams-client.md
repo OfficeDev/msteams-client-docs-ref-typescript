@@ -8,7 +8,7 @@ ms.date: 08/08/2018
 
 The Microsoft Teams JavaScript client SDK is part of the Microsoft Teams developer platform. It makes it easy to integrate your own services with Teams, whether you develop custom apps for your enterprise or SaaS applications for teams around the world. See [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) for full documentation on the platform and on the SDK.
 
-## Finding the Microsoft Teams JavaScript client SDK
+## Finding the SDK
 
 The Teams client SDK is distributed as an npm package. It can be found here:
 [https://www.npmjs.com/package/@microsoft/teams-js/v/1.3.3](https://www.npmjs.com/package/@microsoft/teams-js/v/1.3.3)
