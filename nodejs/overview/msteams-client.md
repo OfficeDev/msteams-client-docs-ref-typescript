@@ -50,6 +50,6 @@ The first method, using unpkg.com, is probably the most practical unless you pre
 
 The following sections contain reference pages for all the elements of the Teams client API. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js. The source code for the SDK is located at https://github.com/OfficeDev/microsoft-teams-library-js.
 
-* [the package reference](/javascript/api/msteams-client)
+* [microsoft.teams-js](/javascript/api/msteams-client/)
 
 And remember that [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) has full documentation on using the platform and the SDK.
