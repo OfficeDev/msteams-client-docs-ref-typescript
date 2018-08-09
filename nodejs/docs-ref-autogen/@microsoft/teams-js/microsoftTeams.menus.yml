@@ -1,0 +1,190 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@microsoft/teams-js.microsoftTeams.menus'
+    name: menus
+    fullName: menus
+    children:
+      - '@microsoft/teams-js.microsoftTeams.menus.setNavBarMenu'
+      - '@microsoft/teams-js.microsoftTeams.menus.setUpViews'
+      - '@microsoft/teams-js.microsoftTeams.menus.showActionMenu'
+    langs:
+      - typeScript
+    type: module
+    summary: >-
+      Namespace to interact with the menu-specific part of the SDK.
+
+      This object is used to show View Configuration, Action Menu and Navigation
+      Bar Menu.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.setNavBarMenu'
+    name: setNavBarMenu
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Used to set menu items on the Navigation Bar. If icon is available, icon
+      will be shown, otherwise title will be shown.
+    syntax:
+      content: >-
+        function setNavBarMenu(items: MenuItem[], handler: (id: string) =>
+        boolean)
+      parameters:
+        - id: items
+          type:
+            - '@microsoft/teams-js.microsoftTeams.menus.MenuItem[]'
+          description: List of MenuItems for Navigation Bar Menu.
+        - id: handler
+          type:
+            - '(id: string) => boolean'
+          description: |
+            The handler to invoke when the user selects menu item.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.setUpViews'
+    name: setUpViews
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: |-
+      Registers list of view configurations and it's handler.
+      Handler is responsible for listening selection of View Configuration.
+    syntax:
+      content: >-
+        function setUpViews(viewConfig: ViewConfiguration[], handler: (id:
+        string) => boolean)
+      parameters:
+        - id: viewConfig
+          type:
+            - '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration[]'
+          description: List of view configurations. Minimum 1 value is required.
+        - id: handler
+          type:
+            - '(id: string) => boolean'
+          description: |
+            The handler to invoke when the user selects view configuration.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.showActionMenu'
+    name: showActionMenu
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Used to show Action Menu.
+    syntax:
+      content: >-
+        function showActionMenu(params: ActionMenuParameters, handler: (id:
+        string) => boolean)
+      parameters:
+        - id: params
+          type:
+            - '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
+          description: Parameters for Menu Parameters
+        - id: handler
+          type:
+            - '(id: string) => boolean'
+          description: |
+            The handler to invoke when the user selects menu item.
+    package: '@microsoft/teams-js'
+references:
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
+    spec.typeScript:
+      - name: AuthenticateParameters
+        fullName: AuthenticateParameters
+        uid: >-
+          @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
+    spec.typeScript:
+      - name: ViewData
+        fullName: ViewData
+        uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem[]'
+    spec.typeScript:
+      - name: MenuItem
+        fullName: MenuItem
+        uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
+    spec.typeScript:
+      - name: MenuListType
+        fullName: MenuListType
+        uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration[]'
+    spec.typeScript:
+      - name: ViewConfiguration
+        fullName: ViewConfiguration
+        uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
+    spec.typeScript:
+      - name: ActionMenuParameters
+        fullName: ActionMenuParameters
+        uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
+    spec.typeScript:
+      - name: SaveParameters
+        fullName: SaveParameters
+        uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
+    spec.typeScript:
+      - name: Settings
+        fullName: Settings
+        uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
+    spec.typeScript:
+      - name: TaskInfo
+        fullName: TaskInfo
+        uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
+  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+    spec.typeScript:
+      - name: HostClientType
+        fullName: HostClientType
+        uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
+    spec.typeScript:
+      - name: TeamType
+        fullName: TeamType
+        uid: '@microsoft/teams-js.microsoftTeams.TeamType'
+  - uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+    spec.typeScript:
+      - name: UserTeamRole
+        fullName: UserTeamRole
+        uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstance[]'
+    spec.typeScript:
+      - name: TabInstance
+        fullName: TabInstance
+        uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension | Number'
+    spec.typeScript:
+      - name: TaskModuleDimension
+        fullName: TaskModuleDimension
+        uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
+      - name: ' | Number'
+        fullName: ' | Number'
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation[]'
+    spec.typeScript:
+      - name: TeamInformation
+        fullName: TeamInformation
+        uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
+    spec.typeScript:
+      - name: TabInstanceParameters
+        fullName: TabInstanceParameters
+        uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+    spec.typeScript:
+      - name: TabInstance
+        fullName: TabInstance
+        uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+  - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+    spec.typeScript:
+      - name: DeepLinkParameters
+        fullName: DeepLinkParameters
+        uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'

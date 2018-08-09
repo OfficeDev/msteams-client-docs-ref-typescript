@@ -1,0 +1,227 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@microsoft/teams-js.microsoftTeams.settings'
+    name: settings
+    fullName: settings
+    children:
+      - '@microsoft/teams-js.microsoftTeams.settings.getSettings'
+      - '@microsoft/teams-js.microsoftTeams.settings.registerOnRemoveHandler'
+      - '@microsoft/teams-js.microsoftTeams.settings.registerOnSaveHandler'
+      - '@microsoft/teams-js.microsoftTeams.settings.setSettings'
+      - '@microsoft/teams-js.microsoftTeams.settings.setValidityState'
+    langs:
+      - typeScript
+    type: module
+    summary: |-
+      Namespace to interact with the settings-specific part of the SDK.
+      This object is usable only on the settings frame.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.getSettings'
+    name: getSettings
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Gets the settings for the current instance.
+    syntax:
+      content: 'function getSettings(callback: (instanceSettings: Settings) => void)'
+      parameters:
+        - id: callback
+          type:
+            - '(instanceSettings: Settings) => void'
+          description: |
+            The callback to invoke when the <xref:Settings> object is retrieved.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.registerOnRemoveHandler'
+    name: registerOnRemoveHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for user attempts to remove content. This handler
+      should be used
+
+      to remove the underlying resource powering the content.
+
+      The object passed to the handler must be used to indicate whether to
+      proceed with the removal.
+
+      Only one handler may be registered at a time. Subsequent registrations
+      will override the first.
+    syntax:
+      content: 'function registerOnRemoveHandler(handler: (evt: RemoveEvent) => void)'
+      parameters:
+        - id: handler
+          type:
+            - '(evt: RemoveEvent) => void'
+          description: |
+            The handler to invoke when the user selects the remove button.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.registerOnSaveHandler'
+    name: registerOnSaveHandler
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for when the user attempts to save the settings. This
+      handler should be used
+
+      to create or update the underlying resource powering the content.
+
+      The object passed to the handler must be used to notify whether to proceed
+      with the save.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerOnSaveHandler(handler: (evt: SaveEvent) => void)'
+      parameters:
+        - id: handler
+          type:
+            - '(evt: SaveEvent) => void'
+          description: |
+            The handler to invoke when the user selects the save button.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.setSettings'
+    name: setSettings
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Sets the settings for the current instance.
+
+      This is an asynchronous operation; calls to getSettings are not guaranteed
+      to reflect the changed state.
+    syntax:
+      content: 'function setSettings(instanceSettings: Settings)'
+      parameters:
+        - id: instanceSettings
+          type:
+            - '@microsoft/teams-js.microsoftTeams.settings.Settings'
+          description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.setValidityState'
+    name: setValidityState
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Sets the validity state for the settings.
+
+      The initial value is false, so the user cannot save the settings until
+      this is called with true.
+    syntax:
+      content: 'function setValidityState(validityState: boolean)'
+      parameters:
+        - id: validityState
+          type:
+            - boolean
+          description: |
+            Indicates whether the save or remove button is enabled for the user.
+    package: '@microsoft/teams-js'
+references:
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
+    spec.typeScript:
+      - name: AuthenticateParameters
+        fullName: AuthenticateParameters
+        uid: >-
+          @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
+    spec.typeScript:
+      - name: ViewData
+        fullName: ViewData
+        uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem[]'
+    spec.typeScript:
+      - name: MenuItem
+        fullName: MenuItem
+        uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
+    spec.typeScript:
+      - name: MenuListType
+        fullName: MenuListType
+        uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration[]'
+    spec.typeScript:
+      - name: ViewConfiguration
+        fullName: ViewConfiguration
+        uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
+    spec.typeScript:
+      - name: ActionMenuParameters
+        fullName: ActionMenuParameters
+        uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
+    spec.typeScript:
+      - name: SaveParameters
+        fullName: SaveParameters
+        uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
+    spec.typeScript:
+      - name: Settings
+        fullName: Settings
+        uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
+    spec.typeScript:
+      - name: TaskInfo
+        fullName: TaskInfo
+        uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
+  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+    spec.typeScript:
+      - name: HostClientType
+        fullName: HostClientType
+        uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
+    spec.typeScript:
+      - name: TeamType
+        fullName: TeamType
+        uid: '@microsoft/teams-js.microsoftTeams.TeamType'
+  - uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+    spec.typeScript:
+      - name: UserTeamRole
+        fullName: UserTeamRole
+        uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstance[]'
+    spec.typeScript:
+      - name: TabInstance
+        fullName: TabInstance
+        uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension | Number'
+    spec.typeScript:
+      - name: TaskModuleDimension
+        fullName: TaskModuleDimension
+        uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
+      - name: ' | Number'
+        fullName: ' | Number'
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation[]'
+    spec.typeScript:
+      - name: TeamInformation
+        fullName: TeamInformation
+        uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
+    spec.typeScript:
+      - name: TabInstanceParameters
+        fullName: TabInstanceParameters
+        uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+    spec.typeScript:
+      - name: TabInstance
+        fullName: TabInstance
+        uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+  - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+    spec.typeScript:
+      - name: DeepLinkParameters
+        fullName: DeepLinkParameters
+        uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
