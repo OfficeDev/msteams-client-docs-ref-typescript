@@ -1,0 +1,109 @@
+### YamlMime:UniversalReference
+items:
+  - uid: '@microsoft/teams-js'
+    name: '@microsoft/teams-js'
+    summary: ''
+    children:
+      - '@microsoft/teams-js.@microsoft.teams-js'
+      - '@microsoft/teams-js.microsoftTeams'
+      - '@microsoft/teams-js.microsoftTeams.authentication'
+      - '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
+      - '@microsoft/teams-js.microsoftTeams.Context'
+      - '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+      - '@microsoft/teams-js.microsoftTeams.HostClientType'
+      - '@microsoft/teams-js.microsoftTeams.menus'
+      - '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
+      - '@microsoft/teams-js.microsoftTeams.menus.MenuItem'
+      - '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
+      - '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration'
+      - '@microsoft/teams-js.microsoftTeams.menus.ViewData'
+      - '@microsoft/teams-js.microsoftTeams.settings'
+      - '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent'
+      - '@microsoft/teams-js.microsoftTeams.settings.SaveEvent'
+      - '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
+      - '@microsoft/teams-js.microsoftTeams.settings.Settings'
+      - '@microsoft/teams-js.microsoftTeams.TabInformation'
+      - '@microsoft/teams-js.microsoftTeams.TabInstance'
+      - '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
+      - '@microsoft/teams-js.microsoftTeams.TaskInfo'
+      - '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
+      - '@microsoft/teams-js.microsoftTeams.tasks'
+      - '@microsoft/teams-js.microsoftTeams.TeamInformation'
+      - '@microsoft/teams-js.microsoftTeams.TeamInstanceParameters'
+      - '@microsoft/teams-js.microsoftTeams.TeamType'
+      - '@microsoft/teams-js.microsoftTeams.UserJoinedTeamsInformation'
+      - '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+      - '@microsoft/teams-js.MessageEvent'
+      - '@microsoft/teams-js.String'
+      - '@microsoft/teams-js.TeamsNativeClient'
+      - '@microsoft/teams-js.Window'
+    type: package
+    langs:
+      - typeScript
+references:
+  - uid: '@microsoft/teams-js.@microsoft.teams-js'
+    name: '@microsoft.teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams'
+    name: microsoftTeams
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication'
+    name: authentication
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
+    name: AuthenticateParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.Context'
+    name: Context
+  - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+    name: DeepLinkParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+    name: HostClientType
+  - uid: '@microsoft/teams-js.microsoftTeams.menus'
+    name: menus
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
+    name: ActionMenuParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem'
+    name: MenuItem
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
+    name: MenuListType
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration'
+    name: ViewConfiguration
+  - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
+    name: ViewData
+  - uid: '@microsoft/teams-js.microsoftTeams.settings'
+    name: settings
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent'
+    name: RemoveEvent
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveEvent'
+    name: SaveEvent
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
+    name: SaveParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
+    name: Settings
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInformation'
+    name: TabInformation
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+    name: TabInstance
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
+    name: TabInstanceParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
+    name: TaskInfo
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
+    name: TaskModuleDimension
+  - uid: '@microsoft/teams-js.microsoftTeams.tasks'
+    name: tasks
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
+    name: TeamInformation
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamInstanceParameters'
+    name: TeamInstanceParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
+    name: TeamType
+  - uid: '@microsoft/teams-js.microsoftTeams.UserJoinedTeamsInformation'
+    name: UserJoinedTeamsInformation
+  - uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+    name: UserTeamRole
+  - uid: '@microsoft/teams-js.MessageEvent'
+    name: MessageEvent
+  - uid: '@microsoft/teams-js.String'
+    name: String
+  - uid: '@microsoft/teams-js.TeamsNativeClient'
+    name: TeamsNativeClient
+  - uid: '@microsoft/teams-js.Window'
+    name: Window
