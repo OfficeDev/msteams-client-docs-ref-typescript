@@ -1,10 +1,7 @@
 - name: SDK Reference
   uid: msteams.sdk.landingPage.reference
   landingPageType: Root
+  topicHref: ~/overview/msteams-client.md
   expanded: true
-  items:
-    - name: Client SDK
-      uid: msteams.sdk.client.landingPage.reference
-      topicHref: ~/overview/msteams-client.md
-      children:
-        - msteams-client
+  children:
+    - '*'
