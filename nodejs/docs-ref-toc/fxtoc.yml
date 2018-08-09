@@ -4,10 +4,4 @@
   topicHref: ~/overview/msteams-client.md
   expanded: true
   children:
-  items:	  children:
-    - name: Client SDK	    
-    - '*' 
-      uid: msteams.sdk.client.landingPage.reference	
-      topicHref: ~/overview/msteams-client.md	
-      children:	
-        - msteams-client
+    - '*'
