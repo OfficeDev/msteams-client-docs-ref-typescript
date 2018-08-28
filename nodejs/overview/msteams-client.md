@@ -2,7 +2,7 @@
 title: Microsoft Teams client SDK
 description: Reference documentation for the Microsoft Teams client SDK
 keywords: msteams teams client sdk javascript reference
-ms.date: 08/08/2018
+ms.date: 08/28/2018
 ---
 # Microsoft Teams JavaScript client SDK
 
@@ -31,11 +31,11 @@ import * as microsoftTeams from "@microsoft/teams-js";
 You can also reference the entire library in html pages using a script tag.  There are three ways to do this:
 
 ```html
-<!-- Microsoft Teams JavaScript API (linking to a specific version via CDN) -->
-<script src="https://unpkg.com/@microsoft/teams-js@1.3.3/dist/MicrosoftTeams.min.js" integrity="sha384-g1iQyAjC6TaAEj70a8TEV96chNDvgDxIjqEdppo/wph3gPqZ60d7lA1mxDUkAETe" crossorigin="anonymous"></script>
-
+<!-- Microsoft Teams JavaScript API (via CDN) -->
+<script src="https://unpkg.com/@microsoft/teams-js@1.3.4/dist/MicrosoftTeams.min.js" integrity="sha384-3zTjxw3msc6gKx3DseSU0lfRM129YrFjr2xgocfMIN/kBCdzJ88d+FSB1n3scUku" crossorigin="anonymous"></script>
+ 
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@1.3.3/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@1.3.4/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (copied local) -->
 <script src="MicrosoftTeams.min.js"></script>
@@ -44,7 +44,10 @@ You can also reference the entire library in html pages using a script tag.  The
 The first method, using unpkg.com, is probably the most practical unless you prefer not to use a third-party party service like unpkg.com. The final option, using a local copy on your servers, eliminates that dependency but requires hosting and updating a local copy of the SDK.
 
 > [!IMPORTANT]
-> Do not copy/paste these `<script src=...` URLs from this page; they refer to a specific version of the SDK. To get the URLs for the latest version, always go to https://www.npmjs.com/package/@microsoft/teams-js.
+> Do not copy/paste these `<script src=...` URLs from this page; they refer to a specific version of the SDK. To get the `<script src=...></script>` markup for the latest version, always go to https://www.npmjs.com/package/@microsoft/teams-js.
+
+> [!TIP]
+> If you are a TypeScript developer it is helpful to install the NPM package as described [above](#installing-the-sdk), even if you don't link to the copy of `MicrosoftTeams.min.js` in `node_modules` from your HTML, because IDEs such as Visual Studio Code will use it for Intellisense and type checking.
 
 ## Reference
 
