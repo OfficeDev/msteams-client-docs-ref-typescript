@@ -4,7 +4,6 @@ items:
     name: '@microsoft/teams-js'
     summary: ''
     children:
-      - '@microsoft/teams-js.@microsoft.teams-js'
       - '@microsoft/teams-js.microsoftTeams'
       - '@microsoft/teams-js.microsoftTeams.authentication'
       - '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
@@ -30,8 +29,6 @@ items:
     langs:
       - typeScript
 references:
-  - uid: '@microsoft/teams-js.@microsoft.teams-js'
-    name: '@microsoft.teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams'
     name: microsoftTeams
   - uid: '@microsoft/teams-js.microsoftTeams.authentication'

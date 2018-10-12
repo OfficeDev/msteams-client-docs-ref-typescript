@@ -5,6 +5,7 @@ items:
     fullName: TaskInfo
     children:
       - '@microsoft/teams-js.microsoftTeams.TaskInfo.card'
+      - '@microsoft/teams-js.microsoftTeams.TaskInfo.completionBotId'
       - '@microsoft/teams-js.microsoftTeams.TaskInfo.fallbackUrl'
       - '@microsoft/teams-js.microsoftTeams.TaskInfo.height'
       - '@microsoft/teams-js.microsoftTeams.TaskInfo.title'
@@ -26,6 +27,28 @@ items:
     optional: true
     syntax:
       content: 'card?: string'
+      return:
+        type:
+          - string
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskInfo.completionBotId'
+    name: completionBotId
+    fullName: completionBotId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      Specifies a bot ID to send the result of the user's interaction with the
+      task module.
+
+      If specified, the bot will receive a task/complete invoke event with a
+      JSON object
+
+      in the event payload.
+    optional: true
+    syntax:
+      content: 'completionBotId?: string'
       return:
         type:
           - string
