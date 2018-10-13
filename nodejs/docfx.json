@@ -16,7 +16,9 @@
           "LICENSE-CODE",
           "ThirdPartyNotices",
           "toc.yml"
-        ]
+        ],
+        "group": "stable",
+        "version": "msteams-client-js-latest"
       },
       {
         "files": [
@@ -27,7 +29,9 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "group": "stable",
+        "version": "msteams-client-js-latest"
       },
       {
         "files": [
@@ -35,7 +39,9 @@
         ],
         "src": "docs-ref-autogen",
         "dest": "api/msteams-client-docs-ref-typescript",
-        "exclude": []
+        "exclude": [],
+        "group": "stable",
+        "version": "msteams-client-js-latest"
       },
       {
         "files": [
@@ -43,7 +49,9 @@
         ],
         "src": "overview",
         "dest": "api/overview",
-        "exclude": []
+        "exclude": [],
+        "group": "stable",
+        "version": "msteams-client-js-latest"
       }
     ],
     "resource": [
@@ -56,13 +64,22 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "dest": "api"
+        "dest": "api",
+        "group": "stable",
+        "version": "msteams-client-js-latest"
       }
     ],
     "overwrite": [],
+     "groups": {
+      "stable": {
+        "dest": "stable",
+        "moniker_range": "msteams-client-js-latest"
+      }
+    },
     "externalReference": [],
     "globalMetadata": {
       "ms.topic": "reference",
+      "apiPlatform": "javascript",
       "author": "charlesprakash",
       "ms.author": "o365devx",
       "manager": "billbl",
