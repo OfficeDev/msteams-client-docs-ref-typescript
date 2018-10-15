@@ -1,9 +1,6 @@
 - uid: '@microsoft/teams-js'
   name: '@microsoft/teams-js'
   items:
-    - uid: '@microsoft/teams-js.MessageEvent'
-      name: MessageEvent
-      items: []
     - uid: '@microsoft/teams-js.microsoftTeams'
       name: microsoftTeams
       items:
@@ -23,24 +20,6 @@
         - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
           name: HostClientType
           items: []
-        - uid: '@microsoft/teams-js.microsoftTeams.menus'
-          name: menus
-          items:
-            - uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
-              name: ActionMenuParameters
-              items: []
-            - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem'
-              name: MenuItem
-              items: []
-            - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
-              name: MenuListType
-              items: []
-            - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration'
-              name: ViewConfiguration
-              items: []
-            - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
-              name: ViewData
-              items: []
         - uid: '@microsoft/teams-js.microsoftTeams.settings'
           name: settings
           items:
@@ -77,24 +56,12 @@
         - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
           name: TeamInformation
           items: []
-        - uid: '@microsoft/teams-js.microsoftTeams.TeamInstanceParameters'
-          name: TeamInstanceParameters
-          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
           name: TeamType
-          items: []
-        - uid: '@microsoft/teams-js.microsoftTeams.UserJoinedTeamsInformation'
-          name: UserJoinedTeamsInformation
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
           name: UserTeamRole
           items: []
     - uid: '@microsoft/teams-js.String'
       name: String
-      items: []
-    - uid: '@microsoft/teams-js.TeamsNativeClient'
-      name: TeamsNativeClient
-      items: []
-    - uid: '@microsoft/teams-js.Window'
-      name: Window
       items: []
