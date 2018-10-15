@@ -1,0 +1,8 @@
+{
+    "redirections": [
+        {
+            "redirect_url": "https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/",
+            "source_path": "nodejs/docs-ref-autogen/overview/msteams-client.md" 
+        }
+    ]
+}
