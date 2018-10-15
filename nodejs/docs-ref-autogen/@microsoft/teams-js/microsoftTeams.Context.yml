@@ -458,71 +458,50 @@ items:
     package: '@microsoft/teams-js'
 references:
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
+    name: AuthenticateParameters
     spec.typeScript:
       - name: AuthenticateParameters
         fullName: AuthenticateParameters
         uid: >-
           @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters
-  - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
-    spec.typeScript:
-      - name: ViewData
-        fullName: ViewData
-        uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
-  - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem[]'
-    spec.typeScript:
-      - name: MenuItem
-        fullName: MenuItem
-        uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem'
-      - name: '[]'
-        fullName: '[]'
-  - uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
-    spec.typeScript:
-      - name: MenuListType
-        fullName: MenuListType
-        uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
-  - uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration[]'
-    spec.typeScript:
-      - name: ViewConfiguration
-        fullName: ViewConfiguration
-        uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration'
-      - name: '[]'
-        fullName: '[]'
-  - uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
-    spec.typeScript:
-      - name: ActionMenuParameters
-        fullName: ActionMenuParameters
-        uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
   - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
+    name: SaveParameters
     spec.typeScript:
       - name: SaveParameters
         fullName: SaveParameters
         uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
   - uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
+    name: Settings
     spec.typeScript:
       - name: Settings
         fullName: Settings
         uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
   - uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
+    name: TaskInfo
     spec.typeScript:
       - name: TaskInfo
         fullName: TaskInfo
         uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
   - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+    name: HostClientType
     spec.typeScript:
       - name: HostClientType
         fullName: HostClientType
         uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
   - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
+    name: TeamType
     spec.typeScript:
       - name: TeamType
         fullName: TeamType
         uid: '@microsoft/teams-js.microsoftTeams.TeamType'
   - uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+    name: UserTeamRole
     spec.typeScript:
       - name: UserTeamRole
         fullName: UserTeamRole
         uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
   - uid: '@microsoft/teams-js.microsoftTeams.TabInstance[]'
+    name: 'TabInstance[]'
     spec.typeScript:
       - name: TabInstance
         fullName: TabInstance
@@ -530,30 +509,27 @@ references:
       - name: '[]'
         fullName: '[]'
   - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension | Number'
+    name: TaskModuleDimension | Number
     spec.typeScript:
       - name: TaskModuleDimension
         fullName: TaskModuleDimension
         uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
       - name: ' | Number'
         fullName: ' | Number'
-  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation[]'
-    spec.typeScript:
-      - name: TeamInformation
-        fullName: TeamInformation
-        uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
-      - name: '[]'
-        fullName: '[]'
   - uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
+    name: TabInstanceParameters
     spec.typeScript:
       - name: TabInstanceParameters
         fullName: TabInstanceParameters
         uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
   - uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+    name: TabInstance
     spec.typeScript:
       - name: TabInstance
         fullName: TabInstance
         uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
   - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+    name: DeepLinkParameters
     spec.typeScript:
       - name: DeepLinkParameters
         fullName: DeepLinkParameters
