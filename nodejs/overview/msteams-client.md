@@ -40,7 +40,7 @@ You can also reference the entire library in html pages using a script tag.  The
 <script src="MicrosoftTeams.min.js"></script>
 ```
 
-The first method, using unpkg.com, is probably the most practical unless you prefer not to use a third-party party service like unpkg.com. The final option, using a local copy on your servers, eliminates that dependency but requires hosting and updating a local copy of the SDK.
+The final option, using a local copy on your servers, eliminates that dependency but requires hosting and updating a local copy of the SDK.
 
 > [!IMPORTANT]
 > Do not copy/paste these `<script src=...` URLs from this page; they refer to a specific version of the SDK. To get the `<script src=...></script>` markup for the latest version, always go to https://www.npmjs.com/package/@microsoft/teams-js.
