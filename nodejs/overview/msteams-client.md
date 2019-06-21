@@ -2,7 +2,6 @@
 title: Microsoft Teams client SDK
 description: Reference documentation for the Microsoft Teams client SDK
 keywords: msteams teams client sdk javascript reference
-ms.date: 08/28/2018
 ---
 # Microsoft Teams JavaScript client SDK
 
@@ -32,10 +31,10 @@ You can also reference the entire library in html pages using a script tag.  The
 
 ```html
 <!-- Microsoft Teams JavaScript API (via CDN) -->
-<script src="https://unpkg.com/@microsoft/teams-js@1.3.4/dist/MicrosoftTeams.min.js" integrity="sha384-3zTjxw3msc6gKx3DseSU0lfRM129YrFjr2xgocfMIN/kBCdzJ88d+FSB1n3scUku" crossorigin="anonymous"></script>
+<script src="https://statics.teams.microsoft.com/sdk/v1.4.2/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
  
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@1.3.4/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@1.4.2/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (copied local) -->
 <script src="MicrosoftTeams.min.js"></script>
