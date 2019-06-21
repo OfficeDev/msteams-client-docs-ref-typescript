@@ -31,10 +31,10 @@ You can also reference the entire library in html pages using a script tag.  The
 
 ```html
 <!-- Microsoft Teams JavaScript API (via CDN) -->
-<script src="https://statics.teams.microsoft.com/sdk/v1.4.2/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+<script src="https://statics.teams.microsoft.com/sdk/v1.4.3/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
  
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@1.4.2/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@1.4.3/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (copied local) -->
 <script src="MicrosoftTeams.min.js"></script>
@@ -52,6 +52,6 @@ The final option, using a local copy on your servers, eliminates that dependency
 
 The following sections contain reference pages for all the elements of the Teams client API. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js. The source code for the SDK is located at https://github.com/OfficeDev/microsoft-teams-library-js.
 
-* [microsoft.teams-js](https://docs.microsoft.com/en-us/javascript/api/%40microsoft/teams-js/)
+* [microsoft.teams-js](https://docs.microsoft.com/javascript/api/%40microsoft/teams-js/)
 
-And remember that [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) has full documentation on using the platform and the SDK.
+And remember that [The Microsoft Teams developer platform](https://docs.microsoft.com/microsoftteams/platform) has full documentation on using the platform and the SDK.
