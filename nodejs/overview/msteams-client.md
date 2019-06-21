@@ -2,7 +2,6 @@
 title: Microsoft Teams client SDK
 description: Reference documentation for the Microsoft Teams client SDK
 keywords: msteams teams client sdk javascript reference
-ms.date: 08/28/2018
 ---
 # Microsoft Teams JavaScript client SDK
 
@@ -35,16 +34,16 @@ You can also reference the entire library in html pages using a script tag.  The
 
 ```html
 <!-- Microsoft Teams JavaScript API (via CDN) -->
-<script src="https://unpkg.com/@microsoft/teams-js@1.3.4/dist/MicrosoftTeams.min.js" integrity="sha384-3zTjxw3msc6gKx3DseSU0lfRM129YrFjr2xgocfMIN/kBCdzJ88d+FSB1n3scUku" crossorigin="anonymous"></script>
+<script src="https://statics.teams.microsoft.com/sdk/v1.4.3/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
  
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@1.3.4/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@1.4.3/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (copied local) -->
 <script src="MicrosoftTeams.min.js"></script>
 ```
 
-The first method, using unpkg.com, is probably the most practical unless you prefer not to use a third-party party service like unpkg.com. The final option, using a local copy on your servers, eliminates that dependency but requires hosting and updating a local copy of the SDK.
+The final option, using a local copy on your servers, eliminates that dependency but requires hosting and updating a local copy of the SDK.
 
 > [!TIP]
 > If you are a TypeScript developer it is helpful to install the NPM package as described [above](#installing-the-sdk), even if you don't link to the copy of `MicrosoftTeams.min.js` in `node_modules` from your HTML, because IDEs such as Visual Studio Code will use it for Intellisense and type checking.
@@ -53,6 +52,6 @@ The first method, using unpkg.com, is probably the most practical unless you pre
 
 The following sections contain reference pages for all the elements of the Teams client API. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js. The source code for the SDK is located at https://github.com/OfficeDev/microsoft-teams-library-js.
 
-* [microsoft.teams-js](https://docs.microsoft.com/en-us/javascript/api/%40microsoft/teams-js/)
+* [microsoft.teams-js](https://docs.microsoft.com/javascript/api/%40microsoft/teams-js/)
 
-And remember that [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) has full documentation on using the platform and the SDK.
+And remember that [The Microsoft Teams developer platform](https://docs.microsoft.com/microsoftteams/platform) has full documentation on using the platform and the SDK.
