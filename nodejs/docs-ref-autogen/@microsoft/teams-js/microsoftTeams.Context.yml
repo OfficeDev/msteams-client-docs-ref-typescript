@@ -4,9 +4,11 @@ items:
     name: Context
     fullName: Context
     children:
+      - '@microsoft/teams-js.microsoftTeams.Context.appSessionId'
       - '@microsoft/teams-js.microsoftTeams.Context.channelId'
       - '@microsoft/teams-js.microsoftTeams.Context.channelName'
       - '@microsoft/teams-js.microsoftTeams.Context.channelRelativeUrl'
+      - '@microsoft/teams-js.microsoftTeams.Context.channelType'
       - '@microsoft/teams-js.microsoftTeams.Context.chatId'
       - '@microsoft/teams-js.microsoftTeams.Context.entityId'
       - '@microsoft/teams-js.microsoftTeams.Context.groupId'
@@ -15,11 +17,15 @@ items:
       - '@microsoft/teams-js.microsoftTeams.Context.isTeamArchived'
       - '@microsoft/teams-js.microsoftTeams.Context.locale'
       - '@microsoft/teams-js.microsoftTeams.Context.loginHint'
+      - '@microsoft/teams-js.microsoftTeams.Context.parentMessageId'
+      - '@microsoft/teams-js.microsoftTeams.Context.ringId'
       - '@microsoft/teams-js.microsoftTeams.Context.sessionId'
       - '@microsoft/teams-js.microsoftTeams.Context.sharepoint'
       - '@microsoft/teams-js.microsoftTeams.Context.subEntityId'
       - '@microsoft/teams-js.microsoftTeams.Context.teamId'
       - '@microsoft/teams-js.microsoftTeams.Context.teamName'
+      - '@microsoft/teams-js.microsoftTeams.Context.teamSiteDomain'
+      - '@microsoft/teams-js.microsoftTeams.Context.teamSitePath'
       - '@microsoft/teams-js.microsoftTeams.Context.teamSiteUrl'
       - '@microsoft/teams-js.microsoftTeams.Context.teamType'
       - '@microsoft/teams-js.microsoftTeams.Context.tenantSKU'
@@ -34,6 +40,21 @@ items:
       - typeScript
     type: interface
     summary: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.appSessionId'
+    name: appSessionId
+    fullName: appSessionId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Unique ID for the current session for use in correlating telemetry data.
+    optional: true
+    syntax:
+      content: 'appSessionId?: string'
+      return:
+        type:
+          - string
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.Context.channelId'
     name: channelId
@@ -81,6 +102,21 @@ items:
       return:
         type:
           - string
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.channelType'
+    name: channelType
+    fullName: channelType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the channel with which the content is associated.
+    optional: true
+    syntax:
+      content: 'channelType?: ChannelType'
+      return:
+        type:
+          - '@microsoft/teams-js.microsoftTeams.ChannelType'
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.Context.chatId'
     name: chatId
@@ -139,7 +175,7 @@ items:
     type: property
     summary: >-
       The type of the host client. Possible values are : android, ios, web,
-      desktop
+      desktop, rigel
     optional: true
     syntax:
       content: 'hostClientType?: HostClientType'
@@ -223,6 +259,38 @@ items:
         type:
           - string
     package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.parentMessageId'
+    name: parentMessageId
+    fullName: parentMessageId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: |-
+      The ID of the parent message from which this task module was launched.
+      This is only available in task modules launched from bot cards.
+    optional: true
+    syntax:
+      content: 'parentMessageId?: string'
+      return:
+        type:
+          - string
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.ringId'
+    name: ringId
+    fullName: ringId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Current ring ID
+    optional: true
+    syntax:
+      content: 'ringId?: string'
+      return:
+        type:
+          - string
+    package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.Context.sessionId'
     name: sessionId
     fullName: sessionId
@@ -247,7 +315,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: SharePoint context
+    summary: SharePoint context. This is only available when hosted in SharePoint.
     optional: true
     syntax:
       content: 'sharepoint?: any'
@@ -304,6 +372,36 @@ items:
         type:
           - string
     package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.teamSiteDomain'
+    name: teamSiteDomain
+    fullName: teamSiteDomain
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The domain of the root SharePoint site associated with the team.
+    optional: true
+    syntax:
+      content: 'teamSiteDomain?: string'
+      return:
+        type:
+          - string
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.teamSitePath'
+    name: teamSitePath
+    fullName: teamSitePath
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The relative path to the SharePoint site associated with the team.
+    optional: true
+    syntax:
+      content: 'teamSitePath?: string'
+      return:
+        type:
+          - string
+    package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.Context.teamSiteUrl'
     name: teamSiteUrl
     fullName: teamSiteUrl
@@ -311,7 +409,7 @@ items:
     langs:
       - typeScript
     type: property
-    summary: The root SharePoint folder associated with the team.
+    summary: The root SharePoint site associated with the team.
     optional: true
     syntax:
       content: 'teamSiteUrl?: string'
@@ -505,6 +603,18 @@ items:
           - '@microsoft/teams-js.microsoftTeams.UserTeamRole'
     package: '@microsoft/teams-js'
 references:
+  - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
+    name: FailedReason
+    spec.typeScript:
+      - name: FailedReason
+        fullName: FailedReason
+        uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
+  - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest'
+    name: IFailedRequest
+    spec.typeScript:
+      - name: IFailedRequest
+        fullName: IFailedRequest
+        uid: '@microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest'
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
     name: AuthenticateParameters
     spec.typeScript:
@@ -530,6 +640,26 @@ references:
       - name: TaskInfo
         fullName: TaskInfo
         uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
+  - uid: '@microsoft/teams-js.microsoftTeams.IAppWindow'
+    name: IAppWindow
+    spec.typeScript:
+      - name: IAppWindow
+        fullName: IAppWindow
+        uid: '@microsoft/teams-js.microsoftTeams.IAppWindow'
+  - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest[]'
+    name: 'MessageRequest[]'
+    spec.typeScript:
+      - name: MessageRequest
+        fullName: MessageRequest
+        uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.ChannelType'
+    name: ChannelType
+    spec.typeScript:
+      - name: ChannelType
+        fullName: ChannelType
+        uid: '@microsoft/teams-js.microsoftTeams.ChannelType'
   - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
     name: HostClientType
     spec.typeScript:
@@ -562,14 +692,14 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
       - name: '[]'
         fullName: '[]'
-  - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension | Number'
-    name: TaskModuleDimension | Number
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension | number'
+    name: TaskModuleDimension | number
     spec.typeScript:
       - name: TaskModuleDimension
         fullName: TaskModuleDimension
         uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
-      - name: ' | Number'
-        fullName: ' | Number'
+      - name: ' | number'
+        fullName: ' | number'
   - uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
     name: TabInstanceParameters
     spec.typeScript:

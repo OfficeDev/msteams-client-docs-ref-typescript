@@ -7,6 +7,17 @@
     - uid: '@microsoft/teams-js.microsoftTeams'
       name: microsoftTeams
       items:
+        - uid: '@microsoft/teams-js.microsoftTeams.appInitialization'
+          name: appInitialization
+          items:
+            - uid: >-
+                @microsoft/teams-js.microsoftTeams.appInitialization.FailedReason
+              name: FailedReason
+              items: []
+            - uid: >-
+                @microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest
+              name: IFailedRequest
+              items: []
         - uid: '@microsoft/teams-js.microsoftTeams.authentication'
           name: authentication
           items:
@@ -14,17 +25,41 @@
                 @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters
               name: AuthenticateParameters
               items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.ChannelType'
+          name: ChannelType
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
+          name: ChildAppWindow
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.Context'
           name: Context
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.conversations'
+          name: conversations
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
           name: DeepLinkParameters
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
+          name: GlobalVars
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
           name: HostClientType
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.IAppWindow'
+          name: IAppWindow
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
+          name: MessageRequest
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
+          name: MessageResponse
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.NotificationTypes'
           name: NotificationTypes
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
+          name: ParentAppWindow
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.settings'
           name: settings
