@@ -40,6 +40,18 @@ items:
     numericValue: null
     package: '@microsoft/teams-js'
 references:
+  - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
+    name: FailedReason
+    spec.typeScript:
+      - name: FailedReason
+        fullName: FailedReason
+        uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
+  - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest'
+    name: IFailedRequest
+    spec.typeScript:
+      - name: IFailedRequest
+        fullName: IFailedRequest
+        uid: '@microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest'
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
     name: AuthenticateParameters
     spec.typeScript:
@@ -65,6 +77,26 @@ references:
       - name: TaskInfo
         fullName: TaskInfo
         uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
+  - uid: '@microsoft/teams-js.microsoftTeams.IAppWindow'
+    name: IAppWindow
+    spec.typeScript:
+      - name: IAppWindow
+        fullName: IAppWindow
+        uid: '@microsoft/teams-js.microsoftTeams.IAppWindow'
+  - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest[]'
+    name: 'MessageRequest[]'
+    spec.typeScript:
+      - name: MessageRequest
+        fullName: MessageRequest
+        uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.ChannelType'
+    name: ChannelType
+    spec.typeScript:
+      - name: ChannelType
+        fullName: ChannelType
+        uid: '@microsoft/teams-js.microsoftTeams.ChannelType'
   - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
     name: HostClientType
     spec.typeScript:
@@ -97,14 +129,14 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
       - name: '[]'
         fullName: '[]'
-  - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension | Number'
-    name: TaskModuleDimension | Number
+  - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension | number'
+    name: TaskModuleDimension | number
     spec.typeScript:
       - name: TaskModuleDimension
         fullName: TaskModuleDimension
         uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
-      - name: ' | Number'
-        fullName: ' | Number'
+      - name: ' | number'
+        fullName: ' | number'
   - uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
     name: TabInstanceParameters
     spec.typeScript:
