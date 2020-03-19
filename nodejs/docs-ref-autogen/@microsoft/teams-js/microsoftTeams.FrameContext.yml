@@ -1,63 +1,47 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
-    name: HostClientType
-    fullName: HostClientType
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
+    name: FrameContext
+    fullName: FrameContext
     children:
-      - '@microsoft/teams-js.microsoftTeams.HostClientType.android'
-      - '@microsoft/teams-js.microsoftTeams.HostClientType.desktop'
-      - '@microsoft/teams-js.microsoftTeams.HostClientType.ios'
-      - '@microsoft/teams-js.microsoftTeams.HostClientType.rigel'
-      - '@microsoft/teams-js.microsoftTeams.HostClientType.web'
+      - '@microsoft/teams-js.microsoftTeams.FrameContext.contentUrl'
+      - '@microsoft/teams-js.microsoftTeams.FrameContext.websiteUrl'
     langs:
       - typeScript
-    type: enum
+    type: interface
     summary: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType.android'
-    name: android
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContext.contentUrl'
+    name: contentUrl
+    fullName: contentUrl
     children: []
     langs:
       - typeScript
-    summary: ''
-    type: field
-    numericValue: null
+    type: property
+    summary: The current URL that needs to be used in the iframe if the tab is reloaded
+    syntax:
+      content: 'contentUrl: string'
+      return:
+        type:
+          - string
+        description: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType.desktop'
-    name: desktop
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContext.websiteUrl'
+    name: websiteUrl
+    fullName: websiteUrl
     children: []
     langs:
       - typeScript
-    summary: ''
-    type: field
-    numericValue: null
-    package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType.ios'
-    name: ios
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    type: field
-    numericValue: null
-    package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType.rigel'
-    name: rigel
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    type: field
-    numericValue: null
-    package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.HostClientType.web'
-    name: web
-    children: []
-    langs:
-      - typeScript
-    summary: ''
-    type: field
-    numericValue: null
+    type: property
+    summary: >-
+      The current URL that needs to be used for opening the website when the
+      user clicks on 'Go to website'
+    syntax:
+      content: 'websiteUrl: string'
+      return:
+        type:
+          - string
+        description: ''
     package: '@microsoft/teams-js'
 references:
   - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'

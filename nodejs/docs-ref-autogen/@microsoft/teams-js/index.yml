@@ -16,6 +16,7 @@ items:
       - '@microsoft/teams-js.microsoftTeams.Context'
       - '@microsoft/teams-js.microsoftTeams.conversations'
       - '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+      - '@microsoft/teams-js.microsoftTeams.FrameContext'
       - '@microsoft/teams-js.microsoftTeams.GlobalVars'
       - '@microsoft/teams-js.microsoftTeams.HostClientType'
       - '@microsoft/teams-js.microsoftTeams.IAppWindow'
@@ -66,6 +67,8 @@ references:
     name: conversations
   - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
     name: DeepLinkParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
+    name: FrameContext
   - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
     name: GlobalVars
   - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
