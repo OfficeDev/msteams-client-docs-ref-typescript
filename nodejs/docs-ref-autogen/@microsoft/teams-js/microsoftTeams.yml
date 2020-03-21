@@ -2,6 +2,8 @@
 items:
   - uid: '@microsoft/teams-js.microsoftTeams'
     name: microsoftTeams
+    langs:
+      - typeScript
     fullName: microsoftTeams
     children:
       - '@microsoft/teams-js.microsoftTeams.ChannelType'
@@ -11,6 +13,7 @@ items:
       - '@microsoft/teams-js.microsoftTeams.enablePrintCapability'
       - '@microsoft/teams-js.microsoftTeams.ensureInitialized'
       - '@microsoft/teams-js.microsoftTeams.executeDeepLink'
+      - '@microsoft/teams-js.microsoftTeams.FrameContext'
       - '@microsoft/teams-js.microsoftTeams.generateRegExpFromUrls'
       - '@microsoft/teams-js.microsoftTeams.getContext'
       - '@microsoft/teams-js.microsoftTeams.getGenericOnCompleteHandler'
@@ -21,6 +24,7 @@ items:
       - '@microsoft/teams-js.microsoftTeams.HostClientType'
       - '@microsoft/teams-js.microsoftTeams.IAppWindow'
       - '@microsoft/teams-js.microsoftTeams.initialize'
+      - '@microsoft/teams-js.microsoftTeams.initializeWithFrameContext'
       - '@microsoft/teams-js.microsoftTeams.MessageRequest'
       - '@microsoft/teams-js.microsoftTeams.MessageResponse'
       - '@microsoft/teams-js.microsoftTeams.navigateBack'
@@ -29,12 +33,15 @@ items:
       - '@microsoft/teams-js.microsoftTeams.NotificationTypes'
       - '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
       - '@microsoft/teams-js.microsoftTeams.print'
+      - '@microsoft/teams-js.microsoftTeams.processAdditionalValidOrigins'
       - '@microsoft/teams-js.microsoftTeams.processMessage'
       - '@microsoft/teams-js.microsoftTeams.registerBackButtonHandler'
       - '@microsoft/teams-js.microsoftTeams.registerChangeSettingsHandler'
       - '@microsoft/teams-js.microsoftTeams.registerFullScreenHandler'
       - '@microsoft/teams-js.microsoftTeams.registerOnThemeChangeHandler'
-      - '@microsoft/teams-js.microsoftTeams.sendMessageRequest'
+      - '@microsoft/teams-js.microsoftTeams.sendMessageEventToChild'
+      - '@microsoft/teams-js.microsoftTeams.sendMessageRequestToParent'
+      - '@microsoft/teams-js.microsoftTeams.setFrameContext'
       - '@microsoft/teams-js.microsoftTeams.shareDeepLink'
       - '@microsoft/teams-js.microsoftTeams.ShowNotificationParameters'
       - '@microsoft/teams-js.microsoftTeams.TabInformation'
@@ -46,8 +53,6 @@ items:
       - '@microsoft/teams-js.microsoftTeams.TeamType'
       - '@microsoft/teams-js.microsoftTeams.UserTeamRole'
       - '@microsoft/teams-js.microsoftTeams.waitForMessageQueue'
-    langs:
-      - typeScript
     type: module
     summary: ''
     package: '@microsoft/teams-js'
@@ -117,6 +122,7 @@ items:
       return:
         type:
           - RegExp
+        description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.getContext'
     name: 'getContext((context: Context) => void)'
@@ -152,6 +158,7 @@ items:
       return:
         type:
           - '(success: boolean, reason?: string) => void'
+        description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.getMruTabInstances'
     name: >-
@@ -211,22 +218,22 @@ items:
           optional: true
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.handleParentMessage'
-    name: handleParentMessage(MessageEvent)
+    name: handleParentMessage(DOMMessageEvent)
     children: []
     type: function
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function handleParentMessage(evt: MessageEvent)'
+      content: 'function handleParentMessage(evt: DOMMessageEvent)'
       parameters:
         - id: evt
           type:
-            - MessageEvent
+            - DOMMessageEvent
           description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.initialize'
-    name: initialize(() => void)
+    name: 'initialize(() => void, string[])'
     children: []
     type: function
     langs:
@@ -235,11 +242,52 @@ items:
       Initializes the library. This must be called before any other SDK calls
       but after the frame is loaded successfully.
     syntax:
-      content: 'function initialize(callback?: () => void)'
+      content: >-
+        function initialize(callback?: () => void, validMessageOrigins?:
+        string[])
       parameters:
         - id: callback
           type:
             - () => void
+          description: >-
+            Optionally specify a callback to invoke when Teams SDK has
+            successfully initialized
+          optional: true
+        - id: validMessageOrigins
+          type:
+            - 'string[]'
+          description: >
+            Optionally specify a list of cross frame message origins. There must
+            have
+
+            https: protocol otherwise they will be ignored. Example:
+            https://www.example.com
+          optional: true
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.initializeWithFrameContext'
+    name: 'initializeWithFrameContext(FrameContext, () => void, string[])'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: >-
+        function initializeWithFrameContext(frameContext: FrameContext,
+        callback?: () => void, validMessageOrigins?: string[])
+      parameters:
+        - id: frameContext
+          type:
+            - '@microsoft/teams-js.microsoftTeams.FrameContext'
+          description: ''
+        - id: callback
+          type:
+            - () => void
+          description: ''
+          optional: true
+        - id: validMessageOrigins
+          type:
+            - 'string[]'
           description: ''
           optional: true
     package: '@microsoft/teams-js'
@@ -335,19 +383,38 @@ items:
       content: function print()
       parameters: []
     package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.processAdditionalValidOrigins'
+    name: 'processAdditionalValidOrigins(string[])'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Processes the valid origins specifuied by the user, de-duplicates and
+      converts them into a regexp
+
+      which is used later for message source/origin validation
+    syntax:
+      content: 'function processAdditionalValidOrigins(validMessageOrigins: string[])'
+      parameters:
+        - id: validMessageOrigins
+          type:
+            - 'string[]'
+          description: ''
+    package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.processMessage'
-    name: processMessage(MessageEvent)
+    name: processMessage(DOMMessageEvent)
     children: []
     type: function
     langs:
       - typeScript
     summary: ''
     syntax:
-      content: 'function processMessage(evt: MessageEvent)'
+      content: 'function processMessage(evt: DOMMessageEvent)'
       parameters:
         - id: evt
           type:
-            - MessageEvent
+            - DOMMessageEvent
           description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.registerBackButtonHandler'
@@ -436,22 +503,40 @@ items:
           description: |
             The handler to invoke when the user changes their theme.
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.sendMessageRequest'
-    name: 'sendMessageRequest(Window | any, string, any[])'
+  - uid: '@microsoft/teams-js.microsoftTeams.sendMessageEventToChild'
+    name: 'sendMessageEventToChild(string, any[])'
     children: []
     type: function
     langs:
       - typeScript
-    summary: ''
+    summary: |-
+      Send a custom message object that can be sent to child window,
+      instead of a response message to a child
     syntax:
-      content: >-
-        function sendMessageRequest(targetWindow: Window | any, actionName:
-        string, args?: any[])
+      content: 'function sendMessageEventToChild(actionName: string, args?: any[])'
       parameters:
-        - id: targetWindow
+        - id: actionName
           type:
-            - Window | any
+            - string
           description: ''
+        - id: args
+          type:
+            - 'any[]'
+          description: ''
+          optional: true
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.sendMessageRequestToParent'
+    name: 'sendMessageRequestToParent(string, any[])'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Send a message to parent. Uses nativeInterface on mobile to communicate
+      with parent context
+    syntax:
+      content: 'function sendMessageRequestToParent(actionName: string, args?: any[])'
+      parameters:
         - id: actionName
           type:
             - string
@@ -464,6 +549,22 @@ items:
       return:
         type:
           - number
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.setFrameContext'
+    name: setFrameContext(FrameContext)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: ''
+    syntax:
+      content: 'function setFrameContext(frameContext: FrameContext)'
+      parameters:
+        - id: frameContext
+          type:
+            - '@microsoft/teams-js.microsoftTeams.FrameContext'
+          description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.shareDeepLink'
     name: shareDeepLink(DeepLinkParameters)
@@ -515,6 +616,12 @@ references:
       - name: IFailedRequest
         fullName: IFailedRequest
         uid: '@microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest'
+  - uid: '@microsoft/teams-js.microsoftTeams.appInitialization'
+    name: appInitialization
+    spec.typeScript:
+      - name: appInitialization
+        fullName: appInitialization
+        uid: '@microsoft/teams-js.microsoftTeams.appInitialization'
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
     name: AuthenticateParameters
     spec.typeScript:
@@ -522,18 +629,48 @@ references:
         fullName: AuthenticateParameters
         uid: >-
           @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication'
+    name: authentication
+    spec.typeScript:
+      - name: authentication
+        fullName: authentication
+        uid: '@microsoft/teams-js.microsoftTeams.authentication'
+  - uid: '@microsoft/teams-js.microsoftTeams.conversations'
+    name: conversations
+    spec.typeScript:
+      - name: conversations
+        fullName: conversations
+        uid: '@microsoft/teams-js.microsoftTeams.conversations'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent'
+    name: RemoveEvent
+    spec.typeScript:
+      - name: RemoveEvent
+        fullName: RemoveEvent
+        uid: '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent'
   - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
     name: SaveParameters
     spec.typeScript:
       - name: SaveParameters
         fullName: SaveParameters
         uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveEvent'
+    name: SaveEvent
+    spec.typeScript:
+      - name: SaveEvent
+        fullName: SaveEvent
+        uid: '@microsoft/teams-js.microsoftTeams.settings.SaveEvent'
   - uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
     name: Settings
     spec.typeScript:
       - name: Settings
         fullName: Settings
         uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
+  - uid: '@microsoft/teams-js.microsoftTeams.settings'
+    name: settings
+    spec.typeScript:
+      - name: settings
+        fullName: settings
+        uid: '@microsoft/teams-js.microsoftTeams.settings'
   - uid: '@microsoft/teams-js.microsoftTeams.TaskInfo'
     name: TaskInfo
     spec.typeScript:
@@ -546,6 +683,18 @@ references:
       - name: IAppWindow
         fullName: IAppWindow
         uid: '@microsoft/teams-js.microsoftTeams.IAppWindow'
+  - uid: '@microsoft/teams-js.microsoftTeams.tasks'
+    name: tasks
+    spec.typeScript:
+      - name: tasks
+        fullName: tasks
+        uid: '@microsoft/teams-js.microsoftTeams.tasks'
+  - uid: '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
+    name: ChildAppWindow
+    spec.typeScript:
+      - name: ChildAppWindow
+        fullName: ChildAppWindow
+        uid: '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
   - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest[]'
     name: 'MessageRequest[]'
     spec.typeScript:
@@ -554,6 +703,18 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
       - name: '[]'
         fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
+    name: GlobalVars
+    spec.typeScript:
+      - name: GlobalVars
+        fullName: GlobalVars
+        uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
+  - uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
+    name: ParentAppWindow
+    spec.typeScript:
+      - name: ParentAppWindow
+        fullName: ParentAppWindow
+        uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
   - uid: '@microsoft/teams-js.microsoftTeams.ChannelType'
     name: ChannelType
     spec.typeScript:
@@ -578,12 +739,48 @@ references:
       - name: UserTeamRole
         fullName: UserTeamRole
         uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context'
+    name: Context
+    spec.typeScript:
+      - name: Context
+        fullName: Context
+        uid: '@microsoft/teams-js.microsoftTeams.Context'
+  - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+    name: DeepLinkParameters
+    spec.typeScript:
+      - name: DeepLinkParameters
+        fullName: DeepLinkParameters
+        uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
+    name: FrameContext
+    spec.typeScript:
+      - name: FrameContext
+        fullName: FrameContext
+        uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
+  - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
+    name: MessageRequest
+    spec.typeScript:
+      - name: MessageRequest
+        fullName: MessageRequest
+        uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
+  - uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
+    name: MessageResponse
+    spec.typeScript:
+      - name: MessageResponse
+        fullName: MessageResponse
+        uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
   - uid: '@microsoft/teams-js.microsoftTeams.NotificationTypes'
     name: NotificationTypes
     spec.typeScript:
       - name: NotificationTypes
         fullName: NotificationTypes
         uid: '@microsoft/teams-js.microsoftTeams.NotificationTypes'
+  - uid: '@microsoft/teams-js.microsoftTeams.ShowNotificationParameters'
+    name: ShowNotificationParameters
+    spec.typeScript:
+      - name: ShowNotificationParameters
+        fullName: ShowNotificationParameters
+        uid: '@microsoft/teams-js.microsoftTeams.ShowNotificationParameters'
   - uid: '@microsoft/teams-js.microsoftTeams.TabInstance[]'
     name: 'TabInstance[]'
     spec.typeScript:
@@ -592,6 +789,24 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
       - name: '[]'
         fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInformation'
+    name: TabInformation
+    spec.typeScript:
+      - name: TabInformation
+        fullName: TabInformation
+        uid: '@microsoft/teams-js.microsoftTeams.TabInformation'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+    name: TabInstance
+    spec.typeScript:
+      - name: TabInstance
+        fullName: TabInstance
+        uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+  - uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
+    name: TabInstanceParameters
+    spec.typeScript:
+      - name: TabInstanceParameters
+        fullName: TabInstanceParameters
+        uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
   - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension | number'
     name: TaskModuleDimension | number
     spec.typeScript:
@@ -600,28 +815,12 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
       - name: ' | number'
         fullName: ' | number'
-  - uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
-    name: TabInstanceParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
+    name: TeamInformation
     spec.typeScript:
-      - name: TabInstanceParameters
-        fullName: TabInstanceParameters
-        uid: '@microsoft/teams-js.microsoftTeams.TabInstanceParameters'
-  - uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
-    name: TabInstance
-    spec.typeScript:
-      - name: TabInstance
-        fullName: TabInstance
-        uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
-  - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
-    name: DeepLinkParameters
-    spec.typeScript:
-      - name: DeepLinkParameters
-        fullName: DeepLinkParameters
-        uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
-  - uid: '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
-    name: ChildAppWindow
-  - uid: '@microsoft/teams-js.microsoftTeams.Context'
-    name: Context
+      - name: TeamInformation
+        fullName: TeamInformation
+        uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
   - uid: '@microsoft/teams-js.microsoftTeams.enablePrintCapability'
     name: enablePrintCapability
   - uid: '@microsoft/teams-js.microsoftTeams.ensureInitialized'
@@ -638,26 +837,22 @@ references:
     name: getMruTabInstances
   - uid: '@microsoft/teams-js.microsoftTeams.getTabInstances'
     name: getTabInstances
-  - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
-    name: GlobalVars
   - uid: '@microsoft/teams-js.microsoftTeams.handleParentMessage'
     name: handleParentMessage
   - uid: '@microsoft/teams-js.microsoftTeams.initialize'
     name: initialize
-  - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
-    name: MessageRequest
-  - uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
-    name: MessageResponse
+  - uid: '@microsoft/teams-js.microsoftTeams.initializeWithFrameContext'
+    name: initializeWithFrameContext
   - uid: '@microsoft/teams-js.microsoftTeams.navigateBack'
     name: navigateBack
   - uid: '@microsoft/teams-js.microsoftTeams.navigateCrossDomain'
     name: navigateCrossDomain
   - uid: '@microsoft/teams-js.microsoftTeams.navigateToTab'
     name: navigateToTab
-  - uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
-    name: ParentAppWindow
   - uid: '@microsoft/teams-js.microsoftTeams.print'
     name: print
+  - uid: '@microsoft/teams-js.microsoftTeams.processAdditionalValidOrigins'
+    name: processAdditionalValidOrigins
   - uid: '@microsoft/teams-js.microsoftTeams.processMessage'
     name: processMessage
   - uid: '@microsoft/teams-js.microsoftTeams.registerBackButtonHandler'
@@ -668,17 +863,15 @@ references:
     name: registerFullScreenHandler
   - uid: '@microsoft/teams-js.microsoftTeams.registerOnThemeChangeHandler'
     name: registerOnThemeChangeHandler
-  - uid: '@microsoft/teams-js.microsoftTeams.sendMessageRequest'
-    name: sendMessageRequest
+  - uid: '@microsoft/teams-js.microsoftTeams.sendMessageEventToChild'
+    name: sendMessageEventToChild
+  - uid: '@microsoft/teams-js.microsoftTeams.sendMessageRequestToParent'
+    name: sendMessageRequestToParent
+  - uid: '@microsoft/teams-js.microsoftTeams.setFrameContext'
+    name: setFrameContext
   - uid: '@microsoft/teams-js.microsoftTeams.shareDeepLink'
     name: shareDeepLink
-  - uid: '@microsoft/teams-js.microsoftTeams.ShowNotificationParameters'
-    name: ShowNotificationParameters
-  - uid: '@microsoft/teams-js.microsoftTeams.TabInformation'
-    name: TabInformation
   - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
     name: TaskModuleDimension
-  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
-    name: TeamInformation
   - uid: '@microsoft/teams-js.microsoftTeams.waitForMessageQueue'
     name: waitForMessageQueue

@@ -40,6 +40,9 @@
         - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
           name: DeepLinkParameters
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
+          name: FrameContext
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
           name: GlobalVars
           items: []
