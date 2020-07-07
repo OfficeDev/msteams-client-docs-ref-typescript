@@ -1,32 +1,123 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
-    name: SaveParameters
-    fullName: SaveParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+    name: ErrorCode
+    fullName: ErrorCode
     children:
-      - '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.NOT_SUPPORTED_ON_PLATFORM'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.INTERNAL_ERROR'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.PERMISSION_DENIED'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.NETWORK_ERROR'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.NO_HW_SUPPORT'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.INVALID_ARGUMENTS'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.UNAUTHORIZED_USER_OPERATION'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.INSUFFICIENT_RESOURCES'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.THROTTLE'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.USER_ABORT'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode.OLD_PLATFORM'
     langs:
       - typeScript
-    type: interface
+    type: enum
     summary: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
-    name: webhookUrl
-    fullName: webhookUrl
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.NOT_SUPPORTED_ON_PLATFORM'
+    name: NOT_SUPPORTED_ON_PLATFORM
     children: []
     langs:
       - typeScript
-    type: property
-    summary: >-
-      Connector's webhook Url returned as arguments to settings.save event as
-      part of user clicking on Save
-    optional: true
-    syntax:
-      content: 'webhookUrl?: string'
-      return:
-        type:
-          - string
-        description: ''
+    summary: API not supported in the current platform.
+    type: field
+    numericValue: 100
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.INTERNAL_ERROR'
+    name: INTERNAL_ERROR
+    children: []
+    langs:
+      - typeScript
+    summary: Internal error encountered while performing the required operation.
+    type: field
+    numericValue: 500
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.PERMISSION_DENIED'
+    name: PERMISSION_DENIED
+    children: []
+    langs:
+      - typeScript
+    summary: Permissions denied by user
+    type: field
+    numericValue: 1000
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.NETWORK_ERROR'
+    name: NETWORK_ERROR
+    children: []
+    langs:
+      - typeScript
+    summary: Network issue
+    type: field
+    numericValue: 2000
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.NO_HW_SUPPORT'
+    name: NO_HW_SUPPORT
+    children: []
+    langs:
+      - typeScript
+    summary: Underlying hardware doesn't support the capability
+    type: field
+    numericValue: 3000
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.INVALID_ARGUMENTS'
+    name: INVALID_ARGUMENTS
+    children: []
+    langs:
+      - typeScript
+    summary: One or more arguments are invalid
+    type: field
+    numericValue: 4000
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.UNAUTHORIZED_USER_OPERATION'
+    name: UNAUTHORIZED_USER_OPERATION
+    children: []
+    langs:
+      - typeScript
+    summary: User is not authorized for this operation
+    type: field
+    numericValue: 5000
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.INSUFFICIENT_RESOURCES'
+    name: INSUFFICIENT_RESOURCES
+    children: []
+    langs:
+      - typeScript
+    summary: Could not complete the operation due to insufficient resources
+    type: field
+    numericValue: 6000
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.THROTTLE'
+    name: THROTTLE
+    children: []
+    langs:
+      - typeScript
+    summary: Platform throttled the request because of API was invoked too frequently
+    type: field
+    numericValue: 7000
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.USER_ABORT'
+    name: USER_ABORT
+    children: []
+    langs:
+      - typeScript
+    summary: User aborted the operation
+    type: field
+    numericValue: 8000
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.OLD_PLATFORM'
+    name: OLD_PLATFORM
+    children: []
+    langs:
+      - typeScript
+    summary: Platform code is old and doesn't implement this API
+    type: field
+    numericValue: 9000
     package: '@microsoft/teams-js'
 references:
   - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
