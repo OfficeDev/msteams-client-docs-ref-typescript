@@ -8,6 +8,8 @@ items:
     children:
       - '@microsoft/teams-js.microsoftTeams.authentication.authenticate'
       - '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
+      - '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
+      - '@microsoft/teams-js.microsoftTeams.authentication.getAuthToken'
       - '@microsoft/teams-js.microsoftTeams.authentication.notifyFailure'
       - '@microsoft/teams-js.microsoftTeams.authentication.notifySuccess'
       - >-
@@ -35,6 +37,27 @@ items:
               @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters
           description: ''
           optional: true
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.getAuthToken'
+    name: getAuthToken(AuthTokenRequest)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Requests an Azure AD token to be issued on behalf of the app. The token is
+      acquired from the cache
+
+      if it is not expired. Otherwise a request is sent to Azure AD to obtain a
+      new token.
+    syntax:
+      content: 'function getAuthToken(authTokenRequest: AuthTokenRequest)'
+      parameters:
+        - id: authTokenRequest
+          type:
+            - '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
+          description: |
+            A set of values that configure the token request.
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.notifyFailure'
     name: 'notifyFailure(string, string)'
@@ -136,6 +159,12 @@ references:
       - name: appInitialization
         fullName: appInitialization
         uid: '@microsoft/teams-js.microsoftTeams.appInitialization'
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
+    name: AuthTokenRequest
+    spec.typeScript:
+      - name: AuthTokenRequest
+        fullName: AuthTokenRequest
+        uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
     name: AuthenticateParameters
     spec.typeScript:
@@ -217,6 +246,12 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
       - name: '[]'
         fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContexts'
+    name: FrameContexts
+    spec.typeScript:
+      - name: FrameContexts
+        fullName: FrameContexts
+        uid: '@microsoft/teams-js.microsoftTeams.FrameContexts'
   - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
     name: GlobalVars
     spec.typeScript:
@@ -241,6 +276,12 @@ references:
       - name: HostClientType
         fullName: HostClientType
         uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
+    name: LocaleInfo
+    spec.typeScript:
+      - name: LocaleInfo
+        fullName: LocaleInfo
+        uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
   - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
     name: TeamType
     spec.typeScript:
@@ -265,6 +306,18 @@ references:
       - name: DeepLinkParameters
         fullName: DeepLinkParameters
         uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+    name: FileFormat
+    spec.typeScript:
+      - name: FileFormat
+        fullName: FileFormat
+        uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+  - uid: '@microsoft/teams-js.microsoftTeams.File'
+    name: File
+    spec.typeScript:
+      - name: File
+        fullName: File
+        uid: '@microsoft/teams-js.microsoftTeams.File'
   - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
     name: FrameContext
     spec.typeScript:
@@ -283,6 +336,18 @@ references:
       - name: MessageResponse
         fullName: MessageResponse
         uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+    name: ErrorCode
+    spec.typeScript:
+      - name: ErrorCode
+        fullName: ErrorCode
+        uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
+    name: SdkError
+    spec.typeScript:
+      - name: SdkError
+        fullName: SdkError
+        uid: '@microsoft/teams-js.microsoftTeams.SdkError'
   - uid: '@microsoft/teams-js.microsoftTeams.NotificationTypes'
     name: NotificationTypes
     spec.typeScript:
@@ -337,6 +402,8 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.authenticate'
     name: authenticate
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.getAuthToken'
+    name: getAuthToken
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.notifyFailure'
     name: notifyFailure
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.notifySuccess'

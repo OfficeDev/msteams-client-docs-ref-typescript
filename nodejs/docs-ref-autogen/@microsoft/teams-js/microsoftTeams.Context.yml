@@ -12,6 +12,7 @@ items:
       - '@microsoft/teams-js.microsoftTeams.Context.chatId'
       - '@microsoft/teams-js.microsoftTeams.Context.defaultOneNoteSectionId'
       - '@microsoft/teams-js.microsoftTeams.Context.entityId'
+      - '@microsoft/teams-js.microsoftTeams.Context.frameContext'
       - '@microsoft/teams-js.microsoftTeams.Context.groupId'
       - '@microsoft/teams-js.microsoftTeams.Context.hostClientType'
       - '@microsoft/teams-js.microsoftTeams.Context.isCallingAllowed'
@@ -20,6 +21,8 @@ items:
       - '@microsoft/teams-js.microsoftTeams.Context.isTeamArchived'
       - '@microsoft/teams-js.microsoftTeams.Context.locale'
       - '@microsoft/teams-js.microsoftTeams.Context.loginHint'
+      - '@microsoft/teams-js.microsoftTeams.Context.meetingId'
+      - '@microsoft/teams-js.microsoftTeams.Context.osLocaleInfo'
       - '@microsoft/teams-js.microsoftTeams.Context.parentMessageId'
       - '@microsoft/teams-js.microsoftTeams.Context.ringId'
       - '@microsoft/teams-js.microsoftTeams.Context.sessionId'
@@ -173,6 +176,24 @@ items:
           - string
         description: ''
     package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.frameContext'
+    name: frameContext
+    fullName: frameContext
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      The context where tab url is loaded (content, task, setting, remove,
+      sidePanel)
+    optional: true
+    syntax:
+      content: 'frameContext?: FrameContexts'
+      return:
+        type:
+          - '@microsoft/teams-js.microsoftTeams.FrameContexts'
+        description: ''
+    package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.Context.groupId'
     name: groupId
     fullName: groupId
@@ -323,6 +344,45 @@ items:
           - string
         description: ''
     package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.meetingId'
+    name: meetingId
+    fullName: meetingId
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Meeting Id used by tab when running in meeting context
+    optional: true
+    syntax:
+      content: 'meetingId?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.osLocaleInfo'
+    name: osLocaleInfo
+    fullName: osLocaleInfo
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: >-
+      More detailed locale info from the user's OS if available. Can be used
+      together with
+
+      the @microsoft/globe NPM package to ensure your app respects the user's OS
+      date and
+
+      time format configuration
+    optional: true
+    syntax:
+      content: 'osLocaleInfo?: LocaleInfo'
+      return:
+        type:
+          - '@microsoft/teams-js.microsoftTeams.LocaleInfo'
+        description: ''
+    package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.Context.parentMessageId'
     name: parentMessageId
     fullName: parentMessageId
@@ -398,9 +458,8 @@ items:
     langs:
       - typeScript
     type: property
-    summary: >-
+    summary: |-
       The developer-defined unique ID for the sub-entity this content points to.
-
       This field should be used to restore to a specific state within an entity,
       such as scrolling to or activating a specific piece of content.
     optional: true
@@ -704,6 +763,12 @@ references:
       - name: appInitialization
         fullName: appInitialization
         uid: '@microsoft/teams-js.microsoftTeams.appInitialization'
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
+    name: AuthTokenRequest
+    spec.typeScript:
+      - name: AuthTokenRequest
+        fullName: AuthTokenRequest
+        uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
     name: AuthenticateParameters
     spec.typeScript:
@@ -785,6 +850,12 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
       - name: '[]'
         fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContexts'
+    name: FrameContexts
+    spec.typeScript:
+      - name: FrameContexts
+        fullName: FrameContexts
+        uid: '@microsoft/teams-js.microsoftTeams.FrameContexts'
   - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
     name: GlobalVars
     spec.typeScript:
@@ -809,6 +880,12 @@ references:
       - name: HostClientType
         fullName: HostClientType
         uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
+    name: LocaleInfo
+    spec.typeScript:
+      - name: LocaleInfo
+        fullName: LocaleInfo
+        uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
   - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
     name: TeamType
     spec.typeScript:
@@ -833,6 +910,18 @@ references:
       - name: DeepLinkParameters
         fullName: DeepLinkParameters
         uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+    name: FileFormat
+    spec.typeScript:
+      - name: FileFormat
+        fullName: FileFormat
+        uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+  - uid: '@microsoft/teams-js.microsoftTeams.File'
+    name: File
+    spec.typeScript:
+      - name: File
+        fullName: File
+        uid: '@microsoft/teams-js.microsoftTeams.File'
   - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
     name: FrameContext
     spec.typeScript:
@@ -851,6 +940,18 @@ references:
       - name: MessageResponse
         fullName: MessageResponse
         uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+    name: ErrorCode
+    spec.typeScript:
+      - name: ErrorCode
+        fullName: ErrorCode
+        uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
+    name: SdkError
+    spec.typeScript:
+      - name: SdkError
+        fullName: SdkError
+        uid: '@microsoft/teams-js.microsoftTeams.SdkError'
   - uid: '@microsoft/teams-js.microsoftTeams.NotificationTypes'
     name: NotificationTypes
     spec.typeScript:

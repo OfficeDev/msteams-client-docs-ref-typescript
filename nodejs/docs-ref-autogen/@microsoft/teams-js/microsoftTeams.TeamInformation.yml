@@ -5,9 +5,12 @@ items:
     fullName: TeamInformation
     children:
       - '@microsoft/teams-js.microsoftTeams.TeamInformation.groupId'
+      - '@microsoft/teams-js.microsoftTeams.TeamInformation.isTeamArchived'
+      - '@microsoft/teams-js.microsoftTeams.TeamInformation.isTeamLocked'
       - '@microsoft/teams-js.microsoftTeams.TeamInformation.teamDescription'
       - '@microsoft/teams-js.microsoftTeams.TeamInformation.teamId'
       - '@microsoft/teams-js.microsoftTeams.TeamInformation.teamName'
+      - '@microsoft/teams-js.microsoftTeams.TeamInformation.teamType'
       - '@microsoft/teams-js.microsoftTeams.TeamInformation.thumbnailUri'
       - '@microsoft/teams-js.microsoftTeams.TeamInformation.userTeamRole'
     langs:
@@ -33,6 +36,38 @@ items:
       return:
         type:
           - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation.isTeamArchived'
+    name: isTeamArchived
+    fullName: isTeamArchived
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The archived status of the team
+    optional: true
+    syntax:
+      content: 'isTeamArchived?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation.isTeamLocked'
+    name: isTeamLocked
+    fullName: isTeamLocked
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The locked status of the team
+    optional: true
+    syntax:
+      content: 'isTeamLocked?: boolean'
+      return:
+        type:
+          - boolean
         description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation.teamDescription'
@@ -79,6 +114,22 @@ items:
       return:
         type:
           - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation.teamType'
+    name: teamType
+    fullName: teamType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: The type of the team.
+    optional: true
+    syntax:
+      content: 'teamType?: TeamType'
+      return:
+        type:
+          - '@microsoft/teams-js.microsoftTeams.TeamType'
         description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.TeamInformation.thumbnailUri'
@@ -132,6 +183,12 @@ references:
       - name: appInitialization
         fullName: appInitialization
         uid: '@microsoft/teams-js.microsoftTeams.appInitialization'
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
+    name: AuthTokenRequest
+    spec.typeScript:
+      - name: AuthTokenRequest
+        fullName: AuthTokenRequest
+        uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
     name: AuthenticateParameters
     spec.typeScript:
@@ -213,6 +270,12 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
       - name: '[]'
         fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContexts'
+    name: FrameContexts
+    spec.typeScript:
+      - name: FrameContexts
+        fullName: FrameContexts
+        uid: '@microsoft/teams-js.microsoftTeams.FrameContexts'
   - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
     name: GlobalVars
     spec.typeScript:
@@ -237,6 +300,12 @@ references:
       - name: HostClientType
         fullName: HostClientType
         uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
+    name: LocaleInfo
+    spec.typeScript:
+      - name: LocaleInfo
+        fullName: LocaleInfo
+        uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
   - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
     name: TeamType
     spec.typeScript:
@@ -261,6 +330,18 @@ references:
       - name: DeepLinkParameters
         fullName: DeepLinkParameters
         uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+  - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+    name: FileFormat
+    spec.typeScript:
+      - name: FileFormat
+        fullName: FileFormat
+        uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+  - uid: '@microsoft/teams-js.microsoftTeams.File'
+    name: File
+    spec.typeScript:
+      - name: File
+        fullName: File
+        uid: '@microsoft/teams-js.microsoftTeams.File'
   - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
     name: FrameContext
     spec.typeScript:
@@ -279,6 +360,18 @@ references:
       - name: MessageResponse
         fullName: MessageResponse
         uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+    name: ErrorCode
+    spec.typeScript:
+      - name: ErrorCode
+        fullName: ErrorCode
+        uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
+    name: SdkError
+    spec.typeScript:
+      - name: SdkError
+        fullName: SdkError
+        uid: '@microsoft/teams-js.microsoftTeams.SdkError'
   - uid: '@microsoft/teams-js.microsoftTeams.NotificationTypes'
     name: NotificationTypes
     spec.typeScript:

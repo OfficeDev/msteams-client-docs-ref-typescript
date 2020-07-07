@@ -1,28 +1,105 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
-    name: SaveParameters
-    fullName: SaveParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
+    name: LocaleInfo
+    fullName: LocaleInfo
     children:
-      - '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
+      - '@microsoft/teams-js.microsoftTeams.LocaleInfo.longDate'
+      - '@microsoft/teams-js.microsoftTeams.LocaleInfo.longTime'
+      - '@microsoft/teams-js.microsoftTeams.LocaleInfo.platform'
+      - '@microsoft/teams-js.microsoftTeams.LocaleInfo.regionalFormat'
+      - '@microsoft/teams-js.microsoftTeams.LocaleInfo.shortDate'
+      - '@microsoft/teams-js.microsoftTeams.LocaleInfo.shortTime'
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Represents OS locale info used for formatting date and time data
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
-    name: webhookUrl
-    fullName: webhookUrl
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.longDate'
+    name: longDate
+    fullName: longDate
     children: []
     langs:
       - typeScript
     type: property
-    summary: >-
-      Connector's webhook Url returned as arguments to settings.save event as
-      part of user clicking on Save
-    optional: true
+    summary: ''
     syntax:
-      content: 'webhookUrl?: string'
+      content: 'longDate: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.longTime'
+    name: longTime
+    fullName: longTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'longTime: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.platform'
+    name: platform
+    fullName: platform
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'platform: "windows" | "macos"'
+      return:
+        type:
+          - '"windows" | "macos"'
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.regionalFormat'
+    name: regionalFormat
+    fullName: regionalFormat
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'regionalFormat: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.shortDate'
+    name: shortDate
+    fullName: shortDate
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'shortDate: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.shortTime'
+    name: shortTime
+    fullName: shortTime
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: ''
+    syntax:
+      content: 'shortTime: string'
       return:
         type:
           - string
