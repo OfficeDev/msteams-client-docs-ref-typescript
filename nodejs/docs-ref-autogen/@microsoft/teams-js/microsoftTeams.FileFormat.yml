@@ -1,32 +1,23 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
-    name: SaveParameters
-    fullName: SaveParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+    name: FileFormat
+    fullName: FileFormat
     children:
-      - '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
+      - '@microsoft/teams-js.microsoftTeams.FileFormat.Base64'
     langs:
       - typeScript
-    type: interface
-    summary: ''
+    type: enum
+    summary: Enum for file formats supported
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
-    name: webhookUrl
-    fullName: webhookUrl
+  - uid: '@microsoft/teams-js.microsoftTeams.FileFormat.Base64'
+    name: Base64
     children: []
     langs:
       - typeScript
-    type: property
-    summary: >-
-      Connector's webhook Url returned as arguments to settings.save event as
-      part of user clicking on Save
-    optional: true
-    syntax:
-      content: 'webhookUrl?: string'
-      return:
-        type:
-          - string
-        description: ''
+    summary: ''
+    type: field
+    numericValue: null
     package: '@microsoft/teams-js'
 references:
   - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'

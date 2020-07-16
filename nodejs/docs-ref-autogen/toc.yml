@@ -1,6 +1,7 @@
-- uid: '@microsoft/teams-js'
-  name: '@microsoft/teams-js'
+- name: '@microsoft/teams-js'
   items:
+    - name: Overview
+      uid: '@microsoft/teams-js'
     - uid: '@microsoft/teams-js.@microsoft.teams-js'
       name: '@microsoft.teams-js'
       items: []
@@ -25,6 +26,10 @@
                 @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters
               name: AuthenticateParameters
               items: []
+            - uid: >-
+                @microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest
+              name: AuthTokenRequest
+              items: []
         - uid: '@microsoft/teams-js.microsoftTeams.ChannelType'
           name: ChannelType
           items: []
@@ -40,8 +45,20 @@
         - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
           name: DeepLinkParameters
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+          name: ErrorCode
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.File'
+          name: File
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+          name: FileFormat
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
           name: FrameContext
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.FrameContexts'
+          name: FrameContexts
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
           name: GlobalVars
@@ -51,6 +68,9 @@
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.IAppWindow'
           name: IAppWindow
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
+          name: LocaleInfo
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
           name: MessageRequest
@@ -63,6 +83,9 @@
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
           name: ParentAppWindow
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
+          name: SdkError
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.settings'
           name: settings

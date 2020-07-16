@@ -1,31 +1,97 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters'
-    name: SaveParameters
-    fullName: SaveParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.File'
+    name: File
+    fullName: File
     children:
-      - '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
+      - '@microsoft/teams-js.microsoftTeams.File.content'
+      - '@microsoft/teams-js.microsoftTeams.File.format'
+      - '@microsoft/teams-js.microsoftTeams.File.mimeType'
+      - '@microsoft/teams-js.microsoftTeams.File.name'
+      - '@microsoft/teams-js.microsoftTeams.File.size'
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: File object that can be used to represent image or video or audio
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
-    name: webhookUrl
-    fullName: webhookUrl
+  - uid: '@microsoft/teams-js.microsoftTeams.File.content'
+    name: content
+    fullName: content
     children: []
     langs:
       - typeScript
     type: property
     summary: >-
-      Connector's webhook Url returned as arguments to settings.save event as
-      part of user clicking on Save
-    optional: true
+      Content of the file
+
+      App needs to convert this to dataUrl, if this must be used directly in
+      HTML tags
     syntax:
-      content: 'webhookUrl?: string'
+      content: 'content: string'
       return:
         type:
           - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.File.format'
+    name: format
+    fullName: format
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Format of the content
+    syntax:
+      content: 'format: FileFormat'
+      return:
+        type:
+          - '@microsoft/teams-js.microsoftTeams.FileFormat'
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.File.mimeType'
+    name: mimeType
+    fullName: mimeType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'MIME type. This can be used for constructing a dataUrl, if needed.'
+    syntax:
+      content: 'mimeType: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.File.name'
+    name: name
+    fullName: name
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: 'Optional: Name of the file'
+    optional: true
+    syntax:
+      content: 'name?: string'
+      return:
+        type:
+          - string
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.File.size'
+    name: size
+    fullName: size
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Size of the file in KB
+    syntax:
+      content: 'size: number'
+      return:
+        type:
+          - number
         description: ''
     package: '@microsoft/teams-js'
 references:

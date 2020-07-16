@@ -11,19 +11,26 @@ items:
       - '@microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest'
       - '@microsoft/teams-js.microsoftTeams.authentication'
       - '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
+      - '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
       - '@microsoft/teams-js.microsoftTeams.ChannelType'
       - '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
       - '@microsoft/teams-js.microsoftTeams.Context'
       - '@microsoft/teams-js.microsoftTeams.conversations'
       - '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
+      - '@microsoft/teams-js.microsoftTeams.ErrorCode'
+      - '@microsoft/teams-js.microsoftTeams.File'
+      - '@microsoft/teams-js.microsoftTeams.FileFormat'
       - '@microsoft/teams-js.microsoftTeams.FrameContext'
+      - '@microsoft/teams-js.microsoftTeams.FrameContexts'
       - '@microsoft/teams-js.microsoftTeams.GlobalVars'
       - '@microsoft/teams-js.microsoftTeams.HostClientType'
       - '@microsoft/teams-js.microsoftTeams.IAppWindow'
+      - '@microsoft/teams-js.microsoftTeams.LocaleInfo'
       - '@microsoft/teams-js.microsoftTeams.MessageRequest'
       - '@microsoft/teams-js.microsoftTeams.MessageResponse'
       - '@microsoft/teams-js.microsoftTeams.NotificationTypes'
       - '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
+      - '@microsoft/teams-js.microsoftTeams.SdkError'
       - '@microsoft/teams-js.microsoftTeams.settings'
       - '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent'
       - '@microsoft/teams-js.microsoftTeams.settings.SaveEvent'
@@ -57,6 +64,8 @@ references:
     name: authentication
   - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters'
     name: AuthenticateParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.authentication.AuthTokenRequest'
+    name: AuthTokenRequest
   - uid: '@microsoft/teams-js.microsoftTeams.ChannelType'
     name: ChannelType
   - uid: '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
@@ -67,14 +76,24 @@ references:
     name: conversations
   - uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
     name: DeepLinkParameters
+  - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
+    name: ErrorCode
+  - uid: '@microsoft/teams-js.microsoftTeams.File'
+    name: File
+  - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
+    name: FileFormat
   - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
     name: FrameContext
+  - uid: '@microsoft/teams-js.microsoftTeams.FrameContexts'
+    name: FrameContexts
   - uid: '@microsoft/teams-js.microsoftTeams.GlobalVars'
     name: GlobalVars
   - uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
     name: HostClientType
   - uid: '@microsoft/teams-js.microsoftTeams.IAppWindow'
     name: IAppWindow
+  - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
+    name: LocaleInfo
   - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
     name: MessageRequest
   - uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
@@ -83,6 +102,8 @@ references:
     name: NotificationTypes
   - uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
     name: ParentAppWindow
+  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
+    name: SdkError
   - uid: '@microsoft/teams-js.microsoftTeams.settings'
     name: settings
   - uid: '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent'
