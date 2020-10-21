@@ -1,52 +1,80 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
-    name: SdkError
-    fullName: SdkError
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+    name: MediaInputs
+    fullName: MediaInputs
     children:
-      - '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-      - '@microsoft/teams-js.microsoftTeams.SdkError.message'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaInputs.audioProps'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaInputs.imageProps'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaInputs.maxMediaCount'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaInputs.mediaType'
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Input parameter supplied to the select Media API
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-    name: errorCode
-    fullName: errorCode
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.audioProps'
+    name: audioProps
+    fullName: audioProps
     children: []
     langs:
       - typeScript
     type: property
-    summary: error code
+    summary: Additional properties for audio capture flows.
+    optional: true
     syntax:
-      content: 'errorCode: ErrorCode'
+      content: 'audioProps?: AudioProps'
       return:
         type:
-          - '@microsoft/teams-js.microsoftTeams.ErrorCode'
+          - '@microsoft/teams-js.microsoftTeams.media.AudioProps'
         description: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.message'
-    name: message
-    fullName: message
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.imageProps'
+    name: imageProps
+    fullName: imageProps
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Additional properties for customization of select media in mobile devices
+    optional: true
+    syntax:
+      content: 'imageProps?: ImageProps'
+      return:
+        type:
+          - '@microsoft/teams-js.microsoftTeams.media.ImageProps'
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.maxMediaCount'
+    name: maxMediaCount
+    fullName: maxMediaCount
     children: []
     langs:
       - typeScript
     type: property
     summary: >-
-      Optional description for the error. This may contain useful information
-      for web-app developers.
-
-      This string will not be localized and is not for end-user consumption.
-
-      App should not depend on the string content. The exact value may change.
-      This is only for debugging purposes.
-    optional: true
+      max limit of media allowed to be selected in one go, current max limit is
+      10 set by office lens.
     syntax:
-      content: 'message?: string'
+      content: 'maxMediaCount: number'
       return:
         type:
-          - string
+          - number
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.mediaType'
+    name: mediaType
+    fullName: mediaType
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Only one media type can be selected at a time
+    syntax:
+      content: 'mediaType: MediaType'
+      return:
+        type:
+          - '@microsoft/teams-js.microsoftTeams.media.MediaType'
         description: ''
     package: '@microsoft/teams-js'
 references:

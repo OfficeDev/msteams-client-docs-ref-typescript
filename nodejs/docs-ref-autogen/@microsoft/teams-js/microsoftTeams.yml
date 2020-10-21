@@ -6,20 +6,20 @@ items:
       - typeScript
     fullName: microsoftTeams
     children:
-      - '@microsoft/teams-js.microsoftTeams.captureImage'
       - '@microsoft/teams-js.microsoftTeams.ChannelType'
       - '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
       - '@microsoft/teams-js.microsoftTeams.compareSDKVersions'
       - '@microsoft/teams-js.microsoftTeams.Context'
+      - '@microsoft/teams-js.microsoftTeams.createFile'
+      - '@microsoft/teams-js.microsoftTeams.decodeAttachment'
       - '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
       - '@microsoft/teams-js.microsoftTeams.enablePrintCapability'
       - '@microsoft/teams-js.microsoftTeams.ensureInitialized'
       - '@microsoft/teams-js.microsoftTeams.ErrorCode'
       - '@microsoft/teams-js.microsoftTeams.executeDeepLink'
-      - '@microsoft/teams-js.microsoftTeams.File'
-      - '@microsoft/teams-js.microsoftTeams.FileFormat'
       - '@microsoft/teams-js.microsoftTeams.FrameContext'
       - '@microsoft/teams-js.microsoftTeams.FrameContexts'
+      - '@microsoft/teams-js.microsoftTeams.generateGUID'
       - '@microsoft/teams-js.microsoftTeams.generateRegExpFromUrls'
       - '@microsoft/teams-js.microsoftTeams.getContext'
       - '@microsoft/teams-js.microsoftTeams.getGenericOnCompleteHandler'
@@ -43,6 +43,9 @@ items:
       - '@microsoft/teams-js.microsoftTeams.print'
       - '@microsoft/teams-js.microsoftTeams.processAdditionalValidOrigins'
       - '@microsoft/teams-js.microsoftTeams.processMessage'
+      - '@microsoft/teams-js.microsoftTeams.registerAppButtonClickHandler'
+      - '@microsoft/teams-js.microsoftTeams.registerAppButtonHoverEnterHandler'
+      - '@microsoft/teams-js.microsoftTeams.registerAppButtonHoverLeaveHandler'
       - '@microsoft/teams-js.microsoftTeams.registerBackButtonHandler'
       - '@microsoft/teams-js.microsoftTeams.registerChangeSettingsHandler'
       - '@microsoft/teams-js.microsoftTeams.registerFullScreenHandler'
@@ -61,41 +64,12 @@ items:
       - '@microsoft/teams-js.microsoftTeams.TeamInformation'
       - '@microsoft/teams-js.microsoftTeams.TeamType'
       - '@microsoft/teams-js.microsoftTeams.UserTeamRole'
+      - '@microsoft/teams-js.microsoftTeams.validateGetMediaInputs'
+      - '@microsoft/teams-js.microsoftTeams.validateSelectMediaInputs'
+      - '@microsoft/teams-js.microsoftTeams.validateViewImagesInput'
       - '@microsoft/teams-js.microsoftTeams.waitForMessageQueue'
     type: module
     summary: ''
-    package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.captureImage'
-    name: 'captureImage((error: SdkError, files: File[]) => void)'
-    children: []
-    type: function
-    langs:
-      - typeScript
-    summary: >-
-      Launch camera, capture image or choose image from gallery and return the
-      images as a File[] object to the callback.
-
-      Callback will be called with an error, if there are any. App should first
-      check the error.
-
-      If it is present the user can be updated with appropriate error message.
-
-      If error is null or undefined, then files will have the required result.
-
-      Note: Currently we support getting one File through this API, i.e. the
-      file arrays size will be one.
-
-      Note: For desktop, this API is not supported. Callback will be resolved
-      with ErrorCode.NotSupported.
-    syntax:
-      content: >-
-        function captureImage(callback: (error: SdkError, files: File[]) =>
-        void)
-      parameters:
-        - id: callback
-          type:
-            - '(error: SdkError, files: File[]) => void'
-          description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.compareSDKVersions'
     name: 'compareSDKVersions(string, string)'
@@ -129,6 +103,59 @@ items:
       return:
         type:
           - number
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.createFile'
+    name: 'createFile(AssembleAttachment[], string)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Helper function to create a blob from media chunks based on their sequence
+    syntax:
+      content: >-
+        function createFile(assembleAttachment: AssembleAttachment[], mimeType:
+        string)
+      parameters:
+        - id: assembleAttachment
+          type:
+            - '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment[]'
+          description: ''
+        - id: mimeType
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - Blob
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.decodeAttachment'
+    name: 'decodeAttachment(MediaChunk, string)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Helper function to convert Media chunks into another object type which can
+      be later assemebled
+
+      Converts base 64 encoded string to byte array and then into an array of
+      blobs
+    syntax:
+      content: 'function decodeAttachment(attachment: MediaChunk, mimeType: string)'
+      parameters:
+        - id: attachment
+          type:
+            - '@microsoft/teams-js.microsoftTeams.media.MediaChunk'
+          description: ''
+        - id: mimeType
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
         description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.enablePrintCapability'
@@ -179,6 +206,21 @@ items:
             - '(status: boolean, reason?: string) => void'
           description: ''
           optional: true
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.generateGUID'
+    name: generateGUID()
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Generates a GUID
+    syntax:
+      content: function generateGUID()
+      parameters: []
+      return:
+        type:
+          - string
+        description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.generateRegExpFromUrls'
     name: 'generateRegExpFromUrls(string[])'
@@ -517,6 +559,69 @@ items:
             - DOMMessageEvent
           description: ''
     package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonClickHandler'
+    name: registerAppButtonClickHandler(() => void)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for clicking the app button.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerAppButtonClickHandler(handler: () => void)'
+      parameters:
+        - id: handler
+          type:
+            - () => void
+          description: >
+            The handler to invoke when the personal app button is clicked in the
+            app bar.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonHoverEnterHandler'
+    name: registerAppButtonHoverEnterHandler(() => void)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for entering hover of the app button.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerAppButtonHoverEnterHandler(handler: () => void)'
+      parameters:
+        - id: handler
+          type:
+            - () => void
+          description: >
+            The handler to invoke when entering hover of the personal app button
+            in the app bar.
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonHoverLeaveHandler'
+    name: registerAppButtonHoverLeaveHandler(() => void)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: >-
+      Registers a handler for exiting hover of the app button.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerAppButtonHoverLeaveHandler(handler: () => void)'
+      parameters:
+        - id: handler
+          type:
+            - () => void
+          description: >
+            The handler to invoke when exiting hover of the personal app button
+            in the app bar.
+    package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.registerBackButtonHandler'
     name: registerBackButtonHandler(() => boolean)
     children: []
@@ -684,6 +789,73 @@ items:
           description: |
             ID and label for the link and fallback URL.
     package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.validateGetMediaInputs'
+    name: 'validateGetMediaInputs(string, FileFormat, string)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Returns true if the get Media params are valid and false otherwise
+    syntax:
+      content: >-
+        function validateGetMediaInputs(mimeType: string, format: FileFormat,
+        content: string)
+      parameters:
+        - id: mimeType
+          type:
+            - string
+          description: ''
+        - id: format
+          type:
+            - '@microsoft/teams-js.microsoftTeams.media.FileFormat'
+          description: ''
+        - id: content
+          type:
+            - string
+          description: ''
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.validateSelectMediaInputs'
+    name: validateSelectMediaInputs(MediaInputs)
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Returns true if the mediaInput params are valid and false otherwise
+    syntax:
+      content: 'function validateSelectMediaInputs(mediaInputs: MediaInputs)'
+      parameters:
+        - id: mediaInputs
+          type:
+            - '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+          description: ''
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.validateViewImagesInput'
+    name: 'validateViewImagesInput(ImageUri[])'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Returns true if the view images param is valid and false otherwise
+    syntax:
+      content: 'function validateViewImagesInput(uriList: ImageUri[])'
+      parameters:
+        - id: uriList
+          type:
+            - '@microsoft/teams-js.microsoftTeams.media.ImageUri[]'
+          description: ''
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.waitForMessageQueue'
     name: 'waitForMessageQueue(Window, () => void)'
     children: []
@@ -747,6 +919,118 @@ references:
       - name: conversations
         fullName: conversations
         uid: '@microsoft/teams-js.microsoftTeams.conversations'
+  - uid: '@microsoft/teams-js.microsoftTeams.location.Location'
+    name: Location
+    spec.typeScript:
+      - name: Location
+        fullName: Location
+        uid: '@microsoft/teams-js.microsoftTeams.location.Location'
+  - uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+    name: LocationProps
+    spec.typeScript:
+      - name: LocationProps
+        fullName: LocationProps
+        uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+  - uid: '@microsoft/teams-js.microsoftTeams.location'
+    name: location
+    spec.typeScript:
+      - name: location
+        fullName: location
+        uid: '@microsoft/teams-js.microsoftTeams.location'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.FileFormat'
+    name: FileFormat
+    spec.typeScript:
+      - name: FileFormat
+        fullName: FileFormat
+        uid: '@microsoft/teams-js.microsoftTeams.media.FileFormat'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.File'
+    name: File
+    spec.typeScript:
+      - name: File
+        fullName: File
+        uid: '@microsoft/teams-js.microsoftTeams.media.File'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.Media'
+    name: Media
+    spec.typeScript:
+      - name: Media
+        fullName: Media
+        uid: '@microsoft/teams-js.microsoftTeams.media.Media'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+    name: AssembleAttachment
+    spec.typeScript:
+      - name: AssembleAttachment
+        fullName: AssembleAttachment
+        uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps'
+    name: AudioProps
+    spec.typeScript:
+      - name: AudioProps
+        fullName: AudioProps
+        uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.Source[]'
+    name: 'Source[]'
+    spec.typeScript:
+      - name: Source
+        fullName: Source
+        uid: '@microsoft/teams-js.microsoftTeams.media.Source'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
+    name: CameraStartMode
+    spec.typeScript:
+      - name: CameraStartMode
+        fullName: CameraStartMode
+        uid: '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.ImageProps'
+    name: ImageProps
+    spec.typeScript:
+      - name: ImageProps
+        fullName: ImageProps
+        uid: '@microsoft/teams-js.microsoftTeams.media.ImageProps'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.ImageUriType'
+    name: ImageUriType
+    spec.typeScript:
+      - name: ImageUriType
+        fullName: ImageUriType
+        uid: '@microsoft/teams-js.microsoftTeams.media.ImageUriType'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri'
+    name: ImageUri
+    spec.typeScript:
+      - name: ImageUri
+        fullName: ImageUri
+        uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaChunk'
+    name: MediaChunk
+    spec.typeScript:
+      - name: MediaChunk
+        fullName: MediaChunk
+        uid: '@microsoft/teams-js.microsoftTeams.media.MediaChunk'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaType'
+    name: MediaType
+    spec.typeScript:
+      - name: MediaType
+        fullName: MediaType
+        uid: '@microsoft/teams-js.microsoftTeams.media.MediaType'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+    name: MediaInputs
+    spec.typeScript:
+      - name: MediaInputs
+        fullName: MediaInputs
+        uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri[]'
+    name: 'ImageUri[]'
+    spec.typeScript:
+      - name: ImageUri
+        fullName: ImageUri
+        uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.media'
+    name: media
+    spec.typeScript:
+      - name: media
+        fullName: media
+        uid: '@microsoft/teams-js.microsoftTeams.media'
   - uid: '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent'
     name: RemoveEvent
     spec.typeScript:
@@ -869,18 +1153,6 @@ references:
       - name: DeepLinkParameters
         fullName: DeepLinkParameters
         uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
-  - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
-    name: FileFormat
-    spec.typeScript:
-      - name: FileFormat
-        fullName: FileFormat
-        uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
-  - uid: '@microsoft/teams-js.microsoftTeams.File'
-    name: File
-    spec.typeScript:
-      - name: File
-        fullName: File
-        uid: '@microsoft/teams-js.microsoftTeams.File'
   - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
     name: FrameContext
     spec.typeScript:
@@ -963,16 +1235,28 @@ references:
       - name: TeamInformation
         fullName: TeamInformation
         uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
-  - uid: '@microsoft/teams-js.microsoftTeams.captureImage'
-    name: captureImage
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment[]'
+    name: 'AssembleAttachment[]'
+    spec.typeScript:
+      - name: AssembleAttachment
+        fullName: AssembleAttachment
+        uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+      - name: '[]'
+        fullName: '[]'
   - uid: '@microsoft/teams-js.microsoftTeams.compareSDKVersions'
     name: compareSDKVersions
+  - uid: '@microsoft/teams-js.microsoftTeams.createFile'
+    name: createFile
+  - uid: '@microsoft/teams-js.microsoftTeams.decodeAttachment'
+    name: decodeAttachment
   - uid: '@microsoft/teams-js.microsoftTeams.enablePrintCapability'
     name: enablePrintCapability
   - uid: '@microsoft/teams-js.microsoftTeams.ensureInitialized'
     name: ensureInitialized
   - uid: '@microsoft/teams-js.microsoftTeams.executeDeepLink'
     name: executeDeepLink
+  - uid: '@microsoft/teams-js.microsoftTeams.generateGUID'
+    name: generateGUID
   - uid: '@microsoft/teams-js.microsoftTeams.generateRegExpFromUrls'
     name: generateRegExpFromUrls
   - uid: '@microsoft/teams-js.microsoftTeams.getContext'
@@ -1003,6 +1287,12 @@ references:
     name: processAdditionalValidOrigins
   - uid: '@microsoft/teams-js.microsoftTeams.processMessage'
     name: processMessage
+  - uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonClickHandler'
+    name: registerAppButtonClickHandler
+  - uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonHoverEnterHandler'
+    name: registerAppButtonHoverEnterHandler
+  - uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonHoverLeaveHandler'
+    name: registerAppButtonHoverLeaveHandler
   - uid: '@microsoft/teams-js.microsoftTeams.registerBackButtonHandler'
     name: registerBackButtonHandler
   - uid: '@microsoft/teams-js.microsoftTeams.registerChangeSettingsHandler'
@@ -1021,5 +1311,11 @@ references:
     name: shareDeepLink
   - uid: '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
     name: TaskModuleDimension
+  - uid: '@microsoft/teams-js.microsoftTeams.validateGetMediaInputs'
+    name: validateGetMediaInputs
+  - uid: '@microsoft/teams-js.microsoftTeams.validateSelectMediaInputs'
+    name: validateSelectMediaInputs
+  - uid: '@microsoft/teams-js.microsoftTeams.validateViewImagesInput'
+    name: validateViewImagesInput
   - uid: '@microsoft/teams-js.microsoftTeams.waitForMessageQueue'
     name: waitForMessageQueue

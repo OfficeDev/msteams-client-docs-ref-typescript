@@ -1,53 +1,61 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
-    name: SdkError
-    fullName: SdkError
-    children:
-      - '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-      - '@microsoft/teams-js.microsoftTeams.SdkError.message'
+  - uid: '@microsoft/teams-js.microsoftTeams.location'
+    name: location
     langs:
       - typeScript
-    type: interface
+    fullName: location
+    children:
+      - '@microsoft/teams-js.microsoftTeams.location.getLocation'
+      - '@microsoft/teams-js.microsoftTeams.location.Location'
+      - '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+      - '@microsoft/teams-js.microsoftTeams.location.showLocation'
+    type: module
     summary: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-    name: errorCode
-    fullName: errorCode
+  - uid: '@microsoft/teams-js.microsoftTeams.location.getLocation'
+    name: 'getLocation(LocationProps, (error: SdkError, location: Location) => void)'
     children: []
+    type: function
     langs:
       - typeScript
-    type: property
-    summary: error code
+    summary: Fetches current user coordinates or allows user to choose location on map
     syntax:
-      content: 'errorCode: ErrorCode'
-      return:
-        type:
-          - '@microsoft/teams-js.microsoftTeams.ErrorCode'
-        description: ''
+      content: >-
+        function getLocation(props: LocationProps, callback: (error: SdkError,
+        location: Location) => void)
+      parameters:
+        - id: props
+          type:
+            - '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+          description: ''
+        - id: callback
+          type:
+            - '(error: SdkError, location: Location) => void'
+          description: |
+            Callback to invoke when current user location is fetched
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.message'
-    name: message
-    fullName: message
+  - uid: '@microsoft/teams-js.microsoftTeams.location.showLocation'
+    name: 'showLocation(Location, (error: SdkError, status: boolean) => void)'
     children: []
+    type: function
     langs:
       - typeScript
-    type: property
-    summary: >-
-      Optional description for the error. This may contain useful information
-      for web-app developers.
-
-      This string will not be localized and is not for end-user consumption.
-
-      App should not depend on the string content. The exact value may change.
-      This is only for debugging purposes.
-    optional: true
+    summary: Shows the location on map corresponding to the given coordinates
     syntax:
-      content: 'message?: string'
-      return:
-        type:
-          - string
-        description: ''
+      content: >-
+        function showLocation(location: Location, callback: (error: SdkError,
+        status: boolean) => void)
+      parameters:
+        - id: location
+          type:
+            - '@microsoft/teams-js.microsoftTeams.location.Location'
+          description: which needs to be shown on map
+        - id: callback
+          type:
+            - '(error: SdkError, status: boolean) => void'
+          description: |
+            Callback to invoke when the location is opened on map
     package: '@microsoft/teams-js'
 references:
   - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
@@ -417,3 +425,7 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
       - name: '[]'
         fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.location.getLocation'
+    name: getLocation
+  - uid: '@microsoft/teams-js.microsoftTeams.location.showLocation'
+    name: showLocation

@@ -1,53 +1,33 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
-    name: SdkError
-    fullName: SdkError
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaType'
+    name: MediaType
+    fullName: MediaType
     children:
-      - '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-      - '@microsoft/teams-js.microsoftTeams.SdkError.message'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaType.Image'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaType.Audio'
     langs:
       - typeScript
-    type: interface
+    type: enum
+    summary: Specifies the type of Media
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaType.Image'
+    name: Image
+    children: []
+    langs:
+      - typeScript
     summary: ''
+    type: field
+    numericValue: 1
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-    name: errorCode
-    fullName: errorCode
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaType.Audio'
+    name: Audio
     children: []
     langs:
       - typeScript
-    type: property
-    summary: error code
-    syntax:
-      content: 'errorCode: ErrorCode'
-      return:
-        type:
-          - '@microsoft/teams-js.microsoftTeams.ErrorCode'
-        description: ''
-    package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.message'
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
-    summary: >-
-      Optional description for the error. This may contain useful information
-      for web-app developers.
-
-      This string will not be localized and is not for end-user consumption.
-
-      App should not depend on the string content. The exact value may change.
-      This is only for debugging purposes.
-    optional: true
-    syntax:
-      content: 'message?: string'
-      return:
-        type:
-          - string
-        description: ''
+    summary: ''
+    type: field
+    numericValue: 4
     package: '@microsoft/teams-js'
 references:
   - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'

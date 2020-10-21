@@ -48,12 +48,6 @@
         - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
           name: ErrorCode
           items: []
-        - uid: '@microsoft/teams-js.microsoftTeams.File'
-          name: File
-          items: []
-        - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
-          name: FileFormat
-          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
           name: FrameContext
           items: []
@@ -72,6 +66,57 @@
         - uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
           name: LocaleInfo
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.location'
+          name: location
+          items:
+            - uid: '@microsoft/teams-js.microsoftTeams.location.Location'
+              name: Location
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+              name: LocationProps
+              items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.media'
+          name: media
+          items:
+            - uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+              name: AssembleAttachment
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps'
+              name: AudioProps
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
+              name: CameraStartMode
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.File'
+              name: File
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.FileFormat'
+              name: FileFormat
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.ImageProps'
+              name: ImageProps
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri'
+              name: ImageUri
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.ImageUriType'
+              name: ImageUriType
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.Media'
+              name: Media
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.MediaChunk'
+              name: MediaChunk
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+              name: MediaInputs
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.MediaType'
+              name: MediaType
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.Source'
+              name: Source
+              items: []
         - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
           name: MessageRequest
           items: []

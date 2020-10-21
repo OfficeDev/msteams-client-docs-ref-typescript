@@ -1,53 +1,107 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
-    name: SdkError
-    fullName: SdkError
-    children:
-      - '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-      - '@microsoft/teams-js.microsoftTeams.SdkError.message'
+  - uid: '@microsoft/teams-js.microsoftTeams.media'
+    name: media
     langs:
       - typeScript
-    type: interface
+    fullName: media
+    children:
+      - '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+      - '@microsoft/teams-js.microsoftTeams.media.AudioProps'
+      - '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
+      - '@microsoft/teams-js.microsoftTeams.media.captureImage'
+      - '@microsoft/teams-js.microsoftTeams.media.File'
+      - '@microsoft/teams-js.microsoftTeams.media.FileFormat'
+      - '@microsoft/teams-js.microsoftTeams.media.ImageProps'
+      - '@microsoft/teams-js.microsoftTeams.media.ImageUri'
+      - '@microsoft/teams-js.microsoftTeams.media.ImageUriType'
+      - '@microsoft/teams-js.microsoftTeams.media.Media'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaChunk'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+      - '@microsoft/teams-js.microsoftTeams.media.MediaType'
+      - '@microsoft/teams-js.microsoftTeams.media.selectMedia'
+      - '@microsoft/teams-js.microsoftTeams.media.Source'
+      - '@microsoft/teams-js.microsoftTeams.media.viewImages'
+    type: module
     summary: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-    name: errorCode
-    fullName: errorCode
+  - uid: '@microsoft/teams-js.microsoftTeams.media.captureImage'
+    name: 'captureImage((error: SdkError, files: File[]) => void)'
     children: []
+    type: function
     langs:
       - typeScript
-    type: property
-    summary: error code
-    syntax:
-      content: 'errorCode: ErrorCode'
-      return:
-        type:
-          - '@microsoft/teams-js.microsoftTeams.ErrorCode'
-        description: ''
-    package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.message'
-    name: message
-    fullName: message
-    children: []
-    langs:
-      - typeScript
-    type: property
     summary: >-
-      Optional description for the error. This may contain useful information
-      for web-app developers.
+      Launch camera, capture image or choose image from gallery and return the
+      images as a File[] object to the callback.
 
-      This string will not be localized and is not for end-user consumption.
+      Callback will be called with an error, if there are any. App should first
+      check the error.
 
-      App should not depend on the string content. The exact value may change.
-      This is only for debugging purposes.
-    optional: true
+      If it is present the user can be updated with appropriate error message.
+
+      If error is null or undefined, then files will have the required result.
+
+      Note: Currently we support getting one File through this API, i.e. the
+      file arrays size will be one.
+
+      Note: For desktop, this API is not supported. Callback will be resolved
+      with ErrorCode.NotSupported.
     syntax:
-      content: 'message?: string'
-      return:
-        type:
-          - string
-        description: ''
+      content: >-
+        function captureImage(callback: (error: SdkError, files: File[]) =>
+        void)
+      parameters:
+        - id: callback
+          type:
+            - '(error: SdkError, files: File[]) => void'
+          description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.selectMedia'
+    name: 'selectMedia(MediaInputs, (error: SdkError, attachments: Media[]) => void)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: Select an attachment using camera/gallery
+    syntax:
+      content: >-
+        function selectMedia(mediaInputs: MediaInputs, callback: (error:
+        SdkError, attachments: Media[]) => void)
+      parameters:
+        - id: mediaInputs
+          type:
+            - '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+          description: The input params to customize the media to be selected
+        - id: callback
+          type:
+            - '(error: SdkError, attachments: Media[]) => void'
+          description: |
+            The callback to invoke after fetching the media
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.viewImages'
+    name: 'viewImages(ImageUri[], (error?: SdkError) => void)'
+    children: []
+    type: function
+    langs:
+      - typeScript
+    summary: View images using native image viewer
+    syntax:
+      content: >-
+        function viewImages(uriList: ImageUri[], callback: (error?: SdkError) =>
+        void)
+      parameters:
+        - id: uriList
+          type:
+            - '@microsoft/teams-js.microsoftTeams.media.ImageUri[]'
+          description: >-
+            urilist of images to be viewed - can be content uri or server url.
+            supports upto 10 Images in one go
+        - id: callback
+          type:
+            - '(error?: SdkError) => void'
+          description: |
+            returns back error if encountered, returns null in case of success
     package: '@microsoft/teams-js'
 references:
   - uid: '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
@@ -417,3 +471,11 @@ references:
         uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
       - name: '[]'
         fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.captureImage'
+    name: captureImage
+  - uid: '@microsoft/teams-js.microsoftTeams.media.selectMedia'
+    name: selectMedia
+  - uid: '@microsoft/teams-js.microsoftTeams.media.Source'
+    name: Source
+  - uid: '@microsoft/teams-js.microsoftTeams.media.viewImages'
+    name: viewImages

@@ -1,52 +1,44 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
-    name: SdkError
-    fullName: SdkError
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+    name: AssembleAttachment
+    fullName: AssembleAttachment
     children:
-      - '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-      - '@microsoft/teams-js.microsoftTeams.SdkError.message'
+      - '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment.file'
+      - '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment.sequence'
     langs:
       - typeScript
     type: interface
-    summary: ''
+    summary: Helper object to assembled media chunks
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-    name: errorCode
-    fullName: errorCode
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment.file'
+    name: file
+    fullName: file
     children: []
     langs:
       - typeScript
     type: property
-    summary: error code
+    summary: ''
     syntax:
-      content: 'errorCode: ErrorCode'
+      content: 'file: Blob'
       return:
         type:
-          - '@microsoft/teams-js.microsoftTeams.ErrorCode'
+          - Blob
         description: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.message'
-    name: message
-    fullName: message
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment.sequence'
+    name: sequence
+    fullName: sequence
     children: []
     langs:
       - typeScript
     type: property
-    summary: >-
-      Optional description for the error. This may contain useful information
-      for web-app developers.
-
-      This string will not be localized and is not for end-user consumption.
-
-      App should not depend on the string content. The exact value may change.
-      This is only for debugging purposes.
-    optional: true
+    summary: ''
     syntax:
-      content: 'message?: string'
+      content: 'sequence: number'
       return:
         type:
-          - string
+          - number
         description: ''
     package: '@microsoft/teams-js'
 references:

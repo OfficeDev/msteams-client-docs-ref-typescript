@@ -1,52 +1,59 @@
 ### YamlMime:UniversalReference
 items:
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
-    name: SdkError
-    fullName: SdkError
+  - uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+    name: LocationProps
+    fullName: LocationProps
     children:
-      - '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-      - '@microsoft/teams-js.microsoftTeams.SdkError.message'
+      - >-
+        @microsoft/teams-js.microsoftTeams.location.LocationProps.allowChooseLocation
+      - '@microsoft/teams-js.microsoftTeams.location.LocationProps.showMap'
     langs:
       - typeScript
     type: interface
     summary: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
-    name: errorCode
-    fullName: errorCode
+  - uid: >-
+      @microsoft/teams-js.microsoftTeams.location.LocationProps.allowChooseLocation
+    name: allowChooseLocation
+    fullName: allowChooseLocation
     children: []
     langs:
       - typeScript
     type: property
-    summary: error code
+    summary: |-
+      whether user can alter location or not
+      if false, user will be shown current location
+      and wouldn't be allowed to alter it
     syntax:
-      content: 'errorCode: ErrorCode'
+      content: 'allowChooseLocation: boolean'
       return:
         type:
-          - '@microsoft/teams-js.microsoftTeams.ErrorCode'
+          - boolean
         description: ''
     package: '@microsoft/teams-js'
-  - uid: '@microsoft/teams-js.microsoftTeams.SdkError.message'
-    name: message
-    fullName: message
+  - uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps.showMap'
+    name: showMap
+    fullName: showMap
     children: []
     langs:
       - typeScript
     type: property
     summary: >-
-      Optional description for the error. This may contain useful information
-      for web-app developers.
+      whether selected location should be shown to user on map or not.
 
-      This string will not be localized and is not for end-user consumption.
+      If allowChooseLocation is true, this parameter will be ignored by
+      platform.
 
-      App should not depend on the string content. The exact value may change.
-      This is only for debugging purposes.
+      If allowChooseLocation is false, and this paramater is not provided,
+      default
+
+      value will be false.
     optional: true
     syntax:
-      content: 'message?: string'
+      content: 'showMap?: boolean'
       return:
         type:
-          - string
+          - boolean
         description: ''
     package: '@microsoft/teams-js'
 references:

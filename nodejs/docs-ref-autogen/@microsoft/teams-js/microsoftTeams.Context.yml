@@ -4,6 +4,7 @@ items:
     name: Context
     fullName: Context
     children:
+      - '@microsoft/teams-js.microsoftTeams.Context.appIconPosition'
       - '@microsoft/teams-js.microsoftTeams.Context.appSessionId'
       - '@microsoft/teams-js.microsoftTeams.Context.channelId'
       - '@microsoft/teams-js.microsoftTeams.Context.channelName'
@@ -17,6 +18,7 @@ items:
       - '@microsoft/teams-js.microsoftTeams.Context.hostClientType'
       - '@microsoft/teams-js.microsoftTeams.Context.isCallingAllowed'
       - '@microsoft/teams-js.microsoftTeams.Context.isFullScreen'
+      - '@microsoft/teams-js.microsoftTeams.Context.isMultiWindow'
       - '@microsoft/teams-js.microsoftTeams.Context.isPSTNCallingAllowed'
       - '@microsoft/teams-js.microsoftTeams.Context.isTeamArchived'
       - '@microsoft/teams-js.microsoftTeams.Context.locale'
@@ -46,6 +48,22 @@ items:
       - typeScript
     type: interface
     summary: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.appIconPosition'
+    name: appIconPosition
+    fullName: appIconPosition
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Personal app icon y coordinate position
+    optional: true
+    syntax:
+      content: 'appIconPosition?: number'
+      return:
+        type:
+          - number
+        description: ''
     package: '@microsoft/teams-js'
   - uid: '@microsoft/teams-js.microsoftTeams.Context.appSessionId'
     name: appSessionId
@@ -259,6 +277,22 @@ items:
     optional: true
     syntax:
       content: 'isFullScreen?: boolean'
+      return:
+        type:
+          - boolean
+        description: ''
+    package: '@microsoft/teams-js'
+  - uid: '@microsoft/teams-js.microsoftTeams.Context.isMultiWindow'
+    name: isMultiWindow
+    fullName: isMultiWindow
+    children: []
+    langs:
+      - typeScript
+    type: property
+    summary: Indication whether the tab is in a pop out window
+    optional: true
+    syntax:
+      content: 'isMultiWindow?: boolean'
       return:
         type:
           - boolean
@@ -788,6 +822,118 @@ references:
       - name: conversations
         fullName: conversations
         uid: '@microsoft/teams-js.microsoftTeams.conversations'
+  - uid: '@microsoft/teams-js.microsoftTeams.location.Location'
+    name: Location
+    spec.typeScript:
+      - name: Location
+        fullName: Location
+        uid: '@microsoft/teams-js.microsoftTeams.location.Location'
+  - uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+    name: LocationProps
+    spec.typeScript:
+      - name: LocationProps
+        fullName: LocationProps
+        uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+  - uid: '@microsoft/teams-js.microsoftTeams.location'
+    name: location
+    spec.typeScript:
+      - name: location
+        fullName: location
+        uid: '@microsoft/teams-js.microsoftTeams.location'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.FileFormat'
+    name: FileFormat
+    spec.typeScript:
+      - name: FileFormat
+        fullName: FileFormat
+        uid: '@microsoft/teams-js.microsoftTeams.media.FileFormat'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.File'
+    name: File
+    spec.typeScript:
+      - name: File
+        fullName: File
+        uid: '@microsoft/teams-js.microsoftTeams.media.File'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.Media'
+    name: Media
+    spec.typeScript:
+      - name: Media
+        fullName: Media
+        uid: '@microsoft/teams-js.microsoftTeams.media.Media'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+    name: AssembleAttachment
+    spec.typeScript:
+      - name: AssembleAttachment
+        fullName: AssembleAttachment
+        uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps'
+    name: AudioProps
+    spec.typeScript:
+      - name: AudioProps
+        fullName: AudioProps
+        uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.Source[]'
+    name: 'Source[]'
+    spec.typeScript:
+      - name: Source
+        fullName: Source
+        uid: '@microsoft/teams-js.microsoftTeams.media.Source'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
+    name: CameraStartMode
+    spec.typeScript:
+      - name: CameraStartMode
+        fullName: CameraStartMode
+        uid: '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.ImageProps'
+    name: ImageProps
+    spec.typeScript:
+      - name: ImageProps
+        fullName: ImageProps
+        uid: '@microsoft/teams-js.microsoftTeams.media.ImageProps'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.ImageUriType'
+    name: ImageUriType
+    spec.typeScript:
+      - name: ImageUriType
+        fullName: ImageUriType
+        uid: '@microsoft/teams-js.microsoftTeams.media.ImageUriType'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri'
+    name: ImageUri
+    spec.typeScript:
+      - name: ImageUri
+        fullName: ImageUri
+        uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaChunk'
+    name: MediaChunk
+    spec.typeScript:
+      - name: MediaChunk
+        fullName: MediaChunk
+        uid: '@microsoft/teams-js.microsoftTeams.media.MediaChunk'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaType'
+    name: MediaType
+    spec.typeScript:
+      - name: MediaType
+        fullName: MediaType
+        uid: '@microsoft/teams-js.microsoftTeams.media.MediaType'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+    name: MediaInputs
+    spec.typeScript:
+      - name: MediaInputs
+        fullName: MediaInputs
+        uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri[]'
+    name: 'ImageUri[]'
+    spec.typeScript:
+      - name: ImageUri
+        fullName: ImageUri
+        uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri'
+      - name: '[]'
+        fullName: '[]'
+  - uid: '@microsoft/teams-js.microsoftTeams.media'
+    name: media
+    spec.typeScript:
+      - name: media
+        fullName: media
+        uid: '@microsoft/teams-js.microsoftTeams.media'
   - uid: '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent'
     name: RemoveEvent
     spec.typeScript:
@@ -910,18 +1056,6 @@ references:
       - name: DeepLinkParameters
         fullName: DeepLinkParameters
         uid: '@microsoft/teams-js.microsoftTeams.DeepLinkParameters'
-  - uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
-    name: FileFormat
-    spec.typeScript:
-      - name: FileFormat
-        fullName: FileFormat
-        uid: '@microsoft/teams-js.microsoftTeams.FileFormat'
-  - uid: '@microsoft/teams-js.microsoftTeams.File'
-    name: File
-    spec.typeScript:
-      - name: File
-        fullName: File
-        uid: '@microsoft/teams-js.microsoftTeams.File'
   - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
     name: FrameContext
     spec.typeScript:
@@ -1004,3 +1138,11 @@ references:
       - name: TeamInformation
         fullName: TeamInformation
         uid: '@microsoft/teams-js.microsoftTeams.TeamInformation'
+  - uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment[]'
+    name: 'AssembleAttachment[]'
+    spec.typeScript:
+      - name: AssembleAttachment
+        fullName: AssembleAttachment
+        uid: '@microsoft/teams-js.microsoftTeams.media.AssembleAttachment'
+      - name: '[]'
+        fullName: '[]'
