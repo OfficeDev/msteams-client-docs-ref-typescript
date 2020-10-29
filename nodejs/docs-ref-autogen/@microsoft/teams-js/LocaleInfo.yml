@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: LocaleInfo
+uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
+package: '@microsoft/teams-js'
+summary: Represents OS locale info used for formatting date and time data
+fullName: LocaleInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: longDate
+    uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.longDate'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: longDate
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longDate: string'
+      return:
+        type: string
+        description: ''
+  - name: longTime
+    uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.longTime'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: longTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'longTime: string'
+      return:
+        type: string
+        description: ''
+  - name: platform
+    uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.platform'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: platform
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'platform: "windows" | "macos"'
+      return:
+        type: '"windows" | "macos"'
+        description: ''
+  - name: regionalFormat
+    uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.regionalFormat'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: regionalFormat
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'regionalFormat: string'
+      return:
+        type: string
+        description: ''
+  - name: shortDate
+    uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.shortDate'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: shortDate
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shortDate: string'
+      return:
+        type: string
+        description: ''
+  - name: shortTime
+    uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo.shortTime'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: shortTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shortTime: string'
+      return:
+        type: string
+        description: ''
