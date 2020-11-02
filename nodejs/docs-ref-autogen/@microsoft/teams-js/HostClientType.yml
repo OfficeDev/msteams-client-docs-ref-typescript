@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: HostClientType
+uid: '@microsoft/teams-js.microsoftTeams.HostClientType'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: HostClientType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: android
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.android'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: desktop
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.desktop'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: ios
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.ios'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: rigel
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.rigel'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: web
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.web'
+    package: '@microsoft/teams-js'
+    summary: ''

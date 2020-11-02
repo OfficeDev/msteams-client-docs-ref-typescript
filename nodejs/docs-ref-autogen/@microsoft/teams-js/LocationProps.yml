@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: LocationProps
+uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: LocationProps
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: allowChooseLocation
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.location.LocationProps.allowChooseLocation
+    package: '@microsoft/teams-js'
+    summary: |-
+      whether user can alter location or not
+      if false, user will be shown current location
+      and wouldn't be allowed to alter it
+    fullName: allowChooseLocation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'allowChooseLocation: boolean'
+      return:
+        type: boolean
+        description: ''
+  - name: showMap
+    uid: '@microsoft/teams-js.microsoftTeams.location.LocationProps.showMap'
+    package: '@microsoft/teams-js'
+    summary: >-
+      whether selected location should be shown to user on map or not.
+
+      If allowChooseLocation is true, this parameter will be ignored by
+      platform.
+
+      If allowChooseLocation is false, and this paramater is not provided,
+      default
+
+      value will be false.
+    fullName: showMap
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'showMap?: boolean'
+      return:
+        type: boolean
+        description: ''
