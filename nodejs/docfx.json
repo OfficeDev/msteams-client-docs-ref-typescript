@@ -70,10 +70,15 @@
       }
     ],
     "overwrite": [],
-     "groups": {
+    "groups": {
       "stable": {
         "dest": "stable",
         "moniker_range": "msteams-client-js-latest"
+      }
+    },
+    "versions": {
+      "msteams-client-js-latest": {
+        "dest": "stable"
       }
     },
     "externalReference": [],
