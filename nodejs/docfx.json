@@ -72,6 +72,7 @@
     "versions": {
       "msteams-client-js-latest": {
         "dest": "msteams-client-js-latest"
+      }
     },
     "overwrite": [],
      "groups": {
