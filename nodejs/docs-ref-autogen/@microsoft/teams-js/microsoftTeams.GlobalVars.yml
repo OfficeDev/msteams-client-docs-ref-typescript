@@ -321,6 +321,38 @@ properties:
       return:
         type: '(context: LoadContext) =&gt; void'
         description: ''
+  - name: meetingRoomCapabilitiesUpdateHandler
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.GlobalVars.meetingRoomCapabilitiesUpdateHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: meetingRoomCapabilitiesUpdateHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static meetingRoomCapabilitiesUpdateHandler: (capabilities:
+        MeetingRoomCapability) => void
+      return:
+        type: '(capabilities: MeetingRoomCapability) =&gt; void'
+        description: ''
+  - name: meetingRoomStatesUpdateHandler
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.GlobalVars.meetingRoomStatesUpdateHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: meetingRoomStatesUpdateHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static meetingRoomStatesUpdateHandler: (states: MeetingRoomState) =>
+        void
+      return:
+        type: '(states: MeetingRoomState) =&gt; void'
+        description: ''
   - name: nextMessageId
     uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.nextMessageId'
     package: '@microsoft/teams-js'

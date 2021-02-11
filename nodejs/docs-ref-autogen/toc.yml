@@ -89,6 +89,9 @@
             - uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps'
               name: AudioProps
               items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.BarCodeConfig'
+              name: BarCodeConfig
+              items: []
             - uid: '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
               name: CameraStartMode
               items: []
@@ -122,6 +125,28 @@
             - uid: '@microsoft/teams-js.microsoftTeams.media.Source'
               name: Source
               items: []
+        - name: meeting
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.microsoftTeams.meeting'
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IConversation'
+              name: IConversation
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails'
+              name: IDetails
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IMeetingDetails'
+              name: IMeetingDetails
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IOrganizer'
+              name: IOrganizer
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.MeetingType'
+              name: MeetingType
+              items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.meetingRoom'
+          name: meetingRoom
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
           name: MessageRequest
           items: []
