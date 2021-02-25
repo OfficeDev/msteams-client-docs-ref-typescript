@@ -15,7 +15,8 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices",
-          "toc.yml"
+          "toc.yml",
+          "fxtoc.yml"
         ],
         "group": "stable",
         "version": "msteams-client-js-latest"
