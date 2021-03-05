@@ -14,9 +14,7 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices",
-          "toc.yml",
-          "fxtoc.yml"
+          "ThirdPartyNotices"
         ],
         "group": "stable",
         "version": "msteams-client-js-latest"
