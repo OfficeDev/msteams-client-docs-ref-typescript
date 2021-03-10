@@ -30,8 +30,8 @@
       ],
       "JoinTOCPlugin": [
         {
-          "TopLevelTOC": "docs-ref-toc/fxtoc.yml",
-          "ReferenceTOC": "docs-ref-autogen/toc.yml",
+          "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
+          "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
           "ConceptualTOCUrl": "/microsoftteams/platform/toc.json"
         }
       ]
