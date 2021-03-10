@@ -27,14 +27,14 @@
       "template_folder": "_themes",
       "customized_template_paths": [
         "_dependentPackages/uref.plugins/content"
-      ],
-      "JoinTOCPlugin": [
-        {
-          "TopLevelTOC": "docs-ref-toc/fxtoc.yml",
-          "ReferenceTOC": "docs-ref-autogen/toc.yml",
-          "ConceptualTOCUrl": "/microsoftteams/platform/toc.json"
-        }
       ]
+    }
+  ],
+  "JoinTOCPlugin": [
+    {
+      "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
+      "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
+      "ConceptualTOCUrl": "/microsoftteams/platform/toc.json"
     }
   ],
   "DiffFolder": [
