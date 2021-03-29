@@ -24,6 +24,10 @@ fields:
     uid: '@microsoft/teams-js.microsoftTeams.HostClientType.rigel'
     package: '@microsoft/teams-js'
     summary: ''
+  - name: surfaceHub
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.surfaceHub'
+    package: '@microsoft/teams-js'
+    summary: ''
   - name: web
     uid: '@microsoft/teams-js.microsoftTeams.HostClientType.web'
     package: '@microsoft/teams-js'

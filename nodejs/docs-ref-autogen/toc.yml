@@ -39,6 +39,9 @@
         - uid: '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
           name: ChildAppWindow
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.Communication'
+          name: Communication
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.Context'
           name: Context
           items: []
@@ -50,6 +53,9 @@
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
           name: ErrorCode
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.FileOpenPreference'
+          name: FileOpenPreference
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
           name: FrameContext
@@ -141,6 +147,9 @@
             - uid: '@microsoft/teams-js.microsoftTeams.meeting.IOrganizer'
               name: IOrganizer
               items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.LiveStreamState'
+              name: LiveStreamState
+              items: []
             - uid: '@microsoft/teams-js.microsoftTeams.meeting.MeetingType'
               name: MeetingType
               items: []
@@ -158,6 +167,9 @@
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
           name: ParentAppWindow
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.remoteCamera'
+          name: remoteCamera
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
           name: SdkError
@@ -204,6 +216,9 @@
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
           name: TeamType
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.UserSettingTypes'
+          name: UserSettingTypes
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
           name: UserTeamRole

@@ -1,0 +1,22 @@
+### YamlMime:TSEnum
+name: UserSettingTypes
+uid: '@microsoft/teams-js.microsoftTeams.UserSettingTypes'
+package: '@microsoft/teams-js'
+summary: |-
+  * @private
+  Hide from docs.
+  ------
+  User setting changes that can be subscribed to,
+fullName: UserSettingTypes
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: fileOpenPreference
+    uid: '@microsoft/teams-js.microsoftTeams.UserSettingTypes.fileOpenPreference'
+    package: '@microsoft/teams-js'
+    summary: Use this key to subscribe to changes in user's file open preference
+  - name: theme
+    uid: '@microsoft/teams-js.microsoftTeams.UserSettingTypes.theme'
+    package: '@microsoft/teams-js'
+    summary: Use this key to subscribe to theme changes

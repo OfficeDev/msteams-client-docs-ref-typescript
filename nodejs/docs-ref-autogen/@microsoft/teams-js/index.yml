@@ -7,6 +7,7 @@ enums:
   - '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
   - '@microsoft/teams-js.microsoftTeams.ChannelType'
   - '@microsoft/teams-js.microsoftTeams.ErrorCode'
+  - '@microsoft/teams-js.microsoftTeams.FileOpenPreference'
   - '@microsoft/teams-js.microsoftTeams.FrameContexts'
   - '@microsoft/teams-js.microsoftTeams.HostClientType'
   - '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
@@ -18,6 +19,7 @@ enums:
   - '@microsoft/teams-js.microsoftTeams.NotificationTypes'
   - '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
   - '@microsoft/teams-js.microsoftTeams.TeamType'
+  - '@microsoft/teams-js.microsoftTeams.UserSettingTypes'
   - '@microsoft/teams-js.microsoftTeams.UserTeamRole'
 interfaces:
   - '@microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest'
@@ -41,6 +43,7 @@ interfaces:
   - '@microsoft/teams-js.microsoftTeams.meeting.IDetails'
   - '@microsoft/teams-js.microsoftTeams.meeting.IMeetingDetails'
   - '@microsoft/teams-js.microsoftTeams.meeting.IOrganizer'
+  - '@microsoft/teams-js.microsoftTeams.meeting.LiveStreamState'
   - '@microsoft/teams-js.microsoftTeams.MessageRequest'
   - '@microsoft/teams-js.microsoftTeams.MessageResponse'
   - '@microsoft/teams-js.microsoftTeams.SdkError'
@@ -56,6 +59,7 @@ interfaces:
   - '@microsoft/teams-js.microsoftTeams.TeamInformation'
 classes:
   - '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
+  - '@microsoft/teams-js.microsoftTeams.Communication'
   - '@microsoft/teams-js.microsoftTeams.GlobalVars'
   - '@microsoft/teams-js.microsoftTeams.media.File'
   - '@microsoft/teams-js.microsoftTeams.media.Media'
