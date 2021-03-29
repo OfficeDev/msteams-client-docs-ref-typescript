@@ -35,6 +35,136 @@ properties:
       return:
         type: RegExp
         description: ''
+  - name: appButtonClickHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.appButtonClickHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: appButtonClickHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static appButtonClickHandler: () => void'
+      return:
+        type: () =&gt; void
+        description: ''
+  - name: appButtonHoverEnterHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.appButtonHoverEnterHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: appButtonHoverEnterHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static appButtonHoverEnterHandler: () => void'
+      return:
+        type: () =&gt; void
+        description: ''
+  - name: appButtonHoverLeaveHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.appButtonHoverLeaveHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: appButtonHoverLeaveHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static appButtonHoverLeaveHandler: () => void'
+      return:
+        type: () =&gt; void
+        description: ''
+  - name: backButtonPressHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.backButtonPressHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: backButtonPressHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static backButtonPressHandler: () => boolean'
+      return:
+        type: () =&gt; boolean
+        description: ''
+  - name: beforeUnloadHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.beforeUnloadHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: beforeUnloadHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static beforeUnloadHandler: (readyToUnload: () => void) => boolean'
+      return:
+        type: '(readyToUnload: () =&gt; void) =&gt; boolean'
+        description: ''
+  - name: callbacks
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.callbacks'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: callbacks
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static callbacks: [key: number]: Function'
+      return:
+        type: '[key: number]\: Function'
+        description: ''
+  - name: changeSettingsHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.changeSettingsHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: changeSettingsHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static changeSettingsHandler: () => void'
+      return:
+        type: () =&gt; void
+        description: ''
+  - name: childMessageQueue
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.childMessageQueue'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: childMessageQueue
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static childMessageQueue: MessageRequest[]'
+      return:
+        type: '<xref uid="@microsoft/teams-js.microsoftTeams.MessageRequest" />[]'
+        description: ''
+  - name: childOrigin
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.childOrigin'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: childOrigin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static childOrigin: string'
+      return:
+        type: string
+        description: ''
+  - name: childWindow
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.childWindow'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: childWindow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static childWindow: Window'
+      return:
+        type: Window
+        description: ''
   - name: clientSupportedSDKVersion
     uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.clientSupportedSDKVersion'
     package: '@microsoft/teams-js'
@@ -48,6 +178,19 @@ properties:
       return:
         type: string
         description: ''
+  - name: currentWindow
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.currentWindow'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: currentWindow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static currentWindow: Window | any'
+      return:
+        type: Window | any
+        description: ''
   - name: frameContext
     uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.frameContext'
     package: '@microsoft/teams-js'
@@ -60,6 +203,45 @@ properties:
       content: 'static frameContext: FrameContexts'
       return:
         type: <xref uid="@microsoft/teams-js.microsoftTeams.FrameContexts" />
+        description: ''
+  - name: fullScreenChangeHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.fullScreenChangeHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: fullScreenChangeHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static fullScreenChangeHandler: (isFullScreen: boolean) => void'
+      return:
+        type: '(isFullScreen: boolean) =&gt; void'
+        description: ''
+  - name: getLogHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.getLogHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: getLogHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static getLogHandler: () => string'
+      return:
+        type: () =&gt; string
+        description: ''
+  - name: handlers
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.handlers'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: handlers
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static handlers: [key: string]: Function'
+      return:
+        type: '[key: string]\: Function'
         description: ''
   - name: hostClientType
     uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.hostClientType'
@@ -126,6 +308,133 @@ properties:
       return:
         type: boolean
         description: ''
+  - name: loadHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.loadHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: loadHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static loadHandler: (context: LoadContext) => void'
+      return:
+        type: '(context: LoadContext) =&gt; void'
+        description: ''
+  - name: meetingRoomCapabilitiesUpdateHandler
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.GlobalVars.meetingRoomCapabilitiesUpdateHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: meetingRoomCapabilitiesUpdateHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static meetingRoomCapabilitiesUpdateHandler: (capabilities:
+        MeetingRoomCapability) => void
+      return:
+        type: '(capabilities: MeetingRoomCapability) =&gt; void'
+        description: ''
+  - name: meetingRoomStatesUpdateHandler
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.GlobalVars.meetingRoomStatesUpdateHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: meetingRoomStatesUpdateHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static meetingRoomStatesUpdateHandler: (states: MeetingRoomState) =>
+        void
+      return:
+        type: '(states: MeetingRoomState) =&gt; void'
+        description: ''
+  - name: nextMessageId
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.nextMessageId'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: nextMessageId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static nextMessageId: number'
+      return:
+        type: number
+        description: ''
+  - name: onCloseConversationHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.onCloseConversationHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: onCloseConversationHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static onCloseConversationHandler: (conversationResponse:
+        ConversationResponse) => void
+      return:
+        type: '(conversationResponse: ConversationResponse) =&gt; void'
+        description: ''
+  - name: onStartConversationHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.onStartConversationHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: onStartConversationHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static onStartConversationHandler: (conversationResponse:
+        ConversationResponse) => void
+      return:
+        type: '(conversationResponse: ConversationResponse) =&gt; void'
+        description: ''
+  - name: parentMessageQueue
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.parentMessageQueue'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: parentMessageQueue
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static parentMessageQueue: MessageRequest[]'
+      return:
+        type: '<xref uid="@microsoft/teams-js.microsoftTeams.MessageRequest" />[]'
+        description: ''
+  - name: parentOrigin
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.parentOrigin'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: parentOrigin
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static parentOrigin: string'
+      return:
+        type: string
+        description: ''
+  - name: parentWindow
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.parentWindow'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: parentWindow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static parentWindow: Window | any'
+      return:
+        type: Window | any
+        description: ''
   - name: printCapabilityEnabled
     uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.printCapabilityEnabled'
     package: '@microsoft/teams-js'
@@ -138,4 +447,17 @@ properties:
       content: 'static printCapabilityEnabled: boolean'
       return:
         type: boolean
+        description: ''
+  - name: themeChangeHandler
+    uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.themeChangeHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: themeChangeHandler
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static themeChangeHandler: (theme: string) => void'
+      return:
+        type: '(theme: string) =&gt; void'
         description: ''

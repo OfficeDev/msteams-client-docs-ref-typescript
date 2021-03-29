@@ -26,15 +26,6 @@ functions:
           type: '(instanceSettings: Settings) =&gt; void'
           description: |
             The callback to invoke when the <xref:Settings> object is retrieved.
-  - name: initialize()
-    uid: '@microsoft/teams-js.microsoftTeams.settings.initialize'
-    package: '@microsoft/teams-js'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: function initialize()
   - name: 'registerOnRemoveHandler((evt: RemoveEvent) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.settings.registerOnRemoveHandler'
     package: '@microsoft/teams-js'
