@@ -4,4 +4,4 @@
   topicHref: ~/overview/msteams-client.md
   expanded: true
   children:
-    - '*'
+    - '**'
