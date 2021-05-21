@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: IOrganizer
+uid: '@microsoft/teams-js.microsoftTeams.meeting.IOrganizer'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: IOrganizer
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.IOrganizer.id'
+    package: '@microsoft/teams-js'
+    summary: organizer id of the meeting
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id?: string'
+      return:
+        type: string
+        description: ''
+  - name: tenantId
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.IOrganizer.tenantId'
+    package: '@microsoft/teams-js'
+    summary: tenant id of the meeting
+    fullName: tenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId?: string'
+      return:
+        type: string
+        description: ''
