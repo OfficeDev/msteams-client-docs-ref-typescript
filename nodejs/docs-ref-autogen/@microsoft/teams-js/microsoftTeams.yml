@@ -591,6 +591,22 @@ functions:
           type: '(theme: string) =&gt; void'
           description: |
             The handler to invoke when the user changes their theme.
+  - name: returnFocus(boolean)
+    uid: '@microsoft/teams-js.microsoftTeams.returnFocus'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Return focus to the main Teams app. Will focus search bar if navigating
+      foward and app bar if navigating back.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function returnFocus(navigateForward?: boolean)'
+      parameters:
+        - id: navigateForward
+          type: boolean
+          description: |
+            Determines the direction to focus in teams app.
   - name: 'sendMessageEventToChild(string, any[])'
     uid: '@microsoft/teams-js.microsoftTeams.sendMessageEventToChild'
     package: '@microsoft/teams-js'
@@ -679,6 +695,24 @@ functions:
           description: ''
         - id: content
           type: string
+          description: ''
+      return:
+        type: boolean
+        description: ''
+  - name: validateScanBarCodeInput(BarCodeConfig)
+    uid: '@microsoft/teams-js.microsoftTeams.validateScanBarCodeInput'
+    package: '@microsoft/teams-js'
+    summary: Returns true if the scan barcode param is valid and false otherwise
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function validateScanBarCodeInput(barCodeConfig: BarCodeConfig)'
+      parameters:
+        - id: barCodeConfig
+          type: >-
+            <xref uid="@microsoft/teams-js.microsoftTeams.media.BarCodeConfig"
+            />
           description: ''
       return:
         type: boolean

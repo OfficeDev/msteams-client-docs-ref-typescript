@@ -89,6 +89,9 @@
             - uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps'
               name: AudioProps
               items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.BarCodeConfig'
+              name: BarCodeConfig
+              items: []
             - uid: '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
               name: CameraStartMode
               items: []
@@ -122,6 +125,28 @@
             - uid: '@microsoft/teams-js.microsoftTeams.media.Source'
               name: Source
               items: []
+        - name: meeting
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.microsoftTeams.meeting'
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IConversation'
+              name: IConversation
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails'
+              name: IDetails
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IMeetingDetails'
+              name: IMeetingDetails
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IOrganizer'
+              name: IOrganizer
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.MeetingType'
+              name: MeetingType
+              items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.meetingRoom'
+          name: meetingRoom
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.MessageRequest'
           name: MessageRequest
           items: []
@@ -183,3 +208,61 @@
         - uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
           name: UserTeamRole
           items: []
+- name: '@microsoft/teamsfx'
+  items:
+    - name: Overview
+      uid: '@microsoft/teamsfx'
+    - uid: '@microsoft/teamsfx.AuthenticationConfiguration'
+      name: AuthenticationConfiguration
+      items: []
+    - uid: '@microsoft/teamsfx.Configuration'
+      name: Configuration
+      items: []
+    - uid: '@microsoft/teamsfx.DefaultTediousConnectionConfiguration'
+      name: DefaultTediousConnectionConfiguration
+      items: []
+    - uid: '@microsoft/teamsfx.ErrorCode'
+      name: ErrorCode
+      items: []
+    - uid: '@microsoft/teamsfx.ErrorWithCode'
+      name: ErrorWithCode
+      items: []
+    - uid: '@microsoft/teamsfx.LogFunction'
+      name: LogFunction
+      items: []
+    - uid: '@microsoft/teamsfx.Logger'
+      name: Logger
+      items: []
+    - uid: '@microsoft/teamsfx.LogLevel'
+      name: LogLevel
+      items: []
+    - uid: '@microsoft/teamsfx.M365TenantCredential'
+      name: M365TenantCredential
+      items: []
+    - uid: '@microsoft/teamsfx.MsGraphAuthProvider'
+      name: MsGraphAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
+      name: OnBehalfOfUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.ResourceConfiguration'
+      name: ResourceConfiguration
+      items: []
+    - uid: '@microsoft/teamsfx.ResourceType'
+      name: ResourceType
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
+      name: TeamsBotSsoPrompt
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
+      name: TeamsBotSsoPromptSettings
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
+      name: TeamsBotSsoPromptTokenResponse
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsUserCredential'
+      name: TeamsUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.UserInfo'
+      name: UserInfo
+      items: []
