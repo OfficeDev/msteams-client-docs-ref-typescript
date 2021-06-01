@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: IDetails
+uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: IDetails
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails.id'
+    package: '@microsoft/teams-js'
+    summary: event id of the meeting
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        type: string
+        description: ''
+  - name: joinUrl
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails.joinUrl'
+    package: '@microsoft/teams-js'
+    summary: url to join the current meeting
+    fullName: joinUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'joinUrl?: string'
+      return:
+        type: string
+        description: ''
+  - name: scheduledEndTime
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails.scheduledEndTime'
+    package: '@microsoft/teams-js'
+    summary: Scheduled end time of the meeting
+    fullName: scheduledEndTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scheduledEndTime: string'
+      return:
+        type: string
+        description: ''
+  - name: scheduledStartTime
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails.scheduledStartTime'
+    package: '@microsoft/teams-js'
+    summary: Scheduled start time of the meeting
+    fullName: scheduledStartTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'scheduledStartTime: string'
+      return:
+        type: string
+        description: ''
+  - name: title
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails.title'
+    package: '@microsoft/teams-js'
+    summary: meeting title name of the meeting
+    fullName: title
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title?: string'
+      return:
+        type: string
+        description: ''
+  - name: type
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails.type'
+    package: '@microsoft/teams-js'
+    summary: type of the meeting
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type?: MeetingType'
+      return:
+        type: <xref uid="@microsoft/teams-js.microsoftTeams.meeting.MeetingType" />
+        description: ''

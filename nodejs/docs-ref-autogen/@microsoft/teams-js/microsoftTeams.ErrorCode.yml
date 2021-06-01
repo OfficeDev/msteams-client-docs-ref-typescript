@@ -63,6 +63,11 @@ fields:
     package: '@microsoft/teams-js'
     summary: User aborted the operation
     numericValue: 8000
+  - name: OPERATION_TIMED_OUT
+    uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.OPERATION_TIMED_OUT'
+    package: '@microsoft/teams-js'
+    summary: Could not complete the operation in the given time interval
+    numericValue: 8001
   - name: OLD_PLATFORM
     uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.OLD_PLATFORM'
     package: '@microsoft/teams-js'

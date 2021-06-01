@@ -1,0 +1,379 @@
+### YamlMime:TSType
+name: TeamsBotSsoPrompt
+uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
+package: '@microsoft/teamsfx'
+summary: >-
+  Creates a new prompt that leverage Teams Single Sign On (SSO) support for bot
+  to automatically sign in user and
+
+  help receive oauth token, asks the user to consent if needed.
+fullName: TeamsBotSsoPrompt<O>
+remarks: >-
+  The prompt will attempt to retrieve the users current token of the desired
+  scopes and store it in
+
+  the token store.
+
+
+  User will be automatically signed in leveraging Teams support of Bot Single
+  Sign On(SSO):
+
+  https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots
+isPreview: true
+isDeprecated: false
+type: class
+constructors:
+  - name: 'TeamsBotSsoPrompt(string, TeamsBotSsoPromptSettings)'
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.constructor'
+    package: '@microsoft/teamsfx'
+    summary: Constructor of TeamsBotSsoPrompt.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TeamsBotSsoPrompt(dialogId: string, settings:
+        TeamsBotSsoPromptSettings)
+      parameters:
+        - id: dialogId
+          type: string
+          description: >-
+            Unique ID of the dialog within its parent `DialogSet` or
+            `ComponentDialog`.
+        - id: settings
+          type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
+          description: |
+            Settings used to configure the prompt.
+properties:
+  - name: EndOfTurn
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.EndOfTurn'
+    package: '@microsoft/teamsfx'
+    summary: Gets a default end-of-turn result.
+    fullName: EndOfTurn
+    remarks: >-
+      This result indicates that a dialog (or a logical step within a dialog)
+      has completed
+
+      processing for the current turn, is still active, and is waiting for more
+      input.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static EndOfTurn: DialogTurnResult'
+      return:
+        type: DialogTurnResult
+        description: ''
+  - name: id
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.id'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        type: string
+        description: ''
+  - name: telemetryClient
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.telemetryClient'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    fullName: telemetryClient
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'telemetryClient: BotTelemetryClient'
+      return:
+        type: BotTelemetryClient
+        description: ''
+methods:
+  - name: beginDialog(DialogContext)
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.beginDialog'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Called when a prompt dialog is pushed onto the dialog stack and is being
+      activated.
+    remarks: >-
+      If the task is successful, the result indicates whether the prompt is
+      still
+
+      active after the turn has been processed by the prompt.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function beginDialog(dc: DialogContext)'
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: |
+            The DialogContext for the current turn of the conversation.
+      return:
+        type: Promise&lt;DialogTurnResult&gt;
+        description: A `Promise` representing the asynchronous operation.
+  - name: 'configure(Record<string, unknown>)'
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.configure'
+    package: '@microsoft/teamsfx'
+    summary: Fluent method for configuring the object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function configure(config: Record<string, unknown>)'
+      parameters:
+        - id: config
+          type: 'Record&lt;string, unknown&gt;'
+          description: |
+            Configuration settings to apply.
+      return:
+        type: this
+        description: ''
+  - name: continueDialog(DialogContext)
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.continueDialog'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Called when a prompt dialog is the active dialog and the user replied with
+      a new activity.
+    remarks: >-
+      If the task is successful, the result indicates whether the dialog is
+      still
+
+      active after the turn has been processed by the dialog.
+
+      The prompt generally continues to receive the user's replies until it
+      accepts the
+
+      user's reply as valid input for the prompt.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function continueDialog(dc: DialogContext)'
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: |
+            The DialogContext for the current turn of the conversation.
+      return:
+        type: Promise&lt;DialogTurnResult&gt;
+        description: A `Promise` representing the asynchronous operation.
+  - name: 'endDialog(TurnContext, DialogInstance, DialogReason)'
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.endDialog'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      When overridden in a derived class, performs clean up for the dialog
+      before it ends.
+    remarks: >-
+      Derived dialogs that need to perform logging or cleanup before ending
+      should override this method.
+
+      By default, this method has no effect.
+
+
+      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      method when the current
+
+      dialog is ending.
+
+
+      **See also**
+
+      -
+      [DialogContext.cancelAllDialogs](xref:botbuilder-dialogs.DialogContext.cancelAllDialogs)
+
+      -
+      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+
+      -
+      [DialogContext.replaceDialog](xref:botbuilder-dialogs.DialogContext.replaceDialog)
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function endDialog(context: TurnContext, instance: DialogInstance,
+        reason: DialogReason)
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context object for the turn.
+        - id: instance
+          type: DialogInstance
+          description: Current state information for this dialog.
+        - id: reason
+          type: DialogReason
+          description: |
+            The reason the dialog is ending.
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: getConverter(string)
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getConverter'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getConverter(_property: string)'
+      parameters:
+        - id: _property
+          type: string
+          description: ''
+      return:
+        type: Converter | ConverterFactory
+        description: ''
+  - name: getVersion()
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getVersion'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      An encoded string used to aid in the detection of bot changes on
+      re-deployment.
+    remarks: >-
+      This defaults to returning the dialogs [id](#id) but can be overridden to
+      provide more
+
+      precise change detection logic. Any dialog on the stack that has its
+      version change will
+
+      result in a `versionChanged` event will be raised. If this event is not
+      handled by the bot,
+
+      an error will be thrown resulting in the bots error handler logic being
+      run.
+
+
+      Returning an empty string will disable version tracking for the component
+      all together.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function getVersion()
+      return:
+        type: string
+        description: ''
+  - name: 'onDialogEvent(DialogContext, DialogEvent)'
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.onDialogEvent'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Called when an event has been raised, using `DialogContext.emitEvent()`,
+      by either the current dialog or a dialog that the current dialog started.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function onDialogEvent(dc: DialogContext, e: DialogEvent)'
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: The dialog context for the current turn of conversation.
+        - id: e
+          type: DialogEvent
+          description: The event being raised.
+      return:
+        type: Promise&lt;boolean&gt;
+        description: >-
+          True if the event is handled by the current dialog and bubbling should
+          stop.
+  - name: 'repromptDialog(TurnContext, DialogInstance)'
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.repromptDialog'
+    package: '@microsoft/teamsfx'
+    summary: 'When overridden in a derived class, reprompts the user for input.'
+    remarks: >-
+      Derived dialogs that support validation and re-prompt logic should
+      override this method.
+
+      By default, this method has no effect.
+
+
+      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      method when the current
+
+      dialog should re-request input from the user. This method is implemented
+      for prompt dialogs.
+
+
+      **See also**
+
+      -
+      [DialogContext.repromptDialog](xref:botbuilder-dialogs.DialogContext.repromptDialog)
+
+      - [Prompt](xref:botbuilder-dialogs.Prompt)
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function repromptDialog(context: TurnContext, instance: DialogInstance)'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context object for the turn.
+        - id: instance
+          type: DialogInstance
+          description: |
+            Current state information for this dialog.
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: 'resumeDialog(DialogContext, DialogReason, any)'
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.resumeDialog'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      When overridden in a derived class, resumes the dialog after the dialog
+      above it on the stack completes.
+    remarks: >-
+      Derived dialogs that support multiple-turn conversations should override
+      this method.
+
+      By default, this method signals that the dialog is complete and returns.
+
+
+      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      method when it resumes
+
+      the dialog. If the previous dialog on the stack returned a value, that
+      value is in the `result`
+
+      parameter.
+
+
+      To start a _child_ dialog, use
+      [DialogContext.beginDialog](xref:botbuilder-dialogs.DialogContext.beginDialog)
+
+      or [DialogContext.prompt](xref:botbuilder-dialogs.DialogContext.prompt);
+      however, this dialog will not
+
+      necessarily be the one that started the child dialog.
+
+      To signal to the dialog context that this dialog has completed, await
+
+      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+      before exiting this method.
+
+
+      **See also**
+
+      -
+      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function resumeDialog(dc: DialogContext, reason: DialogReason, result?:
+        any)
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: The context for the current dialog turn.
+        - id: reason
+          type: DialogReason
+          description: |-
+            The reason the dialog is resuming. This will typically be
+                 [DialogReason.endCalled](xref:botbuilder-dialogs.DialogReason.endCalled)
+        - id: result
+          type: any
+          description: |
+            Optional. The return value, if any, from the dialog that ended.
+      return:
+        type: Promise&lt;DialogTurnResult&gt;
+        description: ''
+extends: Dialog
