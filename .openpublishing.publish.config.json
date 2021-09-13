@@ -34,7 +34,7 @@
     {
       "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
-      "DotnetReferenceTOCUrl": "/dotnet/api/msteams-client-docs-ref-dotnet/toc.yml?view=msteams-client-dotnet-latest",
+      "DotnetReferenceTOCUrl": "/dotnet/api/msteams-client-docs-ref-dotnet/toc.json?view=msteams-client-dotnet-latest",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json"
     }
   ],
