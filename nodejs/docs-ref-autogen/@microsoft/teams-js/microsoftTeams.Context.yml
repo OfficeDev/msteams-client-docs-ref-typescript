@@ -22,6 +22,21 @@ properties:
       return:
         type: number
         description: ''
+  - name: appLaunchId
+    uid: '@microsoft/teams-js.microsoftTeams.Context.appLaunchId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      ID for the current visible app which is different for across cached
+      sessions. Used for correlating telemetry data``
+    fullName: appLaunchId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appLaunchId?: string'
+      return:
+        type: string
+        description: ''
   - name: appSessionId
     uid: '@microsoft/teams-js.microsoftTeams.Context.appSessionId'
     package: '@microsoft/teams-js'
@@ -165,7 +180,9 @@ properties:
     package: '@microsoft/teams-js'
     summary: >-
       The type of the host client. Possible values are : android, ios, web,
-      desktop, rigel
+      desktop, rigel(deprecated, use teamsRoomsWindows instead),
+
+      teamsRoomsWindows, teamsRoomsAndroid, teamsPhones, teamsDisplays
     fullName: hostClientType
     remarks: ''
     isPreview: false
@@ -174,6 +191,32 @@ properties:
       content: 'hostClientType?: HostClientType'
       return:
         type: <xref uid="@microsoft/teams-js.microsoftTeams.HostClientType" />
+        description: ''
+  - name: hostTeamGroupId
+    uid: '@microsoft/teams-js.microsoftTeams.Context.hostTeamGroupId'
+    package: '@microsoft/teams-js'
+    summary: The AAD group ID of the host team.
+    fullName: hostTeamGroupId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hostTeamGroupId?: string'
+      return:
+        type: string
+        description: ''
+  - name: hostTeamTenantId
+    uid: '@microsoft/teams-js.microsoftTeams.Context.hostTeamTenantId'
+    package: '@microsoft/teams-js'
+    summary: The tenant ID of the host team.
+    fullName: hostTeamTenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'hostTeamTenantId?: string'
+      return:
+        type: string
         description: ''
   - name: isCallingAllowed
     uid: '@microsoft/teams-js.microsoftTeams.Context.isCallingAllowed'
@@ -440,6 +483,19 @@ properties:
       return:
         type: string
         description: ''
+  - name: teamSiteId
+    uid: '@microsoft/teams-js.microsoftTeams.Context.teamSiteId'
+    package: '@microsoft/teams-js'
+    summary: 'Teamsite ID, aka sharepoint site id.'
+    fullName: teamSiteId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'teamSiteId?: string'
+      return:
+        type: string
+        description: ''
   - name: teamSitePath
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamSitePath'
     package: '@microsoft/teams-js'
@@ -463,6 +519,21 @@ properties:
     isDeprecated: false
     syntax:
       content: 'teamSiteUrl?: string'
+      return:
+        type: string
+        description: ''
+  - name: teamTemplateId
+    uid: '@microsoft/teams-js.microsoftTeams.Context.teamTemplateId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Team Template ID if there was a Team Template associated with the creation
+      of the team.
+    fullName: teamTemplateId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'teamTemplateId?: string'
       return:
         type: string
         description: ''
@@ -566,6 +637,21 @@ properties:
       content: 'userClickTime?: number'
       return:
         type: number
+        description: ''
+  - name: userFileOpenPreference
+    uid: '@microsoft/teams-js.microsoftTeams.Context.userFileOpenPreference'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Where the user prefers the file to be opened from by default during file
+      open
+    fullName: userFileOpenPreference
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userFileOpenPreference?: FileOpenPreference'
+      return:
+        type: <xref uid="@microsoft/teams-js.microsoftTeams.FileOpenPreference" />
         description: ''
   - name: userLicenseType
     uid: '@microsoft/teams-js.microsoftTeams.Context.userLicenseType'

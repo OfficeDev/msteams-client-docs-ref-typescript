@@ -4,24 +4,48 @@ name: appInitialization
 summary: ''
 type: module
 enums:
+  - '@microsoft/teams-js.microsoftTeams.appInitialization.ExpectedFailureReason'
   - '@microsoft/teams-js.microsoftTeams.appInitialization.FailedReason'
 interfaces:
+  - '@microsoft/teams-js.microsoftTeams.appInitialization.IExpectedFailureRequest'
   - '@microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest'
 package: '@microsoft/teams-js'
 functions:
   - name: notifyAppLoaded()
     uid: '@microsoft/teams-js.microsoftTeams.appInitialization.notifyAppLoaded'
     package: '@microsoft/teams-js'
-    summary: To notify app loaded to hide loading indicator
+    summary: >-
+      Notifies the frame that app has loaded and to hide the loading indicator
+      if one is shown.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: function notifyAppLoaded()
+  - name: notifyExpectedFailure(IExpectedFailureRequest)
+    uid: '@microsoft/teams-js.microsoftTeams.appInitialization.notifyExpectedFailure'
+    package: '@microsoft/teams-js'
+    summary: Notifies the frame that app initialized with some expected errors.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function notifyExpectedFailure(expectedFailureRequest:
+        IExpectedFailureRequest)
+      parameters:
+        - id: expectedFailureRequest
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.microsoftTeams.appInitialization.IExpectedFailureRequest"
+            />
+          description: ''
   - name: notifyFailure(IFailedRequest)
     uid: '@microsoft/teams-js.microsoftTeams.appInitialization.notifyFailure'
     package: '@microsoft/teams-js'
-    summary: To notify app Initialization failed
+    summary: >-
+      Notifies the frame that app initialization has failed and to show an error
+      page in its place.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -37,7 +61,9 @@ functions:
   - name: notifySuccess()
     uid: '@microsoft/teams-js.microsoftTeams.appInitialization.notifySuccess'
     package: '@microsoft/teams-js'
-    summary: To notify app Initialization successs and ready for user interaction
+    summary: >-
+      Notifies the frame that app initialization is successful and is ready for
+      user interaction.
     remarks: ''
     isPreview: false
     isDeprecated: false
