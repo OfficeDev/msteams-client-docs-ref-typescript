@@ -2,7 +2,7 @@
 name: VideoFrameFormat
 uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrameFormat'
 package: '@microsoft/teams-js'
-summary: 'Video frame format enum, currentlyl only support NV12'
+summary: 'Video frame format enum, currently only support NV12'
 fullName: VideoFrameFormat
 remarks: ''
 isPreview: false

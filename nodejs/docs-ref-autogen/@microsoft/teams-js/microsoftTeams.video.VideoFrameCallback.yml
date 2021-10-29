@@ -2,7 +2,7 @@
 name: VideoFrameCallback
 uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrameCallback'
 package: '@microsoft/teams-js'
-summary: Video frame call back funtion definition
+summary: Video frame call back function definition
 fullName: VideoFrameCallback
 remarks: ''
 isPreview: false
