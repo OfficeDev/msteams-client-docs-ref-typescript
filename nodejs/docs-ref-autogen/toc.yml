@@ -14,8 +14,16 @@
             - name: Overview
               uid: '@microsoft/teams-js.microsoftTeams.appInitialization'
             - uid: >-
+                @microsoft/teams-js.microsoftTeams.appInitialization.ExpectedFailureReason
+              name: ExpectedFailureReason
+              items: []
+            - uid: >-
                 @microsoft/teams-js.microsoftTeams.appInitialization.FailedReason
               name: FailedReason
+              items: []
+            - uid: >-
+                @microsoft/teams-js.microsoftTeams.appInitialization.IExpectedFailureRequest
+              name: IExpectedFailureRequest
               items: []
             - uid: >-
                 @microsoft/teams-js.microsoftTeams.appInitialization.IFailedRequest
@@ -39,6 +47,9 @@
         - uid: '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
           name: ChildAppWindow
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.Communication'
+          name: Communication
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.Context'
           name: Context
           items: []
@@ -50,6 +61,9 @@
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.ErrorCode'
           name: ErrorCode
+          items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.FileOpenPreference'
+          name: FileOpenPreference
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.FrameContext'
           name: FrameContext
@@ -125,21 +139,23 @@
             - uid: '@microsoft/teams-js.microsoftTeams.media.Source'
               name: Source
               items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.media.VideoAndImageProps'
+              name: VideoAndImageProps
+              items: []
         - name: meeting
           items:
             - name: Overview
               uid: '@microsoft/teams-js.microsoftTeams.meeting'
-            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IConversation'
-              name: IConversation
+            - uid: >-
+                @microsoft/teams-js.microsoftTeams.meeting.IAppContentStageSharingCapabilities
+              name: IAppContentStageSharingCapabilities
               items: []
-            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IDetails'
-              name: IDetails
+            - uid: >-
+                @microsoft/teams-js.microsoftTeams.meeting.IAppContentStageSharingState
+              name: IAppContentStageSharingState
               items: []
-            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IMeetingDetails'
-              name: IMeetingDetails
-              items: []
-            - uid: '@microsoft/teams-js.microsoftTeams.meeting.IOrganizer'
-              name: IOrganizer
+            - uid: '@microsoft/teams-js.microsoftTeams.meeting.LiveStreamState'
+              name: LiveStreamState
               items: []
             - uid: '@microsoft/teams-js.microsoftTeams.meeting.MeetingType'
               name: MeetingType
@@ -153,11 +169,27 @@
         - uid: '@microsoft/teams-js.microsoftTeams.MessageResponse'
           name: MessageResponse
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.monetization'
+          name: monetization
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.NotificationTypes'
           name: NotificationTypes
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
           name: ParentAppWindow
+          items: []
+        - name: people
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.microsoftTeams.people'
+            - uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerInputs'
+              name: PeoplePickerInputs
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerResult'
+              name: PeoplePickerResult
+              items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.remoteCamera'
+          name: remoteCamera
           items: []
         - uid: '@microsoft/teams-js.microsoftTeams.SdkError'
           name: SdkError
@@ -177,6 +209,26 @@
               items: []
             - uid: '@microsoft/teams-js.microsoftTeams.settings.Settings'
               name: Settings
+              items: []
+        - name: sharing
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.microsoftTeams.sharing'
+            - uid: '@microsoft/teams-js.microsoftTeams.sharing.ContentType'
+              name: ContentType
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.sharing.IBaseSharedContent'
+              name: IBaseSharedContent
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.sharing.IShareRequest'
+              name: IShareRequest
+              items: []
+            - uid: >-
+                @microsoft/teams-js.microsoftTeams.sharing.IShareRequestContentType
+              name: IShareRequestContentType
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.sharing.IURLContent'
+              name: IURLContent
               items: []
         - uid: '@microsoft/teams-js.microsoftTeams.ShowNotificationParameters'
           name: ShowNotificationParameters
@@ -205,9 +257,34 @@
         - uid: '@microsoft/teams-js.microsoftTeams.TeamType'
           name: TeamType
           items: []
+        - uid: '@microsoft/teams-js.microsoftTeams.UserSettingTypes'
+          name: UserSettingTypes
+          items: []
         - uid: '@microsoft/teams-js.microsoftTeams.UserTeamRole'
           name: UserTeamRole
           items: []
+        - name: video
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.microsoftTeams.video'
+            - uid: '@microsoft/teams-js.microsoftTeams.video.EffectChangeType'
+              name: EffectChangeType
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.video.VideoEffectCallBack'
+              name: VideoEffectCallBack
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrame'
+              name: VideoFrame
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrameCallback'
+              name: VideoFrameCallback
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrameConfig'
+              name: VideoFrameConfig
+              items: []
+            - uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrameFormat'
+              name: VideoFrameFormat
+              items: []
 - name: '@microsoft/teamsfx'
   items:
     - name: Overview

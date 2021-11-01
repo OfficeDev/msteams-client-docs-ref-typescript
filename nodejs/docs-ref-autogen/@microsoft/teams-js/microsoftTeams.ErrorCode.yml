@@ -23,6 +23,12 @@ fields:
     package: '@microsoft/teams-js'
     summary: Internal error encountered while performing the required operation.
     numericValue: 500
+  - name: NOT_SUPPORTED_IN_CURRENT_CONTEXT
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.ErrorCode.NOT_SUPPORTED_IN_CURRENT_CONTEXT
+    package: '@microsoft/teams-js'
+    summary: API is not supported in the current context
+    numericValue: 501
   - name: PERMISSION_DENIED
     uid: '@microsoft/teams-js.microsoftTeams.ErrorCode.PERMISSION_DENIED'
     package: '@microsoft/teams-js'

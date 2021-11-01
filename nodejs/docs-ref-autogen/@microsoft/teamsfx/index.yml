@@ -76,7 +76,7 @@ functions:
     syntax:
       content: function getLogLevel()
       return:
-        type: <xref uid="@microsoft/teamsfx.LogLevel" />
+        type: <xref uid="@microsoft/teamsfx.LogLevel" /> | undefined
         description: Log level
   - name: 'getResourceConfiguration(ResourceType, string)'
     uid: '@microsoft/teamsfx.getResourceConfiguration'
@@ -154,8 +154,8 @@ functions:
     uid: '@microsoft/teamsfx.setLogger'
     package: '@microsoft/teamsfx'
     summary: >-
-      Set custom logger. Use the output function if it's set. Priority is higher
-      than setLogFunction.
+      Set custom logger. Use the output functions if it's set. Priority is
+      higher than setLogFunction.
     remarks: ''
     isPreview: true
     isDeprecated: false

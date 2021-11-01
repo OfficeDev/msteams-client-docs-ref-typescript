@@ -35,7 +35,7 @@ properties:
       If allowChooseLocation is true, this parameter will be ignored by
       platform.
 
-      If allowChooseLocation is false, and this paramater is not provided,
+      If allowChooseLocation is false, and this parameter is not provided,
       default
 
       value will be false.
