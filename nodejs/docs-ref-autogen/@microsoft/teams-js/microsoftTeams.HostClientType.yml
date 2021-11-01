@@ -24,6 +24,26 @@ fields:
     uid: '@microsoft/teams-js.microsoftTeams.HostClientType.rigel'
     package: '@microsoft/teams-js'
     summary: ''
+  - name: surfaceHub
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.surfaceHub'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teamsDisplays
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.teamsDisplays'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teamsPhones
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.teamsPhones'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teamsRoomsAndroid
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.teamsRoomsAndroid'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teamsRoomsWindows
+    uid: '@microsoft/teams-js.microsoftTeams.HostClientType.teamsRoomsWindows'
+    package: '@microsoft/teams-js'
+    summary: ''
   - name: web
     uid: '@microsoft/teams-js.microsoftTeams.HostClientType.web'
     package: '@microsoft/teams-js'

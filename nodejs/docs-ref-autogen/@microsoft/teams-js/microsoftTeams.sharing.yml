@@ -1,0 +1,13 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.microsoftTeams.sharing'
+name: sharing
+summary: ''
+type: module
+typeAliases:
+  - '@microsoft/teams-js.microsoftTeams.sharing.ContentType'
+  - '@microsoft/teams-js.microsoftTeams.sharing.IShareRequestContentType'
+interfaces:
+  - '@microsoft/teams-js.microsoftTeams.sharing.IBaseSharedContent'
+  - '@microsoft/teams-js.microsoftTeams.sharing.IShareRequest'
+  - '@microsoft/teams-js.microsoftTeams.sharing.IURLContent'
+package: '@microsoft/teams-js'

@@ -16,3 +16,7 @@ fields:
     uid: '@microsoft/teams-js.microsoftTeams.ChannelType.Regular'
     package: '@microsoft/teams-js'
     summary: ''
+  - name: Shared
+    uid: '@microsoft/teams-js.microsoftTeams.ChannelType.Shared'
+    package: '@microsoft/teams-js'
+    summary: ''

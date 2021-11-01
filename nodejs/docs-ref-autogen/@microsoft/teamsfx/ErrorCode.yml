@@ -24,6 +24,10 @@ fields:
     uid: '@microsoft/teamsfx.ErrorCode.InternalError'
     package: '@microsoft/teamsfx'
     summary: Internal error.
+  - name: InvalidCertificate
+    uid: '@microsoft/teamsfx.ErrorCode.InvalidCertificate'
+    package: '@microsoft/teamsfx'
+    summary: Invalid certificate error.
   - name: InvalidConfiguration
     uid: '@microsoft/teamsfx.ErrorCode.InvalidConfiguration'
     package: '@microsoft/teamsfx'

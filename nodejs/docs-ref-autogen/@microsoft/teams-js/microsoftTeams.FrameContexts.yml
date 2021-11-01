@@ -16,6 +16,10 @@ fields:
     uid: '@microsoft/teams-js.microsoftTeams.FrameContexts.content'
     package: '@microsoft/teams-js'
     summary: ''
+  - name: meetingStage
+    uid: '@microsoft/teams-js.microsoftTeams.FrameContexts.meetingStage'
+    package: '@microsoft/teams-js'
+    summary: ''
   - name: remove
     uid: '@microsoft/teams-js.microsoftTeams.FrameContexts.remove'
     package: '@microsoft/teams-js'

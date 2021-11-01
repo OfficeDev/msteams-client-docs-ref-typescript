@@ -33,7 +33,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'entityId: string'
+      content: 'entityId?: string'
       return:
         type: string
         description: ''
