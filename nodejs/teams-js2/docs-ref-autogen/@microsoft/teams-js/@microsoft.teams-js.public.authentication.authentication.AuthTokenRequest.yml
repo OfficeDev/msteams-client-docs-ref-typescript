@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: AuthTokenRequest
+uid: >-
+  @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthTokenRequest
+package: '@microsoft/teams-js'
+summary: ''
+fullName: AuthTokenRequest
+remarks: ''
+isPreview: false
+isDeprecated: true
+customDeprecatedMessage: with TeamsJS v2 upgrades
+syntax: type AuthTokenRequest = AuthTokenRequestParameters & LegacyCallBacks

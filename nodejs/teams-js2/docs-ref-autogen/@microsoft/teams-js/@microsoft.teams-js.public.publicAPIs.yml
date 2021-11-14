@@ -1,0 +1,414 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.publicAPIs'
+name: '@microsoft.teams-js.public.publicAPIs'
+type: module
+package: '@microsoft/teams-js'
+summary: ''
+functions:
+  - name: enablePrintCapability()
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.enablePrintCapability
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with Teams JS v2 upgrades
+
+      Enable print capability to support printing page using Ctrl+P and cmd+P
+    syntax:
+      content: function enablePrintCapability()
+  - name: 'executeDeepLink(string, (status: boolean, reason?: string) => void)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.executeDeepLink'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with Teams JS v2 upgrades
+
+      Execute deep link API.
+    syntax:
+      content: >-
+        function executeDeepLink(deepLink: string, onComplete?: (status:
+        boolean, reason?: string) => void)
+      parameters:
+        - id: deepLink
+          type: string
+          description: |
+            deep link.
+        - id: onComplete
+          type: '(status: boolean, reason?: string) =&gt; void'
+          description: ''
+  - name: 'getContext((context: Context) => void)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.getContext'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with Teams JS v2 upgrades
+
+      Retrieves the current context the frame is running in.
+    syntax:
+      content: 'function getContext(callback: (context: Context) => void)'
+      parameters:
+        - id: callback
+          type: '(context: Context) =&gt; void'
+          description: |
+            The callback to invoke when the <xref:Context> object is retrieved.
+  - name: >-
+      getMruTabInstances((tabInfo: TabInformation) => void,
+      TabInstanceParameters)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.getMruTabInstances
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with Teams JS v2 upgrades
+
+      Allows an app to retrieve the most recently used tabs for this user.
+    syntax:
+      content: >-
+        function getMruTabInstances(callback: (tabInfo: TabInformation) => void,
+        tabInstanceParameters?: TabInstanceParameters)
+      parameters:
+        - id: callback
+          type: '(tabInfo: TabInformation) =&gt; void'
+          description: >-
+            The callback to invoke when the <xref:TabInformation> object is
+            retrieved.
+        - id: tabInstanceParameters
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.public.interfaces.TabInstanceParameters" />
+          description: |
+            OPTIONAL Ignored, kept for future use
+  - name: 'getTabInstances((tabInfo: TabInformation) => void, TabInstanceParameters)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.getTabInstances'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with Teams JS v2 upgrades
+
+
+      Allows an app to retrieve for this user tabs that are owned by this app.
+
+      If no TabInstanceParameters are passed, the app defaults to favorite teams
+      and favorite channels.
+    syntax:
+      content: >-
+        function getTabInstances(callback: (tabInfo: TabInformation) => void,
+        tabInstanceParameters?: TabInstanceParameters)
+      parameters:
+        - id: callback
+          type: '(tabInfo: TabInformation) =&gt; void'
+          description: >-
+            The callback to invoke when the <xref:TabInstanceParameters> object
+            is retrieved.
+        - id: tabInstanceParameters
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.public.interfaces.TabInstanceParameters" />
+          description: >
+            OPTIONAL Flags that specify whether to scope call to favorite teams
+            or channels.
+  - name: 'initialize(() => void, string[])'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.initialize'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with TeamsJS v2 upgrades
+
+      Initializes the library. This must be called before any other SDK calls
+      but after the frame is loaded successfully.
+    syntax:
+      content: >-
+        function initialize(callback?: () => void, validMessageOrigins?:
+        string[])
+      parameters:
+        - id: callback
+          type: () =&gt; void
+          description: >-
+            Optionally specify a callback to invoke when Teams SDK has
+            successfully initialized
+        - id: validMessageOrigins
+          type: 'string[]'
+          description: >
+            Optionally specify a list of cross frame message origins. There must
+            have
+
+            https: protocol otherwise they will be ignored. Example:
+            https://www.example.com
+  - name: 'initializeWithFrameContext(FrameContext, () => void, string[])'
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.initializeWithFrameContext
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with Teams JS v2 upgrades
+
+      Initilize with FrameContext
+    syntax:
+      content: >-
+        function initializeWithFrameContext(frameContext: FrameContext,
+        callback?: () => void, validMessageOrigins?: string[])
+      parameters:
+        - id: frameContext
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.public.interfaces.FrameContext" />
+          description: FrameContext information to be set
+        - id: callback
+          type: () =&gt; void
+          description: >-
+            The optional callback to be invoked be invoked after initilizing the
+            frame context
+        - id: validMessageOrigins
+          type: 'string[]'
+          description: >
+            Optionally specify a list of cross frame message origins.
+
+            They must have https: protocol otherwise they will be ignored.
+            Example: https:www.example.com
+  - name: print()
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.print'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with Teams JS v2 upgrades
+
+      Default print handler
+    syntax:
+      content: function print()
+  - name: registerAppButtonClickHandler(() => void)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.registerAppButtonClickHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with Teams JS v2 upgrades
+
+
+      Registers a handler for clicking the app button.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerAppButtonClickHandler(handler: () => void)'
+      parameters:
+        - id: handler
+          type: () =&gt; void
+          description: >
+            The handler to invoke when the personal app button is clicked in the
+            app bar.
+  - name: registerAppButtonHoverEnterHandler(() => void)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.registerAppButtonHoverEnterHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with Teams JS v2 upgrades
+
+
+      Registers a handler for entering hover of the app button.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerAppButtonHoverEnterHandler(handler: () => void)'
+      parameters:
+        - id: handler
+          type: () =&gt; void
+          description: >
+            The handler to invoke when entering hover of the personal app button
+            in the app bar.
+  - name: registerAppButtonHoverLeaveHandler(() => void)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.registerAppButtonHoverLeaveHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with Teams JS v2 upgrades
+
+
+      Registers a handler for exiting hover of the app button.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerAppButtonHoverLeaveHandler(handler: () => void)'
+      parameters:
+        - id: handler
+          type: () =&gt; void
+          description: >+
+            The handler to invoke when exiting hover of the personal app button
+            in the app bar.
+
+  - name: registerBackButtonHandler(() => boolean)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.registerBackButtonHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with Teams JS v2 upgrades
+
+
+      Registers a handler for user presses of the Team client's back button.
+      Experiences that maintain an internal
+
+      navigation stack should use this handler to navigate the user back within
+      their frame. If an app finds
+
+      that after running its back button handler it cannot handle the event it
+      should call the navigateBack
+
+      method to ask the Teams client to handle it instead.
+    syntax:
+      content: 'function registerBackButtonHandler(handler: () => boolean)'
+      parameters:
+        - id: handler
+          type: () =&gt; boolean
+          description: >
+            The handler to invoke when the user presses their Team client's back
+            button.
+  - name: registerEnterSettingsHandler(() => void)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.registerEnterSettingsHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with Teams JS v2 upgrades
+
+      Registers a handler for when the user reconfigurated tab.
+    syntax:
+      content: 'function registerEnterSettingsHandler(handler: () => void)'
+      parameters:
+        - id: handler
+          type: () =&gt; void
+          description: |
+            The handler to invoke when the user click on Settings.
+  - name: 'registerFullScreenHandler((isFullScreen: boolean) => void)'
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.registerFullScreenHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with Teams JS v2 upgrades
+
+
+      Registers a handler for changes from or to full-screen view for a tab.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: >-
+        function registerFullScreenHandler(handler: (isFullScreen: boolean) =>
+        void)
+      parameters:
+        - id: handler
+          type: '(isFullScreen: boolean) =&gt; void'
+          description: >
+            The handler to invoke when the user toggles full-screen view for a
+            tab.
+  - name: 'registerOnThemeChangeHandler((theme: string) => void)'
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.registerOnThemeChangeHandler
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with Teams JS v2 upgrades
+
+
+      Registers a handler for theme changes.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'
+      parameters:
+        - id: handler
+          type: '(theme: string) =&gt; void'
+          description: |
+            The handler to invoke when the user changes their theme.
+  - name: setFrameContext(FrameContext)
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.setFrameContext'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with Teams JS v2 upgrades
+
+      Set the current Frame Context
+    syntax:
+      content: 'function setFrameContext(frameContext: FrameContext)'
+      parameters:
+        - id: frameContext
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.public.interfaces.FrameContext" />
+          description: |
+            FrameContext information to be set
+  - name: shareDeepLink(DeepLinkParameters)
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.publicAPIs.shareDeepLink'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with Teams JS v2 upgrades
+
+
+      Shares a deep link that a user can use to navigate back to a specific
+      state in this page.
+    syntax:
+      content: 'function shareDeepLink(deepLinkParameters: DeepLinkParameters)'
+      parameters:
+        - id: deepLinkParameters
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.public.interfaces.DeepLinkParameters" />
+          description: |
+            ID and label for the link and fallback URL.

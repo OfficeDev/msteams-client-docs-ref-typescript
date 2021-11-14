@@ -1,0 +1,65 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail'
+name: mail
+summary: ''
+type: module
+interfaces:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeMailBase'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeNewParams'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeReplyOrForwardParams
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.OpenMailItemParams'
+typeAliases:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeMailParams'
+enums:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeMailType'
+package: '@microsoft/teams-js'
+functions:
+  - name: composeMail(ComposeMailParams)
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.composeMail'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function composeMail(composeMailParams: ComposeMailParams)'
+      parameters:
+        - id: composeMailParams
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.public.mail.mail.ComposeMailParams" />
+          description: ''
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: isSupported()
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.isSupported'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function isSupported()
+      return:
+        type: boolean
+        description: ''
+  - name: openMailItem(OpenMailItemParams)
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.openMailItem'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function openMailItem(openMailItemParams: OpenMailItemParams)'
+      parameters:
+        - id: openMailItemParams
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.public.mail.mail.OpenMailItemParams" />
+          description: ''
+      return:
+        type: Promise&lt;void&gt;
+        description: ''

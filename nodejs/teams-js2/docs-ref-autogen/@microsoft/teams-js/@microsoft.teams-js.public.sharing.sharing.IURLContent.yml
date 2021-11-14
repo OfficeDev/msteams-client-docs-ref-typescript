@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: IURLContent
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IURLContent'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: IURLContent
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: message
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IURLContent.message
+    package: '@microsoft/teams-js'
+    summary: Default initial message text
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: string'
+      return:
+        type: string
+        description: ''
+  - name: preview
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IURLContent.preview
+    package: '@microsoft/teams-js'
+    summary: 'Show URL preview, defaults to true'
+    fullName: preview
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'preview?: boolean'
+      return:
+        type: boolean
+        description: ''
+  - name: type
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IURLContent.type
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: "URL"'
+      return:
+        type: '"URL"'
+        description: ''
+  - name: url
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IURLContent.url
+    package: '@microsoft/teams-js'
+    summary: Required URL
+    fullName: url
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'url: string'
+      return:
+        type: string
+        description: ''
+extends: >-
+  @microsoft/teams-js.<xref
+  uid="@microsoft.teams-js.public.sharing.sharing.IBaseSharedContent" />
