@@ -1,0 +1,24 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.interfaces'
+name: '@microsoft.teams-js.public.interfaces'
+summary: ''
+type: module
+interfaces:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.Context'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.DeepLinkParameters'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.DialogInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.FrameInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.LocaleInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.SdkError'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.TabInformation'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.TabInstance'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.interfaces.TabInstanceParameters
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.TeamInformation'
+enums:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.ErrorCode'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.FileOpenPreference'
+typeAliases:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.FrameContext'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.TaskInfo'
+package: '@microsoft/teams-js'

@@ -1,0 +1,11 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.private.interfaces'
+name: '@microsoft.teams-js.private.interfaces'
+summary: ''
+type: module
+enums:
+  - '@microsoft/teams-js.@microsoft.teams-js.private.interfaces.NotificationTypes'
+interfaces:
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.private.interfaces.ShowNotificationParameters
+package: '@microsoft/teams-js'

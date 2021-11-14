@@ -1,0 +1,131 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js'
+name: '@microsoft/teams-js'
+summary: ''
+type: package
+enums:
+  - '@microsoft/teams-js.@microsoft.teams-js.private.interfaces.NotificationTypes'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.ExpectedFailureReason'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.FailedReason'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.call.call.CallModalities'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.constants.ChannelType'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.constants.DialogDimension'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.constants.FrameContexts'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.constants.HostClientType'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.constants.HostName'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.constants.TeamType'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.constants.UserTeamRole'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.ErrorCode'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.FileOpenPreference'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeMailType'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.CameraStartMode'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.FileFormat'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.ImageUriType'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.MediaType'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.Source'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.meeting.meeting.MeetingType'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.video.video.EffectChangeType'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.video.video.VideoFrameFormat'
+interfaces:
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.private.interfaces.ShowNotificationParameters
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.AppHostInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.AppInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.ChatInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.app.app.IExpectedFailureRequest
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.IFailedRequest'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.MeetingInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.PageInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.SharePointSiteInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.TeamInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.TenantInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.app.app.UserInfo'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.appInstallDialog.appInstallDialog.OpenAppInstallDialogParams
+  - '@microsoft/teams-js.@microsoft.teams-js.public.appWindow.IAppWindow'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthenticatePopUpParameters
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthTokenRequestParameters
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.LegacyCallBacks
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.calendar.calendar.ComposeMeetingParams
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.calendar.calendar.OpenCalendarItemParams
+  - '@microsoft/teams-js.@microsoft.teams-js.public.call.call.StartCallParams'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.Context'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.DeepLinkParameters'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.DialogInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.FrameInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.LocaleInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.SdkError'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.TabInformation'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.TabInstance'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.interfaces.TabInstanceParameters
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.TeamInformation'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.location.location.Location'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.location.location.LocationProps
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeMailBase'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeNewParams'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeReplyOrForwardParams
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.OpenMailItemParams'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.media.media.AssembleAttachment
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.AudioProps'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.BarCodeConfig'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.ImageProps'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.ImageUri'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.MediaChunk'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.MediaInputs'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.MediaResult'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.media.media.VideoAndImageProps
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.meeting.meeting.IAppContentStageSharingCapabilities
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.meeting.meeting.IAppContentStageSharingState
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.meeting.meeting.LiveStreamState
+  - '@microsoft/teams-js.@microsoft.teams-js.public.pages.pages.config.Config'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.pages.pages.config.RemoveEvent
+  - '@microsoft/teams-js.@microsoft.teams-js.public.pages.pages.config.SaveEvent'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.pages.pages.config.SaveParameters
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.people.people.PeoplePickerInputs
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.people.people.PeoplePickerResult
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IBaseSharedContent
+  - '@microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IShareRequest'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IURLContent'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.video.video.VideoFrame'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.video.video.VideoFrameConfig'
+classes:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.appWindow.ChildAppWindow'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.appWindow.ParentAppWindow'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.File'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.media.media.Media'
+typeAliases:
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthenticateParameters
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthTokenRequest
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.FrameContext'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.interfaces.TaskInfo'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.mail.mail.ComposeMailParams'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.ContentType'
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.sharing.sharing.IShareRequestContentType
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.video.video.VideoEffectCallBack
+  - >-
+    @microsoft/teams-js.@microsoft.teams-js.public.video.video.VideoFrameCallback

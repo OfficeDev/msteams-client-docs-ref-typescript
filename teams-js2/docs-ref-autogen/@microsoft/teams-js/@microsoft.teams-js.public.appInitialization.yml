@@ -1,0 +1,6 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.appInitialization'
+name: '@microsoft.teams-js.public.appInitialization'
+type: module
+package: '@microsoft/teams-js'
+summary: ''
