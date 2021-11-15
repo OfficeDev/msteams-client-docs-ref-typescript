@@ -99,7 +99,7 @@
         "files": [
           "**/*.md"
         ],
-        "src": "overview",
+        "src": "teams-js2/overview",
         "dest": "api/overview",
         "exclude": [],
         "group": "beta",
