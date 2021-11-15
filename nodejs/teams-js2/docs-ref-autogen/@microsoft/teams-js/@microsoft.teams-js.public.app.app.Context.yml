@@ -1,0 +1,145 @@
+### YamlMime:TSType
+name: Context
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context'
+package: '@microsoft/teams-js'
+summary: Represents structure of the context message received
+fullName: Context
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: app
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.app'
+    package: '@microsoft/teams-js'
+    summary: Info of the app
+    fullName: app
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'app: AppInfo'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.app.app.AppInfo" />
+        description: ''
+  - name: channel
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.channel'
+    package: '@microsoft/teams-js'
+    summary: Info of the Microsoft Teams channel
+    fullName: channel
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'channel?: ChannelInfo'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.app.app.ChannelInfo" />
+        description: ''
+  - name: chat
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.chat'
+    package: '@microsoft/teams-js'
+    summary: Info of the Microsoft Teams chat
+    fullName: chat
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'chat?: ChatInfo'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.app.app.ChatInfo" />
+        description: ''
+  - name: meeting
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.meeting'
+    package: '@microsoft/teams-js'
+    summary: Info of the Microsoft Teams meeting
+    fullName: meeting
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'meeting?: MeetingInfo'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.app.app.MeetingInfo" />
+        description: ''
+  - name: page
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.page'
+    package: '@microsoft/teams-js'
+    summary: Info of the current page of App
+    fullName: page
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'page: PageInfo'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.app.app.PageInfo" />
+        description: ''
+  - name: sharepoint
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.sharepoint'
+    package: '@microsoft/teams-js'
+    summary: SharePoint context. This is only available when hosted in SharePoint.
+    fullName: sharepoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sharepoint?: any'
+      return:
+        type: any
+        description: ''
+  - name: sharePointSite
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.sharePointSite
+    package: '@microsoft/teams-js'
+    summary: Info of the sharePoint site associated with the team.
+    fullName: sharePointSite
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sharePointSite?: SharePointSiteInfo'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.app.app.SharePointSiteInfo" />
+        description: ''
+  - name: team
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.team'
+    package: '@microsoft/teams-js'
+    summary: Info of the Microsoft Teams team
+    fullName: team
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'team?: TeamInfo'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.app.app.TeamInfo" />
+        description: ''
+  - name: user
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.Context.user'
+    package: '@microsoft/teams-js'
+    summary: Info of the user
+    fullName: user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'user?: UserInfo'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.app.app.UserInfo" />
+        description: ''

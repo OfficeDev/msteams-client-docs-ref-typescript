@@ -1,0 +1,112 @@
+### YamlMime:TSType
+name: ChannelInfo
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: ChannelInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: defaultOneNoteSectionId
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo.defaultOneNoteSectionId
+    package: '@microsoft/teams-js'
+    summary: The OneNote section ID that is linked to the channel.
+    fullName: defaultOneNoteSectionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'defaultOneNoteSectionId?: string'
+      return:
+        type: string
+        description: ''
+  - name: displayName
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo.displayName
+    package: '@microsoft/teams-js'
+    summary: The name for the channel with which the content is associated.
+    fullName: displayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: string'
+      return:
+        type: string
+        description: ''
+  - name: id
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo.id'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The Microsoft Teams ID for the channel with which the content is
+      associated.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        type: string
+        description: ''
+  - name: membershipType
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo.membershipType
+    package: '@microsoft/teams-js'
+    summary: The type of the channel with which the content is associated.
+    fullName: membershipType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'membershipType?: ChannelType'
+      return:
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.public.constants.ChannelType" />
+        description: ''
+  - name: ownerGroupId
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo.ownerGroupId
+    package: '@microsoft/teams-js'
+    summary: The AAD group ID of the team which owns the channel.
+    fullName: ownerGroupId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ownerGroupId?: string'
+      return:
+        type: string
+        description: ''
+  - name: ownerTenantId
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo.ownerTenantId
+    package: '@microsoft/teams-js'
+    summary: The tenant ID of the team which owns the channel.
+    fullName: ownerTenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ownerTenantId?: string'
+      return:
+        type: string
+        description: ''
+  - name: relativeUrl
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.app.app.ChannelInfo.relativeUrl
+    package: '@microsoft/teams-js'
+    summary: The relative path to the SharePoint folder associated with the channel.
+    fullName: relativeUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'relativeUrl?: string'
+      return:
+        type: string
+        description: ''

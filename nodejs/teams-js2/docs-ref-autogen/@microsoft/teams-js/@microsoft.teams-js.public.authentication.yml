@@ -1,0 +1,6 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.authentication'
+name: '@microsoft.teams-js.public.authentication'
+type: module
+package: '@microsoft/teams-js'
+summary: ''

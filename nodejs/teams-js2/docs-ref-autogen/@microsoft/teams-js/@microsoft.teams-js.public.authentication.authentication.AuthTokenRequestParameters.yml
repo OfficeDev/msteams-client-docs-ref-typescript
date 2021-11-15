@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: AuthTokenRequestParameters
+uid: >-
+  @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthTokenRequestParameters
+package: '@microsoft/teams-js'
+summary: ''
+fullName: AuthTokenRequestParameters
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: claims
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthTokenRequestParameters.claims
+    package: '@microsoft/teams-js'
+    summary: >-
+      An optional list of claims which to pass to AAD when requesting the access
+      token.
+    fullName: claims
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'claims?: string[]'
+      return:
+        type: 'string[]'
+        description: ''
+  - name: resources
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthTokenRequestParameters.resources
+    package: '@microsoft/teams-js'
+    summary: >-
+      An optional list of resource for which to acquire the access token; only
+      used for full trust apps.
+    fullName: resources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resources?: string[]'
+      return:
+        type: 'string[]'
+        description: ''
+  - name: silent
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.AuthTokenRequestParameters.silent
+    package: '@microsoft/teams-js'
+    summary: >-
+      An optional flag indicating whether to attempt the token acquisition
+      silently or allow a prompt to be shown.
+    fullName: silent
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'silent?: boolean'
+      return:
+        type: boolean
+        description: ''

@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: LegacyCallBacks
+uid: >-
+  @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.LegacyCallBacks
+package: '@microsoft/teams-js'
+summary: ''
+fullName: LegacyCallBacks
+remarks: ''
+isPreview: false
+isDeprecated: true
+customDeprecatedMessage: with TeamsJS v2 upgrades
+type: interface
+properties:
+  - name: failureCallback
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.LegacyCallBacks.failureCallback
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: failureCallback
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      with TeamsJS v2 upgrades
+
+      A function that is called if the request fails, with the reason for the
+      failure.
+    syntax:
+      content: 'failureCallback?: (reason: string) => void'
+      return:
+        type: '(reason: string) =&gt; void'
+        description: ''
+  - name: successCallback
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.authentication.authentication.LegacyCallBacks.successCallback
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: successCallback
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      with TeamsJS v2 upgrades
+      A function that is called if the request succeeds.
+    syntax:
+      content: 'successCallback?: (result: string) => void'
+      return:
+        type: '(result: string) =&gt; void'
+        description: ''

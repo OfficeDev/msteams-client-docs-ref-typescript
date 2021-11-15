@@ -1,0 +1,11 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.appWindow'
+name: '@microsoft.teams-js.public.appWindow'
+summary: ''
+type: module
+classes:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.appWindow.ChildAppWindow'
+  - '@microsoft/teams-js.@microsoft.teams-js.public.appWindow.ParentAppWindow'
+interfaces:
+  - '@microsoft/teams-js.@microsoft.teams-js.public.appWindow.IAppWindow'
+package: '@microsoft/teams-js'

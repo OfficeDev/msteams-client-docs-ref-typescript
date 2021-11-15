@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: DialogDimension
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.constants.DialogDimension'
+package: '@microsoft/teams-js'
+summary: Dialog module dimension enum
+fullName: DialogDimension
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Large
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.constants.DialogDimension.Large
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Medium
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.constants.DialogDimension.Medium
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Small
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.public.constants.DialogDimension.Small
+    package: '@microsoft/teams-js'
+    summary: ''

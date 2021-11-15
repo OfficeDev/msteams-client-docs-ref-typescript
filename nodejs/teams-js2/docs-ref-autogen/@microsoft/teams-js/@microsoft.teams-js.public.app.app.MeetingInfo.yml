@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: MeetingInfo
+uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.MeetingInfo'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: MeetingInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: id
+    uid: '@microsoft/teams-js.@microsoft.teams-js.public.app.app.MeetingInfo.id'
+    package: '@microsoft/teams-js'
+    summary: Meeting Id used by tab when running in meeting context
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        type: string
+        description: ''

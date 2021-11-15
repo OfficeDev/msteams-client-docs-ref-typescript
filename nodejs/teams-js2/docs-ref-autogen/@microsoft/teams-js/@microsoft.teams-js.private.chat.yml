@@ -1,0 +1,6 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.private.chat'
+name: '@microsoft.teams-js.private.chat'
+type: module
+package: '@microsoft/teams-js'
+summary: ''
