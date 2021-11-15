@@ -24,7 +24,9 @@
         "TSType": "Content",
         "TSPackage": "Content",
         "TSEnum": "Content",
-        "TSTypeAlias": "Content"
+        "TSTypeAlias": "Content",
+		"APIConnector": "Content",
+        "ReferenceContainer": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
@@ -38,6 +40,7 @@
       "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json",
+	  "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json",
 	  "HideEmptyNode": false,
       "ContainerPageMetadata": {
         "langs": [
@@ -49,6 +52,7 @@
       "TopLevelTOC": "nodejs/teams-js2/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/teams-js2/docs-ref-autogen/toc.yml",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json",
+      "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json?view=msteams-client-js-beta",
 	  "HideEmptyNode": false,
       "ContainerPageMetadata": {
         "langs": [
@@ -56,9 +60,6 @@
         ]
       }
     }
-  ],
-  "DiffFolder": [
-    "nodejs"
   ],
   "notification_subscribers": [],
   "branches_to_filter": [],

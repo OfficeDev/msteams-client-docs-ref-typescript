@@ -134,16 +134,8 @@
         "version": "msteams-client-js-beta"
       }	  
     ],
-    "versions": {
-      "msteams-client-js-latest": {
-        "dest": "msteams-client-js-latest"
-      },
-	  "msteams-client-js-beta": {
-        "dest": "msteams-client-js-beta"
-      }
-    },
     "overwrite": [],
-     "groups": {
+    "groups": {
       "stable": {
         "dest": "stable",
         "moniker_range": "msteams-client-js-latest"
