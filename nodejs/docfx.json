@@ -22,6 +22,25 @@
       },
       {
         "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "teams-js2\docs-ref-autogen",
+        "dest": "api",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices",
+          "toc.yml"
+        ],
+        "group": "beta",
+        "version": "msteams-client-js-beta"
+      },
+      {
+        "files": [
           "**/*.yml"
         ],
         "src": "breadcrumb",
@@ -35,10 +54,43 @@
       },
       {
         "files": [
+          "**/*.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "api/msteams-client-docs-ref-typescript/breadcrumb",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "group": "beta",
+        "version": "msteams-client-js-beta"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
         "src": "docs-ref-autogen",
         "dest": "api/msteams-client-docs-ref-typescript",
+        "exclude": [],
+        "group": "stable",
+        "version": "msteams-client-js-latest"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "teams-js2\docs-ref-autogen",
+        "dest": "api/msteams-client-docs-ref-typescript",
+        "exclude": [],
+        "group": "beta",
+        "version": "msteams-client-js-beta"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "overview",
+        "dest": "api/overview",
         "exclude": [],
         "group": "stable",
         "version": "msteams-client-js-latest"
@@ -50,8 +102,8 @@
         "src": "overview",
         "dest": "api/overview",
         "exclude": [],
-        "group": "stable",
-        "version": "msteams-client-js-latest"
+        "group": "beta",
+        "version": "msteams-client-js-beta"
       }
     ],
     "resource": [
@@ -67,11 +119,27 @@
         "dest": "api",
         "group": "stable",
         "version": "msteams-client-js-latest"
-      }
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ],
+        "dest": "api",
+        "group": "beta",
+        "version": "msteams-client-js-beta"
+      }	  
     ],
     "versions": {
       "msteams-client-js-latest": {
         "dest": "msteams-client-js-latest"
+      },
+	  "msteams-client-js-beta": {
+        "dest": "msteams-client-js-beta"
       }
     },
     "overwrite": [],
@@ -79,6 +147,10 @@
       "stable": {
         "dest": "stable",
         "moniker_range": "msteams-client-js-latest"
+      },
+	  "beta": {
+        "dest": "beta",
+        "moniker_range": "msteams-client-js-beta"
       }
     },
     "externalReference": [],
