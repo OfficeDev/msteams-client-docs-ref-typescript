@@ -40,7 +40,7 @@
       "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json",
-	  "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json",
+	  <!--"ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json",-->
 	  "HideEmptyNode": false,
       "ContainerPageMetadata": {
         "langs": [
@@ -52,7 +52,7 @@
       "TopLevelTOC": "nodejs/teams-js2/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/teams-js2/docs-ref-autogen/toc.yml",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json",
-      "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-beta/toc.json?view=msteams-client-js-beta",
+      <!-- "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-beta/toc.json?view=msteams-client-js-beta", -->
 	  "HideEmptyNode": false,
       "ContainerPageMetadata": {
         "langs": [

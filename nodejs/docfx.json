@@ -90,7 +90,7 @@
           "**/*.md"
         ],
         "src": "overview",
-        "dest": "api/msteams-client-docs-ref-typescript-overview",
+        "dest": "api/overview",
         "exclude": [],
         "group": "stable",
         "version": "msteams-client-js-latest"
@@ -100,7 +100,7 @@
           "**/*.md"
         ],
         "src": "teams-js2/overview",
-        "dest": "api/msteams-client-docs-ref-typescript-overview-beta",
+        "dest": "api/overview-beta",
         "exclude": [],
         "group": "beta",
         "version": "msteams-client-js-beta"
