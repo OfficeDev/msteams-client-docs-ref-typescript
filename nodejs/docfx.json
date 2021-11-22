@@ -80,7 +80,7 @@
           "toc.yml"
         ],
         "src": "teams-js2/docs-ref-autogen",
-        "dest": "api/msteams-client-docs-ref-typescript-beta",
+        "dest": "api/msteams-client-docs-ref-typescript",
         "exclude": [],
         "group": "beta",
         "version": "msteams-client-js-beta"
