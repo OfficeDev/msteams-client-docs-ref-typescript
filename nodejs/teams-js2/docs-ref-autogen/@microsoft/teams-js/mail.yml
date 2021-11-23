@@ -1,0 +1,60 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.mail'
+name: mail
+summary: ''
+type: module
+interfaces:
+  - '@microsoft/teams-js.mail.ComposeMailBase'
+  - '@microsoft/teams-js.mail.ComposeNewParams'
+  - '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
+  - '@microsoft/teams-js.mail.OpenMailItemParams'
+typeAliases:
+  - '@microsoft/teams-js.mail.ComposeMailParams'
+enums:
+  - '@microsoft/teams-js.mail.ComposeMailType'
+package: '@microsoft/teams-js'
+functions:
+  - name: composeMail(ComposeMailParams)
+    uid: '@microsoft/teams-js.mail.composeMail'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function composeMail(composeMailParams: ComposeMailParams)'
+      parameters:
+        - id: composeMailParams
+          type: <xref uid="@microsoft/teams-js.mail.ComposeMailParams" />
+          description: ''
+      return:
+        type: Promise&lt;void&gt;
+        description: ''
+  - name: isSupported()
+    uid: '@microsoft/teams-js.mail.isSupported'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function isSupported()
+      return:
+        type: boolean
+        description: ''
+  - name: openMailItem(OpenMailItemParams)
+    uid: '@microsoft/teams-js.mail.openMailItem'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function openMailItem(openMailItemParams: OpenMailItemParams)'
+      parameters:
+        - id: openMailItemParams
+          type: <xref uid="@microsoft/teams-js.mail.OpenMailItemParams" />
+          description: ''
+      return:
+        type: Promise&lt;void&gt;
+        description: ''

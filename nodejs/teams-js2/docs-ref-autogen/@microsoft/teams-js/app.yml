@@ -1,0 +1,153 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.app'
+name: app
+summary: Namespace to interact with app initialization and lifecycle.
+type: module
+interfaces:
+  - '@microsoft/teams-js.app.AppHostInfo'
+  - '@microsoft/teams-js.app.AppInfo'
+  - '@microsoft/teams-js.app.ChannelInfo'
+  - '@microsoft/teams-js.app.ChatInfo'
+  - '@microsoft/teams-js.app.Context'
+  - '@microsoft/teams-js.app.IExpectedFailureRequest'
+  - '@microsoft/teams-js.app.IFailedRequest'
+  - '@microsoft/teams-js.app.MeetingInfo'
+  - '@microsoft/teams-js.app.PageInfo'
+  - '@microsoft/teams-js.app.SharePointSiteInfo'
+  - '@microsoft/teams-js.app.TeamInfo'
+  - '@microsoft/teams-js.app.TenantInfo'
+  - '@microsoft/teams-js.app.UserInfo'
+enums:
+  - '@microsoft/teams-js.app.ExpectedFailureReason'
+  - '@microsoft/teams-js.app.FailedReason'
+package: '@microsoft/teams-js'
+functions:
+  - name: getContext()
+    uid: '@microsoft/teams-js.app.getContext'
+    package: '@microsoft/teams-js'
+    summary: Retrieves the current context the frame is running in.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function getContext()
+      return:
+        type: Promise&lt;<xref uid="@microsoft/teams-js.app.Context" />&gt;
+        description: 'Promise that will resolve with the {@link Context} object.'
+  - name: getFrameContext()
+    uid: '@microsoft/teams-js.app.getFrameContext'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Gets the Frame Context that the App is running in. {@see FrameContexts}
+      for the list of possible values.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function getFrameContext()
+      return:
+        type: <xref uid="@microsoft/teams-js.FrameContexts" />
+        description: the Frame Context.
+  - name: 'initialize(string[])'
+    uid: '@microsoft/teams-js.app.initialize'
+    package: '@microsoft/teams-js'
+    summary: Initializes the library.
+    remarks: |-
+      This must be called before any other SDK calls
+      but after the frame is loaded successfully.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function initialize(validMessageOrigins?: string[])'
+      parameters:
+        - id: validMessageOrigins
+          type: 'string[]'
+          description: >-
+            Optionally specify a list of cross frame message origins. They must
+            have
+
+            https: protocol otherwise they will be ignored. Example:
+            https:www.example.com
+      return:
+        type: Promise&lt;void&gt;
+        description: Promise that will be fulfilled when initialization has completed
+  - name: isInitialized()
+    uid: '@microsoft/teams-js.app.isInitialized'
+    package: '@microsoft/teams-js'
+    summary: Checks whether the Teams client SDK has been initialized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function isInitialized()
+      return:
+        type: boolean
+        description: whether the Teams client SDK has been initialized.
+  - name: notifyAppLoaded()
+    uid: '@microsoft/teams-js.app.notifyAppLoaded'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Notifies the frame that app has loaded and to hide the loading indicator
+      if one is shown.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function notifyAppLoaded()
+  - name: notifyExpectedFailure(IExpectedFailureRequest)
+    uid: '@microsoft/teams-js.app.notifyExpectedFailure'
+    package: '@microsoft/teams-js'
+    summary: Notifies the frame that app initialized with some expected errors.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function notifyExpectedFailure(expectedFailureRequest:
+        IExpectedFailureRequest)
+      parameters:
+        - id: expectedFailureRequest
+          type: <xref uid="@microsoft/teams-js.app.IExpectedFailureRequest" />
+          description: ''
+  - name: notifyFailure(IFailedRequest)
+    uid: '@microsoft/teams-js.app.notifyFailure'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Notifies the frame that app initialization has failed and to show an error
+      page in its place.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function notifyFailure(appInitializationFailedRequest: IFailedRequest)'
+      parameters:
+        - id: appInitializationFailedRequest
+          type: <xref uid="@microsoft/teams-js.app.IFailedRequest" />
+          description: ''
+  - name: notifySuccess()
+    uid: '@microsoft/teams-js.app.notifySuccess'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Notifies the frame that app initialization is successful and is ready for
+      user interaction.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function notifySuccess()
+  - name: 'registerOnThemeChangeHandler((theme: string) => void)'
+    uid: '@microsoft/teams-js.app.registerOnThemeChangeHandler'
+    package: '@microsoft/teams-js'
+    summary: Registers a handler for theme changes.
+    remarks: >-
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'
+      parameters:
+        - id: handler
+          type: '(theme: string) =&gt; void'
+          description: |
+            The handler to invoke when the user changes their theme.

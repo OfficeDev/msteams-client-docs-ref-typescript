@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: Context
+uid: '@microsoft/teams-js.Context'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: Context
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface

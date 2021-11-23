@@ -1,0 +1,34 @@
+### YamlMime:TSEnum
+name: MeetingType
+uid: '@microsoft/teams-js.meeting.MeetingType'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: MeetingType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Adhoc
+    uid: '@microsoft/teams-js.meeting.MeetingType.Adhoc'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Broadcast
+    uid: '@microsoft/teams-js.meeting.MeetingType.Broadcast'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: MeetNow
+    uid: '@microsoft/teams-js.meeting.MeetingType.MeetNow'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Recurring
+    uid: '@microsoft/teams-js.meeting.MeetingType.Recurring'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Scheduled
+    uid: '@microsoft/teams-js.meeting.MeetingType.Scheduled'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Unknown
+    uid: '@microsoft/teams-js.meeting.MeetingType.Unknown'
+    package: '@microsoft/teams-js'
+    summary: ''

@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: TaskInfo
+uid: '@microsoft/teams-js.TaskInfo'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: TaskInfo
+remarks: ''
+isPreview: false
+isDeprecated: true
+customDeprecatedMessage: 'As of 2.0.0-beta.1, please use <xref:DialogInfo> instead.'
+syntax: type TaskInfo = DialogInfo
