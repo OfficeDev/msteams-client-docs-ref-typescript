@@ -1,6 +1,0 @@
-### YamlMime:TSPackage
-uid: '@microsoft/teams-js.@microsoft.teams-js.private.bot'
-name: '@microsoft.teams-js.private.bot'
-type: module
-package: '@microsoft/teams-js'
-summary: ''

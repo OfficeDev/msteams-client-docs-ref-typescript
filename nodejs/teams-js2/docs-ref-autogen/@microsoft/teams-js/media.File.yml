@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: File
+uid: '@microsoft/teams-js.media.File'
+package: '@microsoft/teams-js'
+summary: File object that can be used to represent image or video or audio
+fullName: File
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: content
+    uid: '@microsoft/teams-js.media.File.content'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Content of the file. When format is Base64, this is the base64 content
+
+      When format is ID, this is id mapping to the URI
+
+      When format is base64 and app needs to use this directly in HTML tags, it
+      should convert this to dataUrl.
+    fullName: content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content: string'
+      return:
+        type: string
+        description: ''
+  - name: format
+    uid: '@microsoft/teams-js.media.File.format'
+    package: '@microsoft/teams-js'
+    summary: Format of the content
+    fullName: format
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format: FileFormat'
+      return:
+        type: <xref uid="@microsoft/teams-js.media.FileFormat" />
+        description: ''
+  - name: mimeType
+    uid: '@microsoft/teams-js.media.File.mimeType'
+    package: '@microsoft/teams-js'
+    summary: 'MIME type. This can be used for constructing a dataUrl, if needed.'
+    fullName: mimeType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mimeType: string'
+      return:
+        type: string
+        description: ''
+  - name: name
+    uid: '@microsoft/teams-js.media.File.name'
+    package: '@microsoft/teams-js'
+    summary: 'Optional: Name of the file'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        type: string
+        description: ''
+  - name: size
+    uid: '@microsoft/teams-js.media.File.size'
+    package: '@microsoft/teams-js'
+    summary: Size of the file in KB
+    fullName: size
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size: number'
+      return:
+        type: number
+        description: ''

@@ -1,0 +1,6 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.legacy'
+name: legacy
+type: module
+package: '@microsoft/teams-js'
+summary: ''

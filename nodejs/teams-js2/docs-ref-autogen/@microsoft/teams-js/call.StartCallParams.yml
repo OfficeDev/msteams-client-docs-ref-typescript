@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: StartCallParams
+uid: '@microsoft/teams-js.call.StartCallParams'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: StartCallParams
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: requestedModalities
+    uid: '@microsoft/teams-js.call.StartCallParams.requestedModalities'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: requestedModalities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'requestedModalities?: CallModalities[]'
+      return:
+        type: '<xref uid="@microsoft/teams-js.call.CallModalities" />[]'
+        description: ''
+  - name: source
+    uid: '@microsoft/teams-js.call.StartCallParams.source'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: source
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'source?: string'
+      return:
+        type: string
+        description: ''
+  - name: targets
+    uid: '@microsoft/teams-js.call.StartCallParams.targets'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: targets
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'targets: string[]'
+      return:
+        type: 'string[]'
+        description: ''
