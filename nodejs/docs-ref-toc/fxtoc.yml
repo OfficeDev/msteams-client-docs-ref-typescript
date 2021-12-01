@@ -3,5 +3,6 @@
   landingPageType: Root
   expanded: true
   topicHref: ../overview/msteams-client
+  href: ~/overview/msteams-client.md
   children:
     - '**'

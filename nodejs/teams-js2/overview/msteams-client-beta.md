@@ -3,7 +3,7 @@ title: Microsoft Teams client SDK
 description: Reference documentation for the Microsoft Teams client SDK
 keywords: msteams teams client sdk javascript reference
 ---
-# Microsoft Teams JavaScript client SDK test
+# Microsoft Teams JavaScript client SDK Beta
 
 The Microsoft Teams JavaScript client SDK is part of the Microsoft Teams developer platform. It makes it easy to integrate your own services with Teams, whether you develop custom apps for your enterprise or SaaS applications for teams around the world. See [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) for full documentation on the platform and on the SDK.
 

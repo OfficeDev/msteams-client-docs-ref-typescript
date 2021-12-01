@@ -3,5 +3,6 @@
   landingPageType: Root
   expanded: true
   topicHref: ../teams-js2/overview/msteams-client-beta
+  href: ~/teams-js2/overview/msteams-client-beta.md
   children:
     - '**'
