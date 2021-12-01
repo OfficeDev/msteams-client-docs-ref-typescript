@@ -100,7 +100,7 @@
           "**/*.md"
         ],
         "src": "teams-js2/overview",
-        "dest": "api/overview",
+        "dest": "api/teams-js2/overview",
         "exclude": [],
         "group": "beta",
         "version": "msteams-client-js-beta"
