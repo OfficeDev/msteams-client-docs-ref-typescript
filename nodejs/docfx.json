@@ -80,7 +80,7 @@
           "toc.yml"
         ],
         "src": "teams-js2/docs-ref-autogen",
-        "dest": "api/msteams-client-docs-ref-typescript",
+        "dest": "api/msteams-client-docs-ref-typescript-beta",
         "exclude": [],
         "group": "beta",
         "version": "msteams-client-js-beta"
@@ -134,14 +134,6 @@
         "version": "msteams-client-js-beta"
       }	  
     ],
-	"versions": {
-      "msteams-client-js-latest": {
-        "dest": "msteams-client-js-latest"
-      },
-	  "msteams-client-js-beta": {
-        "dest": "msteams-client-js-beta"
-      }
-    },
     "overwrite": [],
     "groups": {
       "stable": {
