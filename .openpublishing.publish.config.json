@@ -39,6 +39,7 @@
     {
       "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
+      "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json?view=msteams-client-js",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json",
 	  "OutputFolder": "nodejs/overview",
 	  "HideEmptyNode": false,
