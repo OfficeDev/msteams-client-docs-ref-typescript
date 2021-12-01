@@ -2,5 +2,6 @@
   uid: msteams.sdk.landingPage.reference
   landingPageType: Root
   expanded: true
+  topicHref: ../teams-js2/overview/msteams-client-beta
   children:
     - '**'
