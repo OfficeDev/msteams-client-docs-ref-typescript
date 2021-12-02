@@ -25,8 +25,8 @@ properties:
     syntax:
       content: 'subEntityId: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: subEntityLabel
     uid: '@microsoft/teams-js.DeepLinkParameters.subEntityLabel'
     package: '@microsoft/teams-js'
@@ -40,8 +40,8 @@ properties:
     syntax:
       content: 'subEntityLabel: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: subEntityWebUrl
     uid: '@microsoft/teams-js.DeepLinkParameters.subEntityWebUrl'
     package: '@microsoft/teams-js'
@@ -57,5 +57,5 @@ properties:
     syntax:
       content: 'subEntityWebUrl?: string'
       return:
-        type: string
         description: ''
+        type: string

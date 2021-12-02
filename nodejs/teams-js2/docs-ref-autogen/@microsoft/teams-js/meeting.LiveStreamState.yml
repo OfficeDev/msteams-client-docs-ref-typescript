@@ -18,10 +18,10 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'error?: Object'
+      content: 'error?: { code: string, message?: string }'
       return:
-        type: Object
         description: ''
+        type: '{ code: string, message?: string }'
   - name: isStreaming
     uid: '@microsoft/teams-js.meeting.LiveStreamState.isStreaming'
     package: '@microsoft/teams-js'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'isStreaming: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean

@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'audioProps?: AudioProps'
       return:
-        type: <xref uid="@microsoft/teams-js.media.AudioProps" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.media.AudioProps" />
   - name: imageProps
     uid: '@microsoft/teams-js.media.MediaInputs.imageProps'
     package: '@microsoft/teams-js'
@@ -35,8 +35,8 @@ properties:
     syntax:
       content: 'imageProps?: ImageProps'
       return:
-        type: <xref uid="@microsoft/teams-js.media.ImageProps" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.media.ImageProps" />
   - name: maxMediaCount
     uid: '@microsoft/teams-js.media.MediaInputs.maxMediaCount'
     package: '@microsoft/teams-js'
@@ -50,8 +50,8 @@ properties:
     syntax:
       content: 'maxMediaCount: number'
       return:
-        type: number
         description: ''
+        type: number
   - name: mediaType
     uid: '@microsoft/teams-js.media.MediaInputs.mediaType'
     package: '@microsoft/teams-js'
@@ -63,8 +63,8 @@ properties:
     syntax:
       content: 'mediaType: MediaType'
       return:
-        type: <xref uid="@microsoft/teams-js.media.MediaType" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.media.MediaType" />
   - name: videoAndImageProps
     uid: '@microsoft/teams-js.media.MediaInputs.videoAndImageProps'
     package: '@microsoft/teams-js'
@@ -78,5 +78,5 @@ properties:
     syntax:
       content: 'videoAndImageProps?: VideoAndImageProps'
       return:
-        type: <xref uid="@microsoft/teams-js.media.VideoAndImageProps" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.media.VideoAndImageProps" />

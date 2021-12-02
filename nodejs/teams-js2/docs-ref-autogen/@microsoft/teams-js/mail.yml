@@ -22,14 +22,16 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function composeMail(composeMailParams: ComposeMailParams)'
+      content: >-
+        function composeMail(composeMailParams: ComposeMailParams):
+        Promise<void>
       parameters:
         - id: composeMailParams
           type: <xref uid="@microsoft/teams-js.mail.ComposeMailParams" />
           description: ''
       return:
-        type: Promise&lt;void&gt;
         description: ''
+        type: Promise&lt;void&gt;
   - name: isSupported()
     uid: '@microsoft/teams-js.mail.isSupported'
     package: '@microsoft/teams-js'
@@ -38,10 +40,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: openMailItem(OpenMailItemParams)
     uid: '@microsoft/teams-js.mail.openMailItem'
     package: '@microsoft/teams-js'
@@ -50,11 +52,13 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function openMailItem(openMailItemParams: OpenMailItemParams)'
+      content: >-
+        function openMailItem(openMailItemParams: OpenMailItemParams):
+        Promise<void>
       parameters:
         - id: openMailItemParams
           type: <xref uid="@microsoft/teams-js.mail.OpenMailItemParams" />
           description: ''
       return:
-        type: Promise&lt;void&gt;
         description: ''
+        type: Promise&lt;void&gt;

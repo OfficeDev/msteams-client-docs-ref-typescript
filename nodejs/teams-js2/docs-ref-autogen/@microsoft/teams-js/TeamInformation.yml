@@ -24,8 +24,8 @@ properties:
     syntax:
       content: 'groupId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: isTeamArchived
     uid: '@microsoft/teams-js.TeamInformation.isTeamArchived'
     package: '@microsoft/teams-js'
@@ -37,8 +37,8 @@ properties:
     syntax:
       content: 'isTeamArchived?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: isTeamLocked
     uid: '@microsoft/teams-js.TeamInformation.isTeamLocked'
     package: '@microsoft/teams-js'
@@ -50,8 +50,8 @@ properties:
     syntax:
       content: 'isTeamLocked?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: teamDescription
     uid: '@microsoft/teams-js.TeamInformation.teamDescription'
     package: '@microsoft/teams-js'
@@ -63,8 +63,8 @@ properties:
     syntax:
       content: 'teamDescription?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: teamId
     uid: '@microsoft/teams-js.TeamInformation.teamId'
     package: '@microsoft/teams-js'
@@ -76,8 +76,8 @@ properties:
     syntax:
       content: 'teamId: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: teamName
     uid: '@microsoft/teams-js.TeamInformation.teamName'
     package: '@microsoft/teams-js'
@@ -89,8 +89,8 @@ properties:
     syntax:
       content: 'teamName: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: teamType
     uid: '@microsoft/teams-js.TeamInformation.teamType'
     package: '@microsoft/teams-js'
@@ -102,8 +102,8 @@ properties:
     syntax:
       content: 'teamType?: TeamType'
       return:
-        type: <xref uid="@microsoft/teams-js.TeamType" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.TeamType" />
   - name: thumbnailUri
     uid: '@microsoft/teams-js.TeamInformation.thumbnailUri'
     package: '@microsoft/teams-js'
@@ -115,8 +115,8 @@ properties:
     syntax:
       content: 'thumbnailUri?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: userTeamRole
     uid: '@microsoft/teams-js.TeamInformation.userTeamRole'
     package: '@microsoft/teams-js'
@@ -128,5 +128,5 @@ properties:
     syntax:
       content: 'userTeamRole?: UserTeamRole'
       return:
-        type: <xref uid="@microsoft/teams-js.UserTeamRole" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.UserTeamRole" />

@@ -23,8 +23,8 @@ properties:
     syntax:
       content: 'allowChooseLocation: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: showMap
     uid: '@microsoft/teams-js.location.LocationProps.showMap'
     package: '@microsoft/teams-js'
@@ -45,5 +45,5 @@ properties:
     syntax:
       content: 'showMap?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean

@@ -26,8 +26,8 @@ properties:
     syntax:
       content: 'enableFilter?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: ink
     uid: '@microsoft/teams-js.media.ImageProps.ink'
     package: '@microsoft/teams-js'
@@ -41,8 +41,8 @@ properties:
     syntax:
       content: 'ink?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: textSticker
     uid: '@microsoft/teams-js.media.ImageProps.textSticker'
     package: '@microsoft/teams-js'
@@ -58,6 +58,6 @@ properties:
     syntax:
       content: 'textSticker?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
 extends: MediaProps

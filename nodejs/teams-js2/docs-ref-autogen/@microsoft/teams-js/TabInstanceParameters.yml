@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'favoriteChannelsOnly?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: favoriteTeamsOnly
     uid: '@microsoft/teams-js.TabInstanceParameters.favoriteTeamsOnly'
     package: '@microsoft/teams-js'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'favoriteTeamsOnly?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean

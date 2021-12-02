@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'longDate: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: longTime
     uid: '@microsoft/teams-js.LocaleInfo.longTime'
     package: '@microsoft/teams-js'
@@ -33,8 +33,8 @@ properties:
     syntax:
       content: 'longTime: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: platform
     uid: '@microsoft/teams-js.LocaleInfo.platform'
     package: '@microsoft/teams-js'
@@ -46,8 +46,8 @@ properties:
     syntax:
       content: 'platform: "windows" | "macos"'
       return:
-        type: '"windows" | "macos"'
         description: ''
+        type: '"windows" | "macos"'
   - name: regionalFormat
     uid: '@microsoft/teams-js.LocaleInfo.regionalFormat'
     package: '@microsoft/teams-js'
@@ -59,8 +59,8 @@ properties:
     syntax:
       content: 'regionalFormat: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: shortDate
     uid: '@microsoft/teams-js.LocaleInfo.shortDate'
     package: '@microsoft/teams-js'
@@ -72,8 +72,8 @@ properties:
     syntax:
       content: 'shortDate: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: shortTime
     uid: '@microsoft/teams-js.LocaleInfo.shortTime'
     package: '@microsoft/teams-js'
@@ -85,5 +85,5 @@ properties:
     syntax:
       content: 'shortTime: string'
       return:
-        type: string
         description: ''
+        type: string

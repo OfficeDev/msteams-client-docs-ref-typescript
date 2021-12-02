@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'errorCode: ErrorCode'
       return:
-        type: <xref uid="@microsoft/teams-js.ErrorCode" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.ErrorCode" />
   - name: message
     uid: '@microsoft/teams-js.SdkError.message'
     package: '@microsoft/teams-js'
@@ -40,5 +40,5 @@ properties:
     syntax:
       content: 'message?: string'
       return:
-        type: string
         description: ''
+        type: string

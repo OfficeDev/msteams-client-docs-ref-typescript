@@ -20,5 +20,5 @@ properties:
     syntax:
       content: 'teamTabs: TabInstance[]'
       return:
-        type: '<xref uid="@microsoft/teams-js.TabInstance" />[]'
         description: ''
+        type: '<xref uid="@microsoft/teams-js.TabInstance" />[]'

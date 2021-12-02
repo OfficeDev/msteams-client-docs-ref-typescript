@@ -7,4 +7,4 @@ fullName: ContentType
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: type ContentType = URL
+syntax: type ContentType = "URL"

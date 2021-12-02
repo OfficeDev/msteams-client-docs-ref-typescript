@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'itemid: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: type
     uid: '@microsoft/teams-js.mail.ComposeReplyOrForwardParams.type'
     package: '@microsoft/teams-js'
@@ -33,6 +33,6 @@ properties:
     syntax:
       content: 'type: T'
       return:
-        type: T
         description: ''
+        type: T
 extends: <xref uid="@microsoft/teams-js.mail.ComposeMailBase" />&lt;T&gt;

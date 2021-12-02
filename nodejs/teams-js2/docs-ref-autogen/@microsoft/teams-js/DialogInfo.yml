@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'card?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: completionBotId
     uid: '@microsoft/teams-js.DialogInfo.completionBotId'
     package: '@microsoft/teams-js'
@@ -40,8 +40,8 @@ properties:
     syntax:
       content: 'completionBotId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: fallbackUrl
     uid: '@microsoft/teams-js.DialogInfo.fallbackUrl'
     package: '@microsoft/teams-js'
@@ -55,8 +55,8 @@ properties:
     syntax:
       content: 'fallbackUrl?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: height
     uid: '@microsoft/teams-js.DialogInfo.height'
     package: '@microsoft/teams-js'
@@ -68,8 +68,8 @@ properties:
     syntax:
       content: 'height?: DialogDimension | number'
       return:
-        type: <xref uid="@microsoft/teams-js.DialogDimension" /> | number
         description: ''
+        type: <xref uid="@microsoft/teams-js.DialogDimension" /> | number
   - name: title
     uid: '@microsoft/teams-js.DialogInfo.title'
     package: '@microsoft/teams-js'
@@ -81,8 +81,8 @@ properties:
     syntax:
       content: 'title?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: url
     uid: '@microsoft/teams-js.DialogInfo.url'
     package: '@microsoft/teams-js'
@@ -94,8 +94,8 @@ properties:
     syntax:
       content: 'url?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: width
     uid: '@microsoft/teams-js.DialogInfo.width'
     package: '@microsoft/teams-js'
@@ -107,5 +107,5 @@ properties:
     syntax:
       content: 'width?: DialogDimension | number'
       return:
-        type: <xref uid="@microsoft/teams-js.DialogDimension" /> | number
         description: ''
+        type: <xref uid="@microsoft/teams-js.DialogDimension" /> | number

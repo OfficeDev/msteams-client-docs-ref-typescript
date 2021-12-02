@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'message?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: reason
     uid: '@microsoft/teams-js.app.IExpectedFailureRequest.reason'
     package: '@microsoft/teams-js'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'reason: ExpectedFailureReason'
       return:
-        type: <xref uid="@microsoft/teams-js.app.ExpectedFailureReason" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.ExpectedFailureReason" />

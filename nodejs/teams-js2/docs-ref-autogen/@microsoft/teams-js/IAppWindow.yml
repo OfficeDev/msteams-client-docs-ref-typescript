@@ -38,23 +38,26 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function postMessage(message: any)'
+      content: 'function postMessage(message: any): Promise<void>'
       parameters:
         - id: message
           type: any
           description: The message to send
       return:
-        type: Promise&lt;void&gt;
         description: >-
           Promise that will be fulfilled when the AppWindow posts back a
           response
+        type: Promise&lt;void&gt;
   - name: 'postMessage(any, (status: boolean, reason?: string) => void)'
     uid: '@microsoft/teams-js.IAppWindow.postMessage_1'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [IAppWindow.postMessage(message: any):
+      Promise\<void\>](xref:IAppWindow.postMessage) instead.
     syntax:
       content: >-
         function postMessage(message: any, onComplete?: (status: boolean,

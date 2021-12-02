@@ -20,5 +20,5 @@ properties:
     syntax:
       content: 'type: ContentType'
       return:
-        type: <xref uid="@microsoft/teams-js.sharing.ContentType" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.sharing.ContentType" />

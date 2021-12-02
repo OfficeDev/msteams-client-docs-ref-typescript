@@ -20,7 +20,16 @@ functions:
     summary: ''
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use
+      [authentication.authenticate(authenticateParameters:
+      AuthenticatePopUpParameters):
+      Promise\<string\>](xref:authentication.authenticate) instead.
+
+
+      Initiates an authentication request, which opens a new window with the
+      specified settings.
     syntax:
       content: 'function authenticate(authenticateParameters?: AuthenticateParameters)'
       parameters:
@@ -43,7 +52,7 @@ functions:
     syntax:
       content: >-
         function authenticate(authenticateParameters:
-        AuthenticatePopUpParameters)
+        AuthenticatePopUpParameters): Promise<string>
       parameters:
         - id: authenticateParameters
           type: >-
@@ -54,17 +63,29 @@ functions:
             The parameters for the authentication request. It is a required
             parameter since v2 upgrade
       return:
-        type: Promise&lt;string&gt;
         description: >-
           Promise that will be fulfilled with the result from the authentication
           pop-up if successful.
+        type: Promise&lt;string&gt;
   - name: getAuthToken(AuthTokenRequest)
     uid: '@microsoft/teams-js.authentication.getAuthToken_1'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use
+      [authentication.getAuthToken(authTokenRequest:
+      AuthTokenRequestParameters):
+      Promise\<string\>](xref:authentication.getAuthToken) instead.
+
+
+      Requests an Azure AD token to be issued on behalf of the app. The token is
+      acquired from the cache
+
+      if it is not expired. Otherwise a request is sent to Azure AD to obtain a
+      new token.
     syntax:
       content: 'function getAuthToken(authTokenRequest: AuthTokenRequest)'
       parameters:
@@ -86,7 +107,9 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function getAuthToken(authTokenRequest: AuthTokenRequestParameters)'
+      content: >-
+        function getAuthToken(authTokenRequest: AuthTokenRequestParameters):
+        Promise<string>
       parameters:
         - id: authTokenRequest
           type: >-
@@ -96,8 +119,8 @@ functions:
           description: |
             A set of values that configure the token request.
       return:
-        type: Promise&lt;string&gt;
         description: Promise that will be fulfilled with the token if successful.
+        type: Promise&lt;string&gt;
   - name: initialize()
     uid: '@microsoft/teams-js.authentication.initialize'
     package: '@microsoft/teams-js'

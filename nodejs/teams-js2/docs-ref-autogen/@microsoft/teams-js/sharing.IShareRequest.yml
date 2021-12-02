@@ -20,5 +20,5 @@ properties:
     syntax:
       content: 'content: T[]'
       return:
-        type: 'T[]'
         description: ''
+        type: 'T[]'

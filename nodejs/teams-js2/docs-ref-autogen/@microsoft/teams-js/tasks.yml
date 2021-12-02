@@ -22,7 +22,7 @@ functions:
     syntax:
       content: >-
         function startTask(taskInfo: TaskInfo, submitHandler?: (err: string,
-        result: string) => void)
+        result: string) => void): IAppWindow
       parameters:
         - id: taskInfo
           type: <xref uid="@microsoft/teams-js.TaskInfo" />
@@ -32,8 +32,8 @@ functions:
           description: |
             Handler to call when the task module is completed
       return:
-        type: <xref uid="@microsoft/teams-js.IAppWindow" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.IAppWindow" />
   - name: 'submitTask(string | object, string | string[])'
     uid: '@microsoft/teams-js.tasks.submitTask'
     package: '@microsoft/teams-js'

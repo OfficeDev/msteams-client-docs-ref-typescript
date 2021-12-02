@@ -20,8 +20,8 @@ properties:
     syntax:
       content: static IAppWindow Instance
       return:
-        type: <xref uid="@microsoft/teams-js.IAppWindow" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.IAppWindow" />
 methods:
   - name: 'addEventListener(string, (message: any) => void)'
     uid: '@microsoft/teams-js.ParentAppWindow.addEventListener'
@@ -49,23 +49,26 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function postMessage(message: any)'
+      content: 'function postMessage(message: any): Promise<void>'
       parameters:
         - id: message
           type: any
           description: The message to send
       return:
-        type: Promise&lt;void&gt;
         description: >-
           Promise that will be fulfilled when the AppWindow posts back a
           response
+        type: Promise&lt;void&gt;
   - name: 'postMessage(any, (status: boolean, reason?: string) => void)'
     uid: '@microsoft/teams-js.ParentAppWindow.postMessage_1'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [ParentAppWindow.postMessage(message: any):
+      Promise\<void\>](xref:ParentAppWindow.postMessage) instead.
     syntax:
       content: >-
         function postMessage(message: any, onComplete: (status: boolean,
@@ -87,11 +90,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function postMessageHelper(message: any)'
+      content: 'function postMessageHelper(message: any): Promise<void>'
       parameters:
         - id: message
           type: any
           description: ''
       return:
-        type: Promise&lt;void&gt;
         description: ''
+        type: Promise&lt;void&gt;

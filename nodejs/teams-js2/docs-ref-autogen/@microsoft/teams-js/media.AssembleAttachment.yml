@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'file: Blob'
       return:
-        type: Blob
         description: ''
+        type: Blob
   - name: sequence
     uid: '@microsoft/teams-js.media.AssembleAttachment.sequence'
     package: '@microsoft/teams-js'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'sequence: number'
       return:
-        type: number
         description: ''
+        type: number

@@ -162,8 +162,9 @@ functions:
       parameters:
         - id: callback
           type: '(context: Context) =&gt; void'
-          description: |
-            The callback to invoke when the <xref:Context> object is retrieved.
+          description: >
+            The callback to invoke when the
+            <xref:@microsoft/teams-js.app.Context> object is retrieved.
   - name: >-
       getMruTabInstances((tabInfo: TabInformation) => void,
       TabInstanceParameters)
@@ -189,8 +190,8 @@ functions:
         - id: callback
           type: '(tabInfo: TabInformation) =&gt; void'
           description: >-
-            The callback to invoke when the <xref:TabInformation> object is
-            retrieved.
+            The callback to invoke when the
+            <xref:@microsoft/teams-js.TabInformation> object is retrieved.
         - id: tabInstanceParameters
           type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
           description: |
@@ -221,8 +222,9 @@ functions:
         - id: callback
           type: '(tabInfo: TabInformation) =&gt; void'
           description: >-
-            The callback to invoke when the <xref:TabInstanceParameters> object
-            is retrieved.
+            The callback to invoke when the
+            <xref:@microsoft/teams-js.TabInstanceParameters> object is
+            retrieved.
         - id: tabInstanceParameters
           type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
           description: >

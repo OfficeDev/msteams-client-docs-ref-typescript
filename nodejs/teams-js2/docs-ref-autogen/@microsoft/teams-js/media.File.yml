@@ -26,8 +26,8 @@ properties:
     syntax:
       content: 'content: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: format
     uid: '@microsoft/teams-js.media.File.format'
     package: '@microsoft/teams-js'
@@ -39,8 +39,8 @@ properties:
     syntax:
       content: 'format: FileFormat'
       return:
-        type: <xref uid="@microsoft/teams-js.media.FileFormat" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.media.FileFormat" />
   - name: mimeType
     uid: '@microsoft/teams-js.media.File.mimeType'
     package: '@microsoft/teams-js'
@@ -52,8 +52,8 @@ properties:
     syntax:
       content: 'mimeType: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: name
     uid: '@microsoft/teams-js.media.File.name'
     package: '@microsoft/teams-js'
@@ -65,8 +65,8 @@ properties:
     syntax:
       content: 'name?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: size
     uid: '@microsoft/teams-js.media.File.size'
     package: '@microsoft/teams-js'
@@ -78,5 +78,5 @@ properties:
     syntax:
       content: 'size: number'
       return:
-        type: number
         description: ''
+        type: number

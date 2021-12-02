@@ -22,5 +22,5 @@ properties:
     syntax:
       content: 'webhookUrl?: string'
       return:
-        type: string
         description: ''
+        type: string

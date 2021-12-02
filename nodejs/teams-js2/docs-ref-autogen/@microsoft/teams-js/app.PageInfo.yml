@@ -22,8 +22,8 @@ properties:
     syntax:
       content: 'frameContext: FrameContexts'
       return:
-        type: <xref uid="@microsoft/teams-js.FrameContexts" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.FrameContexts" />
   - name: id
     uid: '@microsoft/teams-js.app.PageInfo.id'
     package: '@microsoft/teams-js'
@@ -35,8 +35,8 @@ properties:
     syntax:
       content: 'id: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: isFullScreen
     uid: '@microsoft/teams-js.app.PageInfo.isFullScreen'
     package: '@microsoft/teams-js'
@@ -48,8 +48,8 @@ properties:
     syntax:
       content: 'isFullScreen?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: isMultiWindow
     uid: '@microsoft/teams-js.app.PageInfo.isMultiWindow'
     package: '@microsoft/teams-js'
@@ -61,8 +61,8 @@ properties:
     syntax:
       content: 'isMultiWindow?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: sourceOrigin
     uid: '@microsoft/teams-js.app.PageInfo.sourceOrigin'
     package: '@microsoft/teams-js'
@@ -74,8 +74,8 @@ properties:
     syntax:
       content: 'sourceOrigin?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: subPageId
     uid: '@microsoft/teams-js.app.PageInfo.subPageId'
     package: '@microsoft/teams-js'
@@ -90,5 +90,5 @@ properties:
     syntax:
       content: 'subPageId?: string'
       return:
-        type: string
         description: ''
+        type: string

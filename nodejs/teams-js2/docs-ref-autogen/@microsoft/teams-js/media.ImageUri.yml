@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'type: ImageUriType'
       return:
-        type: <xref uid="@microsoft/teams-js.media.ImageUriType" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.media.ImageUriType" />
   - name: value
     uid: '@microsoft/teams-js.media.ImageUri.value'
     package: '@microsoft/teams-js'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'value: string'
       return:
-        type: string
         description: ''
+        type: string

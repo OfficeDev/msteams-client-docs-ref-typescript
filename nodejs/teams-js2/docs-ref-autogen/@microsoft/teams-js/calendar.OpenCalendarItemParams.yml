@@ -20,5 +20,5 @@ properties:
     syntax:
       content: 'itemId: string'
       return:
-        type: string
         description: ''
+        type: string

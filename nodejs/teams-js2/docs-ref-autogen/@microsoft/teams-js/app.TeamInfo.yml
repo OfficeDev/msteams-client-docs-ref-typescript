@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'displayName?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: groupId
     uid: '@microsoft/teams-js.app.TeamInfo.groupId'
     package: '@microsoft/teams-js'
@@ -37,8 +37,8 @@ properties:
     syntax:
       content: 'groupId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: internalId
     uid: '@microsoft/teams-js.app.TeamInfo.internalId'
     package: '@microsoft/teams-js'
@@ -50,8 +50,8 @@ properties:
     syntax:
       content: 'internalId: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: isArchived
     uid: '@microsoft/teams-js.app.TeamInfo.isArchived'
     package: '@microsoft/teams-js'
@@ -67,8 +67,8 @@ properties:
     syntax:
       content: 'isArchived?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: templateId
     uid: '@microsoft/teams-js.app.TeamInfo.templateId'
     package: '@microsoft/teams-js'
@@ -82,8 +82,8 @@ properties:
     syntax:
       content: 'templateId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: type
     uid: '@microsoft/teams-js.app.TeamInfo.type'
     package: '@microsoft/teams-js'
@@ -95,8 +95,8 @@ properties:
     syntax:
       content: 'type?: TeamType'
       return:
-        type: <xref uid="@microsoft/teams-js.TeamType" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.TeamType" />
   - name: userRole
     uid: '@microsoft/teams-js.app.TeamInfo.userRole'
     package: '@microsoft/teams-js'
@@ -115,5 +115,5 @@ properties:
     syntax:
       content: 'userRole?: UserTeamRole'
       return:
-        type: <xref uid="@microsoft/teams-js.UserTeamRole" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.UserTeamRole" />

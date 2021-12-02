@@ -22,8 +22,8 @@ properties:
     syntax:
       content: 'result: SaveParameters'
       return:
-        type: <xref uid="@microsoft/teams-js.pages.config.SaveParameters" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.pages.config.SaveParameters" />
 methods:
   - name: notifyFailure(string)
     uid: '@microsoft/teams-js.pages.config.SaveEvent.notifyFailure'

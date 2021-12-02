@@ -15,10 +15,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: openAppInstallDialog(OpenAppInstallDialogParams)
     uid: '@microsoft/teams-js.appInstallDialog.openAppInstallDialog'
     package: '@microsoft/teams-js'
@@ -29,7 +29,7 @@ functions:
     syntax:
       content: >-
         function openAppInstallDialog(openAPPInstallDialogParams:
-        OpenAppInstallDialogParams)
+        OpenAppInstallDialogParams): Promise<void>
       parameters:
         - id: openAPPInstallDialogParams
           type: >-
@@ -38,5 +38,5 @@ functions:
             />
           description: ''
       return:
-        type: Promise&lt;void&gt;
         description: ''
+        type: Promise&lt;void&gt;

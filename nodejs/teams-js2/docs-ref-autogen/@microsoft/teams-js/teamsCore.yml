@@ -24,10 +24,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: print()
     uid: '@microsoft/teams-js.teamsCore.print'
     package: '@microsoft/teams-js'

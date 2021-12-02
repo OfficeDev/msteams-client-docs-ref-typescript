@@ -22,8 +22,8 @@ properties:
     syntax:
       content: 'clientType: HostClientType'
       return:
-        type: <xref uid="@microsoft/teams-js.HostClientType" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.HostClientType" />
   - name: name
     uid: '@microsoft/teams-js.app.AppHostInfo.name'
     package: '@microsoft/teams-js'
@@ -37,8 +37,8 @@ properties:
     syntax:
       content: 'name: HostName'
       return:
-        type: <xref uid="@microsoft/teams-js.HostName" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.HostName" />
   - name: ringId
     uid: '@microsoft/teams-js.app.AppHostInfo.ringId'
     package: '@microsoft/teams-js'
@@ -50,8 +50,8 @@ properties:
     syntax:
       content: 'ringId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: sessionId
     uid: '@microsoft/teams-js.app.AppHostInfo.sessionId'
     package: '@microsoft/teams-js'
@@ -65,5 +65,5 @@ properties:
     syntax:
       content: 'sessionId: string'
       return:
-        type: string
         description: ''
+        type: string

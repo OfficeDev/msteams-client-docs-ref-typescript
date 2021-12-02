@@ -30,8 +30,8 @@ properties:
     syntax:
       content: 'id: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: teamsSku
     uid: '@microsoft/teams-js.app.TenantInfo.teamsSku'
     package: '@microsoft/teams-js'
@@ -43,5 +43,5 @@ properties:
     syntax:
       content: 'teamsSku?: string'
       return:
-        type: string
         description: ''
+        type: string

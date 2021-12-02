@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'displayName?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: id
     uid: '@microsoft/teams-js.app.UserInfo.id'
     package: '@microsoft/teams-js'
@@ -42,8 +42,8 @@ properties:
     syntax:
       content: 'id: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: isCallingAllowed
     uid: '@microsoft/teams-js.app.UserInfo.isCallingAllowed'
     package: '@microsoft/teams-js'
@@ -55,8 +55,8 @@ properties:
     syntax:
       content: 'isCallingAllowed?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: isPSTNCallingAllowed
     uid: '@microsoft/teams-js.app.UserInfo.isPSTNCallingAllowed'
     package: '@microsoft/teams-js'
@@ -68,8 +68,8 @@ properties:
     syntax:
       content: 'isPSTNCallingAllowed?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: licenseType
     uid: '@microsoft/teams-js.app.UserInfo.licenseType'
     package: '@microsoft/teams-js'
@@ -81,8 +81,8 @@ properties:
     syntax:
       content: 'licenseType?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: loginHint
     uid: '@microsoft/teams-js.app.UserInfo.loginHint'
     package: '@microsoft/teams-js'
@@ -105,8 +105,8 @@ properties:
     syntax:
       content: 'loginHint?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: tenant
     uid: '@microsoft/teams-js.app.UserInfo.tenant'
     package: '@microsoft/teams-js'
@@ -118,8 +118,8 @@ properties:
     syntax:
       content: 'tenant?: TenantInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.TenantInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.TenantInfo" />
   - name: userPrincipalName
     uid: '@microsoft/teams-js.app.UserInfo.userPrincipalName'
     package: '@microsoft/teams-js'
@@ -141,5 +141,5 @@ properties:
     syntax:
       content: 'userPrincipalName?: string'
       return:
-        type: string
         description: ''
+        type: string

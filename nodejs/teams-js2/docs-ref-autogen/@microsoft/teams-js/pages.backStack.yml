@@ -13,10 +13,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: navigateBack()
     uid: '@microsoft/teams-js.pages.backStack.navigateBack'
     package: '@microsoft/teams-js'
@@ -29,10 +29,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function navigateBack()
+      content: 'function navigateBack(): Promise<void>'
       return:
-        type: Promise&lt;void&gt;
         description: Promise that resolves when the navigation has completed.
+        type: Promise&lt;void&gt;
   - name: registerBackButtonHandler(() => boolean)
     uid: '@microsoft/teams-js.pages.backStack.registerBackButtonHandler'
     package: '@microsoft/teams-js'

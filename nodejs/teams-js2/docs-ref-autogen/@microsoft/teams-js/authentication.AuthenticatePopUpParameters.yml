@@ -22,8 +22,8 @@ properties:
     syntax:
       content: 'height?: number'
       return:
-        type: number
         description: ''
+        type: number
   - name: url
     uid: '@microsoft/teams-js.authentication.AuthenticatePopUpParameters.url'
     package: '@microsoft/teams-js'
@@ -35,8 +35,8 @@ properties:
     syntax:
       content: 'url: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: width
     uid: '@microsoft/teams-js.authentication.AuthenticatePopUpParameters.width'
     package: '@microsoft/teams-js'
@@ -50,5 +50,5 @@ properties:
     syntax:
       content: 'width?: number'
       return:
-        type: number
         description: ''
+        type: number

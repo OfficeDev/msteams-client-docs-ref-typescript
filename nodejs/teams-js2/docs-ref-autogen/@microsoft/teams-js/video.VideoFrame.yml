@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'chromaStride?: number'
       return:
-        type: number
         description: ''
+        type: number
   - name: data
     uid: '@microsoft/teams-js.video.VideoFrame.data'
     package: '@microsoft/teams-js'
@@ -33,8 +33,8 @@ properties:
     syntax:
       content: 'data: Uint8ClampedArray'
       return:
-        type: Uint8ClampedArray
         description: ''
+        type: Uint8ClampedArray
   - name: height
     uid: '@microsoft/teams-js.video.VideoFrame.height'
     package: '@microsoft/teams-js'
@@ -46,8 +46,8 @@ properties:
     syntax:
       content: 'height: number'
       return:
-        type: number
         description: ''
+        type: number
   - name: lumaStride
     uid: '@microsoft/teams-js.video.VideoFrame.lumaStride'
     package: '@microsoft/teams-js'
@@ -59,8 +59,8 @@ properties:
     syntax:
       content: 'lumaStride?: number'
       return:
-        type: number
         description: ''
+        type: number
   - name: stride
     uid: '@microsoft/teams-js.video.VideoFrame.stride'
     package: '@microsoft/teams-js'
@@ -72,8 +72,8 @@ properties:
     syntax:
       content: 'stride?: number'
       return:
-        type: number
         description: ''
+        type: number
   - name: width
     uid: '@microsoft/teams-js.video.VideoFrame.width'
     package: '@microsoft/teams-js'
@@ -85,5 +85,5 @@ properties:
     syntax:
       content: 'width: number'
       return:
-        type: number
         description: ''
+        type: number

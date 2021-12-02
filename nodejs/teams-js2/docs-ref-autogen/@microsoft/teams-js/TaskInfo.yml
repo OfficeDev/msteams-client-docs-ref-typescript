@@ -7,5 +7,5 @@ fullName: TaskInfo
 remarks: ''
 isPreview: false
 isDeprecated: true
-customDeprecatedMessage: 'As of 2.0.0-beta.1, please use <xref:DialogInfo> instead.'
+customDeprecatedMessage: 'As of 2.0.0-beta.1, please use <xref:@microsoft/teams-js.DialogInfo> instead.'
 syntax: type TaskInfo = DialogInfo

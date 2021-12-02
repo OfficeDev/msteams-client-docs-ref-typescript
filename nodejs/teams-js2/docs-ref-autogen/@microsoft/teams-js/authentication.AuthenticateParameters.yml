@@ -7,5 +7,7 @@ fullName: AuthenticateParameters
 remarks: ''
 isPreview: false
 isDeprecated: true
-customDeprecatedMessage: 'As of 2.0.0-beta.1, please use <xref:AuthenticatePopUpParameters> instead.'
+customDeprecatedMessage: >-
+  As of 2.0.0-beta.1, please use
+  <xref:@microsoft/teams-js.authentication.AuthenticatePopUpParameters> instead.
 syntax: type AuthenticateParameters = AuthenticatePopUpParameters & LegacyCallBacks

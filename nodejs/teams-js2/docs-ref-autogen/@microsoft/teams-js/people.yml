@@ -16,10 +16,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: >-
       selectPeople((error: SdkError, people: PeoplePickerResult[]) => void,
       PeoplePickerInputs)
@@ -28,7 +28,19 @@ functions:
     summary: ''
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [people.selectPeople(peoplePickerInputs?:
+      PeoplePickerInputs):
+      Promise\<PeoplePickerResult[]\>](xref:people.selectPeople) instead.
+
+
+      Launches a people picker and allows the user to select one or more people
+      from the list
+
+      If the app is added to personal app scope the people picker launched is
+      org wide and if the app is added to a chat/channel, people picker launched
+      is also limited to the members of chat/channel
     syntax:
       content: >-
         function selectPeople(callback: (error: SdkError, people:
@@ -57,13 +69,15 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function selectPeople(peoplePickerInputs?: PeoplePickerInputs)'
+      content: >-
+        function selectPeople(peoplePickerInputs?: PeoplePickerInputs):
+        Promise<PeoplePickerResult[]>
       parameters:
         - id: peoplePickerInputs
           type: <xref uid="@microsoft/teams-js.people.PeoplePickerInputs" />
           description: Input parameters to launch customized people picker
       return:
+        description: Promise that will be fulfilled when the operation has completed
         type: >-
           Promise&lt;<xref uid="@microsoft/teams-js.people.PeoplePickerResult"
           />[]&gt;
-        description: Promise that will be fulfilled when the operation has completed

@@ -15,14 +15,14 @@ functions:
     syntax:
       content: >-
         function getMruTabInstances(tabInstanceParameters?:
-        TabInstanceParameters)
+        TabInstanceParameters): Promise<TabInformation>
       parameters:
         - id: tabInstanceParameters
           type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
           description: 'OPTIONAL Ignored, kept for future use'
       return:
-        type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
         description: 'Promise that resolves with the {@link TabInformation}.'
+        type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
   - name: getTabInstances(TabInstanceParameters)
     uid: '@microsoft/teams-js.pages.tabs.getTabInstances'
     package: '@microsoft/teams-js'
@@ -35,7 +35,9 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function getTabInstances(tabInstanceParameters?: TabInstanceParameters)'
+      content: >-
+        function getTabInstances(tabInstanceParameters?: TabInstanceParameters):
+        Promise<TabInformation>
       parameters:
         - id: tabInstanceParameters
           type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
@@ -43,8 +45,8 @@ functions:
             OPTIONAL Flags that specify whether to scope call to favorite teams
             or channels.
       return:
-        type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
         description: 'Promise that resolves with the {@link TabInformation}.'
+        type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
   - name: isSupported()
     uid: '@microsoft/teams-js.pages.tabs.isSupported'
     package: '@microsoft/teams-js'
@@ -53,10 +55,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: navigateToTab(TabInstance)
     uid: '@microsoft/teams-js.pages.tabs.navigateToTab'
     package: '@microsoft/teams-js'
@@ -65,11 +67,11 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function navigateToTab(tabInstance: TabInstance)'
+      content: 'function navigateToTab(tabInstance: TabInstance): Promise<void>'
       parameters:
         - id: tabInstance
           type: <xref uid="@microsoft/teams-js.TabInstance" />
           description: The tab instance to navigate to.
       return:
-        type: Promise&lt;void&gt;
         description: Promise that resolves when the navigation has completed.
+        type: Promise&lt;void&gt;

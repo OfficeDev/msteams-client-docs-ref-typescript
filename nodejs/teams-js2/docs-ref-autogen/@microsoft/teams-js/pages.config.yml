@@ -20,10 +20,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function getConfig()
+      content: 'function getConfig(): Promise<Config>'
       return:
-        type: Promise&lt;<xref uid="@microsoft/teams-js.pages.config.Config" />&gt;
         description: 'Promise that resolves with the {@link Config} object.'
+        type: Promise&lt;<xref uid="@microsoft/teams-js.pages.config.Config" />&gt;
   - name: initialize()
     uid: '@microsoft/teams-js.pages.config.initialize'
     package: '@microsoft/teams-js'
@@ -41,10 +41,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: registerChangeConfigHandler(() => void)
     uid: '@microsoft/teams-js.pages.config.registerChangeConfigHandler'
     package: '@microsoft/teams-js'
@@ -119,14 +119,14 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function setConfig(instanceSettings: Config)'
+      content: 'function setConfig(instanceSettings: Config): Promise<void>'
       parameters:
         - id: instanceSettings
           type: <xref uid="@microsoft/teams-js.pages.config.Config" />
           description: ''
       return:
-        type: Promise&lt;void&gt;
         description: Promise that resolves when the operation has completed.
+        type: Promise&lt;void&gt;
   - name: setValidityState(boolean)
     uid: '@microsoft/teams-js.pages.config.setValidityState'
     package: '@microsoft/teams-js'

@@ -26,8 +26,8 @@ properties:
     syntax:
       content: 'failureCallback?: (reason: string) => void'
       return:
-        type: '(reason: string) =&gt; void'
         description: ''
+        type: '(reason: string) =&gt; void'
   - name: successCallback
     uid: '@microsoft/teams-js.authentication.LegacyCallBacks.successCallback'
     package: '@microsoft/teams-js'
@@ -42,5 +42,5 @@ properties:
     syntax:
       content: 'successCallback?: (result: string) => void'
       return:
-        type: '(result: string) =&gt; void'
         description: ''
+        type: '(result: string) =&gt; void'

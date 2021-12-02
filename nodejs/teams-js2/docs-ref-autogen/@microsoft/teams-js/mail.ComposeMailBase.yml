@@ -20,5 +20,5 @@ properties:
     syntax:
       content: 'type: T'
       return:
-        type: T
         description: ''
+        type: T

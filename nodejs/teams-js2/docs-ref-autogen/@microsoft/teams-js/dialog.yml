@@ -13,10 +13,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: 'open(DialogInfo, (err: string, result: string) => void)'
     uid: '@microsoft/teams-js.dialog.open'
     package: '@microsoft/teams-js'
@@ -27,7 +27,7 @@ functions:
     syntax:
       content: >-
         function open(dialogInfo: DialogInfo, submitHandler?: (err: string,
-        result: string) => void)
+        result: string) => void): IAppWindow
       parameters:
         - id: dialogInfo
           type: <xref uid="@microsoft/teams-js.DialogInfo" />
@@ -37,8 +37,8 @@ functions:
           description: |
             Handler to call when the task module is completed
       return:
-        type: <xref uid="@microsoft/teams-js.IAppWindow" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.IAppWindow" />
   - name: resize(DialogInfo)
     uid: '@microsoft/teams-js.dialog.resize'
     package: '@microsoft/teams-js'

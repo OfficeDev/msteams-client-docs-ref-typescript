@@ -34,10 +34,13 @@ functions:
       Note: Currently we support getting one File through this API, i.e. the
       file arrays size will be one.
 
-      Note: For desktop, this API is not supported. Promise will be rejected
+      Note: For desktop, this API is not supported. Callback will be resolved
       with ErrorCode.NotSupported.
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [media.captureImage():
+      Promise\<File[]\>](xref:media.captureImage) instead.
     syntax:
       content: >-
         function captureImage(callback: (error?: SdkError, files?: File[]) =>
@@ -62,12 +65,12 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function captureImage()
+      content: 'function captureImage(): Promise<File[]>'
       return:
-        type: 'Promise&lt;<xref uid="@microsoft/teams-js.media.File" />[]&gt;'
         description: >-
           A promise resolved with a collection of @see File objects or rejected
           with an @see SdkError
+        type: 'Promise&lt;<xref uid="@microsoft/teams-js.media.File" />[]&gt;'
   - name: isSupported()
     uid: '@microsoft/teams-js.media.isSupported'
     package: '@microsoft/teams-js'
@@ -76,10 +79,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: 'scanBarCode((error: SdkError, decodedText: string) => void, BarCodeConfig)'
     uid: '@microsoft/teams-js.media.scanBarCode_1'
     package: '@microsoft/teams-js'
@@ -88,11 +91,14 @@ functions:
       Note: For desktop and web, this API is not supported. Callback will be
       resolved with ErrorCode.NotSupported.
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [media.scanBarCode(config?: BarCodeConfig):
+      Promise\<string\>](xref:media.scanBarCode) instead.
     syntax:
       content: >-
         function scanBarCode(callback: (error: SdkError, decodedText: string) =>
-        void, config?: BarCodeConfig)
+        void, config?: BarCodeConfig): any
       parameters:
         - id: callback
           type: '(error: SdkError, decodedText: string) =&gt; void'
@@ -103,8 +109,8 @@ functions:
             optional input configuration to customize the barcode scanning
             experience
       return:
-        type: any
         description: ''
+        type: any
   - name: scanBarCode(BarCodeConfig)
     uid: '@microsoft/teams-js.media.scanBarCode'
     package: '@microsoft/teams-js'
@@ -115,7 +121,7 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function scanBarCode(config?: BarCodeConfig)'
+      content: 'function scanBarCode(config?: BarCodeConfig): Promise<string>'
       parameters:
         - id: config
           type: <xref uid="@microsoft/teams-js.media.BarCodeConfig" />
@@ -123,10 +129,10 @@ functions:
             optional input configuration to customize the barcode scanning
             experience
       return:
-        type: Promise&lt;string&gt;
         description: >-
           A promise resolved with the barcode data or rejected with an @see
           SdkError
+        type: Promise&lt;string&gt;
   - name: selectMedia(MediaInputs)
     uid: '@microsoft/teams-js.media.selectMedia'
     package: '@microsoft/teams-js'
@@ -135,27 +141,30 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function selectMedia(mediaInputs: MediaInputs)'
+      content: 'function selectMedia(mediaInputs: MediaInputs): Promise<Media[]>'
       parameters:
         - id: mediaInputs
           type: <xref uid="@microsoft/teams-js.media.MediaInputs" />
           description: The input params to customize the media to be selected
       return:
-        type: 'Promise&lt;<xref uid="@microsoft/teams-js.media.Media" />[]&gt;'
         description: >-
           A promise resolved with the collection of @see Media objects selected
           or rejected with a @see SdkError
+        type: 'Promise&lt;<xref uid="@microsoft/teams-js.media.Media" />[]&gt;'
   - name: 'selectMedia(MediaInputs, (error: SdkError, attachments: Media[]) => void)'
     uid: '@microsoft/teams-js.media.selectMedia_1'
     package: '@microsoft/teams-js'
     summary: Select an attachment using camera/gallery
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [media.selectMedia(mediaInputs:
+      MediaInputs): Promise\<Media[]\>](xref:media.selectMedia) instead.
     syntax:
       content: >-
         function selectMedia(mediaInputs: MediaInputs, callback: (error:
-        SdkError, attachments: Media[]) => void)
+        SdkError, attachments: Media[]) => void): any
       parameters:
         - id: mediaInputs
           type: <xref uid="@microsoft/teams-js.media.MediaInputs" />
@@ -165,8 +174,8 @@ functions:
           description: |
             The callback to invoke after fetching the media
       return:
-        type: any
         description: ''
+        type: any
   - name: 'viewImages(ImageUri[])'
     uid: '@microsoft/teams-js.media.viewImages'
     package: '@microsoft/teams-js'
@@ -175,7 +184,7 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function viewImages(uriList: ImageUri[])'
+      content: 'function viewImages(uriList: ImageUri[]): Promise<void>'
       parameters:
         - id: uriList
           type: '<xref uid="@microsoft/teams-js.media.ImageUri" />[]'
@@ -183,21 +192,24 @@ functions:
             list of URIs for images to be viewed - can be content URI or server
             URL. Supports up to 10 Images in a single call
       return:
-        type: Promise&lt;void&gt;
         description: >-
           A promise resolved when the viewing action is completed or rejected
           with an @see SdkError
+        type: Promise&lt;void&gt;
   - name: 'viewImages(ImageUri[], (error?: SdkError) => void)'
     uid: '@microsoft/teams-js.media.viewImages_1'
     package: '@microsoft/teams-js'
     summary: View images using native image viewer
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [media.viewImages(uriList: ImageUri[]):
+      Promise\<void\>](xref:media.viewImages) instead.
     syntax:
       content: >-
         function viewImages(uriList: ImageUri[], callback: (error?: SdkError) =>
-        void)
+        void): any
       parameters:
         - id: uriList
           type: '<xref uid="@microsoft/teams-js.media.ImageUri" />[]'
@@ -209,5 +221,5 @@ functions:
           description: |
             returns back error if encountered, returns null in case of success
       return:
-        type: any
         description: ''
+        type: any

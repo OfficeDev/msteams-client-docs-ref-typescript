@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'chunk: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: chunkSequence
     uid: '@microsoft/teams-js.media.MediaChunk.chunkSequence'
     package: '@microsoft/teams-js'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'chunkSequence: number'
       return:
-        type: number
         description: ''
+        type: number

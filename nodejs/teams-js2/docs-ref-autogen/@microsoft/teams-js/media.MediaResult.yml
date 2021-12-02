@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'error: SdkError'
       return:
-        type: <xref uid="@microsoft/teams-js.SdkError" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.SdkError" />
   - name: mediaChunk
     uid: '@microsoft/teams-js.media.MediaResult.mediaChunk'
     package: '@microsoft/teams-js'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'mediaChunk: MediaChunk'
       return:
-        type: <xref uid="@microsoft/teams-js.media.MediaChunk" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.media.MediaChunk" />

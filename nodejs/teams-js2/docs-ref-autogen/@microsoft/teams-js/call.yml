@@ -17,10 +17,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: startCall(StartCallParams)
     uid: '@microsoft/teams-js.call.startCall'
     package: '@microsoft/teams-js'
@@ -29,11 +29,11 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function startCall(startCallParams: StartCallParams)'
+      content: 'function startCall(startCallParams: StartCallParams): Promise<boolean>'
       parameters:
         - id: startCallParams
           type: <xref uid="@microsoft/teams-js.call.StartCallParams" />
           description: Parameters for the call
       return:
-        type: Promise&lt;boolean&gt;
         description: If the call is accepted
+        type: Promise&lt;boolean&gt;

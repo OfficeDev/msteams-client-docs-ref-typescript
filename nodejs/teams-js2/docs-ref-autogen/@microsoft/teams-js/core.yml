@@ -13,14 +13,14 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function executeDeepLink(deepLink: string)'
+      content: 'function executeDeepLink(deepLink: string): Promise<void>'
       parameters:
         - id: deepLink
           type: string
           description: deep link.
       return:
-        type: Promise&lt;void&gt;
         description: Promise that will be fulfilled when the operation has completed
+        type: Promise&lt;void&gt;
   - name: shareDeepLink(DeepLinkParameters)
     uid: '@microsoft/teams-js.core.shareDeepLink'
     package: '@microsoft/teams-js'

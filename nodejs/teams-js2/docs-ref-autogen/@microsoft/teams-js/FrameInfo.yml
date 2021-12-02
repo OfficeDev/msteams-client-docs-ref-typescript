@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'contentUrl: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: websiteUrl
     uid: '@microsoft/teams-js.FrameInfo.websiteUrl'
     package: '@microsoft/teams-js'
@@ -35,5 +35,5 @@ properties:
     syntax:
       content: 'websiteUrl: string'
       return:
-        type: string
         description: ''
+        type: string

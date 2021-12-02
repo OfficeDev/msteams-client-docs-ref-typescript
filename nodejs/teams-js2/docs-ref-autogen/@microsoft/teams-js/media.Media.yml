@@ -40,8 +40,8 @@ properties:
     syntax:
       content: 'content: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: format
     uid: '@microsoft/teams-js.media.Media.format'
     package: '@microsoft/teams-js'
@@ -53,8 +53,8 @@ properties:
     syntax:
       content: 'format: FileFormat'
       return:
-        type: <xref uid="@microsoft/teams-js.media.FileFormat" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.media.FileFormat" />
   - name: mimeType
     uid: '@microsoft/teams-js.media.Media.mimeType'
     package: '@microsoft/teams-js'
@@ -66,8 +66,8 @@ properties:
     syntax:
       content: 'mimeType: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: name
     uid: '@microsoft/teams-js.media.Media.name'
     package: '@microsoft/teams-js'
@@ -79,8 +79,8 @@ properties:
     syntax:
       content: 'name?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: preview
     uid: '@microsoft/teams-js.media.Media.preview'
     package: '@microsoft/teams-js'
@@ -96,8 +96,8 @@ properties:
     syntax:
       content: 'preview: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: size
     uid: '@microsoft/teams-js.media.Media.size'
     package: '@microsoft/teams-js'
@@ -109,8 +109,8 @@ properties:
     syntax:
       content: 'size: number'
       return:
-        type: number
         description: ''
+        type: number
 methods:
   - name: 'getMedia((error: SdkError, blob: Blob) => void)'
     uid: '@microsoft/teams-js.media.Media.getMedia_1'
@@ -120,7 +120,10 @@ methods:
       and sent back to the webapp as file/blob
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [media.Media.getMedia():
+      Promise\<Blob\>](xref:media.Media.getMedia) instead.
     syntax:
       content: 'function getMedia(callback: (error: SdkError, blob: Blob) => void)'
       parameters:
@@ -138,8 +141,8 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function getMedia()
+      content: 'function getMedia(): Promise<Blob>'
       return:
-        type: Promise&lt;Blob&gt;
         description: A promise resolved with the @see Blob or rejected with a @see SdkError
+        type: Promise&lt;Blob&gt;
 extends: <xref uid="@microsoft/teams-js.media.File" />

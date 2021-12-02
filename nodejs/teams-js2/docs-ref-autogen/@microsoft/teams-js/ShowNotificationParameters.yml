@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'message: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: notificationType
     uid: '@microsoft/teams-js.ShowNotificationParameters.notificationType'
     package: '@microsoft/teams-js'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'notificationType: NotificationTypes'
       return:
-        type: <xref uid="@microsoft/teams-js.NotificationTypes" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.NotificationTypes" />

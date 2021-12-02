@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'app: AppInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.AppInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.AppInfo" />
   - name: channel
     uid: '@microsoft/teams-js.app.Context.channel'
     package: '@microsoft/teams-js'
@@ -33,8 +33,8 @@ properties:
     syntax:
       content: 'channel?: ChannelInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.ChannelInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.ChannelInfo" />
   - name: chat
     uid: '@microsoft/teams-js.app.Context.chat'
     package: '@microsoft/teams-js'
@@ -46,8 +46,8 @@ properties:
     syntax:
       content: 'chat?: ChatInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.ChatInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.ChatInfo" />
   - name: meeting
     uid: '@microsoft/teams-js.app.Context.meeting'
     package: '@microsoft/teams-js'
@@ -59,8 +59,8 @@ properties:
     syntax:
       content: 'meeting?: MeetingInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.MeetingInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.MeetingInfo" />
   - name: page
     uid: '@microsoft/teams-js.app.Context.page'
     package: '@microsoft/teams-js'
@@ -72,8 +72,8 @@ properties:
     syntax:
       content: 'page: PageInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.PageInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.PageInfo" />
   - name: sharepoint
     uid: '@microsoft/teams-js.app.Context.sharepoint'
     package: '@microsoft/teams-js'
@@ -85,8 +85,8 @@ properties:
     syntax:
       content: 'sharepoint?: any'
       return:
-        type: any
         description: ''
+        type: any
   - name: sharePointSite
     uid: '@microsoft/teams-js.app.Context.sharePointSite'
     package: '@microsoft/teams-js'
@@ -98,8 +98,8 @@ properties:
     syntax:
       content: 'sharePointSite?: SharePointSiteInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.SharePointSiteInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.SharePointSiteInfo" />
   - name: team
     uid: '@microsoft/teams-js.app.Context.team'
     package: '@microsoft/teams-js'
@@ -111,8 +111,8 @@ properties:
     syntax:
       content: 'team?: TeamInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.TeamInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.TeamInfo" />
   - name: user
     uid: '@microsoft/teams-js.app.Context.user'
     package: '@microsoft/teams-js'
@@ -124,5 +124,5 @@ properties:
     syntax:
       content: 'user?: UserInfo'
       return:
-        type: <xref uid="@microsoft/teams-js.app.UserInfo" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.app.UserInfo" />

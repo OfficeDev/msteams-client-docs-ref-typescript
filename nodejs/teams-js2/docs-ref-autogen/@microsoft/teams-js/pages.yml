@@ -34,10 +34,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: navigateCrossDomain(string)
     uid: '@microsoft/teams-js.pages.navigateCrossDomain'
     package: '@microsoft/teams-js'
@@ -59,14 +59,14 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function navigateCrossDomain(url: string)'
+      content: 'function navigateCrossDomain(url: string): Promise<void>'
       parameters:
         - id: url
           type: string
           description: The URL to navigate the frame to.
       return:
-        type: Promise&lt;void&gt;
         description: Promise that resolves when the navigation has completed.
+        type: Promise&lt;void&gt;
   - name: 'registerFullScreenHandler((isFullScreen: boolean) => void)'
     uid: '@microsoft/teams-js.pages.registerFullScreenHandler'
     package: '@microsoft/teams-js'

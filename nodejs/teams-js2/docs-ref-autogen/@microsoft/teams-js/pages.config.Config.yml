@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'contentUrl: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: entityId
     uid: '@microsoft/teams-js.pages.config.Config.entityId'
     package: '@microsoft/teams-js'
@@ -35,8 +35,8 @@ properties:
     syntax:
       content: 'entityId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: removeUrl
     uid: '@microsoft/teams-js.pages.config.Config.removeUrl'
     package: '@microsoft/teams-js'
@@ -48,8 +48,8 @@ properties:
     syntax:
       content: 'removeUrl?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: suggestedDisplayName
     uid: '@microsoft/teams-js.pages.config.Config.suggestedDisplayName'
     package: '@microsoft/teams-js'
@@ -65,8 +65,8 @@ properties:
     syntax:
       content: 'suggestedDisplayName?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: websiteUrl
     uid: '@microsoft/teams-js.pages.config.Config.websiteUrl'
     package: '@microsoft/teams-js'
@@ -80,5 +80,5 @@ properties:
     syntax:
       content: 'websiteUrl?: string'
       return:
-        type: string
         description: ''
+        type: string

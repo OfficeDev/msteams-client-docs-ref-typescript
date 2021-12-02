@@ -22,5 +22,5 @@ properties:
     syntax:
       content: 'format: VideoFrameFormat'
       return:
-        type: <xref uid="@microsoft/teams-js.video.VideoFrameFormat" />
         description: ''
+        type: <xref uid="@microsoft/teams-js.video.VideoFrameFormat" />

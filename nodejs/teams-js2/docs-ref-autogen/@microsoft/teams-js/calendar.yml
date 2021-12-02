@@ -16,14 +16,16 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function composeMeeting(composeMeetingParams: ComposeMeetingParams)'
+      content: >-
+        function composeMeeting(composeMeetingParams: ComposeMeetingParams):
+        Promise<void>
       parameters:
         - id: composeMeetingParams
           type: <xref uid="@microsoft/teams-js.calendar.ComposeMeetingParams" />
           description: ''
       return:
-        type: Promise&lt;void&gt;
         description: ''
+        type: Promise&lt;void&gt;
   - name: isSupported()
     uid: '@microsoft/teams-js.calendar.isSupported'
     package: '@microsoft/teams-js'
@@ -32,10 +34,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isSupported()
+      content: 'function isSupported(): boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: openCalendarItem(OpenCalendarItemParams)
     uid: '@microsoft/teams-js.calendar.openCalendarItem'
     package: '@microsoft/teams-js'
@@ -46,11 +48,11 @@ functions:
     syntax:
       content: >-
         function openCalendarItem(openCalendarItemParams:
-        OpenCalendarItemParams)
+        OpenCalendarItemParams): Promise<void>
       parameters:
         - id: openCalendarItemParams
           type: <xref uid="@microsoft/teams-js.calendar.OpenCalendarItemParams" />
           description: ''
       return:
-        type: Promise&lt;void&gt;
         description: ''
+        type: Promise&lt;void&gt;

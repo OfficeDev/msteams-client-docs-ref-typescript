@@ -22,8 +22,8 @@ properties:
     syntax:
       content: 'channelId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: channelIsFavorite
     uid: '@microsoft/teams-js.TabInstance.channelIsFavorite'
     package: '@microsoft/teams-js'
@@ -35,8 +35,8 @@ properties:
     syntax:
       content: 'channelIsFavorite?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: channelName
     uid: '@microsoft/teams-js.TabInstance.channelName'
     package: '@microsoft/teams-js'
@@ -48,8 +48,8 @@ properties:
     syntax:
       content: 'channelName?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: entityId
     uid: '@microsoft/teams-js.TabInstance.entityId'
     package: '@microsoft/teams-js'
@@ -61,8 +61,8 @@ properties:
     syntax:
       content: 'entityId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: groupId
     uid: '@microsoft/teams-js.TabInstance.groupId'
     package: '@microsoft/teams-js'
@@ -78,8 +78,8 @@ properties:
     syntax:
       content: 'groupId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: lastViewUnixEpochTime
     uid: '@microsoft/teams-js.TabInstance.lastViewUnixEpochTime'
     package: '@microsoft/teams-js'
@@ -91,8 +91,8 @@ properties:
     syntax:
       content: 'lastViewUnixEpochTime?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: tabName
     uid: '@microsoft/teams-js.TabInstance.tabName'
     package: '@microsoft/teams-js'
@@ -104,8 +104,8 @@ properties:
     syntax:
       content: 'tabName: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: teamId
     uid: '@microsoft/teams-js.TabInstance.teamId'
     package: '@microsoft/teams-js'
@@ -117,8 +117,8 @@ properties:
     syntax:
       content: 'teamId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: teamIsFavorite
     uid: '@microsoft/teams-js.TabInstance.teamIsFavorite'
     package: '@microsoft/teams-js'
@@ -130,8 +130,8 @@ properties:
     syntax:
       content: 'teamIsFavorite?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: teamName
     uid: '@microsoft/teams-js.TabInstance.teamName'
     package: '@microsoft/teams-js'
@@ -143,8 +143,8 @@ properties:
     syntax:
       content: 'teamName?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: url
     uid: '@microsoft/teams-js.TabInstance.url'
     package: '@microsoft/teams-js'
@@ -156,8 +156,8 @@ properties:
     syntax:
       content: 'url?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: websiteUrl
     uid: '@microsoft/teams-js.TabInstance.websiteUrl'
     package: '@microsoft/teams-js'
@@ -169,5 +169,5 @@ properties:
     syntax:
       content: 'websiteUrl?: string'
       return:
-        type: string
         description: ''
+        type: string

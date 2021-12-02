@@ -30,10 +30,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function getContext()
+      content: 'function getContext(): Promise<Context>'
       return:
-        type: Promise&lt;<xref uid="@microsoft/teams-js.app.Context" />&gt;
         description: 'Promise that will resolve with the {@link Context} object.'
+        type: Promise&lt;<xref uid="@microsoft/teams-js.app.Context" />&gt;
   - name: getFrameContext()
     uid: '@microsoft/teams-js.app.getFrameContext'
     package: '@microsoft/teams-js'
@@ -44,10 +44,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function getFrameContext()
+      content: 'function getFrameContext(): FrameContexts'
       return:
-        type: <xref uid="@microsoft/teams-js.FrameContexts" />
         description: the Frame Context.
+        type: <xref uid="@microsoft/teams-js.FrameContexts" />
   - name: 'initialize(string[])'
     uid: '@microsoft/teams-js.app.initialize'
     package: '@microsoft/teams-js'
@@ -58,7 +58,7 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function initialize(validMessageOrigins?: string[])'
+      content: 'function initialize(validMessageOrigins?: string[]): Promise<void>'
       parameters:
         - id: validMessageOrigins
           type: 'string[]'
@@ -69,8 +69,8 @@ functions:
             https: protocol otherwise they will be ignored. Example:
             https:www.example.com
       return:
-        type: Promise&lt;void&gt;
         description: Promise that will be fulfilled when initialization has completed
+        type: Promise&lt;void&gt;
   - name: isInitialized()
     uid: '@microsoft/teams-js.app.isInitialized'
     package: '@microsoft/teams-js'
@@ -79,10 +79,10 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function isInitialized()
+      content: 'function isInitialized(): boolean'
       return:
-        type: boolean
         description: whether the Teams client SDK has been initialized.
+        type: boolean
   - name: notifyAppLoaded()
     uid: '@microsoft/teams-js.app.notifyAppLoaded'
     package: '@microsoft/teams-js'

@@ -25,8 +25,8 @@ properties:
     syntax:
       content: 'openOrgWideSearchInChatOrChannel?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: setSelected
     uid: '@microsoft/teams-js.people.PeoplePickerInputs.setSelected'
     package: '@microsoft/teams-js'
@@ -45,8 +45,8 @@ properties:
     syntax:
       content: 'setSelected?: string[]'
       return:
-        type: 'string[]'
         description: ''
+        type: 'string[]'
   - name: singleSelect
     uid: '@microsoft/teams-js.people.PeoplePickerInputs.singleSelect'
     package: '@microsoft/teams-js'
@@ -62,8 +62,8 @@ properties:
     syntax:
       content: 'singleSelect?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: title
     uid: '@microsoft/teams-js.people.PeoplePickerInputs.title'
     package: '@microsoft/teams-js'
@@ -79,5 +79,5 @@ properties:
     syntax:
       content: 'title?: string'
       return:
-        type: string
         description: ''
+        type: string
