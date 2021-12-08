@@ -1,0 +1,75 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.dialog'
+name: dialog
+type: module
+package: '@microsoft/teams-js'
+summary: Namespace to interact with the dialog module-specific part of the SDK.
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.dialog.isSupported'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: 'open(DialogInfo, (err: string, result: string) => void)'
+    uid: '@microsoft/teams-js.dialog.open'
+    package: '@microsoft/teams-js'
+    summary: Allows an app to open the dialog module.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function open(dialogInfo: DialogInfo, submitHandler?: (err: string,
+        result: string) => void): IAppWindow
+      parameters:
+        - id: dialogInfo
+          type: <xref uid="@microsoft/teams-js.DialogInfo" />
+          description: An object containing the parameters of the dialog module
+        - id: submitHandler
+          type: '(err: string, result: string) =&gt; void'
+          description: |
+            Handler to call when the task module is completed
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.IAppWindow" />
+  - name: resize(DialogInfo)
+    uid: '@microsoft/teams-js.dialog.resize'
+    package: '@microsoft/teams-js'
+    summary: Update height/width dialog info properties.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function resize(dialogInfo: DialogInfo)'
+      parameters:
+        - id: dialogInfo
+          type: <xref uid="@microsoft/teams-js.DialogInfo" />
+          description: |
+            An object containing width and height properties
+  - name: 'submit(string | object, string | string[])'
+    uid: '@microsoft/teams-js.dialog.submit'
+    package: '@microsoft/teams-js'
+    summary: Submit the dialog module.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function submit(result?: string | object, appIds?: string | string[])'
+      parameters:
+        - id: result
+          type: string | object
+          description: >-
+            Contains the result to be sent to the bot or the app. Typically a
+            JSON object or a serialized version of it
+        - id: appIds
+          type: 'string | string[]'
+          description: >
+            Helps to validate that the call originates from the same appId as
+            the one that invoked the task module

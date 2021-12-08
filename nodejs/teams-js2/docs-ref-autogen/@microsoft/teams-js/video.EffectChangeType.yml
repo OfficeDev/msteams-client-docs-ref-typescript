@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: EffectChangeType
+uid: '@microsoft/teams-js.video.EffectChangeType'
+package: '@microsoft/teams-js'
+summary: Video effect change type enum
+fullName: EffectChangeType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: EffectChanged
+    uid: '@microsoft/teams-js.video.EffectChangeType.EffectChanged'
+    package: '@microsoft/teams-js'
+    summary: current video effect changed.
+    numericValue: 0
+  - name: EffectDisabled
+    uid: '@microsoft/teams-js.video.EffectChangeType.EffectDisabled'
+    package: '@microsoft/teams-js'
+    summary: disable the video effect
+    numericValue: 1

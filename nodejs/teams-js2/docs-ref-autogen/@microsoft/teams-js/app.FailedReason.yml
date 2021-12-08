@@ -1,0 +1,22 @@
+### YamlMime:TSEnum
+name: FailedReason
+uid: '@microsoft/teams-js.app.FailedReason'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: FailedReason
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: AuthFailed
+    uid: '@microsoft/teams-js.app.FailedReason.AuthFailed'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Other
+    uid: '@microsoft/teams-js.app.FailedReason.Other'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Timeout
+    uid: '@microsoft/teams-js.app.FailedReason.Timeout'
+    package: '@microsoft/teams-js'
+    summary: ''

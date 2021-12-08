@@ -1,0 +1,39 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.core'
+name: core
+type: module
+package: '@microsoft/teams-js'
+summary: ''
+functions:
+  - name: executeDeepLink(string)
+    uid: '@microsoft/teams-js.core.executeDeepLink'
+    package: '@microsoft/teams-js'
+    summary: execute deep link API.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function executeDeepLink(deepLink: string): Promise<void>'
+      parameters:
+        - id: deepLink
+          type: string
+          description: deep link.
+      return:
+        description: Promise that will be fulfilled when the operation has completed
+        type: Promise&lt;void&gt;
+  - name: shareDeepLink(DeepLinkParameters)
+    uid: '@microsoft/teams-js.core.shareDeepLink'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Shares a deep link that a user can use to navigate back to a specific
+      state in this page.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function shareDeepLink(deepLinkParameters: DeepLinkParameters)'
+      parameters:
+        - id: deepLinkParameters
+          type: <xref uid="@microsoft/teams-js.DeepLinkParameters" />
+          description: |
+            ID and label for the link and fallback URL.
