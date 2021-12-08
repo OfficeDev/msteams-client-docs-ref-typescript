@@ -1,0 +1,139 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.settings'
+name: settings
+type: module
+package: '@microsoft/teams-js'
+summary: ''
+functions:
+  - name: 'getSettings((instanceSettings: Settings) => void)'
+    uid: '@microsoft/teams-js.settings.getSettings'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [pages.config.getConfig():
+      Promise\<Config\>](xref:pages.config.getConfig) instead.
+
+
+      Gets the settings for the current instance.
+    syntax:
+      content: 'function getSettings(callback: (instanceSettings: Settings) => void)'
+      parameters:
+        - id: callback
+          type: '(instanceSettings: Settings) =&gt; void'
+          description: >
+            The callback to invoke when the
+            <xref:@microsoft/teams-js.settings.getSettings> object is retrieved.
+  - name: 'registerOnRemoveHandler((evt: RemoveEvent) => void)'
+    uid: '@microsoft/teams-js.settings.registerOnRemoveHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use
+      [pages.config.registerOnRemoveHandler(handler: (evt: RemoveEvent) =>
+      void): void](xref:pages.config.registerOnRemoveHandler) instead.
+
+
+      Registers a handler for user attempts to remove content. This handler
+      should be used
+
+      to remove the underlying resource powering the content.
+
+      The object passed to the handler must be used to indicate whether to
+      proceed with the removal.
+
+      Only one handler may be registered at a time. Subsequent registrations
+      will override the first.
+    syntax:
+      content: 'function registerOnRemoveHandler(handler: (evt: RemoveEvent) => void)'
+      parameters:
+        - id: handler
+          type: '(evt: RemoveEvent) =&gt; void'
+          description: |
+            The handler to invoke when the user selects the remove button.
+  - name: 'registerOnSaveHandler((evt: SaveEvent) => void)'
+    uid: '@microsoft/teams-js.settings.registerOnSaveHandler'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use
+      [pages.config.registerOnSaveHandler(handler: (evt: SaveEvent) => void):
+      void](xref:pages.config.registerOnSaveHandler) instead.
+
+
+      Registers a handler for when the user attempts to save the settings. This
+      handler should be used
+
+      to create or update the underlying resource powering the content.
+
+      The object passed to the handler must be used to notify whether to proceed
+      with the save.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    syntax:
+      content: 'function registerOnSaveHandler(handler: (evt: SaveEvent) => void)'
+      parameters:
+        - id: handler
+          type: '(evt: SaveEvent) =&gt; void'
+          description: |
+            The handler to invoke when the user selects the save button.
+  - name: 'setSettings(Settings, (status: boolean, reason?: string) => void)'
+    uid: '@microsoft/teams-js.settings.setSettings'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [pages.config.setConfig(instanceSettings:
+      Config): Promise\<void\>](xref:pages.config.setConfig) instead.
+
+
+      Sets the settings for the current instance.
+
+      This is an asynchronous operation; calls to getSettings are not guaranteed
+      to reflect the changed state.
+    syntax:
+      content: >-
+        function setSettings(instanceSettings: Settings, onComplete?: (status:
+        boolean, reason?: string) => void)
+      parameters:
+        - id: instanceSettings
+          type: Settings
+          description: ''
+        - id: onComplete
+          type: '(status: boolean, reason?: string) =&gt; void'
+          description: ''
+  - name: setValidityState(boolean)
+    uid: '@microsoft/teams-js.settings.setValidityState'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use
+      [pages.config.setValidityState(validityState: boolean):
+      void](xref:pages.config.setValidityState) instead.
+
+
+      Sets the validity state for the settings.
+
+      The initial value is false, so the user cannot save the settings until
+      this is called with true.
+    syntax:
+      content: 'function setValidityState(validityState: boolean)'
+      parameters:
+        - id: validityState
+          type: boolean
+          description: |
+            Indicates whether the save or remove button is enabled for the user.

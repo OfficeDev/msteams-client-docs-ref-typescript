@@ -1,0 +1,148 @@
+### YamlMime:TSType
+name: Media
+uid: '@microsoft/teams-js.media.Media'
+package: '@microsoft/teams-js'
+summary: Media object returned by the select Media API
+fullName: Media
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: Media(Media)
+    uid: '@microsoft/teams-js.media.Media.constructor'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new Media(that?: Media)'
+      parameters:
+        - id: that
+          type: <xref uid="@microsoft/teams-js.media.Media" />
+          description: ''
+properties:
+  - name: content
+    uid: '@microsoft/teams-js.media.Media.content'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Content of the file. When format is Base64, this is the base64 content
+
+      When format is ID, this is id mapping to the URI
+
+      When format is base64 and app needs to use this directly in HTML tags, it
+      should convert this to dataUrl.
+    fullName: content
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'content: string'
+      return:
+        description: ''
+        type: string
+  - name: format
+    uid: '@microsoft/teams-js.media.Media.format'
+    package: '@microsoft/teams-js'
+    summary: Format of the content
+    fullName: format
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'format: FileFormat'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.media.FileFormat" />
+  - name: mimeType
+    uid: '@microsoft/teams-js.media.Media.mimeType'
+    package: '@microsoft/teams-js'
+    summary: 'MIME type. This can be used for constructing a dataUrl, if needed.'
+    fullName: mimeType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mimeType: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@microsoft/teams-js.media.Media.name'
+    package: '@microsoft/teams-js'
+    summary: 'Optional: Name of the file'
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: preview
+    uid: '@microsoft/teams-js.media.Media.preview'
+    package: '@microsoft/teams-js'
+    summary: >-
+      A preview of the file which is a lightweight representation.
+
+      In case of images this will be a thumbnail/compressed image in base64
+      encoding.
+    fullName: preview
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'preview: string'
+      return:
+        description: ''
+        type: string
+  - name: size
+    uid: '@microsoft/teams-js.media.Media.size'
+    package: '@microsoft/teams-js'
+    summary: Size of the file in KB
+    fullName: size
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'size: number'
+      return:
+        description: ''
+        type: number
+methods:
+  - name: 'getMedia((error: SdkError, blob: Blob) => void)'
+    uid: '@microsoft/teams-js.media.Media.getMedia_1'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Gets the media in chunks irrespective of size, these chunks are assembled
+      and sent back to the webapp as file/blob
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0-beta.1, please use [media.Media.getMedia():
+      Promise\<Blob\>](xref:media.Media.getMedia) instead.
+    syntax:
+      content: 'function getMedia(callback: (error: SdkError, blob: Blob) => void)'
+      parameters:
+        - id: callback
+          type: '(error: SdkError, blob: Blob) =&gt; void'
+          description: |
+            returns blob of media
+  - name: getMedia()
+    uid: '@microsoft/teams-js.media.Media.getMedia'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Gets the media in chunks irrespective of size, these chunks are assembled
+      and sent back to the webapp as file/blob
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMedia(): Promise<Blob>'
+      return:
+        description: A promise resolved with the @see Blob or rejected with a @see SdkError
+        type: Promise&lt;Blob&gt;
+extends: <xref uid="@microsoft/teams-js.media.File" />
