@@ -5,7 +5,7 @@ keywords: msteams teams client sdk javascript reference
 ---
 # Microsoft Teams JavaScript client SDK
 
-The Microsoft Teams JavaScript client SDK is part of the Microsoft Teams developer platform. It makes it easy to integrate your own services with Teams, whether you develop custom apps for your enterprise or SaaS applications for teams around the world. See [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) for full documentation on the platform and on the SDK.
+The Microsoft Teams JavaScript client SDK is part of the Microsoft Teams developer platform. It makes it easy to integrate your own services with Teams, whether you develop custom apps for your enterprise or SaaS applications for teams around the world. See [The Microsoft Teams developer platform](https://docs.microsoft.com/microsoftteams/platform/overview) for full documentation on the platform and on the SDK.
 
 ## Finding the SDK
 
@@ -52,6 +52,6 @@ The final option, using a local copy on your servers, eliminates that dependency
 
 The following sections contain reference pages for all the elements of the Teams client API. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js. The source code for the SDK is located at https://github.com/OfficeDev/microsoft-teams-library-js.
 
-* [microsoft.teams-js](https://docs.microsoft.com/javascript/api/%40microsoft/teams-js/)
+* [microsoft.teams-js](/javascript/api/%40microsoft/teams-js/)
 
-And remember that [The Microsoft Teams developer platform](https://docs.microsoft.com/microsoftteams/platform) has full documentation on using the platform and the SDK.
+And remember that [The Microsoft Teams developer platform](/microsoftteams/platform) has full documentation on using the platform and the SDK.
