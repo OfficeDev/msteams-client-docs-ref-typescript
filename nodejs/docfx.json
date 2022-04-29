@@ -153,7 +153,7 @@
       "ms.author": "o365devx",
       "manager": "billbl",
       "ms.suite": "office365",
-      "ms.prod": "msteams",
+      "ms.service": "msteams",
       "searchScope": [
         "Teams"
       ],
