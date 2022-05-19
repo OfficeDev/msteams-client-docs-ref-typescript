@@ -1,0 +1,292 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.microsoftTeams.meeting'
+name: meeting
+summary: ''
+type: module
+enums:
+  - '@microsoft/teams-js.microsoftTeams.meeting.CallType'
+  - '@microsoft/teams-js.microsoftTeams.meeting.MeetingType'
+interfaces:
+  - >-
+    @microsoft/teams-js.microsoftTeams.meeting.IAppContentStageSharingCapabilities
+  - '@microsoft/teams-js.microsoftTeams.meeting.IAppContentStageSharingState'
+  - '@microsoft/teams-js.microsoftTeams.meeting.ISpeakingState'
+  - '@microsoft/teams-js.microsoftTeams.meeting.LiveStreamState'
+package: '@microsoft/teams-js'
+functions:
+  - name: >-
+      getAppContentStageSharingCapabilities((error: SdkError | null,
+      appContentStageSharingCapabilities: IAppContentStageSharingCapabilities |
+      null) => void)
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.meeting.getAppContentStageSharingCapabilities
+    package: '@microsoft/teams-js'
+    summary: Provides information related app's in-meeting sharing capabilities
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAppContentStageSharingCapabilities(callback: (error:
+        SdkError | null, appContentStageSharingCapabilities:
+        IAppContentStageSharingCapabilities | null) => void)
+      parameters:
+        - id: callback
+          type: >-
+            (error: SdkError | null, appContentStageSharingCapabilities:
+            IAppContentStageSharingCapabilities | null) =&gt; void
+          description: >
+            Callback contains 2 parameters, error and result.
+
+            error can either contain an error of type SdkError (error
+            indication), or null (non-error indication)
+
+            appContentStageSharingCapabilities can either contain an
+            IAppContentStageSharingCapabilities object
+
+            (indication of successful retrieval), or null (indication of failed
+            retrieval)
+  - name: >-
+      getAppContentStageSharingState((error: SdkError | null,
+      appContentStageSharingState: IAppContentStageSharingState | null) => void)
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.getAppContentStageSharingState'
+    package: '@microsoft/teams-js'
+    summary: Provides information related to current stage sharing state for app
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getAppContentStageSharingState(callback: (error: SdkError |
+        null, appContentStageSharingState: IAppContentStageSharingState | null)
+        => void)
+      parameters:
+        - id: callback
+          type: >-
+            (error: SdkError | null, appContentStageSharingState:
+            IAppContentStageSharingState | null) =&gt; void
+          description: >
+            Callback contains 2 parameters, error and result.
+
+            error can either contain an error of type SdkError (error
+            indication), or null (non-error indication)
+
+            appContentStageSharingState can either contain an
+            IAppContentStageSharingState object
+
+            (indication of successful retrieval), or null (indication of failed
+            retrieval)
+  - name: >-
+      getIncomingClientAudioState((error: SdkError | null, result: boolean |
+      null) => void)
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.getIncomingClientAudioState'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Allows an app to get the incoming audio speaker setting for the meeting
+      user
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getIncomingClientAudioState(callback: (error: SdkError | null,
+        result: boolean | null) => void)
+      parameters:
+        - id: callback
+          type: '(error: SdkError | null, result: boolean | null) =&gt; void'
+          description: >
+            Callback contains 2 parameters, error and result.
+
+            error can either contain an error of type SdkError, incase of an
+            error, or null when fetch is successful
+
+            result can either contain the true/false value, incase of a
+            successful fetch or null when the fetching fails
+
+            result: True means incoming audio is muted and false means incoming
+            audio is unmuted
+  - name: >-
+      getLiveStreamState((error: SdkError | null, liveStreamState:
+      LiveStreamState | null) => void)
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.getLiveStreamState'
+    package: '@microsoft/teams-js'
+    summary: Allows an app to get the state of the live stream in the current meeting
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getLiveStreamState(callback: (error: SdkError | null,
+        liveStreamState: LiveStreamState | null) => void)
+      parameters:
+        - id: callback
+          type: >-
+            (error: SdkError | null, liveStreamState: LiveStreamState | null)
+            =&gt; void
+          description: >
+            Callback contains 2 parameters: error and liveStreamState.
+
+            error can either contain an error of type SdkError, in case of an
+            error, or null when get is successful
+
+            liveStreamState can either contain a LiveStreamState value, or null
+            when operation fails
+  - name: >-
+      registerLiveStreamChangedHandler((liveStreamState: LiveStreamState) =>
+      void)
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.meeting.registerLiveStreamChangedHandler
+    package: '@microsoft/teams-js'
+    summary: >-
+      Registers a handler for changes to the live stream.
+
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerLiveStreamChangedHandler(handler: (liveStreamState:
+        LiveStreamState) => void)
+      parameters:
+        - id: handler
+          type: '(liveStreamState: LiveStreamState) =&gt; void'
+          description: |
+            The handler to invoke when the live stream state changes
+  - name: >-
+      registerSpeakingStateChangeHandler((speakingState: ISpeakingState) =>
+      void)
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.meeting.registerSpeakingStateChangeHandler
+    package: '@microsoft/teams-js'
+    summary: >-
+      Registers a handler for changes to paticipant speaking states. If any
+      participant is speaking, isSpeakingDetected
+
+      will be true. If no participants are speaking, isSpeakingDetected will be
+      false. Only one handler can be registered
+
+      at a time. A subsequent registration replaces an existing registration.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerSpeakingStateChangeHandler(handler: (speakingState:
+        ISpeakingState) => void)
+      parameters:
+        - id: handler
+          type: '(speakingState: ISpeakingState) =&gt; void'
+          description: >
+            The handler to invoke when the speaking state of any participant
+            changes (start/stop speaking).
+  - name: >-
+      requestStartLiveStreaming((error: SdkError | null) => void, string,
+      string)
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.requestStartLiveStreaming'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Allows an app to request the live streaming be started at the given
+      streaming url
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function requestStartLiveStreaming(callback: (error: SdkError | null) =>
+        void, streamUrl: string, streamKey?: string)
+      parameters:
+        - id: callback
+          type: '(error: SdkError | null) =&gt; void'
+          description: >
+            Callback contains error parameter which can be of type SdkError in
+            case of an error, or null when operation is successful
+
+            Use getLiveStreamState or registerLiveStreamChangedHandler to get
+            updates on the live stream state
+        - id: streamUrl
+          type: string
+          description: the url to the stream resource
+        - id: streamKey
+          type: string
+          description: the key to the stream resource
+  - name: 'requestStopLiveStreaming((error: SdkError | null) => void)'
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.requestStopLiveStreaming'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Allows an app to request the live streaming be stopped at the given
+      streaming url
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function requestStopLiveStreaming(callback: (error: SdkError | null) =>
+        void)
+      parameters:
+        - id: callback
+          type: '(error: SdkError | null) =&gt; void'
+          description: >
+            Callback contains error parameter which can be of type SdkError in
+            case of an error, or null when operation is successful
+
+            Use getLiveStreamState or registerLiveStreamChangedHandler to get
+            updates on the live stream state
+  - name: >-
+      shareAppContentToStage((error: SdkError | null, result: boolean | null) =>
+      void, string)
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.shareAppContentToStage'
+    package: '@microsoft/teams-js'
+    summary: Allows an app to share contents in the meeting
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function shareAppContentToStage(callback: (error: SdkError | null,
+        result: boolean | null) => void, appContentUrl: string)
+      parameters:
+        - id: callback
+          type: '(error: SdkError | null, result: boolean | null) =&gt; void'
+          description: >-
+            Callback contains 2 parameters, error and result.
+
+            error can either contain an error of type SdkError, incase of an
+            error, or null when share is successful
+
+            result can either contain a true value, incase of a successful share
+            or null when the share fails
+        - id: appContentUrl
+          type: string
+          description: |
+            is the input URL which needs to be shared on to the stage
+  - name: >-
+      toggleIncomingClientAudio((error: SdkError | null, result: boolean | null)
+      => void)
+    uid: '@microsoft/teams-js.microsoftTeams.meeting.toggleIncomingClientAudio'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Allows an app to toggle the incoming audio speaker setting for the meeting
+      user from mute to unmute or vice-versa
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function toggleIncomingClientAudio(callback: (error: SdkError | null,
+        result: boolean | null) => void)
+      parameters:
+        - id: callback
+          type: '(error: SdkError | null, result: boolean | null) =&gt; void'
+          description: >
+            Callback contains 2 parameters, error and result.
+
+            error can either contain an error of type SdkError, incase of an
+            error, or null when toggle is successful
+
+            result can either contain the true/false value, incase of a
+            successful toggle or null when the toggling fails
+
+            result: True means incoming audio is muted and false means incoming
+            audio is unmuted

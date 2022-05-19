@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: ImageOutputFormats
+uid: '@microsoft/teams-js.microsoftTeams.media.ImageOutputFormats'
+package: '@microsoft/teams-js'
+summary: Specifies the image output formats.
+fullName: ImageOutputFormats
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: IMAGE
+    uid: '@microsoft/teams-js.microsoftTeams.media.ImageOutputFormats.IMAGE'
+    package: '@microsoft/teams-js'
+    summary: ''
+    numericValue: 1
+  - name: PDF
+    uid: '@microsoft/teams-js.microsoftTeams.media.ImageOutputFormats.PDF'
+    package: '@microsoft/teams-js'
+    summary: ''
+    numericValue: 2

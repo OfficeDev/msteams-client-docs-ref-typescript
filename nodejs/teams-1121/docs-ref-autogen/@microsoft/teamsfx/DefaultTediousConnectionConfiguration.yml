@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: DefaultTediousConnectionConfiguration
+uid: '@microsoft/teamsfx.DefaultTediousConnectionConfiguration'
+package: '@microsoft/teamsfx'
+summary: SQL connection configuration instance.
+fullName: DefaultTediousConnectionConfiguration
+remarks: Only works in in server side.
+isPreview: true
+isDeprecated: false
+type: class
+methods:
+  - name: getConfig()
+    uid: '@microsoft/teamsfx.DefaultTediousConnectionConfiguration.getConfig'
+    package: '@microsoft/teamsfx'
+    summary: Generate connection configuration consumed by tedious.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function getConfig(): Promise<ConnectionConfig>'
+      return:
+        description: Connection configuration of tedious for the SQL.
+        type: Promise&lt;ConnectionConfig&gt;
