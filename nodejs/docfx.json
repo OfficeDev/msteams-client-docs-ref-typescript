@@ -25,7 +25,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "src": "teams-js2/docs-ref-autogen",
+        "src": "teams-1121/docs-ref-autogen",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -36,8 +36,8 @@
           "ThirdPartyNotices",
           "toc.yml"
         ],
-        "group": "beta",
-        "version": "msteams-client-js-beta"
+        "group": "1121",
+        "version": "msteams-client-js-1.12.1"
       },
       {
         "files": [
@@ -62,8 +62,8 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "beta",
-        "version": "msteams-client-js-beta"
+        "group": "1121",
+        "version": "msteams-client-js-1.12.1"
       },
       {
         "files": [
@@ -79,11 +79,11 @@
         "files": [
           "toc.yml"
         ],
-        "src": "teams-js2/docs-ref-autogen",
+        "src": "teams-1121/docs-ref-autogen",
         "dest": "api/msteams-client-docs-ref-typescript-beta",
         "exclude": [],
-        "group": "beta",
-        "version": "msteams-client-js-beta"
+        "group": "1121",
+        "version": "msteams-client-js-1.12.1"
       },
       {
         "files": [
@@ -99,11 +99,11 @@
         "files": [
           "**/*.md"
         ],
-        "src": "teams-js2/overview",
+        "src": "teams-1121/overview",
         "dest": "api/overview",
         "exclude": [],
-        "group": "beta",
-        "version": "msteams-client-js-beta"
+        "group": "1121",
+        "version": "msteams-client-js-1.12.1"
       }
     ],
     "resource": [
@@ -130,8 +130,8 @@
           "**/includes/**"
         ],
         "dest": "api",
-        "group": "beta",
-        "version": "msteams-client-js-beta"
+        "group": "1121",
+        "version": "msteams-client-js-1.12.1"
       }	  
     ],
     "overwrite": [],
@@ -140,9 +140,9 @@
         "dest": "stable",
         "moniker_range": "msteams-client-js-latest"
       },
-	  "beta": {
-        "dest": "beta",
-        "moniker_range": "msteams-client-js-beta"
+      "1121": {
+        "dest": "1121",
+        "moniker_range": "msteams-client-js-1.12.1"
       }
     },
     "externalReference": [],
