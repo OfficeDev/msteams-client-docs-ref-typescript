@@ -30,8 +30,8 @@ properties:
     syntax:
       content: 'endOnInvalidMessage?: boolean'
       return:
-        type: boolean
         description: ''
+        type: boolean
   - name: scopes
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptSettings.scopes'
     package: '@microsoft/teamsfx'
@@ -45,8 +45,8 @@ properties:
     syntax:
       content: 'scopes: string[]'
       return:
-        type: 'string[]'
         description: ''
+        type: 'string[]'
   - name: timeout
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptSettings.timeout'
     package: '@microsoft/teamsfx'
@@ -62,5 +62,5 @@ properties:
     syntax:
       content: 'timeout?: number'
       return:
-        type: number
         description: ''
+        type: number

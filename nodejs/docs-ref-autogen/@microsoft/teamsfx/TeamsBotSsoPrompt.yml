@@ -2,11 +2,71 @@
 name: TeamsBotSsoPrompt
 uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
 package: '@microsoft/teamsfx'
-summary: >-
+summary: >+
   Creates a new prompt that leverage Teams Single Sign On (SSO) support for bot
   to automatically sign in user and
 
   help receive oauth token, asks the user to consent if needed.
+
+
+  **Example**
+
+
+  When used with your bots `DialogSet` you can simply add a new instance of the
+  prompt as a named
+
+  dialog using `DialogSet.add()`. You can then start the prompt from a waterfall
+  step using either
+
+  `DialogContext.beginDialog()` or `DialogContext.prompt()`. The user will be
+  prompted to sign in as
+
+  needed and their access token will be passed as an argument to the callers
+  next waterfall step:
+
+
+  ```JavaScript
+
+  const { ConversationState, MemoryStorage } = require('botbuilder');
+
+  const { DialogSet, WaterfallDialog } = require('botbuilder-dialogs');
+
+  const { TeamsBotSsoPrompt } = require('@microsoft/teamsfx');
+
+
+  const convoState = new ConversationState(new MemoryStorage());
+
+  const dialogState = convoState.createProperty('dialogState');
+
+  const dialogs = new DialogSet(dialogState);
+
+
+  loadConfiguration();
+
+  dialogs.add(new TeamsBotSsoPrompt('TeamsBotSsoPrompt', {
+     scopes: ["User.Read"],
+  }));
+
+
+  dialogs.add(new WaterfallDialog('taskNeedingLogin', [
+       async (step) => {
+           return await step.beginDialog('TeamsBotSsoPrompt');
+       },
+       async (step) => {
+           const token = step.result;
+           if (token) {
+
+               // ... continue with task needing access token ...
+
+           } else {
+               await step.context.sendActivity(`Sorry... We couldn't log you in. Try again later.`);
+               return await step.endDialog();
+           }
+       }
+  ]));
+
+  ```
+
 fullName: TeamsBotSsoPrompt<O>
 remarks: >-
   The prompt will attempt to retrieve the users current token of the desired
@@ -61,8 +121,8 @@ properties:
     syntax:
       content: 'static EndOfTurn: DialogTurnResult'
       return:
-        type: DialogTurnResult
         description: ''
+        type: DialogTurnResult
   - name: id
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.id'
     package: '@microsoft/teamsfx'
@@ -74,8 +134,8 @@ properties:
     syntax:
       content: 'id: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: telemetryClient
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.telemetryClient'
     package: '@microsoft/teamsfx'
@@ -87,32 +147,9 @@ properties:
     syntax:
       content: 'telemetryClient: BotTelemetryClient'
       return:
-        type: BotTelemetryClient
         description: ''
-methods:
-  - name: beginDialog(DialogContext)
-    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.beginDialog'
-    package: '@microsoft/teamsfx'
-    summary: >-
-      Called when a prompt dialog is pushed onto the dialog stack and is being
-      activated.
-    remarks: >-
-      If the task is successful, the result indicates whether the prompt is
-      still
-
-      active after the turn has been processed by the prompt.
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'function beginDialog(dc: DialogContext)'
-      parameters:
-        - id: dc
-          type: DialogContext
-          description: |
-            The DialogContext for the current turn of the conversation.
-      return:
-        type: Promise&lt;DialogTurnResult&gt;
-        description: A `Promise` representing the asynchronous operation.
+        type: BotTelemetryClient
+inheritedMethods:
   - name: 'configure(Record<string, unknown>)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.configure'
     package: '@microsoft/teamsfx'
@@ -121,43 +158,15 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function configure(config: Record<string, unknown>)'
+      content: 'function configure(config: Record<string, unknown>): this'
       parameters:
         - id: config
           type: 'Record&lt;string, unknown&gt;'
           description: |
             Configuration settings to apply.
       return:
-        type: this
         description: ''
-  - name: continueDialog(DialogContext)
-    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.continueDialog'
-    package: '@microsoft/teamsfx'
-    summary: >-
-      Called when a prompt dialog is the active dialog and the user replied with
-      a new activity.
-    remarks: >-
-      If the task is successful, the result indicates whether the dialog is
-      still
-
-      active after the turn has been processed by the dialog.
-
-      The prompt generally continues to receive the user's replies until it
-      accepts the
-
-      user's reply as valid input for the prompt.
-    isPreview: true
-    isDeprecated: false
-    syntax:
-      content: 'function continueDialog(dc: DialogContext)'
-      parameters:
-        - id: dc
-          type: DialogContext
-          description: |
-            The DialogContext for the current turn of the conversation.
-      return:
-        type: Promise&lt;DialogTurnResult&gt;
-        description: A `Promise` representing the asynchronous operation.
+        type: this
   - name: 'endDialog(TurnContext, DialogInstance, DialogReason)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.endDialog'
     package: '@microsoft/teamsfx'
@@ -192,7 +201,7 @@ methods:
     syntax:
       content: >-
         function endDialog(context: TurnContext, instance: DialogInstance,
-        reason: DialogReason)
+        reason: DialogReason): Promise<void>
       parameters:
         - id: context
           type: TurnContext
@@ -205,8 +214,8 @@ methods:
           description: |
             The reason the dialog is ending.
       return:
-        type: Promise&lt;void&gt;
         description: ''
+        type: Promise&lt;void&gt;
   - name: getConverter(string)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getConverter'
     package: '@microsoft/teamsfx'
@@ -215,14 +224,14 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function getConverter(_property: string)'
+      content: 'function getConverter(_property: string): Converter | ConverterFactory'
       parameters:
         - id: _property
           type: string
           description: ''
       return:
-        type: Converter | ConverterFactory
         description: ''
+        type: Converter | ConverterFactory
   - name: getVersion()
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getVersion'
     package: '@microsoft/teamsfx'
@@ -248,10 +257,10 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function getVersion()
+      content: 'function getVersion(): string'
       return:
-        type: string
         description: ''
+        type: string
   - name: 'onDialogEvent(DialogContext, DialogEvent)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.onDialogEvent'
     package: '@microsoft/teamsfx'
@@ -262,7 +271,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function onDialogEvent(dc: DialogContext, e: DialogEvent)'
+      content: >-
+        function onDialogEvent(dc: DialogContext, e: DialogEvent):
+        Promise<boolean>
       parameters:
         - id: dc
           type: DialogContext
@@ -271,10 +282,10 @@ methods:
           type: DialogEvent
           description: The event being raised.
       return:
-        type: Promise&lt;boolean&gt;
         description: >-
           True if the event is handled by the current dialog and bubbling should
           stop.
+        type: Promise&lt;boolean&gt;
   - name: 'repromptDialog(TurnContext, DialogInstance)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.repromptDialog'
     package: '@microsoft/teamsfx'
@@ -302,7 +313,9 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function repromptDialog(context: TurnContext, instance: DialogInstance)'
+      content: >-
+        function repromptDialog(context: TurnContext, instance: DialogInstance):
+        Promise<void>
       parameters:
         - id: context
           type: TurnContext
@@ -312,8 +325,8 @@ methods:
           description: |
             Current state information for this dialog.
       return:
-        type: Promise&lt;void&gt;
         description: ''
+        type: Promise&lt;void&gt;
   - name: 'resumeDialog(DialogContext, DialogReason, any)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.resumeDialog'
     package: '@microsoft/teamsfx'
@@ -359,7 +372,7 @@ methods:
     syntax:
       content: >-
         function resumeDialog(dc: DialogContext, reason: DialogReason, result?:
-        any)
+        any): Promise<DialogTurnResult>
       parameters:
         - id: dc
           type: DialogContext
@@ -374,6 +387,58 @@ methods:
           description: |
             Optional. The return value, if any, from the dialog that ended.
       return:
-        type: Promise&lt;DialogTurnResult&gt;
         description: ''
+        type: Promise&lt;DialogTurnResult&gt;
+methods:
+  - name: beginDialog(DialogContext)
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.beginDialog'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Called when a prompt dialog is pushed onto the dialog stack and is being
+      activated.
+    remarks: >-
+      If the task is successful, the result indicates whether the prompt is
+      still
+
+      active after the turn has been processed by the prompt.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function beginDialog(dc: DialogContext): Promise<DialogTurnResult>'
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: |
+            The DialogContext for the current turn of the conversation.
+      return:
+        description: A `Promise` representing the asynchronous operation.
+        type: Promise&lt;DialogTurnResult&gt;
+  - name: continueDialog(DialogContext)
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.continueDialog'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Called when a prompt dialog is the active dialog and the user replied with
+      a new activity.
+    remarks: >-
+      If the task is successful, the result indicates whether the dialog is
+      still
+
+      active after the turn has been processed by the dialog.
+
+      The prompt generally continues to receive the user's replies until it
+      accepts the
+
+      user's reply as valid input for the prompt.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function continueDialog(dc: DialogContext): Promise<DialogTurnResult>'
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: |
+            The DialogContext for the current turn of the conversation.
+      return:
+        description: A `Promise` representing the asynchronous operation.
+        type: Promise&lt;DialogTurnResult&gt;
 extends: Dialog

@@ -29,14 +29,56 @@ functions:
   - name: 'createMicrosoftGraphClient(TokenCredential, string | string[])'
     uid: '@microsoft/teamsfx.createMicrosoftGraphClient'
     package: '@microsoft/teamsfx'
-    summary: Get Microsoft graph client.
+    summary: |+
+      Get Microsoft graph client.
+
+      **Example**
+
+      Get Microsoft graph client by TokenCredential
+      ```typescript
+      // Sso token example (Azure Function)
+      const ssoToken = "YOUR_TOKEN_STRING";
+      const options = {"AAD_APP_ID", "AAD_APP_SECRET"};
+      const credential = new OnBehalfOfAADUserCredential(ssoToken, options);
+      const graphClient = await createMicrosoftGraphClient(credential);
+      const profile = await graphClient.api("/me").get();
+
+      // TeamsBotSsoPrompt example (Bot Application)
+      const requiredScopes = ["User.Read"];
+      const config: Configuration = {
+         loginUrl: loginUrl,
+         clientId: clientId,
+         clientSecret: clientSecret,
+         tenantId: tenantId
+      };
+      const prompt = new TeamsBotSsoPrompt(dialogId, {
+         config: config
+         scopes: '["User.Read"],
+      });
+      this.addDialog(prompt);
+
+      const oboCredential = new OnBehalfOfAADUserCredential(
+       getUserId(dialogContext),
+       {
+         clientId: "AAD_APP_ID",
+         clientSecret: "AAD_APP_SECRET"
+       });
+      try {
+         const graphClient = await createMicrosoftGraphClient(credential);
+         const profile = await graphClient.api("/me").get();
+      } catch (e) {
+         dialogContext.beginDialog(dialogId);
+         return Dialog.endOfTurn();
+      }
+      ```
+
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
       content: >-
         function createMicrosoftGraphClient(credential: TokenCredential,
-        scopes?: string | string[])
+        scopes?: string | string[]): Client
       parameters:
         - id: credential
           type: TokenCredential
@@ -47,8 +89,8 @@ functions:
             The array of Microsoft Token scope of access. Default value is
             `[.default]`.
       return:
-        type: Client
         description: Graph client with specified scopes.
+        type: Client
   - name: getAuthenticationConfiguration()
     uid: '@microsoft/teamsfx.getAuthenticationConfiguration'
     package: '@microsoft/teamsfx'
@@ -57,15 +99,17 @@ functions:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: function getAuthenticationConfiguration()
+      content: >-
+        function getAuthenticationConfiguration(): AuthenticationConfiguration |
+        undefined
       return:
-        type: >-
-          <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" /> |
-          undefined
         description: >-
           Authentication configuration from global configuration instance, the
           value may be undefined if no authentication config exists in current
           environment.
+        type: >-
+          <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" /> |
+          undefined
   - name: getLogLevel()
     uid: '@microsoft/teamsfx.getLogLevel'
     package: '@microsoft/teamsfx'
@@ -74,10 +118,10 @@ functions:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: function getLogLevel()
+      content: 'function getLogLevel(): LogLevel | undefined'
       return:
-        type: <xref uid="@microsoft/teamsfx.LogLevel" /> | undefined
         description: Log level
+        type: <xref uid="@microsoft/teamsfx.LogLevel" /> | undefined
   - name: 'getResourceConfiguration(ResourceType, string)'
     uid: '@microsoft/teamsfx.getResourceConfiguration'
     package: '@microsoft/teamsfx'
@@ -88,7 +132,7 @@ functions:
     syntax:
       content: >-
         function getResourceConfiguration(resourceType: ResourceType,
-        resourceName?: string)
+        resourceName?: string): [key: string]: any
       parameters:
         - id: resourceType
           type: <xref uid="@microsoft/teamsfx.ResourceType" />
@@ -98,10 +142,10 @@ functions:
           description: |
             The name of resource, default value is "default".
       return:
-        type: '[key: string]\: any'
         description: >-
           Resource configuration for target resource from global configuration
           instance.
+        type: '[key: string]\: any'
   - name: loadConfiguration(Configuration)
     uid: '@microsoft/teamsfx.loadConfiguration'
     package: '@microsoft/teamsfx'
@@ -122,9 +166,24 @@ functions:
   - name: setLogFunction(LogFunction)
     uid: '@microsoft/teamsfx.setLogFunction'
     package: '@microsoft/teamsfx'
-    summary: >-
+    summary: >+
       Set custom log function. Use the function if it's set. Priority is lower
       than setLogger.
+
+
+      **Example**
+
+
+      ```typescript
+
+      setLogFunction((level: LogLevel, message: string) => {
+        if (level === LogLevel.Error) {
+          console.log(message);
+        }
+      });
+
+      ```
+
     remarks: ''
     isPreview: true
     isDeprecated: false
@@ -153,9 +212,25 @@ functions:
   - name: setLogger(Logger)
     uid: '@microsoft/teamsfx.setLogger'
     package: '@microsoft/teamsfx'
-    summary: >-
+    summary: >+
       Set custom logger. Use the output functions if it's set. Priority is
       higher than setLogFunction.
+
+
+      **Example**
+
+
+      ```typescript
+
+      setLogger({
+        verbose: console.debug,
+        info: console.info,
+        warn: console.warn,
+        error: console.error,
+      });
+
+      ```
+
     remarks: ''
     isPreview: true
     isDeprecated: false

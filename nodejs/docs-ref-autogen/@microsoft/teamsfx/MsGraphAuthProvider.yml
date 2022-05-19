@@ -37,7 +37,7 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: function getAccessToken()
+      content: 'function getAccessToken(): Promise<string>'
       return:
-        type: Promise&lt;string&gt;
         description: Access token from the credential.
+        type: Promise&lt;string&gt;

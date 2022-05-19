@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'name: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: properties
     uid: '@microsoft/teamsfx.ResourceConfiguration.properties'
     package: '@microsoft/teamsfx'
@@ -33,8 +33,8 @@ properties:
     syntax:
       content: 'properties: [key: string]: any'
       return:
-        type: '[key: string]\: any'
         description: ''
+        type: '[key: string]\: any'
   - name: type
     uid: '@microsoft/teamsfx.ResourceConfiguration.type'
     package: '@microsoft/teamsfx'
@@ -46,5 +46,5 @@ properties:
     syntax:
       content: 'type: ResourceType'
       return:
-        type: <xref uid="@microsoft/teamsfx.ResourceType" />
         description: ''
+        type: <xref uid="@microsoft/teamsfx.ResourceType" />
