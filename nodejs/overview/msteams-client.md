@@ -1,33 +1,34 @@
 ---
-title: Microsoft Teams client SDK v2 Preview
-description: Reference documentation for the Microsoft Teams client SDK v2 Preview
-keywords: msteams teams client sdk javascript reference preview beta v2
+title: Microsoft Teams JavaScript client SDK
+description: Reference documentation for the latest Microsoft Teams JavaScript client SDK
+keywords: msteams teams client sdk javascript reference latest
 ---
-# Microsoft Teams JavaScript client SDK v2 Preview
+# Microsoft Teams JavaScript client SDK
 
-The Microsoft Teams JavaScript client SDK v2 Preview is a refactor of the existing Teams SDK (@microsoft/teams-js, or simply TeamsJS) that enables Teams developers the ability to extend Teams apps to run in Outlook and Office. From a functional perspective, the TeamsJS SDK v2 Preview (@microsoft/teams-js@next) is a superset of the current TeamsJS SDK, it supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Office.
+Starting with *@microsoft/teams-js* version `2.0.0`, the Microsoft Teams JavaScript client SDK has been refactored to enable [Teams apps to run in Outlook and Office](/microsoftteams/platform/m365-apps/overview), in addition to Microsoft Teams. From a functional perspective, the TeamsJS SDK is a superset of TeamsJS 1.x versions: it supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Office.
 
-You can find the latest on the Microsoft Teams platform from the [Microsoft 365 Developer Blog](https://devblogs.microsoft.com/microsoft365dev/category/teams/) and also learn more about the [changes coming with the SDK v2 Preview](/microsoftteams/platform/m365-apps/using-teams-client-sdk-preview).
+> [!TIP]
+> Refer to the [Teams JavaScript client SDK](/microsoftteams/platform/tabs/how-to/using-teams-client-sdk) overview for guidance on building both Teams-only and Microsoft 365-enabled apps and for current SDK capability support across Teams, Outlook, and Office.
 
 ## Finding the SDK
 
-The Teams client v2 SDK Preview is distributed as an npm package. You can find the latest version of the v2 SDK Preview using the `next` tag:
+The TeamsJS client is distributed as an npm package. The latest version can be found here:
 
-https://www.npmjs.com/package/@microsoft/teams-js.
+www.npmjs.com/package/@microsoft/teams-js
 
 ## Installing the SDK
 
 You can install the package using npm or yarn:
 
-* `npm install --save @microsoft/teams-js@next`
-* `yarn add @microsoft/teams-js@next`
+* `npm install --save @microsoft/teams-js`
+* `yarn add @microsoft/teams-js`
 
 ## Using the SDK
 
 If you are using any dependency loader or module bundler such as [RequireJS](http://requirejs.org/), [SystemJS](https://github.com/systemjs/systemjs), [browserify](http://browserify.org/), or [webpack](https://webpack.github.io/), you can use `import` syntax to import specific modules. For example:
 
 ```typescript
-import * as microsoftTeams from "@microsoft/teams-js@next";
+import * as microsoftTeams from "@microsoft/teams-js";
 ```
 
 You can also reference the entire library in html pages using a script tag.  There are three ways to do this:
@@ -38,13 +39,13 @@ You can also reference the entire library in html pages using a script tag.  The
 ```html
 <!-- Microsoft Teams JavaScript API (via CDN) -->
 <script
-  src="https://res.cdn.office.net/teams-js/2.0.0-beta.2/js/MicrosoftTeams.min.js"
+  src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js"
   integrity="sha384-Q2Z9S56exI6Oz/ThvYaV0SUn8j4HwS8BveGPmuwLXe4CvCUEGlL80qSzHMnvGqee"
   crossorigin="anonymous"
 ></script>
 
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@2.0.0-beta.2/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@2.0.0/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (via local) -->
 <script src="MicrosoftTeams.min.js"></script>
@@ -57,4 +58,4 @@ The final option, using a local copy on your servers, eliminates that dependency
 
 ## Reference
 
-The following sections contain reference pages for all the elements of the Teams client SDK v2 Preview. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js@next. The source code for the v2 SDK Preview is located at https://github.com/OfficeDev/microsoft-teams-library-js/tree/2.0-preview.
+The following sections contain reference pages for all the elements of the Teams client SDK. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js. The source code is located at https://github.com/OfficeDev/microsoft-teams-library-js/tree/main/packages/teams-js.
