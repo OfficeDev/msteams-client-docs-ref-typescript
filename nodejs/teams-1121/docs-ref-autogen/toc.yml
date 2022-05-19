@@ -332,3 +332,61 @@
             - uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrameFormat'
               name: VideoFrameFormat
               items: []
+- name: '@microsoft/teamsfx'
+  items:
+    - name: Overview
+      uid: '@microsoft/teamsfx'
+    - uid: '@microsoft/teamsfx.AuthenticationConfiguration'
+      name: AuthenticationConfiguration
+      items: []
+    - uid: '@microsoft/teamsfx.Configuration'
+      name: Configuration
+      items: []
+    - uid: '@microsoft/teamsfx.DefaultTediousConnectionConfiguration'
+      name: DefaultTediousConnectionConfiguration
+      items: []
+    - uid: '@microsoft/teamsfx.ErrorCode'
+      name: ErrorCode
+      items: []
+    - uid: '@microsoft/teamsfx.ErrorWithCode'
+      name: ErrorWithCode
+      items: []
+    - uid: '@microsoft/teamsfx.LogFunction'
+      name: LogFunction
+      items: []
+    - uid: '@microsoft/teamsfx.Logger'
+      name: Logger
+      items: []
+    - uid: '@microsoft/teamsfx.LogLevel'
+      name: LogLevel
+      items: []
+    - uid: '@microsoft/teamsfx.M365TenantCredential'
+      name: M365TenantCredential
+      items: []
+    - uid: '@microsoft/teamsfx.MsGraphAuthProvider'
+      name: MsGraphAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
+      name: OnBehalfOfUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.ResourceConfiguration'
+      name: ResourceConfiguration
+      items: []
+    - uid: '@microsoft/teamsfx.ResourceType'
+      name: ResourceType
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
+      name: TeamsBotSsoPrompt
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
+      name: TeamsBotSsoPromptSettings
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
+      name: TeamsBotSsoPromptTokenResponse
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsUserCredential'
+      name: TeamsUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.UserInfo'
+      name: UserInfo
+      items: []
