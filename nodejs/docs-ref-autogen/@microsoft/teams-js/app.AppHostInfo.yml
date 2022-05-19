@@ -1,0 +1,69 @@
+### YamlMime:TSType
+name: AppHostInfo
+uid: '@microsoft/teams-js.app.AppHostInfo'
+package: '@microsoft/teams-js'
+summary: Represents information about the application's host.
+fullName: AppHostInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientType
+    uid: '@microsoft/teams-js.app.AppHostInfo.clientType'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The type of the host client. Possible values are : android, ios, web,
+      desktop, rigel
+    fullName: clientType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientType: HostClientType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.HostClientType" />
+  - name: name
+    uid: '@microsoft/teams-js.app.AppHostInfo.name'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The name of the host client. Possible values are: Office, Orange, Outlook,
+      Teams
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: HostName'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.HostName" />
+  - name: ringId
+    uid: '@microsoft/teams-js.app.AppHostInfo.ringId'
+    package: '@microsoft/teams-js'
+    summary: Current ring ID
+    fullName: ringId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ringId?: string'
+      return:
+        description: ''
+        type: string
+  - name: sessionId
+    uid: '@microsoft/teams-js.app.AppHostInfo.sessionId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Unique ID for the current Host session for use in correlating telemetry
+      data.
+    fullName: sessionId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sessionId: string'
+      return:
+        description: ''
+        type: string

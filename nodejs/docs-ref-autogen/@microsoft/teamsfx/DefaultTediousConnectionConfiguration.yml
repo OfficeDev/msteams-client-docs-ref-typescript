@@ -17,7 +17,7 @@ methods:
     isPreview: true
     isDeprecated: false
     syntax:
-      content: function getConfig()
+      content: 'function getConfig(): Promise<ConnectionConfig>'
       return:
-        type: Promise&lt;ConnectionConfig&gt;
         description: Connection configuration of tedious for the SQL.
+        type: Promise&lt;ConnectionConfig&gt;

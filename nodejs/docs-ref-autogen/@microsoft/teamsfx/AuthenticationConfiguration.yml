@@ -22,8 +22,8 @@ properties:
     syntax:
       content: 'applicationIdUri?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: authorityHost
     uid: '@microsoft/teamsfx.AuthenticationConfiguration.authorityHost'
     package: '@microsoft/teamsfx'
@@ -37,8 +37,8 @@ properties:
     syntax:
       content: 'authorityHost?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: certificateContent
     uid: '@microsoft/teamsfx.AuthenticationConfiguration.certificateContent'
     package: '@microsoft/teamsfx'
@@ -50,8 +50,8 @@ properties:
     syntax:
       content: 'certificateContent?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: clientId
     uid: '@microsoft/teamsfx.AuthenticationConfiguration.clientId'
     package: '@microsoft/teamsfx'
@@ -65,8 +65,8 @@ properties:
     syntax:
       content: 'clientId?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: clientSecret
     uid: '@microsoft/teamsfx.AuthenticationConfiguration.clientSecret'
     package: '@microsoft/teamsfx'
@@ -82,8 +82,8 @@ properties:
     syntax:
       content: 'clientSecret?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: initiateLoginEndpoint
     uid: '@microsoft/teamsfx.AuthenticationConfiguration.initiateLoginEndpoint'
     package: '@microsoft/teamsfx'
@@ -97,8 +97,8 @@ properties:
     syntax:
       content: 'initiateLoginEndpoint?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: simpleAuthEndpoint
     uid: '@microsoft/teamsfx.AuthenticationConfiguration.simpleAuthEndpoint'
     package: '@microsoft/teamsfx'
@@ -112,8 +112,8 @@ properties:
     syntax:
       content: 'simpleAuthEndpoint?: string'
       return:
-        type: string
         description: ''
+        type: string
   - name: tenantId
     uid: '@microsoft/teamsfx.AuthenticationConfiguration.tenantId'
     package: '@microsoft/teamsfx'
@@ -127,5 +127,5 @@ properties:
     syntax:
       content: 'tenantId?: string'
       return:
-        type: string
         description: ''
+        type: string

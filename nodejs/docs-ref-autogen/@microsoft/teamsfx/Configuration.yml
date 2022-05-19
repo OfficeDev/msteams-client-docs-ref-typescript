@@ -20,8 +20,8 @@ properties:
     syntax:
       content: 'authentication?: AuthenticationConfiguration'
       return:
-        type: <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" />
         description: ''
+        type: <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" />
   - name: resources
     uid: '@microsoft/teamsfx.Configuration.resources'
     package: '@microsoft/teamsfx'
@@ -33,5 +33,5 @@ properties:
     syntax:
       content: 'resources?: ResourceConfiguration[]'
       return:
-        type: '<xref uid="@microsoft/teamsfx.ResourceConfiguration" />[]'
         description: ''
+        type: '<xref uid="@microsoft/teamsfx.ResourceConfiguration" />[]'
