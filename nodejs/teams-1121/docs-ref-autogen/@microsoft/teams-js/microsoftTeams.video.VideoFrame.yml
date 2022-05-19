@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: VideoFrame
+uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrame'
+package: '@microsoft/teams-js'
+summary: Represents a video frame.
+fullName: VideoFrame
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: chromaStride
+    uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrame.chromaStride'
+    package: '@microsoft/teams-js'
+    summary: 'NV12 chroma stride, valid only when video frame format is NV12'
+    fullName: chromaStride
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'chromaStride?: number'
+      return:
+        description: ''
+        type: number
+  - name: data
+    uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrame.data'
+    package: '@microsoft/teams-js'
+    summary: Video frame buffer
+    fullName: data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data: Uint8ClampedArray'
+      return:
+        description: ''
+        type: Uint8ClampedArray
+  - name: height
+    uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrame.height'
+    package: '@microsoft/teams-js'
+    summary: Video frame height.
+    fullName: height
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'height: number'
+      return:
+        description: ''
+        type: number
+  - name: lumaStride
+    uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrame.lumaStride'
+    package: '@microsoft/teams-js'
+    summary: 'NV12 luma stride, valid only when video frame format is NV12'
+    fullName: lumaStride
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lumaStride?: number'
+      return:
+        description: ''
+        type: number
+  - name: stride
+    uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrame.stride'
+    package: '@microsoft/teams-js'
+    summary: 'RGB stride, valid only when video frame format is RGB'
+    fullName: stride
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'stride?: number'
+      return:
+        description: ''
+        type: number
+  - name: width
+    uid: '@microsoft/teams-js.microsoftTeams.video.VideoFrame.width'
+    package: '@microsoft/teams-js'
+    summary: Video frame width.
+    fullName: width
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'width: number'
+      return:
+        description: ''
+        type: number
