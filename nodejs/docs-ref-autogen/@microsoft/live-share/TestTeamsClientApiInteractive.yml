@@ -1,0 +1,151 @@
+### YamlMime:TSType
+name: TestTeamsClientApiInteractive
+uid: '@microsoft/live-share.TestTeamsClientApiInteractive'
+package: '@microsoft/live-share'
+summary: ''
+fullName: TestTeamsClientApiInteractive
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      TestTeamsClientApiInteractive(() => string | undefined | undefined,
+      (containerId: string) => void | undefined)
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TestTeamsClientApiInteractive(_getLocalTestContainerId?: () =>
+        string | undefined | undefined, _setLocalTestContainerId?: (containerId:
+        string) => void | undefined)
+      parameters:
+        - id: _getLocalTestContainerId
+          type: () =&gt; string | undefined | undefined
+          description: ''
+        - id: _setLocalTestContainerId
+          type: '(containerId: string) =&gt; void | undefined'
+          description: ''
+properties:
+  - name: clientsMeetingRoles
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.clientsMeetingRoles'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: clientsMeetingRoles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientsMeetingRoles: UserMeetingRole[]'
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
+methods:
+  - name: getClientRoles(string)
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.getClientRoles'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getClientRoles(clientId: string): Promise<UserMeetingRole[]>'
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: 'Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;'
+  - name: getFluidContainerId()
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.getFluidContainerId'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getFluidContainerId(): Promise<FluidContainerInfo>'
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.FluidContainerInfo" />&gt;
+  - name: getFluidTenantInfo()
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.getFluidTenantInfo'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getFluidTenantInfo(): Promise<FluidTenantInfo>'
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.FluidTenantInfo" />&gt;
+  - name: getFluidToken(undefined | string)
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.getFluidToken'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getFluidToken(containerId?: undefined | string):
+        Promise<string>
+      parameters:
+        - id: containerId
+          type: undefined | string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;string&gt;
+  - name: getNtpTime()
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.getNtpTime'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getNtpTime(): Promise<NtpTimeInfo>'
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.NtpTimeInfo" />&gt;
+  - name: registerClientId(string)
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.registerClientId'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function registerClientId(clientId: string): Promise<UserMeetingRole[]>'
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: 'Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;'
+  - name: setFluidContainerId(string)
+    uid: '@microsoft/live-share.TestTeamsClientApiInteractive.setFluidContainerId'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setFluidContainerId(containerId: string):
+        Promise<FluidContainerInfo>
+      parameters:
+        - id: containerId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.FluidContainerInfo" />&gt;

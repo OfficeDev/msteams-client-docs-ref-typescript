@@ -1,0 +1,18 @@
+### YamlMime:TSEnum
+name: ParticipantType
+uid: '@microsoft/live-share.ParticipantType'
+package: '@microsoft/live-share'
+summary: ''
+fullName: ParticipantType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Guest
+    uid: '@microsoft/live-share.ParticipantType.Guest'
+    package: '@microsoft/live-share'
+    summary: ''
+  - name: Host
+    uid: '@microsoft/live-share.ParticipantType.Host'
+    package: '@microsoft/live-share'
+    summary: ''

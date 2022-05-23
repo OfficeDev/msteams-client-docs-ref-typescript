@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: ITransportStateChangeEvent
+uid: '@microsoft/live-share-media.ITransportStateChangeEvent'
+package: '@microsoft/live-share-media'
+summary: ''
+fullName: ITransportStateChangeEvent
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: action
+    uid: '@microsoft/live-share-media.ITransportStateChangeEvent.action'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: action
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'action: ExtendedMediaSessionAction'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-media.ExtendedMediaSessionAction" />
+  - name: name
+    uid: '@microsoft/live-share-media.ITransportStateChangeEvent.name'
+    package: '@microsoft/live-share-media'
+    summary: Name of the event.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: seekTime
+    uid: '@microsoft/live-share-media.ITransportStateChangeEvent.seekTime'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: seekTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'seekTime?: undefined | number'
+      return:
+        description: ''
+        type: undefined | number
+extends: IEvent

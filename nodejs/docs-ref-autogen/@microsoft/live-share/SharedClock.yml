@@ -1,0 +1,56 @@
+### YamlMime:TSType
+name: SharedClock
+uid: '@microsoft/live-share.SharedClock'
+package: '@microsoft/live-share'
+summary: ''
+fullName: SharedClock
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: getTimestamp()
+    uid: '@microsoft/live-share.SharedClock.getTimestamp'
+    package: '@microsoft/live-share'
+    summary: Returns the current server time.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getTimestamp(): number'
+      return:
+        description: ''
+        type: number
+  - name: isRunning()
+    uid: '@microsoft/live-share.SharedClock.isRunning'
+    package: '@microsoft/live-share'
+    summary: Returns true if the clock has been started.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isRunning(): boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: start()
+    uid: '@microsoft/live-share.SharedClock.start'
+    package: '@microsoft/live-share'
+    summary: Starts the clock
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function start(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: stop()
+    uid: '@microsoft/live-share.SharedClock.stop'
+    package: '@microsoft/live-share'
+    summary: Stops the clock if its running.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function stop()
