@@ -1,7 +1,0 @@
-- name: SDK reference
-  uid: msteams.sdk.landingPage.reference
-  landingPageType: Root
-  expanded: true
-  href: ~/teams-js2/overview/msteams-client.md
-  children:
-    - '**'

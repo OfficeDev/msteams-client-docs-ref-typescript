@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: ResourceConfiguration
+uid: '@microsoft/teamsfx.ResourceConfiguration'
+package: '@microsoft/teamsfx'
+summary: Configuration for resources.
+fullName: ResourceConfiguration
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@microsoft/teamsfx.ResourceConfiguration.name'
+    package: '@microsoft/teamsfx'
+    summary: Resource name.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: properties
+    uid: '@microsoft/teamsfx.ResourceConfiguration.properties'
+    package: '@microsoft/teamsfx'
+    summary: Config for the resource.
+    fullName: properties
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'properties: [key: string]: any'
+      return:
+        description: ''
+        type: '[key: string]\: any'
+  - name: type
+    uid: '@microsoft/teamsfx.ResourceConfiguration.type'
+    package: '@microsoft/teamsfx'
+    summary: Resource type.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: ResourceType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.ResourceType" />

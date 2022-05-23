@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: Configuration
+uid: '@microsoft/teamsfx.Configuration'
+package: '@microsoft/teamsfx'
+summary: Configuration for current environment.
+fullName: Configuration
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: authentication
+    uid: '@microsoft/teamsfx.Configuration.authentication'
+    package: '@microsoft/teamsfx'
+    summary: Authentication related configuration.
+    fullName: authentication
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authentication?: AuthenticationConfiguration'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" />
+  - name: resources
+    uid: '@microsoft/teamsfx.Configuration.resources'
+    package: '@microsoft/teamsfx'
+    summary: Configuration for resources.
+    fullName: resources
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'resources?: ResourceConfiguration[]'
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/teamsfx.ResourceConfiguration" />[]'

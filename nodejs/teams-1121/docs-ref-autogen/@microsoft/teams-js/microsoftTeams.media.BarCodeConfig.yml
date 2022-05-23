@@ -1,0 +1,32 @@
+### YamlMime:TSType
+name: BarCodeConfig
+uid: '@microsoft/teams-js.microsoftTeams.media.BarCodeConfig'
+package: '@microsoft/teams-js'
+summary: >-
+  Barcode configuration supplied to scanBarCode API to customize barcode
+  scanning experience in mobile
+
+  All properties in BarCodeConfig are optional and have default values in the
+  platform
+fullName: BarCodeConfig
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: timeOutIntervalInSec
+    uid: >-
+      @microsoft/teams-js.microsoftTeams.media.BarCodeConfig.timeOutIntervalInSec
+    package: '@microsoft/teams-js'
+    summary: |-
+      Optional; Lets the developer specify the scan timeout interval in seconds
+      Default value is 30 seconds and max allowed value is 60 seconds
+    fullName: timeOutIntervalInSec
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeOutIntervalInSec?: number'
+      return:
+        description: ''
+        type: number
