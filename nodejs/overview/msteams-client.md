@@ -1,16 +1,20 @@
 ---
-title: Microsoft Teams client SDK
-description: Reference documentation for the Microsoft Teams client SDK
-keywords: msteams teams client sdk javascript reference
+title: Microsoft Teams JavaScript client SDK
+description: Reference documentation for the latest Microsoft Teams JavaScript client SDK
+keywords: msteams teams client sdk javascript reference latest
 ---
 # Microsoft Teams JavaScript client SDK
 
-The Microsoft Teams JavaScript client SDK is part of the Microsoft Teams developer platform. It makes it easy to integrate your own services with Teams, whether you develop custom apps for your enterprise or SaaS applications for teams around the world. See [The Microsoft Teams developer platform](https://docs.microsoft.com/en-us/microsoftteams/platform/overview) for full documentation on the platform and on the SDK.
+Starting with *@microsoft/teams-js* version `2.0.0`, the Microsoft Teams JavaScript client SDK has been refactored to enable [Teams apps to run in Outlook and Office](/microsoftteams/platform/m365-apps/overview), in addition to Microsoft Teams. From a functional perspective, the TeamsJS SDK is a superset of TeamsJS 1.x versions: it supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Office.
+
+> [!TIP]
+> Refer to the [Teams JavaScript client SDK](/microsoftteams/platform/tabs/how-to/using-teams-client-sdk) overview for guidance on building both Teams-only and Microsoft 365-enabled apps and for current SDK capability support across Teams, Outlook, and Office.
 
 ## Finding the SDK
 
-The Teams client SDK is distributed as an npm package. The latest version can be found here:
-https://www.npmjs.com/package/@microsoft/teams-js.
+The TeamsJS client is distributed as an npm package. The latest version can be found here:
+
+www.npmjs.com/package/@microsoft/teams-js
 
 ## Installing the SDK
 
@@ -34,12 +38,16 @@ You can also reference the entire library in html pages using a script tag.  The
 
 ```html
 <!-- Microsoft Teams JavaScript API (via CDN) -->
-<script src="https://statics.teams.microsoft.com/sdk/v1.5.2/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
- 
-<!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@1.5.2/dist/MicrosoftTeams.min.js"></script>
+<script
+  src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js"
+  integrity="sha384-Q2Z9S56exI6Oz/ThvYaV0SUn8j4HwS8BveGPmuwLXe4CvCUEGlL80qSzHMnvGqee"
+  crossorigin="anonymous"
+></script>
 
-<!-- Microsoft Teams JavaScript API (copied local) -->
+<!-- Microsoft Teams JavaScript API (via npm) -->
+<script src="node_modules/@microsoft/teams-js@2.0.0/dist/MicrosoftTeams.min.js"></script>
+
+<!-- Microsoft Teams JavaScript API (via local) -->
 <script src="MicrosoftTeams.min.js"></script>
 ```
 
@@ -50,8 +58,4 @@ The final option, using a local copy on your servers, eliminates that dependency
 
 ## Reference
 
-The following sections contain reference pages for all the elements of the Teams client API. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js. The source code for the SDK is located at https://github.com/OfficeDev/microsoft-teams-library-js.
-
-* [microsoft.teams-js](https://docs.microsoft.com/javascript/api/%40microsoft/teams-js/)
-
-And remember that [The Microsoft Teams developer platform](https://docs.microsoft.com/microsoftteams/platform) has full documentation on using the platform and the SDK.
+The following sections contain reference pages for all the elements of the Teams client SDK. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js. The source code is located at https://github.com/OfficeDev/microsoft-teams-library-js/tree/main/packages/teams-js.

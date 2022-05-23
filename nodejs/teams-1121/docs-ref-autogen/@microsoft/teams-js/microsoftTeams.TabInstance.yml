@@ -1,0 +1,173 @@
+### YamlMime:TSType
+name: TabInstance
+uid: '@microsoft/teams-js.microsoftTeams.TabInstance'
+package: '@microsoft/teams-js'
+summary: Represents information about a tab instance
+fullName: TabInstance
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: channelId
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.channelId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The Microsoft Teams ID for the channel with which the content is
+      associated.
+    fullName: channelId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'channelId?: string'
+      return:
+        description: ''
+        type: string
+  - name: channelIsFavorite
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.channelIsFavorite'
+    package: '@microsoft/teams-js'
+    summary: Is this tab in a favorite channel?
+    fullName: channelIsFavorite
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'channelIsFavorite?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: channelName
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.channelName'
+    package: '@microsoft/teams-js'
+    summary: The name for the channel with which the content is associated.
+    fullName: channelName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'channelName?: string'
+      return:
+        description: ''
+        type: string
+  - name: entityId
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.entityId'
+    package: '@microsoft/teams-js'
+    summary: The developer-defined unique ID for the entity this content points to.
+    fullName: entityId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'entityId?: string'
+      return:
+        description: ''
+        type: string
+  - name: groupId
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.groupId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The Office 365 group ID for the team with which the content is associated.
+
+      This field is available only when the identity permission is requested in
+      the manifest.
+    fullName: groupId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'groupId?: string'
+      return:
+        description: ''
+        type: string
+  - name: lastViewUnixEpochTime
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.lastViewUnixEpochTime'
+    package: '@microsoft/teams-js'
+    summary: Last viewed time of this tab. null means unknown
+    fullName: lastViewUnixEpochTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'lastViewUnixEpochTime?: string'
+      return:
+        description: ''
+        type: string
+  - name: tabName
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.tabName'
+    package: '@microsoft/teams-js'
+    summary: The name of the tab
+    fullName: tabName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tabName: string'
+      return:
+        description: ''
+        type: string
+  - name: teamId
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.teamId'
+    package: '@microsoft/teams-js'
+    summary: The Microsoft Teams ID for the team with which the content is associated.
+    fullName: teamId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'teamId?: string'
+      return:
+        description: ''
+        type: string
+  - name: teamIsFavorite
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.teamIsFavorite'
+    package: '@microsoft/teams-js'
+    summary: Is this tab in a favorite team?
+    fullName: teamIsFavorite
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'teamIsFavorite?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: teamName
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.teamName'
+    package: '@microsoft/teams-js'
+    summary: The name for the team with which the content is associated.
+    fullName: teamName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'teamName?: string'
+      return:
+        description: ''
+        type: string
+  - name: url
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.url'
+    package: '@microsoft/teams-js'
+    summary: Content URL of this tab
+    fullName: url
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'url?: string'
+      return:
+        description: ''
+        type: string
+  - name: websiteUrl
+    uid: '@microsoft/teams-js.microsoftTeams.TabInstance.websiteUrl'
+    package: '@microsoft/teams-js'
+    summary: Website URL of this tab
+    fullName: websiteUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'websiteUrl?: string'
+      return:
+        description: ''
+        type: string
