@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: AuthType
+uid: '@microsoft/live-share.AuthType'
+package: '@microsoft/live-share'
+summary: ''
+fullName: AuthType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Unauthenticated
+    uid: '@microsoft/live-share.AuthType.Unauthenticated'
+    package: '@microsoft/live-share'
+    summary: ''
+    numericValue: 0
+  - name: SkypeToken
+    uid: '@microsoft/live-share.AuthType.SkypeToken'
+    package: '@microsoft/live-share'
+    summary: ''
+    numericValue: 1
+  - name: CoWatchToken
+    uid: '@microsoft/live-share.AuthType.CoWatchToken'
+    package: '@microsoft/live-share'
+    summary: ''
+    numericValue: 2

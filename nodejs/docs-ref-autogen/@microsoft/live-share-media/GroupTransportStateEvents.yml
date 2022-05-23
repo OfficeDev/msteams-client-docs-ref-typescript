@@ -1,0 +1,14 @@
+### YamlMime:TSEnum
+name: GroupTransportStateEvents
+uid: '@microsoft/live-share-media.GroupTransportStateEvents'
+package: '@microsoft/live-share-media'
+summary: ''
+fullName: GroupTransportStateEvents
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: transportStateChange
+    uid: '@microsoft/live-share-media.GroupTransportStateEvents.transportStateChange'
+    package: '@microsoft/live-share-media'
+    summary: ''

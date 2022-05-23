@@ -1,0 +1,12 @@
+### YamlMime:TSPackage
+uid: '@microsoft/live-share.Requests'
+name: Requests
+summary: ''
+type: module
+typeAliases:
+  - '@microsoft/live-share.Requests.ICollabSpaceInfoUpdate'
+  - '@microsoft/live-share.Requests.IUserStateUpdate'
+interfaces:
+  - '@microsoft/live-share.Requests.IFluidStateRequest'
+  - '@microsoft/live-share.Requests.ITokenRequest'
+package: '@microsoft/live-share'

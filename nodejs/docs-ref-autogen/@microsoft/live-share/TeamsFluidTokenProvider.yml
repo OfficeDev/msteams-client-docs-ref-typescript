@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: TeamsFluidTokenProvider
+uid: '@microsoft/live-share.TeamsFluidTokenProvider'
+package: '@microsoft/live-share'
+summary: Token Provider implementation for connecting to Cowatch Cloud endpoint
+fullName: TeamsFluidTokenProvider
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: 'fetchOrdererToken(string, undefined | string, undefined | false | true)'
+    uid: '@microsoft/live-share.TeamsFluidTokenProvider.fetchOrdererToken'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function fetchOrdererToken(tenantId: string, documentId?: undefined |
+        string, refresh?: undefined | false | true): Promise<ITokenResponse>
+      parameters:
+        - id: tenantId
+          type: string
+          description: ''
+        - id: documentId
+          type: undefined | string
+          description: ''
+        - id: refresh
+          type: undefined | false | true
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;ITokenResponse&gt;
+  - name: 'fetchStorageToken(string, undefined | string, undefined | false | true)'
+    uid: '@microsoft/live-share.TeamsFluidTokenProvider.fetchStorageToken'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function fetchStorageToken(tenantId: string, documentId?: undefined |
+        string, refresh?: undefined | false | true): Promise<ITokenResponse>
+      parameters:
+        - id: tenantId
+          type: string
+          description: ''
+        - id: documentId
+          type: undefined | string
+          description: ''
+        - id: refresh
+          type: undefined | false | true
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;ITokenResponse&gt;

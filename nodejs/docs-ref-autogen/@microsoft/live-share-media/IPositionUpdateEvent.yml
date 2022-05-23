@@ -1,0 +1,133 @@
+### YamlMime:TSType
+name: IPositionUpdateEvent
+uid: '@microsoft/live-share-media.IPositionUpdateEvent'
+package: '@microsoft/live-share-media'
+summary: ''
+fullName: IPositionUpdateEvent
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientId
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.clientId'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Current client ID, if known. The client ID will be `undefined` if the
+      client is currently disconnected.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.name'
+    package: '@microsoft/live-share-media'
+    summary: Name of the event.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: playbackState
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.playbackState'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: playbackState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'playbackState: ExtendedMediaSessionPlaybackState'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@microsoft/live-share-media.ExtendedMediaSessionPlaybackState" />
+  - name: position
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.position'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: position
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position: number'
+      return:
+        description: ''
+        type: number
+  - name: timestamp
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.timestamp'
+    package: '@microsoft/live-share-media'
+    summary: Global timestamp of when the event was sent.
+    fullName: timestamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timestamp: number'
+      return:
+        description: ''
+        type: number
+  - name: track
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.track'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: track
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track: IPlaybackTrack'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-media.IPlaybackTrack" />
+  - name: trackData
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.trackData'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: trackData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'trackData: IPlaybackTrackData'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-media.IPlaybackTrackData" />
+  - name: transport
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.transport'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: transport
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'transport: ITransportState'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-media.ITransportState" />
+  - name: waitPoint
+    uid: '@microsoft/live-share-media.IPositionUpdateEvent.waitPoint'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: waitPoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'waitPoint?: CoordinationWaitPoint'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-media.CoordinationWaitPoint" />
+extends: IEphemeralEvent

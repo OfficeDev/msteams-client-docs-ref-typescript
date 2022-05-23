@@ -1,0 +1,799 @@
+### YamlMime:TSType
+name: EphemeralEvent
+uid: '@microsoft/live-share.EphemeralEvent'
+package: '@microsoft/live-share'
+summary: >-
+  Ephemeral fluid object that broadcasts an event to other clients and a set of
+  static event
+
+  related helpers.
+
+  #### remarks
+
+  Applications should call `on('received', (evt, local) => {})` to listen for
+  local events sent
+
+  and remote events received. Events aren't guaranteed to be delivered so you
+  should limit their
+
+  use to sending events you're ok with potentially being missed. Reactions are a
+  good use case for
+
+  `EphemeralEvents`. Use something like the [[EphemeralState]] class when
+  syncing state.
+fullName: EphemeralEvent<TEvent>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      EphemeralEvent(IDataObjectProps<{ Events: IEphemeralEventEvents<TEvent>
+      }>)
+    uid: '@microsoft/live-share.EphemeralEvent.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new EphemeralEvent(props: IDataObjectProps<{ Events:
+        IEphemeralEventEvents<TEvent> }>)
+      parameters:
+        - id: props
+          type: >-
+            IDataObjectProps&lt;{ Events: IEphemeralEventEvents&lt;TEvent&gt;
+            }&gt;
+          description: ''
+properties:
+  - name: addListener
+    uid: '@microsoft/live-share.EphemeralEvent.addListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: disposed
+    uid: '@microsoft/live-share.EphemeralEvent.disposed'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: disposed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean disposed
+      return:
+        description: ''
+        type: boolean
+  - name: factory
+    uid: '@microsoft/live-share.EphemeralEvent.factory'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type factory.
+    fullName: factory
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static factory: DataObjectFactory<EphemeralEvent<IEphemeralEvent>,
+        DataObjectTypes>
+      return:
+        description: ''
+        type: >-
+          DataObjectFactory&lt;<xref uid="@microsoft/live-share.EphemeralEvent"
+          />&lt;<xref uid="@microsoft/live-share.IEphemeralEvent" />&gt;,
+          DataObjectTypes&gt;
+  - name: handle
+    uid: '@microsoft/live-share.EphemeralEvent.handle'
+    package: '@microsoft/live-share'
+    summary: Handle to a data store
+    fullName: handle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> handle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: id
+    uid: '@microsoft/live-share.EphemeralEvent.id'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string id
+      return:
+        description: ''
+        type: string
+  - name: IFluidHandle
+    uid: '@microsoft/live-share.EphemeralEvent.IFluidHandle'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidHandle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> IFluidHandle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: IFluidLoadable
+    uid: '@microsoft/live-share.EphemeralEvent.IFluidLoadable'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidLoadable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: this IFluidLoadable
+      return:
+        description: ''
+        type: this
+  - name: IFluidRouter
+    uid: '@microsoft/live-share.EphemeralEvent.IFluidRouter'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidRouter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: this IFluidRouter
+      return:
+        description: ''
+        type: this
+  - name: isStarted
+    uid: '@microsoft/live-share.EphemeralEvent.isStarted'
+    package: '@microsoft/live-share'
+    summary: Returns true if the object has been started.
+    fullName: isStarted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean isStarted
+      return:
+        description: ''
+        type: boolean
+  - name: 'off'
+    uid: '@microsoft/live-share.EphemeralEvent.off'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'off'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'off: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: 'on'
+    uid: '@microsoft/live-share.EphemeralEvent.on'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'on'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'on: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: once
+    uid: '@microsoft/live-share.EphemeralEvent.once'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: once
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'once: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: prependListener
+    uid: '@microsoft/live-share.EphemeralEvent.prependListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: prependOnceListener
+    uid: '@microsoft/live-share.EphemeralEvent.prependOnceListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependOnceListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependOnceListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: removeListener
+    uid: '@microsoft/live-share.EphemeralEvent.removeListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: removeListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: TypeName
+    uid: '@microsoft/live-share.EphemeralEvent.TypeName'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type/name.
+    fullName: TypeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TypeName: "@microsoft/live-share:EphemeralEvent" =
+        "@microsoft/live-share:EphemeralEvent"
+      return:
+        description: ''
+        type: '"@microsoft/live-share:EphemeralEvent"'
+inheritedMethods:
+  - name: dispose()
+    uid: '@microsoft/live-share.EphemeralEvent.dispose'
+    package: '@microsoft/live-share'
+    summary: Called when the host container closes and disposes itself
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function dispose()
+  - name: 'emit(string | symbol, any[])'
+    uid: '@microsoft/live-share.EphemeralEvent.emit'
+    package: '@microsoft/live-share'
+    summary: >-
+      Synchronously calls each of the listeners registered for the event
+      named`eventName`, in the order they were registered, passing the supplied
+      arguments
+
+      to each.
+
+      Returns `true` if the event had listeners, `false` otherwise.
+
+
+      ```js
+
+      const EventEmitter = require('events');
+
+      const myEmitter = new EventEmitter();
+
+
+      // First listener
+
+      myEmitter.on('event', function firstListener() {
+        console.log('Helloooo! first listener');
+      });
+
+      // Second listener
+
+      myEmitter.on('event', function secondListener(arg1, arg2) {
+        console.log(`event with parameters ${arg1}, ${arg2} in second listener`);
+      });
+
+      // Third listener
+
+      myEmitter.on('event', function thirdListener(...args) {
+        const parameters = args.join(', ');
+        console.log(`event with parameters ${parameters} in third listener`);
+      });
+
+
+      console.log(myEmitter.listeners('event'));
+
+
+      myEmitter.emit('event', 1, 2, 3, 4, 5);
+
+
+      // Prints:
+
+      // [
+
+      //   [Function: firstListener],
+
+      //   [Function: secondListener],
+
+      //   [Function: thirdListener]
+
+      // ]
+
+      // Helloooo! first listener
+
+      // event with parameters 1, 2 in second listener
+
+      // event with parameters 1, 2, 3, 4, 5 in third listener
+
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function emit(eventName: string | symbol, args: any[]): boolean'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: ''
+        - id: args
+          type: 'any[]'
+          description: ''
+      return:
+        description: ''
+        type: boolean
+  - name: eventNames()
+    uid: '@microsoft/live-share.EphemeralEvent.eventNames'
+    package: '@microsoft/live-share'
+    summary: |-
+      Returns an array listing the events for which the emitter has registered
+      listeners. The values in the array are strings or `Symbol`s.
+      ```js
+      const EventEmitter = require('events');
+      const myEE = new EventEmitter();
+      myEE.on('foo', () => {});
+      myEE.on('bar', () => {});
+
+      const sym = Symbol('symbol');
+      myEE.on(sym, () => {});
+
+      console.log(myEE.eventNames());
+      // Prints: [ 'foo', 'bar', Symbol(symbol) ]
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function eventNames(): Array<string | symbol>'
+      return:
+        description: ''
+        type: Array&lt;string | symbol&gt;
+  - name: finishInitialization(boolean)
+    uid: '@microsoft/live-share.EphemeralEvent.finishInitialization'
+    package: '@microsoft/live-share'
+    summary: >-
+      Call this API to ensure PureDataObject is fully initialized
+
+      initialization happens on demand, only on as-needed bases.
+
+      In most cases you should allow factory/object to decide when to finish
+      initialization.
+
+      But if you are supplying your own implementation of DataStoreRuntime
+      factory and overriding some methods
+
+      and need fully initialized object, then you can call this API to ensure
+      object is fully initialized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function finishInitialization(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: getDataObject(IFluidDataStoreRuntime)
+    uid: '@microsoft/live-share.EphemeralEvent.getDataObject'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getDataObject(runtime: IFluidDataStoreRuntime):
+        Promise<PureDataObject<DataObjectTypes>>
+      parameters:
+        - id: runtime
+          type: IFluidDataStoreRuntime
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
+  - name: >-
+      getFluidObjectFromDirectory<T>(string, IDirectory, undefined | (id:
+      string, directory: IDirectory) => IFluidHandle | undefined)
+    uid: '@microsoft/live-share.EphemeralEvent.getFluidObjectFromDirectory'
+    package: '@microsoft/live-share'
+    summary: Retrieve Fluid object using the handle get
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getFluidObjectFromDirectory<T>(key: string, directory:
+        IDirectory, getObjectFromDirectory?: undefined | (id: string, directory:
+        IDirectory) => IFluidHandle | undefined): Promise<T | undefined>
+      parameters:
+        - id: key
+          type: string
+          description: key that object (handle/id) is stored with in the directory
+        - id: directory
+          type: IDirectory
+          description: directory containing the object
+        - id: getObjectFromDirectory
+          type: >-
+            undefined | (id: string, directory: IDirectory) =&gt; IFluidHandle |
+            undefined
+          description: >
+            optional callback for fetching object from the directory, allows
+            users to
+
+            define custom types/getters for object retrieval
+      return:
+        description: ''
+        type: Promise&lt;T | undefined&gt;
+  - name: getMaxListeners()
+    uid: '@microsoft/live-share.EphemeralEvent.getMaxListeners'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns the current max listener value for the `EventEmitter` which is
+      either
+
+      set by `emitter.setMaxListeners(n)` or defaults to
+      <xref:defaultMaxListeners>.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxListeners(): number'
+      return:
+        description: ''
+        type: number
+  - name: initializeInternal(boolean)
+    uid: '@microsoft/live-share.EphemeralEvent.initializeInternal'
+    package: '@microsoft/live-share'
+    summary: |-
+      Initializes internal objects and calls initialization overrides.
+      Caller is responsible for ensuring this is only invoked once.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function initializeInternal(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: listenerCount(string | symbol)
+    uid: '@microsoft/live-share.EphemeralEvent.listenerCount'
+    package: '@microsoft/live-share'
+    summary: Returns the number of listeners listening to the event named `eventName`.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(eventName: string | symbol): number'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: |
+            The name of the event being listened for
+      return:
+        description: ''
+        type: number
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralEvent.listeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      Returns a copy of the array of listeners for the event named `eventName`.
+      ```js
+      server.on('connection', (stream) => {
+        console.log('someone connected!');
+      });
+      console.log(util.inspect(server.listeners('connection')));
+      // Prints: [ [Function] ]
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(eventName: string | symbol): Function[]'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+  - name: rawListeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralEvent.rawListeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      Returns a copy of the array of listeners for the event named `eventName`,
+      including any wrappers (such as those created by `.once()`).
+      ```js
+      const emitter = new EventEmitter();
+      emitter.once('log', () => console.log('log once'));
+
+      // Returns a new Array with a function `onceWrapper` which has a property
+      // `listener` which contains the original listener bound above
+      const listeners = emitter.rawListeners('log');
+      const logFnWrapper = listeners[0];
+
+      // Logs "log once" to the console and does not unbind the `once` event
+      logFnWrapper.listener();
+
+      // Logs "log once" to the console and removes the listener
+      logFnWrapper();
+
+      emitter.on('log', () => console.log('log persistently'));
+      // Will return a new Array with a single function bound by `.on()` above
+      const newListeners = emitter.rawListeners('log');
+
+      // Logs "log persistently" twice
+      newListeners[0]();
+      emitter.emit('log');
+      ```
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function rawListeners(eventName: string | symbol): Function[]'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+  - name: removeAllListeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralEvent.removeAllListeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      Removes all listeners, or those of the specified `eventName`.
+      It is bad practice to remove listeners added elsewhere in the code,
+      particularly when the `EventEmitter` instance was created by some other
+      component or module (e.g. sockets or file streams).
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function removeAllListeners(event?: string | symbol): this'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: request(IRequest)
+    uid: '@microsoft/live-share.EphemeralEvent.request'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function request(request: IRequest): Promise<IResponse>'
+      parameters:
+        - id: request
+          type: IRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;IResponse&gt;
+  - name: setMaxListeners(number)
+    uid: '@microsoft/live-share.EphemeralEvent.setMaxListeners'
+    package: '@microsoft/live-share'
+    summary: >-
+      By default `EventEmitter`s will print a warning if more than `10`
+      listeners are
+
+      added for a particular event. This is a useful default that helps finding
+
+      memory leaks. The `emitter.setMaxListeners()` method allows the limit to
+      be
+
+      modified for this specific `EventEmitter` instance. The value can be set
+      to`Infinity` (or `0`) to indicate an unlimited number of listeners.
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setMaxListeners(n: number): this'
+      parameters:
+        - id: 'n'
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: this
+methods:
+  - name: getClientRoles(string)
+    uid: '@microsoft/live-share.EphemeralEvent.getClientRoles'
+    package: '@microsoft/live-share'
+    summary: Returns the list of roles supported for a client.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getClientRoles(clientId: string):
+        Promise<UserMeetingRole[]>
+      parameters:
+        - id: clientId
+          type: string
+          description: Client ID to lookup.
+      return:
+        description: The list of roles for the client.
+        type: 'Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;'
+  - name: getTimestamp()
+    uid: '@microsoft/live-share.EphemeralEvent.getTimestamp'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns the current timestamp as the number of milliseconds sine the Unix
+      Epoch.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function getTimestamp(): number'
+      return:
+        description: ''
+        type: number
+  - name: 'isNewer(IEphemeralEvent | undefined, IEphemeralEvent, undefined | number)'
+    uid: '@microsoft/live-share.EphemeralEvent.isNewer'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns true if a received event is newer then the current event.
+
+      #### remarks
+
+      Used when building new Ephemeral objects to process state change events.
+      The `isNewer()`
+
+      method implements an algorithm that deals with conflicting events that
+      have the same timestamp
+
+      and older events that should have debounced the current event.
+
+
+      - When the received event has the same timestamp as the current event,
+      each events clientId
+        will be used as a tie breaker. The clientId containing the lower sort order wins any ties.
+      - Older events are generally ignored unless a debounce period is
+      specified. An older event
+        that should have debounced the current event will be considered newer.
+
+      The algorithm employed by isNewer() helps ensure that all clients will
+      eventually reach a
+
+      consistent state with one other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function isNewer(current: IEphemeralEvent | undefined, received:
+        IEphemeralEvent, debouncePeriod?: undefined | number): boolean
+      parameters:
+        - id: current
+          type: <xref uid="@microsoft/live-share.IEphemeralEvent" /> | undefined
+          description: Current event to compare received event against.
+        - id: received
+          type: <xref uid="@microsoft/live-share.IEphemeralEvent" />
+          description: Received event.
+        - id: debouncePeriod
+          type: undefined | number
+          description: >-
+            Optional. Time in milliseconds to ignore any new events for.
+            Defaults to 0 ms.
+      return:
+        description: >-
+          True if the received event is newer then the current event and should
+          replace the current one.
+        type: boolean
+  - name: sendEvent(Partial<TEvent>)
+    uid: '@microsoft/live-share.EphemeralEvent.sendEvent'
+    package: '@microsoft/live-share'
+    summary: >-
+      Broadcasts an event to all other clients.
+
+      #### remarks
+
+      The event will be queued for delivery if the client isn't currently
+      connected.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
+      parameters:
+        - id: evt
+          type: Partial&lt;TEvent&gt;
+          description: >-
+            Optional. Event to send. If omitted, an event will still be sent but
+            it won't
+
+            include any custom event data.
+      return:
+        description: >-
+          The full event object that was sent, including the timestamp of when
+          the event
+
+          was sent and the clientId if known. The clientId will be `undefined`
+          if the client is
+
+          disconnected at time of delivery.
+        type: TEvent
+  - name: 'start(UserMeetingRole[])'
+    uid: '@microsoft/live-share.EphemeralEvent.start'
+    package: '@microsoft/live-share'
+    summary: Starts the object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function start(allowedRoles?: UserMeetingRole[]): Promise<void>'
+      parameters:
+        - id: allowedRoles
+          type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
+          description: |
+            Optional. List of roles allowed to send events.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: 'verifyRolesAllowed(string, UserMeetingRole[])'
+    uid: '@microsoft/live-share.EphemeralEvent.verifyRolesAllowed'
+    package: '@microsoft/live-share'
+    summary: Verifies that a client has one of the specified roles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function verifyRolesAllowed(clientId: string, allowedRoles:
+        UserMeetingRole[]): Promise<boolean>
+      parameters:
+        - id: clientId
+          type: string
+          description: Client ID to inspect.
+        - id: allowedRoles
+          type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
+          description: User roles that are allowed.
+      return:
+        description: True if the client has one of the specified roles.
+        type: Promise&lt;boolean&gt;
+extends: 'DataObject&lt;{ Events: IEphemeralEventEvents&lt;TEvent&gt; }&gt;'

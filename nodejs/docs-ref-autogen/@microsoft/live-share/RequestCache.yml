@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: RequestCache
+uid: '@microsoft/live-share.RequestCache'
+package: '@microsoft/live-share'
+summary: ''
+fullName: RequestCache<TResult>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: RequestCache(number)
+    uid: '@microsoft/live-share.RequestCache.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new RequestCache(cacheLifetime: number)'
+      parameters:
+        - id: cacheLifetime
+          type: number
+          description: ''
+methods:
+  - name: 'cacheRequest(string, () => Promise<TResult>)'
+    uid: '@microsoft/live-share.RequestCache.cacheRequest'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function cacheRequest(key: string, fnRequest: () => Promise<TResult>):
+        Promise<TResult>
+      parameters:
+        - id: key
+          type: string
+          description: ''
+        - id: fnRequest
+          type: () =&gt; Promise&lt;TResult&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;TResult&gt;

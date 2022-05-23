@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: IUserState
+uid: '@microsoft/live-share.IUserState'
+package: '@microsoft/live-share'
+summary: ''
+fullName: IUserState
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: appId
+    uid: '@microsoft/live-share.IUserState.appId'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: appId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appId: string'
+      return:
+        description: ''
+        type: string
+  - name: collabSpaceId
+    uid: '@microsoft/live-share.IUserState.collabSpaceId'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: collabSpaceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'collabSpaceId: string'
+      return:
+        description: ''
+        type: string
+  - name: currentContext
+    uid: '@microsoft/live-share.IUserState.currentContext'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: currentContext
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'currentContext: UserState'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.UserState" />
+  - name: expiresAt
+    uid: '@microsoft/live-share.IUserState.expiresAt'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: expiresAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiresAt: number'
+      return:
+        description: ''
+        type: number
+  - name: participantType
+    uid: '@microsoft/live-share.IUserState.participantType'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: participantType
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'participantType: ParticipantType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.ParticipantType" />
+  - name: userId
+    uid: '@microsoft/live-share.IUserState.userId'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: userId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string

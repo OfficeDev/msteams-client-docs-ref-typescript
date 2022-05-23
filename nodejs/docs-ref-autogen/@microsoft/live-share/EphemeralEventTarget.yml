@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: EphemeralEventTarget
+uid: '@microsoft/live-share.EphemeralEventTarget'
+package: '@microsoft/live-share'
+summary: >-
+  Receives events broadcast by an [[EphemeralEventSource]].
+
+  #### remarks
+
+  All ephemeral event targets are also sources. This simplifies the programming
+  model for
+
+  ephemeral event object by letting them create a single object thats capable of
+  broadcasting
+
+  events to other instances of itself.
+fullName: EphemeralEventTarget<TEvent>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      EphemeralEventTarget(EphemeralEventScope, string,
+      EphemeralEventListener<TEvent>)
+    uid: '@microsoft/live-share.EphemeralEventTarget.constructor'
+    package: '@microsoft/live-share'
+    summary: Creates a new `EphemeralEventTarget` instance.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new EphemeralEventTarget(scope: EphemeralEventScope, eventName: string,
+        listener: EphemeralEventListener<TEvent>)
+      parameters:
+        - id: scope
+          type: <xref uid="@microsoft/live-share.EphemeralEventScope" />
+          description: Scope to use for sending events.
+        - id: eventName
+          type: string
+          description: Name of the event to broadcast.
+        - id: listener
+          type: >-
+            <xref uid="@microsoft/live-share.EphemeralEventListener"
+            />&lt;TEvent&gt;
+          description: |
+            Function to call when an event is sent or received.
+inheritedMethods:
+  - name: sendEvent(Partial<TEvent>)
+    uid: '@microsoft/live-share.EphemeralEventTarget.sendEvent'
+    package: '@microsoft/live-share'
+    summary: 'Broadcasts an event to any listening [[EphemeralEventTarget]] instances.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
+      parameters:
+        - id: evt
+          type: Partial&lt;TEvent&gt;
+          description: >-
+            Optional. Partial event object to send. The
+            [[IEphemeralEvent.name]],
+
+            [[IEphemeralEvent.timestamp]], and [[IEphemeralEvent.clientId]]
+
+            fields will be automatically populated prior to sending.
+      return:
+        description: >-
+          The full event, including [[IEphemeralEvent.name]],
+
+          [[IEphemeralEvent.timestamp]], and [[IEphemeralEvent.clientId]] fields
+          if known.
+        type: TEvent
+extends: <xref uid="@microsoft/live-share.EphemeralEventSource" />&lt;TEvent&gt;

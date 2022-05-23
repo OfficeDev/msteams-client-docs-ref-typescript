@@ -1,0 +1,18 @@
+### YamlMime:TSEnum
+name: ParticipantRole
+uid: '@microsoft/live-share.ParticipantRole'
+package: '@microsoft/live-share'
+summary: ''
+fullName: ParticipantRole
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: organizer
+    uid: '@microsoft/live-share.ParticipantRole.organizer'
+    package: '@microsoft/live-share'
+    summary: ''
+  - name: participant
+    uid: '@microsoft/live-share.ParticipantRole.participant'
+    package: '@microsoft/live-share'
+    summary: ''

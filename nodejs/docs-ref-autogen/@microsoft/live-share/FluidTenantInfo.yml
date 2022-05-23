@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: FluidTenantInfo
+uid: '@microsoft/live-share.FluidTenantInfo'
+package: '@microsoft/live-share'
+summary: ''
+fullName: FluidTenantInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: ordererEndpoint
+    uid: '@microsoft/live-share.FluidTenantInfo.ordererEndpoint'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: ordererEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ordererEndpoint: string'
+      return:
+        description: ''
+        type: string
+  - name: storageEndpoint
+    uid: '@microsoft/live-share.FluidTenantInfo.storageEndpoint'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: storageEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'storageEndpoint: string'
+      return:
+        description: ''
+        type: string
+  - name: tenantId
+    uid: '@microsoft/live-share.FluidTenantInfo.tenantId'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: tenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId: string'
+      return:
+        description: ''
+        type: string
