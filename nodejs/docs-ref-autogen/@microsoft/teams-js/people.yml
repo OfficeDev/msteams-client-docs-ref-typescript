@@ -1,0 +1,83 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.people'
+name: people
+summary: ''
+type: module
+interfaces:
+  - '@microsoft/teams-js.people.PeoplePickerInputs'
+  - '@microsoft/teams-js.people.PeoplePickerResult'
+package: '@microsoft/teams-js'
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.people.isSupported'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: >-
+      selectPeople((error: SdkError, people: PeoplePickerResult[]) => void,
+      PeoplePickerInputs)
+    uid: '@microsoft/teams-js.people.selectPeople_1'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [people.selectPeople(peoplePickerInputs?:
+      PeoplePickerInputs):
+      Promise\<PeoplePickerResult[]\>](xref:people.selectPeople) instead.
+
+
+      Launches a people picker and allows the user to select one or more people
+      from the list
+
+      If the app is added to personal app scope the people picker launched is
+      org wide and if the app is added to a chat/channel, people picker launched
+      is also limited to the members of chat/channel
+    syntax:
+      content: >-
+        function selectPeople(callback: (error: SdkError, people:
+        PeoplePickerResult[]) => void, peoplePickerInputs?: PeoplePickerInputs)
+      parameters:
+        - id: callback
+          type: '(error: SdkError, people: PeoplePickerResult[]) =&gt; void'
+          description: >-
+            Returns list of JSON object of type PeoplePickerResult which
+            consists of AAD IDs, display names and emails of the selected users
+        - id: peoplePickerInputs
+          type: <xref uid="@microsoft/teams-js.people.PeoplePickerInputs" />
+          description: |
+            Input parameters to launch customized people picker
+  - name: selectPeople(PeoplePickerInputs)
+    uid: '@microsoft/teams-js.people.selectPeople'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Launches a people picker and allows the user to select one or more people
+      from the list
+
+      If the app is added to personal app scope the people picker launched is
+      org wide and if the app is added to a chat/channel, people picker launched
+      is also limited to the members of chat/channel
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function selectPeople(peoplePickerInputs?: PeoplePickerInputs):
+        Promise<PeoplePickerResult[]>
+      parameters:
+        - id: peoplePickerInputs
+          type: <xref uid="@microsoft/teams-js.people.PeoplePickerInputs" />
+          description: Input parameters to launch customized people picker
+      return:
+        description: Promise that will be fulfilled when the operation has completed
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-js.people.PeoplePickerResult"
+          />[]&gt;

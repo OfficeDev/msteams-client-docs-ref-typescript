@@ -1,0 +1,36 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.menus'
+name: menus
+summary: >-
+  Namespace to interact with the menu-specific part of the SDK.
+
+  This object is used to show View Configuration, Action Menu and Navigation Bar
+  Menu.
+type: module
+interfaces:
+  - '@microsoft/teams-js.menus.ActionMenuParameters'
+enums:
+  - '@microsoft/teams-js.menus.DisplayMode'
+package: '@microsoft/teams-js'
+functions:
+  - name: initialize()
+    uid: '@microsoft/teams-js.menus.initialize'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function initialize()
+  - name: isSupported()
+    uid: '@microsoft/teams-js.menus.isSupported'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: ''
+        type: boolean

@@ -1,0 +1,54 @@
+### YamlMime:TSEnum
+name: HostClientType
+uid: '@microsoft/teams-js.HostClientType'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: HostClientType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: android
+    uid: '@microsoft/teams-js.HostClientType.android'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: desktop
+    uid: '@microsoft/teams-js.HostClientType.desktop'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: ios
+    uid: '@microsoft/teams-js.HostClientType.ios'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: ipados
+    uid: '@microsoft/teams-js.HostClientType.ipados'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: rigel
+    uid: '@microsoft/teams-js.HostClientType.rigel'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: surfaceHub
+    uid: '@microsoft/teams-js.HostClientType.surfaceHub'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teamsDisplays
+    uid: '@microsoft/teams-js.HostClientType.teamsDisplays'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teamsPhones
+    uid: '@microsoft/teams-js.HostClientType.teamsPhones'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teamsRoomsAndroid
+    uid: '@microsoft/teams-js.HostClientType.teamsRoomsAndroid'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teamsRoomsWindows
+    uid: '@microsoft/teams-js.HostClientType.teamsRoomsWindows'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: web
+    uid: '@microsoft/teams-js.HostClientType.web'
+    package: '@microsoft/teams-js'
+    summary: ''

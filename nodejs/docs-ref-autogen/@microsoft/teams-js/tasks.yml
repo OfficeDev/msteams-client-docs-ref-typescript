@@ -1,0 +1,140 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.tasks'
+name: tasks
+type: module
+package: '@microsoft/teams-js'
+summary: ''
+functions:
+  - name: getBotUrlDialogInfoFromTaskInfo(TaskInfo)
+    uid: '@microsoft/teams-js.tasks.getBotUrlDialogInfoFromTaskInfo'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getBotUrlDialogInfoFromTaskInfo(taskInfo: TaskInfo):
+        BotUrlDialogInfo
+      parameters:
+        - id: taskInfo
+          type: <xref uid="@microsoft/teams-js.TaskInfo" />
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.BotUrlDialogInfo" />
+  - name: getDefaultSizeIfNotProvided(TaskInfo)
+    uid: '@microsoft/teams-js.tasks.getDefaultSizeIfNotProvided'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getDefaultSizeIfNotProvided(taskInfo: TaskInfo): TaskInfo'
+      parameters:
+        - id: taskInfo
+          type: <xref uid="@microsoft/teams-js.TaskInfo" />
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.TaskInfo" />
+  - name: getUrlDialogInfoFromTaskInfo(TaskInfo)
+    uid: '@microsoft/teams-js.tasks.getUrlDialogInfoFromTaskInfo'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getUrlDialogInfoFromTaskInfo(taskInfo: TaskInfo): UrlDialogInfo'
+      parameters:
+        - id: taskInfo
+          type: <xref uid="@microsoft/teams-js.TaskInfo" />
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.UrlDialogInfo" />
+  - name: 'startTask(TaskInfo, (err: string, result: string | object) => void)'
+    uid: '@microsoft/teams-js.tasks.startTask'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [UrlDialogInfo, submitHandler?:
+      DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel):
+      PostMessageChannel](xref:dialog.open(urlDialogInfo%3A) for url based
+      dialogs
+
+      and [BotUrlDialogInfo, submitHandler?: DialogSubmitHandler,
+      messageFromChildHandler?: PostMessageChannel):
+      PostMessageChannel](xref:dialog.bot.open(botUrlDialogInfo%3A) for bot
+      based dialogs.
+
+
+      Allows an app to open the task module.
+    syntax:
+      content: >-
+        function startTask(taskInfo: TaskInfo, submitHandler?: (err: string,
+        result: string | object) => void): IAppWindow
+      parameters:
+        - id: taskInfo
+          type: <xref uid="@microsoft/teams-js.TaskInfo" />
+          description: An object containing the parameters of the task module
+        - id: submitHandler
+          type: '(err: string, result: string | object) =&gt; void'
+          description: |
+            Handler to call when the task module is completed
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.IAppWindow" />
+  - name: 'submitTask(string | object, string | string[])'
+    uid: '@microsoft/teams-js.tasks.submitTask'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [dialog.submit(result?: string | object, appIds?:
+      string | string[]): void](xref:dialog.submit) instead.
+
+
+      Submit the task module.
+    syntax:
+      content: >-
+        function submitTask(result?: string | object, appIds?: string |
+        string[])
+      parameters:
+        - id: result
+          type: string | object
+          description: >-
+            Contains the result to be sent to the bot or the app. Typically a
+            JSON object or a serialized version of it
+        - id: appIds
+          type: 'string | string[]'
+          description: >
+            Helps to validate that the call originates from the same appId as
+            the one that invoked the task module
+  - name: updateTask(TaskInfo)
+    uid: '@microsoft/teams-js.tasks.updateTask'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [dialog.update.resize(dimensions: DialogSize):
+      void](xref:dialog.update.resize) instead.
+
+
+      Update height/width task info properties.
+    syntax:
+      content: 'function updateTask(taskInfo: TaskInfo)'
+      parameters:
+        - id: taskInfo
+          type: <xref uid="@microsoft/teams-js.TaskInfo" />
+          description: |
+            An object containing width and height properties

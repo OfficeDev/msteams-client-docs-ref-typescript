@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: SdkError
+uid: '@microsoft/teams-js.microsoftTeams.SdkError'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: SdkError
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: errorCode
+    uid: '@microsoft/teams-js.microsoftTeams.SdkError.errorCode'
+    package: '@microsoft/teams-js'
+    summary: error code
+    fullName: errorCode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'errorCode: ErrorCode'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.microsoftTeams.ErrorCode" />
+  - name: message
+    uid: '@microsoft/teams-js.microsoftTeams.SdkError.message'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Optional description for the error. This may contain useful information
+      for web-app developers.
+
+      This string will not be localized and is not for end-user consumption.
+
+      App should not depend on the string content. The exact value may change.
+      This is only for debugging purposes.
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: string'
+      return:
+        description: ''
+        type: string

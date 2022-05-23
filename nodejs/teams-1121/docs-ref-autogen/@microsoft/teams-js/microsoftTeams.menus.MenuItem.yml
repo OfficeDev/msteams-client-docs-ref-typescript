@@ -1,0 +1,137 @@
+### YamlMime:TSType
+name: MenuItem
+uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem'
+package: '@microsoft/teams-js'
+summary: >-
+  Represents information about menu item for Action Menu and Navigation Bar
+  Menu.
+fullName: MenuItem
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: contentDescription
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.contentDescription'
+    package: '@microsoft/teams-js'
+    summary: Additional information for accessibility.
+    fullName: contentDescription
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'contentDescription?: string'
+      return:
+        description: ''
+        type: string
+  - name: displayMode
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.displayMode'
+    package: '@microsoft/teams-js'
+    summary: |-
+      The Display Mode of the menu item.
+      Default Behaviour would be DisplayMode.ifRoom if null.
+      Refer <xref:DisplayMode>
+    fullName: displayMode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayMode?: DisplayMode'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.microsoftTeams.menus.DisplayMode" />
+  - name: enabled
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.enabled'
+    package: '@microsoft/teams-js'
+    summary: State of the menu item
+    fullName: enabled
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'enabled: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: icon
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.icon'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Display icon of the menu item. The icon value must be a string having SVG
+      icon content.
+    fullName: icon
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'icon: string'
+      return:
+        description: ''
+        type: string
+  - name: iconSelected
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.iconSelected'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Selected state display icon of the menu item. The icon value must be a
+      string having SVG icon content.
+    fullName: iconSelected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'iconSelected?: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.id'
+    package: '@microsoft/teams-js'
+    summary: Unique identifier for the menu item.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: selected
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.selected'
+    package: '@microsoft/teams-js'
+    summary: Whether the menu item is selected or not
+    fullName: selected
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'selected: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: title
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.title'
+    package: '@microsoft/teams-js'
+    summary: Display title of the menu item.
+    fullName: title
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'title: string'
+      return:
+        description: ''
+        type: string
+  - name: viewData
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuItem.viewData'
+    package: '@microsoft/teams-js'
+    summary: Interface to show list of items on selection of menu item.
+    fullName: viewData
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'viewData: ViewData'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.microsoftTeams.menus.ViewData" />
