@@ -156,8 +156,6 @@
     - uid: '@microsoft/live-share-media.VolumeLimiter'
       name: VolumeLimiter
       items: []
-<<<<<<< HEAD
-=======
 - name: '@microsoft/teams-js'
   items:
     - name: Overview
@@ -741,4 +739,3 @@
     - uid: '@microsoft/teamsfx.UserInfo'
       name: UserInfo
       items: []
->>>>>>> 9530f027ca373d8d537b8e9c76fadcf056d7b265
