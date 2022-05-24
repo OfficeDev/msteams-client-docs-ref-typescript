@@ -65,7 +65,7 @@ functions:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -128,7 +128,7 @@ functions:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -199,7 +199,7 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Get log level.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getLogLevel(): LogLevel | undefined'
@@ -211,7 +211,7 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Generate connection configuration consumed by tedious.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -234,7 +234,7 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message to a notification target.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -255,7 +255,7 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Send a plain text message to a notification target.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -293,7 +293,7 @@ functions:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogFunction(logFunction?: LogFunction)'
@@ -308,7 +308,7 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Update log level helper.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogLevel(level: LogLevel)'
@@ -340,7 +340,7 @@ functions:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogger(logger?: Logger)'

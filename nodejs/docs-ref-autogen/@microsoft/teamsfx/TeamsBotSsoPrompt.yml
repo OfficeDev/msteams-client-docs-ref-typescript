@@ -77,7 +77,7 @@ remarks: >-
   Sign On(SSO):
 
   https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -86,7 +86,7 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Constructor of TeamsBotSsoPrompt.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -402,7 +402,7 @@ methods:
       still
 
       active after the turn has been processed by the prompt.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function beginDialog(dc: DialogContext): Promise<DialogTurnResult>'
@@ -430,7 +430,7 @@ methods:
       accepts the
 
       user's reply as valid input for the prompt.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function continueDialog(dc: DialogContext): Promise<DialogTurnResult>'

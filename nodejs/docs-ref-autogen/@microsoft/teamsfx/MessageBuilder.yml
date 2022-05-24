@@ -48,7 +48,7 @@ methods:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -69,7 +69,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Build a bot message activity attached with an adaptive card.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -87,7 +87,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Add an attachement to a bot activity.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -119,7 +119,7 @@ methods:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -151,7 +151,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Build a bot message activity attached with an Office 365 connector card.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -169,7 +169,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Build a message activity attached with a receipt card.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -189,7 +189,7 @@ methods:
     remarks: >-
       For channels that don't natively support sign-in cards, an alternative
       message is rendered.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -216,7 +216,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: ''
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

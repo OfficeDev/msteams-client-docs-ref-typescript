@@ -7,7 +7,7 @@ summary: >-
   channel).
 fullName: NotificationBot
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -18,7 +18,7 @@ constructors:
     remarks: >-
       To ensure accuracy, it's recommended to initialize before handling any
       message.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -38,7 +38,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get all targets where the bot is installed.
     remarks: The result is retrieving from the persisted storage.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function installations(): Promise<TeamsBotInstallation[]>'

@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Microsoft Graph auth provider for Teams Framework
 fullName: MsGraphAuthProvider
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +14,7 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Constructor of MsGraphAuthProvider.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Define available location for API Key location
 fullName: ApiKeyLocation
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 fields:
   - name: Header

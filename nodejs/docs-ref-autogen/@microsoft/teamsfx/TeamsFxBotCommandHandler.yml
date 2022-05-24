@@ -7,7 +7,7 @@ summary: >-
   return a response.
 fullName: TeamsFxBotCommandHandler
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
