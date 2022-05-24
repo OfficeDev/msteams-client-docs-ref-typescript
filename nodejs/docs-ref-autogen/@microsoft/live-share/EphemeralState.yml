@@ -5,8 +5,9 @@ package: '@microsoft/live-share'
 summary: >-
   Ephemeral fluid object that synchronizes a named state and optional data value
   across clients.
-fullName: EphemeralState<TData>
-remarks: >-
+
+  #### remarks
+
   The primary benefit of using the `EphemeralState` object in a Teams meeting,
   versus something
 
@@ -14,6 +15,8 @@ remarks: >-
   perform state
 
   changes.
+fullName: EphemeralState<TData>
+remarks: ''
 isPreview: false
 isDeprecated: false
 type: class

@@ -2,7 +2,7 @@
 name: IEphemeralEventEvents
 uid: '@microsoft/live-share.IEphemeralEventEvents'
 package: '@microsoft/live-share'
-summary: Event typings for `EphemeralEvent` class.
+summary: 'Event typings for [[EphemeralEvent]] class.'
 fullName: IEphemeralEventEvents<TEvent>
 remarks: ''
 isPreview: false

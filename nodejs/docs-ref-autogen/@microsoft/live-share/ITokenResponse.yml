@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: ITokenResponse
+uid: '@microsoft/live-share.ITokenResponse'
+package: '@microsoft/live-share'
+summary: ''
+fullName: ITokenResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: token
+    uid: '@microsoft/live-share.ITokenResponse.token'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: token
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'token: string'
+      return:
+        description: ''
+        type: string

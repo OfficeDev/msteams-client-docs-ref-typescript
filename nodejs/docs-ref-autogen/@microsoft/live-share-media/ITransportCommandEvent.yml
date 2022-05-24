@@ -1,0 +1,79 @@
+### YamlMime:TSType
+name: ITransportCommandEvent
+uid: '@microsoft/live-share-media.ITransportCommandEvent'
+package: '@microsoft/live-share-media'
+summary: ''
+fullName: ITransportCommandEvent
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientId
+    uid: '@microsoft/live-share-media.ITransportCommandEvent.clientId'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Current client ID, if known. The client ID will be `undefined` if the
+      client is currently disconnected.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: name
+    uid: '@microsoft/live-share-media.ITransportCommandEvent.name'
+    package: '@microsoft/live-share-media'
+    summary: Name of the event.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: position
+    uid: '@microsoft/live-share-media.ITransportCommandEvent.position'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: position
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position: number'
+      return:
+        description: ''
+        type: number
+  - name: timestamp
+    uid: '@microsoft/live-share-media.ITransportCommandEvent.timestamp'
+    package: '@microsoft/live-share-media'
+    summary: Global timestamp of when the event was sent.
+    fullName: timestamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timestamp: number'
+      return:
+        description: ''
+        type: number
+  - name: track
+    uid: '@microsoft/live-share-media.ITransportCommandEvent.track'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: track
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'track: IPlaybackTrack'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-media.IPlaybackTrack" />
+extends: IEphemeralEvent

@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: TestTeamsClientApi
+uid: '@microsoft/live-share.TestTeamsClientApi'
+package: '@microsoft/live-share'
+summary: ''
+fullName: TestTeamsClientApi
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      TestTeamsClientApi(undefined | () => string | undefined, undefined |
+      (containerId: string) => void)
+    uid: '@microsoft/live-share.TestTeamsClientApi.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TestTeamsClientApi(getLocalTestContainerId?: undefined | () =>
+        string | undefined, setLocalTestContainerId?: undefined | (containerId:
+        string) => void)
+      parameters:
+        - id: getLocalTestContainerId
+          type: undefined | () =&gt; string | undefined
+          description: ''
+        - id: setLocalTestContainerId
+          type: 'undefined | (containerId: string) =&gt; void'
+          description: ''
+properties:
+  - name: interactive
+    uid: '@microsoft/live-share.TestTeamsClientApi.interactive'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: interactive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'interactive: TestTeamsClientApiInteractive'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.TestTeamsClientApiInteractive" />

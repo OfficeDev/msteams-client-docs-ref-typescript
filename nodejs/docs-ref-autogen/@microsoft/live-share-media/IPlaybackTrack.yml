@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: IPlaybackTrack
+uid: '@microsoft/live-share-media.IPlaybackTrack'
+package: '@microsoft/live-share-media'
+summary: ''
+fullName: IPlaybackTrack
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientId
+    uid: '@microsoft/live-share-media.IPlaybackTrack.clientId'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId: string'
+      return:
+        description: ''
+        type: string
+  - name: metadata
+    uid: '@microsoft/live-share-media.IPlaybackTrack.metadata'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: metadata
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'metadata: ExtendedMediaMetadata | null'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata" /> |
+          null
+  - name: timestamp
+    uid: '@microsoft/live-share-media.IPlaybackTrack.timestamp'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: timestamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timestamp: number'
+      return:
+        description: ''
+        type: number
+  - name: waitPoints
+    uid: '@microsoft/live-share-media.IPlaybackTrack.waitPoints'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: waitPoints
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'waitPoints: CoordinationWaitPoint[]'
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share-media.CoordinationWaitPoint" />[]'

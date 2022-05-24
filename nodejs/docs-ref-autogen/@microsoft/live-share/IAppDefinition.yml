@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: IAppDefinition
+uid: '@microsoft/live-share.IAppDefinition'
+package: '@microsoft/live-share'
+summary: ''
+fullName: IAppDefinition
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: appId
+    uid: '@microsoft/live-share.IAppDefinition.appId'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: appId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'appId: string'
+      return:
+        description: ''
+        type: string

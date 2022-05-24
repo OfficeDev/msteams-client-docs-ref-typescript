@@ -19,8 +19,8 @@ summary: >-
   use to sending events you're ok with potentially being missed. Reactions are a
   good use case for
 
-  `EphemeralEvents`. Use something like the `EphemeralState` class when syncing
-  state.
+  `EphemeralEvents`. Use something like the [[EphemeralState]] class when
+  syncing state.
 fullName: EphemeralEvent<TEvent>
 remarks: ''
 isPreview: false

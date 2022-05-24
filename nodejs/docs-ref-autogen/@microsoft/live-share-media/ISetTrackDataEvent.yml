@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: ISetTrackDataEvent
+uid: '@microsoft/live-share-media.ISetTrackDataEvent'
+package: '@microsoft/live-share-media'
+summary: ''
+fullName: ISetTrackDataEvent
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: clientId
+    uid: '@microsoft/live-share-media.ISetTrackDataEvent.clientId'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Current client ID, if known. The client ID will be `undefined` if the
+      client is currently disconnected.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: data
+    uid: '@microsoft/live-share-media.ISetTrackDataEvent.data'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'data: object | null'
+      return:
+        description: ''
+        type: object | null
+  - name: name
+    uid: '@microsoft/live-share-media.ISetTrackDataEvent.name'
+    package: '@microsoft/live-share-media'
+    summary: Name of the event.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: timestamp
+    uid: '@microsoft/live-share-media.ISetTrackDataEvent.timestamp'
+    package: '@microsoft/live-share-media'
+    summary: Global timestamp of when the event was sent.
+    fullName: timestamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timestamp: number'
+      return:
+        description: ''
+        type: number
+extends: IEphemeralEvent

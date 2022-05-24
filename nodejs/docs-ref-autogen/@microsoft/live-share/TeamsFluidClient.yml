@@ -60,8 +60,11 @@ methods:
       void)
     uid: '@microsoft/live-share.TeamsFluidClient.joinContainer'
     package: '@microsoft/live-share'
-    summary: Connects to the fluid container for the current teams context.
-    remarks: >-
+    summary: >-
+      Connects to the fluid container for the current teams context.
+
+      #### remarks
+
       The first client joining the container will create the container resulting
       in the
 
@@ -69,6 +72,7 @@ methods:
       to set the initial
 
       state of of the containers object prior to the container being attached.
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

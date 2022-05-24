@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: IPPSTokenResponse
+uid: '@microsoft/live-share.IPPSTokenResponse'
+package: '@microsoft/live-share'
+summary: ''
+fullName: IPPSTokenResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: expiresAt
+    uid: '@microsoft/live-share.IPPSTokenResponse.expiresAt'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: expiresAt
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'expiresAt: number'
+      return:
+        description: ''
+        type: number
+  - name: token
+    uid: '@microsoft/live-share.IPPSTokenResponse.token'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: token
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'token: string'
+      return:
+        description: ''
+        type: string
+  - name: tokenMri
+    uid: '@microsoft/live-share.IPPSTokenResponse.tokenMri'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: tokenMri
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tokenMri: string'
+      return:
+        description: ''
+        type: string

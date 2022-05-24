@@ -9,6 +9,11 @@ enums:
   - '@microsoft/live-share.PresenceState'
   - '@microsoft/live-share.EphemeralStateEvents'
   - '@microsoft/live-share.UserMeetingRole'
+  - '@microsoft/live-share.ContainerState'
+  - '@microsoft/live-share.AuthType'
+  - '@microsoft/live-share.ParticipantRole'
+  - '@microsoft/live-share.ParticipantType'
+  - '@microsoft/live-share.UserState'
 classes:
   - '@microsoft/live-share.EphemeralEvent'
   - '@microsoft/live-share.EphemeralEventScope'
@@ -21,6 +26,12 @@ classes:
   - '@microsoft/live-share.EphemeralState'
   - '@microsoft/live-share.EphemeralTelemetryLogger'
   - '@microsoft/live-share.TeamsFluidClient'
+  - '@microsoft/live-share.RequestCache'
+  - '@microsoft/live-share.RoleVerifier'
+  - '@microsoft/live-share.SharedClock'
+  - '@microsoft/live-share.TeamsFluidTokenProvider'
+  - '@microsoft/live-share.TestTeamsClientApi'
+  - '@microsoft/live-share.TestTeamsClientApiInteractive'
 interfaces:
   - '@microsoft/live-share.IEphemeralEventEvents'
   - '@microsoft/live-share.IRuntimeSignaler'
@@ -32,8 +43,109 @@ interfaces:
   - '@microsoft/live-share.ITeamsFluidClientOptions'
   - '@microsoft/live-share.IEphemeralEvent'
   - '@microsoft/live-share.IEvent'
+  - '@microsoft/live-share.FluidContainerInfo'
+  - '@microsoft/live-share.FluidTenantInfo'
+  - '@microsoft/live-share.NtpTimeInfo'
+  - '@microsoft/live-share.TeamsClientApi'
+  - '@microsoft/live-share.TeamsClientApiInteractive'
+  - '@microsoft/live-share.Requests.IFluidStateRequest'
+  - '@microsoft/live-share.Requests.ITokenRequest'
+  - '@microsoft/live-share.IAppDefinition'
+  - '@microsoft/live-share.ICollabSpaceInfo'
+  - '@microsoft/live-share.IFRSTenantInfo'
+  - '@microsoft/live-share.INtpTime'
+  - '@microsoft/live-share.IPPSTokenResponse'
+  - '@microsoft/live-share.IRegisteredUsersRoles'
+  - '@microsoft/live-share.IServerTimeOffset'
+  - '@microsoft/live-share.ISessionState'
+  - '@microsoft/live-share.ITokenPayload'
+  - '@microsoft/live-share.ITokenResponse'
+  - '@microsoft/live-share.IUserState'
+  - '@microsoft/live-share.IUserTokenResponse'
+  - '@microsoft/live-share.IVerifiedUserRoles'
 typeAliases:
   - '@microsoft/live-share.EphemeralEventListener'
   - '@microsoft/live-share.GetSynchronizationState'
   - '@microsoft/live-share.UpdateSynchronizationState'
   - '@microsoft/live-share.OutgoingEphemeralEvent'
+  - '@microsoft/live-share.Requests.ICollabSpaceInfoUpdate'
+  - '@microsoft/live-share.Requests.IUserStateUpdate'
+functions:
+  - name: cloneValue<T>(T | undefined)
+    uid: '@microsoft/live-share.cloneValue'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function cloneValue<T>(value: T | undefined): T | undefined'
+      parameters:
+        - id: value
+          type: T | undefined
+          description: ''
+      return:
+        description: ''
+        type: T | undefined
+  - name: decodeBase64(string)
+    uid: '@microsoft/live-share.decodeBase64'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function decodeBase64(data: string): string'
+      parameters:
+        - id: data
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: string
+  - name: waitForDelay(number)
+    uid: '@microsoft/live-share.waitForDelay'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function waitForDelay(delay: number): Promise<void>'
+      parameters:
+        - id: delay
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      waitForResult<TResult>(() => Promise<TResult | undefined>, (result:
+      TResult | undefined) => boolean, () => Error, number[])
+    uid: '@microsoft/live-share.waitForResult'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function waitForResult<TResult>(fnRequest: () => Promise<TResult |
+        undefined>, fnSucceeded: (result: TResult | undefined) => boolean,
+        fnTimeout: () => Error, retrySchedule: number[]): Promise<TResult>
+      parameters:
+        - id: fnRequest
+          type: () =&gt; Promise&lt;TResult | undefined&gt;
+          description: ''
+        - id: fnSucceeded
+          type: '(result: TResult | undefined) =&gt; boolean'
+          description: ''
+        - id: fnTimeout
+          type: () =&gt; Error
+          description: ''
+        - id: retrySchedule
+          type: 'number[]'
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;TResult&gt;

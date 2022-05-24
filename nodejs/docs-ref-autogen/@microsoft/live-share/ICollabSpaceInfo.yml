@@ -1,0 +1,67 @@
+### YamlMime:TSType
+name: ICollabSpaceInfo
+uid: '@microsoft/live-share.ICollabSpaceInfo'
+package: '@microsoft/live-share'
+summary: ''
+fullName: ICollabSpaceInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: broadcaster
+    uid: '@microsoft/live-share.ICollabSpaceInfo.broadcaster'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: broadcaster
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        broadcaster?: undefined | { credentials?: IPPSTokenResponse, endpoint:
+        string, frsTenantInfo?: IFRSTenantInfo }
+      return:
+        description: ''
+        type: >-
+          undefined | { credentials?: IPPSTokenResponse, endpoint: string,
+          frsTenantInfo?: IFRSTenantInfo }
+  - name: collabSpaceId
+    uid: '@microsoft/live-share.ICollabSpaceInfo.collabSpaceId'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: collabSpaceId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'collabSpaceId: string'
+      return:
+        description: ''
+        type: string
+  - name: meetingUrl
+    uid: '@microsoft/live-share.ICollabSpaceInfo.meetingUrl'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: meetingUrl
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'meetingUrl?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: sessions
+    uid: '@microsoft/live-share.ICollabSpaceInfo.sessions'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: sessions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'sessions: ISessionState[]'
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share.ISessionState" />[]'
