@@ -1,0 +1,581 @@
+### YamlMime:TSType
+name: EphemeralState
+uid: '@microsoft/live-share.EphemeralState'
+package: '@microsoft/live-share'
+summary: >-
+  Ephemeral fluid object that synchronizes a named state and optional data value
+  across clients.
+fullName: EphemeralState<TData>
+remarks: >-
+  The primary benefit of using the `EphemeralState` object in a Teams meeting,
+  versus something
+
+  like a `SharedMap`, is that you can restrict the roles of who's allowed to
+  perform state
+
+  changes.
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'EphemeralState(IDataObjectProps<{ Events: IEphemeralStateEvents<TData> }>)'
+    uid: '@microsoft/live-share.EphemeralState.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new EphemeralState(props: IDataObjectProps<{ Events:
+        IEphemeralStateEvents<TData> }>)
+      parameters:
+        - id: props
+          type: >-
+            IDataObjectProps&lt;{ Events: IEphemeralStateEvents&lt;TData&gt;
+            }&gt;
+          description: ''
+properties:
+  - name: addListener
+    uid: '@microsoft/live-share.EphemeralState.addListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: data
+    uid: '@microsoft/live-share.EphemeralState.data'
+    package: '@microsoft/live-share'
+    summary: Optional data object for the current state.
+    fullName: data
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: TData | undefined data
+      return:
+        description: ''
+        type: TData | undefined
+  - name: disposed
+    uid: '@microsoft/live-share.EphemeralState.disposed'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: disposed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean disposed
+      return:
+        description: ''
+        type: boolean
+  - name: factory
+    uid: '@microsoft/live-share.EphemeralState.factory'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type factory.
+    fullName: factory
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static factory: DataObjectFactory<EphemeralState<undefined>,
+        DataObjectTypes>
+      return:
+        description: ''
+        type: >-
+          DataObjectFactory&lt;<xref uid="@microsoft/live-share.EphemeralState"
+          />&lt;undefined&gt;, DataObjectTypes&gt;
+  - name: handle
+    uid: '@microsoft/live-share.EphemeralState.handle'
+    package: '@microsoft/live-share'
+    summary: Handle to a data store
+    fullName: handle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> handle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: id
+    uid: '@microsoft/live-share.EphemeralState.id'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string id
+      return:
+        description: ''
+        type: string
+  - name: IFluidHandle
+    uid: '@microsoft/live-share.EphemeralState.IFluidHandle'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidHandle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> IFluidHandle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: IFluidLoadable
+    uid: '@microsoft/live-share.EphemeralState.IFluidLoadable'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidLoadable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: this IFluidLoadable
+      return:
+        description: ''
+        type: this
+  - name: IFluidRouter
+    uid: '@microsoft/live-share.EphemeralState.IFluidRouter'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidRouter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: this IFluidRouter
+      return:
+        description: ''
+        type: this
+  - name: INITIAL_STATE
+    uid: '@microsoft/live-share.EphemeralState.INITIAL_STATE'
+    package: '@microsoft/live-share'
+    summary: The objects initial state if not explicitly initialized.
+    fullName: INITIAL_STATE
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static INITIAL_STATE: Object = ""'
+      return:
+        description: ''
+        type: Object
+  - name: isStarted
+    uid: '@microsoft/live-share.EphemeralState.isStarted'
+    package: '@microsoft/live-share'
+    summary: Returns true if the object has been started.
+    fullName: isStarted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean isStarted
+      return:
+        description: ''
+        type: boolean
+  - name: 'off'
+    uid: '@microsoft/live-share.EphemeralState.off'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'off'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'off: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: 'on'
+    uid: '@microsoft/live-share.EphemeralState.on'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'on'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'on: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: once
+    uid: '@microsoft/live-share.EphemeralState.once'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: once
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'once: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: prependListener
+    uid: '@microsoft/live-share.EphemeralState.prependListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: prependOnceListener
+    uid: '@microsoft/live-share.EphemeralState.prependOnceListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependOnceListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependOnceListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: removeListener
+    uid: '@microsoft/live-share.EphemeralState.removeListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: removeListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: state
+    uid: '@microsoft/live-share.EphemeralState.state'
+    package: '@microsoft/live-share'
+    summary: The current state.
+    fullName: state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string state
+      return:
+        description: ''
+        type: string
+  - name: TypeName
+    uid: '@microsoft/live-share.EphemeralState.TypeName'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type/name.
+    fullName: TypeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TypeName: "@microsoft/live-share:EphemeralState" =
+        "@microsoft/live-share:EphemeralState"
+      return:
+        description: ''
+        type: '"@microsoft/live-share:EphemeralState"'
+inheritedMethods:
+  - name: 'emit(string | symbol, any[])'
+    uid: '@microsoft/live-share.EphemeralState.emit'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function emit(event: string | symbol, args: any[]): boolean'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: args
+          type: 'any[]'
+          description: ''
+      return:
+        description: ''
+        type: boolean
+  - name: eventNames()
+    uid: '@microsoft/live-share.EphemeralState.eventNames'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function eventNames(): Array<string | symbol>'
+      return:
+        description: ''
+        type: Array&lt;string | symbol&gt;
+  - name: finishInitialization(boolean)
+    uid: '@microsoft/live-share.EphemeralState.finishInitialization'
+    package: '@microsoft/live-share'
+    summary: >-
+      Call this API to ensure PureDataObject is fully initialized
+
+      initialization happens on demand, only on as-needed bases.
+
+      In most cases you should allow factory/object to decide when to finish
+      initialization.
+
+      But if you are supplying your own implementation of DataStoreRuntime
+      factory and overriding some methods
+
+      and need fully initialized object, then you can call this API to ensure
+      object is fully initialized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function finishInitialization(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: getDataObject(IFluidDataStoreRuntime)
+    uid: '@microsoft/live-share.EphemeralState.getDataObject'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getDataObject(runtime: IFluidDataStoreRuntime):
+        Promise<PureDataObject<DataObjectTypes>>
+      parameters:
+        - id: runtime
+          type: IFluidDataStoreRuntime
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
+  - name: >-
+      getFluidObjectFromDirectory<T>(string, IDirectory, undefined | (id:
+      string, directory: IDirectory) => IFluidHandle | undefined)
+    uid: '@microsoft/live-share.EphemeralState.getFluidObjectFromDirectory'
+    package: '@microsoft/live-share'
+    summary: Retrieve Fluid object using the handle get
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getFluidObjectFromDirectory<T>(key: string, directory:
+        IDirectory, getObjectFromDirectory?: undefined | (id: string, directory:
+        IDirectory) => IFluidHandle | undefined): Promise<T | undefined>
+      parameters:
+        - id: key
+          type: string
+          description: key that object (handle/id) is stored with in the directory
+        - id: directory
+          type: IDirectory
+          description: directory containing the object
+        - id: getObjectFromDirectory
+          type: >-
+            undefined | (id: string, directory: IDirectory) =&gt; IFluidHandle |
+            undefined
+          description: >
+            optional callback for fetching object from the directory, allows
+            users to
+
+            define custom types/getters for object retrieval
+      return:
+        description: ''
+        type: Promise&lt;T | undefined&gt;
+  - name: getMaxListeners()
+    uid: '@microsoft/live-share.EphemeralState.getMaxListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxListeners(): number'
+      return:
+        description: ''
+        type: number
+  - name: initializeInternal(boolean)
+    uid: '@microsoft/live-share.EphemeralState.initializeInternal'
+    package: '@microsoft/live-share'
+    summary: |-
+      Initializes internal objects and calls initialization overrides.
+      Caller is responsible for ensuring this is only invoked once.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function initializeInternal(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: listenerCount(string | symbol)
+    uid: '@microsoft/live-share.EphemeralState.listenerCount'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(event: string | symbol): number'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: number
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralState.listeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+  - name: rawListeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralState.rawListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function rawListeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+  - name: removeAllListeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralState.removeAllListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function removeAllListeners(event?: string | symbol): this'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: request(IRequest)
+    uid: '@microsoft/live-share.EphemeralState.request'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function request(request: IRequest): Promise<IResponse>'
+      parameters:
+        - id: request
+          type: IRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;IResponse&gt;
+  - name: setMaxListeners(number)
+    uid: '@microsoft/live-share.EphemeralState.setMaxListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setMaxListeners(n: number): this'
+      parameters:
+        - id: 'n'
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: this
+methods:
+  - name: 'changeState(string, TData)'
+    uid: '@microsoft/live-share.EphemeralState.changeState'
+    package: '@microsoft/live-share'
+    summary: Changes to a new state with an optional data object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function changeState(state: string, data?: TData)'
+      parameters:
+        - id: state
+          type: string
+          description: New state name.
+        - id: data
+          type: TData
+          description: |
+            Optional. Data object to associate with the new state.
+  - name: dispose()
+    uid: '@microsoft/live-share.EphemeralState.dispose'
+    package: '@microsoft/live-share'
+    summary: Disposes of the object when its container is disposed of.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function dispose()
+  - name: 'start(UserMeetingRole[], undefined | string, TData)'
+    uid: '@microsoft/live-share.EphemeralState.start'
+    package: '@microsoft/live-share'
+    summary: Starts the object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function start(allowedRoles?: UserMeetingRole[], state?: undefined |
+        string, data?: TData): Promise<void>
+      parameters:
+        - id: allowedRoles
+          type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
+          description: |
+            Optional. List of roles allowed to make state changes.
+        - id: state
+          type: undefined | string
+          description: ''
+        - id: data
+          type: TData
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+extends: 'DataObject&lt;{ Events: IEphemeralStateEvents&lt;TData&gt; }&gt;'

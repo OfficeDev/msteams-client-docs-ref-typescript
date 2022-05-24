@@ -4,29 +4,84 @@ name: '@microsoft/teamsfx'
 summary: ''
 type: package
 enums:
+  - '@microsoft/teamsfx.ApiKeyLocation'
   - '@microsoft/teamsfx.ErrorCode'
+  - '@microsoft/teamsfx.IdentityType'
   - '@microsoft/teamsfx.LogLevel'
-  - '@microsoft/teamsfx.ResourceType'
 classes:
-  - '@microsoft/teamsfx.DefaultTediousConnectionConfiguration'
+  - '@microsoft/teamsfx.ApiKeyProvider'
+  - '@microsoft/teamsfx.AppCredential'
+  - '@microsoft/teamsfx.BasicAuthProvider'
+  - '@microsoft/teamsfx.BearerTokenAuthProvider'
+  - '@microsoft/teamsfx.CertificateAuthProvider'
+  - '@microsoft/teamsfx.Channel'
+  - '@microsoft/teamsfx.CommandBot'
+  - '@microsoft/teamsfx.ConversationBot'
   - '@microsoft/teamsfx.ErrorWithCode'
-  - '@microsoft/teamsfx.M365TenantCredential'
+  - '@microsoft/teamsfx.Member'
+  - '@microsoft/teamsfx.MessageBuilder'
   - '@microsoft/teamsfx.MsGraphAuthProvider'
+  - '@microsoft/teamsfx.NotificationBot'
   - '@microsoft/teamsfx.OnBehalfOfUserCredential'
+  - '@microsoft/teamsfx.TeamsBotInstallation'
   - '@microsoft/teamsfx.TeamsBotSsoPrompt'
+  - '@microsoft/teamsfx.TeamsFx'
   - '@microsoft/teamsfx.TeamsUserCredential'
 interfaces:
+  - '@microsoft/teamsfx.AuthProvider'
   - '@microsoft/teamsfx.AuthenticationConfiguration'
-  - '@microsoft/teamsfx.Configuration'
+  - '@microsoft/teamsfx.CommandMessage'
+  - '@microsoft/teamsfx.CommandOptions'
+  - '@microsoft/teamsfx.ConversationOptions'
   - '@microsoft/teamsfx.Logger'
-  - '@microsoft/teamsfx.ResourceConfiguration'
+  - '@microsoft/teamsfx.NotificationOptions_2'
+  - '@microsoft/teamsfx.NotificationTarget'
+  - '@microsoft/teamsfx.NotificationTargetStorage'
   - '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
   - '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
+  - '@microsoft/teamsfx.TeamsFxBotCommandHandler'
+  - '@microsoft/teamsfx.TeamsFxConfiguration'
   - '@microsoft/teamsfx.UserInfo'
 typeAliases:
   - '@microsoft/teamsfx.LogFunction'
+  - '@microsoft/teamsfx.NotificationTargetType'
+  - '@microsoft/teamsfx.TriggerPatterns'
 functions:
-  - name: 'createMicrosoftGraphClient(TokenCredential, string | string[])'
+  - name: 'createApiClient(string, AuthProvider)'
+    uid: '@microsoft/teamsfx.createApiClient'
+    package: '@microsoft/teamsfx'
+    summary: >+
+      Initializes new Axios instance with specific auth provider
+
+
+      **Example**
+
+
+      ```typescript
+
+      const client = createApiClient("https://my-api-endpoint-base-url", new
+      BasicAuthProvider("xxx","xxx"));
+
+      ```
+
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createApiClient(apiEndpoint: string, authProvider:
+        AuthProvider): AxiosInstance
+      parameters:
+        - id: apiEndpoint
+          type: string
+          description: Base url of the API
+        - id: authProvider
+          type: <xref uid="@microsoft/teamsfx.AuthProvider" />
+          description: Auth provider that injects authentication info to each request
+      return:
+        description: axios instance configured with specfic auth provider
+        type: AxiosInstance
+  - name: 'createMicrosoftGraphClient(TeamsFxConfiguration, string | string[])'
     uid: '@microsoft/teamsfx.createMicrosoftGraphClient'
     package: '@microsoft/teamsfx'
     summary: |+
@@ -73,16 +128,16 @@ functions:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function createMicrosoftGraphClient(credential: TokenCredential,
+        function createMicrosoftGraphClient(teamsfx: TeamsFxConfiguration,
         scopes?: string | string[]): Client
       parameters:
-        - id: credential
-          type: TokenCredential
-          description: token credential instance.
+        - id: teamsfx
+          type: <xref uid="@microsoft/teamsfx.TeamsFxConfiguration" />
+          description: Used to provide configuration and auth.
         - id: scopes
           type: 'string | string[]'
           description: >
@@ -91,78 +146,131 @@ functions:
       return:
         description: Graph client with specified scopes.
         type: Client
-  - name: getAuthenticationConfiguration()
-    uid: '@microsoft/teamsfx.getAuthenticationConfiguration'
+  - name: >-
+      createPemCertOption(string | Buffer, string | Buffer, { ca?: string |
+      Buffer, passphrase?: string })
+    uid: '@microsoft/teamsfx.createPemCertOption'
     package: '@microsoft/teamsfx'
-    summary: Get configuration for authentication.
+    summary: Helper to create SecureContextOptions from PEM format cert
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function getAuthenticationConfiguration(): AuthenticationConfiguration |
-        undefined
+        function createPemCertOption(cert: string | Buffer, key: string |
+        Buffer, options?: { ca?: string | Buffer, passphrase?: string }):
+        SecureContextOptions
+      parameters:
+        - id: cert
+          type: string | Buffer
+          description: The cert chain in PEM format
+        - id: key
+          type: string | Buffer
+          description: The private key for the cert chain
+        - id: options
+          type: '{ ca?: string | Buffer, passphrase?: string }'
+          description: ''
       return:
-        description: >-
-          Authentication configuration from global configuration instance, the
-          value may be undefined if no authentication config exists in current
-          environment.
-        type: >-
-          <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" /> |
-          undefined
+        description: Instance of SecureContextOptions
+        type: SecureContextOptions
+  - name: 'createPfxCertOption(string | Buffer, { passphrase?: string })'
+    uid: '@microsoft/teamsfx.createPfxCertOption'
+    package: '@microsoft/teamsfx'
+    summary: Helper to create SecureContextOptions from PFX format cert
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createPfxCertOption(pfx: string | Buffer, options?: {
+        passphrase?: string }): SecureContextOptions
+      parameters:
+        - id: pfx
+          type: string | Buffer
+          description: The content of .pfx file
+        - id: options
+          type: '{ passphrase?: string }'
+          description: ''
+      return:
+        description: Instance of SecureContextOptions
+        type: SecureContextOptions
   - name: getLogLevel()
     uid: '@microsoft/teamsfx.getLogLevel'
     package: '@microsoft/teamsfx'
     summary: Get log level.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getLogLevel(): LogLevel | undefined'
       return:
         description: Log level
         type: <xref uid="@microsoft/teamsfx.LogLevel" /> | undefined
-  - name: 'getResourceConfiguration(ResourceType, string)'
-    uid: '@microsoft/teamsfx.getResourceConfiguration'
+  - name: 'getTediousConnectionConfig(TeamsFx, string)'
+    uid: '@microsoft/teamsfx.getTediousConnectionConfig'
     package: '@microsoft/teamsfx'
-    summary: Get configuration for a specific resource.
+    summary: Generate connection configuration consumed by tedious.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function getResourceConfiguration(resourceType: ResourceType,
-        resourceName?: string): [key: string]: any
+        function getTediousConnectionConfig(teamsfx: TeamsFx, databaseName?:
+        string): Promise<ConnectionConfig>
       parameters:
-        - id: resourceType
-          type: <xref uid="@microsoft/teamsfx.ResourceType" />
-          description: The type of resource
-        - id: resourceName
+        - id: teamsfx
+          type: <xref uid="@microsoft/teamsfx.TeamsFx" />
+          description: Used to provide configuration and auth
+        - id: databaseName
           type: string
-          description: |
-            The name of resource, default value is "default".
+          description: >
+            specify database name to override default one if there are multiple
+            databases.
       return:
-        description: >-
-          Resource configuration for target resource from global configuration
-          instance.
-        type: '[key: string]\: any'
-  - name: loadConfiguration(Configuration)
-    uid: '@microsoft/teamsfx.loadConfiguration'
+        description: Connection configuration of tedious for the SQL.
+        type: Promise&lt;ConnectionConfig&gt;
+  - name: 'sendAdaptiveCard(NotificationTarget, unknown)'
+    uid: '@microsoft/teamsfx.sendAdaptiveCard'
     package: '@microsoft/teamsfx'
-    summary: >-
-      Initialize configuration from environment variables or configuration
-      object and set the global instance
+    summary: Send an adaptive card message to a notification target.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function loadConfiguration(configuration?: Configuration)'
+      content: >-
+        function sendAdaptiveCard(target: NotificationTarget, card: unknown):
+        Promise<void>
       parameters:
-        - id: configuration
-          type: <xref uid="@microsoft/teamsfx.Configuration" />
-          description: >
-            Optional configuration that overrides the default configuration
-            values. The override depth is 1.
+        - id: target
+          type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
+          description: the notification target.
+        - id: card
+          type: unknown
+          description: the adaptive card raw JSON.
+      return:
+        description: A `Promise` representing the asynchronous operation.
+        type: Promise&lt;void&gt;
+  - name: 'sendMessage(NotificationTarget, string)'
+    uid: '@microsoft/teamsfx.sendMessage'
+    package: '@microsoft/teamsfx'
+    summary: Send a plain text message to a notification target.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendMessage(target: NotificationTarget, text: string):
+        Promise<void>
+      parameters:
+        - id: target
+          type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
+          description: the notification target.
+        - id: text
+          type: string
+          description: the plain text message.
+      return:
+        description: A `Promise` representing the asynchronous operation.
+        type: Promise&lt;void&gt;
   - name: setLogFunction(LogFunction)
     uid: '@microsoft/teamsfx.setLogFunction'
     package: '@microsoft/teamsfx'
@@ -185,7 +293,7 @@ functions:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogFunction(logFunction?: LogFunction)'
@@ -200,7 +308,7 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Update log level helper.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogLevel(level: LogLevel)'
@@ -232,7 +340,7 @@ functions:
       ```
 
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogger(logger?: Logger)'

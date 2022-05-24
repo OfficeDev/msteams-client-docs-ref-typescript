@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Authentication related configuration.
 fullName: AuthenticationConfiguration
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -96,21 +96,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'initiateLoginEndpoint?: string'
-      return:
-        description: ''
-        type: string
-  - name: simpleAuthEndpoint
-    uid: '@microsoft/teamsfx.AuthenticationConfiguration.simpleAuthEndpoint'
-    package: '@microsoft/teamsfx'
-    summary: >-
-      Endpoint of auth service provisioned by Teams Framework. Default value
-      comes from SIMPLE_AUTH_ENDPOINT environment variable.
-    fullName: simpleAuthEndpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'simpleAuthEndpoint?: string'
       return:
         description: ''
         type: string

@@ -1,3 +1,161 @@
+- name: '@microsoft/live-share'
+  items:
+    - name: Overview
+      uid: '@microsoft/live-share'
+    - uid: '@microsoft/live-share.EphemeralEvent'
+      name: EphemeralEvent
+      items: []
+    - uid: '@microsoft/live-share.EphemeralEventEvents'
+      name: EphemeralEventEvents
+      items: []
+    - uid: '@microsoft/live-share.EphemeralEventListener'
+      name: EphemeralEventListener
+      items: []
+    - uid: '@microsoft/live-share.EphemeralEventScope'
+      name: EphemeralEventScope
+      items: []
+    - uid: '@microsoft/live-share.EphemeralEventSource'
+      name: EphemeralEventSource
+      items: []
+    - uid: '@microsoft/live-share.EphemeralEventTarget'
+      name: EphemeralEventTarget
+      items: []
+    - uid: '@microsoft/live-share.EphemeralEventTimer'
+      name: EphemeralEventTimer
+      items: []
+    - uid: '@microsoft/live-share.EphemeralObjectSynchronizer'
+      name: EphemeralObjectSynchronizer
+      items: []
+    - uid: '@microsoft/live-share.EphemeralPresence'
+      name: EphemeralPresence
+      items: []
+    - uid: '@microsoft/live-share.EphemeralPresenceEvents'
+      name: EphemeralPresenceEvents
+      items: []
+    - uid: '@microsoft/live-share.EphemeralPresenceUser'
+      name: EphemeralPresenceUser
+      items: []
+    - uid: '@microsoft/live-share.EphemeralState'
+      name: EphemeralState
+      items: []
+    - uid: '@microsoft/live-share.EphemeralStateEvents'
+      name: EphemeralStateEvents
+      items: []
+    - uid: '@microsoft/live-share.EphemeralTelemetryLogger'
+      name: EphemeralTelemetryLogger
+      items: []
+    - uid: '@microsoft/live-share.GetSynchronizationState'
+      name: GetSynchronizationState
+      items: []
+    - uid: '@microsoft/live-share.IContainerRuntimeSignaler'
+      name: IContainerRuntimeSignaler
+      items: []
+    - uid: '@microsoft/live-share.IEphemeralEvent'
+      name: IEphemeralEvent
+      items: []
+    - uid: '@microsoft/live-share.IEphemeralEventEvents'
+      name: IEphemeralEventEvents
+      items: []
+    - uid: '@microsoft/live-share.IEphemeralPresenceEvents'
+      name: IEphemeralPresenceEvents
+      items: []
+    - uid: '@microsoft/live-share.IEphemeralStateEvents'
+      name: IEphemeralStateEvents
+      items: []
+    - uid: '@microsoft/live-share.IEphemeralTelemetryProperties'
+      name: IEphemeralTelemetryProperties
+      items: []
+    - uid: '@microsoft/live-share.IEphemeralTimerEvents'
+      name: IEphemeralTimerEvents
+      items: []
+    - uid: '@microsoft/live-share.IEvent'
+      name: IEvent
+      items: []
+    - uid: '@microsoft/live-share.IRuntimeSignaler'
+      name: IRuntimeSignaler
+      items: []
+    - uid: '@microsoft/live-share.ITeamsFluidClientOptions'
+      name: ITeamsFluidClientOptions
+      items: []
+    - uid: '@microsoft/live-share.OutgoingEphemeralEvent'
+      name: OutgoingEphemeralEvent
+      items: []
+    - uid: '@microsoft/live-share.PresenceState'
+      name: PresenceState
+      items: []
+    - uid: '@microsoft/live-share.TeamsFluidClient'
+      name: TeamsFluidClient
+      items: []
+    - uid: '@microsoft/live-share.UpdateSynchronizationState'
+      name: UpdateSynchronizationState
+      items: []
+    - uid: '@microsoft/live-share.UserMeetingRole'
+      name: UserMeetingRole
+      items: []
+- name: '@microsoft/live-share-media'
+  items:
+    - name: Overview
+      uid: '@microsoft/live-share-media'
+    - uid: '@microsoft/live-share-media.CoordinationWaitPoint'
+      name: CoordinationWaitPoint
+      items: []
+    - uid: '@microsoft/live-share-media.EphemeralMediaSession'
+      name: EphemeralMediaSession
+      items: []
+    - uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator'
+      name: EphemeralMediaSessionCoordinator
+      items: []
+    - uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinatorSuspension'
+      name: EphemeralMediaSessionCoordinatorSuspension
+      items: []
+    - uid: '@microsoft/live-share-media.ExtendedMediaMetadata'
+      name: ExtendedMediaMetadata
+      items: []
+    - uid: '@microsoft/live-share-media.ExtendedMediaSessionAction'
+      name: ExtendedMediaSessionAction
+      items: []
+    - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails'
+      name: ExtendedMediaSessionActionDetails
+      items: []
+    - uid: '@microsoft/live-share-media.ExtendedMediaSessionPlaybackState'
+      name: ExtendedMediaSessionPlaybackState
+      items: []
+    - uid: '@microsoft/live-share-media.IMediaPlayer'
+      name: IMediaPlayer
+      items: []
+    - uid: '@microsoft/live-share-media.IMediaPlayerState'
+      name: IMediaPlayerState
+      items: []
+    - uid: '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent'
+      name: IMediaPlayerSynchronizerEvent
+      items: []
+    - uid: '@microsoft/live-share-media.LevelType'
+      name: LevelType
+      items: []
+    - uid: '@microsoft/live-share-media.MediaPlayerSynchronizer'
+      name: MediaPlayerSynchronizer
+      items: []
+    - uid: '@microsoft/live-share-media.MediaPlayerSynchronizerEvents'
+      name: MediaPlayerSynchronizerEvents
+      items: []
+    - uid: '@microsoft/live-share-media.MediaSessionActionThrottler'
+      name: MediaSessionActionThrottler
+      items: []
+    - uid: '@microsoft/live-share-media.MediaSessionCoordinatorEvents'
+      name: MediaSessionCoordinatorEvents
+      items: []
+    - uid: '@microsoft/live-share-media.MediaSessionCoordinatorState'
+      name: MediaSessionCoordinatorState
+      items: []
+    - uid: '@microsoft/live-share-media.MediaSessionCoordinatorSuspension'
+      name: MediaSessionCoordinatorSuspension
+      items: []
+    - uid: '@microsoft/live-share-media.RepeatedActionThrottler'
+      name: RepeatedActionThrottler
+      items: []
+    - uid: '@microsoft/live-share-media.VolumeLimiter'
+      name: VolumeLimiter
+      items: []
 - name: '@microsoft/teams-js'
   items:
     - name: Overview
@@ -464,20 +622,56 @@
   items:
     - name: Overview
       uid: '@microsoft/teamsfx'
+    - uid: '@microsoft/teamsfx.ApiKeyLocation'
+      name: ApiKeyLocation
+      items: []
+    - uid: '@microsoft/teamsfx.ApiKeyProvider'
+      name: ApiKeyProvider
+      items: []
+    - uid: '@microsoft/teamsfx.AppCredential'
+      name: AppCredential
+      items: []
     - uid: '@microsoft/teamsfx.AuthenticationConfiguration'
       name: AuthenticationConfiguration
       items: []
-    - uid: '@microsoft/teamsfx.Configuration'
-      name: Configuration
+    - uid: '@microsoft/teamsfx.AuthProvider'
+      name: AuthProvider
       items: []
-    - uid: '@microsoft/teamsfx.DefaultTediousConnectionConfiguration'
-      name: DefaultTediousConnectionConfiguration
+    - uid: '@microsoft/teamsfx.BasicAuthProvider'
+      name: BasicAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.BearerTokenAuthProvider'
+      name: BearerTokenAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.CertificateAuthProvider'
+      name: CertificateAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.Channel'
+      name: Channel
+      items: []
+    - uid: '@microsoft/teamsfx.CommandBot'
+      name: CommandBot
+      items: []
+    - uid: '@microsoft/teamsfx.CommandMessage'
+      name: CommandMessage
+      items: []
+    - uid: '@microsoft/teamsfx.CommandOptions'
+      name: CommandOptions
+      items: []
+    - uid: '@microsoft/teamsfx.ConversationBot'
+      name: ConversationBot
+      items: []
+    - uid: '@microsoft/teamsfx.ConversationOptions'
+      name: ConversationOptions
       items: []
     - uid: '@microsoft/teamsfx.ErrorCode'
       name: ErrorCode
       items: []
     - uid: '@microsoft/teamsfx.ErrorWithCode'
       name: ErrorWithCode
+      items: []
+    - uid: '@microsoft/teamsfx.IdentityType'
+      name: IdentityType
       items: []
     - uid: '@microsoft/teamsfx.LogFunction'
       name: LogFunction
@@ -488,20 +682,35 @@
     - uid: '@microsoft/teamsfx.LogLevel'
       name: LogLevel
       items: []
-    - uid: '@microsoft/teamsfx.M365TenantCredential'
-      name: M365TenantCredential
+    - uid: '@microsoft/teamsfx.Member'
+      name: Member
+      items: []
+    - uid: '@microsoft/teamsfx.MessageBuilder'
+      name: MessageBuilder
       items: []
     - uid: '@microsoft/teamsfx.MsGraphAuthProvider'
       name: MsGraphAuthProvider
       items: []
+    - uid: '@microsoft/teamsfx.NotificationBot'
+      name: NotificationBot
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationOptions_2'
+      name: NotificationOptions_2
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTarget'
+      name: NotificationTarget
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTargetStorage'
+      name: NotificationTargetStorage
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTargetType'
+      name: NotificationTargetType
+      items: []
     - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
       name: OnBehalfOfUserCredential
       items: []
-    - uid: '@microsoft/teamsfx.ResourceConfiguration'
-      name: ResourceConfiguration
-      items: []
-    - uid: '@microsoft/teamsfx.ResourceType'
-      name: ResourceType
+    - uid: '@microsoft/teamsfx.TeamsBotInstallation'
+      name: TeamsBotInstallation
       items: []
     - uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
       name: TeamsBotSsoPrompt
@@ -512,8 +721,20 @@
     - uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
       name: TeamsBotSsoPromptTokenResponse
       items: []
+    - uid: '@microsoft/teamsfx.TeamsFx'
+      name: TeamsFx
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsFxBotCommandHandler'
+      name: TeamsFxBotCommandHandler
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsFxConfiguration'
+      name: TeamsFxConfiguration
+      items: []
     - uid: '@microsoft/teamsfx.TeamsUserCredential'
       name: TeamsUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.TriggerPatterns'
+      name: TriggerPatterns
       items: []
     - uid: '@microsoft/teamsfx.UserInfo'
       name: UserInfo

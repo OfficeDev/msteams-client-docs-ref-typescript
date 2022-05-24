@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: BasicAuthProvider
+uid: '@microsoft/teamsfx.BasicAuthProvider'
+package: '@microsoft/teamsfx'
+summary: Provider that handles Basic authentication
+fullName: BasicAuthProvider
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'BasicAuthProvider(string, string)'
+    uid: '@microsoft/teamsfx.BasicAuthProvider.constructor'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new BasicAuthProvider(userName: string, password: string)'
+      parameters:
+        - id: userName
+          type: string
+          description: Username used in basic auth
+        - id: password
+          type: string
+          description: |
+            Password used in basic auth
+methods:
+  - name: AddAuthenticationInfo(AxiosRequestConfig)
+    uid: '@microsoft/teamsfx.BasicAuthProvider.AddAuthenticationInfo'
+    package: '@microsoft/teamsfx'
+    summary: Adds authentication info to http requests
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function AddAuthenticationInfo(config: AxiosRequestConfig):
+        Promise<AxiosRequestConfig>
+      parameters:
+        - id: config
+          type: AxiosRequestConfig
+          description: >
+            Contains all the request information and can be updated to include
+            extra authentication info.
+
+            Refer https://axios-http.com/docs/req_config for detailed document.
+      return:
+        description: Updated axios request config.
+        type: Promise&lt;AxiosRequestConfig&gt;

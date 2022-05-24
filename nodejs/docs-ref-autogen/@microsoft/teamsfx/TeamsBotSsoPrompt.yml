@@ -41,8 +41,6 @@ summary: >+
   const dialogs = new DialogSet(dialogState);
 
 
-  loadConfiguration();
-
   dialogs.add(new TeamsBotSsoPrompt('TeamsBotSsoPrompt', {
      scopes: ["User.Read"],
   }));
@@ -79,22 +77,25 @@ remarks: >-
   Sign On(SSO):
 
   https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 constructors:
-  - name: 'TeamsBotSsoPrompt(string, TeamsBotSsoPromptSettings)'
+  - name: 'TeamsBotSsoPrompt(TeamsFx, string, TeamsBotSsoPromptSettings)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of TeamsBotSsoPrompt.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        new TeamsBotSsoPrompt(dialogId: string, settings:
+        new TeamsBotSsoPrompt(teamsfx: TeamsFx, dialogId: string, settings:
         TeamsBotSsoPromptSettings)
       parameters:
+        - id: teamsfx
+          type: <xref uid="@microsoft/teamsfx.TeamsFx" />
+          description: Used to provide configuration and auth
         - id: dialogId
           type: string
           description: >-
@@ -401,7 +402,7 @@ methods:
       still
 
       active after the turn has been processed by the prompt.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function beginDialog(dc: DialogContext): Promise<DialogTurnResult>'
@@ -429,7 +430,7 @@ methods:
       accepts the
 
       user's reply as valid input for the prompt.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function continueDialog(dc: DialogContext): Promise<DialogTurnResult>'

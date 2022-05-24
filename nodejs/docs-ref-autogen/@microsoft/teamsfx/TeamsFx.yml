@@ -1,0 +1,177 @@
+### YamlMime:TSType
+name: TeamsFx
+uid: '@microsoft/teamsfx.TeamsFx'
+package: '@microsoft/teamsfx'
+summary: A class providing credential and configuration.
+fullName: TeamsFx
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'TeamsFx(IdentityType, Record<string, string>)'
+    uid: '@microsoft/teamsfx.TeamsFx.constructor'
+    package: '@microsoft/teamsfx'
+    summary: Constructor of TeamsFx
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TeamsFx(identityType?: IdentityType, customConfig?: Record<string,
+        string>)
+      parameters:
+        - id: identityType
+          type: <xref uid="@microsoft/teamsfx.IdentityType" />
+          description: Choose user or app identity
+        - id: customConfig
+          type: 'Record&lt;string, string&gt;'
+          description: >
+            key/value pairs of customized configuration that overrides default
+            ones.
+methods:
+  - name: getConfig(string)
+    uid: '@microsoft/teamsfx.TeamsFx.getConfig'
+    package: '@microsoft/teamsfx'
+    summary: Usually used by service plugins to retrieve specific config
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getConfig(key: string): string'
+      parameters:
+        - id: key
+          type: string
+          description: configuration key.
+      return:
+        description: value in configuration.
+        type: string
+  - name: getConfigs()
+    uid: '@microsoft/teamsfx.TeamsFx.getConfigs'
+    package: '@microsoft/teamsfx'
+    summary: Get all configurations.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getConfigs(): Record<string, string>'
+      return:
+        description: key value mappings.
+        type: 'Record&lt;string, string&gt;'
+  - name: getCredential()
+    uid: '@microsoft/teamsfx.TeamsFx.getCredential'
+    package: '@microsoft/teamsfx'
+    summary: Credential instance according to identity type choice.
+    remarks: >-
+      If user identity is chose, will return
+      <xref:@microsoft/teamsfx.TeamsUserCredential>
+
+      in browser environment and
+      <xref:@microsoft/teamsfx.OnBehalfOfUserCredential> in NodeJS. If app
+
+      identity is chose, will return <xref:@microsoft/teamsfx.AppCredential>.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getCredential(): TokenCredential'
+      return:
+        description: instance implements TokenCredential interface.
+        type: TokenCredential
+  - name: getIdentityType()
+    uid: '@microsoft/teamsfx.TeamsFx.getIdentityType'
+    package: '@microsoft/teamsfx'
+    summary: Identity type set by user.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getIdentityType(): IdentityType'
+      return:
+        description: identity type.
+        type: <xref uid="@microsoft/teamsfx.IdentityType" />
+  - name: getUserInfo()
+    uid: '@microsoft/teamsfx.TeamsFx.getUserInfo'
+    package: '@microsoft/teamsfx'
+    summary: Get user information.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getUserInfo(): Promise<UserInfo>'
+      return:
+        description: UserInfo object.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.UserInfo" />&gt;
+  - name: hasConfig(string)
+    uid: '@microsoft/teamsfx.TeamsFx.hasConfig'
+    package: '@microsoft/teamsfx'
+    summary: Check the value of specific key.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function hasConfig(key: string): boolean'
+      parameters:
+        - id: key
+          type: string
+          description: configuration key.
+      return:
+        description: true if corresponding value is not empty string.
+        type: boolean
+  - name: 'login(string | string[])'
+    uid: '@microsoft/teamsfx.TeamsFx.login'
+    package: '@microsoft/teamsfx'
+    summary: >+
+      Popup login page to get user's access token with specific scopes.
+
+
+      **Example**
+
+
+      ```typescript
+
+      await teamsfx.login(["https://graph.microsoft.com/User.Read"]); // single
+      scope using string array
+
+      await teamsfx.login("https://graph.microsoft.com/User.Read"); // single
+      scopes using string
+
+      await teamsfx.login(["https://graph.microsoft.com/User.Read",
+      "Calendars.Read"]); // multiple scopes using string array
+
+      await teamsfx.login("https://graph.microsoft.com/User.Read
+      Calendars.Read"); // multiple scopes using string
+
+      ```
+
+    remarks: >-
+      Only works in Teams client APP. User will be redirected to the
+      authorization page to login and consent.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function login(scopes: string | string[]): Promise<void>'
+      parameters:
+        - id: scopes
+          type: 'string | string[]'
+          description: >
+            The list of scopes for which the token will have access, before
+            that, we will request user to consent.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: setSsoToken(string)
+    uid: '@microsoft/teamsfx.TeamsFx.setSsoToken'
+    package: '@microsoft/teamsfx'
+    summary: Set SSO token when using user identity in NodeJS.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setSsoToken(ssoToken: string): TeamsFx'
+      parameters:
+        - id: ssoToken
+          type: string
+          description: used for on behalf of user flow.
+      return:
+        description: self instance.
+        type: <xref uid="@microsoft/teamsfx.TeamsFx" />

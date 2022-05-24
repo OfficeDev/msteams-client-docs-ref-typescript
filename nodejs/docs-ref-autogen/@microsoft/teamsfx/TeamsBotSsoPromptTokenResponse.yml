@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Token response provided by Teams Bot SSO prompt
 fullName: TeamsBotSsoPromptTokenResponse
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:

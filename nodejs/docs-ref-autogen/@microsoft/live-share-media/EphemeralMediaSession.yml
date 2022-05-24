@@ -1,0 +1,632 @@
+### YamlMime:TSType
+name: EphemeralMediaSession
+uid: '@microsoft/live-share-media.EphemeralMediaSession'
+package: '@microsoft/live-share-media'
+summary: >-
+  Ephemeral fluid object that synchronizes media playback across multiple
+  clients.
+fullName: EphemeralMediaSession<I>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: EphemeralMediaSession(IDataObjectProps<I>)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.constructor'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new EphemeralMediaSession(props: IDataObjectProps<I>)'
+      parameters:
+        - id: props
+          type: IDataObjectProps&lt;I&gt;
+          description: ''
+properties:
+  - name: actionThrottler
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.actionThrottler'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Extension point that lets applications replace the default logic for
+      throttling the sessions
+
+      local sync behavior.
+    fullName: actionThrottler
+    remarks: >-
+      The `EphemeralMediaCoordinator` is fairly aggressive at wanting to keep
+      the local media player
+
+      in sync with the rest of the group. This aggressiveness can result in the
+      coordinator sending
+
+      new sync actions before the local player has finished responding to the
+      previous sync action.
+
+      The `ActionThrottler` gives apps fine grain control over how aggressive
+      they want sync to be.
+
+
+      By default, a `RepeatedAction` throttler is used which prevents the same
+      sync action from
+
+      being sent within an adjustable time period.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: MediaSessionActionThrottler actionThrottler
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-media.MediaSessionActionThrottler" />
+  - name: addListener
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.addListener'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: coordinator
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.coordinator'
+    package: '@microsoft/live-share-media'
+    summary: The group coordinator for the session.
+    fullName: coordinator
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: EphemeralMediaSessionCoordinator coordinator
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@microsoft/live-share-media.EphemeralMediaSessionCoordinator" />
+  - name: disposed
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.disposed'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: disposed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean disposed
+      return:
+        description: ''
+        type: boolean
+  - name: factory
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.factory'
+    package: '@microsoft/live-share-media'
+    summary: The objects fluid type factory.
+    fullName: factory
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static factory: DataObjectFactory<EphemeralMediaSession,
+        DataObjectTypes>
+      return:
+        description: ''
+        type: >-
+          DataObjectFactory&lt;<xref
+          uid="@microsoft/live-share-media.EphemeralMediaSession" />,
+          DataObjectTypes&gt;
+  - name: handle
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.handle'
+    package: '@microsoft/live-share-media'
+    summary: Handle to a data store
+    fullName: handle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> handle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: id
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.id'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string id
+      return:
+        description: ''
+        type: string
+  - name: IFluidHandle
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.IFluidHandle'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: IFluidHandle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> IFluidHandle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: IFluidLoadable
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.IFluidLoadable'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: IFluidLoadable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: this IFluidLoadable
+      return:
+        description: ''
+        type: this
+  - name: IFluidRouter
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.IFluidRouter'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: IFluidRouter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: this IFluidRouter
+      return:
+        description: ''
+        type: this
+  - name: isStarted
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.isStarted'
+    package: '@microsoft/live-share-media'
+    summary: Returns true if the object has been started.
+    fullName: isStarted
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean isStarted
+      return:
+        description: ''
+        type: boolean
+  - name: logger
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.logger'
+    package: '@microsoft/live-share-media'
+    summary: Returns the logger used by the session and coordinator.
+    fullName: logger
+    remarks: This is used by the `MediaPlayerSynchronizer` to log events.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: EphemeralTelemetryLogger logger
+      return:
+        description: ''
+        type: EphemeralTelemetryLogger
+  - name: 'off'
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.off'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: 'off'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'off: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: 'on'
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.on'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: 'on'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'on: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: once
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.once'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: once
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'once: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: prependListener
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.prependListener'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: prependListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: prependOnceListener
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.prependOnceListener'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: prependOnceListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependOnceListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: removeListener
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.removeListener'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: removeListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+  - name: TypeName
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.TypeName'
+    package: '@microsoft/live-share-media'
+    summary: The objects fluid type name.
+    fullName: TypeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TypeName: "@microsoft/fluid-media:SharedMediaSession" =
+        "@microsoft/fluid-media:SharedMediaSession"
+      return:
+        description: ''
+        type: '"@microsoft/fluid-media:SharedMediaSession"'
+inheritedMethods:
+  - name: dispose()
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.dispose'
+    package: '@microsoft/live-share-media'
+    summary: Called when the host container closes and disposes itself
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function dispose()
+  - name: 'emit(string | symbol, any[])'
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.emit'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function emit(event: string | symbol, args: any[]): boolean'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: args
+          type: 'any[]'
+          description: ''
+      return:
+        description: ''
+        type: boolean
+  - name: eventNames()
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.eventNames'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function eventNames(): Array<string | symbol>'
+      return:
+        description: ''
+        type: Array&lt;string | symbol&gt;
+  - name: finishInitialization(boolean)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.finishInitialization'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Call this API to ensure PureDataObject is fully initialized
+
+      initialization happens on demand, only on as-needed bases.
+
+      In most cases you should allow factory/object to decide when to finish
+      initialization.
+
+      But if you are supplying your own implementation of DataStoreRuntime
+      factory and overriding some methods
+
+      and need fully initialized object, then you can call this API to ensure
+      object is fully initialized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function finishInitialization(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: getDataObject(IFluidDataStoreRuntime)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.getDataObject'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getDataObject(runtime: IFluidDataStoreRuntime):
+        Promise<PureDataObject<DataObjectTypes>>
+      parameters:
+        - id: runtime
+          type: IFluidDataStoreRuntime
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
+  - name: >-
+      getFluidObjectFromDirectory<T>(string, IDirectory, undefined | (id:
+      string, directory: IDirectory) => IFluidHandle | undefined)
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSession.getFluidObjectFromDirectory
+    package: '@microsoft/live-share-media'
+    summary: Retrieve Fluid object using the handle get
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getFluidObjectFromDirectory<T>(key: string, directory:
+        IDirectory, getObjectFromDirectory?: undefined | (id: string, directory:
+        IDirectory) => IFluidHandle | undefined): Promise<T | undefined>
+      parameters:
+        - id: key
+          type: string
+          description: key that object (handle/id) is stored with in the directory
+        - id: directory
+          type: IDirectory
+          description: directory containing the object
+        - id: getObjectFromDirectory
+          type: >-
+            undefined | (id: string, directory: IDirectory) =&gt; IFluidHandle |
+            undefined
+          description: >
+            optional callback for fetching object from the directory, allows
+            users to
+
+            define custom types/getters for object retrieval
+      return:
+        description: ''
+        type: Promise&lt;T | undefined&gt;
+  - name: getMaxListeners()
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.getMaxListeners'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxListeners(): number'
+      return:
+        description: ''
+        type: number
+  - name: initializeInternal(boolean)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.initializeInternal'
+    package: '@microsoft/live-share-media'
+    summary: |-
+      Initializes internal objects and calls initialization overrides.
+      Caller is responsible for ensuring this is only invoked once.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function initializeInternal(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: listenerCount(string | symbol)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.listenerCount'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(event: string | symbol): number'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: number
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.listeners'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+  - name: rawListeners(string | symbol)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.rawListeners'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function rawListeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+  - name: removeAllListeners(string | symbol)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.removeAllListeners'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function removeAllListeners(event?: string | symbol): this'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: request(IRequest)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.request'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function request(request: IRequest): Promise<IResponse>'
+      parameters:
+        - id: request
+          type: IRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;IResponse&gt;
+  - name: setMaxListeners(number)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.setMaxListeners'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setMaxListeners(n: number): this'
+      parameters:
+        - id: 'n'
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: this
+methods:
+  - name: >-
+      setActionHandler(ExtendedMediaSessionAction, MediaSessionActionHandler |
+      null)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.setActionHandler'
+    package: '@microsoft/live-share-media'
+    summary: Registers an action handler with the session.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setActionHandler(action: ExtendedMediaSessionAction, handler:
+        MediaSessionActionHandler | null)
+      parameters:
+        - id: action
+          type: >-
+            <xref uid="@microsoft/live-share-media.ExtendedMediaSessionAction"
+            />
+          description: Name of the action to register a handler for.
+        - id: handler
+          type: MediaSessionActionHandler | null
+          description: |
+            Function called when the action is triggered.
+  - name: setRequestPlayerStateHandler(() => IMediaPlayerState)
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSession.setRequestPlayerStateHandler
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Registers a handler that will be queried anytime the group coordinate
+      needs to know the
+
+      local players transport state and position.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setRequestPlayerStateHandler(handler: () => IMediaPlayerState)'
+      parameters:
+        - id: handler
+          type: () =&gt; IMediaPlayerState
+          description: ''
+  - name: 'start(UserMeetingRole[])'
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.start'
+    package: '@microsoft/live-share-media'
+    summary: Starts the object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function start(acceptTransportChangesFrom?: UserMeetingRole[]):
+        Promise<void>
+      parameters:
+        - id: acceptTransportChangesFrom
+          type: 'UserMeetingRole[]'
+          description: |
+            Optional. List of roles allowed to group transport
+            operations like play/pause/seek/setTrack.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: synchronize(IMediaPlayer)
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.synchronize'
+    package: '@microsoft/live-share-media'
+    summary: Begins synchronizing the playback of a media element.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function synchronize(player: IMediaPlayer): MediaPlayerSynchronizer'
+      parameters:
+        - id: player
+          type: <xref uid="@microsoft/live-share-media.IMediaPlayer" />
+          description: Something that "looks like" and HTML Media Element.
+      return:
+        description: >-
+          A new synchronizer instance. Call `synchronizer.end()` to stop
+          synchronizing the elements playback.
+        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+extends: DataObject
