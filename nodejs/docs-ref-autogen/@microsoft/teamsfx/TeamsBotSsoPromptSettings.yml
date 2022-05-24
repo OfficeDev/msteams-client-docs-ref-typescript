@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Settings used to configure an TeamsBotSsoPrompt instance.
 fullName: TeamsBotSsoPromptSettings
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:

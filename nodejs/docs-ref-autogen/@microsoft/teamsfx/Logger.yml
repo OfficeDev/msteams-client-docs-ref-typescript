@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Interface for customized logger.
 fullName: Logger
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 methods:

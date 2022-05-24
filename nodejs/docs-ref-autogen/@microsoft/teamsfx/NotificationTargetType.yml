@@ -11,6 +11,6 @@ remarks: >-
   - "Group" means to a group chat.
 
   - "Person" means to a personal chat.
-isPreview: true
+isPreview: false
 isDeprecated: false
 syntax: type NotificationTargetType = "Channel" | "Group" | "Person"

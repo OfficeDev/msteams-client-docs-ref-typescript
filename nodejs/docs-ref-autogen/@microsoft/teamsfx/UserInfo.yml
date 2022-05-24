@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: 'UserInfo with user displayName, objectId and preferredUserName.'
 fullName: UserInfo
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:

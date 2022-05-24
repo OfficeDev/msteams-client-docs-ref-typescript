@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Provider that handles Basic authentication
 fullName: BasicAuthProvider
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +14,7 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: ''
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new BasicAuthProvider(userName: string, password: string)'
@@ -32,7 +32,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Adds authentication info to http requests
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

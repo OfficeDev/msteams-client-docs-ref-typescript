@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: A class providing credential and configuration.
 fullName: TeamsFx
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +14,7 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Constructor of TeamsFx
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -35,7 +35,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Usually used by service plugins to retrieve specific config
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getConfig(key: string): string'
@@ -51,7 +51,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get all configurations.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getConfigs(): Record<string, string>'
@@ -70,7 +70,7 @@ methods:
       <xref:@microsoft/teamsfx.OnBehalfOfUserCredential> in NodeJS. If app
 
       identity is chose, will return <xref:@microsoft/teamsfx.AppCredential>.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getCredential(): TokenCredential'
@@ -82,7 +82,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Identity type set by user.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getIdentityType(): IdentityType'
@@ -94,7 +94,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get user information.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getUserInfo(): Promise<UserInfo>'
@@ -106,7 +106,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Check the value of specific key.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function hasConfig(key: string): boolean'
@@ -146,7 +146,7 @@ methods:
     remarks: >-
       Only works in Teams client APP. User will be redirected to the
       authorization page to login and consent.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function login(scopes: string | string[]): Promise<void>'
@@ -164,7 +164,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Set SSO token when using user identity in NodeJS.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setSsoToken(ssoToken: string): TeamsFx'

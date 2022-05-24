@@ -15,7 +15,7 @@ fullName: TeamsBotInstallation
 remarks: >-
   It's recommended to get bot installations from
   <xref:ConversationBot.installations()>.
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -26,7 +26,7 @@ constructors:
     remarks: >-
       It's recommended to get bot installations from
       <xref:ConversationBot.installations()>, instead of using this constructor.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -47,7 +47,7 @@ properties:
     summary: The bound `BotFrameworkAdapter`.
     fullName: adapter
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'adapter: BotFrameworkAdapter'
@@ -60,7 +60,7 @@ properties:
     summary: The bound `ConversationReference`.
     fullName: conversationReference
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'conversationReference: Partial<ConversationReference>'
@@ -80,7 +80,7 @@ properties:
 
       - "Person" means bot is installed into a personal scope and notification
       will be sent to personal chat.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: NotificationTargetType'
@@ -93,7 +93,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get channels from this bot installation.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function channels(): Promise<Channel[]>'
@@ -107,7 +107,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get members from this bot installation.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function members(): Promise<Member[]>'
@@ -119,7 +119,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sendAdaptiveCard(card: unknown): Promise<void>'
@@ -135,7 +135,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Send a plain text message.
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sendMessage(text: string): Promise<void>'

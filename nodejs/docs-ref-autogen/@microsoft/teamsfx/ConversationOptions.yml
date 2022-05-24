@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: 'Options to initialize <xref:@microsoft/teamsfx.ConversationBot>'
 fullName: ConversationOptions
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -23,7 +23,7 @@ properties:
     remarks: >-
       If neither `adapter` nor `adapterConfig` is provided, will use BOT_ID and
       BOT_PASSWORD from environment variables.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'adapter?: BotFrameworkAdapter'
@@ -40,7 +40,7 @@ properties:
     remarks: >-
       If neither `adapter` nor `adapterConfig` is provided, will use BOT_ID and
       BOT_PASSWORD from environment variables.
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'adapterConfig?: [key: string]: unknown'
@@ -53,7 +53,7 @@ properties:
     summary: The command part.
     fullName: command
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'command?: CommandOptions & { enabled?: boolean }'
@@ -68,7 +68,7 @@ properties:
     summary: The notification part.
     fullName: notification
     remarks: ''
-    isPreview: true
+    isPreview: false
     isDeprecated: false
     syntax:
       content: 'notification?: NotificationOptions_2 & { enabled?: boolean }'
