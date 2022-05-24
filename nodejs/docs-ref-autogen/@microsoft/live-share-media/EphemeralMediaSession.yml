@@ -315,75 +315,14 @@ inheritedMethods:
   - name: 'emit(string | symbol, any[])'
     uid: '@microsoft/live-share-media.EphemeralMediaSession.emit'
     package: '@microsoft/live-share-media'
-    summary: >-
-      Synchronously calls each of the listeners registered for the event
-      named`eventName`, in the order they were registered, passing the supplied
-      arguments
-
-      to each.
-
-      Returns `true` if the event had listeners, `false` otherwise.
-
-
-      ```js
-
-      const EventEmitter = require('events');
-
-      const myEmitter = new EventEmitter();
-
-
-      // First listener
-
-      myEmitter.on('event', function firstListener() {
-        console.log('Helloooo! first listener');
-      });
-
-      // Second listener
-
-      myEmitter.on('event', function secondListener(arg1, arg2) {
-        console.log(`event with parameters ${arg1}, ${arg2} in second listener`);
-      });
-
-      // Third listener
-
-      myEmitter.on('event', function thirdListener(...args) {
-        const parameters = args.join(', ');
-        console.log(`event with parameters ${parameters} in third listener`);
-      });
-
-
-      console.log(myEmitter.listeners('event'));
-
-
-      myEmitter.emit('event', 1, 2, 3, 4, 5);
-
-
-      // Prints:
-
-      // [
-
-      //   [Function: firstListener],
-
-      //   [Function: secondListener],
-
-      //   [Function: thirdListener]
-
-      // ]
-
-      // Helloooo! first listener
-
-      // event with parameters 1, 2 in second listener
-
-      // event with parameters 1, 2, 3, 4, 5 in third listener
-
-      ```
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function emit(eventName: string | symbol, args: any[]): boolean'
+      content: 'function emit(event: string | symbol, args: any[]): boolean'
       parameters:
-        - id: eventName
+        - id: event
           type: string | symbol
           description: ''
         - id: args
@@ -395,21 +334,7 @@ inheritedMethods:
   - name: eventNames()
     uid: '@microsoft/live-share-media.EphemeralMediaSession.eventNames'
     package: '@microsoft/live-share-media'
-    summary: |-
-      Returns an array listing the events for which the emitter has registered
-      listeners. The values in the array are strings or `Symbol`s.
-      ```js
-      const EventEmitter = require('events');
-      const myEE = new EventEmitter();
-      myEE.on('foo', () => {});
-      myEE.on('bar', () => {});
-
-      const sym = Symbol('symbol');
-      myEE.on(sym, () => {});
-
-      console.log(myEE.eventNames());
-      // Prints: [ 'foo', 'bar', Symbol(symbol) ]
-      ```
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -501,12 +426,7 @@ inheritedMethods:
   - name: getMaxListeners()
     uid: '@microsoft/live-share-media.EphemeralMediaSession.getMaxListeners'
     package: '@microsoft/live-share-media'
-    summary: >-
-      Returns the current max listener value for the `EventEmitter` which is
-      either
-
-      set by `emitter.setMaxListeners(n)` or defaults to
-      <xref:@microsoft/live-share-media.EphemeralMediaSessionCoordinator.defaultMaxListeners>.
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -536,39 +456,30 @@ inheritedMethods:
   - name: listenerCount(string | symbol)
     uid: '@microsoft/live-share-media.EphemeralMediaSession.listenerCount'
     package: '@microsoft/live-share-media'
-    summary: Returns the number of listeners listening to the event named `eventName`.
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function listenerCount(eventName: string | symbol): number'
+      content: 'function listenerCount(event: string | symbol): number'
       parameters:
-        - id: eventName
+        - id: event
           type: string | symbol
-          description: |
-            The name of the event being listened for
+          description: ''
       return:
         description: ''
         type: number
   - name: listeners(string | symbol)
     uid: '@microsoft/live-share-media.EphemeralMediaSession.listeners'
     package: '@microsoft/live-share-media'
-    summary: |-
-      Returns a copy of the array of listeners for the event named `eventName`.
-      ```js
-      server.on('connection', (stream) => {
-        console.log('someone connected!');
-      });
-      console.log(util.inspect(server.listeners('connection')));
-      // Prints: [ [Function] ]
-      ```
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function listeners(eventName: string | symbol): Function[]'
+      content: 'function listeners(event: string | symbol): Function[]'
       parameters:
-        - id: eventName
+        - id: event
           type: string | symbol
           description: ''
       return:
@@ -577,39 +488,14 @@ inheritedMethods:
   - name: rawListeners(string | symbol)
     uid: '@microsoft/live-share-media.EphemeralMediaSession.rawListeners'
     package: '@microsoft/live-share-media'
-    summary: |-
-      Returns a copy of the array of listeners for the event named `eventName`,
-      including any wrappers (such as those created by `.once()`).
-      ```js
-      const emitter = new EventEmitter();
-      emitter.once('log', () => console.log('log once'));
-
-      // Returns a new Array with a function `onceWrapper` which has a property
-      // `listener` which contains the original listener bound above
-      const listeners = emitter.rawListeners('log');
-      const logFnWrapper = listeners[0];
-
-      // Logs "log once" to the console and does not unbind the `once` event
-      logFnWrapper.listener();
-
-      // Logs "log once" to the console and removes the listener
-      logFnWrapper();
-
-      emitter.on('log', () => console.log('log persistently'));
-      // Will return a new Array with a single function bound by `.on()` above
-      const newListeners = emitter.rawListeners('log');
-
-      // Logs "log persistently" twice
-      newListeners[0]();
-      emitter.emit('log');
-      ```
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function rawListeners(eventName: string | symbol): Function[]'
+      content: 'function rawListeners(event: string | symbol): Function[]'
       parameters:
-        - id: eventName
+        - id: event
           type: string | symbol
           description: ''
       return:
@@ -618,13 +504,7 @@ inheritedMethods:
   - name: removeAllListeners(string | symbol)
     uid: '@microsoft/live-share-media.EphemeralMediaSession.removeAllListeners'
     package: '@microsoft/live-share-media'
-    summary: |-
-      Removes all listeners, or those of the specified `eventName`.
-      It is bad practice to remove listeners added elsewhere in the code,
-      particularly when the `EventEmitter` instance was created by some other
-      component or module (e.g. sockets or file streams).
-
-      Returns a reference to the `EventEmitter`, so that calls can be chained.
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -656,19 +536,7 @@ inheritedMethods:
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share-media.EphemeralMediaSession.setMaxListeners'
     package: '@microsoft/live-share-media'
-    summary: >-
-      By default `EventEmitter`s will print a warning if more than `10`
-      listeners are
-
-      added for a particular event. This is a useful default that helps finding
-
-      memory leaks. The `emitter.setMaxListeners()` method allows the limit to
-      be
-
-      modified for this specific `EventEmitter` instance. The value can be set
-      to`Infinity` (or `0`) to indicate an unlimited number of listeners.
-
-      Returns a reference to the `EventEmitter`, so that calls can be chained.
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false

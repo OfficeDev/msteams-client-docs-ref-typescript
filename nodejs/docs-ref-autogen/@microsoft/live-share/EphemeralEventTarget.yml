@@ -2,11 +2,9 @@
 name: EphemeralEventTarget
 uid: '@microsoft/live-share.EphemeralEventTarget'
 package: '@microsoft/live-share'
-summary: >-
-  Receives events broadcast by an [[EphemeralEventSource]].
-
-  #### remarks
-
+summary: 'Receives events broadcast by an [[EphemeralEventSource]].'
+fullName: EphemeralEventTarget<TEvent>
+remarks: >-
   All ephemeral event targets are also sources. This simplifies the programming
   model for
 
@@ -14,8 +12,6 @@ summary: >-
   broadcasting
 
   events to other instances of itself.
-fullName: EphemeralEventTarget<TEvent>
-remarks: ''
 isPreview: false
 isDeprecated: false
 type: class

@@ -89,11 +89,8 @@ methods:
   - name: sendEvent()
     uid: '@microsoft/live-share.EphemeralEventTimer.sendEvent'
     package: '@microsoft/live-share'
-    summary: >
-      Immediately sends an event.
-
-      #### remarks
-
+    summary: Immediately sends an event.
+    remarks: >-
       The `createEvent` callback to construct the event is called but does not
       impact any pending
 
@@ -101,7 +98,6 @@ methods:
       the next timer
 
       interval.
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,14 +105,10 @@ methods:
   - name: start()
     uid: '@microsoft/live-share.EphemeralEventTimer.start'
     package: '@microsoft/live-share'
-    summary: >
-      Starts the timer.
-
-      #### remarks
-
+    summary: Starts the timer.
+    remarks: >-
       If the timer is running it will be stooped and then re-started with a new
       [[delay]].
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

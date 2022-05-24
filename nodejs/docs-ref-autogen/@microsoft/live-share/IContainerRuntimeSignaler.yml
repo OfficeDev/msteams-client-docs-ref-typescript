@@ -2,19 +2,16 @@
 name: IContainerRuntimeSignaler
 uid: '@microsoft/live-share.IContainerRuntimeSignaler'
 package: '@microsoft/live-share'
-summary: >
+summary: >-
   Duck type of something that provides the expected signalling functionality at
   the container level.
-
-  #### remarks
-
+fullName: IContainerRuntimeSignaler
+remarks: >-
   Simplifies the mocks needed to unit test the [[EphemeralObjectSynchronizer]].
   Applications can
 
   just pass `this.context.containerRuntime` to any class that takes an
   `IContainerRuntimeSignaler`.
-fullName: IContainerRuntimeSignaler
-remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface

@@ -5,16 +5,13 @@ package: '@microsoft/live-share'
 summary: >-
   Broadcasts ephemeral events to all clients and can be received by an
   [[EphemeralEventTarget]].
-
-  #### remarks
-
+fullName: EphemeralEventSource<TEvent>
+remarks: >-
   Ephemeral objects won't typically create an `EphemeralEventSource` directly.
   They will, instead,
 
   create an [[EphemeralEventTarget]] class, which can both send & receive
   events.
-fullName: EphemeralEventSource<TEvent>
-remarks: ''
 isPreview: false
 isDeprecated: false
 type: class

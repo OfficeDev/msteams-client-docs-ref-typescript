@@ -38,17 +38,13 @@ properties:
   - name: state
     uid: '@microsoft/live-share.EphemeralPresenceUser.state'
     package: '@microsoft/live-share'
-    summary: >
-      Users current state.
-
-      #### remarks
-
+    summary: Users current state.
+    fullName: state
+    remarks: >-
       This is automatically set to [[PresenceState.offline]] if the users client
       hasn't sent updates
 
       for a period of time.
-    fullName: state
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
