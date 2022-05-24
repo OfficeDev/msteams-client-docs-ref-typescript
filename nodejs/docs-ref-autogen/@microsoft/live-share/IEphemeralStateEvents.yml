@@ -2,7 +2,7 @@
 name: IEphemeralStateEvents
 uid: '@microsoft/live-share.IEphemeralStateEvents'
 package: '@microsoft/live-share'
-summary: 'Event typings for [[EphemeralState]] class.'
+summary: Event typings for `EphemeralState` class.
 fullName: IEphemeralStateEvents<TData>
 remarks: ''
 isPreview: false

@@ -361,18 +361,15 @@ methods:
           description: Name of the event to send.
         - id: evt
           type: Partial&lt;TEvent&gt;
-          description: >-
-            Optional. Partial event object to send. The
-            [[IEphemeralEvent.name]],
-
-            [[IEphemeralEvent.timestamp]], and [[IEphemeralEvent.clientId]]
-
+          description: |-
+            Optional. Partial event object to send. The `IEphemeralEvent.name`,
+            `IEphemeralEvent.timestamp`, and `IEphemeralEvent.clientId`
             fields will be automatically populated prior to sending.
       return:
         description: >-
-          The full event, including [[IEphemeralEvent.name]],
+          The full event, including `IEphemeralEvent.name`,
 
-          [[IEphemeralEvent.timestamp]], and [[IEphemeralEvent.clientId]] fields
-          if known.
+          `IEphemeralEvent.timestamp`, and `IEphemeralEvent.clientId` fields if
+          known.
         type: TEvent
 extends: TypedEventEmitter&lt;IErrorEvent&gt;

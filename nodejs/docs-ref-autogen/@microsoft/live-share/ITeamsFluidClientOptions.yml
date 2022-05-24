@@ -2,7 +2,7 @@
 name: ITeamsFluidClientOptions
 uid: '@microsoft/live-share.ITeamsFluidClientOptions'
 package: '@microsoft/live-share'
-summary: 'Options used to configure the [[TeamsFluidClient]] class.'
+summary: Options used to configure the `TeamsFluidClient` class.
 fullName: ITeamsFluidClientOptions
 remarks: ''
 isPreview: false

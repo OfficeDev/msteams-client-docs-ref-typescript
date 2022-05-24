@@ -77,7 +77,9 @@ properties:
       Number of seconds without a presence update before a remote user is
       considered offline.
     fullName: expirationPeriod
-    remarks: Defaults to a value of `20` seconds and the minimum value is `1`.
+    remarks: >-
+      Defaults to a value of `20` seconds. The minimum value is 0.1 seconds for
+      testing purposes.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -630,7 +632,7 @@ methods:
           type: <xref uid="@microsoft/live-share.PresenceState" />
           description: >
             Optional. Initial presence state. Defaults to
-            [[PresenceState.online]].
+            `PresenceState.online`.
       return:
         description: ''
         type: Promise&lt;void&gt;

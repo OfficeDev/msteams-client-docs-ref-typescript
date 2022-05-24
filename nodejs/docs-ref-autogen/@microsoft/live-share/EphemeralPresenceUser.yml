@@ -41,7 +41,7 @@ properties:
     summary: Users current state.
     fullName: state
     remarks: >-
-      This is automatically set to [[PresenceState.offline]] if the users client
+      This is automatically set to `PresenceState.offline` if the users client
       hasn't sent updates
 
       for a period of time.
