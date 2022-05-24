@@ -3,7 +3,7 @@ name: EphemeralEventTimer
 uid: '@microsoft/live-share.EphemeralEventTimer'
 package: '@microsoft/live-share'
 summary: >-
-  Periodically broadcasts an event to listening [[EphemeralEventTarget]]
+  Periodically broadcasts an event to listening `EphemeralEventTarget`
   instances.
 fullName: EphemeralEventTimer<T>
 remarks: ''
@@ -40,7 +40,7 @@ constructors:
         - id: repeat
           type: undefined | false | true
           description: >
-            Optional. If true the timer will repeat once [[start]] is called,
+            Optional. If true the timer will repeat once `start` is called,
             otherwise a single event will be sent after the delay. Defaults to
             false.
 properties:
@@ -75,7 +75,7 @@ properties:
     package: '@microsoft/live-share'
     summary: >-
       If true the event will automatically repeat at an interval specified by
-      the [[delay]].
+      the `delay`.
     fullName: repeat
     remarks: ''
     isPreview: false
@@ -89,19 +89,15 @@ methods:
   - name: sendEvent()
     uid: '@microsoft/live-share.EphemeralEventTimer.sendEvent'
     package: '@microsoft/live-share'
-    summary: >
-      Immediately sends an event.
-
-      #### remarks
-
+    summary: Immediately sends an event.
+    remarks: >-
       The `createEvent` callback to construct the event is called but does not
       impact any pending
 
-      timeouts. Call [[start]] after calling `sendEvent` if you'd like to skip
-      the next timer
+      timeouts. Call `start` after calling `sendEvent` if you'd like to skip the
+      next timer
 
       interval.
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -109,14 +105,10 @@ methods:
   - name: start()
     uid: '@microsoft/live-share.EphemeralEventTimer.start'
     package: '@microsoft/live-share'
-    summary: >
-      Starts the timer.
-
-      #### remarks
-
+    summary: Starts the timer.
+    remarks: >-
       If the timer is running it will be stooped and then re-started with a new
-      [[delay]].
-    remarks: ''
+      `delay`.
     isPreview: false
     isDeprecated: false
     syntax:

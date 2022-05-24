@@ -2,7 +2,7 @@
 name: EphemeralEventEvents
 uid: '@microsoft/live-share.EphemeralEventEvents'
 package: '@microsoft/live-share'
-summary: 'Events supported by [[EphemeralEvent]] object.'
+summary: Events supported by `EphemeralEvent` object.
 fullName: EphemeralEventEvents
 remarks: ''
 isPreview: false
