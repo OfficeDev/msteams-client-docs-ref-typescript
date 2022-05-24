@@ -156,3 +156,589 @@
     - uid: '@microsoft/live-share-media.VolumeLimiter'
       name: VolumeLimiter
       items: []
+<<<<<<< HEAD
+=======
+- name: '@microsoft/teams-js'
+  items:
+    - name: Overview
+      uid: '@microsoft/teams-js'
+    - name: app
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.app'
+        - uid: '@microsoft/teams-js.app.AppHostInfo'
+          name: AppHostInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.AppInfo'
+          name: AppInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.ChannelInfo'
+          name: ChannelInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.ChatInfo'
+          name: ChatInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.Context'
+          name: Context
+          items: []
+        - uid: '@microsoft/teams-js.app.ExpectedFailureReason'
+          name: ExpectedFailureReason
+          items: []
+        - uid: '@microsoft/teams-js.app.FailedReason'
+          name: FailedReason
+          items: []
+        - uid: '@microsoft/teams-js.app.IExpectedFailureRequest'
+          name: IExpectedFailureRequest
+          items: []
+        - uid: '@microsoft/teams-js.app.IFailedRequest'
+          name: IFailedRequest
+          items: []
+        - uid: '@microsoft/teams-js.app.MeetingInfo'
+          name: MeetingInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.PageInfo'
+          name: PageInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.SharePointSiteInfo'
+          name: SharePointSiteInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.TeamInfo'
+          name: TeamInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.TenantInfo'
+          name: TenantInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.UserInfo'
+          name: UserInfo
+          items: []
+    - uid: '@microsoft/teams-js.appInitialization'
+      name: appInitialization
+      items: []
+    - name: appInstallDialog
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.appInstallDialog'
+        - uid: '@microsoft/teams-js.appInstallDialog.OpenAppInstallDialogParams'
+          name: OpenAppInstallDialogParams
+          items: []
+    - name: authentication
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.authentication'
+        - uid: '@microsoft/teams-js.authentication.AuthenticateParameters'
+          name: AuthenticateParameters
+          items: []
+        - uid: '@microsoft/teams-js.authentication.AuthenticatePopUpParameters'
+          name: AuthenticatePopUpParameters
+          items: []
+        - uid: '@microsoft/teams-js.authentication.AuthTokenRequest'
+          name: AuthTokenRequest
+          items: []
+        - uid: '@microsoft/teams-js.authentication.AuthTokenRequestParameters'
+          name: AuthTokenRequestParameters
+          items: []
+        - uid: '@microsoft/teams-js.authentication.LegacyCallBacks'
+          name: LegacyCallBacks
+          items: []
+    - uid: '@microsoft/teams-js.BotUrlDialogInfo'
+      name: BotUrlDialogInfo
+      items: []
+    - name: calendar
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.calendar'
+        - uid: '@microsoft/teams-js.calendar.ComposeMeetingParams'
+          name: ComposeMeetingParams
+          items: []
+        - uid: '@microsoft/teams-js.calendar.OpenCalendarItemParams'
+          name: OpenCalendarItemParams
+          items: []
+    - name: call
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.call'
+        - uid: '@microsoft/teams-js.call.CallModalities'
+          name: CallModalities
+          items: []
+        - uid: '@microsoft/teams-js.call.StartCallParams'
+          name: StartCallParams
+          items: []
+    - uid: '@microsoft/teams-js.ChannelType'
+      name: ChannelType
+      items: []
+    - uid: '@microsoft/teams-js.chat'
+      name: chat
+      items: []
+    - uid: '@microsoft/teams-js.ChildAppWindow'
+      name: ChildAppWindow
+      items: []
+    - uid: '@microsoft/teams-js.Context'
+      name: Context
+      items: []
+    - uid: '@microsoft/teams-js.DeepLinkParameters'
+      name: DeepLinkParameters
+      items: []
+    - name: dialog
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.dialog'
+        - uid: '@microsoft/teams-js.dialog.bot'
+          name: bot
+          items: []
+        - uid: '@microsoft/teams-js.dialog.DialogSubmitHandler'
+          name: DialogSubmitHandler
+          items: []
+        - uid: '@microsoft/teams-js.dialog.ISdkResponse'
+          name: ISdkResponse
+          items: []
+        - uid: '@microsoft/teams-js.dialog.PostMessageChannel'
+          name: PostMessageChannel
+          items: []
+        - uid: '@microsoft/teams-js.dialog.update'
+          name: update
+          items: []
+    - uid: '@microsoft/teams-js.DialogDimension'
+      name: DialogDimension
+      items: []
+    - uid: '@microsoft/teams-js.DialogInfo'
+      name: DialogInfo
+      items: []
+    - uid: '@microsoft/teams-js.DialogSize'
+      name: DialogSize
+      items: []
+    - uid: '@microsoft/teams-js.ErrorCode'
+      name: ErrorCode
+      items: []
+    - uid: '@microsoft/teams-js.FileOpenPreference'
+      name: FileOpenPreference
+      items: []
+    - uid: '@microsoft/teams-js.FrameContext'
+      name: FrameContext
+      items: []
+    - uid: '@microsoft/teams-js.FrameContexts'
+      name: FrameContexts
+      items: []
+    - uid: '@microsoft/teams-js.FrameInfo'
+      name: FrameInfo
+      items: []
+    - uid: '@microsoft/teams-js.HostClientType'
+      name: HostClientType
+      items: []
+    - uid: '@microsoft/teams-js.HostName'
+      name: HostName
+      items: []
+    - uid: '@microsoft/teams-js.IAppWindow'
+      name: IAppWindow
+      items: []
+    - uid: '@microsoft/teams-js.LocaleInfo'
+      name: LocaleInfo
+      items: []
+    - name: location
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.location'
+        - uid: '@microsoft/teams-js.location.Location'
+          name: Location
+          items: []
+        - uid: '@microsoft/teams-js.location.LocationProps'
+          name: LocationProps
+          items: []
+    - name: mail
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.mail'
+        - uid: '@microsoft/teams-js.mail.ComposeMailBase'
+          name: ComposeMailBase
+          items: []
+        - uid: '@microsoft/teams-js.mail.ComposeMailParams'
+          name: ComposeMailParams
+          items: []
+        - uid: '@microsoft/teams-js.mail.ComposeMailType'
+          name: ComposeMailType
+          items: []
+        - uid: '@microsoft/teams-js.mail.ComposeNewParams'
+          name: ComposeNewParams
+          items: []
+        - uid: '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
+          name: ComposeReplyOrForwardParams
+          items: []
+        - uid: '@microsoft/teams-js.mail.OpenMailItemParams'
+          name: OpenMailItemParams
+          items: []
+    - name: media
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.media'
+        - uid: '@microsoft/teams-js.media.AssembleAttachment'
+          name: AssembleAttachment
+          items: []
+        - uid: '@microsoft/teams-js.media.AudioProps'
+          name: AudioProps
+          items: []
+        - uid: '@microsoft/teams-js.media.BarCodeConfig'
+          name: BarCodeConfig
+          items: []
+        - uid: '@microsoft/teams-js.media.CameraStartMode'
+          name: CameraStartMode
+          items: []
+        - uid: '@microsoft/teams-js.media.File'
+          name: File
+          items: []
+        - uid: '@microsoft/teams-js.media.FileFormat'
+          name: FileFormat
+          items: []
+        - uid: '@microsoft/teams-js.media.ImageOutputFormats'
+          name: ImageOutputFormats
+          items: []
+        - uid: '@microsoft/teams-js.media.ImageProps'
+          name: ImageProps
+          items: []
+        - uid: '@microsoft/teams-js.media.ImageUri'
+          name: ImageUri
+          items: []
+        - uid: '@microsoft/teams-js.media.ImageUriType'
+          name: ImageUriType
+          items: []
+        - uid: '@microsoft/teams-js.media.Media'
+          name: Media
+          items: []
+        - uid: '@microsoft/teams-js.media.MediaChunk'
+          name: MediaChunk
+          items: []
+        - uid: '@microsoft/teams-js.media.MediaInputs'
+          name: MediaInputs
+          items: []
+        - uid: '@microsoft/teams-js.media.MediaResult'
+          name: MediaResult
+          items: []
+        - uid: '@microsoft/teams-js.media.MediaType'
+          name: MediaType
+          items: []
+        - uid: '@microsoft/teams-js.media.Source'
+          name: Source
+          items: []
+        - uid: '@microsoft/teams-js.media.VideoAndImageProps'
+          name: VideoAndImageProps
+          items: []
+        - uid: '@microsoft/teams-js.media.VideoController'
+          name: VideoController
+          items: []
+        - uid: '@microsoft/teams-js.media.VideoControllerCallback'
+          name: VideoControllerCallback
+          items: []
+        - uid: '@microsoft/teams-js.media.VideoProps'
+          name: VideoProps
+          items: []
+    - name: meeting
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.meeting'
+        - uid: '@microsoft/teams-js.meeting.CallType'
+          name: CallType
+          items: []
+        - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
+          name: IAppContentStageSharingCapabilities
+          items: []
+        - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingState'
+          name: IAppContentStageSharingState
+          items: []
+        - uid: '@microsoft/teams-js.meeting.ISpeakingState'
+          name: ISpeakingState
+          items: []
+        - uid: '@microsoft/teams-js.meeting.LiveStreamState'
+          name: LiveStreamState
+          items: []
+        - uid: '@microsoft/teams-js.meeting.MeetingType'
+          name: MeetingType
+          items: []
+    - uid: '@microsoft/teams-js.meetingRoom'
+      name: meetingRoom
+      items: []
+    - name: menus
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.menus'
+        - uid: '@microsoft/teams-js.menus.ActionMenuParameters'
+          name: ActionMenuParameters
+          items: []
+        - uid: '@microsoft/teams-js.menus.DisplayMode'
+          name: DisplayMode
+          items: []
+    - uid: '@microsoft/teams-js.monetization'
+      name: monetization
+      items: []
+    - uid: '@microsoft/teams-js.notifications'
+      name: notifications
+      items: []
+    - uid: '@microsoft/teams-js.NotificationTypes'
+      name: NotificationTypes
+      items: []
+    - uid: '@microsoft/teams-js.OpenChatRequest'
+      name: OpenChatRequest
+      items: []
+    - uid: '@microsoft/teams-js.OpenGroupChatRequest'
+      name: OpenGroupChatRequest
+      items: []
+    - uid: '@microsoft/teams-js.OpenSingleChatRequest'
+      name: OpenSingleChatRequest
+      items: []
+    - name: pages
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.pages'
+        - uid: '@microsoft/teams-js.pages.appButton'
+          name: appButton
+          items: []
+        - uid: '@microsoft/teams-js.pages.backStack'
+          name: backStack
+          items: []
+        - name: config
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.pages.config'
+            - uid: '@microsoft/teams-js.pages.config.RemoveEvent'
+              name: RemoveEvent
+              items: []
+            - uid: '@microsoft/teams-js.pages.config.SaveEvent'
+              name: SaveEvent
+              items: []
+            - uid: '@microsoft/teams-js.pages.config.SaveParameters'
+              name: SaveParameters
+              items: []
+        - uid: '@microsoft/teams-js.pages.InstanceConfig'
+          name: InstanceConfig
+          items: []
+        - uid: '@microsoft/teams-js.pages.NavigateToAppParams'
+          name: NavigateToAppParams
+          items: []
+        - uid: '@microsoft/teams-js.pages.tabs'
+          name: tabs
+          items: []
+    - uid: '@microsoft/teams-js.ParentAppWindow'
+      name: ParentAppWindow
+      items: []
+    - name: people
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.people'
+        - uid: '@microsoft/teams-js.people.PeoplePickerInputs'
+          name: PeoplePickerInputs
+          items: []
+        - uid: '@microsoft/teams-js.people.PeoplePickerResult'
+          name: PeoplePickerResult
+          items: []
+    - uid: '@microsoft/teams-js.remoteCamera'
+      name: remoteCamera
+      items: []
+    - uid: '@microsoft/teams-js.SdkError'
+      name: SdkError
+      items: []
+    - uid: '@microsoft/teams-js.settings'
+      name: settings
+      items: []
+    - uid: '@microsoft/teams-js.ShareDeepLinkParameters'
+      name: ShareDeepLinkParameters
+      items: []
+    - name: sharing
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.sharing'
+        - uid: '@microsoft/teams-js.sharing.ContentType'
+          name: ContentType
+          items: []
+        - uid: '@microsoft/teams-js.sharing.IBaseSharedContent'
+          name: IBaseSharedContent
+          items: []
+        - uid: '@microsoft/teams-js.sharing.IShareRequest'
+          name: IShareRequest
+          items: []
+        - uid: '@microsoft/teams-js.sharing.IShareRequestContentType'
+          name: IShareRequestContentType
+          items: []
+        - uid: '@microsoft/teams-js.sharing.IURLContent'
+          name: IURLContent
+          items: []
+    - uid: '@microsoft/teams-js.ShowNotificationParameters'
+      name: ShowNotificationParameters
+      items: []
+    - name: stageView
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.stageView'
+        - uid: '@microsoft/teams-js.stageView.StageViewParams'
+          name: StageViewParams
+          items: []
+    - uid: '@microsoft/teams-js.TabInformation'
+      name: TabInformation
+      items: []
+    - uid: '@microsoft/teams-js.TabInstance'
+      name: TabInstance
+      items: []
+    - uid: '@microsoft/teams-js.TabInstanceParameters'
+      name: TabInstanceParameters
+      items: []
+    - uid: '@microsoft/teams-js.TaskInfo'
+      name: TaskInfo
+      items: []
+    - uid: '@microsoft/teams-js.tasks'
+      name: tasks
+      items: []
+    - uid: '@microsoft/teams-js.TeamInformation'
+      name: TeamInformation
+      items: []
+    - uid: '@microsoft/teams-js.teamsCore'
+      name: teamsCore
+      items: []
+    - uid: '@microsoft/teams-js.TeamType'
+      name: TeamType
+      items: []
+    - uid: '@microsoft/teams-js.UrlDialogInfo'
+      name: UrlDialogInfo
+      items: []
+    - uid: '@microsoft/teams-js.UserTeamRole'
+      name: UserTeamRole
+      items: []
+    - name: video
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.video'
+        - uid: '@microsoft/teams-js.video.EffectChangeType'
+          name: EffectChangeType
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoEffectCallBack'
+          name: VideoEffectCallBack
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoFrame'
+          name: VideoFrame
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoFrameCallback'
+          name: VideoFrameCallback
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoFrameConfig'
+          name: VideoFrameConfig
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoFrameFormat'
+          name: VideoFrameFormat
+          items: []
+- name: '@microsoft/teamsfx'
+  items:
+    - name: Overview
+      uid: '@microsoft/teamsfx'
+    - uid: '@microsoft/teamsfx.ApiKeyLocation'
+      name: ApiKeyLocation
+      items: []
+    - uid: '@microsoft/teamsfx.ApiKeyProvider'
+      name: ApiKeyProvider
+      items: []
+    - uid: '@microsoft/teamsfx.AppCredential'
+      name: AppCredential
+      items: []
+    - uid: '@microsoft/teamsfx.AuthenticationConfiguration'
+      name: AuthenticationConfiguration
+      items: []
+    - uid: '@microsoft/teamsfx.AuthProvider'
+      name: AuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.BasicAuthProvider'
+      name: BasicAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.BearerTokenAuthProvider'
+      name: BearerTokenAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.CertificateAuthProvider'
+      name: CertificateAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.Channel'
+      name: Channel
+      items: []
+    - uid: '@microsoft/teamsfx.CommandBot'
+      name: CommandBot
+      items: []
+    - uid: '@microsoft/teamsfx.CommandMessage'
+      name: CommandMessage
+      items: []
+    - uid: '@microsoft/teamsfx.CommandOptions'
+      name: CommandOptions
+      items: []
+    - uid: '@microsoft/teamsfx.ConversationBot'
+      name: ConversationBot
+      items: []
+    - uid: '@microsoft/teamsfx.ConversationOptions'
+      name: ConversationOptions
+      items: []
+    - uid: '@microsoft/teamsfx.ErrorCode'
+      name: ErrorCode
+      items: []
+    - uid: '@microsoft/teamsfx.ErrorWithCode'
+      name: ErrorWithCode
+      items: []
+    - uid: '@microsoft/teamsfx.IdentityType'
+      name: IdentityType
+      items: []
+    - uid: '@microsoft/teamsfx.LogFunction'
+      name: LogFunction
+      items: []
+    - uid: '@microsoft/teamsfx.Logger'
+      name: Logger
+      items: []
+    - uid: '@microsoft/teamsfx.LogLevel'
+      name: LogLevel
+      items: []
+    - uid: '@microsoft/teamsfx.Member'
+      name: Member
+      items: []
+    - uid: '@microsoft/teamsfx.MessageBuilder'
+      name: MessageBuilder
+      items: []
+    - uid: '@microsoft/teamsfx.MsGraphAuthProvider'
+      name: MsGraphAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationBot'
+      name: NotificationBot
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationOptions_2'
+      name: NotificationOptions_2
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTarget'
+      name: NotificationTarget
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTargetStorage'
+      name: NotificationTargetStorage
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTargetType'
+      name: NotificationTargetType
+      items: []
+    - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
+      name: OnBehalfOfUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotInstallation'
+      name: TeamsBotInstallation
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
+      name: TeamsBotSsoPrompt
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
+      name: TeamsBotSsoPromptSettings
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
+      name: TeamsBotSsoPromptTokenResponse
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsFx'
+      name: TeamsFx
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsFxBotCommandHandler'
+      name: TeamsFxBotCommandHandler
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsFxConfiguration'
+      name: TeamsFxConfiguration
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsUserCredential'
+      name: TeamsUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.TriggerPatterns'
+      name: TriggerPatterns
+      items: []
+    - uid: '@microsoft/teamsfx.UserInfo'
+      name: UserInfo
+      items: []
+>>>>>>> 9530f027ca373d8d537b8e9c76fadcf056d7b265

@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: Logger
+uid: '@microsoft/teamsfx.Logger'
+package: '@microsoft/teamsfx'
+summary: Interface for customized logger.
+fullName: Logger
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: error(string)
+    uid: '@microsoft/teamsfx.Logger.error'
+    package: '@microsoft/teamsfx'
+    summary: Writes to error level logging or lower.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function error(message: string)'
+      parameters:
+        - id: message
+          type: string
+          description: ''
+  - name: info(string)
+    uid: '@microsoft/teamsfx.Logger.info'
+    package: '@microsoft/teamsfx'
+    summary: Writes to info level logging or lower.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function info(message: string)'
+      parameters:
+        - id: message
+          type: string
+          description: ''
+  - name: verbose(string)
+    uid: '@microsoft/teamsfx.Logger.verbose'
+    package: '@microsoft/teamsfx'
+    summary: Writes to verbose level logging.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function verbose(message: string)'
+      parameters:
+        - id: message
+          type: string
+          description: ''
+  - name: warn(string)
+    uid: '@microsoft/teamsfx.Logger.warn'
+    package: '@microsoft/teamsfx'
+    summary: Writes to warning level logging or lower.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function warn(message: string)'
+      parameters:
+        - id: message
+          type: string
+          description: ''

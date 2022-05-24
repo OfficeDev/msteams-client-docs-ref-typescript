@@ -1,0 +1,116 @@
+### YamlMime:TSType
+name: AuthenticationConfiguration
+uid: '@microsoft/teamsfx.AuthenticationConfiguration'
+package: '@microsoft/teamsfx'
+summary: Authentication related configuration.
+fullName: AuthenticationConfiguration
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: applicationIdUri
+    uid: '@microsoft/teamsfx.AuthenticationConfiguration.applicationIdUri'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Application ID URI. Default value comes from M365_APPLICATION_ID_URI
+      environment variable.
+    fullName: applicationIdUri
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'applicationIdUri?: string'
+      return:
+        description: ''
+        type: string
+  - name: authorityHost
+    uid: '@microsoft/teamsfx.AuthenticationConfiguration.authorityHost'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Hostname of AAD authority. Default value comes from M365_AUTHORITY_HOST
+      environment variable.
+    fullName: authorityHost
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'authorityHost?: string'
+      return:
+        description: ''
+        type: string
+  - name: certificateContent
+    uid: '@microsoft/teamsfx.AuthenticationConfiguration.certificateContent'
+    package: '@microsoft/teamsfx'
+    summary: The content of a PEM-encoded public/private key certificate.
+    fullName: certificateContent
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'certificateContent?: string'
+      return:
+        description: ''
+        type: string
+  - name: clientId
+    uid: '@microsoft/teamsfx.AuthenticationConfiguration.clientId'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      The client (application) ID of an App Registration in the tenant, default
+      value comes from M365_CLIENT_ID environment variable
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: string'
+      return:
+        description: ''
+        type: string
+  - name: clientSecret
+    uid: '@microsoft/teamsfx.AuthenticationConfiguration.clientSecret'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Secret string that the application uses when requesting a token. Only used
+      in confidential client applications. Can be created in the Azure app
+      registration portal. Default value comes from M365_CLIENT_SECRET
+      environment variable
+    fullName: clientSecret
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientSecret?: string'
+      return:
+        description: ''
+        type: string
+  - name: initiateLoginEndpoint
+    uid: '@microsoft/teamsfx.AuthenticationConfiguration.initiateLoginEndpoint'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Login page for Teams to redirect to.  Default value comes from
+      INITIATE_LOGIN_ENDPOINT environment variable.
+    fullName: initiateLoginEndpoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'initiateLoginEndpoint?: string'
+      return:
+        description: ''
+        type: string
+  - name: tenantId
+    uid: '@microsoft/teamsfx.AuthenticationConfiguration.tenantId'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      AAD tenant id, default value comes from M365_TENANT_ID environment
+      variable.
+    fullName: tenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId?: string'
+      return:
+        description: ''
+        type: string
