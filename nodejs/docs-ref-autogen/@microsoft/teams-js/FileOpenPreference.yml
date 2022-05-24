@@ -1,0 +1,22 @@
+### YamlMime:TSEnum
+name: FileOpenPreference
+uid: '@microsoft/teams-js.FileOpenPreference'
+package: '@microsoft/teams-js'
+summary: Allowed user file open preferences
+fullName: FileOpenPreference
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Desktop
+    uid: '@microsoft/teams-js.FileOpenPreference.Desktop'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Inline
+    uid: '@microsoft/teams-js.FileOpenPreference.Inline'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Web
+    uid: '@microsoft/teams-js.FileOpenPreference.Web'
+    package: '@microsoft/teams-js'
+    summary: ''

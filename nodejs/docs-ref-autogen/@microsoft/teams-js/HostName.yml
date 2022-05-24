@@ -1,0 +1,26 @@
+### YamlMime:TSEnum
+name: HostName
+uid: '@microsoft/teams-js.HostName'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: HostName
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: office
+    uid: '@microsoft/teams-js.HostName.office'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: orange
+    uid: '@microsoft/teams-js.HostName.orange'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: outlook
+    uid: '@microsoft/teams-js.HostName.outlook'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: teams
+    uid: '@microsoft/teams-js.HostName.teams'
+    package: '@microsoft/teams-js'
+    summary: ''
