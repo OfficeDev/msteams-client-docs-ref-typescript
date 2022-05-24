@@ -8,6 +8,10 @@ remarks: ''
 isPreview: true
 isDeprecated: false
 fields:
+  - name: AuthorizationInfoAlreadyExists
+    uid: '@microsoft/teamsfx.ErrorCode.AuthorizationInfoAlreadyExists'
+    package: '@microsoft/teamsfx'
+    summary: Authentication info already exists error.
   - name: ChannelNotSupported
     uid: '@microsoft/teamsfx.ErrorCode.ChannelNotSupported'
     package: '@microsoft/teamsfx'
@@ -20,6 +24,10 @@ fields:
     uid: '@microsoft/teamsfx.ErrorCode.FailedOperation'
     package: '@microsoft/teamsfx'
     summary: Operation failed.
+  - name: IdentityTypeNotSupported
+    uid: '@microsoft/teamsfx.ErrorCode.IdentityTypeNotSupported'
+    package: '@microsoft/teamsfx'
+    summary: Identity type error.
   - name: InternalError
     uid: '@microsoft/teamsfx.ErrorCode.InternalError'
     package: '@microsoft/teamsfx'
@@ -36,6 +44,10 @@ fields:
     uid: '@microsoft/teamsfx.ErrorCode.InvalidParameter'
     package: '@microsoft/teamsfx'
     summary: Invalid parameter error.
+  - name: InvalidResponse
+    uid: '@microsoft/teamsfx.ErrorCode.InvalidResponse'
+    package: '@microsoft/teamsfx'
+    summary: Invalid response error.
   - name: RuntimeNotSupported
     uid: '@microsoft/teamsfx.ErrorCode.RuntimeNotSupported'
     package: '@microsoft/teamsfx'

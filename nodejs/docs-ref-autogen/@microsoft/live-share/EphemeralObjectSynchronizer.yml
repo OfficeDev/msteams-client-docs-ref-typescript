@@ -7,9 +7,8 @@ summary: >-
   instances of
 
   the object connected to the same container.
-
-  #### remarks
-
+fullName: EphemeralObjectSynchronizer<TState>
+remarks: >-
   When a synchronizer for a ephemeral object is first created it will broadcast
   a `"connect"`
 
@@ -36,10 +35,10 @@ summary: >-
   clients can protect
 
   against out-of-order and delayed updates. Deriving your state update from
-  [[IEphemeralEvent]] and
+  `IEphemeralEvent` and
 
-  using [[EphemeralEvent.isNewer]] to compare the received update with the
-  current update makes this
+  using `EphemeralEvent.isNewer` to compare the received update with the current
+  update makes this
 
   simple.
 
@@ -77,8 +76,6 @@ summary: >-
 
   synchronizer for the same ephemeral object will result in an exception being
   raised.
-fullName: EphemeralObjectSynchronizer<TState>
-remarks: ''
 isPreview: false
 isDeprecated: false
 type: class
@@ -88,16 +85,12 @@ constructors:
       GetSynchronizationState<TState>, UpdateSynchronizationState<TState>)
     uid: '@microsoft/live-share.EphemeralObjectSynchronizer.constructor'
     package: '@microsoft/live-share'
-    summary: >-
-      Creates a new `EphemeralObjectSynchronizer` instance.
-
-      #### remarks
-
+    summary: Creates a new `EphemeralObjectSynchronizer` instance.
+    remarks: >-
       Consumers should subscribe to the synchronizers `"received"` event to
       process the remote
 
       state updates being sent by other instances of the ephemeral object.
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
@@ -149,14 +142,10 @@ methods:
   - name: dispose()
     uid: '@microsoft/live-share.EphemeralObjectSynchronizer.dispose'
     package: '@microsoft/live-share'
-    summary: >
-      Disposes of the synchronizer.
-
-      #### remarks
-
+    summary: Disposes of the synchronizer.
+    remarks: >-
       All synchronization for the container will stop once the last instance has
       been disposed of.
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

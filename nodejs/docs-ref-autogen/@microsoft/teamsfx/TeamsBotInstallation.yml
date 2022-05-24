@@ -1,0 +1,148 @@
+### YamlMime:TSType
+name: TeamsBotInstallation
+uid: '@microsoft/teamsfx.TeamsBotInstallation'
+package: '@microsoft/teamsfx'
+summary: >-
+  A <xref:@microsoft/teamsfx.NotificationTarget> that represents a bot
+  installation. Teams Bot could be installed into
+
+  - Personal chat
+
+  - Group chat
+
+  - Team (by default the `General` channel)
+fullName: TeamsBotInstallation
+remarks: >-
+  It's recommended to get bot installations from
+  <xref:ConversationBot.installations()>.
+isPreview: true
+isDeprecated: false
+type: class
+constructors:
+  - name: 'TeamsBotInstallation(BotFrameworkAdapter, Partial<ConversationReference>)'
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.constructor'
+    package: '@microsoft/teamsfx'
+    summary: Constructor
+    remarks: >-
+      It's recommended to get bot installations from
+      <xref:ConversationBot.installations()>, instead of using this constructor.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TeamsBotInstallation(adapter: BotFrameworkAdapter,
+        conversationReference: Partial<ConversationReference>)
+      parameters:
+        - id: adapter
+          type: BotFrameworkAdapter
+          description: the bound `BotFrameworkAdapter`.
+        - id: conversationReference
+          type: Partial&lt;ConversationReference&gt;
+          description: |
+            the bound `ConversationReference`.
+properties:
+  - name: adapter
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.adapter'
+    package: '@microsoft/teamsfx'
+    summary: The bound `BotFrameworkAdapter`.
+    fullName: adapter
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'adapter: BotFrameworkAdapter'
+      return:
+        description: ''
+        type: BotFrameworkAdapter
+  - name: conversationReference
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.conversationReference'
+    package: '@microsoft/teamsfx'
+    summary: The bound `ConversationReference`.
+    fullName: conversationReference
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'conversationReference: Partial<ConversationReference>'
+      return:
+        description: ''
+        type: Partial&lt;ConversationReference&gt;
+  - name: type
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.type'
+    package: '@microsoft/teamsfx'
+    summary: Notification target type.
+    fullName: type
+    remarks: >-
+      - "Channel" means bot is installed into a team and notification will be
+      sent to its "General" channel.
+
+      - "Group" means bot is installed into a group chat.
+
+      - "Person" means bot is installed into a personal scope and notification
+      will be sent to personal chat.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: NotificationTargetType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.NotificationTargetType" />
+methods:
+  - name: channels()
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.channels'
+    package: '@microsoft/teamsfx'
+    summary: Get channels from this bot installation.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function channels(): Promise<Channel[]>'
+      return:
+        description: >-
+          an array of channels if bot is installed into a team, otherwise
+          returns an empty array.
+        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Channel" />[]&gt;'
+  - name: members()
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.members'
+    package: '@microsoft/teamsfx'
+    summary: Get members from this bot installation.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function members(): Promise<Member[]>'
+      return:
+        description: an array of members from where the bot is installed.
+        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Member" />[]&gt;'
+  - name: sendAdaptiveCard(unknown)
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.sendAdaptiveCard'
+    package: '@microsoft/teamsfx'
+    summary: Send an adaptive card message.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function sendAdaptiveCard(card: unknown): Promise<void>'
+      parameters:
+        - id: card
+          type: unknown
+          description: the adaptive card raw JSON.
+      return:
+        description: A `Promise` representing the asynchronous operation.
+        type: Promise&lt;void&gt;
+  - name: sendMessage(string)
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.sendMessage'
+    package: '@microsoft/teamsfx'
+    summary: Send a plain text message.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function sendMessage(text: string): Promise<void>'
+      parameters:
+        - id: text
+          type: string
+          description: the plain text message.
+      return:
+        description: A `Promise` representing the asynchronous operation.
+        type: Promise&lt;void&gt;

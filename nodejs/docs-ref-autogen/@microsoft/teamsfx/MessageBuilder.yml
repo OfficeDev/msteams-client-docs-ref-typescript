@@ -1,0 +1,244 @@
+### YamlMime:TSType
+name: MessageBuilder
+uid: '@microsoft/teamsfx.MessageBuilder'
+package: '@microsoft/teamsfx'
+summary: >-
+  Provides utility method to build bot message with cards that supported in
+  Teams.
+fullName: MessageBuilder
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: 'attachAdaptiveCard<TData>(unknown, TData)'
+    uid: '@microsoft/teamsfx.MessageBuilder.attachAdaptiveCard'
+    package: '@microsoft/teamsfx'
+    summary: |+
+      Build a bot message activity attached with adaptive card.
+
+      **Example**
+
+      ```javascript
+      const cardTemplate = {
+        type: "AdaptiveCard",
+        body: [
+          {
+            "type": "TextBlock",
+            "text": "${title}",
+            "size": "Large"
+          },
+          {
+            "type": "TextBlock",
+            "text": "${description}"
+          }],
+          $schema: "http://adaptivecards.io/schemas/adaptive-card.json",
+          version: "1.4"
+       };
+
+      type CardData = {
+        title: string,
+        description: string
+      };
+      const card = MessageBuilder.attachAdaptiveCard<CardData>(
+        cardTemplate, {
+        title: "sample card title",
+        description: "sample card description"
+      });
+      ```
+
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function attachAdaptiveCard<TData>(cardTemplate: unknown, data:
+        TData): Partial<Activity_2>
+      parameters:
+        - id: cardTemplate
+          type: unknown
+          description: The adaptive card template.
+        - id: data
+          type: TData
+          description: card data used to render the template.
+      return:
+        description: A bot message activity attached with an adaptive card.
+        type: Partial&lt;Activity_2&gt;
+  - name: attachAdaptiveCardWithoutData(unknown)
+    uid: '@microsoft/teamsfx.MessageBuilder.attachAdaptiveCardWithoutData'
+    package: '@microsoft/teamsfx'
+    summary: Build a bot message activity attached with an adaptive card.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function attachAdaptiveCardWithoutData(card: unknown):
+        Partial<Activity_2>
+      parameters:
+        - id: card
+          type: unknown
+          description: The adaptive card content.
+      return:
+        description: A bot message activity attached with an adaptive card.
+        type: Partial&lt;Activity_2&gt;
+  - name: attachContent(Attachment)
+    uid: '@microsoft/teamsfx.MessageBuilder.attachContent'
+    package: '@microsoft/teamsfx'
+    summary: Add an attachement to a bot activity.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function attachContent(attachement: Attachment):
+        Partial<Activity_2>
+      parameters:
+        - id: attachement
+          type: Attachment
+          description: The attachment object to attach.
+      return:
+        description: A message activity with an attachment.
+        type: Partial&lt;Activity_2&gt;
+  - name: >-
+      attachHeroCard(string, string | CardImage[], string | CardAction[],
+      Partial<HeroCard>)
+    uid: '@microsoft/teamsfx.MessageBuilder.attachHeroCard'
+    package: '@microsoft/teamsfx'
+    summary: |+
+      Build a bot message activity attached with an hero card.
+
+      **Example**
+
+      ```javascript
+      const message = MessageBuilder.attachHeroCard(
+           'sample title',
+           ['https://example.com/sample.jpg'],
+           ['action']
+      );
+      ```
+
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function attachHeroCard(title: string, images?: string |
+        CardImage[], buttons?: string | CardAction[], other?:
+        Partial<HeroCard>): Partial<Activity_2>
+      parameters:
+        - id: title
+          type: string
+          description: The card title.
+        - id: images
+          type: 'string | CardImage[]'
+          description: Optional. The array of images to include on the card.
+        - id: buttons
+          type: 'string | CardAction[]'
+          description: >-
+            Optional. The array of buttons to include on the card. Each `string`
+            in the array
+                 is converted to an `imBack` button with a title and value set to the value of the string.
+        - id: other
+          type: Partial&lt;HeroCard&gt;
+          description: |
+            Optional. Any additional properties to include on the card.
+      return:
+        description: A bot message activity attached with a hero card.
+        type: Partial&lt;Activity_2&gt;
+  - name: attachO365ConnectorCard(O365ConnectorCard)
+    uid: '@microsoft/teamsfx.MessageBuilder.attachO365ConnectorCard'
+    package: '@microsoft/teamsfx'
+    summary: Build a bot message activity attached with an Office 365 connector card.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function attachO365ConnectorCard(card: O365ConnectorCard):
+        Partial<Activity_2>
+      parameters:
+        - id: card
+          type: O365ConnectorCard
+          description: A description of the Office 365 connector card.
+      return:
+        description: A bot message activity attached with an Office 365 connector card.
+        type: Partial&lt;Activity_2&gt;
+  - name: AttachReceiptCard(ReceiptCard)
+    uid: '@microsoft/teamsfx.MessageBuilder.AttachReceiptCard'
+    package: '@microsoft/teamsfx'
+    summary: Build a message activity attached with a receipt card.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function AttachReceiptCard(card: ReceiptCard):
+        Partial<Activity_2>
+      parameters:
+        - id: card
+          type: ReceiptCard
+          description: A description of the receipt card.
+      return:
+        description: A message activity attached with a receipt card.
+        type: Partial&lt;Activity_2&gt;
+  - name: 'attachSigninCard(string, string, string)'
+    uid: '@microsoft/teamsfx.MessageBuilder.attachSigninCard'
+    package: '@microsoft/teamsfx'
+    summary: Returns an attachment for a sign-in card.
+    remarks: >-
+      For channels that don't natively support sign-in cards, an alternative
+      message is rendered.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function attachSigninCard(title: string, url: string, text?:
+        string): Partial<Activity_2>
+      parameters:
+        - id: title
+          type: string
+          description: The title for the card's sign-in button.
+        - id: url
+          type: string
+          description: The URL of the sign-in page to use.
+        - id: text
+          type: string
+          description: |
+            Optional. Additional text to include on the card.
+      return:
+        description: A bot message activity attached with a sign-in card.
+        type: Partial&lt;Activity_2&gt;
+  - name: >-
+      attachThumbnailCard(string, string | CardImage[], string | CardAction[],
+      Partial<ThumbnailCard>)
+    uid: '@microsoft/teamsfx.MessageBuilder.attachThumbnailCard'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function attachThumbnailCard(title: string, images?: string |
+        CardImage[], buttons?: string | CardAction[], other?:
+        Partial<ThumbnailCard>): Partial<Activity_2>
+      parameters:
+        - id: title
+          type: string
+          description: The card title.
+        - id: images
+          type: 'string | CardImage[]'
+          description: Optional. The array of images to include on the card.
+        - id: buttons
+          type: 'string | CardAction[]'
+          description: >-
+            Optional. The array of buttons to include on the card. Each `string`
+            in the array
+                 is converted to an `imBack` button with a title and value set to the value of the string.
+        - id: other
+          type: Partial&lt;ThumbnailCard&gt;
+          description: Optional. Any additional properties to include on the card.
+      return:
+        description: A message activity attached with a thumbnail card
+        type: Partial&lt;Activity_2&gt;

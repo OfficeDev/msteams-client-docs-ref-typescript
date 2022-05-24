@@ -41,8 +41,6 @@ summary: >+
   const dialogs = new DialogSet(dialogState);
 
 
-  loadConfiguration();
-
   dialogs.add(new TeamsBotSsoPrompt('TeamsBotSsoPrompt', {
      scopes: ["User.Read"],
   }));
@@ -83,7 +81,7 @@ isPreview: true
 isDeprecated: false
 type: class
 constructors:
-  - name: 'TeamsBotSsoPrompt(string, TeamsBotSsoPromptSettings)'
+  - name: 'TeamsBotSsoPrompt(TeamsFx, string, TeamsBotSsoPromptSettings)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of TeamsBotSsoPrompt.
@@ -92,9 +90,12 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new TeamsBotSsoPrompt(dialogId: string, settings:
+        new TeamsBotSsoPrompt(teamsfx: TeamsFx, dialogId: string, settings:
         TeamsBotSsoPromptSettings)
       parameters:
+        - id: teamsfx
+          type: <xref uid="@microsoft/teamsfx.TeamsFx" />
+          description: Used to provide configuration and auth
         - id: dialogId
           type: string
           description: >-

@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: ApiKeyLocation
+uid: '@microsoft/teamsfx.ApiKeyLocation'
+package: '@microsoft/teamsfx'
+summary: Define available location for API Key location
+fullName: ApiKeyLocation
+remarks: ''
+isPreview: true
+isDeprecated: false
+fields:
+  - name: Header
+    uid: '@microsoft/teamsfx.ApiKeyLocation.Header'
+    package: '@microsoft/teamsfx'
+    summary: The API Key is placed in request header
+    numericValue: 0
+  - name: QueryParams
+    uid: '@microsoft/teamsfx.ApiKeyLocation.QueryParams'
+    package: '@microsoft/teamsfx'
+    summary: The API Key is placed in query parameter
+    numericValue: 1

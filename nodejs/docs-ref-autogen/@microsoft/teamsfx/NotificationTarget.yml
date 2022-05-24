@@ -1,0 +1,59 @@
+### YamlMime:TSType
+name: NotificationTarget
+uid: '@microsoft/teamsfx.NotificationTarget'
+package: '@microsoft/teamsfx'
+summary: Represent a notification target.
+fullName: NotificationTarget
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: '@microsoft/teamsfx.NotificationTarget.type'
+    package: '@microsoft/teamsfx'
+    summary: 'The type of target, could be "Channel" or "Group" or "Person".'
+    fullName: type
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'type?: NotificationTargetType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.NotificationTargetType" />
+methods:
+  - name: sendAdaptiveCard(unknown)
+    uid: '@microsoft/teamsfx.NotificationTarget.sendAdaptiveCard'
+    package: '@microsoft/teamsfx'
+    summary: Send an adaptive card message.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function sendAdaptiveCard(card: unknown): Promise<void>'
+      parameters:
+        - id: card
+          type: unknown
+          description: |
+            the adaptive card raw JSON.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: sendMessage(string)
+    uid: '@microsoft/teamsfx.NotificationTarget.sendMessage'
+    package: '@microsoft/teamsfx'
+    summary: Send a plain text message.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function sendMessage(text: string): Promise<void>'
+      parameters:
+        - id: text
+          type: string
+          description: |
+            the plain text message.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

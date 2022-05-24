@@ -2,12 +2,6 @@
   items:
     - name: Overview
       uid: '@microsoft/live-share'
-    - uid: '@microsoft/live-share.AuthType'
-      name: AuthType
-      items: []
-    - uid: '@microsoft/live-share.ContainerState'
-      name: ContainerState
-      items: []
     - uid: '@microsoft/live-share.EphemeralEvent'
       name: EphemeralEvent
       items: []
@@ -50,20 +44,8 @@
     - uid: '@microsoft/live-share.EphemeralTelemetryLogger'
       name: EphemeralTelemetryLogger
       items: []
-    - uid: '@microsoft/live-share.FluidContainerInfo'
-      name: FluidContainerInfo
-      items: []
-    - uid: '@microsoft/live-share.FluidTenantInfo'
-      name: FluidTenantInfo
-      items: []
     - uid: '@microsoft/live-share.GetSynchronizationState'
       name: GetSynchronizationState
-      items: []
-    - uid: '@microsoft/live-share.IAppDefinition'
-      name: IAppDefinition
-      items: []
-    - uid: '@microsoft/live-share.ICollabSpaceInfo'
-      name: ICollabSpaceInfo
       items: []
     - uid: '@microsoft/live-share.IContainerRuntimeSignaler'
       name: IContainerRuntimeSignaler
@@ -89,111 +71,26 @@
     - uid: '@microsoft/live-share.IEvent'
       name: IEvent
       items: []
-    - uid: '@microsoft/live-share.IFRSTenantInfo'
-      name: IFRSTenantInfo
-      items: []
-    - uid: '@microsoft/live-share.INtpTime'
-      name: INtpTime
-      items: []
-    - uid: '@microsoft/live-share.IPPSTokenResponse'
-      name: IPPSTokenResponse
-      items: []
-    - uid: '@microsoft/live-share.IRegisteredUsersRoles'
-      name: IRegisteredUsersRoles
-      items: []
     - uid: '@microsoft/live-share.IRuntimeSignaler'
       name: IRuntimeSignaler
-      items: []
-    - uid: '@microsoft/live-share.IServerTimeOffset'
-      name: IServerTimeOffset
-      items: []
-    - uid: '@microsoft/live-share.ISessionState'
-      name: ISessionState
       items: []
     - uid: '@microsoft/live-share.ITeamsFluidClientOptions'
       name: ITeamsFluidClientOptions
       items: []
-    - uid: '@microsoft/live-share.ITokenPayload'
-      name: ITokenPayload
-      items: []
-    - uid: '@microsoft/live-share.ITokenResponse'
-      name: ITokenResponse
-      items: []
-    - uid: '@microsoft/live-share.IUserState'
-      name: IUserState
-      items: []
-    - uid: '@microsoft/live-share.IUserTokenResponse'
-      name: IUserTokenResponse
-      items: []
-    - uid: '@microsoft/live-share.IVerifiedUserRoles'
-      name: IVerifiedUserRoles
-      items: []
-    - uid: '@microsoft/live-share.NtpTimeInfo'
-      name: NtpTimeInfo
-      items: []
     - uid: '@microsoft/live-share.OutgoingEphemeralEvent'
       name: OutgoingEphemeralEvent
-      items: []
-    - uid: '@microsoft/live-share.ParticipantRole'
-      name: ParticipantRole
-      items: []
-    - uid: '@microsoft/live-share.ParticipantType'
-      name: ParticipantType
       items: []
     - uid: '@microsoft/live-share.PresenceState'
       name: PresenceState
       items: []
-    - uid: '@microsoft/live-share.RequestCache'
-      name: RequestCache
-      items: []
-    - name: Requests
-      items:
-        - name: Overview
-          uid: '@microsoft/live-share.Requests'
-        - uid: '@microsoft/live-share.Requests.ICollabSpaceInfoUpdate'
-          name: ICollabSpaceInfoUpdate
-          items: []
-        - uid: '@microsoft/live-share.Requests.IFluidStateRequest'
-          name: IFluidStateRequest
-          items: []
-        - uid: '@microsoft/live-share.Requests.ITokenRequest'
-          name: ITokenRequest
-          items: []
-        - uid: '@microsoft/live-share.Requests.IUserStateUpdate'
-          name: IUserStateUpdate
-          items: []
-    - uid: '@microsoft/live-share.RoleVerifier'
-      name: RoleVerifier
-      items: []
-    - uid: '@microsoft/live-share.SharedClock'
-      name: SharedClock
-      items: []
-    - uid: '@microsoft/live-share.TeamsClientApi'
-      name: TeamsClientApi
-      items: []
-    - uid: '@microsoft/live-share.TeamsClientApiInteractive'
-      name: TeamsClientApiInteractive
-      items: []
     - uid: '@microsoft/live-share.TeamsFluidClient'
       name: TeamsFluidClient
-      items: []
-    - uid: '@microsoft/live-share.TeamsFluidTokenProvider'
-      name: TeamsFluidTokenProvider
-      items: []
-    - uid: '@microsoft/live-share.TestTeamsClientApi'
-      name: TestTeamsClientApi
-      items: []
-    - uid: '@microsoft/live-share.TestTeamsClientApiInteractive'
-      name: TestTeamsClientApiInteractive
       items: []
     - uid: '@microsoft/live-share.UpdateSynchronizationState'
       name: UpdateSynchronizationState
       items: []
     - uid: '@microsoft/live-share.UserMeetingRole'
       name: UserMeetingRole
-      items: []
-    - uid: '@microsoft/live-share.UserState'
-      name: UserState
       items: []
 - name: '@microsoft/live-share-media'
   items:
@@ -228,49 +125,6 @@
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionPlaybackState'
       name: ExtendedMediaSessionPlaybackState
       items: []
-    - name: GroupCoordinatorState
-      items:
-        - name: Overview
-          uid: '@microsoft/live-share-media.GroupCoordinatorState'
-        - uid: '@microsoft/live-share-media.GroupCoordinatorState.Abortable'
-          name: Abortable
-          items: []
-    - uid: '@microsoft/live-share-media.GroupCoordinatorStateEvents'
-      name: GroupCoordinatorStateEvents
-      items: []
-    - uid: '@microsoft/live-share-media.GroupPlaybackPosition'
-      name: GroupPlaybackPosition
-      items: []
-    - name: GroupPlaybackTrack
-      items:
-        - name: Overview
-          uid: '@microsoft/live-share-media.GroupPlaybackTrack'
-        - uid: '@microsoft/live-share-media.GroupPlaybackTrack.Abortable'
-          name: Abortable
-          items: []
-    - name: GroupPlaybackTrackData
-      items:
-        - name: Overview
-          uid: '@microsoft/live-share-media.GroupPlaybackTrackData'
-        - uid: '@microsoft/live-share-media.GroupPlaybackTrackData.Abortable'
-          name: Abortable
-          items: []
-    - uid: '@microsoft/live-share-media.GroupPlaybackTrackEvents'
-      name: GroupPlaybackTrackEvents
-      items: []
-    - name: GroupTransportState
-      items:
-        - name: Overview
-          uid: '@microsoft/live-share-media.GroupTransportState'
-        - uid: '@microsoft/live-share-media.GroupTransportState.Abortable'
-          name: Abortable
-          items: []
-    - uid: '@microsoft/live-share-media.GroupTransportStateEvents'
-      name: GroupTransportStateEvents
-      items: []
-    - uid: '@microsoft/live-share-media.ICurrentPlaybackPosition'
-      name: ICurrentPlaybackPosition
-      items: []
     - uid: '@microsoft/live-share-media.IMediaPlayer'
       name: IMediaPlayer
       items: []
@@ -279,39 +133,6 @@
       items: []
     - uid: '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent'
       name: IMediaPlayerSynchronizerEvent
-      items: []
-    - uid: '@microsoft/live-share-media.IPlaybackTrack'
-      name: IPlaybackTrack
-      items: []
-    - uid: '@microsoft/live-share-media.IPlaybackTrackChangeEvent'
-      name: IPlaybackTrackChangeEvent
-      items: []
-    - uid: '@microsoft/live-share-media.IPlaybackTrackData'
-      name: IPlaybackTrackData
-      items: []
-    - uid: '@microsoft/live-share-media.IPlaybackTrackDataChangeEvent'
-      name: IPlaybackTrackDataChangeEvent
-      items: []
-    - uid: '@microsoft/live-share-media.IPositionUpdateEvent'
-      name: IPositionUpdateEvent
-      items: []
-    - uid: '@microsoft/live-share-media.ISetTrackDataEvent'
-      name: ISetTrackDataEvent
-      items: []
-    - uid: '@microsoft/live-share-media.ISetTrackEvent'
-      name: ISetTrackEvent
-      items: []
-    - uid: '@microsoft/live-share-media.ITransportCommandEvent'
-      name: ITransportCommandEvent
-      items: []
-    - uid: '@microsoft/live-share-media.ITransportState'
-      name: ITransportState
-      items: []
-    - uid: '@microsoft/live-share-media.ITransportStateChangeEvent'
-      name: ITransportStateChangeEvent
-      items: []
-    - uid: '@microsoft/live-share-media.ITriggerActionEvent'
-      name: ITriggerActionEvent
       items: []
     - uid: '@microsoft/live-share-media.LevelType'
       name: LevelType
@@ -337,9 +158,6 @@
       items: []
     - uid: '@microsoft/live-share-media.MediaSessionCoordinatorSuspension'
       name: MediaSessionCoordinatorSuspension
-      items: []
-    - uid: '@microsoft/live-share-media.PlaybackTrackDataEvents'
-      name: PlaybackTrackDataEvents
       items: []
     - uid: '@microsoft/live-share-media.RepeatedActionThrottler'
       name: RepeatedActionThrottler
@@ -813,20 +631,56 @@
   items:
     - name: Overview
       uid: '@microsoft/teamsfx'
+    - uid: '@microsoft/teamsfx.ApiKeyLocation'
+      name: ApiKeyLocation
+      items: []
+    - uid: '@microsoft/teamsfx.ApiKeyProvider'
+      name: ApiKeyProvider
+      items: []
+    - uid: '@microsoft/teamsfx.AppCredential'
+      name: AppCredential
+      items: []
     - uid: '@microsoft/teamsfx.AuthenticationConfiguration'
       name: AuthenticationConfiguration
       items: []
-    - uid: '@microsoft/teamsfx.Configuration'
-      name: Configuration
+    - uid: '@microsoft/teamsfx.AuthProvider'
+      name: AuthProvider
       items: []
-    - uid: '@microsoft/teamsfx.DefaultTediousConnectionConfiguration'
-      name: DefaultTediousConnectionConfiguration
+    - uid: '@microsoft/teamsfx.BasicAuthProvider'
+      name: BasicAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.BearerTokenAuthProvider'
+      name: BearerTokenAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.CertificateAuthProvider'
+      name: CertificateAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.Channel'
+      name: Channel
+      items: []
+    - uid: '@microsoft/teamsfx.CommandBot'
+      name: CommandBot
+      items: []
+    - uid: '@microsoft/teamsfx.CommandMessage'
+      name: CommandMessage
+      items: []
+    - uid: '@microsoft/teamsfx.CommandOptions'
+      name: CommandOptions
+      items: []
+    - uid: '@microsoft/teamsfx.ConversationBot'
+      name: ConversationBot
+      items: []
+    - uid: '@microsoft/teamsfx.ConversationOptions'
+      name: ConversationOptions
       items: []
     - uid: '@microsoft/teamsfx.ErrorCode'
       name: ErrorCode
       items: []
     - uid: '@microsoft/teamsfx.ErrorWithCode'
       name: ErrorWithCode
+      items: []
+    - uid: '@microsoft/teamsfx.IdentityType'
+      name: IdentityType
       items: []
     - uid: '@microsoft/teamsfx.LogFunction'
       name: LogFunction
@@ -837,20 +691,35 @@
     - uid: '@microsoft/teamsfx.LogLevel'
       name: LogLevel
       items: []
-    - uid: '@microsoft/teamsfx.M365TenantCredential'
-      name: M365TenantCredential
+    - uid: '@microsoft/teamsfx.Member'
+      name: Member
+      items: []
+    - uid: '@microsoft/teamsfx.MessageBuilder'
+      name: MessageBuilder
       items: []
     - uid: '@microsoft/teamsfx.MsGraphAuthProvider'
       name: MsGraphAuthProvider
       items: []
+    - uid: '@microsoft/teamsfx.NotificationBot'
+      name: NotificationBot
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationOptions_2'
+      name: NotificationOptions_2
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTarget'
+      name: NotificationTarget
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTargetStorage'
+      name: NotificationTargetStorage
+      items: []
+    - uid: '@microsoft/teamsfx.NotificationTargetType'
+      name: NotificationTargetType
+      items: []
     - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
       name: OnBehalfOfUserCredential
       items: []
-    - uid: '@microsoft/teamsfx.ResourceConfiguration'
-      name: ResourceConfiguration
-      items: []
-    - uid: '@microsoft/teamsfx.ResourceType'
-      name: ResourceType
+    - uid: '@microsoft/teamsfx.TeamsBotInstallation'
+      name: TeamsBotInstallation
       items: []
     - uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
       name: TeamsBotSsoPrompt
@@ -861,8 +730,20 @@
     - uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
       name: TeamsBotSsoPromptTokenResponse
       items: []
+    - uid: '@microsoft/teamsfx.TeamsFx'
+      name: TeamsFx
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsFxBotCommandHandler'
+      name: TeamsFxBotCommandHandler
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsFxConfiguration'
+      name: TeamsFxConfiguration
+      items: []
     - uid: '@microsoft/teamsfx.TeamsUserCredential'
       name: TeamsUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.TriggerPatterns'
+      name: TriggerPatterns
       items: []
     - uid: '@microsoft/teamsfx.UserInfo'
       name: UserInfo

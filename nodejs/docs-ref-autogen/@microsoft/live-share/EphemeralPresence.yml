@@ -73,15 +73,13 @@ properties:
   - name: expirationPeriod
     uid: '@microsoft/live-share.EphemeralPresence.expirationPeriod'
     package: '@microsoft/live-share'
-    summary: >
+    summary: >-
       Number of seconds without a presence update before a remote user is
       considered offline.
-
-      #### remarks
-
-      Defaults to a value of `20` seconds and the minimum value is `1`.
     fullName: expirationPeriod
-    remarks: ''
+    remarks: >-
+      Defaults to a value of `20` seconds. The minimum value is 0.1 seconds for
+      testing purposes.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -766,7 +764,7 @@ methods:
           type: <xref uid="@microsoft/live-share.PresenceState" />
           description: >
             Optional. Initial presence state. Defaults to
-            [[PresenceState.online]].
+            `PresenceState.online`.
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -787,14 +785,10 @@ methods:
   - name: 'updatePresence(PresenceState, TData)'
     uid: '@microsoft/live-share.EphemeralPresence.updatePresence'
     package: '@microsoft/live-share'
-    summary: >-
-      Updates the users presence state and/or shared data object.
-
-      #### remarks
-
+    summary: Updates the users presence state and/or shared data object.
+    remarks: >-
       This will trigger the immediate broadcast of the users presence to all
       other clients.
-    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

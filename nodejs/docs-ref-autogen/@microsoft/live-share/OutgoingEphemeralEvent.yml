@@ -2,9 +2,7 @@
 name: OutgoingEphemeralEvent
 uid: '@microsoft/live-share.OutgoingEphemeralEvent'
 package: '@microsoft/live-share'
-summary: >-
-  Removes the base properties from an event that derives from
-  [[IEphemeralEvent]].
+summary: Removes the base properties from an event that derives from `IEphemeralEvent`.
 fullName: OutgoingEphemeralEvent<TEvent>
 remarks: ''
 isPreview: false

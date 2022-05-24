@@ -99,21 +99,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: simpleAuthEndpoint
-    uid: '@microsoft/teamsfx.AuthenticationConfiguration.simpleAuthEndpoint'
-    package: '@microsoft/teamsfx'
-    summary: >-
-      Endpoint of auth service provisioned by Teams Framework. Default value
-      comes from SIMPLE_AUTH_ENDPOINT environment variable.
-    fullName: simpleAuthEndpoint
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'simpleAuthEndpoint?: string'
-      return:
-        description: ''
-        type: string
   - name: tenantId
     uid: '@microsoft/teamsfx.AuthenticationConfiguration.tenantId'
     package: '@microsoft/teamsfx'

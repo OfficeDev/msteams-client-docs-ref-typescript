@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: NotificationTargetType
+uid: '@microsoft/teamsfx.NotificationTargetType'
+package: '@microsoft/teamsfx'
+summary: The target type where the notification will be sent to.
+fullName: NotificationTargetType
+remarks: >-
+  - "Channel" means to a team channel. (By default, notification to a team will
+  be sent to its "General" channel.)
+
+  - "Group" means to a group chat.
+
+  - "Person" means to a personal chat.
+isPreview: true
+isDeprecated: false
+syntax: type NotificationTargetType = "Channel" | "Group" | "Person"
