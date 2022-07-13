@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: ITeamsFluidClientOptions
+uid: '@microsoft/live-share.ITeamsFluidClientOptions'
+package: '@microsoft/live-share'
+summary: Options used to configure the `TeamsFluidClient` class.
+fullName: ITeamsFluidClientOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: connection
+    uid: '@microsoft/live-share.ITeamsFluidClientOptions.connection'
+    package: '@microsoft/live-share'
+    summary: >-
+      Optional. Configuration to use when connecting to a custom Azure Fluid
+      Relay instance.
+    fullName: connection
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'connection?: AzureConnectionConfig'
+      return:
+        description: ''
+        type: AzureConnectionConfig
+  - name: getLocalTestContainerId
+    uid: '@microsoft/live-share.ITeamsFluidClientOptions.getLocalTestContainerId'
+    package: '@microsoft/live-share'
+    summary: >-
+      Optional. Function to lookup the ID of the container to use for local
+      testing.
+    fullName: getLocalTestContainerId
+    remarks: >-
+      The default implementation attempts to retrieve the containerId from the
+      `window.location.hash`.
+
+
+      If the function returns 'undefined' a new container will be created.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'getLocalTestContainerId?: undefined | () => string | undefined'
+      return:
+        description: ''
+        type: undefined | () =&gt; string | undefined
+  - name: logger
+    uid: '@microsoft/live-share.ITeamsFluidClientOptions.logger'
+    package: '@microsoft/live-share'
+    summary: Optional. A logger instance to receive diagnostic messages.
+    fullName: logger
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'logger?: ITelemetryBaseLogger'
+      return:
+        description: ''
+        type: ITelemetryBaseLogger
+  - name: setLocalTestContainerId
+    uid: '@microsoft/live-share.ITeamsFluidClientOptions.setLocalTestContainerId'
+    package: '@microsoft/live-share'
+    summary: Optional. Function to save the ID of a newly created local test container.
+    fullName: setLocalTestContainerId
+    remarks: >-
+      The default implementation updates `window.location.hash` with the ID of
+      the newly created
+
+      container.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'setLocalTestContainerId?: undefined | (containerId: string) => void'
+      return:
+        description: ''
+        type: 'undefined | (containerId: string) =&gt; void'

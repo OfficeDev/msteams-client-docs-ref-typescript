@@ -1,0 +1,760 @@
+### YamlMime:TSType
+name: EphemeralMediaSessionCoordinator
+uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator'
+package: '@microsoft/live-share-media'
+summary: >-
+  The `EphemeralMediaSessionCoordinator` tracks the playback & position state of
+  all other
+
+  clients being synchronized with. It is responsible for keeping the local media
+  player
+
+  in sync with the group.
+fullName: EphemeralMediaSessionCoordinator
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: canPlayPause
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.canPlayPause'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Controls whether or not the local client is allowed to instruct the group
+      to play or pause.
+    fullName: canPlayPause
+    remarks: >-
+      This flag largely meant to influence decisions made by the coordinator and
+      can be used by
+
+      the UI to determine what controls should be shown to the user. It does not
+      provide any
+
+      security in itself.
+
+
+      If your app is running in a semi-trusted environment where only some
+      clients are allowed
+
+      to play/pause media, you should use "role based verification" to enforce
+      those policies.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canPlayPause: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: canSeek
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.canSeek'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Controls whether or not the local client is allowed to seek the group to a
+      new playback
+
+      position.
+    fullName: canSeek
+    remarks: >-
+      This flag largely meant to influence decisions made by the coordinator and
+      can be used by
+
+      the UI to determine what controls should be shown to the user. It does not
+      provide any
+
+      security in itself.
+
+
+      If your app is running in a semi-trusted environment where only some
+      clients are allowed
+
+      to change the playback position, you should use "role based verification"
+      to enforce those policies.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canSeek: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: canSetTrack
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.canSetTrack'
+    package: '@microsoft/live-share-media'
+    summary: Controls whether or not the local client is allowed to change tracks.
+    fullName: canSetTrack
+    remarks: >-
+      This flag largely meant to influence decisions made by the coordinator and
+      can be used by
+
+      the UI to determine what controls should be shown to the user. It does not
+      provide any
+
+      security in itself.
+
+
+      If your app is running in a semi-trusted environment where only some
+      clients are allowed
+
+      to change tracks, you should use "role based verification" to enforce
+      those policies.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canSetTrack: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: canSetTrackData
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.canSetTrackData
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Controls whether or not the local client is allowed to change the tracks
+      custom data object.
+    fullName: canSetTrackData
+    remarks: >-
+      This flag largely meant to influence decisions made by the coordinator and
+      can be used by
+
+      the UI to determine what controls should be shown to the user. It does not
+      provide any
+
+      security in itself.
+
+
+      If your app is running in a semi-trusted environment where only some
+      clients are allowed
+
+      to change the tracks data object, you should use "role based verification"
+      to enforce those
+
+      policies.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'canSetTrackData: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: captureRejections
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.captureRejections
+    package: '@microsoft/live-share-media'
+    summary: Sets or gets the default captureRejection value for all emitters.
+    fullName: captureRejections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejections: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: captureRejectionSymbol
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.captureRejectionSymbol
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: captureRejectionSymbol
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejectionSymbol: Object'
+      return:
+        description: ''
+        type: Object
+  - name: defaultMaxListeners
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.defaultMaxListeners
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: defaultMaxListeners
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static defaultMaxListeners: number'
+      return:
+        description: ''
+        type: number
+  - name: errorMonitor
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.errorMonitor'
+    package: '@microsoft/live-share-media'
+    summary: >
+      This symbol shall be used to install a listener for only monitoring
+      `'error'`
+
+      events. Listeners installed using this symbol are called before the
+      regular
+
+      `'error'` listeners are called.
+
+      Installing a listener using this symbol does not change the behavior once
+      an
+
+      `'error'` event is emitted, therefore the process will still crash if no
+
+      regular `'error'` listener is installed.
+    fullName: errorMonitor
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static errorMonitor: Object'
+      return:
+        description: ''
+        type: Object
+  - name: isSuspended
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.isSuspended'
+    package: '@microsoft/live-share-media'
+    summary: Returns true if the local client is in a suspended state.
+    fullName: isSuspended
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean isSuspended
+      return:
+        description: ''
+        type: boolean
+  - name: maxPlaybackDrift
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.maxPlaybackDrift
+    package: '@microsoft/live-share-media'
+    summary: Max amount of playback drift allowed in seconds.
+    fullName: maxPlaybackDrift
+    remarks: >-
+      Should the local clients playback position lag by more than the specified
+      value, the
+
+      coordinator will trigger a `catchup` action.
+
+
+      Defaults to a value of `1` second.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number maxPlaybackDrift
+      return:
+        description: ''
+        type: number
+  - name: positionUpdateInterval
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.positionUpdateInterval
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Frequency with which position updates are broadcast to the rest of the
+      group in
+
+      seconds.
+    fullName: positionUpdateInterval
+    remarks: Defaults to a value of `2` seconds.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number positionUpdateInterval
+      return:
+        description: ''
+        type: number
+inheritedMethods:
+  - name: 'addListener(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.addListener'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addListener(event: string | symbol, listener: (args: any[]) =>
+        void): this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: 'emit(string | symbol, any[])'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.emit'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function emit(event: string | symbol, args: any[]): boolean'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: args
+          type: 'any[]'
+          description: ''
+      return:
+        description: ''
+        type: boolean
+  - name: eventNames()
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.eventNames'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function eventNames(): Array<string | symbol>'
+      return:
+        description: ''
+        type: Array&lt;string | symbol&gt;
+  - name: getMaxListeners()
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.getMaxListeners
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxListeners(): number'
+      return:
+        description: ''
+        type: number
+  - name: 'listenerCount(EventEmitter, string | symbol)'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.listenerCount'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: since v4.0.0
+    syntax:
+      content: >-
+        static function listenerCount(emitter: EventEmitter, event: string |
+        symbol): number
+      parameters:
+        - id: emitter
+          type: EventEmitter
+          description: ''
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: number
+  - name: listenerCount(string | symbol)
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.listenerCount'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(event: string | symbol): number'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: number
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.listeners'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+  - name: 'off(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.off'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function off(event: string | symbol, listener: (args: any[]) => void):
+        this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: 'on(EventEmitter, string)'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.on'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function on(emitter: EventEmitter, event: string):
+        AsyncIterableIterator<any>
+      parameters:
+        - id: emitter
+          type: EventEmitter
+          description: ''
+        - id: event
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: AsyncIterableIterator&lt;any&gt;
+  - name: 'on(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.on'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function on(event: string | symbol, listener: (args: any[]) => void):
+        this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: 'once(NodeEventTarget, string | symbol)'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.once'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function once(emitter: NodeEventTarget, event: string | symbol):
+        Promise<any[]>
+      parameters:
+        - id: emitter
+          type: NodeEventTarget
+          description: ''
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Promise&lt;any[]&gt;'
+  - name: 'once(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.once'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function once(event: string | symbol, listener: (args: any[]) => void):
+        this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: 'prependListener(string | symbol, (args: any[]) => void)'
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.prependListener
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function prependListener(event: string | symbol, listener: (args: any[])
+        => void): this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.prependOnceListener
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function prependOnceListener(event: string | symbol, listener: (args:
+        any[]) => void): this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: rawListeners(string | symbol)
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.rawListeners'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function rawListeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+  - name: removeAllListeners(string | symbol)
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.removeAllListeners
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function removeAllListeners(event?: string | symbol): this'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: 'removeListener(string | symbol, (args: any[]) => void)'
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.removeListener
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function removeListener(event: string | symbol, listener: (args: any[])
+        => void): this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: setMaxListeners(number)
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.setMaxListeners
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setMaxListeners(n: number): this'
+      parameters:
+        - id: 'n'
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: this
+methods:
+  - name: beginSuspension(CoordinationWaitPoint)
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.beginSuspension
+    package: '@microsoft/live-share-media'
+    summary: Begins a new local suspension.
+    remarks: >-
+      Suspension temporarily suspend the clients local synchronization with the
+      group. This can
+
+      be useful for displaying ads to users or temporarily disconnecting from
+      the session while
+
+      the user seeks the video using a timeline scrubber.
+
+
+      Multiple simultaneous suspensions are allowed and when the last suspension
+      ends the local
+
+      client will be immediately re-synchronized with the group.
+
+
+      A "Dynamic Wait Point" can be specified when `beginSuspension()` is called
+      and the wait
+
+      point will be broadcast to all other clients in the group.  Those clients
+      will then
+
+      automatically enter a suspension state once they reach the positions
+      specified by the
+
+      wait point. Clients that are passed the wait point will immediately
+      suspend.
+
+
+      Any wait point based suspension (dynamic or static) will result in all
+      clients remaining
+
+      in a suspension state until the list client ends their suspension. This
+      behavior can be
+
+      conditionally bypassed by settings the wait points `maxClients` value.
+
+
+      Throws an exception if the session/coordinator hasn't been started.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginSuspension(waitPoint?: CoordinationWaitPoint):
+        MediaSessionCoordinatorSuspension
+      parameters:
+        - id: waitPoint
+          type: <xref uid="@microsoft/live-share-media.CoordinationWaitPoint" />
+          description: Optional. Dynamic wait point to broadcast to all of the clients.
+      return:
+        description: >-
+          The suspension object. Call `end()` on the returned suspension to end
+          the suspension.
+        type: >-
+          <xref
+          uid="@microsoft/live-share-media.MediaSessionCoordinatorSuspension" />
+  - name: pause()
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.pause'
+    package: '@microsoft/live-share-media'
+    summary: Instructs the group to pause the current track.
+    remarks: >-
+      Throws an exception if the session/coordinator hasn't been started, no
+      track has been
+
+      loaded, or `canPlayPause` is false.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function pause()
+  - name: play()
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.play'
+    package: '@microsoft/live-share-media'
+    summary: Instructs the group to play the current track.
+    remarks: >-
+      Throws an exception if the session/coordinator hasn't been started, no
+      track has been
+
+      loaded, or `canPlayPause` is false.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function play()
+  - name: seekTo(number)
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.seekTo'
+    package: '@microsoft/live-share-media'
+    summary: Instructs the group to seek to a new position within the current track.
+    remarks: >-
+      Throws an exception if the session/coordinator hasn't been started, no
+      track has been
+
+      loaded, or `canSeek` is false.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function seekTo(time: number)'
+      parameters:
+        - id: time
+          type: number
+          description: |
+            Playback position in seconds to seek to.
+  - name: 'setTrack(ExtendedMediaMetadata | null, CoordinationWaitPoint[])'
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.setTrack'
+    package: '@microsoft/live-share-media'
+    summary: Instructs the group to load a new track.
+    remarks: >-
+      Throws an exception if the session/coordinator hasn't been started or
+      `canSetTrack` is
+
+      false.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setTrack(metadata: ExtendedMediaMetadata | null, waitPoints?:
+        CoordinationWaitPoint[])
+      parameters:
+        - id: metadata
+          type: >-
+            <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata" /> |
+            null
+          description: >-
+            The track to load or `null` to indicate that the end of the track is
+            reached.
+        - id: waitPoints
+          type: '<xref uid="@microsoft/live-share-media.CoordinationWaitPoint" />[]'
+          description: >
+            Optional. List of static wait points to configure for the track. 
+            Dynamic wait points can be added via the `beginSuspension()` call.
+  - name: setTrackData(object | null)
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.setTrackData'
+    package: '@microsoft/live-share-media'
+    summary: Updates the track data object for the current track.
+    remarks: >-
+      The track data object can be used by applications to synchronize things
+      like pitch, roll,
+
+      and yaw of a 360 video. This data object will be reset to null anytime the
+      track changes.
+
+
+      Throws an exception if the session/coordinator hasn't been started or
+      `canSetTrackData` is
+
+      false.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setTrackData(data: object | null)'
+      parameters:
+        - id: data
+          type: object | null
+          description: >
+            New data object to sync with the group. This value will be
+            synchronized using a last writer wins strategy.
+extends: EventEmitter
