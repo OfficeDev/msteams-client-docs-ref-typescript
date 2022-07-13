@@ -105,7 +105,7 @@ constructors:
           type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
           description: |
             Settings used to configure the prompt.
-properties:
+inheritedProperties:
   - name: EndOfTurn
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.EndOfTurn'
     package: '@microsoft/teamsfx'

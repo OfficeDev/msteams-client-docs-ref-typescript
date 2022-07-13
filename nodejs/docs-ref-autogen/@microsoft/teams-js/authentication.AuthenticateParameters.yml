@@ -10,4 +10,5 @@ isDeprecated: true
 customDeprecatedMessage: >-
   As of 2.0.0, please use
   <xref:@microsoft/teams-js.authentication.AuthenticatePopUpParameters> instead.
-syntax: type AuthenticateParameters = AuthenticatePopUpParameters & LegacyCallBacks
+syntax: |
+  type AuthenticateParameters = AuthenticatePopUpParameters & LegacyCallBacks

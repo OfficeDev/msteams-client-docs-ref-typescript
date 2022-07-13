@@ -30,6 +30,7 @@ properties:
       return:
         description: ''
         type: string
+inheritedProperties:
   - name: fallbackUrl
     uid: '@microsoft/teams-js.BotUrlDialogInfo.fallbackUrl'
     package: '@microsoft/teams-js'
