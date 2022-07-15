@@ -33,7 +33,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [location.getLocation(props: LocationProps):
-      Promise\<Location\>](xref:location.getLocation) instead.
+      Promise\<Location\>](xref:@microsoft/teams-js.location.getLocation) instead.
     syntax:
       content: >-
         function getLocation(props: LocationProps, callback: (error: SdkError,
@@ -83,7 +83,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [location.showLocation(location: Location):
-      Promise\<void\>](xref:location.showLocation) instead.
+      Promise\<void\>](xref:@microsoft/teams-js.location.showLocation) instead.
 
       Shows the location on map corresponding to the given coordinates
     syntax:

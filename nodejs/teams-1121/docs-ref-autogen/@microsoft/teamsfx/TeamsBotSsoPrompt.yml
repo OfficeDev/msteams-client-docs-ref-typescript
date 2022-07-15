@@ -180,7 +180,7 @@ inheritedMethods:
       By default, this method has no effect.
 
 
-      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      The [DialogContext](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext) calls this
       method when the current
 
       dialog is ending.
@@ -189,13 +189,13 @@ inheritedMethods:
       **See also**
 
       -
-      [DialogContext.cancelAllDialogs](xref:botbuilder-dialogs.DialogContext.cancelAllDialogs)
+      [DialogContext.cancelAllDialogs](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext.cancelAllDialogs)
 
       -
-      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+      [DialogContext.endDialog](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext.endDialog)
 
       -
-      [DialogContext.replaceDialog](xref:botbuilder-dialogs.DialogContext.replaceDialog)
+      [DialogContext.replaceDialog](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext.replaceDialog)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -297,7 +297,7 @@ inheritedMethods:
       By default, this method has no effect.
 
 
-      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      The [DialogContext](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext) calls this
       method when the current
 
       dialog should re-request input from the user. This method is implemented
@@ -307,9 +307,9 @@ inheritedMethods:
       **See also**
 
       -
-      [DialogContext.repromptDialog](xref:botbuilder-dialogs.DialogContext.repromptDialog)
+      [DialogContext.repromptDialog](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext.repromptDialog)
 
-      - [Prompt](xref:botbuilder-dialogs.Prompt)
+      - [Prompt](xref:@microsoft/teamsfx.botbuilder-dialogs.Prompt)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -340,7 +340,7 @@ inheritedMethods:
       By default, this method signals that the dialog is complete and returns.
 
 
-      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      The [DialogContext](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext) calls this
       method when it resumes
 
       the dialog. If the previous dialog on the stack returned a value, that
@@ -350,23 +350,23 @@ inheritedMethods:
 
 
       To start a _child_ dialog, use
-      [DialogContext.beginDialog](xref:botbuilder-dialogs.DialogContext.beginDialog)
+      [DialogContext.beginDialog](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext.beginDialog)
 
-      or [DialogContext.prompt](xref:botbuilder-dialogs.DialogContext.prompt);
+      or [DialogContext.prompt](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext.prompt);
       however, this dialog will not
 
       necessarily be the one that started the child dialog.
 
       To signal to the dialog context that this dialog has completed, await
 
-      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+      [DialogContext.endDialog](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext.endDialog)
       before exiting this method.
 
 
       **See also**
 
       -
-      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+      [DialogContext.endDialog](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogContext.endDialog)
     isPreview: false
     isDeprecated: false
     syntax:
@@ -381,7 +381,7 @@ inheritedMethods:
           type: DialogReason
           description: |-
             The reason the dialog is resuming. This will typically be
-                 [DialogReason.endCalled](xref:botbuilder-dialogs.DialogReason.endCalled)
+                 [DialogReason.endCalled](xref:@microsoft/teamsfx.botbuilder-dialogs.DialogReason.endCalled)
         - id: result
           type: any
           description: |

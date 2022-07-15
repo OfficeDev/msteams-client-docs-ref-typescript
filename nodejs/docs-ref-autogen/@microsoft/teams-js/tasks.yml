@@ -65,12 +65,12 @@ functions:
     customDeprecatedMessage: >-
       As of 2.0.0, please use [UrlDialogInfo, submitHandler?:
       DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel):
-      PostMessageChannel](xref:dialog.open(urlDialogInfo%3A) for url based
+      PostMessageChannel](xref:@microsoft/teams-js.dialog.open(urlDialogInfo%3A) for url based
       dialogs
 
       and [BotUrlDialogInfo, submitHandler?: DialogSubmitHandler,
       messageFromChildHandler?: PostMessageChannel):
-      PostMessageChannel](xref:dialog.bot.open(botUrlDialogInfo%3A) for bot
+      PostMessageChannel](xref:@microsoft/teams-js.dialog.bot.open(botUrlDialogInfo%3A) for bot
       based dialogs.
 
 
@@ -99,7 +99,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [dialog.submit(result?: string | object, appIds?:
-      string | string[]): void](xref:dialog.submit) instead.
+      string | string[]): void](xref:@microsoft/teams-js.dialog.submit) instead.
 
 
       Submit the task module.
@@ -127,7 +127,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [dialog.update.resize(dimensions: DialogSize):
-      void](xref:dialog.update.resize) instead.
+      void](xref:@microsoft/teams-js.dialog.update.resize) instead.
 
 
       Update height/width task info properties.
