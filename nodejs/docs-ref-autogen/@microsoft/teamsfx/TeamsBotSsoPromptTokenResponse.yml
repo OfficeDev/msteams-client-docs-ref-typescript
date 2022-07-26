@@ -9,6 +9,33 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: ssoToken
+    uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.ssoToken'
+    package: '@microsoft/teamsfx'
+    summary: SSO token for user
+    fullName: ssoToken
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ssoToken: string'
+      return:
+        description: ''
+        type: string
+  - name: ssoTokenExpiration
+    uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.ssoTokenExpiration'
+    package: '@microsoft/teamsfx'
+    summary: Expire time of SSO token
+    fullName: ssoTokenExpiration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ssoTokenExpiration: string'
+      return:
+        description: ''
+        type: string
+inheritedProperties:
   - name: channelId
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.channelId'
     package: '@microsoft/teamsfx'
@@ -63,32 +90,6 @@ properties:
       return:
         description: ''
         type: '[key: string]\: any'
-  - name: ssoToken
-    uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.ssoToken'
-    package: '@microsoft/teamsfx'
-    summary: SSO token for user
-    fullName: ssoToken
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'ssoToken: string'
-      return:
-        description: ''
-        type: string
-  - name: ssoTokenExpiration
-    uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.ssoTokenExpiration'
-    package: '@microsoft/teamsfx'
-    summary: Expire time of SSO token
-    fullName: ssoTokenExpiration
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'ssoTokenExpiration: string'
-      return:
-        description: ''
-        type: string
   - name: token
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.token'
     package: '@microsoft/teamsfx'

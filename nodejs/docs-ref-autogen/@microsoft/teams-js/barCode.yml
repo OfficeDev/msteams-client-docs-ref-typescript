@@ -1,0 +1,66 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.barCode'
+name: barCode
+summary: Namespace to interact with the barcode scanning-specific part of the SDK.
+type: module
+interfaces:
+  - '@microsoft/teams-js.barCode.BarCodeConfig'
+package: '@microsoft/teams-js'
+functions:
+  - name: hasPermission()
+    uid: '@microsoft/teams-js.barCode.hasPermission'
+    package: '@microsoft/teams-js'
+    summary: Checks whether or not media has user permission
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function hasPermission(): Promise<boolean>'
+      return:
+        description: >-
+          true if the user has granted the app permission to media information,
+          false otherwise
+        type: Promise&lt;boolean&gt;
+  - name: isSupported()
+    uid: '@microsoft/teams-js.barCode.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if barCode capability is supported by the host
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether barCode is supported
+        type: boolean
+  - name: requestPermission()
+    uid: '@microsoft/teams-js.barCode.requestPermission'
+    package: '@microsoft/teams-js'
+    summary: Requests user permission for media
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function requestPermission(): Promise<boolean>'
+      return:
+        description: >-
+          true if the user has granted the app permission to the media, false
+          otherwise
+        type: Promise&lt;boolean&gt;
+  - name: scanBarCode(BarCodeConfig)
+    uid: '@microsoft/teams-js.barCode.scanBarCode'
+    package: '@microsoft/teams-js'
+    summary: Scan Barcode or QRcode using camera
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function scanBarCode(barCodeConfig: BarCodeConfig): Promise<string>'
+      parameters:
+        - id: barCodeConfig
+          type: <xref uid="@microsoft/teams-js.barCode.BarCodeConfig" />
+          description: |
+            input configuration to customize the barcode scanning experience
+      return:
+        description: a scanned code
+        type: Promise&lt;string&gt;

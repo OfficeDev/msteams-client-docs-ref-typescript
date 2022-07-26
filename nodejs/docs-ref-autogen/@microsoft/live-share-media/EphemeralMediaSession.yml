@@ -59,19 +59,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-media.MediaSessionActionThrottler" />
-  - name: addListener
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.addListener'
-    package: '@microsoft/live-share-media'
-    summary: ''
-    fullName: addListener
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
-      return:
-        description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
   - name: coordinator
     uid: '@microsoft/live-share-media.EphemeralMediaSession.coordinator'
     package: '@microsoft/live-share-media'
@@ -209,6 +196,35 @@ properties:
       return:
         description: ''
         type: EphemeralTelemetryLogger
+  - name: TypeName
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.TypeName'
+    package: '@microsoft/live-share-media'
+    summary: The objects fluid type name.
+    fullName: TypeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TypeName: "@microsoft/fluid-media:SharedMediaSession" =
+        "@microsoft/fluid-media:SharedMediaSession"
+      return:
+        description: ''
+        type: '"@microsoft/fluid-media:SharedMediaSession"'
+inheritedProperties:
+  - name: addListener
+    uid: '@microsoft/live-share-media.EphemeralMediaSession.addListener'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
   - name: 'off'
     uid: '@microsoft/live-share-media.EphemeralMediaSession.off'
     package: '@microsoft/live-share-media'
@@ -287,21 +303,6 @@ properties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-  - name: TypeName
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.TypeName'
-    package: '@microsoft/live-share-media'
-    summary: The objects fluid type name.
-    fullName: TypeName
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        static TypeName: "@microsoft/fluid-media:SharedMediaSession" =
-        "@microsoft/fluid-media:SharedMediaSession"
-      return:
-        description: ''
-        type: '"@microsoft/fluid-media:SharedMediaSession"'
 inheritedMethods:
   - name: dispose()
     uid: '@microsoft/live-share-media.EphemeralMediaSession.dispose'

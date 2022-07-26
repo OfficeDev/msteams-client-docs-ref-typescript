@@ -47,19 +47,6 @@ constructors:
             }&gt;
           description: ''
 properties:
-  - name: addListener
-    uid: '@microsoft/live-share.EphemeralEvent.addListener'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: addListener
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
-      return:
-        description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
   - name: disposed
     uid: '@microsoft/live-share.EphemeralEvent.disposed'
     package: '@microsoft/live-share'
@@ -169,6 +156,35 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: TypeName
+    uid: '@microsoft/live-share.EphemeralEvent.TypeName'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type/name.
+    fullName: TypeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TypeName: "@microsoft/live-share:EphemeralEvent" =
+        "@microsoft/live-share:EphemeralEvent"
+      return:
+        description: ''
+        type: '"@microsoft/live-share:EphemeralEvent"'
+inheritedProperties:
+  - name: addListener
+    uid: '@microsoft/live-share.EphemeralEvent.addListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
   - name: 'off'
     uid: '@microsoft/live-share.EphemeralEvent.off'
     package: '@microsoft/live-share'
@@ -247,21 +263,6 @@ properties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-  - name: TypeName
-    uid: '@microsoft/live-share.EphemeralEvent.TypeName'
-    package: '@microsoft/live-share'
-    summary: The objects fluid type/name.
-    fullName: TypeName
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        static TypeName: "@microsoft/live-share:EphemeralEvent" =
-        "@microsoft/live-share:EphemeralEvent"
-      return:
-        description: ''
-        type: '"@microsoft/live-share:EphemeralEvent"'
 inheritedMethods:
   - name: dispose()
     uid: '@microsoft/live-share.EphemeralEvent.dispose'

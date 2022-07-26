@@ -21,10 +21,12 @@ interfaces:
   - '@microsoft/teams-js.authentication.AuthenticatePopUpParameters'
   - '@microsoft/teams-js.authentication.AuthTokenRequestParameters'
   - '@microsoft/teams-js.authentication.LegacyCallBacks'
+  - '@microsoft/teams-js.barCode.BarCodeConfig'
   - '@microsoft/teams-js.calendar.ComposeMeetingParams'
   - '@microsoft/teams-js.calendar.OpenCalendarItemParams'
   - '@microsoft/teams-js.call.StartCallParams'
   - '@microsoft/teams-js.dialog.ISdkResponse'
+  - '@microsoft/teams-js.geoLocation.Location'
   - '@microsoft/teams-js.location.Location'
   - '@microsoft/teams-js.location.LocationProps'
   - '@microsoft/teams-js.mail.ComposeMailBase'
@@ -44,8 +46,11 @@ interfaces:
   - '@microsoft/teams-js.media.VideoProps'
   - '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
   - '@microsoft/teams-js.meeting.IAppContentStageSharingState'
+  - '@microsoft/teams-js.meeting.IRaiseHandState'
   - '@microsoft/teams-js.meeting.ISpeakingState'
   - '@microsoft/teams-js.meeting.LiveStreamState'
+  - '@microsoft/teams-js.meeting.MeetingReactionReceivedEventData'
+  - '@microsoft/teams-js.meeting.RaiseHandStateChangedEventData'
   - '@microsoft/teams-js.menus.ActionMenuParameters'
   - '@microsoft/teams-js.pages.config.RemoveEvent'
   - '@microsoft/teams-js.pages.config.SaveEvent'
@@ -54,6 +59,8 @@ interfaces:
   - '@microsoft/teams-js.pages.NavigateToAppParams'
   - '@microsoft/teams-js.people.PeoplePickerInputs'
   - '@microsoft/teams-js.people.PeoplePickerResult'
+  - '@microsoft/teams-js.profile.Persona'
+  - '@microsoft/teams-js.profile.ShowProfileRequest'
   - '@microsoft/teams-js.sharing.IBaseSharedContent'
   - '@microsoft/teams-js.sharing.IShareRequest'
   - '@microsoft/teams-js.sharing.IURLContent'
@@ -91,6 +98,7 @@ enums:
   - '@microsoft/teams-js.media.MediaType'
   - '@microsoft/teams-js.media.Source'
   - '@microsoft/teams-js.meeting.CallType'
+  - '@microsoft/teams-js.meeting.MeetingReactionType'
   - '@microsoft/teams-js.meeting.MeetingType'
   - '@microsoft/teams-js.menus.DisplayMode'
   - '@microsoft/teams-js.video.EffectChangeType'
@@ -111,6 +119,9 @@ typeAliases:
   - '@microsoft/teams-js.dialog.DialogSubmitHandler'
   - '@microsoft/teams-js.dialog.PostMessageChannel'
   - '@microsoft/teams-js.mail.ComposeMailParams'
+  - '@microsoft/teams-js.profile.Modality'
+  - '@microsoft/teams-js.profile.PersonaIdentifiers'
+  - '@microsoft/teams-js.profile.TriggerType'
   - '@microsoft/teams-js.sharing.ContentType'
   - '@microsoft/teams-js.sharing.IShareRequestContentType'
   - '@microsoft/teams-js.video.VideoEffectCallBack'
@@ -183,8 +194,8 @@ functions:
         - id: callback
           type: '(context: Context) =&gt; void'
           description: >
-            The callback to invoke when the
-            <xref:@microsoft/teams-js.app.Context> object is retrieved.
+            The callback to invoke when the <xref:@microsoft/teams-js.Context>
+            object is retrieved.
   - name: >-
       getMruTabInstances((tabInfo: TabInformation) => void,
       TabInstanceParameters)
@@ -283,15 +294,6 @@ functions:
 
             https: protocol otherwise they will be ignored. Example:
             https://www.example.com
-  - name: initializePrivateApis()
-    uid: '@microsoft/teams-js.initializePrivateApis'
-    package: '@microsoft/teams-js'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: function initializePrivateApis()
   - name: 'initializeWithFrameContext(FrameContext, () => void, string[])'
     uid: '@microsoft/teams-js.initializeWithFrameContext'
     package: '@microsoft/teams-js'

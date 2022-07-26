@@ -24,6 +24,7 @@ properties:
         type: >-
           <xref
           uid="@microsoft/live-share-media.ExtendedMediaSessionActionDetails" />
+inheritedProperties:
   - name: name
     uid: '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent.name'
     package: '@microsoft/live-share-media'

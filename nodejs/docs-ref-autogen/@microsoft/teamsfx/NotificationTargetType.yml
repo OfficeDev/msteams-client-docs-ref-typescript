@@ -13,4 +13,5 @@ remarks: >-
   - "Person" means to a personal chat.
 isPreview: false
 isDeprecated: false
-syntax: type NotificationTargetType = "Channel" | "Group" | "Person"
+syntax: |
+  type NotificationTargetType = "Channel" | "Group" | "Person"

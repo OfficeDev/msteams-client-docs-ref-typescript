@@ -135,6 +135,59 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: isSuspended
+    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.isSuspended'
+    package: '@microsoft/live-share-media'
+    summary: Returns true if the local client is in a suspended state.
+    fullName: isSuspended
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean isSuspended
+      return:
+        description: ''
+        type: boolean
+  - name: maxPlaybackDrift
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.maxPlaybackDrift
+    package: '@microsoft/live-share-media'
+    summary: Max amount of playback drift allowed in seconds.
+    fullName: maxPlaybackDrift
+    remarks: >-
+      Should the local clients playback position lag by more than the specified
+      value, the
+
+      coordinator will trigger a `catchup` action.
+
+
+      Defaults to a value of `1` second.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number maxPlaybackDrift
+      return:
+        description: ''
+        type: number
+  - name: positionUpdateInterval
+    uid: >-
+      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.positionUpdateInterval
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Frequency with which position updates are broadcast to the rest of the
+      group in
+
+      seconds.
+    fullName: positionUpdateInterval
+    remarks: Defaults to a value of `2` seconds.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number positionUpdateInterval
+      return:
+        description: ''
+        type: number
+inheritedProperties:
   - name: captureRejections
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.captureRejections
@@ -204,58 +257,6 @@ properties:
       return:
         description: ''
         type: Object
-  - name: isSuspended
-    uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.isSuspended'
-    package: '@microsoft/live-share-media'
-    summary: Returns true if the local client is in a suspended state.
-    fullName: isSuspended
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: boolean isSuspended
-      return:
-        description: ''
-        type: boolean
-  - name: maxPlaybackDrift
-    uid: >-
-      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.maxPlaybackDrift
-    package: '@microsoft/live-share-media'
-    summary: Max amount of playback drift allowed in seconds.
-    fullName: maxPlaybackDrift
-    remarks: >-
-      Should the local clients playback position lag by more than the specified
-      value, the
-
-      coordinator will trigger a `catchup` action.
-
-
-      Defaults to a value of `1` second.
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: number maxPlaybackDrift
-      return:
-        description: ''
-        type: number
-  - name: positionUpdateInterval
-    uid: >-
-      @microsoft/live-share-media.EphemeralMediaSessionCoordinator.positionUpdateInterval
-    package: '@microsoft/live-share-media'
-    summary: >-
-      Frequency with which position updates are broadcast to the rest of the
-      group in
-
-      seconds.
-    fullName: positionUpdateInterval
-    remarks: Defaults to a value of `2` seconds.
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: number positionUpdateInterval
-      return:
-        description: ''
-        type: number
 inheritedMethods:
   - name: 'addListener(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.addListener'

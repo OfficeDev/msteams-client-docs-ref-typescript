@@ -1,0 +1,55 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.geoLocation.map'
+name: map
+type: module
+package: '@microsoft/teams-js'
+summary: >-
+  Namespace to interact with the location on map module-specific part of the
+  SDK.
+functions:
+  - name: chooseLocation()
+    uid: '@microsoft/teams-js.geoLocation.map.chooseLocation'
+    package: '@microsoft/teams-js'
+    summary: Allows user to choose location on map
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function chooseLocation(): Promise<Location>'
+      return:
+        description: >-
+          Promise that will resolve with {@link geoLocation.Location} object
+          chosen by the user or reject with an error. Function can also throw a
+          NOT_SUPPORTED_ON_PLATFORM error
+        type: Promise&lt;<xref uid="@microsoft/teams-js.geoLocation.Location" />&gt;
+  - name: isSupported()
+    uid: '@microsoft/teams-js.geoLocation.map.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if geoLocation.map capability is supported by the host
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether geoLocation.map is supported
+        type: boolean
+  - name: showLocation(Location)
+    uid: '@microsoft/teams-js.geoLocation.map.showLocation'
+    package: '@microsoft/teams-js'
+    summary: Shows the location on map corresponding to the given coordinates
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function showLocation(location: Location): Promise<void>'
+      parameters:
+        - id: location
+          type: <xref uid="@microsoft/teams-js.geoLocation.Location" />
+          description: Location to be shown on the map
+      return:
+        description: >-
+          Promise that resolves when the location dialog has been closed or
+          reject with an error. Function can also throw a
+          NOT_SUPPORTED_ON_PLATFORM error
+        type: Promise&lt;void&gt;
