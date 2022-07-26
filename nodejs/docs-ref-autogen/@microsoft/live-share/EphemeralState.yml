@@ -36,19 +36,6 @@ constructors:
             }&gt;
           description: ''
 properties:
-  - name: addListener
-    uid: '@microsoft/live-share.EphemeralState.addListener'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: addListener
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
-      return:
-        description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
   - name: data
     uid: '@microsoft/live-share.EphemeralState.data'
     package: '@microsoft/live-share'
@@ -183,6 +170,48 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: state
+    uid: '@microsoft/live-share.EphemeralState.state'
+    package: '@microsoft/live-share'
+    summary: The current state.
+    fullName: state
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string state
+      return:
+        description: ''
+        type: string
+  - name: TypeName
+    uid: '@microsoft/live-share.EphemeralState.TypeName'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type/name.
+    fullName: TypeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TypeName: "@microsoft/live-share:EphemeralState" =
+        "@microsoft/live-share:EphemeralState"
+      return:
+        description: ''
+        type: '"@microsoft/live-share:EphemeralState"'
+inheritedProperties:
+  - name: addListener
+    uid: '@microsoft/live-share.EphemeralState.addListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
   - name: 'off'
     uid: '@microsoft/live-share.EphemeralState.off'
     package: '@microsoft/live-share'
@@ -261,34 +290,6 @@ properties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-  - name: state
-    uid: '@microsoft/live-share.EphemeralState.state'
-    package: '@microsoft/live-share'
-    summary: The current state.
-    fullName: state
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: string state
-      return:
-        description: ''
-        type: string
-  - name: TypeName
-    uid: '@microsoft/live-share.EphemeralState.TypeName'
-    package: '@microsoft/live-share'
-    summary: The objects fluid type/name.
-    fullName: TypeName
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: >-
-        static TypeName: "@microsoft/live-share:EphemeralState" =
-        "@microsoft/live-share:EphemeralState"
-      return:
-        description: ''
-        type: '"@microsoft/live-share:EphemeralState"'
 inheritedMethods:
   - name: 'emit(string | symbol, any[])'
     uid: '@microsoft/live-share.EphemeralState.emit'

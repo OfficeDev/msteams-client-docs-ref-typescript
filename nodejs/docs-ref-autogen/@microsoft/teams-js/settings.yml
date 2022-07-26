@@ -13,8 +13,8 @@ functions:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.config.getConfig():
-      Promise\<Config\>](xref:pages.config.getConfig) instead.
+      As of 2.0.0, please use [pages.getConfig():
+      Promise\<InstanceConfig\>](xref:pages.getConfig) instead.
 
 
       Gets the settings for the current instance.

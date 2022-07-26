@@ -6,7 +6,8 @@ summary: ''
 fullName: Location
 remarks: ''
 isPreview: false
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: Data struture to represent the location information
 type: interface
 properties:
   - name: accuracy

@@ -52,19 +52,6 @@ constructors:
             Optional. List of roles allowed to send events using this scope.
             You should use a second scope if you need mixed permission support.
 properties:
-  - name: addListener
-    uid: '@microsoft/live-share.EphemeralEventScope.addListener'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: addListener
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'addListener: TypedEventTransform<this, IErrorEvent>'
-      return:
-        description: ''
-        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
   - name: allowedRoles
     uid: '@microsoft/live-share.EphemeralEventScope.allowedRoles'
     package: '@microsoft/live-share'
@@ -93,6 +80,20 @@ properties:
       return:
         description: ''
         type: string | undefined
+inheritedProperties:
+  - name: addListener
+    uid: '@microsoft/live-share.EphemeralEventScope.addListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, IErrorEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
   - name: 'off'
     uid: '@microsoft/live-share.EphemeralEventScope.off'
     package: '@microsoft/live-share'
