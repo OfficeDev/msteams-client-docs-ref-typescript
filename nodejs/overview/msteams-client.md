@@ -40,7 +40,7 @@ You can also reference the entire library in html pages using a script tag.  The
 <!-- Microsoft Teams JavaScript API (via CDN) -->
 <script
   src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js"
-  integrity="sha384-Q2Z9S56exI6Oz/ThvYaV0SUn8j4HwS8BveGPmuwLXe4CvCUEGlL80qSzHMnvGqee"
+  integrity="sha384-QtTBFeFlfRDZBfwHJHYQp7MdLJ2C3sfAEB1Qpy+YblvjavBye+q87TELpTnvlXw4"
   crossorigin="anonymous"
 ></script>
 
