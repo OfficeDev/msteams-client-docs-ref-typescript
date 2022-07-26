@@ -14,7 +14,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifyAppLoaded():
-      void](xref:app.notifyAppLoaded) instead.
+      void](xref:@microsoft/teams-js.app.notifyAppLoaded) instead.
 
 
       Notifies the frame that app has loaded and to hide the loading indicator
@@ -30,7 +30,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifyExpectedFailure(expectedFailureRequest:
-      IExpectedFailureRequest): void](xref:app.notifyExpectedFailure) instead.
+      IExpectedFailureRequest): void](xref:@microsoft/teams-js.app.notifyExpectedFailure) instead.
 
 
       Notifies the frame that app initialized with some expected errors.
@@ -53,7 +53,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifyFailure(appInitializationFailedRequest:
-      IFailedRequest): void](xref:app.notifyFailure) instead.
+      IFailedRequest): void](xref:@microsoft/teams-js.app.notifyFailure) instead.
 
 
       Notifies the frame that app initialization has failed and to show an error
@@ -75,7 +75,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifySuccess():
-      void](xref:app.notifySuccess) instead.
+      void](xref:@microsoft/teams-js.app.notifySuccess) instead.
 
 
       Notifies the frame that app initialization is successful and is ready for
