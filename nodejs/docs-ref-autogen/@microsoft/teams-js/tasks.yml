@@ -33,7 +33,7 @@ functions:
       object to the original height and width, if initially specified,
 
       otherwise uses the height and width values corresponding to
-      <xref:@microsoft/teams-js.TaskModuleDimension.Small>
+      <xref:@microsoft/teams-js.DialogDimension.Small>
     remarks: ''
     isPreview: false
     isDeprecated: false
