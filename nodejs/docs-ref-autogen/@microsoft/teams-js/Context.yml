@@ -302,7 +302,7 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:@microsoft/teams-js.app.ChannelInfo.ownerTeamTenantId>
+      As of 2.0.0, please use <xref:@microsoft/teams-js.app.ChannelInfo.ownerTenantId>
       instead
 
 
