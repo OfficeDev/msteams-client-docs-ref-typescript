@@ -10,4 +10,5 @@ isDeprecated: true
 customDeprecatedMessage: >-
   As of 2.0.0, please use
   <xref:@microsoft/teams-js.authentication.AuthTokenRequestParameters> instead.
-syntax: type AuthTokenRequest = AuthTokenRequestParameters & LegacyCallBacks
+syntax: |
+  type AuthTokenRequest = AuthTokenRequestParameters & LegacyCallBacks

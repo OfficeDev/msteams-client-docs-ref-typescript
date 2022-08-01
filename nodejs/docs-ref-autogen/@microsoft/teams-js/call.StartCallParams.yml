@@ -12,7 +12,7 @@ properties:
   - name: requestedModalities
     uid: '@microsoft/teams-js.call.StartCallParams.requestedModalities'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: 'List of modalities for the call. Defaults to [“audio”].'
     fullName: requestedModalities
     remarks: ''
     isPreview: false
@@ -25,7 +25,7 @@ properties:
   - name: source
     uid: '@microsoft/teams-js.call.StartCallParams.source'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: An optional parameter that informs about the source of the deep link
     fullName: source
     remarks: ''
     isPreview: false
@@ -38,9 +38,14 @@ properties:
   - name: targets
     uid: '@microsoft/teams-js.call.StartCallParams.targets'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Comma-separated list of user IDs representing the participants of the
+      call.
     fullName: targets
-    remarks: ''
+    remarks: |-
+      Currently the User ID field supports the Azure AD UserPrincipalName,
+      typically an email address, or in case of a PSTN call, it supports a pstn
+      mri 4:<phonenumber>.
     isPreview: false
     isDeprecated: false
     syntax:

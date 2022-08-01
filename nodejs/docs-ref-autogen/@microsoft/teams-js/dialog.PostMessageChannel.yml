@@ -7,4 +7,5 @@ fullName: PostMessageChannel
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: 'type PostMessageChannel = (message: any) => void'
+syntax: |
+  type PostMessageChannel = (message: any) => void

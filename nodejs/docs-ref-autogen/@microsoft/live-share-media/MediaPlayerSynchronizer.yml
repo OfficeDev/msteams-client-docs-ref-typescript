@@ -47,72 +47,6 @@ constructors:
             Optional. Function to call when synchronizers `end()` method is
             called.
 properties:
-  - name: captureRejections
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.captureRejections'
-    package: '@microsoft/live-share-media'
-    summary: Sets or gets the default captureRejection value for all emitters.
-    fullName: captureRejections
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static captureRejections: boolean'
-      return:
-        description: ''
-        type: boolean
-  - name: captureRejectionSymbol
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.captureRejectionSymbol'
-    package: '@microsoft/live-share-media'
-    summary: ''
-    fullName: captureRejectionSymbol
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static captureRejectionSymbol: Object'
-      return:
-        description: ''
-        type: Object
-  - name: defaultMaxListeners
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.defaultMaxListeners'
-    package: '@microsoft/live-share-media'
-    summary: ''
-    fullName: defaultMaxListeners
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static defaultMaxListeners: number'
-      return:
-        description: ''
-        type: number
-  - name: errorMonitor
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.errorMonitor'
-    package: '@microsoft/live-share-media'
-    summary: >
-      This symbol shall be used to install a listener for only monitoring
-      `'error'`
-
-      events. Listeners installed using this symbol are called before the
-      regular
-
-      `'error'` listeners are called.
-
-      Installing a listener using this symbol does not change the behavior once
-      an
-
-      `'error'` event is emitted, therefore the process will still crash if no
-
-      regular `'error'` listener is installed.
-    fullName: errorMonitor
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'static errorMonitor: Object'
-      return:
-        description: ''
-        type: Object
   - name: mediaSession
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.mediaSession'
     package: '@microsoft/live-share-media'
@@ -180,6 +114,73 @@ properties:
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-media.VolumeLimiter" />
+inheritedProperties:
+  - name: captureRejections
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.captureRejections'
+    package: '@microsoft/live-share-media'
+    summary: Sets or gets the default captureRejection value for all emitters.
+    fullName: captureRejections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejections: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: captureRejectionSymbol
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.captureRejectionSymbol'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: captureRejectionSymbol
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejectionSymbol: Object'
+      return:
+        description: ''
+        type: Object
+  - name: defaultMaxListeners
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.defaultMaxListeners'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: defaultMaxListeners
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static defaultMaxListeners: number'
+      return:
+        description: ''
+        type: number
+  - name: errorMonitor
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.errorMonitor'
+    package: '@microsoft/live-share-media'
+    summary: >
+      This symbol shall be used to install a listener for only monitoring
+      `'error'`
+
+      events. Listeners installed using this symbol are called before the
+      regular
+
+      `'error'` listeners are called.
+
+      Installing a listener using this symbol does not change the behavior once
+      an
+
+      `'error'` event is emitted, therefore the process will still crash if no
+
+      regular `'error'` listener is installed.
+    fullName: errorMonitor
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static errorMonitor: Object'
+      return:
+        description: ''
+        type: Object
 inheritedMethods:
   - name: 'addListener(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.addListener'

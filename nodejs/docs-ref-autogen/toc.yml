@@ -238,6 +238,13 @@
         - uid: '@microsoft/teams-js.authentication.LegacyCallBacks'
           name: LegacyCallBacks
           items: []
+    - name: barCode
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.barCode'
+        - uid: '@microsoft/teams-js.barCode.BarCodeConfig'
+          name: BarCodeConfig
+          items: []
     - uid: '@microsoft/teams-js.BotUrlDialogInfo'
       name: BotUrlDialogInfo
       items: []
@@ -319,6 +326,16 @@
     - uid: '@microsoft/teams-js.FrameInfo'
       name: FrameInfo
       items: []
+    - name: geoLocation
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.geoLocation'
+        - uid: '@microsoft/teams-js.geoLocation.Location'
+          name: Location
+          items: []
+        - uid: '@microsoft/teams-js.geoLocation.map'
+          name: map
+          items: []
     - uid: '@microsoft/teams-js.HostClientType'
       name: HostClientType
       items: []
@@ -440,14 +457,26 @@
         - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingState'
           name: IAppContentStageSharingState
           items: []
+        - uid: '@microsoft/teams-js.meeting.IRaiseHandState'
+          name: IRaiseHandState
+          items: []
         - uid: '@microsoft/teams-js.meeting.ISpeakingState'
           name: ISpeakingState
           items: []
         - uid: '@microsoft/teams-js.meeting.LiveStreamState'
           name: LiveStreamState
           items: []
+        - uid: '@microsoft/teams-js.meeting.MeetingReactionReceivedEventData'
+          name: MeetingReactionReceivedEventData
+          items: []
+        - uid: '@microsoft/teams-js.meeting.MeetingReactionType'
+          name: MeetingReactionType
+          items: []
         - uid: '@microsoft/teams-js.meeting.MeetingType'
           name: MeetingType
+          items: []
+        - uid: '@microsoft/teams-js.meeting.RaiseHandStateChangedEventData'
+          name: RaiseHandStateChangedEventData
           items: []
     - uid: '@microsoft/teams-js.meetingRoom'
       name: meetingRoom
@@ -524,6 +553,25 @@
           items: []
         - uid: '@microsoft/teams-js.people.PeoplePickerResult'
           name: PeoplePickerResult
+          items: []
+    - name: profile
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.profile'
+        - uid: '@microsoft/teams-js.profile.Modality'
+          name: Modality
+          items: []
+        - uid: '@microsoft/teams-js.profile.Persona'
+          name: Persona
+          items: []
+        - uid: '@microsoft/teams-js.profile.PersonaIdentifiers'
+          name: PersonaIdentifiers
+          items: []
+        - uid: '@microsoft/teams-js.profile.ShowProfileRequest'
+          name: ShowProfileRequest
+          items: []
+        - uid: '@microsoft/teams-js.profile.TriggerType'
+          name: TriggerType
           items: []
     - uid: '@microsoft/teams-js.remoteCamera'
       name: remoteCamera
@@ -618,6 +666,9 @@
         - uid: '@microsoft/teams-js.video.VideoFrameFormat'
           name: VideoFrameFormat
           items: []
+    - uid: '@microsoft/teams-js.webStorage'
+      name: webStorage
+      items: []
 - name: '@microsoft/teamsfx'
   items:
     - name: Overview

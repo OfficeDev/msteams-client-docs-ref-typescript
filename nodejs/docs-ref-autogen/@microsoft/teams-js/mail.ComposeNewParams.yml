@@ -74,6 +74,7 @@ properties:
       return:
         description: ''
         type: 'string[]'
+inheritedProperties:
   - name: type
     uid: '@microsoft/teams-js.mail.ComposeNewParams.type'
     package: '@microsoft/teams-js'

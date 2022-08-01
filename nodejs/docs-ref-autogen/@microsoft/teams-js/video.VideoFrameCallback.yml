@@ -5,8 +5,11 @@ package: '@microsoft/teams-js'
 summary: Video frame call back function definition
 fullName: VideoFrameCallback
 remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
-syntax: >-
-  type VideoFrameCallback = (frame: VideoFrame, notifyVideoFrameProcessed: () =>
-  void, notifyError: (errorMessage: string) => void) => void
+syntax: |
+  type VideoFrameCallback = (
+    frame: VideoFrame,
+    notifyVideoFrameProcessed: () => void,
+    notifyError: (errorMessage: string) => void
+  ) => void

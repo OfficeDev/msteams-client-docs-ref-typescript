@@ -12,19 +12,6 @@ isPreview: true
 isDeprecated: false
 type: interface
 properties:
-  - name: message
-    uid: '@microsoft/teams-js.OpenGroupChatRequest.message'
-    package: '@microsoft/teams-js'
-    summary: An optional message used when initiating chat
-    fullName: message
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'message?: string'
-      return:
-        description: ''
-        type: string
   - name: topic
     uid: '@microsoft/teams-js.OpenGroupChatRequest.topic'
     package: '@microsoft/teams-js'
@@ -55,4 +42,18 @@ properties:
       return:
         description: ''
         type: 'string[]'
+inheritedProperties:
+  - name: message
+    uid: '@microsoft/teams-js.OpenGroupChatRequest.message'
+    package: '@microsoft/teams-js'
+    summary: An optional message used when initiating chat
+    fullName: message
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'message?: string'
+      return:
+        description: ''
+        type: string
 extends: <xref uid="@microsoft/teams-js.OpenChatRequest" />

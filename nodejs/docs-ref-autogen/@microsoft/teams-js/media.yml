@@ -53,12 +53,18 @@ functions:
   - name: 'scanBarCode((error: SdkError, decodedText: string) => void, BarCodeConfig)'
     uid: '@microsoft/teams-js.media.scanBarCode'
     package: '@microsoft/teams-js'
-    summary: Scan Barcode/QRcode using camera
+    summary: ''
     remarks: >-
       Note: For desktop and web, this API is not supported. Callback will be
       resolved with ErrorCode.NotSupported.
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.1.0, please use [barCode.scanBarCode(config?: BarCodeConfig):
+      Promise\<string\>](xref:@microsoft/teams-js.barCode.scanBarCode) instead.
+
+
+      Scan Barcode/QRcode using camera
     syntax:
       content: >-
         function scanBarCode(callback: (error: SdkError, decodedText: string) =>

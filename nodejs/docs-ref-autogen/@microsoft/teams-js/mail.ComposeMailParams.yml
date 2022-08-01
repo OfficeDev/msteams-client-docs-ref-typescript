@@ -7,6 +7,9 @@ fullName: ComposeMailParams
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type ComposeMailParams = ComposeNewParams | ComposeReplyOrForwardParams<Reply>
-  | ComposeReplyOrForwardParams<ReplyAll> | ComposeReplyOrForwardParams<Forward>
+syntax: |
+  type ComposeMailParams =
+    | ComposeNewParams
+    | ComposeReplyOrForwardParams<Reply>
+    | ComposeReplyOrForwardParams<ReplyAll>
+    | ComposeReplyOrForwardParams<Forward>

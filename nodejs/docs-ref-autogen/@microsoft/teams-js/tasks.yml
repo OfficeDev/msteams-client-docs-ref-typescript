@@ -8,7 +8,9 @@ functions:
   - name: getBotUrlDialogInfoFromTaskInfo(TaskInfo)
     uid: '@microsoft/teams-js.tasks.getBotUrlDialogInfoFromTaskInfo'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Converts <xref:@microsoft/teams-js.TaskInfo> to
+      <xref:@microsoft/teams-js.BotUrlDialogInfo>
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -19,14 +21,19 @@ functions:
       parameters:
         - id: taskInfo
           type: <xref uid="@microsoft/teams-js.TaskInfo" />
-          description: ''
+          description: TaskInfo object to convert
       return:
-        description: ''
+        description: '- converted BotUrlDialogInfo object'
         type: <xref uid="@microsoft/teams-js.BotUrlDialogInfo" />
   - name: getDefaultSizeIfNotProvided(TaskInfo)
     uid: '@microsoft/teams-js.tasks.getDefaultSizeIfNotProvided'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Sets the height and width of the <xref:@microsoft/teams-js.TaskInfo>
+      object to the original height and width, if initially specified,
+
+      otherwise uses the height and width values corresponding to
+      <xref:@microsoft/teams-js.DialogDimension.Small>
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -35,14 +42,16 @@ functions:
       parameters:
         - id: taskInfo
           type: <xref uid="@microsoft/teams-js.TaskInfo" />
-          description: ''
+          description: 'TaskInfo object from which to extract size info, if specified'
       return:
-        description: ''
+        description: TaskInfo with height and width specified
         type: <xref uid="@microsoft/teams-js.TaskInfo" />
   - name: getUrlDialogInfoFromTaskInfo(TaskInfo)
     uid: '@microsoft/teams-js.tasks.getUrlDialogInfoFromTaskInfo'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Converts <xref:@microsoft/teams-js.TaskInfo> to
+      <xref:@microsoft/teams-js.UrlDialogInfo>
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -51,9 +60,9 @@ functions:
       parameters:
         - id: taskInfo
           type: <xref uid="@microsoft/teams-js.TaskInfo" />
-          description: ''
+          description: TaskInfo object to convert
       return:
-        description: ''
+        description: '- Converted UrlDialogInfo object'
         type: <xref uid="@microsoft/teams-js.UrlDialogInfo" />
   - name: 'startTask(TaskInfo, (err: string, result: string | object) => void)'
     uid: '@microsoft/teams-js.tasks.startTask'
@@ -63,15 +72,16 @@ functions:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [UrlDialogInfo, submitHandler?:
-      DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel):
-      PostMessageChannel](xref:dialog.open(urlDialogInfo%3A) for url based
-      dialogs
+      As of 2.0.0, please use [dialog.open(urlDialogInfo: UrlDialogInfo,
+      submitHandler?: DialogSubmitHandler, messageFromChildHandler?:
+      PostMessageChannel): void](xref:@microsoft/teams-js.dialog.open) for url based dialogs
 
-      and [BotUrlDialogInfo, submitHandler?: DialogSubmitHandler,
-      messageFromChildHandler?: PostMessageChannel):
-      PostMessageChannel](xref:dialog.bot.open(botUrlDialogInfo%3A) for bot
-      based dialogs.
+      and [dialog.bot.open(botUrlDialogInfo: BotUrlDialogInfo, submitHandler?:
+      DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel):
+      void](xref:@microsoft/teams-js.dialog.bot.open) for bot based dialogs. In Teams,
+
+      this function can be used for adaptive card based dialogs. Support for
+      adaptive card based dialogs is coming to other hosts in the future.
 
 
       Allows an app to open the task module.
@@ -97,10 +107,8 @@ functions:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: >-
-      As of 2.0.0, please use [dialog.submit(result?: string | object, appIds?:
-      string | string[]): void](xref:dialog.submit) instead.
-
+    customDeprecatedMessage: |-
+      As of 2.0.0, please use <xref:@microsoft/teams-js.dialog.submit> instead.
 
       Submit the task module.
     syntax:
@@ -127,7 +135,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [dialog.update.resize(dimensions: DialogSize):
-      void](xref:dialog.update.resize) instead.
+      void](xref:@microsoft/teams-js.dialog.update.resize) instead.
 
 
       Update height/width task info properties.

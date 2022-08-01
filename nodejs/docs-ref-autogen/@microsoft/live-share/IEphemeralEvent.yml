@@ -24,19 +24,6 @@ properties:
       return:
         description: ''
         type: undefined | string
-  - name: name
-    uid: '@microsoft/live-share.IEphemeralEvent.name'
-    package: '@microsoft/live-share'
-    summary: Name of the event.
-    fullName: name
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'name: string'
-      return:
-        description: ''
-        type: string
   - name: timestamp
     uid: '@microsoft/live-share.IEphemeralEvent.timestamp'
     package: '@microsoft/live-share'
@@ -50,4 +37,18 @@ properties:
       return:
         description: ''
         type: number
+inheritedProperties:
+  - name: name
+    uid: '@microsoft/live-share.IEphemeralEvent.name'
+    package: '@microsoft/live-share'
+    summary: Name of the event.
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
 extends: <xref uid="@microsoft/live-share.IEvent" />

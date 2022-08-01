@@ -11,6 +11,7 @@ fullName: GetSynchronizationState<TState>
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type GetSynchronizationState<TState> = (connecting: boolean) => TState |
-  undefined
+syntax: |
+  type GetSynchronizationState<TState> = (
+    connecting: boolean
+  ) => TState | undefined

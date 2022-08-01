@@ -7,6 +7,8 @@ fullName: OutgoingEphemeralEvent<TEvent>
 remarks: ''
 isPreview: false
 isDeprecated: false
-syntax: >-
-  type OutgoingEphemeralEvent<TEvent> = Omit<TEvent, "name" | "clientId" |
-  "timestamp">
+syntax: |
+  type OutgoingEphemeralEvent<TEvent> = Omit<
+    TEvent,
+    "name" | "clientId" | "timestamp"
+  >
