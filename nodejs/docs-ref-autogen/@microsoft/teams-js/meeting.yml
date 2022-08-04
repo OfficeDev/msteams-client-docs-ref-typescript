@@ -215,12 +215,14 @@ functions:
     uid: '@microsoft/teams-js.meeting.registerSpeakingStateChangeHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for changes to paticipant speaking states. If any
-      participant is speaking, isSpeakingDetected
+      Registers a handler for changes to paticipant speaking states. This API
+      returns <xref:@microsoft/teams-js.meeting.ISpeakingState>, which will have
+      isSpeakingDetected
 
-      will be true. If no participants are speaking, isSpeakingDetected will be
-      false. Only one handler can be registered
+      and/or an error object. If any participant is speaking, isSpeakingDetected
+      will be true. If no participants are speaking, isSpeakingDetected
 
+      will be false. Default value is false. Only one handler can be registered
       at a time. A subsequent registration replaces an existing registration.
     remarks: ''
     isPreview: false

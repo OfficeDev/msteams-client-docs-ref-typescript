@@ -5,18 +5,42 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: Context
 remarks: >-
-  For more details on the updated <xref:@microsoft/teams-js.app.Context>
-  interface, visit
+  For more details about the updated <xref:@microsoft/teams-js.app.Context>
+  interface, visit the
 
-  https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/using-teams-client-sdk#updates-to-the-context-interface.
+  [Teams JavaScript client
+  SDK](https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/using-teams-client-sdk#updates-to-the-context-interface)
+
+  overview article.
 
 
   Represents the structure of the received context message.
 isPreview: false
 isDeprecated: true
-customDeprecatedMessage: 'As of 2.0.0, please use <xref:@microsoft/teams-js.app.Context> instead.'
+customDeprecatedMessage: >-
+  As of 2.0.0, please use the <xref:@microsoft/teams-js.app.Context> interface
+  and its updated properties instead.
 type: interface
 properties:
+  - name: actionInfo
+    uid: '@microsoft/teams-js.Context.actionInfo'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: actionInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [| app.Context.actionInfo](xref:ActionInfo)
+      instead
+
+
+      Common information applicable to all content actions
+    syntax:
+      content: 'actionInfo?: ActionInfo'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.ActionInfo" />
   - name: appIconPosition
     uid: '@microsoft/teams-js.Context.appIconPosition'
     package: '@microsoft/teams-js'
@@ -26,7 +50,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.app.iconPositionVertical>
+      As of 2.0.0, please use [|
+      app.Context.app.iconPositionVertical](xref:app.AppInfo.iconPositionVertical)
       instead
 
 
@@ -45,7 +70,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.app.appLaunchId> instead
+      As of 2.0.0, please use [|
+      app.Context.app.appLaunchId](xref:app.AppInfo.appLaunchId) instead
 
 
       ID for the current visible app which is different for across cached
@@ -63,8 +89,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.app.sessionId> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.app.sessionId](xref:app.AppInfo.sessionId) instead
+
 
       Unique ID for the current session for use in correlating telemetry data.
     syntax:
@@ -81,7 +109,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.channel.id> instead
+      As of 2.0.0, please use [|
+      app.Context.channel.id](xref:app.ChannelInfo.id) instead
 
 
       The Microsoft Teams ID for the channel with which the content is
@@ -99,8 +128,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.channel.displayName> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.channel.displayName](xref:app.ChannelInfo.displayName) instead
+
 
       The name for the channel with which the content is associated.
     syntax:
@@ -116,8 +147,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.channel.relativeUrl> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.channel.relativeUrl](xref:app.ChannelInfo.relativeUrl) instead
+
 
       The relative path to the SharePoint folder associated with the channel.
     syntax:
@@ -133,8 +166,11 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.channel.membershipType> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.channel.membershipType](xref:app.ChannelInfo.membershipType)
+      instead
+
 
       The type of the channel with which the content is associated.
     syntax:
@@ -150,8 +186,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.chat.id> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [| app.Context.chat.id](xref:app.ChatInfo.id)
+      instead
+
 
       The Microsoft Teams ID for the chat with which the content is associated.
     syntax:
@@ -168,7 +206,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.channel.defaultOneNoteSectionId>
+      As of 2.0.0, please use [|
+      app.Context.channel.defaultOneNoteSectionId](xref:app.ChannelInfo.defaultOneNoteSectionId)
       instead
 
 
@@ -186,8 +225,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.page.id> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [| app.Context.page.id](xref:app.PageInfo.id)
+      instead
+
 
       The developer-defined unique ID for the entity this content points to.
     syntax:
@@ -204,7 +245,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.page.frameContext> instead
+      As of 2.0.0, please use [|
+      app.Context.page.frameContext](xref:app.PageInfo.frameContext) instead
 
 
       The context where tab url is loaded (content, task, setting, remove,
@@ -223,7 +265,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.team.groupId> instead
+      As of 2.0.0, please use [|
+      app.Context.team.groupId](xref:app.TeamInfo.groupId) instead
 
 
       The Office 365 group ID for the team with which the content is associated.
@@ -244,7 +287,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.host.clientType> instead
+      As of 2.0.0, please use [|
+      app.Context.app.host.clientType](xref:app.AppHostInfo.clientType) instead
 
 
       The type of the host client. Possible values are : android, ios, web,
@@ -266,7 +310,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.host.name> instead
+      As of 2.0.0, please use [|
+      app.Context.app.host.name](xref:app.AppHostInfo.name) instead
 
 
       The name of the host client. Possible values are: Office, Orange, Outlook,
@@ -284,8 +329,11 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.channel.ownerGroupId> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.channel.ownerGroupId](xref:app.ChannelInfo.ownerGroupId)
+      instead
+
 
       The AAD group ID of the host team.
     syntax:
@@ -302,7 +350,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.channel.ownerTeamTenantId>
+      As of 2.0.0, please use [|
+      app.Context.channel.ownerTenantId](xref:app.ChannelInfo.ownerTenantId)
       instead
 
 
@@ -320,8 +369,11 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.user.isCallingAllowed> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.user.isCallingAllowed](xref:app.UserInfo.isCallingAllowed)
+      instead
+
 
       Represents whether calling is allowed for the current logged in User
     syntax:
@@ -337,8 +389,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.page.isFullScreen> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.page.isFullScreen](xref:app.PageInfo.isFullScreen) instead
+
 
       Indication whether the tab is in full-screen mode.
     syntax:
@@ -354,8 +408,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.page.isMultiWindow> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.page.isMultiWindow](xref:app.PageInfo.isMultiWindow) instead
+
 
       Indication whether the tab is in a pop out window
     syntax:
@@ -372,7 +428,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.user.isPSTNCallingAllowed>
+      As of 2.0.0, please use [|
+      app.Context.user.isPSTNCallingAllowed](xref:app.UserInfo.isPSTNCallingAllowed)
       instead
 
 
@@ -391,7 +448,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.team.isArchived> instead
+      As of 2.0.0, please use [|
+      app.Context.team.isArchived](xref:app.TeamInfo.isArchived) instead
 
 
       Indicates whether team is archived.
@@ -411,10 +469,13 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.app.locale> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.app.locale](xref:app.AppInfo.locale) instead
+
 
       The current locale that the user has configured for the app formatted as
+
       languageId-countryId (for example, en-us).
     syntax:
       content: 'locale: string'
@@ -430,7 +491,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.user.loginHint> instead
+      As of 2.0.0, please use [|
+      app.Context.user.loginHint](xref:app.UserInfo.loginHint) instead
 
 
       A value suitable for use as a login_hint when authenticating with Azure
@@ -457,8 +519,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.meeting.id> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.meeting.id](xref:app.MeetingInfo.id) instead
+
 
       Meeting Id used by tab when running in meeting context
     syntax:
@@ -475,7 +539,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.sharePointSite.mySiteDomain>
+      As of 2.0.0, please use [|
+      app.Context.sharePointSite.mySiteDomain](xref:app.SharePointSiteInfo.mySiteDomain)
       instead
 
 
@@ -494,7 +559,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.sharePointSite.mySitePath>
+      As of 2.0.0, please use [|
+      app.Context.sharePointSite.mySitePath](xref:app.SharePointSiteInfo.mySitePath)
       instead
 
 
@@ -513,7 +579,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.app.osLocaleInfo> instead
+      As of 2.0.0, please use [|
+      app.Context.app.osLocaleInfo](xref:app.AppInfo.osLocaleInfo) instead
 
 
       More detailed locale info from the user's OS if available. Can be used
@@ -536,10 +603,13 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.app.parentMessageId> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.app.parentMessageId](xref:app.AppInfo.parentMessageId) instead
+
 
       The ID of the parent message from which this task module was launched.
+
       This is only available in task modules launched from bot cards.
     syntax:
       content: 'parentMessageId?: string'
@@ -554,8 +624,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.app.host.ringId> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.app.host.ringId](xref:app.AppHostInfo.ringId) instead
+
 
       Current ring ID
     syntax:
@@ -572,7 +644,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.app.host.sessionId> instead
+      As of 2.0.0, please use [|
+      app.Context.app.host.sessionId](xref:app.AppHostInfo.sessionId) instead
 
 
       Unique ID for the current Teams session for use in correlating telemetry
@@ -590,8 +663,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.sharepoint> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [| app.Context.sharepoint](xref:app.Context)
+      instead
+
 
       SharePoint context. This is only available when hosted in SharePoint.
     syntax:
@@ -607,8 +682,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.page.sourceOrigin> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.page.sourceOrigin](xref:app.PageInfo.sourceOrigin) instead
+
 
       Source origin from where the tab is opened
     syntax:
@@ -624,11 +701,15 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.page.subPageId> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.page.subPageId](xref:app.PageInfo.subPageId) instead
+
 
       The developer-defined unique ID for the sub-entity this content points to.
+
       This field should be used to restore to a specific state within an entity,
+
       such as scrolling to or activating a specific piece of content.
     syntax:
       content: 'subEntityId?: string'
@@ -643,8 +724,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.team.internalId> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.team.internalId](xref:app.TeamInfo.internalId) instead
+
 
       The Microsoft Teams ID for the team with which the content is associated.
     syntax:
@@ -660,8 +743,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.team.displayName> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.team.displayName](xref:app.TeamInfo.displayName) instead
+
 
       The name for the team with which the content is associated.
     syntax:
@@ -678,7 +763,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.sharePointSite.teamSiteDomain>
+      As of 2.0.0, please use [|
+      app.Context.sharePointSite.teamSiteDomain](xref:app.SharePointSiteInfo.teamSiteDomain)
       instead
 
 
@@ -697,7 +783,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.sharePointSite.teamSiteId>
+      As of 2.0.0, please use [|
+      app.Context.sharePointSite.teamSiteId](xref:app.SharePointSiteInfo.teamSiteId)
       instead
 
 
@@ -716,7 +803,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.sharePointSite.teamSitePath>
+      As of 2.0.0, please use [|
+      app.Context.sharePointSite.teamSitePath](xref:app.SharePointSiteInfo.teamSitePath)
       instead
 
 
@@ -735,7 +823,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.sharePointSite.teamSiteUrl>
+      As of 2.0.0, please use [|
+      app.Context.sharePointSite.teamSiteUrl](xref:app.SharePointSiteInfo.teamSiteUrl)
       instead
 
 
@@ -754,7 +843,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.team.templateId> instead
+      As of 2.0.0, please use [|
+      app.Context.team.templateId](xref:app.TeamInfo.templateId) instead
 
 
       Team Template ID if there was a Team Template associated with the creation
@@ -772,8 +862,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.team.type> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [| app.Context.team.type](xref:app.TeamInfo.type)
+      instead
+
 
       The type of the team.
     syntax:
@@ -789,8 +881,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.user.tenant.teamsSku> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.tenant.teamsSku](xref:app.TenantInfo.teamsSku) instead
+
 
       The type of license for the current users tenant.
     syntax:
@@ -806,8 +900,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.app.theme> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [| app.Context.app.theme](xref:app.AppInfo.theme)
+      instead
+
 
       The current UI theme.
     syntax:
@@ -824,7 +920,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.user.tenant.id> instead
+      As of 2.0.0, please use [|
+      app.Context.user.tenant.id](xref:app.TenantInfo.id) instead
 
 
       The Azure AD tenant ID of the current user.
@@ -851,8 +948,12 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.user.loginHint> or
-      <xref:app.Context.user.userPrincipalName> instead.
+      As of 2.0.0, please use [|
+      app.Context.user.loginHint](xref:app.UserInfo.loginHint) or
+
+      [|
+      app.Context.user.userPrincipalName](xref:app.UserInfo.userPrincipalName)
+      instead.
 
       The UPN of the current user.
 
@@ -877,8 +978,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.app.userClickTime> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.app.userClickTime](xref:app.AppInfo.userClickTime) instead
+
 
       Time when the user clicked on the tab
     syntax:
@@ -894,8 +997,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.user.displayName> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.user.displayName](xref:app.UserInfo.displayName) instead
+
 
       The address book name of the current user.
     syntax:
@@ -912,7 +1017,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.app.userFileOpenPreference>
+      As of 2.0.0, please use [|
+      app.Context.app.userFileOpenPreference](xref:app.AppInfo.userFileOpenPreference)
       instead
 
 
@@ -931,8 +1037,10 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:app.Context.user.licenseType> instead
+    customDeprecatedMessage: >-
+      As of 2.0.0, please use [|
+      app.Context.user.licenseType](xref:app.UserInfo.licenseType) instead
+
 
       The license type for the current user.
     syntax:
@@ -949,7 +1057,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.user.id> instead
+      As of 2.0.0, please use [| app.Context.user.id](xref:app.UserInfo.id)
+      instead
 
 
       The Azure AD object id of the current user.
@@ -975,7 +1084,9 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.user.userPrincipalName> instead
+      As of 2.0.0, please use [|
+      app.Context.user.userPrincipalName](xref:app.UserInfo.userPrincipalName)
+      instead
 
 
       The UPN of the current user. This may be an externally-authenticated UPN
@@ -1002,7 +1113,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use <xref:app.Context.team.userRole> instead
+      As of 2.0.0, please use [|
+      app.Context.team.userRole](xref:app.TeamInfo.userRole) instead
 
 
       The user's role in the team.

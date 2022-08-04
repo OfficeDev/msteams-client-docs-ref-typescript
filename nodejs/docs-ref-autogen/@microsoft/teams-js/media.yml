@@ -20,6 +20,7 @@ enums:
   - '@microsoft/teams-js.media.FileFormat'
   - '@microsoft/teams-js.media.ImageOutputFormats'
   - '@microsoft/teams-js.media.ImageUriType'
+  - '@microsoft/teams-js.media.MediaControllerEvent'
   - '@microsoft/teams-js.media.MediaType'
   - '@microsoft/teams-js.media.Source'
 classes:

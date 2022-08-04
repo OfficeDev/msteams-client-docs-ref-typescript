@@ -32,8 +32,8 @@ functions:
       Sets the height and width of the <xref:@microsoft/teams-js.TaskInfo>
       object to the original height and width, if initially specified,
 
-      otherwise uses the height and width values corresponding to
-      <xref:TaskModuleDimension.Small>
+      otherwise uses the height and width values corresponding to [|
+      TaskModuleDimension.Small](xref:TaskModuleDimension)
     remarks: ''
     isPreview: false
     isDeprecated: false
