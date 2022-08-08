@@ -166,7 +166,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.openLink(deepLink: string):
-      Promise\<void\>](xref:app.openLink) instead.
+      Promise\<void\>](xref:@microsoft/teams-js.app.openLink) instead.
 
 
       Execute deep link API.
