@@ -67,6 +67,8 @@ interfaces:
   - '@microsoft/teams-js.stageView.StageViewParams'
   - '@microsoft/teams-js.video.VideoFrame'
   - '@microsoft/teams-js.video.VideoFrameConfig'
+  - '@microsoft/teams-js.ActionInfo'
+  - '@microsoft/teams-js.BaseActionObject'
   - '@microsoft/teams-js.BotUrlDialogInfo'
   - '@microsoft/teams-js.Context'
   - '@microsoft/teams-js.DeepLinkParameters'
@@ -75,10 +77,12 @@ interfaces:
   - '@microsoft/teams-js.FrameInfo'
   - '@microsoft/teams-js.IAppWindow'
   - '@microsoft/teams-js.LocaleInfo'
+  - '@microsoft/teams-js.M365ContentAction'
   - '@microsoft/teams-js.OpenChatRequest'
   - '@microsoft/teams-js.OpenGroupChatRequest'
   - '@microsoft/teams-js.OpenSingleChatRequest'
   - '@microsoft/teams-js.SdkError'
+  - '@microsoft/teams-js.SecondaryId'
   - '@microsoft/teams-js.ShareDeepLinkParameters'
   - '@microsoft/teams-js.ShowNotificationParameters'
   - '@microsoft/teams-js.TabInformation'
@@ -95,6 +99,7 @@ enums:
   - '@microsoft/teams-js.media.FileFormat'
   - '@microsoft/teams-js.media.ImageOutputFormats'
   - '@microsoft/teams-js.media.ImageUriType'
+  - '@microsoft/teams-js.media.MediaControllerEvent'
   - '@microsoft/teams-js.media.MediaType'
   - '@microsoft/teams-js.media.Source'
   - '@microsoft/teams-js.meeting.CallType'
@@ -103,6 +108,7 @@ enums:
   - '@microsoft/teams-js.menus.DisplayMode'
   - '@microsoft/teams-js.video.EffectChangeType'
   - '@microsoft/teams-js.video.VideoFrameFormat'
+  - '@microsoft/teams-js.ActionObjectType'
   - '@microsoft/teams-js.ChannelType'
   - '@microsoft/teams-js.DialogDimension'
   - '@microsoft/teams-js.ErrorCode'
@@ -111,6 +117,7 @@ enums:
   - '@microsoft/teams-js.HostClientType'
   - '@microsoft/teams-js.HostName'
   - '@microsoft/teams-js.NotificationTypes'
+  - '@microsoft/teams-js.SecondaryM365ContentIdName'
   - '@microsoft/teams-js.TeamType'
   - '@microsoft/teams-js.UserTeamRole'
 typeAliases:
@@ -158,8 +165,8 @@ functions:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [core.openLink(deepLink: string):
-      Promise\<void\>](xref:@microsoft/teams-js.app.openLink) instead.
+      As of 2.0.0, please use [app.openLink(deepLink: string):
+      Promise\<void\>](xref:app.openLink) instead.
 
 
       Execute deep link API.
@@ -307,7 +314,7 @@ functions:
       void](xref:@microsoft/teams-js.pages.initializeWithFrameContext) instead.
 
 
-      Initilize with FrameContext
+      Initialize with FrameContext
     syntax:
       content: >-
         function initializeWithFrameContext(frameContext: FrameContext,

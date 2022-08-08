@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: M365ContentAction
+uid: '@microsoft/teams-js.M365ContentAction'
+package: '@microsoft/teams-js'
+summary: |-
+  Stores information needed to represent M365 Content stored
+  in OneDrive or Sharepoint
+fullName: M365ContentAction
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: itemId
+    uid: '@microsoft/teams-js.M365ContentAction.itemId'
+    package: '@microsoft/teams-js'
+    summary: |-
+      Only office content IDs are passed to the app. Apps should use these ids
+      to query the Microsoft graph for more details.
+    fullName: itemId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'itemId: string'
+      return:
+        description: ''
+        type: string
+  - name: secondaryId
+    uid: '@microsoft/teams-js.M365ContentAction.secondaryId'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: secondaryId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'secondaryId?: SecondaryId'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.SecondaryId" />
+inheritedProperties:
+  - name: type
+    uid: '@microsoft/teams-js.M365ContentAction.type'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: M365Content'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.ActionObjectType.M365Content" />
+extends: >-
+  <xref uid="@microsoft/teams-js.BaseActionObject" />&lt;<xref
+  uid="@microsoft/teams-js.ActionObjectType.M365Content" />&gt;

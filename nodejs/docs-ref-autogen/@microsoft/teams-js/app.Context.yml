@@ -9,6 +9,19 @@ isPreview: false
 isDeprecated: false
 type: interface
 properties:
+  - name: actionInfo
+    uid: '@microsoft/teams-js.app.Context.actionInfo'
+    package: '@microsoft/teams-js'
+    summary: Content Action Info
+    fullName: actionInfo
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'actionInfo?: ActionInfo'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.ActionInfo" />
   - name: app
     uid: '@microsoft/teams-js.app.Context.app'
     package: '@microsoft/teams-js'

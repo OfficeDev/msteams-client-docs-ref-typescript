@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: SecondaryId
+uid: '@microsoft/teams-js.SecondaryId'
+package: '@microsoft/teams-js'
+summary: Contains information on what Graph item is being queried
+fullName: SecondaryId
+remarks: ''
+isPreview: true
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@microsoft/teams-js.SecondaryId.name'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'name: SecondaryM365ContentIdName'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.SecondaryM365ContentIdName" />
+  - name: value
+    uid: '@microsoft/teams-js.SecondaryId.value'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: value
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'value: string'
+      return:
+        description: ''
+        type: string
