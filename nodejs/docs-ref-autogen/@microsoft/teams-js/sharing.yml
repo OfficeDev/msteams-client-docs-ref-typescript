@@ -58,7 +58,7 @@ functions:
     customDeprecatedMessage: >-
       As of 2.0.0, please use [sharing.shareWebContent(shareWebContentRequest:
       IShareRequest\<IShareRequestContentType\>):
-      Promise\<void\>](xref:sharing.shareWebContent) instead.
+      Promise\<void\>](xref:@microsoft/teams-js.sharing.shareWebContent) instead.
 
 
       Feature is under development

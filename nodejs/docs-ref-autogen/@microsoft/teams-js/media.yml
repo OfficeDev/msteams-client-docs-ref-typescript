@@ -62,7 +62,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.1.0, please use [barCode.scanBarCode(config?: BarCodeConfig):
-      Promise\<string\>](xref:barCode.scanBarCode) instead.
+      Promise\<string\>](xref:@microsoft/teams-js.barCode.scanBarCode) instead.
 
 
       Scan Barcode/QRcode using camera
