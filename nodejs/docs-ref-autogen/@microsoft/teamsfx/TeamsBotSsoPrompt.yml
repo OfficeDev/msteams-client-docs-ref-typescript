@@ -163,10 +163,11 @@ inheritedMethods:
       parameters:
         - id: config
           type: 'Record&lt;string, unknown&gt;'
-          description: |
-            Configuration settings to apply.
+          description: Configuration settings to apply.
       return:
-        description: ''
+        description: >-
+          The [Configurable](xref:botbuilder-dialogs.Configurable) after the
+          operation is complete.
         type: this
   - name: 'endDialog(TurnContext, DialogInstance, DialogReason)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.endDialog'
@@ -201,16 +202,16 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function endDialog(context: TurnContext, instance: DialogInstance,
-        reason: DialogReason): Promise<void>
+        function endDialog(_context: TurnContext, _instance: DialogInstance,
+        _reason: DialogReason): Promise<void>
       parameters:
-        - id: context
+        - id: _context
           type: TurnContext
           description: The context object for the turn.
-        - id: instance
+        - id: _instance
           type: DialogInstance
           description: Current state information for this dialog.
-        - id: reason
+        - id: _reason
           type: DialogReason
           description: |
             The reason the dialog is ending.
@@ -229,9 +230,9 @@ inheritedMethods:
       parameters:
         - id: _property
           type: string
-          description: ''
+          description: The key of the conditional selector configuration.
       return:
-        description: ''
+        description: The converter for the selector configuration.
         type: Converter | ConverterFactory
   - name: getVersion()
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getVersion'
@@ -260,7 +261,9 @@ inheritedMethods:
     syntax:
       content: 'function getVersion(): string'
       return:
-        description: ''
+        description: >-
+          Unique string which should only change when dialog has changed in a
+          way that should restart the dialog.
         type: string
   - name: 'onDialogEvent(DialogContext, DialogEvent)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.onDialogEvent'
@@ -315,13 +318,13 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function repromptDialog(context: TurnContext, instance: DialogInstance):
-        Promise<void>
+        function repromptDialog(_context: TurnContext, _instance:
+        DialogInstance): Promise<void>
       parameters:
-        - id: context
+        - id: _context
           type: TurnContext
           description: The context object for the turn.
-        - id: instance
+        - id: _instance
           type: DialogInstance
           description: |
             Current state information for this dialog.
@@ -388,7 +391,7 @@ inheritedMethods:
           description: |
             Optional. The return value, if any, from the dialog that ended.
       return:
-        description: ''
+        description: A promise resolving to the dialog turn result.
         type: Promise&lt;DialogTurnResult&gt;
 methods:
   - name: beginDialog(DialogContext)

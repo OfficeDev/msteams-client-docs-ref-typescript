@@ -160,6 +160,12 @@
   items:
     - name: Overview
       uid: '@microsoft/teams-js'
+    - uid: '@microsoft/teams-js.ActionInfo'
+      name: ActionInfo
+      items: []
+    - uid: '@microsoft/teams-js.ActionObjectType'
+      name: ActionObjectType
+      items: []
     - name: app
       items:
         - name: Overview
@@ -245,6 +251,9 @@
         - uid: '@microsoft/teams-js.barCode.BarCodeConfig'
           name: BarCodeConfig
           items: []
+    - uid: '@microsoft/teams-js.BaseActionObject'
+      name: BaseActionObject
+      items: []
     - uid: '@microsoft/teams-js.BotUrlDialogInfo'
       name: BotUrlDialogInfo
       items: []
@@ -358,6 +367,9 @@
         - uid: '@microsoft/teams-js.location.LocationProps'
           name: LocationProps
           items: []
+    - uid: '@microsoft/teams-js.M365ContentAction'
+      name: M365ContentAction
+      items: []
     - name: mail
       items:
         - name: Overview
@@ -419,6 +431,9 @@
           items: []
         - uid: '@microsoft/teams-js.media.MediaChunk'
           name: MediaChunk
+          items: []
+        - uid: '@microsoft/teams-js.media.MediaControllerEvent'
+          name: MediaControllerEvent
           items: []
         - uid: '@microsoft/teams-js.media.MediaInputs'
           name: MediaInputs
@@ -578,6 +593,12 @@
       items: []
     - uid: '@microsoft/teams-js.SdkError'
       name: SdkError
+      items: []
+    - uid: '@microsoft/teams-js.SecondaryId'
+      name: SecondaryId
+      items: []
+    - uid: '@microsoft/teams-js.SecondaryM365ContentIdName'
+      name: SecondaryM365ContentIdName
       items: []
     - uid: '@microsoft/teams-js.settings'
       name: settings

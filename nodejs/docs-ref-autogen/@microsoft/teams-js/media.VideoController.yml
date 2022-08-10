@@ -54,7 +54,7 @@ methods:
       content: 'function notifyEventToApp(mediaEvent: MediaControllerEvent)'
       parameters:
         - id: mediaEvent
-          type: MediaControllerEvent
+          type: <xref uid="@microsoft/teams-js.media.MediaControllerEvent" />
           description: ''
 extends: >-
   MediaController&lt;<xref
