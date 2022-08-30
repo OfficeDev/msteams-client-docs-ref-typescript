@@ -32,7 +32,8 @@ functions:
     customDeprecatedMessage: >-
       As of 2.0.0, please use [people.selectPeople(peoplePickerInputs?:
       PeoplePickerInputs):
-      Promise\<PeoplePickerResult[]\>](xref:@microsoft/teams-js.people.selectPeople) instead.
+      Promise\<PeoplePickerResult[]\>](xref:@microsoft/teams-js.people.selectPeople)
+      instead.
 
 
       Launches a people picker and allows the user to select one or more people

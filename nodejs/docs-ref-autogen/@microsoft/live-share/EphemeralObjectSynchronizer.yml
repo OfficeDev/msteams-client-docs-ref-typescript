@@ -81,8 +81,9 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
-      EphemeralObjectSynchronizer(string, IContainerRuntimeSignaler,
-      GetSynchronizationState<TState>, UpdateSynchronizationState<TState>)
+      EphemeralObjectSynchronizer(string, IRuntimeSignaler,
+      IContainerRuntimeSignaler, GetSynchronizationState<TState>,
+      UpdateSynchronizationState<TState>)
     uid: '@microsoft/live-share.EphemeralObjectSynchronizer.constructor'
     package: '@microsoft/live-share'
     summary: Creates a new `EphemeralObjectSynchronizer` instance.
@@ -95,15 +96,22 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new EphemeralObjectSynchronizer(id: string, containerRuntime:
-        IContainerRuntimeSignaler, getState: GetSynchronizationState<TState>,
-        updateState: UpdateSynchronizationState<TState>)
+        new EphemeralObjectSynchronizer(id: string, runtime: IRuntimeSignaler,
+        containerRuntime: IContainerRuntimeSignaler, getState:
+        GetSynchronizationState<TState>, updateState:
+        UpdateSynchronizationState<TState>)
       parameters:
         - id: id
           type: string
           description: >-
             ID of the ephemeral object being synchronized. This should be the
             value of `this.id` in a class that derives from `DataObject`.
+
+            ^ @param runtime The objects local runtime. This should be the value
+            of `this.runtime`.
+        - id: runtime
+          type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
+          description: ''
         - id: containerRuntime
           type: <xref uid="@microsoft/live-share.IContainerRuntimeSignaler" />
           description: >-

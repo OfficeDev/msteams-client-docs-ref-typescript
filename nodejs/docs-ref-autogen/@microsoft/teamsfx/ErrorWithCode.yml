@@ -67,6 +67,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.message
   - name: name
     uid: '@microsoft/teamsfx.ErrorWithCode.name'
     package: '@microsoft/teamsfx'
@@ -80,6 +81,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.name
   - name: stack
     uid: '@microsoft/teamsfx.ErrorWithCode.stack'
     package: '@microsoft/teamsfx'
@@ -93,4 +95,5 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Error.stack
 extends: Error

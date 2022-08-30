@@ -128,6 +128,7 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.captureRejections
   - name: captureRejectionSymbol
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.captureRejectionSymbol'
     package: '@microsoft/live-share-media'
@@ -141,6 +142,7 @@ inheritedProperties:
       return:
         description: ''
         type: Object
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.captureRejectionSymbol
   - name: defaultMaxListeners
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.defaultMaxListeners'
     package: '@microsoft/live-share-media'
@@ -154,6 +156,7 @@ inheritedProperties:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.defaultMaxListeners
   - name: errorMonitor
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.errorMonitor'
     package: '@microsoft/live-share-media'
@@ -181,6 +184,7 @@ inheritedProperties:
       return:
         description: ''
         type: Object
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.errorMonitor
 inheritedMethods:
   - name: 'addListener(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.addListener'
@@ -203,6 +207,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.addListener
   - name: 'emit(string | symbol, any[])'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.emit'
     package: '@microsoft/live-share-media'
@@ -222,6 +227,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
   - name: eventNames()
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.eventNames'
     package: '@microsoft/live-share-media'
@@ -234,6 +240,7 @@ inheritedMethods:
       return:
         description: ''
         type: Array&lt;string | symbol&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
   - name: getMaxListeners()
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.getMaxListeners'
     package: '@microsoft/live-share-media'
@@ -246,6 +253,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: 'listenerCount(EventEmitter, string | symbol)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.listenerCount'
     package: '@microsoft/live-share-media'
@@ -268,6 +276,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listenerCount(string | symbol)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.listenerCount'
     package: '@microsoft/live-share-media'
@@ -284,6 +293,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listeners(string | symbol)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.listeners'
     package: '@microsoft/live-share-media'
@@ -300,6 +310,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
   - name: 'off(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.off'
     package: '@microsoft/live-share-media'
@@ -321,6 +332,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.off
   - name: 'on(EventEmitter, string)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on'
     package: '@microsoft/live-share-media'
@@ -342,6 +354,7 @@ inheritedMethods:
       return:
         description: ''
         type: AsyncIterableIterator&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'on(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on'
     package: '@microsoft/live-share-media'
@@ -363,6 +376,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'once(NodeEventTarget, string | symbol)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once'
     package: '@microsoft/live-share-media'
@@ -384,6 +398,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Promise&lt;any[]&gt;'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: 'once(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once'
     package: '@microsoft/live-share-media'
@@ -405,6 +420,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: 'prependListener(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.prependListener'
     package: '@microsoft/live-share-media'
@@ -426,6 +442,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.prependListener
   - name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.prependOnceListener'
     package: '@microsoft/live-share-media'
@@ -447,6 +464,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.prependOnceListener
   - name: rawListeners(string | symbol)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.rawListeners'
     package: '@microsoft/live-share-media'
@@ -463,6 +481,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
   - name: removeAllListeners(string | symbol)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.removeAllListeners'
     package: '@microsoft/live-share-media'
@@ -479,6 +498,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: 'removeListener(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.removeListener'
     package: '@microsoft/live-share-media'
@@ -500,6 +520,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeListener
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setMaxListeners'
     package: '@microsoft/live-share-media'
@@ -516,6 +537,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
 methods:
   - name: >-
       addEventListener(MediaPlayerSynchronizerEvents, (evt:

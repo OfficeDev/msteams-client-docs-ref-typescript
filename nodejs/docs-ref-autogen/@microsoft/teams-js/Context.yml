@@ -31,8 +31,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [| app.Context.actionInfo](xref:ActionInfo)
-      instead
+      As of 2.0.0, please use [|
+      app.Context.actionInfo](xref:@microsoft/teams-js.ActionInfo) instead
 
 
       Common information applicable to all content actions
@@ -664,8 +664,8 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [| app.Context.sharepoint](xref:app.Context)
-      instead
+      As of 2.0.0, please use [|
+      app.Context.sharepoint](xref:@microsoft/teams-js.app.Context) instead
 
 
       SharePoint context. This is only available when hosted in SharePoint.

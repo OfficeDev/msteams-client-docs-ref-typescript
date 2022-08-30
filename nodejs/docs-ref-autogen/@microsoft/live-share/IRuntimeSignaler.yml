@@ -53,8 +53,29 @@ properties:
         description: ''
         type: ITelemetryLogger
 methods:
-  - name: 'on("signal", (message: IInboundSignalMessage, local: boolean) => void)'
+  - name: 'on("connected", (clientId: string) => void)'
     uid: '@microsoft/live-share.IRuntimeSignaler.on'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function on(event: "connected", listener: (clientId: string) => void):
+        this
+      parameters:
+        - id: event
+          type: '"connected"'
+          description: ''
+        - id: listener
+          type: '(clientId: string) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+  - name: 'on("signal", (message: IInboundSignalMessage, local: boolean) => void)'
+    uid: '@microsoft/live-share.IRuntimeSignaler.on_1'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
