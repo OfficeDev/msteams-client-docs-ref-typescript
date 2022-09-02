@@ -1,103 +1,62 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.dialog'
 name: dialog
-summary: Namespace to interact with the dialog module-specific part of the SDK.
 type: module
-typeAliases:
-  - '@microsoft/teams-js.dialog.DialogSubmitHandler'
-  - '@microsoft/teams-js.dialog.PostMessageChannel'
-interfaces:
-  - '@microsoft/teams-js.dialog.ISdkResponse'
 package: '@microsoft/teams-js'
+summary: Namespace to interact with the dialog module-specific part of the SDK.
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.dialog.isSupported'
     package: '@microsoft/teams-js'
-    summary: Checks if dialog module is supported by the host
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: boolean to represent whether dialog module is supported
+        description: ''
         type: boolean
-  - name: 'open(UrlDialogInfo, DialogSubmitHandler, PostMessageChannel)'
+  - name: 'open(DialogInfo, (err: string, result: string | object) => void)'
     uid: '@microsoft/teams-js.dialog.open'
     package: '@microsoft/teams-js'
-    summary: Allows app to open a url based dialog.
-    remarks: This function cannot be called from inside of a dialog
+    summary: Allows an app to open the dialog module.
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        function open(urlDialogInfo: UrlDialogInfo, submitHandler?:
-        DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel)
+        function open(dialogInfo: DialogInfo, submitHandler?: (err: string,
+        result: string | object) => void): IAppWindow
       parameters:
-        - id: urlDialogInfo
-          type: <xref uid="@microsoft/teams-js.UrlDialogInfo" />
-          description: An object containing the parameters of the dialog module.
+        - id: dialogInfo
+          type: <xref uid="@microsoft/teams-js.DialogInfo" />
+          description: An object containing the parameters of the dialog module
         - id: submitHandler
-          type: <xref uid="@microsoft/teams-js.dialog.DialogSubmitHandler" />
-          description: >-
-            Handler that triggers when a dialog calls the
-            <code><xref:@microsoft/teams-js.dialog.submit></code> function or
-            when the user closes the dialog.
-        - id: messageFromChildHandler
-          type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
+          type: '(err: string, result: string | object) =&gt; void'
           description: |
-            Handler that triggers if dialog sends a message to the app.
-  - name: registerOnMessageFromParent(PostMessageChannel)
-    uid: '@microsoft/teams-js.dialog.registerOnMessageFromParent'
+            Handler to call when the task module is completed
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.IAppWindow" />
+  - name: resize(DialogInfo)
+    uid: '@microsoft/teams-js.dialog.resize'
     package: '@microsoft/teams-js'
-    summary: >-
-      Register a listener that will be triggered when a message is received from
-      the app that opened the dialog.
-    remarks: This function is only called from inside of a dialog.
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function registerOnMessageFromParent(listener: PostMessageChannel)'
-      parameters:
-        - id: listener
-          type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
-          description: |
-            The listener that will be triggered.
-  - name: sendMessageToDialog(any)
-    uid: '@microsoft/teams-js.dialog.sendMessageToDialog'
-    package: '@microsoft/teams-js'
-    summary: Send message to the dialog from the parent
+    summary: Update height/width dialog info properties.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function sendMessageToDialog(message: any)'
+      content: 'function resize(dialogInfo: DialogInfo)'
       parameters:
-        - id: message
-          type: any
+        - id: dialogInfo
+          type: <xref uid="@microsoft/teams-js.DialogInfo" />
           description: |
-            The message to send
-  - name: sendMessageToParentFromDialog(any)
-    uid: '@microsoft/teams-js.dialog.sendMessageToParentFromDialog'
-    package: '@microsoft/teams-js'
-    summary: |2
-       Send message to the parent from dialog
-       @remarks
-      This function is only called from inside of a dialog
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function sendMessageToParentFromDialog(message: any)'
-      parameters:
-        - id: message
-          type: any
-          description: |
-            The message to send to the parent
+            An object containing width and height properties
   - name: 'submit(string | object, string | string[])'
     uid: '@microsoft/teams-js.dialog.submit'
     package: '@microsoft/teams-js'
-    summary: Submit the dialog module and close the dialog
+    summary: Submit the dialog module.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -107,8 +66,8 @@ functions:
         - id: result
           type: string | object
           description: >-
-            The result to be sent to the bot or the app. Typically a JSON object
-            or a serialized version of it
+            Contains the result to be sent to the bot or the app. Typically a
+            JSON object or a serialized version of it
         - id: appIds
           type: 'string | string[]'
           description: >

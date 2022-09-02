@@ -2,7 +2,7 @@
 name: FailedReason
 uid: '@microsoft/teams-js.app.FailedReason'
 package: '@microsoft/teams-js'
-summary: Describes errors that caused app initialization to fail
+summary: ''
 fullName: FailedReason
 remarks: ''
 isPreview: false
@@ -11,12 +11,12 @@ fields:
   - name: AuthFailed
     uid: '@microsoft/teams-js.app.FailedReason.AuthFailed'
     package: '@microsoft/teams-js'
-    summary: Authentication failed
+    summary: ''
   - name: Other
     uid: '@microsoft/teams-js.app.FailedReason.Other'
     package: '@microsoft/teams-js'
-    summary: The app failed for a different reason
+    summary: ''
   - name: Timeout
     uid: '@microsoft/teams-js.app.FailedReason.Timeout'
     package: '@microsoft/teams-js'
-    summary: The application timed out
+    summary: ''

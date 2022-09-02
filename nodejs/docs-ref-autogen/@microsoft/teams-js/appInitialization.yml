@@ -13,9 +13,8 @@ functions:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.notifyAppLoaded():
+      As of 2.0.0-beta.1, please use [app.notifyAppLoaded():
       void](xref:@microsoft/teams-js.app.notifyAppLoaded) instead.
-
 
       Notifies the frame that app has loaded and to hide the loading indicator
       if one is shown.
@@ -29,9 +28,10 @@ functions:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.notifyExpectedFailure(expectedFailureRequest:
-      IExpectedFailureRequest): void](xref:@microsoft/teams-js.app.notifyExpectedFailure) instead.
-
+      As of 2.0.0-beta.1, please use
+      [app.notifyExpectedFailure(expectedFailureRequest:
+      IExpectedFailureRequest):
+      void](xref:@microsoft/teams-js.app.notifyExpectedFailure) instead.
 
       Notifies the frame that app initialized with some expected errors.
     syntax:
@@ -41,9 +41,7 @@ functions:
       parameters:
         - id: expectedFailureRequest
           type: <xref uid="@microsoft/teams-js.app.IExpectedFailureRequest" />
-          description: >
-            The expected failure request containing the reason and an optional
-            message
+          description: ''
   - name: notifyFailure(IFailedRequest)
     uid: '@microsoft/teams-js.appInitialization.notifyFailure'
     package: '@microsoft/teams-js'
@@ -52,9 +50,9 @@ functions:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.notifyFailure(appInitializationFailedRequest:
-      IFailedRequest): void](xref:@microsoft/teams-js.app.notifyFailure) instead.
-
+      As of 2.0.0-beta.1, please use
+      [app.notifyFailure(appInitializationFailedRequest: IFailedRequest):
+      void](xref:@microsoft/teams-js.app.notifyFailure) instead.
 
       Notifies the frame that app initialization has failed and to show an error
       page in its place.
@@ -63,9 +61,7 @@ functions:
       parameters:
         - id: appInitializationFailedRequest
           type: <xref uid="@microsoft/teams-js.app.IFailedRequest" />
-          description: |
-            The failure request containing the reason for why the app failed
-            during initialization as well as an optional message.
+          description: ''
   - name: notifySuccess()
     uid: '@microsoft/teams-js.appInitialization.notifySuccess'
     package: '@microsoft/teams-js'
@@ -74,9 +70,8 @@ functions:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.notifySuccess():
+      As of 2.0.0-beta.1, please use [app.notifySuccess():
       void](xref:@microsoft/teams-js.app.notifySuccess) instead.
-
 
       Notifies the frame that app initialization is successful and is ready for
       user interaction.

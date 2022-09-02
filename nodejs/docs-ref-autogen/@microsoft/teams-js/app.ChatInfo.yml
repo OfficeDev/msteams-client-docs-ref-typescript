@@ -2,7 +2,7 @@
 name: ChatInfo
 uid: '@microsoft/teams-js.app.ChatInfo'
 package: '@microsoft/teams-js'
-summary: Represents Chat information.
+summary: ''
 fullName: ChatInfo
 remarks: ''
 isPreview: false

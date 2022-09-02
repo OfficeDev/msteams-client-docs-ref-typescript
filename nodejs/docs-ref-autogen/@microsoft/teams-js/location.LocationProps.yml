@@ -6,8 +6,7 @@ summary: ''
 fullName: LocationProps
 remarks: ''
 isPreview: false
-isDeprecated: true
-customDeprecatedMessage: Data Structure to set the location properties in getLocation call.
+isDeprecated: false
 type: interface
 properties:
   - name: allowChooseLocation

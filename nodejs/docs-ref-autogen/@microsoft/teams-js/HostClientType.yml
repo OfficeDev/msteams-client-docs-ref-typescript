@@ -20,10 +20,6 @@ fields:
     uid: '@microsoft/teams-js.HostClientType.ios'
     package: '@microsoft/teams-js'
     summary: ''
-  - name: ipados
-    uid: '@microsoft/teams-js.HostClientType.ipados'
-    package: '@microsoft/teams-js'
-    summary: ''
   - name: rigel
     uid: '@microsoft/teams-js.HostClientType.rigel'
     package: '@microsoft/teams-js'

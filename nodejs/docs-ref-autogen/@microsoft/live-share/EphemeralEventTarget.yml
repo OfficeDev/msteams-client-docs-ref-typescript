@@ -66,4 +66,7 @@ inheritedMethods:
           `IEphemeralEvent.timestamp`, and `IEphemeralEvent.clientId` fields if
           known.
         type: TEvent
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [EphemeralEventSource.sendEvent](xref:@microsoft/live-share.EphemeralEventSource.sendEvent)
 extends: <xref uid="@microsoft/live-share.EphemeralEventSource" />&lt;TEvent&gt;

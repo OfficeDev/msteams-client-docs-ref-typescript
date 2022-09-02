@@ -28,6 +28,9 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ImageProps.enableFilter](xref:ImageProps.enableFilter)
   - name: imageOutputFormats
     uid: '@microsoft/teams-js.media.VideoAndImageProps.imageOutputFormats'
     package: '@microsoft/teams-js'
@@ -45,6 +48,9 @@ inheritedProperties:
       return:
         description: ''
         type: '<xref uid="@microsoft/teams-js.media.ImageOutputFormats" />[]'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ImageProps.imageOutputFormats](xref:ImageProps.imageOutputFormats)
   - name: ink
     uid: '@microsoft/teams-js.media.VideoAndImageProps.ink'
     package: '@microsoft/teams-js'
@@ -60,6 +66,7 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: '<b>Inherited From</b> [ImageProps.ink](xref:ImageProps.ink)'
   - name: isFullScreenMode
     uid: '@microsoft/teams-js.media.VideoAndImageProps.isFullScreenMode'
     package: '@microsoft/teams-js'
@@ -80,6 +87,9 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [VideoProps.isFullScreenMode](xref:VideoProps.isFullScreenMode)
   - name: isStopButtonVisible
     uid: '@microsoft/teams-js.media.VideoAndImageProps.isStopButtonVisible'
     package: '@microsoft/teams-js'
@@ -95,6 +105,9 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [VideoProps.isStopButtonVisible](xref:VideoProps.isStopButtonVisible)
   - name: maxDuration
     uid: '@microsoft/teams-js.media.VideoAndImageProps.maxDuration'
     package: '@microsoft/teams-js'
@@ -112,6 +125,9 @@ inheritedProperties:
       return:
         description: ''
         type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [VideoProps.maxDuration](xref:VideoProps.maxDuration)
   - name: textSticker
     uid: '@microsoft/teams-js.media.VideoAndImageProps.textSticker'
     package: '@microsoft/teams-js'
@@ -129,6 +145,9 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ImageProps.textSticker](xref:ImageProps.textSticker)
   - name: videoController
     uid: '@microsoft/teams-js.media.VideoAndImageProps.videoController'
     package: '@microsoft/teams-js'
@@ -147,4 +166,7 @@ inheritedProperties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.media.VideoController" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [VideoProps.videoController](xref:VideoProps.videoController)
 extends: <xref uid="@microsoft/teams-js.media.ImageProps" />

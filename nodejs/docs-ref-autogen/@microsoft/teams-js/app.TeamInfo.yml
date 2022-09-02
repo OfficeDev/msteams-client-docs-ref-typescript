@@ -2,7 +2,7 @@
 name: TeamInfo
 uid: '@microsoft/teams-js.app.TeamInfo'
 package: '@microsoft/teams-js'
-summary: Represents Team information.
+summary: ''
 fullName: TeamInfo
 remarks: ''
 isPreview: false

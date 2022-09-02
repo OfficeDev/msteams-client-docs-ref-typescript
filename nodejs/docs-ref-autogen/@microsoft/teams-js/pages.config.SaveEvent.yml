@@ -2,12 +2,7 @@
 name: SaveEvent
 uid: '@microsoft/teams-js.pages.config.SaveEvent'
 package: '@microsoft/teams-js'
-summary: >-
-  Describes the results of the settings.save event. Includes result,
-  notifySuccess, and notifyFailure
-
-  to indicate the return object (result) and the status of whether the
-  settings.save call succeeded or not and why.
+summary: ''
 fullName: SaveEvent
 remarks: ''
 isPreview: false

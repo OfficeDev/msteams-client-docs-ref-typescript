@@ -2,7 +2,7 @@
 name: InstanceConfig
 uid: '@microsoft/teams-js.pages.InstanceConfig'
 package: '@microsoft/teams-js'
-summary: Defines the configuration of the current or desired instance
+summary: ''
 fullName: InstanceConfig
 remarks: ''
 isPreview: false

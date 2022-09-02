@@ -2,7 +2,7 @@
 name: AppHostInfo
 uid: '@microsoft/teams-js.app.AppHostInfo'
 package: '@microsoft/teams-js'
-summary: Represents information about the application's host.
+summary: ''
 fullName: AppHostInfo
 remarks: ''
 isPreview: false

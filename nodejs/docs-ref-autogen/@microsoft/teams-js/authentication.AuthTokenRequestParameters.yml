@@ -2,7 +2,7 @@
 name: AuthTokenRequestParameters
 uid: '@microsoft/teams-js.authentication.AuthTokenRequestParameters'
 package: '@microsoft/teams-js'
-summary: Describes authentication token request parameters
+summary: ''
 fullName: AuthTokenRequestParameters
 remarks: ''
 isPreview: false

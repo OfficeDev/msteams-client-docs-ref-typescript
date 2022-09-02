@@ -2,7 +2,7 @@
 name: AuthenticatePopUpParameters
 uid: '@microsoft/teams-js.authentication.AuthenticatePopUpParameters'
 package: '@microsoft/teams-js'
-summary: Describes the authentication pop-up parameters
+summary: ''
 fullName: AuthenticatePopUpParameters
 remarks: ''
 isPreview: false

@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.pages'
 name: pages
-summary: Navigation-specific part of the SDK.
+summary: Navigation specific part of the SDK.
 type: module
 interfaces:
   - '@microsoft/teams-js.pages.InstanceConfig'
@@ -18,12 +18,12 @@ functions:
     syntax:
       content: 'function getConfig(): Promise<InstanceConfig>'
       return:
-        description: 'Promise that resolves with the [InstanceConfig](xref:@microsoft/teams-js.pages.InstanceConfig) object.'
+        description: 'Promise that resolves with the {@link InstanceConfig} object.'
         type: Promise&lt;<xref uid="@microsoft/teams-js.pages.InstanceConfig" />&gt;
   - name: 'initializeWithFrameContext(FrameInfo, () => void, string[])'
     uid: '@microsoft/teams-js.pages.initializeWithFrameContext'
     package: '@microsoft/teams-js'
-    summary: Initializes the library with context information for the frame
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -34,35 +34,24 @@ functions:
       parameters:
         - id: frameInfo
           type: <xref uid="@microsoft/teams-js.FrameInfo" />
-          description: >-
-            Frame information containing the URL used in the iframe on reload
-            and the URL for when the
-             user clicks 'Go To Website'
+          description: ''
         - id: callback
           type: () =&gt; void
-          description: >-
-            An optional callback that is executed once the application has
-            finished initialization.
+          description: ''
         - id: validMessageOrigins
           type: 'string[]'
-          description: >
-            An optional list of cross-frame message origins. They must have
-
-            https: protocol otherwise they will be ignored. Example:
-            https:www.example.com
+          description: ''
   - name: isSupported()
     uid: '@microsoft/teams-js.pages.isSupported'
     package: '@microsoft/teams-js'
-    summary: Checks if the pages capability is supported by the host
+    summary: Checks if page capability is supported currently
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: |-
-          true if the pages capability is enabled in runtime.supports.pages and
-          false if it is disabled
+        description: ''
         type: boolean
   - name: navigateCrossDomain(string)
     uid: '@microsoft/teams-js.pages.navigateCrossDomain'
@@ -77,8 +66,8 @@ functions:
       thrown. This function needs to be used only when navigating the frame to a
       URL in a different domain
 
-      than the current one in a way that keeps the application informed of the
-      change and allows the SDK to
+      than the current one in a way that keeps the app informed of the change
+      and allows the SDK to
 
       continue working.
     remarks: ''
@@ -97,17 +86,17 @@ functions:
     uid: '@microsoft/teams-js.pages.navigateToApp'
     package: '@microsoft/teams-js'
     summary: >-
-      Navigate to the given application ID and page ID, with optional parameters
-      for a WebURL (if the application
+      Navigate to the given App ID and Page ID, with optional parameters for a
+      WebURL (if the app cannot
 
-      cannot be navigated to, such as if it is not installed), Channel ID (for
-      applications installed as a channel tab),
+      be navigated to, such as if it is not installed), Channel ID (for apps
+      installed as a channel tab), and
 
-      and sub-page ID (for navigating to specific content within the page). This
-      is equivalent to navigating to
+      Sub-page ID (for navigating to specific content within the page). This is
+      equivalent to navigating to
 
-      a deep link with the above data, but does not require the application to
-      build a URL or worry about different
+      a deep link with the above data, but does not require the app to build a
+      URL or worry about different
 
       deep link formats for different hosts.
     remarks: ''
@@ -148,9 +137,9 @@ functions:
     package: '@microsoft/teams-js'
     summary: >-
       Return focus to the host. Will move focus forward or backward based on
-      where the application container falls in
+      where the app container falls in
 
-      the F6/tab order in the host.
+      the F6/Tab accessiblity loop in the host.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -164,7 +153,7 @@ functions:
   - name: setCurrentFrame(FrameInfo)
     uid: '@microsoft/teams-js.pages.setCurrentFrame'
     package: '@microsoft/teams-js'
-    summary: Sets/Updates the current frame with new information
+    summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -173,12 +162,8 @@ functions:
       parameters:
         - id: frameInfo
           type: <xref uid="@microsoft/teams-js.FrameInfo" />
-          description: >
-            Frame information containing the URL used in the iframe on reload
-            and the URL for when the
-
-            user clicks 'Go To Website'
-  - name: shareDeepLink(ShareDeepLinkParameters)
+          description: ''
+  - name: shareDeepLink(DeepLinkParameters)
     uid: '@microsoft/teams-js.pages.shareDeepLink'
     package: '@microsoft/teams-js'
     summary: >-
@@ -188,9 +173,9 @@ functions:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function shareDeepLink(deepLinkParameters: ShareDeepLinkParameters)'
+      content: 'function shareDeepLink(deepLinkParameters: DeepLinkParameters)'
       parameters:
         - id: deepLinkParameters
-          type: <xref uid="@microsoft/teams-js.ShareDeepLinkParameters" />
+          type: <xref uid="@microsoft/teams-js.DeepLinkParameters" />
           description: |
             ID and label for the link and fallback URL.

@@ -2,7 +2,7 @@
 name: PageInfo
 uid: '@microsoft/teams-js.app.PageInfo'
 package: '@microsoft/teams-js'
-summary: Represents Page information.
+summary: ''
 fullName: PageInfo
 remarks: ''
 isPreview: false

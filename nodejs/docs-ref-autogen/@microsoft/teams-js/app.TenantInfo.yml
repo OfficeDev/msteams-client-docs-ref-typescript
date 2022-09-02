@@ -2,7 +2,7 @@
 name: TenantInfo
 uid: '@microsoft/teams-js.app.TenantInfo'
 package: '@microsoft/teams-js'
-summary: Represents Tenant information.
+summary: ''
 fullName: TenantInfo
 remarks: ''
 isPreview: false

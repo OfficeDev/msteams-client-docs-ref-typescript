@@ -2,7 +2,7 @@
 name: ChannelInfo
 uid: '@microsoft/teams-js.app.ChannelInfo'
 package: '@microsoft/teams-js'
-summary: Represents Channel information.
+summary: ''
 fullName: ChannelInfo
 remarks: ''
 isPreview: false

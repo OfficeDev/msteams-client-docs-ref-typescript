@@ -69,7 +69,7 @@ methods:
   - name: getRoles()
     uid: '@microsoft/live-share.EphemeralPresenceUser.getRoles'
     package: '@microsoft/live-share'
-    summary: Returns the users meeting roles.
+    summary: Returns the user's meeting roles.
     remarks: ''
     isPreview: false
     isDeprecated: false

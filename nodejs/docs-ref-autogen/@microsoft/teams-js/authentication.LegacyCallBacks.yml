@@ -7,14 +7,7 @@ fullName: LegacyCallBacks
 remarks: ''
 isPreview: false
 isDeprecated: true
-customDeprecatedMessage: >-
-  As of 2.0.0, this interface has been deprecated in favor of a Promise-based
-  pattern.
-
-  -------------------------
-
-  Used in <xref:@microsoft/teams-js.authentication.AuthenticateParameters> and
-  <xref:@microsoft/teams-js.authentication.AuthTokenRequest>
+customDeprecatedMessage: As of 2.0.0-beta.1.
 type: interface
 properties:
   - name: failureCallback
@@ -26,8 +19,7 @@ properties:
     isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, this property has been deprecated in favor of a Promise-based
-      pattern.
+      As of 2.0.0-beta.1.
 
       A function that is called if the request fails, with the reason for the
       failure.
@@ -44,10 +36,8 @@ properties:
     remarks: ''
     isPreview: false
     isDeprecated: true
-    customDeprecatedMessage: >-
-      As of 2.0.0, this property has been deprecated in favor of a Promise-based
-      pattern.
-
+    customDeprecatedMessage: |-
+      As of 2.0.0-beta.1.
       A function that is called if the request succeeds.
     syntax:
       content: 'successCallback?: (result: string) => void'

@@ -7,6 +7,6 @@ fullName: FrameContext
 remarks: ''
 isPreview: false
 isDeprecated: true
-customDeprecatedMessage: 'As of 2.0.0, please use <xref:@microsoft/teams-js.FrameInfo> instead.'
+customDeprecatedMessage: 'As of 2.0.0-beta.1, please use <xref:@microsoft/teams-js.FrameInfo> instead.'
 syntax: |
   type FrameContext = FrameInfo

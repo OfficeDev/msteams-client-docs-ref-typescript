@@ -49,6 +49,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> TokenResponse.channelId
   - name: connectionName
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.connectionName'
     package: '@microsoft/teamsfx'
@@ -62,6 +63,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> TokenResponse.connectionName
   - name: expiration
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.expiration'
     package: '@microsoft/teamsfx'
@@ -75,6 +77,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> TokenResponse.expiration
   - name: properties
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.properties'
     package: '@microsoft/teamsfx'
@@ -90,6 +93,7 @@ inheritedProperties:
       return:
         description: ''
         type: '[key: string]\: any'
+    inheritanceDescription: <b>Inherited From</b> TokenResponse.properties
   - name: token
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.token'
     package: '@microsoft/teamsfx'
@@ -103,4 +107,5 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> TokenResponse.token
 extends: TokenResponse

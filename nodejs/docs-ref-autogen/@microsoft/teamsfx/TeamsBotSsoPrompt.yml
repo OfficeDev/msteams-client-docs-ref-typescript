@@ -124,6 +124,7 @@ inheritedProperties:
       return:
         description: ''
         type: DialogTurnResult
+    inheritanceDescription: <b>Inherited From</b> Dialog.EndOfTurn
   - name: id
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.id'
     package: '@microsoft/teamsfx'
@@ -137,6 +138,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> Dialog.id
   - name: telemetryClient
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.telemetryClient'
     package: '@microsoft/teamsfx'
@@ -150,6 +152,7 @@ inheritedProperties:
       return:
         description: ''
         type: BotTelemetryClient
+    inheritanceDescription: <b>Inherited From</b> Dialog.telemetryClient
 inheritedMethods:
   - name: 'configure(Record<string, unknown>)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.configure'
@@ -169,6 +172,7 @@ inheritedMethods:
           The [Configurable](xref:botbuilder-dialogs.Configurable) after the
           operation is complete.
         type: this
+    inheritanceDescription: <b>Inherited From</b> Configurable.configure
   - name: 'endDialog(TurnContext, DialogInstance, DialogReason)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.endDialog'
     package: '@microsoft/teamsfx'
@@ -218,6 +222,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.endDialog
   - name: getConverter(string)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getConverter'
     package: '@microsoft/teamsfx'
@@ -234,6 +239,7 @@ inheritedMethods:
       return:
         description: The converter for the selector configuration.
         type: Converter | ConverterFactory
+    inheritanceDescription: <b>Inherited From</b> Configurable.getConverter
   - name: getVersion()
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getVersion'
     package: '@microsoft/teamsfx'
@@ -265,6 +271,7 @@ inheritedMethods:
           Unique string which should only change when dialog has changed in a
           way that should restart the dialog.
         type: string
+    inheritanceDescription: <b>Inherited From</b> Dialog.getVersion
   - name: 'onDialogEvent(DialogContext, DialogEvent)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.onDialogEvent'
     package: '@microsoft/teamsfx'
@@ -290,6 +297,7 @@ inheritedMethods:
           True if the event is handled by the current dialog and bubbling should
           stop.
         type: Promise&lt;boolean&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.onDialogEvent
   - name: 'repromptDialog(TurnContext, DialogInstance)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.repromptDialog'
     package: '@microsoft/teamsfx'
@@ -331,6 +339,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.repromptDialog
   - name: 'resumeDialog(DialogContext, DialogReason, any)'
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.resumeDialog'
     package: '@microsoft/teamsfx'
@@ -393,6 +402,7 @@ inheritedMethods:
       return:
         description: A promise resolving to the dialog turn result.
         type: Promise&lt;DialogTurnResult&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.resumeDialog
 methods:
   - name: beginDialog(DialogContext)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.beginDialog'

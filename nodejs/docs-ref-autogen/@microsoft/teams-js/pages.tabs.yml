@@ -3,17 +3,12 @@ uid: '@microsoft/teams-js.pages.tabs'
 name: tabs
 type: module
 package: '@microsoft/teams-js'
-summary: >-
-  Provides APIs for querying and navigating between contextual tabs of an
-  application. Unlike personal tabs,
-
-  contextual tabs are pages associated with a specific context, such as channel
-  or chat.
+summary: Namespace to interact with the teams specific part of the SDK.
 functions:
   - name: getMruTabInstances(TabInstanceParameters)
     uid: '@microsoft/teams-js.pages.tabs.getMruTabInstances'
     package: '@microsoft/teams-js'
-    summary: Retrieves the most recently used application tabs for the current user.
+    summary: Allows an app to retrieve the most recently used tabs for this user.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -24,23 +19,18 @@ functions:
       parameters:
         - id: tabInstanceParameters
           type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
-          description: >-
-            An optional set of flags. Note this is currently ignored and kept
-            for future use.
+          description: 'OPTIONAL Ignored, kept for future use'
       return:
-        description: >-
-          Promise that resolves with the [TabInformation](xref:@microsoft/teams-js.TabInformation). Contains
-          information for the users' most recently used tabs {@link
-          TabInstance}.
+        description: 'Promise that resolves with the {@link TabInformation}.'
         type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
   - name: getTabInstances(TabInstanceParameters)
     uid: '@microsoft/teams-js.pages.tabs.getTabInstances'
     package: '@microsoft/teams-js'
     summary: >-
-      Retrieves application tabs for the current user.
+      Allows an app to retrieve for this user tabs that are owned by this app.
 
-      If no TabInstanceParameters are passed, the application defaults to
-      favorite teams and favorite channels.
+      If no TabInstanceParameters are passed, the app defaults to favorite teams
+      and favorite channels.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -52,34 +42,27 @@ functions:
         - id: tabInstanceParameters
           type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
           description: >-
-            An optional set of flags that specify whether to scope call to
-            favorite teams or channels.
+            OPTIONAL Flags that specify whether to scope call to favorite teams
+            or channels.
       return:
-        description: >-
-          Promise that resolves with the [TabInformation](xref:@microsoft/teams-js.TabInformation). Contains
-          information for the user's tabs that are owned by this application
-          [TabInstance](xref:@microsoft/teams-js.TabInstance).
+        description: 'Promise that resolves with the {@link TabInformation}.'
         type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
   - name: isSupported()
     uid: '@microsoft/teams-js.pages.tabs.isSupported'
     package: '@microsoft/teams-js'
-    summary: Checks if the pages.tab capability is supported by the host
+    summary: Checks if pages.tabs capability is supported currently
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: >-
-          true if the pages.tabs capability is enabled in
-          runtime.supports.pages.tabs and
-
-          false if it is disabled
+        description: ''
         type: boolean
   - name: navigateToTab(TabInstance)
     uid: '@microsoft/teams-js.pages.tabs.navigateToTab'
     package: '@microsoft/teams-js'
-    summary: Navigates the hosted application to the specified tab instance.
+    summary: Navigates the hosted app to the specified tab instance.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -88,7 +71,7 @@ functions:
       parameters:
         - id: tabInstance
           type: <xref uid="@microsoft/teams-js.TabInstance" />
-          description: The destination tab instance.
+          description: The tab instance to navigate to.
       return:
         description: Promise that resolves when the navigation has completed.
         type: Promise&lt;void&gt;

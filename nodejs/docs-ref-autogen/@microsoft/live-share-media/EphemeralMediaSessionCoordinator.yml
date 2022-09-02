@@ -202,6 +202,7 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.captureRejections
   - name: captureRejectionSymbol
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.captureRejectionSymbol
@@ -216,6 +217,7 @@ inheritedProperties:
       return:
         description: ''
         type: Object
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.captureRejectionSymbol
   - name: defaultMaxListeners
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.defaultMaxListeners
@@ -230,6 +232,7 @@ inheritedProperties:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.defaultMaxListeners
   - name: errorMonitor
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.errorMonitor'
     package: '@microsoft/live-share-media'
@@ -257,6 +260,7 @@ inheritedProperties:
       return:
         description: ''
         type: Object
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.errorMonitor
 inheritedMethods:
   - name: 'addListener(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.addListener'
@@ -279,6 +283,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.addListener
   - name: 'emit(string | symbol, any[])'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.emit'
     package: '@microsoft/live-share-media'
@@ -298,6 +303,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
   - name: eventNames()
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.eventNames'
     package: '@microsoft/live-share-media'
@@ -310,6 +316,7 @@ inheritedMethods:
       return:
         description: ''
         type: Array&lt;string | symbol&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
   - name: getMaxListeners()
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.getMaxListeners
@@ -323,6 +330,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: 'listenerCount(EventEmitter, string | symbol)'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.listenerCount'
     package: '@microsoft/live-share-media'
@@ -345,6 +353,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listenerCount(string | symbol)
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.listenerCount'
     package: '@microsoft/live-share-media'
@@ -361,6 +370,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listeners(string | symbol)
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.listeners'
     package: '@microsoft/live-share-media'
@@ -377,6 +387,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
   - name: 'off(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.off'
     package: '@microsoft/live-share-media'
@@ -398,6 +409,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.off
   - name: 'on(EventEmitter, string)'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.on'
     package: '@microsoft/live-share-media'
@@ -419,6 +431,7 @@ inheritedMethods:
       return:
         description: ''
         type: AsyncIterableIterator&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'on(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.on'
     package: '@microsoft/live-share-media'
@@ -440,6 +453,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'once(NodeEventTarget, string | symbol)'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.once'
     package: '@microsoft/live-share-media'
@@ -461,6 +475,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Promise&lt;any[]&gt;'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: 'once(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.once'
     package: '@microsoft/live-share-media'
@@ -482,6 +497,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: 'prependListener(string | symbol, (args: any[]) => void)'
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.prependListener
@@ -504,6 +520,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.prependListener
   - name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.prependOnceListener
@@ -526,6 +543,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.prependOnceListener
   - name: rawListeners(string | symbol)
     uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator.rawListeners'
     package: '@microsoft/live-share-media'
@@ -542,6 +560,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
   - name: removeAllListeners(string | symbol)
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.removeAllListeners
@@ -559,6 +578,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: 'removeListener(string | symbol, (args: any[]) => void)'
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.removeListener
@@ -581,6 +601,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeListener
   - name: setMaxListeners(number)
     uid: >-
       @microsoft/live-share-media.EphemeralMediaSessionCoordinator.setMaxListeners
@@ -598,6 +619,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
 methods:
   - name: beginSuspension(CoordinationWaitPoint)
     uid: >-
@@ -642,7 +664,7 @@ methods:
       conditionally bypassed by settings the wait points `maxClients` value.
 
 
-      Throws an exception if the session/coordinator hasn't been started.
+      Throws an exception if the session/coordinator hasn't been initialized.
     isPreview: false
     isDeprecated: false
     syntax:
@@ -665,7 +687,7 @@ methods:
     package: '@microsoft/live-share-media'
     summary: Instructs the group to pause the current track.
     remarks: >-
-      Throws an exception if the session/coordinator hasn't been started, no
+      Throws an exception if the session/coordinator hasn't been initialized, no
       track has been
 
       loaded, or `canPlayPause` is false.
@@ -678,7 +700,7 @@ methods:
     package: '@microsoft/live-share-media'
     summary: Instructs the group to play the current track.
     remarks: >-
-      Throws an exception if the session/coordinator hasn't been started, no
+      Throws an exception if the session/coordinator hasn't been initialized, no
       track has been
 
       loaded, or `canPlayPause` is false.
@@ -691,7 +713,7 @@ methods:
     package: '@microsoft/live-share-media'
     summary: Instructs the group to seek to a new position within the current track.
     remarks: >-
-      Throws an exception if the session/coordinator hasn't been started, no
+      Throws an exception if the session/coordinator hasn't been initialized, no
       track has been
 
       loaded, or `canSeek` is false.
@@ -709,7 +731,7 @@ methods:
     package: '@microsoft/live-share-media'
     summary: Instructs the group to load a new track.
     remarks: >-
-      Throws an exception if the session/coordinator hasn't been started or
+      Throws an exception if the session/coordinator hasn't been initialized or
       `canSetTrack` is
 
       false.
@@ -744,7 +766,7 @@ methods:
       track changes.
 
 
-      Throws an exception if the session/coordinator hasn't been started or
+      Throws an exception if the session/coordinator hasn't been initialized or
       `canSetTrackData` is
 
       false.

@@ -122,14 +122,14 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function sendAdaptiveCard(card: unknown): Promise<void>'
+      content: 'function sendAdaptiveCard(card: unknown): Promise<MessageResponse>'
       parameters:
         - id: card
           type: unknown
           description: the adaptive card raw JSON.
       return:
-        description: A `Promise` representing the asynchronous operation.
-        type: Promise&lt;void&gt;
+        description: the response of sending adaptive card message.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
   - name: sendMessage(string)
     uid: '@microsoft/teamsfx.TeamsBotInstallation.sendMessage'
     package: '@microsoft/teamsfx'
@@ -138,11 +138,11 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function sendMessage(text: string): Promise<void>'
+      content: 'function sendMessage(text: string): Promise<MessageResponse>'
       parameters:
         - id: text
           type: string
           description: the plain text message.
       return:
-        description: A `Promise` representing the asynchronous operation.
-        type: Promise&lt;void&gt;
+        description: the response of sending message.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
