@@ -25,7 +25,7 @@ properties:
   - name: app
     uid: '@microsoft/teams-js.app.Context.app'
     package: '@microsoft/teams-js'
-    summary: Info of the app
+    summary: Properties about the current session for your app
     fullName: app
     remarks: ''
     isPreview: false
@@ -38,7 +38,9 @@ properties:
   - name: channel
     uid: '@microsoft/teams-js.app.Context.channel'
     package: '@microsoft/teams-js'
-    summary: Info of the Microsoft Teams channel
+    summary: >-
+      When running in the context of a Teams channel, provides information about
+      the channel, else `undefined`
     fullName: channel
     remarks: ''
     isPreview: false
@@ -51,7 +53,9 @@ properties:
   - name: chat
     uid: '@microsoft/teams-js.app.Context.chat'
     package: '@microsoft/teams-js'
-    summary: Info of the Microsoft Teams chat
+    summary: >-
+      When running in the context of a Teams chat, provides information about
+      the chat, else `undefined`
     fullName: chat
     remarks: ''
     isPreview: false
@@ -64,7 +68,9 @@ properties:
   - name: meeting
     uid: '@microsoft/teams-js.app.Context.meeting'
     package: '@microsoft/teams-js'
-    summary: Info of the Microsoft Teams meeting
+    summary: >-
+      When running in the context of a Teams meeting, provides information about
+      the meeting, else `undefined`
     fullName: meeting
     remarks: ''
     isPreview: false
@@ -77,7 +83,7 @@ properties:
   - name: page
     uid: '@microsoft/teams-js.app.Context.page'
     package: '@microsoft/teams-js'
-    summary: Info of the current page of App
+    summary: Info about the current page context hosting your app
     fullName: page
     remarks: ''
     isPreview: false
@@ -103,7 +109,12 @@ properties:
   - name: sharePointSite
     uid: '@microsoft/teams-js.app.Context.sharePointSite'
     package: '@microsoft/teams-js'
-    summary: Info of the sharePoint site associated with the team.
+    summary: >-
+      When running in Teams for an organization with a tenant, provides
+      information about the SharePoint site associated with the team.
+
+      Will be `undefined` when not running in Teams for an organization with a
+      tenant.
     fullName: sharePointSite
     remarks: ''
     isPreview: false
@@ -116,7 +127,11 @@ properties:
   - name: team
     uid: '@microsoft/teams-js.app.Context.team'
     package: '@microsoft/teams-js'
-    summary: Info of the Microsoft Teams team
+    summary: >-
+      When running in Teams, provides information about the Team context in
+      which your app is running.
+
+      Will be `undefined` when not running in Teams.
     fullName: team
     remarks: ''
     isPreview: false
@@ -129,7 +144,11 @@ properties:
   - name: user
     uid: '@microsoft/teams-js.app.Context.user'
     package: '@microsoft/teams-js'
-    summary: Info of the user
+    summary: >-
+      Info about the currently logged in user running the app.
+
+      If the current user is not logged in/authenticated (e.g. a meeting app
+      running for an anonymously-joined partcipant) this will be `undefined`.
     fullName: user
     remarks: ''
     isPreview: false
