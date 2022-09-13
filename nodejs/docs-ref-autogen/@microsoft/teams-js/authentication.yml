@@ -25,7 +25,8 @@ functions:
       As of 2.0.0, please use
       [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate) instead.
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate)
+      instead.
 
 
       Initiates an authentication request, which opens a new window with the
@@ -77,7 +78,8 @@ functions:
     customDeprecatedMessage: >-
       As of 2.0.0, please use [authentication.getAuthToken(authTokenRequest:
       AuthTokenRequestParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken) instead.
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken)
+      instead.
 
 
       Requests an Azure AD token to be issued on behalf of the app. The token is

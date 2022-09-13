@@ -48,3 +48,16 @@ properties:
       return:
         description: ''
         type: string
+  - name: tenantId
+    uid: '@microsoft/teamsfx.UserInfo.tenantId'
+    package: '@microsoft/teamsfx'
+    summary: User tenant ID.
+    fullName: tenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId: string'
+      return:
+        description: ''
+        type: string

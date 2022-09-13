@@ -8,6 +8,7 @@ enums:
   - '@microsoft/live-share.EphemeralPresenceEvents'
   - '@microsoft/live-share.PresenceState'
   - '@microsoft/live-share.EphemeralStateEvents'
+  - '@microsoft/live-share.EphemeralTimerEvents'
   - '@microsoft/live-share.UserMeetingRole'
 classes:
   - '@microsoft/live-share.EphemeralEvent'
@@ -20,6 +21,7 @@ classes:
   - '@microsoft/live-share.EphemeralPresenceUser'
   - '@microsoft/live-share.EphemeralState'
   - '@microsoft/live-share.EphemeralTelemetryLogger'
+  - '@microsoft/live-share.EphemeralTimer'
   - '@microsoft/live-share.TeamsFluidClient'
 interfaces:
   - '@microsoft/live-share.IEphemeralEventEvents'
@@ -29,7 +31,9 @@ interfaces:
   - '@microsoft/live-share.IEphemeralStateEvents'
   - '@microsoft/live-share.IEphemeralTelemetryProperties'
   - '@microsoft/live-share.IEphemeralTimerEvents'
+  - '@microsoft/live-share.ITimerConfig'
   - '@microsoft/live-share.ITeamsFluidClientOptions'
+  - '@microsoft/live-share.IClientTimestamp'
   - '@microsoft/live-share.IEphemeralEvent'
   - '@microsoft/live-share.IEvent'
 typeAliases:

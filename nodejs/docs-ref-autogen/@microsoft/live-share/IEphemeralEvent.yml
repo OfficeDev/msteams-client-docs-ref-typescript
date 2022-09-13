@@ -8,7 +8,7 @@ remarks: ''
 isPreview: false
 isDeprecated: false
 type: interface
-properties:
+inheritedProperties:
   - name: clientId
     uid: '@microsoft/live-share.IEphemeralEvent.clientId'
     package: '@microsoft/live-share'
@@ -24,20 +24,9 @@ properties:
       return:
         description: ''
         type: undefined | string
-  - name: timestamp
-    uid: '@microsoft/live-share.IEphemeralEvent.timestamp'
-    package: '@microsoft/live-share'
-    summary: Global timestamp of when the event was sent.
-    fullName: timestamp
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'timestamp: number'
-      return:
-        description: ''
-        type: number
-inheritedProperties:
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IClientTimestamp.clientId](xref:@microsoft/live-share.IClientTimestamp.clientId)
   - name: name
     uid: '@microsoft/live-share.IEphemeralEvent.name'
     package: '@microsoft/live-share'
@@ -51,4 +40,23 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IEvent.name](xref:@microsoft/live-share.IEvent.name)
+  - name: timestamp
+    uid: '@microsoft/live-share.IEphemeralEvent.timestamp'
+    package: '@microsoft/live-share'
+    summary: Global timestamp of when the event was sent.
+    fullName: timestamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timestamp: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IClientTimestamp.timestamp](xref:@microsoft/live-share.IClientTimestamp.timestamp)
 extends: <xref uid="@microsoft/live-share.IEvent" />

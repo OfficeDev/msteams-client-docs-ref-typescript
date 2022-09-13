@@ -94,6 +94,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.addListener
   - name: 'off'
     uid: '@microsoft/live-share.EphemeralEventScope.off'
     package: '@microsoft/live-share'
@@ -107,6 +108,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.off
   - name: 'on'
     uid: '@microsoft/live-share.EphemeralEventScope.on'
     package: '@microsoft/live-share'
@@ -120,6 +122,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.on
   - name: once
     uid: '@microsoft/live-share.EphemeralEventScope.once'
     package: '@microsoft/live-share'
@@ -133,6 +136,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.once
   - name: prependListener
     uid: '@microsoft/live-share.EphemeralEventScope.prependListener'
     package: '@microsoft/live-share'
@@ -146,6 +150,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependListener
   - name: prependOnceListener
     uid: '@microsoft/live-share.EphemeralEventScope.prependOnceListener'
     package: '@microsoft/live-share'
@@ -159,6 +164,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependOnceListener
   - name: removeListener
     uid: '@microsoft/live-share.EphemeralEventScope.removeListener'
     package: '@microsoft/live-share'
@@ -172,6 +178,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.removeListener
 inheritedMethods:
   - name: 'emit(string | symbol, any[])'
     uid: '@microsoft/live-share.EphemeralEventScope.emit'
@@ -192,6 +199,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
   - name: eventNames()
     uid: '@microsoft/live-share.EphemeralEventScope.eventNames'
     package: '@microsoft/live-share'
@@ -204,6 +212,7 @@ inheritedMethods:
       return:
         description: ''
         type: Array&lt;string | symbol&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
   - name: getMaxListeners()
     uid: '@microsoft/live-share.EphemeralEventScope.getMaxListeners'
     package: '@microsoft/live-share'
@@ -216,6 +225,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: listenerCount(string | symbol)
     uid: '@microsoft/live-share.EphemeralEventScope.listenerCount'
     package: '@microsoft/live-share'
@@ -232,6 +242,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listeners(string | symbol)
     uid: '@microsoft/live-share.EphemeralEventScope.listeners'
     package: '@microsoft/live-share'
@@ -248,6 +259,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
   - name: rawListeners(string | symbol)
     uid: '@microsoft/live-share.EphemeralEventScope.rawListeners'
     package: '@microsoft/live-share'
@@ -264,6 +276,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
   - name: removeAllListeners(string | symbol)
     uid: '@microsoft/live-share.EphemeralEventScope.removeAllListeners'
     package: '@microsoft/live-share'
@@ -280,6 +293,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share.EphemeralEventScope.setMaxListeners'
     package: '@microsoft/live-share'
@@ -296,6 +310,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
 methods:
   - name: 'offEvent<TEvent>(string, EphemeralEventListener<TEvent>)'
     uid: '@microsoft/live-share.EphemeralEventScope.offEvent'
