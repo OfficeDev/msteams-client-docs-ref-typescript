@@ -30,7 +30,7 @@ properties:
     summary: |-
       The Display Mode of the menu item.
       Default Behaviour would be DisplayMode.ifRoom if null.
-      Refer <xref:DisplayMode>
+      Refer <xref:@microsoft/teams-js.menus.DisplayMode>
     fullName: displayMode
     remarks: ''
     isPreview: false

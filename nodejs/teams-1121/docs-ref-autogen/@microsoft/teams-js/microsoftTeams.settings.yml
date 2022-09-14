@@ -25,7 +25,7 @@ functions:
         - id: callback
           type: '(instanceSettings: Settings) =&gt; void'
           description: |
-            The callback to invoke when the <xref:Settings> object is retrieved.
+            The callback to invoke when the <xref:@microsoft/teams-js.microsoftTeams.settings.Settings> object is retrieved.
   - name: initialize()
     uid: '@microsoft/teams-js.microsoftTeams.settings.initialize'
     package: '@microsoft/teams-js'
