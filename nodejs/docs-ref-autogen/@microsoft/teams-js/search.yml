@@ -101,7 +101,7 @@ functions:
         SearchQueryHandler)
       parameters:
         - id: onClosedHandler
-          type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
+          type: search.SearchQueryHandler
           description: >
             This handler will be called when the user exits or cancels their
             search.
@@ -110,7 +110,7 @@ functions:
             non-search state. The value of [SearchQuery.searchTerm](xref:@microsoft/teams-js.SearchQuery.searchTerm)
             will be whatever the last query was before ending search.
         - id: onExecuteHandler
-          type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
+          type: search.SearchQueryHandler
           description: >
             The handler will be called when the user executes their
             search (by pressing Enter for example). Should be used to display
@@ -119,7 +119,7 @@ functions:
             The value of [SearchQuery.searchTerm](xref:@microsoft/teams-js.SearchQuery.searchTerm) is the complete query the
             user entered in the search box.
         - id: onChangeHandler
-          type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
+          type: search.SearchQueryHandler
           description: >
             This optional handler will be called when the user first starts
             using the
