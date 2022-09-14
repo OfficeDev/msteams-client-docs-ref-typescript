@@ -101,7 +101,7 @@ functions:
         SearchQueryHandler)
       parameters:
         - id: onClosedHandler
-          type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
+          type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />@microsoft/teams-js.search.SearchQueryHandler"
           description: >
             This handler will be called when the user exits or cancels their
             search.
