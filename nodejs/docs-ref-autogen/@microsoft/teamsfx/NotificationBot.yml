@@ -43,7 +43,7 @@ methods:
     syntax:
       content: 'function installations(): Promise<TeamsBotInstallation[]>'
       return:
-        description: '- an array of {@link TeamsBotInstallation}.'
+        description: '- an array of TeamsBotInstallation.'
         type: >-
           Promise&lt;<xref uid="@microsoft/teamsfx.TeamsBotInstallation"
           />[]&gt;
