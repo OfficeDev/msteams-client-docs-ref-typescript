@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: SearchQueryHandler
+uid: '@microsoft/teams-js.search.SearchQueryHandler'
+package: '@microsoft/teams-js'
+summary: >-
+  This type will store the SearchQuery and allow other logic to be made inside
+  the handler.
+fullName: SearchQueryHandler
+remarks: ''
+isPreview: true
+isDeprecated: false
+syntax: |
+  type SearchQueryHandler = (query: SearchQuery) => void
