@@ -32,7 +32,7 @@ functions:
       Sets the height and width of the <xref:@microsoft/teams-js.TaskInfo>
       object to the original height and width, if initially specified,
 
-      otherwise uses the height and width values corresponding to [DialogDimension.Small](xref:@microsoft/teams-js.DialogDimension.Small')
+      otherwise uses the height and width values corresponding to [DialogDimension.Small](xref:@microsoft/teams-js.DialogDimension.Small)
     remarks: ''
     isPreview: false
     isDeprecated: false
