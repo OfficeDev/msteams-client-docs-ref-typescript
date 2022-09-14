@@ -32,11 +32,11 @@ functions:
     uid: '@microsoft/teams-js.video.notifySelectedVideoEffectChanged'
     package: '@microsoft/teams-js'
     summary: >-
-      Video extension should call this to notify host client that the current
-      selected effect parameter changed.
+      Video extension should call this to notify host that the current selected
+      effect parameter changed.
 
-      If it's pre-meeting, host client will call videoEffectCallback immediately
-      then use the videoEffect.
+      If it's pre-meeting, host will call videoEffectCallback immediately then
+      use the videoEffect.
 
       If it's the in-meeting scenario, we will call videoEffectCallback when
       apply button clicked.
@@ -59,8 +59,8 @@ functions:
     uid: '@microsoft/teams-js.video.registerForVideoEffect'
     package: '@microsoft/teams-js'
     summary: >-
-      Register the video effect callback, host client uses this to notify the
-      video extension the new video effect will by applied
+      Register the video effect callback, host uses this to notify the video
+      extension the new video effect will by applied
     remarks: ''
     isPreview: true
     isDeprecated: false

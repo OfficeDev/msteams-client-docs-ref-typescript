@@ -42,6 +42,7 @@ inheritedMethods:
         - id: callback
           type: '(err?: SdkError) =&gt; void'
           description: ''
+    inheritanceDescription: <b>Inherited From</b> MediaController.stop
 methods:
   - name: notifyEventToApp(MediaControllerEvent)
     uid: '@microsoft/teams-js.media.VideoController.notifyEventToApp'

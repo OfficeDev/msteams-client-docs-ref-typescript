@@ -143,14 +143,30 @@ properties:
       return:
         description: ''
         type: this
-  - name: isStarted
-    uid: '@microsoft/live-share.EphemeralEvent.isStarted'
+  - name: isInitialized
+    uid: '@microsoft/live-share.EphemeralEvent.isInitialized'
     package: '@microsoft/live-share'
-    summary: Returns true if the object has been started.
-    fullName: isStarted
+    summary: Returns true if the object has been initialized.
+    fullName: isInitialized
     remarks: ''
     isPreview: false
     isDeprecated: false
+    syntax:
+      content: boolean isInitialized
+      return:
+        description: ''
+        type: boolean
+  - name: isStarted
+    uid: '@microsoft/live-share.EphemeralEvent.isStarted'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: isStarted
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      isInitialized should be used instead
+      Returns true if the object has been initialized.
     syntax:
       content: boolean isStarted
       return:
@@ -185,6 +201,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.addListener
   - name: 'off'
     uid: '@microsoft/live-share.EphemeralEvent.off'
     package: '@microsoft/live-share'
@@ -198,6 +215,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.off
   - name: 'on'
     uid: '@microsoft/live-share.EphemeralEvent.on'
     package: '@microsoft/live-share'
@@ -211,6 +229,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.on
   - name: once
     uid: '@microsoft/live-share.EphemeralEvent.once'
     package: '@microsoft/live-share'
@@ -224,6 +243,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.once
   - name: prependListener
     uid: '@microsoft/live-share.EphemeralEvent.prependListener'
     package: '@microsoft/live-share'
@@ -237,6 +257,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependListener
   - name: prependOnceListener
     uid: '@microsoft/live-share.EphemeralEvent.prependOnceListener'
     package: '@microsoft/live-share'
@@ -250,6 +271,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependOnceListener
   - name: removeListener
     uid: '@microsoft/live-share.EphemeralEvent.removeListener'
     package: '@microsoft/live-share'
@@ -263,6 +285,7 @@ inheritedProperties:
       return:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.removeListener
 inheritedMethods:
   - name: dispose()
     uid: '@microsoft/live-share.EphemeralEvent.dispose'
@@ -273,6 +296,7 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: function dispose()
+    inheritanceDescription: <b>Inherited From</b> PureDataObject.dispose
   - name: 'emit(string | symbol, any[])'
     uid: '@microsoft/live-share.EphemeralEvent.emit'
     package: '@microsoft/live-share'
@@ -292,6 +316,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
   - name: eventNames()
     uid: '@microsoft/live-share.EphemeralEvent.eventNames'
     package: '@microsoft/live-share'
@@ -304,6 +329,7 @@ inheritedMethods:
       return:
         description: ''
         type: Array&lt;string | symbol&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
   - name: finishInitialization(boolean)
     uid: '@microsoft/live-share.EphemeralEvent.finishInitialization'
     package: '@microsoft/live-share'
@@ -332,6 +358,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> PureDataObject.finishInitialization
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share.EphemeralEvent.getDataObject'
     package: '@microsoft/live-share'
@@ -350,6 +377,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> PureDataObject.getDataObject
   - name: >-
       getFluidObjectFromDirectory<T>(string, IDirectory, undefined | (id:
       string, directory: IDirectory) => IFluidHandle | undefined)
@@ -383,6 +411,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T | undefined&gt;
+    inheritanceDescription: <b>Inherited From</b> PureDataObject.getFluidObjectFromDirectory
   - name: getMaxListeners()
     uid: '@microsoft/live-share.EphemeralEvent.getMaxListeners'
     package: '@microsoft/live-share'
@@ -395,6 +424,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: initializeInternal(boolean)
     uid: '@microsoft/live-share.EphemeralEvent.initializeInternal'
     package: '@microsoft/live-share'
@@ -413,6 +443,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
   - name: listenerCount(string | symbol)
     uid: '@microsoft/live-share.EphemeralEvent.listenerCount'
     package: '@microsoft/live-share'
@@ -429,6 +460,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listeners(string | symbol)
     uid: '@microsoft/live-share.EphemeralEvent.listeners'
     package: '@microsoft/live-share'
@@ -445,6 +477,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
   - name: rawListeners(string | symbol)
     uid: '@microsoft/live-share.EphemeralEvent.rawListeners'
     package: '@microsoft/live-share'
@@ -461,6 +494,7 @@ inheritedMethods:
       return:
         description: ''
         type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
   - name: removeAllListeners(string | symbol)
     uid: '@microsoft/live-share.EphemeralEvent.removeAllListeners'
     package: '@microsoft/live-share'
@@ -477,10 +511,11 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: request(IRequest)
     uid: '@microsoft/live-share.EphemeralEvent.request'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: '{@inheritDoc PureDataObject.request}'
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -493,6 +528,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;IResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.request
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share.EphemeralEvent.setMaxListeners'
     package: '@microsoft/live-share'
@@ -509,6 +545,7 @@ inheritedMethods:
       return:
         description: ''
         type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
 methods:
   - name: getClientRoles(string)
     uid: '@microsoft/live-share.EphemeralEvent.getClientRoles'
@@ -542,7 +579,26 @@ methods:
       return:
         description: ''
         type: number
-  - name: 'isNewer(IEphemeralEvent | undefined, IEphemeralEvent, undefined | number)'
+  - name: 'initialize(UserMeetingRole[])'
+    uid: '@microsoft/live-share.EphemeralEvent.initialize'
+    package: '@microsoft/live-share'
+    summary: initialize the object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function initialize(allowedRoles?: UserMeetingRole[]): Promise<void>'
+      parameters:
+        - id: allowedRoles
+          type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
+          description: |
+            Optional. List of roles allowed to send events.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      isNewer(IClientTimestamp | undefined, IClientTimestamp, undefined |
+      number)
     uid: '@microsoft/live-share.EphemeralEvent.isNewer'
     package: '@microsoft/live-share'
     summary: >-
@@ -575,14 +631,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        static function isNewer(current: IEphemeralEvent | undefined, received:
-        IEphemeralEvent, debouncePeriod?: undefined | number): boolean
+        static function isNewer(current: IClientTimestamp | undefined, received:
+        IClientTimestamp, debouncePeriod?: undefined | number): boolean
       parameters:
         - id: current
-          type: <xref uid="@microsoft/live-share.IEphemeralEvent" /> | undefined
+          type: <xref uid="@microsoft/live-share.IClientTimestamp" /> | undefined
           description: Current event to compare received event against.
         - id: received
-          type: <xref uid="@microsoft/live-share.IEphemeralEvent" />
+          type: <xref uid="@microsoft/live-share.IClientTimestamp" />
           description: Received event.
         - id: debouncePeriod
           type: undefined | number
@@ -594,6 +650,24 @@ methods:
           True if the received event is newer then the current event and should
           replace the current one.
         type: boolean
+  - name: registerClientId(string)
+    uid: '@microsoft/live-share.EphemeralEvent.registerClientId'
+    package: '@microsoft/live-share'
+    summary: Registers client id of the current user.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function registerClientId(clientId: string):
+        Promise<UserMeetingRole[]>
+      parameters:
+        - id: clientId
+          type: string
+          description: Client ID to map to current user.
+      return:
+        description: The list of roles for the client.
+        type: 'Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;'
   - name: sendEvent(Partial<TEvent>)
     uid: '@microsoft/live-share.EphemeralEvent.sendEvent'
     package: '@microsoft/live-share'
@@ -630,10 +704,13 @@ methods:
   - name: 'start(UserMeetingRole[])'
     uid: '@microsoft/live-share.EphemeralEvent.start'
     package: '@microsoft/live-share'
-    summary: Starts the object.
+    summary: ''
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      initialize should be used instead
+      Starts the object.
     syntax:
       content: 'function start(allowedRoles?: UserMeetingRole[]): Promise<void>'
       parameters:

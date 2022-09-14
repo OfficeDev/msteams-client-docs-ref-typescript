@@ -1,82 +1,33 @@
 ### YamlMime:TSType
-name: EphemeralMediaSession
-uid: '@microsoft/live-share-media.EphemeralMediaSession'
-package: '@microsoft/live-share-media'
-summary: >-
-  Ephemeral fluid object that synchronizes media playback across multiple
-  clients.
-fullName: EphemeralMediaSession<I>
+name: EphemeralTimer
+uid: '@microsoft/live-share.EphemeralTimer'
+package: '@microsoft/live-share'
+summary: ''
+fullName: EphemeralTimer
 remarks: ''
 isPreview: false
 isDeprecated: false
 type: class
 constructors:
-  - name: EphemeralMediaSession(IDataObjectProps<I>)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.constructor'
-    package: '@microsoft/live-share-media'
+  - name: 'EphemeralTimer(IDataObjectProps<{ Events: IEphemeralTimerEvents }>)'
+    uid: '@microsoft/live-share.EphemeralTimer.constructor'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'new EphemeralMediaSession(props: IDataObjectProps<I>)'
+      content: >-
+        new EphemeralTimer(props: IDataObjectProps<{ Events:
+        IEphemeralTimerEvents }>)
       parameters:
         - id: props
-          type: IDataObjectProps&lt;I&gt;
+          type: 'IDataObjectProps&lt;{ Events: IEphemeralTimerEvents }&gt;'
           description: ''
 properties:
-  - name: actionThrottler
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.actionThrottler'
-    package: '@microsoft/live-share-media'
-    summary: >-
-      Extension point that lets applications replace the default logic for
-      throttling the sessions
-
-      local sync behavior.
-    fullName: actionThrottler
-    remarks: >-
-      The `EphemeralMediaCoordinator` is fairly aggressive at wanting to keep
-      the local media player
-
-      in sync with the rest of the group. This aggressiveness can result in the
-      coordinator sending
-
-      new sync actions before the local player has finished responding to the
-      previous sync action.
-
-      The `ActionThrottler` gives apps fine grain control over how aggressive
-      they want sync to be.
-
-
-      By default, a `RepeatedAction` throttler is used which prevents the same
-      sync action from
-
-      being sent within an adjustable time period.
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: MediaSessionActionThrottler actionThrottler
-      return:
-        description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaSessionActionThrottler" />
-  - name: coordinator
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.coordinator'
-    package: '@microsoft/live-share-media'
-    summary: The group coordinator for the session.
-    fullName: coordinator
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: EphemeralMediaSessionCoordinator coordinator
-      return:
-        description: ''
-        type: >-
-          <xref
-          uid="@microsoft/live-share-media.EphemeralMediaSessionCoordinator" />
   - name: disposed
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.disposed'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.disposed'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: disposed
     remarks: ''
@@ -88,8 +39,8 @@ properties:
         description: ''
         type: boolean
   - name: factory
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.factory'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.factory'
+    package: '@microsoft/live-share'
     summary: The objects fluid type factory.
     fullName: factory
     remarks: ''
@@ -97,17 +48,16 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        static factory: DataObjectFactory<EphemeralMediaSession,
-        DataObjectTypes>
+        static factory: DataObjectFactory<EphemeralTimer, { Events:
+        IEphemeralTimerEvents }>
       return:
         description: ''
         type: >-
-          DataObjectFactory&lt;<xref
-          uid="@microsoft/live-share-media.EphemeralMediaSession" />,
-          DataObjectTypes&gt;
+          DataObjectFactory&lt;<xref uid="@microsoft/live-share.EphemeralTimer"
+          />, { Events: IEphemeralTimerEvents }&gt;
   - name: handle
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.handle'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.handle'
+    package: '@microsoft/live-share'
     summary: Handle to a data store
     fullName: handle
     remarks: ''
@@ -119,8 +69,8 @@ properties:
         description: ''
         type: IFluidHandle&lt;this&gt;
   - name: id
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.id'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.id'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: id
     remarks: ''
@@ -132,8 +82,8 @@ properties:
         description: ''
         type: string
   - name: IFluidHandle
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.IFluidHandle'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.IFluidHandle'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidHandle
     remarks: ''
@@ -145,8 +95,8 @@ properties:
         description: ''
         type: IFluidHandle&lt;this&gt;
   - name: IFluidLoadable
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.IFluidLoadable'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.IFluidLoadable'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidLoadable
     remarks: ''
@@ -158,8 +108,8 @@ properties:
         description: ''
         type: this
   - name: IFluidRouter
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.IFluidRouter'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.IFluidRouter'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidRouter
     remarks: ''
@@ -171,8 +121,8 @@ properties:
         description: ''
         type: this
   - name: isInitialized
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.isInitialized'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.isInitialized'
+    package: '@microsoft/live-share'
     summary: Returns true if the object has been initialized.
     fullName: isInitialized
     remarks: ''
@@ -184,8 +134,8 @@ properties:
         description: ''
         type: boolean
   - name: isStarted
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.isStarted'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.isStarted'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: isStarted
     remarks: ''
@@ -199,38 +149,25 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: logger
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.logger'
-    package: '@microsoft/live-share-media'
-    summary: Returns the logger used by the session and coordinator.
-    fullName: logger
-    remarks: This is used by the `MediaPlayerSynchronizer` to log events.
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: EphemeralTelemetryLogger logger
-      return:
-        description: ''
-        type: EphemeralTelemetryLogger
   - name: TypeName
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.TypeName'
-    package: '@microsoft/live-share-media'
-    summary: The objects fluid type name.
+    uid: '@microsoft/live-share.EphemeralTimer.TypeName'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type/name.
     fullName: TypeName
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: >-
-        static TypeName: "@microsoft/fluid-media:SharedMediaSession" =
-        "@microsoft/fluid-media:SharedMediaSession"
+        static TypeName: "@microsoft/live-share:EphemeralTimer" =
+        "@microsoft/live-share:EphemeralTimer"
       return:
         description: ''
-        type: '"@microsoft/fluid-media:SharedMediaSession"'
+        type: '"@microsoft/live-share:EphemeralTimer"'
 inheritedProperties:
   - name: addListener
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.addListener'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.addListener'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: addListener
     remarks: ''
@@ -243,8 +180,8 @@ inheritedProperties:
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.addListener
   - name: 'off'
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.off'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.off'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: 'off'
     remarks: ''
@@ -257,8 +194,8 @@ inheritedProperties:
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.off
   - name: 'on'
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.on'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.on'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: 'on'
     remarks: ''
@@ -271,8 +208,8 @@ inheritedProperties:
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.on
   - name: once
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.once'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.once'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: once
     remarks: ''
@@ -285,8 +222,8 @@ inheritedProperties:
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.once
   - name: prependListener
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.prependListener'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.prependListener'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: prependListener
     remarks: ''
@@ -299,8 +236,8 @@ inheritedProperties:
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependListener
   - name: prependOnceListener
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.prependOnceListener'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.prependOnceListener'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: prependOnceListener
     remarks: ''
@@ -313,8 +250,8 @@ inheritedProperties:
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependOnceListener
   - name: removeListener
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.removeListener'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.removeListener'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: removeListener
     remarks: ''
@@ -327,19 +264,9 @@ inheritedProperties:
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.removeListener
 inheritedMethods:
-  - name: dispose()
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.dispose'
-    package: '@microsoft/live-share-media'
-    summary: Called when the host container closes and disposes itself
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: function dispose()
-    inheritanceDescription: <b>Inherited From</b> PureDataObject.dispose
   - name: 'emit(string | symbol, any[])'
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.emit'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.emit'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -358,8 +285,8 @@ inheritedMethods:
         type: boolean
     inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
   - name: eventNames()
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.eventNames'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.eventNames'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -371,8 +298,8 @@ inheritedMethods:
         type: Array&lt;string | symbol&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
   - name: finishInitialization(boolean)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.finishInitialization'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.finishInitialization'
+    package: '@microsoft/live-share'
     summary: >-
       Call this API to ensure PureDataObject is fully initialized
 
@@ -400,8 +327,8 @@ inheritedMethods:
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> PureDataObject.finishInitialization
   - name: getDataObject(IFluidDataStoreRuntime)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.getDataObject'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.getDataObject'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -421,9 +348,8 @@ inheritedMethods:
   - name: >-
       getFluidObjectFromDirectory<T>(string, IDirectory, undefined | (id:
       string, directory: IDirectory) => IFluidHandle | undefined)
-    uid: >-
-      @microsoft/live-share-media.EphemeralMediaSession.getFluidObjectFromDirectory
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.getFluidObjectFromDirectory'
+    package: '@microsoft/live-share'
     summary: Retrieve Fluid object using the handle get
     remarks: ''
     isPreview: false
@@ -454,8 +380,8 @@ inheritedMethods:
         type: Promise&lt;T | undefined&gt;
     inheritanceDescription: <b>Inherited From</b> PureDataObject.getFluidObjectFromDirectory
   - name: getMaxListeners()
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.getMaxListeners'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.getMaxListeners'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -467,8 +393,8 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: initializeInternal(boolean)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.initializeInternal'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.initializeInternal'
+    package: '@microsoft/live-share'
     summary: |-
       Initializes internal objects and calls initialization overrides.
       Caller is responsible for ensuring this is only invoked once.
@@ -486,8 +412,8 @@ inheritedMethods:
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
   - name: listenerCount(string | symbol)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.listenerCount'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.listenerCount'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -503,8 +429,8 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listeners(string | symbol)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.listeners'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.listeners'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -520,8 +446,8 @@ inheritedMethods:
         type: 'Function[]'
     inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
   - name: rawListeners(string | symbol)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.rawListeners'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.rawListeners'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -537,8 +463,8 @@ inheritedMethods:
         type: 'Function[]'
     inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
   - name: removeAllListeners(string | symbol)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.removeAllListeners'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.removeAllListeners'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -554,8 +480,8 @@ inheritedMethods:
         type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: request(IRequest)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.request'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.request'
+    package: '@microsoft/live-share'
     summary: '{@inheritDoc PureDataObject.request}'
     remarks: ''
     isPreview: false
@@ -571,8 +497,8 @@ inheritedMethods:
         type: Promise&lt;IResponse&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.request
   - name: setMaxListeners(number)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.setMaxListeners'
-    package: '@microsoft/live-share-media'
+    uid: '@microsoft/live-share.EphemeralTimer.setMaxListeners'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isPreview: false
@@ -588,106 +514,61 @@ inheritedMethods:
         type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
 methods:
+  - name: dispose()
+    uid: '@microsoft/live-share.EphemeralTimer.dispose'
+    package: '@microsoft/live-share'
+    summary: Disposes of the object when its container is disposed of.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function dispose()
   - name: 'initialize(UserMeetingRole[])'
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.initialize'
-    package: '@microsoft/live-share-media'
-    summary: initialize the object.
+    uid: '@microsoft/live-share.EphemeralTimer.initialize'
+    package: '@microsoft/live-share'
+    summary: initalizes the object.
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        function initialize(acceptTransportChangesFrom?: UserMeetingRole[]):
-        Promise<void>
+      content: 'function initialize(allowedRoles?: UserMeetingRole[])'
       parameters:
-        - id: acceptTransportChangesFrom
-          type: 'UserMeetingRole[]'
+        - id: allowedRoles
+          type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
           description: |
-            Optional. List of roles allowed to group transport
-            operations like play/pause/seek/setTrack.
-      return:
-        description: ''
-        type: Promise&lt;void&gt;
-  - name: >-
-      setActionHandler(ExtendedMediaSessionAction, MediaSessionActionHandler |
-      null)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.setActionHandler'
-    package: '@microsoft/live-share-media'
-    summary: Registers an action handler with the session.
-    remarks: ''
+            Optional. List of roles allowed to make state changes.
+  - name: pause()
+    uid: '@microsoft/live-share.EphemeralTimer.pause'
+    package: '@microsoft/live-share'
+    summary: Pauses the timer.
+    remarks: Pausing an already paused timer does nothing.
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        function setActionHandler(action: ExtendedMediaSessionAction, handler:
-        MediaSessionActionHandler | null)
+      content: function pause()
+  - name: play()
+    uid: '@microsoft/live-share.EphemeralTimer.play'
+    package: '@microsoft/live-share'
+    summary: Resumes the timer.
+    remarks: Playing an already playing timer does nothing.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function play()
+  - name: start(number)
+    uid: '@microsoft/live-share.EphemeralTimer.start'
+    package: '@microsoft/live-share'
+    summary: Starts the timer with a specified duration.
+    remarks: >-
+      Starting an already started timer will restart the timer with a new
+      duration.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function start(duration: number)'
       parameters:
-        - id: action
-          type: >-
-            <xref uid="@microsoft/live-share-media.ExtendedMediaSessionAction"
-            />
-          description: Name of the action to register a handler for.
-        - id: handler
-          type: MediaSessionActionHandler | null
+        - id: duration
+          type: number
           description: |
-            Function called when the action is triggered.
-  - name: setRequestPlayerStateHandler(() => IMediaPlayerState)
-    uid: >-
-      @microsoft/live-share-media.EphemeralMediaSession.setRequestPlayerStateHandler
-    package: '@microsoft/live-share-media'
-    summary: >-
-      Registers a handler that will be queried anytime the group coordinate
-      needs to know the
-
-      local players transport state and position.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function setRequestPlayerStateHandler(handler: () => IMediaPlayerState)'
-      parameters:
-        - id: handler
-          type: () =&gt; IMediaPlayerState
-          description: ''
-  - name: 'start(UserMeetingRole[])'
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.start'
-    package: '@microsoft/live-share-media'
-    summary: ''
-    remarks: ''
-    isPreview: false
-    isDeprecated: true
-    customDeprecatedMessage: |-
-      initialize should be used instead
-      initialize the object.
-    syntax:
-      content: >-
-        function start(acceptTransportChangesFrom?: UserMeetingRole[]):
-        Promise<void>
-      parameters:
-        - id: acceptTransportChangesFrom
-          type: 'UserMeetingRole[]'
-          description: |
-            Optional. List of roles allowed to group transport
-            operations like play/pause/seek/setTrack.
-      return:
-        description: ''
-        type: Promise&lt;void&gt;
-  - name: synchronize(IMediaPlayer)
-    uid: '@microsoft/live-share-media.EphemeralMediaSession.synchronize'
-    package: '@microsoft/live-share-media'
-    summary: Begins synchronizing the playback of a media element.
-    remarks: ''
-    isPreview: false
-    isDeprecated: false
-    syntax:
-      content: 'function synchronize(player: IMediaPlayer): MediaPlayerSynchronizer'
-      parameters:
-        - id: player
-          type: <xref uid="@microsoft/live-share-media.IMediaPlayer" />
-          description: Something that "looks like" and HTML Media Element.
-      return:
-        description: >-
-          A new synchronizer instance. Call `synchronizer.end()` to stop
-          synchronizing the elements playback.
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
-extends: DataObject
+            in Milliseconds
+extends: 'DataObject&lt;{ Events: IEphemeralTimerEvents }&gt;'

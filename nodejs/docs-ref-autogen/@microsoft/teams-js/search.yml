@@ -1,0 +1,153 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.search'
+name: search
+summary: >-
+  Allows your application to interact with the host M365 application's search
+  box.
+
+  By integrating your application with the host's search box, users can search
+
+  your app using the same search box they use elsewhere in Teams, Outlook, or
+  Office.
+
+  This functionality is in Beta.
+type: module
+interfaces:
+  - '@microsoft/teams-js.search.SearchQuery'
+typeAliases:
+  - '@microsoft/teams-js.search.SearchQueryHandler'
+package: '@microsoft/teams-js'
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.search.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if search capability is supported by the host
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: >-
+          true if the search capability is supported by the host and false
+          otherwise
+
+          false if it is disabled
+        type: boolean
+  - name: >-
+      registerHandlers(SearchQueryHandler, SearchQueryHandler,
+      SearchQueryHandler)
+    uid: '@microsoft/teams-js.search.registerHandlers'
+    package: '@microsoft/teams-js'
+    summary: >+
+      Allows the caller to register for various events fired by the host search
+      experience.
+
+      Calling this function indicates that your application intends to plug into
+      the host's search box and handle search events,
+
+      when the user is actively using your page/tab.
+
+      The host may visually update its search box, e.g. with the name or icon of
+      your application.
+
+
+      Your application should *not* re-render inside of these callbacks, there
+      may be a large number
+
+      of onChangeHandler calls if the user is typing rapidly in the search box.
+
+
+
+      **Example**
+
+
+      ``` ts
+
+      search.registerHandlers(
+
+      query => {
+
+      console.log(`Update your application with the changed search query:
+      ${query.searchTerm}`);
+
+      },
+
+      query => {
+
+      console.log('Update your application to handle the search experience being
+      closed. Last query: ${query.searchTerm}');
+
+      },
+
+      query => {
+
+      console.log(`Update your application to handle an executed search result:
+      ${query.searchTerm}`);
+
+      },
+
+      );
+
+      ```
+
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerHandlers(onClosedHandler: SearchQueryHandler,
+        onExecuteHandler: SearchQueryHandler, onChangeHandler?:
+        SearchQueryHandler)
+      parameters:
+        - id: onClosedHandler
+          type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
+          description: >
+            This handler will be called when the user exits or cancels their
+            search.
+
+            Should be used to return your application to its most recent,
+            non-search state. The value of <xref:SearchQuery.searchTerm>
+
+            will be whatever the last query was before ending search.
+        - id: onExecuteHandler
+          type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
+          description: >
+            The handler will be called when the user executes their
+
+            search (by pressing Enter for example). Should be used to display
+            the full list of search results.
+
+            The value of <xref:SearchQuery.searchTerm> is the complete query the
+            user entered in the search box.
+        - id: onChangeHandler
+          type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
+          description: >
+            This optional handler will be called when the user first starts
+            using the
+
+            host's search box and as the user types their query. Can be used to
+            put your application into a
+
+            word-wheeling state or to display suggestions as the user is typing.
+
+
+            This handler will be called with an empty
+            <xref:SearchQuery.searchTerm> when search is beginning, and
+            subsequently,
+
+            with the current contents of the search box.
+  - name: unregisterHandlers()
+    uid: '@microsoft/teams-js.search.unregisterHandlers'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Allows the caller to unregister for all events fired by the host search
+      experience. Calling
+
+      this function will cause your app to stop appearing in the set of search
+      scopes in the hosts
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: function unregisterHandlers()

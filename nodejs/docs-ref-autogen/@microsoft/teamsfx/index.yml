@@ -8,6 +8,7 @@ enums:
   - '@microsoft/teamsfx.ErrorCode'
   - '@microsoft/teamsfx.IdentityType'
   - '@microsoft/teamsfx.LogLevel'
+  - '@microsoft/teamsfx.NotificationTargetType'
 classes:
   - '@microsoft/teamsfx.ApiKeyProvider'
   - '@microsoft/teamsfx.AppCredential'
@@ -34,6 +35,7 @@ interfaces:
   - '@microsoft/teamsfx.CommandOptions'
   - '@microsoft/teamsfx.ConversationOptions'
   - '@microsoft/teamsfx.Logger'
+  - '@microsoft/teamsfx.MessageResponse'
   - '@microsoft/teamsfx.NotificationOptions_2'
   - '@microsoft/teamsfx.NotificationTarget'
   - '@microsoft/teamsfx.NotificationTargetStorage'
@@ -44,7 +46,6 @@ interfaces:
   - '@microsoft/teamsfx.UserInfo'
 typeAliases:
   - '@microsoft/teamsfx.LogFunction'
-  - '@microsoft/teamsfx.NotificationTargetType'
   - '@microsoft/teamsfx.TriggerPatterns'
 functions:
   - name: 'createApiClient(string, AuthProvider)'
@@ -239,7 +240,7 @@ functions:
     syntax:
       content: >-
         function sendAdaptiveCard(target: NotificationTarget, card: unknown):
-        Promise<void>
+        Promise<MessageResponse>
       parameters:
         - id: target
           type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
@@ -248,8 +249,8 @@ functions:
           type: unknown
           description: the adaptive card raw JSON.
       return:
-        description: A `Promise` representing the asynchronous operation.
-        type: Promise&lt;void&gt;
+        description: the response of sending adaptive card message.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
   - name: 'sendMessage(NotificationTarget, string)'
     uid: '@microsoft/teamsfx.sendMessage'
     package: '@microsoft/teamsfx'
@@ -260,7 +261,7 @@ functions:
     syntax:
       content: >-
         function sendMessage(target: NotificationTarget, text: string):
-        Promise<void>
+        Promise<MessageResponse>
       parameters:
         - id: target
           type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
@@ -269,8 +270,8 @@ functions:
           type: string
           description: the plain text message.
       return:
-        description: A `Promise` representing the asynchronous operation.
-        type: Promise&lt;void&gt;
+        description: the response of sending message.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
   - name: setLogFunction(LogFunction)
     uid: '@microsoft/teamsfx.setLogFunction'
     package: '@microsoft/teamsfx'

@@ -44,8 +44,17 @@
     - uid: '@microsoft/live-share.EphemeralTelemetryLogger'
       name: EphemeralTelemetryLogger
       items: []
+    - uid: '@microsoft/live-share.EphemeralTimer'
+      name: EphemeralTimer
+      items: []
+    - uid: '@microsoft/live-share.EphemeralTimerEvents'
+      name: EphemeralTimerEvents
+      items: []
     - uid: '@microsoft/live-share.GetSynchronizationState'
       name: GetSynchronizationState
+      items: []
+    - uid: '@microsoft/live-share.IClientTimestamp'
+      name: IClientTimestamp
       items: []
     - uid: '@microsoft/live-share.IContainerRuntimeSignaler'
       name: IContainerRuntimeSignaler
@@ -76,6 +85,9 @@
       items: []
     - uid: '@microsoft/live-share.ITeamsFluidClientOptions'
       name: ITeamsFluidClientOptions
+      items: []
+    - uid: '@microsoft/live-share.ITimerConfig'
+      name: ITimerConfig
       items: []
     - uid: '@microsoft/live-share.OutgoingEphemeralEvent'
       name: OutgoingEphemeralEvent
@@ -493,9 +505,6 @@
         - uid: '@microsoft/teams-js.meeting.RaiseHandStateChangedEventData'
           name: RaiseHandStateChangedEventData
           items: []
-    - uid: '@microsoft/teams-js.meetingRoom'
-      name: meetingRoom
-      items: []
     - name: menus
       items:
         - name: Overview
@@ -511,9 +520,6 @@
       items: []
     - uid: '@microsoft/teams-js.notifications'
       name: notifications
-      items: []
-    - uid: '@microsoft/teams-js.NotificationTypes'
-      name: NotificationTypes
       items: []
     - uid: '@microsoft/teams-js.OpenChatRequest'
       name: OpenChatRequest
@@ -588,12 +594,19 @@
         - uid: '@microsoft/teams-js.profile.TriggerType'
           name: TriggerType
           items: []
-    - uid: '@microsoft/teams-js.remoteCamera'
-      name: remoteCamera
-      items: []
     - uid: '@microsoft/teams-js.SdkError'
       name: SdkError
       items: []
+    - name: search
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.search'
+        - uid: '@microsoft/teams-js.search.SearchQuery'
+          name: SearchQuery
+          items: []
+        - uid: '@microsoft/teams-js.search.SearchQueryHandler'
+          name: SearchQueryHandler
+          items: []
     - uid: '@microsoft/teams-js.SecondaryId'
       name: SecondaryId
       items: []
@@ -625,9 +638,6 @@
         - uid: '@microsoft/teams-js.sharing.IURLContent'
           name: IURLContent
           items: []
-    - uid: '@microsoft/teams-js.ShowNotificationParameters'
-      name: ShowNotificationParameters
-      items: []
     - name: stageView
       items:
         - name: Overview
@@ -759,6 +769,9 @@
       items: []
     - uid: '@microsoft/teamsfx.MessageBuilder'
       name: MessageBuilder
+      items: []
+    - uid: '@microsoft/teamsfx.MessageResponse'
+      name: MessageResponse
       items: []
     - uid: '@microsoft/teamsfx.MsGraphAuthProvider'
       name: MsGraphAuthProvider

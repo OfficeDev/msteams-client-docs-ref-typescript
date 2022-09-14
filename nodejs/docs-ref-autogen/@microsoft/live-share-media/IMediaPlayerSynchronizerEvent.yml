@@ -24,6 +24,19 @@ properties:
         type: >-
           <xref
           uid="@microsoft/live-share-media.ExtendedMediaSessionActionDetails" />
+  - name: error
+    uid: '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent.error'
+    package: '@microsoft/live-share-media'
+    summary: 'Action errors, including DOMException errors thrown by HTMLMediaElement'
+    fullName: error
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'error?: Error'
+      return:
+        description: ''
+        type: Error
 inheritedProperties:
   - name: name
     uid: '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent.name'
@@ -38,4 +51,5 @@ inheritedProperties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> IEvent.name
 extends: IEvent

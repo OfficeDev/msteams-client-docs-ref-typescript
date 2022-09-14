@@ -30,7 +30,8 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifyExpectedFailure(expectedFailureRequest:
-      IExpectedFailureRequest): void](xref:@microsoft/teams-js.app.notifyExpectedFailure) instead.
+      IExpectedFailureRequest):
+      void](xref:@microsoft/teams-js.app.notifyExpectedFailure) instead.
 
 
       Notifies the frame that app initialized with some expected errors.
@@ -53,7 +54,8 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifyFailure(appInitializationFailedRequest:
-      IFailedRequest): void](xref:@microsoft/teams-js.app.notifyFailure) instead.
+      IFailedRequest): void](xref:@microsoft/teams-js.app.notifyFailure)
+      instead.
 
 
       Notifies the frame that app initialization has failed and to show an error
