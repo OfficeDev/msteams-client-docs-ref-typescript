@@ -704,6 +704,9 @@
   items:
     - name: Overview
       uid: '@microsoft/teamsfx'
+    - uid: '@microsoft/teamsfx.AdaptiveCardResponse'
+      name: AdaptiveCardResponse
+      items: []
     - uid: '@microsoft/teamsfx.ApiKeyLocation'
       name: ApiKeyLocation
       items: []
@@ -724,6 +727,24 @@
       items: []
     - uid: '@microsoft/teamsfx.BearerTokenAuthProvider'
       name: BearerTokenAuthProvider
+      items: []
+    - uid: '@microsoft/teamsfx.BotSsoConfig'
+      name: BotSsoConfig
+      items: []
+    - uid: '@microsoft/teamsfx.BotSsoExecutionActivityHandler'
+      name: BotSsoExecutionActivityHandler
+      items: []
+    - uid: '@microsoft/teamsfx.BotSsoExecutionDialog'
+      name: BotSsoExecutionDialog
+      items: []
+    - uid: '@microsoft/teamsfx.BotSsoExecutionDialogHandler'
+      name: BotSsoExecutionDialogHandler
+      items: []
+    - uid: '@microsoft/teamsfx.CardActionBot'
+      name: CardActionBot
+      items: []
+    - uid: '@microsoft/teamsfx.CardActionOptions'
+      name: CardActionOptions
       items: []
     - uid: '@microsoft/teamsfx.CertificateAuthProvider'
       name: CertificateAuthProvider
@@ -752,8 +773,17 @@
     - uid: '@microsoft/teamsfx.ErrorWithCode'
       name: ErrorWithCode
       items: []
+    - uid: '@microsoft/teamsfx.GetTeamsUserTokenOptions'
+      name: GetTeamsUserTokenOptions
+      items: []
     - uid: '@microsoft/teamsfx.IdentityType'
       name: IdentityType
+      items: []
+    - uid: '@microsoft/teamsfx.InvokeResponseErrorCode'
+      name: InvokeResponseErrorCode
+      items: []
+    - uid: '@microsoft/teamsfx.InvokeResponseFactory'
+      name: InvokeResponseFactory
       items: []
     - uid: '@microsoft/teamsfx.LogFunction'
       name: LogFunction
@@ -769,6 +799,9 @@
       items: []
     - uid: '@microsoft/teamsfx.MessageBuilder'
       name: MessageBuilder
+      items: []
+    - uid: '@microsoft/teamsfx.MessageExtensionTokenResponse'
+      name: MessageExtensionTokenResponse
       items: []
     - uid: '@microsoft/teamsfx.MessageResponse'
       name: MessageResponse
@@ -794,6 +827,9 @@
     - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
       name: OnBehalfOfUserCredential
       items: []
+    - uid: '@microsoft/teamsfx.SearchScope'
+      name: SearchScope
+      items: []
     - uid: '@microsoft/teamsfx.TeamsBotInstallation'
       name: TeamsBotInstallation
       items: []
@@ -809,8 +845,14 @@
     - uid: '@microsoft/teamsfx.TeamsFx'
       name: TeamsFx
       items: []
+    - uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler'
+      name: TeamsFxAdaptiveCardActionHandler
+      items: []
     - uid: '@microsoft/teamsfx.TeamsFxBotCommandHandler'
       name: TeamsFxBotCommandHandler
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler'
+      name: TeamsFxBotSsoCommandHandler
       items: []
     - uid: '@microsoft/teamsfx.TeamsFxConfiguration'
       name: TeamsFxConfiguration

@@ -29,8 +29,10 @@ functions:
             for future use.
       return:
         description: >-
-          Promise that resolves with the [TabInformation](xref:@microsoft/teams-js.TabInformation). Contains
-          information for the users' most recently used tabs [TabInstance](xref:@microsoft/teams-js.TabInstance).
+          Promise that resolves with the
+          <xref:@microsoft/teams-js.TabInformation>. Contains information for
+          the users' most recently used tabs
+          <xref:@microsoft/teams-js.TabInstance>.
         type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
   - name: getTabInstances(TabInstanceParameters)
     uid: '@microsoft/teams-js.pages.tabs.getTabInstances'
@@ -55,9 +57,10 @@ functions:
             favorite teams or channels.
       return:
         description: >-
-          Promise that resolves with the [TabInformation](xref:@microsoft/teams-js.TabInformation). Contains
-          information for the user's tabs that are owned by this application
-          [TabInstance](xref:@microsoft/teams-js.TabInstance).
+          Promise that resolves with the
+          <xref:@microsoft/teams-js.TabInformation>. Contains information for
+          the user's tabs that are owned by this application
+          <xref:@microsoft/teams-js.TabInstance>.
         type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
   - name: isSupported()
     uid: '@microsoft/teams-js.pages.tabs.isSupported'

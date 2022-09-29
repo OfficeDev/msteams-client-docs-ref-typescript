@@ -4,21 +4,27 @@ name: '@microsoft/teamsfx'
 summary: ''
 type: package
 enums:
+  - '@microsoft/teamsfx.AdaptiveCardResponse'
   - '@microsoft/teamsfx.ApiKeyLocation'
   - '@microsoft/teamsfx.ErrorCode'
   - '@microsoft/teamsfx.IdentityType'
+  - '@microsoft/teamsfx.InvokeResponseErrorCode'
   - '@microsoft/teamsfx.LogLevel'
   - '@microsoft/teamsfx.NotificationTargetType'
+  - '@microsoft/teamsfx.SearchScope'
 classes:
   - '@microsoft/teamsfx.ApiKeyProvider'
   - '@microsoft/teamsfx.AppCredential'
   - '@microsoft/teamsfx.BasicAuthProvider'
   - '@microsoft/teamsfx.BearerTokenAuthProvider'
+  - '@microsoft/teamsfx.BotSsoExecutionDialog'
+  - '@microsoft/teamsfx.CardActionBot'
   - '@microsoft/teamsfx.CertificateAuthProvider'
   - '@microsoft/teamsfx.Channel'
   - '@microsoft/teamsfx.CommandBot'
   - '@microsoft/teamsfx.ConversationBot'
   - '@microsoft/teamsfx.ErrorWithCode'
+  - '@microsoft/teamsfx.InvokeResponseFactory'
   - '@microsoft/teamsfx.Member'
   - '@microsoft/teamsfx.MessageBuilder'
   - '@microsoft/teamsfx.MsGraphAuthProvider'
@@ -31,20 +37,28 @@ classes:
 interfaces:
   - '@microsoft/teamsfx.AuthProvider'
   - '@microsoft/teamsfx.AuthenticationConfiguration'
+  - '@microsoft/teamsfx.BotSsoConfig'
+  - '@microsoft/teamsfx.BotSsoExecutionActivityHandler'
+  - '@microsoft/teamsfx.CardActionOptions'
   - '@microsoft/teamsfx.CommandMessage'
   - '@microsoft/teamsfx.CommandOptions'
   - '@microsoft/teamsfx.ConversationOptions'
+  - '@microsoft/teamsfx.GetTeamsUserTokenOptions'
   - '@microsoft/teamsfx.Logger'
+  - '@microsoft/teamsfx.MessageExtensionTokenResponse'
   - '@microsoft/teamsfx.MessageResponse'
   - '@microsoft/teamsfx.NotificationOptions_2'
   - '@microsoft/teamsfx.NotificationTarget'
   - '@microsoft/teamsfx.NotificationTargetStorage'
   - '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
   - '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
+  - '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler'
   - '@microsoft/teamsfx.TeamsFxBotCommandHandler'
+  - '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler'
   - '@microsoft/teamsfx.TeamsFxConfiguration'
   - '@microsoft/teamsfx.UserInfo'
 typeAliases:
+  - '@microsoft/teamsfx.BotSsoExecutionDialogHandler'
   - '@microsoft/teamsfx.LogFunction'
   - '@microsoft/teamsfx.TriggerPatterns'
 functions:
@@ -230,6 +244,42 @@ functions:
       return:
         description: Connection configuration of tedious for the SQL.
         type: Promise&lt;ConnectionConfig&gt;
+  - name: >-
+      handleMessageExtensionQueryWithToken(TurnContext,
+      AuthenticationConfiguration | null, string | string[], (token:
+      MessageExtensionTokenResponse) => Promise<any>)
+    uid: '@microsoft/teamsfx.handleMessageExtensionQueryWithToken'
+    package: '@microsoft/teamsfx'
+    summary: Users execute query in message extension with SSO or access token.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handleMessageExtensionQueryWithToken(context: TurnContext,
+        config: AuthenticationConfiguration | null, scopes: string | string[],
+        logic: (token: MessageExtensionTokenResponse) => Promise<any>):
+        Promise<MessagingExtensionResponse | void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context object for the current turn.
+        - id: config
+          type: <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" /> | null
+          description: User custom the message extension authentication configuration.
+        - id: scopes
+          type: 'string | string[]'
+          description: The list of scopes for which the token will have access.
+        - id: logic
+          type: '(token: MessageExtensionTokenResponse) =&gt; Promise&lt;any&gt;'
+          description: >
+            Business logic when executing the query in message extension with
+            SSO or access token.
+      return:
+        description: >-
+          A MessageExtension Response for the activity. If the logic not return
+          any, return void instead.
+        type: Promise&lt;MessagingExtensionResponse | void&gt;
   - name: 'sendAdaptiveCard(NotificationTarget, unknown)'
     uid: '@microsoft/teamsfx.sendAdaptiveCard'
     package: '@microsoft/teamsfx'

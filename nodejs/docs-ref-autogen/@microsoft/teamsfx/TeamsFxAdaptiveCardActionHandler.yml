@@ -1,0 +1,89 @@
+### YamlMime:TSType
+name: TeamsFxAdaptiveCardActionHandler
+uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler'
+package: '@microsoft/teamsfx'
+summary: >-
+  Interface for adaptive card action handler that can process card action invoke
+  and return a response.
+fullName: TeamsFxAdaptiveCardActionHandler
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: adaptiveCardResponse
+    uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler.adaptiveCardResponse'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Specify the behavior for how the card response will be sent in Teams
+      conversation.
+
+      The default value is `AdaptiveCardResponse.ReplaceForInteractor`, which
+      means the card
+
+      response will replace the current one only for the interactor.
+    fullName: adaptiveCardResponse
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'adaptiveCardResponse?: AdaptiveCardResponse'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.AdaptiveCardResponse" />
+  - name: triggerVerb
+    uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler.triggerVerb'
+    package: '@microsoft/teamsfx'
+    summary: |-
+      The verb defined in adaptive card action that can trigger this handler.
+      The verb string here is case-insensitive.
+    fullName: triggerVerb
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'triggerVerb: string'
+      return:
+        description: ''
+        type: string
+methods:
+  - name: 'handleActionInvoked(TurnContext, any)'
+    uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler.handleActionInvoked'
+    package: '@microsoft/teamsfx'
+    summary: The handler function that will be invoked when the action is fired.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handleActionInvoked(context: TurnContext, actionData: any):
+        Promise<InvokeResponse>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The turn context.
+        - id: actionData
+          type: any
+          description: |
+            The contextual data that associated with the action.
+      return:
+        description: >-
+          A `Promise` representing a invoke response for the adaptive card
+          invoke action.
+
+          You can use the `InvokeResponseFactory` utility class to create an
+          invoke response from
+           - A text message:
+            ```typescript
+            return InvokeResponseFactory.textMessage("Action is processed successfully!");
+            ```
+           - An adaptive card:
+             ```typescript
+             const responseCard = AdaptiveCards.declare(helloWorldCard).render(actionData);
+          return InvokeResponseFactory.adaptiveCard(responseCard);
+             ```
+           - An error response:
+              ```typescript
+              return InvokeResponseFactory.errorResponse(InvokeResponseErrorCode.BadRequest, "Invalid request");
+              ```
+        type: Promise&lt;InvokeResponse&gt;

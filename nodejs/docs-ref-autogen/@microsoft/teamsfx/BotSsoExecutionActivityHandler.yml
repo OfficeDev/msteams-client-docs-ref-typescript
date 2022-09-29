@@ -1,0 +1,127 @@
+### YamlMime:TSType
+name: BotSsoExecutionActivityHandler
+uid: '@microsoft/teamsfx.BotSsoExecutionActivityHandler'
+package: '@microsoft/teamsfx'
+summary: Interface for user to customize SSO execution activity handler
+fullName: BotSsoExecutionActivityHandler
+remarks: >-
+  Bot SSO execution activity handler is to handle SSO login process and trigger
+  SSO command using <xref:@microsoft/teamsfx.BotSsoExecutionDialog>.
+
+  You can use this interface to implement your own SSO execution dialog, and
+  pass it to ConversationBot options:
+
+
+  ```typescript
+
+  export const commandBot = new ConversationBot({
+    ...
+    ssoConfig: {
+      ...
+      dialog: {
+        CustomBotSsoExecutionActivityHandler: YourCustomBotSsoExecutionActivityHandler,
+      }
+    },
+     ...
+  });
+
+  ```
+
+  For details information about how to implement a
+  BotSsoExecutionActivityHandler, please refer
+  DefaultBotSsoExecutionActivityHandler class source code:
+  https://aka.ms/teamsfx-default-sso-execution-activity-handler
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: 'addCommand(BotSsoExecutionDialogHandler, TriggerPatterns)'
+    uid: '@microsoft/teamsfx.BotSsoExecutionActivityHandler.addCommand'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Add <xref:@microsoft/teamsfx.TeamsFxBotSsoCommandHandler> instance to
+      <xref:@microsoft/teamsfx.BotSsoExecutionDialog>
+    remarks: >-
+      This function is used to add SSO command to
+      <xref:@microsoft/teamsfx.BotSsoExecutionDialog> instance.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addCommand(handler: BotSsoExecutionDialogHandler,
+        triggerPatterns: TriggerPatterns)
+      parameters:
+        - id: handler
+          type: <xref uid="@microsoft/teamsfx.BotSsoExecutionDialogHandler" />
+          description: callback function
+        - id: triggerPatterns
+          type: <xref uid="@microsoft/teamsfx.TriggerPatterns" />
+          description: |
+            The trigger pattern
+  - name: 'handleTeamsSigninTokenExchange(TurnContext, SigninStateVerificationQuery)'
+    uid: >-
+      @microsoft/teamsfx.BotSsoExecutionActivityHandler.handleTeamsSigninTokenExchange
+    package: '@microsoft/teamsfx'
+    summary: Receives invoke activities with Activity name of 'signin/tokenExchange'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handleTeamsSigninTokenExchange(context: TurnContext, query:
+        SigninStateVerificationQuery): Promise<void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: A context object for this turn.
+        - id: query
+          type: SigninStateVerificationQuery
+          description: >-
+            Signin state (part of signin action auth flow) verification invoke
+            query
+      return:
+        description: A promise that represents the work queued.
+        type: Promise&lt;void&gt;
+  - name: 'handleTeamsSigninVerifyState(TurnContext, SigninStateVerificationQuery)'
+    uid: >-
+      @microsoft/teamsfx.BotSsoExecutionActivityHandler.handleTeamsSigninVerifyState
+    package: '@microsoft/teamsfx'
+    summary: Receives invoke activities with Activity name of 'signin/verifyState'.
+    remarks: >-
+      It should trigger <xref:@microsoft/teamsfx.BotSsoExecutionDialog> instance
+      to handle signin process
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handleTeamsSigninVerifyState(context: TurnContext, query:
+        SigninStateVerificationQuery): Promise<void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: A context object for this turn.
+        - id: query
+          type: SigninStateVerificationQuery
+          description: >-
+            Signin state (part of signin action auth flow) verification invoke
+            query.
+      return:
+        description: A promise that represents the work queued.
+        type: Promise&lt;void&gt;
+  - name: run(TurnContext)
+    uid: '@microsoft/teamsfx.BotSsoExecutionActivityHandler.run'
+    package: '@microsoft/teamsfx'
+    summary: Called to initiate the event emission process.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function run(context: TurnContext): Promise<void>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: |
+            The context object for the current turn.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

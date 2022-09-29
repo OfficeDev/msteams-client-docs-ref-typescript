@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: InvokeResponseErrorCode
+uid: '@microsoft/teamsfx.InvokeResponseErrorCode'
+package: '@microsoft/teamsfx'
+summary: Status code for an `application/vnd.microsoft.error` invoke response.
+fullName: InvokeResponseErrorCode
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: BadRequest
+    uid: '@microsoft/teamsfx.InvokeResponseErrorCode.BadRequest'
+    package: '@microsoft/teamsfx'
+    summary: Invalid request.
+    numericValue: 400
+  - name: InternalServerError
+    uid: '@microsoft/teamsfx.InvokeResponseErrorCode.InternalServerError'
+    package: '@microsoft/teamsfx'
+    summary: Internal server error.
+    numericValue: 500

@@ -216,7 +216,7 @@ functions:
       As of 2.0.0, please use
       [pages.tabs.getMruTabInstances(tabInstanceParameters?:
       TabInstanceParameters):
-      Promise\<TabInformation\>](xref:@microsoft/teams-js.pages.tabs.getMruTabInstances) instead.
+      Promise\<TabInformation\>](xref:pages.tabs.getMruTabInstances) instead.
 
 
       Allows an app to retrieve the most recently used tabs for this user.
@@ -245,7 +245,7 @@ functions:
       As of 2.0.0, please use
       [pages.tabs.getTabInstances(tabInstanceParameters?:
       TabInstanceParameters):
-      Promise\<TabInformation\>](xref:@microsoft/teams-js.pages.tabs.getTabInstances) instead.
+      Promise\<TabInformation\>](xref:pages.tabs.getTabInstances) instead.
 
 
       Allows an app to retrieve for this user tabs that are owned by this app.
@@ -344,7 +344,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.backStack.navigateBack():
-      Promise\<void\>](xref:@microsoft/teams-js.pages.backStack.navigateBack) instead.
+      Promise\<void\>](xref:pages.backStack.navigateBack) instead.
 
 
       Navigates back in the Teams client.
@@ -407,7 +407,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.tabs.navigateToTab(tabInstance:
-      TabInstance): Promise\<void\>](xref:@microsoft/teams-js.pages.tabs.navigateToTab) instead.
+      TabInstance): Promise\<void\>](xref:pages.tabs.navigateToTab) instead.
 
 
       Navigates the Microsoft Teams app to the specified tab instance.
@@ -447,7 +447,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.appButton.onClick(handler: () => void):
-      void](xref:@microsoft/teams-js.pages.appButton.onClick) instead.
+      void](xref:pages.appButton.onClick) instead.
 
 
       Registers a handler for clicking the app button.
@@ -471,7 +471,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.appButton.onHoverEnter(handler: () =>
-      void): void](xref:@microsoft/teams-js.pages.appButton.onHoverEnter) instead.
+      void): void](xref:pages.appButton.onHoverEnter) instead.
 
 
       Registers a handler for entering hover of the app button.
@@ -495,7 +495,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.appButton.onHoverLeave(handler: () =>
-      void): void](xref:@microsoft/teams-js.pages.appButton.onHoverLeave) instead.
+      void): void](xref:pages.appButton.onHoverLeave) instead.
 
 
       Registers a handler for exiting hover of the app button.
@@ -521,7 +521,7 @@ functions:
     customDeprecatedMessage: >-
       As of 2.0.0, please use
       [pages.backStack.registerBackButtonHandler(handler: () => boolean):
-      void](xref:@microsoft/teams-js.pages.backStack.registerBackButtonHandler) instead.
+      void](xref:pages.backStack.registerBackButtonHandler) instead.
 
 
       Registers a handler for user presses of the Team client's back button.
@@ -551,7 +551,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.registerChangeConfigHandler(handler:
-      () => void): void](xref:@microsoft/teams-js.pages.config.registerChangeConfigHandler) instead.
+      () => void): void](xref:pages.config.registerChangeConfigHandler) instead.
 
 
       Registers a handler for when the user reconfigurated tab.

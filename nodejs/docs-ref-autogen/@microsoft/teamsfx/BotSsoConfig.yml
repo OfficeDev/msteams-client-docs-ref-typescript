@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: BotSsoConfig
+uid: '@microsoft/teamsfx.BotSsoConfig'
+package: '@microsoft/teamsfx'
+summary: Interface for SSO configuration for Bot SSO
+fullName: BotSsoConfig
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: aad
+    uid: '@microsoft/teamsfx.BotSsoConfig.aad'
+    package: '@microsoft/teamsfx'
+    summary: aad related configurations
+    fullName: aad
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'aad: { scopes: string[] } & AuthenticationConfiguration'
+      return:
+        description: ''
+        type: >-
+          { scopes: string[] } & <xref
+          uid="@microsoft/teamsfx.AuthenticationConfiguration" />
+  - name: dialog
+    uid: '@microsoft/teamsfx.BotSsoConfig.dialog'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    fullName: dialog
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        dialog?: { CustomBotSsoExecutionActivityHandler?: Object,
+        conversationState?: ConversationState, dedupStorage?: Storage_2,
+        ssoPromptConfig?: { endOnInvalidMessage?: boolean, timeout?: number },
+        userState?: UserState }
+      return:
+        description: ''
+        type: >-
+          { CustomBotSsoExecutionActivityHandler?: Object, conversationState?:
+          ConversationState, dedupStorage?: Storage_2, ssoPromptConfig?: {
+          endOnInvalidMessage?: boolean, timeout?: number }, userState?:
+          UserState }

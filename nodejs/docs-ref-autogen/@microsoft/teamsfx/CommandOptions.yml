@@ -25,3 +25,20 @@ properties:
       return:
         description: ''
         type: '<xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />[]'
+  - name: ssoCommands
+    uid: '@microsoft/teamsfx.CommandOptions.ssoCommands'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      The commands to registered with the sso command bot. Each sso command
+      should implement the interface
+      <xref:@microsoft/teamsfx.TeamsFxBotSsoCommandHandler> so that it can be
+      correctly handled by this command bot.
+    fullName: ssoCommands
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ssoCommands?: TeamsFxBotSsoCommandHandler[]'
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />[]'
