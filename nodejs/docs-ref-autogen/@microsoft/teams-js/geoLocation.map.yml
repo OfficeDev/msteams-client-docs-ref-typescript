@@ -18,8 +18,9 @@ functions:
       content: 'function chooseLocation(): Promise<Location>'
       return:
         description: >-
-          Promise that will resolve with [geoLocation.Location](xref:@microsoft/teams-js.geoLocation.Location) object
-          chosen by the user or reject with an error. Function can also throw a
+          Promise that will resolve with
+          <xref:@microsoft/teams-js.geoLocation.Location> object chosen by the
+          user or reject with an error. Function can also throw a
           NOT_SUPPORTED_ON_PLATFORM error
         type: Promise&lt;<xref uid="@microsoft/teams-js.geoLocation.Location" />&gt;
   - name: isSupported()

@@ -32,7 +32,9 @@ functions:
     syntax:
       content: 'function getContext(): Promise<Context>'
       return:
-        description: 'Promise that will resolve with the [app.Context](xref:@microsoft/teams-js.app.Context) object.'
+        description: >-
+          Promise that will resolve with the
+          <xref:@microsoft/teams-js.app.Context> object.
         type: Promise&lt;<xref uid="@microsoft/teams-js.app.Context" />&gt;
   - name: getFrameContext()
     uid: '@microsoft/teams-js.app.getFrameContext'
@@ -52,9 +54,9 @@ functions:
     uid: '@microsoft/teams-js.app.initialize'
     package: '@microsoft/teams-js'
     summary: Initializes the library.
-    remarks: |-
-      This must be called before any other SDK calls
-      but after the frame is loaded successfully.
+    remarks: >-
+      Initialize must have completed successfully (as determined by the resolved
+      Promise) before any other library calls are made
     isPreview: false
     isDeprecated: false
     syntax:

@@ -96,7 +96,10 @@ properties:
   - name: sharepoint
     uid: '@microsoft/teams-js.app.Context.sharepoint'
     package: '@microsoft/teams-js'
-    summary: SharePoint context. This is only available when hosted in SharePoint.
+    summary: >-
+      When hosted in SharePoint, this is the [SharePoint
+      PageContext](https://learn.microsoft.com/en-us/javascript/api/sp-page-context/pagecontext?view=sp-typescript-latest),
+      else `undefined`
     fullName: sharepoint
     remarks: ''
     isPreview: false

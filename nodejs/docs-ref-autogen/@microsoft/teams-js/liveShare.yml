@@ -1,0 +1,62 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.liveShare'
+name: liveShare
+summary: Namespace to interact with the Live Share module-specific part of the SDK.
+type: module
+interfaces:
+  - '@microsoft/teams-js.liveShare.LiveShareOptions'
+package: '@microsoft/teams-js'
+functions:
+  - name: initialize(LiveShareOptions)
+    uid: '@microsoft/teams-js.liveShare.initialize'
+    package: '@microsoft/teams-js'
+    summary: Initializes the Live Share client.
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function initialize(options?: LiveShareOptions): Promise<void>'
+      parameters:
+        - id: options
+          type: <xref uid="@microsoft/teams-js.liveShare.LiveShareOptions" />
+          description: |
+            Optional. Configuration options passed to the Live Share client.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: 'joinContainer(ContainerSchema, (container: IFluidContainer) => void)'
+    uid: '@microsoft/teams-js.liveShare.joinContainer'
+    package: '@microsoft/teams-js'
+    summary: Connects to the fluid container for the current teams context.
+    remarks: >-
+      The first client joining the container will create the container resulting
+      in the
+
+      `onContainerFirstCreated` callback being called. This callback can be used
+      to set the initial
+
+      state of of the containers object prior to the container being attached.
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: >-
+        function joinContainer(fluidContainerSchema: ContainerSchema,
+        onContainerFirstCreated?: (container: IFluidContainer) => void):
+        Promise<{ container: IFluidContainer, created: boolean, services:
+        AzureContainerServices }>
+      parameters:
+        - id: fluidContainerSchema
+          type: ContainerSchema
+          description: Fluid objects to create.
+        - id: onContainerFirstCreated
+          type: '(container: IFluidContainer) =&gt; void'
+          description: >-
+            Optional. Callback that's called when the container is first
+            created.
+      return:
+        description: >-
+          The fluid `container` and `services` objects to use along with a
+          `created` flag that if true means the container had to be created.
+        type: >-
+          Promise&lt;{ container: IFluidContainer, created: boolean, services:
+          AzureContainerServices }&gt;
