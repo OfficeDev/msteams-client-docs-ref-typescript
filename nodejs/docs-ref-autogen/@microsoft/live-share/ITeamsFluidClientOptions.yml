@@ -1,17 +1,17 @@
 ### YamlMime:TSType
-name: LiveShareOptions
-uid: '@microsoft/teams-js.liveShare.LiveShareOptions'
-package: '@microsoft/teams-js'
-summary: Options used to configure the Live Share client.
-fullName: LiveShareOptions
+name: ITeamsFluidClientOptions
+uid: '@microsoft/live-share.ITeamsFluidClientOptions'
+package: '@microsoft/live-share'
+summary: Options used to configure the `TeamsFluidClient` class.
+fullName: ITeamsFluidClientOptions
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: connection
-    uid: '@microsoft/teams-js.liveShare.LiveShareOptions.connection'
-    package: '@microsoft/teams-js'
+    uid: '@microsoft/live-share.ITeamsFluidClientOptions.connection'
+    package: '@microsoft/live-share'
     summary: >-
       Optional. Configuration to use when connecting to a custom Azure Fluid
       Relay instance.
@@ -25,8 +25,8 @@ properties:
         description: ''
         type: AzureConnectionConfig
   - name: getLocalTestContainerId
-    uid: '@microsoft/teams-js.liveShare.LiveShareOptions.getLocalTestContainerId'
-    package: '@microsoft/teams-js'
+    uid: '@microsoft/live-share.ITeamsFluidClientOptions.getLocalTestContainerId'
+    package: '@microsoft/live-share'
     summary: >-
       Optional. Function to lookup the ID of the container to use for local
       testing.
@@ -40,13 +40,13 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'getLocalTestContainerId?: () => string | undefined'
+      content: 'getLocalTestContainerId?: undefined | () => string | undefined'
       return:
         description: ''
-        type: () =&gt; string | undefined
+        type: undefined | () =&gt; string | undefined
   - name: logger
-    uid: '@microsoft/teams-js.liveShare.LiveShareOptions.logger'
-    package: '@microsoft/teams-js'
+    uid: '@microsoft/live-share.ITeamsFluidClientOptions.logger'
+    package: '@microsoft/live-share'
     summary: Optional. A logger instance to receive diagnostic messages.
     fullName: logger
     remarks: ''
@@ -58,8 +58,8 @@ properties:
         description: ''
         type: ITelemetryBaseLogger
   - name: setLocalTestContainerId
-    uid: '@microsoft/teams-js.liveShare.LiveShareOptions.setLocalTestContainerId'
-    package: '@microsoft/teams-js'
+    uid: '@microsoft/live-share.ITeamsFluidClientOptions.setLocalTestContainerId'
+    package: '@microsoft/live-share'
     summary: Optional. Function to save the ID of a newly created local test container.
     fullName: setLocalTestContainerId
     remarks: >-
@@ -70,7 +70,7 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'setLocalTestContainerId?: (containerId: string) => void'
+      content: 'setLocalTestContainerId?: undefined | (containerId: string) => void'
       return:
         description: ''
-        type: '(containerId: string) =&gt; void'
+        type: 'undefined | (containerId: string) =&gt; void'

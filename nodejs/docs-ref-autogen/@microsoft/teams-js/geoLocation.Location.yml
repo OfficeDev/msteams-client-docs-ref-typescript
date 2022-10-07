@@ -12,11 +12,9 @@ properties:
   - name: accuracy
     uid: '@microsoft/teams-js.geoLocation.Location.accuracy'
     package: '@microsoft/teams-js'
-    summary: >-
-      Accuracy describes the maximum distance in meters from the captured
-      coordinates to the possible actual location
+    summary: Accuracy of the coordinates captured
     fullName: accuracy
-    remarks: This property is only in scope for mobile
+    remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:

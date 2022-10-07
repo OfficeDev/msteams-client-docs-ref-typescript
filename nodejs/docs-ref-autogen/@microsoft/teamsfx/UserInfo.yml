@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: UserInfo
+uid: '@microsoft/teamsfx.UserInfo'
+package: '@microsoft/teamsfx'
+summary: 'UserInfo with user displayName, objectId and preferredUserName.'
+fullName: UserInfo
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: '@microsoft/teamsfx.UserInfo.displayName'
+    package: '@microsoft/teamsfx'
+    summary: User Display Name.
+    fullName: displayName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'displayName: string'
+      return:
+        description: ''
+        type: string
+  - name: objectId
+    uid: '@microsoft/teamsfx.UserInfo.objectId'
+    package: '@microsoft/teamsfx'
+    summary: User unique reference within the Azure Active Directory domain.
+    fullName: objectId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'objectId: string'
+      return:
+        description: ''
+        type: string
+  - name: preferredUserName
+    uid: '@microsoft/teamsfx.UserInfo.preferredUserName'
+    package: '@microsoft/teamsfx'
+    summary: Usually be the email address.
+    fullName: preferredUserName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'preferredUserName: string'
+      return:
+        description: ''
+        type: string
+  - name: tenantId
+    uid: '@microsoft/teamsfx.UserInfo.tenantId'
+    package: '@microsoft/teamsfx'
+    summary: User tenant ID.
+    fullName: tenantId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tenantId: string'
+      return:
+        description: ''
+        type: string

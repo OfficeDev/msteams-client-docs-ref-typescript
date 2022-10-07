@@ -1,0 +1,40 @@
+### YamlMime:TSEnum
+name: SearchScope
+uid: '@microsoft/teamsfx.SearchScope'
+package: '@microsoft/teamsfx'
+summary: >-
+  The search scope when calling
+  <xref:@microsoft/teamsfx.NotificationBot.findMember> and
+  <xref:@microsoft/teamsfx.NotificationBot.findAllMembers>.
+
+  The search scope is a flagged enum and it can be combined with `|`.
+
+  For example, to search from personal chat and group chat, use
+  `SearchScope.Person | SearchScope.Group`.
+fullName: SearchScope
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: Person
+    uid: '@microsoft/teamsfx.SearchScope.Person'
+    package: '@microsoft/teamsfx'
+    summary: Search members from the installations in personal chat only.
+    numericValue: 1
+  - name: Group
+    uid: '@microsoft/teamsfx.SearchScope.Group'
+    package: '@microsoft/teamsfx'
+    summary: Search members from the installations in group chat only.
+    numericValue: 2
+  - name: Channel
+    uid: '@microsoft/teamsfx.SearchScope.Channel'
+    package: '@microsoft/teamsfx'
+    summary: Search members from the installations in Teams channel only.
+    numericValue: 4
+  - name: All
+    uid: '@microsoft/teamsfx.SearchScope.All'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Search members from all installations including personal chat, group chat
+      and Teams channel.
+    numericValue: 7

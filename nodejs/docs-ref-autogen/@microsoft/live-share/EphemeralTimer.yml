@@ -1,0 +1,574 @@
+### YamlMime:TSType
+name: EphemeralTimer
+uid: '@microsoft/live-share.EphemeralTimer'
+package: '@microsoft/live-share'
+summary: ''
+fullName: EphemeralTimer
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'EphemeralTimer(IDataObjectProps<{ Events: IEphemeralTimerEvents }>)'
+    uid: '@microsoft/live-share.EphemeralTimer.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new EphemeralTimer(props: IDataObjectProps<{ Events:
+        IEphemeralTimerEvents }>)
+      parameters:
+        - id: props
+          type: 'IDataObjectProps&lt;{ Events: IEphemeralTimerEvents }&gt;'
+          description: ''
+properties:
+  - name: disposed
+    uid: '@microsoft/live-share.EphemeralTimer.disposed'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: disposed
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean disposed
+      return:
+        description: ''
+        type: boolean
+  - name: factory
+    uid: '@microsoft/live-share.EphemeralTimer.factory'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type factory.
+    fullName: factory
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static factory: DataObjectFactory<EphemeralTimer, { Events:
+        IEphemeralTimerEvents }>
+      return:
+        description: ''
+        type: >-
+          DataObjectFactory&lt;<xref uid="@microsoft/live-share.EphemeralTimer"
+          />, { Events: IEphemeralTimerEvents }&gt;
+  - name: handle
+    uid: '@microsoft/live-share.EphemeralTimer.handle'
+    package: '@microsoft/live-share'
+    summary: Handle to a data store
+    fullName: handle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> handle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: id
+    uid: '@microsoft/live-share.EphemeralTimer.id'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string id
+      return:
+        description: ''
+        type: string
+  - name: IFluidHandle
+    uid: '@microsoft/live-share.EphemeralTimer.IFluidHandle'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidHandle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> IFluidHandle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: IFluidLoadable
+    uid: '@microsoft/live-share.EphemeralTimer.IFluidLoadable'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidLoadable
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: this IFluidLoadable
+      return:
+        description: ''
+        type: this
+  - name: IFluidRouter
+    uid: '@microsoft/live-share.EphemeralTimer.IFluidRouter'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidRouter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: this IFluidRouter
+      return:
+        description: ''
+        type: this
+  - name: isInitialized
+    uid: '@microsoft/live-share.EphemeralTimer.isInitialized'
+    package: '@microsoft/live-share'
+    summary: Returns true if the object has been initialized.
+    fullName: isInitialized
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean isInitialized
+      return:
+        description: ''
+        type: boolean
+  - name: isStarted
+    uid: '@microsoft/live-share.EphemeralTimer.isStarted'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: isStarted
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      isInitialized should be used instead
+      Returns true if the object has been initialized.
+    syntax:
+      content: boolean isStarted
+      return:
+        description: ''
+        type: boolean
+  - name: TypeName
+    uid: '@microsoft/live-share.EphemeralTimer.TypeName'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type/name.
+    fullName: TypeName
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TypeName: "@microsoft/live-share:EphemeralTimer" =
+        "@microsoft/live-share:EphemeralTimer"
+      return:
+        description: ''
+        type: '"@microsoft/live-share:EphemeralTimer"'
+inheritedProperties:
+  - name: addListener
+    uid: '@microsoft/live-share.EphemeralTimer.addListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.addListener
+  - name: 'off'
+    uid: '@microsoft/live-share.EphemeralTimer.off'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'off'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'off: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.off
+  - name: 'on'
+    uid: '@microsoft/live-share.EphemeralTimer.on'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'on'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'on: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.on
+  - name: once
+    uid: '@microsoft/live-share.EphemeralTimer.once'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: once
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'once: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.once
+  - name: prependListener
+    uid: '@microsoft/live-share.EphemeralTimer.prependListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependListener
+  - name: prependOnceListener
+    uid: '@microsoft/live-share.EphemeralTimer.prependOnceListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependOnceListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependOnceListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependOnceListener
+  - name: removeListener
+    uid: '@microsoft/live-share.EphemeralTimer.removeListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: removeListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.removeListener
+inheritedMethods:
+  - name: 'emit(string | symbol, any[])'
+    uid: '@microsoft/live-share.EphemeralTimer.emit'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function emit(event: string | symbol, args: any[]): boolean'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: args
+          type: 'any[]'
+          description: ''
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
+  - name: eventNames()
+    uid: '@microsoft/live-share.EphemeralTimer.eventNames'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function eventNames(): Array<string | symbol>'
+      return:
+        description: ''
+        type: Array&lt;string | symbol&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
+  - name: finishInitialization(boolean)
+    uid: '@microsoft/live-share.EphemeralTimer.finishInitialization'
+    package: '@microsoft/live-share'
+    summary: >-
+      Call this API to ensure PureDataObject is fully initialized
+
+      initialization happens on demand, only on as-needed bases.
+
+      In most cases you should allow factory/object to decide when to finish
+      initialization.
+
+      But if you are supplying your own implementation of DataStoreRuntime
+      factory and overriding some methods
+
+      and need fully initialized object, then you can call this API to ensure
+      object is fully initialized.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function finishInitialization(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> PureDataObject.finishInitialization
+  - name: getDataObject(IFluidDataStoreRuntime)
+    uid: '@microsoft/live-share.EphemeralTimer.getDataObject'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getDataObject(runtime: IFluidDataStoreRuntime):
+        Promise<PureDataObject<DataObjectTypes>>
+      parameters:
+        - id: runtime
+          type: IFluidDataStoreRuntime
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> PureDataObject.getDataObject
+  - name: >-
+      getFluidObjectFromDirectory<T>(string, IDirectory, undefined | (id:
+      string, directory: IDirectory) => IFluidHandle | undefined)
+    uid: '@microsoft/live-share.EphemeralTimer.getFluidObjectFromDirectory'
+    package: '@microsoft/live-share'
+    summary: Retrieve Fluid object using the handle get
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getFluidObjectFromDirectory<T>(key: string, directory:
+        IDirectory, getObjectFromDirectory?: undefined | (id: string, directory:
+        IDirectory) => IFluidHandle | undefined): Promise<T | undefined>
+      parameters:
+        - id: key
+          type: string
+          description: key that object (handle/id) is stored with in the directory
+        - id: directory
+          type: IDirectory
+          description: directory containing the object
+        - id: getObjectFromDirectory
+          type: >-
+            undefined | (id: string, directory: IDirectory) =&gt; IFluidHandle |
+            undefined
+          description: >
+            optional callback for fetching object from the directory, allows
+            users to
+
+            define custom types/getters for object retrieval
+      return:
+        description: ''
+        type: Promise&lt;T | undefined&gt;
+    inheritanceDescription: <b>Inherited From</b> PureDataObject.getFluidObjectFromDirectory
+  - name: getMaxListeners()
+    uid: '@microsoft/live-share.EphemeralTimer.getMaxListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxListeners(): number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
+  - name: initializeInternal(boolean)
+    uid: '@microsoft/live-share.EphemeralTimer.initializeInternal'
+    package: '@microsoft/live-share'
+    summary: |-
+      Initializes internal objects and calls initialization overrides.
+      Caller is responsible for ensuring this is only invoked once.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function initializeInternal(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
+  - name: listenerCount(string | symbol)
+    uid: '@microsoft/live-share.EphemeralTimer.listenerCount'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(event: string | symbol): number'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralTimer.listeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
+  - name: rawListeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralTimer.rawListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function rawListeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
+  - name: removeAllListeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralTimer.removeAllListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function removeAllListeners(event?: string | symbol): this'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
+  - name: request(IRequest)
+    uid: '@microsoft/live-share.EphemeralTimer.request'
+    package: '@microsoft/live-share'
+    summary: '{@inheritDoc PureDataObject.request}'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function request(request: IRequest): Promise<IResponse>'
+      parameters:
+        - id: request
+          type: IRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;IResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.request
+  - name: setMaxListeners(number)
+    uid: '@microsoft/live-share.EphemeralTimer.setMaxListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setMaxListeners(n: number): this'
+      parameters:
+        - id: 'n'
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
+methods:
+  - name: dispose()
+    uid: '@microsoft/live-share.EphemeralTimer.dispose'
+    package: '@microsoft/live-share'
+    summary: Disposes of the object when its container is disposed of.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function dispose()
+  - name: 'initialize(UserMeetingRole[])'
+    uid: '@microsoft/live-share.EphemeralTimer.initialize'
+    package: '@microsoft/live-share'
+    summary: initalizes the object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function initialize(allowedRoles?: UserMeetingRole[])'
+      parameters:
+        - id: allowedRoles
+          type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
+          description: |
+            Optional. List of roles allowed to make state changes.
+  - name: pause()
+    uid: '@microsoft/live-share.EphemeralTimer.pause'
+    package: '@microsoft/live-share'
+    summary: Pauses the timer.
+    remarks: Pausing an already paused timer does nothing.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function pause()
+  - name: play()
+    uid: '@microsoft/live-share.EphemeralTimer.play'
+    package: '@microsoft/live-share'
+    summary: Resumes the timer.
+    remarks: Playing an already playing timer does nothing.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function play()
+  - name: start(number)
+    uid: '@microsoft/live-share.EphemeralTimer.start'
+    package: '@microsoft/live-share'
+    summary: Starts the timer with a specified duration.
+    remarks: >-
+      Starting an already started timer will restart the timer with a new
+      duration.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function start(duration: number)'
+      parameters:
+        - id: duration
+          type: number
+          description: |
+            in Milliseconds
+extends: 'DataObject&lt;{ Events: IEphemeralTimerEvents }&gt;'

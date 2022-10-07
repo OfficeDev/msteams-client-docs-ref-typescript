@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: MsGraphAuthProvider
+uid: '@microsoft/teamsfx.MsGraphAuthProvider'
+package: '@microsoft/teamsfx'
+summary: Microsoft Graph auth provider for Teams Framework
+fullName: MsGraphAuthProvider
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'MsGraphAuthProvider(TeamsFxConfiguration, string | string[])'
+    uid: '@microsoft/teamsfx.MsGraphAuthProvider.constructor'
+    package: '@microsoft/teamsfx'
+    summary: Constructor of MsGraphAuthProvider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new MsGraphAuthProvider(teamsfx: TeamsFxConfiguration, scopes?: string |
+        string[])
+      parameters:
+        - id: teamsfx
+          type: <xref uid="@microsoft/teamsfx.TeamsFxConfiguration" />
+          description: Used to provide configuration and auth.
+        - id: scopes
+          type: 'string | string[]'
+          description: |
+            The list of scopes for which the token will have access.
+methods:
+  - name: getAccessToken()
+    uid: '@microsoft/teamsfx.MsGraphAuthProvider.getAccessToken'
+    package: '@microsoft/teamsfx'
+    summary: Get access token for Microsoft Graph API requests.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getAccessToken(): Promise<string>'
+      return:
+        description: Access token from the credential.
+        type: Promise&lt;string&gt;

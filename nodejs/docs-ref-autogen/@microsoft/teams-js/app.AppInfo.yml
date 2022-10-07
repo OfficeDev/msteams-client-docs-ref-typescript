@@ -116,9 +116,7 @@ properties:
   - name: theme
     uid: '@microsoft/teams-js.app.AppInfo.theme'
     package: '@microsoft/teams-js'
-    summary: >-
-      The current UI theme of the host. Possible values: "default", "dark", or
-      "contrast".
+    summary: The current UI theme.
     fullName: theme
     remarks: ''
     isPreview: false

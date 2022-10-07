@@ -68,6 +68,13 @@ functions:
 
       query => {
 
+      console.log(`Update your application with the changed search query:
+      ${query.searchTerm}`);
+
+      },
+
+      query => {
+
       console.log('Update your application to handle the search experience being
       closed. Last query: ${query.searchTerm}');
 
@@ -76,13 +83,6 @@ functions:
       query => {
 
       console.log(`Update your application to handle an executed search result:
-      ${query.searchTerm}`);
-
-      },
-
-      query => {
-
-      console.log(`Update your application with the changed search query:
       ${query.searchTerm}`);
 
       },
@@ -122,7 +122,7 @@ functions:
             user entered in the search box.
         - id: onChangeHandler
           type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
-          description: >-
+          description: >
             This optional handler will be called when the user first starts
             using the
 

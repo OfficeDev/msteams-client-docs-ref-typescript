@@ -1,0 +1,28 @@
+### YamlMime:TSType
+name: CardActionOptions
+uid: '@microsoft/teamsfx.CardActionOptions'
+package: '@microsoft/teamsfx'
+summary: 'Options to initialize <xref:@microsoft/teamsfx.CardActionBot>.'
+fullName: CardActionOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: actions
+    uid: '@microsoft/teamsfx.CardActionOptions.actions'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      The action handlers to registered with the action bot. Each command should
+      implement the interface
+      <xref:@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler> so that it can
+      be correctly handled by this bot.
+    fullName: actions
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'actions?: TeamsFxAdaptiveCardActionHandler[]'
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />[]'

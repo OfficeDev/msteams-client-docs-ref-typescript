@@ -1,0 +1,391 @@
+### YamlMime:TSType
+name: EphemeralEventScope
+uid: '@microsoft/live-share.EphemeralEventScope'
+package: '@microsoft/live-share'
+summary: Object responsible for sending and receiving ephemeral events.
+fullName: EphemeralEventScope
+remarks: >-
+  Ephemeral objects send and receive events using an event scope. Event scopes
+  can be restricted
+
+  to only receive events from clients with specific roles. Any events that are
+  received from
+
+  clients without an allowed role type will be ignored.
+
+
+  Event scopes are isolated on a per Fluid object basis. That means that two
+  different Fluid
+
+  objects using the same event names don't have to worry about collisions.  Two
+  event scopes
+
+  within the same Fluid object, however, don't have any isolation. You can use
+  multiple event
+
+  scopes within the same FLuid object, you just need to be careful that they
+  send different
+
+  events.
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'EphemeralEventScope(IRuntimeSignaler, UserMeetingRole[])'
+    uid: '@microsoft/live-share.EphemeralEventScope.constructor'
+    package: '@microsoft/live-share'
+    summary: Creates a new `EphemeralEventScope` instance.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new EphemeralEventScope(runtime: IRuntimeSignaler, allowedRoles?:
+        UserMeetingRole[])
+      parameters:
+        - id: runtime
+          type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
+          description: 'A Fluid objects runtime instance, typically `this.runtime`.'
+        - id: allowedRoles
+          type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
+          description: |
+            Optional. List of roles allowed to send events using this scope.
+            You should use a second scope if you need mixed permission support.
+properties:
+  - name: allowedRoles
+    uid: '@microsoft/live-share.EphemeralEventScope.allowedRoles'
+    package: '@microsoft/live-share'
+    summary: List of roles allowed to send events through this scope.
+    fullName: allowedRoles
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'UserMeetingRole[] allowedRoles'
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
+  - name: clientId
+    uid: '@microsoft/live-share.EphemeralEventScope.clientId'
+    package: '@microsoft/live-share'
+    summary: >-
+      The runtimes current client ID. This will be `undefined` if the client is
+      disconnected.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: string | undefined clientId
+      return:
+        description: ''
+        type: string | undefined
+inheritedProperties:
+  - name: addListener
+    uid: '@microsoft/live-share.EphemeralEventScope.addListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addListener: TypedEventTransform<this, IErrorEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.addListener
+  - name: 'off'
+    uid: '@microsoft/live-share.EphemeralEventScope.off'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'off'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'off: TypedEventTransform<this, IErrorEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.off
+  - name: 'on'
+    uid: '@microsoft/live-share.EphemeralEventScope.on'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'on'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'on: TypedEventTransform<this, IErrorEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.on
+  - name: once
+    uid: '@microsoft/live-share.EphemeralEventScope.once'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: once
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'once: TypedEventTransform<this, IErrorEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.once
+  - name: prependListener
+    uid: '@microsoft/live-share.EphemeralEventScope.prependListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependListener: TypedEventTransform<this, IErrorEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependListener
+  - name: prependOnceListener
+    uid: '@microsoft/live-share.EphemeralEventScope.prependOnceListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependOnceListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'prependOnceListener: TypedEventTransform<this, IErrorEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependOnceListener
+  - name: removeListener
+    uid: '@microsoft/live-share.EphemeralEventScope.removeListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: removeListener
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'removeListener: TypedEventTransform<this, IErrorEvent>'
+      return:
+        description: ''
+        type: 'TypedEventTransform&lt;this, IErrorEvent&gt;'
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.removeListener
+inheritedMethods:
+  - name: 'emit(string | symbol, any[])'
+    uid: '@microsoft/live-share.EphemeralEventScope.emit'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function emit(event: string | symbol, args: any[]): boolean'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: args
+          type: 'any[]'
+          description: ''
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
+  - name: eventNames()
+    uid: '@microsoft/live-share.EphemeralEventScope.eventNames'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function eventNames(): Array<string | symbol>'
+      return:
+        description: ''
+        type: Array&lt;string | symbol&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
+  - name: getMaxListeners()
+    uid: '@microsoft/live-share.EphemeralEventScope.getMaxListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxListeners(): number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
+  - name: listenerCount(string | symbol)
+    uid: '@microsoft/live-share.EphemeralEventScope.listenerCount'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(event: string | symbol): number'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralEventScope.listeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
+  - name: rawListeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralEventScope.rawListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function rawListeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
+  - name: removeAllListeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralEventScope.removeAllListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function removeAllListeners(event?: string | symbol): this'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
+  - name: setMaxListeners(number)
+    uid: '@microsoft/live-share.EphemeralEventScope.setMaxListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setMaxListeners(n: number): this'
+      parameters:
+        - id: 'n'
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
+methods:
+  - name: 'offEvent<TEvent>(string, EphemeralEventListener<TEvent>)'
+    uid: '@microsoft/live-share.EphemeralEventScope.offEvent'
+    package: '@microsoft/live-share'
+    summary: Un-registers a listener for a named event.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function offEvent<TEvent>(eventName: string, listener:
+        EphemeralEventListener<TEvent>): this
+      parameters:
+        - id: eventName
+          type: string
+          description: Name of event to un-register.
+        - id: listener
+          type: >-
+            <xref uid="@microsoft/live-share.EphemeralEventListener"
+            />&lt;TEvent&gt;
+          description: |
+            Function that was originally passed to `onEvent()`.
+      return:
+        description: ''
+        type: this
+  - name: 'onEvent<TEvent>(string, EphemeralEventListener<TEvent>)'
+    uid: '@microsoft/live-share.EphemeralEventScope.onEvent'
+    package: '@microsoft/live-share'
+    summary: Registers a listener for a named event.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function onEvent<TEvent>(eventName: string, listener:
+        EphemeralEventListener<TEvent>): this
+      parameters:
+        - id: eventName
+          type: string
+          description: Name of event to listen for.
+        - id: listener
+          type: >-
+            <xref uid="@microsoft/live-share.EphemeralEventListener"
+            />&lt;TEvent&gt;
+          description: |
+            Function to call when the named event is sent or received.
+      return:
+        description: ''
+        type: this
+  - name: 'sendEvent<TEvent>(string, Partial<TEvent>)'
+    uid: '@microsoft/live-share.EphemeralEventScope.sendEvent'
+    package: '@microsoft/live-share'
+    summary: Sends an event to other event scope instances for the Fluid object.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendEvent<TEvent>(eventName: string, evt?: Partial<TEvent>):
+        TEvent
+      parameters:
+        - id: eventName
+          type: string
+          description: Name of the event to send.
+        - id: evt
+          type: Partial&lt;TEvent&gt;
+          description: |-
+            Optional. Partial event object to send. The `IEphemeralEvent.name`,
+            `IEphemeralEvent.timestamp`, and `IEphemeralEvent.clientId`
+            fields will be automatically populated prior to sending.
+      return:
+        description: >-
+          The full event, including `IEphemeralEvent.name`,
+
+          `IEphemeralEvent.timestamp`, and `IEphemeralEvent.clientId` fields if
+          known.
+        type: TEvent
+extends: TypedEventEmitter&lt;IErrorEvent&gt;

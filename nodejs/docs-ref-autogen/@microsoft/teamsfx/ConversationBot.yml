@@ -1,0 +1,200 @@
+### YamlMime:TSType
+name: ConversationBot
+uid: '@microsoft/teamsfx.ConversationBot'
+package: '@microsoft/teamsfx'
+summary: >+
+  Provide utilities for bot conversation, including:
+    - handle command and response.
+    - send notification to varies targets (e.g., member, group, channel).
+
+  **Example**
+
+
+  For command and response, you can register your commands through the
+  constructor, or use the `registerCommand` and `registerCommands` API to add
+  commands later.
+
+
+  ```typescript
+
+  // register through constructor
+
+  const conversationBot = new ConversationBot({
+    command: {
+      enabled: true,
+      commands: [ new HelloWorldCommandHandler() ],
+    },
+  });
+
+
+  // register through `register*` API
+
+  conversationBot.command.registerCommand(new HelpCommandHandler());
+
+  ```
+
+
+  For notification, you can enable notification at initialization, then send
+  notifications at any time.
+
+
+  ```typescript
+
+  // enable through constructor
+
+  const conversationBot = new ConversationBot({
+    notification: {
+      enabled: true,
+    },
+  });
+
+
+  // get all bot installations and send message
+
+  for (const target of await conversationBot.notification.installations()) {
+    await target.sendMessage("Hello Notification");
+  }
+
+
+  // alternative - send message to all members
+
+  for (const target of await conversationBot.notification.installations()) {
+    for (const member of await target.members()) {
+      await member.sendMessage("Hello Notification");
+    }
+  }
+
+  ```
+
+fullName: ConversationBot
+remarks: >-
+  Set `adapter` in <xref:@microsoft/teamsfx.ConversationOptions> to use your own
+  bot adapter.
+
+
+  For command and response, ensure each command should ONLY be registered with
+  the command once, otherwise it'll cause unexpected behavior if you register
+  the same command more than once.
+
+
+  For notification, set `notification.storage` in
+  <xref:@microsoft/teamsfx.ConversationOptions> to use your own storage
+  implementation.
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: ConversationBot(ConversationOptions)
+    uid: '@microsoft/teamsfx.ConversationBot.constructor'
+    package: '@microsoft/teamsfx'
+    summary: Creates new instance of the `ConversationBot`.
+    remarks: >-
+      It's recommended to create your own adapter and storage for production
+      environment instead of the default one.
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new ConversationBot(options: ConversationOptions)'
+      parameters:
+        - id: options
+          type: <xref uid="@microsoft/teamsfx.ConversationOptions" />
+          description: |
+            initialize options
+properties:
+  - name: adapter
+    uid: '@microsoft/teamsfx.ConversationBot.adapter'
+    package: '@microsoft/teamsfx'
+    summary: The bot adapter.
+    fullName: adapter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'adapter: BotFrameworkAdapter'
+      return:
+        description: ''
+        type: BotFrameworkAdapter
+  - name: cardAction
+    uid: '@microsoft/teamsfx.ConversationBot.cardAction'
+    package: '@microsoft/teamsfx'
+    summary: The action handler used for adaptive card universal actions.
+    fullName: cardAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cardAction?: CardActionBot'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.CardActionBot" />
+  - name: command
+    uid: '@microsoft/teamsfx.ConversationBot.command'
+    package: '@microsoft/teamsfx'
+    summary: The entrypoint of command and response.
+    fullName: command
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'command?: CommandBot'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.CommandBot" />
+  - name: notification
+    uid: '@microsoft/teamsfx.ConversationBot.notification'
+    package: '@microsoft/teamsfx'
+    summary: The entrypoint of notification.
+    fullName: notification
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'notification?: NotificationBot'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.NotificationBot" />
+methods:
+  - name: >-
+      requestHandler(WebRequest, WebResponse, (context: TurnContext) =>
+      Promise<any>)
+    uid: '@microsoft/teamsfx.ConversationBot.requestHandler'
+    package: '@microsoft/teamsfx'
+    summary: |+
+      The request handler to integrate with web request.
+
+      **Example**
+
+      For example, to use with Restify:
+      ``` typescript
+      // The default/empty behavior
+      server.post("api/messages", conversationBot.requestHandler);
+
+      // Or, add your own logic
+      server.post("api/messages", async (req, res) => {
+        await conversationBot.requestHandler(req, res, async (context) => {
+          // your-own-context-logic
+        });
+      });
+      ```
+
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function requestHandler(req: WebRequest, res: WebResponse, logic?:
+        (context: TurnContext) => Promise<any>): Promise<void>
+      parameters:
+        - id: req
+          type: WebRequest
+          description: an Express or Restify style request object.
+        - id: res
+          type: WebResponse
+          description: an Express or Restify style response object.
+        - id: logic
+          type: '(context: TurnContext) =&gt; Promise&lt;any&gt;'
+          description: |
+            the additional function to handle bot context.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
