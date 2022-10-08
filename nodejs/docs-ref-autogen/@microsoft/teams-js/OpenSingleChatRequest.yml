@@ -40,5 +40,6 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: >-
-      <b>Inherited From</b> OpenChatRequest.message)
+      <b>Inherited From</b>
+      [OpenChatRequest.message](xref:@microsoft/teams-js.OpenChatRequest.message)
 extends: <xref uid="@microsoft/teams-js.OpenChatRequest" />

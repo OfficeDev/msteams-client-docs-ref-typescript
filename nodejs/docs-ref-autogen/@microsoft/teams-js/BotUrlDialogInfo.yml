@@ -47,7 +47,8 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: >-
-      <b>Inherited From</b> UrlDialogInfo.fallbackUrl
+      <b>Inherited From</b>
+      [UrlDialogInfo.fallbackUrl](xref:@microsoft/teams-js.UrlDialogInfo.fallbackUrl)
   - name: size
     uid: '@microsoft/teams-js.BotUrlDialogInfo.size'
     package: '@microsoft/teams-js'
@@ -62,7 +63,8 @@ inheritedProperties:
         description: ''
         type: <xref uid="@microsoft/teams-js.DialogSize" />
     inheritanceDescription: >-
-      <b>Inherited From</b> UrlDialogInfo.size
+      <b>Inherited From</b>
+      [UrlDialogInfo.size](xref:@microsoft/teams-js.UrlDialogInfo.size)
   - name: title
     uid: '@microsoft/teams-js.BotUrlDialogInfo.title'
     package: '@microsoft/teams-js'
@@ -77,7 +79,8 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: >-
-      <b>Inherited From</b> UrlDialogInfo.title
+      <b>Inherited From</b>
+      [UrlDialogInfo.title](xref:@microsoft/teams-js.UrlDialogInfo.title)
   - name: url
     uid: '@microsoft/teams-js.BotUrlDialogInfo.url'
     package: '@microsoft/teams-js'
@@ -94,5 +97,6 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: >-
-      <b>Inherited From</b> UrlDialogInfo.url
+      <b>Inherited From</b>
+      [UrlDialogInfo.url](xref:@microsoft/teams-js.UrlDialogInfo.url)
 extends: <xref uid="@microsoft/teams-js.UrlDialogInfo" />

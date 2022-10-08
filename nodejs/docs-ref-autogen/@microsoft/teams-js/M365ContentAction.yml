@@ -54,7 +54,8 @@ inheritedProperties:
         description: ''
         type: <xref uid="@microsoft/teams-js.ActionObjectType.M365Content" />
     inheritanceDescription: >-
-      <b>Inherited From</b> BaseActionObject.type
+      <b>Inherited From</b>
+      [BaseActionObject.type](xref:@microsoft/teams-js.BaseActionObject.type)
 extends: >-
   <xref uid="@microsoft/teams-js.BaseActionObject" />&lt;<xref
   uid="@microsoft/teams-js.ActionObjectType.M365Content" />&gt;

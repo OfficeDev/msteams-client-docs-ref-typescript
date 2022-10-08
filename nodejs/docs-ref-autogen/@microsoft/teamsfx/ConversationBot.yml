@@ -114,6 +114,19 @@ properties:
       return:
         description: ''
         type: BotFrameworkAdapter
+  - name: cardAction
+    uid: '@microsoft/teamsfx.ConversationBot.cardAction'
+    package: '@microsoft/teamsfx'
+    summary: The action handler used for adaptive card universal actions.
+    fullName: cardAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cardAction?: CardActionBot'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.CardActionBot" />
   - name: command
     uid: '@microsoft/teamsfx.ConversationBot.command'
     package: '@microsoft/teamsfx'
@@ -142,7 +155,7 @@ properties:
         type: <xref uid="@microsoft/teamsfx.NotificationBot" />
 methods:
   - name: >-
-      requestHandler(WebRequest, WebResponse, (context: TurnContext_2) =>
+      requestHandler(WebRequest, WebResponse, (context: TurnContext) =>
       Promise<any>)
     uid: '@microsoft/teamsfx.ConversationBot.requestHandler'
     package: '@microsoft/teamsfx'
@@ -170,7 +183,7 @@ methods:
     syntax:
       content: >-
         function requestHandler(req: WebRequest, res: WebResponse, logic?:
-        (context: TurnContext_2) => Promise<any>): Promise<void>
+        (context: TurnContext) => Promise<any>): Promise<void>
       parameters:
         - id: req
           type: WebRequest
@@ -179,7 +192,7 @@ methods:
           type: WebResponse
           description: an Express or Restify style response object.
         - id: logic
-          type: '(context: TurnContext_2) =&gt; Promise&lt;any&gt;'
+          type: '(context: TurnContext) =&gt; Promise&lt;any&gt;'
           description: |
             the additional function to handle bot context.
       return:

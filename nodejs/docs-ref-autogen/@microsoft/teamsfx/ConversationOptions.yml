@@ -47,6 +47,21 @@ properties:
       return:
         description: ''
         type: '[key: string]\: unknown'
+  - name: cardAction
+    uid: '@microsoft/teamsfx.ConversationOptions.cardAction'
+    package: '@microsoft/teamsfx'
+    summary: The adaptive card action handler part.
+    fullName: cardAction
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'cardAction?: CardActionOptions & { enabled?: boolean }'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/teamsfx.CardActionOptions" /> & { enabled?:
+          boolean }
   - name: command
     uid: '@microsoft/teamsfx.ConversationOptions.command'
     package: '@microsoft/teamsfx'
@@ -77,3 +92,16 @@ properties:
         type: >-
           <xref uid="@microsoft/teamsfx.NotificationOptions_2" /> & { enabled?:
           boolean }
+  - name: ssoConfig
+    uid: '@microsoft/teamsfx.ConversationOptions.ssoConfig'
+    package: '@microsoft/teamsfx'
+    summary: Configurations for sso command bot
+    fullName: ssoConfig
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ssoConfig?: BotSsoConfig'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.BotSsoConfig" />

@@ -12,7 +12,9 @@ isPreview: false
 isDeprecated: false
 type: class
 constructors:
-  - name: 'CommandBot(BotFrameworkAdapter, CommandOptions)'
+  - name: >-
+      CommandBot(BotFrameworkAdapter, CommandOptions,
+      BotSsoExecutionActivityHandler, BotSsoConfig)
     uid: '@microsoft/teamsfx.CommandBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Creates a new instance of the `CommandBot`.
@@ -20,7 +22,10 @@ constructors:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'new CommandBot(adapter: BotFrameworkAdapter, options?: CommandOptions)'
+      content: >-
+        new CommandBot(adapter: BotFrameworkAdapter, options?: CommandOptions,
+        ssoCommandActivityHandler?: BotSsoExecutionActivityHandler, ssoConfig?:
+        BotSsoConfig)
       parameters:
         - id: adapter
           type: BotFrameworkAdapter
@@ -29,6 +34,12 @@ constructors:
           type: <xref uid="@microsoft/teamsfx.CommandOptions" />
           description: |
             initialize options
+        - id: ssoCommandActivityHandler
+          type: <xref uid="@microsoft/teamsfx.BotSsoExecutionActivityHandler" />
+          description: ''
+        - id: ssoConfig
+          type: <xref uid="@microsoft/teamsfx.BotSsoConfig" />
+          description: ''
 methods:
   - name: registerCommand(TeamsFxBotCommandHandler)
     uid: '@microsoft/teamsfx.CommandBot.registerCommand'
@@ -43,7 +54,7 @@ methods:
         - id: command
           type: <xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />
           description: |
-            The command to registered.
+            The command to register.
   - name: 'registerCommands(TeamsFxBotCommandHandler[])'
     uid: '@microsoft/teamsfx.CommandBot.registerCommands'
     package: '@microsoft/teamsfx'
@@ -57,4 +68,30 @@ methods:
         - id: commands
           type: '<xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />[]'
           description: |
-            The command to registered.
+            The commands to register.
+  - name: registerSsoCommand(TeamsFxBotSsoCommandHandler)
+    uid: '@microsoft/teamsfx.CommandBot.registerSsoCommand'
+    package: '@microsoft/teamsfx'
+    summary: Registers a sso command into the command bot.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function registerSsoCommand(ssoCommand: TeamsFxBotSsoCommandHandler)'
+      parameters:
+        - id: ssoCommand
+          type: <xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />
+          description: ''
+  - name: 'registerSsoCommands(TeamsFxBotSsoCommandHandler[])'
+    uid: '@microsoft/teamsfx.CommandBot.registerSsoCommands'
+    package: '@microsoft/teamsfx'
+    summary: Registers commands into the command bot.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function registerSsoCommands(ssoCommands: TeamsFxBotSsoCommandHandler[])'
+      parameters:
+        - id: ssoCommands
+          type: '<xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />[]'
+          description: ''

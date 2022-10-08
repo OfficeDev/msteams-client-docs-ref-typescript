@@ -1,0 +1,61 @@
+### YamlMime:TSType
+name: TeamsFxBotSsoCommandHandler
+uid: '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler'
+package: '@microsoft/teamsfx'
+summary: >-
+  Interface for a command handler that can process sso command to a TeamsFx bot
+  and return a response.
+fullName: TeamsFxBotSsoCommandHandler
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: triggerPatterns
+    uid: '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler.triggerPatterns'
+    package: '@microsoft/teamsfx'
+    summary: The string or regular expression patterns that can trigger this handler.
+    fullName: triggerPatterns
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'triggerPatterns: TriggerPatterns'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.TriggerPatterns" />
+methods:
+  - name: >-
+      handleCommandReceived(TurnContext, CommandMessage,
+      TeamsBotSsoPromptTokenResponse)
+    uid: '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler.handleCommandReceived'
+    package: '@microsoft/teamsfx'
+    summary: Handles a bot command received activity.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handleCommandReceived(context: TurnContext, message:
+        CommandMessage, tokenResponse: TeamsBotSsoPromptTokenResponse):
+        Promise<string | Partial<Activity> | void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The bot context.
+        - id: message
+          type: <xref uid="@microsoft/teamsfx.CommandMessage" />
+          description: The command message the user types from Teams.
+        - id: tokenResponse
+          type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse" />
+          description: >-
+            The tokenResponse which contains sso token that can be used to
+            exchange access token for the bot.
+      return:
+        description: >-
+          A `Promise` representing an activity or text to send as the command
+          response.
+
+          Or no return value if developers want to send the response activity by
+          themselves in this method.
+        type: Promise&lt;string | Partial&lt;Activity&gt; | void&gt;

@@ -26,7 +26,7 @@ functions:
     package: '@microsoft/teams-js'
     summary: >-
       Navigates back in the hosted application. See
-      <xref:@microsoft/teams-js.pages.backStack.registerBackButtonHandler> for notes on usage.
+      <xref:pages.backStack.registerBackButtonHandler> for notes on usage.
     remarks: ''
     isPreview: false
     isDeprecated: false

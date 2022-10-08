@@ -12,6 +12,10 @@ fields:
     uid: '@microsoft/teamsfx.ErrorCode.AuthorizationInfoAlreadyExists'
     package: '@microsoft/teamsfx'
     summary: Authentication info already exists error.
+  - name: CannotFindCommand
+    uid: '@microsoft/teamsfx.ErrorCode.CannotFindCommand'
+    package: '@microsoft/teamsfx'
+    summary: Cannot find command
   - name: ChannelNotSupported
     uid: '@microsoft/teamsfx.ErrorCode.ChannelNotSupported'
     package: '@microsoft/teamsfx'
@@ -24,6 +28,22 @@ fields:
     uid: '@microsoft/teamsfx.ErrorCode.FailedOperation'
     package: '@microsoft/teamsfx'
     summary: Operation failed.
+  - name: FailedToProcessSsoHandler
+    uid: '@microsoft/teamsfx.ErrorCode.FailedToProcessSsoHandler'
+    package: '@microsoft/teamsfx'
+    summary: Failed to process sso handler
+  - name: FailedToRetrieveSsoToken
+    uid: '@microsoft/teamsfx.ErrorCode.FailedToRetrieveSsoToken'
+    package: '@microsoft/teamsfx'
+    summary: Failed to retrieve sso token
+  - name: FailedToRunDedupStep
+    uid: '@microsoft/teamsfx.ErrorCode.FailedToRunDedupStep'
+    package: '@microsoft/teamsfx'
+    summary: Failed to run dedup step
+  - name: FailedToRunSsoStep
+    uid: '@microsoft/teamsfx.ErrorCode.FailedToRunSsoStep'
+    package: '@microsoft/teamsfx'
+    summary: Failed to run sso step
   - name: IdentityTypeNotSupported
     uid: '@microsoft/teamsfx.ErrorCode.IdentityTypeNotSupported'
     package: '@microsoft/teamsfx'
@@ -56,6 +76,10 @@ fields:
     uid: '@microsoft/teamsfx.ErrorCode.ServiceError'
     package: '@microsoft/teamsfx'
     summary: Call service (AAD or simple authentication server) failed.
+  - name: SsoActivityHandlerIsUndefined
+    uid: '@microsoft/teamsfx.ErrorCode.SsoActivityHandlerIsUndefined'
+    package: '@microsoft/teamsfx'
+    summary: Sso activity handler is undefined
   - name: TokenExpiredError
     uid: '@microsoft/teamsfx.ErrorCode.TokenExpiredError'
     package: '@microsoft/teamsfx'

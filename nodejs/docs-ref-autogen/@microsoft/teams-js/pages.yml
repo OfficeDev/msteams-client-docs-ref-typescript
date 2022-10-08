@@ -18,7 +18,9 @@ functions:
     syntax:
       content: 'function getConfig(): Promise<InstanceConfig>'
       return:
-        description: 'Promise that resolves with the [InstanceConfig](xref:@microsoft/teams-js.pages.InstanceConfig) object.'
+        description: >-
+          Promise that resolves with the
+          <xref:@microsoft/teams-js.pages.InstanceConfig> object.
         type: Promise&lt;<xref uid="@microsoft/teams-js.pages.InstanceConfig" />&gt;
   - name: 'initializeWithFrameContext(FrameInfo, () => void, string[])'
     uid: '@microsoft/teams-js.pages.initializeWithFrameContext'

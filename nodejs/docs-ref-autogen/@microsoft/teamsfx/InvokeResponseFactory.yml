@@ -1,0 +1,146 @@
+### YamlMime:TSType
+name: InvokeResponseFactory
+uid: '@microsoft/teamsfx.InvokeResponseFactory'
+package: '@microsoft/teamsfx'
+summary: >-
+  Provides methods for formatting various invoke responses a bot can send to
+  respond to an invoke request.
+fullName: InvokeResponseFactory
+remarks: >-
+  All of these functions return an
+  <xref:@microsoft/teamsfx.InvokeResponseFactory.createInvokeResponse> object,
+  which can be
+
+  passed as input to generate a new `invokeResponse` activity.
+
+
+  This example sends an invoke response that contains an adaptive card.
+
+
+  ```typescript
+
+
+  const myCard = {
+     type: "AdaptiveCard",
+     body: [
+      {
+        "type": "TextBlock",
+        "text": "This is a sample card"
+      }],
+      $schema: "http://adaptivecards.io/schemas/adaptive-card.json",
+      version: "1.4"
+   };
+
+  const invokeResponse = InvokeResponseFactory.adaptiveCard(myCard);
+
+  await context.sendActivity({
+     type: ActivityTypes.InvokeResponse,
+     value: invokeResponse,
+   });
+  ```
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: adaptiveCard(unknown)
+    uid: '@microsoft/teamsfx.InvokeResponseFactory.adaptiveCard'
+    package: '@microsoft/teamsfx'
+    summary: >
+      Create an invoke response from an adaptive card.
+
+      The type of the invoke response is
+      `application/vnd.microsoft.card.adaptive` indicates
+
+      the request was successfully processed, and the response includes an
+      adaptive card
+
+      that the client should display in place of the current one.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function adaptiveCard(card: unknown): InvokeResponse'
+      parameters:
+        - id: card
+          type: unknown
+          description: |
+            The adaptive card JSON payload.
+      return:
+        description: An InvokeResponse object.
+        type: InvokeResponse
+  - name: 'createInvokeResponse(StatusCodes, unknown)'
+    uid: '@microsoft/teamsfx.InvokeResponseFactory.createInvokeResponse'
+    package: '@microsoft/teamsfx'
+    summary: Create an invoke response with status code and response value.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createInvokeResponse(statusCode: StatusCodes, body?:
+        unknown): InvokeResponse
+      parameters:
+        - id: statusCode
+          type: StatusCodes
+          description: The status code.
+        - id: body
+          type: unknown
+          description: |
+            The value of the response body.
+      return:
+        description: An InvokeResponse object.
+        type: InvokeResponse
+  - name: 'errorResponse(InvokeResponseErrorCode, string)'
+    uid: '@microsoft/teamsfx.InvokeResponseFactory.errorResponse'
+    package: '@microsoft/teamsfx'
+    summary: >
+      Create an invoke response with error code and message.
+
+      The type of the invoke response is `application/vnd.microsoft.error`
+      indicates
+
+      the request was failed to processed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function errorResponse(errorCode: InvokeResponseErrorCode,
+        errorMessage: string): InvokeResponse
+      parameters:
+        - id: errorCode
+          type: <xref uid="@microsoft/teamsfx.InvokeResponseErrorCode" />
+          description: |-
+            The status code indicates error, available values:
+             - 400 (BadRequest): indicate the incoming request was invalid.
+             - 500 (InternalServerError): indicate an unexpected error occurred.
+        - id: errorMessage
+          type: string
+          description: |
+            The error message.
+      return:
+        description: An InvokeResponse object.
+        type: InvokeResponse
+  - name: textMessage(string)
+    uid: '@microsoft/teamsfx.InvokeResponseFactory.textMessage'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Create an invoke response from a text message.
+
+      The type of the invoke response is
+      `application/vnd.microsoft.activity.message`
+
+      indicates the request was successfully processed.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static function textMessage(message: string): InvokeResponse'
+      parameters:
+        - id: message
+          type: string
+          description: |
+            A text message included in a invoke response.
+      return:
+        description: An InvokeResponse object.
+        type: InvokeResponse

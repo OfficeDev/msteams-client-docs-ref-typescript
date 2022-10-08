@@ -60,7 +60,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: '<b>Inherited From</b> File.content'
+    inheritanceDescription: '<b>Inherited From</b> [File.content](xref:File.content)'
   - name: format
     uid: '@microsoft/teams-js.media.Media.format'
     package: '@microsoft/teams-js'
@@ -74,7 +74,7 @@ inheritedProperties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.media.FileFormat" />
-    inheritanceDescription: '<b>Inherited From</b> File.format'
+    inheritanceDescription: '<b>Inherited From</b> [File.format](xref:File.format)'
   - name: mimeType
     uid: '@microsoft/teams-js.media.Media.mimeType'
     package: '@microsoft/teams-js'
@@ -88,7 +88,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: '<b>Inherited From</b> File.mimeType'
+    inheritanceDescription: '<b>Inherited From</b> [File.mimeType](xref:File.mimeType)'
   - name: name
     uid: '@microsoft/teams-js.media.Media.name'
     package: '@microsoft/teams-js'
@@ -102,7 +102,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: '<b>Inherited From</b> File.name'
+    inheritanceDescription: '<b>Inherited From</b> [File.name](xref:File.name)'
   - name: size
     uid: '@microsoft/teams-js.media.Media.size'
     package: '@microsoft/teams-js'
@@ -116,7 +116,7 @@ inheritedProperties:
       return:
         description: ''
         type: number
-    inheritanceDescription: '<b>Inherited From</b> File.size'
+    inheritanceDescription: '<b>Inherited From</b> [File.size](xref:File.size)'
 methods:
   - name: 'getMedia((error: SdkError, blob: Blob) => void)'
     uid: '@microsoft/teams-js.media.Media.getMedia'

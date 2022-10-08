@@ -102,6 +102,20 @@ methods:
           an array of channels if bot is installed into a team, otherwise
           returns an empty array.
         type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Channel" />[]&gt;'
+  - name: getTeamDetails()
+    uid: '@microsoft/teamsfx.TeamsBotInstallation.getTeamDetails'
+    package: '@microsoft/teamsfx'
+    summary: Get team details from this bot installation
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getTeamDetails(): Promise<TeamDetails | undefined>'
+      return:
+        description: >-
+          the team details if bot is installed into a team, otherwise returns
+          undefined.
+        type: Promise&lt;TeamDetails | undefined&gt;
   - name: members()
     uid: '@microsoft/teamsfx.TeamsBotInstallation.members'
     package: '@microsoft/teamsfx'
