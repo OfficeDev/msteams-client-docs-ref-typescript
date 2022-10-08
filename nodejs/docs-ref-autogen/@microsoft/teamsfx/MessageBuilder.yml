@@ -53,7 +53,7 @@ methods:
     syntax:
       content: >-
         static function attachAdaptiveCard<TData>(cardTemplate: unknown, data:
-        TData): Partial<Activity_2>
+        TData): Partial<Activity>
       parameters:
         - id: cardTemplate
           type: unknown
@@ -63,7 +63,7 @@ methods:
           description: card data used to render the template.
       return:
         description: A bot message activity attached with an adaptive card.
-        type: Partial&lt;Activity_2&gt;
+        type: Partial&lt;Activity&gt;
   - name: attachAdaptiveCardWithoutData(unknown)
     uid: '@microsoft/teamsfx.MessageBuilder.attachAdaptiveCardWithoutData'
     package: '@microsoft/teamsfx'
@@ -74,14 +74,14 @@ methods:
     syntax:
       content: >-
         static function attachAdaptiveCardWithoutData(card: unknown):
-        Partial<Activity_2>
+        Partial<Activity>
       parameters:
         - id: card
           type: unknown
           description: The adaptive card content.
       return:
         description: A bot message activity attached with an adaptive card.
-        type: Partial&lt;Activity_2&gt;
+        type: Partial&lt;Activity&gt;
   - name: attachContent(Attachment)
     uid: '@microsoft/teamsfx.MessageBuilder.attachContent'
     package: '@microsoft/teamsfx'
@@ -92,14 +92,14 @@ methods:
     syntax:
       content: >-
         static function attachContent(attachement: Attachment):
-        Partial<Activity_2>
+        Partial<Activity>
       parameters:
         - id: attachement
           type: Attachment
           description: The attachment object to attach.
       return:
         description: A message activity with an attachment.
-        type: Partial&lt;Activity_2&gt;
+        type: Partial&lt;Activity&gt;
   - name: >-
       attachHeroCard(string, string | CardImage[], string | CardAction[],
       Partial<HeroCard>)
@@ -125,7 +125,7 @@ methods:
       content: >-
         static function attachHeroCard(title: string, images?: string |
         CardImage[], buttons?: string | CardAction[], other?:
-        Partial<HeroCard>): Partial<Activity_2>
+        Partial<HeroCard>): Partial<Activity>
       parameters:
         - id: title
           type: string
@@ -145,7 +145,7 @@ methods:
             Optional. Any additional properties to include on the card.
       return:
         description: A bot message activity attached with a hero card.
-        type: Partial&lt;Activity_2&gt;
+        type: Partial&lt;Activity&gt;
   - name: attachO365ConnectorCard(O365ConnectorCard)
     uid: '@microsoft/teamsfx.MessageBuilder.attachO365ConnectorCard'
     package: '@microsoft/teamsfx'
@@ -156,14 +156,14 @@ methods:
     syntax:
       content: >-
         static function attachO365ConnectorCard(card: O365ConnectorCard):
-        Partial<Activity_2>
+        Partial<Activity>
       parameters:
         - id: card
           type: O365ConnectorCard
           description: A description of the Office 365 connector card.
       return:
         description: A bot message activity attached with an Office 365 connector card.
-        type: Partial&lt;Activity_2&gt;
+        type: Partial&lt;Activity&gt;
   - name: AttachReceiptCard(ReceiptCard)
     uid: '@microsoft/teamsfx.MessageBuilder.AttachReceiptCard'
     package: '@microsoft/teamsfx'
@@ -172,16 +172,14 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: >-
-        static function AttachReceiptCard(card: ReceiptCard):
-        Partial<Activity_2>
+      content: 'static function AttachReceiptCard(card: ReceiptCard): Partial<Activity>'
       parameters:
         - id: card
           type: ReceiptCard
           description: A description of the receipt card.
       return:
         description: A message activity attached with a receipt card.
-        type: Partial&lt;Activity_2&gt;
+        type: Partial&lt;Activity&gt;
   - name: 'attachSigninCard(string, string, string)'
     uid: '@microsoft/teamsfx.MessageBuilder.attachSigninCard'
     package: '@microsoft/teamsfx'
@@ -194,7 +192,7 @@ methods:
     syntax:
       content: >-
         static function attachSigninCard(title: string, url: string, text?:
-        string): Partial<Activity_2>
+        string): Partial<Activity>
       parameters:
         - id: title
           type: string
@@ -208,7 +206,7 @@ methods:
             Optional. Additional text to include on the card.
       return:
         description: A bot message activity attached with a sign-in card.
-        type: Partial&lt;Activity_2&gt;
+        type: Partial&lt;Activity&gt;
   - name: >-
       attachThumbnailCard(string, string | CardImage[], string | CardAction[],
       Partial<ThumbnailCard>)
@@ -222,7 +220,7 @@ methods:
       content: >-
         static function attachThumbnailCard(title: string, images?: string |
         CardImage[], buttons?: string | CardAction[], other?:
-        Partial<ThumbnailCard>): Partial<Activity_2>
+        Partial<ThumbnailCard>): Partial<Activity>
       parameters:
         - id: title
           type: string
@@ -241,4 +239,4 @@ methods:
           description: Optional. Any additional properties to include on the card.
       return:
         description: A message activity attached with a thumbnail card
-        type: Partial&lt;Activity_2&gt;
+        type: Partial&lt;Activity&gt;

@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: BotSsoExecutionDialogHandler
+uid: '@microsoft/teamsfx.BotSsoExecutionDialogHandler'
+package: '@microsoft/teamsfx'
+summary: ''
+fullName: BotSsoExecutionDialogHandler
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: |
+  type BotSsoExecutionDialogHandler = (
+    context: TurnContext,
+    tokenResponse: TeamsBotSsoPromptTokenResponse,
+    message: CommandMessage
+  ) => Promise<void>

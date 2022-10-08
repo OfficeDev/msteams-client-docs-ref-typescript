@@ -33,6 +33,125 @@ constructors:
           description: |
             initialize options
 methods:
+  - name: >-
+      findAllChannels((channel: Channel, teamDetails: TeamDetails | undefined)
+      => Promise<boolean>)
+    uid: '@microsoft/teamsfx.NotificationBot.findAllChannels'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Returns all <xref:@microsoft/teamsfx.Channel> where predicate is true, and
+      empty array otherwise.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function findAllChannels(predicate: (channel: Channel, teamDetails:
+        TeamDetails | undefined) => Promise<boolean>): Promise<Channel[]>
+      parameters:
+        - id: predicate
+          type: >-
+            (channel: Channel, teamDetails: TeamDetails | undefined) =&gt;
+            Promise&lt;boolean&gt;
+          description: find calls predicate for each channel of the installation.
+      return:
+        description: >-
+          an array of <xref:@microsoft/teamsfx.Channel> where predicate is true,
+          and empty array otherwise.
+        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Channel" />[]&gt;'
+  - name: 'findAllMembers((member: Member) => Promise<boolean>, SearchScope)'
+    uid: '@microsoft/teamsfx.NotificationBot.findAllMembers'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Returns all <xref:@microsoft/teamsfx.Member> where predicate is true, and
+      empty array otherwise.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function findAllMembers(predicate: (member: Member) => Promise<boolean>,
+        scope?: SearchScope): Promise<Member[]>
+      parameters:
+        - id: predicate
+          type: '(member: Member) =&gt; Promise&lt;boolean&gt;'
+          description: find calls predicate for each member of the installation.
+        - id: scope
+          type: <xref uid="@microsoft/teamsfx.SearchScope" />
+          description: |-
+            the scope to find members from the installations
+            (personal chat, group chat, Teams channel).
+      return:
+        description: >-
+          an array of <xref:@microsoft/teamsfx.Member> where predicate is true,
+          and empty array otherwise.
+        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Member" />[]&gt;'
+  - name: >-
+      findChannel((channel: Channel, teamDetails: TeamDetails | undefined) =>
+      Promise<boolean>)
+    uid: '@microsoft/teamsfx.NotificationBot.findChannel'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Returns the first <xref:@microsoft/teamsfx.Channel> where predicate is
+      true, and undefined otherwise.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function findChannel(predicate: (channel: Channel, teamDetails:
+        TeamDetails | undefined) => Promise<boolean>): Promise<Channel |
+        undefined>
+      parameters:
+        - id: predicate
+          type: >-
+            (channel: Channel, teamDetails: TeamDetails | undefined) =&gt;
+            Promise&lt;boolean&gt;
+          description: >-
+            find calls predicate once for each channel of the installation,
+
+            until it finds one where predicate returns true. If such a channel
+            is found, find
+
+            immediately returns that channel. Otherwise, find returns undefined.
+      return:
+        description: >-
+          the first <xref:@microsoft/teamsfx.Channel> where predicate is true,
+          and undefined otherwise.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.Channel" /> | undefined&gt;
+  - name: 'findMember((member: Member) => Promise<boolean>, SearchScope)'
+    uid: '@microsoft/teamsfx.NotificationBot.findMember'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Returns the first <xref:@microsoft/teamsfx.Member> where predicate is
+      true, and undefined otherwise.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function findMember(predicate: (member: Member) => Promise<boolean>,
+        scope?: SearchScope): Promise<Member | undefined>
+      parameters:
+        - id: predicate
+          type: '(member: Member) =&gt; Promise&lt;boolean&gt;'
+          description: >-
+            find calls predicate once for each member of the installation,
+
+            until it finds one where predicate returns true. If such a member is
+            found, find
+
+            immediately returns that member. Otherwise, find returns undefined.
+        - id: scope
+          type: <xref uid="@microsoft/teamsfx.SearchScope" />
+          description: |-
+            the scope to find members from the installations
+            (personal chat, group chat, Teams channel).
+      return:
+        description: >-
+          the first <xref:@microsoft/teamsfx.Member> where predicate is true,
+          and undefined otherwise.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.Member" /> | undefined&gt;
   - name: installations()
     uid: '@microsoft/teamsfx.NotificationBot.installations'
     package: '@microsoft/teamsfx'
@@ -43,7 +162,7 @@ methods:
     syntax:
       content: 'function installations(): Promise<TeamsBotInstallation[]>'
       return:
-        description: '- an array of TeamsBotInstallation.'
+        description: '- an array of <xref:@microsoft/teamsfx.TeamsBotInstallation>.'
         type: >-
           Promise&lt;<xref uid="@microsoft/teamsfx.TeamsBotInstallation"
           />[]&gt;

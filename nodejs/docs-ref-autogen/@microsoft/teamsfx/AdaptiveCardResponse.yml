@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: AdaptiveCardResponse
+uid: '@microsoft/teamsfx.AdaptiveCardResponse'
+package: '@microsoft/teamsfx'
+summary: Options used to control how the response card will be sent to users.
+fullName: AdaptiveCardResponse
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ReplaceForInteractor
+    uid: '@microsoft/teamsfx.AdaptiveCardResponse.ReplaceForInteractor'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      The response card will be replaced the current one for the interactor who
+      trigger the action.
+    numericValue: 0
+  - name: ReplaceForAll
+    uid: '@microsoft/teamsfx.AdaptiveCardResponse.ReplaceForAll'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      The response card will be replaced the current one for all users in the
+      chat.
+    numericValue: 1
+  - name: NewForAll
+    uid: '@microsoft/teamsfx.AdaptiveCardResponse.NewForAll'
+    package: '@microsoft/teamsfx'
+    summary: The response card will be sent as a new message for all users in the chat.
+    numericValue: 2

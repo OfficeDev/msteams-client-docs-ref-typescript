@@ -32,7 +32,8 @@ functions:
       Sets the height and width of the <xref:@microsoft/teams-js.TaskInfo>
       object to the original height and width, if initially specified,
 
-      otherwise uses the height and width values corresponding to [DialogDimension.Small](xref:@microsoft/teams-js.DialogDimension.Small)
+      otherwise uses the height and width values corresponding to [|
+      TaskModuleDimension.Small](xref:TaskModuleDimension)
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -78,7 +79,7 @@ functions:
 
       and [dialog.bot.open(botUrlDialogInfo: BotUrlDialogInfo, submitHandler?:
       DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel):
-      void](xref:@microsoft/teams-js.dialog.bot.open) for bot based dialogs. In Teams,
+      void](xref:dialog.bot.open) for bot based dialogs. In Teams,
 
       this function can be used for adaptive card based dialogs. Support for
       adaptive card based dialogs is coming to other hosts in the future.
@@ -135,7 +136,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [dialog.update.resize(dimensions: DialogSize):
-      void](xref:@microsoft/teams-js.dialog.update.resize) instead.
+      void](xref:dialog.update.resize) instead.
 
 
       Update height/width task info properties.

@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: CardActionBot
+uid: '@microsoft/teamsfx.CardActionBot'
+package: '@microsoft/teamsfx'
+summary: A card action bot to respond to adaptive card universal actions.
+fullName: CardActionBot
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'CardActionBot(BotFrameworkAdapter, CardActionOptions)'
+    uid: '@microsoft/teamsfx.CardActionBot.constructor'
+    package: '@microsoft/teamsfx'
+    summary: Creates a new instance of the `CardActionBot`.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new CardActionBot(adapter: BotFrameworkAdapter, options?:
+        CardActionOptions)
+      parameters:
+        - id: adapter
+          type: BotFrameworkAdapter
+          description: The bound `BotFrameworkAdapter`.
+        - id: options
+          type: <xref uid="@microsoft/teamsfx.CardActionOptions" />
+          description: |
+            initialize options
+methods:
+  - name: registerHandler(TeamsFxAdaptiveCardActionHandler)
+    uid: '@microsoft/teamsfx.CardActionBot.registerHandler'
+    package: '@microsoft/teamsfx'
+    summary: Registers a card action handler to the bot.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerHandler(actionHandler:
+        TeamsFxAdaptiveCardActionHandler)
+      parameters:
+        - id: actionHandler
+          type: <xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />
+          description: |
+            A card action handler to be registered.
+  - name: 'registerHandlers(TeamsFxAdaptiveCardActionHandler[])'
+    uid: '@microsoft/teamsfx.CardActionBot.registerHandlers'
+    package: '@microsoft/teamsfx'
+    summary: Registers card action handlers to the bot.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerHandlers(actionHandlers:
+        TeamsFxAdaptiveCardActionHandler[])
+      parameters:
+        - id: actionHandlers
+          type: '<xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />[]'
+          description: |
+            A set of card action handlers to be registered.
