@@ -55,6 +55,7 @@ interfaces:
   - '@microsoft/teams-js.pages.config.RemoveEvent'
   - '@microsoft/teams-js.pages.config.SaveEvent'
   - '@microsoft/teams-js.pages.config.SaveParameters'
+  - '@microsoft/teams-js.pages.currentApp.NavigateWithinAppParams'
   - '@microsoft/teams-js.pages.InstanceConfig'
   - '@microsoft/teams-js.pages.NavigateToAppParams'
   - '@microsoft/teams-js.people.PeoplePickerInputs'

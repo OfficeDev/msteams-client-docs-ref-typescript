@@ -553,6 +553,13 @@
             - uid: '@microsoft/teams-js.pages.config.SaveParameters'
               name: SaveParameters
               items: []
+        - name: currentApp
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.pages.currentApp'
+            - uid: '@microsoft/teams-js.pages.currentApp.NavigateWithinAppParams'
+              name: NavigateWithinAppParams
+              items: []
         - uid: '@microsoft/teams-js.pages.InstanceConfig'
           name: InstanceConfig
           items: []
