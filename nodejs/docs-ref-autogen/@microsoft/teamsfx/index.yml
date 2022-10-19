@@ -280,7 +280,9 @@ functions:
           A MessageExtension Response for the activity. If the logic not return
           any, return void instead.
         type: Promise&lt;MessagingExtensionResponse | void&gt;
-  - name: 'sendAdaptiveCard(NotificationTarget, unknown)'
+  - name: >-
+      sendAdaptiveCard(NotificationTarget, unknown, (context: TurnContext,
+      error: Error) => Promise<void>)
     uid: '@microsoft/teamsfx.sendAdaptiveCard'
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message to a notification target.
@@ -289,7 +291,8 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function sendAdaptiveCard(target: NotificationTarget, card: unknown):
+        function sendAdaptiveCard(target: NotificationTarget, card: unknown,
+        onError?: (context: TurnContext, error: Error) => Promise<void>):
         Promise<MessageResponse>
       parameters:
         - id: target
@@ -298,10 +301,19 @@ functions:
         - id: card
           type: unknown
           description: the adaptive card raw JSON.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >-
+            an optional error handler that can catch exceptions during adaptive
+            card sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending adaptive card message.
         type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
-  - name: 'sendMessage(NotificationTarget, string)'
+  - name: >-
+      sendMessage(NotificationTarget, string, (context: TurnContext, error:
+      Error) => Promise<void>)
     uid: '@microsoft/teamsfx.sendMessage'
     package: '@microsoft/teamsfx'
     summary: Send a plain text message to a notification target.
@@ -310,7 +322,8 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function sendMessage(target: NotificationTarget, text: string):
+        function sendMessage(target: NotificationTarget, text: string, onError?:
+        (context: TurnContext, error: Error) => Promise<void>):
         Promise<MessageResponse>
       parameters:
         - id: target
@@ -319,6 +332,13 @@ functions:
         - id: text
           type: string
           description: the plain text message.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >-
+            an optional error handler that can catch exceptions during message
+            sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending message.
         type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;

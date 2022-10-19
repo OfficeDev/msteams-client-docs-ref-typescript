@@ -41,6 +41,9 @@ methods:
     summary: >-
       Returns all <xref:@microsoft/teamsfx.Channel> where predicate is true, and
       empty array otherwise.
+
+      (Ensure the bot app is installed into the `General` channel, otherwise
+      empty array will be returned.)
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -94,6 +97,9 @@ methods:
     summary: >-
       Returns the first <xref:@microsoft/teamsfx.Channel> where predicate is
       true, and undefined otherwise.
+
+      (Ensure the bot app is installed into the `General` channel, otherwise
+      undefined will be returned.)
     remarks: ''
     isPreview: false
     isDeprecated: false

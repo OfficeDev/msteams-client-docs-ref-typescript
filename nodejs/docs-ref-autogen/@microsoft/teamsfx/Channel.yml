@@ -73,7 +73,9 @@ properties:
         description: ''
         type: <xref uid="@microsoft/teamsfx.NotificationTargetType" />
 methods:
-  - name: sendAdaptiveCard(unknown)
+  - name: >-
+      sendAdaptiveCard(unknown, (context: TurnContext, error: Error) =>
+      Promise<void>)
     uid: '@microsoft/teamsfx.Channel.sendAdaptiveCard'
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message.
@@ -81,15 +83,24 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function sendAdaptiveCard(card: unknown): Promise<MessageResponse>'
+      content: >-
+        function sendAdaptiveCard(card: unknown, onError?: (context:
+        TurnContext, error: Error) => Promise<void>): Promise<MessageResponse>
       parameters:
         - id: card
           type: unknown
           description: the adaptive card raw JSON.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >-
+            an optional error handler that can catch exceptions during adaptive
+            card sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending adaptive card message.
         type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
-  - name: sendMessage(string)
+  - name: 'sendMessage(string, (context: TurnContext, error: Error) => Promise<void>)'
     uid: '@microsoft/teamsfx.Channel.sendMessage'
     package: '@microsoft/teamsfx'
     summary: Send a plain text message.
@@ -97,11 +108,20 @@ methods:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'function sendMessage(text: string): Promise<MessageResponse>'
+      content: >-
+        function sendMessage(text: string, onError?: (context: TurnContext,
+        error: Error) => Promise<void>): Promise<MessageResponse>
       parameters:
         - id: text
           type: string
           description: the plain text message.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >-
+            an optional error handler that can catch exceptions during message
+            sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending message.
         type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
