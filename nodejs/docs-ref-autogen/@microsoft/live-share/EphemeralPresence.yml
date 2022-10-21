@@ -364,9 +364,9 @@ inheritedMethods:
     uid: '@microsoft/live-share.EphemeralPresence.finishInitialization'
     package: '@microsoft/live-share'
     summary: >-
-      Call this API to ensure PureDataObject is fully initialized
+      Call this API to ensure PureDataObject is fully initialized.
 
-      initialization happens on demand, only on as-needed bases.
+      Initialization happens on demand, only on as-needed bases.
 
       In most cases you should allow factory/object to decide when to finish
       initialization.
@@ -374,7 +374,7 @@ inheritedMethods:
       But if you are supplying your own implementation of DataStoreRuntime
       factory and overriding some methods
 
-      and need fully initialized object, then you can call this API to ensure
+      and need a fully initialized object, then you can call this API to ensure
       object is fully initialized.
     remarks: ''
     isPreview: false
