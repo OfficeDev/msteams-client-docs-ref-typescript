@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: BrushTipShape
+uid: '@microsoft/live-share-canvas.BrushTipShape'
+package: '@microsoft/live-share-canvas'
+summary: Defines the shape of a brush's tip.
+fullName: BrushTipShape
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: |
+  type BrushTipShape = "ellipse" | "rectangle"

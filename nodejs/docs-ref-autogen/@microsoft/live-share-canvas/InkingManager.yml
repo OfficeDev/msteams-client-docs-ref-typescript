@@ -1,0 +1,964 @@
+### YamlMime:TSType
+name: InkingManager
+uid: '@microsoft/live-share-canvas.InkingManager'
+package: '@microsoft/live-share-canvas'
+summary: >-
+  Handles user interaction with a canvas, and manages the rendering of wet and
+  dry strokes.
+fullName: InkingManager
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: InkingManager(HTMLElement)
+    uid: '@microsoft/live-share-canvas.InkingManager.constructor'
+    package: '@microsoft/live-share-canvas'
+    summary: Creates a new InkingManager instance.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new InkingManager(hostElement: HTMLElement)'
+      parameters:
+        - id: hostElement
+          type: HTMLElement
+          description: >
+            The HTML element to host the canvases and other DOM elements handled
+            by
+
+            the InkingManager instance. `hostElement` shouldn't have any
+            children. The
+
+            InkingManager instance might change its attributes, including its
+            style.
+properties:
+  - name: centerX
+    uid: '@microsoft/live-share-canvas.InkingManager.centerX'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the horizontal center of the inking surface.
+    fullName: centerX
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number centerX
+      return:
+        description: ''
+        type: number
+  - name: centerY
+    uid: '@microsoft/live-share-canvas.InkingManager.centerY'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the vertical center of the inking surface.
+    fullName: centerY
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number centerY
+      return:
+        description: ''
+        type: number
+  - name: clientHeight
+    uid: '@microsoft/live-share-canvas.InkingManager.clientHeight'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the client (screen) height of the inking surface.
+    fullName: clientHeight
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number clientHeight
+      return:
+        description: ''
+        type: number
+  - name: clientWidth
+    uid: '@microsoft/live-share-canvas.InkingManager.clientWidth'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the client (screen) width of the inking surface.
+    fullName: clientWidth
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number clientWidth
+      return:
+        description: ''
+        type: number
+  - name: enableStrokeModifierHotKeys
+    uid: '@microsoft/live-share-canvas.InkingManager.enableStrokeModifierHotKeys'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Configures whether the Ctrl, Shift and Alt keys can be used to alter the
+      way strokes
+
+      are drawn using various tools.
+    fullName: enableStrokeModifierHotKeys
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static enableStrokeModifierHotKeys: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: ephemeralCanvasRemovalDelay
+    uid: '@microsoft/live-share-canvas.InkingManager.ephemeralCanvasRemovalDelay'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Configures the amount of time an ephemeral canvas (i.e. a canvas that
+      renders ephemeral
+
+      strokes) remains ready for new strokes before being faded out and removed.
+    fullName: ephemeralCanvasRemovalDelay
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static ephemeralCanvasRemovalDelay: number'
+      return:
+        description: ''
+        type: number
+  - name: eraserSize
+    uid: '@microsoft/live-share-canvas.InkingManager.eraserSize'
+    package: '@microsoft/live-share-canvas'
+    summary: The size of the eraser.
+    fullName: eraserSize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'eraserSize: number'
+      return:
+        description: ''
+        type: number
+  - name: highlighterBrush
+    uid: '@microsoft/live-share-canvas.InkingManager.highlighterBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the highlighter brush.
+      Sets the highlighter brush.
+    fullName: highlighterBrush
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IBrush highlighterBrush
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: hostElement
+    uid: '@microsoft/live-share-canvas.InkingManager.hostElement'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the DOM element that hosts the inking surface.
+    fullName: hostElement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: HTMLElement hostElement
+      return:
+        description: ''
+        type: HTMLElement
+  - name: inputProvider
+    uid: '@microsoft/live-share-canvas.InkingManager.inputProvider'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the input provider object the inking surface receives
+      pointer events from.
+      Sets the input provider object the inking surface receives
+      pointer events from.
+    fullName: inputProvider
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: InputProvider inputProvider
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.InputProvider" />
+  - name: laserPointerBrush
+    uid: '@microsoft/live-share-canvas.InkingManager.laserPointerBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the laser pointer brush.
+      Sets the laser pointer brush.
+    fullName: laserPointerBrush
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IBrush laserPointerBrush
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: lineBrush
+    uid: '@microsoft/live-share-canvas.InkingManager.lineBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the line brush.
+      Sets the line brush.
+    fullName: lineBrush
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IBrush lineBrush
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: localClientId
+    uid: '@microsoft/live-share-canvas.InkingManager.localClientId'
+    package: '@microsoft/live-share-canvas'
+    summary: The default client Id of the device running the application.
+    fullName: localClientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static localClientId: string'
+      return:
+        description: ''
+        type: string
+  - name: offset
+    uid: '@microsoft/live-share-canvas.InkingManager.offset'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the viewport offset. Defaults to 0,0.
+      Sets the viewport offset.
+    fullName: offset
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: Readonly<IPoint> offset
+      return:
+        description: ''
+        type: Readonly&lt;<xref uid="@microsoft/live-share-canvas.IPoint" />&gt;
+  - name: penBrush
+    uid: '@microsoft/live-share-canvas.InkingManager.penBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the pen brush.
+      Sets the pen brush.
+    fullName: penBrush
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IBrush penBrush
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: referencePoint
+    uid: '@microsoft/live-share-canvas.InkingManager.referencePoint'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the reference point. Defaults to "center".
+      Sets the reference point.
+    fullName: referencePoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: CanvasReferencePoint referencePoint
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.CanvasReferencePoint" />
+  - name: scale
+    uid: '@microsoft/live-share-canvas.InkingManager.scale'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the scale. Defaults to 1.
+      Sets the scale. Value must be greatwer than 0.
+    fullName: scale
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number scale
+      return:
+        description: ''
+        type: number
+  - name: tool
+    uid: '@microsoft/live-share-canvas.InkingManager.tool'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the current tool. Defaults to `InkingTool.Pen`.
+      Sets the current tool.
+    fullName: tool
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: InkingTool tool
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.InkingTool" />
+  - name: viewPort
+    uid: '@microsoft/live-share-canvas.InkingManager.viewPort'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets inking surface's viewport, according to the current
+      reference point, scale and offset.
+    fullName: viewPort
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IRect viewPort
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IRect" />
+inheritedProperties:
+  - name: captureRejections
+    uid: '@microsoft/live-share-canvas.InkingManager.captureRejections'
+    package: '@microsoft/live-share-canvas'
+    summary: Sets or gets the default captureRejection value for all emitters.
+    fullName: captureRejections
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejections: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.captureRejections
+  - name: captureRejectionSymbol
+    uid: '@microsoft/live-share-canvas.InkingManager.captureRejectionSymbol'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: captureRejectionSymbol
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejectionSymbol: Object'
+      return:
+        description: ''
+        type: Object
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.captureRejectionSymbol
+  - name: defaultMaxListeners
+    uid: '@microsoft/live-share-canvas.InkingManager.defaultMaxListeners'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: defaultMaxListeners
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static defaultMaxListeners: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.defaultMaxListeners
+  - name: errorMonitor
+    uid: '@microsoft/live-share-canvas.InkingManager.errorMonitor'
+    package: '@microsoft/live-share-canvas'
+    summary: >
+      This symbol shall be used to install a listener for only monitoring
+      `'error'`
+
+      events. Listeners installed using this symbol are called before the
+      regular
+
+      `'error'` listeners are called.
+
+      Installing a listener using this symbol does not change the behavior once
+      an
+
+      `'error'` event is emitted, therefore the process will still crash if no
+
+      regular `'error'` listener is installed.
+    fullName: errorMonitor
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static errorMonitor: Object'
+      return:
+        description: ''
+        type: Object
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.errorMonitor
+inheritedMethods:
+  - name: 'addListener(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-canvas.InkingManager.addListener'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addListener(event: string | symbol, listener: (args: any[]) =>
+        void): this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.addListener
+  - name: 'emit(string | symbol, any[])'
+    uid: '@microsoft/live-share-canvas.InkingManager.emit'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function emit(event: string | symbol, args: any[]): boolean'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: args
+          type: 'any[]'
+          description: ''
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
+  - name: eventNames()
+    uid: '@microsoft/live-share-canvas.InkingManager.eventNames'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function eventNames(): Array<string | symbol>'
+      return:
+        description: ''
+        type: Array&lt;string | symbol&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
+  - name: getMaxListeners()
+    uid: '@microsoft/live-share-canvas.InkingManager.getMaxListeners'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxListeners(): number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
+  - name: 'listenerCount(EventEmitter, string | symbol)'
+    uid: '@microsoft/live-share-canvas.InkingManager.listenerCount'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: true
+    customDeprecatedMessage: since v4.0.0
+    syntax:
+      content: >-
+        static function listenerCount(emitter: EventEmitter, event: string |
+        symbol): number
+      parameters:
+        - id: emitter
+          type: EventEmitter
+          description: ''
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
+  - name: listenerCount(string | symbol)
+    uid: '@microsoft/live-share-canvas.InkingManager.listenerCount'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(event: string | symbol): number'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share-canvas.InkingManager.listeners'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
+  - name: 'off(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-canvas.InkingManager.off'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function off(event: string | symbol, listener: (args: any[]) => void):
+        this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.off
+  - name: 'on(EventEmitter, string)'
+    uid: '@microsoft/live-share-canvas.InkingManager.on'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function on(emitter: EventEmitter, event: string):
+        AsyncIterableIterator<any>
+      parameters:
+        - id: emitter
+          type: EventEmitter
+          description: ''
+        - id: event
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: AsyncIterableIterator&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.on
+  - name: 'on(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-canvas.InkingManager.on'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function on(event: string | symbol, listener: (args: any[]) => void):
+        this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.on
+  - name: 'once(NodeEventTarget, string | symbol)'
+    uid: '@microsoft/live-share-canvas.InkingManager.once'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function once(emitter: NodeEventTarget, event: string | symbol):
+        Promise<any[]>
+      parameters:
+        - id: emitter
+          type: NodeEventTarget
+          description: ''
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Promise&lt;any[]&gt;'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.once
+  - name: 'once(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-canvas.InkingManager.once'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function once(event: string | symbol, listener: (args: any[]) => void):
+        this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.once
+  - name: 'prependListener(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-canvas.InkingManager.prependListener'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function prependListener(event: string | symbol, listener: (args: any[])
+        => void): this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.prependListener
+  - name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-canvas.InkingManager.prependOnceListener'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function prependOnceListener(event: string | symbol, listener: (args:
+        any[]) => void): this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.prependOnceListener
+  - name: rawListeners(string | symbol)
+    uid: '@microsoft/live-share-canvas.InkingManager.rawListeners'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function rawListeners(event: string | symbol): Function[]'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: 'Function[]'
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
+  - name: removeAllListeners(string | symbol)
+    uid: '@microsoft/live-share-canvas.InkingManager.removeAllListeners'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function removeAllListeners(event?: string | symbol): this'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
+  - name: 'removeListener(string | symbol, (args: any[]) => void)'
+    uid: '@microsoft/live-share-canvas.InkingManager.removeListener'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function removeListener(event: string | symbol, listener: (args: any[])
+        => void): this
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+        - id: listener
+          type: '(args: any[]) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeListener
+  - name: setMaxListeners(number)
+    uid: '@microsoft/live-share-canvas.InkingManager.setMaxListeners'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setMaxListeners(n: number): this'
+      parameters:
+        - id: 'n'
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: this
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
+methods:
+  - name: activate()
+    uid: '@microsoft/live-share-canvas.InkingManager.activate'
+    package: '@microsoft/live-share-canvas'
+    summary: Starts listening to pointer input.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function activate()
+  - name: 'addStroke(IStroke, IAddRemoveStrokeOptions)'
+    uid: '@microsoft/live-share-canvas.InkingManager.addStroke'
+    package: '@microsoft/live-share-canvas'
+    summary: Adds a stroke to the drawing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function addStroke(stroke: IStroke, options?: IAddRemoveStrokeOptions)'
+      parameters:
+        - id: stroke
+          type: <xref uid="@microsoft/live-share-canvas.IStroke" />
+          description: |-
+            The stroke to add. If a stroke with the same id already exists
+            in the drawing, is it replaced.
+        - id: options
+          type: <xref uid="@microsoft/live-share-canvas.IAddRemoveStrokeOptions" />
+          description: |
+            Options allowing the caller to force a re-render and/or block the
+            emission of `StrokesAddedEvent`.
+  - name: beginUpdate()
+    uid: '@microsoft/live-share-canvas.InkingManager.beginUpdate'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Temporarily blocks the emission of `StrokesAddedEvent` and
+      `StrokesRemovedEvents` in order
+
+      to batch updates (via `addStroke` and `removeStroke`) into the change log.
+      Once the
+
+      updates are done, `endUpdate` must be called.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function beginUpdate()
+  - name: >-
+      beginWetStroke(StrokeType, StrokeMode, IPointerPoint,
+      IStrokeCreationOptions)
+    uid: '@microsoft/live-share-canvas.InkingManager.beginWetStroke'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Starts a new wet stroke which will be drawn progressively on the canvas.
+      Multiple wet strokes
+
+      can be created at the same time and will not interfere with each other.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginWetStroke(strokeType: StrokeType, strokeKind: StrokeMode,
+        startPoint: IPointerPoint, options?: IStrokeCreationOptions): IWetStroke
+      parameters:
+        - id: strokeType
+          type: <xref uid="@microsoft/live-share-canvas.StrokeType" />
+          description: The type of the stroke to start.
+        - id: strokeKind
+          type: <xref uid="@microsoft/live-share-canvas.StrokeMode" />
+          description: The kind of stroke to start.
+        - id: startPoint
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: The starting point of the stroke.
+        - id: options
+          type: <xref uid="@microsoft/live-share-canvas.IStrokeCreationOptions" />
+          description: 'Creation options, such as id, points, brush...'
+      return:
+        description: An IWetStroke object representing the ongoing stroke.
+        type: <xref uid="@microsoft/live-share-canvas.IWetStroke" />
+  - name: clear()
+    uid: '@microsoft/live-share-canvas.InkingManager.clear'
+    package: '@microsoft/live-share-canvas'
+    summary: Clears the canvas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function clear()
+  - name: deactivate()
+    uid: '@microsoft/live-share-canvas.InkingManager.deactivate'
+    package: '@microsoft/live-share-canvas'
+    summary: Stops listening to pointer input.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function deactivate()
+  - name: endUpdate()
+    uid: '@microsoft/live-share-canvas.InkingManager.endUpdate'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Unblocks the emission of update events and flushes the change log, leading
+      to a single
+
+      `StrokesAddedEvent` and/or a single `StrokesRemovedEvent`.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function endUpdate()
+  - name: erase(IPoint)
+    uid: '@microsoft/live-share-canvas.InkingManager.erase'
+    package: '@microsoft/live-share-canvas'
+    summary: Entirely removes any strokes that intersect with the eraser rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function erase(p: IPoint)'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: |
+            The center of the eraser rectangle. The size of the rectangle is
+            determined by the `eraserSize` property.
+  - name: getStroke(string)
+    uid: '@microsoft/live-share-canvas.InkingManager.getStroke'
+    package: '@microsoft/live-share-canvas'
+    summary: Retrieves an existing stroke from the drawing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getStroke(id: string): IStroke | undefined'
+      parameters:
+        - id: id
+          type: string
+          description: The id of the stroke to retrieve.
+      return:
+        description: The stroke with the specified id.
+        type: <xref uid="@microsoft/live-share-canvas.IStroke" /> | undefined
+  - name: pointErase(IPoint)
+    uid: '@microsoft/live-share-canvas.InkingManager.pointErase'
+    package: '@microsoft/live-share-canvas'
+    summary: Erases portions of strokes that intersect with the eraser rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function pointErase(p: IPoint)'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: |
+            The center of the eraser rectangle. The size of the rectangle is
+            determined by the `eraserSize` property.
+  - name: 'removeStroke(string, IAddRemoveStrokeOptions)'
+    uid: '@microsoft/live-share-canvas.InkingManager.removeStroke'
+    package: '@microsoft/live-share-canvas'
+    summary: Removes a stroke from the drawing.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function removeStroke(id: string, options?: IAddRemoveStrokeOptions)'
+      parameters:
+        - id: id
+          type: string
+          description: |-
+            The id of the stroke to remove. If the stroke doesn't exist, nothing
+            happens.
+        - id: options
+          type: <xref uid="@microsoft/live-share-canvas.IAddRemoveStrokeOptions" />
+          description: |
+            Options allowing the caller to force a re-render and/or block the
+            emission of `StrokesRemovedEvent`.
+  - name: screenToViewport(IPoint)
+    uid: '@microsoft/live-share-canvas.InkingManager.screenToViewport'
+    package: '@microsoft/live-share-canvas'
+    summary: Converts screen coordinates to viewport coordinates.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function screenToViewport(p: IPoint): IPoint'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The point to convert.
+      return:
+        description: The converted point.
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+  - name: 'setInputFilters(InputFilter[])'
+    uid: '@microsoft/live-share-canvas.InkingManager.setInputFilters'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Sets the input filters to use with this InkingManager instance. By
+      default, a jitter
+
+      reduction filter is used.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setInputFilters(inputFilters?: InputFilter[])'
+      parameters:
+        - id: inputFilters
+          type: '<xref uid="@microsoft/live-share-canvas.InputFilter" />[]'
+          description: |
+            The input filters to use, in the order provided. If `undefined` is
+            passed, the default input filters are used.
+  - name: viewportToScreen(IPoint)
+    uid: '@microsoft/live-share-canvas.InkingManager.viewportToScreen'
+    package: '@microsoft/live-share-canvas'
+    summary: Converts viewport coordinates to screen coordinates.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function viewportToScreen(p: IPoint): IPoint'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The point to convert.
+      return:
+        description: The converted point.
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+extends: EventEmitter

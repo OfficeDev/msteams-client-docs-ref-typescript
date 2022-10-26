@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: IPointerMovedEventArgs
+uid: '@microsoft/live-share-canvas.IPointerMovedEventArgs'
+package: '@microsoft/live-share-canvas'
+summary: Defines the arguments of the PointerMovedEvent.
+fullName: IPointerMovedEventArgs
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: position
+    uid: '@microsoft/live-share-canvas.IPointerMovedEventArgs.position'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: position
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'position?: IPoint'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />

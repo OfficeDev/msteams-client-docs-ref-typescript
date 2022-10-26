@@ -1,0 +1,100 @@
+### YamlMime:TSType
+name: IPointerEvent
+uid: '@microsoft/live-share-canvas.IPointerEvent'
+package: '@microsoft/live-share-canvas'
+summary: 'Represents a pointer event such as up, down or enter.'
+fullName: IPointerEvent
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: altKey
+    uid: '@microsoft/live-share-canvas.IPointerEvent.altKey'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: altKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'altKey: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: ctrlKey
+    uid: '@microsoft/live-share-canvas.IPointerEvent.ctrlKey'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: ctrlKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'ctrlKey: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: shiftKey
+    uid: '@microsoft/live-share-canvas.IPointerEvent.shiftKey'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: shiftKey
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'shiftKey: boolean'
+      return:
+        description: ''
+        type: boolean
+inheritedProperties:
+  - name: pressure
+    uid: '@microsoft/live-share-canvas.IPointerEvent.pressure'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pressure
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pressure: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IPointerPoint.pressure](xref:@microsoft/live-share-canvas.IPointerPoint.pressure)
+  - name: x
+    uid: '@microsoft/live-share-canvas.IPointerEvent.x'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: x
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'x: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IPoint.x](xref:@microsoft/live-share-canvas.IPoint.x)
+  - name: 'y'
+    uid: '@microsoft/live-share-canvas.IPointerEvent.y'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: 'y'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'y: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IPoint.y](xref:@microsoft/live-share-canvas.IPoint.y)
+extends: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />

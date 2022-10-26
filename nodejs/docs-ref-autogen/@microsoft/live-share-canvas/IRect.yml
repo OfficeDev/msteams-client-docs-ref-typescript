@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: IRect
+uid: '@microsoft/live-share-canvas.IRect'
+package: '@microsoft/live-share-canvas'
+summary: Defines a rectangle.
+fullName: IRect
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: bottom
+    uid: '@microsoft/live-share-canvas.IRect.bottom'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: bottom
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'bottom: number'
+      return:
+        description: ''
+        type: number
+  - name: left
+    uid: '@microsoft/live-share-canvas.IRect.left'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: left
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'left: number'
+      return:
+        description: ''
+        type: number
+  - name: right
+    uid: '@microsoft/live-share-canvas.IRect.right'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: right
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'right: number'
+      return:
+        description: ''
+        type: number
+  - name: top
+    uid: '@microsoft/live-share-canvas.IRect.top'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: top
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'top: number'
+      return:
+        description: ''
+        type: number

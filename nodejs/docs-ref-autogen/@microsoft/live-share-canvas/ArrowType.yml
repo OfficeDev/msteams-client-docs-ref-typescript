@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: ArrowType
+uid: '@microsoft/live-share-canvas.ArrowType'
+package: '@microsoft/live-share-canvas'
+summary: ''
+fullName: ArrowType
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: |
+  type ArrowType = "none" | "open"

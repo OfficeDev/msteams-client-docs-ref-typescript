@@ -1,0 +1,146 @@
+### YamlMime:TSType
+name: PointerInputProvider
+uid: '@microsoft/live-share-canvas.PointerInputProvider'
+package: '@microsoft/live-share-canvas'
+summary: InputProvider implementation that hooks into a DOM element's pointer events.
+fullName: PointerInputProvider
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: PointerInputProvider(HTMLElement)
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.constructor'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new PointerInputProvider(element: HTMLElement)'
+      parameters:
+        - id: element
+          type: HTMLElement
+          description: ''
+properties:
+  - name: element
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.element'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: element
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'element: HTMLElement'
+      return:
+        description: ''
+        type: HTMLElement
+  - name: isActive
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.isActive'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: isActive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean isActive
+      return:
+        description: ''
+        type: boolean
+  - name: pointerDown
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.pointerDown'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerDown
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerEvent> pointerDown
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerEvent" />&gt;
+  - name: pointerEnter
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.pointerEnter'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerEnter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerEvent> pointerEnter
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerEvent" />&gt;
+  - name: pointerLeave
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.pointerLeave'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerLeave
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerEvent> pointerLeave
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerEvent" />&gt;
+  - name: pointerMove
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.pointerMove'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerMove
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerMoveEvent> pointerMove
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerMoveEvent" />&gt;
+  - name: pointerUp
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.pointerUp'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerUp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerEvent> pointerUp
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerEvent" />&gt;
+methods:
+  - name: activate()
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.activate'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function activate()
+  - name: deactivate()
+    uid: '@microsoft/live-share-canvas.PointerInputProvider.deactivate'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function deactivate()
+extends: <xref uid="@microsoft/live-share-canvas.InputProvider" />

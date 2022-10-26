@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: StrokeType
+uid: '@microsoft/live-share-canvas.StrokeType'
+package: '@microsoft/live-share-canvas'
+summary: Stroke types.
+fullName: StrokeType
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: laserPointer
+    uid: '@microsoft/live-share-canvas.StrokeType.laserPointer'
+    package: '@microsoft/live-share-canvas'
+    summary: 'Laser pointer stroke, with a vanishing tail.'
+    numericValue: 0
+  - name: ephemeral
+    uid: '@microsoft/live-share-canvas.StrokeType.ephemeral'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Ephemeral stroke, which vanishes all at once after
+      a set amount of time.
+    numericValue: 1
+  - name: persistent
+    uid: '@microsoft/live-share-canvas.StrokeType.persistent'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Persistent stroke, that remains on the canvas until
+      erased.
+    numericValue: 2

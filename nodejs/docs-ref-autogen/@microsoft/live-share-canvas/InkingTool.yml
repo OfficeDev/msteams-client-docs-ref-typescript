@@ -1,0 +1,40 @@
+### YamlMime:TSEnum
+name: InkingTool
+uid: '@microsoft/live-share-canvas.InkingTool'
+package: '@microsoft/live-share-canvas'
+summary: Defines available inking tools.
+fullName: InkingTool
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: pen
+    uid: '@microsoft/live-share-canvas.InkingTool.pen'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    numericValue: 0
+  - name: laserPointer
+    uid: '@microsoft/live-share-canvas.InkingTool.laserPointer'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    numericValue: 1
+  - name: highlighter
+    uid: '@microsoft/live-share-canvas.InkingTool.highlighter'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    numericValue: 2
+  - name: eraser
+    uid: '@microsoft/live-share-canvas.InkingTool.eraser'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    numericValue: 3
+  - name: pointEraser
+    uid: '@microsoft/live-share-canvas.InkingTool.pointEraser'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    numericValue: 4
+  - name: line
+    uid: '@microsoft/live-share-canvas.InkingTool.line'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    numericValue: 5

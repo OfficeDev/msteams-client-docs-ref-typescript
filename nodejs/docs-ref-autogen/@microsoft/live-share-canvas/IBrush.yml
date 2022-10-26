@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: IBrush
+uid: '@microsoft/live-share-canvas.IBrush'
+package: '@microsoft/live-share-canvas'
+summary: Defines a brush as used to draw strokes.
+fullName: IBrush
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: color
+    uid: '@microsoft/live-share-canvas.IBrush.color'
+    package: '@microsoft/live-share-canvas'
+    summary: The main color of the brush.
+    fullName: color
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'color: IColor'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IColor" />
+  - name: endArrow
+    uid: '@microsoft/live-share-canvas.IBrush.endArrow'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Optional. The type of arrow at the end of a line drawn with
+      the brush. Defaults to `none`.
+    fullName: endArrow
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endArrow?: ArrowType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.ArrowType" />
+  - name: tip
+    uid: '@microsoft/live-share-canvas.IBrush.tip'
+    package: '@microsoft/live-share-canvas'
+    summary: The shape of the brush's tip.
+    fullName: tip
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tip: BrushTipShape'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.BrushTipShape" />
+  - name: tipSize
+    uid: '@microsoft/live-share-canvas.IBrush.tipSize'
+    package: '@microsoft/live-share-canvas'
+    summary: The size of the brush's tip. Must be greater than 0.
+    fullName: tipSize
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'tipSize: number'
+      return:
+        description: ''
+        type: number
+  - name: type
+    uid: '@microsoft/live-share-canvas.IBrush.type'
+    package: '@microsoft/live-share-canvas'
+    summary: The type of the brush.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: BrushType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.BrushType" />

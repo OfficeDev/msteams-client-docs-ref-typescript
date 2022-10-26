@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: IPointerPoint
+uid: '@microsoft/live-share-canvas.IPointerPoint'
+package: '@microsoft/live-share-canvas'
+summary: Defines a 2D point with pointer pressure.
+fullName: IPointerPoint
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: pressure
+    uid: '@microsoft/live-share-canvas.IPointerPoint.pressure'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pressure
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'pressure: number'
+      return:
+        description: ''
+        type: number
+inheritedProperties:
+  - name: x
+    uid: '@microsoft/live-share-canvas.IPointerPoint.x'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: x
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'x: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IPoint.x](xref:@microsoft/live-share-canvas.IPoint.x)
+  - name: 'y'
+    uid: '@microsoft/live-share-canvas.IPointerPoint.y'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: 'y'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'y: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IPoint.y](xref:@microsoft/live-share-canvas.IPoint.y)
+extends: <xref uid="@microsoft/live-share-canvas.IPoint" />

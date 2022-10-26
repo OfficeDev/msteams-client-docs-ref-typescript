@@ -1,0 +1,313 @@
+### YamlMime:TSType
+name: IWetStroke
+uid: '@microsoft/live-share-canvas.IWetStroke'
+package: '@microsoft/live-share-canvas'
+summary: 'Defines a "wet" stroke, i.e. a stroke as it''s being drawn.'
+fullName: IWetStroke
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: mode
+    uid: '@microsoft/live-share-canvas.IWetStroke.mode'
+    package: '@microsoft/live-share-canvas'
+    summary: The wet stroke's mode.
+    fullName: mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mode: StrokeMode'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.StrokeMode" />
+  - name: type
+    uid: '@microsoft/live-share-canvas.IWetStroke.type'
+    package: '@microsoft/live-share-canvas'
+    summary: The type of the wet stroke.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: StrokeType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.StrokeType" />
+inheritedProperties:
+  - name: brush
+    uid: '@microsoft/live-share-canvas.IWetStroke.brush'
+    package: '@microsoft/live-share-canvas'
+    summary: The brush used to draw the stroke.
+    fullName: brush
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'brush: IBrush'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.brush](xref:@microsoft/live-share-canvas.IStroke.brush)
+  - name: clientId
+    uid: '@microsoft/live-share-canvas.IWetStroke.clientId'
+    package: '@microsoft/live-share-canvas'
+    summary: Optional. The id of the client the stroke was created on.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.clientId](xref:@microsoft/live-share-canvas.IStroke.clientId)
+  - name: id
+    uid: '@microsoft/live-share-canvas.IWetStroke.id'
+    package: '@microsoft/live-share-canvas'
+    summary: The id of the stroke.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.id](xref:@microsoft/live-share-canvas.IStroke.id)
+  - name: length
+    uid: '@microsoft/live-share-canvas.IWetStroke.length'
+    package: '@microsoft/live-share-canvas'
+    summary: The number of points in the stroke.
+    fullName: length
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'length: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.length](xref:@microsoft/live-share-canvas.IStroke.length)
+  - name: timeStamp
+    uid: '@microsoft/live-share-canvas.IWetStroke.timeStamp'
+    package: '@microsoft/live-share-canvas'
+    summary: The timestamp when the stroke was created.
+    fullName: timeStamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeStamp: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.timeStamp](xref:@microsoft/live-share-canvas.IStroke.timeStamp)
+inheritedMethods:
+  - name: 'addPoints(IPointerPoint[])'
+    uid: '@microsoft/live-share-canvas.IWetStroke.addPoints'
+    package: '@microsoft/live-share-canvas'
+    summary: Adds points to the stroke.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function addPoints(points: IPointerPoint[]): boolean'
+      parameters:
+        - id: points
+          type: '<xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]'
+          description: |
+            The points to add.
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.addPoints](xref:@microsoft/live-share-canvas.IStroke.addPoints)
+  - name: deserialize(string)
+    uid: '@microsoft/live-share-canvas.IWetStroke.deserialize'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Deserializes the specified stroke string and sets this
+      stroke's brush, points and other proprties accordingly.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function deserialize(serializedStroke: string)'
+      parameters:
+        - id: serializedStroke
+          type: string
+          description: |
+            The serialized stroke.
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.deserialize](xref:@microsoft/live-share-canvas.IStroke.deserialize)
+  - name: getBoundingRect()
+    uid: '@microsoft/live-share-canvas.IWetStroke.getBoundingRect'
+    package: '@microsoft/live-share-canvas'
+    summary: Computes the stroke's bounding rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getBoundingRect(): IRect'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IRect" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.getBoundingRect](xref:@microsoft/live-share-canvas.IStroke.getBoundingRect)
+  - name: getIntersectionPoints(ISegment)
+    uid: '@microsoft/live-share-canvas.IWetStroke.getIntersectionPoints'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Computes the intersection points between the stroke
+      and the specified segment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getIntersectionPoints(segment: ISegment): IPoint[]'
+      parameters:
+        - id: segment
+          type: <xref uid="@microsoft/live-share-canvas.ISegment" />
+          description: |
+            The segment to test against.
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share-canvas.IPoint" />[]'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.getIntersectionPoints](xref:@microsoft/live-share-canvas.IStroke.getIntersectionPoints)
+  - name: getPointAt(number)
+    uid: '@microsoft/live-share-canvas.IWetStroke.getPointAt'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the point at the given index.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getPointAt(index: number): IPointerPoint'
+      parameters:
+        - id: index
+          type: number
+          description: |
+            The point index.
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.getPointAt](xref:@microsoft/live-share-canvas.IStroke.getPointAt)
+  - name: intersectsWithRectangle(IRect)
+    uid: '@microsoft/live-share-canvas.IWetStroke.intersectsWithRectangle'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Determines if the stroke intersects with the specified
+      rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function intersectsWithRectangle(rectangle: IRect): boolean'
+      parameters:
+        - id: rectangle
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: |
+            The rectangle to test against.
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.intersectsWithRectangle](xref:@microsoft/live-share-canvas.IStroke.intersectsWithRectangle)
+  - name: pointErase(IRect)
+    uid: '@microsoft/live-share-canvas.IWetStroke.pointErase'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Splits this stroke into several other ones by "erasing"
+      the portions that are within the eraser rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
+      parameters:
+        - id: eraserRect
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: |
+            The eraser rectangle.
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share-canvas.IStroke" />[] | undefined'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.pointErase](xref:@microsoft/live-share-canvas.IStroke.pointErase)
+  - name: serialize()
+    uid: '@microsoft/live-share-canvas.IWetStroke.serialize'
+    package: '@microsoft/live-share-canvas'
+    summary: Serializes the stroke to a string.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function serialize(): string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.serialize](xref:@microsoft/live-share-canvas.IStroke.serialize)
+methods:
+  - name: cancel()
+    uid: '@microsoft/live-share-canvas.IWetStroke.cancel'
+    package: '@microsoft/live-share-canvas'
+    summary: Cancels the wet stroke.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function cancel()
+  - name: end()
+    uid: '@microsoft/live-share-canvas.IWetStroke.end'
+    package: '@microsoft/live-share-canvas'
+    summary: Ends the wet stroke.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function end()
+  - name: straighten(IPointerPoint)
+    uid: '@microsoft/live-share-canvas.IWetStroke.straighten'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Straightens a point so that the line it forms with the previous
+      point is straight (either horizontal or vertical).
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function straighten(p: IPointerPoint): IPointerPoint'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: |
+            The point to update
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+extends: <xref uid="@microsoft/live-share-canvas.IStroke" />

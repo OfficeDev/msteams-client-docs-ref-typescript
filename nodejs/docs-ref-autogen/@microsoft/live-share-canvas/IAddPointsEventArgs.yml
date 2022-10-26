@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: IAddPointsEventArgs
+uid: '@microsoft/live-share-canvas.IAddPointsEventArgs'
+package: '@microsoft/live-share-canvas'
+summary: Defines the arguments of the AddPointsEvent.
+fullName: IAddPointsEventArgs
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: endState
+    uid: '@microsoft/live-share-canvas.IAddPointsEventArgs.endState'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Indicates whether the stroke has ended (i.e. if the points
+      were the last ones.)
+    fullName: endState
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'endState?: StrokeEndState'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.StrokeEndState" />
+  - name: points
+    uid: '@microsoft/live-share-canvas.IAddPointsEventArgs.points'
+    package: '@microsoft/live-share-canvas'
+    summary: The points that were added to the stroke.
+    fullName: points
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'points: IPointerPoint[]'
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]'
+  - name: strokeId
+    uid: '@microsoft/live-share-canvas.IAddPointsEventArgs.strokeId'
+    package: '@microsoft/live-share-canvas'
+    summary: The id of the stroke a point has been added to.
+    fullName: strokeId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strokeId: string'
+      return:
+        description: ''
+        type: string
