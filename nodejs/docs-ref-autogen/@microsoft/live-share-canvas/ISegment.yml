@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: ISegment
+uid: '@microsoft/live-share-canvas.ISegment'
+package: '@microsoft/live-share-canvas'
+summary: Defines a segment between two points.
+fullName: ISegment
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: from
+    uid: '@microsoft/live-share-canvas.ISegment.from'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: from
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'from: IPoint'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+  - name: to
+    uid: '@microsoft/live-share-canvas.ISegment.to'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: to
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'to: IPoint'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />

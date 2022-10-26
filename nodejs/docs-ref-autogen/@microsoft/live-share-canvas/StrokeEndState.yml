@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: StrokeEndState
+uid: '@microsoft/live-share-canvas.StrokeEndState'
+package: '@microsoft/live-share-canvas'
+summary: ''
+fullName: StrokeEndState
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: ended
+    uid: '@microsoft/live-share-canvas.StrokeEndState.ended'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    numericValue: 0
+  - name: cancelled
+    uid: '@microsoft/live-share-canvas.StrokeEndState.cancelled'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    numericValue: 1

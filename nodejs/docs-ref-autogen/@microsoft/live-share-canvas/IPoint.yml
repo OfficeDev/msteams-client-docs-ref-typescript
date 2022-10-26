@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: IPoint
+uid: '@microsoft/live-share-canvas.IPoint'
+package: '@microsoft/live-share-canvas'
+summary: Defines a 2D point.
+fullName: IPoint
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: x
+    uid: '@microsoft/live-share-canvas.IPoint.x'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: x
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'x: number'
+      return:
+        description: ''
+        type: number
+  - name: 'y'
+    uid: '@microsoft/live-share-canvas.IPoint.y'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: 'y'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'y: number'
+      return:
+        description: ''
+        type: number

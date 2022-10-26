@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: StrokeMode
+uid: '@microsoft/live-share-canvas.StrokeMode'
+package: '@microsoft/live-share-canvas'
+summary: Stroke modes.
+fullName: StrokeMode
+remarks: ''
+isPreview: false
+isDeprecated: false
+fields:
+  - name: freeHand
+    uid: '@microsoft/live-share-canvas.StrokeMode.freeHand'
+    package: '@microsoft/live-share-canvas'
+    summary: A freehand stroke that follows a path.
+    numericValue: 0
+  - name: line
+    uid: '@microsoft/live-share-canvas.StrokeMode.line'
+    package: '@microsoft/live-share-canvas'
+    summary: A straight line stroke between two points.
+    numericValue: 1

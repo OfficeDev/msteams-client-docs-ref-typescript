@@ -1,0 +1,101 @@
+### YamlMime:TSType
+name: LiveCursor
+uid: '@microsoft/live-share-canvas.LiveCursor'
+package: '@microsoft/live-share-canvas'
+summary: |-
+  Represents a live (shared) cursor. Applications that want to customize
+  the appearance of cursors on the screen should extend `LiveCursor` and
+  override its `renderedElement` property to return a custom HTML element.
+fullName: LiveCursor
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'LiveCursor(string, IUserInfo | undefined)'
+    uid: '@microsoft/live-share-canvas.LiveCursor.constructor'
+    package: '@microsoft/live-share-canvas'
+    summary: Initializes a new instance of `LiveCursor`.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new LiveCursor(clientId: string, userInfo?: IUserInfo | undefined)'
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+        - id: userInfo
+          type: <xref uid="@microsoft/live-share-canvas.IUserInfo" /> | undefined
+          description: ''
+properties:
+  - name: clientId
+    uid: '@microsoft/live-share-canvas.LiveCursor.clientId'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId: string'
+      return:
+        description: ''
+        type: string
+  - name: idleTime
+    uid: '@microsoft/live-share-canvas.LiveCursor.idleTime'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the amount of time the cursor has been idle.
+    fullName: idleTime
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number idleTime
+      return:
+        description: ''
+        type: number
+  - name: renderedElement
+    uid: '@microsoft/live-share-canvas.LiveCursor.renderedElement'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Returns an HTML element representing the cursor. Applications
+      that extend `LiveCursor` must override `get renderedElement`
+      to return a custom built HTML element.
+    fullName: renderedElement
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: HTMLElement renderedElement
+      return:
+        description: ''
+        type: HTMLElement
+  - name: userInfo
+    uid: '@microsoft/live-share-canvas.LiveCursor.userInfo'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: userInfo
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'userInfo?: IUserInfo | undefined'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IUserInfo" /> | undefined
+methods:
+  - name: setPosition(IPoint)
+    uid: '@microsoft/live-share-canvas.LiveCursor.setPosition'
+    package: '@microsoft/live-share-canvas'
+    summary: Updates the position of the cursor.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setPosition(position: IPoint)'
+      parameters:
+        - id: position
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: |
+            The new position of the cursor.

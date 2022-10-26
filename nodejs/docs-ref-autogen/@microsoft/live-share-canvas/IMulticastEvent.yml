@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: IMulticastEvent
+uid: '@microsoft/live-share-canvas.IMulticastEvent'
+package: '@microsoft/live-share-canvas'
+summary: |-
+  Defines a typed multicast event, i.e. an event that
+  can have multiple listeners.
+fullName: IMulticastEvent<TArgs>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+methods:
+  - name: off(EventListener<TArgs>)
+    uid: '@microsoft/live-share-canvas.IMulticastEvent.off'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function off(listener: EventListener<TArgs>)'
+      parameters:
+        - id: listener
+          type: >-
+            <xref uid="@microsoft/live-share-canvas.EventListener"
+            />&lt;TArgs&gt;
+          description: ''
+  - name: on(EventListener<TArgs>)
+    uid: '@microsoft/live-share-canvas.IMulticastEvent.on'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function on(listener: EventListener<TArgs>)'
+      parameters:
+        - id: listener
+          type: >-
+            <xref uid="@microsoft/live-share-canvas.EventListener"
+            />&lt;TArgs&gt;
+          description: ''

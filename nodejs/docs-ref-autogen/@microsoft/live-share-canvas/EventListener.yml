@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: EventListener
+uid: '@microsoft/live-share-canvas.EventListener'
+package: '@microsoft/live-share-canvas'
+summary: Defines a typed callback function used by multicast events.
+fullName: EventListener<TArgs>
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: |
+  type EventListener<TArgs> = (args: TArgs) => void
