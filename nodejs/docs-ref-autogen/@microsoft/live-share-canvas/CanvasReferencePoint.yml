@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: CanvasReferencePoint
+uid: '@microsoft/live-share-canvas.CanvasReferencePoint'
+package: '@microsoft/live-share-canvas'
+summary: >-
+  Defines the refernece point of a canvas. The reference point is the origin
+  used for
+
+  panning and zooming operations.
+fullName: CanvasReferencePoint
+remarks: ''
+isPreview: false
+isDeprecated: false
+syntax: |
+  type CanvasReferencePoint = "topLeft" | "center"

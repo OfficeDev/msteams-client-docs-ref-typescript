@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: JitterFilter
+uid: '@microsoft/live-share-canvas.JitterFilter'
+package: '@microsoft/live-share-canvas'
+summary: |-
+  Implements a jitter reduction filter, which straightens stroke by ignoring
+  micro movements detected by the input device, mainly pens.
+fullName: JitterFilter
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: filterPoint(IPointerPoint)
+    uid: '@microsoft/live-share-canvas.JitterFilter.filterPoint'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function filterPoint(p: IPointerPoint): IPointerPoint'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+  - name: reset(IPointerPoint)
+    uid: '@microsoft/live-share-canvas.JitterFilter.reset'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function reset(startPoint: IPointerPoint)'
+      parameters:
+        - id: startPoint
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: ''
+extends: <xref uid="@microsoft/live-share-canvas.InputFilter" />

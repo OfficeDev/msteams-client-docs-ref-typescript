@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: MulticastEvent
+uid: '@microsoft/live-share-canvas.MulticastEvent'
+package: '@microsoft/live-share-canvas'
+summary: Implements a simple typed multicast event.
+fullName: MulticastEvent<TArgs>
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+methods:
+  - name: emit(TArgs)
+    uid: '@microsoft/live-share-canvas.MulticastEvent.emit'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function emit(args: TArgs)'
+      parameters:
+        - id: args
+          type: TArgs
+          description: ''
+  - name: off(EventListener<TArgs>)
+    uid: '@microsoft/live-share-canvas.MulticastEvent.off'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function off(listener: EventListener<TArgs>)'
+      parameters:
+        - id: listener
+          type: >-
+            <xref uid="@microsoft/live-share-canvas.EventListener"
+            />&lt;TArgs&gt;
+          description: ''
+  - name: on(EventListener<TArgs>)
+    uid: '@microsoft/live-share-canvas.MulticastEvent.on'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function on(listener: EventListener<TArgs>)'
+      parameters:
+        - id: listener
+          type: >-
+            <xref uid="@microsoft/live-share-canvas.EventListener"
+            />&lt;TArgs&gt;
+          description: ''

@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: IAddRemoveStrokeOptions
+uid: '@microsoft/live-share-canvas.IAddRemoveStrokeOptions'
+package: '@microsoft/live-share-canvas'
+summary: >-
+  Defines options used by `InkingManager.addStroke` and
+  `InkingManager.removeStroke`.
+fullName: IAddRemoveStrokeOptions
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: addToChangeLog
+    uid: '@microsoft/live-share-canvas.IAddRemoveStrokeOptions.addToChangeLog'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Optional. Indicates whether the add or remove operation should be added to
+      the
+
+      change log, which in turn will lead to `StrokeAddedEvent` or
+      `StrokeRemovedEvent`
+
+      begin emitted. Defaults to `true`.
+    fullName: addToChangeLog
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'addToChangeLog?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true
+  - name: forceReRender
+    uid: '@microsoft/live-share-canvas.IAddRemoveStrokeOptions.forceReRender'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Optional. Indicates if the canvas must be fully re-rendered at once after
+      the
+
+      stroke has been added or removed. Defaults to `false`.
+    fullName: forceReRender
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'forceReRender?: undefined | false | true'
+      return:
+        description: ''
+        type: undefined | false | true

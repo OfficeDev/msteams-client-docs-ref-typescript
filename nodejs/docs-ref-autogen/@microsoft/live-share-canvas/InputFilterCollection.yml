@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: InputFilterCollection
+uid: '@microsoft/live-share-canvas.InputFilterCollection'
+package: '@microsoft/live-share-canvas'
+summary: Represents a collection of input filters.
+fullName: InputFilterCollection
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: 'InputFilterCollection(InputFilter[])'
+    uid: '@microsoft/live-share-canvas.InputFilterCollection.constructor'
+    package: '@microsoft/live-share-canvas'
+    summary: Creates a new InputFilterCollection instance.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new InputFilterCollection(items: InputFilter[])'
+      parameters:
+        - id: items
+          type: '<xref uid="@microsoft/live-share-canvas.InputFilter" />[]'
+          description: |
+            The initial inputs filters.
+methods:
+  - name: 'addFilters(InputFilter[])'
+    uid: '@microsoft/live-share-canvas.InputFilterCollection.addFilters'
+    package: '@microsoft/live-share-canvas'
+    summary: Adds filters to the collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function addFilters(items: InputFilter[])'
+      parameters:
+        - id: items
+          type: '<xref uid="@microsoft/live-share-canvas.InputFilter" />[]'
+          description: |
+            The filters to add.
+  - name: filterPoint(IPointerPoint)
+    uid: '@microsoft/live-share-canvas.InputFilterCollection.filterPoint'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Filters (transforms) the specified point through each
+      of the individual filters in the collection.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function filterPoint(p: IPointerPoint): IPointerPoint'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: The point to transform.
+      return:
+        description: The transformed point.
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+  - name: reset(IPointerPoint)
+    uid: '@microsoft/live-share-canvas.InputFilterCollection.reset'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Resets all the filters in the collection. Some filters
+      use information about previous points to transform the
+      next point. `reset` will be called automatically by
+      InkingManager when a new wet stroke begins.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function reset(startPoint: IPointerPoint)'
+      parameters:
+        - id: startPoint
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: |
+            The new starting point.

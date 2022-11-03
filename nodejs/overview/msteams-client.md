@@ -1,29 +1,29 @@
 ---
-title: Microsoft Teams JavaScript client SDK
-description: Reference documentation for the latest Microsoft Teams JavaScript client SDK
-keywords: msteams teams client sdk javascript reference latest
+title: Microsoft Teams JavaScript client library
+description: Reference documentation for the latest Microsoft Teams JavaScript client library
+keywords: msteams teams client sdk javascript library reference latest
 ---
-# Microsoft Teams JavaScript client SDK
+# Microsoft Teams JavaScript client library
 
-Starting with *@microsoft/teams-js* version `2.0.0`, the Microsoft Teams JavaScript client SDK has been refactored to enable [Teams apps to run in Outlook and Office](/microsoftteams/platform/m365-apps/overview), in addition to Microsoft Teams. From a functional perspective, the TeamsJS SDK is a superset of TeamsJS 1.x versions: it supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Office.
+Starting with *@microsoft/teams-js* version `2.0.0`, the Microsoft Teams JavaScript client library has been refactored to enable [Teams apps to run in Outlook and Office](/microsoftteams/platform/m365-apps/overview), in addition to Microsoft Teams. From a functional perspective, the TeamsJS SDK is a superset of TeamsJS 1.x versions: it supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Office.
 
 > [!TIP]
-> Refer to the [Teams JavaScript client SDK](/microsoftteams/platform/tabs/how-to/using-teams-client-sdk) overview for guidance on building both Teams-only and Microsoft 365-enabled apps and for current SDK capability support across Teams, Outlook, and Office.
+> Refer to the [Teams JavaScript client library](/microsoftteams/platform/tabs/how-to/using-teams-client-library) overview for guidance on building both Teams-only and Microsoft 365-enabled apps and for current SDK capability support across Teams, Outlook, and Office.
 
-## Finding the SDK
+## Finding the library
 
 The TeamsJS client is distributed as an npm package. The latest version can be found here:
 
 www.npmjs.com/package/@microsoft/teams-js
 
-## Installing the SDK
+## Installing the library
 
 You can install the package using npm or yarn:
 
 * `npm install --save @microsoft/teams-js`
 * `yarn add @microsoft/teams-js`
 
-## Using the SDK
+## Using the library
 
 If you are using any dependency loader or module bundler such as [RequireJS](http://requirejs.org/), [SystemJS](https://github.com/systemjs/systemjs), [browserify](http://browserify.org/), or [webpack](https://webpack.github.io/), you can use `import` syntax to import specific modules. For example:
 
@@ -54,7 +54,7 @@ You can also reference the entire library in html pages using a script tag.  The
 The final option, using a local copy on your servers, eliminates that dependency but requires hosting and updating a local copy of the SDK.
 
 > [!TIP]
-> If you are a TypeScript developer it is helpful to install the NPM package as described [above](#installing-the-sdk), even if you don't link to the copy of `MicrosoftTeams.min.js` in `node_modules` from your HTML, because IDEs such as Visual Studio Code will use it for Intellisense and type checking.
+> If you are a TypeScript developer it is helpful to install the NPM package as described [above](#installing-the-library), even if you don't link to the copy of `MicrosoftTeams.min.js` in `node_modules` from your HTML, because IDEs such as Visual Studio Code will use it for Intellisense and type checking.
 
 ## Reference
 

@@ -1,0 +1,630 @@
+### YamlMime:TSPackage
+uid: '@microsoft/live-share-canvas'
+name: '@microsoft/live-share-canvas'
+summary: ''
+type: package
+classes:
+  - '@microsoft/live-share-canvas.DryCanvas'
+  - '@microsoft/live-share-canvas.DryWetCanvas'
+  - '@microsoft/live-share-canvas.WetCanvas'
+  - '@microsoft/live-share-canvas.InkingCanvas'
+  - '@microsoft/live-share-canvas.LaserPointerCanvas'
+  - '@microsoft/live-share-canvas.InkingManager'
+  - '@microsoft/live-share-canvas.LiveCanvas'
+  - '@microsoft/live-share-canvas.LiveCursor'
+  - '@microsoft/live-share-canvas.Stroke'
+  - '@microsoft/live-share-canvas.InputFilter'
+  - '@microsoft/live-share-canvas.InputFilterCollection'
+  - '@microsoft/live-share-canvas.InputProvider'
+  - '@microsoft/live-share-canvas.MulticastEvent'
+  - '@microsoft/live-share-canvas.JitterFilter'
+  - '@microsoft/live-share-canvas.PointerInputProvider'
+typeAliases:
+  - '@microsoft/live-share-canvas.CanvasReferencePoint'
+  - '@microsoft/live-share-canvas.ArrowType'
+  - '@microsoft/live-share-canvas.BrushTipShape'
+  - '@microsoft/live-share-canvas.BrushType'
+  - '@microsoft/live-share-canvas.EventListener'
+interfaces:
+  - '@microsoft/live-share-canvas.IBrush'
+  - '@microsoft/live-share-canvas.IColor'
+  - '@microsoft/live-share-canvas.IPoint'
+  - '@microsoft/live-share-canvas.IPointerPoint'
+  - '@microsoft/live-share-canvas.IRect'
+  - '@microsoft/live-share-canvas.ISegment'
+  - '@microsoft/live-share-canvas.IAddPointsEventArgs'
+  - '@microsoft/live-share-canvas.IAddRemoveStrokeOptions'
+  - '@microsoft/live-share-canvas.IBeginStrokeEventArgs'
+  - '@microsoft/live-share-canvas.IPointerMovedEventArgs'
+  - '@microsoft/live-share-canvas.IWetStroke'
+  - '@microsoft/live-share-canvas.IUserInfo'
+  - '@microsoft/live-share-canvas.IStroke'
+  - '@microsoft/live-share-canvas.IStrokeCreationOptions'
+  - '@microsoft/live-share-canvas.IMulticastEvent'
+  - '@microsoft/live-share-canvas.IPointerEvent'
+  - '@microsoft/live-share-canvas.IPointerMoveEvent'
+functions:
+  - name: 'darkenColor(IColor, number)'
+    uid: '@microsoft/live-share-canvas.darkenColor'
+    package: '@microsoft/live-share-canvas'
+    summary: Darkens the given color by a certain intensity.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function darkenColor(color: IColor, intensity: number): IColor'
+      parameters:
+        - id: color
+          type: <xref uid="@microsoft/live-share-canvas.IColor" />
+          description: The color to darken.
+        - id: intensity
+          type: number
+          description: The intensity of the darkening. Must be between 0 and 100.
+      return:
+        description: The darkened color.
+        type: <xref uid="@microsoft/live-share-canvas.IColor" />
+  - name: fromCssColor(string)
+    uid: '@microsoft/live-share-canvas.fromCssColor'
+    package: '@microsoft/live-share-canvas'
+    summary: 'Converts a CSS color expressed in the #RRGGBB format into an IColor object'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function fromCssColor(color: string): IColor'
+      parameters:
+        - id: color
+          type: string
+          description: The CSS color to convert.
+      return:
+        description: >-
+          The converted color as an IColor object, or a default color if the
+          provided
+
+          color string isn't valid.
+        type: <xref uid="@microsoft/live-share-canvas.IColor" />
+  - name: 'lightenColor(IColor, number)'
+    uid: '@microsoft/live-share-canvas.lightenColor'
+    package: '@microsoft/live-share-canvas'
+    summary: Lightens the given color by a certain intensity.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function lightenColor(color: IColor, intensity: number): IColor'
+      parameters:
+        - id: color
+          type: <xref uid="@microsoft/live-share-canvas.IColor" />
+          description: The color to lighten.
+        - id: intensity
+          type: number
+          description: The intensity of the lightening. Must be between 0 and 100.
+      return:
+        description: The lightened color.
+        type: <xref uid="@microsoft/live-share-canvas.IColor" />
+  - name: 'toCssRgbaColor(IColor, undefined | number)'
+    uid: '@microsoft/live-share-canvas.toCssRgbaColor'
+    package: '@microsoft/live-share-canvas'
+    summary: Converts an IColor object into its CSS rgba() representation.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function toCssRgbaColor(color: IColor, alpha?: undefined | number):
+        string
+      parameters:
+        - id: color
+          type: <xref uid="@microsoft/live-share-canvas.IColor" />
+          description: The color to convert.
+        - id: alpha
+          type: undefined | number
+          description: ''
+      return:
+        description: A string representing the CSS rgba() representation of the color.
+        type: string
+  - name: 'expandRect(IRect, IPoint)'
+    uid: '@microsoft/live-share-canvas.expandRect'
+    package: '@microsoft/live-share-canvas'
+    summary: Expands the specified rectangle so it contains the specified point.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function expandRect(rect: IRect, point: IPoint): IRect'
+      parameters:
+        - id: rect
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The rectangle to extend.
+        - id: point
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The point to extend the rectangle to.
+      return:
+        description: The expanded rectangle.
+        type: <xref uid="@microsoft/live-share-canvas.IRect" />
+  - name: 'getDistanceBetweenPoints(IPoint, IPoint)'
+    uid: '@microsoft/live-share-canvas.getDistanceBetweenPoints'
+    package: '@microsoft/live-share-canvas'
+    summary: Computes the distance between two points.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getDistanceBetweenPoints(p1: IPoint, p2: IPoint): number'
+      parameters:
+        - id: p1
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The first point.
+        - id: p2
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The second point.
+      return:
+        description: The distance between `p1` and `p2`.
+        type: number
+  - name: 'getPressureAdjustedSize(number, number)'
+    uid: '@microsoft/live-share-canvas.getPressureAdjustedSize'
+    package: '@microsoft/live-share-canvas'
+    summary: Adjusts a size given a pointer pressure.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPressureAdjustedSize(baseSize: number, pressure: number):
+        number
+      parameters:
+        - id: baseSize
+          type: number
+          description: The size to adjust.
+        - id: pressure
+          type: number
+          description: The pressure.
+      return:
+        description: The adjusted size.
+        type: number
+  - name: 'getSquaredDistanceBetweenPoints(IPoint, IPoint)'
+    uid: '@microsoft/live-share-canvas.getSquaredDistanceBetweenPoints'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Computes the square of the distance between two points. This provides a
+      cheaper
+
+      way to compare multiple distances since it doesn't compute any square
+      root.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getSquaredDistanceBetweenPoints(p1: IPoint, p2: IPoint): number'
+      parameters:
+        - id: p1
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The first point.
+        - id: p2
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The second point.
+      return:
+        description: The square of the distance between `p1` and `p2`.
+        type: number
+  - name: 'screenToViewport(IPoint, IPoint, IPoint, number)'
+    uid: '@microsoft/live-share-canvas.screenToViewport'
+    package: '@microsoft/live-share-canvas'
+    summary: Converts screen coordinates to viewport coordinates.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function screenToViewport(p: IPoint, viewportReferencePoint: IPoint,
+        viewportOffset: IPoint, scale: number): IPoint
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The point to convert.
+        - id: viewportReferencePoint
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The videwport's reference point.
+        - id: viewportOffset
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The viewport offset.
+        - id: scale
+          type: number
+          description: >-
+            The viewport scale. Defaults to 1 if the provided value is less than
+            or equal to 0.
+      return:
+        description: The converted point.
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+  - name: 'viewportToScreen(IPoint, IPoint, IPoint, number)'
+    uid: '@microsoft/live-share-canvas.viewportToScreen'
+    package: '@microsoft/live-share-canvas'
+    summary: Converts viewport coordinates to screen coordinates.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function viewportToScreen(p: IPoint, viewportReferencePoint: IPoint,
+        viewportOffset: IPoint, scale: number): IPoint
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The point to convert.
+        - id: viewportReferencePoint
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The viewport's reference point.
+        - id: viewportOffset
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The viewport offset.
+        - id: scale
+          type: number
+          description: >-
+            The viewport scale. Defaults to 1 if the provided value is less than
+            or equal to 0.
+      return:
+        description: The converted point.
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+  - name: 'computeEndArrow(IPoint, IPoint, undefined | number)'
+    uid: '@microsoft/live-share-canvas.computeEndArrow'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Calculates the points defining the path of an arrow at the end of
+      a segment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function computeEndArrow(from: IPoint, to: IPoint, arrowSize?: undefined
+        | number): IPoint[]
+      parameters:
+        - id: from
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The start point of the arrow segment.
+        - id: to
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The end point of the arrow segment.
+        - id: arrowSize
+          type: undefined | number
+          description: ''
+      return:
+        description: The points making up the arrow.
+        type: '<xref uid="@microsoft/live-share-canvas.IPoint" />[]'
+  - name: 'computeQuadBetweenTwoCircles(IPoint, number, IPoint, number)'
+    uid: '@microsoft/live-share-canvas.computeQuadBetweenTwoCircles'
+    package: '@microsoft/live-share-canvas'
+    summary: Computes a quad between two circles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function computeQuadBetweenTwoCircles(center1: IPoint, r1: number,
+        center2: IPoint, r2: number): IQuad | undefined
+      parameters:
+        - id: center1
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The center of the first circle.
+        - id: r1
+          type: number
+          description: The radius of the first circle.
+        - id: center2
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The center of the second circle.
+        - id: r2
+          type: number
+          description: The radius of the second circle.
+      return:
+        description: >-
+          A quad joining the two circles, or undefined if the quad couldn't be
+          computed.
+        type: IQuad | undefined
+  - name: >-
+      computeQuadBetweenTwoRectangles(IPoint, number, number, IPoint, number,
+      number)
+    uid: '@microsoft/live-share-canvas.computeQuadBetweenTwoRectangles'
+    package: '@microsoft/live-share-canvas'
+    summary: Computes a quad between the specified rectangles.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function computeQuadBetweenTwoRectangles(center1: IPoint, halfWidth1:
+        number, halfHeight1: number, center2: IPoint, halfWidth2: number,
+        halfHeight2: number): IQuad | undefined
+      parameters:
+        - id: center1
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The center of the first rectangle.
+        - id: halfWidth1
+          type: number
+          description: The half width of the first rectangle.
+        - id: halfHeight1
+          type: number
+          description: The half height of the first rectangle.
+        - id: center2
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The center of the second rectangle.
+        - id: halfWidth2
+          type: number
+          description: The half width of the second rectangle.
+        - id: halfHeight2
+          type: number
+          description: The half height of the second rectangle.
+      return:
+        description: >-
+          A quad joining the two rectangles, or undefined if the quad couldn't
+          be computed.
+        type: IQuad | undefined
+  - name: 'doRectanglesOverlap(IRect, IRect)'
+    uid: '@microsoft/live-share-canvas.doRectanglesOverlap'
+    package: '@microsoft/live-share-canvas'
+    summary: Determines if two rectangles overlap.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function doRectanglesOverlap(r1: IRect, r2: IRect): boolean'
+      parameters:
+        - id: r1
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The first rectangle.
+        - id: r2
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The second rectangle.
+      return:
+        description: '`true` if the two rectabgles overlap, `false` otherwise.'
+        type: boolean
+  - name: 'forceIntoRange(number, number, number)'
+    uid: '@microsoft/live-share-canvas.forceIntoRange'
+    package: '@microsoft/live-share-canvas'
+    summary: Forces a number into a range.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function forceIntoRange(n: number, min: number, max: number): number'
+      parameters:
+        - id: 'n'
+          type: number
+          description: The number to process.
+        - id: min
+          type: number
+          description: The minimum value.
+        - id: max
+          type: number
+          description: The maximum value.
+      return:
+        description: '`min` if `n < min`, `max` if `n > max`, `n` otherwise.'
+        type: number
+  - name: generateUniqueId()
+    uid: '@microsoft/live-share-canvas.generateUniqueId'
+    package: '@microsoft/live-share-canvas'
+    summary: Generates a unique Id.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function generateUniqueId(): string'
+      return:
+        description: A unique Id.
+        type: string
+  - name: getRectangleSegments(IRect)
+    uid: '@microsoft/live-share-canvas.getRectangleSegments'
+    package: '@microsoft/live-share-canvas'
+    summary: Computes a rectangle's side segments
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getRectangleSegments(rect: IRect): ISegment[]'
+      parameters:
+        - id: rect
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The rectangles to get the segments of.
+      return:
+        description: The 4 segments representing the rectangle's 4 sides.
+        type: '<xref uid="@microsoft/live-share-canvas.ISegment" />[]'
+  - name: 'getSegmentIntersectionsWithRectangle(ISegment, IRect)'
+    uid: '@microsoft/live-share-canvas.getSegmentIntersectionsWithRectangle'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Determines the intersection points between the specified segment and the
+      sides of the
+
+      specified rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSegmentIntersectionsWithRectangle(s: ISegment, r: IRect):
+        IPoint[]
+      parameters:
+        - id: s
+          type: <xref uid="@microsoft/live-share-canvas.ISegment" />
+          description: The segment.
+        - id: r
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The rectangle.
+      return:
+        description: 'An array containing 0, 1 or 2 intersection points.'
+        type: '<xref uid="@microsoft/live-share-canvas.IPoint" />[]'
+  - name: 'getSegmentsIntersection(ISegment, ISegment)'
+    uid: '@microsoft/live-share-canvas.getSegmentsIntersection'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Computes the intersection point between two segments.
+
+      From
+      https://gamedev.stackexchange.com/questions/111100/intersection-of-a-line-segment-and-a-rectangle
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSegmentsIntersection(s1: ISegment, s2: ISegment): IPoint |
+        undefined
+      parameters:
+        - id: s1
+          type: <xref uid="@microsoft/live-share-canvas.ISegment" />
+          description: The first segment.
+        - id: s2
+          type: <xref uid="@microsoft/live-share-canvas.ISegment" />
+          description: The second segment.
+      return:
+        description: 'The intersection point, or undefined if the segments do not intersect.'
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" /> | undefined
+  - name: 'isInRange(number, number, number)'
+    uid: '@microsoft/live-share-canvas.isInRange'
+    package: '@microsoft/live-share-canvas'
+    summary: Determines if a number is within a range.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isInRange(n: number, r1: number, r2: number): boolean'
+      parameters:
+        - id: 'n'
+          type: number
+          description: The number to check.
+        - id: r1
+          type: number
+          description: The first range boundary.
+        - id: r2
+          type: number
+          description: The second range boundary.
+      return:
+        description: '`true` if `n` is between `r1` and `r2`, `false` otherwise.'
+        type: boolean
+  - name: 'isPointInsideRectangle(IPoint, IRect)'
+    uid: '@microsoft/live-share-canvas.isPointInsideRectangle'
+    package: '@microsoft/live-share-canvas'
+    summary: Determines if the specified point is inside the specified rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function isPointInsideRectangle(p: IPoint, r: IRect): boolean'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The point.
+        - id: r
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The rectangle.
+      return:
+        description: '`true` if `p` is inside `r`, `false` otherwise.'
+        type: boolean
+  - name: 'isRectangleInsideRectangle(IRect, IRect)'
+    uid: '@microsoft/live-share-canvas.isRectangleInsideRectangle'
+    package: '@microsoft/live-share-canvas'
+    summary: Determines if a rectangle is inside another.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function isRectangleInsideRectangle(r: IRect, containingRectangle:
+        IRect): boolean
+      parameters:
+        - id: r
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The rectangle to check the inclusion of.
+        - id: containingRectangle
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The containing rectangle.
+      return:
+        description: '`true` is `r` is inside `containingRectangle`, `false` otherwise.'
+        type: boolean
+  - name: 'makeRectangle(IPoint, number, number)'
+    uid: '@microsoft/live-share-canvas.makeRectangle'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Makes a rectangle of the specified width and height from the specified
+      center.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function makeRectangle(center: IPoint, width: number, height: number):
+        IRect
+      parameters:
+        - id: center
+          type: <xref uid="@microsoft/live-share-canvas.IPoint" />
+          description: The center of the rectangle.
+        - id: width
+          type: number
+          description: The width of the rectangle.
+        - id: height
+          type: number
+          description: The height of the rectangle.
+      return:
+        description: The computed rectangle.
+        type: <xref uid="@microsoft/live-share-canvas.IRect" />
+  - name: 'segmentMayIntersectWithRectangle(ISegment, IRect)'
+    uid: '@microsoft/live-share-canvas.segmentMayIntersectWithRectangle'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Determines if the specified segment MAY intersect with any of the
+      specified rectangle's
+
+      sides, which doesn't mean that it DOES intersect. Computing the
+      intersection between
+
+      segments is computationally expensive; this method provides a way to not
+      have to do it
+
+      unless it's actually necessary.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function segmentMayIntersectWithRectangle(segment: ISegment, rect:
+        IRect): boolean
+      parameters:
+        - id: segment
+          type: <xref uid="@microsoft/live-share-canvas.ISegment" />
+          description: The segment.
+        - id: rect
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: The rectangle.
+      return:
+        description: '`true` is `segment` may intersect with `rect`, `false` otherwise.'
+        type: boolean
+  - name: 'segmentsMayIntersect(ISegment, ISegment)'
+    uid: '@microsoft/live-share-canvas.segmentsMayIntersect'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Determines whether two segments MAY intersect, which doesn't mean they DO
+      intersect.
+
+      Computing the intersection of two segments is computationally expensive;
+      this method
+
+      provides a way to not have to do it unless it's actually necessary.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function segmentsMayIntersect(segment1: ISegment, segment2: ISegment):
+        boolean
+      parameters:
+        - id: segment1
+          type: <xref uid="@microsoft/live-share-canvas.ISegment" />
+          description: The first segment.
+        - id: segment2
+          type: <xref uid="@microsoft/live-share-canvas.ISegment" />
+          description: The second segment.
+      return:
+        description: '`true` is the two segments may intersect, `false` otherwise.'
+        type: boolean
+enums:
+  - '@microsoft/live-share-canvas.InkingTool'
+  - '@microsoft/live-share-canvas.StrokeEndState'
+  - '@microsoft/live-share-canvas.StrokeMode'
+  - '@microsoft/live-share-canvas.StrokeType'

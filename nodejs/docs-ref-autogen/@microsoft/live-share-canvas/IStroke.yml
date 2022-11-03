@@ -1,0 +1,210 @@
+### YamlMime:TSType
+name: IStroke
+uid: '@microsoft/live-share-canvas.IStroke'
+package: '@microsoft/live-share-canvas'
+summary: |-
+  Defines a stroke, i.e. a collection of points that can
+  be rendered on a canvas.
+fullName: IStroke
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: brush
+    uid: '@microsoft/live-share-canvas.IStroke.brush'
+    package: '@microsoft/live-share-canvas'
+    summary: The brush used to draw the stroke.
+    fullName: brush
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'brush: IBrush'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: clientId
+    uid: '@microsoft/live-share-canvas.IStroke.clientId'
+    package: '@microsoft/live-share-canvas'
+    summary: Optional. The id of the client the stroke was created on.
+    fullName: clientId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'clientId?: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: id
+    uid: '@microsoft/live-share-canvas.IStroke.id'
+    package: '@microsoft/live-share-canvas'
+    summary: The id of the stroke.
+    fullName: id
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: length
+    uid: '@microsoft/live-share-canvas.IStroke.length'
+    package: '@microsoft/live-share-canvas'
+    summary: The number of points in the stroke.
+    fullName: length
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'length: number'
+      return:
+        description: ''
+        type: number
+  - name: timeStamp
+    uid: '@microsoft/live-share-canvas.IStroke.timeStamp'
+    package: '@microsoft/live-share-canvas'
+    summary: The timestamp when the stroke was created.
+    fullName: timeStamp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'timeStamp: number'
+      return:
+        description: ''
+        type: number
+methods:
+  - name: 'addPoints(IPointerPoint[])'
+    uid: '@microsoft/live-share-canvas.IStroke.addPoints'
+    package: '@microsoft/live-share-canvas'
+    summary: Adds points to the stroke.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function addPoints(points: IPointerPoint[]): boolean'
+      parameters:
+        - id: points
+          type: '<xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]'
+          description: |
+            The points to add.
+      return:
+        description: ''
+        type: boolean
+  - name: deserialize(string)
+    uid: '@microsoft/live-share-canvas.IStroke.deserialize'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Deserializes the specified stroke string and sets this
+      stroke's brush, points and other proprties accordingly.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function deserialize(serializedStroke: string)'
+      parameters:
+        - id: serializedStroke
+          type: string
+          description: |
+            The serialized stroke.
+  - name: getBoundingRect()
+    uid: '@microsoft/live-share-canvas.IStroke.getBoundingRect'
+    package: '@microsoft/live-share-canvas'
+    summary: Computes the stroke's bounding rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getBoundingRect(): IRect'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IRect" />
+  - name: getIntersectionPoints(ISegment)
+    uid: '@microsoft/live-share-canvas.IStroke.getIntersectionPoints'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Computes the intersection points between the stroke
+      and the specified segment.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getIntersectionPoints(segment: ISegment): IPoint[]'
+      parameters:
+        - id: segment
+          type: <xref uid="@microsoft/live-share-canvas.ISegment" />
+          description: |
+            The segment to test against.
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share-canvas.IPoint" />[]'
+  - name: getPointAt(number)
+    uid: '@microsoft/live-share-canvas.IStroke.getPointAt'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the point at the given index.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function getPointAt(index: number): IPointerPoint'
+      parameters:
+        - id: index
+          type: number
+          description: |
+            The point index.
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+  - name: intersectsWithRectangle(IRect)
+    uid: '@microsoft/live-share-canvas.IStroke.intersectsWithRectangle'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Determines if the stroke intersects with the specified
+      rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function intersectsWithRectangle(rectangle: IRect): boolean'
+      parameters:
+        - id: rectangle
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: |
+            The rectangle to test against.
+      return:
+        description: ''
+        type: boolean
+  - name: pointErase(IRect)
+    uid: '@microsoft/live-share-canvas.IStroke.pointErase'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Splits this stroke into several other ones by "erasing"
+      the portions that are within the eraser rectangle.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
+      parameters:
+        - id: eraserRect
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: |
+            The eraser rectangle.
+      return:
+        description: ''
+        type: '<xref uid="@microsoft/live-share-canvas.IStroke" />[] | undefined'
+  - name: serialize()
+    uid: '@microsoft/live-share-canvas.IStroke.serialize'
+    package: '@microsoft/live-share-canvas'
+    summary: Serializes the stroke to a string.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function serialize(): string'
+      return:
+        description: ''
+        type: string

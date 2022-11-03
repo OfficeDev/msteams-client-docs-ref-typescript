@@ -1,0 +1,310 @@
+### YamlMime:TSType
+name: WetCanvas
+uid: '@microsoft/live-share-canvas.WetCanvas'
+package: '@microsoft/live-share-canvas'
+summary: 'Represents a canvas suitable for "wet ink", i.e. an ongoing stroke.'
+fullName: WetCanvas
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+constructors:
+  - name: WetCanvas(HTMLElement | undefined)
+    uid: '@microsoft/live-share-canvas.WetCanvas.constructor'
+    package: '@microsoft/live-share-canvas'
+    summary: 'Creates a new InkingCanvas instance, attached to the provided HTMLElement.'
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'new WetCanvas(_parentElement?: HTMLElement | undefined)'
+      parameters:
+        - id: _parentElement
+          type: HTMLElement | undefined
+          description: >
+            The HTML element this canvas is attached to. InkingCanvas
+
+            dynamically creates an HTML5 Canvas element and adds it as a child
+            to `parentElement`.
+properties:
+  - name: brush
+    uid: '@microsoft/live-share-canvas.WetCanvas.brush'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the canvas' brush.
+    fullName: brush
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IBrush brush
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: canvas
+    uid: '@microsoft/live-share-canvas.WetCanvas.canvas'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets the underlying HTML5 Canvas element.
+    fullName: canvas
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: HTMLCanvasElement canvas
+      return:
+        description: ''
+        type: HTMLCanvasElement
+  - name: offset
+    uid: '@microsoft/live-share-canvas.WetCanvas.offset'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the offset from the canvas' reference point, in pixels.
+      Sets the offset from the canvas' reference point, in pixels.
+    fullName: offset
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: Readonly<IPoint> offset
+      return:
+        description: ''
+        type: Readonly&lt;<xref uid="@microsoft/live-share-canvas.IPoint" />&gt;
+  - name: scale
+    uid: '@microsoft/live-share-canvas.WetCanvas.scale'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Gets the canvas' scale. Defaults to 1.
+      Sets the canvas' scale. Value must be greater than zero.
+    fullName: scale
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: number scale
+      return:
+        description: ''
+        type: number
+inheritedProperties:
+  - name: fadeOutDuration
+    uid: '@microsoft/live-share-canvas.WetCanvas.fadeOutDuration'
+    package: '@microsoft/live-share-canvas'
+    summary: >-
+      Configures the time it takes, in milliseconds, for an InkingCanvas to fade
+      out.
+    fullName: fadeOutDuration
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static fadeOutDuration: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.fadeOutDuration](xref:@microsoft/live-share-canvas.InkingCanvas.fadeOutDuration)
+  - name: highlighterOpacity
+    uid: '@microsoft/live-share-canvas.WetCanvas.highlighterOpacity'
+    package: '@microsoft/live-share-canvas'
+    summary: Configures the opacity of highlighter strokes.
+    fullName: highlighterOpacity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static highlighterOpacity: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.highlighterOpacity](xref:@microsoft/live-share-canvas.InkingCanvas.highlighterOpacity)
+  - name: laserShadowOpacity
+    uid: '@microsoft/live-share-canvas.WetCanvas.laserShadowOpacity'
+    package: '@microsoft/live-share-canvas'
+    summary: Configures the opacity of the laser stroke shadow.
+    fullName: laserShadowOpacity
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'static laserShadowOpacity: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.laserShadowOpacity](xref:@microsoft/live-share-canvas.InkingCanvas.laserShadowOpacity)
+  - name: referencePoint
+    uid: '@microsoft/live-share-canvas.WetCanvas.referencePoint'
+    package: '@microsoft/live-share-canvas'
+    summary: The canvas' reference point.
+    fullName: referencePoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'referencePoint: CanvasReferencePoint'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.CanvasReferencePoint" />
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.referencePoint](xref:@microsoft/live-share-canvas.InkingCanvas.referencePoint)
+inheritedMethods:
+  - name: addPoint(IPointerPoint)
+    uid: '@microsoft/live-share-canvas.WetCanvas.addPoint'
+    package: '@microsoft/live-share-canvas'
+    summary: Adds a points to the current stroke.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function addPoint(p: IPointerPoint)'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: |
+            The point to add to the current stroke.
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.addPoint](xref:@microsoft/live-share-canvas.InkingCanvas.addPoint)
+  - name: beginStroke(IPointerPoint)
+    uid: '@microsoft/live-share-canvas.WetCanvas.beginStroke'
+    package: '@microsoft/live-share-canvas'
+    summary: Begins a stroke in the canvas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function beginStroke(p: IPointerPoint)'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: |
+            The starting point of the stroke.
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.beginStroke](xref:@microsoft/live-share-canvas.InkingCanvas.beginStroke)
+  - name: cancelStroke()
+    uid: '@microsoft/live-share-canvas.WetCanvas.cancelStroke'
+    package: '@microsoft/live-share-canvas'
+    summary: Cancels the current stroke.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function cancelStroke()
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.cancelStroke](xref:@microsoft/live-share-canvas.InkingCanvas.cancelStroke)
+  - name: clear()
+    uid: '@microsoft/live-share-canvas.WetCanvas.clear'
+    package: '@microsoft/live-share-canvas'
+    summary: Clears the canvas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function clear()
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.clear](xref:@microsoft/live-share-canvas.InkingCanvas.clear)
+  - name: endStroke(IPointerPoint)
+    uid: '@microsoft/live-share-canvas.WetCanvas.endStroke'
+    package: '@microsoft/live-share-canvas'
+    summary: Ends the current stroke in the canvas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function endStroke(p?: IPointerPoint)'
+      parameters:
+        - id: p
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+          description: |
+            Optional. The end point of the stroke. If not specified,
+            the end point is the last one added.
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.endStroke](xref:@microsoft/live-share-canvas.InkingCanvas.endStroke)
+  - name: fadeOut()
+    uid: '@microsoft/live-share-canvas.WetCanvas.fadeOut'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      Fades the canvas out by decreasing its opacity, and eventually removes it
+      from the DOM.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function fadeOut()
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.fadeOut](xref:@microsoft/live-share-canvas.InkingCanvas.fadeOut)
+  - name: removeFromDOM()
+    uid: '@microsoft/live-share-canvas.WetCanvas.removeFromDOM'
+    package: '@microsoft/live-share-canvas'
+    summary: Removes the canvas from the DOM.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function removeFromDOM()
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.removeFromDOM](xref:@microsoft/live-share-canvas.InkingCanvas.removeFromDOM)
+  - name: renderStroke(IStroke)
+    uid: '@microsoft/live-share-canvas.WetCanvas.renderStroke'
+    package: '@microsoft/live-share-canvas'
+    summary: Renders the specified stroke onto the canvas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function renderStroke(stroke: IStroke)'
+      parameters:
+        - id: stroke
+          type: <xref uid="@microsoft/live-share-canvas.IStroke" />
+          description: |
+            The stroke to render.
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.renderStroke](xref:@microsoft/live-share-canvas.InkingCanvas.renderStroke)
+  - name: 'resize(number, number)'
+    uid: '@microsoft/live-share-canvas.WetCanvas.resize'
+    package: '@microsoft/live-share-canvas'
+    summary: Resizes this canvas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function resize(width: number, height: number)'
+      parameters:
+        - id: width
+          type: number
+          description: 'The new width of the canvas, in pixels.'
+        - id: height
+          type: number
+          description: |
+            The new height of the canvas, in pixels.
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.resize](xref:@microsoft/live-share-canvas.InkingCanvas.resize)
+  - name: setBrush(IBrush)
+    uid: '@microsoft/live-share-canvas.WetCanvas.setBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: Sets the current brush for the canvas.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'function setBrush(value: IBrush)'
+      parameters:
+        - id: value
+          type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+          description: |
+            The brush.
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [InkingCanvas.setBrush](xref:@microsoft/live-share-canvas.InkingCanvas.setBrush)
+extends: <xref uid="@microsoft/live-share-canvas.DryWetCanvas" />

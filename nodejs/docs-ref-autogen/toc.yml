@@ -104,6 +104,133 @@
     - uid: '@microsoft/live-share.UserMeetingRole'
       name: UserMeetingRole
       items: []
+- name: '@microsoft/live-share-canvas'
+  items:
+    - name: Overview
+      uid: '@microsoft/live-share-canvas'
+    - uid: '@microsoft/live-share-canvas.ArrowType'
+      name: ArrowType
+      items: []
+    - uid: '@microsoft/live-share-canvas.BrushTipShape'
+      name: BrushTipShape
+      items: []
+    - uid: '@microsoft/live-share-canvas.BrushType'
+      name: BrushType
+      items: []
+    - uid: '@microsoft/live-share-canvas.CanvasReferencePoint'
+      name: CanvasReferencePoint
+      items: []
+    - uid: '@microsoft/live-share-canvas.DryCanvas'
+      name: DryCanvas
+      items: []
+    - uid: '@microsoft/live-share-canvas.DryWetCanvas'
+      name: DryWetCanvas
+      items: []
+    - uid: '@microsoft/live-share-canvas.EventListener'
+      name: EventListener
+      items: []
+    - uid: '@microsoft/live-share-canvas.IAddPointsEventArgs'
+      name: IAddPointsEventArgs
+      items: []
+    - uid: '@microsoft/live-share-canvas.IAddRemoveStrokeOptions'
+      name: IAddRemoveStrokeOptions
+      items: []
+    - uid: '@microsoft/live-share-canvas.IBeginStrokeEventArgs'
+      name: IBeginStrokeEventArgs
+      items: []
+    - uid: '@microsoft/live-share-canvas.IBrush'
+      name: IBrush
+      items: []
+    - uid: '@microsoft/live-share-canvas.IColor'
+      name: IColor
+      items: []
+    - uid: '@microsoft/live-share-canvas.IMulticastEvent'
+      name: IMulticastEvent
+      items: []
+    - uid: '@microsoft/live-share-canvas.InkingCanvas'
+      name: InkingCanvas
+      items: []
+    - uid: '@microsoft/live-share-canvas.InkingManager'
+      name: InkingManager
+      items: []
+    - uid: '@microsoft/live-share-canvas.InkingTool'
+      name: InkingTool
+      items: []
+    - uid: '@microsoft/live-share-canvas.InputFilter'
+      name: InputFilter
+      items: []
+    - uid: '@microsoft/live-share-canvas.InputFilterCollection'
+      name: InputFilterCollection
+      items: []
+    - uid: '@microsoft/live-share-canvas.InputProvider'
+      name: InputProvider
+      items: []
+    - uid: '@microsoft/live-share-canvas.IPoint'
+      name: IPoint
+      items: []
+    - uid: '@microsoft/live-share-canvas.IPointerEvent'
+      name: IPointerEvent
+      items: []
+    - uid: '@microsoft/live-share-canvas.IPointerMovedEventArgs'
+      name: IPointerMovedEventArgs
+      items: []
+    - uid: '@microsoft/live-share-canvas.IPointerMoveEvent'
+      name: IPointerMoveEvent
+      items: []
+    - uid: '@microsoft/live-share-canvas.IPointerPoint'
+      name: IPointerPoint
+      items: []
+    - uid: '@microsoft/live-share-canvas.IRect'
+      name: IRect
+      items: []
+    - uid: '@microsoft/live-share-canvas.ISegment'
+      name: ISegment
+      items: []
+    - uid: '@microsoft/live-share-canvas.IStroke'
+      name: IStroke
+      items: []
+    - uid: '@microsoft/live-share-canvas.IStrokeCreationOptions'
+      name: IStrokeCreationOptions
+      items: []
+    - uid: '@microsoft/live-share-canvas.IUserInfo'
+      name: IUserInfo
+      items: []
+    - uid: '@microsoft/live-share-canvas.IWetStroke'
+      name: IWetStroke
+      items: []
+    - uid: '@microsoft/live-share-canvas.JitterFilter'
+      name: JitterFilter
+      items: []
+    - uid: '@microsoft/live-share-canvas.LaserPointerCanvas'
+      name: LaserPointerCanvas
+      items: []
+    - uid: '@microsoft/live-share-canvas.LiveCanvas'
+      name: LiveCanvas
+      items: []
+    - uid: '@microsoft/live-share-canvas.LiveCursor'
+      name: LiveCursor
+      items: []
+    - uid: '@microsoft/live-share-canvas.MulticastEvent'
+      name: MulticastEvent
+      items: []
+    - uid: '@microsoft/live-share-canvas.PointerInputProvider'
+      name: PointerInputProvider
+      items: []
+    - uid: '@microsoft/live-share-canvas.Stroke'
+      name: Stroke
+      items: []
+    - uid: '@microsoft/live-share-canvas.StrokeEndState'
+      name: StrokeEndState
+      items: []
+    - uid: '@microsoft/live-share-canvas.StrokeMode'
+      name: StrokeMode
+      items: []
+    - uid: '@microsoft/live-share-canvas.StrokeType'
+      name: StrokeType
+      items: []
+    - uid: '@microsoft/live-share-canvas.WetCanvas'
+      name: WetCanvas
+      items: []
 - name: '@microsoft/live-share-media'
   items:
     - name: Overview

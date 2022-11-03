@@ -1,0 +1,76 @@
+### YamlMime:TSType
+name: IBeginStrokeEventArgs
+uid: '@microsoft/live-share-canvas.IBeginStrokeEventArgs'
+package: '@microsoft/live-share-canvas'
+summary: Defines the arguments of the BeginStrokeEvent.
+fullName: IBeginStrokeEventArgs
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: interface
+properties:
+  - name: brush
+    uid: '@microsoft/live-share-canvas.IBeginStrokeEventArgs.brush'
+    package: '@microsoft/live-share-canvas'
+    summary: The brush of the new stroke.
+    fullName: brush
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'brush: IBrush'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: mode
+    uid: '@microsoft/live-share-canvas.IBeginStrokeEventArgs.mode'
+    package: '@microsoft/live-share-canvas'
+    summary: The stroke's mode.
+    fullName: mode
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'mode: StrokeMode'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.StrokeMode" />
+  - name: startPoint
+    uid: '@microsoft/live-share-canvas.IBeginStrokeEventArgs.startPoint'
+    package: '@microsoft/live-share-canvas'
+    summary: The starting point of the new stroke.
+    fullName: startPoint
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'startPoint: IPointerPoint'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
+  - name: strokeId
+    uid: '@microsoft/live-share-canvas.IBeginStrokeEventArgs.strokeId'
+    package: '@microsoft/live-share-canvas'
+    summary: The id of the new stroke.
+    fullName: strokeId
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'strokeId: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@microsoft/live-share-canvas.IBeginStrokeEventArgs.type'
+    package: '@microsoft/live-share-canvas'
+    summary: The type of the new stroke.
+    fullName: type
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: 'type: StrokeType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.StrokeType" />

@@ -1,0 +1,118 @@
+### YamlMime:TSType
+name: InputProvider
+uid: '@microsoft/live-share-canvas.InputProvider'
+package: '@microsoft/live-share-canvas'
+summary: A basic input event provider implementation.
+fullName: InputProvider
+remarks: ''
+isPreview: false
+isDeprecated: false
+type: class
+properties:
+  - name: isActive
+    uid: '@microsoft/live-share-canvas.InputProvider.isActive'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: isActive
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: boolean isActive
+      return:
+        description: ''
+        type: boolean
+  - name: pointerDown
+    uid: '@microsoft/live-share-canvas.InputProvider.pointerDown'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerDown
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerEvent> pointerDown
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerEvent" />&gt;
+  - name: pointerEnter
+    uid: '@microsoft/live-share-canvas.InputProvider.pointerEnter'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerEnter
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerEvent> pointerEnter
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerEvent" />&gt;
+  - name: pointerLeave
+    uid: '@microsoft/live-share-canvas.InputProvider.pointerLeave'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerLeave
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerEvent> pointerLeave
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerEvent" />&gt;
+  - name: pointerMove
+    uid: '@microsoft/live-share-canvas.InputProvider.pointerMove'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerMove
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerMoveEvent> pointerMove
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerMoveEvent" />&gt;
+  - name: pointerUp
+    uid: '@microsoft/live-share-canvas.InputProvider.pointerUp'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    fullName: pointerUp
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: IMulticastEvent<IPointerEvent> pointerUp
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share-canvas.IMulticastEvent" />&lt;<xref
+          uid="@microsoft/live-share-canvas.IPointerEvent" />&gt;
+methods:
+  - name: activate()
+    uid: '@microsoft/live-share-canvas.InputProvider.activate'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function activate()
+  - name: deactivate()
+    uid: '@microsoft/live-share-canvas.InputProvider.deactivate'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: function deactivate()
