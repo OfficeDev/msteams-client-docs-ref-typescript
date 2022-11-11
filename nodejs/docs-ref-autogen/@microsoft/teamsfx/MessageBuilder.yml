@@ -101,7 +101,7 @@ methods:
         description: A message activity with an attachment.
         type: Partial&lt;Activity&gt;
   - name: >-
-      attachHeroCard(string, string | CardImage[], string | CardAction[],
+      attachHeroCard(string, (string | CardImage)[], (string | CardAction)[],
       Partial<HeroCard>)
     uid: '@microsoft/teamsfx.MessageBuilder.attachHeroCard'
     package: '@microsoft/teamsfx'
@@ -123,18 +123,18 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        static function attachHeroCard(title: string, images?: string |
-        CardImage[], buttons?: string | CardAction[], other?:
+        static function attachHeroCard(title: string, images?: (string |
+        CardImage)[], buttons?: (string | CardAction)[], other?:
         Partial<HeroCard>): Partial<Activity>
       parameters:
         - id: title
           type: string
           description: The card title.
         - id: images
-          type: 'string | CardImage[]'
+          type: '(string | CardImage)[]'
           description: Optional. The array of images to include on the card.
         - id: buttons
-          type: 'string | CardAction[]'
+          type: '(string | CardAction)[]'
           description: >-
             Optional. The array of buttons to include on the card. Each `string`
             in the array
@@ -208,8 +208,8 @@ methods:
         description: A bot message activity attached with a sign-in card.
         type: Partial&lt;Activity&gt;
   - name: >-
-      attachThumbnailCard(string, string | CardImage[], string | CardAction[],
-      Partial<ThumbnailCard>)
+      attachThumbnailCard(string, (string | CardImage)[], (string |
+      CardAction)[], Partial<ThumbnailCard>)
     uid: '@microsoft/teamsfx.MessageBuilder.attachThumbnailCard'
     package: '@microsoft/teamsfx'
     summary: ''
@@ -218,18 +218,18 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        static function attachThumbnailCard(title: string, images?: string |
-        CardImage[], buttons?: string | CardAction[], other?:
+        static function attachThumbnailCard(title: string, images?: (string |
+        CardImage)[], buttons?: (string | CardAction)[], other?:
         Partial<ThumbnailCard>): Partial<Activity>
       parameters:
         - id: title
           type: string
           description: The card title.
         - id: images
-          type: 'string | CardImage[]'
+          type: '(string | CardImage)[]'
           description: Optional. The array of images to include on the card.
         - id: buttons
-          type: 'string | CardAction[]'
+          type: '(string | CardAction)[]'
           description: >-
             Optional. The array of buttons to include on the card. Each `string`
             in the array

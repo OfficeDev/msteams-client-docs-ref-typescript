@@ -132,6 +132,11 @@ functions:
 
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
+
+      On hosts where there is no support for making an app full screen, the
+      handler registered
+
+      with this function will never be called.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -153,6 +158,11 @@ functions:
       where the application container falls in
 
       the F6/tab order in the host.
+
+      On mobile hosts or hosts where there is no keyboard interaction or UI
+      notion of "focus" this function has no
+
+      effect and will be a no-op when called.
     remarks: ''
     isPreview: false
     isDeprecated: false
@@ -186,6 +196,8 @@ functions:
     summary: >-
       Shares a deep link that a user can use to navigate back to a specific
       state in this page.
+
+      Please note that this method does yet work on mobile hosts.
     remarks: ''
     isPreview: false
     isDeprecated: false

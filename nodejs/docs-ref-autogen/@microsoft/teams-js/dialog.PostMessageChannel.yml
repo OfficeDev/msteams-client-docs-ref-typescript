@@ -2,10 +2,12 @@
 name: PostMessageChannel
 uid: '@microsoft/teams-js.dialog.PostMessageChannel'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >-
+  Handler used to receive and process messages sent between a dialog and the app
+  that launched it
 fullName: PostMessageChannel
 remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 syntax: |
   type PostMessageChannel = (message: any) => void

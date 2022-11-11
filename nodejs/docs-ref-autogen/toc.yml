@@ -493,6 +493,9 @@
     - uid: '@microsoft/teams-js.IAppWindow'
       name: IAppWindow
       items: []
+    - uid: '@microsoft/teams-js.LiveShareHost'
+      name: LiveShareHost
+      items: []
     - uid: '@microsoft/teams-js.LocaleInfo'
       name: LocaleInfo
       items: []
@@ -728,6 +731,9 @@
         - uid: '@microsoft/teams-js.profile.TriggerType'
           name: TriggerType
           items: []
+    - uid: '@microsoft/teams-js.Rectangle'
+      name: Rectangle
+      items: []
     - uid: '@microsoft/teams-js.SdkError'
       name: SdkError
       items: []
@@ -772,6 +778,9 @@
         - uid: '@microsoft/teams-js.sharing.IURLContent'
           name: IURLContent
           items: []
+    - uid: '@microsoft/teams-js.ShowProfileRequestInternal'
+      name: ShowProfileRequestInternal
+      items: []
     - name: stageView
       items:
         - name: Overview
@@ -849,6 +858,9 @@
       items: []
     - uid: '@microsoft/teamsfx.AppCredential'
       name: AppCredential
+      items: []
+    - uid: '@microsoft/teamsfx.AppCredentialAuthConfig'
+      name: AppCredentialAuthConfig
       items: []
     - uid: '@microsoft/teamsfx.AuthenticationConfiguration'
       name: AuthenticationConfiguration
@@ -958,6 +970,9 @@
     - uid: '@microsoft/teamsfx.NotificationTargetType'
       name: NotificationTargetType
       items: []
+    - uid: '@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig'
+      name: OnBehalfOfCredentialAuthConfig
+      items: []
     - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
       name: OnBehalfOfUserCredential
       items: []
@@ -993,6 +1008,9 @@
       items: []
     - uid: '@microsoft/teamsfx.TeamsUserCredential'
       name: TeamsUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.TeamsUserCredentialAuthConfig'
+      name: TeamsUserCredentialAuthConfig
       items: []
     - uid: '@microsoft/teamsfx.TriggerPatterns'
       name: TriggerPatterns

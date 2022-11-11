@@ -18,12 +18,23 @@ properties:
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'aad: { scopes: string[] } & AuthenticationConfiguration'
+      content: >-
+        aad: { scopes: string[] } & (AuthenticationConfiguration | ({
+        authorityHost: string, clientId: string, tenantId: string } & {
+        certificateContent?: never, clientSecret: string } & {
+        initiateLoginEndpoint: string }) | ({ authorityHost: string, clientId:
+        string, tenantId: string } & { certificateContent: string,
+        clientSecret?: never } & { initiateLoginEndpoint: string }))
       return:
         description: ''
         type: >-
-          { scopes: string[] } & <xref
-          uid="@microsoft/teamsfx.AuthenticationConfiguration" />
+          { scopes: string[] } & (<xref
+          uid="@microsoft/teamsfx.AuthenticationConfiguration" /> | ({
+          authorityHost: string, clientId: string, tenantId: string } & {
+          certificateContent?: never, clientSecret: string } & {
+          initiateLoginEndpoint: string }) | ({ authorityHost: string, clientId:
+          string, tenantId: string } & { certificateContent: string,
+          clientSecret?: never } & { initiateLoginEndpoint: string }))
   - name: dialog
     uid: '@microsoft/teamsfx.BotSsoConfig.dialog'
     package: '@microsoft/teamsfx'

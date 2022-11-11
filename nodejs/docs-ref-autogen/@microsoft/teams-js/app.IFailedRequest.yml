@@ -12,7 +12,7 @@ properties:
   - name: message
     uid: '@microsoft/teams-js.app.IFailedRequest.message'
     package: '@microsoft/teams-js'
-    summary: A message that describes the failure
+    summary: This property is currently unused.
     fullName: message
     remarks: ''
     isPreview: false

@@ -1,33 +1,31 @@
 ### YamlMime:TSType
-name: ShowProfileRequest
-uid: '@microsoft/teams-js.profile.ShowProfileRequest'
+name: ShowProfileRequestInternal
+uid: '@microsoft/teams-js.ShowProfileRequestInternal'
 package: '@microsoft/teams-js'
-summary: Input parameters provided to the showProfile API.
-fullName: ShowProfileRequest
+summary: ''
+fullName: ShowProfileRequestInternal
 remarks: ''
-isPreview: true
+isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: modality
-    uid: '@microsoft/teams-js.profile.ShowProfileRequest.modality'
+    uid: '@microsoft/teams-js.ShowProfileRequestInternal.modality'
     package: '@microsoft/teams-js'
-    summary: >-
-      An optional hint to the hosting M365 application about which modality of
-      the profile you want to show.
+    summary: ''
     fullName: modality
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'modality?: Modality'
+      content: 'modality?: profile.Modality'
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.profile.Modality" />
   - name: persona
-    uid: '@microsoft/teams-js.profile.ShowProfileRequest.persona'
+    uid: '@microsoft/teams-js.ShowProfileRequestInternal.persona'
     package: '@microsoft/teams-js'
-    summary: The information about the persona to show the profile for.
+    summary: ''
     fullName: persona
     remarks: ''
     isPreview: false
@@ -37,29 +35,29 @@ properties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.profile.Persona" />
-  - name: targetElementBoundingRect
-    uid: '@microsoft/teams-js.profile.ShowProfileRequest.targetElementBoundingRect'
+  - name: targetRectangle
+    uid: '@microsoft/teams-js.ShowProfileRequestInternal.targetRectangle'
     package: '@microsoft/teams-js'
-    summary: The bounding rectangle of the target.
-    fullName: targetElementBoundingRect
+    summary: ''
+    fullName: targetRectangle
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'targetElementBoundingRect: DOMRect'
+      content: 'targetRectangle: Rectangle'
       return:
         description: ''
-        type: DOMRect
+        type: <xref uid="@microsoft/teams-js.Rectangle" />
   - name: triggerType
-    uid: '@microsoft/teams-js.profile.ShowProfileRequest.triggerType'
+    uid: '@microsoft/teams-js.ShowProfileRequestInternal.triggerType'
     package: '@microsoft/teams-js'
-    summary: Specifies which user interaction was used to trigger the API call.
+    summary: ''
     fullName: triggerType
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
-      content: 'triggerType: TriggerType'
+      content: 'triggerType: profile.TriggerType'
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.profile.TriggerType" />

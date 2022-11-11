@@ -8,14 +8,14 @@ functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.chat.isSupported'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Checks if chat capability is supported by the host
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: ''
+        description: boolean to represent whether the chat capability is supported
         type: boolean
   - name: openChat(OpenSingleChatRequest)
     uid: '@microsoft/teams-js.chat.openChat'
@@ -24,7 +24,7 @@ functions:
       Allows the user to open a chat with a single user and allows
       for the user to specify the message they wish to send.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'function openChat(openChatRequest: OpenSingleChatRequest): Promise<void>'
@@ -46,7 +46,7 @@ functions:
 
       only 1 user is provided into users array default back to origin openChat.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
