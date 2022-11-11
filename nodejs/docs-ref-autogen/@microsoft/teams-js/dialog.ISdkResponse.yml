@@ -5,7 +5,7 @@ package: '@microsoft/teams-js'
 summary: Data Structure to represent the SDK response when dialog closes
 fullName: ISdkResponse
 remarks: ''
-isPreview: false
+isPreview: true
 isDeprecated: false
 type: interface
 properties:
@@ -26,8 +26,15 @@ properties:
     uid: '@microsoft/teams-js.dialog.ISdkResponse.result'
     package: '@microsoft/teams-js'
     summary: >-
-      Result value that the dialog is submitted with using
+      Value provided in the `result` parameter by the dialog when the
       <code><xref:@microsoft/teams-js.dialog.submit></code> function
+
+      was called.
+
+      If the dialog was closed by the user without submitting (e.g., using a
+      control in the corner
+
+      of the dialog), this value will be `undefined` here.
     fullName: result
     remarks: ''
     isPreview: false

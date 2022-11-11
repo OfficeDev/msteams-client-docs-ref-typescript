@@ -28,6 +28,25 @@ constructors:
           type: 'string | string[]'
           description: |
             The list of scopes for which the token will have access.
+  - name: 'MsGraphAuthProvider(TokenCredential, string | string[])'
+    uid: '@microsoft/teamsfx.MsGraphAuthProvider.constructor_1'
+    package: '@microsoft/teamsfx'
+    summary: Constructor of MsGraphAuthProvider.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new MsGraphAuthProvider(credential: TokenCredential, scopes?: string |
+        string[])
+      parameters:
+        - id: credential
+          type: TokenCredential
+          description: credential used to provide configuration and auth.
+        - id: scopes
+          type: 'string | string[]'
+          description: |
+            The list of scopes for which the token will have access.
 methods:
   - name: getAccessToken()
     uid: '@microsoft/teamsfx.MsGraphAuthProvider.getAccessToken'

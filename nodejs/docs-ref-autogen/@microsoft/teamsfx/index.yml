@@ -58,8 +58,11 @@ interfaces:
   - '@microsoft/teamsfx.TeamsFxConfiguration'
   - '@microsoft/teamsfx.UserInfo'
 typeAliases:
+  - '@microsoft/teamsfx.AppCredentialAuthConfig'
   - '@microsoft/teamsfx.BotSsoExecutionDialogHandler'
   - '@microsoft/teamsfx.LogFunction'
+  - '@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig'
+  - '@microsoft/teamsfx.TeamsUserCredentialAuthConfig'
   - '@microsoft/teamsfx.TriggerPatterns'
 functions:
   - name: 'createApiClient(string, AuthProvider)'
@@ -162,6 +165,102 @@ functions:
         description: Graph client with specified scopes.
         type: Client
   - name: >-
+      createMicrosoftGraphClientWithCredential(TokenCredential, string |
+      string[])
+    uid: '@microsoft/teamsfx.createMicrosoftGraphClientWithCredential'
+    package: '@microsoft/teamsfx'
+    summary: >+
+      Get Microsoft graph client.
+
+
+      **Example**
+
+
+      Get Microsoft graph client by TokenCredential
+
+      ```typescript
+
+      // In browser: TeamsUserCredential
+
+      const authConfig: TeamsUserCredentialAuthConfig = {
+        clientId: "xxx",
+      initiateLoginEndpoint: "https://xxx/auth-start.html",
+
+      };
+
+
+      const credential = new TeamsUserCredential(authConfig);
+
+
+      const scope = "User.Read";
+
+      await credential.login(scope);
+
+
+      const client = createMicrosoftGraphClientWithCredential(credential,
+      scope);
+
+
+      // In node: OnBehalfOfUserCredential
+
+      const oboAuthConfig: OnBehalfOfCredentialAuthConfig = {
+        authorityHost: "xxx",
+        clientId: "xxx",
+        tenantId: "xxx",
+        clientSecret: "xxx",
+      };
+
+
+      const oboCredential = new OnBehalfOfUserCredential(ssoToken,
+      oboAuthConfig);
+
+      const scope = "User.Read";
+
+      const client = createMicrosoftGraphClientWithCredential(oboCredential,
+      scope);
+
+
+      // In node: AppCredential
+
+      const appAuthConfig: AppCredentialAuthConfig = {
+        authorityHost: "xxx",
+        clientId: "xxx",
+        tenantId: "xxx",
+        clientSecret: "xxx",
+      };
+
+      const appCredential = new AppCredential(appAuthConfig);
+
+      const scope = "User.Read";
+
+      const client = createMicrosoftGraphClientWithCredential(appCredential,
+      scope);
+
+
+      const profile = await client.api("/me").get();
+
+      ```
+
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createMicrosoftGraphClientWithCredential(credential:
+        TokenCredential, scopes?: string | string[]): Client
+      parameters:
+        - id: credential
+          type: TokenCredential
+          description: Used to provide configuration and auth.
+        - id: scopes
+          type: 'string | string[]'
+          description: >
+            The array of Microsoft Token scope of access. Default value is
+            `[.default]`.
+      return:
+        description: Graph client with specified scopes.
+        type: Client
+  - name: >-
       createPemCertOption(string | Buffer, string | Buffer, { ca?: string |
       Buffer, passphrase?: string })
     uid: '@microsoft/teamsfx.createPemCertOption'
@@ -227,7 +326,10 @@ functions:
     summary: Generate connection configuration consumed by tedious.
     remarks: ''
     isPreview: false
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      we recommend you compose your own Tedious configuration for better
+      flexibility.
     syntax:
       content: >-
         function getTediousConnectionConfig(teamsfx: TeamsFx, databaseName?:
@@ -244,6 +346,45 @@ functions:
       return:
         description: Connection configuration of tedious for the SQL.
         type: Promise&lt;ConnectionConfig&gt;
+  - name: >-
+      handleMessageExtensionQueryWithSSO(TurnContext,
+      OnBehalfOfCredentialAuthConfig, string, string | string[], (token:
+      MessageExtensionTokenResponse) => Promise<any>)
+    uid: '@microsoft/teamsfx.handleMessageExtensionQueryWithSSO'
+    package: '@microsoft/teamsfx'
+    summary: Users execute query in message extension with SSO or access token.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handleMessageExtensionQueryWithSSO(context: TurnContext,
+        config: OnBehalfOfCredentialAuthConfig, initiateLoginEndpoint: string,
+        scopes: string | string[], logic: (token: MessageExtensionTokenResponse)
+        => Promise<any>): Promise<void | MessagingExtensionResponse>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context object for the current turn.
+        - id: config
+          type: <xref uid="@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig" />
+          description: User custom the message extension authentication configuration.
+        - id: initiateLoginEndpoint
+          type: string
+          description: Login page for Teams to redirect to.
+        - id: scopes
+          type: 'string | string[]'
+          description: The list of scopes for which the token will have access.
+        - id: logic
+          type: '(token: MessageExtensionTokenResponse) =&gt; Promise&lt;any&gt;'
+          description: >
+            Business logic when executing the query in message extension with
+            SSO or access token.
+      return:
+        description: >-
+          A MessageExtension Response for the activity. If the logic not return
+          any, return void instead.
+        type: Promise&lt;void | MessagingExtensionResponse&gt;
   - name: >-
       handleMessageExtensionQueryWithToken(TurnContext,
       AuthenticationConfiguration | null, string | string[], (token:

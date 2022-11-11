@@ -86,6 +86,7 @@ interfaces:
   - '@microsoft/teams-js.SdkError'
   - '@microsoft/teams-js.SecondaryId'
   - '@microsoft/teams-js.ShareDeepLinkParameters'
+  - '@microsoft/teams-js.ShowProfileRequestInternal'
   - '@microsoft/teams-js.TabInformation'
   - '@microsoft/teams-js.TabInstance'
   - '@microsoft/teams-js.TabInstanceParameters'
@@ -135,12 +136,14 @@ typeAliases:
   - '@microsoft/teams-js.video.VideoEffectCallBack'
   - '@microsoft/teams-js.video.VideoFrameCallback'
   - '@microsoft/teams-js.FrameContext'
+  - '@microsoft/teams-js.Rectangle'
   - '@microsoft/teams-js.TaskInfo'
 classes:
   - '@microsoft/teams-js.media.File'
   - '@microsoft/teams-js.media.Media'
   - '@microsoft/teams-js.media.VideoController'
   - '@microsoft/teams-js.ChildAppWindow'
+  - '@microsoft/teams-js.LiveShareHost'
   - '@microsoft/teams-js.ParentAppWindow'
 functions:
   - name: enablePrintCapability()

@@ -10,6 +10,37 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
+      BotSsoExecutionDialog(Storage_2, TeamsBotSsoPromptSettings,
+      OnBehalfOfCredentialAuthConfig, string, string)
+    uid: '@microsoft/teamsfx.BotSsoExecutionDialog.constructor_1'
+    package: '@microsoft/teamsfx'
+    summary: Creates a new instance of the BotSsoExecutionDialog.
+    remarks: ''
+    isPreview: false
+    isDeprecated: false
+    syntax:
+      content: >-
+        new BotSsoExecutionDialog(dedupStorage: Storage_2, ssoPromptSettings:
+        TeamsBotSsoPromptSettings, authConfig: OnBehalfOfCredentialAuthConfig,
+        initiateLoginEndpoint: string, dialogName?: string)
+      parameters:
+        - id: dedupStorage
+          type: Storage_2
+          description: Helper storage to remove duplicated messages
+        - id: ssoPromptSettings
+          type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
+          description: ''
+        - id: authConfig
+          type: <xref uid="@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig" />
+          description: The authentication configuration.
+        - id: initiateLoginEndpoint
+          type: string
+          description: Login URL for Teams to redirect to.
+        - id: dialogName
+          type: string
+          description: |
+            custom dialog name
+  - name: >-
       BotSsoExecutionDialog(Storage_2, TeamsBotSsoPromptSettings, TeamsFx,
       string)
     uid: '@microsoft/teamsfx.BotSsoExecutionDialog.constructor'
@@ -31,11 +62,11 @@ constructors:
           description: ''
         - id: teamsfx
           type: <xref uid="@microsoft/teamsfx.TeamsFx" />
-          description: |
-            instance for authentication
+          description: instance for authentication
         - id: dialogName
           type: string
-          description: ''
+          description: |
+            custom dialog name
 inheritedProperties:
   - name: dialogs
     uid: '@microsoft/teamsfx.BotSsoExecutionDialog.dialogs'
