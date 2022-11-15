@@ -15,14 +15,14 @@ functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.profile.isSupported'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Checks if the profile capability is supported by the host
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: ''
+        description: boolean to represent whether the profile capability is supported
         type: boolean
   - name: showProfile(ShowProfileRequest)
     uid: '@microsoft/teams-js.profile.showProfile'
@@ -31,7 +31,7 @@ functions:
       Opens a profile card at a specified position to show profile information
       about a persona.
     remarks: ''
-    isPreview: false
+    isPreview: true
     isDeprecated: false
     syntax:
       content: >-
