@@ -26,11 +26,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: >-
-          true if the teamsCore capability is enabled in
-          runtime.supports.teamsCore and
-
-          false if it is disabled
+        description: boolean to represent whether the teamsCore capability is supported
         type: boolean
   - name: print()
     uid: '@microsoft/teams-js.teamsCore.print'

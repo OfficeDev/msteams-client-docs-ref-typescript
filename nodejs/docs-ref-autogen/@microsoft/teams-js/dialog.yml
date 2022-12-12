@@ -13,14 +13,14 @@ functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.dialog.isSupported'
     package: '@microsoft/teams-js'
-    summary: Checks if dialog module is supported by the host
+    summary: Checks if dialog capability is supported by the host
     remarks: ''
     isPreview: true
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: boolean to represent whether dialog module is supported
+        description: boolean to represent whether dialog capabilty is supported
         type: boolean
   - name: 'open(UrlDialogInfo, DialogSubmitHandler, PostMessageChannel)'
     uid: '@microsoft/teams-js.dialog.open'

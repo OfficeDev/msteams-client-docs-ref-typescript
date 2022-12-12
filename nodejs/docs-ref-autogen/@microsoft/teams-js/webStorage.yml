@@ -15,11 +15,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: >-
-          true if the webStorage capability is enabled in
-          runtime.supports.webStorage and
-
-          false if it is disabled
+        description: boolean to represent whether the webStorage capability is supported
         type: boolean
   - name: isWebStorageClearedOnUserLogOut()
     uid: '@microsoft/teams-js.webStorage.isWebStorageClearedOnUserLogOut'

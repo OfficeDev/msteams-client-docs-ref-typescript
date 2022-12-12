@@ -41,7 +41,8 @@ functions:
 
       and [dialog.bot.open(botUrlDialogInfo: BotUrlDialogInfo, submitHandler?:
       DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel):
-      void](xref:dialog.bot.open) for bot based dialogs. In Teams,
+      void](xref:@microsoft/teams-js.dialog.bot.open) for bot based dialogs. In
+      Teams,
 
       this function can be used for adaptive card based dialogs. Support for
       adaptive card based dialogs is coming to other hosts in the future.
@@ -101,7 +102,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [dialog.update.resize(dimensions: DialogSize):
-      void](xref:dialog.update.resize) instead.
+      void](xref:@microsoft/teams-js.dialog.update.resize) instead.
 
 
       Update height/width task info properties.

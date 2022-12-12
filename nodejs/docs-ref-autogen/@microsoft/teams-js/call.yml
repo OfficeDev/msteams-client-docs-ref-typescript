@@ -12,14 +12,14 @@ functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.call.isSupported'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Checks if the call capability is supported by the host
     remarks: ''
     isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: ''
+        description: boolean to represent whether the call capability is supported
         type: boolean
   - name: startCall(StartCallParams)
     uid: '@microsoft/teams-js.call.startCall'

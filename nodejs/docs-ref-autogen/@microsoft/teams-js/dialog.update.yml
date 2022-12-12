@@ -15,7 +15,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: boolean to represent whether dialog.update is supported
+        description: boolean to represent whether dialog.update capabilty is supported
         type: boolean
   - name: resize(DialogSize)
     uid: '@microsoft/teams-js.dialog.update.resize'

@@ -605,6 +605,13 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.meeting'
+        - name: appShareButton
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.meeting.appShareButton'
+            - uid: '@microsoft/teams-js.meeting.appShareButton.ShareInformation'
+              name: ShareInformation
+              items: []
         - uid: '@microsoft/teams-js.meeting.CallType'
           name: CallType
           items: []
@@ -778,9 +785,6 @@
         - uid: '@microsoft/teams-js.sharing.IURLContent'
           name: IURLContent
           items: []
-    - uid: '@microsoft/teams-js.ShowProfileRequestInternal'
-      name: ShowProfileRequestInternal
-      items: []
     - name: stageView
       items:
         - name: Overview

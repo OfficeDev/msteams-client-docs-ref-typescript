@@ -8,7 +8,7 @@ functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.chat.isSupported'
     package: '@microsoft/teams-js'
-    summary: Checks if chat capability is supported by the host
+    summary: Checks if the chat capability is supported by the host
     remarks: ''
     isPreview: true
     isDeprecated: false

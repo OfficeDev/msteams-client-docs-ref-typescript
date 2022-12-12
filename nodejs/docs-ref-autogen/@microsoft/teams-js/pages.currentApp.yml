@@ -20,10 +20,8 @@ functions:
       content: 'function isSupported(): boolean'
       return:
         description: >-
-          true if the pages.currentApp capability is enabled in
-          runtime.supports.pages.currentApp and
-
-          false if it is disabled
+          boolean to represent whether the pages.currentApp capability is
+          supported
         type: boolean
   - name: navigateTo(NavigateWithinAppParams)
     uid: '@microsoft/teams-js.pages.currentApp.navigateTo'
