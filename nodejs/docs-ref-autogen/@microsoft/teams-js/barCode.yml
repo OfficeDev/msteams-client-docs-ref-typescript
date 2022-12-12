@@ -31,7 +31,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: boolean to represent whether barCode is supported
+        description: boolean to represent whether the barCode capability is supported
         type: boolean
   - name: requestPermission()
     uid: '@microsoft/teams-js.barCode.requestPermission'

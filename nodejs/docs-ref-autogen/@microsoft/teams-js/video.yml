@@ -24,9 +24,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: |-
-          true if the video capability is enabled in runtime.supports.video and
-          false if it is disabled
+        description: boolean to represent whether the video capability is supported
         type: boolean
   - name: 'notifySelectedVideoEffectChanged(EffectChangeType, string | undefined)'
     uid: '@microsoft/teams-js.video.notifySelectedVideoEffectChanged'

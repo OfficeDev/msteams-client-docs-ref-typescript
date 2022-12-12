@@ -23,8 +23,8 @@ functions:
       to get the current location.
 
       - [geoLocation.map.chooseLocation():
-      Promise\<Location\>](xref:geoLocation.map.chooseLocation) to choose
-      location on map.
+      Promise\<Location\>](xref:@microsoft/teams-js.geoLocation.map.chooseLocation)
+      to choose location on map.
 
 
       Fetches user location
@@ -69,7 +69,8 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.1.0, please use [geoLocation.map.showLocation(location: Location):
-      Promise\<void\>](xref:geoLocation.map.showLocation) instead.
+      Promise\<void\>](xref:@microsoft/teams-js.geoLocation.map.showLocation)
+      instead.
 
 
       Shows the location on map corresponding to the given coordinates
