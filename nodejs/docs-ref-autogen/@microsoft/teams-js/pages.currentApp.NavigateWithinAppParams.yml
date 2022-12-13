@@ -34,7 +34,7 @@ properties:
       within the page. This
 
       can be retrieved from the Context object [|
-      app.Context.page.subPageId](xref:app.PageInfo.subPageId)
+      app.Context.page.subPageId](xref:@microsoft/teams-js.app.PageInfo.subPageId)
     fullName: subPageId
     remarks: ''
     isPreview: false

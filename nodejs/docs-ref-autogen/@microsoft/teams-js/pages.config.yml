@@ -21,11 +21,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: >-
-          true if the pages.config capability is enabled in
-          runtime.supports.pages.config and
-
-          false if it is disabled
+        description: boolean to represent whether the pages.config capability is supported
         type: boolean
   - name: registerChangeConfigHandler(() => void)
     uid: '@microsoft/teams-js.pages.config.registerChangeConfigHandler'

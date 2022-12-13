@@ -72,11 +72,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: >-
-          true if the pages.tabs capability is enabled in
-          runtime.supports.pages.tabs and
-
-          false if it is disabled
+        description: boolean to represent whether the pages.tab capability is supported
         type: boolean
   - name: navigateToTab(TabInstance)
     uid: '@microsoft/teams-js.pages.tabs.navigateToTab'

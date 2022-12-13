@@ -28,11 +28,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: >-
-          true if the search capability is supported by the host and false
-          otherwise
-
-          false if it is disabled
+        description: boolean to represent whether the search capability is supported
         type: boolean
   - name: >-
       registerHandlers(SearchQueryHandler, SearchQueryHandler,
@@ -107,7 +103,8 @@ functions:
             search.
 
             Should be used to return your application to its most recent,
-            non-search state. The value of <xref:SearchQuery.searchTerm>
+            non-search state. The value of
+            <xref:@microsoft/teams-js.search.SearchQuery.searchTerm>
 
             will be whatever the last query was before ending search.
         - id: onExecuteHandler
@@ -118,8 +115,9 @@ functions:
             search (by pressing Enter for example). Should be used to display
             the full list of search results.
 
-            The value of <xref:SearchQuery.searchTerm> is the complete query the
-            user entered in the search box.
+            The value of
+            <xref:@microsoft/teams-js.search.SearchQuery.searchTerm> is the
+            complete query the user entered in the search box.
         - id: onChangeHandler
           type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
           description: >-
@@ -133,8 +131,8 @@ functions:
 
 
             This handler will be called with an empty
-            <xref:SearchQuery.searchTerm> when search is beginning, and
-            subsequently,
+            <xref:@microsoft/teams-js.search.SearchQuery.searchTerm> when search
+            is beginning, and subsequently,
 
             with the current contents of the search box.
   - name: unregisterHandlers()

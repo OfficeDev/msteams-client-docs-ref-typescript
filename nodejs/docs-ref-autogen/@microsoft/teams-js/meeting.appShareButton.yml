@@ -1,0 +1,34 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.meeting.appShareButton'
+name: appShareButton
+summary: Nested namespace for functions to control behavior of the app share button
+type: module
+interfaces:
+  - '@microsoft/teams-js.meeting.appShareButton.ShareInformation'
+package: '@microsoft/teams-js'
+functions:
+  - name: setOptions(ShareInformation)
+    uid: '@microsoft/teams-js.meeting.appShareButton.setOptions'
+    package: '@microsoft/teams-js'
+    summary: >-
+      By default app share button will be hidden and this API will govern the
+      visibility of it.
+
+      This function can be used to hide/show app share button in meeting,
+
+      along with contentUrl (overrides contentUrl populated in app manifest)
+    remarks: ''
+    isPreview: true
+    isDeprecated: false
+    syntax:
+      content: 'function setOptions(shareInformation: ShareInformation)'
+      parameters:
+        - id: shareInformation
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.meeting.appShareButton.ShareInformation" />
+          description: >-
+            has two elements, one isVisible boolean flag and another
+
+            optional string contentUrl, which will override contentUrl coming
+            from Manifest

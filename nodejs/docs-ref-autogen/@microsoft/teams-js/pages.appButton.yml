@@ -16,10 +16,8 @@ functions:
       content: 'function isSupported(): boolean'
       return:
         description: >-
-          true if the pages.appButton capability is enabled in
-          runtime.supports.pages.appButton and
-
-          false if it is disabled
+          boolean to represent whether the pages.appButton capability is
+          supported
         type: boolean
   - name: onClick(() => void)
     uid: '@microsoft/teams-js.pages.appButton.onClick'

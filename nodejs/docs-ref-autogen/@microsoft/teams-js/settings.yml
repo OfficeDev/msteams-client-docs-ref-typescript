@@ -37,7 +37,8 @@ functions:
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.registerOnRemoveHandler(handler:
       (evt: RemoveEvent) => void):
-      void](xref:pages.config.registerOnRemoveHandler) instead.
+      void](xref:@microsoft/teams-js.pages.config.registerOnRemoveHandler)
+      instead.
 
 
       Registers a handler for user attempts to remove content. This handler
@@ -66,7 +67,8 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.registerOnSaveHandler(handler: (evt:
-      SaveEvent) => void): void](xref:pages.config.registerOnSaveHandler)
+      SaveEvent) => void):
+      void](xref:@microsoft/teams-js.pages.config.registerOnSaveHandler)
       instead.
 
 
@@ -96,7 +98,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.setConfig(instanceSettings: Config):
-      Promise\<void\>](xref:pages.config.setConfig) instead.
+      Promise\<void\>](xref:@microsoft/teams-js.pages.config.setConfig) instead.
 
 
       Sets the settings for the current instance.
@@ -123,7 +125,8 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.setValidityState(validityState:
-      boolean): void](xref:pages.config.setValidityState) instead.
+      boolean): void](xref:@microsoft/teams-js.pages.config.setValidityState)
+      instead.
 
 
       Sets the validity state for the settings.

@@ -62,9 +62,7 @@ functions:
     syntax:
       content: 'function isSupported(): boolean'
       return:
-        description: |-
-          true if the pages capability is enabled in runtime.supports.pages and
-          false if it is disabled
+        description: boolean to represent whether the appEntity capability is supported
         type: boolean
   - name: navigateCrossDomain(string)
     uid: '@microsoft/teams-js.pages.navigateCrossDomain'
