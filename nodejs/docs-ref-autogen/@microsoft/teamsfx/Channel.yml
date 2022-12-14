@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: 'A <xref:@microsoft/teamsfx.NotificationTarget> that represents a team channel.'
 fullName: Channel
 remarks: 'It''s recommended to get channels from <xref:TeamsBotInstallation.channels()>.'
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     remarks: >-
       It's recommended to get channels from
       <xref:TeamsBotInstallation.channels()>, instead of using this constructor.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new Channel(parent: TeamsBotInstallation, info: ChannelInfo)'
@@ -37,7 +35,6 @@ properties:
     summary: Detailed channel information.
     fullName: info
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'info: ChannelInfo'
@@ -52,7 +49,6 @@ properties:
       channel is created from.
     fullName: parent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'parent: TeamsBotInstallation'
@@ -65,7 +61,6 @@ properties:
     summary: Notification target type. For channel it's always "Channel".
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: NotificationTargetType'
@@ -80,7 +75,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -105,7 +99,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Send a plain text message.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

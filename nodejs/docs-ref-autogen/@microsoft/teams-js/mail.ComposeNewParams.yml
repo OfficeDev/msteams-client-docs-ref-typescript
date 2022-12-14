@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Interfaces for each type.
 fullName: ComposeNewParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: bccRecipients
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'bccRecipients?: string[]'
@@ -28,7 +26,6 @@ properties:
     summary: ''
     fullName: ccRecipients
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ccRecipients?: string[]'
@@ -41,7 +38,6 @@ properties:
     summary: ''
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message?: string'
@@ -54,7 +50,6 @@ properties:
     summary: ''
     fullName: subject
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subject?: string'
@@ -67,7 +62,6 @@ properties:
     summary: ''
     fullName: toRecipients
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'toRecipients?: string[]'
@@ -81,7 +75,6 @@ inheritedProperties:
     summary: ''
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: New'

@@ -49,7 +49,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Darkens the given color by a certain intensity.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function darkenColor(color: IColor, intensity: number): IColor'
@@ -68,7 +67,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: 'Converts a CSS color expressed in the #RRGGBB format into an IColor object'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function fromCssColor(color: string): IColor'
@@ -88,7 +86,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Lightens the given color by a certain intensity.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function lightenColor(color: IColor, intensity: number): IColor'
@@ -107,7 +104,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Converts an IColor object into its CSS rgba() representation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -128,7 +124,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Expands the specified rectangle so it contains the specified point.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function expandRect(rect: IRect, point: IPoint): IRect'
@@ -147,7 +142,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Computes the distance between two points.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getDistanceBetweenPoints(p1: IPoint, p2: IPoint): number'
@@ -166,7 +160,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Adjusts a size given a pointer pressure.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -192,7 +185,6 @@ functions:
       way to compare multiple distances since it doesn't compute any square
       root.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getSquaredDistanceBetweenPoints(p1: IPoint, p2: IPoint): number'
@@ -211,7 +203,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Converts screen coordinates to viewport coordinates.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -240,7 +231,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Converts viewport coordinates to screen coordinates.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -271,7 +261,6 @@ functions:
       Calculates the points defining the path of an arrow at the end of
       a segment.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -295,7 +284,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Computes a quad between two circles.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -326,7 +314,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Computes a quad between the specified rectangles.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -362,7 +349,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Determines if two rectangles overlap.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function doRectanglesOverlap(r1: IRect, r2: IRect): boolean'
@@ -381,7 +367,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Forces a number into a range.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function forceIntoRange(n: number, min: number, max: number): number'
@@ -403,7 +388,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Generates a unique Id.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function generateUniqueId(): string'
@@ -415,7 +399,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Computes a rectangle's side segments
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getRectangleSegments(rect: IRect): ISegment[]'
@@ -435,7 +418,6 @@ functions:
 
       specified rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -460,7 +442,6 @@ functions:
       From
       https://gamedev.stackexchange.com/questions/111100/intersection-of-a-line-segment-and-a-rectangle
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -481,7 +462,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Determines if a number is within a range.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isInRange(n: number, r1: number, r2: number): boolean'
@@ -503,7 +483,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Determines if the specified point is inside the specified rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isPointInsideRectangle(p: IPoint, r: IRect): boolean'
@@ -522,7 +501,6 @@ functions:
     package: '@microsoft/live-share-canvas'
     summary: Determines if a rectangle is inside another.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -545,7 +523,6 @@ functions:
       Makes a rectangle of the specified width and height from the specified
       center.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -579,7 +556,6 @@ functions:
 
       unless it's actually necessary.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -607,7 +583,6 @@ functions:
 
       provides a way to not have to do it unless it's actually necessary.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

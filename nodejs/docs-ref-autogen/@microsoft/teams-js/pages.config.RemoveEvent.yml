@@ -10,7 +10,6 @@ summary: >-
   why.
 fullName: RemoveEvent
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 methods:
@@ -21,7 +20,6 @@ methods:
       Indicates that removal of the underlying resource failed and that the
       content cannot be removed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function notifyFailure(reason?: string)'
@@ -38,7 +36,6 @@ methods:
       Indicates that the underlying resource has been removed and the content
       can be removed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function notifySuccess()

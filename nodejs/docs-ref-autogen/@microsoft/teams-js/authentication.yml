@@ -19,7 +19,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use
@@ -48,7 +47,6 @@ functions:
       Initiates an authentication request, which opens a new window with the
       specified settings.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -73,7 +71,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [authentication.getAuthToken(authTokenRequest:
@@ -105,7 +102,6 @@ functions:
       if it is not expired. Otherwise a request is sent to Azure AD to obtain a
       new token.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -127,7 +123,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function initialize()
@@ -140,7 +135,6 @@ functions:
     remarks: |-
       This function is usable only on the authentication window.
       This call causes the authentication window to be closed.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function notifyFailure(reason?: string, callbackUrl?: string)'
@@ -162,7 +156,6 @@ functions:
     remarks: |-
       This function is usable only on the authentication window.
       This call causes the authentication window to be closed.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function notifySuccess(result?: string, callbackUrl?: string)'
@@ -183,7 +176,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, this function has been deprecated in favor of a Promise-based

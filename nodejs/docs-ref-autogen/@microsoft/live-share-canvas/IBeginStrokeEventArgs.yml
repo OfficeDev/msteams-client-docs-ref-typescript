@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Defines the arguments of the BeginStrokeEvent.
 fullName: IBeginStrokeEventArgs
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: The brush of the new stroke.
     fullName: brush
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'brush: IBrush'
@@ -28,7 +26,6 @@ properties:
     summary: The stroke's mode.
     fullName: mode
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mode: StrokeMode'
@@ -41,7 +38,6 @@ properties:
     summary: The starting point of the new stroke.
     fullName: startPoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'startPoint: IPointerPoint'
@@ -54,7 +50,6 @@ properties:
     summary: The id of the new stroke.
     fullName: strokeId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'strokeId: string'
@@ -67,7 +62,6 @@ properties:
     summary: The type of the new stroke.
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: StrokeType'

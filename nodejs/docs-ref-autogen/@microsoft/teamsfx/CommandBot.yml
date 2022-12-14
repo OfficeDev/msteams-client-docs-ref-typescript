@@ -8,7 +8,6 @@ remarks: >-
   Ensure each command should ONLY be registered with the command once, otherwise
   it'll cause unexpected behavior if you register the same command more than
   once.
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -19,7 +18,6 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Creates a new instance of the `CommandBot`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -46,7 +44,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Registers a command into the command bot.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerCommand(command: TeamsFxBotCommandHandler)'
@@ -60,7 +57,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Registers commands into the command bot.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerCommands(commands: TeamsFxBotCommandHandler[])'
@@ -74,7 +70,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Registers a sso command into the command bot.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerSsoCommand(ssoCommand: TeamsFxBotSsoCommandHandler)'
@@ -87,7 +82,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Registers commands into the command bot.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerSsoCommands(ssoCommands: TeamsFxBotSsoCommandHandler[])'

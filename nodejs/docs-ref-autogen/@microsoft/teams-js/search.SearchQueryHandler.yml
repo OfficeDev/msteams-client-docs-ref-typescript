@@ -7,7 +7,7 @@ summary: >-
   the handler.
 fullName: SearchQueryHandler
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 syntax: |
   type SearchQueryHandler = (query: SearchQuery) => void

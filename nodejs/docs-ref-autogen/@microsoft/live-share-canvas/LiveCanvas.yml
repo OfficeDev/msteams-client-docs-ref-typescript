@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Enables live and collaborative inking.
 fullName: LiveCanvas<I>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new LiveCanvas(props: IDataObjectProps<I>)'
@@ -31,7 +29,6 @@ properties:
       Sets the list of roles that are allowed to emit wet stroke events.
     fullName: allowedRoles
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'UserMeetingRole[] allowedRoles'
@@ -44,7 +41,6 @@ properties:
     summary: ''
     fullName: disposed
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean disposed
@@ -57,7 +53,6 @@ properties:
     summary: The object's Fluid type factory.
     fullName: factory
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static factory: DataObjectFactory<LiveCanvas, DataObjectTypes>'
@@ -72,7 +67,6 @@ properties:
     summary: Handle to a data store
     fullName: handle
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IFluidHandle<this> handle
@@ -85,7 +79,6 @@ properties:
     summary: ''
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: string id
@@ -98,7 +91,6 @@ properties:
     summary: ''
     fullName: IFluidHandle
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IFluidHandle<this> IFluidHandle
@@ -111,7 +103,6 @@ properties:
     summary: ''
     fullName: IFluidLoadable
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: this IFluidLoadable
@@ -124,7 +115,6 @@ properties:
     summary: ''
     fullName: IFluidRouter
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: this IFluidRouter
@@ -139,7 +129,6 @@ properties:
       Sets the current cursor sharing status of this client.
     fullName: isCursorShared
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isCursorShared
@@ -156,7 +145,6 @@ properties:
       `onGetLocalUserInfo` calback, if provided.
     fullName: onCreateLiveCursor
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -174,7 +162,6 @@ properties:
       to render shared cursors.
     fullName: onGetLocalUserInfo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'onGetLocalUserInfo?: undefined | () => IUserInfo | undefined'
@@ -187,7 +174,6 @@ properties:
     summary: The object's Fluid type/name.
     fullName: TypeName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -203,7 +189,6 @@ inheritedProperties:
     summary: ''
     fullName: addListener
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -217,7 +202,6 @@ inheritedProperties:
     summary: ''
     fullName: 'off'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'off: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -231,7 +215,6 @@ inheritedProperties:
     summary: ''
     fullName: 'on'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'on: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -245,7 +228,6 @@ inheritedProperties:
     summary: ''
     fullName: once
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'once: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -259,7 +241,6 @@ inheritedProperties:
     summary: ''
     fullName: prependListener
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'prependListener: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -273,7 +254,6 @@ inheritedProperties:
     summary: ''
     fullName: prependOnceListener
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'prependOnceListener: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -287,7 +267,6 @@ inheritedProperties:
     summary: ''
     fullName: removeListener
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'removeListener: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -301,7 +280,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Called when the host container closes and disposes itself
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function dispose()
@@ -311,7 +289,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function emit(event: string | symbol, args: any[]): boolean'
@@ -331,7 +308,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function eventNames(): Array<string | symbol>'
@@ -356,7 +332,6 @@ inheritedMethods:
       and need a fully initialized object, then you can call this API to ensure
       object is fully initialized.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function finishInitialization(existing: boolean): Promise<void>'
@@ -373,7 +348,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -394,7 +368,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Retrieve Fluid object using the handle get
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -426,7 +399,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getMaxListeners(): number'
@@ -441,7 +413,6 @@ inheritedMethods:
       Initializes internal objects and calls initialization overrides.
       Caller is responsible for ensuring this is only invoked once.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function initializeInternal(existing: boolean): Promise<void>'
@@ -458,7 +429,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listenerCount(event: string | symbol): number'
@@ -475,7 +445,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listeners(event: string | symbol): Function[]'
@@ -492,7 +461,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function rawListeners(event: string | symbol): Function[]'
@@ -509,7 +477,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function removeAllListeners(event?: string | symbol): this'
@@ -526,7 +493,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: '{@inheritDoc PureDataObject.request}'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function request(request: IRequest): Promise<IResponse>'
@@ -543,7 +509,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setMaxListeners(n: number): this'
@@ -561,7 +526,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Initializes the live inking session.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function initialize(inkingManager: InkingManager): Promise<void>'

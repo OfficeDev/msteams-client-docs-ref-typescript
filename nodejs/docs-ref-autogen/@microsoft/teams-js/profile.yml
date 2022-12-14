@@ -11,13 +11,14 @@ interfaces:
   - '@microsoft/teams-js.profile.Persona'
   - '@microsoft/teams-js.profile.ShowProfileRequest'
 package: '@microsoft/teams-js'
+previewState: beta
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.profile.isSupported'
     package: '@microsoft/teams-js'
     summary: Checks if the profile capability is supported by the host
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -31,7 +32,7 @@ functions:
       Opens a profile card at a specified position to show profile information
       about a persona.
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: >-

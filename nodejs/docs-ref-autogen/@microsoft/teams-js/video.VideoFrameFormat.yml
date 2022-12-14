@@ -5,7 +5,7 @@ package: '@microsoft/teams-js'
 summary: 'Video frame format enum, currently only support NV12'
 fullName: VideoFrameFormat
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 fields:
   - name: NV12

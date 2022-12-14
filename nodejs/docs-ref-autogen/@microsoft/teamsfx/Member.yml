@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: 'A <xref:@microsoft/teamsfx.NotificationTarget> that represents a team member.'
 fullName: Member
 remarks: 'It''s recommended to get members from <xref:TeamsBotInstallation.members()>.'
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     remarks: >-
       It's recommended to get members from
       <xref:TeamsBotInstallation.members()>, instead of using this constructor.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new Member(parent: TeamsBotInstallation, account: TeamsChannelAccount)'
@@ -37,7 +35,6 @@ properties:
     summary: Detailed member account information.
     fullName: account
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'account: TeamsChannelAccount'
@@ -52,7 +49,6 @@ properties:
       member is created from.
     fullName: parent
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'parent: TeamsBotInstallation'
@@ -65,7 +61,6 @@ properties:
     summary: Notification target type. For member it's always "Person".
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: NotificationTargetType'
@@ -80,7 +75,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -105,7 +99,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Send a plain text message.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

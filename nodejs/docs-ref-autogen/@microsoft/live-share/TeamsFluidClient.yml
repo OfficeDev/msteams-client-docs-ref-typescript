@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Client used to connect to fluid containers within a Microsoft Teams context.
 fullName: TeamsFluidClient
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@microsoft/live-share'
     summary: Creates a new `TeamsFluidClient` instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new TeamsFluidClient(options?: ITeamsFluidClientOptions)'
@@ -30,7 +28,6 @@ properties:
     summary: If true the client is configured to use a local test server.
     fullName: isTesting
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isTesting
@@ -47,7 +44,6 @@ properties:
       current context.
     fullName: maxContainerLookupTries
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxContainerLookupTries: number'
@@ -69,7 +65,6 @@ methods:
       to set the initial
 
       state of of the containers object prior to the container being attached.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

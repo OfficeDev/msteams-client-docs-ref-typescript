@@ -9,7 +9,7 @@ summary: >-
   or an error if the dialog was closed by the user.
 fullName: DialogSubmitHandler
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 syntax: |
   type DialogSubmitHandler = (result: ISdkResponse) => void

@@ -7,7 +7,6 @@ summary: |-
   Licensed under the Microsoft Live Share SDK License.
 fullName: MediaSessionCoordinatorSuspension
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
     summary: ''
     fullName: waitPoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'waitPoint?: CoordinationWaitPoint'
@@ -30,7 +28,6 @@ methods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function end(seekTo?: undefined | number)'

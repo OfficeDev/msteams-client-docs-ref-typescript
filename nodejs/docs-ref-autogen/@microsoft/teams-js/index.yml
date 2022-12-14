@@ -151,7 +151,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [teamsCore.enablePrintCapability():
@@ -166,7 +165,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.openLink(deepLink: string):
@@ -191,7 +189,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.getContext():
@@ -214,7 +211,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use
@@ -244,7 +240,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use
@@ -279,7 +274,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.initialize(validMessageOrigins?: string[]):
@@ -312,7 +306,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.initializeWithFrameContext(frameInfo:
@@ -346,7 +339,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.backStack.navigateBack():
@@ -372,7 +364,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.navigateCrossDomain(url: string):
@@ -410,7 +401,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.tabs.navigateToTab(tabInstance:
@@ -437,7 +427,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [teamsCore.print():
@@ -452,7 +441,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.appButton.onClick(handler: () => void):
@@ -476,7 +464,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.appButton.onHoverEnter(handler: () =>
@@ -501,7 +488,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.appButton.onHoverLeave(handler: () =>
@@ -527,7 +513,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use
@@ -559,7 +544,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.registerChangeConfigHandler(handler:
@@ -581,7 +565,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.registerFullScreenHandler(handler:
@@ -608,7 +591,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.registerOnThemeChangeHandler(handler: (theme:
@@ -632,7 +614,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.returnFocus(navigateForward?: boolean):
@@ -653,7 +634,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.setCurrentFrame(frameInfo: FrameInfo):
@@ -673,7 +653,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.shareDeepLink(deepLinkParameters:

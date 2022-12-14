@@ -7,7 +7,6 @@ summary: >-
   and return a response.
 fullName: TeamsFxAdaptiveCardActionHandler
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -24,7 +23,6 @@ properties:
       response will replace the current one only for the interactor.
     fullName: adaptiveCardResponse
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'adaptiveCardResponse?: AdaptiveCardResponse'
@@ -39,7 +37,6 @@ properties:
       The verb string here is case-insensitive.
     fullName: triggerVerb
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'triggerVerb: string'
@@ -52,7 +49,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: The handler function that will be invoked when the action is fired.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

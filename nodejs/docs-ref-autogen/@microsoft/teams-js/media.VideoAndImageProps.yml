@@ -7,7 +7,6 @@ summary: >-
   the platform
 fullName: VideoAndImageProps
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 inheritedProperties:
@@ -21,7 +20,6 @@ inheritedProperties:
       Default value is false
     fullName: enableFilter
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enableFilter?: boolean'
@@ -41,7 +39,6 @@ inheritedProperties:
       Default value is Image.
     fullName: imageOutputFormats
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'imageOutputFormats?: ImageOutputFormats[]'
@@ -59,7 +56,6 @@ inheritedProperties:
       Default value is true
     fullName: ink
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ink?: boolean'
@@ -82,7 +78,6 @@ inheritedProperties:
       Mode via lens.
     fullName: isFullScreenMode
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isFullScreenMode?: boolean'
@@ -100,7 +95,6 @@ inheritedProperties:
       Default value is true, indicating the user will be able to stop the video.
     fullName: isStopButtonVisible
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isStopButtonVisible?: boolean'
@@ -120,7 +114,6 @@ inheritedProperties:
       Default value is defined by the platform serving the API.
     fullName: maxDuration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxDuration?: number'
@@ -140,7 +133,6 @@ inheritedProperties:
       Default value is true
     fullName: textSticker
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'textSticker?: boolean'
@@ -161,7 +153,6 @@ inheritedProperties:
       video by notifying the host client.
     fullName: videoController
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'videoController?: VideoController'

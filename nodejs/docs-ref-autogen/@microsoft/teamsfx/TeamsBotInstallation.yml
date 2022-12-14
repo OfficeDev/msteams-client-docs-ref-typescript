@@ -15,7 +15,6 @@ fullName: TeamsBotInstallation
 remarks: >-
   It's recommended to get bot installations from
   <xref:ConversationBot.installations()>.
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -26,7 +25,6 @@ constructors:
     remarks: >-
       It's recommended to get bot installations from
       <xref:ConversationBot.installations()>, instead of using this constructor.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -47,7 +45,6 @@ properties:
     summary: The bound `BotFrameworkAdapter`.
     fullName: adapter
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'adapter: BotFrameworkAdapter'
@@ -60,7 +57,6 @@ properties:
     summary: The bound `ConversationReference`.
     fullName: conversationReference
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'conversationReference: Partial<ConversationReference>'
@@ -80,7 +76,6 @@ properties:
 
       - "Person" means bot is installed into a personal scope and notification
       will be sent to personal chat.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type?: NotificationTargetType'
@@ -93,7 +88,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get channels from this bot installation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function channels(): Promise<Channel[]>'
@@ -107,7 +101,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get team details from this bot installation
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getTeamDetails(): Promise<TeamDetails | undefined>'
@@ -121,7 +114,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get members from this bot installation.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function members(): Promise<Member[]>'
@@ -135,7 +127,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -160,7 +151,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Send a plain text message.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

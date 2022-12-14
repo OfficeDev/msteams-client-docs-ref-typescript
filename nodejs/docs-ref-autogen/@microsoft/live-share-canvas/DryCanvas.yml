@@ -9,7 +9,6 @@ summary: >-
   synchonously.
 fullName: DryCanvas
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -18,7 +17,6 @@ constructors:
     package: '@microsoft/live-share-canvas'
     summary: 'Creates a new InkingCanvas instance, attached to the provided HTMLElement.'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new DryCanvas(_parentElement?: HTMLElement | undefined)'
@@ -37,7 +35,6 @@ properties:
     summary: Gets the canvas' brush.
     fullName: brush
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IBrush brush
@@ -50,7 +47,6 @@ properties:
     summary: Gets the underlying HTML5 Canvas element.
     fullName: canvas
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: HTMLCanvasElement canvas
@@ -65,7 +61,6 @@ properties:
       Sets the offset from the canvas' reference point, in pixels.
     fullName: offset
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: Readonly<IPoint> offset
@@ -80,7 +75,6 @@ properties:
       Sets the canvas' scale. Value must be greater than zero.
     fullName: scale
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number scale
@@ -96,7 +90,6 @@ inheritedProperties:
       out.
     fullName: fadeOutDuration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static fadeOutDuration: number'
@@ -112,7 +105,6 @@ inheritedProperties:
     summary: Configures the opacity of highlighter strokes.
     fullName: highlighterOpacity
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static highlighterOpacity: number'
@@ -128,7 +120,6 @@ inheritedProperties:
     summary: Configures the opacity of the laser stroke shadow.
     fullName: laserShadowOpacity
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static laserShadowOpacity: number'
@@ -144,7 +135,6 @@ inheritedProperties:
     summary: The canvas' reference point.
     fullName: referencePoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'referencePoint: CanvasReferencePoint'
@@ -160,7 +150,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Adds a points to the current stroke.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function addPoint(p: IPointerPoint)'
@@ -177,7 +166,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Begins a stroke in the canvas.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function beginStroke(p: IPointerPoint)'
@@ -194,7 +182,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Cancels the current stroke.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function cancelStroke()
@@ -206,7 +193,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Clears the canvas.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function clear()
@@ -218,7 +204,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Ends the current stroke in the canvas.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function endStroke(p?: IPointerPoint)'
@@ -238,7 +223,6 @@ inheritedMethods:
       Fades the canvas out by decreasing its opacity, and eventually removes it
       from the DOM.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function fadeOut()
@@ -250,7 +234,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Removes the canvas from the DOM.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function removeFromDOM()
@@ -262,7 +245,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Renders the specified stroke onto the canvas.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function renderStroke(stroke: IStroke)'
@@ -279,7 +261,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Resizes this canvas.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function resize(width: number, height: number)'
@@ -299,7 +280,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Sets the current brush for the canvas.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setBrush(value: IBrush)'

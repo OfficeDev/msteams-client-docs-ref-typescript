@@ -31,7 +31,6 @@ remarks: >-
   BotSsoExecutionActivityHandler, please refer
   DefaultBotSsoExecutionActivityHandler class source code:
   https://aka.ms/teamsfx-default-sso-execution-activity-handler
-isPreview: false
 isDeprecated: false
 type: interface
 methods:
@@ -44,7 +43,6 @@ methods:
     remarks: >-
       This function is used to add SSO command to
       <xref:@microsoft/teamsfx.BotSsoExecutionDialog> instance.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -64,7 +62,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Receives invoke activities with Activity name of 'signin/tokenExchange'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -90,7 +87,6 @@ methods:
     remarks: >-
       It should trigger <xref:@microsoft/teamsfx.BotSsoExecutionDialog> instance
       to handle signin process
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -113,7 +109,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Called to initiate the event emission process.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function run(context: TurnContext): Promise<void>'

@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: Microsoft Graph auth provider for Teams Framework
 fullName: MsGraphAuthProvider
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Constructor of MsGraphAuthProvider.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -33,7 +31,6 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Constructor of MsGraphAuthProvider.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -53,7 +50,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get access token for Microsoft Graph API requests.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getAccessToken(): Promise<string>'

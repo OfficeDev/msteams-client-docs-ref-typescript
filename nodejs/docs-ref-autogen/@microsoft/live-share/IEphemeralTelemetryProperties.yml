@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Properties included on all events sent by `EphemeralTelemetryLogger`.
 fullName: IEphemeralTelemetryProperties
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Optional. ID of the client if it's been assigned by the runtime.
     fullName: clientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientId?: undefined | string'
@@ -35,7 +33,6 @@ properties:
       that an event was received.
     fullName: correlationId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'correlationId: string'
@@ -48,7 +45,6 @@ properties:
     summary: Name of the event being logged.
     fullName: eventName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'eventName: string'
@@ -63,7 +59,6 @@ properties:
       `EphemeralEvent.getTimestamp`.
     fullName: timestamp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timestamp: string'

@@ -7,7 +7,6 @@ summary: >-
   instances.
 fullName: EphemeralEventTimer<T>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -18,7 +17,6 @@ constructors:
     package: '@microsoft/live-share'
     summary: Creates a new `EphemeralEventTimer instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -50,7 +48,6 @@ properties:
     summary: The rate at which the events are sent in milliseconds.
     fullName: delay
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number delay
@@ -63,7 +60,6 @@ properties:
     summary: Returns true if the timer is currently running.
     fullName: isRunning
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isRunning
@@ -78,7 +74,6 @@ properties:
       the `delay`.
     fullName: repeat
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'repeat: boolean'
@@ -98,7 +93,6 @@ methods:
       next timer
 
       interval.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function sendEvent()
@@ -109,7 +103,6 @@ methods:
     remarks: >-
       If the timer is running it will be stooped and then re-started with a new
       `delay`.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function start()
@@ -118,7 +111,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Stops the timer if its running.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function stop()

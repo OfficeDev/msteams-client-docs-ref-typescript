@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: Defines method that injects authentication info to http requests
 fullName: AuthProvider
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Adds authentication info to http requests
     fullName: AddAuthenticationInfo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

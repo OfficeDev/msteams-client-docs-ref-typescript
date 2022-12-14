@@ -10,7 +10,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifyAppLoaded():
@@ -26,7 +25,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifyExpectedFailure(expectedFailureRequest:
@@ -50,7 +48,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifyFailure(appInitializationFailedRequest:
@@ -73,7 +70,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [app.notifySuccess():

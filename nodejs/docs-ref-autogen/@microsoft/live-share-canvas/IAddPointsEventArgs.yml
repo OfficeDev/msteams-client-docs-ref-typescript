@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Defines the arguments of the AddPointsEvent.
 fullName: IAddPointsEventArgs
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
       were the last ones.)
     fullName: endState
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endState?: StrokeEndState'
@@ -30,7 +28,6 @@ properties:
     summary: The points that were added to the stroke.
     fullName: points
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'points: IPointerPoint[]'
@@ -43,7 +40,6 @@ properties:
     summary: The id of the stroke a point has been added to.
     fullName: strokeId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'strokeId: string'

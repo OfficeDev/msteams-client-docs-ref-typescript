@@ -5,7 +5,6 @@ package: '@microsoft/live-share-media'
 summary: ''
 fullName: MediaSessionCoordinatorState
 remarks: ''
-isPreview: false
 isDeprecated: false
 syntax: |
   type MediaSessionCoordinatorState = "closed" | "waiting" | "joined"

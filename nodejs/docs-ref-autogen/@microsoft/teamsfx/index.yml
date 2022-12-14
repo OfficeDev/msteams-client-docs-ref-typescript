@@ -83,7 +83,6 @@ functions:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -146,7 +145,6 @@ functions:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -242,7 +240,6 @@ functions:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -267,7 +264,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Helper to create SecureContextOptions from PEM format cert
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -292,7 +288,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Helper to create SecureContextOptions from PFX format cert
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -313,7 +308,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Get log level.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getLogLevel(): LogLevel | undefined'
@@ -325,7 +319,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Generate connection configuration consumed by tedious.
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       we recommend you compose your own Tedious configuration for better
@@ -354,7 +347,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Users execute query in message extension with SSO or access token.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -393,7 +385,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Users execute query in message extension with SSO or access token.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -428,7 +419,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message to a notification target.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -459,7 +449,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Send a plain text message to a notification target.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -505,7 +494,6 @@ functions:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogFunction(logFunction?: LogFunction)'
@@ -520,7 +508,6 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Update log level helper.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogLevel(level: LogLevel)'
@@ -552,7 +539,6 @@ functions:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setLogger(logger?: Logger)'

@@ -5,7 +5,6 @@ package: '@microsoft/live-share-media'
 summary: Event data returned by `MediaPlayerSynchronizer` object.
 fullName: IMediaPlayerSynchronizerEvent
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Event details.
     fullName: details
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'details: ExtendedMediaSessionActionDetails'
@@ -30,7 +28,6 @@ properties:
     summary: 'Action errors, including DOMException errors thrown by HTMLMediaElement'
     fullName: error
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'error?: Error'
@@ -44,7 +41,6 @@ inheritedProperties:
     summary: Name of the event.
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'

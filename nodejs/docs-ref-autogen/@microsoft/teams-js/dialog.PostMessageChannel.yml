@@ -7,7 +7,7 @@ summary: >-
   that launched it
 fullName: PostMessageChannel
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 syntax: |
   type PostMessageChannel = (message: any) => void

@@ -5,7 +5,7 @@ package: '@microsoft/teams-js'
 summary: Different types of meeting reactions that can be sent/received
 fullName: MeetingReactionType
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 fields:
   - name: applause

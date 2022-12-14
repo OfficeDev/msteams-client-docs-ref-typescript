@@ -8,7 +8,7 @@ summary: |-
   See OpenGroupChatRequest for use when a chat with more than one person
 fullName: OpenSingleChatRequest
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -18,7 +18,6 @@ properties:
     summary: The Azure Active Directory UPN (e-mail address) of the user to chat with
     fullName: user
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'user: string'
@@ -32,7 +31,6 @@ inheritedProperties:
     summary: An optional message used when initiating chat
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message?: string'

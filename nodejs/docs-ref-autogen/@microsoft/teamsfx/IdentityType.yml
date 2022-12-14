@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: Identity type to use in authentication.
 fullName: IdentityType
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: App

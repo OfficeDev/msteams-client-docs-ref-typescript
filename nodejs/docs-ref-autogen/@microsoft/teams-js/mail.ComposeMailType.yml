@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: ComposeMailType
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: Forward

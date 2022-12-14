@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Base interface for all client timestamp comparisons.
 fullName: IClientTimestamp
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
       client is currently disconnected.
     fullName: clientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientId?: undefined | string'
@@ -30,7 +28,6 @@ properties:
     summary: Global timestamp of when the event was sent.
     fullName: timestamp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timestamp: number'

@@ -7,7 +7,6 @@ summary: >-
   <xref:@microsoft/teamsfx.TeamsFxBotCommandHandler> instance.
 fullName: TriggerPatterns
 remarks: ''
-isPreview: false
 isDeprecated: false
 syntax: |
   type TriggerPatterns = string | RegExp | (string | RegExp)[]

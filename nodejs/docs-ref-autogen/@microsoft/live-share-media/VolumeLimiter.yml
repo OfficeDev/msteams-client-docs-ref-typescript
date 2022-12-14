@@ -5,7 +5,6 @@ package: '@microsoft/live-share-media'
 summary: ''
 fullName: VolumeLimiter
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new VolumeLimiter(player: IMediaPlayer)'
@@ -31,7 +29,6 @@ properties:
     remarks: >-
       Applications should periodically call `lowerVolume()` to keep the volume
       lowered.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number duration
@@ -64,7 +61,6 @@ properties:
       volume to be lowered
 
       to 20% of its starting value.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number level
@@ -77,7 +73,6 @@ properties:
     summary: The type of level represented by the `level` property.
     fullName: levelType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: LevelType levelType
@@ -92,7 +87,6 @@ properties:
       desired level.
     fullName: rampDownDuration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number rampDownDuration
@@ -107,7 +101,6 @@ properties:
       the original level.
     fullName: rampUpDuration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number rampUpDuration
@@ -120,7 +113,6 @@ methods:
     package: '@microsoft/live-share-media'
     summary: Temporarily lowers an audio sources volume.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function lowerVolume()

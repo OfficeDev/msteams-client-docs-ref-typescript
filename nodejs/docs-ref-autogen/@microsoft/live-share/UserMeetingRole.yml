@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Allowed roles during a meeting.
 fullName: UserMeetingRole
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: attendee

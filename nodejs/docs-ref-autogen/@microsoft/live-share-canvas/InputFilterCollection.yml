@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Represents a collection of input filters.
 fullName: InputFilterCollection
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@microsoft/live-share-canvas'
     summary: Creates a new InputFilterCollection instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new InputFilterCollection(items: InputFilter[])'
@@ -29,7 +27,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Adds filters to the collection.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function addFilters(items: InputFilter[])'
@@ -45,7 +42,6 @@ methods:
       Filters (transforms) the specified point through each
       of the individual filters in the collection.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function filterPoint(p: IPointerPoint): IPointerPoint'
@@ -65,7 +61,6 @@ methods:
       next point. `reset` will be called automatically by
       InkingManager when a new wet stroke begins.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function reset(startPoint: IPointerPoint)'

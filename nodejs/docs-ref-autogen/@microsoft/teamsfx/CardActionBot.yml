@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: A card action bot to respond to adaptive card universal actions.
 fullName: CardActionBot
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Creates a new instance of the `CardActionBot`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -34,7 +32,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Registers a card action handler to the bot.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -50,7 +47,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Registers card action handlers to the bot.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

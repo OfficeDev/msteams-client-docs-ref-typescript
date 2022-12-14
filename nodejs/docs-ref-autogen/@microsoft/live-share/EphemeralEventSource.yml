@@ -11,7 +11,6 @@ remarks: >-
   They will, instead,
 
   create an `EphemeralEventTarget` class, which can both send & receive events.
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -20,7 +19,6 @@ constructors:
     package: '@microsoft/live-share'
     summary: Creates a new `EphemeralEventSource` instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new EphemeralEventSource(scope: EphemeralEventScope, eventName: string)'
@@ -38,7 +36,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Broadcasts an event to any listening `EphemeralEventTarget` instances.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'

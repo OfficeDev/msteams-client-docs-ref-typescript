@@ -7,7 +7,6 @@ summary: >-
   and return a response.
 fullName: TeamsFxBotSsoCommandHandler
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
     summary: The string or regular expression patterns that can trigger this handler.
     fullName: triggerPatterns
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'triggerPatterns: TriggerPatterns'
@@ -32,7 +30,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Handles a bot command received activity.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

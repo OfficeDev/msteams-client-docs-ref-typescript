@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Stroke modes.
 fullName: StrokeMode
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: freeHand

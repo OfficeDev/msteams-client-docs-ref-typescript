@@ -8,7 +8,7 @@ summary: |
   priority one will be used (AadObjectId > Upn > Smtp).
 fullName: PersonaIdentifiers
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 syntax: >
   type PersonaIdentifiers = { AadObjectId?: string, Smtp?: string, Upn?: string

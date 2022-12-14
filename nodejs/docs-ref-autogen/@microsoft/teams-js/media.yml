@@ -41,7 +41,6 @@ functions:
 
       Note: For desktop, this API is not supported. Callback will be resolved
       with ErrorCode.NotSupported.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -58,7 +57,6 @@ functions:
     remarks: >-
       Note: For desktop and web, this API is not supported. Callback will be
       resolved with ErrorCode.NotSupported.
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.1.0, please use [barCode.scanBarCode(config?: BarCodeConfig):
@@ -84,7 +82,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Select an attachment using camera/gallery
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -103,7 +100,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: View images using native image viewer
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
