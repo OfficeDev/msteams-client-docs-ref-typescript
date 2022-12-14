@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Data structure to describe dialog information
 fullName: DialogInfo
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: JSON defining an adaptive card.
     fullName: card
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'card?: string'
@@ -35,7 +33,6 @@ properties:
       in the event payload.
     fullName: completionBotId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'completionBotId?: string'
@@ -50,7 +47,6 @@ properties:
       browser.
     fullName: fallbackUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'fallbackUrl?: string'
@@ -63,7 +59,6 @@ properties:
     summary: The requested height of the webview/iframe.
     fullName: height
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'height?: DialogDimension | number'
@@ -76,7 +71,6 @@ properties:
     summary: Title of the task module.
     fullName: title
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'title?: string'
@@ -91,7 +85,6 @@ properties:
     remarks: |-
       The domain of the url must match at least one of the
       valid domains specified in the validDomains block of the manifest
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'url?: string'
@@ -104,7 +97,6 @@ properties:
     summary: The requested width of the webview/iframe.
     fullName: width
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'width?: DialogDimension | number'

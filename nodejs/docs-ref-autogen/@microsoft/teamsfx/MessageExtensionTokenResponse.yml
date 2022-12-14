@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: Token response provided by Teams Bot SSO prompt
 fullName: MessageExtensionTokenResponse
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: SSO token for user
     fullName: ssoToken
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ssoToken: string'
@@ -28,7 +26,6 @@ properties:
     summary: Expire time of SSO token
     fullName: ssoTokenExpiration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ssoTokenExpiration: string'
@@ -42,7 +39,6 @@ inheritedProperties:
     summary: ''
     fullName: channelId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channelId?: string'
@@ -56,7 +52,6 @@ inheritedProperties:
     summary: The connection name
     fullName: connectionName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'connectionName: string'
@@ -70,7 +65,6 @@ inheritedProperties:
     summary: 'Expiration for the token, in ISO 8601 format (e.g. "2007-04-05T14:30Z")'
     fullName: expiration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'expiration: string'
@@ -86,7 +80,6 @@ inheritedProperties:
       parameters
     fullName: properties
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'properties?: [key: string]: any'
@@ -100,7 +93,6 @@ inheritedProperties:
     summary: The user token
     fullName: token
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'token: string'

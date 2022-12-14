@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Media object returned by the select Media API
 fullName: Media
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new Media(that?: Media)'
@@ -33,7 +31,6 @@ properties:
       encoding.
     fullName: preview
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'preview: string'
@@ -53,7 +50,6 @@ inheritedProperties:
       should convert this to dataUrl.
     fullName: content
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'content: string'
@@ -69,7 +65,6 @@ inheritedProperties:
     summary: Format of the content
     fullName: format
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'format: FileFormat'
@@ -85,7 +80,6 @@ inheritedProperties:
     summary: 'MIME type. This can be used for constructing a dataUrl, if needed.'
     fullName: mimeType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mimeType: string'
@@ -101,7 +95,6 @@ inheritedProperties:
     summary: 'Optional: Name of the file'
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name?: string'
@@ -117,7 +110,6 @@ inheritedProperties:
     summary: Size of the file in KB
     fullName: size
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'size: number'
@@ -135,7 +127,6 @@ methods:
       Gets the media in chunks irrespective of size, these chunks are assembled
       and sent back to the webapp as file/blob
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getMedia(callback: (error: SdkError, blob: Blob) => void)'

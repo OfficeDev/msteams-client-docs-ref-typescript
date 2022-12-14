@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Input parameter supplied to the select Media API
 fullName: MediaInputs
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Additional properties for audio capture flows.
     fullName: audioProps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'audioProps?: AudioProps'
@@ -30,7 +28,6 @@ properties:
       devices
     fullName: imageProps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'imageProps?: ImageProps'
@@ -45,7 +42,6 @@ properties:
       10 set by office lens.
     fullName: maxMediaCount
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxMediaCount: number'
@@ -58,7 +54,6 @@ properties:
     summary: Only one media type can be selected at a time
     fullName: mediaType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mediaType: MediaType'
@@ -73,7 +68,6 @@ properties:
       mobile devices
     fullName: videoAndImageProps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'videoAndImageProps?: VideoAndImageProps'
@@ -88,7 +82,6 @@ properties:
       devices
     fullName: videoProps
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'videoProps?: VideoProps'

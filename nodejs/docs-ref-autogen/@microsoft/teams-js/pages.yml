@@ -13,7 +13,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Gets the config for the current instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getConfig(): Promise<InstanceConfig>'
@@ -27,7 +26,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Initializes the library with context information for the frame
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -57,7 +55,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Checks if the pages capability is supported by the host
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -82,7 +79,6 @@ functions:
 
       continue working.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function navigateCrossDomain(url: string): Promise<void>'
@@ -111,7 +107,6 @@ functions:
 
       deep link formats for different hosts.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function navigateToApp(params: NavigateToAppParams): Promise<void>'
@@ -136,7 +131,6 @@ functions:
 
       with this function will never be called.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -162,7 +156,6 @@ functions:
 
       effect and will be a no-op when called.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function returnFocus(navigateForward?: boolean)'
@@ -176,7 +169,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Sets/Updates the current frame with new information
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setCurrentFrame(frameInfo: FrameInfo)'
@@ -197,7 +189,6 @@ functions:
 
       Please note that this method does yet work on mobile hosts.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function shareDeepLink(deepLinkParameters: ShareDeepLinkParameters)'

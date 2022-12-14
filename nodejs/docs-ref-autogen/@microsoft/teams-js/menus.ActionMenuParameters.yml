@@ -5,6 +5,5 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: ActionMenuParameters
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface

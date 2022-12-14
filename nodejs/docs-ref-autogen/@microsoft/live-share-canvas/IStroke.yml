@@ -7,7 +7,6 @@ summary: |-
   be rendered on a canvas.
 fullName: IStroke
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
     summary: The brush used to draw the stroke.
     fullName: brush
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'brush: IBrush'
@@ -30,7 +28,6 @@ properties:
     summary: Optional. The id of the client the stroke was created on.
     fullName: clientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientId?: undefined | string'
@@ -43,7 +40,6 @@ properties:
     summary: The id of the stroke.
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id: string'
@@ -56,7 +52,6 @@ properties:
     summary: The number of points in the stroke.
     fullName: length
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'length: number'
@@ -69,7 +64,6 @@ properties:
     summary: The timestamp when the stroke was created.
     fullName: timeStamp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeStamp: number'
@@ -82,7 +76,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Adds points to the stroke.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function addPoints(points: IPointerPoint[]): boolean'
@@ -101,7 +94,6 @@ methods:
       Deserializes the specified stroke string and sets this
       stroke's brush, points and other proprties accordingly.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function deserialize(serializedStroke: string)'
@@ -115,7 +107,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Computes the stroke's bounding rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getBoundingRect(): IRect'
@@ -129,7 +120,6 @@ methods:
       Computes the intersection points between the stroke
       and the specified segment.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getIntersectionPoints(segment: ISegment): IPoint[]'
@@ -146,7 +136,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Gets the point at the given index.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getPointAt(index: number): IPointerPoint'
@@ -165,7 +154,6 @@ methods:
       Determines if the stroke intersects with the specified
       rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function intersectsWithRectangle(rectangle: IRect): boolean'
@@ -184,7 +172,6 @@ methods:
       Splits this stroke into several other ones by "erasing"
       the portions that are within the eraser rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
@@ -201,7 +188,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Serializes the stroke to a string.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function serialize(): string'

@@ -7,7 +7,6 @@ summary: |-
   input points on the fly.
 fullName: InputFilter
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 methods:
@@ -16,7 +15,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Filters (transforms) the specified point.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function filterPoint(p: IPointerPoint): IPointerPoint'
@@ -37,7 +35,6 @@ methods:
       be called automatically by InkingManager when a new wet
       stroke begins.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function reset(startPoint: IPointerPoint)'

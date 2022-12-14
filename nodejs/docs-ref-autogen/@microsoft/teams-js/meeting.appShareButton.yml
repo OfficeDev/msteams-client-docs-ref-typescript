@@ -6,6 +6,7 @@ type: module
 interfaces:
   - '@microsoft/teams-js.meeting.appShareButton.ShareInformation'
 package: '@microsoft/teams-js'
+previewState: beta
 functions:
   - name: setOptions(ShareInformation)
     uid: '@microsoft/teams-js.meeting.appShareButton.setOptions'
@@ -18,7 +19,7 @@ functions:
 
       along with contentUrl (overrides contentUrl populated in app manifest)
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function setOptions(shareInformation: ShareInformation)'

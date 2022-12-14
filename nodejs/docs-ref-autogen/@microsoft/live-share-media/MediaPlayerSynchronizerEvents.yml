@@ -5,7 +5,6 @@ package: '@microsoft/live-share-media'
 summary: Events supported by `MediaPlayerSynchronizer` object.
 fullName: MediaPlayerSynchronizerEvents
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: coordinatorstatechange

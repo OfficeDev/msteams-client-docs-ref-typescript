@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: ''
 fullName: StrokeEndState
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: ended

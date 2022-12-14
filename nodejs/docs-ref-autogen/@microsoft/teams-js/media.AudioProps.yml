@@ -7,7 +7,6 @@ summary: >-
   platform
 fullName: AudioProps
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -21,7 +20,6 @@ properties:
       Default value is defined by the platform serving the API.
     fullName: maxDuration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxDuration?: number'

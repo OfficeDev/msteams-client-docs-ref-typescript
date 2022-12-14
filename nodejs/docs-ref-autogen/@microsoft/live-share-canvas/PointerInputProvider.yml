@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: InputProvider implementation that hooks into a DOM element's pointer events.
 fullName: PointerInputProvider
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -14,7 +13,6 @@ constructors:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new PointerInputProvider(element: HTMLElement)'
@@ -29,7 +27,6 @@ properties:
     summary: ''
     fullName: element
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'element: HTMLElement'
@@ -42,7 +39,6 @@ properties:
     summary: ''
     fullName: isActive
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isActive
@@ -55,7 +51,6 @@ properties:
     summary: ''
     fullName: pointerDown
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IMulticastEvent<IPointerEvent> pointerDown
@@ -70,7 +65,6 @@ properties:
     summary: ''
     fullName: pointerEnter
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IMulticastEvent<IPointerEvent> pointerEnter
@@ -85,7 +79,6 @@ properties:
     summary: ''
     fullName: pointerLeave
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IMulticastEvent<IPointerEvent> pointerLeave
@@ -100,7 +93,6 @@ properties:
     summary: ''
     fullName: pointerMove
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IMulticastEvent<IPointerMoveEvent> pointerMove
@@ -115,7 +107,6 @@ properties:
     summary: ''
     fullName: pointerUp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IMulticastEvent<IPointerEvent> pointerUp
@@ -130,7 +121,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function activate()
@@ -139,7 +129,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function deactivate()

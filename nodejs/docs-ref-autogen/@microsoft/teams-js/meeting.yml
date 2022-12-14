@@ -25,7 +25,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Provides information related app's in-meeting sharing capabilities
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -55,7 +54,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Provides information related to current stage sharing state for app
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -87,7 +85,6 @@ functions:
       Allows an app to get the incoming audio speaker setting for the meeting
       user
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -115,7 +112,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Allows an app to get the state of the live stream in the current meeting
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -143,7 +139,6 @@ functions:
     remarks: >-
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -167,7 +162,7 @@ functions:
 
       at a time. A subsequent registration replaces an existing registration.
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
@@ -197,7 +192,7 @@ functions:
 
       replaces an existing registration.
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
@@ -225,7 +220,6 @@ functions:
       will be false. Default value is false. Only one handler can be registered
       at a time. A subsequent registration replaces an existing registration.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -248,7 +242,6 @@ functions:
     remarks: >-
       Use getLiveStreamState or registerLiveStreamChangedHandler to get updates
       on the live stream state
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -275,7 +268,6 @@ functions:
     remarks: >-
       Use getLiveStreamState or registerLiveStreamChangedHandler to get updates
       on the live stream state
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -294,7 +286,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Allows an app to share contents in the meeting
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -324,7 +315,6 @@ functions:
       Allows an app to toggle the incoming audio speaker setting for the meeting
       user from mute to unmute or vice-versa
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

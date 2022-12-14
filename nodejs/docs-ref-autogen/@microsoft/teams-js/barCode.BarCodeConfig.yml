@@ -10,7 +10,7 @@ summary: >-
   platform
 fullName: BarCodeConfig
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -22,7 +22,6 @@ properties:
       Default value is 30 seconds, max allowed value is 60 seconds.
     fullName: timeOutIntervalInSec
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeOutIntervalInSec?: number'

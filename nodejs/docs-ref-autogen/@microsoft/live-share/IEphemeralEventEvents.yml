@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Event typings for `EphemeralEvent` class.
 fullName: IEphemeralEventEvents<TEvent>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 extends: IEvent

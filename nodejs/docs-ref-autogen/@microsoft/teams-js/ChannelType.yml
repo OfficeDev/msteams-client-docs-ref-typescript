@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: The type of the channel with which the content is associated.
 fullName: ChannelType
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: Private

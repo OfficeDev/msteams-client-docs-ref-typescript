@@ -13,7 +13,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.1.0, please use one of the following functions:
@@ -45,7 +44,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.1.0, please use geoLocation namespace, and use
@@ -65,7 +63,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.1.0, please use [geoLocation.map.showLocation(location: Location):

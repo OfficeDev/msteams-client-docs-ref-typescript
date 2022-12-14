@@ -13,7 +13,6 @@ summary: >-
   `SearchScope.Person | SearchScope.Group`.
 fullName: SearchScope
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: Person

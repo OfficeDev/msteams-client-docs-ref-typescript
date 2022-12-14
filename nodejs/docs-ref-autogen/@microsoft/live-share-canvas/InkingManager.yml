@@ -7,7 +7,6 @@ summary: >-
   dry strokes.
 fullName: InkingManager
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@microsoft/live-share-canvas'
     summary: Creates a new InkingManager instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new InkingManager(hostElement: HTMLElement)'
@@ -39,7 +37,6 @@ properties:
     summary: Gets the horizontal center of the inking surface.
     fullName: centerX
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number centerX
@@ -52,7 +49,6 @@ properties:
     summary: Gets the vertical center of the inking surface.
     fullName: centerY
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number centerY
@@ -65,7 +61,6 @@ properties:
     summary: Gets the client (screen) height of the inking surface.
     fullName: clientHeight
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number clientHeight
@@ -78,7 +73,6 @@ properties:
     summary: Gets the client (screen) width of the inking surface.
     fullName: clientWidth
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number clientWidth
@@ -95,7 +89,6 @@ properties:
       are drawn using various tools.
     fullName: enableStrokeModifierHotKeys
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static enableStrokeModifierHotKeys: boolean'
@@ -112,7 +105,6 @@ properties:
       strokes) remains ready for new strokes before being faded out and removed.
     fullName: ephemeralCanvasRemovalDelay
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static ephemeralCanvasRemovalDelay: number'
@@ -125,7 +117,6 @@ properties:
     summary: The size of the eraser.
     fullName: eraserSize
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'eraserSize: number'
@@ -140,7 +131,6 @@ properties:
       Sets the highlighter brush.
     fullName: highlighterBrush
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IBrush highlighterBrush
@@ -153,7 +143,6 @@ properties:
     summary: Gets the DOM element that hosts the inking surface.
     fullName: hostElement
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: HTMLElement hostElement
@@ -170,7 +159,6 @@ properties:
       pointer events from.
     fullName: inputProvider
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: InputProvider inputProvider
@@ -185,7 +173,6 @@ properties:
       Sets the laser pointer brush.
     fullName: laserPointerBrush
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IBrush laserPointerBrush
@@ -200,7 +187,6 @@ properties:
       Sets the line brush.
     fullName: lineBrush
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IBrush lineBrush
@@ -213,7 +199,6 @@ properties:
     summary: The default client Id of the device running the application.
     fullName: localClientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static localClientId: string'
@@ -228,7 +213,6 @@ properties:
       Sets the viewport offset.
     fullName: offset
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: Readonly<IPoint> offset
@@ -243,7 +227,6 @@ properties:
       Sets the pen brush.
     fullName: penBrush
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IBrush penBrush
@@ -258,7 +241,6 @@ properties:
       Sets the reference point.
     fullName: referencePoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: CanvasReferencePoint referencePoint
@@ -273,7 +255,6 @@ properties:
       Sets the scale. Value must be greatwer than 0.
     fullName: scale
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number scale
@@ -288,7 +269,6 @@ properties:
       Sets the current tool.
     fullName: tool
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: InkingTool tool
@@ -303,7 +283,6 @@ properties:
       reference point, scale and offset.
     fullName: viewPort
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IRect viewPort
@@ -317,7 +296,6 @@ inheritedProperties:
     summary: Sets or gets the default captureRejection value for all emitters.
     fullName: captureRejections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static captureRejections: boolean'
@@ -331,7 +309,6 @@ inheritedProperties:
     summary: ''
     fullName: captureRejectionSymbol
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static captureRejectionSymbol: Object'
@@ -345,7 +322,6 @@ inheritedProperties:
     summary: ''
     fullName: defaultMaxListeners
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static defaultMaxListeners: number'
@@ -373,7 +349,6 @@ inheritedProperties:
       regular `'error'` listener is installed.
     fullName: errorMonitor
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static errorMonitor: Object'
@@ -387,7 +362,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -409,7 +383,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function emit(event: string | symbol, args: any[]): boolean'
@@ -429,7 +402,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function eventNames(): Array<string | symbol>'
@@ -442,7 +414,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getMaxListeners(): number'
@@ -455,7 +426,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: since v4.0.0
     syntax:
@@ -478,7 +448,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listenerCount(event: string | symbol): number'
@@ -495,7 +464,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listeners(event: string | symbol): Function[]'
@@ -512,7 +480,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -534,7 +501,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -556,7 +522,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -578,7 +543,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -600,7 +564,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -622,7 +585,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -644,7 +606,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -666,7 +627,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function rawListeners(event: string | symbol): Function[]'
@@ -683,7 +643,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function removeAllListeners(event?: string | symbol): this'
@@ -700,7 +659,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -722,7 +680,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setMaxListeners(n: number): this'
@@ -740,7 +697,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Starts listening to pointer input.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function activate()
@@ -749,7 +705,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Adds a stroke to the drawing.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function addStroke(stroke: IStroke, options?: IAddRemoveStrokeOptions)'
@@ -776,7 +731,6 @@ methods:
 
       updates are done, `endUpdate` must be called.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function beginUpdate()
@@ -791,7 +745,6 @@ methods:
 
       can be created at the same time and will not interfere with each other.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -818,7 +771,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Clears the canvas.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function clear()
@@ -827,7 +779,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Stops listening to pointer input.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function deactivate()
@@ -840,7 +791,6 @@ methods:
 
       `StrokesAddedEvent` and/or a single `StrokesRemovedEvent`.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function endUpdate()
@@ -849,7 +799,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Entirely removes any strokes that intersect with the eraser rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function erase(p: IPoint)'
@@ -864,7 +813,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Retrieves an existing stroke from the drawing.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getStroke(id: string): IStroke | undefined'
@@ -880,7 +828,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Erases portions of strokes that intersect with the eraser rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function pointErase(p: IPoint)'
@@ -895,7 +842,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Removes a stroke from the drawing.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function removeStroke(id: string, options?: IAddRemoveStrokeOptions)'
@@ -915,7 +861,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Converts screen coordinates to viewport coordinates.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function screenToViewport(p: IPoint): IPoint'
@@ -935,7 +880,6 @@ methods:
 
       reduction filter is used.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setInputFilters(inputFilters?: InputFilter[])'
@@ -950,7 +894,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Converts viewport coordinates to screen coordinates.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function viewportToScreen(p: IPoint): IPoint'

@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Defines available inking tools.
 fullName: InkingTool
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: pen

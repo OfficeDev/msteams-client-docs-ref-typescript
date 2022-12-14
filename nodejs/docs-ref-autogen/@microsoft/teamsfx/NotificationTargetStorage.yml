@@ -7,7 +7,6 @@ summary: >-
   references.
 fullName: NotificationTargetStorage
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 methods:
@@ -16,7 +15,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Delete one notification target by its key.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function delete(key: string): Promise<void>'
@@ -33,7 +31,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: List all stored notification targets.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function list(): Promise<[key: string]: unknown[]>'
@@ -47,7 +44,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Read one notification target by its key.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function read(key: string): Promise<[key: string]: unknown | undefined>'
@@ -64,7 +60,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Write one notification target by its key.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

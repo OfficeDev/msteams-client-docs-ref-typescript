@@ -80,7 +80,6 @@ remarks: >-
   For notification, set `notification.storage` in
   <xref:@microsoft/teamsfx.ConversationOptions> to use your own storage
   implementation.
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -91,7 +90,6 @@ constructors:
     remarks: >-
       It's recommended to create your own adapter and storage for production
       environment instead of the default one.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new ConversationBot(options: ConversationOptions)'
@@ -107,7 +105,6 @@ properties:
     summary: The bot adapter.
     fullName: adapter
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'adapter: BotFrameworkAdapter'
@@ -120,7 +117,6 @@ properties:
     summary: The action handler used for adaptive card universal actions.
     fullName: cardAction
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'cardAction?: CardActionBot'
@@ -133,7 +129,6 @@ properties:
     summary: The entrypoint of command and response.
     fullName: command
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'command?: CommandBot'
@@ -146,7 +141,6 @@ properties:
     summary: The entrypoint of notification.
     fullName: notification
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'notification?: NotificationBot'
@@ -178,7 +172,6 @@ methods:
       ```
 
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

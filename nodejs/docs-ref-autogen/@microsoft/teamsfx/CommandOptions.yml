@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: 'Options to initialize <xref:@microsoft/teamsfx.CommandBot>.'
 fullName: CommandOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -18,7 +17,6 @@ properties:
       so that it can be correctly handled by this command bot.
     fullName: commands
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'commands?: TeamsFxBotCommandHandler[]'
@@ -35,7 +33,6 @@ properties:
       correctly handled by this command bot.
     fullName: ssoCommands
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ssoCommands?: TeamsFxBotSsoCommandHandler[]'

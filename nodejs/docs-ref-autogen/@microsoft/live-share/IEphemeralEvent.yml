@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Base interface for all ephemeral events.
 fullName: IEphemeralEvent
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 inheritedProperties:
@@ -17,7 +16,6 @@ inheritedProperties:
       client is currently disconnected.
     fullName: clientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientId?: undefined | string'
@@ -33,7 +31,6 @@ inheritedProperties:
     summary: Name of the event.
     fullName: name
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'name: string'
@@ -49,7 +46,6 @@ inheritedProperties:
     summary: Global timestamp of when the event was sent.
     fullName: timestamp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timestamp: number'

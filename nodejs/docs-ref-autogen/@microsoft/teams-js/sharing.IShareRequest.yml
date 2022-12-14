@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: IShareRequest<T>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: content
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'content: T[]'

@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: ParentAppWindow
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: Instance
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: static IAppWindow Instance
@@ -30,7 +28,6 @@ methods:
       Add a listener that will be called when an event is received from the
       ParentAppWindow.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -51,7 +48,6 @@ methods:
     package: '@microsoft/teams-js'
     summary: Send a message to the ParentAppWindow.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

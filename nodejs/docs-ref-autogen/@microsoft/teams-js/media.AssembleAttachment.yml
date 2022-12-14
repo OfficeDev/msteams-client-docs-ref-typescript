@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Helper object to assembled media chunks
 fullName: AssembleAttachment
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: file
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'file: Blob'
@@ -28,7 +26,6 @@ properties:
     summary: ''
     fullName: sequence
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sequence: number'

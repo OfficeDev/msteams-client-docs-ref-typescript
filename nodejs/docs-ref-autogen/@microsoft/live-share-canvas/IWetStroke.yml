@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: 'Defines a "wet" stroke, i.e. a stroke as it''s being drawn.'
 fullName: IWetStroke
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: The wet stroke's mode.
     fullName: mode
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mode: StrokeMode'
@@ -28,7 +26,6 @@ properties:
     summary: The type of the wet stroke.
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: StrokeType'
@@ -42,7 +39,6 @@ inheritedProperties:
     summary: The brush used to draw the stroke.
     fullName: brush
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'brush: IBrush'
@@ -58,7 +54,6 @@ inheritedProperties:
     summary: Optional. The id of the client the stroke was created on.
     fullName: clientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientId?: undefined | string'
@@ -74,7 +69,6 @@ inheritedProperties:
     summary: The id of the stroke.
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id: string'
@@ -90,7 +84,6 @@ inheritedProperties:
     summary: The number of points in the stroke.
     fullName: length
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'length: number'
@@ -106,7 +99,6 @@ inheritedProperties:
     summary: The timestamp when the stroke was created.
     fullName: timeStamp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeStamp: number'
@@ -122,7 +114,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Adds points to the stroke.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function addPoints(points: IPointerPoint[]): boolean'
@@ -144,7 +135,6 @@ inheritedMethods:
       Deserializes the specified stroke string and sets this
       stroke's brush, points and other proprties accordingly.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function deserialize(serializedStroke: string)'
@@ -161,7 +151,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Computes the stroke's bounding rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getBoundingRect(): IRect'
@@ -178,7 +167,6 @@ inheritedMethods:
       Computes the intersection points between the stroke
       and the specified segment.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getIntersectionPoints(segment: ISegment): IPoint[]'
@@ -198,7 +186,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Gets the point at the given index.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getPointAt(index: number): IPointerPoint'
@@ -220,7 +207,6 @@ inheritedMethods:
       Determines if the stroke intersects with the specified
       rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function intersectsWithRectangle(rectangle: IRect): boolean'
@@ -242,7 +228,6 @@ inheritedMethods:
       Splits this stroke into several other ones by "erasing"
       the portions that are within the eraser rectangle.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
@@ -262,7 +247,6 @@ inheritedMethods:
     package: '@microsoft/live-share-canvas'
     summary: Serializes the stroke to a string.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function serialize(): string'
@@ -278,7 +262,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Cancels the wet stroke.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function cancel()
@@ -287,7 +270,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: Ends the wet stroke.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function end()
@@ -298,7 +280,6 @@ methods:
       Straightens a point so that the line it forms with the previous
       point is straight (either horizontal or vertical).
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function straighten(p: IPointerPoint): IPointerPoint'

@@ -5,7 +5,6 @@ package: '@microsoft/live-share-media'
 summary: ''
 fullName: CoordinationWaitPoint
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: maxClients
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'maxClients?: undefined | number'
@@ -28,7 +26,6 @@ properties:
     summary: ''
     fullName: position
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'position: number'
@@ -41,7 +38,6 @@ properties:
     summary: ''
     fullName: reason
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'reason?: undefined | string'

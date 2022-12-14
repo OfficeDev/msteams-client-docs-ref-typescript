@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Event typings for `EphemeralPresence` class.
 fullName: IEphemeralPresenceEvents<TData>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 extends: IEvent

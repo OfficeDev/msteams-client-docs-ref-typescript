@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Represents Page information.
 fullName: PageInfo
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
       sidePanel)
     fullName: frameContext
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'frameContext: FrameContexts'
@@ -30,7 +28,6 @@ properties:
     summary: The developer-defined unique ID for the page this content points to.
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id: string'
@@ -43,7 +40,6 @@ properties:
     summary: Indication whether the page is in full-screen mode.
     fullName: isFullScreen
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isFullScreen?: boolean'
@@ -56,7 +52,6 @@ properties:
     summary: Indication whether the page is in a pop out window
     fullName: isMultiWindow
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isMultiWindow?: boolean'
@@ -69,7 +64,6 @@ properties:
     summary: Source origin from where the page is opened
     fullName: sourceOrigin
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sourceOrigin?: string'
@@ -85,7 +79,6 @@ properties:
       such as scrolling to or activating a specific piece of content.
     fullName: subPageId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subPageId?: string'

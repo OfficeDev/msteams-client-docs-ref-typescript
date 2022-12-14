@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Ephemeral event callback.
 fullName: EphemeralEventListener<TEvent>
 remarks: ''
-isPreview: false
 isDeprecated: false
 syntax: |
   type EphemeralEventListener<TEvent> = (evt: TEvent, local: boolean) => void

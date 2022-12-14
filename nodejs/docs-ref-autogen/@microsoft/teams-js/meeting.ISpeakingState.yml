@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Property bag for the speakingState changed event
 fullName: ISpeakingState
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: error object in case there is a failure
     fullName: error
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'error?: SdkError'
@@ -30,7 +28,6 @@ properties:
       if no participants are speaking
     fullName: isSpeakingDetected
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isSpeakingDetected: boolean'

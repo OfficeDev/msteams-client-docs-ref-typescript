@@ -38,7 +38,6 @@ remarks: >-
      value: invokeResponse,
    });
   ```
-isPreview: false
 isDeprecated: false
 type: class
 methods:
@@ -56,7 +55,6 @@ methods:
 
       that the client should display in place of the current one.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static function adaptiveCard(card: unknown): InvokeResponse'
@@ -73,7 +71,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Create an invoke response with status code and response value.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -101,7 +98,6 @@ methods:
 
       the request was failed to processed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -132,7 +128,6 @@ methods:
 
       indicates the request was successfully processed.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static function textMessage(message: string): InvokeResponse'

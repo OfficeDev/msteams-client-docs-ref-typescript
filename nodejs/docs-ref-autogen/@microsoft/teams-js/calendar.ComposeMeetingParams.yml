@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: ComposeMeetingParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: attendees
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'attendees?: string[]'
@@ -28,7 +26,6 @@ properties:
     summary: ''
     fullName: content
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'content?: string'
@@ -41,7 +38,6 @@ properties:
     summary: ''
     fullName: endTime
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endTime?: string'
@@ -54,7 +50,6 @@ properties:
     summary: ''
     fullName: startTime
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'startTime?: string'
@@ -67,7 +62,6 @@ properties:
     summary: ''
     fullName: subject
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subject?: string'

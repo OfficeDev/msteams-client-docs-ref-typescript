@@ -9,7 +9,6 @@ summary: >-
   are included on outgoing telemetry events.
 fullName: EphemeralTelemetryLogger
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -18,7 +17,6 @@ constructors:
     package: '@microsoft/live-share'
     summary: Creates a new `EphemeralTelemetryLogger` instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new EphemeralTelemetryLogger(runtime: IRuntimeSignaler)'
@@ -33,7 +31,6 @@ methods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -54,7 +51,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Sends an error event.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -80,7 +76,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Sends a performance telemetry event.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -108,7 +103,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Sends a generic telemetry event.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

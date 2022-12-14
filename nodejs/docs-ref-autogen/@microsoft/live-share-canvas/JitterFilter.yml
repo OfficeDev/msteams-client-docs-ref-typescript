@@ -7,7 +7,6 @@ summary: |-
   micro movements detected by the input device, mainly pens.
 fullName: JitterFilter
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 methods:
@@ -16,7 +15,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function filterPoint(p: IPointerPoint): IPointerPoint'
@@ -32,7 +30,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function reset(startPoint: IPointerPoint)'

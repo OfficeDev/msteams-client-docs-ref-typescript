@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: 'Options to initialize <xref:@microsoft/teamsfx.NotificationBot>.'
 fullName: NotificationOptions_2
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -23,7 +22,6 @@ properties:
 
       It's recommended to use your own shared storage for production
       environment.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'storage?: NotificationTargetStorage'

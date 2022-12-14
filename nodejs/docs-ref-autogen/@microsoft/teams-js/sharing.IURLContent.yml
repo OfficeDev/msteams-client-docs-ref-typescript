@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: IURLContent
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Default initial message text
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message?: string'
@@ -28,7 +26,6 @@ properties:
     summary: 'Show URL preview, defaults to true'
     fullName: preview
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'preview?: boolean'
@@ -41,7 +38,6 @@ properties:
     summary: ''
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: "URL"'
@@ -54,7 +50,6 @@ properties:
     summary: Required URL
     fullName: url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'url: string'

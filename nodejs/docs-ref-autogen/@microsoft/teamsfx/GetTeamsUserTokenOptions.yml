@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: ''
 fullName: GetTeamsUserTokenOptions
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: resources
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resources?: string[]'
@@ -29,7 +27,6 @@ inheritedProperties:
     summary: The signal which can be used to abort requests.
     fullName: abortSignal
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'abortSignal?: AbortSignalLike'
@@ -45,7 +42,6 @@ inheritedProperties:
       flow
     fullName: claims
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'claims?: string'
@@ -59,7 +55,6 @@ inheritedProperties:
     summary: Options used when creating and sending HTTP requests for this operation.
     fullName: requestOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'requestOptions?: { timeout?: number }'
@@ -75,7 +70,6 @@ inheritedProperties:
       tenant Id hints.
     fullName: tenantId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tenantId?: string'
@@ -89,7 +83,6 @@ inheritedProperties:
     summary: Options used when tracing is enabled.
     fullName: tracingOptions
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tracingOptions?: { tracingContext?: TracingContext }'

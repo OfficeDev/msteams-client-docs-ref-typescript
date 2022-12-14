@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: ''
 fullName: BotSsoExecutionDialogHandler
 remarks: ''
-isPreview: false
 isDeprecated: false
 syntax: |
   type BotSsoExecutionDialogHandler = (

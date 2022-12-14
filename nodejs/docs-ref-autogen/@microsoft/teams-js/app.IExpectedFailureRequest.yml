@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Represents the failure request sent during an erroneous app initialization.
 fullName: IExpectedFailureRequest
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: A message that describes the failure
     fullName: message
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'message?: string'
@@ -28,7 +26,6 @@ properties:
     summary: The reason for the failure
     fullName: reason
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'reason: ExpectedFailureReason'

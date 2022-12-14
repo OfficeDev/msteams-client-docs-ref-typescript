@@ -10,7 +10,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.getConfig():
@@ -32,7 +31,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.registerOnRemoveHandler(handler:
@@ -63,7 +61,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.registerOnSaveHandler(handler: (evt:
@@ -94,7 +91,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.setConfig(instanceSettings: Config):
@@ -121,7 +117,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.setValidityState(validityState:

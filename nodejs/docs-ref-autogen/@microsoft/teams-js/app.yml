@@ -27,7 +27,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Retrieves the current context the frame is running in.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getContext(): Promise<Context>'
@@ -43,7 +42,6 @@ functions:
       Gets the Frame Context that the App is running in. See
       <xref:@microsoft/teams-js.FrameContexts> for the list of possible values.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getFrameContext(): FrameContexts'
@@ -57,7 +55,6 @@ functions:
     remarks: >-
       Initialize must have completed successfully (as determined by the resolved
       Promise) before any other library calls are made
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function initialize(validMessageOrigins?: string[]): Promise<void>'
@@ -80,7 +77,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Checks whether the Teams client SDK has been initialized.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isInitialized(): boolean'
@@ -94,7 +90,6 @@ functions:
       Notifies the frame that app has loaded and to hide the loading indicator
       if one is shown.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function notifyAppLoaded()
@@ -103,7 +98,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Notifies the frame that app initialized with some expected errors.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -122,7 +116,6 @@ functions:
       Notifies the frame that app initialization has failed and to show an error
       page in its place.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function notifyFailure(appInitializationFailedRequest: IFailedRequest)'
@@ -139,7 +132,6 @@ functions:
       Notifies the frame that app initialization is successful and is ready for
       user interaction.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function notifySuccess()
@@ -148,7 +140,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: open link API.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function openLink(deepLink: string): Promise<void>'
@@ -166,7 +157,6 @@ functions:
     remarks: >-
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'

@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Defines the arguments of the PointerMovedEvent.
 fullName: IPointerMovedEventArgs
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: position
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'position?: IPoint'

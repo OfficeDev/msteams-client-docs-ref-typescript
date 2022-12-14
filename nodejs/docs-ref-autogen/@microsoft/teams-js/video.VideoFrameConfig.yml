@@ -7,7 +7,7 @@ summary: >-
   video frame parameters, like format
 fullName: VideoFrameConfig
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +17,6 @@ properties:
     summary: Video format
     fullName: format
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'format: VideoFrameFormat'
