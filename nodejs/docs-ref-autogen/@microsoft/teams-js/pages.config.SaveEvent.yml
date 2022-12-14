@@ -10,7 +10,6 @@ summary: >-
   settings.save call succeeded or not and why.
 fullName: SaveEvent
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -22,7 +21,6 @@ properties:
       event.
     fullName: result
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'result: SaveParameters'
@@ -37,7 +35,6 @@ methods:
       Indicates that creation of the underlying resource failed and that the
       config cannot be saved.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function notifyFailure(reason?: string)'
@@ -54,7 +51,6 @@ methods:
       Indicates that the underlying resource has been created and the config can
       be saved.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function notifySuccess()

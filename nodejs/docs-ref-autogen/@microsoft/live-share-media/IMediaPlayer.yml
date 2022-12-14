@@ -7,7 +7,6 @@ summary: |-
   Licensed under the Microsoft Live Share SDK License.
 fullName: IMediaPlayer
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
     summary: ''
     fullName: currentSrc
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'currentSrc: string'
@@ -30,7 +28,6 @@ properties:
     summary: ''
     fullName: currentTime
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'currentTime: number'
@@ -43,7 +40,6 @@ properties:
     summary: ''
     fullName: duration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'duration: number'
@@ -56,7 +52,6 @@ properties:
     summary: ''
     fullName: ended
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ended: boolean'
@@ -69,7 +64,6 @@ properties:
     summary: ''
     fullName: muted
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'muted: boolean'
@@ -82,7 +76,6 @@ properties:
     summary: ''
     fullName: paused
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'paused: boolean'
@@ -95,7 +88,6 @@ properties:
     summary: ''
     fullName: playbackRate
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'playbackRate: number'
@@ -108,7 +100,6 @@ properties:
     summary: ''
     fullName: src
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'src: string'
@@ -121,7 +112,6 @@ properties:
     summary: ''
     fullName: volume
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'volume: number'
@@ -136,7 +126,6 @@ methods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -158,7 +147,6 @@ methods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function load()
@@ -167,7 +155,6 @@ methods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function pause()
@@ -176,7 +163,6 @@ methods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function play(): Promise<void>'
@@ -190,7 +176,6 @@ methods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

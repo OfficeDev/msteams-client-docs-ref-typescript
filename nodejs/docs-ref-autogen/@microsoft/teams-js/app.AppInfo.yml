@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Represents application information.
 fullName: AppInfo
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
       sessions. Used for correlating telemetry data.
     fullName: appLaunchId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appLaunchId?: string'
@@ -30,7 +28,6 @@ properties:
     summary: Info of the host
     fullName: host
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'host: AppHostInfo'
@@ -43,7 +40,6 @@ properties:
     summary: Personal app icon y coordinate position
     fullName: iconPositionVertical
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'iconPositionVertical?: number'
@@ -58,7 +54,6 @@ properties:
       languageId-countryId (for example, en-us).
     fullName: locale
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'locale: string'
@@ -78,7 +73,6 @@ properties:
       time format configuration
     fullName: osLocaleInfo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'osLocaleInfo?: LocaleInfo'
@@ -93,7 +87,6 @@ properties:
       This is only available in task modules launched from bot cards.
     fullName: parentMessageId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentMessageId?: string'
@@ -106,7 +99,6 @@ properties:
     summary: Unique ID for the current session for use in correlating telemetry data.
     fullName: sessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sessionId: string'
@@ -121,7 +113,6 @@ properties:
       "contrast".
     fullName: theme
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'theme: string'
@@ -134,7 +125,6 @@ properties:
     summary: Time when the user clicked on the tab
     fullName: userClickTime
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userClickTime?: number'
@@ -149,7 +139,6 @@ properties:
       open
     fullName: userFileOpenPreference
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userFileOpenPreference?: FileOpenPreference'

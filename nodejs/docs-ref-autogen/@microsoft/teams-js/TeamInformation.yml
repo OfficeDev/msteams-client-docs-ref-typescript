@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Represents Team Information
 fullName: TeamInformation
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -19,7 +18,6 @@ properties:
       the manifest.
     fullName: groupId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'groupId?: string'
@@ -32,7 +30,6 @@ properties:
     summary: The archived status of the team
     fullName: isTeamArchived
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isTeamArchived?: boolean'
@@ -45,7 +42,6 @@ properties:
     summary: The locked status of the team
     fullName: isTeamLocked
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isTeamLocked?: boolean'
@@ -58,7 +54,6 @@ properties:
     summary: Team description
     fullName: teamDescription
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamDescription?: string'
@@ -71,7 +66,6 @@ properties:
     summary: Id of the team
     fullName: teamId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamId: string'
@@ -84,7 +78,6 @@ properties:
     summary: Team display name
     fullName: teamName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamName: string'
@@ -97,7 +90,6 @@ properties:
     summary: The type of the team.
     fullName: teamType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamType?: TeamType'
@@ -110,7 +102,6 @@ properties:
     summary: Thumbnail Uri
     fullName: thumbnailUri
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'thumbnailUri?: string'
@@ -123,7 +114,6 @@ properties:
     summary: Role of current user in the team
     fullName: userTeamRole
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userTeamRole?: UserTeamRole'

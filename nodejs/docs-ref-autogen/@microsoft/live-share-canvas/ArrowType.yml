@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: ''
 fullName: ArrowType
 remarks: ''
-isPreview: false
 isDeprecated: false
 syntax: |
   type ArrowType = "none" | "open"

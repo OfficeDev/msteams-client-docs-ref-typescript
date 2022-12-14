@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: Error code to trace the error types.
 fullName: ErrorCode
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: AuthorizationInfoAlreadyExists

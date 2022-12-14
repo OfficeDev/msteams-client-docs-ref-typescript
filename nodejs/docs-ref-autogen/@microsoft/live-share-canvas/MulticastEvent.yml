@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Implements a simple typed multicast event.
 fullName: MulticastEvent<TArgs>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 methods:
@@ -14,7 +13,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function emit(args: TArgs)'
@@ -27,7 +25,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function off(listener: EventListener<TArgs>)'
@@ -42,7 +39,6 @@ methods:
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function on(listener: EventListener<TArgs>)'

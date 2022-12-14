@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Representes a a pointer move event.
 fullName: IPointerMoveEvent
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: isPointerDown
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isPointerDown: boolean'
@@ -29,7 +27,6 @@ inheritedProperties:
     summary: ''
     fullName: altKey
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'altKey: boolean'
@@ -45,7 +42,6 @@ inheritedProperties:
     summary: ''
     fullName: ctrlKey
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ctrlKey: boolean'
@@ -61,7 +57,6 @@ inheritedProperties:
     summary: ''
     fullName: pressure
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'pressure: number'
@@ -77,7 +72,6 @@ inheritedProperties:
     summary: ''
     fullName: shiftKey
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'shiftKey: boolean'
@@ -93,7 +87,6 @@ inheritedProperties:
     summary: ''
     fullName: x
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'x: number'
@@ -109,7 +102,6 @@ inheritedProperties:
     summary: ''
     fullName: 'y'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'y: number'

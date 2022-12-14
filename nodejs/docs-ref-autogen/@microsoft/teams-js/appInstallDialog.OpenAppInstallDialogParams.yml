@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: OpenAppInstallDialogParams
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: appId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appId: string'

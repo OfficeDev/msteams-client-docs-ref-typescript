@@ -15,7 +15,6 @@ remarks: >-
 
 
   Represents the structure of the received context message.
-isPreview: false
 isDeprecated: true
 customDeprecatedMessage: >-
   As of 2.0.0, please use the <xref:@microsoft/teams-js.app.Context> interface
@@ -28,7 +27,6 @@ properties:
     summary: ''
     fullName: actionInfo
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -47,7 +45,6 @@ properties:
     summary: ''
     fullName: appIconPosition
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -67,7 +64,6 @@ properties:
     summary: ''
     fullName: appLaunchId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -88,7 +84,6 @@ properties:
     summary: ''
     fullName: appSessionId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -108,7 +103,6 @@ properties:
     summary: ''
     fullName: channelId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -129,7 +123,6 @@ properties:
     summary: ''
     fullName: channelName
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -149,7 +142,6 @@ properties:
     summary: ''
     fullName: channelRelativeUrl
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -169,7 +161,6 @@ properties:
     summary: ''
     fullName: channelType
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -189,7 +180,6 @@ properties:
     summary: ''
     fullName: chatId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -208,7 +198,6 @@ properties:
     summary: ''
     fullName: defaultOneNoteSectionId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -228,7 +217,6 @@ properties:
     summary: ''
     fullName: entityId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -247,7 +235,6 @@ properties:
     summary: ''
     fullName: frameContext
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -268,7 +255,6 @@ properties:
     summary: ''
     fullName: groupId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -291,7 +277,6 @@ properties:
     summary: ''
     fullName: hostClientType
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -315,7 +300,6 @@ properties:
     summary: ''
     fullName: hostName
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -336,7 +320,6 @@ properties:
     summary: ''
     fullName: hostTeamGroupId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -356,7 +339,6 @@ properties:
     summary: ''
     fullName: hostTeamTenantId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -376,7 +358,6 @@ properties:
     summary: ''
     fullName: isCallingAllowed
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -396,7 +377,6 @@ properties:
     summary: ''
     fullName: isFullScreen
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -416,7 +396,6 @@ properties:
     summary: ''
     fullName: isMultiWindow
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -436,7 +415,6 @@ properties:
     summary: ''
     fullName: isPSTNCallingAllowed
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -456,7 +434,6 @@ properties:
     summary: ''
     fullName: isTeamArchived
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -479,7 +456,6 @@ properties:
     summary: ''
     fullName: locale
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -501,7 +477,6 @@ properties:
     summary: ''
     fullName: loginHint
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -531,7 +506,6 @@ properties:
     summary: ''
     fullName: meetingId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -551,7 +525,6 @@ properties:
     summary: ''
     fullName: mySiteDomain
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -571,7 +544,6 @@ properties:
     summary: ''
     fullName: mySitePath
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -591,7 +563,6 @@ properties:
     summary: ''
     fullName: osLocaleInfo
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -617,7 +588,6 @@ properties:
     summary: ''
     fullName: parentMessageId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -639,7 +609,6 @@ properties:
     summary: ''
     fullName: ringId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -659,7 +628,6 @@ properties:
     summary: ''
     fullName: sessionId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -680,7 +648,6 @@ properties:
     summary: ''
     fullName: sharepoint
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -699,7 +666,6 @@ properties:
     summary: ''
     fullName: sourceOrigin
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -719,7 +685,6 @@ properties:
     summary: ''
     fullName: subEntityId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -743,7 +708,6 @@ properties:
     summary: ''
     fullName: teamId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -763,7 +727,6 @@ properties:
     summary: ''
     fullName: teamName
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -783,7 +746,6 @@ properties:
     summary: ''
     fullName: teamSiteDomain
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -803,7 +765,6 @@ properties:
     summary: ''
     fullName: teamSiteId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -823,7 +784,6 @@ properties:
     summary: ''
     fullName: teamSitePath
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -843,7 +803,6 @@ properties:
     summary: ''
     fullName: teamSiteUrl
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -863,7 +822,6 @@ properties:
     summary: ''
     fullName: teamTemplateId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -884,7 +842,6 @@ properties:
     summary: ''
     fullName: teamType
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -903,7 +860,6 @@ properties:
     summary: ''
     fullName: tenantSKU
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -923,7 +879,6 @@ properties:
     summary: ''
     fullName: theme
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -942,7 +897,6 @@ properties:
     summary: ''
     fullName: tid
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -971,7 +925,6 @@ properties:
     summary: ''
     fullName: upn
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -1003,7 +956,6 @@ properties:
     summary: ''
     fullName: userClickTime
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -1023,7 +975,6 @@ properties:
     summary: ''
     fullName: userDisplayName
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -1043,7 +994,6 @@ properties:
     summary: ''
     fullName: userFileOpenPreference
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -1064,7 +1014,6 @@ properties:
     summary: ''
     fullName: userLicenseType
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -1084,7 +1033,6 @@ properties:
     summary: ''
     fullName: userObjectId
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -1111,7 +1059,6 @@ properties:
     summary: ''
     fullName: userPrincipalName
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|
@@ -1140,7 +1087,6 @@ properties:
     summary: ''
     fullName: userTeamRole
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [|

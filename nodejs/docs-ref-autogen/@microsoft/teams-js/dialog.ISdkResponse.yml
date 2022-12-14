@@ -5,7 +5,7 @@ package: '@microsoft/teams-js'
 summary: Data Structure to represent the SDK response when dialog closes
 fullName: ISdkResponse
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +15,6 @@ properties:
     summary: Error in case there is a failure before dialog submission
     fullName: err
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'err?: string'
@@ -37,7 +36,6 @@ properties:
       of the dialog), this value will be `undefined` here.
     fullName: result
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'result?: string | object'

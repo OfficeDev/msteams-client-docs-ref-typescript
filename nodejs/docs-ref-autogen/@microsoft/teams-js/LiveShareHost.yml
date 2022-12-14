@@ -5,7 +5,7 @@ package: '@microsoft/teams-js'
 summary: Live Share host implementation for O365 and Teams clients.
 fullName: LiveShareHost
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: class
 methods:
@@ -18,7 +18,7 @@ methods:
     remarks: >-
       The application must first be initialized and may only be called from
       `meetingStage` or `sidePanel` contexts.
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: 'static function create(): LiveShareHost'

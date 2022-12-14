@@ -8,13 +8,14 @@ type: module
 interfaces:
   - '@microsoft/teams-js.pages.currentApp.NavigateWithinAppParams'
 package: '@microsoft/teams-js'
+previewState: beta
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.pages.currentApp.isSupported'
     package: '@microsoft/teams-js'
     summary: Checks if pages.currentApp capability is supported by the host
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -32,7 +33,7 @@ functions:
 
       specific content within the page).
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function navigateTo(params: NavigateWithinAppParams): Promise<void>'
@@ -55,7 +56,7 @@ functions:
 
       manifest.
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function navigateToDefaultPage(): Promise<void>'

@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Removes the base properties from an event that derives from `IEphemeralEvent`.
 fullName: OutgoingEphemeralEvent<TEvent>
 remarks: ''
-isPreview: false
 isDeprecated: false
 syntax: |
   type OutgoingEphemeralEvent<TEvent> = Omit<

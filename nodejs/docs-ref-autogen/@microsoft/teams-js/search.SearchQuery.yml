@@ -7,7 +7,7 @@ summary: >-
   M365 application's search box
 fullName: SearchQuery
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +17,6 @@ properties:
     summary: The current search term in the host search experience
     fullName: searchTerm
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'searchTerm: string'
@@ -32,7 +31,6 @@ properties:
       / combine them.
     fullName: timestamp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timestamp: number'

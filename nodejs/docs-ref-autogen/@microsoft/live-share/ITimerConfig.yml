@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: for all time values millis from epoch is used
 fullName: ITimerConfig
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: clientId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'clientId: string'
@@ -28,7 +26,6 @@ properties:
     summary: ''
     fullName: configChangedAt
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'configChangedAt: number'
@@ -41,7 +38,6 @@ properties:
     summary: ''
     fullName: duration
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'duration: number'
@@ -54,7 +50,6 @@ properties:
     summary: ''
     fullName: position
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'position: number'
@@ -67,7 +62,6 @@ properties:
     summary: ''
     fullName: running
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'running: boolean'

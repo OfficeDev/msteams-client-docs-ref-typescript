@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Defines a brush as used to draw strokes.
 fullName: IBrush
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: The main color of the brush.
     fullName: color
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'color: IColor'
@@ -30,7 +28,6 @@ properties:
       the brush. Defaults to `none`.
     fullName: endArrow
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endArrow?: ArrowType'
@@ -43,7 +40,6 @@ properties:
     summary: The shape of the brush's tip.
     fullName: tip
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tip: BrushTipShape'
@@ -56,7 +52,6 @@ properties:
     summary: The size of the brush's tip. Must be greater than 0.
     fullName: tipSize
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tipSize: number'
@@ -69,7 +64,6 @@ properties:
     summary: The type of the brush.
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: BrushType'

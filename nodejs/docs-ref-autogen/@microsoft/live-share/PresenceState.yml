@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: List of possible presence states.
 fullName: PresenceState
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: away

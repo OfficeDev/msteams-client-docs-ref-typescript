@@ -7,7 +7,6 @@ summary: >-
   platform
 fullName: ImageProps
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -21,7 +20,6 @@ properties:
       Default value is false
     fullName: enableFilter
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'enableFilter?: boolean'
@@ -38,7 +36,6 @@ properties:
       Default value is Image.
     fullName: imageOutputFormats
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'imageOutputFormats?: ImageOutputFormats[]'
@@ -53,7 +50,6 @@ properties:
       Default value is true
     fullName: ink
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ink?: boolean'
@@ -70,7 +66,6 @@ properties:
       Default value is true
     fullName: textSticker
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'textSticker?: boolean'

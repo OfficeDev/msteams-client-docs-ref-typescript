@@ -5,7 +5,6 @@ package: '@microsoft/live-share-media'
 summary: Most recent state of the media session.
 fullName: IMediaPlayerState
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Metadata for the sessions current track.
     fullName: metadata
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'metadata: ExtendedMediaMetadata | null'
@@ -30,7 +28,6 @@ properties:
     summary: Sessions current playback state.
     fullName: playbackState
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'playbackState: ExtendedMediaSessionPlaybackState'
@@ -45,7 +42,6 @@ properties:
     summary: Sessions current position state if known.
     fullName: positionState
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'positionState?: MediaPositionState'
@@ -60,7 +56,6 @@ properties:
     remarks: >-
       This can be used to sync things like pitch, roll, and yaw when watching
       360 videos together.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'trackData: object | null'

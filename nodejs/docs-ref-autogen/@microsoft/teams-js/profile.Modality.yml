@@ -8,7 +8,7 @@ summary: |-
   respected if the hosting M365 application supports it.
 fullName: Modality
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 syntax: |
   type Modality = "Card" | "Expanded"

@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: Status code for an `application/vnd.microsoft.error` invoke response.
 fullName: InvokeResponseErrorCode
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: BadRequest

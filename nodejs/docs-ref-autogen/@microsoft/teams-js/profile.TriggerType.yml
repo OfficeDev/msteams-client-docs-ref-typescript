@@ -9,7 +9,7 @@ summary: |-
    - AppRequest: The show profile request is happening programmatically, without direct user interaction.
 fullName: TriggerType
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 syntax: |
   type TriggerType = "MouseHover" | "Press" | "AppRequest"

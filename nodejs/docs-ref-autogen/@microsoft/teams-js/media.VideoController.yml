@@ -7,7 +7,6 @@ summary: >-
   client during the video capture flow
 fullName: VideoController
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new VideoController(controllerCallback?: VideoControllerCallback)'
@@ -34,7 +32,6 @@ inheritedMethods:
       Optional; @param callback is used to send app if host client has
       successfully stopped the event or not
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function stop(callback?: (err?: SdkError) => void)'
@@ -49,7 +46,6 @@ methods:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function notifyEventToApp(mediaEvent: MediaControllerEvent)'

@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: A use that presence is being tracked for.
 fullName: EphemeralPresenceUser<TData>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Optional data shared by the user.
     fullName: data
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: TData | undefined data
@@ -28,7 +26,6 @@ properties:
     summary: If `true` the user is the local user.
     fullName: isLocalUser
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isLocalUser
@@ -45,7 +42,6 @@ properties:
       hasn't sent updates
 
       for a period of time.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: PresenceState state
@@ -58,7 +54,6 @@ properties:
     summary: ID of the user.
     fullName: userId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: string userId
@@ -71,7 +66,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Returns the user's meeting roles.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getRoles(): Promise<UserMeetingRole[]>'

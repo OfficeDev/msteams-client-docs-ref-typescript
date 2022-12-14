@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Events supported by `EphemeralTimer` object.
 fullName: EphemeralTimerEvents
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: finished

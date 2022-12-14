@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: SharePointSiteInfo
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: The SharePoint my site domain associated with the user.
     fullName: mySiteDomain
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mySiteDomain?: string'
@@ -28,7 +26,6 @@ properties:
     summary: The SharePoint relative path to the current users mysite
     fullName: mySitePath
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mySitePath?: string'
@@ -41,7 +38,6 @@ properties:
     summary: The domain of the root SharePoint site associated with the team.
     fullName: teamSiteDomain
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamSiteDomain?: string'
@@ -54,7 +50,6 @@ properties:
     summary: 'Teamsite ID, aka sharepoint site id.'
     fullName: teamSiteId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamSiteId?: string'
@@ -67,7 +62,6 @@ properties:
     summary: The relative path to the SharePoint site associated with the team.
     fullName: teamSitePath
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamSitePath?: string'
@@ -80,7 +74,6 @@ properties:
     summary: The root SharePoint site associated with the team.
     fullName: teamSiteUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamSiteUrl?: string'

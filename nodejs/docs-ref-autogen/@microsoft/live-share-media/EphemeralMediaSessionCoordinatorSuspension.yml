@@ -5,7 +5,6 @@ package: '@microsoft/live-share-media'
 summary: ''
 fullName: EphemeralMediaSessionCoordinatorSuspension
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -17,7 +16,6 @@ constructors:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -41,7 +39,6 @@ properties:
     summary: Returns an optional wait point associated with the suspension.
     fullName: waitPoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: CoordinationWaitPoint | undefined waitPoint
@@ -56,7 +53,6 @@ methods:
     package: '@microsoft/live-share-media'
     summary: Ends the suspension and optionally proposes a time to seek to.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function end(seekTo?: undefined | number)'

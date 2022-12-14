@@ -5,7 +5,6 @@ package: '@microsoft/live-share-media'
 summary: ''
 fullName: ExtendedMediaSessionActionDetails
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: ''
     fullName: action
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'action: ExtendedMediaSessionAction'
@@ -28,7 +26,6 @@ properties:
     summary: ''
     fullName: blocked
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'blocked?: ExtendedMediaSessionAction | null'
@@ -43,7 +40,6 @@ properties:
     summary: ''
     fullName: data
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'data?: object | null'
@@ -56,7 +52,6 @@ properties:
     summary: ''
     fullName: fastSeek
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'fastSeek?: boolean | null'
@@ -69,7 +64,6 @@ properties:
     summary: ''
     fullName: metadata
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'metadata?: ExtendedMediaMetadata | null'
@@ -84,7 +78,6 @@ properties:
     summary: ''
     fullName: seekOffset
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'seekOffset?: number | null'
@@ -97,7 +90,6 @@ properties:
     summary: ''
     fullName: seekTime
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'seekTime?: number | null'
@@ -110,7 +102,6 @@ properties:
     summary: ''
     fullName: suspension
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'suspension?: MediaSessionCoordinatorSuspension | null'

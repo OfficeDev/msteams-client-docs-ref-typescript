@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Media chunks an output of getMedia API from platform
 fullName: MediaChunk
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Base 64 data for the requested uri
     fullName: chunk
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'chunk: string'
@@ -28,7 +26,6 @@ properties:
     summary: chunk sequence number
     fullName: chunkSequence
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'chunkSequence: number'

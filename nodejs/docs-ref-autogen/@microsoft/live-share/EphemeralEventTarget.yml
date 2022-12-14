@@ -12,7 +12,6 @@ remarks: >-
   broadcasting
 
   events to other instances of itself.
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -23,7 +22,6 @@ constructors:
     package: '@microsoft/live-share'
     summary: Creates a new `EphemeralEventTarget` instance.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -48,7 +46,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: Broadcasts an event to any listening `EphemeralEventTarget` instances.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'

@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: 'Sso execution dialog, use to handle sso command'
 fullName: BotSsoExecutionDialog<O>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,7 +15,6 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Creates a new instance of the BotSsoExecutionDialog.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -47,7 +45,6 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Creates a new instance of the BotSsoExecutionDialog.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -74,7 +71,6 @@ inheritedProperties:
     summary: The containers dialog set.
     fullName: dialogs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'dialogs: DialogSet'
@@ -93,7 +89,6 @@ inheritedProperties:
 
       processing for the current turn, is still active, and is waiting for more
       input.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static EndOfTurn: DialogTurnResult'
@@ -107,7 +102,6 @@ inheritedProperties:
     summary: ''
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id: string'
@@ -121,7 +115,6 @@ inheritedProperties:
     summary: ''
     fullName: telemetryClient
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'telemetryClient: BotTelemetryClient'
@@ -139,7 +132,6 @@ inheritedMethods:
     remarks: >-
       The [Dialog.id](xref:botbuilder-dialogs.Dialog.id) of the first child
       added to the component will be assigned to the initialDialogId property.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function addDialog(dialog: Dialog): this'
@@ -172,7 +164,6 @@ inheritedMethods:
       still
 
       active after the turn has been processed by the dialog.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -196,7 +187,6 @@ inheritedMethods:
     package: '@microsoft/teamsfx'
     summary: Fluent method for configuring the object.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function configure(config: Record<string, unknown>): this'
@@ -229,7 +219,6 @@ inheritedMethods:
       also contain a
 
       return value.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -250,7 +239,6 @@ inheritedMethods:
     package: '@microsoft/teamsfx'
     summary: Creates the inner dialog context
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function createChildContext(outerDC: DialogContext): DialogContext'
@@ -271,7 +259,6 @@ inheritedMethods:
       [Dialog](xref:botbuilder-dialogs.Dialog)
 
       cancels all of the dialogs on its inner dialog stack before ending.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -302,7 +289,6 @@ inheritedMethods:
     package: '@microsoft/teamsfx'
     summary: Finds a child dialog that was previously added to the container.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function findDialog(dialogId: string): Dialog | undefined'
@@ -319,7 +305,6 @@ inheritedMethods:
     package: '@microsoft/teamsfx'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getConverter(_property: string): Converter | ConverterFactory'
@@ -353,7 +338,6 @@ inheritedMethods:
 
       Returning an empty string will disable version tracking for the component
       all together.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getVersion(): string'
@@ -370,7 +354,6 @@ inheritedMethods:
       Called when an event has been raised, using `DialogContext.emitEvent()`,
       by either the current dialog or a dialog that the current dialog started.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -394,7 +377,6 @@ inheritedMethods:
     package: '@microsoft/teamsfx'
     summary: Called when the dialog should re-prompt the user for input.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -439,7 +421,6 @@ inheritedMethods:
       If this method is *not* overridden, the dialog automatically calls its
 
       RepromptDialog(ITurnContext, DialogInstance) when the user replies.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -469,7 +450,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Add TeamsFxBotSsoCommandHandler instance
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -490,7 +470,6 @@ methods:
       The run method handles the incoming activity (in the form of a
       DialogContext) and passes it through the dialog system.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

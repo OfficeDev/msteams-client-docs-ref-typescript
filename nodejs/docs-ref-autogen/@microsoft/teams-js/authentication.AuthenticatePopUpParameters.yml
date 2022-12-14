@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Describes the authentication pop-up parameters
 fullName: AuthenticatePopUpParameters
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
       the acceptable bounds.
     fullName: height
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'height?: number'
@@ -32,7 +30,6 @@ properties:
       external browser. This flag has no effect on the web client.
     fullName: isExternal
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isExternal?: boolean'
@@ -45,7 +42,6 @@ properties:
     summary: The URL for the authentication pop-up.
     fullName: url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'url: string'
@@ -60,7 +56,6 @@ properties:
       the acceptable bounds.
     fullName: width
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'width?: number'

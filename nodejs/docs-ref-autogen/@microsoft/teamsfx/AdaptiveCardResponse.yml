@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: Options used to control how the response card will be sent to users.
 fullName: AdaptiveCardResponse
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: ReplaceForInteractor

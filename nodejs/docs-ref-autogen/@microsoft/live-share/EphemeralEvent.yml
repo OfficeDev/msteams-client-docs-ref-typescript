@@ -23,7 +23,6 @@ summary: >-
   state.
 fullName: EphemeralEvent<TEvent>
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -34,7 +33,6 @@ constructors:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -53,7 +51,6 @@ properties:
     summary: ''
     fullName: disposed
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean disposed
@@ -66,7 +63,6 @@ properties:
     summary: The objects fluid type factory.
     fullName: factory
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -84,7 +80,6 @@ properties:
     summary: Handle to a data store
     fullName: handle
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IFluidHandle<this> handle
@@ -97,7 +92,6 @@ properties:
     summary: ''
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: string id
@@ -110,7 +104,6 @@ properties:
     summary: ''
     fullName: IFluidHandle
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: IFluidHandle<this> IFluidHandle
@@ -123,7 +116,6 @@ properties:
     summary: ''
     fullName: IFluidLoadable
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: this IFluidLoadable
@@ -136,7 +128,6 @@ properties:
     summary: ''
     fullName: IFluidRouter
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: this IFluidRouter
@@ -149,7 +140,6 @@ properties:
     summary: Returns true if the object has been initialized.
     fullName: isInitialized
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isInitialized
@@ -162,7 +152,6 @@ properties:
     summary: ''
     fullName: isStarted
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: |-
       isInitialized should be used instead
@@ -178,7 +167,6 @@ properties:
     summary: The objects fluid type/name.
     fullName: TypeName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -194,7 +182,6 @@ inheritedProperties:
     summary: ''
     fullName: addListener
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -208,7 +195,6 @@ inheritedProperties:
     summary: ''
     fullName: 'off'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'off: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -222,7 +208,6 @@ inheritedProperties:
     summary: ''
     fullName: 'on'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'on: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -236,7 +221,6 @@ inheritedProperties:
     summary: ''
     fullName: once
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'once: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -250,7 +234,6 @@ inheritedProperties:
     summary: ''
     fullName: prependListener
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'prependListener: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -264,7 +247,6 @@ inheritedProperties:
     summary: ''
     fullName: prependOnceListener
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'prependOnceListener: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -278,7 +260,6 @@ inheritedProperties:
     summary: ''
     fullName: removeListener
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'removeListener: TypedEventTransform<this, I["Events"] & IEvent>'
@@ -292,7 +273,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: Called when the host container closes and disposes itself
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function dispose()
@@ -302,7 +282,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function emit(event: string | symbol, args: any[]): boolean'
@@ -322,7 +301,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function eventNames(): Array<string | symbol>'
@@ -347,7 +325,6 @@ inheritedMethods:
       and need a fully initialized object, then you can call this API to ensure
       object is fully initialized.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function finishInitialization(existing: boolean): Promise<void>'
@@ -364,7 +341,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -385,7 +361,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: Retrieve Fluid object using the handle get
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -417,7 +392,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getMaxListeners(): number'
@@ -432,7 +406,6 @@ inheritedMethods:
       Initializes internal objects and calls initialization overrides.
       Caller is responsible for ensuring this is only invoked once.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function initializeInternal(existing: boolean): Promise<void>'
@@ -449,7 +422,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listenerCount(event: string | symbol): number'
@@ -466,7 +438,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listeners(event: string | symbol): Function[]'
@@ -483,7 +454,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function rawListeners(event: string | symbol): Function[]'
@@ -500,7 +470,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function removeAllListeners(event?: string | symbol): this'
@@ -517,7 +486,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: '{@inheritDoc PureDataObject.request}'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function request(request: IRequest): Promise<IResponse>'
@@ -534,7 +502,6 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setMaxListeners(n: number): this'
@@ -552,7 +519,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Returns the list of roles supported for a client.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -572,7 +538,6 @@ methods:
       Returns the current timestamp as the number of milliseconds sine the Unix
       Epoch.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static function getTimestamp(): number'
@@ -584,7 +549,6 @@ methods:
     package: '@microsoft/live-share'
     summary: initialize the object.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function initialize(allowedRoles?: UserMeetingRole[]): Promise<void>'
@@ -627,7 +591,6 @@ methods:
 
       consistent state with one other.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -655,7 +618,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Registers client id of the current user.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -679,7 +641,6 @@ methods:
       The event will be queued for delivery if the client isn't currently
       connected.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
@@ -706,7 +667,6 @@ methods:
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: |-
       initialize should be used instead
@@ -726,7 +686,6 @@ methods:
     package: '@microsoft/live-share'
     summary: Verifies that a client has one of the specified roles.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-

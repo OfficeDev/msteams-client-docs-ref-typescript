@@ -5,7 +5,6 @@ package: '@microsoft/teamsfx'
 summary: Log function for customized logging.
 fullName: LogFunction
 remarks: ''
-isPreview: false
 isDeprecated: false
 syntax: |
   type LogFunction = (level: LogLevel, message: string) => void

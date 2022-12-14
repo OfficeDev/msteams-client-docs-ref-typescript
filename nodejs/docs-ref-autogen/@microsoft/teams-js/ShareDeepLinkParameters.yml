@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: ShareDeepLinkParameters
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -20,7 +19,6 @@ properties:
       such as scrolling to or activating a specific piece of content.
     fullName: subPageId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subPageId: string'
@@ -35,7 +33,6 @@ properties:
       rendered in a client.
     fullName: subPageLabel
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subPageLabel: string'
@@ -52,7 +49,6 @@ properties:
       This URL should lead directly to the sub-entity.
     fullName: subPageWebUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subPageWebUrl?: string'

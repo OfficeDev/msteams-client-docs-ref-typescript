@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Represents information about a tab instance
 fullName: TabInstance
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,6 @@ properties:
       associated.
     fullName: channelId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channelId?: string'
@@ -30,7 +28,6 @@ properties:
     summary: Is this tab in a favorite channel?
     fullName: channelIsFavorite
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channelIsFavorite?: boolean'
@@ -43,7 +40,6 @@ properties:
     summary: The name for the channel with which the content is associated.
     fullName: channelName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channelName?: string'
@@ -56,7 +52,6 @@ properties:
     summary: The developer-defined unique ID for the entity this content points to.
     fullName: entityId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'entityId?: string'
@@ -73,7 +68,6 @@ properties:
       the manifest.
     fullName: groupId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'groupId?: string'
@@ -86,7 +80,6 @@ properties:
     summary: Last viewed time of this tab. null means unknown
     fullName: lastViewUnixEpochTime
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'lastViewUnixEpochTime?: string'
@@ -99,7 +92,6 @@ properties:
     summary: The name of the tab
     fullName: tabName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tabName: string'
@@ -112,7 +104,6 @@ properties:
     summary: The Microsoft Teams ID for the team with which the content is associated.
     fullName: teamId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamId?: string'
@@ -125,7 +116,6 @@ properties:
     summary: Is this tab in a favorite team?
     fullName: teamIsFavorite
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamIsFavorite?: boolean'
@@ -138,7 +128,6 @@ properties:
     summary: The name for the team with which the content is associated.
     fullName: teamName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamName?: string'
@@ -151,7 +140,6 @@ properties:
     summary: Content URL of this tab
     fullName: url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'url?: string'
@@ -164,7 +152,6 @@ properties:
     summary: Website URL of this tab
     fullName: websiteUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'websiteUrl?: string'

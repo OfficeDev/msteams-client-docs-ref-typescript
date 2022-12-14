@@ -7,7 +7,7 @@ summary: |-
   in OneDrive or Sharepoint
 fullName: M365ContentAction
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -19,7 +19,6 @@ properties:
       to query the Microsoft graph for more details.
     fullName: itemId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'itemId: string'
@@ -32,7 +31,6 @@ properties:
     summary: ''
     fullName: secondaryId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'secondaryId?: SecondaryId'
@@ -46,7 +44,6 @@ inheritedProperties:
     summary: ''
     fullName: type
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'type: M365Content'

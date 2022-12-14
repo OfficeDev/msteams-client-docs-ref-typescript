@@ -5,7 +5,6 @@ package: '@microsoft/live-share-canvas'
 summary: Defines brush types.
 fullName: BrushType
 remarks: ''
-isPreview: false
 isDeprecated: false
 syntax: |
   type BrushType = "pen" | "highlighter" | "laser"

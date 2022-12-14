@@ -17,13 +17,14 @@ interfaces:
 typeAliases:
   - '@microsoft/teams-js.search.SearchQueryHandler'
 package: '@microsoft/teams-js'
+previewState: beta
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.search.isSupported'
     package: '@microsoft/teams-js'
     summary: Checks if search capability is supported by the host
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -88,7 +89,7 @@ functions:
       ```
 
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
@@ -145,7 +146,7 @@ functions:
       this function will cause your app to stop appearing in the set of search
       scopes in the hosts
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: function unregisterHandlers()

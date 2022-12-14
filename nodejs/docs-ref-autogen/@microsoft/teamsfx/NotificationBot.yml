@@ -7,7 +7,6 @@ summary: >-
   channel).
 fullName: NotificationBot
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -18,7 +17,6 @@ constructors:
     remarks: >-
       To ensure accuracy, it's recommended to initialize before handling any
       message.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -45,7 +43,6 @@ methods:
       (Ensure the bot app is installed into the `General` channel, otherwise
       empty array will be returned.)
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -69,7 +66,6 @@ methods:
       Returns all <xref:@microsoft/teamsfx.Member> where predicate is true, and
       empty array otherwise.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -101,7 +97,6 @@ methods:
       (Ensure the bot app is installed into the `General` channel, otherwise
       undefined will be returned.)
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -132,7 +127,6 @@ methods:
       Returns the first <xref:@microsoft/teamsfx.Member> where predicate is
       true, and undefined otherwise.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -163,7 +157,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get all targets where the bot is installed.
     remarks: The result is retrieving from the persisted storage.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function installations(): Promise<TeamsBotInstallation[]>'

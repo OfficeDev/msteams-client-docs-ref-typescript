@@ -12,7 +12,6 @@ summary: >-
   in sync with the group.
 fullName: EphemeralMediaSessionCoordinator
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -38,7 +37,6 @@ properties:
 
       to play/pause media, you should use "role based verification" to enforce
       those policies.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'canPlayPause: boolean'
@@ -69,7 +67,6 @@ properties:
 
       to change the playback position, you should use "role based verification"
       to enforce those policies.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'canSeek: boolean'
@@ -96,7 +93,6 @@ properties:
 
       to change tracks, you should use "role based verification" to enforce
       those policies.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'canSetTrack: boolean'
@@ -128,7 +124,6 @@ properties:
       to enforce those
 
       policies.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'canSetTrackData: boolean'
@@ -141,7 +136,6 @@ properties:
     summary: Returns true if the local client is in a suspended state.
     fullName: isSuspended
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: boolean isSuspended
@@ -162,7 +156,6 @@ properties:
 
 
       Defaults to a value of `1` second.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number maxPlaybackDrift
@@ -180,7 +173,6 @@ properties:
       seconds.
     fullName: positionUpdateInterval
     remarks: Defaults to a value of `2` seconds.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: number positionUpdateInterval
@@ -195,7 +187,6 @@ inheritedProperties:
     summary: Sets or gets the default captureRejection value for all emitters.
     fullName: captureRejections
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static captureRejections: boolean'
@@ -210,7 +201,6 @@ inheritedProperties:
     summary: ''
     fullName: captureRejectionSymbol
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static captureRejectionSymbol: Object'
@@ -225,7 +215,6 @@ inheritedProperties:
     summary: ''
     fullName: defaultMaxListeners
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static defaultMaxListeners: number'
@@ -253,7 +242,6 @@ inheritedProperties:
       regular `'error'` listener is installed.
     fullName: errorMonitor
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static errorMonitor: Object'
@@ -267,7 +255,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -289,7 +276,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function emit(event: string | symbol, args: any[]): boolean'
@@ -309,7 +295,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function eventNames(): Array<string | symbol>'
@@ -323,7 +308,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getMaxListeners(): number'
@@ -336,7 +320,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: since v4.0.0
     syntax:
@@ -359,7 +342,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listenerCount(event: string | symbol): number'
@@ -376,7 +358,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function listeners(event: string | symbol): Function[]'
@@ -393,7 +374,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -415,7 +395,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -437,7 +416,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -459,7 +437,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -481,7 +458,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -504,7 +480,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -527,7 +502,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -549,7 +523,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function rawListeners(event: string | symbol): Function[]'
@@ -567,7 +540,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function removeAllListeners(event?: string | symbol): this'
@@ -585,7 +557,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -608,7 +579,6 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setMaxListeners(n: number): this'
@@ -665,7 +635,6 @@ methods:
 
 
       Throws an exception if the session/coordinator hasn't been initialized.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -691,7 +660,6 @@ methods:
       track has been
 
       loaded, or `canPlayPause` is false.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function pause()
@@ -704,7 +672,6 @@ methods:
       track has been
 
       loaded, or `canPlayPause` is false.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function play()
@@ -717,7 +684,6 @@ methods:
       track has been
 
       loaded, or `canSeek` is false.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function seekTo(time: number)'
@@ -735,7 +701,6 @@ methods:
       `canSetTrack` is
 
       false.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -770,7 +735,6 @@ methods:
       `canSetTrackData` is
 
       false.
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setTrackData(data: object | null)'

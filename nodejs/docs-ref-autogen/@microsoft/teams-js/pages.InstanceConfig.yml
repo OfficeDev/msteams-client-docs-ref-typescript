@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: Defines the configuration of the current or desired instance
 fullName: InstanceConfig
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +14,6 @@ properties:
     summary: Sets the URL to use for the content of this instance.
     fullName: contentUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentUrl: string'
@@ -30,7 +28,6 @@ properties:
       points.
     fullName: entityId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'entityId?: string'
@@ -43,7 +40,6 @@ properties:
     summary: Sets the URL for the removal configuration experience.
     fullName: removeUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'removeUrl?: string'
@@ -60,7 +56,6 @@ properties:
       effect.
     fullName: suggestedDisplayName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'suggestedDisplayName?: string'
@@ -75,7 +70,6 @@ properties:
       in a browser.
     fullName: websiteUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'websiteUrl?: string'
