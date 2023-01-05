@@ -63,7 +63,7 @@ yarn add @microsoft/live-share-media@next
 
 To install the latest version of the Live Share media package to your application:
 
-# [NPM](#tab/yarn)
+# [NPM](#tab/npm)
 
 ```bash
 npm install @microsoft/live-share@next --save
