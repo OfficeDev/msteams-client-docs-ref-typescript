@@ -17,11 +17,11 @@ This page contains general information about library's to support you in the dev
 
 ## Microsoft Teams Live Share
 
-The [Live Share SDK]( https://github.com/microsoft/live-share-sdk) is compromised of three sub-packages enabled to allow for more collaborative moments across Microsoft Teams. The Live Share (or sometimes called Live Share core) package enables connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. The Live Share media package allows for media synchronization for HTML `<video>` and `<audio>` elements and are beneficial for presenting video and audio is a Teams session. Live Share canvas adds annotation tools for whiteboard and PowerPoint presentations. 
+The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is compromised of three sub-packages enabled to allow for more collaborative moments across Microsoft Teams. The Live Share (or sometimes called Live Share core) package enables connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. The Live Share media package allows for media synchronization for HTML `<video>` and `<audio>` elements and are beneficial for presenting video and audio is a Teams session. Live Share canvas adds annotation tools for whiteboard and PowerPoint presentations. 
 
 ### Finding the library
 
-The Live Share SDK is a JavaScript package comprised of three sub-packages ([Live Share](msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-capabilities.md), [Live Share media](msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md), and [Live Share canvas](msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-canvas.md)) which are published on npm and can be installed using npm or yarn.
+The Live Share SDK is a JavaScript package comprised of three sub-packages ([Live Share](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-capabilities.md), [Live Share media](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md), and [Live Share canvas](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-canvas.md)) which are published on npm and can be installed using npm or yarn.
 
 #### Live Share
 
@@ -84,7 +84,7 @@ The Microsoft Teams JavaScript client library version `2.x.x` is enabled to [run
 
 ### Finding the library
 
-The TeamsJS client is distributed as an [npm package](www.npmjs.com/package/@microsoft/teams-js) and can be installed using npm or yarn.
+The TeamsJS client is distributed as an [npm package](https://npmjs.com/package/@microsoft/teams-js/) and can be installed using npm or yarn.
 
 To install using npm
 
@@ -100,11 +100,11 @@ yarn add @microsoft/teams-js
 ```
 ## Microsoft Teams Fx library
 
-The [TeamsFx SDK](msteams-docs/msteams-platform/toolkit/TeamsFx-SDK.md) helps to reduce tasks by using Microsoft Teams single sign-on (SSO) and accessing cloud resources down to single line statements with little configuration.
+The [TeamsFx SDK](/msteams-docs/msteams-platform/toolkit/TeamsFx-SDK.md) helps to reduce tasks by using Microsoft Teams single sign-on (SSO) and accessing cloud resources down to single line statements with little configuration.
 
 ### Finding the library
 
-The TeamsFx client is distributed as an [npm package](www.npmjs.com/package/@microsoft/teams-js) for Typescript and JavaScript.
+The TeamsFx client is distributed as an [npm package](https://npmjs.com/package/@microsoft/teams-js/) for Typescript and JavaScript.
 
 To install using npm
 
