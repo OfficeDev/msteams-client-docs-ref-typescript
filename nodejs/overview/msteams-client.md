@@ -7,7 +7,7 @@ keywords: msteams live-share teamsfx teams client sdk javascript library referen
 ---
 # Microsoft Teams SDK reference
 
-This page contains general information about library's to support you in the development of using The Microsoft Teams SDK.
+This article provides you with general information about the libraries that Microsoft offers to support you in the development of using The Microsoft Teams SDK.
 
 | Library | Description | APIs |
 |-|-|-|
@@ -17,15 +17,15 @@ This page contains general information about library's to support you in the dev
 
 ## Microsoft Teams Live Share
 
-The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is compromised of three sub-packages enabled to allow for more collaborative moments across Microsoft Teams. The Live Share (or sometimes called Live Share core) package enables connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. The Live Share media package allows for media synchronization for HTML `<video>` and `<audio>` elements and are beneficial for presenting video and audio is a Teams session. Live Share canvas adds annotation tools for whiteboard and PowerPoint presentations. 
+The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is compromised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (or sometimes called Live Share core) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. Live Share media allows for media synchronization for HTML `<video>` and `<audio>` elements; which are beneficial for presenting video and audio is a Teams session. Live Share canvas adds annotation tools for whiteboard and PowerPoint presentations. 
 
 ### Finding the library
 
 The Live Share SDK is a JavaScript package comprised of three sub-packages ([Live Share](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-capabilities.md), [Live Share media](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md), and [Live Share canvas](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-canvas.md)) which are published on npm and can be installed using npm or yarn.
 
-#### Live Share
+To install the latest version of the Live Share packages to your application:
 
-To install the latest version of the Live Share package to your application:
+#### Live Share core
 
 # [NPM](#tab/npm)
 
@@ -42,7 +42,6 @@ yarn add @microsoft/live-share@next
 ---
 
 #### Live Share media
-To install the latest version of the Live Share media package to your application:
 
 # [NPM](#tab/npm)
 
@@ -61,8 +60,6 @@ yarn add @microsoft/live-share-media@next
 
 #### Live Share canvas
 
-To install the latest version of the Live Share media package to your application:
-
 # [NPM](#tab/npm)
 
 ```bash
@@ -80,7 +77,7 @@ yarn add @microsoft/live-share-canvas@next
 
 ## Microsoft Teams JavaScript client library
 
-The Microsoft Teams JavaScript client library version `2.x.x` is enabled to [run apps across Microsoft 365](/microsoftteams/platform/m365-apps/overview). The TeamsJS SDK is a superset of TeamsJS `1.x` versions: and supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Microsoft 365. Refer to the [Teams JavaScript client library](/microsoftteams/platform/tabs/how-to/using-teams-client-library) overview for guidance on building Microsoft 365-enabled apps.
+With the Microsoft Teams JavaScript client library version `2.x.x` developers can [run apps across Microsoft 365](/microsoftteams/platform/m365-apps/overview). Developers can deliver a cross-platform app to a broader user base from a single codebase, creating a streamlined experience for app users and consolidating development resources for developers. The TeamsJS SDK is a superset of TeamsJS `1.x` versions: and supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Microsoft 365. Refer to the [Teams JavaScript client library](/microsoftteams/platform/tabs/how-to/using-teams-client-library) overview for guidance on building Microsoft 365-enabled apps.
 
 ### Finding the library
 
