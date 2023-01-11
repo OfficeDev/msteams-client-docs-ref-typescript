@@ -9,7 +9,7 @@ keywords: msteams live-share teamsfx teams client sdk javascript library referen
 
 This article provides you with general information about the libraries that Microsoft offers to support you in the development of using The Microsoft Teams SDK.
 
-| Library | Description | APIs |
+| Library | Description | API reference |
 |-|-|-|
 | **Live Share** | Live Share transforms the Microsoft 365 platforms to be more a collaborative experience without writing any dedicated back-end code | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
 | **TeamsJs** | Teams Java script client library enables developers to create app content hosted in [IFrame](https://developer.mozilla.org/docs/Web/HTML/Element/iframe) across the Microsoft 365 ecosystem | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml) |
