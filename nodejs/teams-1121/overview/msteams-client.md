@@ -1,7 +1,7 @@
 ---
-title: Microsoft Teams client library version 1.12.1
-description: Reference documentation for version 1.12.1 of the Microsoft Teams client library
-keywords: msteams teams client sdk javascript library reference previous
+title: Microsoft Teams SDK JavaScript client library version 1.12.1
+description: Reference documentation for version 1.12.1 of the Microsoft Teams SDK JavaScript client library
+keywords: sdk msteams teams client javascript library reference previous
 ---
 # Microsoft Teams JavaScript client library version 1.12.1
 
