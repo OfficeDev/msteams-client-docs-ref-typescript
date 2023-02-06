@@ -26,7 +26,7 @@ properties:
     package: '@microsoft/teams-js'
     summary: >-
       Value provided in the `result` parameter by the dialog when the
-      <code><xref:@microsoft/teams-js.dialog.submit></code> function
+      <code><xref:@microsoft/teams-js.dialog.url.submit></code> function
 
       was called.
 

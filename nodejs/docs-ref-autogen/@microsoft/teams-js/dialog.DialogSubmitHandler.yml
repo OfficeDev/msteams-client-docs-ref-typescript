@@ -4,7 +4,7 @@ uid: '@microsoft/teams-js.dialog.DialogSubmitHandler'
 package: '@microsoft/teams-js'
 summary: >-
   Handler used for receiving results when a dialog closes, either the value
-  passed by <code><xref:@microsoft/teams-js.dialog.submit></code>
+  passed by <code><xref:@microsoft/teams-js.dialog.url.submit></code>
 
   or an error if the dialog was closed by the user.
 fullName: DialogSubmitHandler

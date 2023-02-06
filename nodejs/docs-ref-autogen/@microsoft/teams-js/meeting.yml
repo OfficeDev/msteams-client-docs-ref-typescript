@@ -5,16 +5,12 @@ summary: ''
 type: module
 enums:
   - '@microsoft/teams-js.meeting.CallType'
-  - '@microsoft/teams-js.meeting.MeetingReactionType'
   - '@microsoft/teams-js.meeting.MeetingType'
 interfaces:
   - '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
   - '@microsoft/teams-js.meeting.IAppContentStageSharingState'
-  - '@microsoft/teams-js.meeting.IRaiseHandState'
   - '@microsoft/teams-js.meeting.ISpeakingState'
   - '@microsoft/teams-js.meeting.LiveStreamState'
-  - '@microsoft/teams-js.meeting.MeetingReactionReceivedEventData'
-  - '@microsoft/teams-js.meeting.RaiseHandStateChangedEventData'
 package: '@microsoft/teams-js'
 functions:
   - name: >-
@@ -149,61 +145,6 @@ functions:
           type: '(liveStreamState: LiveStreamState) =&gt; void'
           description: |
             The handler to invoke when the live stream state changes
-  - name: >-
-      registerMeetingReactionReceivedHandler((eventData:
-      MeetingReactionReceivedEventData) => void)
-    uid: '@microsoft/teams-js.meeting.registerMeetingReactionReceivedHandler'
-    package: '@microsoft/teams-js'
-    summary: >-
-      Registers a handler for receiving meeting reactions. When the
-      selfParticipant (current user) successfully sends a meeting reaction and
-      it is being rendered on the UI, the meetingReactionType will be populated.
-      Only one handler can be registered
-
-      at a time. A subsequent registration replaces an existing registration.
-    remarks: ''
-    previewState: beta
-    isDeprecated: false
-    syntax:
-      content: >-
-        function registerMeetingReactionReceivedHandler(handler: (eventData:
-        MeetingReactionReceivedEventData) => void)
-      parameters:
-        - id: handler
-          type: '(eventData: MeetingReactionReceivedEventData) =&gt; void'
-          description: >
-            The handler to invoke when the selfParticipant (current user)
-            successfully sends a meeting reaction
-  - name: >-
-      registerRaiseHandStateChangedHandler((eventData:
-      RaiseHandStateChangedEventData) => void)
-    uid: '@microsoft/teams-js.meeting.registerRaiseHandStateChangedHandler'
-    package: '@microsoft/teams-js'
-    summary: >-
-      Registers a handler for changes to the selfParticipant's (current user's)
-      raiseHandState. If the selfParticipant raises their hand, isHandRaised
-
-      will be true. By default and if the selfParticipant hand is lowered,
-      isHandRaised will be false. This API will return
-      <xref:@microsoft/teams-js.meeting.RaiseHandStateChangedEventData>
-
-      that will have the raiseHandState or an error object. Only one handler can
-      be registered at a time. A subsequent registration
-
-      replaces an existing registration.
-    remarks: ''
-    previewState: beta
-    isDeprecated: false
-    syntax:
-      content: >-
-        function registerRaiseHandStateChangedHandler(handler: (eventData:
-        RaiseHandStateChangedEventData) => void)
-      parameters:
-        - id: handler
-          type: '(eventData: RaiseHandStateChangedEventData) =&gt; void'
-          description: >
-            The handler to invoke when the selfParticipant's (current user's)
-            raiseHandState changes.
   - name: >-
       registerSpeakingStateChangeHandler((speakingState: ISpeakingState) =>
       void)

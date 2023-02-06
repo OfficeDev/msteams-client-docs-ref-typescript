@@ -1,0 +1,43 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.dialog.adaptiveCard'
+name: adaptiveCard
+type: module
+package: '@microsoft/teams-js'
+summary: Subcapability for interacting with adaptive card dialogs
+previewState: beta
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.dialog.adaptiveCard.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if dialog.adaptiveCard module is supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether dialog.adaptiveCard module is supported
+        type: boolean
+  - name: 'open(AdaptiveCardDialogInfo, DialogSubmitHandler)'
+    uid: '@microsoft/teams-js.dialog.adaptiveCard.open'
+    package: '@microsoft/teams-js'
+    summary: Allows app to open an adaptive card based dialog.
+    remarks: This function cannot be called from inside of a dialog
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function open(adaptiveCardDialogInfo: AdaptiveCardDialogInfo,
+        submitHandler?: DialogSubmitHandler)
+      parameters:
+        - id: adaptiveCardDialogInfo
+          type: <xref uid="@microsoft/teams-js.AdaptiveCardDialogInfo" />
+          description: >-
+            An object containing the parameters of the dialog module
+            <xref:@microsoft/teams-js.AdaptiveCardDialogInfo>.
+        - id: submitHandler
+          type: <xref uid="@microsoft/teams-js.dialog.DialogSubmitHandler" />
+          description: >
+            Handler that triggers when a dialog calls the
+            <code><xref:@microsoft/teams-js.dialog.url.submit></code> function
+            or when the user closes the dialog.

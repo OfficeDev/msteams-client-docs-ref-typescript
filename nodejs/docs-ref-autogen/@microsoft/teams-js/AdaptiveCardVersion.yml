@@ -1,0 +1,36 @@
+### YamlMime:TSType
+name: AdaptiveCardVersion
+uid: '@microsoft/teams-js.AdaptiveCardVersion'
+package: '@microsoft/teams-js'
+summary: >-
+  Represents the major and minor versions of the Adaptive Card schema in the
+  current host
+fullName: AdaptiveCardVersion
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: majorVersion
+    uid: '@microsoft/teams-js.AdaptiveCardVersion.majorVersion'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: majorVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'majorVersion: number'
+      return:
+        description: ''
+        type: number
+  - name: minorVersion
+    uid: '@microsoft/teams-js.AdaptiveCardVersion.minorVersion'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: minorVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'minorVersion: number'
+      return:
+        description: ''
+        type: number
