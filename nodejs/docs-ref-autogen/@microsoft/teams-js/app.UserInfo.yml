@@ -68,7 +68,11 @@ properties:
   - name: licenseType
     uid: '@microsoft/teams-js.app.UserInfo.licenseType'
     package: '@microsoft/teams-js'
-    summary: The license type for the current user.
+    summary: >-
+      The license type for the current user. Possible values are:
+
+      "Unknown", "Teacher", "Student", "Free", "SmbBusinessVoice",
+      "SmbNonVoice", "FrontlineWorker"
     fullName: licenseType
     remarks: ''
     isDeprecated: false

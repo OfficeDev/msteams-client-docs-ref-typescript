@@ -66,7 +66,7 @@ functions:
             have
 
             https: protocol otherwise they will be ignored. Example:
-            https:www.example.com
+            https://www.example.com
       return:
         description: >-
           Promise that will be fulfilled when initialization has completed, or

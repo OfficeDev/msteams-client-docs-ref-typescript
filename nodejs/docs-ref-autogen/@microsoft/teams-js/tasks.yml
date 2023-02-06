@@ -32,18 +32,18 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [dialog.open(urlDialogInfo: UrlDialogInfo,
+      As of 2.8.0, please use [dialog.url.open(urlDialogInfo: UrlDialogInfo,
       submitHandler?: DialogSubmitHandler, messageFromChildHandler?:
-      PostMessageChannel): void](xref:@microsoft/teams-js.dialog.open) for url
-      based dialogs
+      PostMessageChannel): void](xref:@microsoft/teams-js.dialog.url.open) for
+      url based dialogs
 
-      and [dialog.bot.open(botUrlDialogInfo: BotUrlDialogInfo, submitHandler?:
-      DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel):
-      void](xref:@microsoft/teams-js.dialog.bot.open) for bot based dialogs. In
-      Teams,
+      and [dialog.url.bot.open(botUrlDialogInfo: BotUrlDialogInfo,
+      submitHandler?: DialogSubmitHandler, messageFromChildHandler?:
+      PostMessageChannel): void](xref:@microsoft/teams-js.dialog.url.bot.open)
+      for bot-based dialogs. In Teams,
 
-      this function can be used for adaptive card based dialogs. Support for
-      adaptive card based dialogs is coming to other hosts in the future.
+      this function can be used for Adaptive Card-based dialogs. Support for
+      Adaptive Card-based dialogs is coming to other hosts in the future.
 
 
       Allows an app to open the task module.
@@ -68,8 +68,10 @@ functions:
     summary: ''
     remarks: ''
     isDeprecated: true
-    customDeprecatedMessage: |-
-      As of 2.0.0, please use <xref:@microsoft/teams-js.dialog.submit> instead.
+    customDeprecatedMessage: >-
+      As of 2.8.0, please use <xref:@microsoft/teams-js.dialog.url.submit>
+      instead.
+
 
       Submit the task module.
     syntax:

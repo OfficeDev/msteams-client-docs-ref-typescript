@@ -16,7 +16,9 @@ properties:
       The developer-defined unique ID for the page defined in the manifest or
       when first configuring
 
-      the page. (Known as {entityId} prior to TeamsJS v.2.0.0)
+      the page. (Known as
+      <code><xref:@microsoft/teams-js.Context.entityId></code> prior to TeamsJS
+      v.2.0.0)
     fullName: pageId
     remarks: ''
     isDeprecated: false

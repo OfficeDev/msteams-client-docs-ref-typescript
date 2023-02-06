@@ -18,7 +18,10 @@ functions:
     uid: '@microsoft/teams-js.authentication.authenticate_1'
     package: '@microsoft/teams-js'
     summary: ''
-    remarks: ''
+    remarks: >-
+      The authentication flow must start and end from the same domain, otherwise
+      success and failure messages won't be returned to the window that
+      initiated the call.
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use
@@ -46,7 +49,10 @@ functions:
     summary: >-
       Initiates an authentication request, which opens a new window with the
       specified settings.
-    remarks: ''
+    remarks: >-
+      The authentication flow must start and end from the same domain, otherwise
+      success and failure messages won't be returned to the window that
+      initiated the call.
     isDeprecated: false
     syntax:
       content: >-
