@@ -305,6 +305,12 @@
     - uid: '@microsoft/teams-js.ActionObjectType'
       name: ActionObjectType
       items: []
+    - uid: '@microsoft/teams-js.AdaptiveCardDialogInfo'
+      name: AdaptiveCardDialogInfo
+      items: []
+    - uid: '@microsoft/teams-js.AdaptiveCardVersion'
+      name: AdaptiveCardVersion
+      items: []
     - name: app
       items:
         - name: Overview
@@ -393,6 +399,9 @@
     - uid: '@microsoft/teams-js.BaseActionObject'
       name: BaseActionObject
       items: []
+    - uid: '@microsoft/teams-js.BotAdaptiveCardDialogInfo'
+      name: BotAdaptiveCardDialogInfo
+      items: []
     - uid: '@microsoft/teams-js.BotUrlDialogInfo'
       name: BotUrlDialogInfo
       items: []
@@ -435,9 +444,13 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.dialog'
-        - uid: '@microsoft/teams-js.dialog.bot'
-          name: bot
-          items: []
+        - name: adaptiveCard
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.dialog.adaptiveCard'
+            - uid: '@microsoft/teams-js.dialog.adaptiveCard.bot'
+              name: bot
+              items: []
         - uid: '@microsoft/teams-js.dialog.DialogSubmitHandler'
           name: DialogSubmitHandler
           items: []
@@ -450,6 +463,13 @@
         - uid: '@microsoft/teams-js.dialog.update'
           name: update
           items: []
+        - name: url
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.dialog.url'
+            - uid: '@microsoft/teams-js.dialog.url.bot'
+              name: bot
+              items: []
     - uid: '@microsoft/teams-js.DialogDimension'
       name: DialogDimension
       items: []
@@ -495,6 +515,9 @@
       items: []
     - uid: '@microsoft/teams-js.LiveShareHost'
       name: LiveShareHost
+      items: []
+    - uid: '@microsoft/teams-js.LoadContext'
+      name: LoadContext
       items: []
     - uid: '@microsoft/teams-js.LocaleInfo'
       name: LocaleInfo
@@ -621,26 +644,14 @@
         - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingState'
           name: IAppContentStageSharingState
           items: []
-        - uid: '@microsoft/teams-js.meeting.IRaiseHandState'
-          name: IRaiseHandState
-          items: []
         - uid: '@microsoft/teams-js.meeting.ISpeakingState'
           name: ISpeakingState
           items: []
         - uid: '@microsoft/teams-js.meeting.LiveStreamState'
           name: LiveStreamState
           items: []
-        - uid: '@microsoft/teams-js.meeting.MeetingReactionReceivedEventData'
-          name: MeetingReactionReceivedEventData
-          items: []
-        - uid: '@microsoft/teams-js.meeting.MeetingReactionType'
-          name: MeetingReactionType
-          items: []
         - uid: '@microsoft/teams-js.meeting.MeetingType'
           name: MeetingType
-          items: []
-        - uid: '@microsoft/teams-js.meeting.RaiseHandStateChangedEventData'
-          name: RaiseHandStateChangedEventData
           items: []
     - name: menus
       items:

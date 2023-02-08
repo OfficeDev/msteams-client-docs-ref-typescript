@@ -1,7 +1,7 @@
 ---
-title: Microsoft Teams JavaScript client library
-description: Reference documentation for the latest Microsoft Teams JavaScript client library
-keywords: msteams teams client sdk javascript library reference latest
+title: Microsoft Teams SDK JavaScript client library
+description: Reference documentation for the latest Microsoft Teams SDK JavaScript client library
+keywords: sdk msteams teams client javascript library reference latest
 ---
 # Microsoft Teams JavaScript client library
 
