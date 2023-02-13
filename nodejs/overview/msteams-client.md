@@ -45,7 +45,7 @@ yarn add @microsoft/live-share@next
 
 #### Live Share media
 
-The Live Share SDK enables robust media synchronization for any HTML <video> and <audio> element with just a few lines of code. By synchronizing media at the player state and transport controls layer, you can individually attribute views and license, while providing the highest possible quality available through your app. For more, see [Live Share media capabilities](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md).
+The Live Share SDK enables robust media synchronization for any HTML `<video>` and `<audio>` element with just a few lines of code. By synchronizing media at the player state and transport controls layer, you can individually attribute views and license, while providing the highest possible quality available through your app. For more, see [Live Share media capabilities](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md).
 
 # [NPM](#tab/npm)
 
