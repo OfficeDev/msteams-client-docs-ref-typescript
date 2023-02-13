@@ -1,61 +1,116 @@
 ---
-title: Microsoft Teams SDK JavaScript client library
-description: Reference documentation for the latest Microsoft Teams SDK JavaScript client library
-keywords: sdk msteams teams client javascript library reference latest
+title: Microsoft Teams SDK reference
+description: Reference documentation for Microsoft Teams SDK
+ms.date: 02/03/2023
+ms.topic: reference
+keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
-# Microsoft Teams JavaScript client library
+# Microsoft Teams SDK reference
 
-Starting with *@microsoft/teams-js* version `2.0.0`, the Microsoft Teams JavaScript client library has been refactored to enable [Teams apps to run in Outlook and Office](/microsoftteams/platform/m365-apps/overview), in addition to Microsoft Teams. From a functional perspective, the TeamsJS SDK is a superset of TeamsJS 1.x versions: it supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Office.
+There are a number of JavaScript/TypeScript libraries available to support various aspects of Teams app development. This article provides an overview of each, along with basic installation instructions.
+ 
+| Library | Description | API reference |
+|-|-|-|
+| **Live Share** | Live Share transforms the Microsoft 365 platforms to be more a collaborative experience without writing any dedicated back-end code | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
+| **TeamsJs** | TeamsJS client library enables developers to create app content hosted in [IFrame](https://developer.mozilla.org/docs/Web/HTML/Element/iframe) across the Microsoft 365 ecosystem | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml) |
+| **TeamsFx** | TeamsFx helps to reduce tasks by using Microsoft Teams single sign-on (SSO) and accessing cloud resources down to single line statements with little configuration | [Teamsfx](../docs-ref-autogen/%40microsoft/teamsfx/index.yml) |
 
-> [!TIP]
-> Refer to the [Teams JavaScript client library](/microsoftteams/platform/tabs/how-to/using-teams-client-library) overview for guidance on building both Teams-only and Microsoft 365-enabled apps and for current SDK capability support across Teams, Outlook, and Office.
+## Microsoft Teams Live Share
 
-## Finding the library
+The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is compromised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (or sometimes called Live Share core) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. Live Share media allows for media synchronization for HTML `<video>` and `<audio>` elements; which are beneficial for presenting video and audio is a Teams session. Live Share canvas adds annotation tools for whiteboard and PowerPoint presentations. 
 
-The TeamsJS client is distributed as an npm package. The latest version can be found here:
+### Finding the library
 
-www.npmjs.com/package/@microsoft/teams-js
+The Live Share SDK is a JavaScript package comprised of three sub-packages ([Live Share](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-capabilities.md), [Live Share media](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md), and [Live Share canvas](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-canvas.md)) which are published on npm and can be installed using npm or yarn.
 
-## Installing the library
+To install the latest version of the Live Share packages to your application:
 
-You can install the package using npm or yarn:
+#### Live Share core
 
-* `npm install --save @microsoft/teams-js`
-* `yarn add @microsoft/teams-js`
+The Live Share SDK can be added to your meeting extension's sidePanel and meetingStage contexts with minimal effort to unlock new collaborative app scenarios throughout the lifecycle of a meeting. For more, see [Live Share core capabilities](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-capabilities.md).
 
-## Using the library
+# [NPM](#tab/npm)
 
-If you are using any dependency loader or module bundler such as [RequireJS](http://requirejs.org/), [SystemJS](https://github.com/systemjs/systemjs), [browserify](http://browserify.org/), or [webpack](https://webpack.github.io/), you can use `import` syntax to import specific modules. For example:
+```bash
+npm install @microsoft/live-share@next --save
+```
+# [Yarn](#tab/yarn)
 
-```typescript
-import * as microsoftTeams from "@microsoft/teams-js";
+To install using yarn
+```bash
+yarn add @microsoft/live-share@next
 ```
 
-You can also reference the entire library in html pages using a script tag.  There are three ways to do this:
+---
 
-> [!IMPORTANT]
-> Do not copy/paste these `<script src=...` URLs from this page; they refer to a specific version of the SDK. To get the `<script src=...></script>` markup for the latest version, always go to https://www.npmjs.com/package/@microsoft/teams-js.
+#### Live Share media
 
-```html
-<!-- Microsoft Teams JavaScript API (via CDN) -->
-<script
-  src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js"
-  integrity="sha384-Q2Z9S56exI6Oz/ThvYaV0SUn8j4HwS8BveGPmuwLXe4CvCUEGlL80qSzHMnvGqee"
-  crossorigin="anonymous"
-></script>
+The Live Share SDK enables robust media synchronization for any HTML <video> and <audio> element with just a few lines of code. By synchronizing media at the player state and transport controls layer, you can individually attribute views and license, while providing the highest possible quality available through your app. For more, see [Live Share media capabilities](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md).
 
-<!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@2.0.0/dist/MicrosoftTeams.min.js"></script>
+# [NPM](#tab/npm)
 
-<!-- Microsoft Teams JavaScript API (via local) -->
-<script src="MicrosoftTeams.min.js"></script>
+```bash
+npm install @microsoft/live-share@next --save
+npm install @microsoft/live-share-media@next --save
+```
+# [Yarn](#tab/yarn)
+
+```bash
+yarn add @microsoft/live-share@next
+yarn add @microsoft/live-share-media@next
 ```
 
-The final option, using a local copy on your servers, eliminates that dependency but requires hosting and updating a local copy of the SDK.
+---
 
-> [!TIP]
-> If you are a TypeScript developer it is helpful to install the NPM package as described [above](#installing-the-library), even if you don't link to the copy of `MicrosoftTeams.min.js` in `node_modules` from your HTML, because IDEs such as Visual Studio Code will use it for Intellisense and type checking.
+#### Live Share canvas
 
-## Reference
+Using Live Share canvas, your app can bring the power of [PowerPoint Live](https://support.microsoft.com/en-us/office/present-from-powerpoint-live-in-microsoft-teams-28b20e74-7165-499c-9bd4-0ad975d448ad) inking tools with minimal effort. For more, see [Live Share canvas overview](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-canvas.md).
 
-The following sections contain reference pages for all the elements of the Teams client SDK. These pages are auto-generated from the source found in the npm module on https://www.npmjs.com/package/@microsoft/teams-js. The source code is located at https://github.com/OfficeDev/microsoft-teams-library-js/tree/main/packages/teams-js.
+# [NPM](#tab/npm)
+
+```bash
+npm install @microsoft/live-share@next --save
+npm install @microsoft/live-share-canvas@next --save
+```
+# [Yarn](#tab/yarn)
+
+```bash
+yarn add @microsoft/live-share@next
+yarn add @microsoft/live-share-canvas@next
+```
+
+---
+
+## Microsoft Teams JS client library
+
+With the Microsoft TeamsJS client library version `2.x.x` developers can [run apps across Microsoft 365](/microsoftteams/platform/m365-apps/overview). Developers can deliver a cross-platform app to a broader user base from a single codebase, creating a streamlined experience for app users and consolidating development resources for developers. The TeamsJS SDK is a superset of TeamsJS `1.x` versions: and supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Microsoft 365. Refer to the [TeamsJS client library](/microsoftteams/platform/tabs/how-to/using-teams-client-library) overview for guidance on building Microsoft 365-enabled apps.
+
+### Finding the library
+
+The TeamsJS client is distributed as an [npm package](https://npmjs.com/package/@microsoft/teams-js/) and can be installed using npm or yarn.
+
+To install using npm
+
+  ```bash
+npm install --save @microsoft/teams-js
+  ```
+OR
+
+To install using yarn
+
+```bash
+yarn add @microsoft/teams-js
+```
+## Microsoft Teams Fx library
+
+The [TeamsFx SDK](/msteams-docs/msteams-platform/toolkit/TeamsFx-SDK.md) helps to reduce tasks by using Microsoft Teams single sign-on (SSO) and accessing cloud resources down to single line statements with little configuration.
+
+### Finding the library
+
+The TeamsFx client is distributed as an [npm package](https://npmjs.com/package/@microsoft/teams-js/) for Typescript and JavaScript.
+
+To install using npm
+
+```bash
+npm install @microsoft/teamsfx
+```
