@@ -2,12 +2,19 @@
 name: AuthenticateParameters
 uid: '@microsoft/teams-js.authentication.AuthenticateParameters'
 package: '@microsoft/teams-js'
-summary: ''
+summary: |-
+
+
+  See <xref:@microsoft/teams-js.authentication.LegacyCallBacks>
 fullName: AuthenticateParameters
 remarks: ''
 isDeprecated: true
 customDeprecatedMessage: >-
-  As of 2.0.0, please use
+  As of 2.0.0, please use [authentication.authenticate(authenticateParameters:
+  AuthenticatePopUpParameters):
+  Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate) and
+
+  the associated
   <xref:@microsoft/teams-js.authentication.AuthenticatePopUpParameters> instead.
 syntax: |
   type AuthenticateParameters = AuthenticatePopUpParameters & LegacyCallBacks

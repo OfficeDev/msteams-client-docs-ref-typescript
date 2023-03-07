@@ -1,0 +1,122 @@
+### YamlMime:TSType
+name: Member_2
+uid: '@microsoft/teamsfx.Member_2'
+package: '@microsoft/teamsfx'
+summary: 'A <xref:@microsoft/teamsfx.NotificationTarget> that represents a team member.'
+fullName: Member_2
+remarks: 'It''s recommended to get members from <xref:TeamsBotInstallation.members()>.'
+isDeprecated: false
+type: class
+constructors:
+  - name: 'Member_2(TeamsBotInstallation_2, TeamsChannelAccount)'
+    uid: '@microsoft/teamsfx.Member_2.constructor'
+    package: '@microsoft/teamsfx'
+    summary: Constructor.
+    remarks: >-
+      It's recommended to get members from
+      <xref:TeamsBotInstallation.members()>, instead of using this constructor.
+    isDeprecated: false
+    syntax:
+      content: >-
+        new Member_2(parent: TeamsBotInstallation_2, account:
+        TeamsChannelAccount)
+      parameters:
+        - id: parent
+          type: <xref uid="@microsoft/teamsfx.TeamsBotInstallation_2" />
+          description: >-
+            The parent <xref:@microsoft/teamsfx.TeamsBotInstallation> where this
+            member is created from.
+        - id: account
+          type: TeamsChannelAccount
+          description: |
+            Detailed member account information.
+properties:
+  - name: account
+    uid: '@microsoft/teamsfx.Member_2.account'
+    package: '@microsoft/teamsfx'
+    summary: Detailed member account information.
+    fullName: account
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'account: TeamsChannelAccount'
+      return:
+        description: ''
+        type: TeamsChannelAccount
+  - name: parent
+    uid: '@microsoft/teamsfx.Member_2.parent'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      The parent <xref:@microsoft/teamsfx.TeamsBotInstallation> where this
+      member is created from.
+    fullName: parent
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'parent: TeamsBotInstallation_2'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.TeamsBotInstallation_2" />
+  - name: type
+    uid: '@microsoft/teamsfx.Member_2.type'
+    package: '@microsoft/teamsfx'
+    summary: Notification target type. For member it's always "Person".
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: NotificationTargetType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.NotificationTargetType" />
+methods:
+  - name: >-
+      sendAdaptiveCard(unknown, (context: TurnContext, error: Error) =>
+      Promise<void>)
+    uid: '@microsoft/teamsfx.Member_2.sendAdaptiveCard'
+    package: '@microsoft/teamsfx'
+    summary: Send an adaptive card message.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendAdaptiveCard(card: unknown, onError?: (context:
+        TurnContext, error: Error) => Promise<void>): Promise<MessageResponse>
+      parameters:
+        - id: card
+          type: unknown
+          description: The adaptive card raw JSON.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >
+            An optional error handler that can catch exceptions during adaptive
+            card sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
+      return:
+        description: The response of sending adaptive card message.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+  - name: 'sendMessage(string, (context: TurnContext, error: Error) => Promise<void>)'
+    uid: '@microsoft/teamsfx.Member_2.sendMessage'
+    package: '@microsoft/teamsfx'
+    summary: Send a plain text message.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendMessage(text: string, onError?: (context: TurnContext,
+        error: Error) => Promise<void>): Promise<MessageResponse>
+      parameters:
+        - id: text
+          type: string
+          description: The plain text message.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >
+            An optional error handler that can catch exceptions during message
+            sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
+      return:
+        description: The response of sending message.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;

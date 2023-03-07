@@ -22,20 +22,6 @@ properties:
       return:
         description: ''
         type: 'string[]'
-  - name: resources
-    uid: '@microsoft/teams-js.authentication.AuthTokenRequestParameters.resources'
-    package: '@microsoft/teams-js'
-    summary: >-
-      An optional list of resource for which to acquire the access token; only
-      used for full trust apps.
-    fullName: resources
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'resources?: string[]'
-      return:
-        description: ''
-        type: 'string[]'
   - name: silent
     uid: '@microsoft/teams-js.authentication.AuthTokenRequestParameters.silent'
     package: '@microsoft/teams-js'
