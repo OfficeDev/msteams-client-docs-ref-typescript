@@ -5,9 +5,10 @@ summary: Namespace to video extensibility of the SDK
 type: module
 enums:
   - '@microsoft/teams-js.video.EffectChangeType'
+  - '@microsoft/teams-js.video.EffectFailureReason'
   - '@microsoft/teams-js.video.VideoFrameFormat'
 typeAliases:
-  - '@microsoft/teams-js.video.VideoEffectCallBack'
+  - '@microsoft/teams-js.video.VideoEffectCallback'
   - '@microsoft/teams-js.video.VideoFrameCallback'
 interfaces:
   - '@microsoft/teams-js.video.VideoFrame'
@@ -54,23 +55,20 @@ functions:
           type: string | undefined
           description: |
             Newly selected effect id.
-  - name: registerForVideoEffect(VideoEffectCallBack)
+  - name: registerForVideoEffect(VideoEffectCallback)
     uid: '@microsoft/teams-js.video.registerForVideoEffect'
     package: '@microsoft/teams-js'
-    summary: >-
-      Register the video effect callback, host uses this to notify the video
-      extension the new video effect will by applied
+    summary: Register a callback to be notified when a new video effect is applied.
     remarks: ''
     previewState: beta
     isDeprecated: false
     syntax:
-      content: 'function registerForVideoEffect(callback: VideoEffectCallBack)'
+      content: 'function registerForVideoEffect(callback: VideoEffectCallback)'
       parameters:
         - id: callback
-          type: <xref uid="@microsoft/teams-js.video.VideoEffectCallBack" />
-          description: >
-            The VideoEffectCallback to invoke when registerForVideoEffect has
-            completed
+          type: <xref uid="@microsoft/teams-js.video.VideoEffectCallback" />
+          description: |
+            Function to be called when new video effect is applied.
   - name: 'registerForVideoFrame(VideoFrameCallback, VideoFrameConfig)'
     uid: '@microsoft/teams-js.video.registerForVideoFrame'
     package: '@microsoft/teams-js'

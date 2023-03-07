@@ -25,9 +25,26 @@ properties:
   - name: isExternal
     uid: '@microsoft/teams-js.authentication.AuthenticatePopUpParameters.isExternal'
     package: '@microsoft/teams-js'
-    summary: >-
-      The flag which indicates whether the auth page should be opened in an
-      external browser. This flag has no effect on the web client.
+    summary: >
+      Some identity providers restrict their authentication pages from being
+      displayed in embedded browsers (e.g., a web view inside of a native
+      application)
+
+      If the identity provider you are using prevents embedded browser usage,
+      this flag should be set to `true` to enable the authentication page
+      specified in
+
+      the <xref:@microsoft/teams-js.dialog.url> property to be opened in an
+      external browser.
+
+      If this flag is `false`, the page will be opened directly within the
+      current hosting application.
+
+      This flag is ignored when the host for the application is a web app (as
+      opposed to a native application) as the behavior is unnecessary in a
+      web-only
+
+      environment without an embedded browser.
     fullName: isExternal
     remarks: ''
     isDeprecated: false

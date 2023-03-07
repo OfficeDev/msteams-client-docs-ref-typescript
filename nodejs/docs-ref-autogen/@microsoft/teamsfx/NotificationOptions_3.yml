@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: NotificationOptions_3
+uid: '@microsoft/teamsfx.NotificationOptions_3'
+package: '@microsoft/teamsfx'
+summary: 'Options to initialize <xref:@microsoft/teamsfx.NotificationBot>.'
+fullName: NotificationOptions_3
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: botAppId
+    uid: '@microsoft/teamsfx.NotificationOptions_3.botAppId'
+    package: '@microsoft/teamsfx'
+    summary: An optional input of bot app Id.
+    fullName: botAppId
+    remarks: >-
+      If `botAppId` is not provided, `process.env.BOT_ID` will be used by
+      default.
+    isDeprecated: false
+    syntax:
+      content: 'botAppId?: string'
+      return:
+        description: ''
+        type: string
+  - name: storage
+    uid: '@microsoft/teamsfx.NotificationOptions_3.storage'
+    package: '@microsoft/teamsfx'
+    summary: An optional storage to persist bot notification connections.
+    fullName: storage
+    remarks: >-
+      If `storage` is not provided, a default local file storage will be used,
+
+      which stores notification connections into:
+        - `.notification.localstore.json` if running locally
+        - `${process.env.TEMP}/.notification.localstore.json` if `process.env.RUNNING_ON_AZURE` is set to "1"
+
+      It's recommended to use your own shared storage for production
+      environment.
+    isDeprecated: false
+    syntax:
+      content: 'storage?: NotificationTargetStorage'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.NotificationTargetStorage" />

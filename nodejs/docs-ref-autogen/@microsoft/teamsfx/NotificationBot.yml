@@ -2,12 +2,11 @@
 name: NotificationBot
 uid: '@microsoft/teamsfx.NotificationBot'
 package: '@microsoft/teamsfx'
-summary: >-
-  Provide utilities to send notification to varies targets (e.g., member, group,
-  channel).
+summary: ''
 fullName: NotificationBot
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: Use `BotBuilderCloudAdapter.NotificationBot` instead.
 type: class
 constructors:
   - name: 'NotificationBot(BotFrameworkAdapter, NotificationOptions_2)'

@@ -7,8 +7,10 @@ fullName: LegacyCallBacks
 remarks: ''
 isDeprecated: true
 customDeprecatedMessage: >-
-  As of 2.0.0, this interface has been deprecated in favor of a Promise-based
-  pattern.
+  As of 2.0.0, this interface has been deprecated in favor of leveraging the
+  `Promise` returned from [authentication.authenticate(authenticateParameters:
+  AuthenticatePopUpParameters):
+  Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate)
 
   -------------------------
 
@@ -27,6 +29,7 @@ properties:
       As of 2.0.0, this property has been deprecated in favor of a Promise-based
       pattern.
 
+
       A function that is called if the request fails, with the reason for the
       failure.
     syntax:
@@ -44,6 +47,7 @@ properties:
     customDeprecatedMessage: >-
       As of 2.0.0, this property has been deprecated in favor of a Promise-based
       pattern.
+
 
       A function that is called if the request succeeds.
     syntax:

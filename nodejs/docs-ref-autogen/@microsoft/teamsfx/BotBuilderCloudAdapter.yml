@@ -1,0 +1,6 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teamsfx.BotBuilderCloudAdapter'
+name: BotBuilderCloudAdapter
+type: module
+package: '@microsoft/teamsfx'
+summary: ''

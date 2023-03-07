@@ -1,37 +1,34 @@
 ### YamlMime:TSType
-name: CardActionBot
-uid: '@microsoft/teamsfx.CardActionBot'
+name: CardActionBot_2
+uid: '@microsoft/teamsfx.CardActionBot_2'
 package: '@microsoft/teamsfx'
-summary: ''
-fullName: CardActionBot
+summary: A card action bot to respond to adaptive card universal actions.
+fullName: CardActionBot_2
 remarks: ''
-isDeprecated: true
-customDeprecatedMessage: Use `BotBuilderCloudAdapter.CardActionBot` instead.
+isDeprecated: false
 type: class
 constructors:
-  - name: 'CardActionBot(BotFrameworkAdapter, CardActionOptions)'
-    uid: '@microsoft/teamsfx.CardActionBot.constructor'
+  - name: 'CardActionBot_2(CloudAdapter, CardActionOptions)'
+    uid: '@microsoft/teamsfx.CardActionBot_2.constructor'
     package: '@microsoft/teamsfx'
-    summary: Creates a new instance of the `CardActionBot`.
+    summary: Create a new instance of the `CardActionBot`.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        new CardActionBot(adapter: BotFrameworkAdapter, options?:
-        CardActionOptions)
+      content: 'new CardActionBot_2(adapter: CloudAdapter, options?: CardActionOptions)'
       parameters:
         - id: adapter
-          type: BotFrameworkAdapter
-          description: The bound `BotFrameworkAdapter`.
+          type: CloudAdapter
+          description: The bound `CloudAdapter`.
         - id: options
           type: <xref uid="@microsoft/teamsfx.CardActionOptions" />
           description: |
-            initialize options
+            The initialize options.
 methods:
   - name: registerHandler(TeamsFxAdaptiveCardActionHandler)
-    uid: '@microsoft/teamsfx.CardActionBot.registerHandler'
+    uid: '@microsoft/teamsfx.CardActionBot_2.registerHandler'
     package: '@microsoft/teamsfx'
-    summary: Registers a card action handler to the bot.
+    summary: Register a card action handler to the bot.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -44,9 +41,9 @@ methods:
           description: |
             A card action handler to be registered.
   - name: 'registerHandlers(TeamsFxAdaptiveCardActionHandler[])'
-    uid: '@microsoft/teamsfx.CardActionBot.registerHandlers'
+    uid: '@microsoft/teamsfx.CardActionBot_2.registerHandlers'
     package: '@microsoft/teamsfx'
-    summary: Registers card action handlers to the bot.
+    summary: Register card action handlers to the bot.
     remarks: ''
     isDeprecated: false
     syntax:

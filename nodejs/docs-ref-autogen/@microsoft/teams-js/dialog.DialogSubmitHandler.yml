@@ -7,6 +7,9 @@ summary: >-
   passed by <code><xref:@microsoft/teams-js.dialog.url.submit></code>
 
   or an error if the dialog was closed by the user.
+
+
+  See <code><xref:@microsoft/teams-js.dialog.ISdkResponse></code>
 fullName: DialogSubmitHandler
 remarks: ''
 previewState: beta
