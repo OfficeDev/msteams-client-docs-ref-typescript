@@ -64,7 +64,7 @@ methods:
           description: |
             The adaptive card JSON payload.
       return:
-        description: An InvokeResponse object.
+        description: An `InvokeResponse` object.
         type: InvokeResponse
   - name: 'createInvokeResponse(StatusCodes, unknown)'
     uid: '@microsoft/teamsfx.InvokeResponseFactory.createInvokeResponse'
@@ -85,7 +85,7 @@ methods:
           description: |
             The value of the response body.
       return:
-        description: An InvokeResponse object.
+        description: An `InvokeResponse` object.
         type: InvokeResponse
   - name: 'errorResponse(InvokeResponseErrorCode, string)'
     uid: '@microsoft/teamsfx.InvokeResponseFactory.errorResponse'
@@ -115,7 +115,7 @@ methods:
           description: |
             The error message.
       return:
-        description: An InvokeResponse object.
+        description: An `InvokeResponse` object.
         type: InvokeResponse
   - name: textMessage(string)
     uid: '@microsoft/teamsfx.InvokeResponseFactory.textMessage'
@@ -137,5 +137,5 @@ methods:
           description: |
             A text message included in a invoke response.
       return:
-        description: An InvokeResponse object.
+        description: An `InvokeResponse` object.
         type: InvokeResponse

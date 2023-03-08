@@ -12,6 +12,7 @@ enums:
   - '@microsoft/teamsfx.LogLevel'
   - '@microsoft/teamsfx.NotificationTargetType'
   - '@microsoft/teamsfx.SearchScope'
+  - '@microsoft/teamsfx.SearchScope_2'
 classes:
   - '@microsoft/teamsfx.ApiKeyProvider'
   - '@microsoft/teamsfx.AppCredential'
@@ -19,18 +20,25 @@ classes:
   - '@microsoft/teamsfx.BearerTokenAuthProvider'
   - '@microsoft/teamsfx.BotSsoExecutionDialog'
   - '@microsoft/teamsfx.CardActionBot'
+  - '@microsoft/teamsfx.CardActionBot_2'
   - '@microsoft/teamsfx.CertificateAuthProvider'
   - '@microsoft/teamsfx.Channel'
+  - '@microsoft/teamsfx.Channel_2'
   - '@microsoft/teamsfx.CommandBot'
+  - '@microsoft/teamsfx.CommandBot_2'
   - '@microsoft/teamsfx.ConversationBot'
+  - '@microsoft/teamsfx.ConversationBot_2'
   - '@microsoft/teamsfx.ErrorWithCode'
   - '@microsoft/teamsfx.InvokeResponseFactory'
   - '@microsoft/teamsfx.Member'
+  - '@microsoft/teamsfx.Member_2'
   - '@microsoft/teamsfx.MessageBuilder'
   - '@microsoft/teamsfx.MsGraphAuthProvider'
   - '@microsoft/teamsfx.NotificationBot'
+  - '@microsoft/teamsfx.NotificationBot_2'
   - '@microsoft/teamsfx.OnBehalfOfUserCredential'
   - '@microsoft/teamsfx.TeamsBotInstallation'
+  - '@microsoft/teamsfx.TeamsBotInstallation_2'
   - '@microsoft/teamsfx.TeamsBotSsoPrompt'
   - '@microsoft/teamsfx.TeamsFx'
   - '@microsoft/teamsfx.TeamsUserCredential'
@@ -43,11 +51,13 @@ interfaces:
   - '@microsoft/teamsfx.CommandMessage'
   - '@microsoft/teamsfx.CommandOptions'
   - '@microsoft/teamsfx.ConversationOptions'
+  - '@microsoft/teamsfx.ConversationOptions_2'
   - '@microsoft/teamsfx.GetTeamsUserTokenOptions'
   - '@microsoft/teamsfx.Logger'
   - '@microsoft/teamsfx.MessageExtensionTokenResponse'
   - '@microsoft/teamsfx.MessageResponse'
   - '@microsoft/teamsfx.NotificationOptions_2'
+  - '@microsoft/teamsfx.NotificationOptions_3'
   - '@microsoft/teamsfx.NotificationTarget'
   - '@microsoft/teamsfx.NotificationTargetStorage'
   - '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
@@ -443,6 +453,36 @@ functions:
         description: the response of sending adaptive card message.
         type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
   - name: >-
+      sendAdaptiveCard_2(NotificationTarget, unknown, (context: TurnContext,
+      error: Error) => Promise<void>)
+    uid: '@microsoft/teamsfx.sendAdaptiveCard_2'
+    package: '@microsoft/teamsfx'
+    summary: Send an adaptive card message to a notification target.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendAdaptiveCard_2(target: NotificationTarget, card: unknown,
+        onError?: (context: TurnContext, error: Error) => Promise<void>):
+        Promise<MessageResponse>
+      parameters:
+        - id: target
+          type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
+          description: The notification target.
+        - id: card
+          type: unknown
+          description: The adaptive card raw JSON.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >
+            An optional error handler that can catch exceptions during adaptive
+            card sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
+      return:
+        description: The response of sending adaptive card message.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+  - name: >-
       sendMessage(NotificationTarget, string, (context: TurnContext, error:
       Error) => Promise<void>)
     uid: '@microsoft/teamsfx.sendMessage'
@@ -471,6 +511,36 @@ functions:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending message.
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+  - name: >-
+      sendMessage_2(NotificationTarget, string, (context: TurnContext, error:
+      Error) => Promise<void>)
+    uid: '@microsoft/teamsfx.sendMessage_2'
+    package: '@microsoft/teamsfx'
+    summary: Send a plain text message to a notification target.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendMessage_2(target: NotificationTarget, text: string,
+        onError?: (context: TurnContext, error: Error) => Promise<void>):
+        Promise<MessageResponse>
+      parameters:
+        - id: target
+          type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
+          description: The notification target.
+        - id: text
+          type: string
+          description: The plain text message.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >
+            An optional error handler that can catch exceptions during message
+            sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
+      return:
+        description: The response of sending message.
         type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
   - name: setLogFunction(LogFunction)
     uid: '@microsoft/teamsfx.setLogFunction'

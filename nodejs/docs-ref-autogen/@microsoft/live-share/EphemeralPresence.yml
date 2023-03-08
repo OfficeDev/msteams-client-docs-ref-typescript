@@ -225,6 +225,19 @@ inheritedProperties:
         description: ''
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.addListener
+  - name: defaultMaxListeners
+    uid: '@microsoft/live-share.EphemeralPresence.defaultMaxListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: defaultMaxListeners
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static defaultMaxListeners: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.defaultMaxListeners
   - name: 'off'
     uid: '@microsoft/live-share.EphemeralPresence.off'
     package: '@microsoft/live-share'
@@ -304,17 +317,17 @@ inheritedProperties:
         type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.removeListener
 inheritedMethods:
-  - name: 'emit(string | symbol, any[])'
+  - name: 'emit(string | number, any[])'
     uid: '@microsoft/live-share.EphemeralPresence.emit'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function emit(event: string | symbol, args: any[]): boolean'
+      content: 'function emit(type: string | number, args: any[]): boolean'
       parameters:
-        - id: event
-          type: string | symbol
+        - id: type
+          type: string | number
           description: ''
         - id: args
           type: 'any[]'
@@ -330,10 +343,10 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function eventNames(): Array<string | symbol>'
+      content: 'function eventNames(): Array<string | number>'
       return:
         description: ''
-        type: Array&lt;string | symbol&gt;
+        type: Array&lt;string | number&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
   - name: finishInitialization(boolean)
     uid: '@microsoft/live-share.EphemeralPresence.finishInitialization'
@@ -444,65 +457,86 @@ inheritedMethods:
         description: ''
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
-  - name: listenerCount(string | symbol)
+  - name: 'listenerCount(EventEmitter, string | number)'
     uid: '@microsoft/live-share.EphemeralPresence.listenerCount'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function listenerCount(event: string | symbol): number'
+      content: >-
+        static function listenerCount(emitter: EventEmitter, type: string |
+        number): number
       parameters:
-        - id: event
-          type: string | symbol
+        - id: emitter
+          type: EventEmitter
+          description: ''
+        - id: type
+          type: string | number
           description: ''
       return:
         description: ''
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
-  - name: listeners(string | symbol)
+  - name: listenerCount(string | number)
+    uid: '@microsoft/live-share.EphemeralPresence.listenerCount'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(type: string | number): number'
+      parameters:
+        - id: type
+          type: string | number
+          description: ''
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
+  - name: listeners(string | number)
     uid: '@microsoft/live-share.EphemeralPresence.listeners'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function listeners(event: string | symbol): Function[]'
+      content: 'function listeners(type: string | number): Listener[]'
       parameters:
-        - id: event
-          type: string | symbol
+        - id: type
+          type: string | number
           description: ''
       return:
         description: ''
-        type: 'Function[]'
+        type: 'Listener[]'
     inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
-  - name: rawListeners(string | symbol)
+  - name: rawListeners(string | number)
     uid: '@microsoft/live-share.EphemeralPresence.rawListeners'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function rawListeners(event: string | symbol): Function[]'
+      content: 'function rawListeners(type: string | number): Listener[]'
       parameters:
-        - id: event
-          type: string | symbol
+        - id: type
+          type: string | number
           description: ''
       return:
         description: ''
-        type: 'Function[]'
+        type: 'Listener[]'
     inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
-  - name: removeAllListeners(string | symbol)
+  - name: removeAllListeners(string | number)
     uid: '@microsoft/live-share.EphemeralPresence.removeAllListeners'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function removeAllListeners(event?: string | symbol): this'
+      content: 'function removeAllListeners(type?: string | number): this'
       parameters:
-        - id: event
-          type: string | symbol
+        - id: type
+          type: string | number
           description: ''
       return:
         description: ''

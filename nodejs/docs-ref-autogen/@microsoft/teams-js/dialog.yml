@@ -1,7 +1,20 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.dialog'
 name: dialog
-summary: Namespace to interact with the dialog module-specific part of the SDK.
+summary: >-
+  This group of capabilities enables apps to show modal dialogs. There are two
+  primary types of dialogs: URL-based dialogs and [Adaptive
+  Card](https://learn.microsoft.com/adaptive-cards/) dialogs.
+
+  Both types of dialogs are shown on top of your app, preventing interaction
+  with your app while they are displayed.
+
+  - URL-based dialogs allow you to specify a URL from which the contents will be
+  shown inside the dialog.
+    - For URL dialogs, use the functions and interfaces in the <xref:@microsoft/teams-js.dialog.url> namespace.
+  - Adaptive Card-based dialogs allow you to provide JSON describing an Adaptive
+  Card that will be shown inside the dialog.
+    - For Adaptive Card dialogs, use the functions and interfaces in the <xref:@microsoft/teams-js.dialog.adaptiveCard> namespace.
 type: module
 typeAliases:
   - '@microsoft/teams-js.dialog.DialogSubmitHandler'
@@ -10,16 +23,3 @@ interfaces:
   - '@microsoft/teams-js.dialog.ISdkResponse'
 package: '@microsoft/teams-js'
 previewState: beta
-functions:
-  - name: isSupported()
-    uid: '@microsoft/teams-js.dialog.isSupported'
-    package: '@microsoft/teams-js'
-    summary: Checks if dialog capability is supported by the host
-    remarks: ''
-    previewState: beta
-    isDeprecated: false
-    syntax:
-      content: 'function isSupported(): boolean'
-      return:
-        description: boolean to represent whether dialog capabilty is supported
-        type: boolean

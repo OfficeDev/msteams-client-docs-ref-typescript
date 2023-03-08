@@ -1,0 +1,22 @@
+### YamlMime:TSEnum
+name: EffectFailureReason
+uid: '@microsoft/teams-js.video.EffectFailureReason'
+package: '@microsoft/teams-js'
+summary: Predefined failure reasons for preparing the selected video effect
+fullName: EffectFailureReason
+remarks: ''
+previewState: beta
+isDeprecated: false
+fields:
+  - name: InitializationFailure
+    uid: '@microsoft/teams-js.video.EffectFailureReason.InitializationFailure'
+    package: '@microsoft/teams-js'
+    summary: The effect can't be initialized
+  - name: InvalidEffectId
+    uid: '@microsoft/teams-js.video.EffectFailureReason.InvalidEffectId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      A wrong effect id is provide.
+
+      Use this reason when the effect id is not found or empty, this may
+      indicate a mismatch between the app and its manifest or a bug of the host.
