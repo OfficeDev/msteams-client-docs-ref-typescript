@@ -13,7 +13,7 @@ functions:
       object to the original height and width, if initially specified,
 
       otherwise uses the height and width values corresponding to [|
-      TaskModuleDimension.Small](xref:DialogDimension)
+      TaskModuleDimension.Small](xref:@microsoft/teams-js.DialogDimension")
     remarks: ''
     isDeprecated: false
     syntax:
