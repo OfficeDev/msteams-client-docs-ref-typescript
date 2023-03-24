@@ -21,13 +21,13 @@ The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is compromised
 
 ### Finding the library
 
-The Live Share SDK is a JavaScript package comprised of three sub-packages ([Live Share](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-capabilities.md), [Live Share media](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md), and [Live Share canvas](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-canvas.md)) which are published on npm and can be installed using npm or yarn.
+The Live Share SDK is a JavaScript package comprised of three sub-packages ([Live Share](/microsoftteams/platform/apps-in-teams-meetings/teams-live-share-capabilities), [Live Share media](/microsoftteams/platform/apps-in-teams-meetings/teams-live-share-media-capabilities), and [Live Share canvas](/microsoftteams/platform/apps-in-teams-meetings/teams-live-share-canvas)) which are published on npm and can be installed using npm or yarn.
 
 To install the latest version of the Live Share packages to your application:
 
 #### Live Share core
 
-The Live Share SDK can be added to your meeting extension's `sidePanel` and `meetingStage` contexts with minimal effort to unlock new collaborative app scenarios throughout the lifecycle of a meeting. For more, see [Live Share core capabilities](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-capabilities.md).
+The Live Share SDK can be added to your meeting extension's `sidePanel` and `meetingStage` contexts with minimal effort to unlock new collaborative app scenarios throughout the lifecycle of a meeting. For more, see [Live Share core capabilities](/microsoftteams/platform/apps-in-teams-meetings/teams-live-share-capabilities).
 
 # [NPM](#tab/npm)
 
@@ -46,7 +46,7 @@ yarn add @microsoft/live-share@next
 
 #### Live Share media
 
-The Live Share SDK enables robust media synchronization for any HTML `<video>` and `<audio>` element with just a few lines of code. By synchronizing media at the player state and transport controls layer, you can individually attribute views and license, while providing the highest possible quality available through your app. For more, see [Live Share media capabilities](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-media-capabilities.md).
+The Live Share SDK enables robust media synchronization for any HTML `<video>` and `<audio>` element with just a few lines of code. By synchronizing media at the player state and transport controls layer, you can individually attribute views and license, while providing the highest possible quality available through your app. For more, see [Live Share media capabilities](/microsoftteams/platform/apps-in-teams-meetings/teams-live-share-media-capabilities).
 
 # [NPM](#tab/npm)
 
@@ -66,7 +66,7 @@ yarn add @microsoft/live-share-media@next
 
 #### Live Share canvas
 
-Using Live Share canvas, your app can bring the power of [PowerPoint Live](https://support.microsoft.com/office/present-from-powerpoint-live-in-microsoft-teams-28b20e74-7165-499c-9bd4-0ad975d448ad) inking tools with minimal effort. For more, see [Live Share canvas overview](/msteams-docs/msteams-platform/apps-in-teams-meetings/teams-live-share-canvas.md).
+Using Live Share canvas, your app can bring the power of [PowerPoint Live](https://support.microsoft.com/office/present-from-powerpoint-live-in-microsoft-teams-28b20e74-7165-499c-9bd4-0ad975d448ad) inking tools with minimal effort. For more, see [Live Share canvas overview](/microsoftteams/platform/apps-in-teams-meetings/teams-live-share-canvas).
 
 # [NPM](#tab/npm)
 
@@ -107,7 +107,7 @@ yarn add @microsoft/teams-js
 
 ## Microsoft TeamsFx SDK
 
-The [TeamsFx SDK](/msteams-docs/msteams-platform/toolkit/TeamsFx-SDK.md) greatly simplifies Microsoft Teams single sign-on (SSO) and cloud resource access in your app.
+The [TeamsFx SDK](/microsoftteams/platform/toolkit/teamsfx-sdk) greatly simplifies Microsoft Teams single sign-on (SSO) and cloud resource access in your app.
 
 ### Finding the library
 
