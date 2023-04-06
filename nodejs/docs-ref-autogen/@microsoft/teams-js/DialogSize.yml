@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'height: DialogDimension | number'
+      content: 'height: number | DialogDimension'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.DialogDimension" /> | number
+        type: number | <xref uid="@microsoft/teams-js.DialogDimension" />
   - name: width
     uid: '@microsoft/teams-js.DialogSize.width'
     package: '@microsoft/teams-js'
@@ -28,7 +28,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'width: DialogDimension | number'
+      content: 'width: number | DialogDimension'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.DialogDimension" /> | number
+        type: number | <xref uid="@microsoft/teams-js.DialogDimension" />

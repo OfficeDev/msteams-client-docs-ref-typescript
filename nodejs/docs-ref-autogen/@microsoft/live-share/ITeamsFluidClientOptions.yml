@@ -37,10 +37,10 @@ properties:
       If the function returns 'undefined' a new container will be created.
     isDeprecated: false
     syntax:
-      content: 'getLocalTestContainerId?: undefined | () => string | undefined'
+      content: 'getLocalTestContainerId?: () => undefined | string'
       return:
         description: ''
-        type: undefined | () =&gt; string | undefined
+        type: () =&gt; undefined | string
   - name: logger
     uid: '@microsoft/live-share.ITeamsFluidClientOptions.logger'
     package: '@microsoft/live-share'
@@ -65,7 +65,7 @@ properties:
       container.
     isDeprecated: false
     syntax:
-      content: 'setLocalTestContainerId?: undefined | (containerId: string) => void'
+      content: 'setLocalTestContainerId?: (containerId: string) => void'
       return:
         description: ''
-        type: 'undefined | (containerId: string) =&gt; void'
+        type: '(containerId: string) =&gt; void'

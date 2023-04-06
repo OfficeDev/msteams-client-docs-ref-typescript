@@ -41,7 +41,7 @@ properties:
       content: 'imageOutputFormats?: ImageOutputFormats[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teams-js.media.ImageOutputFormats" />[]'
+        type: <xref uid="@microsoft/teams-js.media.ImageOutputFormats" />[]
   - name: ink
     uid: '@microsoft/teams-js.media.ImageProps.ink'
     package: '@microsoft/teams-js'

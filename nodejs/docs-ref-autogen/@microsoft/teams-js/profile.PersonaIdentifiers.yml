@@ -2,8 +2,9 @@
 name: PersonaIdentifiers
 uid: '@microsoft/teams-js.profile.PersonaIdentifiers'
 package: '@microsoft/teams-js'
-summary: |
+summary: |-
   The set of identifiers that are supported for resolving the persona.
+
   At least one is required, and if multiple are provided then only the highest
   priority one will be used (AadObjectId > Upn > Smtp).
 fullName: PersonaIdentifiers

@@ -1,8 +1,9 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.authentication'
 name: authentication
-summary: |
+summary: |-
   Namespace to interact with the authentication-specific part of the SDK.
+
   This object is used for starting or completing authentication flows.
 type: module
 typeAliases:
@@ -24,13 +25,13 @@ functions:
       As of 2.0.0, please use
       [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate)
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
       instead.
 
 
       The documentation for [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate)
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
       applies
 
       to this function.
@@ -47,14 +48,13 @@ functions:
           type: >-
             <xref
             uid="@microsoft/teams-js.authentication.AuthenticateParameters" />
-          description: >+
+          description: >-
             Parameters describing the authentication window used for executing
             the authentication flow and callbacks used for indicating the result
-
   - name: authenticate(AuthenticatePopUpParameters)
     uid: '@microsoft/teams-js.authentication.authenticate'
     package: '@microsoft/teams-js'
-    summary: >
+    summary: >-
       Initiates an authentication flow which requires a new window.
 
       There are two primary uses for this function:
@@ -65,13 +65,14 @@ functions:
       2. When your app needs to show authentication UI that is blocked from
       being shown in an iframe (e.g., Azure Active Directory consent prompts)
 
+
       For more details, see [Enable authentication using third-party OAuth
       provider](https://learn.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab)
 
 
       This function is *not* needed for "standard" Azure SSO usage. Using
-      <xref:@microsoft/teams-js.authentication.getAuthToken> is usually
-      sufficient in that case. For more, see
+      [getAuthToken](xref:@microsoft/teams-js.authentication.getAuthToken_1) is
+      usually sufficient in that case. For more, see
 
       [Enable SSO for tab
       apps](https://learn.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/tab-sso-overview))
@@ -97,7 +98,7 @@ functions:
             <xref
             uid="@microsoft/teams-js.authentication.AuthenticatePopUpParameters"
             />
-          description: >
+          description: >-
             Parameters describing the authentication window used for executing
             the authentication flow
       return:
@@ -107,8 +108,9 @@ functions:
           provided in the parameter
 
           passed by your app when it calls
-          <xref:@microsoft/teams-js.app.notifySuccess> in the pop-up window
-          after returning from the identity provider redirect.
+          [notifySuccess](xref:@microsoft/teams-js.authentication.notifySuccess)
+          in the pop-up window after returning from the identity provider
+          redirect.
         type: Promise&lt;string&gt;
   - name: getAuthToken(AuthTokenRequest)
     uid: '@microsoft/teams-js.authentication.getAuthToken_1'
@@ -119,13 +121,13 @@ functions:
     customDeprecatedMessage: >-
       As of 2.0.0, please use [authentication.getAuthToken(authTokenRequest:
       AuthTokenRequestParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken)
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken_1)
       instead.
 
 
       The documentation [authentication.getAuthToken(authTokenRequest:
       AuthTokenRequestParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken)
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken_1)
       applies to this
 
       function as well. The one difference when using this function is that the
@@ -137,7 +139,7 @@ functions:
       parameters:
         - id: authTokenRequest
           type: <xref uid="@microsoft/teams-js.authentication.AuthTokenRequest" />
-          description: |
+          description: |-
             An optional set of values that configure the token request.
             It contains callbacks to call in case of success/failure
   - name: getAuthToken(AuthTokenRequestParameters)
@@ -168,18 +170,17 @@ functions:
             <xref
             uid="@microsoft/teams-js.authentication.AuthTokenRequestParameters"
             />
-          description: |
-            An optional set of values that configure the token request.
+          description: An optional set of values that configure the token request.
       return:
         description: '`Promise` that will be resolved with the token, if successful.'
         type: Promise&lt;string&gt;
-  - name: 'notifyFailure(string, string)'
+  - name: notifyFailure(string, string)
     uid: '@microsoft/teams-js.authentication.notifyFailure'
     package: '@microsoft/teams-js'
     summary: >-
       When using [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate),
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1),
       the
 
       window that was opened to execute the authentication flow should call this
@@ -187,7 +188,7 @@ functions:
 
       [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate)
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
       that the
 
       authentication request failed.
@@ -203,16 +204,16 @@ functions:
           description: ''
         - id: callbackUrl
           type: string
-          description: >
+          description: >-
             Specifies the url to redirect back to if the client is Win32
             Outlook.
-  - name: 'notifySuccess(string, string)'
+  - name: notifySuccess(string, string)
     uid: '@microsoft/teams-js.authentication.notifySuccess'
     package: '@microsoft/teams-js'
     summary: >-
       When using [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate),
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1),
       the
 
       window that was opened to execute the authentication flow should call this
@@ -220,7 +221,7 @@ functions:
 
       [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate)
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
       that the
 
       authentication request was successful.
@@ -240,7 +241,7 @@ functions:
             this value in its callback or via the `Promise` return value
         - id: callbackUrl
           type: string
-          description: >
+          description: >-
             Specifies the url to redirect back to if the client is Win32
             Outlook.
   - name: registerAuthenticationHandlers(AuthenticateParameters)
@@ -253,13 +254,13 @@ functions:
       As of 2.0.0, this function has been deprecated in favor of a Promise-based
       pattern using [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
-      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate)
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
 
 
       Registers handlers to be called with the result of an authentication flow
       triggered using [authentication.authenticate(authenticateParameters?:
       AuthenticateParameters):
-      void](xref:@microsoft/teams-js.authentication.authenticate)
+      void](xref:@microsoft/teams-js.authentication.authenticate_1)
     syntax:
       content: >-
         function registerAuthenticationHandlers(authenticateParameters:
@@ -269,5 +270,4 @@ functions:
           type: >-
             <xref
             uid="@microsoft/teams-js.authentication.AuthenticateParameters" />
-          description: |
-            Configuration for authentication flow pop-up result communication
+          description: Configuration for authentication flow pop-up result communication

@@ -19,8 +19,7 @@ constructors:
       parameters:
         - id: options
           type: <xref uid="@microsoft/live-share-canvas.IStrokeCreationOptions" />
-          description: |
-            Optional creation options such as id, points, etc.
+          description: Optional creation options such as id, points, etc.
 properties:
   - name: brush
     uid: '@microsoft/live-share-canvas.Stroke.brush'
@@ -42,10 +41,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: string | undefined clientId
+      content: undefined | string clientId
       return:
         description: ''
-        type: string | undefined
+        type: undefined | string
   - name: id
     uid: '@microsoft/live-share-canvas.Stroke.id'
     package: '@microsoft/live-share-canvas'
@@ -83,7 +82,7 @@ properties:
         description: ''
         type: number
 methods:
-  - name: 'addPoints(IPointerPoint[])'
+  - name: addPoints(IPointerPoint[])
     uid: '@microsoft/live-share-canvas.Stroke.addPoints'
     package: '@microsoft/live-share-canvas'
     summary: |-
@@ -95,7 +94,7 @@ methods:
       content: 'function addPoints(points: IPointerPoint[]): boolean'
       parameters:
         - id: points
-          type: '<xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]'
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]
           description: The points to add.
       return:
         description: '`true` if at least one point was added, `false` otherwise.'
@@ -103,7 +102,7 @@ methods:
   - name: clear()
     uid: '@microsoft/live-share-canvas.Stroke.clear'
     package: '@microsoft/live-share-canvas'
-    summary: 'CLears the stroke, i.e. removes all of its points.'
+    summary: CLears the stroke, i.e. removes all of its points.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -121,8 +120,7 @@ methods:
       parameters:
         - id: serializedStroke
           type: string
-          description: |
-            The serialized stroke.
+          description: The serialized stroke.
   - name: getBoundingRect()
     uid: '@microsoft/live-share-canvas.Stroke.getBoundingRect'
     package: '@microsoft/live-share-canvas'
@@ -154,7 +152,7 @@ methods:
           description: The segment to test against.
       return:
         description: An array of intersection points.
-        type: '<xref uid="@microsoft/live-share-canvas.IPoint" />[]'
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />[]
   - name: getPointAt(number)
     uid: '@microsoft/live-share-canvas.Stroke.getPointAt'
     package: '@microsoft/live-share-canvas'
@@ -194,7 +192,7 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
+      content: 'function pointErase(eraserRect: IRect): undefined | IStroke[]'
       parameters:
         - id: eraserRect
           type: <xref uid="@microsoft/live-share-canvas.IRect" />
@@ -203,7 +201,7 @@ methods:
         description: |-
           An array of new strokes (which might be empty if the whole stroke
           was erased), or `undefined` if the stroke was unchanged.
-        type: '<xref uid="@microsoft/live-share-canvas.IStroke" />[] | undefined'
+        type: undefined | <xref uid="@microsoft/live-share-canvas.IStroke" />[]
   - name: serialize()
     uid: '@microsoft/live-share-canvas.Stroke.serialize'
     package: '@microsoft/live-share-canvas'
@@ -215,3 +213,16 @@ methods:
       return:
         description: The serialized stroke.
         type: string
+  - name: '[iterator]()'
+    uid: '@microsoft/live-share-canvas.Stroke.[iterator]'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function [iterator](): { next: () => { done: boolean, value:
+        IPointerPoint } }
+      return:
+        description: ''
+        type: '{ next: () =&gt; { done: boolean, value: IPointerPoint } }'

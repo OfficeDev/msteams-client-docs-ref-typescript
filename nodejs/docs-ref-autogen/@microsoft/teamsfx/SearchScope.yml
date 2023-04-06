@@ -4,8 +4,8 @@ uid: '@microsoft/teamsfx.SearchScope'
 package: '@microsoft/teamsfx'
 summary: >-
   The search scope when calling
-  <xref:@microsoft/teamsfx.NotificationBot.findMember> and
-  <xref:@microsoft/teamsfx.NotificationBot.findAllMembers>.
+  [findMember](xref:@microsoft/teamsfx.NotificationBot.findMember) and
+  [findAllMembers](xref:@microsoft/teamsfx.NotificationBot.findAllMembers).
 
   The search scope is a flagged enum and it can be combined with `|`.
 

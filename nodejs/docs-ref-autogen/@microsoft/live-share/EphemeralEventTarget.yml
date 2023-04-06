@@ -16,7 +16,7 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
-      EphemeralEventTarget(EphemeralEventScope, string,
+      EphemeralEventTarget<TEvent>(EphemeralEventScope, string,
       EphemeralEventListener<TEvent>)
     uid: '@microsoft/live-share.EphemeralEventTarget.constructor'
     package: '@microsoft/live-share'
@@ -38,8 +38,7 @@ constructors:
           type: >-
             <xref uid="@microsoft/live-share.EphemeralEventListener"
             />&lt;TEvent&gt;
-          description: |
-            Function to call when an event is sent or received.
+          description: Function to call when an event is sent or received.
 inheritedMethods:
   - name: sendEvent(Partial<TEvent>)
     uid: '@microsoft/live-share.EphemeralEventTarget.sendEvent'

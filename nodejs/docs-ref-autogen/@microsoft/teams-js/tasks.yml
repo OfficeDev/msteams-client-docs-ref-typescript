@@ -5,27 +5,28 @@ type: module
 package: '@microsoft/teams-js'
 summary: ''
 functions:
-  - name: getDefaultSizeIfNotProvided(TaskInfo)
+  - name: getDefaultSizeIfNotProvided(DialogInfo)
     uid: '@microsoft/teams-js.tasks.getDefaultSizeIfNotProvided'
     package: '@microsoft/teams-js'
     summary: >-
-      Sets the height and width of the <xref:@microsoft/teams-js.TaskInfo>
-      object to the original height and width, if initially specified,
+      Sets the height and width of the
+      [TaskInfo](xref:@microsoft/teams-js.TaskInfo) object to the original
+      height and width, if initially specified,
 
-      otherwise uses the height and width values corresponding to [|
-      TaskModuleDimension.Small](xref:@microsoft/teams-js.DialogDimension)
+      otherwise uses the height and width values corresponding to
+      [TaskModuleDimension.Small](xref:@microsoft/teams-js.DialogDimension)
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getDefaultSizeIfNotProvided(taskInfo: TaskInfo): TaskInfo'
+      content: 'function getDefaultSizeIfNotProvided(taskInfo: DialogInfo): TaskInfo'
       parameters:
         - id: taskInfo
-          type: <xref uid="@microsoft/teams-js.TaskInfo" />
-          description: 'TaskInfo object from which to extract size info, if specified'
+          type: <xref uid="@microsoft/teams-js.DialogInfo" />
+          description: TaskInfo object from which to extract size info, if specified
       return:
         description: TaskInfo with height and width specified
         type: <xref uid="@microsoft/teams-js.TaskInfo" />
-  - name: 'startTask(TaskInfo, (err: string, result: string | object) => void)'
+  - name: 'startTask(DialogInfo, (err: string, result: string | object) => void)'
     uid: '@microsoft/teams-js.tasks.startTask'
     package: '@microsoft/teams-js'
     summary: ''
@@ -45,35 +46,34 @@ functions:
       void](xref:@microsoft/teams-js.dialog.url.bot.open)
 
       - For Adaptive Card-based dialogs:
-        - In Teams, please continue to use this function until the new functions in <xref:@microsoft/teams-js.dialog.adaptiveCard> have been fully implemented. You can tell at runtime when they are implemented in Teams by checking
-          the return value of the <xref:@microsoft/teams-js.dialog.adaptiveCard.isSupported> function. This documentation line will also be removed once they have been fully implemented in Teams.
+        - In Teams, please continue to use this function until the new functions in [adaptiveCard](xref:@microsoft/teams-js.dialog.adaptiveCard) have been fully implemented. You can tell at runtime when they are implemented in Teams by checking
+          the return value of the [isSupported](xref:@microsoft/teams-js.dialog.adaptiveCard.isSupported) function. This documentation line will also be removed once they have been fully implemented in Teams.
         - In all other hosts, please use [dialog.adaptiveCard.open(cardDialogInfo: CardDialogInfo, submitHandler?: DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel): void](xref:@microsoft/teams-js.dialog.adaptiveCard.open)
 
       Allows an app to open the task module.
     syntax:
       content: >-
-        function startTask(taskInfo: TaskInfo, submitHandler?: (err: string,
+        function startTask(taskInfo: DialogInfo, submitHandler?: (err: string,
         result: string | object) => void): IAppWindow
       parameters:
         - id: taskInfo
-          type: <xref uid="@microsoft/teams-js.TaskInfo" />
+          type: <xref uid="@microsoft/teams-js.DialogInfo" />
           description: An object containing the parameters of the task module
         - id: submitHandler
           type: '(err: string, result: string | object) =&gt; void'
-          description: |
-            Handler to call when the task module is completed
+          description: Handler to call when the task module is completed
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.IAppWindow" />
-  - name: 'submitTask(string | object, string | string[])'
+  - name: submitTask(string | object, string | string[])
     uid: '@microsoft/teams-js.tasks.submitTask'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.8.0, please use <xref:@microsoft/teams-js.dialog.url.submit>
-      instead.
+      As of 2.8.0, please use
+      [submit](xref:@microsoft/teams-js.dialog.url.submit) instead.
 
 
       Submit the task module.
@@ -88,14 +88,14 @@ functions:
             Contains the result to be sent to the bot or the app. Typically a
             JSON object or a serialized version of it
         - id: appIds
-          type: 'string | string[]'
-          description: >
+          type: string | string[]
+          description: >-
             Valid application(s) that can receive the result of the submitted
             dialogs. Specifying this parameter helps prevent malicious apps from
             retrieving the dialog result. Multiple app IDs can be specified
             because a web app from a single underlying domain can power multiple
             apps across different environments and branding schemes.
-  - name: updateTask(TaskInfo)
+  - name: updateTask(DialogInfo)
     uid: '@microsoft/teams-js.tasks.updateTask'
     package: '@microsoft/teams-js'
     summary: ''
@@ -108,9 +108,8 @@ functions:
 
       Update height/width task info properties.
     syntax:
-      content: 'function updateTask(taskInfo: TaskInfo)'
+      content: 'function updateTask(taskInfo: DialogInfo)'
       parameters:
         - id: taskInfo
-          type: <xref uid="@microsoft/teams-js.TaskInfo" />
-          description: |
-            An object containing width and height properties
+          type: <xref uid="@microsoft/teams-js.DialogInfo" />
+          description: An object containing width and height properties

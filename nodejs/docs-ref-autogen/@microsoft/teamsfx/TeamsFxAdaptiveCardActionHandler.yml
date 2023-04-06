@@ -44,7 +44,7 @@ properties:
         description: ''
         type: string
 methods:
-  - name: 'handleActionInvoked(TurnContext, any)'
+  - name: handleActionInvoked(TurnContext, any)
     uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler.handleActionInvoked'
     package: '@microsoft/teamsfx'
     summary: The handler function that will be invoked when the action is fired.
@@ -53,15 +53,14 @@ methods:
     syntax:
       content: >-
         function handleActionInvoked(context: TurnContext, actionData: any):
-        Promise<InvokeResponse>
+        Promise<InvokeResponse<any>>
       parameters:
         - id: context
           type: TurnContext
           description: The turn context.
         - id: actionData
           type: any
-          description: |
-            The contextual data that associated with the action.
+          description: The contextual data that associated with the action.
       return:
         description: >-
           A `Promise` representing a invoke response for the adaptive card
@@ -82,4 +81,4 @@ methods:
               ```typescript
               return InvokeResponseFactory.errorResponse(InvokeResponseErrorCode.BadRequest, "Invalid request");
               ```
-        type: Promise&lt;InvokeResponse&gt;
+        type: Promise&lt;InvokeResponse&lt;any&gt;&gt;

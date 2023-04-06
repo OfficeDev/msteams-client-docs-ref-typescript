@@ -10,12 +10,14 @@ customDeprecatedMessage: >-
   As of 2.0.0, this interface has been deprecated in favor of leveraging the
   `Promise` returned from [authentication.authenticate(authenticateParameters:
   AuthenticatePopUpParameters):
-  Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate)
+  Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
 
   -------------------------
 
-  Used in <xref:@microsoft/teams-js.authentication.AuthenticateParameters> and
-  <xref:@microsoft/teams-js.authentication.AuthTokenRequest>
+  Used in
+  [AuthenticateParameters](xref:@microsoft/teams-js.authentication.AuthenticateParameters)
+  and
+  [AuthTokenRequest](xref:@microsoft/teams-js.authentication.AuthTokenRequest)
 type: interface
 properties:
   - name: failureCallback

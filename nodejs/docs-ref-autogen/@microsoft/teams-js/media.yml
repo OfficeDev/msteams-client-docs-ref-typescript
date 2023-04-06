@@ -35,6 +35,14 @@ functions:
     summary: >-
       Launch camera, capture image or choose image from gallery and return the
       images as a File[] object to the callback.
+
+
+      See SdkError if there are any.
+
+      If error is null or undefined, the callback will be called with a
+      collection of
+
+      See File objects
     remarks: >-
       Note: Currently we support getting one File through this API, i.e. the
       file arrays size will be one.
@@ -74,7 +82,7 @@ functions:
           description: callback to invoke after scanning the barcode
         - id: config
           type: <xref uid="@microsoft/teams-js.media.BarCodeConfig" />
-          description: >
+          description: >-
             optional input configuration to customize the barcode scanning
             experience
   - name: 'selectMedia(MediaInputs, (error: SdkError, attachments: Media[]) => void)'
@@ -93,8 +101,7 @@ functions:
           description: The input params to customize the media to be selected
         - id: callback
           type: '(error: SdkError, attachments: Media[]) =&gt; void'
-          description: |
-            The callback to invoke after fetching the media
+          description: The callback to invoke after fetching the media
   - name: 'viewImages(ImageUri[], (error?: SdkError) => void)'
     uid: '@microsoft/teams-js.media.viewImages'
     package: '@microsoft/teams-js'
@@ -107,11 +114,10 @@ functions:
         void)
       parameters:
         - id: uriList
-          type: '<xref uid="@microsoft/teams-js.media.ImageUri" />[]'
+          type: <xref uid="@microsoft/teams-js.media.ImageUri" />[]
           description: >-
             list of URIs for images to be viewed - can be content URI or server
             URL. Supports up to 10 Images in a single call
         - id: callback
           type: '(error?: SdkError) =&gt; void'
-          description: |
-            returns back error if encountered, returns null in case of success
+          description: returns back error if encountered, returns null in case of success

@@ -30,5 +30,4 @@ functions:
       parameters:
         - id: dimensions
           type: <xref uid="@microsoft/teams-js.DialogSize" />
-          description: |
-            An object containing width and height properties.
+          description: An object containing width and height properties.

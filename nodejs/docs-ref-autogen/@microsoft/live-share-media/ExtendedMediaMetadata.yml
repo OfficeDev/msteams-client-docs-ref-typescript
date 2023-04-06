@@ -32,4 +32,57 @@ properties:
       return:
         description: ''
         type: string
-extends: any
+inheritedProperties:
+  - name: album
+    uid: '@microsoft/live-share-media.ExtendedMediaMetadata.album'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: album
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'album: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> MediaMetadata.album
+  - name: artist
+    uid: '@microsoft/live-share-media.ExtendedMediaMetadata.artist'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: artist
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'artist: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> MediaMetadata.artist
+  - name: artwork
+    uid: '@microsoft/live-share-media.ExtendedMediaMetadata.artwork'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: artwork
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'artwork: readonly MediaImage[]'
+      return:
+        description: ''
+        type: readonly MediaImage[]
+    inheritanceDescription: <b>Inherited From</b> MediaMetadata.artwork
+  - name: title
+    uid: '@microsoft/live-share-media.ExtendedMediaMetadata.title'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: title
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'title: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> MediaMetadata.title
+extends: MediaMetadata

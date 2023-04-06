@@ -33,7 +33,7 @@ properties:
       content: 'points: IPointerPoint[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]'
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]
   - name: strokeId
     uid: '@microsoft/live-share-canvas.IAddPointsEventArgs.strokeId'
     package: '@microsoft/live-share-canvas'

@@ -1,6 +1,6 @@
 ### YamlMime:TSTypeAlias
 name: VideoFrameCallback
-uid: '@microsoft/teams-js.video.VideoFrameCallback'
+uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameCallback'
 package: '@microsoft/teams-js'
 summary: Video frame call back function definition
 fullName: VideoFrameCallback
@@ -9,7 +9,7 @@ previewState: beta
 isDeprecated: false
 syntax: |
   type VideoFrameCallback = (
-    frame: VideoFrame,
+    frame: VideoFrameData,
     notifyVideoFrameProcessed: () => void,
     notifyError: (errorMessage: string) => void
   ) => void

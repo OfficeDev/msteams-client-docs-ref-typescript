@@ -19,4 +19,4 @@ properties:
       content: 'teamTabs: TabInstance[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teams-js.TabInstance" />[]'
+        type: <xref uid="@microsoft/teams-js.TabInstance" />[]

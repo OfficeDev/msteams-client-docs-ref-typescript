@@ -29,18 +29,19 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getContext(): Promise<Context>'
+      content: 'function getContext(): Promise<app.Context>'
       return:
         description: >-
           Promise that will resolve with the
-          <xref:@microsoft/teams-js.app.Context> object.
+          [Context](xref:@microsoft/teams-js.app.Context) object.
         type: Promise&lt;<xref uid="@microsoft/teams-js.app.Context" />&gt;
   - name: getFrameContext()
     uid: '@microsoft/teams-js.app.getFrameContext'
     package: '@microsoft/teams-js'
     summary: >-
       Gets the Frame Context that the App is running in. See
-      <xref:@microsoft/teams-js.FrameContexts> for the list of possible values.
+      [FrameContexts](xref:@microsoft/teams-js.FrameContexts) for the list of
+      possible values.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -48,7 +49,7 @@ functions:
       return:
         description: the Frame Context.
         type: <xref uid="@microsoft/teams-js.FrameContexts" />
-  - name: 'initialize(string[])'
+  - name: initialize(string[])
     uid: '@microsoft/teams-js.app.initialize'
     package: '@microsoft/teams-js'
     summary: Initializes the library.
@@ -60,7 +61,7 @@ functions:
       content: 'function initialize(validMessageOrigins?: string[]): Promise<void>'
       parameters:
         - id: validMessageOrigins
-          type: 'string[]'
+          type: string[]
           description: >-
             Optionally specify a list of cross frame message origins. They must
             have
@@ -106,7 +107,7 @@ functions:
       parameters:
         - id: expectedFailureRequest
           type: <xref uid="@microsoft/teams-js.app.IExpectedFailureRequest" />
-          description: >
+          description: >-
             The expected failure request containing the reason and an optional
             message
   - name: notifyFailure(IFailedRequest)
@@ -122,7 +123,7 @@ functions:
       parameters:
         - id: appInitializationFailedRequest
           type: <xref uid="@microsoft/teams-js.app.IFailedRequest" />
-          description: |
+          description: |-
             The failure request containing the reason for why the app failed
             during initialization as well as an optional message.
   - name: notifySuccess()
@@ -163,5 +164,4 @@ functions:
       parameters:
         - id: handler
           type: '(theme: string) =&gt; void'
-          description: |
-            The handler to invoke when the user changes their theme.
+          description: The handler to invoke when the user changes their theme.

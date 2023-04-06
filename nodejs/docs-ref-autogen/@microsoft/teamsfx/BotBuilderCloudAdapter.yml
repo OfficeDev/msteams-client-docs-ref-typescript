@@ -1,6 +1,81 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teamsfx.BotBuilderCloudAdapter'
 name: BotBuilderCloudAdapter
-type: module
-package: '@microsoft/teamsfx'
 summary: ''
+type: module
+classes:
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.Channel'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.Member'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation'
+interfaces:
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions'
+enums:
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope'
+package: '@microsoft/teamsfx'
+functions:
+  - name: >-
+      sendAdaptiveCard(NotificationTarget, unknown, (context: TurnContext,
+      error: Error) => Promise<void>)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.sendAdaptiveCard'
+    package: '@microsoft/teamsfx'
+    summary: Send an adaptive card message to a notification target.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendAdaptiveCard(target: NotificationTarget, card: unknown,
+        onError?: (context: TurnContext, error: Error) => Promise<void>):
+        Promise<MessageResponse>
+      parameters:
+        - id: target
+          type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
+          description: The notification target.
+        - id: card
+          type: unknown
+          description: The adaptive card raw JSON.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >-
+            An optional error handler that can catch exceptions during adaptive
+            card sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
+      return:
+        description: The response of sending adaptive card message.
+        type: Promise&lt;MessageResponse&gt;
+  - name: >-
+      sendMessage(NotificationTarget, string, (context: TurnContext, error:
+      Error) => Promise<void>)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.sendMessage'
+    package: '@microsoft/teamsfx'
+    summary: Send a plain text message to a notification target.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendMessage(target: NotificationTarget, text: string, onError?:
+        (context: TurnContext, error: Error) => Promise<void>):
+        Promise<MessageResponse>
+      parameters:
+        - id: target
+          type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
+          description: The notification target.
+        - id: text
+          type: string
+          description: The plain text message.
+        - id: onError
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: >-
+            An optional error handler that can catch exceptions during message
+            sending.
+
+            If not defined, error will be handled by `BotAdapter.onTurnError`.
+      return:
+        description: The response of sending message.
+        type: Promise&lt;MessageResponse&gt;

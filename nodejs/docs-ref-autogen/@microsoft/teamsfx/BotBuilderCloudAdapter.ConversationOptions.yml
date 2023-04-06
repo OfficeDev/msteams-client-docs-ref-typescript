@@ -1,15 +1,17 @@
 ### YamlMime:TSType
-name: ConversationOptions_2
-uid: '@microsoft/teamsfx.ConversationOptions_2'
+name: ConversationOptions
+uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions'
 package: '@microsoft/teamsfx'
-summary: 'Options to initialize <xref:@microsoft/teamsfx.ConversationBot>'
-fullName: ConversationOptions_2
+summary: >-
+  Options to initialize
+  [ConversationBot](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot)
+fullName: ConversationOptions
 remarks: ''
 isDeprecated: false
 type: interface
 properties:
   - name: adapter
-    uid: '@microsoft/teamsfx.ConversationOptions_2.adapter'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions.adapter'
     package: '@microsoft/teamsfx'
     summary: >-
       The bot adapter. If not provided, a default adapter will be created:
@@ -29,7 +31,8 @@ properties:
         description: ''
         type: CloudAdapter
   - name: adapterConfig
-    uid: '@microsoft/teamsfx.ConversationOptions_2.adapterConfig'
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions.adapterConfig
     package: '@microsoft/teamsfx'
     summary: >-
       If `adapter` is not provided, this `adapterConfig` will be passed to the
@@ -40,12 +43,12 @@ properties:
       BOT_PASSWORD from environment variables.
     isDeprecated: false
     syntax:
-      content: 'adapterConfig?: [key: string]: unknown'
+      content: 'adapterConfig?: {[key: string]: unknown}'
       return:
         description: ''
-        type: '[key: string]\: unknown'
+        type: '{[key: string]: unknown}'
   - name: cardAction
-    uid: '@microsoft/teamsfx.ConversationOptions_2.cardAction'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions.cardAction'
     package: '@microsoft/teamsfx'
     summary: The adaptive card action handler part.
     fullName: cardAction
@@ -59,7 +62,7 @@ properties:
           <xref uid="@microsoft/teamsfx.CardActionOptions" /> & { enabled?:
           boolean }
   - name: command
-    uid: '@microsoft/teamsfx.ConversationOptions_2.command'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions.command'
     package: '@microsoft/teamsfx'
     summary: The command part.
     fullName: command
@@ -73,7 +76,7 @@ properties:
           <xref uid="@microsoft/teamsfx.CommandOptions" /> & { enabled?: boolean
           }
   - name: notification
-    uid: '@microsoft/teamsfx.ConversationOptions_2.notification'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions.notification'
     package: '@microsoft/teamsfx'
     summary: The notification part.
     fullName: notification
@@ -84,10 +87,11 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@microsoft/teamsfx.NotificationOptions_3" /> & { enabled?:
-          boolean }
+          <xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions" />
+          & { enabled?: boolean }
   - name: ssoConfig
-    uid: '@microsoft/teamsfx.ConversationOptions_2.ssoConfig'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions.ssoConfig'
     package: '@microsoft/teamsfx'
     summary: Configurations for sso command bot
     fullName: ssoConfig

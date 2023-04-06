@@ -29,9 +29,9 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'actionObjects: BaseActionObject<ActionObjectType>[]'
+      content: 'actionObjects: BaseActionObject<M365Content>[]'
       return:
         description: ''
         type: >-
           <xref uid="@microsoft/teams-js.BaseActionObject" />&lt;<xref
-          uid="@microsoft/teams-js.ActionObjectType" />&gt;[]
+          uid="@microsoft/teams-js.ActionObjectType.M365Content" />&gt;[]

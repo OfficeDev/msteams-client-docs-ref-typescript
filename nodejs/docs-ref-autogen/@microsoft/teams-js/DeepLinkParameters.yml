@@ -7,7 +7,8 @@ fullName: DeepLinkParameters
 remarks: ''
 isDeprecated: true
 customDeprecatedMessage: >-
-  As of 2.0.0, please use <xref:@microsoft/teams-js.ShareDeepLinkParameters>
+  As of 2.0.0, please use
+  [ShareDeepLinkParameters](xref:@microsoft/teams-js.ShareDeepLinkParameters)
   instead.
 type: interface
 properties:

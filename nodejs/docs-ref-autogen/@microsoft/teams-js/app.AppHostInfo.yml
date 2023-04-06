@@ -11,9 +11,7 @@ properties:
   - name: clientType
     uid: '@microsoft/teams-js.app.AppHostInfo.clientType'
     package: '@microsoft/teams-js'
-    summary: >-
-      The type of the host client. Possible values are : android, ios, web,
-      desktop, rigel
+    summary: The client type on which the host is running
     fullName: clientType
     remarks: ''
     isDeprecated: false
@@ -25,9 +23,7 @@ properties:
   - name: name
     uid: '@microsoft/teams-js.app.AppHostInfo.name'
     package: '@microsoft/teams-js'
-    summary: >-
-      The name of the host client. Possible values are: Office, Orange, Outlook,
-      Teams
+    summary: Identifies which host is running your app
     fullName: name
     remarks: ''
     isDeprecated: false

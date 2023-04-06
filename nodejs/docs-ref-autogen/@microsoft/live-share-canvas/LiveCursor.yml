@@ -11,20 +11,20 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'LiveCursor(string, IUserInfo | undefined)'
+  - name: LiveCursor(string, IUserInfo)
     uid: '@microsoft/live-share-canvas.LiveCursor.constructor'
     package: '@microsoft/live-share-canvas'
     summary: Initializes a new instance of `LiveCursor`.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new LiveCursor(clientId: string, userInfo?: IUserInfo | undefined)'
+      content: 'new LiveCursor(clientId: string, userInfo?: IUserInfo)'
       parameters:
         - id: clientId
           type: string
           description: ''
         - id: userInfo
-          type: <xref uid="@microsoft/live-share-canvas.IUserInfo" /> | undefined
+          type: <xref uid="@microsoft/live-share-canvas.IUserInfo" />
           description: ''
 properties:
   - name: clientId
@@ -74,10 +74,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'userInfo?: IUserInfo | undefined'
+      content: 'userInfo?: IUserInfo'
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.IUserInfo" /> | undefined
+        type: <xref uid="@microsoft/live-share-canvas.IUserInfo" />
 methods:
   - name: setPosition(IPoint)
     uid: '@microsoft/live-share-canvas.LiveCursor.setPosition'
@@ -90,5 +90,4 @@ methods:
       parameters:
         - id: position
           type: <xref uid="@microsoft/live-share-canvas.IPoint" />
-          description: |
-            The new position of the cursor.
+          description: The new position of the cursor.

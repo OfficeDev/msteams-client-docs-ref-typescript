@@ -5,7 +5,7 @@ type: module
 package: '@microsoft/teams-js'
 summary: ''
 functions:
-  - name: 'getSettings((instanceSettings: Settings) => void)'
+  - name: 'getSettings((instanceSettings: InstanceConfig) => void)'
     uid: '@microsoft/teams-js.settings.getSettings'
     package: '@microsoft/teams-js'
     summary: ''
@@ -19,13 +19,16 @@ functions:
 
       Gets the settings for the current instance.
     syntax:
-      content: 'function getSettings(callback: (instanceSettings: Settings) => void)'
+      content: >-
+        function getSettings(callback: (instanceSettings: InstanceConfig) =>
+        void)
       parameters:
         - id: callback
-          type: '(instanceSettings: Settings) =&gt; void'
-          description: >
+          type: '(instanceSettings: InstanceConfig) =&gt; void'
+          description: >-
             The callback to invoke when the
-            <xref:@microsoft/teams-js.settings.getSettings> object is retrieved.
+            [Settings](xref:@microsoft/teams-js.pages.InstanceConfig) object is
+            retrieved.
   - name: 'registerOnRemoveHandler((evt: RemoveEvent) => void)'
     uid: '@microsoft/teams-js.settings.registerOnRemoveHandler'
     package: '@microsoft/teams-js'
@@ -54,8 +57,7 @@ functions:
       parameters:
         - id: handler
           type: '(evt: RemoveEvent) =&gt; void'
-          description: |
-            The handler to invoke when the user selects the remove button.
+          description: The handler to invoke when the user selects the remove button.
   - name: 'registerOnSaveHandler((evt: SaveEvent) => void)'
     uid: '@microsoft/teams-js.settings.registerOnSaveHandler'
     package: '@microsoft/teams-js'
@@ -84,9 +86,8 @@ functions:
       parameters:
         - id: handler
           type: '(evt: SaveEvent) =&gt; void'
-          description: |
-            The handler to invoke when the user selects the save button.
-  - name: 'setSettings(Settings, (status: boolean, reason?: string) => void)'
+          description: The handler to invoke when the user selects the save button.
+  - name: 'setSettings(InstanceConfig, (status: boolean, reason?: string) => void)'
     uid: '@microsoft/teams-js.settings.setSettings'
     package: '@microsoft/teams-js'
     summary: ''
@@ -103,11 +104,11 @@ functions:
       to reflect the changed state.
     syntax:
       content: >-
-        function setSettings(instanceSettings: Settings, onComplete?: (status:
-        boolean, reason?: string) => void)
+        function setSettings(instanceSettings: InstanceConfig, onComplete?:
+        (status: boolean, reason?: string) => void)
       parameters:
         - id: instanceSettings
-          type: Settings
+          type: <xref uid="@microsoft/teams-js.pages.InstanceConfig" />
           description: ''
         - id: onComplete
           type: '(status: boolean, reason?: string) =&gt; void'
@@ -133,5 +134,4 @@ functions:
       parameters:
         - id: validityState
           type: boolean
-          description: |
-            Indicates whether the save or remove button is enabled for the user.
+          description: Indicates whether the save or remove button is enabled for the user.

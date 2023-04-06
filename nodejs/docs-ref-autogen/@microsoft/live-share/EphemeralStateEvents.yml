@@ -2,7 +2,7 @@
 name: EphemeralStateEvents
 uid: '@microsoft/live-share.EphemeralStateEvents'
 package: '@microsoft/live-share'
-summary: 'Events supported by [EphemeralState` object.'
+summary: Events supported by [EphemeralState` object.
 fullName: EphemeralStateEvents
 remarks: ''
 isDeprecated: false

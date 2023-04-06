@@ -17,8 +17,10 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        AddAuthenticationInfo: (config: AxiosRequestConfig) =>
-        Promise<AxiosRequestConfig>
+        AddAuthenticationInfo: (config: AxiosRequestConfig<any>) =>
+        Promise<AxiosRequestConfig<any>>
       return:
         description: ''
-        type: '(config: AxiosRequestConfig) =&gt; Promise&lt;AxiosRequestConfig&gt;'
+        type: >-
+          (config: AxiosRequestConfig&lt;any&gt;) =&gt;
+          Promise&lt;AxiosRequestConfig&lt;any&gt;&gt;

@@ -1,0 +1,67 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.video.mediaStream'
+name: mediaStream
+summary: >-
+  Namespace to get video frames from a media stream.
+
+  When the host supports this capability, developer should call
+  [registerForVideoFrame](xref:@microsoft/teams-js.video.mediaStream.registerForVideoFrame)
+  to get the video frames.
+type: module
+typeAliases:
+  - '@microsoft/teams-js.video.mediaStream.MediaStreamFrameData'
+  - '@microsoft/teams-js.video.mediaStream.VideoFrameCallback'
+package: '@microsoft/teams-js'
+previewState: beta
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.video.mediaStream.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if video.mediaStream capability is supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: >-
+          boolean to represent whether the video.medisStream capability is
+          supported
+        type: boolean
+  - name: registerForVideoFrame(VideoFrameCallback)
+    uid: '@microsoft/teams-js.video.mediaStream.registerForVideoFrame'
+    package: '@microsoft/teams-js'
+    summary: >+
+      Register to read the video frames from the media stream provided by the
+      host.
+
+
+      **Example**
+
+
+      ```typescript
+
+      video.mediaStream.registerForVideoFrame(async (receivedVideoFrame) => {
+       const { videoFrame } = receivedVideoFrame;
+       try {
+         return await processVideoFrame(videoFrame);
+       } catch (error) {
+        throw error;
+       }
+      });
+
+      ```
+
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function registerForVideoFrame(frameCallback: VideoFrameCallback)'
+      parameters:
+        - id: frameCallback
+          type: >-
+            <xref uid="@microsoft/teams-js.video.mediaStream.VideoFrameCallback"
+            />
+          description: >-
+            The callback to invoke when recieve a video frame from the media
+            stream.

@@ -3,7 +3,62 @@ uid: '@microsoft/teamsfx'
 name: '@microsoft/teamsfx'
 summary: ''
 type: package
+classes:
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.Channel'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.Member'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation'
+  - '@microsoft/teamsfx.ApiKeyProvider'
+  - '@microsoft/teamsfx.AppCredential'
+  - '@microsoft/teamsfx.BasicAuthProvider'
+  - '@microsoft/teamsfx.BearerTokenAuthProvider'
+  - '@microsoft/teamsfx.BotSsoExecutionDialog'
+  - '@microsoft/teamsfx.CardActionBot'
+  - '@microsoft/teamsfx.CertificateAuthProvider'
+  - '@microsoft/teamsfx.Channel'
+  - '@microsoft/teamsfx.CommandBot'
+  - '@microsoft/teamsfx.ConversationBot'
+  - '@microsoft/teamsfx.ErrorWithCode'
+  - '@microsoft/teamsfx.InvokeResponseFactory'
+  - '@microsoft/teamsfx.Member'
+  - '@microsoft/teamsfx.MessageBuilder'
+  - '@microsoft/teamsfx.MsGraphAuthProvider'
+  - '@microsoft/teamsfx.NotificationBot'
+  - '@microsoft/teamsfx.OnBehalfOfUserCredential'
+  - '@microsoft/teamsfx.TeamsBotInstallation'
+  - '@microsoft/teamsfx.TeamsBotSsoPrompt'
+  - '@microsoft/teamsfx.TeamsFx'
+  - '@microsoft/teamsfx.TeamsUserCredential'
+interfaces:
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions'
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions'
+  - '@microsoft/teamsfx.AuthProvider'
+  - '@microsoft/teamsfx.AuthenticationConfiguration'
+  - '@microsoft/teamsfx.AxiosInstance'
+  - '@microsoft/teamsfx.BotSsoConfig'
+  - '@microsoft/teamsfx.BotSsoExecutionActivityHandler'
+  - '@microsoft/teamsfx.CardActionOptions'
+  - '@microsoft/teamsfx.CommandMessage'
+  - '@microsoft/teamsfx.CommandOptions'
+  - '@microsoft/teamsfx.ConversationOptions'
+  - '@microsoft/teamsfx.GetTeamsUserTokenOptions'
+  - '@microsoft/teamsfx.Logger'
+  - '@microsoft/teamsfx.MessageExtensionTokenResponse'
+  - '@microsoft/teamsfx.NotificationOptions'
+  - '@microsoft/teamsfx.NotificationTarget'
+  - '@microsoft/teamsfx.NotificationTargetStorage'
+  - '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
+  - '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
+  - '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler'
+  - '@microsoft/teamsfx.TeamsFxBotCommandHandler'
+  - '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler'
+  - '@microsoft/teamsfx.UserInfo'
 enums:
+  - '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope'
   - '@microsoft/teamsfx.AdaptiveCardResponse'
   - '@microsoft/teamsfx.ApiKeyLocation'
   - '@microsoft/teamsfx.ErrorCode'
@@ -12,61 +67,6 @@ enums:
   - '@microsoft/teamsfx.LogLevel'
   - '@microsoft/teamsfx.NotificationTargetType'
   - '@microsoft/teamsfx.SearchScope'
-  - '@microsoft/teamsfx.SearchScope_2'
-classes:
-  - '@microsoft/teamsfx.ApiKeyProvider'
-  - '@microsoft/teamsfx.AppCredential'
-  - '@microsoft/teamsfx.BasicAuthProvider'
-  - '@microsoft/teamsfx.BearerTokenAuthProvider'
-  - '@microsoft/teamsfx.BotSsoExecutionDialog'
-  - '@microsoft/teamsfx.CardActionBot'
-  - '@microsoft/teamsfx.CardActionBot_2'
-  - '@microsoft/teamsfx.CertificateAuthProvider'
-  - '@microsoft/teamsfx.Channel'
-  - '@microsoft/teamsfx.Channel_2'
-  - '@microsoft/teamsfx.CommandBot'
-  - '@microsoft/teamsfx.CommandBot_2'
-  - '@microsoft/teamsfx.ConversationBot'
-  - '@microsoft/teamsfx.ConversationBot_2'
-  - '@microsoft/teamsfx.ErrorWithCode'
-  - '@microsoft/teamsfx.InvokeResponseFactory'
-  - '@microsoft/teamsfx.Member'
-  - '@microsoft/teamsfx.Member_2'
-  - '@microsoft/teamsfx.MessageBuilder'
-  - '@microsoft/teamsfx.MsGraphAuthProvider'
-  - '@microsoft/teamsfx.NotificationBot'
-  - '@microsoft/teamsfx.NotificationBot_2'
-  - '@microsoft/teamsfx.OnBehalfOfUserCredential'
-  - '@microsoft/teamsfx.TeamsBotInstallation'
-  - '@microsoft/teamsfx.TeamsBotInstallation_2'
-  - '@microsoft/teamsfx.TeamsBotSsoPrompt'
-  - '@microsoft/teamsfx.TeamsFx'
-  - '@microsoft/teamsfx.TeamsUserCredential'
-interfaces:
-  - '@microsoft/teamsfx.AuthProvider'
-  - '@microsoft/teamsfx.AuthenticationConfiguration'
-  - '@microsoft/teamsfx.BotSsoConfig'
-  - '@microsoft/teamsfx.BotSsoExecutionActivityHandler'
-  - '@microsoft/teamsfx.CardActionOptions'
-  - '@microsoft/teamsfx.CommandMessage'
-  - '@microsoft/teamsfx.CommandOptions'
-  - '@microsoft/teamsfx.ConversationOptions'
-  - '@microsoft/teamsfx.ConversationOptions_2'
-  - '@microsoft/teamsfx.GetTeamsUserTokenOptions'
-  - '@microsoft/teamsfx.Logger'
-  - '@microsoft/teamsfx.MessageExtensionTokenResponse'
-  - '@microsoft/teamsfx.MessageResponse'
-  - '@microsoft/teamsfx.NotificationOptions_2'
-  - '@microsoft/teamsfx.NotificationOptions_3'
-  - '@microsoft/teamsfx.NotificationTarget'
-  - '@microsoft/teamsfx.NotificationTargetStorage'
-  - '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
-  - '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
-  - '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler'
-  - '@microsoft/teamsfx.TeamsFxBotCommandHandler'
-  - '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler'
-  - '@microsoft/teamsfx.TeamsFxConfiguration'
-  - '@microsoft/teamsfx.UserInfo'
 typeAliases:
   - '@microsoft/teamsfx.AppCredentialAuthConfig'
   - '@microsoft/teamsfx.BotSsoExecutionDialogHandler'
@@ -75,7 +75,7 @@ typeAliases:
   - '@microsoft/teamsfx.TeamsUserCredentialAuthConfig'
   - '@microsoft/teamsfx.TriggerPatterns'
 functions:
-  - name: 'createApiClient(string, AuthProvider)'
+  - name: createApiClient(string, AuthProvider)
     uid: '@microsoft/teamsfx.createApiClient'
     package: '@microsoft/teamsfx'
     summary: >+
@@ -107,8 +107,8 @@ functions:
           description: Auth provider that injects authentication info to each request
       return:
         description: axios instance configured with specfic auth provider
-        type: AxiosInstance
-  - name: 'createMicrosoftGraphClient(TeamsFxConfiguration, string | string[])'
+        type: <xref uid="@microsoft/teamsfx.AxiosInstance" />
+  - name: createMicrosoftGraphClient(TeamsFxConfiguration, string | string[])
     uid: '@microsoft/teamsfx.createMicrosoftGraphClient'
     package: '@microsoft/teamsfx'
     summary: |+
@@ -162,11 +162,11 @@ functions:
         scopes?: string | string[]): Client
       parameters:
         - id: teamsfx
-          type: <xref uid="@microsoft/teamsfx.TeamsFxConfiguration" />
+          type: TeamsFxConfiguration
           description: Used to provide configuration and auth.
         - id: scopes
-          type: 'string | string[]'
-          description: >
+          type: string | string[]
+          description: >-
             The array of Microsoft Token scope of access. Default value is
             `[.default]`.
       return:
@@ -260,8 +260,8 @@ functions:
           type: TokenCredential
           description: Used to provide configuration and auth.
         - id: scopes
-          type: 'string | string[]'
-          description: >
+          type: string | string[]
+          description: >-
             The array of Microsoft Token scope of access. Default value is
             `[.default]`.
       return:
@@ -289,7 +289,7 @@ functions:
           description: The private key for the cert chain
         - id: options
           type: '{ ca?: string | Buffer, passphrase?: string }'
-          description: ''
+          description: Optional settings when create the cert options.
       return:
         description: Instance of SecureContextOptions
         type: SecureContextOptions
@@ -309,7 +309,7 @@ functions:
           description: The content of .pfx file
         - id: options
           type: '{ passphrase?: string }'
-          description: ''
+          description: Optional settings when create the cert options.
       return:
         description: Instance of SecureContextOptions
         type: SecureContextOptions
@@ -324,7 +324,7 @@ functions:
       return:
         description: Log level
         type: <xref uid="@microsoft/teamsfx.LogLevel" /> | undefined
-  - name: 'getTediousConnectionConfig(TeamsFx, string)'
+  - name: getTediousConnectionConfig(TeamsFx, string)
     uid: '@microsoft/teamsfx.getTediousConnectionConfig'
     package: '@microsoft/teamsfx'
     summary: Generate connection configuration consumed by tedious.
@@ -343,7 +343,7 @@ functions:
           description: Used to provide configuration and auth
         - id: databaseName
           type: string
-          description: >
+          description: >-
             specify database name to override default one if there are multiple
             databases.
       return:
@@ -375,11 +375,11 @@ functions:
           type: string
           description: Login page for Teams to redirect to.
         - id: scopes
-          type: 'string | string[]'
+          type: string | string[]
           description: The list of scopes for which the token will have access.
         - id: logic
           type: '(token: MessageExtensionTokenResponse) =&gt; Promise&lt;any&gt;'
-          description: >
+          description: >-
             Business logic when executing the query in message extension with
             SSO or access token.
       return:
@@ -388,8 +388,8 @@ functions:
           any, return void instead.
         type: Promise&lt;void | MessagingExtensionResponse&gt;
   - name: >-
-      handleMessageExtensionQueryWithToken(TurnContext,
-      AuthenticationConfiguration | null, string | string[], (token:
+      handleMessageExtensionQueryWithToken(TurnContext, null |
+      AuthenticationConfiguration, string | string[], (token:
       MessageExtensionTokenResponse) => Promise<any>)
     uid: '@microsoft/teamsfx.handleMessageExtensionQueryWithToken'
     package: '@microsoft/teamsfx'
@@ -399,7 +399,7 @@ functions:
     syntax:
       content: >-
         function handleMessageExtensionQueryWithToken(context: TurnContext,
-        config: AuthenticationConfiguration | null, scopes: string | string[],
+        config: null | AuthenticationConfiguration, scopes: string | string[],
         logic: (token: MessageExtensionTokenResponse) => Promise<any>):
         Promise<MessagingExtensionResponse | void>
       parameters:
@@ -407,14 +407,14 @@ functions:
           type: TurnContext
           description: The context object for the current turn.
         - id: config
-          type: <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" /> | null
+          type: null | <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" />
           description: User custom the message extension authentication configuration.
         - id: scopes
-          type: 'string | string[]'
+          type: string | string[]
           description: The list of scopes for which the token will have access.
         - id: logic
           type: '(token: MessageExtensionTokenResponse) =&gt; Promise&lt;any&gt;'
-          description: >
+          description: >-
             Business logic when executing the query in message extension with
             SSO or access token.
       return:
@@ -451,37 +451,7 @@ functions:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending adaptive card message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
-  - name: >-
-      sendAdaptiveCard_2(NotificationTarget, unknown, (context: TurnContext,
-      error: Error) => Promise<void>)
-    uid: '@microsoft/teamsfx.sendAdaptiveCard_2'
-    package: '@microsoft/teamsfx'
-    summary: Send an adaptive card message to a notification target.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function sendAdaptiveCard_2(target: NotificationTarget, card: unknown,
-        onError?: (context: TurnContext, error: Error) => Promise<void>):
-        Promise<MessageResponse>
-      parameters:
-        - id: target
-          type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
-          description: The notification target.
-        - id: card
-          type: unknown
-          description: The adaptive card raw JSON.
-        - id: onError
-          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
-          description: >
-            An optional error handler that can catch exceptions during adaptive
-            card sending.
-
-            If not defined, error will be handled by `BotAdapter.onTurnError`.
-      return:
-        description: The response of sending adaptive card message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;
   - name: >-
       sendMessage(NotificationTarget, string, (context: TurnContext, error:
       Error) => Promise<void>)
@@ -511,37 +481,7 @@ functions:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
-  - name: >-
-      sendMessage_2(NotificationTarget, string, (context: TurnContext, error:
-      Error) => Promise<void>)
-    uid: '@microsoft/teamsfx.sendMessage_2'
-    package: '@microsoft/teamsfx'
-    summary: Send a plain text message to a notification target.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function sendMessage_2(target: NotificationTarget, text: string,
-        onError?: (context: TurnContext, error: Error) => Promise<void>):
-        Promise<MessageResponse>
-      parameters:
-        - id: target
-          type: <xref uid="@microsoft/teamsfx.NotificationTarget" />
-          description: The notification target.
-        - id: text
-          type: string
-          description: The plain text message.
-        - id: onError
-          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
-          description: >
-            An optional error handler that can catch exceptions during message
-            sending.
-
-            If not defined, error will be handled by `BotAdapter.onTurnError`.
-      return:
-        description: The response of sending message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;
   - name: setLogFunction(LogFunction)
     uid: '@microsoft/teamsfx.setLogFunction'
     package: '@microsoft/teamsfx'
@@ -570,7 +510,7 @@ functions:
       parameters:
         - id: logFunction
           type: <xref uid="@microsoft/teamsfx.LogFunction" />
-          description: >
+          description: >-
             custom log function. If it's undefined, custom log function will be
             cleared.
   - name: setLogLevel(LogLevel)
@@ -584,8 +524,7 @@ functions:
       parameters:
         - id: level
           type: <xref uid="@microsoft/teamsfx.LogLevel" />
-          description: |
-            log level in configuration
+          description: log level in configuration
   - name: setLogger(Logger)
     uid: '@microsoft/teamsfx.setLogger'
     package: '@microsoft/teamsfx'
@@ -615,5 +554,4 @@ functions:
       parameters:
         - id: logger
           type: <xref uid="@microsoft/teamsfx.Logger" />
-          description: |
-            custom logger. If it's undefined, custom logger will be cleared.
+          description: custom logger. If it's undefined, custom logger will be cleared.

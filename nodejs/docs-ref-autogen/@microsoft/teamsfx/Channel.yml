@@ -2,19 +2,24 @@
 name: Channel
 uid: '@microsoft/teamsfx.Channel'
 package: '@microsoft/teamsfx'
-summary: 'A <xref:@microsoft/teamsfx.NotificationTarget> that represents a team channel.'
+summary: >-
+  A [NotificationTarget](xref:@microsoft/teamsfx.NotificationTarget) that
+  represents a team channel.
 fullName: Channel
-remarks: 'It''s recommended to get channels from <xref:TeamsBotInstallation.channels()>.'
+remarks: >-
+  It's recommended to get channels from
+  [()](xref:@microsoft/teamsfx.TeamsBotInstallation.channels).
 isDeprecated: false
 type: class
 constructors:
-  - name: 'Channel(TeamsBotInstallation, ChannelInfo)'
+  - name: Channel(TeamsBotInstallation, ChannelInfo)
     uid: '@microsoft/teamsfx.Channel.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor.
     remarks: >-
       It's recommended to get channels from
-      <xref:TeamsBotInstallation.channels()>, instead of using this constructor.
+      [()](xref:@microsoft/teamsfx.TeamsBotInstallation.channels), instead of
+      using this constructor.
     isDeprecated: false
     syntax:
       content: 'new Channel(parent: TeamsBotInstallation, info: ChannelInfo)'
@@ -22,12 +27,12 @@ constructors:
         - id: parent
           type: <xref uid="@microsoft/teamsfx.TeamsBotInstallation" />
           description: >-
-            The parent <xref:@microsoft/teamsfx.TeamsBotInstallation> where this
-            channel is created from.
+            The parent
+            [TeamsBotInstallation](xref:@microsoft/teamsfx.TeamsBotInstallation)
+            where this channel is created from.
         - id: info
           type: ChannelInfo
-          description: |
-            Detailed channel information.
+          description: Detailed channel information.
 properties:
   - name: info
     uid: '@microsoft/teamsfx.Channel.info'
@@ -45,8 +50,9 @@ properties:
     uid: '@microsoft/teamsfx.Channel.parent'
     package: '@microsoft/teamsfx'
     summary: >-
-      The parent <xref:@microsoft/teamsfx.TeamsBotInstallation> where this
-      channel is created from.
+      The parent
+      [TeamsBotInstallation](xref:@microsoft/teamsfx.TeamsBotInstallation) where
+      this channel is created from.
     fullName: parent
     remarks: ''
     isDeprecated: false
@@ -93,7 +99,7 @@ methods:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending adaptive card message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;
   - name: 'sendMessage(string, (context: TurnContext, error: Error) => Promise<void>)'
     uid: '@microsoft/teamsfx.Channel.sendMessage'
     package: '@microsoft/teamsfx'
@@ -117,4 +123,4 @@ methods:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;
