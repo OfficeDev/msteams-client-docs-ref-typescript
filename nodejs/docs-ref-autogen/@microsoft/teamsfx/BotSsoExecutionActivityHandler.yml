@@ -6,7 +6,8 @@ summary: Interface for user to customize SSO execution activity handler
 fullName: BotSsoExecutionActivityHandler
 remarks: >-
   Bot SSO execution activity handler is to handle SSO login process and trigger
-  SSO command using <xref:@microsoft/teamsfx.BotSsoExecutionDialog>.
+  SSO command using
+  [BotSsoExecutionDialog](xref:@microsoft/teamsfx.BotSsoExecutionDialog).
 
   You can use this interface to implement your own SSO execution dialog, and
   pass it to ConversationBot options:
@@ -34,15 +35,18 @@ remarks: >-
 isDeprecated: false
 type: interface
 methods:
-  - name: 'addCommand(BotSsoExecutionDialogHandler, TriggerPatterns)'
+  - name: addCommand(BotSsoExecutionDialogHandler, TriggerPatterns)
     uid: '@microsoft/teamsfx.BotSsoExecutionActivityHandler.addCommand'
     package: '@microsoft/teamsfx'
     summary: >-
-      Add <xref:@microsoft/teamsfx.TeamsFxBotSsoCommandHandler> instance to
-      <xref:@microsoft/teamsfx.BotSsoExecutionDialog>
+      Add
+      [TeamsFxBotSsoCommandHandler](xref:@microsoft/teamsfx.TeamsFxBotSsoCommandHandler)
+      instance to
+      [BotSsoExecutionDialog](xref:@microsoft/teamsfx.BotSsoExecutionDialog)
     remarks: >-
       This function is used to add SSO command to
-      <xref:@microsoft/teamsfx.BotSsoExecutionDialog> instance.
+      [BotSsoExecutionDialog](xref:@microsoft/teamsfx.BotSsoExecutionDialog)
+      instance.
     isDeprecated: false
     syntax:
       content: >-
@@ -51,12 +55,13 @@ methods:
       parameters:
         - id: handler
           type: <xref uid="@microsoft/teamsfx.BotSsoExecutionDialogHandler" />
-          description: callback function
+          description: >-
+            [BotSsoExecutionDialogHandler](xref:@microsoft/teamsfx.BotSsoExecutionDialogHandler)
+            callback function
         - id: triggerPatterns
           type: <xref uid="@microsoft/teamsfx.TriggerPatterns" />
-          description: |
-            The trigger pattern
-  - name: 'handleTeamsSigninTokenExchange(TurnContext, SigninStateVerificationQuery)'
+          description: The trigger pattern
+  - name: handleTeamsSigninTokenExchange(TurnContext, SigninStateVerificationQuery)
     uid: >-
       @microsoft/teamsfx.BotSsoExecutionActivityHandler.handleTeamsSigninTokenExchange
     package: '@microsoft/teamsfx'
@@ -79,14 +84,15 @@ methods:
       return:
         description: A promise that represents the work queued.
         type: Promise&lt;void&gt;
-  - name: 'handleTeamsSigninVerifyState(TurnContext, SigninStateVerificationQuery)'
+  - name: handleTeamsSigninVerifyState(TurnContext, SigninStateVerificationQuery)
     uid: >-
       @microsoft/teamsfx.BotSsoExecutionActivityHandler.handleTeamsSigninVerifyState
     package: '@microsoft/teamsfx'
     summary: Receives invoke activities with Activity name of 'signin/verifyState'.
     remarks: >-
-      It should trigger <xref:@microsoft/teamsfx.BotSsoExecutionDialog> instance
-      to handle signin process
+      It should trigger
+      [BotSsoExecutionDialog](xref:@microsoft/teamsfx.BotSsoExecutionDialog)
+      instance to handle signin process
     isDeprecated: false
     syntax:
       content: >-
@@ -115,8 +121,7 @@ methods:
       parameters:
         - id: context
           type: TurnContext
-          description: |
-            The context object for the current turn.
+          description: The context object for the current turn.
       return:
         description: ''
         type: Promise&lt;void&gt;

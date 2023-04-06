@@ -26,11 +26,9 @@ inheritedMethods:
   - name: 'stop((err?: SdkError) => void)'
     uid: '@microsoft/teams-js.media.VideoController.stop'
     package: '@microsoft/teams-js'
-    summary: >-
+    summary: |-
       Function to programatically stop the ongoing media event
-
-      Optional; @param callback is used to send app if host client has
-      successfully stopped the event or not
+      Optional;
     remarks: ''
     isDeprecated: false
     syntax:
@@ -38,7 +36,9 @@ inheritedMethods:
       parameters:
         - id: callback
           type: '(err?: SdkError) =&gt; void'
-          description: ''
+          description: >-
+            is used to send app if host client has successfully stopped the
+            event or not
     inheritanceDescription: <b>Inherited From</b> MediaController.stop
 methods:
   - name: notifyEventToApp(MediaControllerEvent)

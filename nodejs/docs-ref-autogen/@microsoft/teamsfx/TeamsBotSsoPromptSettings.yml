@@ -43,7 +43,7 @@ properties:
       content: 'scopes: string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: timeout
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptSettings.timeout'
     package: '@microsoft/teamsfx'

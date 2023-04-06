@@ -16,12 +16,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'metadata: ExtendedMediaMetadata | null'
+      content: 'metadata: null | ExtendedMediaMetadata'
       return:
         description: ''
         type: >-
-          <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata" /> |
-          null
+          null | <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata"
+          />
   - name: playbackState
     uid: '@microsoft/live-share-media.IMediaPlayerState.playbackState'
     package: '@microsoft/live-share-media'
@@ -58,7 +58,7 @@ properties:
       360 videos together.
     isDeprecated: false
     syntax:
-      content: 'trackData: object | null'
+      content: 'trackData: null | object'
       return:
         description: ''
-        type: object | null
+        type: null | object

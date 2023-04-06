@@ -28,12 +28,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'blocked?: ExtendedMediaSessionAction | null'
+      content: 'blocked?: null | ExtendedMediaSessionAction'
       return:
         description: ''
         type: >-
-          <xref uid="@microsoft/live-share-media.ExtendedMediaSessionAction" />
-          | null
+          null | <xref
+          uid="@microsoft/live-share-media.ExtendedMediaSessionAction" />
   - name: data
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.data'
     package: '@microsoft/live-share-media'
@@ -42,10 +42,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'data?: object | null'
+      content: 'data?: null | object'
       return:
         description: ''
-        type: object | null
+        type: null | object
   - name: fastSeek
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.fastSeek'
     package: '@microsoft/live-share-media'
@@ -54,10 +54,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'fastSeek?: boolean | null'
+      content: 'fastSeek?: null | boolean'
       return:
         description: ''
-        type: boolean | null
+        type: null | boolean
   - name: metadata
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.metadata'
     package: '@microsoft/live-share-media'
@@ -66,12 +66,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'metadata?: ExtendedMediaMetadata | null'
+      content: 'metadata?: null | ExtendedMediaMetadata'
       return:
         description: ''
         type: >-
-          <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata" /> |
-          null
+          null | <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata"
+          />
   - name: seekOffset
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.seekOffset'
     package: '@microsoft/live-share-media'
@@ -80,10 +80,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'seekOffset?: number | null'
+      content: 'seekOffset?: null | number'
       return:
         description: ''
-        type: number | null
+        type: null | number
   - name: seekTime
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.seekTime'
     package: '@microsoft/live-share-media'
@@ -92,10 +92,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'seekTime?: number | null'
+      content: 'seekTime?: null | number'
       return:
         description: ''
-        type: number | null
+        type: null | number
   - name: suspension
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.suspension'
     package: '@microsoft/live-share-media'
@@ -104,10 +104,9 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'suspension?: MediaSessionCoordinatorSuspension | null'
+      content: 'suspension?: null | MediaSessionCoordinatorSuspension'
       return:
         description: ''
         type: >-
-          <xref
+          null | <xref
           uid="@microsoft/live-share-media.MediaSessionCoordinatorSuspension" />
-          | null

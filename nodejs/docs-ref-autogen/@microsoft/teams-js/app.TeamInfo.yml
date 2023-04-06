@@ -96,6 +96,7 @@ properties:
     summary: >-
       The user's role in the team.
 
+
       Because a malicious party can run your content in a browser, this value
       should
 

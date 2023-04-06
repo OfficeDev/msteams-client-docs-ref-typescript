@@ -23,7 +23,7 @@ properties:
   - name: preview
     uid: '@microsoft/teams-js.sharing.IURLContent.preview'
     package: '@microsoft/teams-js'
-    summary: 'Show URL preview, defaults to true'
+    summary: Show URL preview, defaults to true
     fullName: preview
     remarks: ''
     isDeprecated: false
@@ -56,4 +56,4 @@ properties:
       return:
         description: ''
         type: string
-extends: <xref uid="@microsoft/teams-js.sharing.IBaseSharedContent" />
+extends: IBaseSharedContent

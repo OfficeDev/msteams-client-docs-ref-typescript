@@ -44,7 +44,7 @@ inheritedProperties:
       content: 'imageOutputFormats?: ImageOutputFormats[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teams-js.media.ImageOutputFormats" />[]'
+        type: <xref uid="@microsoft/teams-js.media.ImageOutputFormats" />[]
     inheritanceDescription: >-
       <b>Inherited From</b>
       [ImageProps.imageOutputFormats](xref:@microsoft/teams-js.media.ImageProps.imageOutputFormats)
@@ -162,4 +162,6 @@ inheritedProperties:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [VideoProps.videoController](xref:@microsoft/teams-js.media.VideoProps.videoController)
-extends: <xref uid="@microsoft/teams-js.media.ImageProps" />
+extends: >-
+  <xref uid="@microsoft/teams-js.media.ImageProps" />,<xref
+  uid="@microsoft/teams-js.media.VideoProps" />

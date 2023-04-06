@@ -2,7 +2,7 @@
 name: IPointerEvent
 uid: '@microsoft/live-share-canvas.IPointerEvent'
 package: '@microsoft/live-share-canvas'
-summary: 'Represents a pointer event such as up, down or enter.'
+summary: Represents a pointer event such as up, down or enter.
 fullName: IPointerEvent
 remarks: ''
 isDeprecated: false
@@ -74,7 +74,7 @@ inheritedProperties:
         type: number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [IPoint.x](xref:@microsoft/live-share-canvas.IPoint.x)
+      [IPointerPoint.x](xref:@microsoft/live-share-canvas.IPointerPoint.x)
   - name: 'y'
     uid: '@microsoft/live-share-canvas.IPointerEvent.y'
     package: '@microsoft/live-share-canvas'
@@ -89,5 +89,5 @@ inheritedProperties:
         type: number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [IPoint.y](xref:@microsoft/live-share-canvas.IPoint.y)
+      [IPointerPoint.y](xref:@microsoft/live-share-canvas.IPointerPoint.y)
 extends: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />

@@ -2,7 +2,7 @@
 name: UserInfo
 uid: '@microsoft/teamsfx.UserInfo'
 package: '@microsoft/teamsfx'
-summary: 'UserInfo with user displayName, objectId and preferredUserName.'
+summary: UserInfo with user displayName, objectId and preferredUserName.
 fullName: UserInfo
 remarks: ''
 isDeprecated: false

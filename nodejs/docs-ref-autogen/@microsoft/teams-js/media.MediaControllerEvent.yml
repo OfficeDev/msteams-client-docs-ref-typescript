@@ -2,7 +2,9 @@
 name: MediaControllerEvent
 uid: '@microsoft/teams-js.media.MediaControllerEvent'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >-
+  Events which are used to communicate between the app and the host client
+  during the media recording flow
 fullName: MediaControllerEvent
 remarks: ''
 previewState: beta

@@ -19,7 +19,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'format: VideoFrameFormat'
+      content: 'format: NV12'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.video.VideoFrameFormat" />
+        type: <xref uid="@microsoft/teams-js.video.VideoFrameFormat.NV12" />

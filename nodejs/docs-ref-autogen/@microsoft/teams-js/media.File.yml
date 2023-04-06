@@ -41,7 +41,7 @@ properties:
   - name: mimeType
     uid: '@microsoft/teams-js.media.File.mimeType'
     package: '@microsoft/teams-js'
-    summary: 'MIME type. This can be used for constructing a dataUrl, if needed.'
+    summary: MIME type. This can be used for constructing a dataUrl, if needed.
     fullName: mimeType
     remarks: ''
     isDeprecated: false

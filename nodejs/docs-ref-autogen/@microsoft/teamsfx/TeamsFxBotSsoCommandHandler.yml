@@ -35,7 +35,7 @@ methods:
       content: >-
         function handleCommandReceived(context: TurnContext, message:
         CommandMessage, tokenResponse: TeamsBotSsoPromptTokenResponse):
-        Promise<string | Partial<Activity> | void>
+        Promise<string | void | Partial<Activity>>
       parameters:
         - id: context
           type: TurnContext
@@ -55,4 +55,4 @@ methods:
 
           Or no return value if developers want to send the response activity by
           themselves in this method.
-        type: Promise&lt;string | Partial&lt;Activity&gt; | void&gt;
+        type: Promise&lt;string | void | Partial&lt;Activity&gt;&gt;

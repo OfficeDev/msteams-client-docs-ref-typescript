@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'displayName?: undefined | string'
+      content: 'displayName?: string'
       return:
         description: ''
-        type: undefined | string
+        type: string
   - name: pictureUri
     uid: '@microsoft/live-share-canvas.IUserInfo.pictureUri'
     package: '@microsoft/live-share-canvas'
@@ -28,7 +28,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'pictureUri?: undefined | string'
+      content: 'pictureUri?: string'
       return:
         description: ''
-        type: undefined | string
+        type: string

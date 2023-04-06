@@ -2,19 +2,24 @@
 name: Member
 uid: '@microsoft/teamsfx.Member'
 package: '@microsoft/teamsfx'
-summary: 'A <xref:@microsoft/teamsfx.NotificationTarget> that represents a team member.'
+summary: >-
+  A [NotificationTarget](xref:@microsoft/teamsfx.NotificationTarget) that
+  represents a team member.
 fullName: Member
-remarks: 'It''s recommended to get members from <xref:TeamsBotInstallation.members()>.'
+remarks: >-
+  It's recommended to get members from
+  [()](xref:@microsoft/teamsfx.TeamsBotInstallation.members).
 isDeprecated: false
 type: class
 constructors:
-  - name: 'Member(TeamsBotInstallation, TeamsChannelAccount)'
+  - name: Member(TeamsBotInstallation, TeamsChannelAccount)
     uid: '@microsoft/teamsfx.Member.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor.
     remarks: >-
       It's recommended to get members from
-      <xref:TeamsBotInstallation.members()>, instead of using this constructor.
+      [()](xref:@microsoft/teamsfx.TeamsBotInstallation.members), instead of
+      using this constructor.
     isDeprecated: false
     syntax:
       content: 'new Member(parent: TeamsBotInstallation, account: TeamsChannelAccount)'
@@ -22,12 +27,12 @@ constructors:
         - id: parent
           type: <xref uid="@microsoft/teamsfx.TeamsBotInstallation" />
           description: >-
-            The parent <xref:@microsoft/teamsfx.TeamsBotInstallation> where this
-            member is created from.
+            The parent
+            [TeamsBotInstallation](xref:@microsoft/teamsfx.TeamsBotInstallation)
+            where this member is created from.
         - id: account
           type: TeamsChannelAccount
-          description: |
-            Detailed member account information.
+          description: Detailed member account information.
 properties:
   - name: account
     uid: '@microsoft/teamsfx.Member.account'
@@ -45,8 +50,9 @@ properties:
     uid: '@microsoft/teamsfx.Member.parent'
     package: '@microsoft/teamsfx'
     summary: >-
-      The parent <xref:@microsoft/teamsfx.TeamsBotInstallation> where this
-      member is created from.
+      The parent
+      [TeamsBotInstallation](xref:@microsoft/teamsfx.TeamsBotInstallation) where
+      this member is created from.
     fullName: parent
     remarks: ''
     isDeprecated: false
@@ -93,7 +99,7 @@ methods:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending adaptive card message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;
   - name: 'sendMessage(string, (context: TurnContext, error: Error) => Promise<void>)'
     uid: '@microsoft/teamsfx.Member.sendMessage'
     package: '@microsoft/teamsfx'
@@ -117,4 +123,4 @@ methods:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;

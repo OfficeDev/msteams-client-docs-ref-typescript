@@ -2,7 +2,7 @@
 name: CommandOptions
 uid: '@microsoft/teamsfx.CommandOptions'
 package: '@microsoft/teamsfx'
-summary: 'Options to initialize <xref:@microsoft/teamsfx.CommandBot>.'
+summary: Options to initialize [CommandBot](xref:@microsoft/teamsfx.CommandBot).
 fullName: CommandOptions
 remarks: ''
 isDeprecated: false
@@ -13,7 +13,8 @@ properties:
     package: '@microsoft/teamsfx'
     summary: >-
       The commands to registered with the command bot. Each command should
-      implement the interface <xref:@microsoft/teamsfx.TeamsFxBotCommandHandler>
+      implement the interface
+      [TeamsFxBotCommandHandler](xref:@microsoft/teamsfx.TeamsFxBotCommandHandler)
       so that it can be correctly handled by this command bot.
     fullName: commands
     remarks: ''
@@ -22,15 +23,15 @@ properties:
       content: 'commands?: TeamsFxBotCommandHandler[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />[]'
+        type: <xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />[]
   - name: ssoCommands
     uid: '@microsoft/teamsfx.CommandOptions.ssoCommands'
     package: '@microsoft/teamsfx'
     summary: >-
       The commands to registered with the sso command bot. Each sso command
       should implement the interface
-      <xref:@microsoft/teamsfx.TeamsFxBotSsoCommandHandler> so that it can be
-      correctly handled by this command bot.
+      [TeamsFxBotSsoCommandHandler](xref:@microsoft/teamsfx.TeamsFxBotSsoCommandHandler)
+      so that it can be correctly handled by this command bot.
     fullName: ssoCommands
     remarks: ''
     isDeprecated: false
@@ -38,4 +39,4 @@ properties:
       content: 'ssoCommands?: TeamsFxBotSsoCommandHandler[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />[]'
+        type: <xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />[]

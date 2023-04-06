@@ -56,7 +56,9 @@ inheritedProperties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.DialogSize" />
-    inheritanceDescription: <b>Inherited From</b> BaseDialogInfo.size
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AdaptiveCardDialogInfo.size](xref:@microsoft/teams-js.AdaptiveCardDialogInfo.size)
   - name: title
     uid: '@microsoft/teams-js.BotAdaptiveCardDialogInfo.title'
     package: '@microsoft/teams-js'
@@ -69,5 +71,7 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: <b>Inherited From</b> BaseDialogInfo.title
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [AdaptiveCardDialogInfo.title](xref:@microsoft/teams-js.AdaptiveCardDialogInfo.title)
 extends: <xref uid="@microsoft/teams-js.AdaptiveCardDialogInfo" />

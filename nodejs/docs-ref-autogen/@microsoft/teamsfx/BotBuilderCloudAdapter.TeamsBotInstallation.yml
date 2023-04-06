@@ -1,27 +1,25 @@
 ### YamlMime:TSType
-name: TeamsBotInstallation_2
-uid: '@microsoft/teamsfx.TeamsBotInstallation_2'
+name: TeamsBotInstallation
+uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation'
 package: '@microsoft/teamsfx'
 summary: >-
-  A <xref:@microsoft/teamsfx.NotificationTarget> that represents a bot
-  installation. Teams Bot could be installed into
+  A [NotificationTarget](xref:@microsoft/teamsfx.NotificationTarget) that
+  represents a bot installation. Teams Bot could be installed into
 
   - Personal chat
 
   - Group chat
 
   - Team (by default the `General` channel)
-fullName: TeamsBotInstallation_2
+fullName: TeamsBotInstallation
 remarks: >-
   It's recommended to get bot installations from
   <xref:ConversationBot.installations()>.
 isDeprecated: false
 type: class
 constructors:
-  - name: >-
-      TeamsBotInstallation_2(CloudAdapter, Partial<ConversationReference>,
-      string)
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.constructor'
+  - name: TeamsBotInstallation(CloudAdapter, Partial<ConversationReference>, string)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor
     remarks: >-
@@ -30,7 +28,7 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new TeamsBotInstallation_2(adapter: CloudAdapter, conversationReference:
+        new TeamsBotInstallation(adapter: CloudAdapter, conversationReference:
         Partial<ConversationReference>, botAppId: string)
       parameters:
         - id: adapter
@@ -41,11 +39,10 @@ constructors:
           description: The bound `ConversationReference`.
         - id: botAppId
           type: string
-          description: |
-            The bot app id.
+          description: The bot app id.
 properties:
   - name: adapter
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.adapter'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.adapter'
     package: '@microsoft/teamsfx'
     summary: The bound `CloudAdapter`.
     fullName: adapter
@@ -57,7 +54,7 @@ properties:
         description: ''
         type: CloudAdapter
   - name: botAppId
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.botAppId'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.botAppId'
     package: '@microsoft/teamsfx'
     summary: The bot app id.
     fullName: botAppId
@@ -69,7 +66,8 @@ properties:
         description: ''
         type: string
   - name: conversationReference
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.conversationReference'
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.conversationReference
     package: '@microsoft/teamsfx'
     summary: The bound `ConversationReference`.
     fullName: conversationReference
@@ -81,7 +79,7 @@ properties:
         description: ''
         type: Partial&lt;ConversationReference&gt;
   - name: type
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.type'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.type'
     package: '@microsoft/teamsfx'
     summary: Notification target type.
     fullName: type
@@ -101,7 +99,7 @@ properties:
         type: <xref uid="@microsoft/teamsfx.NotificationTargetType" />
 methods:
   - name: channels()
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.channels'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.channels'
     package: '@microsoft/teamsfx'
     summary: Get channels from this bot installation.
     remarks: ''
@@ -112,22 +110,25 @@ methods:
         description: >-
           An array of channels if bot is installed into a team, otherwise
           returns an empty array.
-        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Channel_2" />[]&gt;'
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />[]&gt;
   - name: getTeamDetails()
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.getTeamDetails'
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.getTeamDetails
     package: '@microsoft/teamsfx'
     summary: Get team details from this bot installation
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getTeamDetails(): Promise<TeamDetails | undefined>'
+      content: 'function getTeamDetails(): Promise<undefined | TeamDetails>'
       return:
         description: >-
           The team details if bot is installed into a team, otherwise returns
           `undefined`.
-        type: Promise&lt;TeamDetails | undefined&gt;
+        type: Promise&lt;undefined | TeamDetails&gt;
   - name: members()
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.members'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.members'
     package: '@microsoft/teamsfx'
     summary: Get members from this bot installation.
     remarks: ''
@@ -136,11 +137,14 @@ methods:
       content: 'function members(): Promise<Member_2[]>'
       return:
         description: An array of members from where the bot is installed.
-        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Member_2" />[]&gt;'
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />[]&gt;
   - name: >-
       sendAdaptiveCard(unknown, (context: TurnContext, error: Error) =>
       Promise<void>)
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.sendAdaptiveCard'
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.sendAdaptiveCard
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message.
     remarks: ''
@@ -155,16 +159,16 @@ methods:
           description: The adaptive card raw JSON.
         - id: onError
           type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
-          description: >
+          description: >-
             An optional error handler that can catch exceptions during adaptive
             card sending.
 
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: The response of sending adaptive card message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;
   - name: 'sendMessage(string, (context: TurnContext, error: Error) => Promise<void>)'
-    uid: '@microsoft/teamsfx.TeamsBotInstallation_2.sendMessage'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.sendMessage'
     package: '@microsoft/teamsfx'
     summary: Send a plain text message.
     remarks: ''
@@ -179,11 +183,11 @@ methods:
           description: The plain text message.
         - id: onError
           type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
-          description: >
+          description: >-
             An optional error handler that can catch exceptions during message
             sending.
 
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: The response of sending message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;

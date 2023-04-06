@@ -30,10 +30,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientId?: undefined | string'
+      content: 'clientId?: string'
       return:
         description: ''
-        type: undefined | string
+        type: string
   - name: id
     uid: '@microsoft/live-share-canvas.IStroke.id'
     package: '@microsoft/live-share-canvas'
@@ -71,7 +71,7 @@ properties:
         description: ''
         type: number
 methods:
-  - name: 'addPoints(IPointerPoint[])'
+  - name: addPoints(IPointerPoint[])
     uid: '@microsoft/live-share-canvas.IStroke.addPoints'
     package: '@microsoft/live-share-canvas'
     summary: Adds points to the stroke.
@@ -81,9 +81,8 @@ methods:
       content: 'function addPoints(points: IPointerPoint[]): boolean'
       parameters:
         - id: points
-          type: '<xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]'
-          description: |
-            The points to add.
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]
+          description: The points to add.
       return:
         description: ''
         type: boolean
@@ -100,8 +99,7 @@ methods:
       parameters:
         - id: serializedStroke
           type: string
-          description: |
-            The serialized stroke.
+          description: The serialized stroke.
   - name: getBoundingRect()
     uid: '@microsoft/live-share-canvas.IStroke.getBoundingRect'
     package: '@microsoft/live-share-canvas'
@@ -126,11 +124,10 @@ methods:
       parameters:
         - id: segment
           type: <xref uid="@microsoft/live-share-canvas.ISegment" />
-          description: |
-            The segment to test against.
+          description: The segment to test against.
       return:
         description: ''
-        type: '<xref uid="@microsoft/live-share-canvas.IPoint" />[]'
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />[]
   - name: getPointAt(number)
     uid: '@microsoft/live-share-canvas.IStroke.getPointAt'
     package: '@microsoft/live-share-canvas'
@@ -142,8 +139,7 @@ methods:
       parameters:
         - id: index
           type: number
-          description: |
-            The point index.
+          description: The point index.
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
@@ -160,8 +156,7 @@ methods:
       parameters:
         - id: rectangle
           type: <xref uid="@microsoft/live-share-canvas.IRect" />
-          description: |
-            The rectangle to test against.
+          description: The rectangle to test against.
       return:
         description: ''
         type: boolean
@@ -174,15 +169,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
+      content: 'function pointErase(eraserRect: IRect): undefined | IStroke[]'
       parameters:
         - id: eraserRect
           type: <xref uid="@microsoft/live-share-canvas.IRect" />
-          description: |
-            The eraser rectangle.
+          description: The eraser rectangle.
       return:
         description: ''
-        type: '<xref uid="@microsoft/live-share-canvas.IStroke" />[] | undefined'
+        type: undefined | <xref uid="@microsoft/live-share-canvas.IStroke" />[]
   - name: serialize()
     uid: '@microsoft/live-share-canvas.IStroke.serialize'
     package: '@microsoft/live-share-canvas'

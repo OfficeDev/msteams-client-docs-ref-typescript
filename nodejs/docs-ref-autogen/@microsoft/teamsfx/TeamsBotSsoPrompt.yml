@@ -65,7 +65,7 @@ summary: >+
 
   ```
 
-fullName: TeamsBotSsoPrompt<O>
+fullName: TeamsBotSsoPrompt
 remarks: >-
   The prompt will attempt to retrieve the users current token of the desired
   scopes and store it in
@@ -107,9 +107,8 @@ constructors:
             `ComponentDialog`.
         - id: settings
           type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
-          description: |
-            Settings used to configure the prompt.
-  - name: 'TeamsBotSsoPrompt(TeamsFx, string, TeamsBotSsoPromptSettings)'
+          description: Settings used to configure the prompt.
+  - name: TeamsBotSsoPrompt(TeamsFx, string, TeamsBotSsoPromptSettings)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of TeamsBotSsoPrompt.
@@ -130,8 +129,34 @@ constructors:
             `ComponentDialog`.
         - id: settings
           type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
-          description: |
-            Settings used to configure the prompt.
+          description: Settings used to configure the prompt.
+properties:
+  - name: id
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.id'
+    package: '@microsoft/teamsfx'
+    summary: Unique ID of the dialog.
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: string id
+      return:
+        description: The Id for the dialog.
+        type: string
+  - name: telemetryClient
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.telemetryClient'
+    package: '@microsoft/teamsfx'
+    summary: Gets the telemetry client for this dialog.
+    fullName: telemetryClient
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: BotTelemetryClient telemetryClient
+      return:
+        description: >-
+          The [BotTelemetryClient](xref:botbuilder.BotTelemetryClient) to use
+          for logging.
+        type: BotTelemetryClient
 inheritedProperties:
   - name: EndOfTurn
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.EndOfTurn'
@@ -146,57 +171,31 @@ inheritedProperties:
       input.
     isDeprecated: false
     syntax:
-      content: 'static EndOfTurn: DialogTurnResult'
+      content: 'static EndOfTurn: DialogTurnResult<any>'
       return:
         description: ''
-        type: DialogTurnResult
+        type: DialogTurnResult&lt;any&gt;
     inheritanceDescription: <b>Inherited From</b> Dialog.EndOfTurn
-  - name: id
-    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.id'
-    package: '@microsoft/teamsfx'
-    summary: ''
-    fullName: id
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'id: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: <b>Inherited From</b> Dialog.id
-  - name: telemetryClient
-    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.telemetryClient'
-    package: '@microsoft/teamsfx'
-    summary: ''
-    fullName: telemetryClient
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'telemetryClient: BotTelemetryClient'
-      return:
-        description: ''
-        type: BotTelemetryClient
-    inheritanceDescription: <b>Inherited From</b> Dialog.telemetryClient
 inheritedMethods:
-  - name: 'configure(Record<string, unknown>)'
+  - name: configure(Record<string, unknown>)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.configure'
     package: '@microsoft/teamsfx'
     summary: Fluent method for configuring the object.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function configure(config: Record<string, unknown>): this'
+      content: 'function configure(config: Record<string, unknown>): TeamsBotSsoPrompt'
       parameters:
         - id: config
-          type: 'Record&lt;string, unknown&gt;'
+          type: Record&lt;string, unknown&gt;
           description: Configuration settings to apply.
       return:
         description: >-
           The [Configurable](xref:botbuilder-dialogs.Configurable) after the
           operation is complete.
-        type: this
-    inheritanceDescription: <b>Inherited From</b> Configurable.configure
-  - name: 'endDialog(TurnContext, DialogInstance, DialogReason)'
+        type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPrompt" />
+    inheritanceDescription: <b>Inherited From</b> Dialog.configure
+  - name: endDialog(TurnContext, DialogInstance<any>, DialogReason)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.endDialog'
     package: '@microsoft/teamsfx'
     summary: >-
@@ -228,19 +227,18 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function endDialog(_context: TurnContext, _instance: DialogInstance,
-        _reason: DialogReason): Promise<void>
+        function endDialog(_context: TurnContext, _instance:
+        DialogInstance<any>, _reason: DialogReason): Promise<void>
       parameters:
         - id: _context
           type: TurnContext
           description: The context object for the turn.
         - id: _instance
-          type: DialogInstance
+          type: DialogInstance&lt;any&gt;
           description: Current state information for this dialog.
         - id: _reason
           type: DialogReason
-          description: |
-            The reason the dialog is ending.
+          description: The reason the dialog is ending.
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -252,15 +250,19 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getConverter(_property: string): Converter | ConverterFactory'
+      content: >-
+        function getConverter(_property: string): Converter<unknown, unknown> |
+        ConverterFactory<unknown, unknown>
       parameters:
         - id: _property
           type: string
           description: The key of the conditional selector configuration.
       return:
         description: The converter for the selector configuration.
-        type: Converter | ConverterFactory
-    inheritanceDescription: <b>Inherited From</b> Configurable.getConverter
+        type: >-
+          Converter&lt;unknown, unknown&gt; | ConverterFactory&lt;unknown,
+          unknown&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.getConverter
   - name: getVersion()
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getVersion'
     package: '@microsoft/teamsfx'
@@ -292,7 +294,7 @@ inheritedMethods:
           way that should restart the dialog.
         type: string
     inheritanceDescription: <b>Inherited From</b> Dialog.getVersion
-  - name: 'onDialogEvent(DialogContext, DialogEvent)'
+  - name: onDialogEvent(DialogContext, DialogEvent)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.onDialogEvent'
     package: '@microsoft/teamsfx'
     summary: >-
@@ -317,10 +319,10 @@ inheritedMethods:
           stop.
         type: Promise&lt;boolean&gt;
     inheritanceDescription: <b>Inherited From</b> Dialog.onDialogEvent
-  - name: 'repromptDialog(TurnContext, DialogInstance)'
+  - name: repromptDialog(TurnContext, DialogInstance<any>)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.repromptDialog'
     package: '@microsoft/teamsfx'
-    summary: 'When overridden in a derived class, reprompts the user for input.'
+    summary: When overridden in a derived class, reprompts the user for input.
     remarks: >-
       Derived dialogs that support validation and re-prompt logic should
       override this method.
@@ -345,20 +347,19 @@ inheritedMethods:
     syntax:
       content: >-
         function repromptDialog(_context: TurnContext, _instance:
-        DialogInstance): Promise<void>
+        DialogInstance<any>): Promise<void>
       parameters:
         - id: _context
           type: TurnContext
           description: The context object for the turn.
         - id: _instance
-          type: DialogInstance
-          description: |
-            Current state information for this dialog.
+          type: DialogInstance&lt;any&gt;
+          description: Current state information for this dialog.
       return:
         description: ''
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> Dialog.repromptDialog
-  - name: 'resumeDialog(DialogContext, DialogReason, any)'
+  - name: resumeDialog(DialogContext, DialogReason, any)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.resumeDialog'
     package: '@microsoft/teamsfx'
     summary: >-
@@ -402,7 +403,7 @@ inheritedMethods:
     syntax:
       content: >-
         function resumeDialog(dc: DialogContext, reason: DialogReason, result?:
-        any): Promise<DialogTurnResult>
+        any): Promise<DialogTurnResult<any>>
       parameters:
         - id: dc
           type: DialogContext
@@ -414,11 +415,10 @@ inheritedMethods:
                  [DialogReason.endCalled](xref:botbuilder-dialogs.DialogReason.endCalled)
         - id: result
           type: any
-          description: |
-            Optional. The return value, if any, from the dialog that ended.
+          description: Optional. The return value, if any, from the dialog that ended.
       return:
         description: A promise resolving to the dialog turn result.
-        type: Promise&lt;DialogTurnResult&gt;
+        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
     inheritanceDescription: <b>Inherited From</b> Dialog.resumeDialog
 methods:
   - name: beginDialog(DialogContext)
@@ -434,15 +434,14 @@ methods:
       active after the turn has been processed by the prompt.
     isDeprecated: false
     syntax:
-      content: 'function beginDialog(dc: DialogContext): Promise<DialogTurnResult>'
+      content: 'function beginDialog(dc: DialogContext): Promise<DialogTurnResult<any>>'
       parameters:
         - id: dc
           type: DialogContext
-          description: |
-            The DialogContext for the current turn of the conversation.
+          description: The DialogContext for the current turn of the conversation.
       return:
         description: A `Promise` representing the asynchronous operation.
-        type: Promise&lt;DialogTurnResult&gt;
+        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
   - name: continueDialog(DialogContext)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.continueDialog'
     package: '@microsoft/teamsfx'
@@ -461,13 +460,14 @@ methods:
       user's reply as valid input for the prompt.
     isDeprecated: false
     syntax:
-      content: 'function continueDialog(dc: DialogContext): Promise<DialogTurnResult>'
+      content: >-
+        function continueDialog(dc: DialogContext):
+        Promise<DialogTurnResult<any>>
       parameters:
         - id: dc
           type: DialogContext
-          description: |
-            The DialogContext for the current turn of the conversation.
+          description: The DialogContext for the current turn of the conversation.
       return:
         description: A `Promise` representing the asynchronous operation.
-        type: Promise&lt;DialogTurnResult&gt;
+        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
 extends: Dialog

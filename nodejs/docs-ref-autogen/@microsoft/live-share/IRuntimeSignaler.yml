@@ -20,10 +20,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientId: string | undefined'
+      content: 'clientId: undefined | string'
       return:
         description: ''
-        type: string | undefined
+        type: undefined | string
   - name: connected
     uid: '@microsoft/live-share.IRuntimeSignaler.connected'
     package: '@microsoft/live-share'
@@ -58,7 +58,7 @@ methods:
     syntax:
       content: >-
         function on(event: "connected", listener: (clientId: string) => void):
-        this
+        IRuntimeSignaler
       parameters:
         - id: event
           type: '"connected"'
@@ -68,7 +68,7 @@ methods:
           description: ''
       return:
         description: ''
-        type: this
+        type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
   - name: 'on("signal", (message: IInboundSignalMessage, local: boolean) => void)'
     uid: '@microsoft/live-share.IRuntimeSignaler.on_1'
     package: '@microsoft/live-share'
@@ -78,7 +78,7 @@ methods:
     syntax:
       content: >-
         function on(event: "signal", listener: (message: IInboundSignalMessage,
-        local: boolean) => void): this
+        local: boolean) => void): IRuntimeSignaler
       parameters:
         - id: event
           type: '"signal"'
@@ -88,8 +88,8 @@ methods:
           description: ''
       return:
         description: ''
-        type: this
-  - name: 'submitSignal(string, any)'
+        type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
+  - name: submitSignal(string, any)
     uid: '@microsoft/live-share.IRuntimeSignaler.submitSignal'
     package: '@microsoft/live-share'
     summary: ''

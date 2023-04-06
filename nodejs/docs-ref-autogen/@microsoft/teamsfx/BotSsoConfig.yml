@@ -16,23 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        aad: { scopes: string[] } & (AuthenticationConfiguration | ({
-        authorityHost: string, clientId: string, tenantId: string } & {
-        certificateContent?: never, clientSecret: string } & {
-        initiateLoginEndpoint: string }) | ({ authorityHost: string, clientId:
-        string, tenantId: string } & { certificateContent: string,
-        clientSecret?: never } & { initiateLoginEndpoint: string }))
+      content: 'aad: Object'
       return:
         description: ''
-        type: >-
-          { scopes: string[] } & (<xref
-          uid="@microsoft/teamsfx.AuthenticationConfiguration" /> | ({
-          authorityHost: string, clientId: string, tenantId: string } & {
-          certificateContent?: never, clientSecret: string } & {
-          initiateLoginEndpoint: string }) | ({ authorityHost: string, clientId:
-          string, tenantId: string } & { certificateContent: string,
-          clientSecret?: never } & { initiateLoginEndpoint: string }))
+        type: Object
   - name: dialog
     uid: '@microsoft/teamsfx.BotSsoConfig.dialog'
     package: '@microsoft/teamsfx'
@@ -42,14 +29,16 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        dialog?: { CustomBotSsoExecutionActivityHandler?: Object,
-        conversationState?: ConversationState, dedupStorage?: Storage_2,
-        ssoPromptConfig?: { endOnInvalidMessage?: boolean, timeout?: number },
-        userState?: UserState }
+        dialog?: { CustomBotSsoExecutionActivityHandler?: (ssoConfig:
+        BotSsoConfig) => BotSsoExecutionActivityHandler, conversationState?:
+        ConversationState, dedupStorage?: Storage, ssoPromptConfig?: {
+        endOnInvalidMessage?: boolean, timeout?: number }, userState?: UserState
+        }
       return:
         description: ''
         type: >-
-          { CustomBotSsoExecutionActivityHandler?: Object, conversationState?:
-          ConversationState, dedupStorage?: Storage_2, ssoPromptConfig?: {
+          { CustomBotSsoExecutionActivityHandler?: (ssoConfig: BotSsoConfig)
+          =&gt; BotSsoExecutionActivityHandler, conversationState?:
+          ConversationState, dedupStorage?: Storage, ssoPromptConfig?: {
           endOnInvalidMessage?: boolean, timeout?: number }, userState?:
           UserState }

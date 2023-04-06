@@ -1,9 +1,9 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.dialog.url'
 name: url
+summary: ''
 type: module
 package: '@microsoft/teams-js'
-summary: ''
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.dialog.url.isSupported'
@@ -17,7 +17,7 @@ functions:
       return:
         description: boolean to represent whether dialog.url module is supported
         type: boolean
-  - name: 'open(UrlDialogInfo, DialogSubmitHandler, PostMessageChannel)'
+  - name: open(UrlDialogInfo, DialogSubmitHandler, PostMessageChannel)
     uid: '@microsoft/teams-js.dialog.url.open'
     package: '@microsoft/teams-js'
     summary: Allows app to open a url based dialog.
@@ -40,8 +40,7 @@ functions:
             or when the user closes the dialog.
         - id: messageFromChildHandler
           type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
-          description: |
-            Handler that triggers if dialog sends a message to the app.
+          description: Handler that triggers if dialog sends a message to the app.
   - name: registerOnMessageFromParent(PostMessageChannel)
     uid: '@microsoft/teams-js.dialog.url.registerOnMessageFromParent'
     package: '@microsoft/teams-js'
@@ -58,8 +57,7 @@ functions:
       parameters:
         - id: listener
           type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
-          description: |
-            The listener that will be triggered.
+          description: The listener that will be triggered.
   - name: sendMessageToDialog(any)
     uid: '@microsoft/teams-js.dialog.url.sendMessageToDialog'
     package: '@microsoft/teams-js'
@@ -72,8 +70,7 @@ functions:
       parameters:
         - id: message
           type: any
-          description: |
-            The message to send
+          description: The message to send
   - name: sendMessageToParentFromDialog(any)
     uid: '@microsoft/teams-js.dialog.url.sendMessageToParentFromDialog'
     package: '@microsoft/teams-js'
@@ -88,9 +85,8 @@ functions:
       parameters:
         - id: message
           type: any
-          description: |
-            The message to send to the parent
-  - name: 'submit(string | object, string | string[])'
+          description: The message to send to the parent
+  - name: submit(string | object, string | string[])
     uid: '@microsoft/teams-js.dialog.url.submit'
     package: '@microsoft/teams-js'
     summary: Submit the dialog module and close the dialog
@@ -104,13 +100,13 @@ functions:
       parameters:
         - id: result
           type: string | object
-          description: >
+          description: >-
             The result to be sent to the bot or the app. Typically a JSON object
             or a serialized version of it,
-             If this function is called from a dialog while <xref:@microsoft/teams-js.M365ContentAction> is set in the context object by the host, result will be ignored
+             If this function is called from a dialog while [M365ContentAction](xref:@microsoft/teams-js.M365ContentAction) is set in the context object by the host, result will be ignored
         - id: appIds
-          type: 'string | string[]'
-          description: >
+          type: string | string[]
+          description: >-
             Valid application(s) that can receive the result of the submitted
             dialogs. Specifying this parameter helps prevent malicious apps from
             retrieving the dialog result. Multiple app IDs can be specified

@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: TData | undefined data
+      content: undefined | TData data
       return:
         description: ''
-        type: TData | undefined
+        type: undefined | TData
   - name: isLocalUser
     uid: '@microsoft/live-share.EphemeralPresenceUser.isLocalUser'
     package: '@microsoft/live-share'
@@ -37,11 +37,7 @@ properties:
     package: '@microsoft/live-share'
     summary: Users current state.
     fullName: state
-    remarks: >-
-      This is automatically set to `PresenceState.offline` if the users client
-      hasn't sent updates
-
-      for a period of time.
+    remarks: ''
     isDeprecated: false
     syntax:
       content: PresenceState state
@@ -71,4 +67,4 @@ methods:
       content: 'function getRoles(): Promise<UserMeetingRole[]>'
       return:
         description: ''
-        type: 'Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;'
+        type: Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;

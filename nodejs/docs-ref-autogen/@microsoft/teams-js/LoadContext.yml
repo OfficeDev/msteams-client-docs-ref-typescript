@@ -2,7 +2,11 @@
 name: LoadContext
 uid: '@microsoft/teams-js.LoadContext'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >-
+  Data structure to be used with the [teamsCore.registerOnLoadHandler(handler:
+  (context: LoadContext) => void):
+  void](xref:@microsoft/teams-js.teamsCore.registerOnLoadHandler) to pass the
+  context to the app.
 fullName: LoadContext
 remarks: ''
 previewState: beta

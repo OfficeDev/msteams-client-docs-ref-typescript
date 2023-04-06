@@ -1,0 +1,305 @@
+### YamlMime:TSType
+name: AxiosInstance
+uid: '@microsoft/teamsfx.AxiosInstance'
+package: '@microsoft/teamsfx'
+summary: ''
+fullName: AxiosInstance
+remarks: ''
+isDeprecated: false
+type: interface
+inheritedProperties:
+  - name: defaults
+    uid: '@microsoft/teamsfx.AxiosInstance.defaults'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    fullName: defaults
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'defaults: AxiosDefaults<any>'
+      return:
+        description: ''
+        type: AxiosDefaults&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.defaults
+  - name: interceptors
+    uid: '@microsoft/teamsfx.AxiosInstance.interceptors'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    fullName: interceptors
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        interceptors: { request:
+        AxiosInterceptorManager<AxiosRequestConfig<any>>, response:
+        AxiosInterceptorManager<AxiosResponse<any, any>> }
+      return:
+        description: ''
+        type: >-
+          { request:
+          AxiosInterceptorManager&lt;AxiosRequestConfig&lt;any&gt;&gt;,
+          response: AxiosInterceptorManager&lt;AxiosResponse&lt;any, any&gt;&gt;
+          }
+    inheritanceDescription: <b>Inherited From</b> Axios.interceptors
+inheritedMethods:
+  - name: delete<T, R, D>(string, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.delete'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function delete<T, R, D>(url: string, config?: AxiosRequestConfig<D>):
+        Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.delete
+  - name: get<T, R, D>(string, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.get'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function get<T, R, D>(url: string, config?: AxiosRequestConfig<D>):
+        Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.get
+  - name: getUri(AxiosRequestConfig<any>)
+    uid: '@microsoft/teamsfx.AxiosInstance.getUri'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getUri(config?: AxiosRequestConfig<any>): string'
+      parameters:
+        - id: config
+          type: AxiosRequestConfig&lt;any&gt;
+          description: ''
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> Axios.getUri
+  - name: head<T, R, D>(string, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.head'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function head<T, R, D>(url: string, config?: AxiosRequestConfig<D>):
+        Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.head
+  - name: options<T, R, D>(string, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.options'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function options<T, R, D>(url: string, config?: AxiosRequestConfig<D>):
+        Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.options
+  - name: patch<T, R, D>(string, D, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.patch'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function patch<T, R, D>(url: string, data?: D, config?:
+        AxiosRequestConfig<D>): Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: data
+          type: D
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.patch
+  - name: patchForm<T, R, D>(string, D, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.patchForm'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function patchForm<T, R, D>(url: string, data?: D, config?:
+        AxiosRequestConfig<D>): Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: data
+          type: D
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.patchForm
+  - name: post<T, R, D>(string, D, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.post'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function post<T, R, D>(url: string, data?: D, config?:
+        AxiosRequestConfig<D>): Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: data
+          type: D
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.post
+  - name: postForm<T, R, D>(string, D, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.postForm'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function postForm<T, R, D>(url: string, data?: D, config?:
+        AxiosRequestConfig<D>): Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: data
+          type: D
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.postForm
+  - name: put<T, R, D>(string, D, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.put'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function put<T, R, D>(url: string, data?: D, config?:
+        AxiosRequestConfig<D>): Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: data
+          type: D
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.put
+  - name: putForm<T, R, D>(string, D, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.putForm'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function putForm<T, R, D>(url: string, data?: D, config?:
+        AxiosRequestConfig<D>): Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: data
+          type: D
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.putForm
+  - name: request<T, R, D>(AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.request'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function request<T, R, D>(config: AxiosRequestConfig<D>): Promise<R>'
+      parameters:
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.request
+extends: Axios

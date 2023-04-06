@@ -9,8 +9,8 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
-      TeamsFx(IdentityType, Record<string, string> |
-      AuthenticationConfiguration)
+      TeamsFx(IdentityType, AuthenticationConfiguration | Record<string,
+      string>)
     uid: '@microsoft/teamsfx.TeamsFx.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of TeamsFx
@@ -18,17 +18,17 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new TeamsFx(identityType?: IdentityType, customConfig?: Record<string,
-        string> | AuthenticationConfiguration)
+        new TeamsFx(identityType?: IdentityType, customConfig?:
+        AuthenticationConfiguration | Record<string, string>)
       parameters:
         - id: identityType
           type: <xref uid="@microsoft/teamsfx.IdentityType" />
           description: Choose user or app identity
         - id: customConfig
           type: >-
-            Record&lt;string, string&gt; | <xref
-            uid="@microsoft/teamsfx.AuthenticationConfiguration" />
-          description: >
+            <xref uid="@microsoft/teamsfx.AuthenticationConfiguration" /> |
+            Record&lt;string, string&gt;
+          description: >-
             key/value pairs of customized configuration that overrides default
             ones.
 methods:
@@ -57,19 +57,21 @@ methods:
       content: 'function getConfigs(): Record<string, string>'
       return:
         description: key value mappings.
-        type: 'Record&lt;string, string&gt;'
+        type: Record&lt;string, string&gt;
   - name: getCredential()
     uid: '@microsoft/teamsfx.TeamsFx.getCredential'
     package: '@microsoft/teamsfx'
     summary: Credential instance according to identity type choice.
     remarks: >-
       If user identity is chose, will return
-      <xref:@microsoft/teamsfx.TeamsUserCredential>
+      [TeamsUserCredential](xref:@microsoft/teamsfx.TeamsUserCredential)
 
       in browser environment and
-      <xref:@microsoft/teamsfx.OnBehalfOfUserCredential> in NodeJS. If app
+      [OnBehalfOfUserCredential](xref:@microsoft/teamsfx.OnBehalfOfUserCredential)
+      in NodeJS. If app
 
-      identity is chose, will return <xref:@microsoft/teamsfx.AppCredential>.
+      identity is chose, will return
+      [AppCredential](xref:@microsoft/teamsfx.AppCredential).
     isDeprecated: false
     syntax:
       content: 'function getCredential(): TokenCredential'
@@ -87,7 +89,7 @@ methods:
       return:
         description: identity type.
         type: <xref uid="@microsoft/teamsfx.IdentityType" />
-  - name: 'getUserInfo(string[])'
+  - name: getUserInfo(string[])
     uid: '@microsoft/teamsfx.TeamsFx.getUserInfo'
     package: '@microsoft/teamsfx'
     summary: Get user information.
@@ -97,7 +99,7 @@ methods:
       content: 'function getUserInfo(resources?: string[]): Promise<UserInfo>'
       parameters:
         - id: resources
-          type: 'string[]'
+          type: string[]
           description: The optional list of resources for full trust Teams apps.
       return:
         description: UserInfo object.
@@ -117,7 +119,7 @@ methods:
       return:
         description: true if corresponding value is not empty string.
         type: boolean
-  - name: 'login(string | string[], string[])'
+  - name: login(string | string[], string[])
     uid: '@microsoft/teamsfx.TeamsFx.login'
     package: '@microsoft/teamsfx'
     summary: >+
@@ -153,14 +155,13 @@ methods:
         Promise<void>
       parameters:
         - id: scopes
-          type: 'string | string[]'
+          type: string | string[]
           description: >-
             The list of scopes for which the token will have access, before
             that, we will request user to consent.
         - id: resources
-          type: 'string[]'
-          description: |
-            The optional list of resources for full trust Teams apps.
+          type: string[]
+          description: The optional list of resources for full trust Teams apps.
       return:
         description: ''
         type: Promise&lt;void&gt;

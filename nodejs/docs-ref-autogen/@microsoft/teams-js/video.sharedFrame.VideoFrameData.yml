@@ -1,18 +1,18 @@
 ### YamlMime:TSType
-name: VideoFrame
-uid: '@microsoft/teams-js.video.VideoFrame'
+name: VideoFrameData
+uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData'
 package: '@microsoft/teams-js'
 summary: Represents a video frame
-fullName: VideoFrame
+fullName: VideoFrameData
 remarks: ''
 previewState: beta
 isDeprecated: false
 type: interface
 properties:
   - name: chromaStride
-    uid: '@microsoft/teams-js.video.VideoFrame.chromaStride'
+    uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData.chromaStride'
     package: '@microsoft/teams-js'
-    summary: 'NV12 chroma stride, valid only when video frame format is NV12'
+    summary: NV12 chroma stride, valid only when video frame format is NV12
     fullName: chromaStride
     remarks: ''
     isDeprecated: false
@@ -21,20 +21,8 @@ properties:
       return:
         description: ''
         type: number
-  - name: data
-    uid: '@microsoft/teams-js.video.VideoFrame.data'
-    package: '@microsoft/teams-js'
-    summary: Video frame buffer
-    fullName: data
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'data: Uint8ClampedArray'
-      return:
-        description: ''
-        type: Uint8ClampedArray
   - name: height
-    uid: '@microsoft/teams-js.video.VideoFrame.height'
+    uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData.height'
     package: '@microsoft/teams-js'
     summary: Video frame height
     fullName: height
@@ -46,9 +34,9 @@ properties:
         description: ''
         type: number
   - name: lumaStride
-    uid: '@microsoft/teams-js.video.VideoFrame.lumaStride'
+    uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData.lumaStride'
     package: '@microsoft/teams-js'
-    summary: 'NV12 luma stride, valid only when video frame format is NV12'
+    summary: NV12 luma stride, valid only when video frame format is NV12
     fullName: lumaStride
     remarks: ''
     isDeprecated: false
@@ -58,9 +46,9 @@ properties:
         description: ''
         type: number
   - name: stride
-    uid: '@microsoft/teams-js.video.VideoFrame.stride'
+    uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData.stride'
     package: '@microsoft/teams-js'
-    summary: 'RGB stride, valid only when video frame format is RGB'
+    summary: RGB stride, valid only when video frame format is RGB
     fullName: stride
     remarks: ''
     isDeprecated: false
@@ -70,7 +58,7 @@ properties:
         description: ''
         type: number
   - name: timestamp
-    uid: '@microsoft/teams-js.video.VideoFrame.timestamp'
+    uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData.timestamp'
     package: '@microsoft/teams-js'
     summary: The time stamp of the current video frame
     fullName: timestamp
@@ -81,8 +69,20 @@ properties:
       return:
         description: ''
         type: number
+  - name: videoFrameBuffer
+    uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData.videoFrameBuffer'
+    package: '@microsoft/teams-js'
+    summary: Video frame buffer
+    fullName: videoFrameBuffer
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'videoFrameBuffer: Uint8ClampedArray'
+      return:
+        description: ''
+        type: Uint8ClampedArray
   - name: width
-    uid: '@microsoft/teams-js.video.VideoFrame.width'
+    uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData.width'
     package: '@microsoft/teams-js'
     summary: Video frame width
     fullName: width

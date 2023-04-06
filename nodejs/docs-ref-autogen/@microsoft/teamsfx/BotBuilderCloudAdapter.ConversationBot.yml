@@ -1,6 +1,6 @@
 ### YamlMime:TSType
-name: ConversationBot_2
-uid: '@microsoft/teamsfx.ConversationBot_2'
+name: ConversationBot
+uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot'
 package: '@microsoft/teamsfx'
 summary: >+
   Provide utilities for bot conversation, including:
@@ -76,10 +76,11 @@ summary: >+
 
   ```
 
-fullName: ConversationBot_2
+fullName: ConversationBot
 remarks: >-
-  Set `adapter` in <xref:@microsoft/teamsfx.ConversationOptions> to use your own
-  bot adapter.
+  Set `adapter` in
+  [ConversationOptions](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions)
+  to use your own bot adapter.
 
 
   For command and response, ensure each command should ONLY be registered with
@@ -88,13 +89,13 @@ remarks: >-
 
 
   For notification, set `notification.storage` in
-  <xref:@microsoft/teamsfx.ConversationOptions> to use your own storage
-  implementation.
+  [ConversationOptions](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions)
+  to use your own storage implementation.
 isDeprecated: false
 type: class
 constructors:
-  - name: ConversationBot_2(ConversationOptions_2)
-    uid: '@microsoft/teamsfx.ConversationBot_2.constructor'
+  - name: ConversationBot(ConversationOptions_2)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Create new instance of the `ConversationBot`.
     remarks: >-
@@ -102,15 +103,17 @@ constructors:
       environment instead of the default one.
     isDeprecated: false
     syntax:
-      content: 'new ConversationBot_2(options: ConversationOptions_2)'
+      content: 'new ConversationBot(options: ConversationOptions_2)'
       parameters:
         - id: options
-          type: <xref uid="@microsoft/teamsfx.ConversationOptions_2" />
-          description: |
-            The initialize options.
+          type: >-
+            <xref
+            uid="@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions"
+            />
+          description: The initialize options.
 properties:
   - name: adapter
-    uid: '@microsoft/teamsfx.ConversationBot_2.adapter'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.adapter'
     package: '@microsoft/teamsfx'
     summary: The bot adapter.
     fullName: adapter
@@ -122,7 +125,7 @@ properties:
         description: ''
         type: CloudAdapter
   - name: cardAction
-    uid: '@microsoft/teamsfx.ConversationBot_2.cardAction'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.cardAction'
     package: '@microsoft/teamsfx'
     summary: The action handler used for adaptive card universal actions.
     fullName: cardAction
@@ -132,9 +135,9 @@ properties:
       content: 'cardAction?: CardActionBot_2'
       return:
         description: ''
-        type: <xref uid="@microsoft/teamsfx.CardActionBot_2" />
+        type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot" />
   - name: command
-    uid: '@microsoft/teamsfx.ConversationBot_2.command'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.command'
     package: '@microsoft/teamsfx'
     summary: The entrypoint of command and response.
     fullName: command
@@ -144,9 +147,9 @@ properties:
       content: 'command?: CommandBot_2'
       return:
         description: ''
-        type: <xref uid="@microsoft/teamsfx.CommandBot_2" />
+        type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot" />
   - name: notification
-    uid: '@microsoft/teamsfx.ConversationBot_2.notification'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.notification'
     package: '@microsoft/teamsfx'
     summary: The entrypoint of notification.
     fullName: notification
@@ -156,12 +159,14 @@ properties:
       content: 'notification?: NotificationBot_2'
       return:
         description: ''
-        type: <xref uid="@microsoft/teamsfx.NotificationBot_2" />
+        type: >-
+          <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot"
+          />
 methods:
   - name: >-
-      requestHandler(Request_2, Response_2, (context: TurnContext) =>
-      Promise<any>)
-    uid: '@microsoft/teamsfx.ConversationBot_2.requestHandler'
+      requestHandler(Request<Record<string, unknown>, Record<string, undefined |
+      string | string[]>>, Response, (context: TurnContext) => Promise<any>)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.requestHandler'
     package: '@microsoft/teamsfx'
     summary: |+
       The request handler to integrate with web request.
@@ -187,19 +192,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function requestHandler(req: Request_2, res: Response_2, logic?:
+        function requestHandler(req: Request<Record<string, unknown>,
+        Record<string, undefined | string | string[]>>, res: Response, logic?:
         (context: TurnContext) => Promise<any>): Promise<void>
       parameters:
         - id: req
-          type: Request_2
-          description: 'An incoming HTTP [Request](xref:botbuilder.Request).'
+          type: >-
+            Request&lt;Record&lt;string, unknown&gt;, Record&lt;string,
+            undefined | string | string[]&gt;&gt;
+          description: An incoming HTTP [Request](xref:botbuilder.Request).
         - id: res
-          type: Response_2
-          description: 'The corresponding HTTP [Response](xref:botbuilder.Response).'
+          type: Response
+          description: The corresponding HTTP [Response](xref:botbuilder.Response).
         - id: logic
           type: '(context: TurnContext) =&gt; Promise&lt;any&gt;'
-          description: |
-            The additional function to handle bot context.
+          description: The additional function to handle bot context.
       return:
         description: ''
         type: Promise&lt;void&gt;

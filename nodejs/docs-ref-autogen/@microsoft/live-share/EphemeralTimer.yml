@@ -129,10 +129,7 @@ properties:
     summary: ''
     fullName: isStarted
     remarks: ''
-    isDeprecated: true
-    customDeprecatedMessage: |-
-      isInitialized should be used instead
-      Returns true if the object has been initialized.
+    isDeprecated: false
     syntax:
       content: boolean isStarted
       return:
@@ -161,11 +158,42 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'addListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      content: >-
+        addListener: TypedEventTransform<EphemeralTimer, IEphemeralTimerEvents &
+        IEvent>
       return:
         description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.addListener
+        type: >-
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.EphemeralTimer" />, <xref
+          uid="@microsoft/live-share.IEphemeralTimerEvents" /> & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.addListener
+  - name: captureRejections
+    uid: '@microsoft/live-share.EphemeralTimer.captureRejections'
+    package: '@microsoft/live-share'
+    summary: Sets or gets the default captureRejection value for all emitters.
+    fullName: captureRejections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejections: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejections
+  - name: captureRejectionSymbol
+    uid: '@microsoft/live-share.EphemeralTimer.captureRejectionSymbol'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: captureRejectionSymbol
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejectionSymbol: typeof captureRejectionSymbol'
+      return:
+        description: ''
+        type: typeof captureRejectionSymbol
+    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejectionSymbol
   - name: defaultMaxListeners
     uid: '@microsoft/live-share.EphemeralTimer.defaultMaxListeners'
     package: '@microsoft/live-share'
@@ -178,7 +206,35 @@ inheritedProperties:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.defaultMaxListeners
+    inheritanceDescription: <b>Inherited From</b> DataObject.defaultMaxListeners
+  - name: errorMonitor
+    uid: '@microsoft/live-share.EphemeralTimer.errorMonitor'
+    package: '@microsoft/live-share'
+    summary: >-
+      This symbol shall be used to install a listener for only monitoring
+      `'error'`
+
+      events. Listeners installed using this symbol are called before the
+      regular
+
+      `'error'` listeners are called.
+
+
+      Installing a listener using this symbol does not change the behavior once
+      an
+
+      `'error'` event is emitted, therefore the process will still crash if no
+
+      regular `'error'` listener is installed.
+    fullName: errorMonitor
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static errorMonitor: typeof errorMonitor'
+      return:
+        description: ''
+        type: typeof errorMonitor
+    inheritanceDescription: <b>Inherited From</b> DataObject.errorMonitor
   - name: 'off'
     uid: '@microsoft/live-share.EphemeralTimer.off'
     package: '@microsoft/live-share'
@@ -187,11 +243,14 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'off: TypedEventTransform<this, I["Events"] & IEvent>'
+      content: 'off: TypedEventTransform<EphemeralTimer, IEphemeralTimerEvents & IEvent>'
       return:
         description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.off
+        type: >-
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.EphemeralTimer" />, <xref
+          uid="@microsoft/live-share.IEphemeralTimerEvents" /> & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.off
   - name: 'on'
     uid: '@microsoft/live-share.EphemeralTimer.on'
     package: '@microsoft/live-share'
@@ -200,11 +259,14 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'on: TypedEventTransform<this, I["Events"] & IEvent>'
+      content: 'on: TypedEventTransform<EphemeralTimer, IEphemeralTimerEvents & IEvent>'
       return:
         description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.on
+        type: >-
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.EphemeralTimer" />, <xref
+          uid="@microsoft/live-share.IEphemeralTimerEvents" /> & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.on
   - name: once
     uid: '@microsoft/live-share.EphemeralTimer.once'
     package: '@microsoft/live-share'
@@ -213,11 +275,16 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'once: TypedEventTransform<this, I["Events"] & IEvent>'
+      content: >-
+        once: TypedEventTransform<EphemeralTimer, IEphemeralTimerEvents &
+        IEvent>
       return:
         description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.once
+        type: >-
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.EphemeralTimer" />, <xref
+          uid="@microsoft/live-share.IEphemeralTimerEvents" /> & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
   - name: prependListener
     uid: '@microsoft/live-share.EphemeralTimer.prependListener'
     package: '@microsoft/live-share'
@@ -226,11 +293,16 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'prependListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      content: >-
+        prependListener: TypedEventTransform<EphemeralTimer,
+        IEphemeralTimerEvents & IEvent>
       return:
         description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependListener
+        type: >-
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.EphemeralTimer" />, <xref
+          uid="@microsoft/live-share.IEphemeralTimerEvents" /> & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.prependListener
   - name: prependOnceListener
     uid: '@microsoft/live-share.EphemeralTimer.prependOnceListener'
     package: '@microsoft/live-share'
@@ -239,11 +311,16 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'prependOnceListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      content: >-
+        prependOnceListener: TypedEventTransform<EphemeralTimer,
+        IEphemeralTimerEvents & IEvent>
       return:
         description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.prependOnceListener
+        type: >-
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.EphemeralTimer" />, <xref
+          uid="@microsoft/live-share.IEphemeralTimerEvents" /> & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.prependOnceListener
   - name: removeListener
     uid: '@microsoft/live-share.EphemeralTimer.removeListener'
     package: '@microsoft/live-share'
@@ -252,43 +329,125 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'removeListener: TypedEventTransform<this, I["Events"] & IEvent>'
+      content: >-
+        removeListener: TypedEventTransform<EphemeralTimer,
+        IEphemeralTimerEvents & IEvent>
       return:
         description: ''
-        type: 'TypedEventTransform&lt;this, I["Events"] & IEvent&gt;'
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.removeListener
+        type: >-
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.EphemeralTimer" />, <xref
+          uid="@microsoft/live-share.IEphemeralTimerEvents" /> & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.removeListener
 inheritedMethods:
-  - name: 'emit(string | number, any[])'
+  - name: emit(string | symbol, any[])
     uid: '@microsoft/live-share.EphemeralTimer.emit'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Synchronously calls each of the listeners registered for the event
+      named`eventName`, in the order they were registered, passing the supplied
+      arguments
+
+      to each.
+
+
+      Returns `true` if the event had listeners, `false` otherwise.
+
+
+      ```js
+
+      const EventEmitter = require('events');
+
+      const myEmitter = new EventEmitter();
+
+
+      // First listener
+
+      myEmitter.on('event', function firstListener() {
+        console.log('Helloooo! first listener');
+      });
+
+      // Second listener
+
+      myEmitter.on('event', function secondListener(arg1, arg2) {
+        console.log(`event with parameters ${arg1}, ${arg2} in second listener`);
+      });
+
+      // Third listener
+
+      myEmitter.on('event', function thirdListener(...args) {
+        const parameters = args.join(', ');
+        console.log(`event with parameters ${parameters} in third listener`);
+      });
+
+
+      console.log(myEmitter.listeners('event'));
+
+
+      myEmitter.emit('event', 1, 2, 3, 4, 5);
+
+
+      // Prints:
+
+      // [
+
+      //   [Function: firstListener],
+
+      //   [Function: secondListener],
+
+      //   [Function: thirdListener]
+
+      // ]
+
+      // Helloooo! first listener
+
+      // event with parameters 1, 2 in second listener
+
+      // event with parameters 1, 2, 3, 4, 5 in third listener
+
+      ```
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function emit(type: string | number, args: any[]): boolean'
+      content: 'function emit(eventName: string | symbol, args: any[]): boolean'
       parameters:
-        - id: type
-          type: string | number
+        - id: eventName
+          type: string | symbol
           description: ''
         - id: args
-          type: 'any[]'
+          type: any[]
           description: ''
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
+    inheritanceDescription: <b>Inherited From</b> DataObject.emit
   - name: eventNames()
     uid: '@microsoft/live-share.EphemeralTimer.eventNames'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: |-
+      Returns an array listing the events for which the emitter has registered
+      listeners. The values in the array are strings or `Symbol`s.
+
+      ```js
+      const EventEmitter = require('events');
+      const myEE = new EventEmitter();
+      myEE.on('foo', () => {});
+      myEE.on('bar', () => {});
+
+      const sym = Symbol('symbol');
+      myEE.on(sym, () => {});
+
+      console.log(myEE.eventNames());
+      // Prints: [ 'foo', 'bar', Symbol(symbol) ]
+      ```
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function eventNames(): Array<string | number>'
+      content: 'function eventNames(): (string | symbol)[]'
       return:
         description: ''
-        type: Array&lt;string | number&gt;
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
+        type: (string | symbol)[]
+    inheritanceDescription: <b>Inherited From</b> DataObject.eventNames
   - name: finishInitialization(boolean)
     uid: '@microsoft/live-share.EphemeralTimer.finishInitialization'
     package: '@microsoft/live-share'
@@ -316,7 +475,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> PureDataObject.finishInitialization
+    inheritanceDescription: <b>Inherited From</b> DataObject.finishInitialization
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share.EphemeralTimer.getDataObject'
     package: '@microsoft/live-share'
@@ -334,10 +493,66 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
-    inheritanceDescription: <b>Inherited From</b> PureDataObject.getDataObject
+    inheritanceDescription: <b>Inherited From</b> DataObject.getDataObject
+  - name: getEventListeners(_DOMEventTarget | EventEmitter, string | symbol)
+    uid: '@microsoft/live-share.EphemeralTimer.getEventListeners'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns a copy of the array of listeners for the event named `eventName`.
+
+
+      For `EventEmitter`s this behaves exactly the same as calling `.listeners`
+      on
+
+      the emitter.
+
+
+      For `EventTarget`s this is the only way to get the event listeners for the
+
+      event target. This is useful for debugging and diagnostic purposes.
+
+
+      ```js
+
+      const { getEventListeners, EventEmitter } = require('events');
+
+
+      {
+        const ee = new EventEmitter();
+        const listener = () => console.log('Events are fun');
+        ee.on('foo', listener);
+        getEventListeners(ee, 'foo'); // [listener]
+      }
+
+      {
+        const et = new EventTarget();
+        const listener = () => console.log('Events are fun');
+        et.addEventListener('foo', listener);
+        getEventListeners(et, 'foo'); // [listener]
+      }
+
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getEventListeners(emitter: _DOMEventTarget |
+        EventEmitter, name: string | symbol): Function[]
+      parameters:
+        - id: emitter
+          type: _DOMEventTarget | EventEmitter
+          description: ''
+        - id: name
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: Function[]
+    inheritanceDescription: <b>Inherited From</b> DataObject.getEventListeners
   - name: >-
-      getFluidObjectFromDirectory<T>(string, IDirectory, undefined | (id:
-      string, directory: IDirectory) => IFluidHandle | undefined)
+      getFluidObjectFromDirectory<T>(string, IDirectory, (id: string, directory:
+      IDirectory) => undefined | IFluidHandle<FluidObject<unknown> &
+      IFluidLoadable>)
     uid: '@microsoft/live-share.EphemeralTimer.getFluidObjectFromDirectory'
     package: '@microsoft/live-share'
     summary: Retrieve Fluid object using the handle get
@@ -346,8 +561,9 @@ inheritedMethods:
     syntax:
       content: >-
         function getFluidObjectFromDirectory<T>(key: string, directory:
-        IDirectory, getObjectFromDirectory?: undefined | (id: string, directory:
-        IDirectory) => IFluidHandle | undefined): Promise<T | undefined>
+        IDirectory, getObjectFromDirectory?: (id: string, directory: IDirectory)
+        => undefined | IFluidHandle<FluidObject<unknown> & IFluidLoadable>):
+        Promise<undefined | T>
       parameters:
         - id: key
           type: string
@@ -357,21 +573,26 @@ inheritedMethods:
           description: directory containing the object
         - id: getObjectFromDirectory
           type: >-
-            undefined | (id: string, directory: IDirectory) =&gt; IFluidHandle |
-            undefined
-          description: >
+            (id: string, directory: IDirectory) =&gt; undefined |
+            IFluidHandle&lt;FluidObject&lt;unknown&gt; & IFluidLoadable&gt;
+          description: >-
             optional callback for fetching object from the directory, allows
             users to
 
             define custom types/getters for object retrieval
       return:
         description: ''
-        type: Promise&lt;T | undefined&gt;
-    inheritanceDescription: <b>Inherited From</b> PureDataObject.getFluidObjectFromDirectory
+        type: Promise&lt;undefined | T&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.getFluidObjectFromDirectory
   - name: getMaxListeners()
     uid: '@microsoft/live-share.EphemeralTimer.getMaxListeners'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Returns the current max listener value for the `EventEmitter` which is
+      either
+
+      set by `emitter.setMaxListeners(n)` or defaults to
+      [defaultMaxListeners](xref:@microsoft/live-share.EphemeralTimer.defaultMaxListeners).
     remarks: ''
     isDeprecated: false
     syntax:
@@ -379,7 +600,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
+    inheritanceDescription: <b>Inherited From</b> DataObject.getMaxListeners
   - name: initializeInternal(boolean)
     uid: '@microsoft/live-share.EphemeralTimer.initializeInternal'
     package: '@microsoft/live-share'
@@ -398,91 +619,394 @@ inheritedMethods:
         description: ''
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
-  - name: 'listenerCount(EventEmitter, string | number)'
+  - name: listenerCount(EventEmitter, string | symbol)
     uid: '@microsoft/live-share.EphemeralTimer.listenerCount'
+    package: '@microsoft/live-share'
+    summary: >-
+      A class method that returns the number of listeners for the given
+      `eventName`registered on the given `emitter`.
+
+
+      ```js
+
+      const { EventEmitter, listenerCount } = require('events');
+
+      const myEmitter = new EventEmitter();
+
+      myEmitter.on('event', () => {});
+
+      myEmitter.on('event', () => {});
+
+      console.log(listenerCount(myEmitter, 'event'));
+
+      // Prints: 2
+
+      ```
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: Since v3.2.0 - Use `listenerCount` instead.
+    syntax:
+      content: >-
+        static function listenerCount(emitter: EventEmitter, eventName: string |
+        symbol): number
+      parameters:
+        - id: emitter
+          type: EventEmitter
+          description: The emitter to query
+        - id: eventName
+          type: string | symbol
+          description: The event name
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
+  - name: listenerCount(string | symbol)
+    uid: '@microsoft/live-share.EphemeralTimer.listenerCount'
+    package: '@microsoft/live-share'
+    summary: Returns the number of listeners listening to the event named `eventName`.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function listenerCount(eventName: string | symbol): number'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: The name of the event being listened for
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share.EphemeralTimer.listeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      Returns a copy of the array of listeners for the event named `eventName`.
+
+      ```js
+      server.on('connection', (stream) => {
+        console.log('someone connected!');
+      });
+      console.log(util.inspect(server.listeners('connection')));
+      // Prints: [ [Function] ]
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(eventName: string | symbol): Function[]'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: Function[]
+    inheritanceDescription: <b>Inherited From</b> DataObject.listeners
+  - name: on(EventEmitter, string, StaticEventEmitterOptions)
+    uid: '@microsoft/live-share.EphemeralTimer.on'
+    package: '@microsoft/live-share'
+    summary: |-
+      ```js
+      const { on, EventEmitter } = require('events');
+
+      (async () => {
+        const ee = new EventEmitter();
+
+        // Emit later on
+        process.nextTick(() => {
+          ee.emit('foo', 'bar');
+          ee.emit('foo', 42);
+        });
+
+        for await (const event of on(ee, 'foo')) {
+          // The execution of this inner block is synchronous and it
+          // processes one event at a time (even with await). Do not use
+          // if concurrent execution is required.
+          console.log(event); // prints ['bar'] [42]
+        }
+        // Unreachable here
+      })();
+      ```
+
+      Returns an `AsyncIterator` that iterates `eventName` events. It will throw
+      if the `EventEmitter` emits `'error'`. It removes all listeners when
+      exiting the loop. The `value` returned by each iteration is an array
+      composed of the emitted event arguments.
+
+      An `AbortSignal` can be used to cancel waiting on events:
+
+      ```js
+      const { on, EventEmitter } = require('events');
+      const ac = new AbortController();
+
+      (async () => {
+        const ee = new EventEmitter();
+
+        // Emit later on
+        process.nextTick(() => {
+          ee.emit('foo', 'bar');
+          ee.emit('foo', 42);
+        });
+
+        for await (const event of on(ee, 'foo', { signal: ac.signal })) {
+          // The execution of this inner block is synchronous and it
+          // processes one event at a time (even with await). Do not use
+          // if concurrent execution is required.
+          console.log(event); // prints ['bar'] [42]
+        }
+        // Unreachable here
+      })();
+
+      process.nextTick(() => ac.abort());
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function on(emitter: EventEmitter, eventName: string, options?:
+        StaticEventEmitterOptions): AsyncIterableIterator<any>
+      parameters:
+        - id: emitter
+          type: EventEmitter
+          description: ''
+        - id: eventName
+          type: string
+          description: The name of the event being listened for
+        - id: options
+          type: StaticEventEmitterOptions
+          description: ''
+      return:
+        description: that iterates `eventName` events emitted by the `emitter`
+        type: AsyncIterableIterator&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.on
+  - name: once(_DOMEventTarget, string, StaticEventEmitterOptions)
+    uid: '@microsoft/live-share.EphemeralTimer.once_1'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        static function listenerCount(emitter: EventEmitter, type: string |
-        number): number
+        static function once(emitter: _DOMEventTarget, eventName: string,
+        options?: StaticEventEmitterOptions): Promise<any[]>
       parameters:
         - id: emitter
-          type: EventEmitter
+          type: _DOMEventTarget
           description: ''
-        - id: type
-          type: string | number
+        - id: eventName
+          type: string
+          description: ''
+        - id: options
+          type: StaticEventEmitterOptions
           description: ''
       return:
         description: ''
-        type: number
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
-  - name: listenerCount(string | number)
-    uid: '@microsoft/live-share.EphemeralTimer.listenerCount'
+        type: Promise&lt;any[]&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
+  - name: once(_NodeEventTarget, string | symbol, StaticEventEmitterOptions)
+    uid: '@microsoft/live-share.EphemeralTimer.once'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Creates a `Promise` that is fulfilled when the `EventEmitter` emits the
+      given
+
+      event or that is rejected if the `EventEmitter` emits `'error'` while
+      waiting.
+
+      The `Promise` will resolve with an array of all the arguments emitted to
+      the
+
+      given event.
+
+
+      This method is intentionally generic and works with the web platform
+      [EventTarget](https://dom.spec.whatwg.org/#interface-eventtarget)
+      interface, which has no special`'error'` event
+
+      semantics and does not listen to the `'error'` event.
+
+
+      ```js
+
+      const { once, EventEmitter } = require('events');
+
+
+      async function run() {
+        const ee = new EventEmitter();
+
+        process.nextTick(() => {
+          ee.emit('myevent', 42);
+        });
+
+        const [value] = await once(ee, 'myevent');
+        console.log(value);
+
+        const err = new Error('kaboom');
+        process.nextTick(() => {
+          ee.emit('error', err);
+        });
+
+        try {
+          await once(ee, 'myevent');
+        } catch (err) {
+          console.log('error happened', err);
+        }
+      }
+
+
+      run();
+
+      ```
+
+
+      The special handling of the `'error'` event is only used when
+      `events.once()`is used to wait for another event. If `events.once()` is
+      used to wait for the
+
+      '`error'` event itself, then it is treated as any other kind of event
+      without
+
+      special handling:
+
+
+      ```js
+
+      const { EventEmitter, once } = require('events');
+
+
+      const ee = new EventEmitter();
+
+
+      once(ee, 'error')
+        .then(([err]) => console.log('ok', err.message))
+        .catch((err) => console.log('error', err.message));
+
+      ee.emit('error', new Error('boom'));
+
+
+      // Prints: ok boom
+
+      ```
+
+
+      An `AbortSignal` can be used to cancel waiting for the event:
+
+
+      ```js
+
+      const { EventEmitter, once } = require('events');
+
+
+      const ee = new EventEmitter();
+
+      const ac = new AbortController();
+
+
+      async function foo(emitter, event, signal) {
+        try {
+          await once(emitter, event, { signal });
+          console.log('event emitted!');
+        } catch (error) {
+          if (error.name === 'AbortError') {
+            console.error('Waiting for the event was canceled!');
+          } else {
+            console.error('There was an error', error.message);
+          }
+        }
+      }
+
+
+      foo(ee, 'foo', ac.signal);
+
+      ac.abort(); // Abort waiting for the event
+
+      ee.emit('foo'); // Prints: Waiting for the event was canceled!
+
+      ```
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function listenerCount(type: string | number): number'
+      content: >-
+        static function once(emitter: _NodeEventTarget, eventName: string |
+        symbol, options?: StaticEventEmitterOptions): Promise<any[]>
       parameters:
-        - id: type
-          type: string | number
+        - id: emitter
+          type: _NodeEventTarget
+          description: ''
+        - id: eventName
+          type: string | symbol
+          description: ''
+        - id: options
+          type: StaticEventEmitterOptions
           description: ''
       return:
         description: ''
-        type: number
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
-  - name: listeners(string | number)
-    uid: '@microsoft/live-share.EphemeralTimer.listeners'
-    package: '@microsoft/live-share'
-    summary: ''
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function listeners(type: string | number): Listener[]'
-      parameters:
-        - id: type
-          type: string | number
-          description: ''
-      return:
-        description: ''
-        type: 'Listener[]'
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
-  - name: rawListeners(string | number)
+        type: Promise&lt;any[]&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
+  - name: rawListeners(string | symbol)
     uid: '@microsoft/live-share.EphemeralTimer.rawListeners'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: |-
+      Returns a copy of the array of listeners for the event named `eventName`,
+      including any wrappers (such as those created by `.once()`).
+
+      ```js
+      const emitter = new EventEmitter();
+      emitter.once('log', () => console.log('log once'));
+
+      // Returns a new Array with a function `onceWrapper` which has a property
+      // `listener` which contains the original listener bound above
+      const listeners = emitter.rawListeners('log');
+      const logFnWrapper = listeners[0];
+
+      // Logs "log once" to the console and does not unbind the `once` event
+      logFnWrapper.listener();
+
+      // Logs "log once" to the console and removes the listener
+      logFnWrapper();
+
+      emitter.on('log', () => console.log('log persistently'));
+      // Will return a new Array with a single function bound by `.on()` above
+      const newListeners = emitter.rawListeners('log');
+
+      // Logs "log persistently" twice
+      newListeners[0]();
+      emitter.emit('log');
+      ```
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function rawListeners(type: string | number): Listener[]'
+      content: 'function rawListeners(eventName: string | symbol): Function[]'
       parameters:
-        - id: type
-          type: string | number
+        - id: eventName
+          type: string | symbol
           description: ''
       return:
         description: ''
-        type: 'Listener[]'
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
-  - name: removeAllListeners(string | number)
+        type: Function[]
+    inheritanceDescription: <b>Inherited From</b> DataObject.rawListeners
+  - name: removeAllListeners(string | symbol)
     uid: '@microsoft/live-share.EphemeralTimer.removeAllListeners'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: |-
+      Removes all listeners, or those of the specified `eventName`.
+
+      It is bad practice to remove listeners added elsewhere in the code,
+      particularly when the `EventEmitter` instance was created by some other
+      component or module (e.g. sockets or file streams).
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function removeAllListeners(type?: string | number): this'
+      content: 'function removeAllListeners(event?: string | symbol): EphemeralTimer'
       parameters:
-        - id: type
-          type: string | number
+        - id: event
+          type: string | symbol
           description: ''
       return:
         description: ''
-        type: this
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
+        type: <xref uid="@microsoft/live-share.EphemeralTimer" />
+    inheritanceDescription: <b>Inherited From</b> DataObject.removeAllListeners
   - name: request(IRequest)
     uid: '@microsoft/live-share.EphemeralTimer.request'
     package: '@microsoft/live-share'
@@ -502,19 +1026,63 @@ inheritedMethods:
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share.EphemeralTimer.setMaxListeners'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      By default `EventEmitter`s will print a warning if more than `10`
+      listeners are
+
+      added for a particular event. This is a useful default that helps finding
+
+      memory leaks. The `emitter.setMaxListeners()` method allows the limit to
+      be
+
+      modified for this specific `EventEmitter` instance. The value can be set
+      to`Infinity` (or `0`) to indicate an unlimited number of listeners.
+
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): this'
+      content: 'function setMaxListeners(n: number): EphemeralTimer'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: this
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
+        type: <xref uid="@microsoft/live-share.EphemeralTimer" />
+    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+  - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
+    uid: '@microsoft/live-share.EphemeralTimer.setMaxListeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      ```js
+      const {
+        setMaxListeners,
+        EventEmitter
+      } = require('events');
+
+      const target = new EventTarget();
+      const emitter = new EventEmitter();
+
+      setMaxListeners(5, target, emitter);
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function setMaxListeners(n?: number, eventTargets:
+        (_DOMEventTarget | EventEmitter)[])
+      parameters:
+        - id: 'n'
+          type: number
+          description: >-
+            A non-negative number. The maximum number of listeners per
+            `EventTarget` event.
+        - id: eventTargets
+          type: (_DOMEventTarget | EventEmitter)[]
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
 methods:
   - name: dispose()
     uid: '@microsoft/live-share.EphemeralTimer.dispose'
@@ -524,7 +1092,7 @@ methods:
     isDeprecated: false
     syntax:
       content: function dispose()
-  - name: 'initialize(UserMeetingRole[])'
+  - name: initialize(UserMeetingRole[])
     uid: '@microsoft/live-share.EphemeralTimer.initialize'
     package: '@microsoft/live-share'
     summary: initalizes the object.
@@ -534,9 +1102,8 @@ methods:
       content: 'function initialize(allowedRoles?: UserMeetingRole[])'
       parameters:
         - id: allowedRoles
-          type: '<xref uid="@microsoft/live-share.UserMeetingRole" />[]'
-          description: |
-            Optional. List of roles allowed to make state changes.
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+          description: Optional. List of roles allowed to make state changes.
   - name: pause()
     uid: '@microsoft/live-share.EphemeralTimer.pause'
     package: '@microsoft/live-share'
@@ -566,6 +1133,5 @@ methods:
       parameters:
         - id: duration
           type: number
-          description: |
-            in Milliseconds
+          description: in Milliseconds
 extends: 'DataObject&lt;{ Events: IEphemeralTimerEvents }&gt;'

@@ -10,12 +10,12 @@ fields:
   - name: Verbose
     uid: '@microsoft/teamsfx.LogLevel.Verbose'
     package: '@microsoft/teamsfx'
-    summary: 'Show verbose, information, warning and error message.'
+    summary: Show verbose, information, warning and error message.
     numericValue: 0
   - name: Info
     uid: '@microsoft/teamsfx.LogLevel.Info'
     package: '@microsoft/teamsfx'
-    summary: 'Show information, warning and error message.'
+    summary: Show information, warning and error message.
     numericValue: 1
   - name: Warn
     uid: '@microsoft/teamsfx.LogLevel.Warn'

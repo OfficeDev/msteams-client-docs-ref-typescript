@@ -2,7 +2,10 @@
 name: ComposeReplyOrForwardParams
 uid: '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
 package: '@microsoft/teams-js'
-summary: ''
+summary: |-
+  Parameters supplied when composing a reply to or forward of a message
+
+  See [ComposeMailType](xref:@microsoft/teams-js.mail.ComposeMailType)
 fullName: ComposeReplyOrForwardParams<T>
 remarks: ''
 isDeprecated: false
@@ -33,7 +36,5 @@ inheritedProperties:
       return:
         description: ''
         type: T
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ComposeMailBase.type](xref:@microsoft/teams-js.mail.ComposeMailBase.type)
-extends: <xref uid="@microsoft/teams-js.mail.ComposeMailBase" />&lt;T&gt;
+    inheritanceDescription: <b>Inherited From</b> ComposeMailBase.type
+extends: ComposeMailBase&lt;T&gt;
