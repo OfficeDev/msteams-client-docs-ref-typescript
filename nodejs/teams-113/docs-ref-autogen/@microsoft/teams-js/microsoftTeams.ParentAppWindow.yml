@@ -1,0 +1,57 @@
+### YamlMime:TSType
+name: ParentAppWindow
+uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: ParentAppWindow
+remarks: ''
+isDeprecated: false
+type: class
+properties:
+  - name: Instance
+    uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow.Instance'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: Instance
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: static IAppWindow Instance
+      return:
+        description: ''
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.IAppWindow" />'
+methods:
+  - name: 'addEventListener(string, (message: any) => void)'
+    uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow.addEventListener'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addEventListener(type: string, listener: (message: any) =>
+        void)
+      parameters:
+        - id: type
+          type: string
+          description: ''
+        - id: listener
+          type: '(message: any) =&gt; void'
+          description: ''
+  - name: 'postMessage(any, (status: boolean, reason?: string) => void)'
+    uid: '@microsoft/teams-js.microsoftTeams.ParentAppWindow.postMessage'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function postMessage(message: any, onComplete?: (status: boolean,
+        reason?: string) => void)
+      parameters:
+        - id: message
+          type: any
+          description: ''
+        - id: onComplete
+          type: '(status: boolean, reason?: string) =&gt; void'
+          description: ''

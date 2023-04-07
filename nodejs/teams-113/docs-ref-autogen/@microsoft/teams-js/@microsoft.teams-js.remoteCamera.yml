@@ -1,0 +1,87 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.remoteCamera'
+name: remoteCamera
+type: module
+package: '@microsoft/teams-js'
+summary: ''
+functions:
+  - name: >-
+      registerOnCapableParticipantsChangeHandler((participantChange:
+      Participant[]) => void)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.remoteCamera.registerOnCapableParticipantsChangeHandler
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Registers a handler for change in participants with
+      controllable-cameras.       * Only one handler can be registered at a
+      time. A subsequent registration replaces an existing registration.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerOnCapableParticipantsChangeHandler(handler:
+        (participantChange: Participant[]) => void)
+      parameters:
+        - id: handler
+          type: '(participantChange: Participant[]) =&gt; void'
+          description: >-
+            The handler to invoke when the list of participants with
+            controllable-cameras changes.
+  - name: >-
+      registerOnDeviceStateChangeHandler((deviceStateChange: DeviceState) =>
+      void)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.remoteCamera.registerOnDeviceStateChangeHandler
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Registers a handler for device state change.       * Only one handler
+      can be registered at a time. A subsequent registration replaces an
+      existing registration.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerOnDeviceStateChangeHandler(handler: (deviceStateChange:
+        DeviceState) => void)
+      parameters:
+        - id: handler
+          type: '(deviceStateChange: DeviceState) =&gt; void'
+          description: The handler to invoke when the controlled device changes state.
+  - name: 'registerOnErrorHandler((error: ErrorReason) => void)'
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.remoteCamera.registerOnErrorHandler
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Registers a handler for error.       * Only one handler can be
+      registered at a time. A subsequent registration replaces an existing
+      registration.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function registerOnErrorHandler(handler: (error: ErrorReason) => void)'
+      parameters:
+        - id: handler
+          type: '(error: ErrorReason) =&gt; void'
+          description: >-
+            The handler to invoke when there is an error from the camera
+            handler.
+  - name: >-
+      registerOnSessionStatusChangeHandler((sessionStatusChange: SessionStatus)
+      => void)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.remoteCamera.registerOnSessionStatusChangeHandler
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Registers a handler for session status change.       * Only one handler
+      can be registered at a time. A subsequent registration replaces an
+      existing registration.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerOnSessionStatusChangeHandler(handler:
+        (sessionStatusChange: SessionStatus) => void)
+      parameters:
+        - id: handler
+          type: '(sessionStatusChange: SessionStatus) =&gt; void'
+          description: The handler to invoke when the current session status changes.

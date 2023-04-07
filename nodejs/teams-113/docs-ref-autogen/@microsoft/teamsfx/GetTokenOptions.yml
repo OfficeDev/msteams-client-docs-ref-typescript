@@ -1,0 +1,74 @@
+### YamlMime:TSType
+name: GetTokenOptions
+uid: '@microsoft/teamsfx.GetTokenOptions'
+package: '@microsoft/teamsfx'
+summary: Defines options for TokenCredential.getToken.
+fullName: GetTokenOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: abortSignal
+    uid: '@microsoft/teamsfx.GetTokenOptions.abortSignal'
+    package: '@microsoft/teamsfx'
+    summary: The signal which can be used to abort requests.
+    fullName: abortSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'abortSignal?: AbortSignalLike'
+      return:
+        description: ''
+        type: AbortSignalLike
+  - name: claims
+    uid: '@microsoft/teamsfx.GetTokenOptions.claims'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Claim details to perform the Continuous Access Evaluation authentication
+      flow
+    fullName: claims
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'claims?: string'
+      return:
+        description: ''
+        type: string
+  - name: requestOptions
+    uid: '@microsoft/teamsfx.GetTokenOptions.requestOptions'
+    package: '@microsoft/teamsfx'
+    summary: Options used when creating and sending HTTP requests for this operation.
+    fullName: requestOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestOptions?: { timeout?: number }'
+      return:
+        description: ''
+        type: '{ timeout?: number }'
+  - name: tenantId
+    uid: '@microsoft/teamsfx.GetTokenOptions.tenantId'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Allows specifying a tenantId. Useful to handle challenges that provide
+      tenant Id hints.
+    fullName: tenantId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tenantId?: string'
+      return:
+        description: ''
+        type: string
+  - name: tracingOptions
+    uid: '@microsoft/teamsfx.GetTokenOptions.tracingOptions'
+    package: '@microsoft/teamsfx'
+    summary: Options used when tracing is enabled.
+    fullName: tracingOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tracingOptions?: { tracingContext?: TracingContext }'
+      return:
+        description: ''
+        type: '{ tracingContext?: TracingContext }'

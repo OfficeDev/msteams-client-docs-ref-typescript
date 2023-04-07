@@ -1,0 +1,17 @@
+### YamlMime:TSEnum
+name: MenuListType
+uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
+package: '@microsoft/teams-js'
+summary: '* Represents information about type of list to display in Navigation Bar Menu.'
+fullName: MenuListType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: dropDown
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType.dropDown'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: popOver
+    uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType.popOver'
+    package: '@microsoft/teams-js'
+    summary: ''

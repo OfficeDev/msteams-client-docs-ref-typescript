@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: ViewConfiguration
+uid: '@microsoft/teams-js.@microsoft.teams-js.menus.ViewConfiguration'
+package: '@microsoft/teams-js'
+summary: '* Represents information about item in View Configuration.'
+fullName: ViewConfiguration
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: contentDescription
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.menus.ViewConfiguration.contentDescription
+    package: '@microsoft/teams-js'
+    summary: '* Additional information for accessibility.'
+    fullName: contentDescription
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentDescription?: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@microsoft/teams-js.@microsoft.teams-js.menus.ViewConfiguration.id'
+    package: '@microsoft/teams-js'
+    summary: '* Unique identifier of view.'
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: title
+    uid: '@microsoft/teams-js.@microsoft.teams-js.menus.ViewConfiguration.title'
+    package: '@microsoft/teams-js'
+    summary: '* Display title of the view.'
+    fullName: title
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'title: string'
+      return:
+        description: ''
+        type: string

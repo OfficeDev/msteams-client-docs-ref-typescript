@@ -1,0 +1,54 @@
+### YamlMime:TSEnum
+name: ErrorCode
+uid: '@microsoft/teamsfx.ErrorCode'
+package: '@microsoft/teamsfx'
+summary: Error code to trace the error types.
+fullName: ErrorCode
+remarks: ''
+previewState: beta
+isDeprecated: false
+fields:
+  - name: ChannelNotSupported
+    uid: '@microsoft/teamsfx.ErrorCode.ChannelNotSupported'
+    package: '@microsoft/teamsfx'
+    summary: Channel is not supported error.
+  - name: ConsentFailed
+    uid: '@microsoft/teamsfx.ErrorCode.ConsentFailed'
+    package: '@microsoft/teamsfx'
+    summary: User failed to finish the AAD consent flow failed.
+  - name: FailedOperation
+    uid: '@microsoft/teamsfx.ErrorCode.FailedOperation'
+    package: '@microsoft/teamsfx'
+    summary: Operation failed.
+  - name: InternalError
+    uid: '@microsoft/teamsfx.ErrorCode.InternalError'
+    package: '@microsoft/teamsfx'
+    summary: Internal error.
+  - name: InvalidCertificate
+    uid: '@microsoft/teamsfx.ErrorCode.InvalidCertificate'
+    package: '@microsoft/teamsfx'
+    summary: Invalid certificate error.
+  - name: InvalidConfiguration
+    uid: '@microsoft/teamsfx.ErrorCode.InvalidConfiguration'
+    package: '@microsoft/teamsfx'
+    summary: Invalid configuration error.
+  - name: InvalidParameter
+    uid: '@microsoft/teamsfx.ErrorCode.InvalidParameter'
+    package: '@microsoft/teamsfx'
+    summary: Invalid parameter error.
+  - name: RuntimeNotSupported
+    uid: '@microsoft/teamsfx.ErrorCode.RuntimeNotSupported'
+    package: '@microsoft/teamsfx'
+    summary: Runtime is not supported error.
+  - name: ServiceError
+    uid: '@microsoft/teamsfx.ErrorCode.ServiceError'
+    package: '@microsoft/teamsfx'
+    summary: Call service (AAD or simple authentication server) failed.
+  - name: TokenExpiredError
+    uid: '@microsoft/teamsfx.ErrorCode.TokenExpiredError'
+    package: '@microsoft/teamsfx'
+    summary: Token is not within its valid time range error.
+  - name: UiRequiredError
+    uid: '@microsoft/teamsfx.ErrorCode.UiRequiredError'
+    package: '@microsoft/teamsfx'
+    summary: The user or administrator has not consented to use the application error.

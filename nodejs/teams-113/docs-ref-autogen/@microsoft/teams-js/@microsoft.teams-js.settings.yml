@@ -1,0 +1,110 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.settings'
+name: settings
+summary: >-
+  * Namespace to interact with the settings-specific part of the SDK.   * This
+  object is usable only on the settings frame.
+type: module
+interfaces:
+  - '@microsoft/teams-js.@microsoft.teams-js.settings.RemoveEvent'
+  - '@microsoft/teams-js.@microsoft.teams-js.settings.SaveEvent'
+  - '@microsoft/teams-js.@microsoft.teams-js.settings.SaveParameters'
+  - '@microsoft/teams-js.@microsoft.teams-js.settings.Settings'
+package: '@microsoft/teams-js'
+functions:
+  - name: 'getSettings((instanceSettings: Settings) => void)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.getSettings'
+    package: '@microsoft/teams-js'
+    summary: '* Gets the settings for the current instance.       *'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getSettings(callback: (instanceSettings: Settings) => void)'
+      parameters:
+        - id: callback
+          type: '(instanceSettings: Settings) =&gt; void'
+          description: >-
+            The callback to invoke when the
+            [Settings](xref:@microsoft/teams-js.@microsoft.teams-js.settings.Settings)
+            object is retrieved.
+  - name: initialize()
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.initialize'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function initialize()
+  - name: 'registerOnRemoveHandler((evt: RemoveEvent) => void)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.registerOnRemoveHandler'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Registers a handler for user attempts to remove content. This handler
+      should be used       * to remove the underlying resource powering the
+      content.       * The object passed to the handler must be used to indicate
+      whether to proceed with the removal.       * Only one handler may be
+      registered at a time. Subsequent registrations will override the
+      first.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function registerOnRemoveHandler(handler: (evt: RemoveEvent) => void)'
+      parameters:
+        - id: handler
+          type: '(evt: RemoveEvent) =&gt; void'
+          description: The handler to invoke when the user selects the remove button.
+  - name: 'registerOnSaveHandler((evt: SaveEvent) => void)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.registerOnSaveHandler'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Registers a handler for when the user attempts to save the settings.
+      This handler should be used       * to create or update the underlying
+      resource powering the content.       * The object passed to the handler
+      must be used to notify whether to proceed with the save.       * Only one
+      handler can be registered at a time. A subsequent registration replaces an
+      existing registration.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function registerOnSaveHandler(handler: (evt: SaveEvent) => void)'
+      parameters:
+        - id: handler
+          type: '(evt: SaveEvent) =&gt; void'
+          description: The handler to invoke when the user selects the save button.
+  - name: 'setSettings(Settings, (status: boolean, reason?: string) => void)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.setSettings'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Sets the settings for the current instance.       * This is an
+      asynchronous operation; calls to getSettings are not guaranteed to reflect
+      the changed state.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setSettings(instanceSettings: Settings, onComplete?: (status:
+        boolean, reason?: string) => void)
+      parameters:
+        - id: instanceSettings
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.settings.Settings" />
+          description: ''
+        - id: onComplete
+          type: '(status: boolean, reason?: string) =&gt; void'
+          description: ''
+  - name: setValidityState(boolean)
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.setValidityState'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Sets the validity state for the settings.       * The initial value is
+      false, so the user cannot save the settings until this is called with
+      true.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setValidityState(validityState: boolean)'
+      parameters:
+        - id: validityState
+          type: boolean
+          description: Indicates whether the save or remove button is enabled for the user.

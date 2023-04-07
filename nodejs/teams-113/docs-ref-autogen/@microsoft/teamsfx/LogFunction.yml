@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: LogFunction
+uid: '@microsoft/teamsfx.LogFunction'
+package: '@microsoft/teamsfx'
+summary: Log function for customized logging.
+fullName: LogFunction
+remarks: ''
+previewState: beta
+isDeprecated: false
+syntax: |
+  type LogFunction = (level: LogLevel, message: string) => void
