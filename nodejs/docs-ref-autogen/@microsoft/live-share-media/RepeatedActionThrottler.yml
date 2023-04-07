@@ -23,7 +23,7 @@ properties:
         description: ''
         type: number
 methods:
-  - name: 'throttled(ExtendedMediaSessionActionDetails, MediaSessionActionHandler)'
+  - name: throttled(ExtendedMediaSessionActionDetails, MediaSessionActionHandler)
     uid: '@microsoft/live-share-media.RepeatedActionThrottler.throttled'
     package: '@microsoft/live-share-media'
     summary: ''

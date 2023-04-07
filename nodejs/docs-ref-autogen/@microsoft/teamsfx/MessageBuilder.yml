@@ -10,7 +10,7 @@ remarks: ''
 isDeprecated: false
 type: class
 methods:
-  - name: 'attachAdaptiveCard<TData>(unknown, TData)'
+  - name: attachAdaptiveCard<TData>(unknown, TData)
     uid: '@microsoft/teamsfx.MessageBuilder.attachAdaptiveCard'
     package: '@microsoft/teamsfx'
     summary: |+
@@ -126,18 +126,17 @@ methods:
           type: string
           description: The card title.
         - id: images
-          type: '(string | CardImage)[]'
+          type: (string | CardImage)[]
           description: Optional. The array of images to include on the card.
         - id: buttons
-          type: '(string | CardAction)[]'
+          type: (string | CardAction)[]
           description: >-
             Optional. The array of buttons to include on the card. Each `string`
             in the array
                  is converted to an `imBack` button with a title and value set to the value of the string.
         - id: other
           type: Partial&lt;HeroCard&gt;
-          description: |
-            Optional. Any additional properties to include on the card.
+          description: Optional. Any additional properties to include on the card.
       return:
         description: A bot message activity attached with a hero card.
         type: Partial&lt;Activity&gt;
@@ -173,7 +172,7 @@ methods:
       return:
         description: A message activity attached with a receipt card.
         type: Partial&lt;Activity&gt;
-  - name: 'attachSigninCard(string, string, string)'
+  - name: attachSigninCard(string, string, string)
     uid: '@microsoft/teamsfx.MessageBuilder.attachSigninCard'
     package: '@microsoft/teamsfx'
     summary: Returns an attachment for a sign-in card.
@@ -194,8 +193,7 @@ methods:
           description: The URL of the sign-in page to use.
         - id: text
           type: string
-          description: |
-            Optional. Additional text to include on the card.
+          description: Optional. Additional text to include on the card.
       return:
         description: A bot message activity attached with a sign-in card.
         type: Partial&lt;Activity&gt;
@@ -217,10 +215,10 @@ methods:
           type: string
           description: The card title.
         - id: images
-          type: '(string | CardImage)[]'
+          type: (string | CardImage)[]
           description: Optional. The array of images to include on the card.
         - id: buttons
-          type: '(string | CardAction)[]'
+          type: (string | CardAction)[]
           description: >-
             Optional. The array of buttons to include on the card. Each `string`
             in the array

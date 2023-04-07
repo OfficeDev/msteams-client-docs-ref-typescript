@@ -1,32 +1,31 @@
 ### YamlMime:TSType
-name: CardActionBot_2
-uid: '@microsoft/teamsfx.CardActionBot_2'
+name: CardActionBot
+uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot'
 package: '@microsoft/teamsfx'
 summary: A card action bot to respond to adaptive card universal actions.
-fullName: CardActionBot_2
+fullName: CardActionBot
 remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'CardActionBot_2(CloudAdapter, CardActionOptions)'
-    uid: '@microsoft/teamsfx.CardActionBot_2.constructor'
+  - name: CardActionBot(CloudAdapter, CardActionOptions)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Create a new instance of the `CardActionBot`.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new CardActionBot_2(adapter: CloudAdapter, options?: CardActionOptions)'
+      content: 'new CardActionBot(adapter: CloudAdapter, options?: CardActionOptions)'
       parameters:
         - id: adapter
           type: CloudAdapter
           description: The bound `CloudAdapter`.
         - id: options
           type: <xref uid="@microsoft/teamsfx.CardActionOptions" />
-          description: |
-            The initialize options.
+          description: The initialize options.
 methods:
   - name: registerHandler(TeamsFxAdaptiveCardActionHandler)
-    uid: '@microsoft/teamsfx.CardActionBot_2.registerHandler'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot.registerHandler'
     package: '@microsoft/teamsfx'
     summary: Register a card action handler to the bot.
     remarks: ''
@@ -38,10 +37,9 @@ methods:
       parameters:
         - id: actionHandler
           type: <xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />
-          description: |
-            A card action handler to be registered.
-  - name: 'registerHandlers(TeamsFxAdaptiveCardActionHandler[])'
-    uid: '@microsoft/teamsfx.CardActionBot_2.registerHandlers'
+          description: A card action handler to be registered.
+  - name: registerHandlers(TeamsFxAdaptiveCardActionHandler[])
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot.registerHandlers'
     package: '@microsoft/teamsfx'
     summary: Register card action handlers to the bot.
     remarks: ''
@@ -52,6 +50,5 @@ methods:
         TeamsFxAdaptiveCardActionHandler[])
       parameters:
         - id: actionHandlers
-          type: '<xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />[]'
-          description: |
-            A set of card action handlers to be registered.
+          type: <xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />[]
+          description: A set of card action handlers to be registered.

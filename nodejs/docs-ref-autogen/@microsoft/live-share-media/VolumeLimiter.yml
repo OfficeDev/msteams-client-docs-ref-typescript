@@ -24,11 +24,9 @@ properties:
   - name: duration
     uid: '@microsoft/live-share-media.VolumeLimiter.duration'
     package: '@microsoft/live-share-media'
-    summary: 'Time, in seconds, that the volume should be lowered.'
+    summary: Time, in seconds, that the volume should be lowered.
     fullName: duration
-    remarks: >-
-      Applications should periodically call `lowerVolume()` to keep the volume
-      lowered.
+    remarks: ''
     isDeprecated: false
     syntax:
       content: number duration
@@ -40,27 +38,7 @@ properties:
     package: '@microsoft/live-share-media'
     summary: Target level to lower volume to.
     fullName: level
-    remarks: >-
-      Expressed as a value between 0.0 and 1.0. The value is applied based upon
-      the configured
-
-      `levelType`. The default value is 0.2.
-
-
-      For a level type of `LevelType.fixed` the value is the exact level the
-      volume will be
-
-      lowered to. The default value of 0.2 would cause the volume to be lowered
-      to 0.2.
-
-
-      For a level type of `LevelType.percentage` the value is the percentage by
-      which the volume
-
-      level should be lowered to. The default value of 0.2 would cause the
-      volume to be lowered
-
-      to 20% of its starting value.
+    remarks: ''
     isDeprecated: false
     syntax:
       content: number level

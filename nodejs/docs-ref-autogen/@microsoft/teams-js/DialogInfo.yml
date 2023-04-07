@@ -61,10 +61,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'height?: DialogDimension | number'
+      content: 'height?: number | DialogDimension'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.DialogDimension" /> | number
+        type: number | <xref uid="@microsoft/teams-js.DialogDimension" />
   - name: title
     uid: '@microsoft/teams-js.DialogInfo.title'
     package: '@microsoft/teams-js'
@@ -99,7 +99,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'width?: DialogDimension | number'
+      content: 'width?: number | DialogDimension'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.DialogDimension" /> | number
+        type: number | <xref uid="@microsoft/teams-js.DialogDimension" />

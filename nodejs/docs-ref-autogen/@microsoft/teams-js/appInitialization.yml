@@ -40,7 +40,7 @@ functions:
       parameters:
         - id: expectedFailureRequest
           type: <xref uid="@microsoft/teams-js.app.IExpectedFailureRequest" />
-          description: >
+          description: >-
             The expected failure request containing the reason and an optional
             message
   - name: notifyFailure(IFailedRequest)
@@ -62,7 +62,7 @@ functions:
       parameters:
         - id: appInitializationFailedRequest
           type: <xref uid="@microsoft/teams-js.app.IFailedRequest" />
-          description: |
+          description: |-
             The failure request containing the reason for why the app failed
             during initialization as well as an optional message.
   - name: notifySuccess()

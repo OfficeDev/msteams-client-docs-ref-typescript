@@ -80,7 +80,7 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
-      EphemeralObjectSynchronizer(string, IRuntimeSignaler,
+      EphemeralObjectSynchronizer<TState>(string, IRuntimeSignaler,
       IContainerRuntimeSignaler, GetSynchronizationState<TState>,
       UpdateSynchronizationState<TState>)
     uid: '@microsoft/live-share.EphemeralObjectSynchronizer.constructor'
@@ -105,11 +105,12 @@ constructors:
             ID of the ephemeral object being synchronized. This should be the
             value of `this.id` in a class that derives from `DataObject`.
 
-            ^ @param runtime The objects local runtime. This should be the value
-            of `this.runtime`.
+            ^
         - id: runtime
           type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
-          description: ''
+          description: >-
+            The objects local runtime. This should be the value of
+            `this.runtime`.
         - id: containerRuntime
           type: <xref uid="@microsoft/live-share.IContainerRuntimeSignaler" />
           description: >-
@@ -126,7 +127,7 @@ constructors:
           type: >-
             <xref uid="@microsoft/live-share.UpdateSynchronizationState"
             />&lt;TState&gt;
-          description: >
+          description: >-
             A function called to process a state update received from a remote
             instance. This will be called anytime a "connect" or "update"
             message is received.

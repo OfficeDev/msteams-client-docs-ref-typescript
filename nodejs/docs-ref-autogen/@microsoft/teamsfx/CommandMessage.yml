@@ -13,8 +13,9 @@ properties:
     package: '@microsoft/teamsfx'
     summary: >-
       The capture groups that matched to the
-      <xref:@microsoft/teamsfx.TriggerPatterns> in a
-      <xref:@microsoft/teamsfx.TeamsFxBotCommandHandler> instance.
+      [TriggerPatterns](xref:@microsoft/teamsfx.TriggerPatterns) in a
+      [TeamsFxBotCommandHandler](xref:@microsoft/teamsfx.TeamsFxBotCommandHandler)
+      instance.
     fullName: matches
     remarks: ''
     isDeprecated: false

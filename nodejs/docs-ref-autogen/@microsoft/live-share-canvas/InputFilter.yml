@@ -21,8 +21,7 @@ methods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The point to transform.
+          description: The point to transform.
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
@@ -41,5 +40,4 @@ methods:
       parameters:
         - id: startPoint
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The new starting point.
+          description: The new starting point.

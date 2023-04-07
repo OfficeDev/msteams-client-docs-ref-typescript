@@ -43,7 +43,7 @@ properties:
       content: 'setSelected?: string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: singleSelect
     uid: '@microsoft/teams-js.people.PeoplePickerInputs.singleSelect'
     package: '@microsoft/teams-js'

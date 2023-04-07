@@ -65,7 +65,7 @@ inheritedProperties:
         type: number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [IPointerPoint.pressure](xref:@microsoft/live-share-canvas.IPointerPoint.pressure)
+      [IPointerEvent.pressure](xref:@microsoft/live-share-canvas.IPointerEvent.pressure)
   - name: shiftKey
     uid: '@microsoft/live-share-canvas.IPointerMoveEvent.shiftKey'
     package: '@microsoft/live-share-canvas'
@@ -95,7 +95,7 @@ inheritedProperties:
         type: number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [IPoint.x](xref:@microsoft/live-share-canvas.IPoint.x)
+      [IPointerEvent.x](xref:@microsoft/live-share-canvas.IPointerEvent.x)
   - name: 'y'
     uid: '@microsoft/live-share-canvas.IPointerMoveEvent.y'
     package: '@microsoft/live-share-canvas'
@@ -110,5 +110,5 @@ inheritedProperties:
         type: number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [IPoint.y](xref:@microsoft/live-share-canvas.IPoint.y)
+      [IPointerEvent.y](xref:@microsoft/live-share-canvas.IPointerEvent.y)
 extends: <xref uid="@microsoft/live-share-canvas.IPointerEvent" />

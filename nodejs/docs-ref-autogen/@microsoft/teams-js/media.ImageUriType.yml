@@ -2,7 +2,7 @@
 name: ImageUriType
 uid: '@microsoft/teams-js.media.ImageUriType'
 package: '@microsoft/teams-js'
-summary: 'ID contains a mapping for content uri on platform''s side, URL is generic'
+summary: ID contains a mapping for content uri on platform's side, URL is generic
 fullName: ImageUriType
 remarks: ''
 isDeprecated: false

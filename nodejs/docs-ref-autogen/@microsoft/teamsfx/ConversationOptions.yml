@@ -2,7 +2,9 @@
 name: ConversationOptions
 uid: '@microsoft/teamsfx.ConversationOptions'
 package: '@microsoft/teamsfx'
-summary: 'Options to initialize <xref:@microsoft/teamsfx.ConversationBot>'
+summary: >-
+  Options to initialize
+  [ConversationBot](xref:@microsoft/teamsfx.ConversationBot)
 fullName: ConversationOptions
 remarks: ''
 isDeprecated: true
@@ -41,10 +43,10 @@ properties:
       BOT_PASSWORD from environment variables.
     isDeprecated: false
     syntax:
-      content: 'adapterConfig?: [key: string]: unknown'
+      content: 'adapterConfig?: {[key: string]: unknown}'
       return:
         description: ''
-        type: '[key: string]\: unknown'
+        type: '{[key: string]: unknown}'
   - name: cardAction
     uid: '@microsoft/teamsfx.ConversationOptions.cardAction'
     package: '@microsoft/teamsfx'
@@ -85,7 +87,7 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@microsoft/teamsfx.NotificationOptions_2" /> & { enabled?:
+          <xref uid="@microsoft/teamsfx.NotificationOptions" /> & { enabled?:
           boolean }
   - name: ssoConfig
     uid: '@microsoft/teamsfx.ConversationOptions.ssoConfig'

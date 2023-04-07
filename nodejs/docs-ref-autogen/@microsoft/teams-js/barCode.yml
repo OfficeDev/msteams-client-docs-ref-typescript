@@ -60,8 +60,7 @@ functions:
       parameters:
         - id: barCodeConfig
           type: <xref uid="@microsoft/teams-js.barCode.BarCodeConfig" />
-          description: |
-            input configuration to customize the barcode scanning experience
+          description: input configuration to customize the barcode scanning experience
       return:
         description: a scanned code
         type: Promise&lt;string&gt;

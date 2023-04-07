@@ -20,7 +20,7 @@ functions:
       return:
         description: boolean to represent whether dialog.adaptiveCard.bot is supported
         type: boolean
-  - name: 'open(BotAdaptiveCardDialogInfo, DialogSubmitHandler)'
+  - name: open(BotAdaptiveCardDialogInfo, DialogSubmitHandler)
     uid: '@microsoft/teams-js.dialog.adaptiveCard.bot.open'
     package: '@microsoft/teams-js'
     summary: Allows an app to open an adaptive card-based dialog module using bot.
@@ -39,5 +39,4 @@ functions:
             completionBotId.
         - id: submitHandler
           type: <xref uid="@microsoft/teams-js.dialog.DialogSubmitHandler" />
-          description: |
-            Handler that triggers when the dialog has been submitted or closed.
+          description: Handler that triggers when the dialog has been submitted or closed.

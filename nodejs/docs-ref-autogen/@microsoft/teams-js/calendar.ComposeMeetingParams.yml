@@ -19,7 +19,7 @@ properties:
       content: 'attendees?: string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: content
     uid: '@microsoft/teams-js.calendar.ComposeMeetingParams.content'
     package: '@microsoft/teams-js'

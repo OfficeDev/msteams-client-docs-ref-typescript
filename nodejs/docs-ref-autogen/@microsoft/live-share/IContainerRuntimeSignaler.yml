@@ -24,7 +24,7 @@ methods:
     syntax:
       content: >-
         function on(event: "signal", listener: (message: IInboundSignalMessage,
-        local: boolean) => void): this
+        local: boolean) => void): IContainerRuntimeSignaler
       parameters:
         - id: event
           type: '"signal"'
@@ -34,8 +34,8 @@ methods:
           description: ''
       return:
         description: ''
-        type: this
-  - name: 'submitSignal(string, any)'
+        type: <xref uid="@microsoft/live-share.IContainerRuntimeSignaler" />
+  - name: submitSignal(string, any)
     uid: '@microsoft/live-share.IContainerRuntimeSignaler.submitSignal'
     package: '@microsoft/live-share'
     summary: ''

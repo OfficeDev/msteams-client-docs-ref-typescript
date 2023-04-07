@@ -58,7 +58,9 @@ inheritedProperties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.DialogSize" />
-    inheritanceDescription: <b>Inherited From</b> BaseDialogInfo.size
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [UrlDialogInfo.size](xref:@microsoft/teams-js.UrlDialogInfo.size)
   - name: title
     uid: '@microsoft/teams-js.BotUrlDialogInfo.title'
     package: '@microsoft/teams-js'
@@ -71,7 +73,9 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: <b>Inherited From</b> BaseDialogInfo.title
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [UrlDialogInfo.title](xref:@microsoft/teams-js.UrlDialogInfo.title)
   - name: url
     uid: '@microsoft/teams-js.BotUrlDialogInfo.url'
     package: '@microsoft/teams-js'

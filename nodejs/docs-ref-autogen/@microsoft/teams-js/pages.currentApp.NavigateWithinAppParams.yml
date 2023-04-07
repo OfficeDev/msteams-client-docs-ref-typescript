@@ -34,8 +34,8 @@ properties:
       Optional developer-defined unique ID describing the content to navigate to
       within the page. This
 
-      can be retrieved from the Context object [|
-      app.Context.page.subPageId](xref:@microsoft/teams-js.app.PageInfo.subPageId)
+      can be retrieved from the Context object
+      [app.Context.page.subPageId](xref:@microsoft/teams-js.app.PageInfo.subPageId)
     fullName: subPageId
     remarks: ''
     isDeprecated: false

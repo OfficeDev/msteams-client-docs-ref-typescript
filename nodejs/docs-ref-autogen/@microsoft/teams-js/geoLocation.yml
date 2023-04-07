@@ -22,8 +22,9 @@ functions:
       return:
         description: >-
           Promise that will resolve with
-          <xref:@microsoft/teams-js.geoLocation.Location> object or reject with
-          an error. Function can also throw a NOT_SUPPORTED_ON_PLATFORM error
+          [Location](xref:@microsoft/teams-js.geoLocation.Location) object or
+          reject with an error. Function can also throw a
+          NOT_SUPPORTED_ON_PLATFORM error
         type: Promise&lt;<xref uid="@microsoft/teams-js.geoLocation.Location" />&gt;
   - name: hasPermission()
     uid: '@microsoft/teams-js.geoLocation.hasPermission'
@@ -64,5 +65,5 @@ functions:
     syntax:
       content: 'function requestPermission(): Promise<boolean>'
       return:
-        description: 'true if the user consented permission for location, false otherwise'
+        description: true if the user consented permission for location, false otherwise
         type: Promise&lt;boolean&gt;

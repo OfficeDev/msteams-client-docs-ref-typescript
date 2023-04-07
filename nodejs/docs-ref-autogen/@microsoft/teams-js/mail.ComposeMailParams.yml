@@ -2,13 +2,24 @@
 name: ComposeMailParams
 uid: '@microsoft/teams-js.mail.ComposeMailParams'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >-
+  Parameters supplied to
+  [composeMail](xref:@microsoft/teams-js.mail.composeMail) when composing a new
+  mail item
+
+
+  See [ComposeNewParams](xref:@microsoft/teams-js.mail.ComposeNewParams)
+
+  See
+  [ComposeReplyOrForwardParams](xref:@microsoft/teams-js.mail.ComposeReplyOrForwardParams)
+
+  See [ComposeMailType](xref:@microsoft/teams-js.mail.ComposeMailType)
 fullName: ComposeMailParams
 remarks: ''
 isDeprecated: false
 syntax: |
   type ComposeMailParams =
     | ComposeNewParams
-    | ComposeReplyOrForwardParams<Reply>
-    | ComposeReplyOrForwardParams<ReplyAll>
-    | ComposeReplyOrForwardParams<Forward>
+    | ComposeReplyOrForwardParams<ComposeMailType.Reply>
+    | ComposeReplyOrForwardParams<ComposeMailType.ReplyAll>
+    | ComposeReplyOrForwardParams<ComposeMailType.Forward>

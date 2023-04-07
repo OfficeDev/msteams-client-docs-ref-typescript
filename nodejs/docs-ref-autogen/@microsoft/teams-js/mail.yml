@@ -3,15 +3,14 @@ uid: '@microsoft/teams-js.mail'
 name: mail
 summary: ''
 type: module
-interfaces:
-  - '@microsoft/teams-js.mail.ComposeMailBase'
-  - '@microsoft/teams-js.mail.ComposeNewParams'
-  - '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
-  - '@microsoft/teams-js.mail.OpenMailItemParams'
 typeAliases:
   - '@microsoft/teams-js.mail.ComposeMailParams'
 enums:
   - '@microsoft/teams-js.mail.ComposeMailType'
+interfaces:
+  - '@microsoft/teams-js.mail.ComposeNewParams'
+  - '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
+  - '@microsoft/teams-js.mail.OpenMailItemParams'
 package: '@microsoft/teams-js'
 functions:
   - name: composeMail(ComposeMailParams)

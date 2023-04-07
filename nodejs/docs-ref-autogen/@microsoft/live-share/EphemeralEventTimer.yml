@@ -11,36 +11,42 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
-      EphemeralEventTimer(EphemeralEventSource<T>, () => Partial<T>, number,
-      undefined | false | true)
+      EphemeralEventTimer<T>(EphemeralEventSource<T>, () => Partial<T>, number,
+      boolean)
     uid: '@microsoft/live-share.EphemeralEventTimer.constructor'
     package: '@microsoft/live-share'
-    summary: Creates a new `EphemeralEventTimer instance.
+    summary: >-
+      Creates a new `EphemeralEventTimer instance.
+
+      @param eventSource Event source that will be used to emit events.
+
+      @param createEvent Function used to construct an event to send. This will
+      be called at regular intervals prior to sending an event.
+
+      @param delay Period to delay for in milliseconds.
+
+      @param repeat Optional. If true the timer will repeat once `start` is
+      called, otherwise a single event will be sent after the delay. Defaults to
+      false.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         new EphemeralEventTimer(eventSource: EphemeralEventSource<T>,
-        createEvent: () => Partial<T>, delay: number, repeat?: undefined | false
-        | true)
+        createEvent: () => Partial<T>, delay: number, repeat?: boolean)
       parameters:
         - id: eventSource
           type: <xref uid="@microsoft/live-share.EphemeralEventSource" />&lt;T&gt;
-          description: Event source that will be used to emit events.
+          description: ''
         - id: createEvent
           type: () =&gt; Partial&lt;T&gt;
-          description: >-
-            Function used to construct an event to send. This will be called at
-            regular intervals prior to sending an event.
+          description: ''
         - id: delay
           type: number
-          description: Period to delay for in milliseconds.
+          description: ''
         - id: repeat
-          type: undefined | false | true
-          description: >
-            Optional. If true the timer will repeat once `start` is called,
-            otherwise a single event will be sent after the delay. Defaults to
-            false.
+          type: boolean
+          description: ''
 properties:
   - name: delay
     uid: '@microsoft/live-share.EphemeralEventTimer.delay'

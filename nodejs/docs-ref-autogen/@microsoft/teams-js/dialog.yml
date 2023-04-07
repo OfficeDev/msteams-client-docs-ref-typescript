@@ -11,10 +11,10 @@ summary: >-
 
   - URL-based dialogs allow you to specify a URL from which the contents will be
   shown inside the dialog.
-    - For URL dialogs, use the functions and interfaces in the <xref:@microsoft/teams-js.dialog.url> namespace.
+    - For URL dialogs, use the functions and interfaces in the [url](xref:@microsoft/teams-js.dialog.url) namespace.
   - Adaptive Card-based dialogs allow you to provide JSON describing an Adaptive
   Card that will be shown inside the dialog.
-    - For Adaptive Card dialogs, use the functions and interfaces in the <xref:@microsoft/teams-js.dialog.adaptiveCard> namespace.
+    - For Adaptive Card dialogs, use the functions and interfaces in the [adaptiveCard](xref:@microsoft/teams-js.dialog.adaptiveCard) namespace.
 type: module
 typeAliases:
   - '@microsoft/teams-js.dialog.DialogSubmitHandler'

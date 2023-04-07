@@ -8,18 +8,18 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: LaserPointerCanvas(HTMLElement | undefined)
+  - name: LaserPointerCanvas(HTMLElement)
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.constructor'
     package: '@microsoft/live-share-canvas'
-    summary: 'Creates a new InkingCanvas instance, attached to the provided HTMLElement.'
+    summary: Creates a new InkingCanvas instance, attached to the provided HTMLElement.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new LaserPointerCanvas(_parentElement?: HTMLElement | undefined)'
+      content: 'new LaserPointerCanvas(_parentElement?: HTMLElement)'
       parameters:
         - id: _parentElement
-          type: HTMLElement | undefined
-          description: >
+          type: HTMLElement
+          description: >-
             The HTML element this canvas is attached to. InkingCanvas
 
             dynamically creates an HTML5 Canvas element and adds it as a child
@@ -52,9 +52,7 @@ properties:
   - name: offset
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.offset'
     package: '@microsoft/live-share-canvas'
-    summary: |-
-      Gets the offset from the canvas' reference point, in pixels.
-      Sets the offset from the canvas' reference point, in pixels.
+    summary: Gets the offset from the canvas' reference point, in pixels.
     fullName: offset
     remarks: ''
     isDeprecated: false
@@ -66,9 +64,7 @@ properties:
   - name: scale
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.scale'
     package: '@microsoft/live-share-canvas'
-    summary: |-
-      Gets the canvas' scale. Defaults to 1.
-      Sets the canvas' scale. Value must be greater than zero.
+    summary: Gets the canvas' scale. Defaults to 1.
     fullName: scale
     remarks: ''
     isDeprecated: false
@@ -94,7 +90,7 @@ inheritedProperties:
         type: number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.fadeOutDuration](xref:@microsoft/live-share-canvas.InkingCanvas.fadeOutDuration)
+      [WetCanvas.fadeOutDuration](xref:@microsoft/live-share-canvas.WetCanvas.fadeOutDuration)
   - name: highlighterOpacity
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.highlighterOpacity'
     package: '@microsoft/live-share-canvas'
@@ -109,7 +105,7 @@ inheritedProperties:
         type: number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.highlighterOpacity](xref:@microsoft/live-share-canvas.InkingCanvas.highlighterOpacity)
+      [WetCanvas.highlighterOpacity](xref:@microsoft/live-share-canvas.WetCanvas.highlighterOpacity)
   - name: laserShadowOpacity
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.laserShadowOpacity'
     package: '@microsoft/live-share-canvas'
@@ -124,7 +120,7 @@ inheritedProperties:
         type: number
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.laserShadowOpacity](xref:@microsoft/live-share-canvas.InkingCanvas.laserShadowOpacity)
+      [WetCanvas.laserShadowOpacity](xref:@microsoft/live-share-canvas.WetCanvas.laserShadowOpacity)
   - name: referencePoint
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.referencePoint'
     package: '@microsoft/live-share-canvas'
@@ -139,7 +135,7 @@ inheritedProperties:
         type: <xref uid="@microsoft/live-share-canvas.CanvasReferencePoint" />
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.referencePoint](xref:@microsoft/live-share-canvas.InkingCanvas.referencePoint)
+      [WetCanvas.referencePoint](xref:@microsoft/live-share-canvas.WetCanvas.referencePoint)
 inheritedMethods:
   - name: addPoint(IPointerPoint)
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.addPoint'
@@ -152,11 +148,10 @@ inheritedMethods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The point to add to the current stroke.
+          description: The point to add to the current stroke.
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.addPoint](xref:@microsoft/live-share-canvas.InkingCanvas.addPoint)
+      [WetCanvas.addPoint](xref:@microsoft/live-share-canvas.WetCanvas.addPoint)
   - name: beginStroke(IPointerPoint)
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.beginStroke'
     package: '@microsoft/live-share-canvas'
@@ -168,11 +163,10 @@ inheritedMethods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The starting point of the stroke.
+          description: The starting point of the stroke.
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.beginStroke](xref:@microsoft/live-share-canvas.InkingCanvas.beginStroke)
+      [WetCanvas.beginStroke](xref:@microsoft/live-share-canvas.WetCanvas.beginStroke)
   - name: cancelStroke()
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.cancelStroke'
     package: '@microsoft/live-share-canvas'
@@ -183,7 +177,7 @@ inheritedMethods:
       content: function cancelStroke()
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.cancelStroke](xref:@microsoft/live-share-canvas.InkingCanvas.cancelStroke)
+      [WetCanvas.cancelStroke](xref:@microsoft/live-share-canvas.WetCanvas.cancelStroke)
   - name: clear()
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.clear'
     package: '@microsoft/live-share-canvas'
@@ -194,7 +188,7 @@ inheritedMethods:
       content: function clear()
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.clear](xref:@microsoft/live-share-canvas.InkingCanvas.clear)
+      [WetCanvas.clear](xref:@microsoft/live-share-canvas.WetCanvas.clear)
   - name: endStroke(IPointerPoint)
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.endStroke'
     package: '@microsoft/live-share-canvas'
@@ -206,12 +200,12 @@ inheritedMethods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
+          description: |-
             Optional. The end point of the stroke. If not specified,
             the end point is the last one added.
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.endStroke](xref:@microsoft/live-share-canvas.InkingCanvas.endStroke)
+      [WetCanvas.endStroke](xref:@microsoft/live-share-canvas.WetCanvas.endStroke)
   - name: fadeOut()
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.fadeOut'
     package: '@microsoft/live-share-canvas'
@@ -224,7 +218,7 @@ inheritedMethods:
       content: function fadeOut()
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.fadeOut](xref:@microsoft/live-share-canvas.InkingCanvas.fadeOut)
+      [WetCanvas.fadeOut](xref:@microsoft/live-share-canvas.WetCanvas.fadeOut)
   - name: renderStroke(IStroke)
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.renderStroke'
     package: '@microsoft/live-share-canvas'
@@ -236,12 +230,11 @@ inheritedMethods:
       parameters:
         - id: stroke
           type: <xref uid="@microsoft/live-share-canvas.IStroke" />
-          description: |
-            The stroke to render.
+          description: The stroke to render.
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.renderStroke](xref:@microsoft/live-share-canvas.InkingCanvas.renderStroke)
-  - name: 'resize(number, number)'
+      [WetCanvas.renderStroke](xref:@microsoft/live-share-canvas.WetCanvas.renderStroke)
+  - name: resize(number, number)
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.resize'
     package: '@microsoft/live-share-canvas'
     summary: Resizes this canvas.
@@ -252,14 +245,13 @@ inheritedMethods:
       parameters:
         - id: width
           type: number
-          description: 'The new width of the canvas, in pixels.'
+          description: The new width of the canvas, in pixels.
         - id: height
           type: number
-          description: |
-            The new height of the canvas, in pixels.
+          description: The new height of the canvas, in pixels.
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.resize](xref:@microsoft/live-share-canvas.InkingCanvas.resize)
+      [WetCanvas.resize](xref:@microsoft/live-share-canvas.WetCanvas.resize)
   - name: setBrush(IBrush)
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.setBrush'
     package: '@microsoft/live-share-canvas'
@@ -271,16 +263,15 @@ inheritedMethods:
       parameters:
         - id: value
           type: <xref uid="@microsoft/live-share-canvas.IBrush" />
-          description: |
-            The brush.
+          description: The brush.
     inheritanceDescription: >-
       <b>Inherited From</b>
-      [InkingCanvas.setBrush](xref:@microsoft/live-share-canvas.InkingCanvas.setBrush)
+      [WetCanvas.setBrush](xref:@microsoft/live-share-canvas.WetCanvas.setBrush)
 methods:
   - name: removeFromDOM()
     uid: '@microsoft/live-share-canvas.LaserPointerCanvas.removeFromDOM'
     package: '@microsoft/live-share-canvas'
-    summary: ''
+    summary: Removes the canvas from the DOM.
     remarks: ''
     isDeprecated: false
     syntax:

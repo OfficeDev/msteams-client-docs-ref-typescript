@@ -25,10 +25,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'addToChangeLog?: undefined | false | true'
+      content: 'addToChangeLog?: boolean'
       return:
         description: ''
-        type: undefined | false | true
+        type: boolean
   - name: forceReRender
     uid: '@microsoft/live-share-canvas.IAddRemoveStrokeOptions.forceReRender'
     package: '@microsoft/live-share-canvas'
@@ -41,7 +41,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'forceReRender?: undefined | false | true'
+      content: 'forceReRender?: boolean'
       return:
         description: ''
-        type: undefined | false | true
+        type: boolean

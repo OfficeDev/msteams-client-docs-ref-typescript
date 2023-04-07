@@ -15,6 +15,7 @@ functions:
       By default app share button will be hidden and this API will govern the
       visibility of it.
 
+
       This function can be used to hide/show app share button in meeting,
 
       along with contentUrl (overrides contentUrl populated in app manifest)

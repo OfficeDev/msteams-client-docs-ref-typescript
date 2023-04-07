@@ -13,7 +13,7 @@ methods:
   - name: filterPoint(IPointerPoint)
     uid: '@microsoft/live-share-canvas.JitterFilter.filterPoint'
     package: '@microsoft/live-share-canvas'
-    summary: ''
+    summary: Filters (transforms) the specified point.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -21,14 +21,18 @@ methods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: ''
+          description: The point to transform.
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
   - name: reset(IPointerPoint)
     uid: '@microsoft/live-share-canvas.JitterFilter.reset'
     package: '@microsoft/live-share-canvas'
-    summary: ''
+    summary: |-
+      Resets this filter. Some filters use information about
+      previous points to transform the next point. `reset` will
+      be called automatically by InkingManager when a new wet
+      stroke begins.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -36,5 +40,5 @@ methods:
       parameters:
         - id: startPoint
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: ''
+          description: The new starting point.
 extends: <xref uid="@microsoft/live-share-canvas.InputFilter" />

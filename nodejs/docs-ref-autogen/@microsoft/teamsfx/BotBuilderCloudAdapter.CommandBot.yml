@@ -1,9 +1,9 @@
 ### YamlMime:TSType
-name: CommandBot_2
-uid: '@microsoft/teamsfx.CommandBot_2'
+name: CommandBot
+uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot'
 package: '@microsoft/teamsfx'
 summary: A command bot for receiving commands and sending responses in Teams.
-fullName: CommandBot_2
+fullName: CommandBot
 remarks: >-
   Ensure each command should ONLY be registered with the command once, otherwise
   it'll cause unexpected behavior if you register the same command more than
@@ -12,16 +12,16 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
-      CommandBot_2(CloudAdapter, CommandOptions, BotSsoExecutionActivityHandler,
+      CommandBot(CloudAdapter, CommandOptions, BotSsoExecutionActivityHandler,
       BotSsoConfig)
-    uid: '@microsoft/teamsfx.CommandBot_2.constructor'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Create a new instance of the `CommandBot`.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        new CommandBot_2(adapter: CloudAdapter, options?: CommandOptions,
+        new CommandBot(adapter: CloudAdapter, options?: CommandOptions,
         ssoCommandActivityHandler?: BotSsoExecutionActivityHandler, ssoConfig?:
         BotSsoConfig)
       parameters:
@@ -36,11 +36,10 @@ constructors:
           description: SSO execution activity handler.
         - id: ssoConfig
           type: <xref uid="@microsoft/teamsfx.BotSsoConfig" />
-          description: |
-            SSO configuration for Bot SSO.
+          description: SSO configuration for Bot SSO.
 methods:
   - name: registerCommand(TeamsFxBotCommandHandler)
-    uid: '@microsoft/teamsfx.CommandBot_2.registerCommand'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.registerCommand'
     package: '@microsoft/teamsfx'
     summary: Register a command into the command bot.
     remarks: ''
@@ -50,10 +49,9 @@ methods:
       parameters:
         - id: command
           type: <xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />
-          description: |
-            The command to be registered.
-  - name: 'registerCommands(TeamsFxBotCommandHandler[])'
-    uid: '@microsoft/teamsfx.CommandBot_2.registerCommands'
+          description: The command to be registered.
+  - name: registerCommands(TeamsFxBotCommandHandler[])
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.registerCommands'
     package: '@microsoft/teamsfx'
     summary: Register commands into the command bot.
     remarks: ''
@@ -62,11 +60,10 @@ methods:
       content: 'function registerCommands(commands: TeamsFxBotCommandHandler[])'
       parameters:
         - id: commands
-          type: '<xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />[]'
-          description: |
-            The commands to be registered.
+          type: <xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />[]
+          description: The commands to be registered.
   - name: registerSsoCommand(TeamsFxBotSsoCommandHandler)
-    uid: '@microsoft/teamsfx.CommandBot_2.registerSsoCommand'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.registerSsoCommand'
     package: '@microsoft/teamsfx'
     summary: Register a sso command into the command bot.
     remarks: ''
@@ -76,10 +73,9 @@ methods:
       parameters:
         - id: ssoCommand
           type: <xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />
-          description: |
-            The sso command to be registered.
-  - name: 'registerSsoCommands(TeamsFxBotSsoCommandHandler[])'
-    uid: '@microsoft/teamsfx.CommandBot_2.registerSsoCommands'
+          description: The sso command to be registered.
+  - name: registerSsoCommands(TeamsFxBotSsoCommandHandler[])
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.registerSsoCommands'
     package: '@microsoft/teamsfx'
     summary: Register sso commands into the command bot.
     remarks: ''
@@ -88,6 +84,5 @@ methods:
       content: 'function registerSsoCommands(ssoCommands: TeamsFxBotSsoCommandHandler[])'
       parameters:
         - id: ssoCommands
-          type: '<xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />[]'
-          description: |
-            The sso commands to be registered.
+          type: <xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />[]
+          description: The sso commands to be registered.

@@ -52,7 +52,7 @@ functions:
       parameters:
         - id: handler
           type: '(readyToUnload: () =&gt; void) =&gt; boolean'
-          description: >
+          description: >-
             The handler to invoke before the page is unloaded. If this handler
             returns true the page should
 
@@ -74,5 +74,4 @@ functions:
       parameters:
         - id: handler
           type: '(context: LoadContext) =&gt; void'
-          description: |
-            The handler to invoke when the page is loaded.
+          description: The handler to invoke when the page is loaded.

@@ -21,8 +21,7 @@ methods:
       parameters:
         - id: key
           type: string
-          description: |
-            the key of a notification target.
+          description: the key of a notification target.
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -33,12 +32,12 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function list(): Promise<[key: string]: unknown[]>'
+      content: 'function list(): Promise<{[key: string]: unknown}[]>'
       return:
         description: >-
           - an array of notification target. Or an empty array if nothing is
           stored.
-        type: 'Promise&lt;[key: string]: unknown[]&gt;'
+        type: 'Promise&lt;{[key: string]: unknown}[]&gt;'
   - name: read(string)
     uid: '@microsoft/teamsfx.NotificationTargetStorage.read'
     package: '@microsoft/teamsfx'
@@ -46,16 +45,17 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function read(key: string): Promise<[key: string]: unknown | undefined>'
+      content: >-
+        function read(key: string): Promise<undefined | {[key: string]:
+        unknown}>
       parameters:
         - id: key
           type: string
-          description: |
-            the key of a notification target.
+          description: the key of a notification target.
       return:
         description: '- the notification target. Or undefined if not found.'
-        type: 'Promise&lt;[key: string]: unknown | undefined&gt;'
-  - name: 'write(string, [key: string]: unknown)'
+        type: 'Promise&lt;undefined | {[key: string]: unknown}&gt;'
+  - name: 'write(string, {[key: string]: unknown})'
     uid: '@microsoft/teamsfx.NotificationTargetStorage.write'
     package: '@microsoft/teamsfx'
     summary: Write one notification target by its key.
@@ -63,16 +63,15 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function write(key: string, object: [key: string]: unknown):
+        function write(key: string, object: {[key: string]: unknown}):
         Promise<void>
       parameters:
         - id: key
           type: string
           description: the key of a notification target.
         - id: object
-          type: '[key: string]\: unknown'
-          description: |
-            the notification target.
+          type: '{[key: string]: unknown}'
+          description: the notification target.
       return:
         description: ''
         type: Promise&lt;void&gt;

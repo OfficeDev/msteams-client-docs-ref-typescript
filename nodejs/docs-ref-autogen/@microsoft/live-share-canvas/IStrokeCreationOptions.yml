@@ -28,10 +28,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientId?: undefined | string'
+      content: 'clientId?: string'
       return:
         description: ''
-        type: undefined | string
+        type: string
   - name: id
     uid: '@microsoft/live-share-canvas.IStrokeCreationOptions.id'
     package: '@microsoft/live-share-canvas'
@@ -40,10 +40,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'id?: undefined | string'
+      content: 'id?: string'
       return:
         description: ''
-        type: undefined | string
+        type: string
   - name: points
     uid: '@microsoft/live-share-canvas.IStrokeCreationOptions.points'
     package: '@microsoft/live-share-canvas'
@@ -55,7 +55,7 @@ properties:
       content: 'points?: IPointerPoint[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]'
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]
   - name: timeStamp
     uid: '@microsoft/live-share-canvas.IStrokeCreationOptions.timeStamp'
     package: '@microsoft/live-share-canvas'
@@ -64,7 +64,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'timeStamp?: undefined | number'
+      content: 'timeStamp?: number'
       return:
         description: ''
-        type: undefined | number
+        type: number

@@ -10,7 +10,7 @@ fields:
   - name: laserPointer
     uid: '@microsoft/live-share-canvas.StrokeType.laserPointer'
     package: '@microsoft/live-share-canvas'
-    summary: 'Laser pointer stroke, with a vanishing tail.'
+    summary: Laser pointer stroke, with a vanishing tail.
     numericValue: 0
   - name: ephemeral
     uid: '@microsoft/live-share-canvas.StrokeType.ephemeral'

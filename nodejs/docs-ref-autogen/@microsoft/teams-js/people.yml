@@ -30,7 +30,7 @@ functions:
     customDeprecatedMessage: >-
       As of 2.0.0, please use [people.selectPeople(peoplePickerInputs?:
       PeoplePickerInputs):
-      Promise\<PeoplePickerResult[]\>](xref:@microsoft/teams-js.people.selectPeople)
+      Promise\<PeoplePickerResult[]\>](xref:@microsoft/teams-js.people.selectPeople_1)
       instead.
 
 
@@ -52,8 +52,7 @@ functions:
             consists of AAD IDs, display names and emails of the selected users
         - id: peoplePickerInputs
           type: <xref uid="@microsoft/teams-js.people.PeoplePickerInputs" />
-          description: |
-            Input parameters to launch customized people picker
+          description: Input parameters to launch customized people picker
   - name: selectPeople(PeoplePickerInputs)
     uid: '@microsoft/teams-js.people.selectPeople'
     package: '@microsoft/teams-js'

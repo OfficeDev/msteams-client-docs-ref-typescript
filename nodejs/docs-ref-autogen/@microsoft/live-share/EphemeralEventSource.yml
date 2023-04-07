@@ -14,7 +14,7 @@ remarks: >-
 isDeprecated: false
 type: class
 constructors:
-  - name: 'EphemeralEventSource(EphemeralEventScope, string)'
+  - name: EphemeralEventSource<TEvent>(EphemeralEventScope, string)
     uid: '@microsoft/live-share.EphemeralEventSource.constructor'
     package: '@microsoft/live-share'
     summary: Creates a new `EphemeralEventSource` instance.
@@ -28,8 +28,7 @@ constructors:
           description: Scope to use for sending events.
         - id: eventName
           type: string
-          description: |
-            Name of the event to broadcast.
+          description: Name of the event to broadcast.
 methods:
   - name: sendEvent(Partial<TEvent>)
     uid: '@microsoft/live-share.EphemeralEventSource.sendEvent'

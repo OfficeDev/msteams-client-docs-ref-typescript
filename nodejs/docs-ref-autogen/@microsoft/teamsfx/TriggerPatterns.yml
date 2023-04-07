@@ -4,7 +4,8 @@ uid: '@microsoft/teamsfx.TriggerPatterns'
 package: '@microsoft/teamsfx'
 summary: >-
   The trigger pattern used to trigger a
-  <xref:@microsoft/teamsfx.TeamsFxBotCommandHandler> instance.
+  [TeamsFxBotCommandHandler](xref:@microsoft/teamsfx.TeamsFxBotCommandHandler)
+  instance.
 fullName: TriggerPatterns
 remarks: ''
 isDeprecated: false

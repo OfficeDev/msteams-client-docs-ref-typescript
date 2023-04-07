@@ -1,17 +1,17 @@
 ### YamlMime:TSType
-name: NotificationBot_2
-uid: '@microsoft/teamsfx.NotificationBot_2'
+name: NotificationBot
+uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot'
 package: '@microsoft/teamsfx'
 summary: >-
   Provide utilities to send notification to varies targets (e.g., member, group,
   channel).
-fullName: NotificationBot_2
+fullName: NotificationBot
 remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'NotificationBot_2(CloudAdapter, NotificationOptions_3)'
-    uid: '@microsoft/teamsfx.NotificationBot_2.constructor'
+  - name: NotificationBot(CloudAdapter, NotificationOptions_3)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of the notification bot.
     remarks: >-
@@ -20,25 +20,28 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new NotificationBot_2(adapter: CloudAdapter, options?:
+        new NotificationBot(adapter: CloudAdapter, options?:
         NotificationOptions_3)
       parameters:
         - id: adapter
           type: CloudAdapter
           description: The bound `CloudAdapter`
         - id: options
-          type: <xref uid="@microsoft/teamsfx.NotificationOptions_3" />
-          description: |
-            The initialize options
+          type: >-
+            <xref
+            uid="@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions"
+            />
+          description: The initialize options
 methods:
   - name: >-
-      findAllChannels((channel: Channel_2, teamDetails: TeamDetails | undefined)
+      findAllChannels((channel: Channel_2, teamDetails: undefined | TeamDetails)
       => Promise<boolean>)
-    uid: '@microsoft/teamsfx.NotificationBot_2.findAllChannels'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findAllChannels'
     package: '@microsoft/teamsfx'
     summary: >-
-      Return all <xref:@microsoft/teamsfx.Channel> where predicate is true, and
-      empty array otherwise.
+      Return all
+      [Channel](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Channel) where
+      predicate is true, and empty array otherwise.
 
       (Ensure the bot app is installed into the `General` channel, otherwise
       empty array will be returned.)
@@ -47,25 +50,27 @@ methods:
     syntax:
       content: >-
         function findAllChannels(predicate: (channel: Channel_2, teamDetails:
-        TeamDetails | undefined) => Promise<boolean>): Promise<Channel_2[]>
+        undefined | TeamDetails) => Promise<boolean>): Promise<Channel_2[]>
       parameters:
         - id: predicate
           type: >-
-            (channel: Channel_2, teamDetails: TeamDetails | undefined) =&gt;
+            (channel: Channel_2, teamDetails: undefined | TeamDetails) =&gt;
             Promise&lt;boolean&gt;
-          description: |
-            Find calls predicate for each channel of the installation.
+          description: Find calls predicate for each channel of the installation.
       return:
         description: >-
-          An array of <xref:@microsoft/teamsfx.Channel> where predicate is true,
-          and empty array otherwise.
-        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Channel_2" />[]&gt;'
+          An array of
+          [Channel](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Channel)
+          where predicate is true, and empty array otherwise.
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />[]&gt;
   - name: 'findAllMembers((member: Member_2) => Promise<boolean>, SearchScope_2)'
-    uid: '@microsoft/teamsfx.NotificationBot_2.findAllMembers'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findAllMembers'
     package: '@microsoft/teamsfx'
     summary: >-
-      Return all <xref:@microsoft/teamsfx.Member> where predicate is true, and
-      empty array otherwise.
+      Return all [Member](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Member)
+      where predicate is true, and empty array otherwise.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -77,23 +82,27 @@ methods:
           type: '(member: Member_2) =&gt; Promise&lt;boolean&gt;'
           description: Find calls predicate for each member of the installation.
         - id: scope
-          type: <xref uid="@microsoft/teamsfx.SearchScope_2" />
-          description: |
+          type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope" />
+          description: |-
             The scope to find members from the installations
             (personal chat, group chat, Teams channel).
       return:
         description: >-
-          An array of <xref:@microsoft/teamsfx.Member> where predicate is true,
-          and empty array otherwise.
-        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Member_2" />[]&gt;'
+          An array of
+          [Member](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Member) where
+          predicate is true, and empty array otherwise.
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />[]&gt;
   - name: >-
-      findChannel((channel: Channel_2, teamDetails: TeamDetails | undefined) =>
+      findChannel((channel: Channel_2, teamDetails: undefined | TeamDetails) =>
       Promise<boolean>)
-    uid: '@microsoft/teamsfx.NotificationBot_2.findChannel'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findChannel'
     package: '@microsoft/teamsfx'
     summary: >-
-      Return the first <xref:@microsoft/teamsfx.Channel> where predicate is
-      true, and undefined otherwise.
+      Return the first
+      [Channel](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Channel) where
+      predicate is true, and undefined otherwise.
 
       (Ensure the bot app is installed into the `General` channel, otherwise
       undefined will be returned.)
@@ -102,14 +111,14 @@ methods:
     syntax:
       content: >-
         function findChannel(predicate: (channel: Channel_2, teamDetails:
-        TeamDetails | undefined) => Promise<boolean>): Promise<Channel_2 |
-        undefined>
+        undefined | TeamDetails) => Promise<boolean>): Promise<undefined |
+        Channel_2>
       parameters:
         - id: predicate
           type: >-
-            (channel: Channel_2, teamDetails: TeamDetails | undefined) =&gt;
+            (channel: Channel_2, teamDetails: undefined | TeamDetails) =&gt;
             Promise&lt;boolean&gt;
-          description: >
+          description: >-
             Find calls predicate once for each channel of the installation,
 
             until it finds one where predicate returns true. If such a channel
@@ -119,21 +128,25 @@ methods:
             `undefined`.
       return:
         description: >-
-          The first <xref:@microsoft/teamsfx.Channel> where predicate is true,
-          and `undefined` otherwise.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.Channel_2" /> | undefined&gt;
+          The first
+          [Channel](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Channel)
+          where predicate is true, and `undefined` otherwise.
+        type: >-
+          Promise&lt;undefined | <xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />&gt;
   - name: 'findMember((member: Member_2) => Promise<boolean>, SearchScope_2)'
-    uid: '@microsoft/teamsfx.NotificationBot_2.findMember'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findMember'
     package: '@microsoft/teamsfx'
     summary: >-
-      Return the first <xref:@microsoft/teamsfx.Member> where predicate is true,
-      and undefined otherwise.
+      Return the first
+      [Member](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Member) where
+      predicate is true, and undefined otherwise.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         function findMember(predicate: (member: Member_2) => Promise<boolean>,
-        scope?: SearchScope_2): Promise<Member_2 | undefined>
+        scope?: SearchScope_2): Promise<undefined | Member_2>
       parameters:
         - id: predicate
           type: '(member: Member_2) =&gt; Promise&lt;boolean&gt;'
@@ -145,17 +158,20 @@ methods:
 
             immediately returns that member. Otherwise, find returns undefined.
         - id: scope
-          type: <xref uid="@microsoft/teamsfx.SearchScope_2" />
-          description: |
+          type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope" />
+          description: |-
             The scope to find members from the installations
             (personal chat, group chat, Teams channel).
       return:
         description: >-
-          The first <xref:@microsoft/teamsfx.Member> where predicate is true,
-          and `undefined` otherwise.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.Member_2" /> | undefined&gt;
+          The first
+          [Member](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Member) where
+          predicate is true, and `undefined` otherwise.
+        type: >-
+          Promise&lt;undefined | <xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />&gt;
   - name: installations()
-    uid: '@microsoft/teamsfx.NotificationBot_2.installations'
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.installations'
     package: '@microsoft/teamsfx'
     summary: Get all targets where the bot is installed.
     remarks: The result is retrieving from the persisted storage.
@@ -163,7 +179,10 @@ methods:
     syntax:
       content: 'function installations(): Promise<TeamsBotInstallation_2[]>'
       return:
-        description: 'An array of <xref:@microsoft/teamsfx.TeamsBotInstallation>.'
+        description: >-
+          An array of
+          [TeamsBotInstallation](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation).
         type: >-
-          Promise&lt;<xref uid="@microsoft/teamsfx.TeamsBotInstallation_2"
+          Promise&lt;<xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
           />[]&gt;

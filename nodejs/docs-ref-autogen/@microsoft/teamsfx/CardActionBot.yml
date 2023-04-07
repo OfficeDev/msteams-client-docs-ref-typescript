@@ -9,7 +9,7 @@ isDeprecated: true
 customDeprecatedMessage: Use `BotBuilderCloudAdapter.CardActionBot` instead.
 type: class
 constructors:
-  - name: 'CardActionBot(BotFrameworkAdapter, CardActionOptions)'
+  - name: CardActionBot(BotFrameworkAdapter, CardActionOptions)
     uid: '@microsoft/teamsfx.CardActionBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Creates a new instance of the `CardActionBot`.
@@ -25,8 +25,7 @@ constructors:
           description: The bound `BotFrameworkAdapter`.
         - id: options
           type: <xref uid="@microsoft/teamsfx.CardActionOptions" />
-          description: |
-            initialize options
+          description: initialize options
 methods:
   - name: registerHandler(TeamsFxAdaptiveCardActionHandler)
     uid: '@microsoft/teamsfx.CardActionBot.registerHandler'
@@ -41,9 +40,8 @@ methods:
       parameters:
         - id: actionHandler
           type: <xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />
-          description: |
-            A card action handler to be registered.
-  - name: 'registerHandlers(TeamsFxAdaptiveCardActionHandler[])'
+          description: A card action handler to be registered.
+  - name: registerHandlers(TeamsFxAdaptiveCardActionHandler[])
     uid: '@microsoft/teamsfx.CardActionBot.registerHandlers'
     package: '@microsoft/teamsfx'
     summary: Registers card action handlers to the bot.
@@ -55,6 +53,5 @@ methods:
         TeamsFxAdaptiveCardActionHandler[])
       parameters:
         - id: actionHandlers
-          type: '<xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />[]'
-          description: |
-            A set of card action handlers to be registered.
+          type: <xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />[]
+          description: A set of card action handlers to be registered.

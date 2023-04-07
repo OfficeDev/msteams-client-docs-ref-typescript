@@ -23,10 +23,9 @@ constructors:
       parameters:
         - id: runtime
           type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
-          description: |
-            Containers runtime instance.
+          description: Containers runtime instance.
 methods:
-  - name: 'formatCorrelationId(string | undefined, number)'
+  - name: formatCorrelationId(undefined | string, number)
     uid: '@microsoft/live-share.EphemeralTelemetryLogger.formatCorrelationId'
     package: '@microsoft/live-share'
     summary: ''
@@ -34,11 +33,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        static function formatCorrelationId(clientId: string | undefined,
+        static function formatCorrelationId(clientId: undefined | string,
         timestamp: number): string
       parameters:
         - id: clientId
-          type: string | undefined
+          type: undefined | string
           description: ''
         - id: timestamp
           type: number
@@ -46,7 +45,7 @@ methods:
       return:
         description: ''
         type: string
-  - name: 'sendErrorEvent(string, any, Partial<IEphemeralTelemetryProperties>)'
+  - name: sendErrorEvent(string, any, Partial<IEphemeralTelemetryProperties>)
     uid: '@microsoft/live-share.EphemeralTelemetryLogger.sendErrorEvent'
     package: '@microsoft/live-share'
     summary: Sends an error event.
@@ -67,8 +66,7 @@ methods:
           type: >-
             Partial&lt;<xref
             uid="@microsoft/live-share.IEphemeralTelemetryProperties" />&gt;
-          description: |
-            Optional. Additional properties to include with event.
+          description: Optional. Additional properties to include with event.
   - name: >-
       sendPerformanceEvent(string, number, any,
       Partial<IEphemeralTelemetryProperties>)
@@ -96,9 +94,8 @@ methods:
           type: >-
             Partial&lt;<xref
             uid="@microsoft/live-share.IEphemeralTelemetryProperties" />&gt;
-          description: |
-            Optional. Additional properties to include with event.
-  - name: 'sendTelemetryEvent(string, any, Partial<IEphemeralTelemetryProperties>)'
+          description: Optional. Additional properties to include with event.
+  - name: sendTelemetryEvent(string, any, Partial<IEphemeralTelemetryProperties>)
     uid: '@microsoft/live-share.EphemeralTelemetryLogger.sendTelemetryEvent'
     package: '@microsoft/live-share'
     summary: Sends a generic telemetry event.
@@ -119,5 +116,4 @@ methods:
           type: >-
             Partial&lt;<xref
             uid="@microsoft/live-share.IEphemeralTelemetryProperties" />&gt;
-          description: |
-            Optional. Additional properties to include with event.
+          description: Optional. Additional properties to include with event.

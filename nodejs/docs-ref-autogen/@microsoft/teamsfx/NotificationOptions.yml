@@ -1,16 +1,18 @@
 ### YamlMime:TSType
-name: NotificationOptions_2
-uid: '@microsoft/teamsfx.NotificationOptions_2'
+name: NotificationOptions
+uid: '@microsoft/teamsfx.NotificationOptions'
 package: '@microsoft/teamsfx'
-summary: 'Options to initialize <xref:@microsoft/teamsfx.NotificationBot>.'
-fullName: NotificationOptions_2
+summary: >-
+  Options to initialize
+  [NotificationBot](xref:@microsoft/teamsfx.NotificationBot).
+fullName: NotificationOptions
 remarks: ''
 isDeprecated: true
 customDeprecatedMessage: Please use BotBuilderCloudAdapter.NotificationOptions instead.
 type: interface
 properties:
   - name: storage
-    uid: '@microsoft/teamsfx.NotificationOptions_2.storage'
+    uid: '@microsoft/teamsfx.NotificationOptions.storage'
     package: '@microsoft/teamsfx'
     summary: An optional storage to persist bot notification connections.
     fullName: storage

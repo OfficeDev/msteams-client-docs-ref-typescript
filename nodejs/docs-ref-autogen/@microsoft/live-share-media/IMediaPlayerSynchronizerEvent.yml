@@ -25,7 +25,7 @@ properties:
   - name: error
     uid: '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent.error'
     package: '@microsoft/live-share-media'
-    summary: 'Action errors, including DOMException errors thrown by HTMLMediaElement'
+    summary: Action errors, including DOMException errors thrown by HTMLMediaElement
     fullName: error
     remarks: ''
     isDeprecated: false

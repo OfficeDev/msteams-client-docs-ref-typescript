@@ -10,18 +10,18 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: DryWetCanvas(HTMLElement | undefined)
+  - name: DryWetCanvas(HTMLElement)
     uid: '@microsoft/live-share-canvas.DryWetCanvas.constructor'
     package: '@microsoft/live-share-canvas'
-    summary: 'Creates a new InkingCanvas instance, attached to the provided HTMLElement.'
+    summary: Creates a new InkingCanvas instance, attached to the provided HTMLElement.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new DryWetCanvas(_parentElement?: HTMLElement | undefined)'
+      content: 'new DryWetCanvas(_parentElement?: HTMLElement)'
       parameters:
         - id: _parentElement
-          type: HTMLElement | undefined
-          description: >
+          type: HTMLElement
+          description: >-
             The HTML element this canvas is attached to. InkingCanvas
 
             dynamically creates an HTML5 Canvas element and adds it as a child
@@ -54,9 +54,7 @@ properties:
   - name: offset
     uid: '@microsoft/live-share-canvas.DryWetCanvas.offset'
     package: '@microsoft/live-share-canvas'
-    summary: |-
-      Gets the offset from the canvas' reference point, in pixels.
-      Sets the offset from the canvas' reference point, in pixels.
+    summary: Gets the offset from the canvas' reference point, in pixels.
     fullName: offset
     remarks: ''
     isDeprecated: false
@@ -68,9 +66,7 @@ properties:
   - name: scale
     uid: '@microsoft/live-share-canvas.DryWetCanvas.scale'
     package: '@microsoft/live-share-canvas'
-    summary: |-
-      Gets the canvas' scale. Defaults to 1.
-      Sets the canvas' scale. Value must be greater than zero.
+    summary: Gets the canvas' scale. Defaults to 1.
     fullName: scale
     remarks: ''
     isDeprecated: false
@@ -154,8 +150,7 @@ inheritedMethods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The point to add to the current stroke.
+          description: The point to add to the current stroke.
     inheritanceDescription: >-
       <b>Inherited From</b>
       [InkingCanvas.addPoint](xref:@microsoft/live-share-canvas.InkingCanvas.addPoint)
@@ -170,8 +165,7 @@ inheritedMethods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The starting point of the stroke.
+          description: The starting point of the stroke.
     inheritanceDescription: >-
       <b>Inherited From</b>
       [InkingCanvas.beginStroke](xref:@microsoft/live-share-canvas.InkingCanvas.beginStroke)
@@ -208,7 +202,7 @@ inheritedMethods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
+          description: |-
             Optional. The end point of the stroke. If not specified,
             the end point is the last one added.
     inheritanceDescription: >-
@@ -249,12 +243,11 @@ inheritedMethods:
       parameters:
         - id: stroke
           type: <xref uid="@microsoft/live-share-canvas.IStroke" />
-          description: |
-            The stroke to render.
+          description: The stroke to render.
     inheritanceDescription: >-
       <b>Inherited From</b>
       [InkingCanvas.renderStroke](xref:@microsoft/live-share-canvas.InkingCanvas.renderStroke)
-  - name: 'resize(number, number)'
+  - name: resize(number, number)
     uid: '@microsoft/live-share-canvas.DryWetCanvas.resize'
     package: '@microsoft/live-share-canvas'
     summary: Resizes this canvas.
@@ -265,11 +258,10 @@ inheritedMethods:
       parameters:
         - id: width
           type: number
-          description: 'The new width of the canvas, in pixels.'
+          description: The new width of the canvas, in pixels.
         - id: height
           type: number
-          description: |
-            The new height of the canvas, in pixels.
+          description: The new height of the canvas, in pixels.
     inheritanceDescription: >-
       <b>Inherited From</b>
       [InkingCanvas.resize](xref:@microsoft/live-share-canvas.InkingCanvas.resize)
@@ -284,8 +276,7 @@ inheritedMethods:
       parameters:
         - id: value
           type: <xref uid="@microsoft/live-share-canvas.IBrush" />
-          description: |
-            The brush.
+          description: The brush.
     inheritanceDescription: >-
       <b>Inherited From</b>
       [InkingCanvas.setBrush](xref:@microsoft/live-share-canvas.InkingCanvas.setBrush)
