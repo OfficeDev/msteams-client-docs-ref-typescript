@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: IAppContentStageSharingState
+uid: '@microsoft/teams-js.@microsoft.teams-js.meeting.IAppContentStageSharingState'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: IAppContentStageSharingState
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: isAppSharing
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.meeting.IAppContentStageSharingState.isAppSharing
+    package: '@microsoft/teams-js'
+    summary: '* indicates whether app is currently being shared to stage'
+    fullName: isAppSharing
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'isAppSharing: boolean'
+      return:
+        description: ''
+        type: boolean

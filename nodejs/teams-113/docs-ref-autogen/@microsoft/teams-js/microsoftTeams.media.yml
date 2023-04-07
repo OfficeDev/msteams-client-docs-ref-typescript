@@ -31,29 +31,21 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.media.captureImage'
     package: '@microsoft/teams-js'
     summary: >-
-      Launch camera, capture image or choose image from gallery and return the
-      images as a File[] object to the callback.
-
-      Callback will be called with an error, if there are any. App should first
-      check the error.
-
-      If it is present the user can be updated with appropriate error message.
-
-      If error is null or undefined, then files will have the required result.
-
-      Note: Currently we support getting one File through this API, i.e. the
-      file arrays size will be one.
-
-      Note: For desktop, this API is not supported. Callback will be resolved
-      with ErrorCode.NotSupported.
+      * Launch camera, capture image or choose image from gallery and return the
+      images as a File[] object to the callback.       * Callback will be called
+      with an error, if there are any. App should first check the error.       *
+      If it is present the user can be updated with appropriate error
+      message.       * If error is null or undefined, then files will have the
+      required result.       * Note: Currently we support getting one File
+      through this API, i.e. the file arrays size will be one.       * Note: For
+      desktop, this API is not supported. Callback will be resolved with
+      ErrorCode.NotSupported.       *
 
 
-      See File
-
+      See File       *
 
       See SdkError
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -67,12 +59,10 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.media.scanBarCode'
     package: '@microsoft/teams-js'
     summary: >-
-      Scan Barcode/QRcode using camera
-
-      Note: For desktop and web, this API is not supported. Callback will be
-      resolved with ErrorCode.NotSupported.
+      * Scan Barcode/QRcode using camera       * Note: For desktop and web, this
+      API is not supported. Callback will be resolved with
+      ErrorCode.NotSupported.       *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -81,20 +71,19 @@ functions:
       parameters:
         - id: callback
           type: '(error: SdkError, decodedText: string) =&gt; void'
-          description: callback to invoke after scanning the barcode
+          description: callback to invoke after scanning the barcode       *
         - id: config
           type: >-
-            <xref uid="@microsoft/teams-js.microsoftTeams.media.BarCodeConfig"
-            />
-          description: >
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.BarCodeConfig" />
+          description: >-
             optional input configuration to customize the barcode scanning
             experience
   - name: 'selectMedia(MediaInputs, (error: SdkError, attachments: Media[]) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.media.selectMedia'
     package: '@microsoft/teams-js'
-    summary: Select an attachment using camera/gallery
+    summary: '* Select an attachment using camera/gallery       *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -102,18 +91,18 @@ functions:
         SdkError, attachments: Media[]) => void)
       parameters:
         - id: mediaInputs
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.MediaInputs" />
-          description: The input params to customize the media to be selected
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.MediaInputs" />
+          description: The input params to customize the media to be selected       *
         - id: callback
           type: '(error: SdkError, attachments: Media[]) =&gt; void'
-          description: |
-            The callback to invoke after fetching the media
+          description: The callback to invoke after fetching the media
   - name: 'viewImages(ImageUri[], (error?: SdkError) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.media.viewImages'
     package: '@microsoft/teams-js'
-    summary: View images using native image viewer
+    summary: '* View images using native image viewer       *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -121,11 +110,12 @@ functions:
         void)
       parameters:
         - id: uriList
-          type: '<xref uid="@microsoft/teams-js.microsoftTeams.media.ImageUri" />[]'
+          type: >-
+            @microsoft/teams-js.<xref uid="@microsoft.teams-js.media.ImageUri"
+            />[]
           description: >-
             urilist of images to be viewed - can be content uri or server url.
-            supports upto 10 Images in one go
+            supports upto 10 Images in one go       *
         - id: callback
           type: '(error?: SdkError) =&gt; void'
-          description: |
-            returns back error if encountered, returns null in case of success
+          description: returns back error if encountered, returns null in case of success

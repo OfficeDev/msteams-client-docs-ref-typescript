@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: SQL connection configuration instance.
 fullName: DefaultTediousConnectionConfiguration
 remarks: Only works in in server side.
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: class
 methods:
@@ -14,7 +14,7 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Generate connection configuration consumed by tedious.
     remarks: ''
-    isPreview: true
+    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function getConfig(): Promise<ConnectionConfig>'

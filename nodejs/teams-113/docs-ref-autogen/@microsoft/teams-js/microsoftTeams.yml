@@ -12,7 +12,6 @@ enums:
   - '@microsoft/teams-js.microsoftTeams.NotificationTypes'
   - '@microsoft/teams-js.microsoftTeams.TaskModuleDimension'
   - '@microsoft/teams-js.microsoftTeams.TeamType'
-  - '@microsoft/teams-js.microsoftTeams.UserSettingTypes'
   - '@microsoft/teams-js.microsoftTeams.UserTeamRole'
 classes:
   - '@microsoft/teams-js.microsoftTeams.ChildAppWindow'
@@ -36,12 +35,11 @@ interfaces:
   - '@microsoft/teams-js.microsoftTeams.TeamInformation'
 package: '@microsoft/teams-js'
 functions:
-  - name: 'callHandler(string, any[])'
+  - name: callHandler(string, any[])
     uid: '@microsoft/teams-js.microsoftTeams.callHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -52,47 +50,44 @@ functions:
           type: string
           description: ''
         - id: args
-          type: 'any[]'
+          type: any[]
           description: ''
       return:
         description: ''
         type: '[true, any] | [false, undefined]'
-  - name: 'compareSDKVersions(string, string)'
+  - name: compareSDKVersions(string, string)
     uid: '@microsoft/teams-js.microsoftTeams.compareSDKVersions'
     package: '@microsoft/teams-js'
-    summary: Compares SDK versions.
+    summary: '* Compares SDK versions.   *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function compareSDKVersions(v1: string, v2: string): number'
       parameters:
         - id: v1
           type: string
-          description: first version
+          description: first version   *
         - id: v2
           type: string
-          description: |
-            second version
-            returns NaN in case inputs are not in right format
-                    -1 if v1 < v2
-                     1 if v1 > v2
-                     0 otherwise
-            For example,
-               compareSDKVersions('1.2', '1.2.0') returns 0
-               compareSDKVersions('1.2a', '1.2b') returns NaN
-               compareSDKVersions('1.2', '1.3') returns -1
-               compareSDKVersions('2.0', '1.3.2') returns 1
-               compareSDKVersions('2.0', 2.0) returns NaN
+          description: >-
+            second version   * returns NaN in case inputs are not in right
+            format   *         -1 if v1 < v2   *          1 if v1 > v2  
+            *          0 otherwise   * For example,   *   
+            compareSDKVersions('1.2', '1.2.0') returns 0   *   
+            compareSDKVersions('1.2a', '1.2b') returns NaN   *   
+            compareSDKVersions('1.2', '1.3') returns -1   *   
+            compareSDKVersions('2.0', '1.3.2') returns 1   *   
+            compareSDKVersions('2.0', 2.0) returns NaN
       return:
         description: ''
         type: number
-  - name: 'createFile(AssembleAttachment[], string)'
+  - name: createFile(AssembleAttachment[], string)
     uid: '@microsoft/teams-js.microsoftTeams.createFile'
     package: '@microsoft/teams-js'
-    summary: Helper function to create a blob from media chunks based on their sequence
+    summary: >-
+      * Helper function to create a blob from media chunks based on their
+      sequence
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -101,9 +96,8 @@ functions:
       parameters:
         - id: assembleAttachment
           type: >-
-            <xref
-            uid="@microsoft/teams-js.microsoftTeams.media.AssembleAttachment"
-            />[]
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.AssembleAttachment" />[]
           description: ''
         - id: mimeType
           type: string
@@ -111,25 +105,24 @@ functions:
       return:
         description: ''
         type: Blob
-  - name: 'decodeAttachment(MediaChunk, string)'
+  - name: decodeAttachment(MediaChunk, string)
     uid: '@microsoft/teams-js.microsoftTeams.decodeAttachment'
     package: '@microsoft/teams-js'
     summary: >-
-      Helper function to convert Media chunks into another object type which can
-      be later assemebled
-
-      Converts base 64 encoded string to byte array and then into an array of
-      blobs
+      * Helper function to convert Media chunks into another object type which
+      can be later assemebled   * Converts base 64 encoded string to byte array
+      and then into an array of blobs
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function decodeAttachment(attachment: MediaChunk, mimeType: string):
-        AssembleAttachment
+        media.AssembleAttachment
       parameters:
         - id: attachment
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.MediaChunk" />
+          type: >-
+            @microsoft/teams-js.<xref uid="@microsoft.teams-js.media.MediaChunk"
+            />
           description: ''
         - id: mimeType
           type: string
@@ -137,36 +130,33 @@ functions:
       return:
         description: ''
         type: >-
-          <xref
-          uid="@microsoft/teams-js.microsoftTeams.media.AssembleAttachment" />
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.media.AssembleAttachment" />
   - name: enablePrintCapability()
     uid: '@microsoft/teams-js.microsoftTeams.enablePrintCapability'
     package: '@microsoft/teams-js'
-    summary: Enable print capability to support printing page using Ctrl+P and cmd+P
+    summary: '* Enable print capability to support printing page using Ctrl+P and cmd+P'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function enablePrintCapability()
-  - name: 'ensureInitialized(string[])'
+  - name: ensureInitialized(string[])
     uid: '@microsoft/teams-js.microsoftTeams.ensureInitialized'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function ensureInitialized(expectedFrameContexts: string[])'
       parameters:
         - id: expectedFrameContexts
-          type: 'string[]'
+          type: string[]
           description: ''
   - name: 'executeDeepLink(string, (status: boolean, reason?: string) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.executeDeepLink'
     package: '@microsoft/teams-js'
-    summary: execute deep link API.
+    summary: '* execute deep link API.   *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -175,35 +165,32 @@ functions:
       parameters:
         - id: deepLink
           type: string
-          description: |
-            deep link.
+          description: deep link.
         - id: onComplete
           type: '(status: boolean, reason?: string) =&gt; void'
           description: ''
   - name: generateGUID()
     uid: '@microsoft/teams-js.microsoftTeams.generateGUID'
     package: '@microsoft/teams-js'
-    summary: Generates a GUID
+    summary: '* Generates a GUID'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function generateGUID(): string'
       return:
         description: ''
         type: string
-  - name: 'generateRegExpFromUrls(string[])'
+  - name: generateRegExpFromUrls(string[])
     uid: '@microsoft/teams-js.microsoftTeams.generateRegExpFromUrls'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function generateRegExpFromUrls(urls: string[]): RegExp'
       parameters:
         - id: urls
-          type: 'string[]'
+          type: string[]
           description: ''
       return:
         description: ''
@@ -211,25 +198,23 @@ functions:
   - name: 'getContext((context: Context) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.getContext'
     package: '@microsoft/teams-js'
-    summary: Retrieves the current context the frame is running in.
+    summary: '* Retrieves the current context the frame is running in.   *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function getContext(callback: (context: Context) => void)'
       parameters:
         - id: callback
           type: '(context: Context) =&gt; void'
-          description: >
+          description: >-
             The callback to invoke when the
-            <xref:@microsoft/teams-js.microsoftTeams.Context> object is
+            [Context](xref:@microsoft/teams-js.microsoftTeams.Context) object is
             retrieved.
   - name: getGenericOnCompleteHandler(string)
     uid: '@microsoft/teams-js.microsoftTeams.getGenericOnCompleteHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -247,9 +232,8 @@ functions:
       TabInstanceParameters)
     uid: '@microsoft/teams-js.microsoftTeams.getMruTabInstances'
     package: '@microsoft/teams-js'
-    summary: Allows an app to retrieve the most recently used tabs for this user.
+    summary: '* Allows an app to retrieve the most recently used tabs for this user.   *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -260,24 +244,21 @@ functions:
           type: '(tabInfo: TabInformation) =&gt; void'
           description: >-
             The callback to invoke when the
-            <xref:@microsoft/teams-js.microsoftTeams.TabInformation> object is
-            retrieved.
+            [TabInformation](xref:@microsoft/teams-js.microsoftTeams.TabInformation)
+            object is retrieved.   *
         - id: tabInstanceParameters
           type: >-
-            <xref uid="@microsoft/teams-js.microsoftTeams.TabInstanceParameters"
-            />
-          description: |
-            OPTIONAL Ignored, kept for future use
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.TabInstanceParameters" />
+          description: OPTIONAL Ignored, kept for future use
   - name: 'getTabInstances((tabInfo: TabInformation) => void, TabInstanceParameters)'
     uid: '@microsoft/teams-js.microsoftTeams.getTabInstances'
     package: '@microsoft/teams-js'
     summary: >-
-      Allows an app to retrieve for this user tabs that are owned by this app.
-
-      If no TabInstanceParameters are passed, the app defaults to favorite teams
-      and favorite channels.
+      * Allows an app to retrieve for this user tabs that are owned by this
+      app.   * If no TabInstanceParameters are passed, the app defaults to
+      favorite teams and favorite channels.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -288,13 +269,13 @@ functions:
           type: '(tabInfo: TabInformation) =&gt; void'
           description: >-
             The callback to invoke when the
-            <xref:@microsoft/teams-js.microsoftTeams.TabInstanceParameters>
-            object is retrieved.
+            [TabInstanceParameters](xref:@microsoft/teams-js.microsoftTeams.TabInstanceParameters)
+            object is retrieved.   *
         - id: tabInstanceParameters
           type: >-
-            <xref uid="@microsoft/teams-js.microsoftTeams.TabInstanceParameters"
-            />
-          description: >
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.TabInstanceParameters" />
+          description: >-
             OPTIONAL Flags that specify whether to scope call to favorite teams
             or channels.
   - name: handleThemeChange(string)
@@ -302,7 +283,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function handleThemeChange(theme: string)'
@@ -310,14 +290,13 @@ functions:
         - id: theme
           type: string
           description: ''
-  - name: 'initialize(() => void, string[])'
+  - name: initialize(() => void, string[])
     uid: '@microsoft/teams-js.microsoftTeams.initialize'
     package: '@microsoft/teams-js'
-    summary: |-
-      Initializes the library. This must be called before any other SDK calls
-      but after the frame is loaded successfully.
+    summary: >-
+      * Initializes the library. This must be called before any other SDK
+      calls   * but after the frame is loaded successfully.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -328,39 +307,35 @@ functions:
           type: () =&gt; void
           description: >-
             Optionally specify a callback to invoke when Teams SDK has
-            successfully initialized
+            successfully initialized   *
         - id: validMessageOrigins
-          type: 'string[]'
-          description: >
+          type: string[]
+          description: >-
             Optionally specify a list of cross frame message origins. There must
-            have
-
-            https: protocol otherwise they will be ignored. Example:
+            have   * https: protocol otherwise they will be ignored. Example:
             https://www.example.com
-  - name: 'initializeCommunication(Function, string[] | undefined)'
+  - name: initializeCommunication(Function, undefined | string[])
     uid: '@microsoft/teams-js.microsoftTeams.initializeCommunication'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
         function initializeCommunication(callback: Function,
-        validMessageOrigins: string[] | undefined)
+        validMessageOrigins: undefined | string[])
       parameters:
         - id: callback
           type: Function
           description: ''
         - id: validMessageOrigins
-          type: 'string[] | undefined'
+          type: undefined | string[]
           description: ''
   - name: initializeHandlers()
     uid: '@microsoft/teams-js.microsoftTeams.initializeHandlers'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function initializeHandlers()
@@ -369,16 +344,14 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function initializePrivateApis()
-  - name: 'initializeWithFrameContext(FrameContext, () => void, string[])'
+  - name: initializeWithFrameContext(FrameContext, () => void, string[])
     uid: '@microsoft/teams-js.microsoftTeams.initializeWithFrameContext'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -386,32 +359,29 @@ functions:
         callback?: () => void, validMessageOrigins?: string[])
       parameters:
         - id: frameContext
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.FrameContext" />
+          type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.FrameContext" />'
           description: ''
         - id: callback
           type: () =&gt; void
           description: ''
         - id: validMessageOrigins
-          type: 'string[]'
+          type: string[]
           description: ''
   - name: isAPISupportedByPlatform(string)
     uid: '@microsoft/teams-js.microsoftTeams.isAPISupportedByPlatform'
     package: '@microsoft/teams-js'
     summary: >-
-      Checks whether the platform has knowledge of this API by doing a
-      comparison
-
-      on API required version and platform supported version of the SDK
+      * Checks whether the platform has knowledge of this API by doing a
+      comparison   * on API required version and platform supported version of
+      the SDK   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isAPISupportedByPlatform(requiredVersion?: string): boolean'
       parameters:
         - id: requiredVersion
           type: string
-          description: |
-            SDK version required by the API
+          description: SDK version required by the API
       return:
         description: ''
         type: boolean
@@ -419,10 +389,9 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.isApiSupportedOnMobile'
     package: '@microsoft/teams-js'
     summary: >-
-      Helper function which indicates if current API is supported on mobile or
-      not.
+      * Helper function which indicates if current API is supported on mobile or
+      not.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isApiSupportedOnMobile(requiredVersion?: string): SdkError'
@@ -433,15 +402,14 @@ functions:
       return:
         description: >-
           SdkError if host client is not android/ios or if the requiredVersion
-          is not
-                   supported by platform or not. Null is returned in case of success.
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.SdkError" />
+          is not   *          supported by platform or not. Null is returned in
+          case of success.
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.SdkError" />'
   - name: isHostClientMobile()
     uid: '@microsoft/teams-js.microsoftTeams.isHostClientMobile'
     package: '@microsoft/teams-js'
-    summary: Helper function to identify if host client is either android or ios
+    summary: '* Helper function to identify if host client is either android or ios'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isHostClientMobile(): boolean'
@@ -452,10 +420,9 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.isMediaCallForImageOutputFormats'
     package: '@microsoft/teams-js'
     summary: >-
-      Returns true if the mediaInput params are called for mediatype Image and
+      * Returns true if the mediaInput params are called for mediatype Image and
       contains Image outputs formats, false otherwise
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -463,7 +430,9 @@ functions:
         boolean
       parameters:
         - id: mediaInputs
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.MediaInputs" />
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.MediaInputs" />
           description: ''
       return:
         description: ''
@@ -472,10 +441,9 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.isMediaCallForNonFullScreenVideoMode'
     package: '@microsoft/teams-js'
     summary: >-
-      Returns true if the mediaInput params are called for non-full screen video
-      mode and false otherwise
+      * Returns true if the mediaInput params are called for non-full screen
+      video mode and false otherwise
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -483,7 +451,9 @@ functions:
         boolean
       parameters:
         - id: mediaInputs
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.MediaInputs" />
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.MediaInputs" />
           description: ''
       return:
         description: ''
@@ -492,10 +462,9 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.isMediaCallForVideoAndImageInputs'
     package: '@microsoft/teams-js'
     summary: >-
-      Returns true if the mediaInput params are called for mediatype
+      * Returns true if the mediaInput params are called for mediatype
       VideoAndImage and false otherwise
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -503,7 +472,9 @@ functions:
         boolean
       parameters:
         - id: mediaInputs
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.MediaInputs" />
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.MediaInputs" />
           description: ''
       return:
         description: ''
@@ -512,10 +483,9 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.isMediaCallSupportedOnMobile'
     package: '@microsoft/teams-js'
     summary: >-
-      Function returns null if the media call is supported on current mobile
+      * Function returns null if the media call is supported on current mobile
       version, else SdkError.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -523,25 +493,28 @@ functions:
         SdkError
       parameters:
         - id: mediaInputs
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.MediaInputs" />
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.MediaInputs" />
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.SdkError" />
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.SdkError" />'
   - name: isVideoControllerRegistered(MediaInputs)
     uid: '@microsoft/teams-js.microsoftTeams.isVideoControllerRegistered'
     package: '@microsoft/teams-js'
     summary: >-
-      Function returns true if the app has registered to listen to video
+      * Function returns true if the app has registered to listen to video
       controller events, else false.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function isVideoControllerRegistered(mediaInputs: MediaInputs): boolean'
       parameters:
         - id: mediaInputs
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.MediaInputs" />
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.MediaInputs" />
           description: ''
       return:
         description: ''
@@ -550,12 +523,9 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.navigateBack'
     package: '@microsoft/teams-js'
     summary: >-
-      Navigates back in the Teams client. See registerBackButtonHandler for more
-      information on when
-
-      it's appropriate to use this method.
+      * Navigates back in the Teams client. See registerBackButtonHandler for
+      more information on when   * it's appropriate to use this method.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -569,21 +539,13 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.navigateCrossDomain'
     package: '@microsoft/teams-js'
     summary: >-
-      Navigates the frame to a new cross-domain URL. The domain of this URL must
-      match at least one of the
-
-      valid domains specified in the validDomains block of the manifest;
-      otherwise, an exception will be
-
+      * Navigates the frame to a new cross-domain URL. The domain of this URL
+      must match at least one of the   * valid domains specified in the
+      validDomains block of the manifest; otherwise, an exception will be   *
       thrown. This function needs to be used only when navigating the frame to a
-      URL in a different domain
-
-      than the current one in a way that keeps the app informed of the change
-      and allows the SDK to
-
-      continue working.
+      URL in a different domain   * than the current one in a way that keeps the
+      app informed of the change and allows the SDK to   * continue working.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -592,17 +554,15 @@ functions:
       parameters:
         - id: url
           type: string
-          description: |
-            The URL to navigate the frame to.
+          description: The URL to navigate the frame to.
         - id: onComplete
           type: '(status: boolean, reason?: string) =&gt; void'
           description: ''
   - name: 'navigateToTab(TabInstance, (status: boolean, reason?: string) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.navigateToTab'
     package: '@microsoft/teams-js'
-    summary: Navigates the Microsoft Teams app to the specified tab instance.
+    summary: '* Navigates the Microsoft Teams app to the specified tab instance.   *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -610,93 +570,83 @@ functions:
         boolean, reason?: string) => void)
       parameters:
         - id: tabInstance
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.TabInstance" />
-          description: |
-            The tab instance to navigate to.
+          type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.TabInstance" />'
+          description: The tab instance to navigate to.
         - id: onComplete
           type: '(status: boolean, reason?: string) =&gt; void'
           description: ''
   - name: print()
     uid: '@microsoft/teams-js.microsoftTeams.print'
     package: '@microsoft/teams-js'
-    summary: default print handler
+    summary: '* default print handler'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function print()
-  - name: 'processAdditionalValidOrigins(string[])'
+  - name: processAdditionalValidOrigins(string[])
     uid: '@microsoft/teams-js.microsoftTeams.processAdditionalValidOrigins'
     package: '@microsoft/teams-js'
     summary: >-
-      Processes the valid origins specifuied by the user, de-duplicates and
-      converts them into a regexp
-
-      which is used later for message source/origin validation
+      * Processes the valid origins specifuied by the user, de-duplicates and
+      converts them into a regexp   * which is used later for message
+      source/origin validation
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function processAdditionalValidOrigins(validMessageOrigins: string[])'
       parameters:
         - id: validMessageOrigins
-          type: 'string[]'
+          type: string[]
           description: ''
   - name: registerAppButtonClickHandler(() => void)
     uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonClickHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for clicking the app button.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for clicking the app button.   * Only one handler
+      can be registered at a time. A subsequent registration replaces an
+      existing registration.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerAppButtonClickHandler(handler: () => void)'
       parameters:
         - id: handler
           type: () =&gt; void
-          description: >
+          description: >-
             The handler to invoke when the personal app button is clicked in the
             app bar.
   - name: registerAppButtonHoverEnterHandler(() => void)
     uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonHoverEnterHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for entering hover of the app button.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for entering hover of the app button.   * Only one
+      handler can be registered at a time. A subsequent registration replaces an
+      existing registration.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerAppButtonHoverEnterHandler(handler: () => void)'
       parameters:
         - id: handler
           type: () =&gt; void
-          description: >
+          description: >-
             The handler to invoke when entering hover of the personal app button
             in the app bar.
   - name: registerAppButtonHoverLeaveHandler(() => void)
     uid: '@microsoft/teams-js.microsoftTeams.registerAppButtonHoverLeaveHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for exiting hover of the app button.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for exiting hover of the app button.   * Only one
+      handler can be registered at a time. A subsequent registration replaces an
+      existing registration.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerAppButtonHoverLeaveHandler(handler: () => void)'
       parameters:
         - id: handler
           type: () =&gt; void
-          description: >
+          description: >-
             The handler to invoke when exiting hover of the personal app button
             in the app bar.
   - name: registerBackButtonHandler(() => boolean)
@@ -704,7 +654,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerBackButtonHandler(handler: () => boolean)'
@@ -716,51 +665,42 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.registerBackButtonHandler_1'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for user presses of the Team client's back button.
-      Experiences that maintain an internal
-
-      navigation stack should use this handler to navigate the user back within
-      their frame. If an app finds
-
+      * Registers a handler for user presses of the Team client's back button.
+      Experiences that maintain an internal   * navigation stack should use this
+      handler to navigate the user back within their frame. If an app finds   *
       that after running its back button handler it cannot handle the event it
-      should call the navigateBack
-
-      method to ask the Teams client to handle it instead.
+      should call the navigateBack   * method to ask the Teams client to handle
+      it instead.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerBackButtonHandler(handler: () => boolean)'
       parameters:
         - id: handler
           type: () =&gt; boolean
-          description: >
+          description: >-
             The handler to invoke when the user presses their Team client's back
             button.
   - name: registerChangeSettingsHandler(() => void)
     uid: '@microsoft/teams-js.microsoftTeams.registerChangeSettingsHandler'
     package: '@microsoft/teams-js'
-    summary: Registers a handler for when the user reconfigurated tab
+    summary: '* Registers a handler for when the user reconfigurated tab   *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerChangeSettingsHandler(handler: () => void)'
       parameters:
         - id: handler
           type: () =&gt; void
-          description: |
-            The handler to invoke when the user click on Settings.
+          description: The handler to invoke when the user click on Settings.
   - name: 'registerFullScreenHandler((isFullScreen: boolean) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.registerFullScreenHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for changes from or to full-screen view for a tab.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for changes from or to full-screen view for a tab.  
+      * Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -769,15 +709,14 @@ functions:
       parameters:
         - id: handler
           type: '(isFullScreen: boolean) =&gt; void'
-          description: >
+          description: >-
             The handler to invoke when the user toggles full-screen view for a
             tab.
-  - name: 'registerHandler(string, Function, boolean, any[])'
+  - name: registerHandler(string, Function, boolean, any[])
     uid: '@microsoft/teams-js.microsoftTeams.registerHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -794,14 +733,13 @@ functions:
           type: boolean
           description: ''
         - id: args
-          type: 'any[]'
+          type: any[]
           description: ''
   - name: 'registerOnThemeChangeHandler((theme: string) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.registerOnThemeChangeHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'
@@ -813,26 +751,22 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.registerOnThemeChangeHandler_1'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for theme changes.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for theme changes.   * Only one handler can be
+      registered at a time. A subsequent registration replaces an existing
+      registration.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'
       parameters:
         - id: handler
           type: '(theme: string) =&gt; void'
-          description: |
-            The handler to invoke when the user changes their theme.
+          description: The handler to invoke when the user changes their theme.
   - name: removeHandler(string)
     uid: '@microsoft/teams-js.microsoftTeams.removeHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function removeHandler(name: string)'
@@ -844,26 +778,23 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.returnFocus'
     package: '@microsoft/teams-js'
     summary: >-
-      Return focus to the main Teams app. Will focus search bar if navigating
-      forward and app bar if navigating back.
+      * Return focus to the main Teams app. Will focus search bar if navigating
+      forward and app bar if navigating back.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function returnFocus(navigateForward?: boolean)'
       parameters:
         - id: navigateForward
           type: boolean
-          description: |
-            Determines the direction to focus in teams app.
-  - name: 'sendMessageEventToChild(string, any[])'
+          description: Determines the direction to focus in teams app.
+  - name: sendMessageEventToChild(string, any[])
     uid: '@microsoft/teams-js.microsoftTeams.sendMessageEventToChild'
     package: '@microsoft/teams-js'
-    summary: |-
-      Send a custom message object that can be sent to child window,
+    summary: >-
+      * Send a custom message object that can be sent to child window,   *
       instead of a response message to a child
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sendMessageEventToChild(actionName: string, args?: any[])'
@@ -872,16 +803,15 @@ functions:
           type: string
           description: ''
         - id: args
-          type: 'any[]'
+          type: any[]
           description: ''
-  - name: 'sendMessageToParent(string, any[], Function)'
+  - name: sendMessageToParent(string, any[], Function)
     uid: '@microsoft/teams-js.microsoftTeams.sendMessageToParent_1'
     package: '@microsoft/teams-js'
     summary: >-
-      Send a message to parent. Uses nativeInterface on mobile to communicate
+      * Send a message to parent. Uses nativeInterface on mobile to communicate
       with parent context
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -892,19 +822,18 @@ functions:
           type: string
           description: ''
         - id: args
-          type: 'any[]'
+          type: any[]
           description: ''
         - id: callback
           type: Function
           description: ''
-  - name: 'sendMessageToParent(string, Function)'
+  - name: sendMessageToParent(string, Function)
     uid: '@microsoft/teams-js.microsoftTeams.sendMessageToParent'
     package: '@microsoft/teams-js'
     summary: >-
-      Send a message to parent. Uses nativeInterface on mobile to communicate
+      * Send a message to parent. Uses nativeInterface on mobile to communicate
       with parent context
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function sendMessageToParent(actionName: string, callback?: Function)'
@@ -920,45 +849,42 @@ functions:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function setFrameContext(frameContext: FrameContext)'
       parameters:
         - id: frameContext
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.FrameContext" />
+          type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.FrameContext" />'
           description: ''
   - name: shareDeepLink(DeepLinkParameters)
     uid: '@microsoft/teams-js.microsoftTeams.shareDeepLink'
     package: '@microsoft/teams-js'
     summary: >-
-      Shares a deep link that a user can use to navigate back to a specific
-      state in this page.
+      * Shares a deep link that a user can use to navigate back to a specific
+      state in this page.   *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function shareDeepLink(deepLinkParameters: DeepLinkParameters)'
       parameters:
         - id: deepLinkParameters
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.DeepLinkParameters" />
-          description: |
-            ID and label for the link and fallback URL.
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.DeepLinkParameters" />
+          description: ID and label for the link and fallback URL.
   - name: uninitializeCommunication()
     uid: '@microsoft/teams-js.microsoftTeams.uninitializeCommunication'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: function uninitializeCommunication()
-  - name: 'validateGetMediaInputs(string, FileFormat, string)'
+  - name: validateGetMediaInputs(string, FileFormat, string)
     uid: '@microsoft/teams-js.microsoftTeams.validateGetMediaInputs'
     package: '@microsoft/teams-js'
-    summary: Returns true if the get Media params are valid and false otherwise
+    summary: '* Returns true if the get Media params are valid and false otherwise'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -969,7 +895,9 @@ functions:
           type: string
           description: ''
         - id: format
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.FileFormat" />
+          type: >-
+            @microsoft/teams-js.<xref uid="@microsoft.teams-js.media.FileFormat"
+            />
           description: ''
         - id: content
           type: string
@@ -980,9 +908,8 @@ functions:
   - name: validatePeoplePickerInput(PeoplePickerInputs)
     uid: '@microsoft/teams-js.microsoftTeams.validatePeoplePickerInput'
     package: '@microsoft/teams-js'
-    summary: Returns true if the people picker params are valid and false otherwise
+    summary: '* Returns true if the people picker params are valid and false otherwise'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -991,9 +918,8 @@ functions:
       parameters:
         - id: peoplePickerInputs
           type: >-
-            <xref
-            uid="@microsoft/teams-js.microsoftTeams.people.PeoplePickerInputs"
-            />
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.people.PeoplePickerInputs" />
           description: ''
       return:
         description: ''
@@ -1001,17 +927,16 @@ functions:
   - name: validateScanBarCodeInput(BarCodeConfig)
     uid: '@microsoft/teams-js.microsoftTeams.validateScanBarCodeInput'
     package: '@microsoft/teams-js'
-    summary: Returns true if the scan barcode param is valid and false otherwise
+    summary: '* Returns true if the scan barcode param is valid and false otherwise'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function validateScanBarCodeInput(barCodeConfig: BarCodeConfig): boolean'
       parameters:
         - id: barCodeConfig
           type: >-
-            <xref uid="@microsoft/teams-js.microsoftTeams.media.BarCodeConfig"
-            />
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.BarCodeConfig" />
           description: ''
       return:
         description: ''
@@ -1019,41 +944,42 @@ functions:
   - name: validateSelectMediaInputs(MediaInputs)
     uid: '@microsoft/teams-js.microsoftTeams.validateSelectMediaInputs'
     package: '@microsoft/teams-js'
-    summary: Returns true if the mediaInput params are valid and false otherwise
+    summary: '* Returns true if the mediaInput params are valid and false otherwise'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function validateSelectMediaInputs(mediaInputs: MediaInputs): boolean'
       parameters:
         - id: mediaInputs
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.media.MediaInputs" />
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.MediaInputs" />
           description: ''
       return:
         description: ''
         type: boolean
-  - name: 'validateViewImagesInput(ImageUri[])'
+  - name: validateViewImagesInput(ImageUri[])
     uid: '@microsoft/teams-js.microsoftTeams.validateViewImagesInput'
     package: '@microsoft/teams-js'
-    summary: Returns true if the view images param is valid and false otherwise
+    summary: '* Returns true if the view images param is valid and false otherwise'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function validateViewImagesInput(uriList: ImageUri[]): boolean'
       parameters:
         - id: uriList
-          type: '<xref uid="@microsoft/teams-js.microsoftTeams.media.ImageUri" />[]'
+          type: >-
+            @microsoft/teams-js.<xref uid="@microsoft.teams-js.media.ImageUri"
+            />[]
           description: ''
       return:
         description: ''
         type: boolean
-  - name: 'waitForMessageQueue(Window, () => void)'
+  - name: waitForMessageQueue(Window, () => void)
     uid: '@microsoft/teams-js.microsoftTeams.waitForMessageQueue'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function waitForMessageQueue(targetWindow: Window, callback: () => void)'

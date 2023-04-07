@@ -12,12 +12,10 @@ functions:
       @microsoft/teams-js.microsoftTeams.remoteCamera.registerOnCapableParticipantsChangeHandler
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for change in participants with controllable-cameras.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for change in participants with
+      controllable-cameras.       * Only one handler can be registered at a
+      time. A subsequent registration replaces an existing registration.       *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -26,7 +24,7 @@ functions:
       parameters:
         - id: handler
           type: '(participantChange: Participant[]) =&gt; void'
-          description: >
+          description: >-
             The handler to invoke when the list of participants with
             controllable-cameras changes.
   - name: >-
@@ -36,12 +34,10 @@ functions:
       @microsoft/teams-js.microsoftTeams.remoteCamera.registerOnDeviceStateChangeHandler
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for device state change.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for device state change.       * Only one handler
+      can be registered at a time. A subsequent registration replaces an
+      existing registration.       *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -50,25 +46,22 @@ functions:
       parameters:
         - id: handler
           type: '(deviceStateChange: DeviceState) =&gt; void'
-          description: |
-            The handler to invoke when the controlled device changes state.
+          description: The handler to invoke when the controlled device changes state.
   - name: 'registerOnErrorHandler((error: ErrorReason) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.remoteCamera.registerOnErrorHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for error.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for error.       * Only one handler can be
+      registered at a time. A subsequent registration replaces an existing
+      registration.       *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function registerOnErrorHandler(handler: (error: ErrorReason) => void)'
       parameters:
         - id: handler
           type: '(error: ErrorReason) =&gt; void'
-          description: >
+          description: >-
             The handler to invoke when there is an error from the camera
             handler.
   - name: >-
@@ -78,12 +71,10 @@ functions:
       @microsoft/teams-js.microsoftTeams.remoteCamera.registerOnSessionStatusChangeHandler
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for session status change.
-
-      Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.
+      * Registers a handler for session status change.       * Only one handler
+      can be registered at a time. A subsequent registration replaces an
+      existing registration.       *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -92,5 +83,4 @@ functions:
       parameters:
         - id: handler
           type: '(sessionStatusChange: SessionStatus) =&gt; void'
-          description: |
-            The handler to invoke when the current session status changes.
+          description: The handler to invoke when the current session status changes.

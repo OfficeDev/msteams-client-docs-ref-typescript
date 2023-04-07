@@ -2,20 +2,18 @@
 name: PeoplePickerResult
 uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerResult'
 package: '@microsoft/teams-js'
-summary: Output user object of people picker API
+summary: '* Output user object of people picker API'
 fullName: PeoplePickerResult
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: displayName
     uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerResult.displayName'
     package: '@microsoft/teams-js'
-    summary: Optional; display name of the selected user
+    summary: '* Optional; display name of the selected user'
     fullName: displayName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'displayName?: string'
@@ -25,10 +23,9 @@ properties:
   - name: email
     uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerResult.email'
     package: '@microsoft/teams-js'
-    summary: Optional; email of the selected user
+    summary: '* Optional; email of the selected user'
     fullName: email
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'email?: string'
@@ -38,10 +35,9 @@ properties:
   - name: objectId
     uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerResult.objectId'
     package: '@microsoft/teams-js'
-    summary: user object Id (also known as aad id) of the selected user
+    summary: '* user object Id (also known as aad id) of the selected user'
     fullName: objectId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'objectId: string'

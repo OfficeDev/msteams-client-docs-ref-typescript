@@ -5,17 +5,15 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: TaskInfo
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: card
     uid: '@microsoft/teams-js.microsoftTeams.TaskInfo.card'
     package: '@microsoft/teams-js'
-    summary: JSON defining an adaptive card.
+    summary: '* JSON defining an adaptive card.'
     fullName: card
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'card?: string'
@@ -26,16 +24,11 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.TaskInfo.completionBotId'
     package: '@microsoft/teams-js'
     summary: >-
-      Specifies a bot ID to send the result of the user's interaction with the
-      task module.
-
-      If specified, the bot will receive a task/complete invoke event with a
-      JSON object
-
-      in the event payload.
+      * Specifies a bot ID to send the result of the user's interaction with the
+      task module.       * If specified, the bot will receive a task/complete
+      invoke event with a JSON object       * in the event payload.
     fullName: completionBotId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'completionBotId?: string'
@@ -46,11 +39,10 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.TaskInfo.fallbackUrl'
     package: '@microsoft/teams-js'
     summary: >-
-      If client doesnt support the URL, the URL that needs to be opened in the
+      * If client doesnt support the URL, the URL that needs to be opened in the
       browser.
     fullName: fallbackUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'fallbackUrl?: string'
@@ -60,25 +52,23 @@ properties:
   - name: height
     uid: '@microsoft/teams-js.microsoftTeams.TaskInfo.height'
     package: '@microsoft/teams-js'
-    summary: The requested height of the webview/iframe.
+    summary: '* The requested height of the webview/iframe.'
     fullName: height
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'height?: TaskModuleDimension | number'
+      content: 'height?: number | TaskModuleDimension'
       return:
         description: ''
         type: >-
-          <xref uid="@microsoft/teams-js.microsoftTeams.TaskModuleDimension" />
-          | number
+          number | @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.TaskModuleDimension" />
   - name: title
     uid: '@microsoft/teams-js.microsoftTeams.TaskInfo.title'
     package: '@microsoft/teams-js'
-    summary: Title of the task module.
+    summary: '* Title of the task module.'
     fullName: title
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'title?: string'
@@ -88,10 +78,9 @@ properties:
   - name: url
     uid: '@microsoft/teams-js.microsoftTeams.TaskInfo.url'
     package: '@microsoft/teams-js'
-    summary: The url to be rendered in the webview/iframe.
+    summary: '* The url to be rendered in the webview/iframe.'
     fullName: url
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'url?: string'
@@ -101,15 +90,14 @@ properties:
   - name: width
     uid: '@microsoft/teams-js.microsoftTeams.TaskInfo.width'
     package: '@microsoft/teams-js'
-    summary: The requested width of the webview/iframe.
+    summary: '* The requested width of the webview/iframe.'
     fullName: width
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
-      content: 'width?: TaskModuleDimension | number'
+      content: 'width?: number | TaskModuleDimension'
       return:
         description: ''
         type: >-
-          <xref uid="@microsoft/teams-js.microsoftTeams.TaskModuleDimension" />
-          | number
+          number | @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.TaskModuleDimension" />

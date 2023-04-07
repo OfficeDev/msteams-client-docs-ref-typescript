@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Available resource type.
 fullName: ResourceType
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 fields:
   - name: SQL

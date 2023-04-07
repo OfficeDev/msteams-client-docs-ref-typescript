@@ -2,10 +2,9 @@
 name: MediaType
 uid: '@microsoft/teams-js.microsoftTeams.media.MediaType'
 package: '@microsoft/teams-js'
-summary: Specifies the type of Media
+summary: '* Specifies the type of Media'
 fullName: MediaType
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: Image

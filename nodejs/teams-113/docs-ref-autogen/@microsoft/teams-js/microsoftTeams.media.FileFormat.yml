@@ -2,10 +2,9 @@
 name: FileFormat
 uid: '@microsoft/teams-js.microsoftTeams.media.FileFormat'
 package: '@microsoft/teams-js'
-summary: Enum for file formats supported
+summary: '* Enum for file formats supported'
 fullName: FileFormat
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: Base64

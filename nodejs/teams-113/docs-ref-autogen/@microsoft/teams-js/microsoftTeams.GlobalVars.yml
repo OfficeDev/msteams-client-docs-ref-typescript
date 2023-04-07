@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: GlobalVars
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 properties:
@@ -15,20 +14,18 @@ properties:
     summary: ''
     fullName: additionalValidOrigins
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static additionalValidOrigins: string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: additionalValidOriginsRegexp
     uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.additionalValidOriginsRegexp'
     package: '@microsoft/teams-js'
     summary: ''
     fullName: additionalValidOriginsRegexp
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static additionalValidOriginsRegexp: RegExp'
@@ -41,7 +38,6 @@ properties:
     summary: ''
     fullName: clientSupportedSDKVersion
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static clientSupportedSDKVersion: string'
@@ -54,20 +50,18 @@ properties:
     summary: ''
     fullName: frameContext
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static frameContext: FrameContexts'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.FrameContexts" />
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.FrameContexts" />'
   - name: hostClientType
     uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.hostClientType'
     package: '@microsoft/teams-js'
     summary: ''
     fullName: hostClientType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static hostClientType: string'
@@ -80,20 +74,18 @@ properties:
     summary: ''
     fullName: initializeCallbacks
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static initializeCallbacks: () => void[]'
       return:
         description: ''
-        type: '() =&gt; void[]'
+        type: () =&gt; void[]
   - name: initializeCalled
     uid: '@microsoft/teams-js.microsoftTeams.GlobalVars.initializeCalled'
     package: '@microsoft/teams-js'
     summary: ''
     fullName: initializeCalled
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static initializeCalled: boolean'
@@ -106,7 +98,6 @@ properties:
     summary: ''
     fullName: initializeCompleted
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static initializeCompleted: boolean'
@@ -119,7 +110,6 @@ properties:
     summary: ''
     fullName: isFramelessWindow
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static isFramelessWindow: boolean'
@@ -132,7 +122,6 @@ properties:
     summary: ''
     fullName: printCapabilityEnabled
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'static printCapabilityEnabled: boolean'

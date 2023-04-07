@@ -2,10 +2,9 @@
 name: ViewConfiguration
 uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration'
 package: '@microsoft/teams-js'
-summary: Represents information about item in View Configuration.
+summary: '* Represents information about item in View Configuration.'
 fullName: ViewConfiguration
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -13,10 +12,9 @@ properties:
     uid: >-
       @microsoft/teams-js.microsoftTeams.menus.ViewConfiguration.contentDescription
     package: '@microsoft/teams-js'
-    summary: Additional information for accessibility.
+    summary: '* Additional information for accessibility.'
     fullName: contentDescription
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'contentDescription?: string'
@@ -26,10 +24,9 @@ properties:
   - name: id
     uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration.id'
     package: '@microsoft/teams-js'
-    summary: Unique identifier of view.
+    summary: '* Unique identifier of view.'
     fullName: id
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'id: string'
@@ -39,10 +36,9 @@ properties:
   - name: title
     uid: '@microsoft/teams-js.microsoftTeams.menus.ViewConfiguration.title'
     package: '@microsoft/teams-js'
-    summary: Display title of the view.
+    summary: '* Display title of the view.'
     fullName: title
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'title: string'

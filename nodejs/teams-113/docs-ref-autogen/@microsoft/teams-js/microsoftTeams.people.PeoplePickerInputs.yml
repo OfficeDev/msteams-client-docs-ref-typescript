@@ -2,10 +2,9 @@
 name: PeoplePickerInputs
 uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerInputs'
 package: '@microsoft/teams-js'
-summary: Input parameter supplied to the People Picker API
+summary: '* Input parameter supplied to the People Picker API'
 fullName: PeoplePickerInputs
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
@@ -14,13 +13,10 @@ properties:
       @microsoft/teams-js.microsoftTeams.people.PeoplePickerInputs.openOrgWideSearchInChatOrChannel
     package: '@microsoft/teams-js'
     summary: >-
-      Optional; launches the people picker in org wide scope even if the app is
-      added to a chat or channel
-
-      Default value is false
+      * Optional; launches the people picker in org wide scope even if the app
+      is added to a chat or channel           * Default value is false
     fullName: openOrgWideSearchInChatOrChannel
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'openOrgWideSearchInChatOrChannel?: boolean'
@@ -31,33 +27,26 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerInputs.setSelected'
     package: '@microsoft/teams-js'
     summary: >-
-      Optional; AAD ids of the users to be pre-populated in the search box of
-      people picker control
-
-      If single select is enabled this value, only the first user in the list
-      will be pre-populated
-
-      Default value is null
+      * Optional; AAD ids of the users to be pre-populated in the search box of
+      people picker control           * If single select is enabled this value,
+      only the first user in the list will be pre-populated           * Default
+      value is null
     fullName: setSelected
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'setSelected?: string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: singleSelect
     uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerInputs.singleSelect'
     package: '@microsoft/teams-js'
     summary: >-
-      Optional; launches the people picker for which only 1 person can be
-      selected
-
-      Default value is false
+      * Optional; launches the people picker for which only 1 person can be
+      selected           * Default value is false
     fullName: singleSelect
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'singleSelect?: boolean'
@@ -68,13 +57,10 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.people.PeoplePickerInputs.title'
     package: '@microsoft/teams-js'
     summary: >-
-      Optional; Set title for the people picker
-
-      Default value is "Select people" for multiselect and "Select a person" for
-      single select
+      * Optional; Set title for the people picker           * Default value is
+      "Select people" for multiselect and "Select a person" for single select
     fullName: title
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'title?: string'

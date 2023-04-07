@@ -2,12 +2,11 @@
 name: TeamType
 uid: '@microsoft/teams-js.microsoftTeams.TeamType'
 package: '@microsoft/teams-js'
-summary: |-
-  Indicates the team type, currently used to distinguish between different team
-  types in Office 365 for Education (team types 1, 2, 3, and 4).
+summary: >-
+  * Indicates the team type, currently used to distinguish between different
+  team   * types in Office 365 for Education (team types 1, 2, 3, and 4).
 fullName: TeamType
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: Standard

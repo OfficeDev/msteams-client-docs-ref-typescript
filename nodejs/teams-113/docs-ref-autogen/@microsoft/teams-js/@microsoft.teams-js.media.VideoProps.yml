@@ -1,0 +1,126 @@
+### YamlMime:TSType
+name: VideoProps
+uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoProps'
+package: '@microsoft/teams-js'
+summary: >-
+  * All properties in VideoProps are optional and have default values in the
+  platform
+fullName: VideoProps
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: isFullScreenMode
+    uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoProps.isFullScreenMode'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Optional; to determine if the video capturing flow needs to be
+      launched           * in Full Screen Mode (Lens implementation) or
+      PictureInPicture Mode (Native implementation).           * Default value
+      is true, indicating video will always launch in Full Screen Mode via lens.
+    fullName: isFullScreenMode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'isFullScreenMode?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isStopButtonVisible
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.media.VideoProps.isStopButtonVisible
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Optional; controls the visibility of stop button in PictureInPicture
+      Mode.           * Default value is true, indicating the user will be able
+      to stop the video.
+    fullName: isStopButtonVisible
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'isStopButtonVisible?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: maxDuration
+    uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoProps.maxDuration'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Optional; the maximum duration in seconds after which the recording
+      should terminate automatically.           * Default value is defined by
+      the platform serving the API.
+    fullName: maxDuration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'maxDuration?: number'
+      return:
+        description: ''
+        type: number
+  - name: videoController
+    uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoProps.videoController'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Optional; setting VideoController will register your app to listen to
+      the lifecycle events during the video capture flow.           * Your app
+      can also dynamically control the experience while capturing the video by
+      notifying the host client.
+    fullName: videoController
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'videoController?: VideoController'
+      return:
+        description: ''
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.media.VideoController" />
+inheritedProperties:
+  - name: cameraSwitcher
+    uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoProps.cameraSwitcher'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Optional; indicate if user is allowed to move between front and back
+      camera           * Default value is true
+    fullName: cameraSwitcher
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'cameraSwitcher?: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> MediaProps.cameraSwitcher
+  - name: sources
+    uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoProps.sources'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Optional; Lets the developer specify the media source, more than one can
+      be specified.           * Default value is both camera and gallery
+    fullName: sources
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sources?: Source[]'
+      return:
+        description: ''
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.media.Source" />[]'
+    inheritanceDescription: <b>Inherited From</b> MediaProps.sources
+  - name: startMode
+    uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoProps.startMode'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Optional; Specify in which mode the camera will be opened.           *
+      Default value is Photo
+    fullName: startMode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'startMode?: CameraStartMode'
+      return:
+        description: ''
+        type: >-
+          @microsoft/teams-js.<xref
+          uid="@microsoft.teams-js.media.CameraStartMode" />
+    inheritanceDescription: <b>Inherited From</b> MediaProps.startMode
+extends: MediaProps

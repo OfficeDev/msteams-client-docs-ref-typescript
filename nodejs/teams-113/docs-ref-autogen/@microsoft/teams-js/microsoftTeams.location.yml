@@ -11,9 +11,10 @@ functions:
   - name: 'getLocation(LocationProps, (error: SdkError, location: Location) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.location.getLocation'
     package: '@microsoft/teams-js'
-    summary: Fetches current user coordinates or allows user to choose location on map
+    summary: >-
+      * Fetches current user coordinates or allows user to choose location on
+      map       *
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -22,19 +23,17 @@ functions:
       parameters:
         - id: props
           type: >-
-            <xref
-            uid="@microsoft/teams-js.microsoftTeams.location.LocationProps" />
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.location.LocationProps" />
           description: ''
         - id: callback
           type: '(error: SdkError, location: Location) =&gt; void'
-          description: |
-            Callback to invoke when current user location is fetched
+          description: Callback to invoke when current user location is fetched
   - name: 'showLocation(Location, (error: SdkError, status: boolean) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.location.showLocation'
     package: '@microsoft/teams-js'
-    summary: Shows the location on map corresponding to the given coordinates
+    summary: '* Shows the location on map corresponding to the given coordinates       *'
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: >-
@@ -42,9 +41,12 @@ functions:
         status: boolean) => void)
       parameters:
         - id: location
-          type: <xref uid="@microsoft/teams-js.microsoftTeams.location.Location" />
-          description: which needs to be shown on map
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.location.Location" />
+          description: >-
+            [Location](xref:@microsoft/teams-js.microsoftTeams.location.Location)
+            which needs to be shown on map       *
         - id: callback
           type: '(error: SdkError, status: boolean) =&gt; void'
-          description: |
-            Callback to invoke when the location is opened on map
+          description: Callback to invoke when the location is opened on map

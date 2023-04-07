@@ -3,34 +3,35 @@ name: ViewData
 uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData'
 package: '@microsoft/teams-js'
 summary: >-
-  Represents information about view to show on Navigation Bar Menu item
+  * Represents information about view to show on Navigation Bar Menu item
   selection
 fullName: ViewData
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: listItems
     uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData.listItems'
     package: '@microsoft/teams-js'
-    summary: Array of MenuItem. Icon value will be required for all items in the list.
+    summary: >-
+      * Array of MenuItem. Icon value will be required for all items in the
+      list.
     fullName: listItems
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listItems: MenuItem[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teams-js.microsoftTeams.menus.MenuItem" />[]'
+        type: >-
+          @microsoft/teams-js.<xref uid="@microsoft.teams-js.menus.MenuItem"
+          />[]
   - name: listTitle
     uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData.listTitle'
     package: '@microsoft/teams-js'
-    summary: Display header title of the item list.
+    summary: '* Display header title of the item list.'
     fullName: listTitle
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listTitle?: string'
@@ -40,13 +41,14 @@ properties:
   - name: listType
     uid: '@microsoft/teams-js.microsoftTeams.menus.ViewData.listType'
     package: '@microsoft/teams-js'
-    summary: Type of the menu item.
+    summary: '* Type of the menu item.'
     fullName: listType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'listType: MenuListType'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.menus.MenuListType" />
+        type: >-
+          @microsoft/teams-js.<xref uid="@microsoft.teams-js.menus.MenuListType"
+          />

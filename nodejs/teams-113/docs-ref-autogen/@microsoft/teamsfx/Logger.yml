@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Interface for customized logger.
 fullName: Logger
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 methods:
@@ -14,7 +14,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Writes to error level logging or lower.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function error(message: string)'
@@ -27,7 +26,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Writes to info level logging or lower.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function info(message: string)'
@@ -40,7 +38,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Writes to verbose level logging.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function verbose(message: string)'
@@ -53,7 +50,6 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Writes to warning level logging or lower.
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function warn(message: string)'

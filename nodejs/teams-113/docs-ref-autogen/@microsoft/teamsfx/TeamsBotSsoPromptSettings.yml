@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Settings used to configure an TeamsBotSsoPrompt instance.
 fullName: TeamsBotSsoPromptSettings
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -25,7 +25,6 @@ properties:
       Defaults to value `true`
     fullName: endOnInvalidMessage
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'endOnInvalidMessage?: boolean'
@@ -40,13 +39,12 @@ properties:
       resources requested.
     fullName: scopes
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'scopes: string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
   - name: timeout
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptSettings.timeout'
     package: '@microsoft/teamsfx'
@@ -57,7 +55,6 @@ properties:
       Defaults to a value `900,000` (15 minutes.)
     fullName: timeout
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'timeout?: number'

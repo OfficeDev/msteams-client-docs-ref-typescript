@@ -3,11 +3,10 @@ name: VideoController
 uid: '@microsoft/teams-js.microsoftTeams.media.VideoController'
 package: '@microsoft/teams-js'
 summary: >-
-  VideoController class is used to communicate between the app and the host
+  * VideoController class is used to communicate between the app and the host
   client during the video capture flow
 fullName: VideoController
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: class
 constructors:
@@ -16,42 +15,39 @@ constructors:
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'new VideoController(controllerCallback?: VideoControllerCallback)'
       parameters:
         - id: controllerCallback
           type: >-
-            <xref
-            uid="@microsoft/teams-js.microsoftTeams.media.VideoControllerCallback"
-            />
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.media.VideoControllerCallback" />
           description: ''
 inheritedMethods:
   - name: 'stop((err?: SdkError) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.media.VideoController.stop'
     package: '@microsoft/teams-js'
     summary: >-
-      Function to programatically stop the ongoing media event
-
-      Optional; @param callback is used to send app if host client has
-      successfully stopped the event or not
+      * Function to programatically stop the ongoing media event           *
+      Optional;
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function stop(callback?: (err?: SdkError) => void)'
       parameters:
         - id: callback
           type: '(err?: SdkError) =&gt; void'
-          description: ''
+          description: >-
+            is used to send app if host client has successfully stopped the
+            event or not
+    inheritanceDescription: <b>Inherited From</b> MediaController.stop
 methods:
   - name: notifyEventToApp(MediaControllerEvent)
     uid: '@microsoft/teams-js.microsoftTeams.media.VideoController.notifyEventToApp'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'function notifyEventToApp(mediaEvent: MediaControllerEvent)'
@@ -60,5 +56,5 @@ methods:
           type: MediaControllerEvent
           description: ''
 extends: >-
-  MediaController&lt;<xref
-  uid="@microsoft/teams-js.microsoftTeams.media.VideoControllerCallback" />&gt;
+  MediaController&lt;@microsoft/teams-js.<xref
+  uid="@microsoft.teams-js.media.VideoControllerCallback" />&gt;

@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Configuration for current environment.
 fullName: Configuration
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -15,7 +15,6 @@ properties:
     summary: Authentication related configuration.
     fullName: authentication
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'authentication?: AuthenticationConfiguration'
@@ -28,10 +27,9 @@ properties:
     summary: Configuration for resources.
     fullName: resources
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'resources?: ResourceConfiguration[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teamsfx.ResourceConfiguration" />[]'
+        type: <xref uid="@microsoft/teamsfx.ResourceConfiguration" />[]

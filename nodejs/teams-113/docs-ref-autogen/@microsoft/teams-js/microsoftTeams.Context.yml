@@ -5,17 +5,15 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: Context
 remarks: ''
-isPreview: false
 isDeprecated: false
 type: interface
 properties:
   - name: appIconPosition
     uid: '@microsoft/teams-js.microsoftTeams.Context.appIconPosition'
     package: '@microsoft/teams-js'
-    summary: Personal app icon y coordinate position
+    summary: '* Personal app icon y coordinate position'
     fullName: appIconPosition
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appIconPosition?: number'
@@ -26,11 +24,10 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.appLaunchId'
     package: '@microsoft/teams-js'
     summary: >-
-      ID for the current visible app which is different for across cached
+      * ID for the current visible app which is different for across cached
       sessions. Used for correlating telemetry data``
     fullName: appLaunchId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appLaunchId?: string'
@@ -40,10 +37,9 @@ properties:
   - name: appSessionId
     uid: '@microsoft/teams-js.microsoftTeams.Context.appSessionId'
     package: '@microsoft/teams-js'
-    summary: Unique ID for the current session for use in correlating telemetry data.
+    summary: '* Unique ID for the current session for use in correlating telemetry data.'
     fullName: appSessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'appSessionId?: string'
@@ -54,11 +50,10 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.channelId'
     package: '@microsoft/teams-js'
     summary: >-
-      The Microsoft Teams ID for the channel with which the content is
+      * The Microsoft Teams ID for the channel with which the content is
       associated.
     fullName: channelId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channelId?: string'
@@ -68,10 +63,9 @@ properties:
   - name: channelName
     uid: '@microsoft/teams-js.microsoftTeams.Context.channelName'
     package: '@microsoft/teams-js'
-    summary: The name for the channel with which the content is associated.
+    summary: '* The name for the channel with which the content is associated.'
     fullName: channelName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channelName?: string'
@@ -81,10 +75,9 @@ properties:
   - name: channelRelativeUrl
     uid: '@microsoft/teams-js.microsoftTeams.Context.channelRelativeUrl'
     package: '@microsoft/teams-js'
-    summary: The relative path to the SharePoint folder associated with the channel.
+    summary: '* The relative path to the SharePoint folder associated with the channel.'
     fullName: channelRelativeUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channelRelativeUrl?: string'
@@ -94,23 +87,23 @@ properties:
   - name: channelType
     uid: '@microsoft/teams-js.microsoftTeams.Context.channelType'
     package: '@microsoft/teams-js'
-    summary: The type of the channel with which the content is associated.
+    summary: '* The type of the channel with which the content is associated.'
     fullName: channelType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'channelType?: ChannelType'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.ChannelType" />
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.ChannelType" />'
   - name: chatId
     uid: '@microsoft/teams-js.microsoftTeams.Context.chatId'
     package: '@microsoft/teams-js'
-    summary: The Microsoft Teams ID for the chat with which the content is associated.
+    summary: >-
+      * The Microsoft Teams ID for the chat with which the content is
+      associated.
     fullName: chatId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'chatId?: string'
@@ -120,10 +113,9 @@ properties:
   - name: defaultOneNoteSectionId
     uid: '@microsoft/teams-js.microsoftTeams.Context.defaultOneNoteSectionId'
     package: '@microsoft/teams-js'
-    summary: The OneNote section ID that is linked to the channel.
+    summary: '* The OneNote section ID that is linked to the channel.'
     fullName: defaultOneNoteSectionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'defaultOneNoteSectionId?: string'
@@ -133,10 +125,9 @@ properties:
   - name: entityId
     uid: '@microsoft/teams-js.microsoftTeams.Context.entityId'
     package: '@microsoft/teams-js'
-    summary: The developer-defined unique ID for the entity this content points to.
+    summary: '* The developer-defined unique ID for the entity this content points to.'
     fullName: entityId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'entityId: string'
@@ -147,28 +138,25 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.frameContext'
     package: '@microsoft/teams-js'
     summary: >-
-      The context where tab url is loaded (content, task, setting, remove,
+      * The context where tab url is loaded (content, task, setting, remove,
       sidePanel)
     fullName: frameContext
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'frameContext?: FrameContexts'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.FrameContexts" />
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.FrameContexts" />'
   - name: groupId
     uid: '@microsoft/teams-js.microsoftTeams.Context.groupId'
     package: '@microsoft/teams-js'
     summary: >-
-      The Office 365 group ID for the team with which the content is associated.
-
-      This field is available only when the identity permission is requested in
-      the manifest.
+      * The Office 365 group ID for the team with which the content is
+      associated.       * This field is available only when the identity
+      permission is requested in the manifest.
     fullName: groupId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'groupId?: string'
@@ -179,27 +167,24 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.hostClientType'
     package: '@microsoft/teams-js'
     summary: >-
-      The type of the host client. Possible values are : android, ios, web,
-      desktop, rigel(deprecated, use teamsRoomsWindows instead),
-
+      * The type of the host client. Possible values are : android, ios, web,
+      desktop, rigel(deprecated, use teamsRoomsWindows instead),       *
       surfaceHub, teamsRoomsWindows, teamsRoomsAndroid, teamsPhones,
       teamsDisplays
     fullName: hostClientType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hostClientType?: HostClientType'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.HostClientType" />
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.HostClientType" />'
   - name: hostTeamGroupId
     uid: '@microsoft/teams-js.microsoftTeams.Context.hostTeamGroupId'
     package: '@microsoft/teams-js'
-    summary: The AAD group ID of the host team.
+    summary: '* The AAD group ID of the host team.'
     fullName: hostTeamGroupId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hostTeamGroupId?: string'
@@ -209,10 +194,9 @@ properties:
   - name: hostTeamTenantId
     uid: '@microsoft/teams-js.microsoftTeams.Context.hostTeamTenantId'
     package: '@microsoft/teams-js'
-    summary: The tenant ID of the host team.
+    summary: '* The tenant ID of the host team.'
     fullName: hostTeamTenantId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'hostTeamTenantId?: string'
@@ -222,10 +206,9 @@ properties:
   - name: isCallingAllowed
     uid: '@microsoft/teams-js.microsoftTeams.Context.isCallingAllowed'
     package: '@microsoft/teams-js'
-    summary: Represents whether calling is allowed for the current logged in User
+    summary: '* Represents whether calling is allowed for the current logged in User'
     fullName: isCallingAllowed
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isCallingAllowed?: boolean'
@@ -235,10 +218,9 @@ properties:
   - name: isFullScreen
     uid: '@microsoft/teams-js.microsoftTeams.Context.isFullScreen'
     package: '@microsoft/teams-js'
-    summary: Indication whether the tab is in full-screen mode.
+    summary: '* Indication whether the tab is in full-screen mode.'
     fullName: isFullScreen
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isFullScreen?: boolean'
@@ -248,10 +230,9 @@ properties:
   - name: isMultiWindow
     uid: '@microsoft/teams-js.microsoftTeams.Context.isMultiWindow'
     package: '@microsoft/teams-js'
-    summary: Indication whether the tab is in a pop out window
+    summary: '* Indication whether the tab is in a pop out window'
     fullName: isMultiWindow
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isMultiWindow?: boolean'
@@ -261,10 +242,11 @@ properties:
   - name: isPSTNCallingAllowed
     uid: '@microsoft/teams-js.microsoftTeams.Context.isPSTNCallingAllowed'
     package: '@microsoft/teams-js'
-    summary: Represents whether PSTN calling is allowed for the current logged in User
+    summary: >-
+      * Represents whether PSTN calling is allowed for the current logged in
+      User
     fullName: isPSTNCallingAllowed
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isPSTNCallingAllowed?: boolean'
@@ -275,13 +257,10 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.isTeamArchived'
     package: '@microsoft/teams-js'
     summary: >-
-      Indicates whether team is archived.
-
-      Apps should use this as a signal to prevent any changes to content
-      associated with archived teams.
+      * Indicates whether team is archived.       * Apps should use this as a
+      signal to prevent any changes to content associated with archived teams.
     fullName: isTeamArchived
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'isTeamArchived?: boolean'
@@ -291,12 +270,11 @@ properties:
   - name: locale
     uid: '@microsoft/teams-js.microsoftTeams.Context.locale'
     package: '@microsoft/teams-js'
-    summary: |-
-      The current locale that the user has configured for the app formatted as
-      languageId-countryId (for example, en-us).
+    summary: >-
+      * The current locale that the user has configured for the app formatted
+      as       * languageId-countryId (for example, en-us).
     fullName: locale
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'locale: string'
@@ -307,20 +285,13 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.loginHint'
     package: '@microsoft/teams-js'
     summary: >-
-      A value suitable for use as a login_hint when authenticating with Azure
-      AD.
-
-      Because a malicious party can run your content in a browser, this value
-      should
-
-      be used only as a hint as to who the user is and never as proof of
-      identity.
-
-      This field is available only when the identity permission is requested in
-      the manifest.
+      * A value suitable for use as a login_hint when authenticating with Azure
+      AD.       * Because a malicious party can run your content in a browser,
+      this value should       * be used only as a hint as to who the user is and
+      never as proof of identity.       * This field is available only when the
+      identity permission is requested in the manifest.
     fullName: loginHint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'loginHint?: string'
@@ -330,10 +301,9 @@ properties:
   - name: meetingId
     uid: '@microsoft/teams-js.microsoftTeams.Context.meetingId'
     package: '@microsoft/teams-js'
-    summary: Meeting Id used by tab when running in meeting context
+    summary: '* Meeting Id used by tab when running in meeting context'
     fullName: meetingId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'meetingId?: string'
@@ -343,10 +313,9 @@ properties:
   - name: mySiteDomain
     uid: '@microsoft/teams-js.microsoftTeams.Context.mySiteDomain'
     package: '@microsoft/teams-js'
-    summary: The SharePoint my site domain associated with the user.
+    summary: '* The SharePoint my site domain associated with the user.'
     fullName: mySiteDomain
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mySiteDomain?: string'
@@ -356,10 +325,9 @@ properties:
   - name: mySitePath
     uid: '@microsoft/teams-js.microsoftTeams.Context.mySitePath'
     package: '@microsoft/teams-js'
-    summary: The SharePoint relative path to the current users mysite
+    summary: '* The SharePoint relative path to the current users mysite'
     fullName: mySitePath
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'mySitePath?: string'
@@ -370,31 +338,26 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.osLocaleInfo'
     package: '@microsoft/teams-js'
     summary: >-
-      More detailed locale info from the user's OS if available. Can be used
-      together with
-
-      the @microsoft/globe NPM package to ensure your app respects the user's OS
-      date and
-
-      time format configuration
+      * More detailed locale info from the user's OS if available. Can be used
+      together with       * the @microsoft/globe NPM package to ensure your app
+      respects the user's OS date and       * time format configuration
     fullName: osLocaleInfo
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'osLocaleInfo?: LocaleInfo'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.LocaleInfo" />
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.LocaleInfo" />'
   - name: parentMessageId
     uid: '@microsoft/teams-js.microsoftTeams.Context.parentMessageId'
     package: '@microsoft/teams-js'
-    summary: |-
-      The ID of the parent message from which this task module was launched.
-      This is only available in task modules launched from bot cards.
+    summary: >-
+      * The ID of the parent message from which this task module was
+      launched.       * This is only available in task modules launched from bot
+      cards.
     fullName: parentMessageId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'parentMessageId?: string'
@@ -404,10 +367,9 @@ properties:
   - name: ringId
     uid: '@microsoft/teams-js.microsoftTeams.Context.ringId'
     package: '@microsoft/teams-js'
-    summary: Current ring ID
+    summary: '* Current ring ID'
     fullName: ringId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'ringId?: string'
@@ -418,11 +380,10 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.sessionId'
     package: '@microsoft/teams-js'
     summary: >-
-      Unique ID for the current Teams session for use in correlating telemetry
+      * Unique ID for the current Teams session for use in correlating telemetry
       data.
     fullName: sessionId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sessionId?: string'
@@ -432,10 +393,9 @@ properties:
   - name: sharepoint
     uid: '@microsoft/teams-js.microsoftTeams.Context.sharepoint'
     package: '@microsoft/teams-js'
-    summary: SharePoint context. This is only available when hosted in SharePoint.
+    summary: '* SharePoint context. This is only available when hosted in SharePoint.'
     fullName: sharepoint
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sharepoint?: any'
@@ -445,10 +405,9 @@ properties:
   - name: sourceOrigin
     uid: '@microsoft/teams-js.microsoftTeams.Context.sourceOrigin'
     package: '@microsoft/teams-js'
-    summary: Source origin from where the tab is opened
+    summary: '* Source origin from where the tab is opened'
     fullName: sourceOrigin
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'sourceOrigin?: string'
@@ -458,13 +417,13 @@ properties:
   - name: subEntityId
     uid: '@microsoft/teams-js.microsoftTeams.Context.subEntityId'
     package: '@microsoft/teams-js'
-    summary: |-
-      The developer-defined unique ID for the sub-entity this content points to.
-      This field should be used to restore to a specific state within an entity,
-      such as scrolling to or activating a specific piece of content.
+    summary: >-
+      * The developer-defined unique ID for the sub-entity this content points
+      to.       * This field should be used to restore to a specific state
+      within an entity,       * such as scrolling to or activating a specific
+      piece of content.
     fullName: subEntityId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'subEntityId?: string'
@@ -474,10 +433,11 @@ properties:
   - name: teamId
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamId'
     package: '@microsoft/teams-js'
-    summary: The Microsoft Teams ID for the team with which the content is associated.
+    summary: >-
+      * The Microsoft Teams ID for the team with which the content is
+      associated.
     fullName: teamId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamId?: string'
@@ -487,10 +447,9 @@ properties:
   - name: teamName
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamName'
     package: '@microsoft/teams-js'
-    summary: The name for the team with which the content is associated.
+    summary: '* The name for the team with which the content is associated.'
     fullName: teamName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamName?: string'
@@ -500,10 +459,9 @@ properties:
   - name: teamSiteDomain
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamSiteDomain'
     package: '@microsoft/teams-js'
-    summary: The domain of the root SharePoint site associated with the team.
+    summary: '* The domain of the root SharePoint site associated with the team.'
     fullName: teamSiteDomain
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamSiteDomain?: string'
@@ -513,10 +471,9 @@ properties:
   - name: teamSiteId
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamSiteId'
     package: '@microsoft/teams-js'
-    summary: 'Teamsite ID, aka sharepoint site id.'
+    summary: '* Teamsite ID, aka sharepoint site id.'
     fullName: teamSiteId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamSiteId?: string'
@@ -526,10 +483,9 @@ properties:
   - name: teamSitePath
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamSitePath'
     package: '@microsoft/teams-js'
-    summary: The relative path to the SharePoint site associated with the team.
+    summary: '* The relative path to the SharePoint site associated with the team.'
     fullName: teamSitePath
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamSitePath?: string'
@@ -539,10 +495,9 @@ properties:
   - name: teamSiteUrl
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamSiteUrl'
     package: '@microsoft/teams-js'
-    summary: The root SharePoint site associated with the team.
+    summary: '* The root SharePoint site associated with the team.'
     fullName: teamSiteUrl
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamSiteUrl?: string'
@@ -553,11 +508,10 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamTemplateId'
     package: '@microsoft/teams-js'
     summary: >-
-      Team Template ID if there was a Team Template associated with the creation
-      of the team.
+      * Team Template ID if there was a Team Template associated with the
+      creation of the team.
     fullName: teamTemplateId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamTemplateId?: string'
@@ -567,23 +521,21 @@ properties:
   - name: teamType
     uid: '@microsoft/teams-js.microsoftTeams.Context.teamType'
     package: '@microsoft/teams-js'
-    summary: The type of the team.
+    summary: '* The type of the team.'
     fullName: teamType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'teamType?: TeamType'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.TeamType" />
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.TeamType" />'
   - name: tenantSKU
     uid: '@microsoft/teams-js.microsoftTeams.Context.tenantSKU'
     package: '@microsoft/teams-js'
-    summary: The type of license for the current users tenant.
+    summary: '* The type of license for the current users tenant.'
     fullName: tenantSKU
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tenantSKU?: string'
@@ -593,10 +545,9 @@ properties:
   - name: theme
     uid: '@microsoft/teams-js.microsoftTeams.Context.theme'
     package: '@microsoft/teams-js'
-    summary: The current UI theme.
+    summary: '* The current UI theme.'
     fullName: theme
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'theme?: string'
@@ -607,19 +558,13 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.tid'
     package: '@microsoft/teams-js'
     summary: >-
-      The Azure AD tenant ID of the current user.
-
-      Because a malicious party can run your content in a browser, this value
-      should
-
-      be used only as a hint as to who the user is and never as proof of
-      identity.
-
-      This field is available only when the identity permission is requested in
-      the manifest.
+      * The Azure AD tenant ID of the current user.       * Because a malicious
+      party can run your content in a browser, this value should       * be used
+      only as a hint as to who the user is and never as proof of identity.      
+      * This field is available only when the identity permission is requested
+      in the manifest.
     fullName: tid
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'tid?: string'
@@ -629,24 +574,16 @@ properties:
   - name: upn
     uid: '@microsoft/teams-js.microsoftTeams.Context.upn'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: '*'
     fullName: upn
     remarks: ''
-    isPreview: false
     isDeprecated: true
     customDeprecatedMessage: >-
-      Use loginHint or userPrincipalName.
-
-      The UPN of the current user.
-
-      Because a malicious party can run your content in a browser, this value
-      should
-
-      be used only as a hint as to who the user is and never as proof of
-      identity.
-
-      This field is available only when the identity permission is requested in
-      the manifest.
+      Use loginHint or userPrincipalName.       * The UPN of the current
+      user.       * Because a malicious party can run your content in a browser,
+      this value should       * be used only as a hint as to who the user is and
+      never as proof of identity.       * This field is available only when the
+      identity permission is requested in the manifest.
     syntax:
       content: 'upn?: string'
       return:
@@ -655,10 +592,9 @@ properties:
   - name: userClickTime
     uid: '@microsoft/teams-js.microsoftTeams.Context.userClickTime'
     package: '@microsoft/teams-js'
-    summary: Time when the user clicked on the tab
+    summary: '* Time when the user clicked on the tab'
     fullName: userClickTime
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userClickTime?: number'
@@ -669,24 +605,24 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.userFileOpenPreference'
     package: '@microsoft/teams-js'
     summary: >-
-      Where the user prefers the file to be opened from by default during file
+      * Where the user prefers the file to be opened from by default during file
       open
     fullName: userFileOpenPreference
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userFileOpenPreference?: FileOpenPreference'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.FileOpenPreference" />
+        type: >-
+          @microsoft/teams-js.<xref uid="@microsoft.teams-js.FileOpenPreference"
+          />
   - name: userLicenseType
     uid: '@microsoft/teams-js.microsoftTeams.Context.userLicenseType'
     package: '@microsoft/teams-js'
-    summary: The license type for the current user.
+    summary: '* The license type for the current user.'
     fullName: userLicenseType
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userLicenseType?: string'
@@ -697,18 +633,13 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.userObjectId'
     package: '@microsoft/teams-js'
     summary: >-
-      The Azure AD object id of the current user.
-
-      Because a malicious party run your content in a browser, this value should
-
-      be used only as a hint as to who the user is and never as proof of
-      identity.
-
-      This field is available only when the identity permission is requested in
-      the manifest.
+      * The Azure AD object id of the current user.       * Because a malicious
+      party run your content in a browser, this value should       * be used
+      only as a hint as to who the user is and never as proof of identity.      
+      * This field is available only when the identity permission is requested
+      in the manifest.
     fullName: userObjectId
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userObjectId?: string'
@@ -719,19 +650,13 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.userPrincipalName'
     package: '@microsoft/teams-js'
     summary: >-
-      The UPN of the current user. This may be an externally-authenticated UPN
-      (e.g., guest users).
-
-      Because a malicious party run your content in a browser, this value should
-
-      be used only as a hint as to who the user is and never as proof of
-      identity.
-
-      This field is available only when the identity permission is requested in
-      the manifest.
+      * The UPN of the current user. This may be an externally-authenticated UPN
+      (e.g., guest users).       * Because a malicious party run your content in
+      a browser, this value should       * be used only as a hint as to who the
+      user is and never as proof of identity.       * This field is available
+      only when the identity permission is requested in the manifest.
     fullName: userPrincipalName
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userPrincipalName?: string'
@@ -742,19 +667,14 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.Context.userTeamRole'
     package: '@microsoft/teams-js'
     summary: >-
-      The user's role in the team.
-
-      Because a malicious party can run your content in a browser, this value
-      should
-
-      be used only as a hint as to the user's role, and never as proof of her
-      role.
+      * The user's role in the team.       * Because a malicious party can run
+      your content in a browser, this value should       * be used only as a
+      hint as to the user's role, and never as proof of her role.
     fullName: userTeamRole
     remarks: ''
-    isPreview: false
     isDeprecated: false
     syntax:
       content: 'userTeamRole?: UserTeamRole'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.microsoftTeams.UserTeamRole" />
+        type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.UserTeamRole" />'

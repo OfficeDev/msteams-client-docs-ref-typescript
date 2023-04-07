@@ -5,7 +5,6 @@ package: '@microsoft/teams-js'
 summary: ''
 fullName: HostClientType
 remarks: ''
-isPreview: false
 isDeprecated: false
 fields:
   - name: android
@@ -27,7 +26,7 @@ fields:
   - name: rigel
     uid: '@microsoft/teams-js.microsoftTeams.HostClientType.rigel'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: '*'
   - name: surfaceHub
     uid: '@microsoft/teams-js.microsoftTeams.HostClientType.surfaceHub'
     package: '@microsoft/teams-js'

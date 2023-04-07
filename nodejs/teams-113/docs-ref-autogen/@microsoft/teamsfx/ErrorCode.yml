@@ -5,7 +5,7 @@ package: '@microsoft/teamsfx'
 summary: Error code to trace the error types.
 fullName: ErrorCode
 remarks: ''
-isPreview: true
+previewState: beta
 isDeprecated: false
 fields:
   - name: ChannelNotSupported
