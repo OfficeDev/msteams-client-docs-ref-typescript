@@ -2,6 +2,6 @@
   uid: msteams.sdk.landingPage.reference
   landingPageType: Root
   expanded: true
-  href: ~/teams-113/overview/msteams-client.md
+  href: ~/teams-1131/overview/msteams-client.md
   children:
     - '**'
