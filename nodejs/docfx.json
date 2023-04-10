@@ -25,7 +25,7 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "src": "teams-113/docs-ref-autogen",
+        "src": "teams-1131/docs-ref-autogen",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -36,8 +36,8 @@
           "ThirdPartyNotices",
           "toc.yml"
         ],
-        "group": "113",
-        "version": "msteams-client-js-1.13"
+        "group": "1131",
+        "version": "msteams-client-js-1.13.1"
       },
       {
         "files": [
@@ -62,8 +62,8 @@
           "**/obj/**",
           "**/includes/**"
         ],
-        "group": "113",
-        "version": "msteams-client-js-1.13"
+        "group": "1131",
+        "version": "msteams-client-js-1.13.1"
       },
       {
         "files": [
@@ -79,11 +79,11 @@
         "files": [
           "toc.yml"
         ],
-        "src": "teams-113/docs-ref-autogen",
+        "src": "teams-1131/docs-ref-autogen",
         "dest": "api/msteams-client-docs-ref-typescript-beta",
         "exclude": [],
-        "group": "113",
-        "version": "msteams-client-js-1.13"
+        "group": "1131",
+        "version": "msteams-client-js-1.13.1"
       },
       {
         "files": [
@@ -99,11 +99,11 @@
         "files": [
           "**/*.md"
         ],
-        "src": "teams-113/overview",
+        "src": "teams-1131/overview",
         "dest": "api/overview",
         "exclude": [],
-        "group": "113",
-        "version": "msteams-client-js-1.13"
+        "group": "1131",
+        "version": "msteams-client-js-1.13.1"
       }
     ],
     "resource": [
@@ -130,8 +130,8 @@
           "**/includes/**"
         ],
         "dest": "api",
-        "group": "113",
-        "version": "msteams-client-js-1.13"
+        "group": "1131",
+        "version": "msteams-client-js-1.13.1"
       }	  
     ],
     "overwrite": [],
@@ -140,9 +140,9 @@
         "dest": "stable",
         "moniker_range": "msteams-client-js-latest"
       },
-      "113": {
-        "dest": "113",
-        "moniker_range": "msteams-client-js-1.13"
+      "1131": {
+        "dest": "1131",
+        "moniker_range": "msteams-client-js-1.13.1"
       }
     },
     "externalReference": [],

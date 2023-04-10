@@ -14,7 +14,7 @@
       "monikers": [],
       "moniker_ranges": [
         "msteams-client-js-latest",
-        "msteams-client-js-1.13"
+        "msteams-client-js-1.13.1"
       ],
       "open_to_public_contributors": false,
       "type_mapping": {
