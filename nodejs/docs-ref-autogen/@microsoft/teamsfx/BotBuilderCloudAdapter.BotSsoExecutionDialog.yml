@@ -1,0 +1,510 @@
+### YamlMime:TSType
+name: BotSsoExecutionDialog
+uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog'
+package: '@microsoft/teamsfx'
+summary: Sso execution dialog, use to handle sso command
+fullName: BotSsoExecutionDialog
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      BotSsoExecutionDialog(Storage, TeamsBotSsoPromptSettings,
+      OnBehalfOfCredentialAuthConfig, string, string)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.constructor_1
+    package: '@microsoft/teamsfx'
+    summary: Creates a new instance of the BotSsoExecutionDialog.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new BotSsoExecutionDialog(dedupStorage: Storage, ssoPromptSettings:
+        TeamsBotSsoPromptSettings, authConfig: OnBehalfOfCredentialAuthConfig,
+        initiateLoginEndpoint: string, dialogName?: string)
+      parameters:
+        - id: dedupStorage
+          type: Storage
+          description: ''
+        - id: ssoPromptSettings
+          type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
+          description: ''
+        - id: authConfig
+          type: <xref uid="@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig" />
+          description: ''
+        - id: initiateLoginEndpoint
+          type: string
+          description: |-
+            Login URL for Teams to redirect to.
+                        *
+        - id: dialogName
+          type: string
+          description: custom dialog name
+  - name: BotSsoExecutionDialog(Storage, TeamsBotSsoPromptSettings, TeamsFx, string)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.constructor
+    package: '@microsoft/teamsfx'
+    summary: Creates a new instance of the BotSsoExecutionDialog.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new BotSsoExecutionDialog(dedupStorage: Storage, ssoPromptSettings:
+        TeamsBotSsoPromptSettings, teamsfx: TeamsFx, dialogName?: string)
+      parameters:
+        - id: dedupStorage
+          type: Storage
+          description: ''
+        - id: ssoPromptSettings
+          type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
+          description: ''
+        - id: teamsfx
+          type: <xref uid="@microsoft/teamsfx.TeamsFx" />
+          description: ''
+        - id: dialogName
+          type: string
+          description: custom dialog name
+properties:
+  - name: id
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.id'
+    package: '@microsoft/teamsfx'
+    summary: Unique ID of the dialog.
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: string id
+      return:
+        description: The Id for the dialog.
+        type: string
+  - name: telemetryClient
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.telemetryClient
+    package: '@microsoft/teamsfx'
+    summary: Get the current telemetry client.
+    fullName: telemetryClient
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: BotTelemetryClient telemetryClient
+      return:
+        description: >-
+          The [BotTelemetryClient](xref:botbuilder.BotTelemetryClient) to use
+          for logging.
+        type: BotTelemetryClient
+inheritedProperties:
+  - name: dialogs
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.dialogs'
+    package: '@microsoft/teamsfx'
+    summary: The containers dialog set.
+    fullName: dialogs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'dialogs: DialogSet'
+      return:
+        description: ''
+        type: DialogSet
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.dialogs
+  - name: EndOfTurn
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.EndOfTurn'
+    package: '@microsoft/teamsfx'
+    summary: Gets a default end-of-turn result.
+    fullName: EndOfTurn
+    remarks: >-
+      This result indicates that a dialog (or a logical step within a dialog)
+      has completed
+
+      processing for the current turn, is still active, and is waiting for more
+      input.
+    isDeprecated: false
+    syntax:
+      content: 'static EndOfTurn: DialogTurnResult<any>'
+      return:
+        description: ''
+        type: DialogTurnResult&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.EndOfTurn
+inheritedMethods:
+  - name: addDialog(Dialog<{}>)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.addDialog'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Adds a child [Dialog](xref:botbuilder-dialogs.Dialog) or prompt to the
+      components internal [DialogSet](xref:botbuilder-dialogs.DialogSet).
+    remarks: >-
+      The [Dialog.id](xref:botbuilder-dialogs.Dialog.id) of the first child
+      added to the component will be assigned to the initialDialogId property.
+    isDeprecated: false
+    syntax:
+      content: 'function addDialog(dialog: Dialog<{}>): BotSsoExecutionDialog'
+      parameters:
+        - id: dialog
+          type: Dialog&lt;{}&gt;
+          description: The child [Dialog](xref:botbuilder-dialogs.Dialog) or prompt to add.
+      return:
+        description: >-
+          The [ComponentDialog](xref:botbuilder-dialogs.ComponentDialog) after
+          the operation is complete.
+        type: >-
+          <xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog"
+          />
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.addDialog
+  - name: beginDialog(DialogContext, {})
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.beginDialog
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Called when the dialog is started and pushed onto the parent's dialog
+      stack.
+
+      By default, this calls the
+
+      Dialog.BeginDialogAsync(DialogContext, object, CancellationToken) method
+
+      of the component dialog's initial dialog, as defined by InitialDialogId.
+
+      Override this method in a derived class to implement interrupt logic.
+    remarks: >-
+      If the task is successful, the result indicates whether the dialog is
+      still
+
+      active after the turn has been processed by the dialog.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDialog(outerDC: DialogContext, options?: {}):
+        Promise<DialogTurnResult<any>>
+      parameters:
+        - id: outerDC
+          type: DialogContext
+          description: >-
+            The parent [DialogContext](xref:botbuilder-dialogs.DialogContext)
+            for the current turn of conversation.
+        - id: options
+          type: '{}'
+          description: Optional, initial information to pass to the dialog.
+      return:
+        description: A Promise representing the asynchronous operation.
+        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.beginDialog
+  - name: configure(Record<string, unknown>)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.configure'
+    package: '@microsoft/teamsfx'
+    summary: Fluent method for configuring the object.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function configure(config: Record<string, unknown>):
+        BotSsoExecutionDialog
+      parameters:
+        - id: config
+          type: Record&lt;string, unknown&gt;
+          description: Configuration settings to apply.
+      return:
+        description: >-
+          The [Configurable](xref:botbuilder-dialogs.Configurable) after the
+          operation is complete.
+        type: >-
+          <xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog"
+          />
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.configure
+  - name: continueDialog(DialogContext)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.continueDialog
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Called when the dialog is _continued_, where it is the active dialog and
+      the
+
+      user replies with a new [Activity](xref:botframework-schema.Activity).
+
+      If this method is *not* overridden, the dialog automatically ends when the
+      user replies.
+    remarks: >-
+      If the task is successful, the result indicates whether the dialog is
+      still
+
+      active after the turn has been processed by the dialog. The result may
+      also contain a
+
+      return value.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function continueDialog(outerDC: DialogContext):
+        Promise<DialogTurnResult<any>>
+      parameters:
+        - id: outerDC
+          type: DialogContext
+          description: >-
+            The parent [DialogContext](xref:botbuilder-dialogs.DialogContext)
+            for the current turn of conversation.
+      return:
+        description: A Promise representing the asynchronous operation.
+        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.continueDialog
+  - name: createChildContext(DialogContext)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.createChildContext
+    package: '@microsoft/teamsfx'
+    summary: Creates the inner dialog context
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function createChildContext(outerDC: DialogContext): DialogContext'
+      parameters:
+        - id: outerDC
+          type: DialogContext
+          description: the outer dialog context
+      return:
+        description: The created Dialog Context.
+        type: DialogContext
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.createChildContext
+  - name: endDialog(TurnContext, DialogInstance<any>, DialogReason)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.endDialog'
+    package: '@microsoft/teamsfx'
+    summary: Called when the [Dialog](xref:botbuilder-dialogs.Dialog) is ending.
+    remarks: >-
+      When this method is called from the parent dialog's context, the component
+      [Dialog](xref:botbuilder-dialogs.Dialog)
+
+      cancels all of the dialogs on its inner dialog stack before ending.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function endDialog(context: TurnContext, instance: DialogInstance<any>,
+        reason: DialogReason): Promise<void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: >-
+            The [TurnContext](xref:botbuilder-core.TurnContext) object for this
+            turn.
+        - id: instance
+          type: DialogInstance&lt;any&gt;
+          description: >-
+            State information associated with the instance of this component
+
+            [Dialog](xref:botbuilder-dialogs.Dialog) on its parent's dialog
+            stack.
+        - id: reason
+          type: DialogReason
+          description: Reason why the [Dialog](xref:botbuilder-dialogs.Dialog) ended.
+      return:
+        description: A Promise representing the asynchronous operation.
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.endDialog
+  - name: findDialog(string)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.findDialog'
+    package: '@microsoft/teamsfx'
+    summary: Finds a child dialog that was previously added to the container.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function findDialog(dialogId: string): undefined | Dialog<{}>'
+      parameters:
+        - id: dialogId
+          type: string
+          description: ID of the dialog to lookup.
+      return:
+        description: The Dialog if found; otherwise null.
+        type: undefined | Dialog&lt;{}&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.findDialog
+  - name: getConverter(string)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.getConverter
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getConverter(_property: string): Converter<unknown, unknown> |
+        ConverterFactory<unknown, unknown>
+      parameters:
+        - id: _property
+          type: string
+          description: The key of the conditional selector configuration.
+      return:
+        description: The converter for the selector configuration.
+        type: >-
+          Converter&lt;unknown, unknown&gt; | ConverterFactory&lt;unknown,
+          unknown&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.getConverter
+  - name: getVersion()
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.getVersion'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      An encoded string used to aid in the detection of bot changes on
+      re-deployment.
+    remarks: >-
+      This defaults to returning the dialogs [id](#id) but can be overridden to
+      provide more
+
+      precise change detection logic. Any dialog on the stack that has its
+      version change will
+
+      result in a `versionChanged` event will be raised. If this event is not
+      handled by the bot,
+
+      an error will be thrown resulting in the bots error handler logic being
+      run.
+
+
+      Returning an empty string will disable version tracking for the component
+      all together.
+    isDeprecated: false
+    syntax:
+      content: 'function getVersion(): string'
+      return:
+        description: >-
+          Unique string which should only change when dialog has changed in a
+          way that should restart the dialog.
+        type: string
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.getVersion
+  - name: onDialogEvent(DialogContext, DialogEvent)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.onDialogEvent
+    package: '@microsoft/teamsfx'
+    summary: |-
+      Called when an event has been raised, using `DialogContext.emitEvent()`,
+      by either the current dialog or a dialog that the current dialog started.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function onDialogEvent(dc: DialogContext, e: DialogEvent):
+        Promise<boolean>
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: The dialog context for the current turn of conversation.
+        - id: e
+          type: DialogEvent
+          description: The event being raised.
+      return:
+        description: >-
+          True if the event is handled by the current dialog and bubbling should
+          stop.
+        type: Promise&lt;boolean&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.onDialogEvent
+  - name: repromptDialog(TurnContext, DialogInstance<any>)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.repromptDialog
+    package: '@microsoft/teamsfx'
+    summary: Called when the dialog should re-prompt the user for input.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function repromptDialog(context: TurnContext, instance:
+        DialogInstance<any>): Promise<void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: >-
+            The [TurnContext](xref:botbuilder-core.TurnContext) object for this
+            turn.
+        - id: instance
+          type: DialogInstance&lt;any&gt;
+          description: State information for this dialog.
+      return:
+        description: A Promise representing the asynchronous operation.
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.repromptDialog
+  - name: resumeDialog(DialogContext, DialogReason, any)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.resumeDialog
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Called when a child dialog on the parent's dialog stack completed this
+      turn, returning
+
+      control to this dialog component.
+    remarks: >-
+      If the task is successful, the result indicates whether this dialog is
+      still
+
+      active after this dialog turn has been processed.
+
+      Generally, the child dialog was started with a call to
+
+      beginDialog(DialogContext, object) in the parent's
+
+      context. However, if the DialogContext.replaceDialog(string, object)
+      method
+
+      is called, the logical child dialog may be different than the original.
+
+      If this method is *not* overridden, the dialog automatically calls its
+
+      RepromptDialog(ITurnContext, DialogInstance) when the user replies.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function resumeDialog(outerDC: DialogContext, _reason: DialogReason,
+        _result?: any): Promise<DialogTurnResult<any>>
+      parameters:
+        - id: outerDC
+          type: DialogContext
+          description: >-
+            The [DialogContext](xref:botbuilder-dialogs.DialogContext) for the
+            current turn of conversation.
+        - id: _reason
+          type: DialogReason
+          description: Reason why the dialog resumed.
+        - id: _result
+          type: any
+          description: |-
+            Optional, value returned from the dialog that was called. The type
+            of the value returned is dependent on the child dialog.
+      return:
+        description: A Promise representing the asynchronous operation.
+        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> ComponentDialog.resumeDialog
+methods:
+  - name: addCommand(BotSsoExecutionDialogHandler, TriggerPatterns)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.addCommand'
+    package: '@microsoft/teamsfx'
+    summary: Add TeamsFxBotSsoCommandHandler instance
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addCommand(handler: BotSsoExecutionDialogHandler,
+        triggerPatterns: TriggerPatterns)
+      parameters:
+        - id: handler
+          type: <xref uid="@microsoft/teamsfx.BotSsoExecutionDialogHandler" />
+          description: >-
+            [BotSsoExecutionDialogHandler](xref:@microsoft/teamsfx.BotSsoExecutionDialogHandler)
+            callback function
+        - id: triggerPatterns
+          type: <xref uid="@microsoft/teamsfx.TriggerPatterns" />
+          description: The trigger pattern
+  - name: run(TurnContext, StatePropertyAccessor<any>)
+    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog.run'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      The run method handles the incoming activity (in the form of a
+      DialogContext) and passes it through the dialog system.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function run(context: TurnContext, accessor:
+        StatePropertyAccessor<any>): Promise<void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context object for the current turn.
+        - id: accessor
+          type: StatePropertyAccessor&lt;any&gt;
+          description: The instance of StatePropertyAccessor for dialog system.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+extends: ComponentDialog

@@ -1,0 +1,38 @@
+### YamlMime:TSType
+name: FrameContext
+uid: '@microsoft/teams-js.@microsoft.teams-js.FrameContext'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: FrameContext
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: contentUrl
+    uid: '@microsoft/teams-js.@microsoft.teams-js.FrameContext.contentUrl'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * The current URL that needs to be used in the iframe if the tab is
+      reloaded
+    fullName: contentUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentUrl: string'
+      return:
+        description: ''
+        type: string
+  - name: websiteUrl
+    uid: '@microsoft/teams-js.@microsoft.teams-js.FrameContext.websiteUrl'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * The current URL that needs to be used for opening the website when the
+      user clicks on 'Go to website'
+    fullName: websiteUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'websiteUrl: string'
+      return:
+        description: ''
+        type: string

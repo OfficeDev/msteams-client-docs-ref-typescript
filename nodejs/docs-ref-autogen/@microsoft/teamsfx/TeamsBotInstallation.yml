@@ -9,7 +9,7 @@ isDeprecated: true
 customDeprecatedMessage: Use `BotBuilderCloudAdapter.TeamsBotInstallation` instead.
 type: class
 constructors:
-  - name: 'TeamsBotInstallation(BotFrameworkAdapter, Partial<ConversationReference>)'
+  - name: TeamsBotInstallation(BotFrameworkAdapter, Partial<ConversationReference>)
     uid: '@microsoft/teamsfx.TeamsBotInstallation.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor
@@ -27,8 +27,7 @@ constructors:
           description: the bound `BotFrameworkAdapter`.
         - id: conversationReference
           type: Partial&lt;ConversationReference&gt;
-          description: |
-            the bound `ConversationReference`.
+          description: the bound `ConversationReference`.
 properties:
   - name: adapter
     uid: '@microsoft/teamsfx.TeamsBotInstallation.adapter'
@@ -86,7 +85,7 @@ methods:
         description: >-
           an array of channels if bot is installed into a team, otherwise
           returns an empty array.
-        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Channel" />[]&gt;'
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.Channel" />[]&gt;
   - name: getTeamDetails()
     uid: '@microsoft/teamsfx.TeamsBotInstallation.getTeamDetails'
     package: '@microsoft/teamsfx'
@@ -94,12 +93,12 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getTeamDetails(): Promise<TeamDetails | undefined>'
+      content: 'function getTeamDetails(): Promise<undefined | TeamDetails>'
       return:
         description: >-
           the team details if bot is installed into a team, otherwise returns
           undefined.
-        type: Promise&lt;TeamDetails | undefined&gt;
+        type: Promise&lt;undefined | TeamDetails&gt;
   - name: members()
     uid: '@microsoft/teamsfx.TeamsBotInstallation.members'
     package: '@microsoft/teamsfx'
@@ -110,7 +109,7 @@ methods:
       content: 'function members(): Promise<Member[]>'
       return:
         description: an array of members from where the bot is installed.
-        type: 'Promise&lt;<xref uid="@microsoft/teamsfx.Member" />[]&gt;'
+        type: Promise&lt;<xref uid="@microsoft/teamsfx.Member" />[]&gt;
   - name: >-
       sendAdaptiveCard(unknown, (context: TurnContext, error: Error) =>
       Promise<void>)
@@ -136,7 +135,7 @@ methods:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending adaptive card message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;
   - name: 'sendMessage(string, (context: TurnContext, error: Error) => Promise<void>)'
     uid: '@microsoft/teamsfx.TeamsBotInstallation.sendMessage'
     package: '@microsoft/teamsfx'
@@ -160,4 +159,4 @@ methods:
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;

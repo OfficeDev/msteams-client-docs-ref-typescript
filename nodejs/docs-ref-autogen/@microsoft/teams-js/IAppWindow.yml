@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
-  - name: 'addEventListener(string, Function)'
+  - name: addEventListener(string, Function)
     uid: '@microsoft/teams-js.IAppWindow.addEventListener'
     package: '@microsoft/teams-js'
     summary: >-
@@ -26,8 +26,7 @@ methods:
             'message'.
         - id: listener
           type: Function
-          description: |
-            The listener that will be called
+          description: The listener that will be called
   - name: 'postMessage(any, (status: boolean, reason?: string) => void)'
     uid: '@microsoft/teams-js.IAppWindow.postMessage'
     package: '@microsoft/teams-js'
@@ -44,5 +43,4 @@ methods:
           description: The message to send
         - id: onComplete
           type: '(status: boolean, reason?: string) =&gt; void'
-          description: |
-            The callback to know if the postMessage has been success/failed.
+          description: The callback to know if the postMessage has been success/failed.

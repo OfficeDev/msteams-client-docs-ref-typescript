@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 methods:
-  - name: 'throttled(ExtendedMediaSessionActionDetails, MediaSessionActionHandler)'
+  - name: throttled(ExtendedMediaSessionActionDetails, MediaSessionActionHandler)
     uid: '@microsoft/live-share-media.MediaSessionActionThrottler.throttled'
     package: '@microsoft/live-share-media'
     summary: ''

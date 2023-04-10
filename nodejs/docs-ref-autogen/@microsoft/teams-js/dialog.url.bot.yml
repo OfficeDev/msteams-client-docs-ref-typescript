@@ -18,7 +18,7 @@ functions:
       return:
         description: boolean to represent whether dialog.url.bot is supported
         type: boolean
-  - name: 'open(BotUrlDialogInfo, DialogSubmitHandler, PostMessageChannel)'
+  - name: open(BotUrlDialogInfo, DialogSubmitHandler, PostMessageChannel)
     uid: '@microsoft/teams-js.dialog.url.bot.open'
     package: '@microsoft/teams-js'
     summary: Allows an app to open the dialog module using bot.
@@ -40,5 +40,4 @@ functions:
           description: Handler that triggers when the dialog has been submitted or closed.
         - id: messageFromChildHandler
           type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
-          description: |
-            Handler that triggers if dialog sends a message to the app.
+          description: Handler that triggers if dialog sends a message to the app.

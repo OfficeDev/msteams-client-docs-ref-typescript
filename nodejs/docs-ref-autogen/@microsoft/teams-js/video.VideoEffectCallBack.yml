@@ -6,7 +6,8 @@ summary: >-
   Video effect change call back function definition
 
   Return a Promise which will be resolved when the effect is prepared, or throw
-  an <xref:@microsoft/teams-js.video.EffectFailureReason> on error.
+  an [EffectFailureReason](xref:@microsoft/teams-js.video.EffectFailureReason)
+  on error.
 fullName: VideoEffectCallback
 remarks: ''
 previewState: beta

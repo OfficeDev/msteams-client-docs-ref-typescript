@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: MessageRequest
+uid: '@microsoft/teams-js.@microsoft.teams-js.MessageRequest'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: MessageRequest
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: args
+    uid: '@microsoft/teams-js.@microsoft.teams-js.MessageRequest.args'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: args
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'args?: any[]'
+      return:
+        description: ''
+        type: any[]
+  - name: func
+    uid: '@microsoft/teams-js.@microsoft.teams-js.MessageRequest.func'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: func
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'func: string'
+      return:
+        description: ''
+        type: string
+  - name: id
+    uid: '@microsoft/teams-js.@microsoft.teams-js.MessageRequest.id'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id?: number'
+      return:
+        description: ''
+        type: number
+  - name: timestamp
+    uid: '@microsoft/teams-js.@microsoft.teams-js.MessageRequest.timestamp'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: timestamp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timestamp?: number'
+      return:
+        description: ''
+        type: number

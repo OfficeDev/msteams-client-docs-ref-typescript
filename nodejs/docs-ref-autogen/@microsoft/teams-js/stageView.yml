@@ -1,13 +1,12 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.stageView'
 name: stageView
-summary: |
-  Namespace to interact with the stage view specific part of the SDK.
-   @beta
+summary: Namespace to interact with the stage view specific part of the SDK.
 type: module
 interfaces:
   - '@microsoft/teams-js.stageView.StageViewParams'
 package: '@microsoft/teams-js'
+previewState: beta
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.stageView.isSupported'

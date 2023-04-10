@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'MsGraphAuthProvider(TeamsFxConfiguration, string | string[])'
+  - name: MsGraphAuthProvider(TeamsFxConfiguration, string | string[])
     uid: '@microsoft/teamsfx.MsGraphAuthProvider.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of MsGraphAuthProvider.
@@ -20,13 +20,12 @@ constructors:
         string[])
       parameters:
         - id: teamsfx
-          type: <xref uid="@microsoft/teamsfx.TeamsFxConfiguration" />
+          type: TeamsFxConfiguration
           description: Used to provide configuration and auth.
         - id: scopes
-          type: 'string | string[]'
-          description: |
-            The list of scopes for which the token will have access.
-  - name: 'MsGraphAuthProvider(TokenCredential, string | string[])'
+          type: string | string[]
+          description: The list of scopes for which the token will have access.
+  - name: MsGraphAuthProvider(TokenCredential, string | string[])
     uid: '@microsoft/teamsfx.MsGraphAuthProvider.constructor_1'
     package: '@microsoft/teamsfx'
     summary: Constructor of MsGraphAuthProvider.
@@ -41,9 +40,8 @@ constructors:
           type: TokenCredential
           description: credential used to provide configuration and auth.
         - id: scopes
-          type: 'string | string[]'
-          description: |
-            The list of scopes for which the token will have access.
+          type: string | string[]
+          description: The list of scopes for which the token will have access.
 methods:
   - name: getAccessToken()
     uid: '@microsoft/teamsfx.MsGraphAuthProvider.getAccessToken'

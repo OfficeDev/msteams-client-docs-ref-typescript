@@ -19,8 +19,7 @@ constructors:
       parameters:
         - id: options
           type: <xref uid="@microsoft/live-share.ITeamsFluidClientOptions" />
-          description: |
-            Configuration options for the client.
+          description: Configuration options for the client.
 properties:
   - name: isTesting
     uid: '@microsoft/live-share.TeamsFluidClient.isTesting'
@@ -51,9 +50,7 @@ properties:
         description: ''
         type: number
 methods:
-  - name: >-
-      joinContainer(ContainerSchema, undefined | (container: IFluidContainer) =>
-      void)
+  - name: 'joinContainer(ContainerSchema, (container: IFluidContainer) => void)'
     uid: '@microsoft/live-share.TeamsFluidClient.joinContainer'
     package: '@microsoft/live-share'
     summary: Connects to the fluid container for the current teams context.
@@ -69,15 +66,15 @@ methods:
     syntax:
       content: >-
         function joinContainer(fluidContainerSchema: ContainerSchema,
-        onContainerFirstCreated?: undefined | (container: IFluidContainer) =>
-        void): Promise<{ container: IFluidContainer, created: boolean, services:
+        onContainerFirstCreated?: (container: IFluidContainer) => void):
+        Promise<{ container: IFluidContainer, created: boolean, services:
         AzureContainerServices }>
       parameters:
         - id: fluidContainerSchema
           type: ContainerSchema
           description: Fluid objects to create.
         - id: onContainerFirstCreated
-          type: 'undefined | (container: IFluidContainer) =&gt; void'
+          type: '(container: IFluidContainer) =&gt; void'
           description: >-
             Optional. Callback that's called when the container is first
             created.

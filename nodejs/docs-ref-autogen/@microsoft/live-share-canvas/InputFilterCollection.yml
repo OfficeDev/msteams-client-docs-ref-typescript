@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'InputFilterCollection(InputFilter[])'
+  - name: InputFilterCollection(InputFilter[])
     uid: '@microsoft/live-share-canvas.InputFilterCollection.constructor'
     package: '@microsoft/live-share-canvas'
     summary: Creates a new InputFilterCollection instance.
@@ -18,11 +18,10 @@ constructors:
       content: 'new InputFilterCollection(items: InputFilter[])'
       parameters:
         - id: items
-          type: '<xref uid="@microsoft/live-share-canvas.InputFilter" />[]'
-          description: |
-            The initial inputs filters.
+          type: <xref uid="@microsoft/live-share-canvas.InputFilter" />[]
+          description: The initial inputs filters.
 methods:
-  - name: 'addFilters(InputFilter[])'
+  - name: addFilters(InputFilter[])
     uid: '@microsoft/live-share-canvas.InputFilterCollection.addFilters'
     package: '@microsoft/live-share-canvas'
     summary: Adds filters to the collection.
@@ -32,9 +31,8 @@ methods:
       content: 'function addFilters(items: InputFilter[])'
       parameters:
         - id: items
-          type: '<xref uid="@microsoft/live-share-canvas.InputFilter" />[]'
-          description: |
-            The filters to add.
+          type: <xref uid="@microsoft/live-share-canvas.InputFilter" />[]
+          description: The filters to add.
   - name: filterPoint(IPointerPoint)
     uid: '@microsoft/live-share-canvas.InputFilterCollection.filterPoint'
     package: '@microsoft/live-share-canvas'
@@ -67,5 +65,4 @@ methods:
       parameters:
         - id: startPoint
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The new starting point.
+          description: The new starting point.

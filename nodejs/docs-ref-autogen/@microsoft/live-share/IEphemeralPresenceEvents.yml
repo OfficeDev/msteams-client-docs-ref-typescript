@@ -2,7 +2,7 @@
 name: IEphemeralPresenceEvents
 uid: '@microsoft/live-share.IEphemeralPresenceEvents'
 package: '@microsoft/live-share'
-summary: Event typings for `EphemeralPresence` class.
+summary: ''
 fullName: IEphemeralPresenceEvents<TData>
 remarks: ''
 isDeprecated: false

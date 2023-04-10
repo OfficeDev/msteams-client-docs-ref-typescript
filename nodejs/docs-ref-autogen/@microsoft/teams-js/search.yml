@@ -10,6 +10,7 @@ summary: >-
   your app using the same search box they use elsewhere in Teams, Outlook, or
   Office.
 
+
   This functionality is in Beta.
 type: module
 interfaces:
@@ -45,6 +46,7 @@ functions:
 
       when the user is actively using your page/tab.
 
+
       The host may visually update its search box, e.g. with the name or icon of
       your application.
 
@@ -55,37 +57,22 @@ functions:
       of onChangeHandler calls if the user is typing rapidly in the search box.
 
 
-
       **Example**
 
 
       ``` ts
 
       search.registerHandlers(
-
-      query => {
-
-      console.log('Update your application to handle the search experience being
-      closed. Last query: ${query.searchTerm}');
-
-      },
-
-      query => {
-
-      console.log(`Update your application to handle an executed search result:
-      ${query.searchTerm}`);
-
-      },
-
-      query => {
-
-      console.log(`Update your application with the changed search query:
-      ${query.searchTerm}`);
-
-      },
-
-      );
-
+          query => {
+              console.log('Update your application to handle the search experience being closed. Last query: ${query.searchTerm}');
+          },
+          query => {
+              console.log(`Update your application to handle an executed search result: ${query.searchTerm}`);
+          },
+          query => {
+              console.log(`Update your application with the changed search query: ${query.searchTerm}`);
+          },
+       );
       ```
 
     remarks: ''
@@ -99,26 +86,26 @@ functions:
       parameters:
         - id: onClosedHandler
           type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
-          description: >
+          description: >-
             This handler will be called when the user exits or cancels their
             search.
 
             Should be used to return your application to its most recent,
             non-search state. The value of
-            <xref:@microsoft/teams-js.search.SearchQuery.searchTerm>
+            [searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
 
             will be whatever the last query was before ending search.
         - id: onExecuteHandler
           type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
-          description: >
+          description: >-
             The handler will be called when the user executes their
 
             search (by pressing Enter for example). Should be used to display
             the full list of search results.
 
             The value of
-            <xref:@microsoft/teams-js.search.SearchQuery.searchTerm> is the
-            complete query the user entered in the search box.
+            [searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
+            is the complete query the user entered in the search box.
         - id: onChangeHandler
           type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
           description: >-
@@ -132,8 +119,8 @@ functions:
 
 
             This handler will be called with an empty
-            <xref:@microsoft/teams-js.search.SearchQuery.searchTerm> when search
-            is beginning, and subsequently,
+            [searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
+            when search is beginning, and subsequently,
 
             with the current contents of the search box.
   - name: unregisterHandlers()

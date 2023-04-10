@@ -19,7 +19,7 @@ properties:
       content: 'resources?: string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]
 inheritedProperties:
   - name: abortSignal
     uid: '@microsoft/teamsfx.GetTeamsUserTokenOptions.abortSignal'

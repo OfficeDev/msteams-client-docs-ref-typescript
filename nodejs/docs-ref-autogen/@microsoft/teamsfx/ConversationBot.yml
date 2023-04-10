@@ -22,8 +22,7 @@ constructors:
       parameters:
         - id: options
           type: <xref uid="@microsoft/teamsfx.ConversationOptions" />
-          description: |
-            initialize options
+          description: initialize options
 properties:
   - name: adapter
     uid: '@microsoft/teamsfx.ConversationBot.adapter'
@@ -112,8 +111,7 @@ methods:
           description: an Express or Restify style response object.
         - id: logic
           type: '(context: TurnContext) =&gt; Promise&lt;any&gt;'
-          description: |
-            the additional function to handle bot context.
+          description: the additional function to handle bot context.
       return:
         description: ''
         type: Promise&lt;void&gt;

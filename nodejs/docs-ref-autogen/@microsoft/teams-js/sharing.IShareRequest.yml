@@ -19,4 +19,4 @@ properties:
       content: 'content: T[]'
       return:
         description: ''
-        type: 'T[]'
+        type: T[]

@@ -2,7 +2,7 @@
 name: CardActionOptions
 uid: '@microsoft/teamsfx.CardActionOptions'
 package: '@microsoft/teamsfx'
-summary: 'Options to initialize <xref:@microsoft/teamsfx.CardActionBot>.'
+summary: Options to initialize [CardActionBot](xref:@microsoft/teamsfx.CardActionBot).
 fullName: CardActionOptions
 remarks: ''
 isDeprecated: false
@@ -14,8 +14,8 @@ properties:
     summary: >-
       The action handlers to registered with the action bot. Each command should
       implement the interface
-      <xref:@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler> so that it can
-      be correctly handled by this bot.
+      [TeamsFxAdaptiveCardActionHandler](xref:@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler)
+      so that it can be correctly handled by this bot.
     fullName: actions
     remarks: ''
     isDeprecated: false
@@ -23,4 +23,4 @@ properties:
       content: 'actions?: TeamsFxAdaptiveCardActionHandler[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />[]'
+        type: <xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />[]

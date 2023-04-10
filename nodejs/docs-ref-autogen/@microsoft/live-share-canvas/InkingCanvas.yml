@@ -12,18 +12,18 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: InkingCanvas(HTMLElement | undefined)
+  - name: InkingCanvas(HTMLElement)
     uid: '@microsoft/live-share-canvas.InkingCanvas.constructor'
     package: '@microsoft/live-share-canvas'
-    summary: 'Creates a new InkingCanvas instance, attached to the provided HTMLElement.'
+    summary: Creates a new InkingCanvas instance, attached to the provided HTMLElement.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new InkingCanvas(_parentElement?: HTMLElement | undefined)'
+      content: 'new InkingCanvas(_parentElement?: HTMLElement)'
       parameters:
         - id: _parentElement
-          type: HTMLElement | undefined
-          description: >
+          type: HTMLElement
+          description: >-
             The HTML element this canvas is attached to. InkingCanvas
 
             dynamically creates an HTML5 Canvas element and adds it as a child
@@ -94,9 +94,7 @@ properties:
   - name: offset
     uid: '@microsoft/live-share-canvas.InkingCanvas.offset'
     package: '@microsoft/live-share-canvas'
-    summary: |-
-      Gets the offset from the canvas' reference point, in pixels.
-      Sets the offset from the canvas' reference point, in pixels.
+    summary: Gets the offset from the canvas' reference point, in pixels.
     fullName: offset
     remarks: ''
     isDeprecated: false
@@ -120,9 +118,7 @@ properties:
   - name: scale
     uid: '@microsoft/live-share-canvas.InkingCanvas.scale'
     package: '@microsoft/live-share-canvas'
-    summary: |-
-      Gets the canvas' scale. Defaults to 1.
-      Sets the canvas' scale. Value must be greater than zero.
+    summary: Gets the canvas' scale. Defaults to 1.
     fullName: scale
     remarks: ''
     isDeprecated: false
@@ -143,8 +139,7 @@ methods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The point to add to the current stroke.
+          description: The point to add to the current stroke.
   - name: beginStroke(IPointerPoint)
     uid: '@microsoft/live-share-canvas.InkingCanvas.beginStroke'
     package: '@microsoft/live-share-canvas'
@@ -156,8 +151,7 @@ methods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The starting point of the stroke.
+          description: The starting point of the stroke.
   - name: cancelStroke()
     uid: '@microsoft/live-share-canvas.InkingCanvas.cancelStroke'
     package: '@microsoft/live-share-canvas'
@@ -185,7 +179,7 @@ methods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
+          description: |-
             Optional. The end point of the stroke. If not specified,
             the end point is the last one added.
   - name: fadeOut()
@@ -217,9 +211,8 @@ methods:
       parameters:
         - id: stroke
           type: <xref uid="@microsoft/live-share-canvas.IStroke" />
-          description: |
-            The stroke to render.
-  - name: 'resize(number, number)'
+          description: The stroke to render.
+  - name: resize(number, number)
     uid: '@microsoft/live-share-canvas.InkingCanvas.resize'
     package: '@microsoft/live-share-canvas'
     summary: Resizes this canvas.
@@ -230,11 +223,10 @@ methods:
       parameters:
         - id: width
           type: number
-          description: 'The new width of the canvas, in pixels.'
+          description: The new width of the canvas, in pixels.
         - id: height
           type: number
-          description: |
-            The new height of the canvas, in pixels.
+          description: The new height of the canvas, in pixels.
   - name: setBrush(IBrush)
     uid: '@microsoft/live-share-canvas.InkingCanvas.setBrush'
     package: '@microsoft/live-share-canvas'
@@ -246,5 +238,4 @@ methods:
       parameters:
         - id: value
           type: <xref uid="@microsoft/live-share-canvas.IBrush" />
-          description: |
-            The brush.
+          description: The brush.

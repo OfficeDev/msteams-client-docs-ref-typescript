@@ -11,7 +11,7 @@ properties:
   - name: requestedModalities
     uid: '@microsoft/teams-js.call.StartCallParams.requestedModalities'
     package: '@microsoft/teams-js'
-    summary: 'List of modalities for the call. Defaults to [“audio”].'
+    summary: List of modalities for the call. Defaults to [“audio”].
     fullName: requestedModalities
     remarks: ''
     isDeprecated: false
@@ -19,7 +19,7 @@ properties:
       content: 'requestedModalities?: CallModalities[]'
       return:
         description: ''
-        type: '<xref uid="@microsoft/teams-js.call.CallModalities" />[]'
+        type: <xref uid="@microsoft/teams-js.call.CallModalities" />[]
   - name: source
     uid: '@microsoft/teams-js.call.StartCallParams.source'
     package: '@microsoft/teams-js'
@@ -48,4 +48,4 @@ properties:
       content: 'targets: string[]'
       return:
         description: ''
-        type: 'string[]'
+        type: string[]

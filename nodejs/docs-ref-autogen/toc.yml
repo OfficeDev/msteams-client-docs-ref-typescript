@@ -539,9 +539,6 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.mail'
-        - uid: '@microsoft/teams-js.mail.ComposeMailBase'
-          name: ComposeMailBase
-          items: []
         - uid: '@microsoft/teams-js.mail.ComposeMailParams'
           name: ComposeMailParams
           items: []
@@ -669,9 +666,6 @@
     - uid: '@microsoft/teams-js.notifications'
       name: notifications
       items: []
-    - uid: '@microsoft/teams-js.OpenChatRequest'
-      name: OpenChatRequest
-      items: []
     - uid: '@microsoft/teams-js.OpenGroupChatRequest'
       name: OpenGroupChatRequest
       items: []
@@ -781,12 +775,6 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.sharing'
-        - uid: '@microsoft/teams-js.sharing.ContentType'
-          name: ContentType
-          items: []
-        - uid: '@microsoft/teams-js.sharing.IBaseSharedContent'
-          name: IBaseSharedContent
-          items: []
         - uid: '@microsoft/teams-js.sharing.IShareRequest'
           name: IShareRequest
           items: []
@@ -843,14 +831,28 @@
         - uid: '@microsoft/teams-js.video.EffectFailureReason'
           name: EffectFailureReason
           items: []
+        - name: mediaStream
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.video.mediaStream'
+            - uid: '@microsoft/teams-js.video.mediaStream.MediaStreamFrameData'
+              name: MediaStreamFrameData
+              items: []
+            - uid: '@microsoft/teams-js.video.mediaStream.VideoFrameCallback'
+              name: VideoFrameCallback
+              items: []
+        - name: sharedFrame
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.video.sharedFrame'
+            - uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameCallback'
+              name: VideoFrameCallback
+              items: []
+            - uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData'
+              name: VideoFrameData
+              items: []
         - uid: '@microsoft/teams-js.video.VideoEffectCallback'
           name: VideoEffectCallback
-          items: []
-        - uid: '@microsoft/teams-js.video.VideoFrame'
-          name: VideoFrame
-          items: []
-        - uid: '@microsoft/teams-js.video.VideoFrameCallback'
-          name: VideoFrameCallback
           items: []
         - uid: '@microsoft/teams-js.video.VideoFrameConfig'
           name: VideoFrameConfig
@@ -886,15 +888,52 @@
     - uid: '@microsoft/teamsfx.AuthProvider'
       name: AuthProvider
       items: []
+    - uid: '@microsoft/teamsfx.AxiosInstance'
+      name: AxiosInstance
+      items: []
     - uid: '@microsoft/teamsfx.BasicAuthProvider'
       name: BasicAuthProvider
       items: []
     - uid: '@microsoft/teamsfx.BearerTokenAuthProvider'
       name: BearerTokenAuthProvider
       items: []
-    - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter'
-      name: BotBuilderCloudAdapter
-      items: []
+    - name: BotBuilderCloudAdapter
+      items:
+        - name: Overview
+          uid: '@microsoft/teamsfx.BotBuilderCloudAdapter'
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog'
+          name: BotSsoExecutionDialog
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot'
+          name: CardActionBot
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.Channel'
+          name: Channel
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot'
+          name: CommandBot
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot'
+          name: ConversationBot
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions'
+          name: ConversationOptions
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.Member'
+          name: Member
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot'
+          name: NotificationBot
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions'
+          name: NotificationOptions
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope'
+          name: SearchScope
+          items: []
+        - uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation'
+          name: TeamsBotInstallation
+          items: []
     - uid: '@microsoft/teamsfx.BotSsoConfig'
       name: BotSsoConfig
       items: []
@@ -910,9 +949,6 @@
     - uid: '@microsoft/teamsfx.CardActionBot'
       name: CardActionBot
       items: []
-    - uid: '@microsoft/teamsfx.CardActionBot_2'
-      name: CardActionBot_2
-      items: []
     - uid: '@microsoft/teamsfx.CardActionOptions'
       name: CardActionOptions
       items: []
@@ -922,14 +958,8 @@
     - uid: '@microsoft/teamsfx.Channel'
       name: Channel
       items: []
-    - uid: '@microsoft/teamsfx.Channel_2'
-      name: Channel_2
-      items: []
     - uid: '@microsoft/teamsfx.CommandBot'
       name: CommandBot
-      items: []
-    - uid: '@microsoft/teamsfx.CommandBot_2'
-      name: CommandBot_2
       items: []
     - uid: '@microsoft/teamsfx.CommandMessage'
       name: CommandMessage
@@ -940,14 +970,8 @@
     - uid: '@microsoft/teamsfx.ConversationBot'
       name: ConversationBot
       items: []
-    - uid: '@microsoft/teamsfx.ConversationBot_2'
-      name: ConversationBot_2
-      items: []
     - uid: '@microsoft/teamsfx.ConversationOptions'
       name: ConversationOptions
-      items: []
-    - uid: '@microsoft/teamsfx.ConversationOptions_2'
-      name: ConversationOptions_2
       items: []
     - uid: '@microsoft/teamsfx.ErrorCode'
       name: ErrorCode
@@ -979,17 +1003,11 @@
     - uid: '@microsoft/teamsfx.Member'
       name: Member
       items: []
-    - uid: '@microsoft/teamsfx.Member_2'
-      name: Member_2
-      items: []
     - uid: '@microsoft/teamsfx.MessageBuilder'
       name: MessageBuilder
       items: []
     - uid: '@microsoft/teamsfx.MessageExtensionTokenResponse'
       name: MessageExtensionTokenResponse
-      items: []
-    - uid: '@microsoft/teamsfx.MessageResponse'
-      name: MessageResponse
       items: []
     - uid: '@microsoft/teamsfx.MsGraphAuthProvider'
       name: MsGraphAuthProvider
@@ -997,14 +1015,8 @@
     - uid: '@microsoft/teamsfx.NotificationBot'
       name: NotificationBot
       items: []
-    - uid: '@microsoft/teamsfx.NotificationBot_2'
-      name: NotificationBot_2
-      items: []
-    - uid: '@microsoft/teamsfx.NotificationOptions_2'
-      name: NotificationOptions_2
-      items: []
-    - uid: '@microsoft/teamsfx.NotificationOptions_3'
-      name: NotificationOptions_3
+    - uid: '@microsoft/teamsfx.NotificationOptions'
+      name: NotificationOptions
       items: []
     - uid: '@microsoft/teamsfx.NotificationTarget'
       name: NotificationTarget
@@ -1024,14 +1036,8 @@
     - uid: '@microsoft/teamsfx.SearchScope'
       name: SearchScope
       items: []
-    - uid: '@microsoft/teamsfx.SearchScope_2'
-      name: SearchScope_2
-      items: []
     - uid: '@microsoft/teamsfx.TeamsBotInstallation'
       name: TeamsBotInstallation
-      items: []
-    - uid: '@microsoft/teamsfx.TeamsBotInstallation_2'
-      name: TeamsBotInstallation_2
       items: []
     - uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
       name: TeamsBotSsoPrompt
@@ -1053,9 +1059,6 @@
       items: []
     - uid: '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler'
       name: TeamsFxBotSsoCommandHandler
-      items: []
-    - uid: '@microsoft/teamsfx.TeamsFxConfiguration'
-      name: TeamsFxConfiguration
       items: []
     - uid: '@microsoft/teamsfx.TeamsUserCredential'
       name: TeamsUserCredential

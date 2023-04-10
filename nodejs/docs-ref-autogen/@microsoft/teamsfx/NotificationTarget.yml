@@ -11,7 +11,7 @@ properties:
   - name: type
     uid: '@microsoft/teamsfx.NotificationTarget.type'
     package: '@microsoft/teamsfx'
-    summary: 'The type of target, could be "Channel" or "Group" or "Person".'
+    summary: The type of target, could be "Channel" or "Group" or "Person".
     fullName: type
     remarks: ''
     isDeprecated: false
@@ -39,14 +39,14 @@ methods:
           description: the adaptive card raw JSON.
         - id: onError
           type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
-          description: >
+          description: >-
             an optional error handler that can catch exceptions during adaptive
             card sending.
 
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending adaptive card message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;
   - name: 'sendMessage(string, (context: TurnContext, error: Error) => Promise<void>)'
     uid: '@microsoft/teamsfx.NotificationTarget.sendMessage'
     package: '@microsoft/teamsfx'
@@ -63,11 +63,11 @@ methods:
           description: the plain text message.
         - id: onError
           type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
-          description: >
+          description: >-
             an optional error handler that can catch exceptions during message
             sending.
 
             If not defined, error will be handled by `BotAdapter.onTurnError`.
       return:
         description: the response of sending message.
-        type: Promise&lt;<xref uid="@microsoft/teamsfx.MessageResponse" />&gt;
+        type: Promise&lt;MessageResponse&gt;

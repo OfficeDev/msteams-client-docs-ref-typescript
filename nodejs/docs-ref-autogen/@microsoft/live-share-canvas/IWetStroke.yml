@@ -2,7 +2,7 @@
 name: IWetStroke
 uid: '@microsoft/live-share-canvas.IWetStroke'
 package: '@microsoft/live-share-canvas'
-summary: 'Defines a "wet" stroke, i.e. a stroke as it''s being drawn.'
+summary: Defines a "wet" stroke, i.e. a stroke as it's being drawn.
 fullName: IWetStroke
 remarks: ''
 isDeprecated: false
@@ -56,10 +56,10 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientId?: undefined | string'
+      content: 'clientId?: string'
       return:
         description: ''
-        type: undefined | string
+        type: string
     inheritanceDescription: >-
       <b>Inherited From</b>
       [IStroke.clientId](xref:@microsoft/live-share-canvas.IStroke.clientId)
@@ -109,7 +109,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [IStroke.timeStamp](xref:@microsoft/live-share-canvas.IStroke.timeStamp)
 inheritedMethods:
-  - name: 'addPoints(IPointerPoint[])'
+  - name: addPoints(IPointerPoint[])
     uid: '@microsoft/live-share-canvas.IWetStroke.addPoints'
     package: '@microsoft/live-share-canvas'
     summary: Adds points to the stroke.
@@ -119,9 +119,8 @@ inheritedMethods:
       content: 'function addPoints(points: IPointerPoint[]): boolean'
       parameters:
         - id: points
-          type: '<xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]'
-          description: |
-            The points to add.
+          type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]
+          description: The points to add.
       return:
         description: ''
         type: boolean
@@ -141,8 +140,7 @@ inheritedMethods:
       parameters:
         - id: serializedStroke
           type: string
-          description: |
-            The serialized stroke.
+          description: The serialized stroke.
     inheritanceDescription: >-
       <b>Inherited From</b>
       [IStroke.deserialize](xref:@microsoft/live-share-canvas.IStroke.deserialize)
@@ -173,11 +171,10 @@ inheritedMethods:
       parameters:
         - id: segment
           type: <xref uid="@microsoft/live-share-canvas.ISegment" />
-          description: |
-            The segment to test against.
+          description: The segment to test against.
       return:
         description: ''
-        type: '<xref uid="@microsoft/live-share-canvas.IPoint" />[]'
+        type: <xref uid="@microsoft/live-share-canvas.IPoint" />[]
     inheritanceDescription: >-
       <b>Inherited From</b>
       [IStroke.getIntersectionPoints](xref:@microsoft/live-share-canvas.IStroke.getIntersectionPoints)
@@ -192,8 +189,7 @@ inheritedMethods:
       parameters:
         - id: index
           type: number
-          description: |
-            The point index.
+          description: The point index.
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
@@ -213,8 +209,7 @@ inheritedMethods:
       parameters:
         - id: rectangle
           type: <xref uid="@microsoft/live-share-canvas.IRect" />
-          description: |
-            The rectangle to test against.
+          description: The rectangle to test against.
       return:
         description: ''
         type: boolean
@@ -230,15 +225,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
+      content: 'function pointErase(eraserRect: IRect): undefined | IStroke[]'
       parameters:
         - id: eraserRect
           type: <xref uid="@microsoft/live-share-canvas.IRect" />
-          description: |
-            The eraser rectangle.
+          description: The eraser rectangle.
       return:
         description: ''
-        type: '<xref uid="@microsoft/live-share-canvas.IStroke" />[] | undefined'
+        type: undefined | <xref uid="@microsoft/live-share-canvas.IStroke" />[]
     inheritanceDescription: >-
       <b>Inherited From</b>
       [IStroke.pointErase](xref:@microsoft/live-share-canvas.IStroke.pointErase)
@@ -286,8 +280,7 @@ methods:
       parameters:
         - id: p
           type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />
-          description: |
-            The point to update
+          description: The point to update
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />

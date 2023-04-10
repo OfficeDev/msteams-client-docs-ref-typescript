@@ -26,7 +26,7 @@ methods:
       parameters:
         - id: reason
           type: string
-          description: >
+          description: >-
             Specifies a reason for the failure. If provided, this string is
             displayed to the user; otherwise a generic error is displayed.
   - name: notifySuccess()

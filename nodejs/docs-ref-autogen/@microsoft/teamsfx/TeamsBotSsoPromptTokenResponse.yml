@@ -62,7 +62,7 @@ inheritedProperties:
   - name: expiration
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.expiration'
     package: '@microsoft/teamsfx'
-    summary: 'Expiration for the token, in ISO 8601 format (e.g. "2007-04-05T14:30Z")'
+    summary: Expiration for the token, in ISO 8601 format (e.g. "2007-04-05T14:30Z")
     fullName: expiration
     remarks: ''
     isDeprecated: false
@@ -82,10 +82,10 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'properties?: [key: string]: any'
+      content: 'properties?: {[propertyName: string]: any}'
       return:
         description: ''
-        type: '[key: string]\: any'
+        type: '{[propertyName: string]: any}'
     inheritanceDescription: <b>Inherited From</b> TokenResponse.properties
   - name: token
     uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse.token'

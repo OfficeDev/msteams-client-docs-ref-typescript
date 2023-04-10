@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'maxClients?: undefined | number'
+      content: 'maxClients?: number'
       return:
         description: ''
-        type: undefined | number
+        type: number
   - name: position
     uid: '@microsoft/live-share-media.CoordinationWaitPoint.position'
     package: '@microsoft/live-share-media'
@@ -40,7 +40,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'reason?: undefined | string'
+      content: 'reason?: string'
       return:
         description: ''
-        type: undefined | string
+        type: string
