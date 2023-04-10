@@ -14,7 +14,7 @@
       "monikers": [],
       "moniker_ranges": [
         "msteams-client-js-latest",
-        "msteams-client-js-1.12.1"
+        "msteams-client-js-1.13"
       ],
       "open_to_public_contributors": false,
       "type_mapping": {
@@ -65,11 +65,11 @@
       }
     },
     {
-      "TopLevelTOC": "nodejs/teams-1121/docs-ref-toc/fxtoc.yml",
-      "ReferenceTOC": "nodejs/teams-1121/docs-ref-autogen/toc.yml",
+      "TopLevelTOC": "nodejs/teams-113/docs-ref-toc/fxtoc.yml",
+      "ReferenceTOC": "nodejs/teams-113/docs-ref-autogen/toc.yml",
       "ConceptualTOCUrl": "/microsoftteams/platform/toc.json",
-      "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-beta/toc.json?view=msteams-client-js-1.12.1",
-      "OutputFolder": "nodejs/teams-1121/overview",
+      "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-beta/toc.json?view=msteams-client-js-1.13",
+      "OutputFolder": "nodejs/teams-113/overview",
       "HideEmptyNode": true,
       "ContainerPageMetadata": {
         "langs": [

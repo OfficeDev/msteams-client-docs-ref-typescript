@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: IShareRequestContentType
+uid: '@microsoft/teams-js.microsoftTeams.sharing.IShareRequestContentType'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: IShareRequestContentType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type IShareRequestContentType = IURLContent

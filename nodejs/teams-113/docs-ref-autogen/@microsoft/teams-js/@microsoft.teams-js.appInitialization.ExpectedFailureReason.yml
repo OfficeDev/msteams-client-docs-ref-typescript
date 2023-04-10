@@ -1,0 +1,35 @@
+### YamlMime:TSEnum
+name: ExpectedFailureReason
+uid: >-
+  @microsoft/teams-js.@microsoft.teams-js.appInitialization.ExpectedFailureReason
+package: '@microsoft/teams-js'
+summary: ''
+fullName: ExpectedFailureReason
+remarks: ''
+isDeprecated: false
+fields:
+  - name: NotFound
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.appInitialization.ExpectedFailureReason.NotFound
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Offline
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.appInitialization.ExpectedFailureReason.Offline
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Other
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.appInitialization.ExpectedFailureReason.Other
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: PermissionError
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.appInitialization.ExpectedFailureReason.PermissionError
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: Throttling
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.appInitialization.ExpectedFailureReason.Throttling
+    package: '@microsoft/teams-js'
+    summary: ''

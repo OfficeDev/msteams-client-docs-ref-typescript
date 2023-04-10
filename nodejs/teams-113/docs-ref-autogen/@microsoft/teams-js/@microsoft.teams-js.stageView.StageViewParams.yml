@@ -1,0 +1,84 @@
+### YamlMime:TSType
+name: StageViewParams
+uid: '@microsoft/teams-js.@microsoft.teams-js.stageView.StageViewParams'
+package: '@microsoft/teams-js'
+summary: '* Parameters to open a stage view.'
+fullName: StageViewParams
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: appId
+    uid: '@microsoft/teams-js.@microsoft.teams-js.stageView.StageViewParams.appId'
+    package: '@microsoft/teams-js'
+    summary: '* The application ID of the Teams application to be opened.'
+    fullName: appId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'appId: string'
+      return:
+        description: ''
+        type: string
+  - name: contentUrl
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.stageView.StageViewParams.contentUrl
+    package: '@microsoft/teams-js'
+    summary: '* The URL of the content to display.'
+    fullName: contentUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentUrl: string'
+      return:
+        description: ''
+        type: string
+  - name: entityId
+    uid: '@microsoft/teams-js.@microsoft.teams-js.stageView.StageViewParams.entityId'
+    package: '@microsoft/teams-js'
+    summary: '* The entity ID of the Teams app content being opened.'
+    fullName: entityId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'entityId?: string'
+      return:
+        description: ''
+        type: string
+  - name: threadId
+    uid: '@microsoft/teams-js.@microsoft.teams-js.stageView.StageViewParams.threadId'
+    package: '@microsoft/teams-js'
+    summary: '* The chat or channel ID.'
+    fullName: threadId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'threadId: string'
+      return:
+        description: ''
+        type: string
+  - name: title
+    uid: '@microsoft/teams-js.@microsoft.teams-js.stageView.StageViewParams.title'
+    package: '@microsoft/teams-js'
+    summary: '* The title to give the stage view.'
+    fullName: title
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'title: string'
+      return:
+        description: ''
+        type: string
+  - name: websiteUrl
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.stageView.StageViewParams.websiteUrl
+    package: '@microsoft/teams-js'
+    summary: '* The Teams app website URL.'
+    fullName: websiteUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'websiteUrl?: string'
+      return:
+        description: ''
+        type: string

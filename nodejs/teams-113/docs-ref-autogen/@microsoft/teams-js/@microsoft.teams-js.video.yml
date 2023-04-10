@@ -1,0 +1,78 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.video'
+name: video
+summary: '* Namespace to video extensibility of the SDK.   *'
+type: module
+enums:
+  - '@microsoft/teams-js.@microsoft.teams-js.video.EffectChangeType'
+  - '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrameFormat'
+typeAliases:
+  - '@microsoft/teams-js.@microsoft.teams-js.video.VideoEffectCallBack'
+  - '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrameCallback'
+interfaces:
+  - '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrame'
+  - '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrameConfig'
+package: '@microsoft/teams-js'
+functions:
+  - name: notifySelectedVideoEffectChanged(EffectChangeType, undefined | string)
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.video.notifySelectedVideoEffectChanged
+    package: '@microsoft/teams-js'
+    summary: >-
+      * video extension should call this to notify Teams Client current selected
+      effect parameter changed.       * If it's pre-meeting, Teams client will
+      call videoEffectCallback immediately then use the videoEffect.       *
+      in-meeting scenario, we will call videoEffectCallback when apply button
+      clicked.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function notifySelectedVideoEffectChanged(effectChangeType:
+        EffectChangeType, effectId: undefined | string)
+      parameters:
+        - id: effectChangeType
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.video.EffectChangeType" />
+          description: the effect change type.       *
+        - id: effectId
+          type: undefined | string
+          description: Newly selected effect id.
+  - name: registerForVideoEffect(VideoEffectCallBack)
+    uid: '@microsoft/teams-js.@microsoft.teams-js.video.registerForVideoEffect'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Register the video effect callback, Teams client uses this to notify the
+      video extension the new video effect will by applied.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function registerForVideoEffect(callback: VideoEffectCallBack)'
+      parameters:
+        - id: callback
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.video.VideoEffectCallBack" />
+          description: ''
+  - name: registerForVideoFrame(VideoFrameCallback, VideoFrameConfig)
+    uid: '@microsoft/teams-js.@microsoft.teams-js.video.registerForVideoFrame'
+    package: '@microsoft/teams-js'
+    summary: '* register to read the video frames in Permissions section.'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerForVideoFrame(frameCallback: VideoFrameCallback,
+        config: VideoFrameConfig)
+      parameters:
+        - id: frameCallback
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.video.VideoFrameCallback" />
+          description: ''
+        - id: config
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.video.VideoFrameConfig" />
+          description: ''

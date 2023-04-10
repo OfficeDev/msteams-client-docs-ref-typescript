@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: IAppContentStageSharingCapabilities
+uid: >-
+  @microsoft/teams-js.@microsoft.teams-js.meeting.IAppContentStageSharingCapabilities
+package: '@microsoft/teams-js'
+summary: ''
+fullName: IAppContentStageSharingCapabilities
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: doesAppHaveSharePermission
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.meeting.IAppContentStageSharingCapabilities.doesAppHaveSharePermission
+    package: '@microsoft/teams-js'
+    summary: '* indicates whether app has permission to share contents to meeting stage'
+    fullName: doesAppHaveSharePermission
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'doesAppHaveSharePermission: boolean'
+      return:
+        description: ''
+        type: boolean

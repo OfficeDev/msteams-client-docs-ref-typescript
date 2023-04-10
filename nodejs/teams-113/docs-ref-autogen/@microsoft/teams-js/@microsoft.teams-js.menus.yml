@@ -1,0 +1,88 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.@microsoft.teams-js.menus'
+name: menus
+summary: >-
+  * Namespace to interact with the menu-specific part of the SDK.   * This
+  object is used to show View Configuration, Action Menu and Navigation Bar
+  Menu.   *
+type: module
+interfaces:
+  - '@microsoft/teams-js.@microsoft.teams-js.menus.ActionMenuParameters'
+  - '@microsoft/teams-js.@microsoft.teams-js.menus.ViewConfiguration'
+  - '@microsoft/teams-js.@microsoft.teams-js.menus.ViewData'
+enums:
+  - '@microsoft/teams-js.@microsoft.teams-js.menus.DisplayMode'
+  - '@microsoft/teams-js.@microsoft.teams-js.menus.MenuListType'
+classes:
+  - '@microsoft/teams-js.@microsoft.teams-js.menus.MenuItem'
+package: '@microsoft/teams-js'
+functions:
+  - name: initialize()
+    uid: '@microsoft/teams-js.@microsoft.teams-js.menus.initialize'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function initialize()
+  - name: 'setNavBarMenu(MenuItem[], (id: string) => boolean)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.menus.setNavBarMenu'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Used to set menu items on the Navigation Bar. If icon is available, icon
+      will be shown, otherwise title will be shown.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setNavBarMenu(items: MenuItem[], handler: (id: string) =>
+        boolean)
+      parameters:
+        - id: items
+          type: >-
+            @microsoft/teams-js.<xref uid="@microsoft.teams-js.menus.MenuItem"
+            />[]
+          description: List of MenuItems for Navigation Bar Menu.       *
+        - id: handler
+          type: '(id: string) =&gt; boolean'
+          description: The handler to invoke when the user selects menu item.
+  - name: 'setUpViews(ViewConfiguration[], (id: string) => boolean)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.menus.setUpViews'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Registers list of view configurations and it's handler.       * Handler
+      is responsible for listening selection of View Configuration.       *
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setUpViews(viewConfig: ViewConfiguration[], handler: (id:
+        string) => boolean)
+      parameters:
+        - id: viewConfig
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.menus.ViewConfiguration" />[]
+          description: List of view configurations. Minimum 1 value is required.       *
+        - id: handler
+          type: '(id: string) =&gt; boolean'
+          description: The handler to invoke when the user selects view configuration.
+  - name: 'showActionMenu(ActionMenuParameters, (id: string) => boolean)'
+    uid: '@microsoft/teams-js.@microsoft.teams-js.menus.showActionMenu'
+    package: '@microsoft/teams-js'
+    summary: '* Used to show Action Menu.       *'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function showActionMenu(params: ActionMenuParameters, handler: (id:
+        string) => boolean)
+      parameters:
+        - id: params
+          type: >-
+            @microsoft/teams-js.<xref
+            uid="@microsoft.teams-js.menus.ActionMenuParameters" />
+          description: Parameters for Menu Parameters       *
+        - id: handler
+          type: '(id: string) =&gt; boolean'
+          description: The handler to invoke when the user selects menu item.

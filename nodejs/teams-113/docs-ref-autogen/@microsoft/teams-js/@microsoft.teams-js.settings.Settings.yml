@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: Settings
+uid: '@microsoft/teams-js.@microsoft.teams-js.settings.Settings'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: Settings
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: contentUrl
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.Settings.contentUrl'
+    package: '@microsoft/teams-js'
+    summary: '* Sets the URL to use for the content of this instance.'
+    fullName: contentUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentUrl: string'
+      return:
+        description: ''
+        type: string
+  - name: entityId
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.Settings.entityId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * The developer-defined unique ID for the entity to which this content
+      points.
+    fullName: entityId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'entityId?: string'
+      return:
+        description: ''
+        type: string
+  - name: removeUrl
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.Settings.removeUrl'
+    package: '@microsoft/teams-js'
+    summary: '* Sets the URL for the removal configuration experience.'
+    fullName: removeUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'removeUrl?: string'
+      return:
+        description: ''
+        type: string
+  - name: suggestedDisplayName
+    uid: >-
+      @microsoft/teams-js.@microsoft.teams-js.settings.Settings.suggestedDisplayName
+    package: '@microsoft/teams-js'
+    summary: >-
+      * A suggested display name for the new content.           * In the
+      settings for an existing instance being updated, this call has no effect.
+    fullName: suggestedDisplayName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'suggestedDisplayName?: string'
+      return:
+        description: ''
+        type: string
+  - name: websiteUrl
+    uid: '@microsoft/teams-js.@microsoft.teams-js.settings.Settings.websiteUrl'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Sets the URL to use for the external link to view the underlying
+      resource in a browser.
+    fullName: websiteUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'websiteUrl?: string'
+      return:
+        description: ''
+        type: string
