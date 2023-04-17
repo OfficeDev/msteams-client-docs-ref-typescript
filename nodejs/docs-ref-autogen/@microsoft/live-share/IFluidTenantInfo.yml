@@ -1,0 +1,72 @@
+### YamlMime:TSType
+name: IFluidTenantInfo
+uid: '@microsoft/live-share.IFluidTenantInfo'
+package: '@microsoft/live-share'
+summary: >-
+  Returned from `LiveShareHost.getFluidTenantInfo()` to specify the Fluid
+  service to use for the
+
+  current Live Share session.
+fullName: IFluidTenantInfo
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: ordererEndpoint
+    uid: '@microsoft/live-share.IFluidTenantInfo.ordererEndpoint'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: ordererEndpoint
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of Fluid 1.0 this configuration information has been deprecated in
+      favor of
+
+      `serviceEndpoint`.
+    syntax:
+      content: 'ordererEndpoint: string'
+      return:
+        description: ''
+        type: string
+  - name: serviceEndpoint
+    uid: '@microsoft/live-share.IFluidTenantInfo.serviceEndpoint'
+    package: '@microsoft/live-share'
+    summary: The Fluid service endpoint Live Share should use.
+    fullName: serviceEndpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serviceEndpoint?: string'
+      return:
+        description: ''
+        type: string
+  - name: storageEndpoint
+    uid: '@microsoft/live-share.IFluidTenantInfo.storageEndpoint'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: storageEndpoint
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of Fluid 1.0 this configuration information has been deprecated in
+      favor of
+
+      `serviceEndpoint`.
+    syntax:
+      content: 'storageEndpoint: string'
+      return:
+        description: ''
+        type: string
+  - name: tenantId
+    uid: '@microsoft/live-share.IFluidTenantInfo.tenantId'
+    package: '@microsoft/live-share'
+    summary: The Fluid Tenant ID Live Share should use.
+    fullName: tenantId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tenantId: string'
+      return:
+        description: ''
+        type: string

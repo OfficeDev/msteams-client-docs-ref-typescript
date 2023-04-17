@@ -144,6 +144,20 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [IStroke.deserialize](xref:@microsoft/live-share-canvas.IStroke.deserialize)
+  - name: getAllPoints()
+    uid: '@microsoft/live-share-canvas.IWetStroke.getAllPoints'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets a copy of all the points in the stroke.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getAllPoints(): IPointerPoint[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [IStroke.getAllPoints](xref:@microsoft/live-share-canvas.IStroke.getAllPoints)
   - name: getBoundingRect()
     uid: '@microsoft/live-share-canvas.IWetStroke.getBoundingRect'
     package: '@microsoft/live-share-canvas'

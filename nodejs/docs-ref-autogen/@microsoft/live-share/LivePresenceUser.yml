@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: LivePresenceUser
+uid: '@microsoft/live-share.LivePresenceUser'
+package: '@microsoft/live-share'
+summary: A use that presence is being tracked for.
+fullName: LivePresenceUser<TData>
+remarks: ''
+isDeprecated: false
+type: class
+properties:
+  - name: data
+    uid: '@microsoft/live-share.LivePresenceUser.data'
+    package: '@microsoft/live-share'
+    summary: Optional data shared by the user.
+    fullName: data
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: undefined | TData data
+      return:
+        description: ''
+        type: undefined | TData
+  - name: isLocalUser
+    uid: '@microsoft/live-share.LivePresenceUser.isLocalUser'
+    package: '@microsoft/live-share'
+    summary: If `true` the user is the local user.
+    fullName: isLocalUser
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isLocalUser
+      return:
+        description: ''
+        type: boolean
+  - name: state
+    uid: '@microsoft/live-share.LivePresenceUser.state'
+    package: '@microsoft/live-share'
+    summary: Users current state.
+    fullName: state
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: PresenceState state
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.PresenceState" />
+  - name: userId
+    uid: '@microsoft/live-share.LivePresenceUser.userId'
+    package: '@microsoft/live-share'
+    summary: ID of the user.
+    fullName: userId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: string userId
+      return:
+        description: ''
+        type: string
+methods:
+  - name: getRoles()
+    uid: '@microsoft/live-share.LivePresenceUser.getRoles'
+    package: '@microsoft/live-share'
+    summary: Returns the user's meeting roles.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getRoles(): Promise<UserMeetingRole[]>'
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
+  - name: isFromClient(string)
+    uid: '@microsoft/live-share.LivePresenceUser.isFromClient'
+    package: '@microsoft/live-share'
+    summary: Returns true if the presence object is from the specified client.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function isFromClient(clientId: string): boolean'
+      parameters:
+        - id: clientId
+          type: string
+          description: The ID of the client to lookup.
+      return:
+        description: ''
+        type: boolean

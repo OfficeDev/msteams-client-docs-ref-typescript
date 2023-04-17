@@ -1,0 +1,65 @@
+### YamlMime:TSType
+name: LiveMediaSessionCoordinatorSuspension
+uid: '@microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension'
+package: '@microsoft/live-share-media'
+summary: |-
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  Licensed under the Microsoft Live Share SDK License.
+fullName: LiveMediaSessionCoordinatorSuspension
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      LiveMediaSessionCoordinatorSuspension(undefined | CoordinationWaitPoint,
+      (seekTo?: number) => void)
+    uid: >-
+      @microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension.constructor
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new LiveMediaSessionCoordinatorSuspension(waitPoint: undefined |
+        CoordinationWaitPoint, onEnd: (seekTo?: number) => void)
+      parameters:
+        - id: waitPoint
+          type: >-
+            undefined | <xref
+            uid="@microsoft/live-share-media.CoordinationWaitPoint" />
+          description: ''
+        - id: onEnd
+          type: '(seekTo?: number) =&gt; void'
+          description: ''
+properties:
+  - name: waitPoint
+    uid: >-
+      @microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension.waitPoint
+    package: '@microsoft/live-share-media'
+    summary: Returns an optional wait point associated with the suspension.
+    fullName: waitPoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: undefined | CoordinationWaitPoint waitPoint
+      return:
+        description: ''
+        type: >-
+          undefined | <xref
+          uid="@microsoft/live-share-media.CoordinationWaitPoint" />
+methods:
+  - name: end(number)
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension.end'
+    package: '@microsoft/live-share-media'
+    summary: Ends the suspension and optionally proposes a time to seek to.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function end(seekTo?: number)'
+      parameters:
+        - id: seekTo
+          type: number
+          description: >-
+            Optional. Proposed time to seek to. Ignored for suspensions at wait
+            points.

@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: IRawStroke
+uid: '@microsoft/live-share-canvas.IRawStroke'
+package: '@microsoft/live-share-canvas'
+summary: Represents the raw data of a stroke.
+fullName: IRawStroke
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: brush
+    uid: '@microsoft/live-share-canvas.IRawStroke.brush'
+    package: '@microsoft/live-share-canvas'
+    summary: The brush used to draw the stroke.
+    fullName: brush
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'brush: IBrush'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: points
+    uid: '@microsoft/live-share-canvas.IRawStroke.points'
+    package: '@microsoft/live-share-canvas'
+    summary: The stroke's points.
+    fullName: points
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'points: IPointerPoint[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]

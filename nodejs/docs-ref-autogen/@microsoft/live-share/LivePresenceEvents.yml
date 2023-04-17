@@ -1,0 +1,13 @@
+### YamlMime:TSEnum
+name: LivePresenceEvents
+uid: '@microsoft/live-share.LivePresenceEvents'
+package: '@microsoft/live-share'
+summary: Events supported by `LivePresence` object.
+fullName: LivePresenceEvents
+remarks: ''
+isDeprecated: false
+fields:
+  - name: presenceChanged
+    uid: '@microsoft/live-share.LivePresenceEvents.presenceChanged'
+    package: '@microsoft/live-share'
+    summary: The presence for the local or a remote user has changed.

@@ -1,0 +1,152 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teamsfx-react'
+name: '@microsoft/teamsfx-react'
+summary: ''
+type: package
+typeAliases:
+  - '@microsoft/teamsfx-react.TeamsContextWithCredential'
+  - '@microsoft/teamsfx-react.TeamsFxContext'
+functions:
+  - name: 'useData<T>(() => Promise<T>, { autoLoad: boolean })'
+    uid: '@microsoft/teamsfx-react.useData'
+    package: '@microsoft/teamsfx-react'
+    summary: Helper function to fetch data with status and error.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function useData<T>(fetchDataAsync: () => Promise<T>, options?: {
+        autoLoad: boolean }): Data<T>
+      parameters:
+        - id: fetchDataAsync
+          type: () =&gt; Promise&lt;T&gt;
+          description: async function of how to fetch data
+        - id: options
+          type: '{ autoLoad: boolean }'
+          description: if autoLoad is true, reload data immediately
+      return:
+        description: data, loading status, error and reload function
+        type: Data&lt;T&gt;
+  - name: >-
+      useGraph<T>((graph: Client, teamsfx: TeamsFx, scope: string[]) =>
+      Promise<T>, GraphOption)
+    uid: '@microsoft/teamsfx-react.useGraph'
+    package: '@microsoft/teamsfx-react'
+    summary: Helper function to call Microsoft Graph API with authentication.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function useGraph<T>(fetchGraphDataAsync: (graph: Client, teamsfx:
+        TeamsFx, scope: string[]) => Promise<T>, options?: GraphOption): Data<T>
+      parameters:
+        - id: fetchGraphDataAsync
+          type: >-
+            (graph: Client, teamsfx: TeamsFx, scope: string[]) =&gt;
+            Promise&lt;T&gt;
+          description: async function of how to call Graph API and fetch data.
+        - id: options
+          type: GraphOption
+          description: teamsfx instance and OAuth resource scope.
+      return:
+        description: data, loading status, error and reload function
+        type: Data&lt;T&gt;
+  - name: >-
+      useGraphWithCredential<T>((graph: Client, credential: TeamsUserCredential,
+      scope: string[]) => Promise<T>, GraphOptionWithCredential)
+    uid: '@microsoft/teamsfx-react.useGraphWithCredential'
+    package: '@microsoft/teamsfx-react'
+    summary: Helper function to call Microsoft Graph API with authentication.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function useGraphWithCredential<T>(fetchGraphDataAsync: (graph: Client,
+        credential: TeamsUserCredential, scope: string[]) => Promise<T>,
+        options?: GraphOptionWithCredential): Data<T>
+      parameters:
+        - id: fetchGraphDataAsync
+          type: >-
+            (graph: Client, credential: TeamsUserCredential, scope: string[])
+            =&gt; Promise&lt;T&gt;
+          description: async function of how to call Graph API and fetch data.
+        - id: options
+          type: GraphOptionWithCredential
+          description: Authentication configuration and OAuth resource scope.
+      return:
+        description: data, loading status, error and reload function
+        type: Data&lt;T&gt;
+  - name: >-
+      useTeams({ initialTheme?: string, setThemeHandler?: (theme?: string) =>
+      void })
+    uid: '@microsoft/teamsfx-react.useTeams'
+    package: '@microsoft/teamsfx-react'
+    summary: Microsoft Teams React hook
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function useTeams(options?: { initialTheme?: string, setThemeHandler?:
+        (theme?: string) => void }): [{ context?: app.Context, fullScreen?:
+        boolean, inTeams?: boolean, theme: ThemePrepared, themeString: string },
+        { setTheme: (theme: string | undefined) => void }]
+      parameters:
+        - id: options
+          type: >-
+            { initialTheme?: string, setThemeHandler?: (theme?: string) =&gt;
+            void }
+          description: optional options
+      return:
+        description: |-
+          A tuple with properties and methods
+          properties:
+           - inTeams: boolean = true if inside Microsoft Teams
+           - fullscreen: boolean = true if in full screen mode
+           - theme: Fluent UI Theme
+           - themeString: string - representation of the theme (default, dark or contrast)
+           - context - the Microsoft Teams JS SDK context
+          methods:
+           - setTheme - manually set the theme
+        type: >-
+          [{ context?: <xref uid="app.Context" />, fullScreen?: boolean,
+          inTeams?: boolean, theme: ThemePrepared, themeString: string }, {
+          setTheme: (theme: string | undefined) =&gt; void }]
+  - name: useTeamsFx(Record<string, string>)
+    uid: '@microsoft/teamsfx-react.useTeamsFx'
+    package: '@microsoft/teamsfx-react'
+    summary: Initialize TeamsFx SDK with customized configuration.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function useTeamsFx(teamsfxConfig?: Record<string, string>):
+        TeamsFxContext
+      parameters:
+        - id: teamsfxConfig
+          type: Record&lt;string, string&gt;
+          description: custom configuration to override default ones.
+      return:
+        description: TeamsFxContext object
+        type: <xref uid="@microsoft/teamsfx-react.TeamsFxContext" />
+  - name: useTeamsUserCredential(TeamsUserCredentialAuthConfig)
+    uid: '@microsoft/teamsfx-react.useTeamsUserCredential'
+    package: '@microsoft/teamsfx-react'
+    summary: Initialize TeamsFx SDK with customized configuration.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function useTeamsUserCredential(authConfig:
+        TeamsUserCredentialAuthConfig): TeamsContextWithCredential
+      parameters:
+        - id: authConfig
+          type: TeamsUserCredentialAuthConfig
+          description: custom configuration to override default ones.
+      return:
+        description: TeamsContextWithCredential object
+        type: <xref uid="@microsoft/teamsfx-react.TeamsContextWithCredential" />

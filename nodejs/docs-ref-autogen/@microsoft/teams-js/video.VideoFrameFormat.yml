@@ -12,3 +12,4 @@ fields:
     uid: '@microsoft/teams-js.video.VideoFrameFormat.NV12'
     package: '@microsoft/teams-js'
     summary: ''
+    numericValue: 0

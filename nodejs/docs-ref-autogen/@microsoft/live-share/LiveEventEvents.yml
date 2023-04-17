@@ -1,0 +1,13 @@
+### YamlMime:TSEnum
+name: LiveEventEvents
+uid: '@microsoft/live-share.LiveEventEvents'
+package: '@microsoft/live-share'
+summary: Events supported by `LiveEvent` object.
+fullName: LiveEventEvents
+remarks: ''
+isDeprecated: false
+fields:
+  - name: received
+    uid: '@microsoft/live-share.LiveEventEvents.received'
+    package: '@microsoft/live-share'
+    summary: An event has been sent or received.

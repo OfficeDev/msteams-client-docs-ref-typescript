@@ -1,0 +1,19 @@
+### YamlMime:TSEnum
+name: LimitLevelType
+uid: '@microsoft/live-share-media.LimitLevelType'
+package: '@microsoft/live-share-media'
+summary: ''
+fullName: LimitLevelType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: fixed
+    uid: '@microsoft/live-share-media.LimitLevelType.fixed'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    numericValue: 0
+  - name: percentage
+    uid: '@microsoft/live-share-media.LimitLevelType.percentage'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    numericValue: 1

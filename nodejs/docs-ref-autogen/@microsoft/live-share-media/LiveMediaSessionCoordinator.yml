@@ -1,103 +1,178 @@
 ### YamlMime:TSType
-name: MediaPlayerSynchronizer
-uid: '@microsoft/live-share-media.MediaPlayerSynchronizer'
+name: LiveMediaSessionCoordinator
+uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator'
 package: '@microsoft/live-share-media'
 summary: >-
-  Synchronizes a local HTML Media Element with a group of remote HTML Media
-  Elements.
-fullName: MediaPlayerSynchronizer
-remarks: >-
-  All of an apps transport control commands should be routed through the
-  synchronizer. If the
+  The `LiveMediaSessionCoordinator` tracks the playback & position state of all
+  other
 
-  app is not currently joined to the group media session, the commands will be
-  applied directly
+  clients being synchronized with. It is responsible for keeping the local media
+  player
 
-  to the local player. When the group session is joined the commands will be
-  broadcast to the
-
-  group in addition to being applied to the local player.
+  in sync with the group.
+fullName: LiveMediaSessionCoordinator
+remarks: ''
 isDeprecated: false
 type: class
-constructors:
-  - name: MediaPlayerSynchronizer(IMediaPlayer, LiveMediaSession, () => void)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.constructor'
-    package: '@microsoft/live-share-media'
-    summary: Creates a new `MediaElementSynchronizer` instance.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        new MediaPlayerSynchronizer(player: IMediaPlayer, mediaSession:
-        LiveMediaSession, onEnd: () => void)
-      parameters:
-        - id: player
-          type: <xref uid="@microsoft/live-share-media.IMediaPlayer" />
-          description: >-
-            Media player element. This can be an HTML Media Element or any
-            player that looks like an HTML Media Element.
-        - id: mediaSession
-          type: <xref uid="@microsoft/live-share-media.LiveMediaSession" />
-          description: Group MediaSession object being used.
-        - id: onEnd
-          type: () =&gt; void
-          description: >-
-            Optional. Function to call when synchronizers `end()` method is
-            called.
 properties:
-  - name: mediaSession
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.mediaSession'
+  - name: canPlayPause
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.canPlayPause'
     package: '@microsoft/live-share-media'
-    summary: Synchronizers media session.
-    fullName: mediaSession
-    remarks: ''
+    summary: >-
+      Controls whether or not the local client is allowed to instruct the group
+      to play or pause.
+    fullName: canPlayPause
+    remarks: >-
+      This flag largely meant to influence decisions made by the coordinator and
+      can be used by
+
+      the UI to determine what controls should be shown to the user. It does not
+      provide any
+
+      security in itself.
+
+
+      If your app is running in a semi-trusted environment where only some
+      clients are allowed
+
+      to play/pause media, you should use "role based verification" to enforce
+      those policies.
     isDeprecated: false
     syntax:
-      content: LiveMediaSession mediaSession
-      return:
-        description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSession" />
-  - name: player
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.player'
-    package: '@microsoft/live-share-media'
-    summary: Media player being synchronized.
-    fullName: player
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: IMediaPlayer player
-      return:
-        description: ''
-        type: <xref uid="@microsoft/live-share-media.IMediaPlayer" />
-  - name: viewOnly
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.viewOnly'
-    package: '@microsoft/live-share-media'
-    summary: If true the client is in a view only mode.
-    fullName: viewOnly
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: boolean viewOnly
+      content: 'canPlayPause: boolean'
       return:
         description: ''
         type: boolean
-  - name: volumeManager
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.volumeManager'
+  - name: canSeek
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.canSeek'
     package: '@microsoft/live-share-media'
     summary: >-
-      Volume limiter used to temporarily reduce the videos volume when someone
-      speaks in a meeting.
-    fullName: volumeManager
+      Controls whether or not the local client is allowed to seek the group to a
+      new playback
+
+      position.
+    fullName: canSeek
+    remarks: >-
+      This flag largely meant to influence decisions made by the coordinator and
+      can be used by
+
+      the UI to determine what controls should be shown to the user. It does not
+      provide any
+
+      security in itself.
+
+
+      If your app is running in a semi-trusted environment where only some
+      clients are allowed
+
+      to change the playback position, you should use "role based verification"
+      to enforce those policies.
+    isDeprecated: false
+    syntax:
+      content: 'canSeek: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: canSetTrack
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.canSetTrack'
+    package: '@microsoft/live-share-media'
+    summary: Controls whether or not the local client is allowed to change tracks.
+    fullName: canSetTrack
+    remarks: >-
+      This flag largely meant to influence decisions made by the coordinator and
+      can be used by
+
+      the UI to determine what controls should be shown to the user. It does not
+      provide any
+
+      security in itself.
+
+
+      If your app is running in a semi-trusted environment where only some
+      clients are allowed
+
+      to change tracks, you should use "role based verification" to enforce
+      those policies.
+    isDeprecated: false
+    syntax:
+      content: 'canSetTrack: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: canSetTrackData
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.canSetTrackData'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Controls whether or not the local client is allowed to change the tracks
+      custom data object.
+    fullName: canSetTrackData
+    remarks: >-
+      This flag largely meant to influence decisions made by the coordinator and
+      can be used by
+
+      the UI to determine what controls should be shown to the user. It does not
+      provide any
+
+      security in itself.
+
+
+      If your app is running in a semi-trusted environment where only some
+      clients are allowed
+
+      to change the tracks data object, you should use "role based verification"
+      to enforce those
+
+      policies.
+    isDeprecated: false
+    syntax:
+      content: 'canSetTrackData: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: isSuspended
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.isSuspended'
+    package: '@microsoft/live-share-media'
+    summary: Returns true if the local client is in a suspended state.
+    fullName: isSuspended
     remarks: ''
     isDeprecated: false
     syntax:
-      content: VolumeManager volumeManager
+      content: boolean isSuspended
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.VolumeManager" />
+        type: boolean
+  - name: maxPlaybackDrift
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.maxPlaybackDrift'
+    package: '@microsoft/live-share-media'
+    summary: Max amount of playback drift allowed in seconds.
+    fullName: maxPlaybackDrift
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: number maxPlaybackDrift
+      return:
+        description: ''
+        type: number
+  - name: positionUpdateInterval
+    uid: >-
+      @microsoft/live-share-media.LiveMediaSessionCoordinator.positionUpdateInterval
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Frequency with which position updates are broadcast to the rest of the
+      group in
+
+      seconds.
+    fullName: positionUpdateInterval
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: number positionUpdateInterval
+      return:
+        description: ''
+        type: number
 inheritedProperties:
   - name: captureRejections
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.captureRejections'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.captureRejections'
     package: '@microsoft/live-share-media'
     summary: Sets or gets the default captureRejection value for all emitters.
     fullName: captureRejections
@@ -110,7 +185,8 @@ inheritedProperties:
         type: boolean
     inheritanceDescription: <b>Inherited From</b> EventEmitter.captureRejections
   - name: captureRejectionSymbol
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.captureRejectionSymbol'
+    uid: >-
+      @microsoft/live-share-media.LiveMediaSessionCoordinator.captureRejectionSymbol
     package: '@microsoft/live-share-media'
     summary: ''
     fullName: captureRejectionSymbol
@@ -123,7 +199,8 @@ inheritedProperties:
         type: typeof captureRejectionSymbol
     inheritanceDescription: <b>Inherited From</b> EventEmitter.captureRejectionSymbol
   - name: defaultMaxListeners
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.defaultMaxListeners'
+    uid: >-
+      @microsoft/live-share-media.LiveMediaSessionCoordinator.defaultMaxListeners
     package: '@microsoft/live-share-media'
     summary: ''
     fullName: defaultMaxListeners
@@ -136,7 +213,7 @@ inheritedProperties:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.defaultMaxListeners
   - name: errorMonitor
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.errorMonitor'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.errorMonitor'
     package: '@microsoft/live-share-media'
     summary: >-
       This symbol shall be used to install a listener for only monitoring
@@ -165,7 +242,7 @@ inheritedProperties:
     inheritanceDescription: <b>Inherited From</b> EventEmitter.errorMonitor
 inheritedMethods:
   - name: 'addListener(string | symbol, (args: any[]) => void)'
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.addListener'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.addListener'
     package: '@microsoft/live-share-media'
     summary: Alias for `emitter.on(eventName, listener)`.
     remarks: ''
@@ -173,7 +250,7 @@ inheritedMethods:
     syntax:
       content: >-
         function addListener(eventName: string | symbol, listener: (args: any[])
-        => void): MediaPlayerSynchronizer
+        => void): LiveMediaSessionCoordinator
       parameters:
         - id: eventName
           type: string | symbol
@@ -183,10 +260,10 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.addListener
   - name: emit(string | symbol, any[])
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.emit'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.emit'
     package: '@microsoft/live-share-media'
     summary: >-
       Synchronously calls each of the listeners registered for the event
@@ -267,7 +344,7 @@ inheritedMethods:
         type: boolean
     inheritanceDescription: <b>Inherited From</b> EventEmitter.emit
   - name: eventNames()
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.eventNames'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.eventNames'
     package: '@microsoft/live-share-media'
     summary: |-
       Returns an array listing the events for which the emitter has registered
@@ -294,7 +371,7 @@ inheritedMethods:
         type: (string | symbol)[]
     inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
   - name: getEventListeners(_DOMEventTarget | EventEmitter, string | symbol)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.getEventListeners'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.getEventListeners'
     package: '@microsoft/live-share-media'
     summary: >-
       Returns a copy of the array of listeners for the event named `eventName`.
@@ -349,14 +426,14 @@ inheritedMethods:
         type: Function[]
     inheritanceDescription: <b>Inherited From</b> EventEmitter.getEventListeners
   - name: getMaxListeners()
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.getMaxListeners'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.getMaxListeners'
     package: '@microsoft/live-share-media'
     summary: >-
       Returns the current max listener value for the `EventEmitter` which is
       either
 
       set by `emitter.setMaxListeners(n)` or defaults to
-      [defaultMaxListeners](xref:@microsoft/live-share-media.MediaPlayerSynchronizer.defaultMaxListeners).
+      [defaultMaxListeners](xref:@microsoft/live-share-media.LiveMediaSessionCoordinator.defaultMaxListeners).
     remarks: ''
     isDeprecated: false
     syntax:
@@ -366,7 +443,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: listenerCount(EventEmitter, string | symbol)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.listenerCount'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.listenerCount'
     package: '@microsoft/live-share-media'
     summary: >-
       A class method that returns the number of listeners for the given
@@ -407,7 +484,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listenerCount(string | symbol)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.listenerCount'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.listenerCount'
     package: '@microsoft/live-share-media'
     summary: Returns the number of listeners listening to the event named `eventName`.
     remarks: ''
@@ -423,7 +500,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.listenerCount
   - name: listeners(string | symbol)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.listeners'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.listeners'
     package: '@microsoft/live-share-media'
     summary: |-
       Returns a copy of the array of listeners for the event named `eventName`.
@@ -448,7 +525,7 @@ inheritedMethods:
         type: Function[]
     inheritanceDescription: <b>Inherited From</b> EventEmitter.listeners
   - name: 'off(string | symbol, (args: any[]) => void)'
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.off'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.off'
     package: '@microsoft/live-share-media'
     summary: Alias for `emitter.removeListener()`.
     remarks: ''
@@ -456,7 +533,7 @@ inheritedMethods:
     syntax:
       content: >-
         function off(eventName: string | symbol, listener: (args: any[]) =>
-        void): MediaPlayerSynchronizer
+        void): LiveMediaSessionCoordinator
       parameters:
         - id: eventName
           type: string | symbol
@@ -466,10 +543,10 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.off
   - name: on(EventEmitter, string, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.on'
     package: '@microsoft/live-share-media'
     summary: |-
       ```js
@@ -546,7 +623,7 @@ inheritedMethods:
         type: AsyncIterableIterator&lt;any&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'on(string | symbol, (args: any[]) => void)'
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.on'
     package: '@microsoft/live-share-media'
     summary: >-
       Adds the `listener` function to the end of the listeners array for the
@@ -601,7 +678,7 @@ inheritedMethods:
     syntax:
       content: >-
         function on(eventName: string | symbol, listener: (args: any[]) =>
-        void): MediaPlayerSynchronizer
+        void): LiveMediaSessionCoordinator
       parameters:
         - id: eventName
           type: string | symbol
@@ -611,10 +688,10 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'once(string | symbol, (args: any[]) => void)'
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.once'
     package: '@microsoft/live-share-media'
     summary: >-
       Adds a **one-time**`listener` function for the event named `eventName`.
@@ -665,7 +742,7 @@ inheritedMethods:
     syntax:
       content: >-
         function once(eventName: string | symbol, listener: (args: any[]) =>
-        void): MediaPlayerSynchronizer
+        void): LiveMediaSessionCoordinator
       parameters:
         - id: eventName
           type: string | symbol
@@ -675,10 +752,10 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: once(_DOMEventTarget, string, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once_1'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.once_1'
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
@@ -702,7 +779,7 @@ inheritedMethods:
         type: Promise&lt;any[]&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: once(_NodeEventTarget, string | symbol, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.once'
     package: '@microsoft/live-share-media'
     summary: >-
       Creates a `Promise` that is fulfilled when the `EventEmitter` emits the
@@ -842,7 +919,7 @@ inheritedMethods:
         type: Promise&lt;any[]&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: 'prependListener(string | symbol, (args: any[]) => void)'
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.prependListener'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.prependListener'
     package: '@microsoft/live-share-media'
     summary: >-
       Adds the `listener` function to the _beginning_ of the listeners array for
@@ -872,7 +949,7 @@ inheritedMethods:
     syntax:
       content: >-
         function prependListener(eventName: string | symbol, listener: (args:
-        any[]) => void): MediaPlayerSynchronizer
+        any[]) => void): LiveMediaSessionCoordinator
       parameters:
         - id: eventName
           type: string | symbol
@@ -882,10 +959,11 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.prependListener
   - name: 'prependOnceListener(string | symbol, (args: any[]) => void)'
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.prependOnceListener'
+    uid: >-
+      @microsoft/live-share-media.LiveMediaSessionCoordinator.prependOnceListener
     package: '@microsoft/live-share-media'
     summary: >-
       Adds a **one-time**`listener` function for the event named `eventName` to
@@ -910,7 +988,7 @@ inheritedMethods:
     syntax:
       content: >-
         function prependOnceListener(eventName: string | symbol, listener:
-        (args: any[]) => void): MediaPlayerSynchronizer
+        (args: any[]) => void): LiveMediaSessionCoordinator
       parameters:
         - id: eventName
           type: string | symbol
@@ -920,10 +998,10 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.prependOnceListener
   - name: rawListeners(string | symbol)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.rawListeners'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.rawListeners'
     package: '@microsoft/live-share-media'
     summary: |-
       Returns a copy of the array of listeners for the event named `eventName`,
@@ -965,7 +1043,7 @@ inheritedMethods:
         type: Function[]
     inheritanceDescription: <b>Inherited From</b> EventEmitter.rawListeners
   - name: removeAllListeners(string | symbol)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.removeAllListeners'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.removeAllListeners'
     package: '@microsoft/live-share-media'
     summary: |-
       Removes all listeners, or those of the specified `eventName`.
@@ -980,17 +1058,17 @@ inheritedMethods:
     syntax:
       content: >-
         function removeAllListeners(event?: string | symbol):
-        MediaPlayerSynchronizer
+        LiveMediaSessionCoordinator
       parameters:
         - id: event
           type: string | symbol
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: 'removeListener(string | symbol, (args: any[]) => void)'
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.removeListener'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.removeListener'
     package: '@microsoft/live-share-media'
     summary: >-
       Removes the specified `listener` from the listener array for the event
@@ -1134,7 +1212,7 @@ inheritedMethods:
     syntax:
       content: >-
         function removeListener(eventName: string | symbol, listener: (args:
-        any[]) => void): MediaPlayerSynchronizer
+        any[]) => void): LiveMediaSessionCoordinator
       parameters:
         - id: eventName
           type: string | symbol
@@ -1144,10 +1222,10 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeListener
   - name: setMaxListeners(number)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setMaxListeners'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.setMaxListeners'
     package: '@microsoft/live-share-media'
     summary: >-
       By default `EventEmitter`s will print a warning if more than `10`
@@ -1166,17 +1244,17 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): MediaPlayerSynchronizer'
+      content: 'function setMaxListeners(n: number): LiveMediaSessionCoordinator'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
   - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setMaxListeners'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.setMaxListeners'
     package: '@microsoft/live-share-media'
     summary: |-
       ```js
@@ -1207,170 +1285,155 @@ inheritedMethods:
           description: ''
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
 methods:
-  - name: >-
-      addEventListener(MediaPlayerSynchronizerEvents, (evt:
-      IMediaPlayerSynchronizerEvent) => void)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.addEventListener'
+  - name: beginSuspension(CoordinationWaitPoint)
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.beginSuspension'
     package: '@microsoft/live-share-media'
-    summary: Registers a new event listener.
-    remarks: ''
+    summary: Begins a new local suspension.
+    remarks: >-
+      Suspension temporarily suspend the clients local synchronization with the
+      group. This can
+
+      be useful for displaying ads to users or temporarily disconnecting from
+      the session while
+
+      the user seeks the video using a timeline scrubber.
+
+
+      Multiple simultaneous suspensions are allowed and when the last suspension
+      ends the local
+
+      client will be immediately re-synchronized with the group.
+
+
+      A "Dynamic Wait Point" can be specified when `beginSuspension()` is called
+      and the wait
+
+      point will be broadcast to all other clients in the group.  Those clients
+      will then
+
+      automatically enter a suspension state once they reach the positions
+      specified by the
+
+      wait point. Clients that are passed the wait point will immediately
+      suspend.
+
+
+      Any wait point based suspension (dynamic or static) will result in all
+      clients remaining
+
+      in a suspension state until the list client ends their suspension. This
+      behavior can be
+
+      conditionally bypassed by settings the wait points `maxClients` value.
+
+
+      Throws an exception if the session/coordinator hasn't been initialized.
     isDeprecated: false
     syntax:
       content: >-
-        function addEventListener(event: MediaPlayerSynchronizerEvents,
-        listener: (evt: IMediaPlayerSynchronizerEvent) => void):
-        MediaPlayerSynchronizer
+        function beginSuspension(waitPoint?: CoordinationWaitPoint):
+        MediaSessionCoordinatorSuspension
       parameters:
-        - id: event
-          type: >-
-            <xref
-            uid="@microsoft/live-share-media.MediaPlayerSynchronizerEvents" />
-          description: Name of the event to add.
-        - id: listener
-          type: '(evt: IMediaPlayerSynchronizerEvent) =&gt; void'
-          description: Function to call when the event is triggered.
+        - id: waitPoint
+          type: <xref uid="@microsoft/live-share-media.CoordinationWaitPoint" />
+          description: Optional. Dynamic wait point to broadcast to all of the clients.
       return:
-        description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
-  - name: beginSeek()
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.beginSeek'
-    package: '@microsoft/live-share-media'
-    summary: Begin a local seek operation.
-    remarks: >-
-      UI can call this when a user grabs a timeline scrubber and starts
-      scrubbing the video to a
-
-      new playback position. The synchronizer will being a new suspension which
-      temporarily
-
-      disconnects the client for the rest of the group for synchronization
-      purposes. Calling
-
-      `endSeek()` will end the suspension and seek the group to the users final
-      seek position.
-    isDeprecated: false
-    syntax:
-      content: function beginSeek()
-  - name: end()
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.end'
-    package: '@microsoft/live-share-media'
-    summary: Ends synchronization of the current media player.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: function end()
-  - name: endSeek(number)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.endSeek'
-    package: '@microsoft/live-share-media'
-    summary: Ends a seek operation that was started by calling `beginSeek()`.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function endSeek(seekTo: number)'
-      parameters:
-        - id: seekTo
-          type: number
-          description: Playback position in seconds to seek the group to.
+        description: >-
+          The suspension object. Call `end()` on the returned suspension to end
+          the suspension.
+        type: >-
+          <xref
+          uid="@microsoft/live-share-media.MediaSessionCoordinatorSuspension" />
   - name: pause()
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.pause'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.pause'
     package: '@microsoft/live-share-media'
-    summary: Tells the group to pause the current video.
+    summary: Instructs the group to pause the current track.
     remarks: >-
-      For proper operation apps should avoid calling
-      `mediaSession.coordinator.pause()` directly
+      Throws an exception if the session/coordinator hasn't been initialized, no
+      track has been
 
-      and instead use the synchronizers `pause()` method.
+      loaded, or `canPlayPause` is false.
     isDeprecated: false
     syntax:
       content: function pause()
   - name: play()
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.play'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.play'
     package: '@microsoft/live-share-media'
-    summary: Tells the group to begin playing the current video.
+    summary: Instructs the group to play the current track.
     remarks: >-
-      For proper operation apps should avoid calling
-      `mediaSession.coordinator.play()` directly
+      Throws an exception if the session/coordinator hasn't been initialized, no
+      track has been
 
-      and instead use the synchronizers `play()` method.
+      loaded, or `canPlayPause` is false.
     isDeprecated: false
     syntax:
       content: function play()
-  - name: >-
-      removeEventListener(MediaPlayerSynchronizerEvents, (evt:
-      IMediaPlayerSynchronizerEvent) => void)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.removeEventListener'
-    package: '@microsoft/live-share-media'
-    summary: Un-registers an existing event listener.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function removeEventListener(event: MediaPlayerSynchronizerEvents,
-        listener: (evt: IMediaPlayerSynchronizerEvent) => void):
-        MediaPlayerSynchronizer
-      parameters:
-        - id: event
-          type: >-
-            <xref
-            uid="@microsoft/live-share-media.MediaPlayerSynchronizerEvents" />
-          description: Name of the event to remove.
-        - id: listener
-          type: '(evt: IMediaPlayerSynchronizerEvent) =&gt; void'
-          description: Function that was registered in call to `addEventListener()`.
-      return:
-        description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
   - name: seekTo(number)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.seekTo'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.seekTo'
     package: '@microsoft/live-share-media'
-    summary: Tells the group to seek the current video to a new playback position.
+    summary: Instructs the group to seek to a new position within the current track.
     remarks: >-
-      For proper operation apps should avoid calling
-      `mediaSession.coordinator.seekTo()` directly
+      Throws an exception if the session/coordinator hasn't been initialized, no
+      track has been
 
-      and instead use the synchronizers `seekTo()` method.
+      loaded, or `canSeek` is false.
     isDeprecated: false
     syntax:
       content: 'function seekTo(time: number)'
       parameters:
         - id: time
           type: number
-          description: ''
-  - name: setTrack(ExtendedMediaMetadata, CoordinationWaitPoint[])
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setTrack'
+          description: Playback position in seconds to seek to.
+  - name: setTrack(null | ExtendedMediaMetadata, CoordinationWaitPoint[])
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.setTrack'
     package: '@microsoft/live-share-media'
-    summary: Tells the group to change to a new track.
+    summary: Instructs the group to load a new track.
     remarks: >-
-      For proper operation apps should avoid calling
-      `mediaSession.coordinator.setTrack()` directly
+      Throws an exception if the session/coordinator hasn't been initialized or
+      `canSetTrack` is
 
-      and instead use the synchronizers `setTrack()` method.
+      false.
     isDeprecated: false
     syntax:
       content: >-
-        function setTrack(track: ExtendedMediaMetadata, waitPoints?:
+        function setTrack(metadata: null | ExtendedMediaMetadata, waitPoints?:
         CoordinationWaitPoint[])
       parameters:
-        - id: track
-          type: <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata" />
-          description: ''
+        - id: metadata
+          type: >-
+            null | <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata"
+            />
+          description: >-
+            The track to load or `null` to indicate that the end of the track is
+            reached.
         - id: waitPoints
           type: <xref uid="@microsoft/live-share-media.CoordinationWaitPoint" />[]
-          description: ''
+          description: >-
+            Optional. List of static wait points to configure for the track. 
+            Dynamic wait points can be added via the `beginSuspension()` call.
   - name: setTrackData(null | object)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setTrackData'
+    uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.setTrackData'
     package: '@microsoft/live-share-media'
-    summary: Updates the current tracks data object.
+    summary: Updates the track data object for the current track.
     remarks: >-
-      For proper operation apps should avoid calling
-      `mediaSession.coordinator.setTrackData()` directly
+      The track data object can be used by applications to synchronize things
+      like pitch, roll,
 
-      and instead use the synchronizers `setTrackData()` method.
+      and yaw of a 360 video. This data object will be reset to null anytime the
+      track changes.
+
+
+      Throws an exception if the session/coordinator hasn't been initialized or
+      `canSetTrackData` is
+
+      false.
     isDeprecated: false
     syntax:
       content: 'function setTrackData(data: null | object)'
       parameters:
         - id: data
           type: null | object
-          description: ''
+          description: >-
+            New data object to sync with the group. This value will be
+            synchronized using a last writer wins strategy.
 extends: EventEmitter

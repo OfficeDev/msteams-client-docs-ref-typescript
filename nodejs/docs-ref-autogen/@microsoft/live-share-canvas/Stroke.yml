@@ -121,6 +121,17 @@ methods:
         - id: serializedStroke
           type: string
           description: The serialized stroke.
+  - name: getAllPoints()
+    uid: '@microsoft/live-share-canvas.Stroke.getAllPoints'
+    package: '@microsoft/live-share-canvas'
+    summary: Gets a copy of all the points in the stroke.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getAllPoints(): IPointerPoint[]'
+      return:
+        description: A collection of points.
+        type: <xref uid="@microsoft/live-share-canvas.IPointerPoint" />[]
   - name: getBoundingRect()
     uid: '@microsoft/live-share-canvas.Stroke.getBoundingRect'
     package: '@microsoft/live-share-canvas'

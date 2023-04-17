@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: INtpTimeInfo
+uid: '@microsoft/live-share.INtpTimeInfo'
+package: '@microsoft/live-share'
+summary: >-
+  Returned from `LiveShareHost.getNtpTime()` to specify the global timestamp for
+  the current
+
+  Live Share session.
+fullName: INtpTimeInfo
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: ntpTime
+    uid: '@microsoft/live-share.INtpTimeInfo.ntpTime'
+    package: '@microsoft/live-share'
+    summary: 'ISO 8601 formatted server time. For example: ''2019-09-07T15:50-04:00'''
+    fullName: ntpTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ntpTime: string'
+      return:
+        description: ''
+        type: string
+  - name: ntpTimeInUTC
+    uid: '@microsoft/live-share.INtpTimeInfo.ntpTimeInUTC'
+    package: '@microsoft/live-share'
+    summary: >-
+      Server time expressed as the number of milliseconds since the ECMAScript
+      epoch.
+    fullName: ntpTimeInUTC
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ntpTimeInUTC: number'
+      return:
+        description: ''
+        type: number

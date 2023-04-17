@@ -1497,6 +1497,28 @@ methods:
           description: |-
             The center of the eraser rectangle. The size of the rectangle is
             determined by the `eraserSize` property.
+  - name: exportRaw()
+    uid: '@microsoft/live-share-canvas.InkingManager.exportRaw'
+    package: '@microsoft/live-share-canvas'
+    summary: Exports the current drawing as a collection of raw strokes.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function exportRaw(): IRawStroke[]'
+      return:
+        description: A collection or raw strokes.
+        type: <xref uid="@microsoft/live-share-canvas.IRawStroke" />[]
+  - name: exportSVG()
+    uid: '@microsoft/live-share-canvas.InkingManager.exportSVG'
+    package: '@microsoft/live-share-canvas'
+    summary: Exports the current drawing to an SVG.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function exportSVG(): string'
+      return:
+        description: A serialized SVG string.
+        type: string
   - name: getStroke(string)
     uid: '@microsoft/live-share-canvas.InkingManager.getStroke'
     package: '@microsoft/live-share-canvas'
@@ -1512,6 +1534,18 @@ methods:
       return:
         description: The stroke with the specified id.
         type: undefined | <xref uid="@microsoft/live-share-canvas.IStroke" />
+  - name: importRaw(IRawStroke[])
+    uid: '@microsoft/live-share-canvas.InkingManager.importRaw'
+    package: '@microsoft/live-share-canvas'
+    summary: Imports (adds) the specified strokes into the drawing.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function importRaw(rawStrokes: IRawStroke[])'
+      parameters:
+        - id: rawStrokes
+          type: <xref uid="@microsoft/live-share-canvas.IRawStroke" />[]
+          description: The strokes to import.
   - name: pointErase(IPoint)
     uid: '@microsoft/live-share-canvas.InkingManager.pointErase'
     package: '@microsoft/live-share-canvas'

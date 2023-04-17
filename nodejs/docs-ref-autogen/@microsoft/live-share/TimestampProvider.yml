@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: TimestampProvider
+uid: '@microsoft/live-share.TimestampProvider'
+package: '@microsoft/live-share'
+summary: Default `ITimestampProvider` implementation.
+fullName: TimestampProvider
+remarks: ''
+isDeprecated: false
+type: class
+properties:
+  - name: isRunning
+    uid: '@microsoft/live-share.TimestampProvider.isRunning'
+    package: '@microsoft/live-share'
+    summary: Returns true if the provider has been started.
+    fullName: isRunning
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isRunning
+      return:
+        description: ''
+        type: boolean
+methods:
+  - name: getMaxTimestampError()
+    uid: '@microsoft/live-share.TimestampProvider.getMaxTimestampError'
+    package: '@microsoft/live-share'
+    summary: Returns the maximum amount of error, in milliseconds.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxTimestampError(): number'
+      return:
+        description: ''
+        type: number
+  - name: getTimestamp()
+    uid: '@microsoft/live-share.TimestampProvider.getTimestamp'
+    package: '@microsoft/live-share'
+    summary: Returns the current server time as a UTC tick.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getTimestamp(): number'
+      return:
+        description: ''
+        type: number
+  - name: start()
+    uid: '@microsoft/live-share.TimestampProvider.start'
+    package: '@microsoft/live-share'
+    summary: Starts the provider.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function start(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: stop()
+    uid: '@microsoft/live-share.TimestampProvider.stop'
+    package: '@microsoft/live-share'
+    summary: Stops the provider if its running.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function stop()

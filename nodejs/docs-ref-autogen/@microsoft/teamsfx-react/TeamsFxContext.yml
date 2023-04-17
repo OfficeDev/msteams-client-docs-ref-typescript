@@ -1,0 +1,18 @@
+### YamlMime:TSTypeAlias
+name: TeamsFxContext
+uid: '@microsoft/teamsfx-react.TeamsFxContext'
+package: '@microsoft/teamsfx-react'
+summary: ''
+fullName: TeamsFxContext
+remarks: ''
+isDeprecated: false
+syntax: |
+  type TeamsFxContext = {
+    context?: any,
+    error: unknown,
+    inTeams?: boolean,
+    loading: boolean,
+    teamsfx?: TeamsFx,
+    theme: ThemePrepared,
+    themeString: string,
+  }

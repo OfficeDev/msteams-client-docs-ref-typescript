@@ -2,56 +2,17 @@
   items:
     - name: Overview
       uid: '@microsoft/live-share'
-    - uid: '@microsoft/live-share.EphemeralEvent'
-      name: EphemeralEvent
+    - uid: '@microsoft/live-share.ContainerState'
+      name: ContainerState
       items: []
-    - uid: '@microsoft/live-share.EphemeralEventEvents'
-      name: EphemeralEventEvents
-      items: []
-    - uid: '@microsoft/live-share.EphemeralEventListener'
-      name: EphemeralEventListener
-      items: []
-    - uid: '@microsoft/live-share.EphemeralEventScope'
-      name: EphemeralEventScope
-      items: []
-    - uid: '@microsoft/live-share.EphemeralEventSource'
-      name: EphemeralEventSource
-      items: []
-    - uid: '@microsoft/live-share.EphemeralEventTarget'
-      name: EphemeralEventTarget
-      items: []
-    - uid: '@microsoft/live-share.EphemeralEventTimer'
-      name: EphemeralEventTimer
-      items: []
-    - uid: '@microsoft/live-share.EphemeralObjectSynchronizer'
-      name: EphemeralObjectSynchronizer
-      items: []
-    - uid: '@microsoft/live-share.EphemeralPresence'
-      name: EphemeralPresence
-      items: []
-    - uid: '@microsoft/live-share.EphemeralPresenceEvents'
-      name: EphemeralPresenceEvents
-      items: []
-    - uid: '@microsoft/live-share.EphemeralPresenceUser'
-      name: EphemeralPresenceUser
-      items: []
-    - uid: '@microsoft/live-share.EphemeralState'
-      name: EphemeralState
-      items: []
-    - uid: '@microsoft/live-share.EphemeralStateEvents'
-      name: EphemeralStateEvents
-      items: []
-    - uid: '@microsoft/live-share.EphemeralTelemetryLogger'
-      name: EphemeralTelemetryLogger
-      items: []
-    - uid: '@microsoft/live-share.EphemeralTimer'
-      name: EphemeralTimer
-      items: []
-    - uid: '@microsoft/live-share.EphemeralTimerEvents'
-      name: EphemeralTimerEvents
+    - uid: '@microsoft/live-share.DynamicObjectRegistry'
+      name: DynamicObjectRegistry
       items: []
     - uid: '@microsoft/live-share.GetSynchronizationState'
       name: GetSynchronizationState
+      items: []
+    - uid: '@microsoft/live-share.HostTimestampProvider'
+      name: HostTimestampProvider
       items: []
     - uid: '@microsoft/live-share.IClientTimestamp'
       name: IClientTimestamp
@@ -59,44 +20,113 @@
     - uid: '@microsoft/live-share.IContainerRuntimeSignaler'
       name: IContainerRuntimeSignaler
       items: []
-    - uid: '@microsoft/live-share.IEphemeralEvent'
-      name: IEphemeralEvent
-      items: []
-    - uid: '@microsoft/live-share.IEphemeralEventEvents'
-      name: IEphemeralEventEvents
-      items: []
-    - uid: '@microsoft/live-share.IEphemeralPresenceEvents'
-      name: IEphemeralPresenceEvents
-      items: []
-    - uid: '@microsoft/live-share.IEphemeralStateEvents'
-      name: IEphemeralStateEvents
-      items: []
-    - uid: '@microsoft/live-share.IEphemeralTelemetryProperties'
-      name: IEphemeralTelemetryProperties
-      items: []
-    - uid: '@microsoft/live-share.IEphemeralTimerEvents'
-      name: IEphemeralTimerEvents
-      items: []
     - uid: '@microsoft/live-share.IEvent'
       name: IEvent
+      items: []
+    - uid: '@microsoft/live-share.IFluidContainerInfo'
+      name: IFluidContainerInfo
+      items: []
+    - uid: '@microsoft/live-share.IFluidTenantInfo'
+      name: IFluidTenantInfo
+      items: []
+    - uid: '@microsoft/live-share.ILiveEvent'
+      name: ILiveEvent
+      items: []
+    - uid: '@microsoft/live-share.ILiveEventEvents'
+      name: ILiveEventEvents
+      items: []
+    - uid: '@microsoft/live-share.ILivePresenceEvents'
+      name: ILivePresenceEvents
+      items: []
+    - uid: '@microsoft/live-share.ILiveShareClientOptions'
+      name: ILiveShareClientOptions
+      items: []
+    - uid: '@microsoft/live-share.ILiveShareHost'
+      name: ILiveShareHost
+      items: []
+    - uid: '@microsoft/live-share.ILiveStateEvents'
+      name: ILiveStateEvents
+      items: []
+    - uid: '@microsoft/live-share.ILiveTelemetryProperties'
+      name: ILiveTelemetryProperties
+      items: []
+    - uid: '@microsoft/live-share.ILiveTimerEvents'
+      name: ILiveTimerEvents
+      items: []
+    - uid: '@microsoft/live-share.INtpTimeInfo'
+      name: INtpTimeInfo
       items: []
     - uid: '@microsoft/live-share.IRuntimeSignaler'
       name: IRuntimeSignaler
       items: []
-    - uid: '@microsoft/live-share.ITeamsFluidClientOptions'
-      name: ITeamsFluidClientOptions
-      items: []
     - uid: '@microsoft/live-share.ITimerConfig'
       name: ITimerConfig
       items: []
-    - uid: '@microsoft/live-share.OutgoingEphemeralEvent'
-      name: OutgoingEphemeralEvent
+    - uid: '@microsoft/live-share.LiveEvent'
+      name: LiveEvent
+      items: []
+    - uid: '@microsoft/live-share.LiveEventEvents'
+      name: LiveEventEvents
+      items: []
+    - uid: '@microsoft/live-share.LiveEventListener'
+      name: LiveEventListener
+      items: []
+    - uid: '@microsoft/live-share.LiveEventScope'
+      name: LiveEventScope
+      items: []
+    - uid: '@microsoft/live-share.LiveEventSource'
+      name: LiveEventSource
+      items: []
+    - uid: '@microsoft/live-share.LiveEventTarget'
+      name: LiveEventTarget
+      items: []
+    - uid: '@microsoft/live-share.LiveEventTimer'
+      name: LiveEventTimer
+      items: []
+    - uid: '@microsoft/live-share.LiveObjectSynchronizer'
+      name: LiveObjectSynchronizer
+      items: []
+    - uid: '@microsoft/live-share.LivePresence'
+      name: LivePresence
+      items: []
+    - uid: '@microsoft/live-share.LivePresenceEvents'
+      name: LivePresenceEvents
+      items: []
+    - uid: '@microsoft/live-share.LivePresenceUser'
+      name: LivePresenceUser
+      items: []
+    - uid: '@microsoft/live-share.LiveShareClient'
+      name: LiveShareClient
+      items: []
+    - uid: '@microsoft/live-share.LiveState'
+      name: LiveState
+      items: []
+    - uid: '@microsoft/live-share.LiveStateEvents'
+      name: LiveStateEvents
+      items: []
+    - uid: '@microsoft/live-share.LiveTelemetryLogger'
+      name: LiveTelemetryLogger
+      items: []
+    - uid: '@microsoft/live-share.LiveTimer'
+      name: LiveTimer
+      items: []
+    - uid: '@microsoft/live-share.LiveTimerEvents'
+      name: LiveTimerEvents
+      items: []
+    - uid: '@microsoft/live-share.LocalTimestampProvider'
+      name: LocalTimestampProvider
+      items: []
+    - uid: '@microsoft/live-share.OutgoingLiveEvent'
+      name: OutgoingLiveEvent
       items: []
     - uid: '@microsoft/live-share.PresenceState'
       name: PresenceState
       items: []
-    - uid: '@microsoft/live-share.TeamsFluidClient'
-      name: TeamsFluidClient
+    - uid: '@microsoft/live-share.TestLiveShareHost'
+      name: TestLiveShareHost
+      items: []
+    - uid: '@microsoft/live-share.TimestampProvider'
+      name: TimestampProvider
       items: []
     - uid: '@microsoft/live-share.UpdateSynchronizationState'
       name: UpdateSynchronizationState
@@ -180,6 +210,9 @@
     - uid: '@microsoft/live-share-canvas.IPointerPoint'
       name: IPointerPoint
       items: []
+    - uid: '@microsoft/live-share-canvas.IRawStroke'
+      name: IRawStroke
+      items: []
     - uid: '@microsoft/live-share-canvas.IRect'
       name: IRect
       items: []
@@ -238,15 +271,6 @@
     - uid: '@microsoft/live-share-media.CoordinationWaitPoint'
       name: CoordinationWaitPoint
       items: []
-    - uid: '@microsoft/live-share-media.EphemeralMediaSession'
-      name: EphemeralMediaSession
-      items: []
-    - uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinator'
-      name: EphemeralMediaSessionCoordinator
-      items: []
-    - uid: '@microsoft/live-share-media.EphemeralMediaSessionCoordinatorSuspension'
-      name: EphemeralMediaSessionCoordinatorSuspension
-      items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaMetadata'
       name: ExtendedMediaMetadata
       items: []
@@ -268,8 +292,17 @@
     - uid: '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent'
       name: IMediaPlayerSynchronizerEvent
       items: []
-    - uid: '@microsoft/live-share-media.LevelType'
-      name: LevelType
+    - uid: '@microsoft/live-share-media.LimitLevelType'
+      name: LimitLevelType
+      items: []
+    - uid: '@microsoft/live-share-media.LiveMediaSession'
+      name: LiveMediaSession
+      items: []
+    - uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator'
+      name: LiveMediaSessionCoordinator
+      items: []
+    - uid: '@microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension'
+      name: LiveMediaSessionCoordinatorSuspension
       items: []
     - uid: '@microsoft/live-share-media.MediaPlayerSynchronizer'
       name: MediaPlayerSynchronizer
@@ -292,8 +325,8 @@
     - uid: '@microsoft/live-share-media.RepeatedActionThrottler'
       name: RepeatedActionThrottler
       items: []
-    - uid: '@microsoft/live-share-media.VolumeLimiter'
-      name: VolumeLimiter
+    - uid: '@microsoft/live-share-media.VolumeManager'
+      name: VolumeManager
       items: []
 - name: '@microsoft/teams-js'
   items:
@@ -831,28 +864,14 @@
         - uid: '@microsoft/teams-js.video.EffectFailureReason'
           name: EffectFailureReason
           items: []
-        - name: mediaStream
-          items:
-            - name: Overview
-              uid: '@microsoft/teams-js.video.mediaStream'
-            - uid: '@microsoft/teams-js.video.mediaStream.MediaStreamFrameData'
-              name: MediaStreamFrameData
-              items: []
-            - uid: '@microsoft/teams-js.video.mediaStream.VideoFrameCallback'
-              name: VideoFrameCallback
-              items: []
-        - name: sharedFrame
-          items:
-            - name: Overview
-              uid: '@microsoft/teams-js.video.sharedFrame'
-            - uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameCallback'
-              name: VideoFrameCallback
-              items: []
-            - uid: '@microsoft/teams-js.video.sharedFrame.VideoFrameData'
-              name: VideoFrameData
-              items: []
         - uid: '@microsoft/teams-js.video.VideoEffectCallback'
           name: VideoEffectCallback
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoFrame'
+          name: VideoFrame
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoFrameCallback'
+          name: VideoFrameCallback
           items: []
         - uid: '@microsoft/teams-js.video.VideoFrameConfig'
           name: VideoFrameConfig
@@ -1071,4 +1090,14 @@
       items: []
     - uid: '@microsoft/teamsfx.UserInfo'
       name: UserInfo
+      items: []
+- name: '@microsoft/teamsfx-react'
+  items:
+    - name: Overview
+      uid: '@microsoft/teamsfx-react'
+    - uid: '@microsoft/teamsfx-react.TeamsContextWithCredential'
+      name: TeamsContextWithCredential
+      items: []
+    - uid: '@microsoft/teamsfx-react.TeamsFxContext'
+      name: TeamsFxContext
       items: []

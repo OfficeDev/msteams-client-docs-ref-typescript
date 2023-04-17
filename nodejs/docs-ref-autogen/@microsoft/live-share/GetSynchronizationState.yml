@@ -3,8 +3,8 @@ name: GetSynchronizationState
 uid: '@microsoft/live-share.GetSynchronizationState'
 package: '@microsoft/live-share'
 summary: >-
-  Callback function used to the get the current state of an ephemeral object
-  that's being
+  Callback function used to the get the current state of an live object that's
+  being
 
   synchronized.
 fullName: GetSynchronizationState<TState>

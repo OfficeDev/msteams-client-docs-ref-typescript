@@ -4,17 +4,17 @@ name: '@microsoft/live-share-media'
 summary: ''
 type: package
 enums:
-  - '@microsoft/live-share-media.LevelType'
+  - '@microsoft/live-share-media.LimitLevelType'
   - '@microsoft/live-share-media.MediaPlayerSynchronizerEvents'
   - '@microsoft/live-share-media.MediaSessionCoordinatorEvents'
 classes:
-  - '@microsoft/live-share-media.EphemeralMediaSession'
-  - '@microsoft/live-share-media.EphemeralMediaSessionCoordinator'
-  - '@microsoft/live-share-media.EphemeralMediaSessionCoordinatorSuspension'
+  - '@microsoft/live-share-media.LiveMediaSession'
+  - '@microsoft/live-share-media.LiveMediaSessionCoordinator'
+  - '@microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension'
   - '@microsoft/live-share-media.MediaPlayerSynchronizer'
   - '@microsoft/live-share-media.MediaSessionActionThrottler'
   - '@microsoft/live-share-media.RepeatedActionThrottler'
-  - '@microsoft/live-share-media.VolumeLimiter'
+  - '@microsoft/live-share-media.VolumeManager'
 interfaces:
   - '@microsoft/live-share-media.CoordinationWaitPoint'
   - '@microsoft/live-share-media.ExtendedMediaMetadata'
