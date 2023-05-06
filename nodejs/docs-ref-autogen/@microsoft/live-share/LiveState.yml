@@ -5,7 +5,7 @@ package: '@microsoft/live-share'
 summary: >-
   Live fluid object that synchronizes a named state and optional data value
   across clients.
-fullName: LiveState<TData>
+fullName: LiveState<TState>
 remarks: >-
   The primary benefit of using the `LiveState` object in a Teams meeting, versus
   something
@@ -17,7 +17,7 @@ remarks: >-
 isDeprecated: false
 type: class
 constructors:
-  - name: 'LiveState<TData>(IDataObjectProps<{ Events: ILiveStateEvents<TData> }>)'
+  - name: 'LiveState<TState>(IDataObjectProps<{ Events: ILiveStateEvents<TState> }>)'
     uid: '@microsoft/live-share.LiveState.constructor'
     package: '@microsoft/live-share'
     summary: ''
@@ -25,25 +25,13 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new LiveState(props: IDataObjectProps<{ Events: ILiveStateEvents<TData>
+        new LiveState(props: IDataObjectProps<{ Events: ILiveStateEvents<TState>
         }>)
       parameters:
         - id: props
-          type: 'IDataObjectProps&lt;{ Events: ILiveStateEvents&lt;TData&gt; }&gt;'
+          type: 'IDataObjectProps&lt;{ Events: ILiveStateEvents&lt;TState&gt; }&gt;'
           description: ''
 properties:
-  - name: data
-    uid: '@microsoft/live-share.LiveState.data'
-    package: '@microsoft/live-share'
-    summary: Optional data object for the current state.
-    fullName: data
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: undefined | TData data
-      return:
-        description: ''
-        type: undefined | TData
   - name: disposed
     uid: '@microsoft/live-share.LiveState.disposed'
     package: '@microsoft/live-share'
@@ -64,12 +52,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'static factory: DataObjectFactory<LiveState<undefined>, DataObjectTypes>'
+      content: 'static factory: DataObjectFactory<LiveState<any>, DataObjectTypes>'
       return:
         description: ''
         type: >-
           DataObjectFactory&lt;<xref uid="@microsoft/live-share.LiveState"
-          />&lt;undefined&gt;, DataObjectTypes&gt;
+          />&lt;any&gt;, DataObjectTypes&gt;
   - name: handle
     uid: '@microsoft/live-share.LiveState.handle'
     package: '@microsoft/live-share'
@@ -138,10 +126,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'static INITIAL_STATE: "" = ""'
+      content: 'static INITIAL_STATE: undefined'
       return:
         description: ''
-        type: '""'
+        type: undefined
   - name: isInitialized
     uid: '@microsoft/live-share.LiveState.isInitialized'
     package: '@microsoft/live-share'
@@ -174,10 +162,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: string state
+      content: TState state
       return:
         description: ''
-        type: string
+        type: TState
   - name: TypeName
     uid: '@microsoft/live-share.LiveState.TypeName'
     package: '@microsoft/live-share'
@@ -202,14 +190,14 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        addListener: TypedEventTransform<LiveState<TData>,
-        ILiveStateEvents<TData> & IEvent>
+        addListener: TypedEventTransform<LiveState<TState>,
+        ILiveStateEvents<TState> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveState"
-          />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
-          />&lt;TData&gt; & IEvent&gt;
+          />&lt;TState&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
+          />&lt;TState&gt; & IEvent&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.addListener
   - name: captureRejections
     uid: '@microsoft/live-share.LiveState.captureRejections'
@@ -287,14 +275,14 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        off: TypedEventTransform<LiveState<TData>, ILiveStateEvents<TData> &
+        off: TypedEventTransform<LiveState<TState>, ILiveStateEvents<TState> &
         IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveState"
-          />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
-          />&lt;TData&gt; & IEvent&gt;
+          />&lt;TState&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
+          />&lt;TState&gt; & IEvent&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.off
   - name: 'on'
     uid: '@microsoft/live-share.LiveState.on'
@@ -305,14 +293,14 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        on: TypedEventTransform<LiveState<TData>, ILiveStateEvents<TData> &
+        on: TypedEventTransform<LiveState<TState>, ILiveStateEvents<TState> &
         IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveState"
-          />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
-          />&lt;TData&gt; & IEvent&gt;
+          />&lt;TState&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
+          />&lt;TState&gt; & IEvent&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.on
   - name: once
     uid: '@microsoft/live-share.LiveState.once'
@@ -323,14 +311,14 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        once: TypedEventTransform<LiveState<TData>, ILiveStateEvents<TData> &
+        once: TypedEventTransform<LiveState<TState>, ILiveStateEvents<TState> &
         IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveState"
-          />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
-          />&lt;TData&gt; & IEvent&gt;
+          />&lt;TState&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
+          />&lt;TState&gt; & IEvent&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.once
   - name: prependListener
     uid: '@microsoft/live-share.LiveState.prependListener'
@@ -341,14 +329,14 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        prependListener: TypedEventTransform<LiveState<TData>,
-        ILiveStateEvents<TData> & IEvent>
+        prependListener: TypedEventTransform<LiveState<TState>,
+        ILiveStateEvents<TState> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveState"
-          />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
-          />&lt;TData&gt; & IEvent&gt;
+          />&lt;TState&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
+          />&lt;TState&gt; & IEvent&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.prependListener
   - name: prependOnceListener
     uid: '@microsoft/live-share.LiveState.prependOnceListener'
@@ -359,14 +347,14 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        prependOnceListener: TypedEventTransform<LiveState<TData>,
-        ILiveStateEvents<TData> & IEvent>
+        prependOnceListener: TypedEventTransform<LiveState<TState>,
+        ILiveStateEvents<TState> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveState"
-          />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
-          />&lt;TData&gt; & IEvent&gt;
+          />&lt;TState&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
+          />&lt;TState&gt; & IEvent&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.prependOnceListener
   - name: removeListener
     uid: '@microsoft/live-share.LiveState.removeListener'
@@ -377,14 +365,14 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        removeListener: TypedEventTransform<LiveState<TData>,
-        ILiveStateEvents<TData> & IEvent>
+        removeListener: TypedEventTransform<LiveState<TState>,
+        ILiveStateEvents<TState> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveState"
-          />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
-          />&lt;TData&gt; & IEvent&gt;
+          />&lt;TState&gt;, <xref uid="@microsoft/live-share.ILiveStateEvents"
+          />&lt;TState&gt; & IEvent&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.removeListener
 inheritedMethods:
   - name: emit(string | symbol, any[])
@@ -403,7 +391,7 @@ inheritedMethods:
 
       ```js
 
-      const EventEmitter = require('events');
+      import { EventEmitter } from 'node:events';
 
       const myEmitter = new EventEmitter();
 
@@ -476,7 +464,8 @@ inheritedMethods:
       listeners. The values in the array are strings or `Symbol`s.
 
       ```js
-      const EventEmitter = require('events');
+      import { EventEmitter } from 'node:events';
+
       const myEE = new EventEmitter();
       myEE.on('foo', () => {});
       myEE.on('bar', () => {});
@@ -561,21 +550,21 @@ inheritedMethods:
 
       ```js
 
-      const { getEventListeners, EventEmitter } = require('events');
+      import { getEventListeners, EventEmitter } from 'node:events';
 
 
       {
         const ee = new EventEmitter();
         const listener = () => console.log('Events are fun');
         ee.on('foo', listener);
-        getEventListeners(ee, 'foo'); // [listener]
+        console.log(getEventListeners(ee, 'foo')); // [ [Function: listener] ]
       }
 
       {
         const et = new EventTarget();
         const listener = () => console.log('Events are fun');
         et.addEventListener('foo', listener);
-        getEventListeners(et, 'foo'); // [listener]
+        console.log(getEventListeners(et, 'foo')); // [ [Function: listener] ]
       }
 
       ```
@@ -676,7 +665,8 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, listenerCount } = require('events');
+      import { EventEmitter, listenerCount } from 'node:events';
+
 
       const myEmitter = new EventEmitter();
 
@@ -707,18 +697,29 @@ inheritedMethods:
         description: ''
         type: number
     inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
-  - name: listenerCount(string | symbol)
+  - name: listenerCount(string | symbol, Function)
     uid: '@microsoft/live-share.LiveState.listenerCount'
     package: '@microsoft/live-share'
-    summary: Returns the number of listeners listening to the event named `eventName`.
+    summary: >-
+      Returns the number of listeners listening for the event named `eventName`.
+
+      If `listener` is provided, it will return how many times the listener is
+      found
+
+      in the list of the listeners of the event.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function listenerCount(eventName: string | symbol): number'
+      content: >-
+        function listenerCount(eventName: string | symbol, listener?: Function):
+        number
       parameters:
         - id: eventName
           type: string | symbol
           description: The name of the event being listened for
+        - id: listener
+          type: Function
+          description: The event handler function
       return:
         description: ''
         type: number
@@ -753,25 +754,24 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: |-
       ```js
-      const { on, EventEmitter } = require('events');
+      import { on, EventEmitter } from 'node:events';
+      import process from 'node:process';
 
-      (async () => {
-        const ee = new EventEmitter();
+      const ee = new EventEmitter();
 
-        // Emit later on
-        process.nextTick(() => {
-          ee.emit('foo', 'bar');
-          ee.emit('foo', 42);
-        });
+      // Emit later on
+      process.nextTick(() => {
+        ee.emit('foo', 'bar');
+        ee.emit('foo', 42);
+      });
 
-        for await (const event of on(ee, 'foo')) {
-          // The execution of this inner block is synchronous and it
-          // processes one event at a time (even with await). Do not use
-          // if concurrent execution is required.
-          console.log(event); // prints ['bar'] [42]
-        }
-        // Unreachable here
-      })();
+      for await (const event of on(ee, 'foo')) {
+        // The execution of this inner block is synchronous and it
+        // processes one event at a time (even with await). Do not use
+        // if concurrent execution is required.
+        console.log(event); // prints ['bar'] [42]
+      }
+      // Unreachable here
       ```
 
       Returns an `AsyncIterator` that iterates `eventName` events. It will throw
@@ -782,7 +782,9 @@ inheritedMethods:
       An `AbortSignal` can be used to cancel waiting on events:
 
       ```js
-      const { on, EventEmitter } = require('events');
+      import { on, EventEmitter } from 'node:events';
+      import process from 'node:process';
+
       const ac = new AbortController();
 
       (async () => {
@@ -874,33 +876,36 @@ inheritedMethods:
 
       ```js
 
-      const { once, EventEmitter } = require('events');
+      import { once, EventEmitter } from 'node:events';
+
+      import process from 'node:process';
 
 
-      async function run() {
-        const ee = new EventEmitter();
+      const ee = new EventEmitter();
 
-        process.nextTick(() => {
-          ee.emit('myevent', 42);
-        });
 
-        const [value] = await once(ee, 'myevent');
-        console.log(value);
+      process.nextTick(() => {
+        ee.emit('myevent', 42);
+      });
 
-        const err = new Error('kaboom');
-        process.nextTick(() => {
-          ee.emit('error', err);
-        });
 
-        try {
-          await once(ee, 'myevent');
-        } catch (err) {
-          console.log('error happened', err);
-        }
+      const [value] = await once(ee, 'myevent');
+
+      console.log(value);
+
+
+      const err = new Error('kaboom');
+
+      process.nextTick(() => {
+        ee.emit('error', err);
+      });
+
+
+      try {
+        await once(ee, 'myevent');
+      } catch (err) {
+        console.error('error happened', err);
       }
-
-
-      run();
 
       ```
 
@@ -917,7 +922,7 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, once } = require('events');
+      import { EventEmitter, once } from 'node:events';
 
 
       const ee = new EventEmitter();
@@ -925,7 +930,7 @@ inheritedMethods:
 
       once(ee, 'error')
         .then(([err]) => console.log('ok', err.message))
-        .catch((err) => console.log('error', err.message));
+        .catch((err) => console.error('error', err.message));
 
       ee.emit('error', new Error('boom'));
 
@@ -940,7 +945,7 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, once } = require('events');
+      import { EventEmitter, once } from 'node:events';
 
 
       const ee = new EventEmitter();
@@ -997,6 +1002,7 @@ inheritedMethods:
       including any wrappers (such as those created by `.once()`).
 
       ```js
+      import { EventEmitter } from 'node:events';
       const emitter = new EventEmitter();
       emitter.once('log', () => console.log('log once'));
 
@@ -1045,14 +1051,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function removeAllListeners(event?: string | symbol): LiveState<TData>'
+      content: 'function removeAllListeners(event?: string | symbol): LiveState<TState>'
       parameters:
         - id: event
           type: string | symbol
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.LiveState" />&lt;TData&gt;
+        type: <xref uid="@microsoft/live-share.LiveState" />&lt;TState&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.removeAllListeners
   - name: request(IRequest)
     uid: '@microsoft/live-share.LiveState.request'
@@ -1090,24 +1096,21 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): LiveState<TData>'
+      content: 'function setMaxListeners(n: number): LiveState<TState>'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.LiveState" />&lt;TData&gt;
+        type: <xref uid="@microsoft/live-share.LiveState" />&lt;TState&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
   - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
     uid: '@microsoft/live-share.LiveState.setMaxListeners'
     package: '@microsoft/live-share'
     summary: |-
       ```js
-      const {
-        setMaxListeners,
-        EventEmitter
-      } = require('events');
+      import { setMaxListeners, EventEmitter } from 'node:events';
 
       const target = new EventTarget();
       const emitter = new EventEmitter();
@@ -1131,21 +1134,6 @@ inheritedMethods:
           description: ''
     inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
 methods:
-  - name: changeState(string, TData)
-    uid: '@microsoft/live-share.LiveState.changeState'
-    package: '@microsoft/live-share'
-    summary: Changes to a new state with an optional data object.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function changeState(state: string, data?: TData)'
-      parameters:
-        - id: state
-          type: string
-          description: New state name.
-        - id: data
-          type: TData
-          description: Optional. Data object to associate with the new state.
   - name: dispose()
     uid: '@microsoft/live-share.LiveState.dispose'
     package: '@microsoft/live-share'
@@ -1154,7 +1142,7 @@ methods:
     isDeprecated: false
     syntax:
       content: function dispose()
-  - name: initialize(UserMeetingRole[], string, TData)
+  - name: initialize(TState, UserMeetingRole[])
     uid: '@microsoft/live-share.LiveState.initialize'
     package: '@microsoft/live-share'
     summary: Starts the object.
@@ -1162,19 +1150,28 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function initialize(allowedRoles?: UserMeetingRole[], state?: string,
-        data?: TData): Promise<void>
+        function initialize(initialState: TState, allowedRoles?:
+        UserMeetingRole[]): Promise<void>
       parameters:
+        - id: initialState
+          type: TState
+          description: Initial state value
         - id: allowedRoles
           type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
           description: Optional. List of roles allowed to make state changes.
-        - id: state
-          type: string
-          description: ''
-        - id: data
-          type: TData
-          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
-extends: 'DataObject&lt;{ Events: ILiveStateEvents&lt;TData&gt; }&gt;'
+  - name: set(TState)
+    uid: '@microsoft/live-share.LiveState.set'
+    package: '@microsoft/live-share'
+    summary: Set a new state value
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function set(state: TState)'
+      parameters:
+        - id: state
+          type: TState
+          description: New state name.
+extends: 'DataObject&lt;{ Events: ILiveStateEvents&lt;TState&gt; }&gt;'

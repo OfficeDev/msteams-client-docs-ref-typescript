@@ -8,14 +8,34 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share.ILiveShareHost.getClientInfo'
+    package: '@microsoft/live-share'
+    summary: Queries the hosts `IUserInfo` for a given client ID.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getClientInfo(clientId: string): Promise<undefined |
+        IClientInfo>
+      parameters:
+        - id: clientId
+          type: string
+          description: ID of the client to lookup.
+      return:
+        description: '`IUserInfo` for the queried client ID.'
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
   - name: getClientRoles(string)
     uid: '@microsoft/live-share.ILiveShareHost.getClientRoles'
     package: '@microsoft/live-share'
-    summary: >-
+    summary: ''
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
       Queries the hosts role verification service for the roles associated with
       a given client ID.
-    remarks: ''
-    isDeprecated: false
     syntax:
       content: >-
         function getClientRoles(clientId: string): Promise<undefined |

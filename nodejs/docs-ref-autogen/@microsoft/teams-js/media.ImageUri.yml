@@ -11,7 +11,7 @@ properties:
   - name: type
     uid: '@microsoft/teams-js.media.ImageUri.type'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Image Uri type
     fullName: type
     remarks: ''
     isDeprecated: false
@@ -23,7 +23,7 @@ properties:
   - name: value
     uid: '@microsoft/teams-js.media.ImageUri.value'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Image location
     fullName: value
     remarks: ''
     isDeprecated: false

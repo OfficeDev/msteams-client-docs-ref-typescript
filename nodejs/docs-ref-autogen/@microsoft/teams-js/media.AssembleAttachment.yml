@@ -11,7 +11,7 @@ properties:
   - name: file
     uid: '@microsoft/teams-js.media.AssembleAttachment.file'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: A Blob object representing the data of the media chunks.
     fullName: file
     remarks: ''
     isDeprecated: false
@@ -23,7 +23,7 @@ properties:
   - name: sequence
     uid: '@microsoft/teams-js.media.AssembleAttachment.sequence'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: A number representing the sequence of the attachment in the media chunks.
     fullName: sequence
     remarks: ''
     isDeprecated: false

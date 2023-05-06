@@ -120,7 +120,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [File.size](xref:@microsoft/teams-js.media.File.size)
 methods:
-  - name: 'getMedia((error: SdkError, blob: Blob) => void)'
+  - name: getMedia(getMediaCallbackFunctionType)
     uid: '@microsoft/teams-js.media.Media.getMedia'
     package: '@microsoft/teams-js'
     summary: >-
@@ -136,9 +136,9 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getMedia(callback: (error: SdkError, blob: Blob) => void)'
+      content: 'function getMedia(callback: getMediaCallbackFunctionType)'
       parameters:
         - id: callback
-          type: '(error: SdkError, blob: Blob) =&gt; void'
+          type: getMediaCallbackFunctionType
           description: callback is called with the
 extends: <xref uid="@microsoft/teams-js.media.File" />

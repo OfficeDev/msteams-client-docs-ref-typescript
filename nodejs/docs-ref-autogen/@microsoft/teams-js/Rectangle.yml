@@ -7,4 +7,4 @@ fullName: Rectangle
 remarks: ''
 isDeprecated: false
 syntax: |
-  type Rectangle = { height: number, width: number, x: number, y: number }
+  type Rectangle = { height: number; width: number; x: number; y: number }

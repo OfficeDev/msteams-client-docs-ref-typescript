@@ -13,7 +13,7 @@ properties:
   - name: majorVersion
     uid: '@microsoft/teams-js.AdaptiveCardVersion.majorVersion'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Represents the major version number.
     fullName: majorVersion
     remarks: ''
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   - name: minorVersion
     uid: '@microsoft/teams-js.AdaptiveCardVersion.minorVersion'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Represents the minor version number.
     fullName: minorVersion
     remarks: ''
     isDeprecated: false

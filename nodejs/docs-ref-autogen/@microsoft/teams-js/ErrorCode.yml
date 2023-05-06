@@ -2,7 +2,9 @@
 name: ErrorCode
 uid: '@microsoft/teams-js.ErrorCode'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >-
+  Error codes used to identify different types of errors that can occur while
+  developing apps.
 fullName: ErrorCode
 remarks: ''
 isDeprecated: false

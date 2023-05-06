@@ -2,7 +2,7 @@
 name: MeetingType
 uid: '@microsoft/teams-js.meeting.MeetingType'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Represents the type of a meeting
 fullName: MeetingType
 remarks: ''
 isDeprecated: false
@@ -10,24 +10,26 @@ fields:
   - name: Adhoc
     uid: '@microsoft/teams-js.meeting.MeetingType.Adhoc'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Used for ad hoc meetings that are created on the fly.
   - name: Broadcast
     uid: '@microsoft/teams-js.meeting.MeetingType.Broadcast'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Used for live events or webinars.
   - name: MeetNow
     uid: '@microsoft/teams-js.meeting.MeetingType.MeetNow'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Used for meetings that are created on the fly, but with a more polished
+      experience than ad hoc meetings.
   - name: Recurring
     uid: '@microsoft/teams-js.meeting.MeetingType.Recurring'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Used for meetings that occur on a recurring basis.
   - name: Scheduled
     uid: '@microsoft/teams-js.meeting.MeetingType.Scheduled'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Used for meetings that have been scheduled in advance.
   - name: Unknown
     uid: '@microsoft/teams-js.meeting.MeetingType.Unknown'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Used when the meeting type is not known.

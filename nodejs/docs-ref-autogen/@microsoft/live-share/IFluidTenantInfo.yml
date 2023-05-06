@@ -12,23 +12,6 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: ordererEndpoint
-    uid: '@microsoft/live-share.IFluidTenantInfo.ordererEndpoint'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: ordererEndpoint
-    remarks: ''
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      As of Fluid 1.0 this configuration information has been deprecated in
-      favor of
-
-      `serviceEndpoint`.
-    syntax:
-      content: 'ordererEndpoint: string'
-      return:
-        description: ''
-        type: string
   - name: serviceEndpoint
     uid: '@microsoft/live-share.IFluidTenantInfo.serviceEndpoint'
     package: '@microsoft/live-share'
@@ -37,24 +20,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'serviceEndpoint?: string'
-      return:
-        description: ''
-        type: string
-  - name: storageEndpoint
-    uid: '@microsoft/live-share.IFluidTenantInfo.storageEndpoint'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: storageEndpoint
-    remarks: ''
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      As of Fluid 1.0 this configuration information has been deprecated in
-      favor of
-
-      `serviceEndpoint`.
-    syntax:
-      content: 'storageEndpoint: string'
+      content: 'serviceEndpoint: string'
       return:
         description: ''
         type: string

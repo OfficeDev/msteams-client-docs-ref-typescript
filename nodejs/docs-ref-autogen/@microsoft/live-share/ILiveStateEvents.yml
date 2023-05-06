@@ -3,7 +3,7 @@ name: ILiveStateEvents
 uid: '@microsoft/live-share.ILiveStateEvents'
 package: '@microsoft/live-share'
 summary: ''
-fullName: ILiveStateEvents<TData>
+fullName: ILiveStateEvents<TState>
 remarks: ''
 isDeprecated: false
 type: interface

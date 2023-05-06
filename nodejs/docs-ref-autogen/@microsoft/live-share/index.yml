@@ -30,6 +30,7 @@ classes:
   - '@microsoft/live-share.TestLiveShareHost'
   - '@microsoft/live-share.TimestampProvider'
 interfaces:
+  - '@microsoft/live-share.IClientInfo'
   - '@microsoft/live-share.IClientTimestamp'
   - '@microsoft/live-share.IContainerRuntimeSignaler'
   - '@microsoft/live-share.IEvent'

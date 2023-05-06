@@ -2,7 +2,9 @@
 name: HostClientType
 uid: '@microsoft/teams-js.HostClientType'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >-
+  HostClientType represents the different client platforms on which host can be
+  run.
 fullName: HostClientType
 remarks: ''
 isDeprecated: false
@@ -10,19 +12,27 @@ fields:
   - name: android
     uid: '@microsoft/teams-js.HostClientType.android'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents the Android mobile client of host, which runs on Android
+      devices such as smartphones and tablets.
   - name: desktop
     uid: '@microsoft/teams-js.HostClientType.desktop'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents the desktop client of host, which is installed on a user's
+      computer and runs as a standalone application.
   - name: ios
     uid: '@microsoft/teams-js.HostClientType.ios'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents the iOS mobile client of host, which runs on iOS devices such
+      as iPhones.
   - name: ipados
     uid: '@microsoft/teams-js.HostClientType.ipados'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents the iPadOS client of host, which runs on iOS devices such as
+      iPads.
   - name: rigel
     uid: '@microsoft/teams-js.HostClientType.rigel'
     package: '@microsoft/teams-js'
@@ -30,24 +40,38 @@ fields:
   - name: surfaceHub
     uid: '@microsoft/teams-js.HostClientType.surfaceHub'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Represents the client of host, which runs on surface hub devices.
   - name: teamsDisplays
     uid: '@microsoft/teams-js.HostClientType.teamsDisplays'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents the client of host, which runs on Teams displays devices. More
+      information can be found [Microsoft Teams
+      Displays](https://support.microsoft.com/office/get-started-with-teams-displays-ff299825-7f13-4528-96c2-1d3437e6d4e6)
   - name: teamsPhones
     uid: '@microsoft/teams-js.HostClientType.teamsPhones'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents the client of host, which runs on Teams phones. More
+      information can be found [Microsoft Teams
+      Phones](https://support.microsoft.com/office/get-started-with-teams-phones-694ca17d-3ecf-40ca-b45e-d21b2c442412)
   - name: teamsRoomsAndroid
     uid: '@microsoft/teams-js.HostClientType.teamsRoomsAndroid'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents the client of host, which runs on Teams Rooms on Android
+      devices. More information on Microsoft Teams Rooms on Android can be found
+      [Microsoft Teams Rooms
+      (Android)].(https://support.microsoft.com/office/get-started-with-teams-rooms-on-android-68517298-d513-46be-8d6d-d41db5e6b4b2)
   - name: teamsRoomsWindows
     uid: '@microsoft/teams-js.HostClientType.teamsRoomsWindows'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents the client of host, which runs on Teams Rooms on Windows
+      devices. More information on Microsoft Teams Rooms on Windows can be found
+      [Microsoft Teams Rooms
+      (Windows)](https://support.microsoft.com/office/microsoft-teams-rooms-windows-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
   - name: web
     uid: '@microsoft/teams-js.HostClientType.web'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Represents the web-based client of host, which runs in a web browser.

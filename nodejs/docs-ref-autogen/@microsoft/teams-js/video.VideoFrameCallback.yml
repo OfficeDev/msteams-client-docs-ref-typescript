@@ -10,6 +10,6 @@ isDeprecated: false
 syntax: |
   type VideoFrameCallback = (
     frame: VideoFrame,
-    notifyVideoFrameProcessed: () => void,
-    notifyError: (errorMessage: string) => void
+    notifyVideoFrameProcessed: notifyVideoFrameProcessedFunctionType,
+    notifyError: notifyErrorFunctionType
   ) => void

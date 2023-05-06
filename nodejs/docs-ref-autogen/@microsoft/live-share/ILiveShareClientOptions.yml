@@ -2,7 +2,7 @@
 name: ILiveShareClientOptions
 uid: '@microsoft/live-share.ILiveShareClientOptions'
 package: '@microsoft/live-share'
-summary: Options used to configure the `TeamsFluidClient` class.
+summary: Options used to configure the `LiveShareClient` class.
 fullName: ILiveShareClientOptions
 remarks: ''
 isDeprecated: false

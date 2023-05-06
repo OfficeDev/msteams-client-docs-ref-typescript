@@ -8,15 +8,15 @@ remarks: ''
 isDeprecated: false
 type: class
 properties:
-  - name: clientsMeetingRoles
-    uid: '@microsoft/live-share.TestLiveShareHost.clientsMeetingRoles'
+  - name: defaultRoles
+    uid: '@microsoft/live-share.TestLiveShareHost.defaultRoles'
     package: '@microsoft/live-share'
     summary: ''
-    fullName: clientsMeetingRoles
+    fullName: defaultRoles
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientsMeetingRoles: UserMeetingRole[]'
+      content: 'defaultRoles: UserMeetingRole[]'
       return:
         description: ''
         type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
@@ -33,6 +33,26 @@ properties:
         description: ''
         type: '"test-token"'
 methods:
+  - name: addClient(string, UserMeetingRole[])
+    uid: '@microsoft/live-share.TestLiveShareHost.addClient'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addClient(clientId: string, roles: UserMeetingRole[]):
+        TestLiveShareHost
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+        - id: roles
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.TestLiveShareHost" />
   - name: 'create(() => undefined | string, (containerId: string) => void)'
     uid: '@microsoft/live-share.TestLiveShareHost.create'
     package: '@microsoft/live-share'
@@ -58,14 +78,30 @@ methods:
       return:
         description: ''
         type: <xref uid="@microsoft/live-share.ILiveShareHost" />
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share.TestLiveShareHost.getClientInfo'
+    package: '@microsoft/live-share'
+    summary: Queries the hosts `IUserInfo` for a given client ID.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getClientInfo(clientId: string): Promise<IClientInfo>'
+      parameters:
+        - id: clientId
+          type: string
+          description: ID of the client to lookup.
+      return:
+        description: '`IUserInfo` for the queried client ID.'
+        type: Promise&lt;<xref uid="@microsoft/live-share.IClientInfo" />&gt;
   - name: getClientRoles(string)
     uid: '@microsoft/live-share.TestLiveShareHost.getClientRoles'
     package: '@microsoft/live-share'
-    summary: >-
+    summary: ''
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
       Queries the hosts role verification service for the roles associated with
       a given client ID.
-    remarks: ''
-    isDeprecated: false
     syntax:
       content: 'function getClientRoles(clientId: string): Promise<UserMeetingRole[]>'
       parameters:

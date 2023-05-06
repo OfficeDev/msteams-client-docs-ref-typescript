@@ -34,7 +34,7 @@ functions:
     isDeprecated: false
     syntax:
       content: function print()
-  - name: 'registerBeforeUnloadHandler((readyToUnload: () => void) => boolean)'
+  - name: registerBeforeUnloadHandler(registerBeforeUnloadHandlerFunctionType)
     uid: '@microsoft/teams-js.teamsCore.registerBeforeUnloadHandler'
     package: '@microsoft/teams-js'
     summary: Registers a handler to be called before the page is unloaded.
@@ -47,18 +47,18 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function registerBeforeUnloadHandler(handler: (readyToUnload: () =>
-        void) => boolean)
+        function registerBeforeUnloadHandler(handler:
+        registerBeforeUnloadHandlerFunctionType)
       parameters:
         - id: handler
-          type: '(readyToUnload: () =&gt; void) =&gt; boolean'
+          type: registerBeforeUnloadHandlerFunctionType
           description: >-
             The handler to invoke before the page is unloaded. If this handler
             returns true the page should
 
             invoke the readyToUnload function provided to it once it's ready to
             be unloaded.
-  - name: 'registerOnLoadHandler((context: LoadContext) => void)'
+  - name: registerOnLoadHandler(registerOnLoadHandlerFunctionType)
     uid: '@microsoft/teams-js.teamsCore.registerOnLoadHandler'
     package: '@microsoft/teams-js'
     summary: Registers a handler to be called when the page has been requested to load.
@@ -70,8 +70,10 @@ functions:
     previewState: beta
     isDeprecated: false
     syntax:
-      content: 'function registerOnLoadHandler(handler: (context: LoadContext) => void)'
+      content: >-
+        function registerOnLoadHandler(handler:
+        registerOnLoadHandlerFunctionType)
       parameters:
         - id: handler
-          type: '(context: LoadContext) =&gt; void'
+          type: registerOnLoadHandlerFunctionType
           description: The handler to invoke when the page is loaded.

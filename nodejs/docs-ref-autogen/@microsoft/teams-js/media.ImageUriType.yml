@@ -10,10 +10,10 @@ fields:
   - name: ID
     uid: '@microsoft/teams-js.media.ImageUriType.ID'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Image Id.
     numericValue: 1
   - name: URL
     uid: '@microsoft/teams-js.media.ImageUriType.URL'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Image URL.
     numericValue: 2

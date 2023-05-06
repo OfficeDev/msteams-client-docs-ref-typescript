@@ -1,7 +1,9 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.call'
 name: call
-summary: ''
+summary: >-
+  Used to interact with call functionality, including starting calls with other
+  users.
 type: module
 enums:
   - '@microsoft/teams-js.call.CallModalities'

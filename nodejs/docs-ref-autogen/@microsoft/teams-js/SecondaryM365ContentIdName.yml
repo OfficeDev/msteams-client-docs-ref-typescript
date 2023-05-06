@@ -2,7 +2,11 @@
 name: SecondaryM365ContentIdName
 uid: '@microsoft/teams-js.SecondaryM365ContentIdName'
 package: '@microsoft/teams-js'
-summary: These correspond with field names in the MSGraph
+summary: >-
+  These correspond with field names in the MSGraph.
+
+  See (commonly accessed
+  resources)[https://learn.microsoft.com/en-us/graph/api/resources/onedrive?view=graph-rest-1.0#commonly-accessed-resources].
 fullName: SecondaryM365ContentIdName
 remarks: ''
 previewState: beta
@@ -11,16 +15,16 @@ fields:
   - name: DriveId
     uid: '@microsoft/teams-js.SecondaryM365ContentIdName.DriveId'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: OneDrive ID
   - name: GroupId
     uid: '@microsoft/teams-js.SecondaryM365ContentIdName.GroupId'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Teams Group ID
   - name: SiteId
     uid: '@microsoft/teams-js.SecondaryM365ContentIdName.SiteId'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: SharePoint ID
   - name: UserId
     uid: '@microsoft/teams-js.SecondaryM365ContentIdName.UserId'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: User ID

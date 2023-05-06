@@ -125,6 +125,7 @@ typeAliases:
   - '@microsoft/teams-js.dialog.DialogSubmitHandler'
   - '@microsoft/teams-js.dialog.PostMessageChannel'
   - '@microsoft/teams-js.mail.ComposeMailParams'
+  - '@microsoft/teams-js.people.selectPeopleCallbackFunctionType'
   - '@microsoft/teams-js.profile.Modality'
   - '@microsoft/teams-js.profile.PersonaIdentifiers'
   - '@microsoft/teams-js.profile.TriggerType'
@@ -140,7 +141,6 @@ classes:
   - '@microsoft/teams-js.media.Media'
   - '@microsoft/teams-js.media.VideoController'
   - '@microsoft/teams-js.ChildAppWindow'
-  - '@microsoft/teams-js.LiveShareHost'
   - '@microsoft/teams-js.ParentAppWindow'
 functions:
   - name: enablePrintCapability()
@@ -157,7 +157,7 @@ functions:
       Enable print capability to support printing page using Ctrl+P and cmd+P
     syntax:
       content: function enablePrintCapability()
-  - name: 'executeDeepLink(string, (status: boolean, reason?: string) => void)'
+  - name: executeDeepLink(string, executeDeepLinkOnCompleteFunctionType)
     uid: '@microsoft/teams-js.executeDeepLink'
     package: '@microsoft/teams-js'
     summary: ''
@@ -171,14 +171,14 @@ functions:
       Execute deep link API.
     syntax:
       content: >-
-        function executeDeepLink(deepLink: string, onComplete?: (status:
-        boolean, reason?: string) => void)
+        function executeDeepLink(deepLink: string, onComplete?:
+        executeDeepLinkOnCompleteFunctionType)
       parameters:
         - id: deepLink
           type: string
           description: deep link.
         - id: onComplete
-          type: '(status: boolean, reason?: string) =&gt; void'
+          type: executeDeepLinkOnCompleteFunctionType
           description: ''
   - name: getAdaptiveCardSchemaVersion()
     uid: '@microsoft/teams-js.getAdaptiveCardSchemaVersion'
@@ -196,7 +196,7 @@ functions:
           version supported by the host, or undefined if the host does not
           support Adaptive Cards
         type: <xref uid="@microsoft/teams-js.AdaptiveCardVersion" /> | undefined
-  - name: 'getContext((context: Context) => void)'
+  - name: getContext(getContextCallbackFunctionType)
     uid: '@microsoft/teams-js.getContext'
     package: '@microsoft/teams-js'
     summary: ''
@@ -209,15 +209,15 @@ functions:
 
       Retrieves the current context the frame is running in.
     syntax:
-      content: 'function getContext(callback: (context: Context) => void)'
+      content: 'function getContext(callback: getContextCallbackFunctionType)'
       parameters:
         - id: callback
-          type: '(context: Context) =&gt; void'
+          type: getContextCallbackFunctionType
           description: >-
             The callback to invoke when the
             [Context](xref:@microsoft/teams-js.Context) object is retrieved.
   - name: >-
-      getMruTabInstances((tabInfo: TabInformation) => void,
+      getMruTabInstances(getTabInstancesCallbackFunctionType,
       TabInstanceParameters)
     uid: '@microsoft/teams-js.getMruTabInstances'
     package: '@microsoft/teams-js'
@@ -235,11 +235,12 @@ functions:
       Allows an app to retrieve the most recently used tabs for this user.
     syntax:
       content: >-
-        function getMruTabInstances(callback: (tabInfo: TabInformation) => void,
-        tabInstanceParameters?: TabInstanceParameters)
+        function getMruTabInstances(callback:
+        getTabInstancesCallbackFunctionType, tabInstanceParameters?:
+        TabInstanceParameters)
       parameters:
         - id: callback
-          type: '(tabInfo: TabInformation) =&gt; void'
+          type: getTabInstancesCallbackFunctionType
           description: >-
             The callback to invoke when the
             [TabInformation](xref:@microsoft/teams-js.TabInformation) object is
@@ -247,7 +248,9 @@ functions:
         - id: tabInstanceParameters
           type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
           description: OPTIONAL Ignored, kept for future use
-  - name: 'getTabInstances((tabInfo: TabInformation) => void, TabInstanceParameters)'
+  - name: >-
+      getTabInstances(getTabInstancesCallbackFunctionType,
+      TabInstanceParameters)
     uid: '@microsoft/teams-js.getTabInstances'
     package: '@microsoft/teams-js'
     summary: ''
@@ -267,11 +270,11 @@ functions:
       and favorite channels.
     syntax:
       content: >-
-        function getTabInstances(callback: (tabInfo: TabInformation) => void,
+        function getTabInstances(callback: getTabInstancesCallbackFunctionType,
         tabInstanceParameters?: TabInstanceParameters)
       parameters:
         - id: callback
-          type: '(tabInfo: TabInformation) =&gt; void'
+          type: getTabInstancesCallbackFunctionType
           description: >-
             The callback to invoke when the
             [TabInstanceParameters](xref:@microsoft/teams-js.TabInstanceParameters)
@@ -281,7 +284,7 @@ functions:
           description: >-
             OPTIONAL Flags that specify whether to scope call to favorite teams
             or channels.
-  - name: initialize(() => void, string[])
+  - name: initialize(callbackFunctionType, string[])
     uid: '@microsoft/teams-js.initialize'
     package: '@microsoft/teams-js'
     summary: ''
@@ -297,11 +300,11 @@ functions:
       but after the frame is loaded successfully.
     syntax:
       content: >-
-        function initialize(callback?: () => void, validMessageOrigins?:
-        string[])
+        function initialize(callback?: callbackFunctionType,
+        validMessageOrigins?: string[])
       parameters:
         - id: callback
-          type: () =&gt; void
+          type: callbackFunctionType
           description: >-
             Optionally specify a callback to invoke when Teams SDK has
             successfully initialized
@@ -313,7 +316,7 @@ functions:
 
             https: protocol otherwise they will be ignored. Example:
             https://www.example.com
-  - name: initializeWithFrameContext(FrameInfo, () => void, string[])
+  - name: initializeWithFrameContext(FrameInfo, callbackFunctionType, string[])
     uid: '@microsoft/teams-js.initializeWithFrameContext'
     package: '@microsoft/teams-js'
     summary: ''
@@ -321,7 +324,8 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.initializeWithFrameContext(frameInfo:
-      FrameInfo, callback?: () => void, validMessageOrigins?: string[],):
+      FrameInfo, callback?: callbackFunctionType, validMessageOrigins?:
+      string[],):
       void](xref:@microsoft/teams-js.pages.initializeWithFrameContext) instead.
 
 
@@ -329,13 +333,13 @@ functions:
     syntax:
       content: >-
         function initializeWithFrameContext(frameContext: FrameInfo, callback?:
-        () => void, validMessageOrigins?: string[])
+        callbackFunctionType, validMessageOrigins?: string[])
       parameters:
         - id: frameContext
           type: <xref uid="@microsoft/teams-js.FrameInfo" />
           description: FrameContext information to be set
         - id: callback
-          type: () =&gt; void
+          type: callbackFunctionType
           description: >-
             The optional callback to be invoked be invoked after initilizing the
             frame context
@@ -346,7 +350,7 @@ functions:
 
             They must have https: protocol otherwise they will be ignored.
             Example: https:www.example.com
-  - name: 'navigateBack((status: boolean, reason?: string) => void)'
+  - name: navigateBack(onCompleteHandlerFunctionType)
     uid: '@microsoft/teams-js.navigateBack'
     package: '@microsoft/teams-js'
     summary: ''
@@ -363,14 +367,12 @@ functions:
       See registerBackButtonHandler for more information on when it's
       appropriate to use this method.
     syntax:
-      content: >-
-        function navigateBack(onComplete?: (status: boolean, reason?: string) =>
-        void)
+      content: 'function navigateBack(onComplete?: onCompleteHandlerFunctionType)'
       parameters:
         - id: onComplete
-          type: '(status: boolean, reason?: string) =&gt; void'
+          type: onCompleteHandlerFunctionType
           description: The callback to invoke when the action is complete.
-  - name: 'navigateCrossDomain(string, (status: boolean, reason?: string) => void)'
+  - name: navigateCrossDomain(string, onCompleteHandlerFunctionType)
     uid: '@microsoft/teams-js.navigateCrossDomain'
     package: '@microsoft/teams-js'
     summary: ''
@@ -397,16 +399,16 @@ functions:
       continue working.
     syntax:
       content: >-
-        function navigateCrossDomain(url: string, onComplete?: (status: boolean,
-        reason?: string) => void)
+        function navigateCrossDomain(url: string, onComplete?:
+        onCompleteHandlerFunctionType)
       parameters:
         - id: url
           type: string
           description: The URL to navigate the frame to.
         - id: onComplete
-          type: '(status: boolean, reason?: string) =&gt; void'
+          type: onCompleteHandlerFunctionType
           description: The callback to invoke when the action is complete.
-  - name: 'navigateToTab(TabInstance, (status: boolean, reason?: string) => void)'
+  - name: navigateToTab(TabInstance, onCompleteHandlerFunctionType)
     uid: '@microsoft/teams-js.navigateToTab'
     package: '@microsoft/teams-js'
     summary: ''
@@ -422,14 +424,14 @@ functions:
       Navigates the Microsoft Teams app to the specified tab instance.
     syntax:
       content: >-
-        function navigateToTab(tabInstance: TabInstance, onComplete?: (status:
-        boolean, reason?: string) => void)
+        function navigateToTab(tabInstance: TabInstance, onComplete?:
+        onCompleteHandlerFunctionType)
       parameters:
         - id: tabInstance
           type: <xref uid="@microsoft/teams-js.TabInstance" />
           description: The tab instance to navigate to.
         - id: onComplete
-          type: '(status: boolean, reason?: string) =&gt; void'
+          type: onCompleteHandlerFunctionType
           description: The callback to invoke when the action is complete.
   - name: print()
     uid: '@microsoft/teams-js.print'
@@ -445,14 +447,15 @@ functions:
       Default print handler
     syntax:
       content: function print()
-  - name: registerAppButtonClickHandler(() => void)
+  - name: registerAppButtonClickHandler(callbackFunctionType)
     uid: '@microsoft/teams-js.registerAppButtonClickHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.appButton.onClick(handler: () => void):
+      As of 2.0.0, please use [pages.appButton.onClick(handler:
+      callbackFunctionType):
       void](xref:@microsoft/teams-js.pages.appButton.onClick) instead.
 
 
@@ -461,23 +464,23 @@ functions:
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
     syntax:
-      content: 'function registerAppButtonClickHandler(handler: () => void)'
+      content: 'function registerAppButtonClickHandler(handler: callbackFunctionType)'
       parameters:
         - id: handler
-          type: () =&gt; void
+          type: callbackFunctionType
           description: >-
             The handler to invoke when the personal app button is clicked in the
             app bar.
-  - name: registerAppButtonHoverEnterHandler(() => void)
+  - name: registerAppButtonHoverEnterHandler(callbackFunctionType)
     uid: '@microsoft/teams-js.registerAppButtonHoverEnterHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.appButton.onHoverEnter(handler: () =>
-      void): void](xref:@microsoft/teams-js.pages.appButton.onHoverEnter)
-      instead.
+      As of 2.0.0, please use [pages.appButton.onHoverEnter(handler:
+      callbackFunctionType):
+      void](xref:@microsoft/teams-js.pages.appButton.onHoverEnter) instead.
 
 
       Registers a handler for entering hover of the app button.
@@ -485,23 +488,25 @@ functions:
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
     syntax:
-      content: 'function registerAppButtonHoverEnterHandler(handler: () => void)'
+      content: >-
+        function registerAppButtonHoverEnterHandler(handler:
+        callbackFunctionType)
       parameters:
         - id: handler
-          type: () =&gt; void
+          type: callbackFunctionType
           description: >-
             The handler to invoke when entering hover of the personal app button
             in the app bar.
-  - name: registerAppButtonHoverLeaveHandler(() => void)
+  - name: registerAppButtonHoverLeaveHandler(callbackFunctionType)
     uid: '@microsoft/teams-js.registerAppButtonHoverLeaveHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.appButton.onHoverLeave(handler: () =>
-      void): void](xref:@microsoft/teams-js.pages.appButton.onHoverLeave)
-      instead.
+      As of 2.0.0, please use [pages.appButton.onHoverLeave(handler:
+      callbackFunctionType):
+      void](xref:@microsoft/teams-js.pages.appButton.onHoverLeave) instead.
 
 
       Registers a handler for exiting hover of the app button.
@@ -509,14 +514,16 @@ functions:
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
     syntax:
-      content: 'function registerAppButtonHoverLeaveHandler(handler: () => void)'
+      content: >-
+        function registerAppButtonHoverLeaveHandler(handler:
+        callbackFunctionType)
       parameters:
         - id: handler
-          type: () =&gt; void
+          type: callbackFunctionType
           description: >-
             The handler to invoke when exiting hover of the personal app button
             in the app bar.
-  - name: registerBackButtonHandler(() => boolean)
+  - name: registerBackButtonHandler(registerBackButtonHandlerFunctionType)
     uid: '@microsoft/teams-js.registerBackButtonHandler'
     package: '@microsoft/teams-js'
     summary: ''
@@ -524,7 +531,8 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use
-      [pages.backStack.registerBackButtonHandler(handler: () => boolean):
+      [pages.backStack.registerBackButtonHandler(handler:
+      registerBackButtonHandlerFunctionType):
       void](xref:@microsoft/teams-js.pages.backStack.registerBackButtonHandler)
       instead.
 
@@ -540,14 +548,16 @@ functions:
 
       method to ask the Teams client to handle it instead.
     syntax:
-      content: 'function registerBackButtonHandler(handler: () => boolean)'
+      content: >-
+        function registerBackButtonHandler(handler:
+        registerBackButtonHandlerFunctionType)
       parameters:
         - id: handler
-          type: () =&gt; boolean
+          type: registerBackButtonHandlerFunctionType
           description: >-
             The handler to invoke when the user presses their Team client's back
             button.
-  - name: registerChangeSettingsHandler(() => void)
+  - name: registerChangeSettingsHandler(callbackFunctionType)
     uid: '@microsoft/teams-js.registerChangeSettingsHandler'
     package: '@microsoft/teams-js'
     summary: ''
@@ -555,19 +565,19 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.config.registerChangeConfigHandler(handler:
-      () => void):
+      callbackFunctionType):
       void](xref:@microsoft/teams-js.pages.config.registerChangeConfigHandler)
       instead.
 
 
       Registers a handler for when the user reconfigurated tab.
     syntax:
-      content: 'function registerChangeSettingsHandler(handler: () => void)'
+      content: 'function registerChangeSettingsHandler(handler: callbackFunctionType)'
       parameters:
         - id: handler
-          type: () =&gt; void
+          type: callbackFunctionType
           description: The handler to invoke when the user click on Settings.
-  - name: 'registerFullScreenHandler((isFullScreen: boolean) => void)'
+  - name: registerFullScreenHandler(registerFullScreenHandlerFunctionType)
     uid: '@microsoft/teams-js.registerFullScreenHandler'
     package: '@microsoft/teams-js'
     summary: ''
@@ -575,7 +585,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.0.0, please use [pages.registerFullScreenHandler(handler:
-      (isFullScreen: boolean) => void):
+      registerFullScreenHandlerFunctionType):
       void](xref:@microsoft/teams-js.pages.registerFullScreenHandler) instead.
 
 
@@ -585,23 +595,23 @@ functions:
       replaces an existing registration.
     syntax:
       content: >-
-        function registerFullScreenHandler(handler: (isFullScreen: boolean) =>
-        void)
+        function registerFullScreenHandler(handler:
+        registerFullScreenHandlerFunctionType)
       parameters:
         - id: handler
-          type: '(isFullScreen: boolean) =&gt; void'
+          type: registerFullScreenHandlerFunctionType
           description: >-
             The handler to invoke when the user toggles full-screen view for a
             tab.
-  - name: 'registerOnThemeChangeHandler((theme: string) => void)'
+  - name: registerOnThemeChangeHandler(registerOnThemeChangeHandlerFunctionType)
     uid: '@microsoft/teams-js.registerOnThemeChangeHandler'
     package: '@microsoft/teams-js'
     summary: ''
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.registerOnThemeChangeHandler(handler: (theme:
-      string) => void):
+      As of 2.0.0, please use [app.registerOnThemeChangeHandler(handler:
+      registerOnThemeChangeHandlerFunctionType):
       void](xref:@microsoft/teams-js.app.registerOnThemeChangeHandler) instead.
 
 
@@ -610,10 +620,12 @@ functions:
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
     syntax:
-      content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'
+      content: >-
+        function registerOnThemeChangeHandler(handler:
+        registerOnThemeChangeHandlerFunctionType)
       parameters:
         - id: handler
-          type: '(theme: string) =&gt; void'
+          type: registerOnThemeChangeHandlerFunctionType
           description: The handler to invoke when the user changes their theme.
   - name: returnFocus(boolean)
     uid: '@microsoft/teams-js.returnFocus'

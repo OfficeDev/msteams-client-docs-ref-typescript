@@ -22,19 +22,19 @@ functions:
       return:
         description: boolean to represent whether the pages.config capability is supported
         type: boolean
-  - name: registerChangeConfigHandler(() => void)
+  - name: registerChangeConfigHandler(handlerFunctionType)
     uid: '@microsoft/teams-js.pages.config.registerChangeConfigHandler'
     package: '@microsoft/teams-js'
     summary: Registers a handler for when the tab configuration is changed by the user
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function registerChangeConfigHandler(handler: () => void)'
+      content: 'function registerChangeConfigHandler(handler: handlerFunctionType)'
       parameters:
         - id: handler
-          type: () =&gt; void
+          type: handlerFunctionType
           description: The handler to invoke when the user clicks on Settings.
-  - name: 'registerOnRemoveHandler((evt: RemoveEvent) => void)'
+  - name: registerOnRemoveHandler(removeEventType)
     uid: '@microsoft/teams-js.pages.config.registerOnRemoveHandler'
     package: '@microsoft/teams-js'
     summary: >-
@@ -51,12 +51,12 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function registerOnRemoveHandler(handler: (evt: RemoveEvent) => void)'
+      content: 'function registerOnRemoveHandler(handler: removeEventType)'
       parameters:
         - id: handler
-          type: '(evt: RemoveEvent) =&gt; void'
+          type: removeEventType
           description: The handler to invoke when the user selects the Remove button.
-  - name: 'registerOnSaveHandler((evt: SaveEvent) => void)'
+  - name: registerOnSaveHandler(saveEventType)
     uid: '@microsoft/teams-js.pages.config.registerOnSaveHandler'
     package: '@microsoft/teams-js'
     summary: >-
@@ -73,10 +73,10 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function registerOnSaveHandler(handler: (evt: SaveEvent) => void)'
+      content: 'function registerOnSaveHandler(handler: saveEventType)'
       parameters:
         - id: handler
-          type: '(evt: SaveEvent) =&gt; void'
+          type: saveEventType
           description: The handler to invoke when the user selects the Save button.
   - name: setConfig(InstanceConfig)
     uid: '@microsoft/teams-js.pages.config.setConfig'

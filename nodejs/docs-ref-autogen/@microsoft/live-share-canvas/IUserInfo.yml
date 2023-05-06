@@ -20,6 +20,7 @@ properties:
       return:
         description: ''
         type: string
+inheritedProperties:
   - name: pictureUri
     uid: '@microsoft/live-share-canvas.IUserInfo.pictureUri'
     package: '@microsoft/live-share-canvas'
@@ -32,3 +33,5 @@ properties:
       return:
         description: ''
         type: string
+    inheritanceDescription: <b>Inherited From</b> IEventUserInfo.pictureUri
+extends: IEventUserInfo

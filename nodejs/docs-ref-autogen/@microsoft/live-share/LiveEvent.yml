@@ -388,7 +388,7 @@ inheritedMethods:
 
       ```js
 
-      const EventEmitter = require('events');
+      import { EventEmitter } from 'node:events';
 
       const myEmitter = new EventEmitter();
 
@@ -461,7 +461,8 @@ inheritedMethods:
       listeners. The values in the array are strings or `Symbol`s.
 
       ```js
-      const EventEmitter = require('events');
+      import { EventEmitter } from 'node:events';
+
       const myEE = new EventEmitter();
       myEE.on('foo', () => {});
       myEE.on('bar', () => {});
@@ -546,21 +547,21 @@ inheritedMethods:
 
       ```js
 
-      const { getEventListeners, EventEmitter } = require('events');
+      import { getEventListeners, EventEmitter } from 'node:events';
 
 
       {
         const ee = new EventEmitter();
         const listener = () => console.log('Events are fun');
         ee.on('foo', listener);
-        getEventListeners(ee, 'foo'); // [listener]
+        console.log(getEventListeners(ee, 'foo')); // [ [Function: listener] ]
       }
 
       {
         const et = new EventTarget();
         const listener = () => console.log('Events are fun');
         et.addEventListener('foo', listener);
-        getEventListeners(et, 'foo'); // [listener]
+        console.log(getEventListeners(et, 'foo')); // [ [Function: listener] ]
       }
 
       ```
@@ -661,7 +662,8 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, listenerCount } = require('events');
+      import { EventEmitter, listenerCount } from 'node:events';
+
 
       const myEmitter = new EventEmitter();
 
@@ -692,18 +694,29 @@ inheritedMethods:
         description: ''
         type: number
     inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
-  - name: listenerCount(string | symbol)
+  - name: listenerCount(string | symbol, Function)
     uid: '@microsoft/live-share.LiveEvent.listenerCount'
     package: '@microsoft/live-share'
-    summary: Returns the number of listeners listening to the event named `eventName`.
+    summary: >-
+      Returns the number of listeners listening for the event named `eventName`.
+
+      If `listener` is provided, it will return how many times the listener is
+      found
+
+      in the list of the listeners of the event.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function listenerCount(eventName: string | symbol): number'
+      content: >-
+        function listenerCount(eventName: string | symbol, listener?: Function):
+        number
       parameters:
         - id: eventName
           type: string | symbol
           description: The name of the event being listened for
+        - id: listener
+          type: Function
+          description: The event handler function
       return:
         description: ''
         type: number
@@ -738,25 +751,24 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: |-
       ```js
-      const { on, EventEmitter } = require('events');
+      import { on, EventEmitter } from 'node:events';
+      import process from 'node:process';
 
-      (async () => {
-        const ee = new EventEmitter();
+      const ee = new EventEmitter();
 
-        // Emit later on
-        process.nextTick(() => {
-          ee.emit('foo', 'bar');
-          ee.emit('foo', 42);
-        });
+      // Emit later on
+      process.nextTick(() => {
+        ee.emit('foo', 'bar');
+        ee.emit('foo', 42);
+      });
 
-        for await (const event of on(ee, 'foo')) {
-          // The execution of this inner block is synchronous and it
-          // processes one event at a time (even with await). Do not use
-          // if concurrent execution is required.
-          console.log(event); // prints ['bar'] [42]
-        }
-        // Unreachable here
-      })();
+      for await (const event of on(ee, 'foo')) {
+        // The execution of this inner block is synchronous and it
+        // processes one event at a time (even with await). Do not use
+        // if concurrent execution is required.
+        console.log(event); // prints ['bar'] [42]
+      }
+      // Unreachable here
       ```
 
       Returns an `AsyncIterator` that iterates `eventName` events. It will throw
@@ -767,7 +779,9 @@ inheritedMethods:
       An `AbortSignal` can be used to cancel waiting on events:
 
       ```js
-      const { on, EventEmitter } = require('events');
+      import { on, EventEmitter } from 'node:events';
+      import process from 'node:process';
+
       const ac = new AbortController();
 
       (async () => {
@@ -859,33 +873,36 @@ inheritedMethods:
 
       ```js
 
-      const { once, EventEmitter } = require('events');
+      import { once, EventEmitter } from 'node:events';
+
+      import process from 'node:process';
 
 
-      async function run() {
-        const ee = new EventEmitter();
+      const ee = new EventEmitter();
 
-        process.nextTick(() => {
-          ee.emit('myevent', 42);
-        });
 
-        const [value] = await once(ee, 'myevent');
-        console.log(value);
+      process.nextTick(() => {
+        ee.emit('myevent', 42);
+      });
 
-        const err = new Error('kaboom');
-        process.nextTick(() => {
-          ee.emit('error', err);
-        });
 
-        try {
-          await once(ee, 'myevent');
-        } catch (err) {
-          console.log('error happened', err);
-        }
+      const [value] = await once(ee, 'myevent');
+
+      console.log(value);
+
+
+      const err = new Error('kaboom');
+
+      process.nextTick(() => {
+        ee.emit('error', err);
+      });
+
+
+      try {
+        await once(ee, 'myevent');
+      } catch (err) {
+        console.error('error happened', err);
       }
-
-
-      run();
 
       ```
 
@@ -902,7 +919,7 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, once } = require('events');
+      import { EventEmitter, once } from 'node:events';
 
 
       const ee = new EventEmitter();
@@ -910,7 +927,7 @@ inheritedMethods:
 
       once(ee, 'error')
         .then(([err]) => console.log('ok', err.message))
-        .catch((err) => console.log('error', err.message));
+        .catch((err) => console.error('error', err.message));
 
       ee.emit('error', new Error('boom'));
 
@@ -925,7 +942,7 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, once } = require('events');
+      import { EventEmitter, once } from 'node:events';
 
 
       const ee = new EventEmitter();
@@ -982,6 +999,7 @@ inheritedMethods:
       including any wrappers (such as those created by `.once()`).
 
       ```js
+      import { EventEmitter } from 'node:events';
       const emitter = new EventEmitter();
       emitter.once('log', () => console.log('log once'));
 
@@ -1089,10 +1107,7 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: |-
       ```js
-      const {
-        setMaxListeners,
-        EventEmitter
-      } = require('events');
+      import { setMaxListeners, EventEmitter } from 'node:events';
 
       const target = new EventTarget();
       const emitter = new EventEmitter();
@@ -1116,36 +1131,6 @@ inheritedMethods:
           description: ''
     inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
 methods:
-  - name: getClientRoles(string)
-    uid: '@microsoft/live-share.LiveEvent.getClientRoles'
-    package: '@microsoft/live-share'
-    summary: Returns the list of roles supported for a client.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        static function getClientRoles(clientId: string):
-        Promise<UserMeetingRole[]>
-      parameters:
-        - id: clientId
-          type: string
-          description: Client ID to lookup.
-      return:
-        description: The list of roles for the client.
-        type: Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
-  - name: getTimestamp()
-    uid: '@microsoft/live-share.LiveEvent.getTimestamp'
-    package: '@microsoft/live-share'
-    summary: >-
-      Returns the current timestamp as the number of milliseconds sine the Unix
-      Epoch.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'static function getTimestamp(): number'
-      return:
-        description: ''
-        type: number
   - name: initialize(UserMeetingRole[])
     uid: '@microsoft/live-share.LiveEvent.initialize'
     package: '@microsoft/live-share'
@@ -1213,25 +1198,8 @@ methods:
           True if the received event is newer then the current event and should
           replace the current one.
         type: boolean
-  - name: registerClientId(string)
-    uid: '@microsoft/live-share.LiveEvent.registerClientId'
-    package: '@microsoft/live-share'
-    summary: Registers client id of the current user.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        static function registerClientId(clientId: string):
-        Promise<UserMeetingRole[]>
-      parameters:
-        - id: clientId
-          type: string
-          description: Client ID to map to current user.
-      return:
-        description: The list of roles for the client.
-        type: Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
-  - name: sendEvent(Partial<TEvent>)
-    uid: '@microsoft/live-share.LiveEvent.sendEvent'
+  - name: send(Partial<TEvent>)
+    uid: '@microsoft/live-share.LiveEvent.send'
     package: '@microsoft/live-share'
     summary: >-
       Broadcasts an event to all other clients.
@@ -1244,7 +1212,7 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
+      content: 'function send(evt?: Partial<TEvent>): TEvent'
       parameters:
         - id: evt
           type: Partial&lt;TEvent&gt;
@@ -1263,36 +1231,20 @@ methods:
 
           disconnected at time of delivery.
         type: TEvent
-  - name: setTimestampProvider(ITimestampProvider)
-    uid: '@microsoft/live-share.LiveEvent.setTimestampProvider'
+  - name: sendEvent(Partial<TEvent>)
+    uid: '@microsoft/live-share.LiveEvent.sendEvent'
     package: '@microsoft/live-share'
-    summary: Assigns a custom timestamp provider.
+    summary: ''
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: use `send()` instead
     syntax:
-      content: 'static function setTimestampProvider(provider: ITimestampProvider)'
+      content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
       parameters:
-        - id: provider
-          type: ITimestampProvider
-          description: The timestamp provider to use.
-  - name: verifyRolesAllowed(string, UserMeetingRole[])
-    uid: '@microsoft/live-share.LiveEvent.verifyRolesAllowed'
-    package: '@microsoft/live-share'
-    summary: Verifies that a client has one of the specified roles.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        static function verifyRolesAllowed(clientId: string, allowedRoles:
-        UserMeetingRole[]): Promise<boolean>
-      parameters:
-        - id: clientId
-          type: string
-          description: Client ID to inspect.
-        - id: allowedRoles
-          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
-          description: User roles that are allowed.
+        - id: evt
+          type: Partial&lt;TEvent&gt;
+          description: ''
       return:
-        description: True if the client has one of the specified roles.
-        type: Promise&lt;boolean&gt;
+        description: ''
+        type: TEvent
 extends: 'DataObject&lt;{ Events: ILiveEventEvents&lt;TEvent&gt; }&gt;'

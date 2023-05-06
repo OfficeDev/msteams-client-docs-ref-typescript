@@ -12,25 +12,37 @@ fields:
   - name: Standard
     uid: '@microsoft/teams-js.TeamType.Standard'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents a standard or classic team in host that is designed for ongoing
+      collaboration and communication among a group of people.
     numericValue: 0
   - name: Edu
     uid: '@microsoft/teams-js.TeamType.Edu'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents an educational team in host that is designed for classroom
+      collaboration and communication among students and teachers.
     numericValue: 1
   - name: Class
     uid: '@microsoft/teams-js.TeamType.Class'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents a class team in host that is designed for classroom
+      collaboration and communication among students and teachers in a
+      structured environment.
     numericValue: 2
   - name: Plc
     uid: '@microsoft/teams-js.TeamType.Plc'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents a professional learning community (PLC) team in host that is
+      designed for educators to collaborate and share resources and best
+      practices.
     numericValue: 3
   - name: Staff
     uid: '@microsoft/teams-js.TeamType.Staff'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents a staff team in host that is designed for staff collaboration
+      and communication among staff members.
     numericValue: 4

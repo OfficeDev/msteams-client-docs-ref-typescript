@@ -20,6 +20,18 @@ properties:
       return:
         description: ''
         type: undefined | TData
+  - name: displayName
+    uid: '@microsoft/live-share.LivePresenceUser.displayName'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: displayName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: undefined | string displayName
+      return:
+        description: ''
+        type: undefined | string
   - name: isLocalUser
     uid: '@microsoft/live-share.LivePresenceUser.isLocalUser'
     package: '@microsoft/live-share'
@@ -32,6 +44,18 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: roles
+    uid: '@microsoft/live-share.LivePresenceUser.roles'
+    package: '@microsoft/live-share'
+    summary: Returns the user's meeting roles.
+    fullName: roles
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: UserMeetingRole[] roles
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
   - name: state
     uid: '@microsoft/live-share.LivePresenceUser.state'
     package: '@microsoft/live-share'
@@ -47,7 +71,7 @@ properties:
   - name: userId
     uid: '@microsoft/live-share.LivePresenceUser.userId'
     package: '@microsoft/live-share'
-    summary: ID of the user.
+    summary: ID of the user. Can be undefined when first initialized.
     fullName: userId
     remarks: ''
     isDeprecated: false
@@ -57,17 +81,6 @@ properties:
         description: ''
         type: string
 methods:
-  - name: getRoles()
-    uid: '@microsoft/live-share.LivePresenceUser.getRoles'
-    package: '@microsoft/live-share'
-    summary: Returns the user's meeting roles.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function getRoles(): Promise<UserMeetingRole[]>'
-      return:
-        description: ''
-        type: Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
   - name: isFromClient(string)
     uid: '@microsoft/live-share.LivePresenceUser.isFromClient'
     package: '@microsoft/live-share'

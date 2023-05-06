@@ -197,10 +197,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: string userId
+      content: undefined | string userId
       return:
         description: ''
-        type: string
+        type: undefined | string
 inheritedProperties:
   - name: addListener
     uid: '@microsoft/live-share.LivePresence.addListener'
@@ -412,7 +412,7 @@ inheritedMethods:
 
       ```js
 
-      const EventEmitter = require('events');
+      import { EventEmitter } from 'node:events';
 
       const myEmitter = new EventEmitter();
 
@@ -485,7 +485,8 @@ inheritedMethods:
       listeners. The values in the array are strings or `Symbol`s.
 
       ```js
-      const EventEmitter = require('events');
+      import { EventEmitter } from 'node:events';
+
       const myEE = new EventEmitter();
       myEE.on('foo', () => {});
       myEE.on('bar', () => {});
@@ -570,21 +571,21 @@ inheritedMethods:
 
       ```js
 
-      const { getEventListeners, EventEmitter } = require('events');
+      import { getEventListeners, EventEmitter } from 'node:events';
 
 
       {
         const ee = new EventEmitter();
         const listener = () => console.log('Events are fun');
         ee.on('foo', listener);
-        getEventListeners(ee, 'foo'); // [listener]
+        console.log(getEventListeners(ee, 'foo')); // [ [Function: listener] ]
       }
 
       {
         const et = new EventTarget();
         const listener = () => console.log('Events are fun');
         et.addEventListener('foo', listener);
-        getEventListeners(et, 'foo'); // [listener]
+        console.log(getEventListeners(et, 'foo')); // [ [Function: listener] ]
       }
 
       ```
@@ -685,7 +686,8 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, listenerCount } = require('events');
+      import { EventEmitter, listenerCount } from 'node:events';
+
 
       const myEmitter = new EventEmitter();
 
@@ -716,18 +718,29 @@ inheritedMethods:
         description: ''
         type: number
     inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
-  - name: listenerCount(string | symbol)
+  - name: listenerCount(string | symbol, Function)
     uid: '@microsoft/live-share.LivePresence.listenerCount'
     package: '@microsoft/live-share'
-    summary: Returns the number of listeners listening to the event named `eventName`.
+    summary: >-
+      Returns the number of listeners listening for the event named `eventName`.
+
+      If `listener` is provided, it will return how many times the listener is
+      found
+
+      in the list of the listeners of the event.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function listenerCount(eventName: string | symbol): number'
+      content: >-
+        function listenerCount(eventName: string | symbol, listener?: Function):
+        number
       parameters:
         - id: eventName
           type: string | symbol
           description: The name of the event being listened for
+        - id: listener
+          type: Function
+          description: The event handler function
       return:
         description: ''
         type: number
@@ -762,25 +775,24 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: |-
       ```js
-      const { on, EventEmitter } = require('events');
+      import { on, EventEmitter } from 'node:events';
+      import process from 'node:process';
 
-      (async () => {
-        const ee = new EventEmitter();
+      const ee = new EventEmitter();
 
-        // Emit later on
-        process.nextTick(() => {
-          ee.emit('foo', 'bar');
-          ee.emit('foo', 42);
-        });
+      // Emit later on
+      process.nextTick(() => {
+        ee.emit('foo', 'bar');
+        ee.emit('foo', 42);
+      });
 
-        for await (const event of on(ee, 'foo')) {
-          // The execution of this inner block is synchronous and it
-          // processes one event at a time (even with await). Do not use
-          // if concurrent execution is required.
-          console.log(event); // prints ['bar'] [42]
-        }
-        // Unreachable here
-      })();
+      for await (const event of on(ee, 'foo')) {
+        // The execution of this inner block is synchronous and it
+        // processes one event at a time (even with await). Do not use
+        // if concurrent execution is required.
+        console.log(event); // prints ['bar'] [42]
+      }
+      // Unreachable here
       ```
 
       Returns an `AsyncIterator` that iterates `eventName` events. It will throw
@@ -791,7 +803,9 @@ inheritedMethods:
       An `AbortSignal` can be used to cancel waiting on events:
 
       ```js
-      const { on, EventEmitter } = require('events');
+      import { on, EventEmitter } from 'node:events';
+      import process from 'node:process';
+
       const ac = new AbortController();
 
       (async () => {
@@ -883,33 +897,36 @@ inheritedMethods:
 
       ```js
 
-      const { once, EventEmitter } = require('events');
+      import { once, EventEmitter } from 'node:events';
+
+      import process from 'node:process';
 
 
-      async function run() {
-        const ee = new EventEmitter();
+      const ee = new EventEmitter();
 
-        process.nextTick(() => {
-          ee.emit('myevent', 42);
-        });
 
-        const [value] = await once(ee, 'myevent');
-        console.log(value);
+      process.nextTick(() => {
+        ee.emit('myevent', 42);
+      });
 
-        const err = new Error('kaboom');
-        process.nextTick(() => {
-          ee.emit('error', err);
-        });
 
-        try {
-          await once(ee, 'myevent');
-        } catch (err) {
-          console.log('error happened', err);
-        }
+      const [value] = await once(ee, 'myevent');
+
+      console.log(value);
+
+
+      const err = new Error('kaboom');
+
+      process.nextTick(() => {
+        ee.emit('error', err);
+      });
+
+
+      try {
+        await once(ee, 'myevent');
+      } catch (err) {
+        console.error('error happened', err);
       }
-
-
-      run();
 
       ```
 
@@ -926,7 +943,7 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, once } = require('events');
+      import { EventEmitter, once } from 'node:events';
 
 
       const ee = new EventEmitter();
@@ -934,7 +951,7 @@ inheritedMethods:
 
       once(ee, 'error')
         .then(([err]) => console.log('ok', err.message))
-        .catch((err) => console.log('error', err.message));
+        .catch((err) => console.error('error', err.message));
 
       ee.emit('error', new Error('boom'));
 
@@ -949,7 +966,7 @@ inheritedMethods:
 
       ```js
 
-      const { EventEmitter, once } = require('events');
+      import { EventEmitter, once } from 'node:events';
 
 
       const ee = new EventEmitter();
@@ -1006,6 +1023,7 @@ inheritedMethods:
       including any wrappers (such as those created by `.once()`).
 
       ```js
+      import { EventEmitter } from 'node:events';
       const emitter = new EventEmitter();
       emitter.once('log', () => console.log('log once'));
 
@@ -1115,10 +1133,7 @@ inheritedMethods:
     package: '@microsoft/live-share'
     summary: |-
       ```js
-      const {
-        setMaxListeners,
-        EventEmitter
-      } = require('events');
+      import { setMaxListeners, EventEmitter } from 'node:events';
 
       const target = new EventTarget();
       const emitter = new EventEmitter();
@@ -1226,20 +1241,15 @@ methods:
         type: >-
           undefined | <xref uid="@microsoft/live-share.LivePresenceUser"
           />&lt;TData&gt;
-  - name: initialize(string, TData, PresenceState)
+  - name: initialize(TData, PresenceState)
     uid: '@microsoft/live-share.LivePresence.initialize'
     package: '@microsoft/live-share'
     summary: Starts sharing presence information.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function initialize(userId?: string, data?: TData, state?:
-        PresenceState): Promise<void>
+      content: 'function initialize(data?: TData, state?: PresenceState): Promise<void>'
       parameters:
-        - id: userId
-          type: string
-          description: Optional. ID of the local user. Defaults to a GUID if not provided.
         - id: data
           type: TData
           description: >-
@@ -1253,34 +1263,54 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: toArray()
+  - name: toArray(PresenceState)
     uid: '@microsoft/live-share.LivePresence.toArray'
     package: '@microsoft/live-share'
     summary: Returns a snapshot of the current list of presence objects being tracked.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function toArray(): LivePresenceUser<TData>[]'
+      content: 'function toArray(filter?: PresenceState): LivePresenceUser<TData>[]'
+      parameters:
+        - id: filter
+          type: <xref uid="@microsoft/live-share.PresenceState" />
+          description: Optional. Presence state to filter enumeration to.
       return:
         description: Array of presence objects.
         type: <xref uid="@microsoft/live-share.LivePresenceUser" />&lt;TData&gt;[]
-  - name: updatePresence(PresenceState, TData)
-    uid: '@microsoft/live-share.LivePresence.updatePresence'
+  - name: update(TData, PresenceState)
+    uid: '@microsoft/live-share.LivePresence.update'
     package: '@microsoft/live-share'
-    summary: Updates the users presence state and/or shared data object.
+    summary: Updates the local user's presence shared data object and/or state.
     remarks: >-
       This will trigger the immediate broadcast of the users presence to all
       other clients.
     isDeprecated: false
     syntax:
-      content: 'function updatePresence(state?: PresenceState, data?: TData)'
+      content: 'function update(data?: TData, state?: PresenceState)'
       parameters:
-        - id: state
-          type: <xref uid="@microsoft/live-share.PresenceState" />
-          description: Optional. Presence state to change.
         - id: data
           type: TData
           description: >-
             Optional. Data object to change. A deep copy of the data object is
             saved to avoid any future changes.
+        - id: state
+          type: <xref uid="@microsoft/live-share.PresenceState" />
+          description: Optional. Presence state to change.
+  - name: updatePresence(PresenceState, TData)
+    uid: '@microsoft/live-share.LivePresence.updatePresence'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: use `update()` instead
+    syntax:
+      content: 'function updatePresence(state?: PresenceState, data?: TData)'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/live-share.PresenceState" />
+          description: ''
+        - id: data
+          type: TData
+          description: ''
 extends: 'DataObject&lt;{ Events: ILivePresenceEvents&lt;TData&gt; }&gt;'

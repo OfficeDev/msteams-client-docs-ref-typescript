@@ -10,12 +10,20 @@ fields:
   - name: Large
     uid: '@microsoft/teams-js.DialogDimension.Large'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents a large-sized dialog box, which is typically used for
+      displaying large amounts of content or complex workflows that require more
+      space.
   - name: Medium
     uid: '@microsoft/teams-js.DialogDimension.Medium'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents a medium-sized dialog box, which is typically used for
+      displaying moderate amounts of content or workflows that require less
+      space.
   - name: Small
     uid: '@microsoft/teams-js.DialogDimension.Small'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Represents a small-sized dialog box, which is typically used for
+      displaying simple messages or workflows that require minimal space.
