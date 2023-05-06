@@ -2,7 +2,13 @@
 name: ParentAppWindow
 uid: '@microsoft/teams-js.ParentAppWindow'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >-
+  An object that is utilized to facilitate communication with a parent window
+
+  that initiated the opening of current window. For instance, a dialog or task
+
+  module would utilize it to transmit messages to the application that launched
+  it.
 fullName: ParentAppWindow
 remarks: ''
 isDeprecated: false
@@ -11,7 +17,7 @@ properties:
   - name: Instance
     uid: '@microsoft/teams-js.ParentAppWindow.Instance'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Get the parent window instance.
     fullName: Instance
     remarks: ''
     isDeprecated: false
@@ -21,7 +27,7 @@ properties:
         description: ''
         type: <xref uid="@microsoft/teams-js.IAppWindow" />
 methods:
-  - name: 'addEventListener(string, (message: any) => void)'
+  - name: addEventListener(string, addEventListnerFunctionType)
     uid: '@microsoft/teams-js.ParentAppWindow.addEventListener'
     package: '@microsoft/teams-js'
     summary: >-
@@ -31,8 +37,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function addEventListener(type: string, listener: (message: any) =>
-        void)
+        function addEventListener(type: string, listener:
+        addEventListnerFunctionType)
       parameters:
         - id: type
           type: string
@@ -40,22 +46,20 @@ methods:
             The event to listen to. Currently the only supported type is
             'message'.
         - id: listener
-          type: '(message: any) =&gt; void'
+          type: addEventListnerFunctionType
           description: The listener that will be called
-  - name: 'postMessage(any, (status: boolean, reason?: string) => void)'
+  - name: postMessage(any, onCompleteFunctionType)
     uid: '@microsoft/teams-js.ParentAppWindow.postMessage'
     package: '@microsoft/teams-js'
     summary: Send a message to the ParentAppWindow.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function postMessage(message: any, onComplete?: (status: boolean,
-        reason?: string) => void)
+      content: 'function postMessage(message: any, onComplete?: onCompleteFunctionType)'
       parameters:
         - id: message
           type: any
           description: The message to send
         - id: onComplete
-          type: '(status: boolean, reason?: string) =&gt; void'
+          type: onCompleteFunctionType
           description: The callback to know if the postMessage has been success/failed.

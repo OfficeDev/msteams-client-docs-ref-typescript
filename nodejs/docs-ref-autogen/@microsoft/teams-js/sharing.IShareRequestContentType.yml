@@ -2,7 +2,7 @@
 name: IShareRequestContentType
 uid: '@microsoft/teams-js.sharing.IShareRequestContentType'
 package: '@microsoft/teams-js'
-summary: ''
+summary: IShareRequestContentType defines share request type.
 fullName: IShareRequestContentType
 remarks: ''
 isDeprecated: false

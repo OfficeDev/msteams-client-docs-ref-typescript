@@ -2,7 +2,7 @@
 name: OpenMailItemParams
 uid: '@microsoft/teams-js.mail.OpenMailItemParams'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Defines the parameters used to open a mail item in the user's mailbox
 fullName: OpenMailItemParams
 remarks: ''
 isDeprecated: false
@@ -11,7 +11,9 @@ properties:
   - name: itemId
     uid: '@microsoft/teams-js.mail.OpenMailItemParams.itemId'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      An unique base64-encoded string id that represents the itemId or
+      messageId.
     fullName: itemId
     remarks: ''
     isDeprecated: false

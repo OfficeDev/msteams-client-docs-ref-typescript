@@ -9,7 +9,9 @@ enums:
   - '@microsoft/teams-js.video.VideoFrameFormat'
 typeAliases:
   - '@microsoft/teams-js.video.VideoEffectCallback'
+  - '@microsoft/teams-js.video.VideoFrameCallback'
 interfaces:
+  - '@microsoft/teams-js.video.VideoFrame'
   - '@microsoft/teams-js.video.VideoFrameConfig'
 package: '@microsoft/teams-js'
 previewState: beta
@@ -65,3 +67,21 @@ functions:
         - id: callback
           type: <xref uid="@microsoft/teams-js.video.VideoEffectCallback" />
           description: Function to be called when new video effect is applied.
+  - name: registerForVideoFrame(VideoFrameCallback, VideoFrameConfig)
+    uid: '@microsoft/teams-js.video.registerForVideoFrame'
+    package: '@microsoft/teams-js'
+    summary: Register to read the video frames in Permissions section
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerForVideoFrame(frameCallback: VideoFrameCallback,
+        config: VideoFrameConfig)
+      parameters:
+        - id: frameCallback
+          type: <xref uid="@microsoft/teams-js.video.VideoFrameCallback" />
+          description: The callback to invoke when registerForVideoFrame has completed
+        - id: config
+          type: <xref uid="@microsoft/teams-js.video.VideoFrameConfig" />
+          description: VideoFrameConfig to customize generated video frame parameters

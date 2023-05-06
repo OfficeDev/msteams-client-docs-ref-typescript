@@ -2,7 +2,7 @@
 name: IURLContent
 uid: '@microsoft/teams-js.sharing.IURLContent'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Represents IURLContent parameters.
 fullName: IURLContent
 remarks: ''
 isDeprecated: false
@@ -35,7 +35,7 @@ properties:
   - name: type
     uid: '@microsoft/teams-js.sharing.IURLContent.type'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Type
     fullName: type
     remarks: ''
     isDeprecated: false

@@ -45,7 +45,7 @@ inheritedProperties:
   - name: size
     uid: '@microsoft/teams-js.UrlDialogInfo.size'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: The requested size of the dialog
     fullName: size
     remarks: ''
     isDeprecated: false

@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: selectPeopleCallbackFunctionType
+uid: '@microsoft/teams-js.people.selectPeopleCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Select people callback function type
+fullName: selectPeopleCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type selectPeopleCallbackFunctionType = (
+    error: SdkError,
+    people: PeoplePickerResult[]
+  ) => void

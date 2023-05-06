@@ -2,7 +2,7 @@
 name: IAppContentStageSharingCapabilities
 uid: '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Represents app permission to share contents to meeting.
 fullName: IAppContentStageSharingCapabilities
 remarks: ''
 isDeprecated: false

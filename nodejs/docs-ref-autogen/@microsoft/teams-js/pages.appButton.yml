@@ -18,7 +18,7 @@ functions:
           boolean to represent whether the pages.appButton capability is
           supported
         type: boolean
-  - name: onClick(() => void)
+  - name: onClick(handlerFunctionType)
     uid: '@microsoft/teams-js.pages.appButton.onClick'
     package: '@microsoft/teams-js'
     summary: >-
@@ -29,14 +29,14 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function onClick(handler: () => void)'
+      content: 'function onClick(handler: handlerFunctionType)'
       parameters:
         - id: handler
-          type: () =&gt; void
+          type: handlerFunctionType
           description: >-
             The handler to invoke when the personal app button is clicked in the
             app bar.
-  - name: onHoverEnter(() => void)
+  - name: onHoverEnter(handlerFunctionType)
     uid: '@microsoft/teams-js.pages.appButton.onHoverEnter'
     package: '@microsoft/teams-js'
     summary: >-
@@ -47,14 +47,14 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function onHoverEnter(handler: () => void)'
+      content: 'function onHoverEnter(handler: handlerFunctionType)'
       parameters:
         - id: handler
-          type: () =&gt; void
+          type: handlerFunctionType
           description: >-
             The handler to invoke when entering hover of the personal app button
             in the app bar.
-  - name: onHoverLeave(() => void)
+  - name: onHoverLeave(handlerFunctionType)
     uid: '@microsoft/teams-js.pages.appButton.onHoverLeave'
     package: '@microsoft/teams-js'
     summary: >-
@@ -65,10 +65,10 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function onHoverLeave(handler: () => void)'
+      content: 'function onHoverLeave(handler: handlerFunctionType)'
       parameters:
         - id: handler
-          type: () =&gt; void
+          type: handlerFunctionType
           description: >-
             The handler to invoke when exiting hover of the personal app button
             in the app bar.

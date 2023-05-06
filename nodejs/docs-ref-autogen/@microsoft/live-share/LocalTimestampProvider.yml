@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: LocalTimestampProvider
+uid: '@microsoft/live-share.LocalTimestampProvider'
+package: '@microsoft/live-share'
+summary: Implements a local timestamp provider for testing purposes.
+fullName: LocalTimestampProvider
+remarks: >-
+  This implementation does not derive from `TimestampProvider` class as it
+  doesn't need to be started.
+isDeprecated: false
+type: class
+constructors:
+  - name: LocalTimestampProvider(boolean)
+    uid: '@microsoft/live-share.LocalTimestampProvider.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new LocalTimestampProvider(noWarn?: boolean)'
+      parameters:
+        - id: noWarn
+          type: boolean
+          description: ''
+methods:
+  - name: getMaxTimestampError()
+    uid: '@microsoft/live-share.LocalTimestampProvider.getMaxTimestampError'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxTimestampError(): number'
+      return:
+        description: ''
+        type: number
+  - name: getTimestamp()
+    uid: '@microsoft/live-share.LocalTimestampProvider.getTimestamp'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getTimestamp(): number'
+      return:
+        description: ''
+        type: number

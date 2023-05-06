@@ -1,7 +1,9 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.calendar'
 name: calendar
-summary: ''
+summary: >-
+  Interact with the user's calendar, including opening calendar items and
+  composing meetings.
 type: module
 interfaces:
   - '@microsoft/teams-js.calendar.ComposeMeetingParams'
@@ -11,7 +13,7 @@ functions:
   - name: composeMeeting(ComposeMeetingParams)
     uid: '@microsoft/teams-js.calendar.composeMeeting'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Compose a new meeting in the user's calendar.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -21,7 +23,7 @@ functions:
       parameters:
         - id: composeMeetingParams
           type: <xref uid="@microsoft/teams-js.calendar.ComposeMeetingParams" />
-          description: ''
+          description: object containing various properties to set up the meeting details.
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -39,7 +41,7 @@ functions:
   - name: openCalendarItem(OpenCalendarItemParams)
     uid: '@microsoft/teams-js.calendar.openCalendarItem'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Opens a calendar item.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -49,7 +51,7 @@ functions:
       parameters:
         - id: openCalendarItemParams
           type: <xref uid="@microsoft/teams-js.calendar.OpenCalendarItemParams" />
-          description: ''
+          description: object containing unique ID of the calendar item to be opened.
       return:
         description: ''
         type: Promise&lt;void&gt;

@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: LiveEventSource
+uid: '@microsoft/live-share.LiveEventSource'
+package: '@microsoft/live-share'
+summary: >-
+  Broadcasts live share events to all clients and can be received by an
+  `LiveEventTarget`.
+fullName: LiveEventSource<TEvent>
+remarks: >-
+  Live objects won't typically create an `LiveEventSource` directly. They will,
+  instead,
+
+  create an `LiveEventTarget` class, which can both send & receive events.
+isDeprecated: false
+type: class
+constructors:
+  - name: LiveEventSource<TEvent>(LiveEventScope, string)
+    uid: '@microsoft/live-share.LiveEventSource.constructor'
+    package: '@microsoft/live-share'
+    summary: Creates a new `LiveEventSource` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new LiveEventSource(scope: LiveEventScope, eventName: string)'
+      parameters:
+        - id: scope
+          type: <xref uid="@microsoft/live-share.LiveEventScope" />
+          description: Scope to use for sending events.
+        - id: eventName
+          type: string
+          description: Name of the event to broadcast.
+methods:
+  - name: sendEvent(Partial<TEvent>)
+    uid: '@microsoft/live-share.LiveEventSource.sendEvent'
+    package: '@microsoft/live-share'
+    summary: Broadcasts an event to any listening `LiveEventTarget` instances.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
+      parameters:
+        - id: evt
+          type: Partial&lt;TEvent&gt;
+          description: |-
+            Optional. Partial event object to send. The `ILiveEvent.name`,
+            `ILiveEvent.timestamp`, and `ILiveEvent.clientId`
+            fields will be automatically populated prior to sending.
+      return:
+        description: |-
+          The full event, including `ILiveEvent.name`,
+          `ILiveEvent.timestamp`, and `ILiveEvent.clientId` fields if known.
+        type: TEvent

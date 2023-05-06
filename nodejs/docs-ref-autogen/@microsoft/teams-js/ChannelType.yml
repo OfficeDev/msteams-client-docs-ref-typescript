@@ -10,12 +10,18 @@ fields:
   - name: Private
     uid: '@microsoft/teams-js.ChannelType.Private'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Type of channel is used for sensitive or confidential communication within
+      a team and is only accessible to members of the channel.
   - name: Regular
     uid: '@microsoft/teams-js.ChannelType.Regular'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      The default channel type. Type of channel is used for general
+      collaboration and communication within a team.
   - name: Shared
     uid: '@microsoft/teams-js.ChannelType.Shared'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Type of channel is used for collaboration between multiple teams or groups
+      and is accessible to members of all the teams or groups.

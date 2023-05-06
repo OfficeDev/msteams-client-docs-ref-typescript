@@ -1,0 +1,13 @@
+### YamlMime:TSEnum
+name: LiveStateEvents
+uid: '@microsoft/live-share.LiveStateEvents'
+package: '@microsoft/live-share'
+summary: Events supported by [LiveState` object.
+fullName: LiveStateEvents
+remarks: ''
+isDeprecated: false
+fields:
+  - name: stateChanged
+    uid: '@microsoft/live-share.LiveStateEvents.stateChanged'
+    package: '@microsoft/live-share'
+    summary: The objects state has changed.

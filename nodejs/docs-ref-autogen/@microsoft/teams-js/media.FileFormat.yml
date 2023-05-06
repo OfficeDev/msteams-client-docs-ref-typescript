@@ -10,8 +10,8 @@ fields:
   - name: Base64
     uid: '@microsoft/teams-js.media.FileFormat.Base64'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Base64 encoding
   - name: ID
     uid: '@microsoft/teams-js.media.FileFormat.ID'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: File id

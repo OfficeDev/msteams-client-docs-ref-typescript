@@ -11,4 +11,4 @@ fields:
   - name: M365Content
     uid: '@microsoft/teams-js.ActionObjectType.M365Content'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Represents content within a Microsoft 365 application.

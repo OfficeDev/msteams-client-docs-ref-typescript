@@ -49,7 +49,7 @@ inheritedProperties:
   - name: size
     uid: '@microsoft/teams-js.BotUrlDialogInfo.size'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: The requested size of the dialog
     fullName: size
     remarks: ''
     isDeprecated: false

@@ -36,6 +36,7 @@ interfaces:
   - '@microsoft/live-share-canvas.IPointerMoveEvent'
   - '@microsoft/live-share-canvas.IPointerMovedEventArgs'
   - '@microsoft/live-share-canvas.IPointerPoint'
+  - '@microsoft/live-share-canvas.IRawStroke'
   - '@microsoft/live-share-canvas.IRect'
   - '@microsoft/live-share-canvas.ISegment'
   - '@microsoft/live-share-canvas.IStroke'
@@ -49,6 +50,24 @@ typeAliases:
   - '@microsoft/live-share-canvas.CanvasReferencePoint'
   - '@microsoft/live-share-canvas.EventListener'
 functions:
+  - name: combineRects(IRect, IRect)
+    uid: '@microsoft/live-share-canvas.combineRects'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function combineRects(rect1: IRect, rect2: IRect): IRect'
+      parameters:
+        - id: rect1
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: ''
+        - id: rect2
+          type: <xref uid="@microsoft/live-share-canvas.IRect" />
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IRect" />
   - name: darkenColor(IColor, number)
     uid: '@microsoft/live-share-canvas.darkenColor'
     package: '@microsoft/live-share-canvas'

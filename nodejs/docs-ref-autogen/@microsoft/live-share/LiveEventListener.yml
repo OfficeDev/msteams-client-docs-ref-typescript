@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: LiveEventListener
+uid: '@microsoft/live-share.LiveEventListener'
+package: '@microsoft/live-share'
+summary: Live event callback.
+fullName: LiveEventListener<TEvent>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventListener<TEvent> = (evt: TEvent, local: boolean) => void

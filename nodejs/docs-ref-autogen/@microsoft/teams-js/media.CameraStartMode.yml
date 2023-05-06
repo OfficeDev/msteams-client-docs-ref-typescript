@@ -10,20 +10,20 @@ fields:
   - name: Photo
     uid: '@microsoft/teams-js.media.CameraStartMode.Photo'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Photo mode.
     numericValue: 1
   - name: Document
     uid: '@microsoft/teams-js.media.CameraStartMode.Document'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Document mode.
     numericValue: 2
   - name: Whiteboard
     uid: '@microsoft/teams-js.media.CameraStartMode.Whiteboard'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Whiteboard mode.
     numericValue: 3
   - name: BusinessCard
     uid: '@microsoft/teams-js.media.CameraStartMode.BusinessCard'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Business card mode.
     numericValue: 4

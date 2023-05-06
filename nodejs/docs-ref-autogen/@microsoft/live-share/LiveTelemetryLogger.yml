@@ -1,0 +1,118 @@
+### YamlMime:TSType
+name: LiveTelemetryLogger
+uid: '@microsoft/live-share.LiveTelemetryLogger'
+package: '@microsoft/live-share'
+summary: >-
+  Wraps the configured logger for the runtime and ensures that certain mandatory
+  properties
+
+  are included on outgoing telemetry events.
+fullName: LiveTelemetryLogger
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: LiveTelemetryLogger(IRuntimeSignaler)
+    uid: '@microsoft/live-share.LiveTelemetryLogger.constructor'
+    package: '@microsoft/live-share'
+    summary: Creates a new `LiveTelemetryLogger` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new LiveTelemetryLogger(runtime: IRuntimeSignaler)'
+      parameters:
+        - id: runtime
+          type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
+          description: Containers runtime instance.
+methods:
+  - name: formatCorrelationId(undefined | string, number)
+    uid: '@microsoft/live-share.LiveTelemetryLogger.formatCorrelationId'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function formatCorrelationId(clientId: undefined | string,
+        timestamp: number): string
+      parameters:
+        - id: clientId
+          type: undefined | string
+          description: ''
+        - id: timestamp
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: string
+  - name: sendErrorEvent(string, any, Partial<ILiveTelemetryProperties>)
+    uid: '@microsoft/live-share.LiveTelemetryLogger.sendErrorEvent'
+    package: '@microsoft/live-share'
+    summary: Sends an error event.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendErrorEvent(eventName: string, error?: any,
+        additionalProperties?: Partial<ILiveTelemetryProperties>)
+      parameters:
+        - id: eventName
+          type: string
+          description: Name of the event to send.
+        - id: error
+          type: any
+          description: Optional. Error object to send with event.
+        - id: additionalProperties
+          type: >-
+            Partial&lt;<xref
+            uid="@microsoft/live-share.ILiveTelemetryProperties" />&gt;
+          description: Optional. Additional properties to include with event.
+  - name: >-
+      sendPerformanceEvent(string, number, any,
+      Partial<ILiveTelemetryProperties>)
+    uid: '@microsoft/live-share.LiveTelemetryLogger.sendPerformanceEvent'
+    package: '@microsoft/live-share'
+    summary: Sends a performance telemetry event.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendPerformanceEvent(eventName: string, duration: number,
+        error?: any, additionalProperties?: Partial<ILiveTelemetryProperties>)
+      parameters:
+        - id: eventName
+          type: string
+          description: Name of the event to send.
+        - id: duration
+          type: number
+          description: The duration of the event in milliseconds.
+        - id: error
+          type: any
+          description: Optional. Error object to send with event.
+        - id: additionalProperties
+          type: >-
+            Partial&lt;<xref
+            uid="@microsoft/live-share.ILiveTelemetryProperties" />&gt;
+          description: Optional. Additional properties to include with event.
+  - name: sendTelemetryEvent(string, any, Partial<ILiveTelemetryProperties>)
+    uid: '@microsoft/live-share.LiveTelemetryLogger.sendTelemetryEvent'
+    package: '@microsoft/live-share'
+    summary: Sends a generic telemetry event.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendTelemetryEvent(eventName: string, error?: any,
+        additionalProperties?: Partial<ILiveTelemetryProperties>)
+      parameters:
+        - id: eventName
+          type: string
+          description: Name of the event to send.
+        - id: error
+          type: any
+          description: Optional. Error object to send with event.
+        - id: additionalProperties
+          type: >-
+            Partial&lt;<xref
+            uid="@microsoft/live-share.ILiveTelemetryProperties" />&gt;
+          description: Optional. Additional properties to include with event.

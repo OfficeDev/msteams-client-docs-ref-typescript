@@ -1,7 +1,13 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.meeting'
 name: meeting
-summary: ''
+summary: >-
+  Interact with meetings, including retrieving meeting details, getting mic
+  status, and sharing app content.
+
+  This namespace is used to handle meeting related functionality like
+
+  get meeting details, get/update state of mic, sharing app content and more.
 type: module
 enums:
   - '@microsoft/teams-js.meeting.CallType'
@@ -13,10 +19,7 @@ interfaces:
   - '@microsoft/teams-js.meeting.LiveStreamState'
 package: '@microsoft/teams-js'
 functions:
-  - name: >-
-      getAppContentStageSharingCapabilities((error: null | SdkError,
-      appContentStageSharingCapabilities: null |
-      IAppContentStageSharingCapabilities) => void)
+  - name: getAppContentStageSharingCapabilities(getAppContentCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.getAppContentStageSharingCapabilities'
     package: '@microsoft/teams-js'
     summary: Provides information related app's in-meeting sharing capabilities
@@ -24,14 +27,11 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function getAppContentStageSharingCapabilities(callback: (error: null |
-        SdkError, appContentStageSharingCapabilities: null |
-        IAppContentStageSharingCapabilities) => void)
+        function getAppContentStageSharingCapabilities(callback:
+        getAppContentCallbackFunctionType)
       parameters:
         - id: callback
-          type: >-
-            (error: null | SdkError, appContentStageSharingCapabilities: null |
-            IAppContentStageSharingCapabilities) =&gt; void
+          type: getAppContentCallbackFunctionType
           description: >-
             Callback contains 2 parameters, error and result.
 
@@ -43,9 +43,7 @@ functions:
 
             (indication of successful retrieval), or null (indication of failed
             retrieval)
-  - name: >-
-      getAppContentStageSharingState((error: null | SdkError,
-      appContentStageSharingState: null | IAppContentStageSharingState) => void)
+  - name: getAppContentStageSharingState(getAppContentStageCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.getAppContentStageSharingState'
     package: '@microsoft/teams-js'
     summary: Provides information related to current stage sharing state for app
@@ -53,14 +51,11 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function getAppContentStageSharingState(callback: (error: null |
-        SdkError, appContentStageSharingState: null |
-        IAppContentStageSharingState) => void)
+        function getAppContentStageSharingState(callback:
+        getAppContentStageCallbackFunctionType)
       parameters:
         - id: callback
-          type: >-
-            (error: null | SdkError, appContentStageSharingState: null |
-            IAppContentStageSharingState) =&gt; void
+          type: getAppContentStageCallbackFunctionType
           description: >-
             Callback contains 2 parameters, error and result.
 
@@ -72,9 +67,7 @@ functions:
 
             (indication of successful retrieval), or null (indication of failed
             retrieval)
-  - name: >-
-      getIncomingClientAudioState((error: null | SdkError, result: null |
-      boolean) => void)
+  - name: getIncomingClientAudioState(errorCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.getIncomingClientAudioState'
     package: '@microsoft/teams-js'
     summary: >-
@@ -84,11 +77,11 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function getIncomingClientAudioState(callback: (error: null | SdkError,
-        result: null | boolean) => void)
+        function getIncomingClientAudioState(callback:
+        errorCallbackFunctionType)
       parameters:
         - id: callback
-          type: '(error: null | SdkError, result: null | boolean) =&gt; void'
+          type: errorCallbackFunctionType
           description: >-
             Callback contains 2 parameters, error and result.
 
@@ -101,9 +94,7 @@ functions:
 
             result: True means incoming audio is muted and false means incoming
             audio is unmuted
-  - name: >-
-      getLiveStreamState((error: null | SdkError, liveStreamState: null |
-      LiveStreamState) => void)
+  - name: getLiveStreamState(getLiveStreamStateCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.getLiveStreamState'
     package: '@microsoft/teams-js'
     summary: Allows an app to get the state of the live stream in the current meeting
@@ -111,13 +102,11 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function getLiveStreamState(callback: (error: null | SdkError,
-        liveStreamState: null | LiveStreamState) => void)
+        function getLiveStreamState(callback:
+        getLiveStreamStateCallbackFunctionType)
       parameters:
         - id: callback
-          type: >-
-            (error: null | SdkError, liveStreamState: null | LiveStreamState)
-            =&gt; void
+          type: getLiveStreamStateCallbackFunctionType
           description: >-
             Callback contains 2 parameters: error and liveStreamState.
 
@@ -127,8 +116,7 @@ functions:
             liveStreamState can either contain a LiveStreamState value, or null
             when operation fails
   - name: >-
-      registerLiveStreamChangedHandler((liveStreamState: LiveStreamState) =>
-      void)
+      registerLiveStreamChangedHandler(registerLiveStreamChangedHandlerFunctionType)
     uid: '@microsoft/teams-js.meeting.registerLiveStreamChangedHandler'
     package: '@microsoft/teams-js'
     summary: Registers a handler for changes to the live stream.
@@ -138,15 +126,14 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function registerLiveStreamChangedHandler(handler: (liveStreamState:
-        LiveStreamState) => void)
+        function registerLiveStreamChangedHandler(handler:
+        registerLiveStreamChangedHandlerFunctionType)
       parameters:
         - id: handler
-          type: '(liveStreamState: LiveStreamState) =&gt; void'
+          type: registerLiveStreamChangedHandlerFunctionType
           description: The handler to invoke when the live stream state changes
   - name: >-
-      registerSpeakingStateChangeHandler((speakingState: ISpeakingState) =>
-      void)
+      registerSpeakingStateChangeHandler(registerSpeakingStateChangeHandlerFunctionType)
     uid: '@microsoft/teams-js.meeting.registerSpeakingStateChangeHandler'
     package: '@microsoft/teams-js'
     summary: >-
@@ -163,16 +150,16 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function registerSpeakingStateChangeHandler(handler: (speakingState:
-        ISpeakingState) => void)
+        function registerSpeakingStateChangeHandler(handler:
+        registerSpeakingStateChangeHandlerFunctionType)
       parameters:
         - id: handler
-          type: '(speakingState: ISpeakingState) =&gt; void'
+          type: registerSpeakingStateChangeHandlerFunctionType
           description: >-
             The handler to invoke when the speaking state of any participant
             changes (start/stop speaking).
   - name: >-
-      requestStartLiveStreaming((error: null | SdkError) => void, string,
+      requestStartLiveStreaming(liveStreamErrorCallbackFunctionType, string,
       string)
     uid: '@microsoft/teams-js.meeting.requestStartLiveStreaming'
     package: '@microsoft/teams-js'
@@ -185,11 +172,12 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function requestStartLiveStreaming(callback: (error: null | SdkError) =>
-        void, streamUrl: string, streamKey?: string)
+        function requestStartLiveStreaming(callback:
+        liveStreamErrorCallbackFunctionType, streamUrl: string, streamKey?:
+        string)
       parameters:
         - id: callback
-          type: '(error: null | SdkError) =&gt; void'
+          type: liveStreamErrorCallbackFunctionType
           description: >-
             Callback contains error parameter which can be of type SdkError in
             case of an error, or null when operation is successful
@@ -199,7 +187,7 @@ functions:
         - id: streamKey
           type: string
           description: the key to the stream resource
-  - name: 'requestStopLiveStreaming((error: null | SdkError) => void)'
+  - name: requestStopLiveStreaming(liveStreamErrorCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.requestStopLiveStreaming'
     package: '@microsoft/teams-js'
     summary: >-
@@ -211,17 +199,15 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function requestStopLiveStreaming(callback: (error: null | SdkError) =>
-        void)
+        function requestStopLiveStreaming(callback:
+        liveStreamErrorCallbackFunctionType)
       parameters:
         - id: callback
-          type: '(error: null | SdkError) =&gt; void'
+          type: liveStreamErrorCallbackFunctionType
           description: >-
             Callback contains error parameter which can be of type SdkError in
             case of an error, or null when operation is successful
-  - name: >-
-      shareAppContentToStage((error: null | SdkError, result: null | boolean) =>
-      void, string)
+  - name: shareAppContentToStage(errorCallbackFunctionType, string)
     uid: '@microsoft/teams-js.meeting.shareAppContentToStage'
     package: '@microsoft/teams-js'
     summary: Allows an app to share contents in the meeting
@@ -229,11 +215,11 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function shareAppContentToStage(callback: (error: null | SdkError,
-        result: null | boolean) => void, appContentUrl: string)
+        function shareAppContentToStage(callback: errorCallbackFunctionType,
+        appContentUrl: string)
       parameters:
         - id: callback
-          type: '(error: null | SdkError, result: null | boolean) =&gt; void'
+          type: errorCallbackFunctionType
           description: >-
             Callback contains 2 parameters, error and result.
 
@@ -245,9 +231,7 @@ functions:
         - id: appContentUrl
           type: string
           description: is the input URL which needs to be shared on to the stage
-  - name: >-
-      toggleIncomingClientAudio((error: null | SdkError, result: null | boolean)
-      => void)
+  - name: toggleIncomingClientAudio(errorCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.toggleIncomingClientAudio'
     package: '@microsoft/teams-js'
     summary: >-
@@ -256,12 +240,10 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function toggleIncomingClientAudio(callback: (error: null | SdkError,
-        result: null | boolean) => void)
+      content: 'function toggleIncomingClientAudio(callback: errorCallbackFunctionType)'
       parameters:
         - id: callback
-          type: '(error: null | SdkError, result: null | boolean) =&gt; void'
+          type: errorCallbackFunctionType
           description: >-
             Callback contains 2 parameters, error and result.
 

@@ -1,0 +1,108 @@
+### YamlMime:TSType
+name: VolumeManager
+uid: '@microsoft/live-share-media.VolumeManager'
+package: '@microsoft/live-share-media'
+summary: >-
+  Smooth audio level changes when volume is modified, or if volume limiting has
+  started/ended.
+fullName: VolumeManager
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: VolumeManager(IMediaPlayer)
+    uid: '@microsoft/live-share-media.VolumeManager.constructor'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new VolumeManager(player: IMediaPlayer)'
+      parameters:
+        - id: player
+          type: <xref uid="@microsoft/live-share-media.IMediaPlayer" />
+          description: ''
+properties:
+  - name: isLimiting
+    uid: '@microsoft/live-share-media.VolumeManager.isLimiting'
+    package: '@microsoft/live-share-media'
+    summary: Whether or not volume limiting is currently enabled.
+    fullName: isLimiting
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isLimiting
+      return:
+        description: ''
+        type: boolean
+  - name: limitLevel
+    uid: '@microsoft/live-share-media.VolumeManager.limitLevel'
+    package: '@microsoft/live-share-media'
+    summary: Target level to lower volume to.
+    fullName: limitLevel
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: number limitLevel
+      return:
+        description: ''
+        type: number
+  - name: limitLevelType
+    uid: '@microsoft/live-share-media.VolumeManager.limitLevelType'
+    package: '@microsoft/live-share-media'
+    summary: The type of level represented by the `limitLevel` property.
+    fullName: limitLevelType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: LimitLevelType limitLevelType
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-media.LimitLevelType" />
+  - name: volume
+    uid: '@microsoft/live-share-media.VolumeManager.volume'
+    package: '@microsoft/live-share-media'
+    summary: The selected volume.
+    fullName: volume
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: number volume
+      return:
+        description: ''
+        type: number
+  - name: volumeChangeDuration
+    uid: '@microsoft/live-share-media.VolumeManager.volumeChangeDuration'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Amount of time, in seconds, it should take to change the volume up or down
+      to the desired level.
+    fullName: volumeChangeDuration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: number volumeChangeDuration
+      return:
+        description: ''
+        type: number
+methods:
+  - name: startLimiting()
+    uid: '@microsoft/live-share-media.VolumeManager.startLimiting'
+    package: '@microsoft/live-share-media'
+    summary: |-
+      Limits volume based on `limitLevel` and `limitLevelType` properties.
+
+      See `limitLevel`
+      See `limitLevelType`
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function startLimiting()
+  - name: stopLimiting()
+    uid: '@microsoft/live-share-media.VolumeManager.stopLimiting'
+    package: '@microsoft/live-share-media'
+    summary: Disables volume limit.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function stopLimiting()

@@ -2,7 +2,7 @@
 name: IShareRequest
 uid: '@microsoft/teams-js.sharing.IShareRequest'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Represents IShareRequest parameters interface.
 fullName: IShareRequest<T>
 remarks: ''
 isDeprecated: false
@@ -11,7 +11,7 @@ properties:
   - name: content
     uid: '@microsoft/teams-js.sharing.IShareRequest.content'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Content of the share request.
     fullName: content
     remarks: ''
     isDeprecated: false

@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: DynamicObjectRegistry
+uid: '@microsoft/live-share.DynamicObjectRegistry'
+package: '@microsoft/live-share'
+summary: >-
+  Static registry class for loadable projects for use in frameworks like
+  `@microsoft/live-share-turbo`. All Live Share packages and extension
+
+  frameworks (e.g., `LiveMediaSession` in our media package) will register their
+  classes from within their main files. Goal of this class is for
+
+  all Live Share packages that a developer has installed will be registered as
+  available dynamic objects without the core package needing to be
+
+  aware of what every DDS is.
+fullName: DynamicObjectRegistry
+remarks: ''
+isDeprecated: false
+type: class
+properties:
+  - name: dynamicLoadableObjects
+    uid: '@microsoft/live-share.DynamicObjectRegistry.dynamicLoadableObjects'
+    package: '@microsoft/live-share'
+    summary: Get all registered dynamic loadable objects
+    fullName: dynamicLoadableObjects
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: static Map<string, LoadableObjectClass<any>> dynamicLoadableObjects
+      return:
+        description: ''
+        type: Map&lt;string, LoadableObjectClass&lt;any&gt;&gt;
+methods:
+  - name: registerObjectClass(LoadableObjectClass<any>, string)
+    uid: '@microsoft/live-share.DynamicObjectRegistry.registerObjectClass'
+    package: '@microsoft/live-share'
+    summary: Static method to register a new dynamic loadable object class.
+    remarks: Duplicate classes will be ignored.
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function registerObjectClass(loadableObjectClass:
+        LoadableObjectClass<any>, typeName: string)
+      parameters:
+        - id: loadableObjectClass
+          type: LoadableObjectClass&lt;any&gt;
+          description: the Fluid loadable object class to register
+        - id: typeName
+          type: string
+          description: ''

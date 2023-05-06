@@ -2,7 +2,9 @@
 name: StartCallParams
 uid: '@microsoft/teams-js.call.StartCallParams'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >-
+  Represents parameters for
+  [StartCall](xref:@microsoft/teams-js.call.startCall).
 fullName: StartCallParams
 remarks: ''
 isDeprecated: false

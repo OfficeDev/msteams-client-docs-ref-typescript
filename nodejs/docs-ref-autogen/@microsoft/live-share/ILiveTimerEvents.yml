@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: ILiveTimerEvents
+uid: '@microsoft/live-share.ILiveTimerEvents'
+package: '@microsoft/live-share'
+summary: ''
+fullName: ILiveTimerEvents
+remarks: ''
+isDeprecated: false
+type: interface
+extends: IEvent

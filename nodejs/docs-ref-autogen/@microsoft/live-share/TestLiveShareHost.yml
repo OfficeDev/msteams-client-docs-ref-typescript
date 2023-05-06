@@ -1,0 +1,223 @@
+### YamlMime:TSType
+name: TestLiveShareHost
+uid: '@microsoft/live-share.TestLiveShareHost'
+package: '@microsoft/live-share'
+summary: Live Share Host implementation used for local testing.
+fullName: TestLiveShareHost
+remarks: ''
+isDeprecated: false
+type: class
+properties:
+  - name: defaultRoles
+    uid: '@microsoft/live-share.TestLiveShareHost.defaultRoles'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: defaultRoles
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'defaultRoles: UserMeetingRole[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+  - name: LOCAL_MODE_TEST_TOKEN
+    uid: '@microsoft/live-share.TestLiveShareHost.LOCAL_MODE_TEST_TOKEN'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: LOCAL_MODE_TEST_TOKEN
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static LOCAL_MODE_TEST_TOKEN: "test-token" = "test-token"'
+      return:
+        description: ''
+        type: '"test-token"'
+methods:
+  - name: addClient(string, UserMeetingRole[])
+    uid: '@microsoft/live-share.TestLiveShareHost.addClient'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addClient(clientId: string, roles: UserMeetingRole[]):
+        TestLiveShareHost
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+        - id: roles
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.TestLiveShareHost" />
+  - name: 'create(() => undefined | string, (containerId: string) => void)'
+    uid: '@microsoft/live-share.TestLiveShareHost.create'
+    package: '@microsoft/live-share'
+    summary: Creates an new live share host for local testing.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function create(getLocalTestContainerId?: () => undefined |
+        string, setLocalTestContainerId?: (containerId: string) => void):
+        ILiveShareHost
+      parameters:
+        - id: getLocalTestContainerId
+          type: () =&gt; undefined | string
+          description: >-
+            Optional. Function to customize reading the test container ID. The
+            default implementation reads the ID from the browsers # URL.
+        - id: setLocalTestContainerId
+          type: '(containerId: string) =&gt; void'
+          description: >-
+            Optional. Function to customize saving the test container ID. The
+            default implementation appends the ID to the browsers # URL.
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.ILiveShareHost" />
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share.TestLiveShareHost.getClientInfo'
+    package: '@microsoft/live-share'
+    summary: Queries the hosts `IUserInfo` for a given client ID.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getClientInfo(clientId: string): Promise<IClientInfo>'
+      parameters:
+        - id: clientId
+          type: string
+          description: ID of the client to lookup.
+      return:
+        description: '`IUserInfo` for the queried client ID.'
+        type: Promise&lt;<xref uid="@microsoft/live-share.IClientInfo" />&gt;
+  - name: getClientRoles(string)
+    uid: '@microsoft/live-share.TestLiveShareHost.getClientRoles'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Queries the hosts role verification service for the roles associated with
+      a given client ID.
+    syntax:
+      content: 'function getClientRoles(clientId: string): Promise<UserMeetingRole[]>'
+      parameters:
+        - id: clientId
+          type: string
+          description: ID of teh client to lookup.
+      return:
+        description: An array of roles assigned to the queried client ID.
+        type: Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
+  - name: getFluidContainerId()
+    uid: '@microsoft/live-share.TestLiveShareHost.getFluidContainerId'
+    package: '@microsoft/live-share'
+    summary: Returns the container mapping information for the current session.
+    remarks: >-
+      Hosts are required to implement a container mapping service that stores
+      the container ID for
+
+      the current session.
+
+
+      TODO: add creation protocol details
+    isDeprecated: false
+    syntax:
+      content: 'function getFluidContainerId(): Promise<IFluidContainerInfo>'
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@microsoft/live-share.IFluidContainerInfo"
+          />&gt;
+  - name: getFluidTenantInfo()
+    uid: '@microsoft/live-share.TestLiveShareHost.getFluidTenantInfo'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns the Fluid service endpoint and tenant to use for the current
+      session.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getFluidTenantInfo(): Promise<IFluidTenantInfo>'
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.IFluidTenantInfo" />&gt;
+  - name: getFluidToken(string)
+    uid: '@microsoft/live-share.TestLiveShareHost.getFluidToken'
+    package: '@microsoft/live-share'
+    summary: Returns the Fluid access token to use for the current session.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getFluidToken(containerId?: string): Promise<string>'
+      parameters:
+        - id: containerId
+          type: string
+          description: >-
+            Optional. ID of the container being joined. This will be undefined
+            when creating a new container.
+      return:
+        description: ''
+        type: Promise&lt;string&gt;
+  - name: getNtpTime()
+    uid: '@microsoft/live-share.TestLiveShareHost.getNtpTime'
+    package: '@microsoft/live-share'
+    summary: Returns the global timestamp for the current session.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getNtpTime(): Promise<INtpTimeInfo>'
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.INtpTimeInfo" />&gt;
+  - name: registerClientId(string)
+    uid: '@microsoft/live-share.TestLiveShareHost.registerClientId'
+    package: '@microsoft/live-share'
+    summary: >-
+      Registers the local clients Fluid client ID with the hosts role
+      verification service.
+    remarks: >-
+      Hosts should expect this to be called anytime the Fluid clients underlying
+      socket connects
+
+      or reconnects.
+    isDeprecated: false
+    syntax:
+      content: 'function registerClientId(clientId: string): Promise<UserMeetingRole[]>'
+      parameters:
+        - id: clientId
+          type: string
+          description: Unique ID assigned to the local Fluid client.
+      return:
+        description: An array of meeting roles assigned to the local user.
+        type: Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
+  - name: setFluidContainerId(string)
+    uid: '@microsoft/live-share.TestLiveShareHost.setFluidContainerId'
+    package: '@microsoft/live-share'
+    summary: >-
+      Attempts to save the ID of the Fluid container created to the hosts
+      mapping service.
+    remarks: >-
+      Hosts should return a `containerState` of "Added" if the mapping was
+      successfully saved,
+
+      otherwise a state of "Conflict" should be returned to indicate that
+      another client has
+
+      already saved a container ID for the current session.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setFluidContainerId(containerId: string):
+        Promise<IFluidContainerInfo>
+      parameters:
+        - id: containerId
+          type: string
+          description: Id of the Fluid container that was created.
+      return:
+        description: Information indicating the success of mapping assignment.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/live-share.IFluidContainerInfo"
+          />&gt;

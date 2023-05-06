@@ -151,7 +151,7 @@ functions:
       return:
         description: Promise that will be fulfilled when the operation has completed
         type: Promise&lt;void&gt;
-  - name: 'registerOnThemeChangeHandler((theme: string) => void)'
+  - name: registerOnThemeChangeHandler(themeHandler)
     uid: '@microsoft/teams-js.app.registerOnThemeChangeHandler'
     package: '@microsoft/teams-js'
     summary: Registers a handler for theme changes.
@@ -160,8 +160,8 @@ functions:
       replaces an existing registration.
     isDeprecated: false
     syntax:
-      content: 'function registerOnThemeChangeHandler(handler: (theme: string) => void)'
+      content: 'function registerOnThemeChangeHandler(handler: themeHandler)'
       parameters:
         - id: handler
-          type: '(theme: string) =&gt; void'
+          type: themeHandler
           description: The handler to invoke when the user changes their theme.

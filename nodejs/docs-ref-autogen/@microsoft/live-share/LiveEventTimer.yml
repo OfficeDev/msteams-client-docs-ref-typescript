@@ -1,0 +1,118 @@
+### YamlMime:TSType
+name: LiveEventTimer
+uid: '@microsoft/live-share.LiveEventTimer'
+package: '@microsoft/live-share'
+summary: Periodically broadcasts an event to listening `LiveEventTarget` instances.
+fullName: LiveEventTimer<T>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: LiveEventTimer<T>(LiveEventSource<T>, () => Partial<T>, number, boolean)
+    uid: '@microsoft/live-share.LiveEventTimer.constructor'
+    package: '@microsoft/live-share'
+    summary: >-
+      Creates a new `LiveEventTimer instance.
+
+      @param eventSource Event source that will be used to emit events.
+
+      @param createEvent Function used to construct an event to send. This will
+      be called at regular intervals prior to sending an event.
+
+      @param delay Period to delay for in milliseconds.
+
+      @param repeat Optional. If true the timer will repeat once `start` is
+      called, otherwise a single event will be sent after the delay. Defaults to
+      false.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new LiveEventTimer(eventSource: LiveEventSource<T>, createEvent: () =>
+        Partial<T>, delay: number, repeat?: boolean)
+      parameters:
+        - id: eventSource
+          type: <xref uid="@microsoft/live-share.LiveEventSource" />&lt;T&gt;
+          description: ''
+        - id: createEvent
+          type: () =&gt; Partial&lt;T&gt;
+          description: ''
+        - id: delay
+          type: number
+          description: ''
+        - id: repeat
+          type: boolean
+          description: ''
+properties:
+  - name: delay
+    uid: '@microsoft/live-share.LiveEventTimer.delay'
+    package: '@microsoft/live-share'
+    summary: The rate at which the events are sent in milliseconds.
+    fullName: delay
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: number delay
+      return:
+        description: ''
+        type: number
+  - name: isRunning
+    uid: '@microsoft/live-share.LiveEventTimer.isRunning'
+    package: '@microsoft/live-share'
+    summary: Returns true if the timer is currently running.
+    fullName: isRunning
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isRunning
+      return:
+        description: ''
+        type: boolean
+  - name: repeat
+    uid: '@microsoft/live-share.LiveEventTimer.repeat'
+    package: '@microsoft/live-share'
+    summary: >-
+      If true the event will automatically repeat at an interval specified by
+      the `delay`.
+    fullName: repeat
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'repeat: boolean'
+      return:
+        description: ''
+        type: boolean
+methods:
+  - name: sendEvent()
+    uid: '@microsoft/live-share.LiveEventTimer.sendEvent'
+    package: '@microsoft/live-share'
+    summary: Immediately sends an event.
+    remarks: >-
+      The `createEvent` callback to construct the event is called but does not
+      impact any pending
+
+      timeouts. Call `start` after calling `sendEvent` if you'd like to skip the
+      next timer
+
+      interval.
+    isDeprecated: false
+    syntax:
+      content: function sendEvent()
+  - name: start()
+    uid: '@microsoft/live-share.LiveEventTimer.start'
+    package: '@microsoft/live-share'
+    summary: Starts the timer.
+    remarks: >-
+      If the timer is running it will be stooped and then re-started with a new
+      `delay`.
+    isDeprecated: false
+    syntax:
+      content: function start()
+  - name: stop()
+    uid: '@microsoft/live-share.LiveEventTimer.stop'
+    package: '@microsoft/live-share'
+    summary: Stops the timer if its running.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function stop()

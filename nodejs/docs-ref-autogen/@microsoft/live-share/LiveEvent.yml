@@ -1,0 +1,1250 @@
+### YamlMime:TSType
+name: LiveEvent
+uid: '@microsoft/live-share.LiveEvent'
+package: '@microsoft/live-share'
+summary: >-
+  Live fluid object that broadcasts an event to other clients and a set of
+  static event
+
+  related helpers.
+
+
+  #### remarks
+
+  Applications should call `on('received', (evt, local) => {})` to listen for
+  local events sent
+
+  and remote events received. Events aren't guaranteed to be delivered so you
+  should limit their
+
+  use to sending events you're ok with potentially being missed. Reactions are a
+  good use case for
+
+  `LiveEvents`. Use something like the `LiveState` class when syncing state.
+fullName: LiveEvent<TEvent>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: 'LiveEvent<TEvent>(IDataObjectProps<{ Events: ILiveEventEvents<TEvent> }>)'
+    uid: '@microsoft/live-share.LiveEvent.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new LiveEvent(props: IDataObjectProps<{ Events: ILiveEventEvents<TEvent>
+        }>)
+      parameters:
+        - id: props
+          type: 'IDataObjectProps&lt;{ Events: ILiveEventEvents&lt;TEvent&gt; }&gt;'
+          description: ''
+properties:
+  - name: disposed
+    uid: '@microsoft/live-share.LiveEvent.disposed'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: disposed
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean disposed
+      return:
+        description: ''
+        type: boolean
+  - name: factory
+    uid: '@microsoft/live-share.LiveEvent.factory'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type factory.
+    fullName: factory
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static factory: DataObjectFactory<LiveEvent<ILiveEvent>,
+        DataObjectTypes>
+      return:
+        description: ''
+        type: >-
+          DataObjectFactory&lt;<xref uid="@microsoft/live-share.LiveEvent"
+          />&lt;<xref uid="@microsoft/live-share.ILiveEvent" />&gt;,
+          DataObjectTypes&gt;
+  - name: handle
+    uid: '@microsoft/live-share.LiveEvent.handle'
+    package: '@microsoft/live-share'
+    summary: Handle to a data store
+    fullName: handle
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> handle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: id
+    uid: '@microsoft/live-share.LiveEvent.id'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: string id
+      return:
+        description: ''
+        type: string
+  - name: IFluidHandle
+    uid: '@microsoft/live-share.LiveEvent.IFluidHandle'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidHandle
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: IFluidHandle<this> IFluidHandle
+      return:
+        description: ''
+        type: IFluidHandle&lt;this&gt;
+  - name: IFluidLoadable
+    uid: '@microsoft/live-share.LiveEvent.IFluidLoadable'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidLoadable
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: this IFluidLoadable
+      return:
+        description: ''
+        type: this
+  - name: IFluidRouter
+    uid: '@microsoft/live-share.LiveEvent.IFluidRouter'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: IFluidRouter
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: this IFluidRouter
+      return:
+        description: ''
+        type: this
+  - name: isInitialized
+    uid: '@microsoft/live-share.LiveEvent.isInitialized'
+    package: '@microsoft/live-share'
+    summary: Returns true if the object has been initialized.
+    fullName: isInitialized
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isInitialized
+      return:
+        description: ''
+        type: boolean
+  - name: isStarted
+    uid: '@microsoft/live-share.LiveEvent.isStarted'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: isStarted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isStarted
+      return:
+        description: ''
+        type: boolean
+  - name: TypeName
+    uid: '@microsoft/live-share.LiveEvent.TypeName'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type/name.
+    fullName: TypeName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TypeName: "@microsoft/live-share:LiveEvent" =
+        "@microsoft/live-share:LiveEvent"
+      return:
+        description: ''
+        type: '"@microsoft/live-share:LiveEvent"'
+inheritedProperties:
+  - name: addListener
+    uid: '@microsoft/live-share.LiveEvent.addListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: addListener
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        addListener: TypedEventTransform<LiveEvent<TEvent>,
+        ILiveEventEvents<TEvent> & IEvent>
+      return:
+        description: ''
+        type: >-
+          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
+          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
+          />&lt;TEvent&gt; & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.addListener
+  - name: captureRejections
+    uid: '@microsoft/live-share.LiveEvent.captureRejections'
+    package: '@microsoft/live-share'
+    summary: Sets or gets the default captureRejection value for all emitters.
+    fullName: captureRejections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejections: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejections
+  - name: captureRejectionSymbol
+    uid: '@microsoft/live-share.LiveEvent.captureRejectionSymbol'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: captureRejectionSymbol
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static captureRejectionSymbol: typeof captureRejectionSymbol'
+      return:
+        description: ''
+        type: typeof captureRejectionSymbol
+    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejectionSymbol
+  - name: defaultMaxListeners
+    uid: '@microsoft/live-share.LiveEvent.defaultMaxListeners'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: defaultMaxListeners
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static defaultMaxListeners: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> DataObject.defaultMaxListeners
+  - name: errorMonitor
+    uid: '@microsoft/live-share.LiveEvent.errorMonitor'
+    package: '@microsoft/live-share'
+    summary: >-
+      This symbol shall be used to install a listener for only monitoring
+      `'error'`
+
+      events. Listeners installed using this symbol are called before the
+      regular
+
+      `'error'` listeners are called.
+
+
+      Installing a listener using this symbol does not change the behavior once
+      an
+
+      `'error'` event is emitted, therefore the process will still crash if no
+
+      regular `'error'` listener is installed.
+    fullName: errorMonitor
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static errorMonitor: typeof errorMonitor'
+      return:
+        description: ''
+        type: typeof errorMonitor
+    inheritanceDescription: <b>Inherited From</b> DataObject.errorMonitor
+  - name: 'off'
+    uid: '@microsoft/live-share.LiveEvent.off'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'off'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        off: TypedEventTransform<LiveEvent<TEvent>, ILiveEventEvents<TEvent> &
+        IEvent>
+      return:
+        description: ''
+        type: >-
+          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
+          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
+          />&lt;TEvent&gt; & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.off
+  - name: 'on'
+    uid: '@microsoft/live-share.LiveEvent.on'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: 'on'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        on: TypedEventTransform<LiveEvent<TEvent>, ILiveEventEvents<TEvent> &
+        IEvent>
+      return:
+        description: ''
+        type: >-
+          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
+          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
+          />&lt;TEvent&gt; & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.on
+  - name: once
+    uid: '@microsoft/live-share.LiveEvent.once'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: once
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        once: TypedEventTransform<LiveEvent<TEvent>, ILiveEventEvents<TEvent> &
+        IEvent>
+      return:
+        description: ''
+        type: >-
+          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
+          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
+          />&lt;TEvent&gt; & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
+  - name: prependListener
+    uid: '@microsoft/live-share.LiveEvent.prependListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependListener
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        prependListener: TypedEventTransform<LiveEvent<TEvent>,
+        ILiveEventEvents<TEvent> & IEvent>
+      return:
+        description: ''
+        type: >-
+          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
+          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
+          />&lt;TEvent&gt; & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.prependListener
+  - name: prependOnceListener
+    uid: '@microsoft/live-share.LiveEvent.prependOnceListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: prependOnceListener
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        prependOnceListener: TypedEventTransform<LiveEvent<TEvent>,
+        ILiveEventEvents<TEvent> & IEvent>
+      return:
+        description: ''
+        type: >-
+          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
+          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
+          />&lt;TEvent&gt; & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.prependOnceListener
+  - name: removeListener
+    uid: '@microsoft/live-share.LiveEvent.removeListener'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: removeListener
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        removeListener: TypedEventTransform<LiveEvent<TEvent>,
+        ILiveEventEvents<TEvent> & IEvent>
+      return:
+        description: ''
+        type: >-
+          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
+          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
+          />&lt;TEvent&gt; & IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.removeListener
+inheritedMethods:
+  - name: dispose()
+    uid: '@microsoft/live-share.LiveEvent.dispose'
+    package: '@microsoft/live-share'
+    summary: Called when the host container closes and disposes itself
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function dispose()
+    inheritanceDescription: <b>Inherited From</b> DataObject.dispose
+  - name: emit(string | symbol, any[])
+    uid: '@microsoft/live-share.LiveEvent.emit'
+    package: '@microsoft/live-share'
+    summary: >-
+      Synchronously calls each of the listeners registered for the event
+      named`eventName`, in the order they were registered, passing the supplied
+      arguments
+
+      to each.
+
+
+      Returns `true` if the event had listeners, `false` otherwise.
+
+
+      ```js
+
+      import { EventEmitter } from 'node:events';
+
+      const myEmitter = new EventEmitter();
+
+
+      // First listener
+
+      myEmitter.on('event', function firstListener() {
+        console.log('Helloooo! first listener');
+      });
+
+      // Second listener
+
+      myEmitter.on('event', function secondListener(arg1, arg2) {
+        console.log(`event with parameters ${arg1}, ${arg2} in second listener`);
+      });
+
+      // Third listener
+
+      myEmitter.on('event', function thirdListener(...args) {
+        const parameters = args.join(', ');
+        console.log(`event with parameters ${parameters} in third listener`);
+      });
+
+
+      console.log(myEmitter.listeners('event'));
+
+
+      myEmitter.emit('event', 1, 2, 3, 4, 5);
+
+
+      // Prints:
+
+      // [
+
+      //   [Function: firstListener],
+
+      //   [Function: secondListener],
+
+      //   [Function: thirdListener]
+
+      // ]
+
+      // Helloooo! first listener
+
+      // event with parameters 1, 2 in second listener
+
+      // event with parameters 1, 2, 3, 4, 5 in third listener
+
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function emit(eventName: string | symbol, args: any[]): boolean'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: ''
+        - id: args
+          type: any[]
+          description: ''
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> DataObject.emit
+  - name: eventNames()
+    uid: '@microsoft/live-share.LiveEvent.eventNames'
+    package: '@microsoft/live-share'
+    summary: |-
+      Returns an array listing the events for which the emitter has registered
+      listeners. The values in the array are strings or `Symbol`s.
+
+      ```js
+      import { EventEmitter } from 'node:events';
+
+      const myEE = new EventEmitter();
+      myEE.on('foo', () => {});
+      myEE.on('bar', () => {});
+
+      const sym = Symbol('symbol');
+      myEE.on(sym, () => {});
+
+      console.log(myEE.eventNames());
+      // Prints: [ 'foo', 'bar', Symbol(symbol) ]
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function eventNames(): (string | symbol)[]'
+      return:
+        description: ''
+        type: (string | symbol)[]
+    inheritanceDescription: <b>Inherited From</b> DataObject.eventNames
+  - name: finishInitialization(boolean)
+    uid: '@microsoft/live-share.LiveEvent.finishInitialization'
+    package: '@microsoft/live-share'
+    summary: >-
+      Call this API to ensure PureDataObject is fully initialized.
+
+      Initialization happens on demand, only on as-needed bases.
+
+      In most cases you should allow factory/object to decide when to finish
+      initialization.
+
+      But if you are supplying your own implementation of DataStoreRuntime
+      factory and overriding some methods
+
+      and need a fully initialized object, then you can call this API to ensure
+      object is fully initialized.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function finishInitialization(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.finishInitialization
+  - name: getDataObject(IFluidDataStoreRuntime)
+    uid: '@microsoft/live-share.LiveEvent.getDataObject'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getDataObject(runtime: IFluidDataStoreRuntime):
+        Promise<PureDataObject<DataObjectTypes>>
+      parameters:
+        - id: runtime
+          type: IFluidDataStoreRuntime
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.getDataObject
+  - name: getEventListeners(_DOMEventTarget | EventEmitter, string | symbol)
+    uid: '@microsoft/live-share.LiveEvent.getEventListeners'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns a copy of the array of listeners for the event named `eventName`.
+
+
+      For `EventEmitter`s this behaves exactly the same as calling `.listeners`
+      on
+
+      the emitter.
+
+
+      For `EventTarget`s this is the only way to get the event listeners for the
+
+      event target. This is useful for debugging and diagnostic purposes.
+
+
+      ```js
+
+      import { getEventListeners, EventEmitter } from 'node:events';
+
+
+      {
+        const ee = new EventEmitter();
+        const listener = () => console.log('Events are fun');
+        ee.on('foo', listener);
+        console.log(getEventListeners(ee, 'foo')); // [ [Function: listener] ]
+      }
+
+      {
+        const et = new EventTarget();
+        const listener = () => console.log('Events are fun');
+        et.addEventListener('foo', listener);
+        console.log(getEventListeners(et, 'foo')); // [ [Function: listener] ]
+      }
+
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getEventListeners(emitter: _DOMEventTarget |
+        EventEmitter, name: string | symbol): Function[]
+      parameters:
+        - id: emitter
+          type: _DOMEventTarget | EventEmitter
+          description: ''
+        - id: name
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: Function[]
+    inheritanceDescription: <b>Inherited From</b> DataObject.getEventListeners
+  - name: >-
+      getFluidObjectFromDirectory<T>(string, IDirectory, (id: string, directory:
+      IDirectory) => undefined | IFluidHandle<FluidObject<unknown> &
+      IFluidLoadable>)
+    uid: '@microsoft/live-share.LiveEvent.getFluidObjectFromDirectory'
+    package: '@microsoft/live-share'
+    summary: Retrieve Fluid object using the handle get
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getFluidObjectFromDirectory<T>(key: string, directory:
+        IDirectory, getObjectFromDirectory?: (id: string, directory: IDirectory)
+        => undefined | IFluidHandle<FluidObject<unknown> & IFluidLoadable>):
+        Promise<undefined | T>
+      parameters:
+        - id: key
+          type: string
+          description: key that object (handle/id) is stored with in the directory
+        - id: directory
+          type: IDirectory
+          description: directory containing the object
+        - id: getObjectFromDirectory
+          type: >-
+            (id: string, directory: IDirectory) =&gt; undefined |
+            IFluidHandle&lt;FluidObject&lt;unknown&gt; & IFluidLoadable&gt;
+          description: >-
+            optional callback for fetching object from the directory, allows
+            users to
+
+            define custom types/getters for object retrieval
+      return:
+        description: ''
+        type: Promise&lt;undefined | T&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.getFluidObjectFromDirectory
+  - name: getMaxListeners()
+    uid: '@microsoft/live-share.LiveEvent.getMaxListeners'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns the current max listener value for the `EventEmitter` which is
+      either
+
+      set by `emitter.setMaxListeners(n)` or defaults to
+      [defaultMaxListeners](xref:@microsoft/live-share.LiveEvent.defaultMaxListeners).
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxListeners(): number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> DataObject.getMaxListeners
+  - name: initializeInternal(boolean)
+    uid: '@microsoft/live-share.LiveEvent.initializeInternal'
+    package: '@microsoft/live-share'
+    summary: |-
+      Initializes internal objects and calls initialization overrides.
+      Caller is responsible for ensuring this is only invoked once.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function initializeInternal(existing: boolean): Promise<void>'
+      parameters:
+        - id: existing
+          type: boolean
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
+  - name: listenerCount(EventEmitter, string | symbol)
+    uid: '@microsoft/live-share.LiveEvent.listenerCount'
+    package: '@microsoft/live-share'
+    summary: >-
+      A class method that returns the number of listeners for the given
+      `eventName`registered on the given `emitter`.
+
+
+      ```js
+
+      import { EventEmitter, listenerCount } from 'node:events';
+
+
+      const myEmitter = new EventEmitter();
+
+      myEmitter.on('event', () => {});
+
+      myEmitter.on('event', () => {});
+
+      console.log(listenerCount(myEmitter, 'event'));
+
+      // Prints: 2
+
+      ```
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: Since v3.2.0 - Use `listenerCount` instead.
+    syntax:
+      content: >-
+        static function listenerCount(emitter: EventEmitter, eventName: string |
+        symbol): number
+      parameters:
+        - id: emitter
+          type: EventEmitter
+          description: The emitter to query
+        - id: eventName
+          type: string | symbol
+          description: The event name
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
+  - name: listenerCount(string | symbol, Function)
+    uid: '@microsoft/live-share.LiveEvent.listenerCount'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns the number of listeners listening for the event named `eventName`.
+
+      If `listener` is provided, it will return how many times the listener is
+      found
+
+      in the list of the listeners of the event.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listenerCount(eventName: string | symbol, listener?: Function):
+        number
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: The name of the event being listened for
+        - id: listener
+          type: Function
+          description: The event handler function
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
+  - name: listeners(string | symbol)
+    uid: '@microsoft/live-share.LiveEvent.listeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      Returns a copy of the array of listeners for the event named `eventName`.
+
+      ```js
+      server.on('connection', (stream) => {
+        console.log('someone connected!');
+      });
+      console.log(util.inspect(server.listeners('connection')));
+      // Prints: [ [Function] ]
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function listeners(eventName: string | symbol): Function[]'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: Function[]
+    inheritanceDescription: <b>Inherited From</b> DataObject.listeners
+  - name: on(EventEmitter, string, StaticEventEmitterOptions)
+    uid: '@microsoft/live-share.LiveEvent.on'
+    package: '@microsoft/live-share'
+    summary: |-
+      ```js
+      import { on, EventEmitter } from 'node:events';
+      import process from 'node:process';
+
+      const ee = new EventEmitter();
+
+      // Emit later on
+      process.nextTick(() => {
+        ee.emit('foo', 'bar');
+        ee.emit('foo', 42);
+      });
+
+      for await (const event of on(ee, 'foo')) {
+        // The execution of this inner block is synchronous and it
+        // processes one event at a time (even with await). Do not use
+        // if concurrent execution is required.
+        console.log(event); // prints ['bar'] [42]
+      }
+      // Unreachable here
+      ```
+
+      Returns an `AsyncIterator` that iterates `eventName` events. It will throw
+      if the `EventEmitter` emits `'error'`. It removes all listeners when
+      exiting the loop. The `value` returned by each iteration is an array
+      composed of the emitted event arguments.
+
+      An `AbortSignal` can be used to cancel waiting on events:
+
+      ```js
+      import { on, EventEmitter } from 'node:events';
+      import process from 'node:process';
+
+      const ac = new AbortController();
+
+      (async () => {
+        const ee = new EventEmitter();
+
+        // Emit later on
+        process.nextTick(() => {
+          ee.emit('foo', 'bar');
+          ee.emit('foo', 42);
+        });
+
+        for await (const event of on(ee, 'foo', { signal: ac.signal })) {
+          // The execution of this inner block is synchronous and it
+          // processes one event at a time (even with await). Do not use
+          // if concurrent execution is required.
+          console.log(event); // prints ['bar'] [42]
+        }
+        // Unreachable here
+      })();
+
+      process.nextTick(() => ac.abort());
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function on(emitter: EventEmitter, eventName: string, options?:
+        StaticEventEmitterOptions): AsyncIterableIterator<any>
+      parameters:
+        - id: emitter
+          type: EventEmitter
+          description: ''
+        - id: eventName
+          type: string
+          description: The name of the event being listened for
+        - id: options
+          type: StaticEventEmitterOptions
+          description: ''
+      return:
+        description: that iterates `eventName` events emitted by the `emitter`
+        type: AsyncIterableIterator&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.on
+  - name: once(_DOMEventTarget, string, StaticEventEmitterOptions)
+    uid: '@microsoft/live-share.LiveEvent.once_1'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function once(emitter: _DOMEventTarget, eventName: string,
+        options?: StaticEventEmitterOptions): Promise<any[]>
+      parameters:
+        - id: emitter
+          type: _DOMEventTarget
+          description: ''
+        - id: eventName
+          type: string
+          description: ''
+        - id: options
+          type: StaticEventEmitterOptions
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;any[]&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
+  - name: once(_NodeEventTarget, string | symbol, StaticEventEmitterOptions)
+    uid: '@microsoft/live-share.LiveEvent.once'
+    package: '@microsoft/live-share'
+    summary: >-
+      Creates a `Promise` that is fulfilled when the `EventEmitter` emits the
+      given
+
+      event or that is rejected if the `EventEmitter` emits `'error'` while
+      waiting.
+
+      The `Promise` will resolve with an array of all the arguments emitted to
+      the
+
+      given event.
+
+
+      This method is intentionally generic and works with the web platform
+      [EventTarget](https://dom.spec.whatwg.org/#interface-eventtarget)
+      interface, which has no special`'error'` event
+
+      semantics and does not listen to the `'error'` event.
+
+
+      ```js
+
+      import { once, EventEmitter } from 'node:events';
+
+      import process from 'node:process';
+
+
+      const ee = new EventEmitter();
+
+
+      process.nextTick(() => {
+        ee.emit('myevent', 42);
+      });
+
+
+      const [value] = await once(ee, 'myevent');
+
+      console.log(value);
+
+
+      const err = new Error('kaboom');
+
+      process.nextTick(() => {
+        ee.emit('error', err);
+      });
+
+
+      try {
+        await once(ee, 'myevent');
+      } catch (err) {
+        console.error('error happened', err);
+      }
+
+      ```
+
+
+      The special handling of the `'error'` event is only used when
+      `events.once()`is used to wait for another event. If `events.once()` is
+      used to wait for the
+
+      '`error'` event itself, then it is treated as any other kind of event
+      without
+
+      special handling:
+
+
+      ```js
+
+      import { EventEmitter, once } from 'node:events';
+
+
+      const ee = new EventEmitter();
+
+
+      once(ee, 'error')
+        .then(([err]) => console.log('ok', err.message))
+        .catch((err) => console.error('error', err.message));
+
+      ee.emit('error', new Error('boom'));
+
+
+      // Prints: ok boom
+
+      ```
+
+
+      An `AbortSignal` can be used to cancel waiting for the event:
+
+
+      ```js
+
+      import { EventEmitter, once } from 'node:events';
+
+
+      const ee = new EventEmitter();
+
+      const ac = new AbortController();
+
+
+      async function foo(emitter, event, signal) {
+        try {
+          await once(emitter, event, { signal });
+          console.log('event emitted!');
+        } catch (error) {
+          if (error.name === 'AbortError') {
+            console.error('Waiting for the event was canceled!');
+          } else {
+            console.error('There was an error', error.message);
+          }
+        }
+      }
+
+
+      foo(ee, 'foo', ac.signal);
+
+      ac.abort(); // Abort waiting for the event
+
+      ee.emit('foo'); // Prints: Waiting for the event was canceled!
+
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function once(emitter: _NodeEventTarget, eventName: string |
+        symbol, options?: StaticEventEmitterOptions): Promise<any[]>
+      parameters:
+        - id: emitter
+          type: _NodeEventTarget
+          description: ''
+        - id: eventName
+          type: string | symbol
+          description: ''
+        - id: options
+          type: StaticEventEmitterOptions
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;any[]&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
+  - name: rawListeners(string | symbol)
+    uid: '@microsoft/live-share.LiveEvent.rawListeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      Returns a copy of the array of listeners for the event named `eventName`,
+      including any wrappers (such as those created by `.once()`).
+
+      ```js
+      import { EventEmitter } from 'node:events';
+      const emitter = new EventEmitter();
+      emitter.once('log', () => console.log('log once'));
+
+      // Returns a new Array with a function `onceWrapper` which has a property
+      // `listener` which contains the original listener bound above
+      const listeners = emitter.rawListeners('log');
+      const logFnWrapper = listeners[0];
+
+      // Logs "log once" to the console and does not unbind the `once` event
+      logFnWrapper.listener();
+
+      // Logs "log once" to the console and removes the listener
+      logFnWrapper();
+
+      emitter.on('log', () => console.log('log persistently'));
+      // Will return a new Array with a single function bound by `.on()` above
+      const newListeners = emitter.rawListeners('log');
+
+      // Logs "log persistently" twice
+      newListeners[0]();
+      emitter.emit('log');
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function rawListeners(eventName: string | symbol): Function[]'
+      parameters:
+        - id: eventName
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: Function[]
+    inheritanceDescription: <b>Inherited From</b> DataObject.rawListeners
+  - name: removeAllListeners(string | symbol)
+    uid: '@microsoft/live-share.LiveEvent.removeAllListeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      Removes all listeners, or those of the specified `eventName`.
+
+      It is bad practice to remove listeners added elsewhere in the code,
+      particularly when the `EventEmitter` instance was created by some other
+      component or module (e.g. sockets or file streams).
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function removeAllListeners(event?: string | symbol): LiveEvent<TEvent>'
+      parameters:
+        - id: event
+          type: string | symbol
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.LiveEvent" />&lt;TEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.removeAllListeners
+  - name: request(IRequest)
+    uid: '@microsoft/live-share.LiveEvent.request'
+    package: '@microsoft/live-share'
+    summary: '{@inheritDoc PureDataObject.request}'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function request(request: IRequest): Promise<IResponse>'
+      parameters:
+        - id: request
+          type: IRequest
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;IResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.request
+  - name: setMaxListeners(number)
+    uid: '@microsoft/live-share.LiveEvent.setMaxListeners'
+    package: '@microsoft/live-share'
+    summary: >-
+      By default `EventEmitter`s will print a warning if more than `10`
+      listeners are
+
+      added for a particular event. This is a useful default that helps finding
+
+      memory leaks. The `emitter.setMaxListeners()` method allows the limit to
+      be
+
+      modified for this specific `EventEmitter` instance. The value can be set
+      to`Infinity` (or `0`) to indicate an unlimited number of listeners.
+
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setMaxListeners(n: number): LiveEvent<TEvent>'
+      parameters:
+        - id: 'n'
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.LiveEvent" />&lt;TEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+  - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
+    uid: '@microsoft/live-share.LiveEvent.setMaxListeners'
+    package: '@microsoft/live-share'
+    summary: |-
+      ```js
+      import { setMaxListeners, EventEmitter } from 'node:events';
+
+      const target = new EventTarget();
+      const emitter = new EventEmitter();
+
+      setMaxListeners(5, target, emitter);
+      ```
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function setMaxListeners(n?: number, eventTargets:
+        (_DOMEventTarget | EventEmitter)[])
+      parameters:
+        - id: 'n'
+          type: number
+          description: >-
+            A non-negative number. The maximum number of listeners per
+            `EventTarget` event.
+        - id: eventTargets
+          type: (_DOMEventTarget | EventEmitter)[]
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+methods:
+  - name: initialize(UserMeetingRole[])
+    uid: '@microsoft/live-share.LiveEvent.initialize'
+    package: '@microsoft/live-share'
+    summary: initialize the object.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function initialize(allowedRoles?: UserMeetingRole[]): Promise<void>'
+      parameters:
+        - id: allowedRoles
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+          description: Optional. List of roles allowed to send events.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: isNewer(undefined | IClientTimestamp, IClientTimestamp, number)
+    uid: '@microsoft/live-share.LiveEvent.isNewer'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns true if a received event is newer then the current event.
+
+
+      #### remarks
+
+      Used when building new Live objects to process state change events. The
+      `isNewer()`
+
+      method implements an algorithm that deals with conflicting events that
+      have the same timestamp
+
+      and older events that should have debounced the current event.
+
+
+      - When the received event has the same timestamp as the current event,
+      each events clientId
+        will be used as a tie breaker. The clientId containing the lower sort order wins any ties.
+      - Older events are generally ignored unless a debounce period is
+      specified. An older event
+        that should have debounced the current event will be considered newer.
+
+      The algorithm employed by isNewer() helps ensure that all clients will
+      eventually reach a
+
+      consistent state with one other.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function isNewer(current: undefined | IClientTimestamp, received:
+        IClientTimestamp, debouncePeriod?: number): boolean
+      parameters:
+        - id: current
+          type: undefined | <xref uid="@microsoft/live-share.IClientTimestamp" />
+          description: Current event to compare received event against.
+        - id: received
+          type: <xref uid="@microsoft/live-share.IClientTimestamp" />
+          description: Received event.
+        - id: debouncePeriod
+          type: number
+          description: >-
+            Optional. Time in milliseconds to ignore any new events for.
+            Defaults to 0 ms.
+      return:
+        description: >-
+          True if the received event is newer then the current event and should
+          replace the current one.
+        type: boolean
+  - name: send(Partial<TEvent>)
+    uid: '@microsoft/live-share.LiveEvent.send'
+    package: '@microsoft/live-share'
+    summary: >-
+      Broadcasts an event to all other clients.
+
+
+      #### remarks
+
+      The event will be queued for delivery if the client isn't currently
+      connected.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function send(evt?: Partial<TEvent>): TEvent'
+      parameters:
+        - id: evt
+          type: Partial&lt;TEvent&gt;
+          description: >-
+            Optional. Event to send. If omitted, an event will still be sent but
+            it won't
+
+            include any custom event data.
+      return:
+        description: >-
+          The full event object that was sent, including the timestamp of when
+          the event
+
+          was sent and the clientId if known. The clientId will be `undefined`
+          if the client is
+
+          disconnected at time of delivery.
+        type: TEvent
+  - name: sendEvent(Partial<TEvent>)
+    uid: '@microsoft/live-share.LiveEvent.sendEvent'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: use `send()` instead
+    syntax:
+      content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
+      parameters:
+        - id: evt
+          type: Partial&lt;TEvent&gt;
+          description: ''
+      return:
+        description: ''
+        type: TEvent
+extends: 'DataObject&lt;{ Events: ILiveEventEvents&lt;TEvent&gt; }&gt;'

@@ -2,7 +2,32 @@
 name: FrameContexts
 uid: '@microsoft/teams-js.FrameContexts'
 package: '@microsoft/teams-js'
-summary: ''
+summary: >+
+  FrameContexts provides information about the context in which the app is
+  running within the host.
+
+  Developers can use FrameContexts to determine how their app should behave in
+  different contexts,
+
+  and can use the information provided by the context to adapt the app to the
+  user's needs.
+
+
+  **Example**
+
+
+  ```ts
+
+  If your app is running in the "settings" context, you should be displaying
+  your apps configuration page.
+
+  If the app is running in the content context, the developer may want to
+  display information relevant to
+
+  the content the user is currently viewing.
+
+  ```
+
 fullName: FrameContexts
 remarks: ''
 isDeprecated: false
@@ -10,32 +35,52 @@ fields:
   - name: authentication
     uid: '@microsoft/teams-js.FrameContexts.authentication'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Frame context used when app is running in the authentication window
+      launched by calling
+      [authenticate](xref:@microsoft/teams-js.authentication.authenticate_1)
   - name: content
     uid: '@microsoft/teams-js.FrameContexts.content'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      The default context for the app where all the content of the app is
+      displayed.
   - name: meetingStage
     uid: '@microsoft/teams-js.FrameContexts.meetingStage'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      App's frame context from where meetingStage can be accessed in a meeting
+      session, which is the primary area where video and presentation content is
+      displayed during a meeting.
   - name: remove
     uid: '@microsoft/teams-js.FrameContexts.remove'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: The page shown when the user uninstalls the app.
   - name: settings
     uid: '@microsoft/teams-js.FrameContexts.settings'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      App's frame context from where settings page can be accessed.
+
+      See [how to create a configuration page.](
+      https://learn.microsoft.com/microsoftteams/platform/tabs/how-to/create-tab-pages/configuration-page?tabs=teamsjs-v2)
   - name: sidePanel
     uid: '@microsoft/teams-js.FrameContexts.sidePanel'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      The side panel is a persistent panel that is displayed on the right side
+      of the host and can be used to display content or UI that is relevant to
+      the current page or tab.
   - name: stage
     uid: '@microsoft/teams-js.FrameContexts.stage'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      The stage is a large area that is displayed at the center of the host and
+      can be used to display content or UI that requires a lot of space, such as
+      a video player or a document editor.
   - name: task
     uid: '@microsoft/teams-js.FrameContexts.task'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      A task module is a pop-up window that can be used to display a form, a
+      dialog, or other interactive content within the host.

@@ -13,7 +13,10 @@ methods:
   - name: onRecordingStarted()
     uid: '@microsoft/teams-js.media.VideoControllerCallback.onRecordingStarted'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      The event is a type of callback that can be enlisted to handle various
+      events linked to `onRecordingStarted`, which helps with playback of video
+      content.
     remarks: ''
     isDeprecated: false
     syntax:

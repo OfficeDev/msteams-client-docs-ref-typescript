@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.mail'
 name: mail
-summary: ''
+summary: Used to interact with mail capability, including opening and composing mail.
 type: module
 typeAliases:
   - '@microsoft/teams-js.mail.ComposeMailParams'
@@ -16,7 +16,7 @@ functions:
   - name: composeMail(ComposeMailParams)
     uid: '@microsoft/teams-js.mail.composeMail'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Compose a new email in the user's mailbox.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -26,7 +26,9 @@ functions:
       parameters:
         - id: composeMailParams
           type: <xref uid="@microsoft/teams-js.mail.ComposeMailParams" />
-          description: ''
+          description: >-
+            Object that specifies the type of mail item to compose and the
+            details of the mail item.
       return:
         description: ''
         type: Promise&lt;void&gt;
@@ -44,7 +46,7 @@ functions:
   - name: openMailItem(OpenMailItemParams)
     uid: '@microsoft/teams-js.mail.openMailItem'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Opens a mail message in the host.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -54,7 +56,7 @@ functions:
       parameters:
         - id: openMailItemParams
           type: <xref uid="@microsoft/teams-js.mail.OpenMailItemParams" />
-          description: ''
+          description: Object that specifies the ID of the mail message.
       return:
         description: ''
         type: Promise&lt;void&gt;

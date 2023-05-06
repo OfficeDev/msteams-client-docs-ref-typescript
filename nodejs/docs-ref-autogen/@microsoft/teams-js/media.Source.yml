@@ -10,10 +10,10 @@ fields:
   - name: Camera
     uid: '@microsoft/teams-js.media.Source.Camera'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Image source is camera.
     numericValue: 1
   - name: Gallery
     uid: '@microsoft/teams-js.media.Source.Gallery'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Image source is gallery.
     numericValue: 2
