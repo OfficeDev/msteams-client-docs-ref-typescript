@@ -1,0 +1,51 @@
+### YamlMime:TSType
+name: IClientInfo
+uid: '@microsoft/live-share.IClientInfo'
+package: '@microsoft/live-share'
+summary: >-
+  Returned from `LiveShareHost.getClientInfo()` to specify the user information
+  for a given `clientId`.
+
+  Each user individually requests this data for each other user in the session,
+  making it secure & trusted.
+fullName: IClientInfo
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: displayName
+    uid: '@microsoft/live-share.IClientInfo.displayName'
+    package: '@microsoft/live-share'
+    summary: Optional. The display name for the user.
+    fullName: displayName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'displayName?: string'
+      return:
+        description: ''
+        type: string
+  - name: roles
+    uid: '@microsoft/live-share.IClientInfo.roles'
+    package: '@microsoft/live-share'
+    summary: List of roles of the user.
+    fullName: roles
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'roles: UserMeetingRole[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+  - name: userId
+    uid: '@microsoft/live-share.IClientInfo.userId'
+    package: '@microsoft/live-share'
+    summary: The user identifier that corresponds to the provided client identifier.
+    fullName: userId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'userId: string'
+      return:
+        description: ''
+        type: string

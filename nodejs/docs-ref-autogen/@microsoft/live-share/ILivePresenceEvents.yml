@@ -1,0 +1,10 @@
+### YamlMime:TSType
+name: ILivePresenceEvents
+uid: '@microsoft/live-share.ILivePresenceEvents'
+package: '@microsoft/live-share'
+summary: ''
+fullName: ILivePresenceEvents<TData>
+remarks: ''
+isDeprecated: false
+type: interface
+extends: IEvent

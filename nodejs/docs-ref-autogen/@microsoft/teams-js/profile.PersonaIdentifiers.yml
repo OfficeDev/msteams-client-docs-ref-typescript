@@ -12,5 +12,5 @@ remarks: ''
 previewState: beta
 isDeprecated: false
 syntax: >
-  type PersonaIdentifiers = { AadObjectId?: string, Smtp?: string, Upn?: string
+  type PersonaIdentifiers = { AadObjectId?: string; Smtp?: string; Upn?: string
   }

@@ -11,7 +11,20 @@ properties:
   - name: longDate
     uid: '@microsoft/teams-js.LocaleInfo.longDate'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >+
+      Displays only date values, as specified by the Long Date format in user's
+      regional settings.
+
+
+      **Example**
+
+
+      ```ts
+
+      Friday, April 21, 2023
+
+      ```
+
     fullName: longDate
     remarks: ''
     isDeprecated: false
@@ -23,7 +36,15 @@ properties:
   - name: longTime
     uid: '@microsoft/teams-js.LocaleInfo.longTime'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: |+
+      A string representing the long time format used by the user's locale.
+
+      **Example**
+
+      ```ts
+      10:10:42 AM
+      ```
+
     fullName: longTime
     remarks: ''
     isDeprecated: false
@@ -35,19 +56,27 @@ properties:
   - name: platform
     uid: '@microsoft/teams-js.LocaleInfo.platform'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Represents the user's platform on which the app is running.
     fullName: platform
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'platform: "windows" | "macos"'
+      content: 'platform: android | ios | "macos" | "windows"'
       return:
         description: ''
-        type: '"windows" | "macos"'
+        type: >-
+          <xref uid="@microsoft/teams-js.HostClientType.android" /> | <xref
+          uid="@microsoft/teams-js.HostClientType.ios" /> | "macos" | "windows"
   - name: regionalFormat
     uid: '@microsoft/teams-js.LocaleInfo.regionalFormat'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: |+
+      Represents the regional format used by the user's locale.
+
+      **Example**
+
+      `en-us`.
+
     fullName: regionalFormat
     remarks: ''
     isDeprecated: false
@@ -59,7 +88,20 @@ properties:
   - name: shortDate
     uid: '@microsoft/teams-js.LocaleInfo.shortDate'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >+
+      Displays date values, as specified by the short date format MM/DD/YYYY in
+      user's regional settings.
+
+
+      **Example**
+
+
+      ```ts
+
+      4/21/2023 or 4-21-2023
+
+      ```
+
     fullName: shortDate
     remarks: ''
     isDeprecated: false
@@ -71,7 +113,15 @@ properties:
   - name: shortTime
     uid: '@microsoft/teams-js.LocaleInfo.shortTime'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: |+
+      A string representing the short time format used by the user's locale.
+
+      **Example**
+
+      ```ts
+      10:10
+      ```
+
     fullName: shortTime
     remarks: ''
     isDeprecated: false

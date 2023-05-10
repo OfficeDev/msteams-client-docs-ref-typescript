@@ -2,7 +2,7 @@
 name: SdkError
 uid: '@microsoft/teams-js.SdkError'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Represents an error that occurs during the execution of an app or integration.
 fullName: SdkError
 remarks: ''
 isDeprecated: false

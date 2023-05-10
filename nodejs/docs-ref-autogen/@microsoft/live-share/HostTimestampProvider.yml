@@ -1,0 +1,90 @@
+### YamlMime:TSType
+name: HostTimestampProvider
+uid: '@microsoft/live-share.HostTimestampProvider'
+package: '@microsoft/live-share'
+summary: Timestamp Provider that calls the Live Share Host to lookup the current time.
+fullName: HostTimestampProvider
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: HostTimestampProvider(ILiveShareHost)
+    uid: '@microsoft/live-share.HostTimestampProvider.constructor'
+    package: '@microsoft/live-share'
+    summary: Creates a new `DefaultTimestampProvider` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new HostTimestampProvider(host: ILiveShareHost)'
+      parameters:
+        - id: host
+          type: <xref uid="@microsoft/live-share.ILiveShareHost" />
+          description: The current Live Share Host instance.
+properties:
+  - name: isRunning
+    uid: '@microsoft/live-share.HostTimestampProvider.isRunning'
+    package: '@microsoft/live-share'
+    summary: Returns true if the provider has been started.
+    fullName: isRunning
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isRunning
+      return:
+        description: ''
+        type: boolean
+inheritedMethods:
+  - name: getMaxTimestampError()
+    uid: '@microsoft/live-share.HostTimestampProvider.getMaxTimestampError'
+    package: '@microsoft/live-share'
+    summary: Returns the maximum amount of error, in milliseconds.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getMaxTimestampError(): number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [TimestampProvider.getMaxTimestampError](xref:@microsoft/live-share.TimestampProvider.getMaxTimestampError)
+  - name: getTimestamp()
+    uid: '@microsoft/live-share.HostTimestampProvider.getTimestamp'
+    package: '@microsoft/live-share'
+    summary: Returns the current server time as a UTC tick.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getTimestamp(): number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [TimestampProvider.getTimestamp](xref:@microsoft/live-share.TimestampProvider.getTimestamp)
+  - name: start()
+    uid: '@microsoft/live-share.HostTimestampProvider.start'
+    package: '@microsoft/live-share'
+    summary: Starts the provider.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function start(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [TimestampProvider.start](xref:@microsoft/live-share.TimestampProvider.start)
+  - name: stop()
+    uid: '@microsoft/live-share.HostTimestampProvider.stop'
+    package: '@microsoft/live-share'
+    summary: Stops the provider if its running.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function stop()
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [TimestampProvider.stop](xref:@microsoft/live-share.TimestampProvider.stop)
+extends: <xref uid="@microsoft/live-share.TimestampProvider" />

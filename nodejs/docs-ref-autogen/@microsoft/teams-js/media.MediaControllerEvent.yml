@@ -13,10 +13,10 @@ fields:
   - name: StartRecording
     uid: '@microsoft/teams-js.media.MediaControllerEvent.StartRecording'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Start recording.
     numericValue: 1
   - name: StopRecording
     uid: '@microsoft/teams-js.media.MediaControllerEvent.StopRecording'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Stop recording.
     numericValue: 2

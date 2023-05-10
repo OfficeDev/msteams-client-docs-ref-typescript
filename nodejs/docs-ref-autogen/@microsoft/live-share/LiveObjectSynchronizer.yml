@@ -1,0 +1,157 @@
+### YamlMime:TSType
+name: LiveObjectSynchronizer
+uid: '@microsoft/live-share.LiveObjectSynchronizer'
+package: '@microsoft/live-share'
+summary: >-
+  Synchronizes the underlying state of an live object with all of the other
+  instances of
+
+  the object connected to the same container.
+fullName: LiveObjectSynchronizer<TState>
+remarks: >-
+  When a synchronizer for a live object is first created it will broadcast a
+  `"connect"`
+
+  message, containing the objects initial state, to all other instances of the
+  object that are
+
+  currently running on other clients. Those instances will respond to the sent
+  "connect" message
+
+  by broadcasting an `"update"` message containing the current state of their
+  object.
+
+
+  Anytime a remote "connect" or "update" event is received, the synchronizer
+  will call the passed
+
+  in `updateState` callback with the remote objects state and the senders
+  clientId for role
+
+  verification purposes. The logic for processing these state updates will vary
+  but implementations
+
+  will generally want to include a timestamp in their state update so that
+  clients can protect
+
+  against out-of-order and delayed updates. Deriving your state update from
+  `ILiveEvent` and
+
+  using `LiveEvent.isNewer` to compare the received update with the current
+  update makes this
+
+  simple.
+
+
+  Once the initial "connect" event is sent, the synchronizer will periodically
+  broadcast additional
+
+  "update" events containing the live objects current state. This redundancy
+  helps to guard
+
+  against missed events and can be used as a ping for scenarios like presence
+  where users can
+
+  disconnect from the container without notice.  The rate at which these ping
+  events are sent can be
+
+  adjusted globally by setting the static
+  `LiveObjectSynchronizer.updateInterval` property.
+
+
+  While each new synchronizer instance will result in a separate "connect"
+  message being sent, the
+
+  periodic updates that are sent get batched together into a single "update"
+  message. This lets apps
+
+  add as many live objects to a container as they'd like without increasing the
+  number of
+
+  messages being broadcast to the container.
+
+
+  Only a single synchronizer is allowed per live object. Attempting to create
+  more than one
+
+  synchronizer for the same live object will result in an exception being
+  raised.
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      LiveObjectSynchronizer<TState>(string, IRuntimeSignaler,
+      IContainerRuntimeSignaler, GetSynchronizationState<TState>,
+      UpdateSynchronizationState<TState>)
+    uid: '@microsoft/live-share.LiveObjectSynchronizer.constructor'
+    package: '@microsoft/live-share'
+    summary: Creates a new `LiveObjectSynchronizer` instance.
+    remarks: >-
+      Consumers should subscribe to the synchronizers `"received"` event to
+      process the remote
+
+      state updates being sent by other instances of the live object.
+    isDeprecated: false
+    syntax:
+      content: >-
+        new LiveObjectSynchronizer(id: string, runtime: IRuntimeSignaler,
+        containerRuntime: IContainerRuntimeSignaler, getState:
+        GetSynchronizationState<TState>, updateState:
+        UpdateSynchronizationState<TState>)
+      parameters:
+        - id: id
+          type: string
+          description: >-
+            ID of the live object being synchronized. This should be the value
+            of `this.id` in a class that derives from `DataObject`.
+
+            ^
+        - id: runtime
+          type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
+          description: >-
+            The objects local runtime. This should be the value of
+            `this.runtime`.
+        - id: containerRuntime
+          type: <xref uid="@microsoft/live-share.IContainerRuntimeSignaler" />
+          description: >-
+            The runtime for the objects container. This should be the value of
+            `this.context.containerRuntime`.
+        - id: getState
+          type: >-
+            <xref uid="@microsoft/live-share.GetSynchronizationState"
+            />&lt;TState&gt;
+          description: >-
+            A function called to retrieve the objects current state. This will
+            be called prior to a "connect" or "update" message being sent.
+        - id: updateState
+          type: >-
+            <xref uid="@microsoft/live-share.UpdateSynchronizationState"
+            />&lt;TState&gt;
+          description: >-
+            A function called to process a state update received from a remote
+            instance. This will be called anytime a "connect" or "update"
+            message is received.
+properties:
+  - name: updateInterval
+    uid: '@microsoft/live-share.LiveObjectSynchronizer.updateInterval'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: updateInterval
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static updateInterval: number'
+      return:
+        description: ''
+        type: number
+methods:
+  - name: dispose()
+    uid: '@microsoft/live-share.LiveObjectSynchronizer.dispose'
+    package: '@microsoft/live-share'
+    summary: Disposes of the synchronizer.
+    remarks: >-
+      All synchronization for the container will stop once the last instance has
+      been disposed of.
+    isDeprecated: false
+    syntax:
+      content: function dispose()

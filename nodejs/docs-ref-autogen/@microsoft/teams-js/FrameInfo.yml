@@ -2,7 +2,7 @@
 name: FrameInfo
 uid: '@microsoft/teams-js.FrameInfo'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Represents information about a frame within a tab or dialog module.
 fullName: FrameInfo
 remarks: ''
 isDeprecated: false

@@ -8,7 +8,7 @@ interfaces:
   - '@microsoft/teams-js.location.LocationProps'
 package: '@microsoft/teams-js'
 functions:
-  - name: 'getLocation(LocationProps, (error: SdkError, location: Location) => void)'
+  - name: getLocation(LocationProps, getLocationCallbackFunctionType)
     uid: '@microsoft/teams-js.location.getLocation'
     package: '@microsoft/teams-js'
     summary: ''
@@ -29,8 +29,8 @@ functions:
       Fetches user location
     syntax:
       content: >-
-        function getLocation(props: LocationProps, callback: (error: SdkError,
-        location: Location) => void)
+        function getLocation(props: LocationProps, callback:
+        getLocationCallbackFunctionType)
       parameters:
         - id: props
           type: <xref uid="@microsoft/teams-js.location.LocationProps" />
@@ -38,7 +38,7 @@ functions:
             [LocationProps](xref:@microsoft/teams-js.location.LocationProps) -
             Specifying how the location request is handled
         - id: callback
-          type: '(error: SdkError, location: Location) =&gt; void'
+          type: getLocationCallbackFunctionType
           description: Callback to invoke when current user location is fetched
   - name: isSupported()
     uid: '@microsoft/teams-js.location.isSupported'
@@ -59,7 +59,7 @@ functions:
       return:
         description: boolean to represent whether Location is supported
         type: boolean
-  - name: 'showLocation(Location, (error: SdkError, status: boolean) => void)'
+  - name: showLocation(Location, showLocationCallbackFunctionType)
     uid: '@microsoft/teams-js.location.showLocation'
     package: '@microsoft/teams-js'
     summary: ''
@@ -74,12 +74,12 @@ functions:
       Shows the location on map corresponding to the given coordinates
     syntax:
       content: >-
-        function showLocation(location: Location, callback: (error: SdkError,
-        status: boolean) => void)
+        function showLocation(location: Location, callback:
+        showLocationCallbackFunctionType)
       parameters:
         - id: location
           type: <xref uid="@microsoft/teams-js.location.Location" />
           description: Location to be shown on the map
         - id: callback
-          type: '(error: SdkError, status: boolean) =&gt; void'
+          type: showLocationCallbackFunctionType
           description: Callback to invoke when the location is opened on map

@@ -3,8 +3,8 @@ name: UpdateSynchronizationState
 uid: '@microsoft/live-share.UpdateSynchronizationState'
 package: '@microsoft/live-share'
 summary: >-
-  Callback function used to the receive the state update sent by a remote
-  ephemeral object.
+  Callback function used to the receive the state update sent by a remote live
+  object.
 fullName: UpdateSynchronizationState<TState>
 remarks: ''
 isDeprecated: false

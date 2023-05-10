@@ -7,7 +7,7 @@ summary: >-
   the container level.
 fullName: IContainerRuntimeSignaler
 remarks: >-
-  Simplifies the mocks needed to unit test the `EphemeralObjectSynchronizer`.
+  Simplifies the mocks needed to unit test the `LiveObjectSynchronizer`.
   Applications can
 
   just pass `this.context.containerRuntime` to any class that takes an

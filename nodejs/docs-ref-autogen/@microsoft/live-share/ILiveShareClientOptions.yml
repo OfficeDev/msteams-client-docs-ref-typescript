@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: ILiveShareClientOptions
+uid: '@microsoft/live-share.ILiveShareClientOptions'
+package: '@microsoft/live-share'
+summary: Options used to configure the `LiveShareClient` class.
+fullName: ILiveShareClientOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: connection
+    uid: '@microsoft/live-share.ILiveShareClientOptions.connection'
+    package: '@microsoft/live-share'
+    summary: >-
+      Optional. Configuration to use when connecting to a custom Azure Fluid
+      Relay instance.
+    fullName: connection
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'connection?: AzureRemoteConnectionConfig | AzureLocalConnectionConfig'
+      return:
+        description: ''
+        type: AzureRemoteConnectionConfig | AzureLocalConnectionConfig
+  - name: logger
+    uid: '@microsoft/live-share.ILiveShareClientOptions.logger'
+    package: '@microsoft/live-share'
+    summary: Optional. A logger instance to receive diagnostic messages.
+    fullName: logger
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'logger?: ITelemetryBaseLogger'
+      return:
+        description: ''
+        type: ITelemetryBaseLogger
+  - name: timestampProvider
+    uid: '@microsoft/live-share.ILiveShareClientOptions.timestampProvider'
+    package: '@microsoft/live-share'
+    summary: Optional. Custom timestamp provider to use.
+    fullName: timestampProvider
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timestampProvider?: ITimestampProvider'
+      return:
+        description: ''
+        type: ITimestampProvider

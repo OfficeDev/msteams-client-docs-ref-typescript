@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: IFluidContainerInfo
+uid: '@microsoft/live-share.IFluidContainerInfo'
+package: '@microsoft/live-share'
+summary: >-
+  Returned from `LiveShareHost.get/setFluidContainerId()` to specify the
+  container mapping for the
+
+  current Live Share session.
+fullName: IFluidContainerInfo
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: containerId
+    uid: '@microsoft/live-share.IFluidContainerInfo.containerId'
+    package: '@microsoft/live-share'
+    summary: >-
+      ID of the container to join for the meeting. Undefined if the container
+      hasn't been
+
+      created yet.
+    fullName: containerId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'containerId: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: containerState
+    uid: '@microsoft/live-share.IFluidContainerInfo.containerState'
+    package: '@microsoft/live-share'
+    summary: State of the containerId mapping.
+    fullName: containerState
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'containerState: ContainerState'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.ContainerState" />
+  - name: retryAfter
+    uid: '@microsoft/live-share.IFluidContainerInfo.retryAfter'
+    package: '@microsoft/live-share'
+    summary: >-
+      If `containerId` is undefined and `shouldCreate` is false, the container
+      isn't ready but
+
+      another client is creating it. The local client should wait the specified
+      amount of time and
+
+      then ask for the container info again.
+    fullName: retryAfter
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'retryAfter: number'
+      return:
+        description: ''
+        type: number
+  - name: shouldCreate
+    uid: '@microsoft/live-share.IFluidContainerInfo.shouldCreate'
+    package: '@microsoft/live-share'
+    summary: >-
+      If true, the local client should create the container and then save the
+      created containers
+
+      ID to the mapping service.
+    fullName: shouldCreate
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'shouldCreate: boolean'
+      return:
+        description: ''
+        type: boolean

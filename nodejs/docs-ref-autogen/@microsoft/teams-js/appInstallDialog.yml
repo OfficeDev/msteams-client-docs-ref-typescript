@@ -23,7 +23,9 @@ functions:
   - name: openAppInstallDialog(OpenAppInstallDialogParams)
     uid: '@microsoft/teams-js.appInstallDialog.openAppInstallDialog'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Displays a dialog box that allows users to install a specific app within
+      the host environment.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -36,7 +38,10 @@ functions:
             <xref
             uid="@microsoft/teams-js.appInstallDialog.OpenAppInstallDialogParams"
             />
-          description: ''
+          description: >-
+            See
+            [OpenAppInstallDialogParams](xref:@microsoft/teams-js.appInstallDialog.OpenAppInstallDialogParams)
+            for more information.
       return:
         description: ''
         type: Promise&lt;void&gt;

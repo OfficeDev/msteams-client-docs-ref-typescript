@@ -2,7 +2,7 @@
 name: ComposeMeetingParams
 uid: '@microsoft/teams-js.calendar.ComposeMeetingParams'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Compose meeting parameters
 fullName: ComposeMeetingParams
 remarks: ''
 isDeprecated: false
@@ -11,7 +11,9 @@ properties:
   - name: attendees
     uid: '@microsoft/teams-js.calendar.ComposeMeetingParams.attendees'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      An array of email addresses, user name, or user id of the attendees to
+      invite to the meeting.
     fullName: attendees
     remarks: ''
     isDeprecated: false
@@ -23,7 +25,7 @@ properties:
   - name: content
     uid: '@microsoft/teams-js.calendar.ComposeMeetingParams.content'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: The body content of the meeting.
     fullName: content
     remarks: ''
     isDeprecated: false
@@ -35,7 +37,7 @@ properties:
   - name: endTime
     uid: '@microsoft/teams-js.calendar.ComposeMeetingParams.endTime'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: The end time of the meeting in MM/DD/YYYY HH:MM:SS format.
     fullName: endTime
     remarks: ''
     isDeprecated: false
@@ -47,7 +49,7 @@ properties:
   - name: startTime
     uid: '@microsoft/teams-js.calendar.ComposeMeetingParams.startTime'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: The start time of the meeting in MM/DD/YYYY HH:MM:SS format.
     fullName: startTime
     remarks: ''
     isDeprecated: false
@@ -59,7 +61,7 @@ properties:
   - name: subject
     uid: '@microsoft/teams-js.calendar.ComposeMeetingParams.subject'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: The subject line of the meeting.
     fullName: subject
     remarks: ''
     isDeprecated: false

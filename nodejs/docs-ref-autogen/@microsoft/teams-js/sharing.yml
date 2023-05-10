@@ -46,7 +46,9 @@ functions:
       return:
         description: Promise that will be fulfilled when the operation has completed
         type: Promise&lt;void&gt;
-  - name: 'shareWebContent(IShareRequest<IURLContent>, (err?: SdkError) => void)'
+  - name: >-
+      shareWebContent(IShareRequest<IURLContent>,
+      shareWebContentCallbackFunctionType)
     uid: '@microsoft/teams-js.sharing.shareWebContent_1'
     package: '@microsoft/teams-js'
     summary: ''
@@ -65,7 +67,8 @@ functions:
     syntax:
       content: >-
         function shareWebContent(shareWebContentRequest:
-        IShareRequest<IURLContent>, callback: (err?: SdkError) => void)
+        IShareRequest<IURLContent>, callback:
+        shareWebContentCallbackFunctionType)
       parameters:
         - id: shareWebContentRequest
           type: >-
@@ -73,5 +76,5 @@ functions:
             uid="@microsoft/teams-js.sharing.IURLContent" />&gt;
           description: web content info
         - id: callback
-          type: '(err?: SdkError) =&gt; void'
+          type: shareWebContentCallbackFunctionType
           description: optional callback

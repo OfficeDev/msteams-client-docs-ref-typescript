@@ -47,7 +47,7 @@ inheritedProperties:
   - name: size
     uid: '@microsoft/teams-js.BotAdaptiveCardDialogInfo.size'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: The requested size of the dialog
     fullName: size
     remarks: ''
     isDeprecated: false

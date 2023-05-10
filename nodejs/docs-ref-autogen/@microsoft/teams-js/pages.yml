@@ -22,7 +22,7 @@ functions:
           [InstanceConfig](xref:@microsoft/teams-js.pages.InstanceConfig)
           object.
         type: Promise&lt;<xref uid="@microsoft/teams-js.pages.InstanceConfig" />&gt;
-  - name: initializeWithFrameContext(FrameInfo, () => void, string[])
+  - name: initializeWithFrameContext(FrameInfo, handlerFunctionType, string[])
     uid: '@microsoft/teams-js.pages.initializeWithFrameContext'
     package: '@microsoft/teams-js'
     summary: Initializes the library with context information for the frame
@@ -30,8 +30,8 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function initializeWithFrameContext(frameInfo: FrameInfo, callback?: ()
-        => void, validMessageOrigins?: string[])
+        function initializeWithFrameContext(frameInfo: FrameInfo, callback?:
+        handlerFunctionType, validMessageOrigins?: string[])
       parameters:
         - id: frameInfo
           type: <xref uid="@microsoft/teams-js.FrameInfo" />
@@ -40,7 +40,7 @@ functions:
             and the URL for when the
              user clicks 'Go To Website'
         - id: callback
-          type: () =&gt; void
+          type: handlerFunctionType
           description: >-
             An optional callback that is executed once the application has
             finished initialization.
@@ -118,7 +118,7 @@ functions:
       return:
         description: a promise that will resolve if the navigation was successful
         type: Promise&lt;void&gt;
-  - name: 'registerFullScreenHandler((isFullScreen: boolean) => void)'
+  - name: registerFullScreenHandler(fullScreenChangeFunctionType)
     uid: '@microsoft/teams-js.pages.registerFullScreenHandler'
     package: '@microsoft/teams-js'
     summary: >-
@@ -135,11 +135,11 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function registerFullScreenHandler(handler: (isFullScreen: boolean) =>
-        void)
+        function registerFullScreenHandler(handler:
+        fullScreenChangeFunctionType)
       parameters:
         - id: handler
-          type: '(isFullScreen: boolean) =&gt; void'
+          type: fullScreenChangeFunctionType
           description: >-
             The handler to invoke when the user toggles full-screen view for a
             tab.

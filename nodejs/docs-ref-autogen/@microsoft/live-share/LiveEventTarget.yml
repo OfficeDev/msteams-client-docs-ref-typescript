@@ -1,0 +1,62 @@
+### YamlMime:TSType
+name: LiveEventTarget
+uid: '@microsoft/live-share.LiveEventTarget'
+package: '@microsoft/live-share'
+summary: Receives events broadcast by an `LiveEventSource`.
+fullName: LiveEventTarget<TEvent>
+remarks: >-
+  All live event targets are also sources. This simplifies the programming model
+  for
+
+  live event object by letting them create a single object thats capable of
+  broadcasting
+
+  events to other instances of itself.
+isDeprecated: false
+type: class
+constructors:
+  - name: LiveEventTarget<TEvent>(LiveEventScope, string, LiveEventListener<TEvent>)
+    uid: '@microsoft/live-share.LiveEventTarget.constructor'
+    package: '@microsoft/live-share'
+    summary: Creates a new `LiveEventTarget` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new LiveEventTarget(scope: LiveEventScope, eventName: string, listener:
+        LiveEventListener<TEvent>)
+      parameters:
+        - id: scope
+          type: <xref uid="@microsoft/live-share.LiveEventScope" />
+          description: Scope to use for sending events.
+        - id: eventName
+          type: string
+          description: Name of the event to broadcast.
+        - id: listener
+          type: <xref uid="@microsoft/live-share.LiveEventListener" />&lt;TEvent&gt;
+          description: Function to call when an event is sent or received.
+inheritedMethods:
+  - name: sendEvent(Partial<TEvent>)
+    uid: '@microsoft/live-share.LiveEventTarget.sendEvent'
+    package: '@microsoft/live-share'
+    summary: Broadcasts an event to any listening `LiveEventTarget` instances.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
+      parameters:
+        - id: evt
+          type: Partial&lt;TEvent&gt;
+          description: |-
+            Optional. Partial event object to send. The `ILiveEvent.name`,
+            `ILiveEvent.timestamp`, and `ILiveEvent.clientId`
+            fields will be automatically populated prior to sending.
+      return:
+        description: |-
+          The full event, including `ILiveEvent.name`,
+          `ILiveEvent.timestamp`, and `ILiveEvent.clientId` fields if known.
+        type: TEvent
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveEventSource.sendEvent](xref:@microsoft/live-share.LiveEventSource.sendEvent)
+extends: <xref uid="@microsoft/live-share.LiveEventSource" />&lt;TEvent&gt;

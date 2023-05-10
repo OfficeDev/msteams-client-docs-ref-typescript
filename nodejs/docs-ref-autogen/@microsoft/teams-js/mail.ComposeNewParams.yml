@@ -72,7 +72,7 @@ inheritedProperties:
   - name: type
     uid: '@microsoft/teams-js.mail.ComposeNewParams.type'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: Type of the mail item being composed.
     fullName: type
     remarks: ''
     isDeprecated: false

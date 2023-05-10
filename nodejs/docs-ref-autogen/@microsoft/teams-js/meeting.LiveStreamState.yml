@@ -2,7 +2,7 @@
 name: LiveStreamState
 uid: '@microsoft/teams-js.meeting.LiveStreamState'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Represents the current live streaming state of a meeting
 fullName: LiveStreamState
 remarks: ''
 isDeprecated: false

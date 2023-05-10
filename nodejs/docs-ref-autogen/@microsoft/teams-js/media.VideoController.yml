@@ -23,7 +23,7 @@ constructors:
           type: <xref uid="@microsoft/teams-js.media.VideoControllerCallback" />
           description: ''
 inheritedMethods:
-  - name: 'stop((err?: SdkError) => void)'
+  - name: stop(errorCallbackFunctionType)
     uid: '@microsoft/teams-js.media.VideoController.stop'
     package: '@microsoft/teams-js'
     summary: |-
@@ -32,10 +32,10 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function stop(callback?: (err?: SdkError) => void)'
+      content: 'function stop(callback?: errorCallbackFunctionType)'
       parameters:
         - id: callback
-          type: '(err?: SdkError) =&gt; void'
+          type: errorCallbackFunctionType
           description: >-
             is used to send app if host client has successfully stopped the
             event or not
@@ -44,7 +44,9 @@ methods:
   - name: notifyEventToApp(MediaControllerEvent)
     uid: '@microsoft/teams-js.media.VideoController.notifyEventToApp'
     package: '@microsoft/teams-js'
-    summary: ''
+    summary: >-
+      Notify or send an event related to the playback and control of video
+      content to a registered application.
     remarks: ''
     isDeprecated: false
     syntax:
