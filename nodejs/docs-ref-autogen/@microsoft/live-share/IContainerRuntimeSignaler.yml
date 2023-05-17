@@ -15,6 +15,26 @@ remarks: >-
 isDeprecated: false
 type: interface
 methods:
+  - name: 'off("signal", (message: IInboundSignalMessage, local: boolean) => void)'
+    uid: '@microsoft/live-share.IContainerRuntimeSignaler.off'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function off(event: "signal", listener: (message: IInboundSignalMessage,
+        local: boolean) => void): IContainerRuntimeSignaler
+      parameters:
+        - id: event
+          type: '"signal"'
+          description: ''
+        - id: listener
+          type: '(message: IInboundSignalMessage, local: boolean) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.IContainerRuntimeSignaler" />
   - name: 'on("signal", (message: IInboundSignalMessage, local: boolean) => void)'
     uid: '@microsoft/live-share.IContainerRuntimeSignaler.on'
     package: '@microsoft/live-share'

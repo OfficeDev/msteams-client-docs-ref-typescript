@@ -34,6 +34,18 @@ properties:
       return:
         description: ''
         type: ITelemetryBaseLogger
+  - name: roleVerifier
+    uid: '@microsoft/live-share.ILiveShareClientOptions.roleVerifier'
+    package: '@microsoft/live-share'
+    summary: Optional. Custom role verifier to use.
+    fullName: roleVerifier
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'roleVerifier?: IRoleVerifier'
+      return:
+        description: ''
+        type: IRoleVerifier
   - name: timestampProvider
     uid: '@microsoft/live-share.ILiveShareClientOptions.timestampProvider'
     package: '@microsoft/live-share'

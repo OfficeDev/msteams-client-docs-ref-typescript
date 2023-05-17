@@ -2,7 +2,7 @@
 name: ITimerConfig
 uid: '@microsoft/live-share.ITimerConfig'
 package: '@microsoft/live-share'
-summary: for all time values millis from epoch is used
+summary: ''
 fullName: ITimerConfig
 remarks: ''
 isDeprecated: false
@@ -11,7 +11,7 @@ properties:
   - name: clientId
     uid: '@microsoft/live-share.ITimerConfig.clientId'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: The clientId that made the change
     fullName: clientId
     remarks: ''
     isDeprecated: false
@@ -23,7 +23,7 @@ properties:
   - name: configChangedAt
     uid: '@microsoft/live-share.ITimerConfig.configChangedAt'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: Time the config changed at
     fullName: configChangedAt
     remarks: ''
     isDeprecated: false
@@ -32,10 +32,11 @@ properties:
       return:
         description: ''
         type: number
+inheritedProperties:
   - name: duration
     uid: '@microsoft/live-share.ITimerConfig.duration'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: Duration of timer
     fullName: duration
     remarks: ''
     isDeprecated: false
@@ -44,10 +45,13 @@ properties:
       return:
         description: ''
         type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ITimerConfigData.duration](xref:@microsoft/live-share.ITimerConfigData.duration)
   - name: position
     uid: '@microsoft/live-share.ITimerConfig.position'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: position when config change occurred
     fullName: position
     remarks: ''
     isDeprecated: false
@@ -56,10 +60,13 @@ properties:
       return:
         description: ''
         type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ITimerConfigData.position](xref:@microsoft/live-share.ITimerConfigData.position)
   - name: running
     uid: '@microsoft/live-share.ITimerConfig.running'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: Whether the timer was running or not when config change occurred
     fullName: running
     remarks: ''
     isDeprecated: false
@@ -68,3 +75,7 @@ properties:
       return:
         description: ''
         type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [ITimerConfigData.running](xref:@microsoft/live-share.ITimerConfigData.running)
+extends: <xref uid="@microsoft/live-share.ITimerConfigData" />

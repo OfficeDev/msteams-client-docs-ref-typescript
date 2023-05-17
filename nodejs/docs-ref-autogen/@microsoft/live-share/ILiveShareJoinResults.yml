@@ -1,0 +1,63 @@
+### YamlMime:TSType
+name: ILiveShareJoinResults
+uid: '@microsoft/live-share.ILiveShareJoinResults'
+package: '@microsoft/live-share'
+summary: Response object from `.joinContainer()` in `LiveShareClient`
+fullName: ILiveShareJoinResults
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: container
+    uid: '@microsoft/live-share.ILiveShareJoinResults.container'
+    package: '@microsoft/live-share'
+    summary: Fluid container
+    fullName: container
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'container: IFluidContainer'
+      return:
+        description: ''
+        type: IFluidContainer
+  - name: created
+    uid: '@microsoft/live-share.ILiveShareJoinResults.created'
+    package: '@microsoft/live-share'
+    summary: Whether the local user was the one to create the container
+    fullName: created
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'created: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: services
+    uid: '@microsoft/live-share.ILiveShareJoinResults.services'
+    package: '@microsoft/live-share'
+    summary: Azure Container Services, which includes things like Fluid Audience
+    fullName: services
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'services: AzureContainerServices'
+      return:
+        description: ''
+        type: AzureContainerServices
+  - name: timestampProvider
+    uid: '@microsoft/live-share.ILiveShareJoinResults.timestampProvider'
+    package: '@microsoft/live-share'
+    summary: >-
+      Live Share timestamp provider. Can be used to `.getTimestamp()` for a
+      global clock value.
+
+      This reference timestamp value should be fairly consistent for all users
+      in the session.
+    fullName: timestampProvider
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timestampProvider: ITimestampProvider'
+      return:
+        description: ''
+        type: ITimestampProvider

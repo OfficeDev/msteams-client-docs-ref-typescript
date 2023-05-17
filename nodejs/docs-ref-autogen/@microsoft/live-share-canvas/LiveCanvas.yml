@@ -194,11 +194,17 @@ inheritedProperties:
         type: >-
           TypedEventTransform&lt;<xref
           uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.addListener
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.addListener
   - name: captureRejections
     uid: '@microsoft/live-share-canvas.LiveCanvas.captureRejections'
     package: '@microsoft/live-share-canvas'
-    summary: Sets or gets the default captureRejection value for all emitters.
+    summary: >-
+      Value:
+      [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
+
+
+      Change the default `captureRejections` option on all new `EventEmitter`
+      objects.
     fullName: captureRejections
     remarks: ''
     isDeprecated: false
@@ -207,11 +213,14 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejections
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.captureRejections
   - name: captureRejectionSymbol
     uid: '@microsoft/live-share-canvas.LiveCanvas.captureRejectionSymbol'
     package: '@microsoft/live-share-canvas'
-    summary: ''
+    summary: |-
+      Value: `Symbol.for('nodejs.rejection')`
+
+      See how to write a custom `rejection handler`.
     fullName: captureRejectionSymbol
     remarks: ''
     isDeprecated: false
@@ -220,11 +229,76 @@ inheritedProperties:
       return:
         description: ''
         type: typeof captureRejectionSymbol
-    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejectionSymbol
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.captureRejectionSymbol
   - name: defaultMaxListeners
     uid: '@microsoft/live-share-canvas.LiveCanvas.defaultMaxListeners'
     package: '@microsoft/live-share-canvas'
-    summary: ''
+    summary: >-
+      By default, a maximum of `10` listeners can be registered for any single
+
+      event. This limit can be changed for individual `EventEmitter` instances
+
+      using the `emitter.setMaxListeners(n)` method. To change the default
+
+      for _all_`EventEmitter` instances, the
+      `events.defaultMaxListeners`property can be used. If this value is not a
+      positive number, a `RangeError`is thrown.
+
+
+      Take caution when setting the `events.defaultMaxListeners` because the
+
+      change affects _all_`EventEmitter` instances, including those created
+      before
+
+      the change is made. However, calling `emitter.setMaxListeners(n)` still
+      has
+
+      precedence over `events.defaultMaxListeners`.
+
+
+      This is not a hard limit. The `EventEmitter` instance will allow
+
+      more listeners to be added but will output a trace warning to stderr
+      indicating
+
+      that a "possible EventEmitter memory leak" has been detected. For any
+      single`EventEmitter`, the `emitter.getMaxListeners()` and
+      `emitter.setMaxListeners()`methods can be used to
+
+      temporarily avoid this warning:
+
+
+      ```js
+
+      import { EventEmitter } from 'node:events';
+
+      const emitter = new EventEmitter();
+
+      emitter.setMaxListeners(emitter.getMaxListeners() + 1);
+
+      emitter.once('event', () => {
+        // do stuff
+        emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0));
+      });
+
+      ```
+
+
+      The `--trace-warnings` command-line flag can be used to display the
+
+      stack trace for such warnings.
+
+
+      The emitted warning can be inspected with `process.on('warning')` and will
+
+      have the additional `emitter`, `type`, and `count` properties, referring
+      to
+
+      the event emitter instance, the event's name and the number of attached
+
+      listeners, respectively.
+
+      Its `name` property is set to `'MaxListenersExceededWarning'`.
     fullName: defaultMaxListeners
     remarks: ''
     isDeprecated: false
@@ -233,24 +307,19 @@ inheritedProperties:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> DataObject.defaultMaxListeners
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.defaultMaxListeners
   - name: errorMonitor
     uid: '@microsoft/live-share-canvas.LiveCanvas.errorMonitor'
     package: '@microsoft/live-share-canvas'
     summary: >-
       This symbol shall be used to install a listener for only monitoring
-      `'error'`
-
-      events. Listeners installed using this symbol are called before the
-      regular
-
-      `'error'` listeners are called.
+      `'error'`events. Listeners installed using this symbol are called before
+      the regular`'error'` listeners are called.
 
 
       Installing a listener using this symbol does not change the behavior once
-      an
-
-      `'error'` event is emitted, therefore the process will still crash if no
+      an`'error'` event is emitted. Therefore, the process will still crash if
+      no
 
       regular `'error'` listener is installed.
     fullName: errorMonitor
@@ -261,7 +330,7 @@ inheritedProperties:
       return:
         description: ''
         type: typeof errorMonitor
-    inheritanceDescription: <b>Inherited From</b> DataObject.errorMonitor
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.errorMonitor
   - name: 'off'
     uid: '@microsoft/live-share-canvas.LiveCanvas.off'
     package: '@microsoft/live-share-canvas'
@@ -276,7 +345,7 @@ inheritedProperties:
         type: >-
           TypedEventTransform&lt;<xref
           uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.off
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.off
   - name: 'on'
     uid: '@microsoft/live-share-canvas.LiveCanvas.on'
     package: '@microsoft/live-share-canvas'
@@ -291,7 +360,7 @@ inheritedProperties:
         type: >-
           TypedEventTransform&lt;<xref
           uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.on
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.on
   - name: once
     uid: '@microsoft/live-share-canvas.LiveCanvas.once'
     package: '@microsoft/live-share-canvas'
@@ -306,7 +375,7 @@ inheritedProperties:
         type: >-
           TypedEventTransform&lt;<xref
           uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.once
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.once
   - name: prependListener
     uid: '@microsoft/live-share-canvas.LiveCanvas.prependListener'
     package: '@microsoft/live-share-canvas'
@@ -321,7 +390,7 @@ inheritedProperties:
         type: >-
           TypedEventTransform&lt;<xref
           uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.prependListener
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.prependListener
   - name: prependOnceListener
     uid: '@microsoft/live-share-canvas.LiveCanvas.prependOnceListener'
     package: '@microsoft/live-share-canvas'
@@ -336,7 +405,7 @@ inheritedProperties:
         type: >-
           TypedEventTransform&lt;<xref
           uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.prependOnceListener
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.prependOnceListener
   - name: removeListener
     uid: '@microsoft/live-share-canvas.LiveCanvas.removeListener'
     package: '@microsoft/live-share-canvas'
@@ -351,7 +420,7 @@ inheritedProperties:
         type: >-
           TypedEventTransform&lt;<xref
           uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.removeListener
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.removeListener
 inheritedMethods:
   - name: dispose()
     uid: '@microsoft/live-share-canvas.LiveCanvas.dispose'
@@ -361,7 +430,7 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: function dispose()
-    inheritanceDescription: <b>Inherited From</b> DataObject.dispose
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.dispose
   - name: emit(string | symbol, any[])
     uid: '@microsoft/live-share-canvas.LiveCanvas.emit'
     package: '@microsoft/live-share-canvas'
@@ -442,7 +511,7 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> DataObject.emit
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.emit
   - name: eventNames()
     uid: '@microsoft/live-share-canvas.LiveCanvas.eventNames'
     package: '@microsoft/live-share-canvas'
@@ -470,7 +539,7 @@ inheritedMethods:
       return:
         description: ''
         type: (string | symbol)[]
-    inheritanceDescription: <b>Inherited From</b> DataObject.eventNames
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.eventNames
   - name: finishInitialization(boolean)
     uid: '@microsoft/live-share-canvas.LiveCanvas.finishInitialization'
     package: '@microsoft/live-share-canvas'
@@ -498,7 +567,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.finishInitialization
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.finishInitialization
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share-canvas.LiveCanvas.getDataObject'
     package: '@microsoft/live-share-canvas'
@@ -516,7 +585,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.getDataObject
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getDataObject
   - name: getEventListeners(_DOMEventTarget | EventEmitter, string | symbol)
     uid: '@microsoft/live-share-canvas.LiveCanvas.getEventListeners'
     package: '@microsoft/live-share-canvas'
@@ -571,7 +640,7 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> DataObject.getEventListeners
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getEventListeners
   - name: >-
       getFluidObjectFromDirectory<T>(string, IDirectory, (id: string, directory:
       IDirectory) => undefined | IFluidHandle<FluidObject<unknown> &
@@ -606,7 +675,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;undefined | T&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.getFluidObjectFromDirectory
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getFluidObjectFromDirectory
   - name: getMaxListeners()
     uid: '@microsoft/live-share-canvas.LiveCanvas.getMaxListeners'
     package: '@microsoft/live-share-canvas'
@@ -623,7 +692,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> DataObject.getMaxListeners
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getMaxListeners
   - name: initializeInternal(boolean)
     uid: '@microsoft/live-share-canvas.LiveCanvas.initializeInternal'
     package: '@microsoft/live-share-canvas'
@@ -641,7 +710,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.initializeInternal
   - name: listenerCount(EventEmitter, string | symbol)
     uid: '@microsoft/live-share-canvas.LiveCanvas.listenerCount'
     package: '@microsoft/live-share-canvas'
@@ -683,7 +752,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.listenerCount
   - name: listenerCount(string | symbol, Function)
     uid: '@microsoft/live-share-canvas.LiveCanvas.listenerCount'
     package: '@microsoft/live-share-canvas'
@@ -710,7 +779,7 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.listenerCount
   - name: listeners(string | symbol)
     uid: '@microsoft/live-share-canvas.LiveCanvas.listeners'
     package: '@microsoft/live-share-canvas'
@@ -735,7 +804,7 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> DataObject.listeners
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.listeners
   - name: on(EventEmitter, string, StaticEventEmitterOptions)
     uid: '@microsoft/live-share-canvas.LiveCanvas.on'
     package: '@microsoft/live-share-canvas'
@@ -813,7 +882,7 @@ inheritedMethods:
       return:
         description: that iterates `eventName` events emitted by the `emitter`
         type: AsyncIterableIterator&lt;any&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.on
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.on
   - name: once(_DOMEventTarget, string, StaticEventEmitterOptions)
     uid: '@microsoft/live-share-canvas.LiveCanvas.once_1'
     package: '@microsoft/live-share-canvas'
@@ -837,7 +906,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;any[]&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.once
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.once
   - name: once(_NodeEventTarget, string | symbol, StaticEventEmitterOptions)
     uid: '@microsoft/live-share-canvas.LiveCanvas.once'
     package: '@microsoft/live-share-canvas'
@@ -980,7 +1049,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;any[]&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.once
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.once
   - name: rawListeners(string | symbol)
     uid: '@microsoft/live-share-canvas.LiveCanvas.rawListeners'
     package: '@microsoft/live-share-canvas'
@@ -1023,7 +1092,7 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> DataObject.rawListeners
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.rawListeners
   - name: removeAllListeners(string | symbol)
     uid: '@microsoft/live-share-canvas.LiveCanvas.removeAllListeners'
     package: '@microsoft/live-share-canvas'
@@ -1046,7 +1115,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-canvas.LiveCanvas" />
-    inheritanceDescription: <b>Inherited From</b> DataObject.removeAllListeners
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.removeAllListeners
   - name: request(IRequest)
     uid: '@microsoft/live-share-canvas.LiveCanvas.request'
     package: '@microsoft/live-share-canvas'
@@ -1062,7 +1131,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;IResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.request
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.request
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share-canvas.LiveCanvas.setMaxListeners'
     package: '@microsoft/live-share-canvas'
@@ -1091,7 +1160,7 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-canvas.LiveCanvas" />
-    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.setMaxListeners
   - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
     uid: '@microsoft/live-share-canvas.LiveCanvas.setMaxListeners'
     package: '@microsoft/live-share-canvas'
@@ -1119,23 +1188,28 @@ inheritedMethods:
         - id: eventTargets
           type: (_DOMEventTarget | EventEmitter)[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.setMaxListeners
 methods:
-  - name: initialize(InkingManager)
+  - name: initialize(InkingManager, UserMeetingRole[])
     uid: '@microsoft/live-share-canvas.LiveCanvas.initialize'
     package: '@microsoft/live-share-canvas'
     summary: Initializes the live inking session.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function initialize(inkingManager: InkingManager): Promise<void>'
+      content: >-
+        function initialize(inkingManager: InkingManager, allowedRoles?:
+        UserMeetingRole[]): Promise<void>
       parameters:
         - id: inkingManager
           type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
           description: |-
             The InkingManager instance providing the drawing and events
             that will be synchronized across clients.
+        - id: allowedRoles
+          type: UserMeetingRole[]
+          description: ''
       return:
         description: ''
         type: Promise&lt;void&gt;
-extends: DataObject
+extends: LiveDataObject

@@ -1,0 +1,550 @@
+### YamlMime:TSType
+name: BaseDashboard
+uid: '@microsoft/teamsfx-react.BaseDashboard'
+package: '@microsoft/teamsfx-react'
+summary: The base component that provides basic functionality to create a dashboard.
+fullName: BaseDashboard<P, S>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: BaseDashboard<P, S>(Readonly<P>)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.constructor'
+    package: '@microsoft/teamsfx-react'
+    summary: Constructor of BaseDashboard.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new BaseDashboard(props: Readonly<P>)'
+      parameters:
+        - id: props
+          type: Readonly&lt;P&gt;
+          description: The properties for the dashboard.
+inheritedProperties:
+  - name: context
+    uid: '@microsoft/teamsfx-react.BaseDashboard.context'
+    package: '@microsoft/teamsfx-react'
+    summary: |-
+      If using the new style context, re-declare this in your class to be the
+      `React.ContextType` of your `static contextType`.
+      Should be used with type annotation or static contextType.
+
+      ```ts
+      static contextType = MyContext
+      // For TS pre-3.7:
+      context!: React.ContextType<typeof MyContext>
+      // For TS 3.7 and above:
+      declare context: React.ContextType<typeof MyContext>
+      ```
+
+      See https://react.dev/reference/react/Component#context
+    fullName: context
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'context: unknown'
+      return:
+        description: ''
+        type: unknown
+    inheritanceDescription: <b>Inherited From</b> Component.context
+  - name: contextType
+    uid: '@microsoft/teamsfx-react.BaseDashboard.contextType'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      If set, `this.context` will be set at runtime to the current value of the
+      given Context.
+
+
+      Usage:
+
+
+      ```ts
+
+      type MyContext = number
+
+      const Ctx = React.createContext<MyContext>(0)
+
+
+      class Foo extends React.Component {
+        static contextType = Ctx
+        context!: React.ContextType<typeof Ctx>
+        render () {
+          return <>My context's value: {this.context}</>;
+        }
+      }
+
+      ```
+
+
+      See https://react.dev/reference/react/Component#static-contexttype
+    fullName: contextType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static contextType?: Context<any>'
+      return:
+        description: ''
+        type: Context&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> Component.contextType
+  - name: props
+    uid: '@microsoft/teamsfx-react.BaseDashboard.props'
+    package: '@microsoft/teamsfx-react'
+    summary: ''
+    fullName: props
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'props: Readonly<P>'
+      return:
+        description: ''
+        type: Readonly&lt;P&gt;
+    inheritanceDescription: <b>Inherited From</b> Component.props
+  - name: refs
+    uid: '@microsoft/teamsfx-react.BaseDashboard.refs'
+    package: '@microsoft/teamsfx-react'
+    summary: ''
+    fullName: refs
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      https://legacy.reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
+    syntax:
+      content: 'refs: {[key: string]: ReactInstance}'
+      return:
+        description: ''
+        type: '{[key: string]: ReactInstance}'
+    inheritanceDescription: <b>Inherited From</b> Component.refs
+  - name: state
+    uid: '@microsoft/teamsfx-react.BaseDashboard.state'
+    package: '@microsoft/teamsfx-react'
+    summary: ''
+    fullName: state
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'state: Readonly<S & BaseDashboardState>'
+      return:
+        description: ''
+        type: Readonly&lt;S & BaseDashboardState&gt;
+    inheritanceDescription: <b>Inherited From</b> Component.state
+inheritedMethods:
+  - name: componentDidCatch(Error, ErrorInfo)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.componentDidCatch'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Catches exceptions generated in descendant components. Unhandled
+      exceptions will cause
+
+      the entire component tree to unmount.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function componentDidCatch(error: Error, errorInfo: ErrorInfo)'
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: errorInfo
+          type: ErrorInfo
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Component.componentDidCatch
+  - name: componentDidUpdate(Readonly<P>, Readonly<S & BaseDashboardState>, any)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.componentDidUpdate'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called immediately after updating occurs. Not called for the initial
+      render.
+
+
+      The snapshot is only present if getSnapshotBeforeUpdate is present and
+      returns non-null.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function componentDidUpdate(prevProps: Readonly<P>, prevState:
+        Readonly<S & BaseDashboardState>, snapshot?: any)
+      parameters:
+        - id: prevProps
+          type: Readonly&lt;P&gt;
+          description: ''
+        - id: prevState
+          type: Readonly&lt;S & BaseDashboardState&gt;
+          description: ''
+        - id: snapshot
+          type: any
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Component.componentDidUpdate
+  - name: componentWillMount()
+    uid: '@microsoft/teamsfx-react.BaseDashboard.componentWillMount'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called immediately before mounting occurs, and before `Component#render`.
+
+      Avoid introducing any side-effects or subscriptions in this method.
+
+
+      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+
+      prevents this from being invoked.
+
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      16.3, use componentDidMount or the constructor instead; will stop working
+      in React 17
+    syntax:
+      content: function componentWillMount()
+    inheritanceDescription: <b>Inherited From</b> Component.componentWillMount
+  - name: componentWillReceiveProps(Readonly<P>, any)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.componentWillReceiveProps'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called when the component may be receiving new props.
+
+      React may call this even if props have not changed, so be sure to compare
+      new and existing
+
+      props if you only want to handle changes.
+
+
+      Calling `Component#setState` generally does not trigger this method.
+
+
+      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+
+      prevents this from being invoked.
+
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      16.3, use static getDerivedStateFromProps instead; will stop working in
+      React 17
+    syntax:
+      content: >-
+        function componentWillReceiveProps(nextProps: Readonly<P>, nextContext:
+        any)
+      parameters:
+        - id: nextProps
+          type: Readonly&lt;P&gt;
+          description: ''
+        - id: nextContext
+          type: any
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Component.componentWillReceiveProps
+  - name: componentWillUpdate(Readonly<P>, Readonly<S & BaseDashboardState>, any)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.componentWillUpdate'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called immediately before rendering when new props or state is received.
+      Not called for the initial render.
+
+
+      Note: You cannot call `Component#setState` here.
+
+
+      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+
+      prevents this from being invoked.
+
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: 16.3, use getSnapshotBeforeUpdate instead; will stop working in React 17
+    syntax:
+      content: >-
+        function componentWillUpdate(nextProps: Readonly<P>, nextState:
+        Readonly<S & BaseDashboardState>, nextContext: any)
+      parameters:
+        - id: nextProps
+          type: Readonly&lt;P&gt;
+          description: ''
+        - id: nextState
+          type: Readonly&lt;S & BaseDashboardState&gt;
+          description: ''
+        - id: nextContext
+          type: any
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Component.componentWillUpdate
+  - name: forceUpdate(() => void)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.forceUpdate'
+    package: '@microsoft/teamsfx-react'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function forceUpdate(callback?: () => void)'
+      parameters:
+        - id: callback
+          type: () =&gt; void
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Component.forceUpdate
+  - name: getSnapshotBeforeUpdate(Readonly<P>, Readonly<S & BaseDashboardState>)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.getSnapshotBeforeUpdate'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Runs before React applies the result of `render` to the document, and
+
+      returns an object to be given to componentDidUpdate. Useful for saving
+
+      things such as scroll position before `render` causes changes to it.
+
+
+      Note: the presence of getSnapshotBeforeUpdate prevents any of the
+      deprecated
+
+      lifecycle events from running.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getSnapshotBeforeUpdate(prevProps: Readonly<P>, prevState:
+        Readonly<S & BaseDashboardState>): any
+      parameters:
+        - id: prevProps
+          type: Readonly&lt;P&gt;
+          description: ''
+        - id: prevState
+          type: Readonly&lt;S & BaseDashboardState&gt;
+          description: ''
+      return:
+        description: ''
+        type: any
+    inheritanceDescription: <b>Inherited From</b> Component.getSnapshotBeforeUpdate
+  - name: >-
+      setState<K>(null | (S & BaseDashboardState) | (prevState: Readonly<S &
+      BaseDashboardState>, props: Readonly<P>) => null | (S &
+      BaseDashboardState) | Pick<S & BaseDashboardState, K> | Pick<S &
+      BaseDashboardState, K>, () => void)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.setState'
+    package: '@microsoft/teamsfx-react'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setState<K>(state: null | (S & BaseDashboardState) |
+        (prevState: Readonly<S & BaseDashboardState>, props: Readonly<P>) =>
+        null | (S & BaseDashboardState) | Pick<S & BaseDashboardState, K> |
+        Pick<S & BaseDashboardState, K>, callback?: () => void)
+      parameters:
+        - id: state
+          type: >-
+            null | (S & BaseDashboardState) | (prevState: Readonly&lt;S &
+            BaseDashboardState&gt;, props: Readonly&lt;P&gt;) =&gt; null | (S &
+            BaseDashboardState) | Pick&lt;S & BaseDashboardState, K&gt; |
+            Pick&lt;S & BaseDashboardState, K&gt;
+          description: ''
+        - id: callback
+          type: () =&gt; void
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Component.setState
+  - name: shouldComponentUpdate(Readonly<P>, Readonly<S & BaseDashboardState>, any)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.shouldComponentUpdate'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called to determine whether the change in props and state should trigger a
+      re-render.
+
+
+      `Component` always returns true.
+
+      `PureComponent` implements a shallow comparison on props and state and
+      returns true if any
+
+      props or states have changed.
+
+
+      If false is returned, `Component#render`, `componentWillUpdate`
+
+      and `componentDidUpdate` will not be called.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function shouldComponentUpdate(nextProps: Readonly<P>, nextState:
+        Readonly<S & BaseDashboardState>, nextContext: any): boolean
+      parameters:
+        - id: nextProps
+          type: Readonly&lt;P&gt;
+          description: ''
+        - id: nextState
+          type: Readonly&lt;S & BaseDashboardState&gt;
+          description: ''
+        - id: nextContext
+          type: any
+          description: ''
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> Component.shouldComponentUpdate
+  - name: UNSAFE_componentWillMount()
+    uid: '@microsoft/teamsfx-react.BaseDashboard.UNSAFE_componentWillMount'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called immediately before mounting occurs, and before `Component#render`.
+
+      Avoid introducing any side-effects or subscriptions in this method.
+
+
+      This method will not stop working in React 17.
+
+
+      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+
+      prevents this from being invoked.
+
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: 16.3, use componentDidMount or the constructor instead
+    syntax:
+      content: function UNSAFE_componentWillMount()
+    inheritanceDescription: <b>Inherited From</b> Component.UNSAFE_componentWillMount
+  - name: UNSAFE_componentWillReceiveProps(Readonly<P>, any)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.UNSAFE_componentWillReceiveProps'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called when the component may be receiving new props.
+
+      React may call this even if props have not changed, so be sure to compare
+      new and existing
+
+      props if you only want to handle changes.
+
+
+      Calling `Component#setState` generally does not trigger this method.
+
+
+      This method will not stop working in React 17.
+
+
+      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+
+      prevents this from being invoked.
+
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: 16.3, use static getDerivedStateFromProps instead
+    syntax:
+      content: >-
+        function UNSAFE_componentWillReceiveProps(nextProps: Readonly<P>,
+        nextContext: any)
+      parameters:
+        - id: nextProps
+          type: Readonly&lt;P&gt;
+          description: ''
+        - id: nextContext
+          type: any
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Component.UNSAFE_componentWillReceiveProps
+  - name: >-
+      UNSAFE_componentWillUpdate(Readonly<P>, Readonly<S & BaseDashboardState>,
+      any)
+    uid: '@microsoft/teamsfx-react.BaseDashboard.UNSAFE_componentWillUpdate'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called immediately before rendering when new props or state is received.
+      Not called for the initial render.
+
+
+      Note: You cannot call `Component#setState` here.
+
+
+      This method will not stop working in React 17.
+
+
+      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+
+      prevents this from being invoked.
+
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update
+
+      See
+      https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: 16.3, use getSnapshotBeforeUpdate instead
+    syntax:
+      content: >-
+        function UNSAFE_componentWillUpdate(nextProps: Readonly<P>, nextState:
+        Readonly<S & BaseDashboardState>, nextContext: any)
+      parameters:
+        - id: nextProps
+          type: Readonly&lt;P&gt;
+          description: ''
+        - id: nextState
+          type: Readonly&lt;S & BaseDashboardState&gt;
+          description: ''
+        - id: nextContext
+          type: any
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Component.UNSAFE_componentWillUpdate
+methods:
+  - name: componentDidMount()
+    uid: '@microsoft/teamsfx-react.BaseDashboard.componentDidMount'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called after the component is mounted. You can do initialization that
+      requires DOM nodes here. You can also make network requests here if you
+      need to load data from a remote endpoint.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function componentDidMount(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: componentWillUnmount()
+    uid: '@microsoft/teamsfx-react.BaseDashboard.componentWillUnmount'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      Called before the component is unmounted and destroyed. You can do
+      necessary cleanup here, such as invalidating timers, canceling network
+      requests, or removing any DOM elements.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function componentWillUnmount()
+  - name: render()
+    uid: '@microsoft/teamsfx-react.BaseDashboard.render'
+    package: '@microsoft/teamsfx-react'
+    summary: Defines the default layout for the dashboard.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function render(): Element'
+      return:
+        description: ''
+        type: Element
+extends: Component&lt;P, S & BaseDashboardState&gt;

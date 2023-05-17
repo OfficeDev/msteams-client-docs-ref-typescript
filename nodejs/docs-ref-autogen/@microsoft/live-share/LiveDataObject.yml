@@ -1,48 +1,30 @@
 ### YamlMime:TSType
-name: LiveEvent
-uid: '@microsoft/live-share.LiveEvent'
+name: LiveDataObject
+uid: '@microsoft/live-share.LiveDataObject'
 package: '@microsoft/live-share'
 summary: >-
-  Live fluid object that broadcasts an event to other clients and a set of
-  static event
-
-  related helpers.
-
-
-  #### remarks
-
-  Applications should call `on('received', (evt, local) => {})` to listen for
-  local events sent
-
-  and remote events received. Events aren't guaranteed to be delivered so you
-  should limit their
-
-  use to sending events you're ok with potentially being missed. Reactions are a
-  good use case for
-
-  `LiveEvents`. Use something like the `LiveState` class when syncing state.
-fullName: LiveEvent<TEvent>
+  Extends Fluid's DataObject class. Intended for use with Live Share custom
+  DDS's that rely on a `ILiveShareHost`.
+fullName: LiveDataObject<I>
 remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'LiveEvent<TEvent>(IDataObjectProps<{ Events: ILiveEventEvents<TEvent> }>)'
-    uid: '@microsoft/live-share.LiveEvent.constructor'
+  - name: LiveDataObject<I>(IDataObjectProps<I>)
+    uid: '@microsoft/live-share.LiveDataObject.constructor'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        new LiveEvent(props: IDataObjectProps<{ Events: ILiveEventEvents<TEvent>
-        }>)
+      content: 'new LiveDataObject(props: IDataObjectProps<I>)'
       parameters:
         - id: props
-          type: 'IDataObjectProps&lt;{ Events: ILiveEventEvents&lt;TEvent&gt; }&gt;'
+          type: IDataObjectProps&lt;I&gt;
           description: ''
 properties:
   - name: disposed
-    uid: '@microsoft/live-share.LiveEvent.disposed'
+    uid: '@microsoft/live-share.LiveDataObject.disposed'
     package: '@microsoft/live-share'
     summary: ''
     fullName: disposed
@@ -53,22 +35,8 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: factory
-    uid: '@microsoft/live-share.LiveEvent.factory'
-    package: '@microsoft/live-share'
-    summary: The objects fluid type factory.
-    fullName: factory
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'static factory: DataObjectFactory<LiveEvent<any>, DataObjectTypes>'
-      return:
-        description: ''
-        type: >-
-          DataObjectFactory&lt;<xref uid="@microsoft/live-share.LiveEvent"
-          />&lt;any&gt;, DataObjectTypes&gt;
   - name: handle
-    uid: '@microsoft/live-share.LiveEvent.handle'
+    uid: '@microsoft/live-share.LiveDataObject.handle'
     package: '@microsoft/live-share'
     summary: Handle to a data store
     fullName: handle
@@ -80,7 +48,7 @@ properties:
         description: ''
         type: IFluidHandle&lt;this&gt;
   - name: id
-    uid: '@microsoft/live-share.LiveEvent.id'
+    uid: '@microsoft/live-share.LiveDataObject.id'
     package: '@microsoft/live-share'
     summary: ''
     fullName: id
@@ -92,7 +60,7 @@ properties:
         description: ''
         type: string
   - name: IFluidHandle
-    uid: '@microsoft/live-share.LiveEvent.IFluidHandle'
+    uid: '@microsoft/live-share.LiveDataObject.IFluidHandle'
     package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidHandle
@@ -104,7 +72,7 @@ properties:
         description: ''
         type: IFluidHandle&lt;this&gt;
   - name: IFluidLoadable
-    uid: '@microsoft/live-share.LiveEvent.IFluidLoadable'
+    uid: '@microsoft/live-share.LiveDataObject.IFluidLoadable'
     package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidLoadable
@@ -116,7 +84,7 @@ properties:
         description: ''
         type: this
   - name: IFluidRouter
-    uid: '@microsoft/live-share.LiveEvent.IFluidRouter'
+    uid: '@microsoft/live-share.LiveDataObject.IFluidRouter'
     package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidRouter
@@ -127,47 +95,9 @@ properties:
       return:
         description: ''
         type: this
-  - name: isInitialized
-    uid: '@microsoft/live-share.LiveEvent.isInitialized'
-    package: '@microsoft/live-share'
-    summary: Returns true if the object has been initialized.
-    fullName: isInitialized
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: boolean isInitialized
-      return:
-        description: ''
-        type: boolean
-  - name: isStarted
-    uid: '@microsoft/live-share.LiveEvent.isStarted'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: isStarted
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: boolean isStarted
-      return:
-        description: ''
-        type: boolean
-  - name: TypeName
-    uid: '@microsoft/live-share.LiveEvent.TypeName'
-    package: '@microsoft/live-share'
-    summary: The objects fluid type/name.
-    fullName: TypeName
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        static TypeName: "@microsoft/live-share:LiveEvent" =
-        "@microsoft/live-share:LiveEvent"
-      return:
-        description: ''
-        type: '"@microsoft/live-share:LiveEvent"'
 inheritedProperties:
   - name: addListener
-    uid: '@microsoft/live-share.LiveEvent.addListener'
+    uid: '@microsoft/live-share.LiveDataObject.addListener'
     package: '@microsoft/live-share'
     summary: ''
     fullName: addListener
@@ -175,19 +105,17 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        addListener: TypedEventTransform<LiveEvent<TEvent>,
-        ILiveEventEvents<TEvent> & IEvent>
+        addListener: TypedEventTransform<LiveDataObject<I>, I["Events"] &
+        IEvent>
       return:
         description: ''
         type: >-
-          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
-          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
-          />&lt;TEvent&gt; & IEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.addListener](xref:@microsoft/live-share.LiveDataObject.addListener)
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;, I["Events"] &
+          IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.addListener
   - name: captureRejections
-    uid: '@microsoft/live-share.LiveEvent.captureRejections'
+    uid: '@microsoft/live-share.LiveDataObject.captureRejections'
     package: '@microsoft/live-share'
     summary: >-
       Value:
@@ -204,11 +132,9 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.captureRejections](xref:@microsoft/live-share.LiveDataObject.captureRejections)
+    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejections
   - name: captureRejectionSymbol
-    uid: '@microsoft/live-share.LiveEvent.captureRejectionSymbol'
+    uid: '@microsoft/live-share.LiveDataObject.captureRejectionSymbol'
     package: '@microsoft/live-share'
     summary: |-
       Value: `Symbol.for('nodejs.rejection')`
@@ -222,11 +148,9 @@ inheritedProperties:
       return:
         description: ''
         type: typeof captureRejectionSymbol
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.captureRejectionSymbol](xref:@microsoft/live-share.LiveDataObject.captureRejectionSymbol)
+    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejectionSymbol
   - name: defaultMaxListeners
-    uid: '@microsoft/live-share.LiveEvent.defaultMaxListeners'
+    uid: '@microsoft/live-share.LiveDataObject.defaultMaxListeners'
     package: '@microsoft/live-share'
     summary: >-
       By default, a maximum of `10` listeners can be registered for any single
@@ -302,11 +226,9 @@ inheritedProperties:
       return:
         description: ''
         type: number
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.defaultMaxListeners](xref:@microsoft/live-share.LiveDataObject.defaultMaxListeners)
+    inheritanceDescription: <b>Inherited From</b> DataObject.defaultMaxListeners
   - name: errorMonitor
-    uid: '@microsoft/live-share.LiveEvent.errorMonitor'
+    uid: '@microsoft/live-share.LiveDataObject.errorMonitor'
     package: '@microsoft/live-share'
     summary: >-
       This symbol shall be used to install a listener for only monitoring
@@ -327,71 +249,57 @@ inheritedProperties:
       return:
         description: ''
         type: typeof errorMonitor
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.errorMonitor](xref:@microsoft/live-share.LiveDataObject.errorMonitor)
+    inheritanceDescription: <b>Inherited From</b> DataObject.errorMonitor
   - name: 'off'
-    uid: '@microsoft/live-share.LiveEvent.off'
+    uid: '@microsoft/live-share.LiveDataObject.off'
     package: '@microsoft/live-share'
     summary: ''
     fullName: 'off'
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        off: TypedEventTransform<LiveEvent<TEvent>, ILiveEventEvents<TEvent> &
-        IEvent>
+      content: 'off: TypedEventTransform<LiveDataObject<I>, I["Events"] & IEvent>'
       return:
         description: ''
         type: >-
-          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
-          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
-          />&lt;TEvent&gt; & IEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.off](xref:@microsoft/live-share.LiveDataObject.off)
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;, I["Events"] &
+          IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.off
   - name: 'on'
-    uid: '@microsoft/live-share.LiveEvent.on'
+    uid: '@microsoft/live-share.LiveDataObject.on'
     package: '@microsoft/live-share'
     summary: ''
     fullName: 'on'
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        on: TypedEventTransform<LiveEvent<TEvent>, ILiveEventEvents<TEvent> &
-        IEvent>
+      content: 'on: TypedEventTransform<LiveDataObject<I>, I["Events"] & IEvent>'
       return:
         description: ''
         type: >-
-          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
-          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
-          />&lt;TEvent&gt; & IEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.on](xref:@microsoft/live-share.LiveDataObject.on)
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;, I["Events"] &
+          IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.on
   - name: once
-    uid: '@microsoft/live-share.LiveEvent.once'
+    uid: '@microsoft/live-share.LiveDataObject.once'
     package: '@microsoft/live-share'
     summary: ''
     fullName: once
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        once: TypedEventTransform<LiveEvent<TEvent>, ILiveEventEvents<TEvent> &
-        IEvent>
+      content: 'once: TypedEventTransform<LiveDataObject<I>, I["Events"] & IEvent>'
       return:
         description: ''
         type: >-
-          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
-          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
-          />&lt;TEvent&gt; & IEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;, I["Events"] &
+          IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
   - name: prependListener
-    uid: '@microsoft/live-share.LiveEvent.prependListener'
+    uid: '@microsoft/live-share.LiveDataObject.prependListener'
     package: '@microsoft/live-share'
     summary: ''
     fullName: prependListener
@@ -399,19 +307,17 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        prependListener: TypedEventTransform<LiveEvent<TEvent>,
-        ILiveEventEvents<TEvent> & IEvent>
+        prependListener: TypedEventTransform<LiveDataObject<I>, I["Events"] &
+        IEvent>
       return:
         description: ''
         type: >-
-          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
-          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
-          />&lt;TEvent&gt; & IEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.prependListener](xref:@microsoft/live-share.LiveDataObject.prependListener)
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;, I["Events"] &
+          IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.prependListener
   - name: prependOnceListener
-    uid: '@microsoft/live-share.LiveEvent.prependOnceListener'
+    uid: '@microsoft/live-share.LiveDataObject.prependOnceListener'
     package: '@microsoft/live-share'
     summary: ''
     fullName: prependOnceListener
@@ -419,19 +325,17 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        prependOnceListener: TypedEventTransform<LiveEvent<TEvent>,
-        ILiveEventEvents<TEvent> & IEvent>
+        prependOnceListener: TypedEventTransform<LiveDataObject<I>, I["Events"]
+        & IEvent>
       return:
         description: ''
         type: >-
-          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
-          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
-          />&lt;TEvent&gt; & IEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.prependOnceListener](xref:@microsoft/live-share.LiveDataObject.prependOnceListener)
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;, I["Events"] &
+          IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.prependOnceListener
   - name: removeListener
-    uid: '@microsoft/live-share.LiveEvent.removeListener'
+    uid: '@microsoft/live-share.LiveDataObject.removeListener'
     package: '@microsoft/live-share'
     summary: ''
     fullName: removeListener
@@ -439,31 +343,27 @@ inheritedProperties:
     isDeprecated: false
     syntax:
       content: >-
-        removeListener: TypedEventTransform<LiveEvent<TEvent>,
-        ILiveEventEvents<TEvent> & IEvent>
+        removeListener: TypedEventTransform<LiveDataObject<I>, I["Events"] &
+        IEvent>
       return:
         description: ''
         type: >-
-          TypedEventTransform&lt;<xref uid="@microsoft/live-share.LiveEvent"
-          />&lt;TEvent&gt;, <xref uid="@microsoft/live-share.ILiveEventEvents"
-          />&lt;TEvent&gt; & IEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.removeListener](xref:@microsoft/live-share.LiveDataObject.removeListener)
+          TypedEventTransform&lt;<xref
+          uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;, I["Events"] &
+          IEvent&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.removeListener
 inheritedMethods:
   - name: dispose()
-    uid: '@microsoft/live-share.LiveEvent.dispose'
+    uid: '@microsoft/live-share.LiveDataObject.dispose'
     package: '@microsoft/live-share'
     summary: Called when the host container closes and disposes itself
     remarks: ''
     isDeprecated: false
     syntax:
       content: function dispose()
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.dispose](xref:@microsoft/live-share.LiveDataObject.dispose)
+    inheritanceDescription: <b>Inherited From</b> DataObject.dispose
   - name: emit(string | symbol, any[])
-    uid: '@microsoft/live-share.LiveEvent.emit'
+    uid: '@microsoft/live-share.LiveDataObject.emit'
     package: '@microsoft/live-share'
     summary: >-
       Synchronously calls each of the listeners registered for the event
@@ -542,11 +442,9 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.emit](xref:@microsoft/live-share.LiveDataObject.emit)
+    inheritanceDescription: <b>Inherited From</b> DataObject.emit
   - name: eventNames()
-    uid: '@microsoft/live-share.LiveEvent.eventNames'
+    uid: '@microsoft/live-share.LiveDataObject.eventNames'
     package: '@microsoft/live-share'
     summary: |-
       Returns an array listing the events for which the emitter has registered
@@ -572,11 +470,9 @@ inheritedMethods:
       return:
         description: ''
         type: (string | symbol)[]
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.eventNames](xref:@microsoft/live-share.LiveDataObject.eventNames)
+    inheritanceDescription: <b>Inherited From</b> DataObject.eventNames
   - name: finishInitialization(boolean)
-    uid: '@microsoft/live-share.LiveEvent.finishInitialization'
+    uid: '@microsoft/live-share.LiveDataObject.finishInitialization'
     package: '@microsoft/live-share'
     summary: >-
       Call this API to ensure PureDataObject is fully initialized.
@@ -602,11 +498,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.finishInitialization](xref:@microsoft/live-share.LiveDataObject.finishInitialization)
+    inheritanceDescription: <b>Inherited From</b> DataObject.finishInitialization
   - name: getDataObject(IFluidDataStoreRuntime)
-    uid: '@microsoft/live-share.LiveEvent.getDataObject'
+    uid: '@microsoft/live-share.LiveDataObject.getDataObject'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
@@ -622,11 +516,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.getDataObject](xref:@microsoft/live-share.LiveDataObject.getDataObject)
+    inheritanceDescription: <b>Inherited From</b> DataObject.getDataObject
   - name: getEventListeners(_DOMEventTarget | EventEmitter, string | symbol)
-    uid: '@microsoft/live-share.LiveEvent.getEventListeners'
+    uid: '@microsoft/live-share.LiveDataObject.getEventListeners'
     package: '@microsoft/live-share'
     summary: >-
       Returns a copy of the array of listeners for the event named `eventName`.
@@ -679,14 +571,12 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.getEventListeners](xref:@microsoft/live-share.LiveDataObject.getEventListeners)
+    inheritanceDescription: <b>Inherited From</b> DataObject.getEventListeners
   - name: >-
       getFluidObjectFromDirectory<T>(string, IDirectory, (id: string, directory:
       IDirectory) => undefined | IFluidHandle<FluidObject<unknown> &
       IFluidLoadable>)
-    uid: '@microsoft/live-share.LiveEvent.getFluidObjectFromDirectory'
+    uid: '@microsoft/live-share.LiveDataObject.getFluidObjectFromDirectory'
     package: '@microsoft/live-share'
     summary: Retrieve Fluid object using the handle get
     remarks: ''
@@ -716,18 +606,16 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;undefined | T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.getFluidObjectFromDirectory](xref:@microsoft/live-share.LiveDataObject.getFluidObjectFromDirectory)
+    inheritanceDescription: <b>Inherited From</b> DataObject.getFluidObjectFromDirectory
   - name: getMaxListeners()
-    uid: '@microsoft/live-share.LiveEvent.getMaxListeners'
+    uid: '@microsoft/live-share.LiveDataObject.getMaxListeners'
     package: '@microsoft/live-share'
     summary: >-
       Returns the current max listener value for the `EventEmitter` which is
       either
 
       set by `emitter.setMaxListeners(n)` or defaults to
-      [defaultMaxListeners](xref:@microsoft/live-share.LiveEvent.defaultMaxListeners).
+      [defaultMaxListeners](xref:@microsoft/live-share.LiveDataObject.defaultMaxListeners).
     remarks: ''
     isDeprecated: false
     syntax:
@@ -735,11 +623,9 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.getMaxListeners](xref:@microsoft/live-share.LiveDataObject.getMaxListeners)
+    inheritanceDescription: <b>Inherited From</b> DataObject.getMaxListeners
   - name: initializeInternal(boolean)
-    uid: '@microsoft/live-share.LiveEvent.initializeInternal'
+    uid: '@microsoft/live-share.LiveDataObject.initializeInternal'
     package: '@microsoft/live-share'
     summary: |-
       Initializes internal objects and calls initialization overrides.
@@ -755,11 +641,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.initializeInternal](xref:@microsoft/live-share.LiveDataObject.initializeInternal)
+    inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
   - name: listenerCount(EventEmitter, string | symbol)
-    uid: '@microsoft/live-share.LiveEvent.listenerCount'
+    uid: '@microsoft/live-share.LiveDataObject.listenerCount'
     package: '@microsoft/live-share'
     summary: >-
       A class method that returns the number of listeners for the given
@@ -799,11 +683,9 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.listenerCount](xref:@microsoft/live-share.LiveDataObject.listenerCount)
+    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
   - name: listenerCount(string | symbol, Function)
-    uid: '@microsoft/live-share.LiveEvent.listenerCount'
+    uid: '@microsoft/live-share.LiveDataObject.listenerCount'
     package: '@microsoft/live-share'
     summary: >-
       Returns the number of listeners listening for the event named `eventName`.
@@ -828,11 +710,9 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.listenerCount](xref:@microsoft/live-share.LiveDataObject.listenerCount)
+    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
   - name: listeners(string | symbol)
-    uid: '@microsoft/live-share.LiveEvent.listeners'
+    uid: '@microsoft/live-share.LiveDataObject.listeners'
     package: '@microsoft/live-share'
     summary: |-
       Returns a copy of the array of listeners for the event named `eventName`.
@@ -855,11 +735,9 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.listeners](xref:@microsoft/live-share.LiveDataObject.listeners)
+    inheritanceDescription: <b>Inherited From</b> DataObject.listeners
   - name: on(EventEmitter, string, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share.LiveEvent.on'
+    uid: '@microsoft/live-share.LiveDataObject.on'
     package: '@microsoft/live-share'
     summary: |-
       ```js
@@ -935,11 +813,9 @@ inheritedMethods:
       return:
         description: that iterates `eventName` events emitted by the `emitter`
         type: AsyncIterableIterator&lt;any&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.on](xref:@microsoft/live-share.LiveDataObject.on)
+    inheritanceDescription: <b>Inherited From</b> DataObject.on
   - name: once(_DOMEventTarget, string, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share.LiveEvent.once_1'
+    uid: '@microsoft/live-share.LiveDataObject.once_1'
     package: '@microsoft/live-share'
     summary: ''
     remarks: ''
@@ -961,11 +837,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;any[]&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
   - name: once(_NodeEventTarget, string | symbol, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share.LiveEvent.once'
+    uid: '@microsoft/live-share.LiveDataObject.once'
     package: '@microsoft/live-share'
     summary: >-
       Creates a `Promise` that is fulfilled when the `EventEmitter` emits the
@@ -1106,11 +980,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;any[]&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
+    inheritanceDescription: <b>Inherited From</b> DataObject.once
   - name: rawListeners(string | symbol)
-    uid: '@microsoft/live-share.LiveEvent.rawListeners'
+    uid: '@microsoft/live-share.LiveDataObject.rawListeners'
     package: '@microsoft/live-share'
     summary: |-
       Returns a copy of the array of listeners for the event named `eventName`,
@@ -1151,11 +1023,9 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.rawListeners](xref:@microsoft/live-share.LiveDataObject.rawListeners)
+    inheritanceDescription: <b>Inherited From</b> DataObject.rawListeners
   - name: removeAllListeners(string | symbol)
-    uid: '@microsoft/live-share.LiveEvent.removeAllListeners'
+    uid: '@microsoft/live-share.LiveDataObject.removeAllListeners'
     package: '@microsoft/live-share'
     summary: |-
       Removes all listeners, or those of the specified `eventName`.
@@ -1168,19 +1038,17 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function removeAllListeners(event?: string | symbol): LiveEvent<TEvent>'
+      content: 'function removeAllListeners(event?: string | symbol): LiveDataObject<I>'
       parameters:
         - id: event
           type: string | symbol
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.LiveEvent" />&lt;TEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.removeAllListeners](xref:@microsoft/live-share.LiveDataObject.removeAllListeners)
+        type: <xref uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.removeAllListeners
   - name: request(IRequest)
-    uid: '@microsoft/live-share.LiveEvent.request'
+    uid: '@microsoft/live-share.LiveDataObject.request'
     package: '@microsoft/live-share'
     summary: '{@inheritDoc PureDataObject.request}'
     remarks: ''
@@ -1194,11 +1062,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;IResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.request](xref:@microsoft/live-share.LiveDataObject.request)
+    inheritanceDescription: <b>Inherited From</b> DataObject.request
   - name: setMaxListeners(number)
-    uid: '@microsoft/live-share.LiveEvent.setMaxListeners'
+    uid: '@microsoft/live-share.LiveDataObject.setMaxListeners'
     package: '@microsoft/live-share'
     summary: >-
       By default `EventEmitter`s will print a warning if more than `10`
@@ -1217,19 +1083,17 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): LiveEvent<TEvent>'
+      content: 'function setMaxListeners(n: number): LiveDataObject<I>'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.LiveEvent" />&lt;TEvent&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
+        type: <xref uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
   - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
-    uid: '@microsoft/live-share.LiveEvent.setMaxListeners'
+    uid: '@microsoft/live-share.LiveDataObject.setMaxListeners'
     package: '@microsoft/live-share'
     summary: |-
       ```js
@@ -1255,110 +1119,5 @@ inheritedMethods:
         - id: eventTargets
           type: (_DOMEventTarget | EventEmitter)[]
           description: ''
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
-methods:
-  - name: initialize(UserMeetingRole[])
-    uid: '@microsoft/live-share.LiveEvent.initialize'
-    package: '@microsoft/live-share'
-    summary: initialize the object.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function initialize(allowedRoles?: UserMeetingRole[]): Promise<void>'
-      parameters:
-        - id: allowedRoles
-          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
-          description: Optional. List of roles allowed to send events.
-      return:
-        description: ''
-        type: Promise&lt;void&gt;
-  - name: isNewer(undefined | IClientTimestamp, IClientTimestamp, number)
-    uid: '@microsoft/live-share.LiveEvent.isNewer'
-    package: '@microsoft/live-share'
-    summary: >-
-      Returns true if a received event is newer then the current event.
-
-
-      #### remarks
-
-      Used when building new Live objects to process state change events. The
-      `isNewer()`
-
-      method implements an algorithm that deals with conflicting events that
-      have the same timestamp
-
-      and older events that should have debounced the current event.
-
-
-      - When the received event has the same timestamp as the current event,
-      each events clientId
-        will be used as a tie breaker. The clientId containing the lower sort order wins any ties.
-      - Older events are generally ignored unless a debounce period is
-      specified. An older event
-        that should have debounced the current event will be considered newer.
-
-      The algorithm employed by isNewer() helps ensure that all clients will
-      eventually reach a
-
-      consistent state with one other.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        static function isNewer(current: undefined | IClientTimestamp, received:
-        IClientTimestamp, debouncePeriod?: number): boolean
-      parameters:
-        - id: current
-          type: undefined | <xref uid="@microsoft/live-share.IClientTimestamp" />
-          description: Current event to compare received event against.
-        - id: received
-          type: <xref uid="@microsoft/live-share.IClientTimestamp" />
-          description: Received event.
-        - id: debouncePeriod
-          type: number
-          description: >-
-            Optional. Time in milliseconds to ignore any new events for.
-            Defaults to 0 ms.
-      return:
-        description: >-
-          True if the received event is newer then the current event and should
-          replace the current one.
-        type: boolean
-  - name: send(TEvent)
-    uid: '@microsoft/live-share.LiveEvent.send'
-    package: '@microsoft/live-share'
-    summary: >-
-      Broadcasts an event to all other clients.
-
-
-      #### remarks
-
-      The event will be queued for delivery if the client isn't currently
-      connected.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function send(evt: TEvent): Promise<ILiveEvent<TEvent>>'
-      parameters:
-        - id: evt
-          type: TEvent
-          description: |-
-            Event to send. If omitted, an event will still be sent but it won't
-            include any custom event data.
-      return:
-        description: >-
-          A promise with the full event object that was sent, including the
-          timestamp of when the event
-
-          was sent and the clientId if known. The clientId will be `undefined`
-          if the client is
-
-          disconnected at time of delivery.
-        type: >-
-          Promise&lt;<xref uid="@microsoft/live-share.ILiveEvent"
-          />&lt;TEvent&gt;&gt;
-extends: >-
-  <xref uid="@microsoft/live-share.LiveDataObject" />&lt;{ Events:
-  ILiveEventEvents&lt;TEvent&gt; }&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+extends: DataObject&lt;I&gt;

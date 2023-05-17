@@ -2,23 +2,34 @@
 name: ILiveEvent
 uid: '@microsoft/live-share.ILiveEvent'
 package: '@microsoft/live-share'
-summary: Base interface for all live share events.
-fullName: ILiveEvent
+summary: Base type for all incoming live share events of a certain type
+fullName: ILiveEvent<TEvent>
 remarks: ''
 isDeprecated: false
 type: interface
+properties:
+  - name: data
+    uid: '@microsoft/live-share.ILiveEvent.data'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: data
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'data: TEvent'
+      return:
+        description: ''
+        type: TEvent
 inheritedProperties:
   - name: clientId
     uid: '@microsoft/live-share.ILiveEvent.clientId'
     package: '@microsoft/live-share'
-    summary: >-
-      Current client ID, if known. The client ID will be `undefined` if the
-      client is currently disconnected.
+    summary: Client ID for the active socket connection.
     fullName: clientId
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientId?: string'
+      content: 'clientId: string'
       return:
         description: ''
         type: string

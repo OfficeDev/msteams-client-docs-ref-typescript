@@ -27,6 +27,18 @@ constructors:
           type: 'IDataObjectProps&lt;{ Events: ILivePresenceEvents&lt;TData&gt; }&gt;'
           description: ''
 properties:
+  - name: clientId
+    uid: '@microsoft/live-share.LivePresence.clientId'
+    package: '@microsoft/live-share'
+    summary: Returns the client ID of the local connection.
+    fullName: clientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: undefined | string clientId
+      return:
+        description: ''
+        type: undefined | string
   - name: data
     uid: '@microsoft/live-share.LivePresence.data'
     package: '@microsoft/live-share'
@@ -219,11 +231,19 @@ inheritedProperties:
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LivePresence"
           />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILivePresenceEvents"
           />&lt;TData&gt; & IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.addListener
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.addListener](xref:@microsoft/live-share.LiveDataObject.addListener)
   - name: captureRejections
     uid: '@microsoft/live-share.LivePresence.captureRejections'
     package: '@microsoft/live-share'
-    summary: Sets or gets the default captureRejection value for all emitters.
+    summary: >-
+      Value:
+      [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
+
+
+      Change the default `captureRejections` option on all new `EventEmitter`
+      objects.
     fullName: captureRejections
     remarks: ''
     isDeprecated: false
@@ -232,11 +252,16 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejections
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.captureRejections](xref:@microsoft/live-share.LiveDataObject.captureRejections)
   - name: captureRejectionSymbol
     uid: '@microsoft/live-share.LivePresence.captureRejectionSymbol'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: |-
+      Value: `Symbol.for('nodejs.rejection')`
+
+      See how to write a custom `rejection handler`.
     fullName: captureRejectionSymbol
     remarks: ''
     isDeprecated: false
@@ -245,11 +270,78 @@ inheritedProperties:
       return:
         description: ''
         type: typeof captureRejectionSymbol
-    inheritanceDescription: <b>Inherited From</b> DataObject.captureRejectionSymbol
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.captureRejectionSymbol](xref:@microsoft/live-share.LiveDataObject.captureRejectionSymbol)
   - name: defaultMaxListeners
     uid: '@microsoft/live-share.LivePresence.defaultMaxListeners'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      By default, a maximum of `10` listeners can be registered for any single
+
+      event. This limit can be changed for individual `EventEmitter` instances
+
+      using the `emitter.setMaxListeners(n)` method. To change the default
+
+      for _all_`EventEmitter` instances, the
+      `events.defaultMaxListeners`property can be used. If this value is not a
+      positive number, a `RangeError`is thrown.
+
+
+      Take caution when setting the `events.defaultMaxListeners` because the
+
+      change affects _all_`EventEmitter` instances, including those created
+      before
+
+      the change is made. However, calling `emitter.setMaxListeners(n)` still
+      has
+
+      precedence over `events.defaultMaxListeners`.
+
+
+      This is not a hard limit. The `EventEmitter` instance will allow
+
+      more listeners to be added but will output a trace warning to stderr
+      indicating
+
+      that a "possible EventEmitter memory leak" has been detected. For any
+      single`EventEmitter`, the `emitter.getMaxListeners()` and
+      `emitter.setMaxListeners()`methods can be used to
+
+      temporarily avoid this warning:
+
+
+      ```js
+
+      import { EventEmitter } from 'node:events';
+
+      const emitter = new EventEmitter();
+
+      emitter.setMaxListeners(emitter.getMaxListeners() + 1);
+
+      emitter.once('event', () => {
+        // do stuff
+        emitter.setMaxListeners(Math.max(emitter.getMaxListeners() - 1, 0));
+      });
+
+      ```
+
+
+      The `--trace-warnings` command-line flag can be used to display the
+
+      stack trace for such warnings.
+
+
+      The emitted warning can be inspected with `process.on('warning')` and will
+
+      have the additional `emitter`, `type`, and `count` properties, referring
+      to
+
+      the event emitter instance, the event's name and the number of attached
+
+      listeners, respectively.
+
+      Its `name` property is set to `'MaxListenersExceededWarning'`.
     fullName: defaultMaxListeners
     remarks: ''
     isDeprecated: false
@@ -258,24 +350,21 @@ inheritedProperties:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> DataObject.defaultMaxListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.defaultMaxListeners](xref:@microsoft/live-share.LiveDataObject.defaultMaxListeners)
   - name: errorMonitor
     uid: '@microsoft/live-share.LivePresence.errorMonitor'
     package: '@microsoft/live-share'
     summary: >-
       This symbol shall be used to install a listener for only monitoring
-      `'error'`
-
-      events. Listeners installed using this symbol are called before the
-      regular
-
-      `'error'` listeners are called.
+      `'error'`events. Listeners installed using this symbol are called before
+      the regular`'error'` listeners are called.
 
 
       Installing a listener using this symbol does not change the behavior once
-      an
-
-      `'error'` event is emitted, therefore the process will still crash if no
+      an`'error'` event is emitted. Therefore, the process will still crash if
+      no
 
       regular `'error'` listener is installed.
     fullName: errorMonitor
@@ -286,7 +375,9 @@ inheritedProperties:
       return:
         description: ''
         type: typeof errorMonitor
-    inheritanceDescription: <b>Inherited From</b> DataObject.errorMonitor
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.errorMonitor](xref:@microsoft/live-share.LiveDataObject.errorMonitor)
   - name: 'off'
     uid: '@microsoft/live-share.LivePresence.off'
     package: '@microsoft/live-share'
@@ -304,7 +395,9 @@ inheritedProperties:
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LivePresence"
           />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILivePresenceEvents"
           />&lt;TData&gt; & IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.off
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.off](xref:@microsoft/live-share.LiveDataObject.off)
   - name: 'on'
     uid: '@microsoft/live-share.LivePresence.on'
     package: '@microsoft/live-share'
@@ -322,7 +415,9 @@ inheritedProperties:
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LivePresence"
           />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILivePresenceEvents"
           />&lt;TData&gt; & IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.on
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.on](xref:@microsoft/live-share.LiveDataObject.on)
   - name: once
     uid: '@microsoft/live-share.LivePresence.once'
     package: '@microsoft/live-share'
@@ -340,7 +435,9 @@ inheritedProperties:
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LivePresence"
           />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILivePresenceEvents"
           />&lt;TData&gt; & IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.once
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
   - name: prependListener
     uid: '@microsoft/live-share.LivePresence.prependListener'
     package: '@microsoft/live-share'
@@ -358,7 +455,9 @@ inheritedProperties:
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LivePresence"
           />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILivePresenceEvents"
           />&lt;TData&gt; & IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.prependListener
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.prependListener](xref:@microsoft/live-share.LiveDataObject.prependListener)
   - name: prependOnceListener
     uid: '@microsoft/live-share.LivePresence.prependOnceListener'
     package: '@microsoft/live-share'
@@ -376,7 +475,9 @@ inheritedProperties:
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LivePresence"
           />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILivePresenceEvents"
           />&lt;TData&gt; & IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.prependOnceListener
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.prependOnceListener](xref:@microsoft/live-share.LiveDataObject.prependOnceListener)
   - name: removeListener
     uid: '@microsoft/live-share.LivePresence.removeListener'
     package: '@microsoft/live-share'
@@ -394,7 +495,9 @@ inheritedProperties:
           TypedEventTransform&lt;<xref uid="@microsoft/live-share.LivePresence"
           />&lt;TData&gt;, <xref uid="@microsoft/live-share.ILivePresenceEvents"
           />&lt;TData&gt; & IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.removeListener
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.removeListener](xref:@microsoft/live-share.LiveDataObject.removeListener)
 inheritedMethods:
   - name: emit(string | symbol, any[])
     uid: '@microsoft/live-share.LivePresence.emit'
@@ -476,7 +579,9 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> DataObject.emit
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.emit](xref:@microsoft/live-share.LiveDataObject.emit)
   - name: eventNames()
     uid: '@microsoft/live-share.LivePresence.eventNames'
     package: '@microsoft/live-share'
@@ -504,7 +609,9 @@ inheritedMethods:
       return:
         description: ''
         type: (string | symbol)[]
-    inheritanceDescription: <b>Inherited From</b> DataObject.eventNames
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.eventNames](xref:@microsoft/live-share.LiveDataObject.eventNames)
   - name: finishInitialization(boolean)
     uid: '@microsoft/live-share.LivePresence.finishInitialization'
     package: '@microsoft/live-share'
@@ -532,7 +639,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.finishInitialization
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.finishInitialization](xref:@microsoft/live-share.LiveDataObject.finishInitialization)
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share.LivePresence.getDataObject'
     package: '@microsoft/live-share'
@@ -550,7 +659,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.getDataObject
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getDataObject](xref:@microsoft/live-share.LiveDataObject.getDataObject)
   - name: getEventListeners(_DOMEventTarget | EventEmitter, string | symbol)
     uid: '@microsoft/live-share.LivePresence.getEventListeners'
     package: '@microsoft/live-share'
@@ -605,7 +716,9 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> DataObject.getEventListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getEventListeners](xref:@microsoft/live-share.LiveDataObject.getEventListeners)
   - name: >-
       getFluidObjectFromDirectory<T>(string, IDirectory, (id: string, directory:
       IDirectory) => undefined | IFluidHandle<FluidObject<unknown> &
@@ -640,7 +753,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;undefined | T&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.getFluidObjectFromDirectory
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getFluidObjectFromDirectory](xref:@microsoft/live-share.LiveDataObject.getFluidObjectFromDirectory)
   - name: getMaxListeners()
     uid: '@microsoft/live-share.LivePresence.getMaxListeners'
     package: '@microsoft/live-share'
@@ -657,7 +772,9 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> DataObject.getMaxListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getMaxListeners](xref:@microsoft/live-share.LiveDataObject.getMaxListeners)
   - name: initializeInternal(boolean)
     uid: '@microsoft/live-share.LivePresence.initializeInternal'
     package: '@microsoft/live-share'
@@ -675,7 +792,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.initializeInternal](xref:@microsoft/live-share.LiveDataObject.initializeInternal)
   - name: listenerCount(EventEmitter, string | symbol)
     uid: '@microsoft/live-share.LivePresence.listenerCount'
     package: '@microsoft/live-share'
@@ -717,7 +836,9 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.listenerCount](xref:@microsoft/live-share.LiveDataObject.listenerCount)
   - name: listenerCount(string | symbol, Function)
     uid: '@microsoft/live-share.LivePresence.listenerCount'
     package: '@microsoft/live-share'
@@ -744,7 +865,9 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> DataObject.listenerCount
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.listenerCount](xref:@microsoft/live-share.LiveDataObject.listenerCount)
   - name: listeners(string | symbol)
     uid: '@microsoft/live-share.LivePresence.listeners'
     package: '@microsoft/live-share'
@@ -769,7 +892,9 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> DataObject.listeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.listeners](xref:@microsoft/live-share.LiveDataObject.listeners)
   - name: on(EventEmitter, string, StaticEventEmitterOptions)
     uid: '@microsoft/live-share.LivePresence.on'
     package: '@microsoft/live-share'
@@ -847,7 +972,9 @@ inheritedMethods:
       return:
         description: that iterates `eventName` events emitted by the `emitter`
         type: AsyncIterableIterator&lt;any&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.on
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.on](xref:@microsoft/live-share.LiveDataObject.on)
   - name: once(_DOMEventTarget, string, StaticEventEmitterOptions)
     uid: '@microsoft/live-share.LivePresence.once_1'
     package: '@microsoft/live-share'
@@ -871,7 +998,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;any[]&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.once
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
   - name: once(_NodeEventTarget, string | symbol, StaticEventEmitterOptions)
     uid: '@microsoft/live-share.LivePresence.once'
     package: '@microsoft/live-share'
@@ -1014,7 +1143,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;any[]&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.once
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
   - name: rawListeners(string | symbol)
     uid: '@microsoft/live-share.LivePresence.rawListeners'
     package: '@microsoft/live-share'
@@ -1057,7 +1188,9 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> DataObject.rawListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.rawListeners](xref:@microsoft/live-share.LiveDataObject.rawListeners)
   - name: removeAllListeners(string | symbol)
     uid: '@microsoft/live-share.LivePresence.removeAllListeners'
     package: '@microsoft/live-share'
@@ -1082,7 +1215,9 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@microsoft/live-share.LivePresence" />&lt;TData&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.removeAllListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.removeAllListeners](xref:@microsoft/live-share.LiveDataObject.removeAllListeners)
   - name: request(IRequest)
     uid: '@microsoft/live-share.LivePresence.request'
     package: '@microsoft/live-share'
@@ -1098,7 +1233,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;IResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.request
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.request](xref:@microsoft/live-share.LiveDataObject.request)
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share.LivePresence.setMaxListeners'
     package: '@microsoft/live-share'
@@ -1127,7 +1264,9 @@ inheritedMethods:
       return:
         description: ''
         type: <xref uid="@microsoft/live-share.LivePresence" />&lt;TData&gt;
-    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
   - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
     uid: '@microsoft/live-share.LivePresence.setMaxListeners'
     package: '@microsoft/live-share'
@@ -1155,7 +1294,9 @@ inheritedMethods:
         - id: eventTargets
           type: (_DOMEventTarget | EventEmitter)[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
 methods:
   - name: dispose()
     uid: '@microsoft/live-share.LivePresence.dispose'
@@ -1165,49 +1306,34 @@ methods:
     isDeprecated: false
     syntax:
       content: function dispose()
-  - name: 'forEach((user: LivePresenceUser<TData>) => void, PresenceState)'
-    uid: '@microsoft/live-share.LivePresence.forEach'
+  - name: getUser(string)
+    uid: '@microsoft/live-share.LivePresence.getUser'
     package: '@microsoft/live-share'
-    summary: Enumerates each user the object is tracking presence for.
+    summary: Returns the current presence info for a specific user.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function forEach(callback: (user: LivePresenceUser<TData>) => void,
-        filter?: PresenceState)
+      content: 'function getUser(userId: string): undefined | LivePresenceUser<TData>'
       parameters:
-        - id: callback
-          type: '(user: LivePresenceUser&lt;TData&gt;) =&gt; void'
-          description: Function to call for each user.
-        - id: filter
-          type: <xref uid="@microsoft/live-share.PresenceState" />
-          description: Optional. Presence state to filter enumeration to.
-  - name: getCount(PresenceState)
-    uid: '@microsoft/live-share.LivePresence.getCount'
-    package: '@microsoft/live-share'
-    summary: Counts the number of users that the object is tracking presence for.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function getCount(filter?: PresenceState): number'
-      parameters:
-        - id: filter
-          type: <xref uid="@microsoft/live-share.PresenceState" />
-          description: Optional. Presence state to filter count to.
+        - id: userId
+          type: string
+          description: The ID of the user to retrieve.
       return:
         description: >-
-          Total number of other users we've seen or number of users with a given
-          presence status.
-        type: number
-  - name: getPresenceForClient(string)
-    uid: '@microsoft/live-share.LivePresence.getPresenceForClient'
+          The current presence information for the user if they've connected to
+          the space.
+        type: >-
+          undefined | <xref uid="@microsoft/live-share.LivePresenceUser"
+          />&lt;TData&gt;
+  - name: getUserForClient(string)
+    uid: '@microsoft/live-share.LivePresence.getUserForClient'
     package: '@microsoft/live-share'
     summary: Returns the current presence info for a specific client ID.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        function getPresenceForClient(clientId: string): undefined |
+        function getUserForClient(clientId: string): undefined |
         LivePresenceUser<TData>
       parameters:
         - id: clientId
@@ -1220,35 +1346,31 @@ methods:
         type: >-
           undefined | <xref uid="@microsoft/live-share.LivePresenceUser"
           />&lt;TData&gt;
-  - name: getPresenceForUser(string)
-    uid: '@microsoft/live-share.LivePresence.getPresenceForUser'
+  - name: getUsers(PresenceState)
+    uid: '@microsoft/live-share.LivePresence.getUsers'
     package: '@microsoft/live-share'
-    summary: Returns the current presence info for a specific user.
+    summary: Returns a snapshot of the current list of presence objects being tracked.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function getPresenceForUser(userId: string): undefined |
-        LivePresenceUser<TData>
+      content: 'function getUsers(filter?: PresenceState): LivePresenceUser<TData>[]'
       parameters:
-        - id: userId
-          type: string
-          description: The ID of the user to retrieve.
+        - id: filter
+          type: <xref uid="@microsoft/live-share.PresenceState" />
+          description: Optional. Presence state to filter enumeration to.
       return:
-        description: >-
-          The current presence information for the user if they've connected to
-          the space.
-        type: >-
-          undefined | <xref uid="@microsoft/live-share.LivePresenceUser"
-          />&lt;TData&gt;
-  - name: initialize(TData, PresenceState)
+        description: Array of presence objects.
+        type: <xref uid="@microsoft/live-share.LivePresenceUser" />&lt;TData&gt;[]
+  - name: initialize(TData, PresenceState, UserMeetingRole[])
     uid: '@microsoft/live-share.LivePresence.initialize'
     package: '@microsoft/live-share'
     summary: Starts sharing presence information.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function initialize(data?: TData, state?: PresenceState): Promise<void>'
+      content: >-
+        function initialize(data?: TData, state?: PresenceState, allowedRoles?:
+        UserMeetingRole[]): Promise<void>
       parameters:
         - id: data
           type: TData
@@ -1260,24 +1382,12 @@ methods:
           description: >-
             Optional. Initial presence state. Defaults to
             `PresenceState.online`.
+        - id: allowedRoles
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+          description: Optional. List of roles allowed to emit presence changes.
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: toArray(PresenceState)
-    uid: '@microsoft/live-share.LivePresence.toArray'
-    package: '@microsoft/live-share'
-    summary: Returns a snapshot of the current list of presence objects being tracked.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function toArray(filter?: PresenceState): LivePresenceUser<TData>[]'
-      parameters:
-        - id: filter
-          type: <xref uid="@microsoft/live-share.PresenceState" />
-          description: Optional. Presence state to filter enumeration to.
-      return:
-        description: Array of presence objects.
-        type: <xref uid="@microsoft/live-share.LivePresenceUser" />&lt;TData&gt;[]
   - name: update(TData, PresenceState)
     uid: '@microsoft/live-share.LivePresence.update'
     package: '@microsoft/live-share'
@@ -1287,7 +1397,7 @@ methods:
       other clients.
     isDeprecated: false
     syntax:
-      content: 'function update(data?: TData, state?: PresenceState)'
+      content: 'function update(data?: TData, state?: PresenceState): Promise<void>'
       parameters:
         - id: data
           type: TData
@@ -1297,20 +1407,11 @@ methods:
         - id: state
           type: <xref uid="@microsoft/live-share.PresenceState" />
           description: Optional. Presence state to change.
-  - name: updatePresence(PresenceState, TData)
-    uid: '@microsoft/live-share.LivePresence.updatePresence'
-    package: '@microsoft/live-share'
-    summary: ''
-    remarks: ''
-    isDeprecated: true
-    customDeprecatedMessage: use `update()` instead
-    syntax:
-      content: 'function updatePresence(state?: PresenceState, data?: TData)'
-      parameters:
-        - id: state
-          type: <xref uid="@microsoft/live-share.PresenceState" />
-          description: ''
-        - id: data
-          type: TData
-          description: ''
-extends: 'DataObject&lt;{ Events: ILivePresenceEvents&lt;TData&gt; }&gt;'
+      return:
+        description: >-
+          a void promise, and will throw if the user does not have the required
+          roles
+        type: Promise&lt;void&gt;
+extends: >-
+  <xref uid="@microsoft/live-share.LiveDataObject" />&lt;{ Events:
+  ILivePresenceEvents&lt;TData&gt; }&gt;

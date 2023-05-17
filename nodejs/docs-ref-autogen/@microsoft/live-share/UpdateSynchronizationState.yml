@@ -6,11 +6,16 @@ summary: >-
   Callback function used to the receive the state update sent by a remote live
   object.
 fullName: UpdateSynchronizationState<TState>
-remarks: ''
+remarks: >-
+  For `LivePresence`, we would always return false, since we don't want other
+  user's presence to override our own.
+
+  For `LiveState`, we return true if the event was sent by a user with valid
+  roles & it is newer.
 isDeprecated: false
 syntax: |
   type UpdateSynchronizationState<TState> = (
-    connecting: boolean,
-    state: TState | undefined,
-    senderId: string
-  ) => void
+    state: ILiveEvent<TState>,
+    senderId: string,
+    local: boolean
+  ) => Promise<boolean>
