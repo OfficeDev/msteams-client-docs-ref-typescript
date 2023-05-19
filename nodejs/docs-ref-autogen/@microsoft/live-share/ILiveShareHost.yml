@@ -11,7 +11,7 @@ methods:
   - name: getClientInfo(string)
     uid: '@microsoft/live-share.ILiveShareHost.getClientInfo'
     package: '@microsoft/live-share'
-    summary: Queries the hosts `IUserInfo` for a given client ID.
+    summary: Queries the hosts `IClientInfo` for a given client ID.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -23,7 +23,9 @@ methods:
           type: string
           description: ID of the client to lookup.
       return:
-        description: '`IUserInfo` for the queried client ID.'
+        description: >-
+          `IUserInfo` for the queried client ID, or undefined if the client
+          hasn't yet been registered
         type: >-
           Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
           />&gt;

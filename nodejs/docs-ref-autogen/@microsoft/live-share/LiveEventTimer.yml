@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: LiveEventTimer<T>(LiveEventSource<T>, () => Partial<T>, number, boolean)
+  - name: LiveEventTimer<T>(LiveEventSource<T>, () => T, number, boolean)
     uid: '@microsoft/live-share.LiveEventTimer.constructor'
     package: '@microsoft/live-share'
     summary: >-
@@ -29,13 +29,13 @@ constructors:
     syntax:
       content: >-
         new LiveEventTimer(eventSource: LiveEventSource<T>, createEvent: () =>
-        Partial<T>, delay: number, repeat?: boolean)
+        T, delay: number, repeat?: boolean)
       parameters:
         - id: eventSource
           type: <xref uid="@microsoft/live-share.LiveEventSource" />&lt;T&gt;
           description: ''
         - id: createEvent
-          type: () =&gt; Partial&lt;T&gt;
+          type: () =&gt; T
           description: ''
         - id: delay
           type: number
@@ -97,7 +97,12 @@ methods:
       interval.
     isDeprecated: false
     syntax:
-      content: function sendEvent()
+      content: 'function sendEvent(): Promise<ILiveEvent<T>>'
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@microsoft/live-share.ILiveEvent"
+          />&lt;T&gt;&gt;
   - name: start()
     uid: '@microsoft/live-share.LiveEventTimer.start'
     package: '@microsoft/live-share'

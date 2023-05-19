@@ -1,0 +1,203 @@
+### YamlMime:TSType
+name: LiveShareRuntime
+uid: '@microsoft/live-share.LiveShareRuntime'
+package: '@microsoft/live-share'
+summary: >-
+  Runtime for LiveDataObject, which is used to do things like validate roles,
+  get a timestamp
+fullName: LiveShareRuntime
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      LiveShareRuntime(ILiveShareHost, ITimestampProvider, IRoleVerifier,
+      boolean)
+    uid: '@microsoft/live-share.LiveShareRuntime.constructor'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new LiveShareRuntime(host: ILiveShareHost, timestampProvider?:
+        ITimestampProvider, roleVerifier?: IRoleVerifier, decorate?: boolean)
+      parameters:
+        - id: host
+          type: <xref uid="@microsoft/live-share.ILiveShareHost" />
+          description: Host for the current Live Share session.
+        - id: timestampProvider
+          type: ITimestampProvider
+          description: ''
+        - id: roleVerifier
+          type: IRoleVerifier
+          description: ''
+        - id: decorate
+          type: boolean
+          description: >-
+            choose whether or not to automatically decorate host with
+            `BackwardsCompatibilityHostDecorator` and `LiveShareHostDecorator`
+properties:
+  - name: host
+    uid: '@microsoft/live-share.LiveShareRuntime.host'
+    package: '@microsoft/live-share'
+    summary: '`ILiveShareHost` instance'
+    fullName: host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: ILiveShareHost host
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.ILiveShareHost" />
+  - name: objectManager
+    uid: '@microsoft/live-share.LiveShareRuntime.objectManager'
+    package: '@microsoft/live-share'
+    summary: '`LiveObjectSynchronizerManager` instance'
+    fullName: objectManager
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: LiveObjectManager objectManager
+      return:
+        description: ''
+        type: LiveObjectManager
+  - name: timestampProvider
+    uid: '@microsoft/live-share.LiveShareRuntime.timestampProvider'
+    package: '@microsoft/live-share'
+    summary: '`ITimestampProvider` instance'
+    fullName: timestampProvider
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: ITimestampProvider timestampProvider
+      return:
+        description: ''
+        type: ITimestampProvider
+methods:
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share.LiveShareRuntime.getClientInfo'
+    package: '@microsoft/live-share'
+    summary: Get the client info for a given clientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getClientInfo(clientId: string): Promise<undefined |
+        IClientInfo>
+      parameters:
+        - id: clientId
+          type: string
+          description: Fluid clientId we are requesting user info for
+      return:
+        description: >-
+          IClientInfo object if the user is known, otherwise it will return
+          undefined
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
+  - name: getTimestamp()
+    uid: '@microsoft/live-share.LiveShareRuntime.getTimestamp'
+    package: '@microsoft/live-share'
+    summary: >-
+      Returns the current timestamp as the number of milliseconds sine the Unix
+      Epoch.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getTimestamp(): number'
+      return:
+        description: ''
+        type: number
+  - name: setAudience(IAzureAudience)
+    uid: '@microsoft/live-share.LiveShareRuntime.setAudience'
+    package: '@microsoft/live-share'
+    summary: Set the audience for the runtime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setAudience(audience: IAzureAudience)'
+      parameters:
+        - id: audience
+          type: IAzureAudience
+          description: '`IAzureAudience` returned by `AzureClient`'
+  - name: setHost(ILiveShareHost, boolean)
+    uid: '@microsoft/live-share.LiveShareRuntime.setHost'
+    package: '@microsoft/live-share'
+    summary: Set the host for the runtime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setHost(host: ILiveShareHost, decorate?: boolean)'
+      parameters:
+        - id: host
+          type: <xref uid="@microsoft/live-share.ILiveShareHost" />
+          description: ILiveShareHost to change
+        - id: decorate
+          type: boolean
+          description: >-
+            choose whether or not to automatically decorate host with
+            `BackwardsCompatibilityHostDecorator` and `LiveShareHostDecorator`
+  - name: setRoleVerifier(IRoleVerifier)
+    uid: '@microsoft/live-share.LiveShareRuntime.setRoleVerifier'
+    package: '@microsoft/live-share'
+    summary: Set the role verifier for the runtime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setRoleVerifier(roleVerifier: IRoleVerifier)'
+      parameters:
+        - id: roleVerifier
+          type: IRoleVerifier
+          description: role verifier to set
+  - name: setTimestampProvider(ITimestampProvider)
+    uid: '@microsoft/live-share.LiveShareRuntime.setTimestampProvider'
+    package: '@microsoft/live-share'
+    summary: Set the timestamp provider for the runtime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setTimestampProvider(timestampProvider: ITimestampProvider)'
+      parameters:
+        - id: timestampProvider
+          type: ITimestampProvider
+          description: timestamp provider to set
+  - name: start()
+    uid: '@microsoft/live-share.LiveShareRuntime.start'
+    package: '@microsoft/live-share'
+    summary: Start the timestamp provider
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function start(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: stop()
+    uid: '@microsoft/live-share.LiveShareRuntime.stop'
+    package: '@microsoft/live-share'
+    summary: Stop the timestamp provider
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function stop()
+  - name: verifyRolesAllowed(string, UserMeetingRole[])
+    uid: '@microsoft/live-share.LiveShareRuntime.verifyRolesAllowed'
+    package: '@microsoft/live-share'
+    summary: Verifies that a client has one of the specified roles.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function verifyRolesAllowed(clientId: string, allowedRoles:
+        UserMeetingRole[]): Promise<boolean>
+      parameters:
+        - id: clientId
+          type: string
+          description: Client ID to inspect.
+        - id: allowedRoles
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+          description: User roles that are allowed.
+      return:
+        description: True if the client has one of the specified roles.
+        type: Promise&lt;boolean&gt;

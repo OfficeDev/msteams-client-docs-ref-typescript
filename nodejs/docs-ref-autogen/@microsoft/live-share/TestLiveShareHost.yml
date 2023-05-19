@@ -8,15 +8,27 @@ remarks: ''
 isDeprecated: false
 type: class
 properties:
-  - name: defaultRoles
-    uid: '@microsoft/live-share.TestLiveShareHost.defaultRoles'
+  - name: defaultLocalRoles
+    uid: '@microsoft/live-share.TestLiveShareHost.defaultLocalRoles'
     package: '@microsoft/live-share'
     summary: ''
-    fullName: defaultRoles
+    fullName: defaultLocalRoles
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'defaultRoles: UserMeetingRole[]'
+      content: 'defaultLocalRoles: UserMeetingRole[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+  - name: defaultRemoteRoles
+    uid: '@microsoft/live-share.TestLiveShareHost.defaultRemoteRoles'
+    package: '@microsoft/live-share'
+    summary: ''
+    fullName: defaultRemoteRoles
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'defaultRemoteRoles: UserMeetingRole[]'
       return:
         description: ''
         type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
@@ -81,7 +93,7 @@ methods:
   - name: getClientInfo(string)
     uid: '@microsoft/live-share.TestLiveShareHost.getClientInfo'
     package: '@microsoft/live-share'
-    summary: Queries the hosts `IUserInfo` for a given client ID.
+    summary: Queries the hosts `IClientInfo` for a given client ID.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -91,7 +103,9 @@ methods:
           type: string
           description: ID of the client to lookup.
       return:
-        description: '`IUserInfo` for the queried client ID.'
+        description: >-
+          `IUserInfo` for the queried client ID, or undefined if the client
+          hasn't yet been registered
         type: Promise&lt;<xref uid="@microsoft/live-share.IClientInfo" />&gt;
   - name: getClientRoles(string)
     uid: '@microsoft/live-share.TestLiveShareHost.getClientRoles'

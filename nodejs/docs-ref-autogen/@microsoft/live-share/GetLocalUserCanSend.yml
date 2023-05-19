@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: GetLocalUserCanSend
+uid: '@microsoft/live-share.GetLocalUserCanSend'
+package: '@microsoft/live-share'
+summary: >-
+  Callback function used to validate whether or not the local user can send an
+  update for this object.
+fullName: GetLocalUserCanSend
+remarks: ''
+isDeprecated: false
+syntax: |
+  type GetLocalUserCanSend = (connecting: boolean) => Promise<boolean>

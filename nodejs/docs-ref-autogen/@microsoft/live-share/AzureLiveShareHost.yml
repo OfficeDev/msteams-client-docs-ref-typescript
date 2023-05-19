@@ -1,0 +1,217 @@
+### YamlMime:TSType
+name: AzureLiveShareHost
+uid: '@microsoft/live-share.AzureLiveShareHost'
+package: '@microsoft/live-share'
+summary: >-
+  This host enables using Live Share through your own `AzureClient`
+  implementation.
+
+  This is not intended to be used with `LiveShareClient`.
+
+  We provide no SLA guarantees on this implementation while it is in alpha.
+fullName: AzureLiveShareHost
+remarks: >-
+  To use this API, first pass your `ContainerSchema` through the
+  `getLiveShareContainerSchemaProxy` function.
+
+  This should be done before calling `.getContainer()` or `createContainer()`.
+
+  Then, call `setAudience()` with the `IAzureAudience` object (in
+  `AzureContainerServices`) returned by the `AzureClient`.
+previewState: alpha
+isDeprecated: false
+type: class
+methods:
+  - name: create(boolean)
+    uid: '@microsoft/live-share.AzureLiveShareHost.create'
+    package: '@microsoft/live-share'
+    summary: >-
+      Static constructor for host enables using Live Share through your own
+      `AzureClient` implementation.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'static function create(shouldWarn?: boolean): AzureLiveShareHost'
+      parameters:
+        - id: shouldWarn
+          type: boolean
+          description: ''
+      return:
+        description: new `AzureLiveShareHost` instance
+        type: <xref uid="@microsoft/live-share.AzureLiveShareHost" />
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share.AzureLiveShareHost.getClientInfo'
+    package: '@microsoft/live-share'
+    summary: >-
+      Gets the corresponding `AzureAudience` `IClientInfo` for a given
+      `clientId`
+
+
+      See ILiveShareHost.getClientInfo
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getClientInfo(clientId: string): Promise<undefined |
+        IClientInfo>
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
+  - name: getClientRoles(string)
+    uid: '@microsoft/live-share.AzureLiveShareHost.getClientRoles'
+    package: '@microsoft/live-share'
+    summary: |-
+
+
+      See ILiveShareHost.getClientRoles
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: ''
+    syntax:
+      content: >-
+        function getClientRoles(clientId: string): Promise<undefined |
+        UserMeetingRole[]>
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;undefined | <xref
+          uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
+  - name: getFluidContainerId()
+    uid: '@microsoft/live-share.AzureLiveShareHost.getFluidContainerId'
+    package: '@microsoft/live-share'
+    summary: >-
+      Will throw not implemented exception. Extend this class and override this
+      function when using with `LiveShareClient`.
+
+
+      See ILiveShareHost.getFluidContainerId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getFluidContainerId(): Promise<IFluidContainerInfo>'
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@microsoft/live-share.IFluidContainerInfo"
+          />&gt;
+  - name: getFluidTenantInfo()
+    uid: '@microsoft/live-share.AzureLiveShareHost.getFluidTenantInfo'
+    package: '@microsoft/live-share'
+    summary: >-
+      Will throw not implemented exception. Extend this class and override this
+      function when using with `LiveShareClient`.
+
+
+      See ILiveShareHost.getFluidTenantInfo
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getFluidTenantInfo(): Promise<IFluidTenantInfo>'
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.IFluidTenantInfo" />&gt;
+  - name: getFluidToken(string)
+    uid: '@microsoft/live-share.AzureLiveShareHost.getFluidToken'
+    package: '@microsoft/live-share'
+    summary: >-
+      Will throw not implemented exception. Extend this class and override this
+      function when using with `LiveShareClient`.
+
+
+      See ILiveShareHost.getFluidToken
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getFluidToken(containerId?: string): Promise<string>'
+      parameters:
+        - id: containerId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;string&gt;
+  - name: getNtpTime()
+    uid: '@microsoft/live-share.AzureLiveShareHost.getNtpTime'
+    package: '@microsoft/live-share'
+    summary: |-
+      Uses local timestamp by default.
+
+      See ILiveShareHost.getNtpTime
+    remarks: >-
+      To remove warning, either set shouldWarn in `.create()`, or override this
+      value with a timestamp from a server.
+    isDeprecated: false
+    syntax:
+      content: 'function getNtpTime(): Promise<INtpTimeInfo>'
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.INtpTimeInfo" />&gt;
+  - name: registerClientId(string)
+    uid: '@microsoft/live-share.AzureLiveShareHost.registerClientId'
+    package: '@microsoft/live-share'
+    summary: >-
+      Register doesn't do anything special here, since we are using
+      AzureAudience in this host
+
+
+      See ILiveShareHost.registerClientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function registerClientId(clientId: string): Promise<UserMeetingRole[]>'
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
+  - name: setAudience(IAzureAudience)
+    uid: '@microsoft/live-share.AzureLiveShareHost.setAudience'
+    package: '@microsoft/live-share'
+    summary: >-
+      This function should be called immediately after getting audience from
+      `AzureClient`.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setAudience(audience: IAzureAudience)'
+      parameters:
+        - id: audience
+          type: IAzureAudience
+          description: Azure Audience
+  - name: setFluidContainerId(string)
+    uid: '@microsoft/live-share.AzureLiveShareHost.setFluidContainerId'
+    package: '@microsoft/live-share'
+    summary: >-
+      Will throw not implemented exception. Extend this class and override this
+      function when using with `LiveShareClient`.
+
+
+      See ILiveShareHost.setFluidContainerId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setFluidContainerId(containerId: string):
+        Promise<IFluidContainerInfo>
+      parameters:
+        - id: containerId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@microsoft/live-share.IFluidContainerInfo"
+          />&gt;
