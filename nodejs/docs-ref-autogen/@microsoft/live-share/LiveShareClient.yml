@@ -55,38 +55,6 @@ properties:
         description: ''
         type: number
 methods:
-  - name: getClientInfo(string)
-    uid: '@microsoft/live-share.LiveShareClient.getClientInfo'
-    package: '@microsoft/live-share'
-    summary: ''
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        static function getClientInfo(clientId: string): Promise<undefined |
-        IClientInfo>
-      parameters:
-        - id: clientId
-          type: string
-          description: ''
-      return:
-        description: ''
-        type: >-
-          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
-          />&gt;
-  - name: getTimestamp()
-    uid: '@microsoft/live-share.LiveShareClient.getTimestamp'
-    package: '@microsoft/live-share'
-    summary: >-
-      Returns the current timestamp as the number of milliseconds sine the Unix
-      Epoch.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'static function getTimestamp(): number'
-      return:
-        description: ''
-        type: number
   - name: 'joinContainer(ContainerSchema, (container: IFluidContainer) => void)'
     uid: '@microsoft/live-share.LiveShareClient.joinContainer'
     package: '@microsoft/live-share'
@@ -104,8 +72,7 @@ methods:
       content: >-
         function joinContainer(fluidContainerSchema: ContainerSchema,
         onContainerFirstCreated?: (container: IFluidContainer) => void):
-        Promise<{ container: IFluidContainer, created: boolean, services:
-        AzureContainerServices }>
+        Promise<ILiveShareJoinResults>
       parameters:
         - id: fluidContainerSchema
           type: ContainerSchema
@@ -116,41 +83,7 @@ methods:
             Optional. Callback that's called when the container is first
             created.
       return:
-        description: >-
-          The fluid `container` and `services` objects to use along with a
-          `created` flag that if true means the container had to be created.
+        description: the results of join container.
         type: >-
-          Promise&lt;{ container: IFluidContainer, created: boolean, services:
-          AzureContainerServices }&gt;
-  - name: setTimestampProvider(ITimestampProvider)
-    uid: '@microsoft/live-share.LiveShareClient.setTimestampProvider'
-    package: '@microsoft/live-share'
-    summary: Assigns a custom timestamp provider.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'static function setTimestampProvider(provider: ITimestampProvider)'
-      parameters:
-        - id: provider
-          type: ITimestampProvider
-          description: The timestamp provider to use.
-  - name: verifyRolesAllowed(string, UserMeetingRole[])
-    uid: '@microsoft/live-share.LiveShareClient.verifyRolesAllowed'
-    package: '@microsoft/live-share'
-    summary: Verifies that a client has one of the specified roles.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        static function verifyRolesAllowed(clientId: string, allowedRoles:
-        UserMeetingRole[]): Promise<boolean>
-      parameters:
-        - id: clientId
-          type: string
-          description: Client ID to inspect.
-        - id: allowedRoles
-          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
-          description: User roles that are allowed.
-      return:
-        description: True if the client has one of the specified roles.
-        type: Promise&lt;boolean&gt;
+          Promise&lt;<xref uid="@microsoft/live-share.ILiveShareJoinResults"
+          />&gt;

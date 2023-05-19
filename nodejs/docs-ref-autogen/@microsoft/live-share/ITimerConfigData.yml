@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: ITimerConfigData
+uid: '@microsoft/live-share.ITimerConfigData'
+package: '@microsoft/live-share'
+summary: ''
+fullName: ITimerConfigData
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: duration
+    uid: '@microsoft/live-share.ITimerConfigData.duration'
+    package: '@microsoft/live-share'
+    summary: Duration of timer
+    fullName: duration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'duration: number'
+      return:
+        description: ''
+        type: number
+  - name: position
+    uid: '@microsoft/live-share.ITimerConfigData.position'
+    package: '@microsoft/live-share'
+    summary: position when config change occurred
+    fullName: position
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'position: number'
+      return:
+        description: ''
+        type: number
+  - name: running
+    uid: '@microsoft/live-share.ITimerConfigData.running'
+    package: '@microsoft/live-share'
+    summary: Whether the timer was running or not when config change occurred
+    fullName: running
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'running: boolean'
+      return:
+        description: ''
+        type: boolean

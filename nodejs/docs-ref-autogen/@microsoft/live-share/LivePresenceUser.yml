@@ -2,7 +2,7 @@
 name: LivePresenceUser
 uid: '@microsoft/live-share.LivePresenceUser'
 package: '@microsoft/live-share'
-summary: A use that presence is being tracked for.
+summary: A user that presence is being tracked for.
 fullName: LivePresenceUser<TData>
 remarks: ''
 isDeprecated: false
@@ -11,7 +11,11 @@ properties:
   - name: data
     uid: '@microsoft/live-share.LivePresenceUser.data'
     package: '@microsoft/live-share'
-    summary: Optional data shared by the user.
+    summary: >-
+      Optional data shared by the user. Returns data from connection with most
+      recent event.
+
+      Client connection specific data is available from each connection.
     fullName: data
     remarks: ''
     isDeprecated: false
@@ -81,6 +85,40 @@ properties:
         description: ''
         type: string
 methods:
+  - name: getConnection(string)
+    uid: '@microsoft/live-share.LivePresenceUser.getConnection'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getConnection(clientId: string): undefined |
+        LivePresenceConnection<TData>
+      parameters:
+        - id: clientId
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: undefined | LivePresenceConnection&lt;TData&gt;
+  - name: getConnections(PresenceState)
+    uid: '@microsoft/live-share.LivePresenceUser.getConnections'
+    package: '@microsoft/live-share'
+    summary: Returns the user's connections.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getConnections(filter?: PresenceState):
+        LivePresenceConnection<TData>[]
+      parameters:
+        - id: filter
+          type: <xref uid="@microsoft/live-share.PresenceState" />
+          description: ''
+      return:
+        description: ''
+        type: LivePresenceConnection&lt;TData&gt;[]
   - name: isFromClient(string)
     uid: '@microsoft/live-share.LivePresenceUser.isFromClient'
     package: '@microsoft/live-share'

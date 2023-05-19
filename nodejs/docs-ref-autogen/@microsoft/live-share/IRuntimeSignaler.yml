@@ -49,6 +49,26 @@ properties:
         description: ''
         type: ITelemetryLogger
 methods:
+  - name: 'off("connected", (clientId: string) => void)'
+    uid: '@microsoft/live-share.IRuntimeSignaler.off'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function off(event: "connected", listener: (clientId: string) => void):
+        IRuntimeSignaler
+      parameters:
+        - id: event
+          type: '"connected"'
+          description: ''
+        - id: listener
+          type: '(clientId: string) =&gt; void'
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
   - name: 'on("connected", (clientId: string) => void)'
     uid: '@microsoft/live-share.IRuntimeSignaler.on'
     package: '@microsoft/live-share'

@@ -12,18 +12,23 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: LiveTelemetryLogger(IRuntimeSignaler)
+  - name: LiveTelemetryLogger(IRuntimeSignaler, LiveShareRuntime)
     uid: '@microsoft/live-share.LiveTelemetryLogger.constructor'
     package: '@microsoft/live-share'
     summary: Creates a new `LiveTelemetryLogger` instance.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new LiveTelemetryLogger(runtime: IRuntimeSignaler)'
+      content: >-
+        new LiveTelemetryLogger(runtime: IRuntimeSignaler, _liveRuntime:
+        LiveShareRuntime)
       parameters:
         - id: runtime
           type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
           description: Containers runtime instance.
+        - id: _liveRuntime
+          type: <xref uid="@microsoft/live-share.LiveShareRuntime" />
+          description: ''
 methods:
   - name: formatCorrelationId(undefined | string, number)
     uid: '@microsoft/live-share.LiveTelemetryLogger.formatCorrelationId'

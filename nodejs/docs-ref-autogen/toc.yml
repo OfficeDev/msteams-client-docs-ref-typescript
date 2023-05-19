@@ -2,14 +2,17 @@
   items:
     - name: Overview
       uid: '@microsoft/live-share'
+    - uid: '@microsoft/live-share.AzureLiveShareHost'
+      name: AzureLiveShareHost
+      items: []
     - uid: '@microsoft/live-share.ContainerState'
       name: ContainerState
       items: []
     - uid: '@microsoft/live-share.DynamicObjectRegistry'
       name: DynamicObjectRegistry
       items: []
-    - uid: '@microsoft/live-share.GetSynchronizationState'
-      name: GetSynchronizationState
+    - uid: '@microsoft/live-share.GetLocalUserCanSend'
+      name: GetLocalUserCanSend
       items: []
     - uid: '@microsoft/live-share.HostTimestampProvider'
       name: HostTimestampProvider
@@ -47,6 +50,9 @@
     - uid: '@microsoft/live-share.ILiveShareHost'
       name: ILiveShareHost
       items: []
+    - uid: '@microsoft/live-share.ILiveShareJoinResults'
+      name: ILiveShareJoinResults
+      items: []
     - uid: '@microsoft/live-share.ILiveStateEvents'
       name: ILiveStateEvents
       items: []
@@ -64,6 +70,12 @@
       items: []
     - uid: '@microsoft/live-share.ITimerConfig'
       name: ITimerConfig
+      items: []
+    - uid: '@microsoft/live-share.ITimerConfigData'
+      name: ITimerConfigData
+      items: []
+    - uid: '@microsoft/live-share.LiveDataObject'
+      name: LiveDataObject
       items: []
     - uid: '@microsoft/live-share.LiveEvent'
       name: LiveEvent
@@ -86,9 +98,6 @@
     - uid: '@microsoft/live-share.LiveEventTimer'
       name: LiveEventTimer
       items: []
-    - uid: '@microsoft/live-share.LiveObjectSynchronizer'
-      name: LiveObjectSynchronizer
-      items: []
     - uid: '@microsoft/live-share.LivePresence'
       name: LivePresence
       items: []
@@ -100,6 +109,9 @@
       items: []
     - uid: '@microsoft/live-share.LiveShareClient'
       name: LiveShareClient
+      items: []
+    - uid: '@microsoft/live-share.LiveShareRuntime'
+      name: LiveShareRuntime
       items: []
     - uid: '@microsoft/live-share.LiveState'
       name: LiveState
@@ -118,9 +130,6 @@
       items: []
     - uid: '@microsoft/live-share.LocalTimestampProvider'
       name: LocalTimestampProvider
-      items: []
-    - uid: '@microsoft/live-share.OutgoingLiveEvent'
-      name: OutgoingLiveEvent
       items: []
     - uid: '@microsoft/live-share.PresenceState'
       name: PresenceState
@@ -1093,4 +1102,23 @@
       items: []
     - uid: '@microsoft/teamsfx.UserInfo'
       name: UserInfo
+      items: []
+- name: '@microsoft/teamsfx-react'
+  items:
+    - name: Overview
+      uid: '@microsoft/teamsfx-react'
+    - uid: '@microsoft/teamsfx-react.BaseDashboard'
+      name: BaseDashboard
+      items: []
+    - uid: '@microsoft/teamsfx-react.BaseWidget'
+      name: BaseWidget
+      items: []
+    - uid: '@microsoft/teamsfx-react.IWidgetClassNames'
+      name: IWidgetClassNames
+      items: []
+    - uid: '@microsoft/teamsfx-react.TeamsContextWithCredential'
+      name: TeamsContextWithCredential
+      items: []
+    - uid: '@microsoft/teamsfx-react.TeamsFxContext'
+      name: TeamsFxContext
       items: []

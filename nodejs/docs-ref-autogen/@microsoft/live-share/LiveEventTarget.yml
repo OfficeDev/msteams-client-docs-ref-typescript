@@ -36,17 +36,17 @@ constructors:
           type: <xref uid="@microsoft/live-share.LiveEventListener" />&lt;TEvent&gt;
           description: Function to call when an event is sent or received.
 inheritedMethods:
-  - name: sendEvent(Partial<TEvent>)
+  - name: sendEvent(TEvent)
     uid: '@microsoft/live-share.LiveEventTarget.sendEvent'
     package: '@microsoft/live-share'
     summary: Broadcasts an event to any listening `LiveEventTarget` instances.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function sendEvent(evt?: Partial<TEvent>): TEvent'
+      content: 'function sendEvent(evt: TEvent): Promise<ILiveEvent<TEvent>>'
       parameters:
         - id: evt
-          type: Partial&lt;TEvent&gt;
+          type: TEvent
           description: |-
             Optional. Partial event object to send. The `ILiveEvent.name`,
             `ILiveEvent.timestamp`, and `ILiveEvent.clientId`
@@ -55,7 +55,9 @@ inheritedMethods:
         description: |-
           The full event, including `ILiveEvent.name`,
           `ILiveEvent.timestamp`, and `ILiveEvent.clientId` fields if known.
-        type: TEvent
+        type: >-
+          Promise&lt;<xref uid="@microsoft/live-share.ILiveEvent"
+          />&lt;TEvent&gt;&gt;
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveEventSource.sendEvent](xref:@microsoft/live-share.LiveEventSource.sendEvent)

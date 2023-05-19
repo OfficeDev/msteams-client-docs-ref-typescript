@@ -7,4 +7,7 @@ fullName: LiveEventListener<TEvent>
 remarks: ''
 isDeprecated: false
 syntax: |
-  type LiveEventListener<TEvent> = (evt: TEvent, local: boolean) => void
+  type LiveEventListener<TEvent> = (
+    evt: ILiveEvent<TEvent>,
+    local: boolean
+  ) => void
