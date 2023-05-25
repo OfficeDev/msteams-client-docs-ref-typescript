@@ -90,13 +90,14 @@ With the latest Microsoft TeamsJS client library, your Teams app can [run across
 
 ### Finding the library
 
-The TeamsJS client is distributed as an [npm package](https://npmjs.com/package/@microsoft/teams-js/) and can be installed using npm or yarn.
+The TeamsJS client is distributed as an [npm package](https://npmjs.com/package/@microsoft/teams-js/) and can be installed using npm or yarn. It can also be referenced from its CDN endpoint.
 
 # [NPM](#tab/npm)
 
   ```bash
 npm install --save @microsoft/teams-js
   ```
+
 # [Yarn](#tab/yarn)
 
 ```bash
@@ -104,6 +105,24 @@ yarn add @microsoft/teams-js
 ```
 
 ---
+
+#### CDN
+TeamsJS can also be referenced from its CDN endpoints:
+
+```javascript
+<!-- Microsoft Teams JavaScript API (via CDN) -->
+<script
+  src="https://res.cdn.office.net/teams-js/2.11.0/js/MicrosoftTeams.min.js"
+  integrity="sha384-eCh6qbZkXfEZapUgP+aGo0x6qEpGiryOoYXrQr6BLrtZ988BjkbaVyRh1rQef3q9"
+  crossorigin="anonymous"
+></script>
+
+<!-- Microsoft Teams JavaScript API (via npm) -->
+<script src="node_modules/@microsoft/teams-js@2.11.0/dist/MicrosoftTeams.min.js"></script>
+
+<!-- Microsoft Teams JavaScript API (via local) -->
+<script src="MicrosoftTeams.min.js"></script>
+```
 
 ## Microsoft TeamsFx SDK
 
