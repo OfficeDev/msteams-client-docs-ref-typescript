@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: PromptSelector
+uid: '@microsoft/teams-ai.PromptSelector'
+package: '@microsoft/teams-ai'
+summary: A function that can be used to select a prompt to use for the current turn.
+fullName: PromptSelector<TState>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type PromptSelector<TState> = (
+    context: TurnContext,
+    state: TState
+  ) => Promise<string | PromptTemplate>

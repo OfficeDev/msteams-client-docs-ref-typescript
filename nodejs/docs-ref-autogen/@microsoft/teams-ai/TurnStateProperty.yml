@@ -1,0 +1,97 @@
+### YamlMime:TSType
+name: TurnStateProperty
+uid: '@microsoft/teams-ai.TurnStateProperty'
+package: '@microsoft/teams-ai'
+summary: Maps an applications Turn State property to a Bot State property.
+fullName: TurnStateProperty<T>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: TurnStateProperty<T>(TurnState, string, string)
+    uid: '@microsoft/teams-ai.TurnStateProperty.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the `TurnStateProperty` class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TurnStateProperty(state: TurnState, scope: string, propertyName:
+        string)
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Current application turn state.
+        - id: scope
+          type: string
+          description: Name of properties the memory scope to use.
+        - id: propertyName
+          type: string
+          description: Name of the property to use.
+methods:
+  - name: delete(TurnContext)
+    uid: '@microsoft/teams-ai.TurnStateProperty.delete'
+    package: '@microsoft/teams-ai'
+    summary: Deletes the state property.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function delete(context: TurnContext): Promise<void>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: get(TurnContext)
+    uid: '@microsoft/teams-ai.TurnStateProperty.get'
+    package: '@microsoft/teams-ai'
+    summary: Returns the state property value.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function get(context: TurnContext): Promise<undefined | T>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;undefined | T&gt;
+  - name: get(TurnContext, T)
+    uid: '@microsoft/teams-ai.TurnStateProperty.get_1'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function get(context: TurnContext, defaultValue: T): Promise<T>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+        - id: defaultValue
+          type: T
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;T&gt;
+  - name: set(TurnContext, T)
+    uid: '@microsoft/teams-ai.TurnStateProperty.set'
+    package: '@microsoft/teams-ai'
+    summary: Replace's the state property value.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function set(context: TurnContext, value: T): Promise<void>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+        - id: value
+          type: T
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: CompletionConfig
+uid: '@microsoft/teams-ai.CompletionConfig'
+package: '@microsoft/teams-ai'
+summary: Interface for the completion configuration portion of a prompt template.
+fullName: CompletionConfig
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: frequency_penalty
+    uid: '@microsoft/teams-ai.CompletionConfig.frequency_penalty'
+    package: '@microsoft/teams-ai'
+    summary: The models frequency_penalty as a number between 0 and 1.
+    fullName: frequency_penalty
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'frequency_penalty: number'
+      return:
+        description: ''
+        type: number
+  - name: max_tokens
+    uid: '@microsoft/teams-ai.CompletionConfig.max_tokens'
+    package: '@microsoft/teams-ai'
+    summary: The maximum number of tokens to generate.
+    fullName: max_tokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_tokens: number'
+      return:
+        description: ''
+        type: number
+  - name: presence_penalty
+    uid: '@microsoft/teams-ai.CompletionConfig.presence_penalty'
+    package: '@microsoft/teams-ai'
+    summary: The models presence_penalty as a number between 0 and 1.
+    fullName: presence_penalty
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'presence_penalty: number'
+      return:
+        description: ''
+        type: number
+  - name: stop_sequences
+    uid: '@microsoft/teams-ai.CompletionConfig.stop_sequences'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Array of stop sequences that when hit will stop generation.
+    fullName: stop_sequences
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'stop_sequences?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: temperature
+    uid: '@microsoft/teams-ai.CompletionConfig.temperature'
+    package: '@microsoft/teams-ai'
+    summary: The models temperature as a number between 0 and 1.
+    fullName: temperature
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'temperature: number'
+      return:
+        description: ''
+        type: number
+  - name: top_p
+    uid: '@microsoft/teams-ai.CompletionConfig.top_p'
+    package: '@microsoft/teams-ai'
+    summary: The models top_p as a number between 0 and 1.
+    fullName: top_p
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'top_p: number'
+      return:
+        description: ''
+        type: number

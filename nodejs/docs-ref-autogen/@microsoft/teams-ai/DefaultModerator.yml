@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: DefaultModerator
+uid: '@microsoft/teams-ai.DefaultModerator'
+package: '@microsoft/teams-ai'
+summary: Default moderator created by the AI system if one isn't configured.
+fullName: DefaultModerator<TState>
+remarks: >-
+  The default moderator is a pass-through and always approves all inputs and
+  outputs.
+isDeprecated: false
+type: class
+methods:
+  - name: reviewPlan(TurnContext, TState, Plan)
+    uid: '@microsoft/teams-ai.DefaultModerator.reviewPlan'
+    package: '@microsoft/teams-ai'
+    summary: Allows all plans by returning the plan as-is.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function reviewPlan(context: TurnContext, state: TState, plan: Plan):
+        Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+        - id: state
+          type: TState
+          description: ''
+        - id: plan
+          type: <xref uid="@microsoft/teams-ai.Plan" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+  - name: >-
+      reviewPrompt(TurnContext, TState, PromptTemplate,
+      ConfiguredAIOptions<TState>)
+    uid: '@microsoft/teams-ai.DefaultModerator.reviewPrompt'
+    package: '@microsoft/teams-ai'
+    summary: Allows all prompts by returning undefined.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function reviewPrompt(context: TurnContext, state: TState, prompt:
+        PromptTemplate, options: ConfiguredAIOptions<TState>): Promise<undefined
+        | Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+        - id: state
+          type: TState
+          description: ''
+        - id: prompt
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: ''
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.ConfiguredAIOptions" />&lt;TState&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;undefined | <xref uid="@microsoft/teams-ai.Plan" />&gt;

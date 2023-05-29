@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: PromptTemplate
+uid: '@microsoft/teams-ai.PromptTemplate'
+package: '@microsoft/teams-ai'
+summary: Prompt template cached by the prompt manager.
+fullName: PromptTemplate
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: config
+    uid: '@microsoft/teams-ai.PromptTemplate.config'
+    package: '@microsoft/teams-ai'
+    summary: Configuration settings for the prompt template.
+    fullName: config
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'config: PromptTemplateConfig'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptTemplateConfig" />
+  - name: text
+    uid: '@microsoft/teams-ai.PromptTemplate.text'
+    package: '@microsoft/teams-ai'
+    summary: Text of the prompt template.
+    fullName: text
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'text: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: AzureOpenAIPlanner
+uid: '@microsoft/teams-ai.AzureOpenAIPlanner'
+package: '@microsoft/teams-ai'
+summary: Planner that uses the Azure OpenAI service.
+fullName: AzureOpenAIPlanner<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: AzureOpenAIPlanner<TState>(AzureOpenAIPlannerOptions)
+    uid: '@microsoft/teams-ai.AzureOpenAIPlanner.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the OpenAI based planner.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new AzureOpenAIPlanner(options: AzureOpenAIPlannerOptions)'
+      parameters:
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.AzureOpenAIPlannerOptions" />
+          description: Options for the OpenAI based planner.
+properties:
+  - name: options
+    uid: '@microsoft/teams-ai.AzureOpenAIPlanner.options'
+    package: '@microsoft/teams-ai'
+    summary: Returns the configured options for the planner.
+    fullName: options
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: TOptions options
+      return:
+        description: ''
+        type: TOptions
+inheritedMethods:
+  - name: >-
+      completePrompt(TurnContext, TState, PromptTemplate,
+      ConfiguredAIOptions<TState>)
+    uid: '@microsoft/teams-ai.AzureOpenAIPlanner.completePrompt'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt without returning a plan.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completePrompt(context: TurnContext, state: TState, prompt:
+        PromptTemplate, options: ConfiguredAIOptions<TState>): Promise<string>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: prompt
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt to complete.
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.ConfiguredAIOptions" />&lt;TState&gt;
+          description: Configuration options for the AI system.
+      return:
+        description: >-
+          The response from the prompt. Can return undefined to indicate the
+          prompt was rate limited.
+        type: Promise&lt;string&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIPlanner.completePrompt](xref:@microsoft/teams-ai.OpenAIPlanner.completePrompt)
+  - name: >-
+      generatePlan(TurnContext, TState, PromptTemplate,
+      ConfiguredAIOptions<TState>)
+    uid: '@microsoft/teams-ai.AzureOpenAIPlanner.generatePlan'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt and generates a plan for the AI system to execute.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generatePlan(context: TurnContext, state: TState, prompt:
+        PromptTemplate, options: ConfiguredAIOptions<TState>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: prompt
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt to complete.
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.ConfiguredAIOptions" />&lt;TState&gt;
+          description: Configuration options for the AI system.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIPlanner.generatePlan](xref:@microsoft/teams-ai.OpenAIPlanner.generatePlan)
+extends: >-
+  <xref uid="@microsoft/teams-ai.OpenAIPlanner" />&lt;TState, <xref
+  uid="@microsoft/teams-ai.AzureOpenAIPlannerOptions" />&gt;

@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: DefaultUserState
+uid: '@microsoft/teams-ai.DefaultUserState'
+package: '@microsoft/teams-ai'
+summary: Default user state
+fullName: DefaultUserState
+remarks: >-
+  Inherit a new interface from this base interface to strongly type the
+  applications user
+
+  state.
+isDeprecated: false
+type: interface

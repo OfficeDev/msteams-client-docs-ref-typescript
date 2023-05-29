@@ -1,0 +1,61 @@
+### YamlMime:TSType
+name: ResponseParser
+uid: '@microsoft/teams-ai.ResponseParser'
+package: '@microsoft/teams-ai'
+summary: Utility class to parse responses returned from LLM's.
+fullName: ResponseParser
+remarks: ''
+isDeprecated: false
+type: class
+methods:
+  - name: parseAdaptiveCard(string)
+    uid: '@microsoft/teams-ai.ResponseParser.parseAdaptiveCard'
+    package: '@microsoft/teams-ai'
+    summary: Attempts to find an Adaptive Card in a response.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function parseAdaptiveCard(text?: string): undefined |
+        Record<string, any>
+      parameters:
+        - id: text
+          type: string
+          description: Optional. Text to parse.
+      return:
+        description: The found Adaptive Card or undefined if no card could be detected.
+        type: undefined | Record&lt;string, any&gt;
+  - name: parseJSON<T>(string)
+    uid: '@microsoft/teams-ai.ResponseParser.parseJSON'
+    package: '@microsoft/teams-ai'
+    summary: Attempts to find a JSON object with-in a response.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function parseJSON<T>(text?: string): undefined | T'
+      parameters:
+        - id: text
+          type: string
+          description: Optional. Text to parse.
+      return:
+        description: The parsed object or undefined if no object could be detected.
+        type: undefined | T
+  - name: parseResponse(string)
+    uid: '@microsoft/teams-ai.ResponseParser.parseResponse'
+    package: '@microsoft/teams-ai'
+    summary: Parses a response and returns a plan.
+    remarks: >-
+      If a plan object can be detected in the response it will be returned.
+      Otherwise a plan with
+
+      a single SAY command containing the response will be returned.
+    isDeprecated: false
+    syntax:
+      content: 'static function parseResponse(text?: string): Plan'
+      parameters:
+        - id: text
+          type: string
+          description: Optional. Text to parse.
+      return:
+        description: The parsed plan.
+        type: <xref uid="@microsoft/teams-ai.Plan" />

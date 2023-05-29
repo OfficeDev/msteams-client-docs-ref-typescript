@@ -130,18 +130,6 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: isStarted
-    uid: '@microsoft/live-share.LiveState.isStarted'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: isStarted
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: boolean isStarted
-      return:
-        description: ''
-        type: boolean
   - name: state
     uid: '@microsoft/live-share.LiveState.state'
     package: '@microsoft/live-share'

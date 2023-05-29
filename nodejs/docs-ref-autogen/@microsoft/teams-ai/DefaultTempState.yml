@@ -1,0 +1,64 @@
+### YamlMime:TSType
+name: DefaultTempState
+uid: '@microsoft/teams-ai.DefaultTempState'
+package: '@microsoft/teams-ai'
+summary: Default temp state
+fullName: DefaultTempState
+remarks: >-
+  Inherit a new interface from this base interface to strongly type the
+  applications temp
+
+  state.
+isDeprecated: false
+type: interface
+properties:
+  - name: authToken
+    uid: '@microsoft/teams-ai.DefaultTempState.authToken'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Token returned if the Application was configured with authentication
+      support.
+    fullName: authToken
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'authToken?: string'
+      return:
+        description: ''
+        type: string
+  - name: history
+    uid: '@microsoft/teams-ai.DefaultTempState.history'
+    package: '@microsoft/teams-ai'
+    summary: Formatted conversation history for embedding in an AI prompt
+    fullName: history
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'history: string'
+      return:
+        description: ''
+        type: string
+  - name: input
+    uid: '@microsoft/teams-ai.DefaultTempState.input'
+    package: '@microsoft/teams-ai'
+    summary: Input passed to an AI prompt
+    fullName: input
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'input: string'
+      return:
+        description: ''
+        type: string
+  - name: output
+    uid: '@microsoft/teams-ai.DefaultTempState.output'
+    package: '@microsoft/teams-ai'
+    summary: Output returned from an AI prompt or function
+    fullName: output
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'output: string'
+      return:
+        description: ''
+        type: string

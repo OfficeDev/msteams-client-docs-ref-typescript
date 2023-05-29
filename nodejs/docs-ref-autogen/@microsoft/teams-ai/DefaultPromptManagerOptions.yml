@@ -1,0 +1,22 @@
+### YamlMime:TSType
+name: DefaultPromptManagerOptions
+uid: '@microsoft/teams-ai.DefaultPromptManagerOptions'
+package: '@microsoft/teams-ai'
+summary: Options used to configure the default prompt manager.
+fullName: DefaultPromptManagerOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: promptsFolder
+    uid: '@microsoft/teams-ai.DefaultPromptManagerOptions.promptsFolder'
+    package: '@microsoft/teams-ai'
+    summary: Path to the filesystem folder containing all the applications prompts.
+    fullName: promptsFolder
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'promptsFolder: string'
+      return:
+        description: ''
+        type: string

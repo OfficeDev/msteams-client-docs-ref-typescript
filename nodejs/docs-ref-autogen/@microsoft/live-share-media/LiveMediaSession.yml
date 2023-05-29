@@ -148,18 +148,6 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: isStarted
-    uid: '@microsoft/live-share-media.LiveMediaSession.isStarted'
-    package: '@microsoft/live-share-media'
-    summary: ''
-    fullName: isStarted
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: boolean isStarted
-      return:
-        description: ''
-        type: boolean
   - name: logger
     uid: '@microsoft/live-share-media.LiveMediaSession.logger'
     package: '@microsoft/live-share-media'

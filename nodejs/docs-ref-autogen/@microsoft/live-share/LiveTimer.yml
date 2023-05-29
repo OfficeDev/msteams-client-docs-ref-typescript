@@ -123,18 +123,6 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: isStarted
-    uid: '@microsoft/live-share.LiveTimer.isStarted'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: isStarted
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: boolean isStarted
-      return:
-        description: ''
-        type: boolean
   - name: tickRate
     uid: '@microsoft/live-share.LiveTimer.tickRate'
     package: '@microsoft/live-share'

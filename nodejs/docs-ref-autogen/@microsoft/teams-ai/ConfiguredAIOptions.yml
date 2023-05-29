@@ -1,0 +1,77 @@
+### YamlMime:TSType
+name: ConfiguredAIOptions
+uid: '@microsoft/teams-ai.ConfiguredAIOptions'
+package: '@microsoft/teams-ai'
+summary: The configured options for the AI system after all defaults have been applied.
+fullName: ConfiguredAIOptions<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: history
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.history'
+    package: '@microsoft/teams-ai'
+    summary: The history options being used by the AI system.
+    fullName: history
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'history: AIHistoryOptions'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.AIHistoryOptions" />
+  - name: moderator
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.moderator'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The moderator being used for moderating input passed to the model and the
+      output
+    fullName: moderator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'moderator: Moderator<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Moderator" />&lt;TState&gt;
+  - name: planner
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.planner'
+    package: '@microsoft/teams-ai'
+    summary: The planner being used for generating plans.
+    fullName: planner
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'planner: Planner<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Planner" />&lt;TState&gt;
+  - name: prompt
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.prompt'
+    package: '@microsoft/teams-ai'
+    summary: Optional prompt to use by default.
+    fullName: prompt
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        prompt?: string | PromptTemplate | (Context: TurnContext, state: TState)
+        => Promise<string | PromptTemplate>
+      return:
+        description: ''
+        type: >-
+          string | <xref uid="@microsoft/teams-ai.PromptTemplate" /> | (Context:
+          TurnContext, state: TState) =&gt; Promise&lt;string |
+          PromptTemplate&gt;
+  - name: promptManager
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.promptManager'
+    package: '@microsoft/teams-ai'
+    summary: The prompt manager being used for generating prompts.
+    fullName: promptManager
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'promptManager: PromptManager<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />&lt;TState&gt;

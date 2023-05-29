@@ -1,0 +1,103 @@
+### YamlMime:TSType
+name: OpenAIPlanner
+uid: '@microsoft/teams-ai.OpenAIPlanner'
+package: '@microsoft/teams-ai'
+summary: >-
+  A planner that uses OpenAI's textCompletion and chatCompletion API's to
+  generate plans.
+fullName: OpenAIPlanner<TState, TOptions>
+remarks: >-
+  This planner can be configured to use different models for different prompts.
+  The prompts model
+
+  will determine which API is used to generate the plan. Any model that starts
+  with 'gpt-' will
+
+  use the chatCompletion API, otherwise the textCompletion API will be used.
+isDeprecated: false
+type: class
+constructors:
+  - name: OpenAIPlanner<TState, TOptions>(TOptions)
+    uid: '@microsoft/teams-ai.OpenAIPlanner.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the OpenAI based planner.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new OpenAIPlanner(options: TOptions)'
+      parameters:
+        - id: options
+          type: TOptions
+          description: Options for the OpenAI based planner.
+properties:
+  - name: options
+    uid: '@microsoft/teams-ai.OpenAIPlanner.options'
+    package: '@microsoft/teams-ai'
+    summary: Returns the configured options for the planner.
+    fullName: options
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: TOptions options
+      return:
+        description: ''
+        type: TOptions
+methods:
+  - name: >-
+      completePrompt(TurnContext, TState, PromptTemplate,
+      ConfiguredAIOptions<TState>)
+    uid: '@microsoft/teams-ai.OpenAIPlanner.completePrompt'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt without returning a plan.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completePrompt(context: TurnContext, state: TState, prompt:
+        PromptTemplate, options: ConfiguredAIOptions<TState>): Promise<string>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: prompt
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt to complete.
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.ConfiguredAIOptions" />&lt;TState&gt;
+          description: Configuration options for the AI system.
+      return:
+        description: >-
+          The response from the prompt. Can return undefined to indicate the
+          prompt was rate limited.
+        type: Promise&lt;string&gt;
+  - name: >-
+      generatePlan(TurnContext, TState, PromptTemplate,
+      ConfiguredAIOptions<TState>)
+    uid: '@microsoft/teams-ai.OpenAIPlanner.generatePlan'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt and generates a plan for the AI system to execute.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function generatePlan(context: TurnContext, state: TState, prompt:
+        PromptTemplate, options: ConfiguredAIOptions<TState>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: prompt
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt to complete.
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.ConfiguredAIOptions" />&lt;TState&gt;
+          description: Configuration options for the AI system.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;

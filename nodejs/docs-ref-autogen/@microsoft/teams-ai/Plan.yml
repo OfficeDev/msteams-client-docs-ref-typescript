@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: Plan
+uid: '@microsoft/teams-ai.Plan'
+package: '@microsoft/teams-ai'
+summary: A plan is a set of commands that the AI system will execute.
+fullName: Plan
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: commands
+    uid: '@microsoft/teams-ai.Plan.commands'
+    package: '@microsoft/teams-ai'
+    summary: Array of predicted commands that the AI system should execute.
+    fullName: commands
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'commands: PredictedCommand[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PredictedCommand" />[]
+  - name: type
+    uid: '@microsoft/teams-ai.Plan.type'
+    package: '@microsoft/teams-ai'
+    summary: Type to indicate that a plan is being returned.
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: "plan"'
+      return:
+        description: ''
+        type: '"plan"'

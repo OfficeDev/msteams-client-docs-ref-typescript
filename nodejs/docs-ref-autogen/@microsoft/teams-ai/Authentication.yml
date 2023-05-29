@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Authentication
+uid: '@microsoft/teams-ai.Authentication'
+package: '@microsoft/teams-ai'
+summary: Authentication service.
+fullName: Authentication<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: Authentication<TState>(Application<TState>, OAuthPromptSettings)
+    uid: '@microsoft/teams-ai.Authentication.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the `Authentication` class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new Authentication(app: Application<TState>, settings:
+        OAuthPromptSettings)
+      parameters:
+        - id: app
+          type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+          description: Application for adding routes.
+        - id: settings
+          type: OAuthPromptSettings
+          description: Authentication settings.
+methods:
+  - name: signInUser(TurnContext, TState)
+    uid: '@microsoft/teams-ai.Authentication.signInUser'
+    package: '@microsoft/teams-ai'
+    summary: Signs in a user.
+    remarks: This method will be called automatically by the Application class.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function signInUser(context: TurnContext, state: TState):
+        Promise<undefined | string>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: state
+          type: TState
+          description: Application state.
+      return:
+        description: The authentication token or undefined if the user is still login in.
+        type: Promise&lt;undefined | string&gt;
+  - name: signOutUser(TurnContext, TState)
+    uid: '@microsoft/teams-ai.Authentication.signOutUser'
+    package: '@microsoft/teams-ai'
+    summary: Signs out a user.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function signOutUser(context: TurnContext, state: TState): Promise<void>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: state
+          type: TState
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

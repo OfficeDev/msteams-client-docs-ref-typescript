@@ -1,0 +1,106 @@
+### YamlMime:TSType
+name: PromptManager
+uid: '@microsoft/teams-ai.PromptManager'
+package: '@microsoft/teams-ai'
+summary: Interface implemented by all prompt managers.
+fullName: PromptManager<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      addFunction(string, (context: TurnContext, state: TState) => Promise<any>,
+      boolean)
+    uid: '@microsoft/teams-ai.PromptManager.addFunction'
+    package: '@microsoft/teams-ai'
+    summary: Adds a custom function <name> to the prompt manager.
+    remarks: >-
+      Functions added to the prompt manager can be invoked by name from within a
+      prompt template.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addFunction(name: string, handler: (context: TurnContext,
+        state: TState) => Promise<any>, allowOverrides?: boolean):
+        PromptManager<TState>
+      parameters:
+        - id: name
+          type: string
+          description: The name of the function.
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;any&gt;'
+          description: Promise to return on function name match.
+        - id: allowOverrides
+          type: boolean
+          description: Whether to allow overriding an existing function.
+      return:
+        description: The prompt manager for chaining.
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />&lt;TState&gt;
+  - name: addPromptTemplate(string, PromptTemplate)
+    uid: '@microsoft/teams-ai.PromptManager.addPromptTemplate'
+    package: '@microsoft/teams-ai'
+    summary: Adds a prompt template to the prompt manager.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addPromptTemplate(name: string, template: PromptTemplate):
+        PromptManager<TState>
+      parameters:
+        - id: name
+          type: string
+          description: Name of the prompt template.
+        - id: template
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt template to add.
+      return:
+        description: The prompt manager for chaining.
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />&lt;TState&gt;
+  - name: invokeFunction(TurnContext, TState, string)
+    uid: '@microsoft/teams-ai.PromptManager.invokeFunction'
+    package: '@microsoft/teams-ai'
+    summary: Invokes a function by name.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function invokeFunction(context: TurnContext, state: TState, name:
+        string): Promise<any>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current application turn context.
+        - id: state
+          type: TState
+          description: Current turn state.
+        - id: name
+          type: string
+          description: Name of the function to invoke.
+      return:
+        description: The result returned by the function for insertion into a prompt.
+        type: Promise&lt;any&gt;
+  - name: renderPrompt(TurnContext, TState, string | PromptTemplate)
+    uid: '@microsoft/teams-ai.PromptManager.renderPrompt'
+    package: '@microsoft/teams-ai'
+    summary: Renders a prompt template by name.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function renderPrompt(context: TurnContext, state: TState,
+        nameOrTemplate: string | PromptTemplate): Promise<PromptTemplate>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current application turn context.
+        - id: state
+          type: TState
+          description: Current turn state.
+        - id: nameOrTemplate
+          type: string | <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: >-
+            Name of the prompt template to render or a prompt template to
+            render.
+      return:
+        description: The rendered prompt template.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.PromptTemplate" />&gt;

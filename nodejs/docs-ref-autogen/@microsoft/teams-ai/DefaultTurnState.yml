@@ -1,0 +1,49 @@
+### YamlMime:TSType
+name: DefaultTurnState
+uid: '@microsoft/teams-ai.DefaultTurnState'
+package: '@microsoft/teams-ai'
+summary: Defines the default state scopes persisted by the `DefaultTurnStateManager`.
+fullName: DefaultTurnState<TConversationState, TUserState, TTempState>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: conversation
+    uid: '@microsoft/teams-ai.DefaultTurnState.conversation'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: conversation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'conversation: TurnStateEntry<TConversationState>'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/teams-ai.TurnStateEntry"
+          />&lt;TConversationState&gt;
+  - name: temp
+    uid: '@microsoft/teams-ai.DefaultTurnState.temp'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: temp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'temp: TurnStateEntry<TTempState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TurnStateEntry" />&lt;TTempState&gt;
+  - name: user
+    uid: '@microsoft/teams-ai.DefaultTurnState.user'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: user
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'user: TurnStateEntry<TUserState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TurnStateEntry" />&lt;TUserState&gt;
+extends: <xref uid="@microsoft/teams-ai.TurnState" />
