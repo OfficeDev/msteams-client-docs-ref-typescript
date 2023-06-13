@@ -1,0 +1,45 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.secondaryBrowser'
+name: secondaryBrowser
+type: module
+package: '@microsoft/teams-js'
+summary: |-
+  Namespace to power up the in-app browser experiences in the Host App.
+  For e.g., opening a URL in the Host App inside a browser
+previewState: beta
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.secondaryBrowser.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if secondaryBrowser capability is supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether secondaryBrowser is supported
+        type: boolean
+  - name: open(URL)
+    uid: '@microsoft/teams-js.secondaryBrowser.open'
+    package: '@microsoft/teams-js'
+    summary: Open a URL in the secondary browser aka in-app browser
+    remarks: >-
+      Any error that happens after navigation begins is handled by the platform
+      browser component and not returned from this function.
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function open(url: URL): Promise<void>'
+      parameters:
+        - id: url
+          type: URL
+          description: Url to open in the browser
+      return:
+        description: >-
+          Promise that successfully resolves if the URL  opens in the
+          secondaryBrowser
+
+          or throws an error [SdkError](xref:@microsoft/teams-js.SdkError)
+          incase of failure before starting navigation
+        type: Promise&lt;void&gt;

@@ -14,4 +14,3 @@ fields:
     summary: >-
       Video format used for encoding and decoding YUV color data in video
       streaming and storage applications.
-    numericValue: 0
