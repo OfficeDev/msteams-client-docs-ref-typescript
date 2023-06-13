@@ -27,30 +27,6 @@ constructors:
           type: 'IDataObjectProps&lt;{ Events: ILivePresenceEvents&lt;TData&gt; }&gt;'
           description: ''
 properties:
-  - name: clientId
-    uid: '@microsoft/live-share.LivePresence.clientId'
-    package: '@microsoft/live-share'
-    summary: Returns the client ID of the local connection.
-    fullName: clientId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: undefined | string clientId
-      return:
-        description: ''
-        type: undefined | string
-  - name: data
-    uid: '@microsoft/live-share.LivePresence.data'
-    package: '@microsoft/live-share'
-    summary: Optional data object shared by the user.
-    fullName: data
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: undefined | TData data
-      return:
-        description: ''
-        type: undefined | TData
   - name: disposed
     uid: '@microsoft/live-share.LivePresence.disposed'
     package: '@microsoft/live-share'
@@ -163,30 +139,22 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: isStarted
-    uid: '@microsoft/live-share.LivePresence.isStarted'
+  - name: localUser
+    uid: '@microsoft/live-share.LivePresence.localUser'
     package: '@microsoft/live-share'
-    summary: ''
-    fullName: isStarted
+    summary: |-
+      Local LivePresenceUser.
+      Can be undefined before LivePresence is initialized.
+    fullName: localUser
     remarks: ''
     isDeprecated: false
     syntax:
-      content: boolean isStarted
+      content: undefined | LivePresenceUser<TData> localUser
       return:
         description: ''
-        type: boolean
-  - name: state
-    uid: '@microsoft/live-share.LivePresence.state'
-    package: '@microsoft/live-share'
-    summary: The users current presence state.
-    fullName: state
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: PresenceState state
-      return:
-        description: ''
-        type: <xref uid="@microsoft/live-share.PresenceState" />
+        type: >-
+          undefined | <xref uid="@microsoft/live-share.LivePresenceUser"
+          />&lt;TData&gt;
   - name: TypeName
     uid: '@microsoft/live-share.LivePresence.TypeName'
     package: '@microsoft/live-share'
@@ -201,18 +169,6 @@ properties:
       return:
         description: ''
         type: '"@microsoft/live-share:LivePresence"'
-  - name: userId
-    uid: '@microsoft/live-share.LivePresence.userId'
-    package: '@microsoft/live-share'
-    summary: Returns the ID of the local user.
-    fullName: userId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: undefined | string userId
-      return:
-        description: ''
-        type: undefined | string
 inheritedProperties:
   - name: addListener
     uid: '@microsoft/live-share.LivePresence.addListener'

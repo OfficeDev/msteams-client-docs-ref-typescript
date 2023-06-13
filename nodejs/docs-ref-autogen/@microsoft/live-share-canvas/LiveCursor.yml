@@ -18,12 +18,12 @@ constructors:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new LiveCursor(clientId: string, userInfo?: IUserInfo)'
+      content: 'new LiveCursor(clientId: string, _userInfo?: IUserInfo)'
       parameters:
         - id: clientId
           type: string
           description: ''
-        - id: userInfo
+        - id: _userInfo
           type: <xref uid="@microsoft/live-share-canvas.IUserInfo" />
           description: ''
 properties:
@@ -74,10 +74,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'userInfo?: IUserInfo'
+      content: undefined | IUserInfo userInfo
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.IUserInfo" />
+        type: undefined | <xref uid="@microsoft/live-share-canvas.IUserInfo" />
 methods:
   - name: setPosition(IPoint)
     uid: '@microsoft/live-share-canvas.LiveCursor.setPosition'

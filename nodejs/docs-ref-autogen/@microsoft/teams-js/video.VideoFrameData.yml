@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: VideoFrameData
+uid: '@microsoft/teams-js.video.VideoFrameData'
+package: '@microsoft/teams-js'
+summary: >-
+  Video frame data extracted from the media stream. More properties may be added
+  in the future.
+fullName: VideoFrameData
+remarks: ''
+previewState: beta
+isDeprecated: false
+syntax: |
+  type VideoFrameData = { videoFrame: VideoFrame }

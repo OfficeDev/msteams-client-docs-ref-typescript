@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: RegisterForVideoFrameParameters
+uid: '@microsoft/teams-js.video.RegisterForVideoFrameParameters'
+package: '@microsoft/teams-js'
+summary: Callbacks and configuration supplied to the host to process the video frames.
+fullName: RegisterForVideoFrameParameters
+remarks: ''
+previewState: beta
+isDeprecated: false
+syntax: |
+  type RegisterForVideoFrameParameters = {
+    config: VideoFrameConfig
+    videoBufferHandler: VideoBufferHandler
+    videoFrameHandler: VideoFrameHandler
+  }

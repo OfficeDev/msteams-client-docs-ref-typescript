@@ -1,0 +1,26 @@
+### YamlMime:TSTypeAlias
+name: VideoFrameHandler
+uid: '@microsoft/teams-js.video.VideoFrameHandler'
+package: '@microsoft/teams-js'
+summary: >-
+  Video frame call back function definition.
+
+  The callback will be called on every frame when running on the supported host.
+
+  We require the frame rate of the video to be at least 22fps for 720p, thus the
+  callback should process a frame timely.
+
+  The video app should resolve the promise to notify a successfully processed
+  video frame.
+
+  The video app should reject the promise to notify a failure. When the failures
+  accumulate to a certain number, the host will see the app is "frozen" and ask
+  the user to close it or not.
+fullName: VideoFrameHandler
+remarks: ''
+previewState: beta
+isDeprecated: false
+syntax: |
+  type VideoFrameHandler = (
+    receivedVideoFrame: VideoFrameData
+  ) => Promise<VideoFrame>
