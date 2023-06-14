@@ -139,18 +139,6 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: isStarted
-    uid: '@microsoft/live-share.LiveEvent.isStarted'
-    package: '@microsoft/live-share'
-    summary: ''
-    fullName: isStarted
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: boolean isStarted
-      return:
-        description: ''
-        type: boolean
   - name: TypeName
     uid: '@microsoft/live-share.LiveEvent.TypeName'
     package: '@microsoft/live-share'

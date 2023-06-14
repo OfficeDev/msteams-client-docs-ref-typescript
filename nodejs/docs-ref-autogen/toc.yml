@@ -804,6 +804,9 @@
         - uid: '@microsoft/teams-js.search.SearchQueryHandler'
           name: SearchQueryHandler
           items: []
+    - uid: '@microsoft/teams-js.secondaryBrowser'
+      name: secondaryBrowser
+      items: []
     - uid: '@microsoft/teams-js.SecondaryId'
       name: SecondaryId
       items: []
@@ -876,20 +879,32 @@
         - uid: '@microsoft/teams-js.video.EffectFailureReason'
           name: EffectFailureReason
           items: []
+        - uid: '@microsoft/teams-js.video.RegisterForVideoFrameParameters'
+          name: RegisterForVideoFrameParameters
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoBufferData'
+          name: VideoBufferData
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoBufferHandler'
+          name: VideoBufferHandler
+          items: []
         - uid: '@microsoft/teams-js.video.VideoEffectCallback'
           name: VideoEffectCallback
           items: []
         - uid: '@microsoft/teams-js.video.VideoFrame'
           name: VideoFrame
           items: []
-        - uid: '@microsoft/teams-js.video.VideoFrameCallback'
-          name: VideoFrameCallback
-          items: []
         - uid: '@microsoft/teams-js.video.VideoFrameConfig'
           name: VideoFrameConfig
           items: []
+        - uid: '@microsoft/teams-js.video.VideoFrameData'
+          name: VideoFrameData
+          items: []
         - uid: '@microsoft/teams-js.video.VideoFrameFormat'
           name: VideoFrameFormat
+          items: []
+        - uid: '@microsoft/teams-js.video.VideoFrameHandler'
+          name: VideoFrameHandler
           items: []
     - uid: '@microsoft/teams-js.webStorage'
       name: webStorage

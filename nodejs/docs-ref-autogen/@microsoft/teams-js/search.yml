@@ -20,6 +20,18 @@ typeAliases:
 package: '@microsoft/teams-js'
 previewState: beta
 functions:
+  - name: closeSearch()
+    uid: '@microsoft/teams-js.search.closeSearch'
+    package: '@microsoft/teams-js'
+    summary: Clear the host M365 application's search box
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function closeSearch(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: isSupported()
     uid: '@microsoft/teams-js.search.isSupported'
     package: '@microsoft/teams-js'
