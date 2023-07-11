@@ -23,7 +23,7 @@ functions:
   - name: open(URL)
     uid: '@microsoft/teams-js.secondaryBrowser.open'
     package: '@microsoft/teams-js'
-    summary: Open a URL in the secondary browser aka in-app browser
+    summary: Open a URL in the secondary browser, aka in-app browser. The user will be redirected to an external browser on web and desktop
     remarks: >-
       Any error that happens after navigation begins is handled by the platform
       browser component and not returned from this function.
