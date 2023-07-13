@@ -547,4 +547,26 @@ methods:
       return:
         description: ''
         type: Element
+  - name: layout()
+    uid: '@microsoft/teamsfx-react.BaseDashboard.layout'
+    package: '@microsoft/teamsfx-react'
+    summary: Override this method to define the layout of the widget in the dashboard.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function layout(): Element | undefined'
+      return:
+        description: The layout of the widget in the dashboard.
+        type: Element | undefined
+  - name: styling()
+    uid: '@microsoft/teamsfx-react.BaseDashboard.styling'
+    package: '@microsoft/teamsfx-react'
+    summary: Override this method to customize the dashboard style.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function styling(): string'
+      return:
+        description: The className for customizing the dashboard style.
+        type: string
 extends: Component&lt;P, S & BaseDashboardState&gt;
