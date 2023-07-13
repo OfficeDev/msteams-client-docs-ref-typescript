@@ -35,5 +35,5 @@ functions:
           type: <xref uid="@microsoft/teams-js.call.StartCallParams" />
           description: Parameters for the call
       return:
-        description: If the call is accepted
+        description: always true if the host notifies of a successful call inititation
         type: Promise&lt;boolean&gt;

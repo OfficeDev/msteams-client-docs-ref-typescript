@@ -145,6 +145,7 @@ classes:
   - '@microsoft/teams-js.media.Media'
   - '@microsoft/teams-js.media.VideoController'
   - '@microsoft/teams-js.ChildAppWindow'
+  - '@microsoft/teams-js.LiveShareHost'
   - '@microsoft/teams-js.ParentAppWindow'
 functions:
   - name: enablePrintCapability()
