@@ -558,6 +558,12 @@
     - uid: '@microsoft/teams-js.IAppWindow'
       name: IAppWindow
       items: []
+    - uid: '@microsoft/teams-js.liveShare'
+      name: liveShare
+      items: []
+    - uid: '@microsoft/teams-js.LiveShareHost'
+      name: LiveShareHost
+      items: []
     - uid: '@microsoft/teams-js.LoadContext'
       name: LoadContext
       items: []

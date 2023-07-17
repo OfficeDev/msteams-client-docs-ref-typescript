@@ -1,0 +1,25 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.liveShare'
+name: liveShare
+type: module
+package: '@microsoft/teams-js'
+summary: >-
+  APIs involving Live Share, a framework for building real-time collaborative
+  apps.
+
+  For more information, visit https://aka.ms/teamsliveshare
+
+
+  See LiveShareHost
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.liveShare.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if the interactive capability is supported by the host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether the interactive capability is supported
+        type: boolean
