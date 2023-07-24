@@ -113,6 +113,29 @@ methods:
         type: >-
           Promise&lt;<xref
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />[]&gt;
+  - name: getPagedMembers(number, string)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.getPagedMembers
+    package: '@microsoft/teamsfx'
+    summary: Gets a pagined list of members from this bot installation.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPagedMembers(pageSize?: number, continuationToken?: string):
+        Promise<PagedData<Member_2>>
+      parameters:
+        - id: pageSize
+          type: number
+          description: Suggested number of entries on a page.
+        - id: continuationToken
+          type: string
+          description: A continuation token.
+      return:
+        description: An array of members from where the bot is installed.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teamsfx.PagedData" />&lt;<xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />&gt;&gt;
   - name: getTeamDetails()
     uid: >-
       @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.getTeamDetails
@@ -132,7 +155,8 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Get members from this bot installation.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: Use `getPagedMembers` instead.
     syntax:
       content: 'function members(): Promise<Member_2[]>'
       return:

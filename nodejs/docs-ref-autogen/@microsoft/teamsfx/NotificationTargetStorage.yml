@@ -7,7 +7,10 @@ summary: >-
   references.
 fullName: NotificationTargetStorage
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: |-
+  Use ConversationReferenceStore to customize the way
+  to persist bot notification connections instead.
 type: interface
 methods:
   - name: delete(string)

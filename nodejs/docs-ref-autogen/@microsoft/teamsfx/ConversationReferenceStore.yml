@@ -1,0 +1,81 @@
+### YamlMime:TSType
+name: ConversationReferenceStore
+uid: '@microsoft/teamsfx.ConversationReferenceStore'
+package: '@microsoft/teamsfx'
+summary: A store to persist notification target references.
+fullName: ConversationReferenceStore
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      add(string, Partial<ConversationReference>,
+      ConversationReferenceStoreAddOptions)
+    uid: '@microsoft/teamsfx.ConversationReferenceStore.add'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Add a conversation reference to the store. If overwrite, update existing
+      one, otherwise add when not exist.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function add(key: string, reference: Partial<ConversationReference>,
+        options: ConversationReferenceStoreAddOptions): Promise<boolean>
+      parameters:
+        - id: key
+          type: string
+          description: the key of the conversation reference.
+        - id: reference
+          type: Partial&lt;ConversationReference&gt;
+          description: the conversation reference to add.
+        - id: options
+          type: >-
+            <xref uid="@microsoft/teamsfx.ConversationReferenceStoreAddOptions"
+            />
+          description: the options to add the conversation reference.
+      return:
+        description: true if added or updated, false if not changed.
+        type: Promise&lt;boolean&gt;
+  - name: list(number, string)
+    uid: '@microsoft/teamsfx.ConversationReferenceStore.list'
+    package: '@microsoft/teamsfx'
+    summary: List stored conversation reference by page.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function list(pageSize?: number, continuationToken?: string):
+        Promise<PagedData<Partial<ConversationReference>>>
+      parameters:
+        - id: pageSize
+          type: number
+          description: the page size.
+        - id: continuationToken
+          type: string
+          description: the continuation token to get next page.
+      return:
+        description: a paged list of conversation references.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teamsfx.PagedData"
+          />&lt;Partial&lt;ConversationReference&gt;&gt;&gt;
+  - name: remove(string, Partial<ConversationReference>)
+    uid: '@microsoft/teamsfx.ConversationReferenceStore.remove'
+    package: '@microsoft/teamsfx'
+    summary: Remove a conversation reference from the store.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function remove(key: string, reference: Partial<ConversationReference>):
+        Promise<boolean>
+      parameters:
+        - id: key
+          type: string
+          description: the key of the conversation reference.
+        - id: reference
+          type: Partial&lt;ConversationReference&gt;
+          description: the conversation reference to remove.
+      return:
+        description: true if exist and removed, false if not changed.
+        type: Promise&lt;boolean&gt;
