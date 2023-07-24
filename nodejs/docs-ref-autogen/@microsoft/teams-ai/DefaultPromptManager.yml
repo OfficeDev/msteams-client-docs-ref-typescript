@@ -1,0 +1,166 @@
+### YamlMime:TSType
+name: DefaultPromptManager
+uid: '@microsoft/teams-ai.DefaultPromptManager'
+package: '@microsoft/teams-ai'
+summary: A filesystem based prompt manager.
+fullName: DefaultPromptManager<TState>
+remarks: >-
+  The default prompt manager uses the file system to define prompts that are
+  compatible with
+
+  Microsoft's Semantic Kernel SDK (see:
+  https://github.com/microsoft/semantic-kernel)
+
+
+  Each prompt is a separate folder under a root prompts folder. The folder
+  should contain 2 files:
+
+
+  - "config.json": contains the prompts configuration and is a serialized
+  instance of `PromptTemplateConfig`.
+
+  - "skprompt.txt": contains the text of the prompt and supports Semantic
+  Kernels prompt template syntax.
+
+
+  Prompts can be loaded and used by name and new dynamically defined prompt
+  templates can be
+
+  registered with the prompt manager.
+isDeprecated: false
+type: class
+constructors:
+  - name: DefaultPromptManager<TState>(string | DefaultPromptManagerOptions)
+    uid: '@microsoft/teams-ai.DefaultPromptManager.constructor'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new DefaultPromptManager(options: string | DefaultPromptManagerOptions)'
+      parameters:
+        - id: options
+          type: >-
+            string | <xref uid="@microsoft/teams-ai.DefaultPromptManagerOptions"
+            />
+          description: ''
+methods:
+  - name: >-
+      addFunction(string, (context: TurnContext, state: TState) => Promise<any>,
+      boolean)
+    uid: '@microsoft/teams-ai.DefaultPromptManager.addFunction'
+    package: '@microsoft/teams-ai'
+    summary: Adds a custom function <name> to the prompt manager.
+    remarks: >-
+      Functions can be used with a prompt template using a syntax of `{{name}}`.
+      Function
+
+      arguments are not currently supported.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addFunction(name: string, handler: (context: TurnContext,
+        state: TState) => Promise<any>, allowOverrides?: boolean):
+        DefaultPromptManager<TState>
+      parameters:
+        - id: name
+          type: string
+          description: The name of the function.
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;any&gt;'
+          description: Promise to return on function name match.
+        - id: allowOverrides
+          type: boolean
+          description: Whether to allow overriding an existing function.
+      return:
+        description: The prompt manager for chaining.
+        type: <xref uid="@microsoft/teams-ai.DefaultPromptManager" />&lt;TState&gt;
+  - name: addPromptTemplate(string, PromptTemplate)
+    uid: '@microsoft/teams-ai.DefaultPromptManager.addPromptTemplate'
+    package: '@microsoft/teams-ai'
+    summary: Adds a prompt template to the prompt manager.
+    remarks: >-
+      The template will be pre-parsed and cached for use when the template is
+      rendered by name.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addPromptTemplate(name: string, template: PromptTemplate):
+        DefaultPromptManager<TState>
+      parameters:
+        - id: name
+          type: string
+          description: Name of the prompt template.
+        - id: template
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt template to add.
+      return:
+        description: The prompt manager for chaining.
+        type: <xref uid="@microsoft/teams-ai.DefaultPromptManager" />&lt;TState&gt;
+  - name: invokeFunction(TurnContext, TState, string)
+    uid: '@microsoft/teams-ai.DefaultPromptManager.invokeFunction'
+    package: '@microsoft/teams-ai'
+    summary: Invokes a function by name.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function invokeFunction(context: TurnContext, state: TState, name:
+        string): Promise<any>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current application turn context.
+        - id: state
+          type: TState
+          description: Current turn state.
+        - id: name
+          type: string
+          description: Name of the function to invoke.
+      return:
+        description: The result returned by the function for insertion into a prompt.
+        type: Promise&lt;any&gt;
+  - name: loadPromptTemplate(string)
+    uid: '@microsoft/teams-ai.DefaultPromptManager.loadPromptTemplate'
+    package: '@microsoft/teams-ai'
+    summary: Loads a named prompt template from the filesystem.
+    remarks: >-
+      The template will be pre-parsed and cached for use when the template is
+      rendered by name.
+    isDeprecated: false
+    syntax:
+      content: 'function loadPromptTemplate(name: string): Promise<PromptTemplate>'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the template to load.
+      return:
+        description: The loaded and parsed prompt template.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.PromptTemplate" />&gt;
+  - name: renderPrompt(TurnContext, TState, string | PromptTemplate)
+    uid: '@microsoft/teams-ai.DefaultPromptManager.renderPrompt'
+    package: '@microsoft/teams-ai'
+    summary: Renders a prompt template by name.
+    remarks: >-
+      The prompt will be automatically loaded from disk if needed and cached for
+      future use.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function renderPrompt(context: TurnContext, state: TState,
+        nameOrTemplate: string | PromptTemplate): Promise<PromptTemplate>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current application turn context.
+        - id: state
+          type: TState
+          description: Current turn state.
+        - id: nameOrTemplate
+          type: string | <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: >-
+            Name of the prompt template to render or a prompt template to
+            render.
+      return:
+        description: The rendered prompt template.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.PromptTemplate" />&gt;

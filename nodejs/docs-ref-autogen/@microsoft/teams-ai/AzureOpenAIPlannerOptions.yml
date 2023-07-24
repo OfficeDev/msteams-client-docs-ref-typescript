@@ -1,0 +1,148 @@
+### YamlMime:TSType
+name: AzureOpenAIPlannerOptions
+uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions'
+package: '@microsoft/teams-ai'
+summary: Additional options needed to use the Azure OpenAI service.
+fullName: AzureOpenAIPlannerOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: apiVersion
+    uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions.apiVersion'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Which Azure API version to use. Defaults to latest.
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion?: string'
+      return:
+        description: ''
+        type: string
+  - name: endpoint
+    uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions.endpoint'
+    package: '@microsoft/teams-ai'
+    summary: Endpoint for your Azure OpenAI deployment.
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint: string'
+      return:
+        description: ''
+        type: string
+inheritedProperties:
+  - name: apiKey
+    uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions.apiKey'
+    package: '@microsoft/teams-ai'
+    summary: OpenAI API key.
+    fullName: apiKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiKey: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIPlannerOptions.apiKey](xref:@microsoft/teams-ai.OpenAIPlannerOptions.apiKey)
+  - name: defaultModel
+    uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions.defaultModel'
+    package: '@microsoft/teams-ai'
+    summary: The default model to use.
+    fullName: defaultModel
+    remarks: Prompts can override this model.
+    isDeprecated: false
+    syntax:
+      content: 'defaultModel: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIPlannerOptions.defaultModel](xref:@microsoft/teams-ai.OpenAIPlannerOptions.defaultModel)
+  - name: logRequests
+    uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions.logRequests'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. A flag indicating if the planner should log requests to the
+      console.
+    fullName: logRequests
+    remarks: >-
+      Both the prompt text and the completion response will be logged to the
+      console. For
+
+      chatCompletion calls the outgoing messages array will also be logged.
+
+      Defaults to false.
+    isDeprecated: false
+    syntax:
+      content: 'logRequests?: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIPlannerOptions.logRequests](xref:@microsoft/teams-ai.OpenAIPlannerOptions.logRequests)
+  - name: oneSayPerTurn
+    uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions.oneSayPerTurn'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. A flag indicating if the planner should only say one thing per
+      turn.
+    fullName: oneSayPerTurn
+    remarks: >-
+      The planner will attempt to combine multiple SAY commands into a single
+      SAY command when true.
+
+      Defaults to false.
+    isDeprecated: false
+    syntax:
+      content: 'oneSayPerTurn?: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIPlannerOptions.oneSayPerTurn](xref:@microsoft/teams-ai.OpenAIPlannerOptions.oneSayPerTurn)
+  - name: organization
+    uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions.organization'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI organization.
+    fullName: organization
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'organization?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIPlannerOptions.organization](xref:@microsoft/teams-ai.OpenAIPlannerOptions.organization)
+  - name: useSystemMessage
+    uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions.useSystemMessage'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. A flag indicating if the planner should use the 'system' role
+      when calling OpenAI's
+
+      chatCompletion API.
+    fullName: useSystemMessage
+    remarks: >-
+      The planner current uses the 'user' role by default as this tends to
+      generate more reliable
+
+      instruction following. Defaults to false.
+    isDeprecated: false
+    syntax:
+      content: 'useSystemMessage?: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIPlannerOptions.useSystemMessage](xref:@microsoft/teams-ai.OpenAIPlannerOptions.useSystemMessage)
+extends: <xref uid="@microsoft/teams-ai.OpenAIPlannerOptions" />

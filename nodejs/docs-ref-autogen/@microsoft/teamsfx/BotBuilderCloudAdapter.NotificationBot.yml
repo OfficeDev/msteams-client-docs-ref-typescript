@@ -33,6 +33,33 @@ constructors:
             />
           description: The initialize options
 methods:
+  - name: buildTeamsBotInstallation(Partial<ConversationReference>)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.buildTeamsBotInstallation
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Create a
+      [TeamsBotInstallation](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation)
+      instance with conversation reference.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function buildTeamsBotInstallation(conversationReference:
+        Partial<ConversationReference>): null | TeamsBotInstallation_2
+      parameters:
+        - id: conversationReference
+          type: Partial&lt;ConversationReference&gt;
+          description: The bound `ConversationReference`.
+      return:
+        description: >-
+          - The
+          [TeamsBotInstallation](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation)
+          instance or null.
+        type: >-
+          null | <xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
+          />
   - name: >-
       findAllChannels((channel: Channel_2, teamDetails: undefined | TeamDetails)
       => Promise<boolean>)
@@ -170,12 +197,40 @@ methods:
         type: >-
           Promise&lt;undefined | <xref
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />&gt;
+  - name: getPagedInstallations(number, string)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.getPagedInstallations
+    package: '@microsoft/teamsfx'
+    summary: Gets a pagined list of targets where the bot is installed.
+    remarks: The result is retrieving from the persisted storage.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPagedInstallations(pageSize?: number, continuationToken?:
+        string): Promise<PagedData<TeamsBotInstallation_2>>
+      parameters:
+        - id: pageSize
+          type: number
+          description: Suggested number of entries on a page.
+        - id: continuationToken
+          type: string
+          description: A continuation token.
+      return:
+        description: >-
+          An array of
+          [TeamsBotInstallation](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation)
+          with paged data and continuation token.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teamsfx.PagedData" />&lt;<xref
+          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
+          />&gt;&gt;
   - name: installations()
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.installations'
     package: '@microsoft/teamsfx'
     summary: Get all targets where the bot is installed.
     remarks: The result is retrieving from the persisted storage.
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: Use getPagedInstallations instead.
     syntax:
       content: 'function installations(): Promise<TeamsBotInstallation_2[]>'
       return:

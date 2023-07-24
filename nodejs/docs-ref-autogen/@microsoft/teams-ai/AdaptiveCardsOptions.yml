@@ -1,0 +1,29 @@
+### YamlMime:TSType
+name: AdaptiveCardsOptions
+uid: '@microsoft/teams-ai.AdaptiveCardsOptions'
+package: '@microsoft/teams-ai'
+summary: Options for AdaptiveCards class.
+fullName: AdaptiveCardsOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: actionSubmitFilter
+    uid: '@microsoft/teams-ai.AdaptiveCardsOptions.actionSubmitFilter'
+    package: '@microsoft/teams-ai'
+    summary: Data field used to identify the Action.Submit handler to trigger.
+    fullName: actionSubmitFilter
+    remarks: >-
+      When an Action.Submit is triggered, the field name specified here will be
+      used to determine
+
+      the handler to route the request to.
+
+
+      Defaults to a value of 'verb'.
+    isDeprecated: false
+    syntax:
+      content: 'actionSubmitFilter?: string'
+      return:
+        description: ''
+        type: string

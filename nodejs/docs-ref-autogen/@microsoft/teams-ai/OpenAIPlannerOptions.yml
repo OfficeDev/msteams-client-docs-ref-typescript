@@ -1,0 +1,116 @@
+### YamlMime:TSType
+name: OpenAIPlannerOptions
+uid: '@microsoft/teams-ai.OpenAIPlannerOptions'
+package: '@microsoft/teams-ai'
+summary: Options for the OpenAI based planner.
+fullName: OpenAIPlannerOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: apiKey
+    uid: '@microsoft/teams-ai.OpenAIPlannerOptions.apiKey'
+    package: '@microsoft/teams-ai'
+    summary: OpenAI API key.
+    fullName: apiKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiKey: string'
+      return:
+        description: ''
+        type: string
+  - name: defaultModel
+    uid: '@microsoft/teams-ai.OpenAIPlannerOptions.defaultModel'
+    package: '@microsoft/teams-ai'
+    summary: The default model to use.
+    fullName: defaultModel
+    remarks: Prompts can override this model.
+    isDeprecated: false
+    syntax:
+      content: 'defaultModel: string'
+      return:
+        description: ''
+        type: string
+  - name: endpoint
+    uid: '@microsoft/teams-ai.OpenAIPlannerOptions.endpoint'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI endpoint.
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: string'
+      return:
+        description: ''
+        type: string
+  - name: logRequests
+    uid: '@microsoft/teams-ai.OpenAIPlannerOptions.logRequests'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. A flag indicating if the planner should log requests to the
+      console.
+    fullName: logRequests
+    remarks: >-
+      Both the prompt text and the completion response will be logged to the
+      console. For
+
+      chatCompletion calls the outgoing messages array will also be logged.
+
+      Defaults to false.
+    isDeprecated: false
+    syntax:
+      content: 'logRequests?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: oneSayPerTurn
+    uid: '@microsoft/teams-ai.OpenAIPlannerOptions.oneSayPerTurn'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. A flag indicating if the planner should only say one thing per
+      turn.
+    fullName: oneSayPerTurn
+    remarks: >-
+      The planner will attempt to combine multiple SAY commands into a single
+      SAY command when true.
+
+      Defaults to false.
+    isDeprecated: false
+    syntax:
+      content: 'oneSayPerTurn?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: organization
+    uid: '@microsoft/teams-ai.OpenAIPlannerOptions.organization'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI organization.
+    fullName: organization
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'organization?: string'
+      return:
+        description: ''
+        type: string
+  - name: useSystemMessage
+    uid: '@microsoft/teams-ai.OpenAIPlannerOptions.useSystemMessage'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. A flag indicating if the planner should use the 'system' role
+      when calling OpenAI's
+
+      chatCompletion API.
+    fullName: useSystemMessage
+    remarks: >-
+      The planner current uses the 'user' role by default as this tends to
+      generate more reliable
+
+      instruction following. Defaults to false.
+    isDeprecated: false
+    syntax:
+      content: 'useSystemMessage?: boolean'
+      return:
+        description: ''
+        type: boolean

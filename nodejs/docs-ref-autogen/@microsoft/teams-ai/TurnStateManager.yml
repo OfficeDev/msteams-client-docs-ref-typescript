@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: TurnStateManager
+uid: '@microsoft/teams-ai.TurnStateManager'
+package: '@microsoft/teams-ai'
+summary: >-
+  Interface implemented by classes responsible for loading and saving an
+  applications turn state.
+fullName: TurnStateManager<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: loadState(undefined | Storage, TurnContext)
+    uid: '@microsoft/teams-ai.TurnStateManager.loadState'
+    package: '@microsoft/teams-ai'
+    summary: Loads all of the state scopes for the current turn.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function loadState(storage: undefined | Storage, context: TurnContext):
+        Promise<TState>
+      parameters:
+        - id: storage
+          type: undefined | Storage
+          description: Storage provider to load state scopes from.
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+      return:
+        description: The loaded state scopes.
+        type: Promise&lt;TState&gt;
+  - name: saveState(undefined | Storage, TurnContext, TState)
+    uid: '@microsoft/teams-ai.TurnStateManager.saveState'
+    package: '@microsoft/teams-ai'
+    summary: Saves all of the state scopes for the current turn.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function saveState(storage: undefined | Storage, context: TurnContext,
+        state: TState): Promise<void>
+      parameters:
+        - id: storage
+          type: undefined | Storage
+          description: Storage provider to save state scopes to.
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: state
+          type: TState
+          description: State scopes to save.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

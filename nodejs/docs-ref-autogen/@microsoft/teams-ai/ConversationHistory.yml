@@ -1,0 +1,219 @@
+### YamlMime:TSType
+name: ConversationHistory
+uid: '@microsoft/teams-ai.ConversationHistory'
+package: '@microsoft/teams-ai'
+summary: Utility class used to manage the persistance of conversation history.
+fullName: ConversationHistory
+remarks: ''
+isDeprecated: false
+type: class
+properties:
+  - name: StatePropertyName
+    uid: '@microsoft/teams-ai.ConversationHistory.StatePropertyName'
+    package: '@microsoft/teams-ai'
+    summary: Name of the conversation state property used to hold the list of entires.
+    fullName: StatePropertyName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static StatePropertyName: "__history__" = "__history__"'
+      return:
+        description: ''
+        type: '"__history__"'
+methods:
+  - name: addLine(TurnState, string, number)
+    uid: '@microsoft/teams-ai.ConversationHistory.addLine'
+    package: '@microsoft/teams-ai'
+    summary: Adds a new line of text to conversation history
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function addLine(state: TurnState, line: string, maxLines?:
+        number)
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+        - id: line
+          type: string
+          description: Line of text to add to history.
+        - id: maxLines
+          type: number
+          description: Optional. Maximum number of lines to store. Defaults to 10.
+  - name: appendToLastLine(TurnState, string)
+    uid: '@microsoft/teams-ai.ConversationHistory.appendToLastLine'
+    package: '@microsoft/teams-ai'
+    summary: Appends additional text to the last line of conversation history.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function appendToLastLine(state: TurnState, text: string)'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+        - id: text
+          type: string
+          description: Text to add to the last line.
+  - name: clear(TurnState)
+    uid: '@microsoft/teams-ai.ConversationHistory.clear'
+    package: '@microsoft/teams-ai'
+    summary: Clears all conversation history for the current conversation.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function clear(state: TurnState)'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+  - name: getLastLine(TurnState)
+    uid: '@microsoft/teams-ai.ConversationHistory.getLastLine'
+    package: '@microsoft/teams-ai'
+    summary: Returns the last line of history.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function getLastLine(state: TurnState): string'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+      return:
+        description: The last line of history or an empty string.
+        type: string
+  - name: getLastSay(TurnState)
+    uid: '@microsoft/teams-ai.ConversationHistory.getLastSay'
+    package: '@microsoft/teams-ai'
+    summary: Searches the history to find the last SAY response from the assistant.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function getLastSay(state: TurnState): string'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+      return:
+        description: Last thing said by the assistant. Defaults to an empty string.
+        type: string
+  - name: hasMoreLines(TurnState)
+    uid: '@microsoft/teams-ai.ConversationHistory.hasMoreLines'
+    package: '@microsoft/teams-ai'
+    summary: Checks to see if one or more lines of history has persisted.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function hasMoreLines(state: TurnState): boolean'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+      return:
+        description: True if there are 1 or more lines of history.
+        type: boolean
+  - name: removeLastLine(TurnState)
+    uid: '@microsoft/teams-ai.ConversationHistory.removeLastLine'
+    package: '@microsoft/teams-ai'
+    summary: Removes the last line from the conversation history.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function removeLastLine(state: TurnState): undefined | string'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+      return:
+        description: The removed line or undefined.
+        type: undefined | string
+  - name: replaceLastLine(TurnState, string)
+    uid: '@microsoft/teams-ai.ConversationHistory.replaceLastLine'
+    package: '@microsoft/teams-ai'
+    summary: Replaces the last line of history with a new line.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function replaceLastLine(state: TurnState, line: string)'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+        - id: line
+          type: string
+          description: New line of history.
+  - name: replaceLastSay(TurnState, string, string)
+    uid: '@microsoft/teams-ai.ConversationHistory.replaceLastSay'
+    package: '@microsoft/teams-ai'
+    summary: Replaces the last SAY with a new response.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function replaceLastSay(state: TurnState, newResponse: string,
+        assistantPrefix?: string)
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Applications turn state.
+        - id: newResponse
+          type: string
+          description: New response from the assistant.
+        - id: assistantPrefix
+          type: string
+          description: >-
+            Prefix for when a new line needs to be inserted. Defaults to
+            'Assistant:'.
+  - name: toArray(TurnState, number)
+    uid: '@microsoft/teams-ai.ConversationHistory.toArray'
+    package: '@microsoft/teams-ai'
+    summary: Returns the current conversation history as an array of lines.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function toArray(state: TurnState, maxTokens?: number): string[]'
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: The Application's turn state.
+        - id: maxTokens
+          type: number
+          description: >-
+            Optional. Maximum length of the text to include. Defaults to 1000
+            tokens.
+      return:
+        description: The most recent lines of conversation history as an array.
+        type: string[]
+  - name: toString(TurnState, number, string)
+    uid: '@microsoft/teams-ai.ConversationHistory.toString'
+    package: '@microsoft/teams-ai'
+    summary: Returns the current conversation history as a string of text.
+    remarks: >-
+      The length of the returned text is gated by `maxCharacterLength` and only
+      whole lines of
+
+      history entries will be returned. That means that if the length of the
+      most recent history
+
+      entry is greater then `maxCharacterLength`, no text will be returned.
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function toString(state: TurnState, maxTokens?: number,
+        lineSeparator?: string): string
+      parameters:
+        - id: state
+          type: <xref uid="@microsoft/teams-ai.TurnState" />
+          description: Application's turn state.
+        - id: maxTokens
+          type: number
+          description: >-
+            Optional. Maximum length of the text returned. Defaults to 1000
+            tokens.
+        - id: lineSeparator
+          type: string
+          description: Optional. Separator used between lines. Defaults to '\n'.
+      return:
+        description: The most recent lines of conversation history as a text string.
+        type: string

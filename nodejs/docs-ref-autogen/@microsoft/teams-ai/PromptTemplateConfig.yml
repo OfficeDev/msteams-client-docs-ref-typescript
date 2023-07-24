@@ -1,0 +1,72 @@
+### YamlMime:TSType
+name: PromptTemplateConfig
+uid: '@microsoft/teams-ai.PromptTemplateConfig'
+package: '@microsoft/teams-ai'
+summary: Serialized prompt template configuration.
+fullName: PromptTemplateConfig
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: completion
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.completion'
+    package: '@microsoft/teams-ai'
+    summary: Completion settings for the prompt.
+    fullName: completion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'completion: CompletionConfig'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.CompletionConfig" />
+  - name: default_backends
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.default_backends'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Array of backends (models) to use for the prompt.
+    fullName: default_backends
+    remarks: >-
+      Passing the name of a model to use here will override the default model
+      used by a planner.
+    isDeprecated: false
+    syntax:
+      content: 'default_backends?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: description
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.description'
+    package: '@microsoft/teams-ai'
+    summary: Description of the prompts purpose.
+    fullName: description
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'description: string'
+      return:
+        description: ''
+        type: string
+  - name: schema
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.schema'
+    package: '@microsoft/teams-ai'
+    summary: The schema version of the prompt template. Should always be '1'.
+    fullName: schema
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'schema: number'
+      return:
+        description: ''
+        type: number
+  - name: type
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.type'
+    package: '@microsoft/teams-ai'
+    summary: Type of prompt template. Should always be 'completion'.
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: "completion"'
+      return:
+        description: ''
+        type: '"completion"'

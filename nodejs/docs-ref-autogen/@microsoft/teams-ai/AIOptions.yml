@@ -1,0 +1,85 @@
+### YamlMime:TSType
+name: AIOptions
+uid: '@microsoft/teams-ai.AIOptions'
+package: '@microsoft/teams-ai'
+summary: Options for configuring the AI system.
+fullName: AIOptions<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: history
+    uid: '@microsoft/teams-ai.AIOptions.history'
+    package: '@microsoft/teams-ai'
+    summary: Optional. The history options to use for the AI system.
+    fullName: history
+    remarks: >-
+      Defaults to tracking history with a maximum of 3 turns and 1000 tokens per
+      turn.
+    isDeprecated: false
+    syntax:
+      content: 'history?: Partial<AIHistoryOptions>'
+      return:
+        description: ''
+        type: Partial&lt;<xref uid="@microsoft/teams-ai.AIHistoryOptions" />&gt;
+  - name: moderator
+    uid: '@microsoft/teams-ai.AIOptions.moderator'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. The moderator to use for moderating input passed to the model
+      and the output
+
+      returned by the model.
+    fullName: moderator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'moderator?: Moderator<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Moderator" />&lt;TState&gt;
+  - name: planner
+    uid: '@microsoft/teams-ai.AIOptions.planner'
+    package: '@microsoft/teams-ai'
+    summary: The planner to use for generating plans.
+    fullName: planner
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'planner: Planner<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Planner" />&lt;TState&gt;
+  - name: prompt
+    uid: '@microsoft/teams-ai.AIOptions.prompt'
+    package: '@microsoft/teams-ai'
+    summary: Optional. The prompt to use for the current turn.
+    fullName: prompt
+    remarks: >-
+      This allows for the use of the AI system in a free standing mode. An
+      exception will be
+
+      thrown if the AI system is routed to by the Application object and a
+      prompt has not been
+
+      configured.
+    isDeprecated: false
+    syntax:
+      content: 'prompt?: string | PromptTemplate | PromptSelector<TState>'
+      return:
+        description: ''
+        type: >-
+          string | <xref uid="@microsoft/teams-ai.PromptTemplate" /> | <xref
+          uid="@microsoft/teams-ai.PromptSelector" />&lt;TState&gt;
+  - name: promptManager
+    uid: '@microsoft/teams-ai.AIOptions.promptManager'
+    package: '@microsoft/teams-ai'
+    summary: The prompt manager to use for generating prompts.
+    fullName: promptManager
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'promptManager: PromptManager<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />&lt;TState&gt;

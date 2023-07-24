@@ -1,0 +1,22 @@
+### YamlMime:TSType
+name: ConversationReferenceStoreAddOptions
+uid: '@microsoft/teamsfx.ConversationReferenceStoreAddOptions'
+package: '@microsoft/teamsfx'
+summary: Options to add a conversation reference to the store.
+fullName: ConversationReferenceStoreAddOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: overwrite
+    uid: '@microsoft/teamsfx.ConversationReferenceStoreAddOptions.overwrite'
+    package: '@microsoft/teamsfx'
+    summary: Whether to overwrite the existing conversation reference.
+    fullName: overwrite
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'overwrite?: boolean'
+      return:
+        description: ''
+        type: boolean

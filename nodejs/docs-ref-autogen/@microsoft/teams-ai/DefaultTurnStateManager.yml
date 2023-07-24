@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: DefaultTurnStateManager
+uid: '@microsoft/teams-ai.DefaultTurnStateManager'
+package: '@microsoft/teams-ai'
+summary: Default turn state manager implementation.
+fullName: DefaultTurnStateManager<TConversationState, TUserState, TTempState>
+remarks: ''
+isDeprecated: false
+type: class
+methods:
+  - name: loadState(Storage, TurnContext)
+    uid: '@microsoft/teams-ai.DefaultTurnStateManager.loadState'
+    package: '@microsoft/teams-ai'
+    summary: Loads all of the state scopes for the current turn.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function loadState(storage: Storage, context: TurnContext):
+        Promise<DefaultTurnState<TConversationState, TUserState, TTempState>>
+      parameters:
+        - id: storage
+          type: Storage
+          description: Storage provider to load state scopes from.
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+      return:
+        description: The loaded state scopes.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.DefaultTurnState"
+          />&lt;TConversationState, TUserState, TTempState&gt;&gt;
+  - name: >-
+      saveState(Storage, TurnContext, DefaultTurnState<TConversationState,
+      TUserState, TTempState>)
+    uid: '@microsoft/teams-ai.DefaultTurnStateManager.saveState'
+    package: '@microsoft/teams-ai'
+    summary: Saves all of the state scopes for the current turn.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function saveState(storage: Storage, context: TurnContext, state:
+        DefaultTurnState<TConversationState, TUserState, TTempState>):
+        Promise<void>
+      parameters:
+        - id: storage
+          type: Storage
+          description: Storage provider to save state scopes to.
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: state
+          type: >-
+            <xref uid="@microsoft/teams-ai.DefaultTurnState"
+            />&lt;TConversationState, TUserState, TTempState&gt;
+          description: State scopes to save.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;

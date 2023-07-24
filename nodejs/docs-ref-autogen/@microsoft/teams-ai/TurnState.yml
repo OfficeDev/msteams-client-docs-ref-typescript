@@ -1,0 +1,9 @@
+### YamlMime:TSType
+name: TurnState
+uid: '@microsoft/teams-ai.TurnState'
+package: '@microsoft/teams-ai'
+summary: Base interface defining a collection of turn state scopes.
+fullName: TurnState
+remarks: ''
+isDeprecated: false
+type: interface

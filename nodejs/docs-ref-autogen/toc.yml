@@ -340,6 +340,169 @@
     - uid: '@microsoft/live-share-media.VolumeManager'
       name: VolumeManager
       items: []
+- name: '@microsoft/teams-ai'
+  items:
+    - name: Overview
+      uid: '@microsoft/teams-ai'
+    - uid: '@microsoft/teams-ai.AdaptiveCard'
+      name: AdaptiveCard
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCards'
+      name: AdaptiveCards
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCardSearchResult'
+      name: AdaptiveCardSearchResult
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCardsOptions'
+      name: AdaptiveCardsOptions
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCardsSearchParams'
+      name: AdaptiveCardsSearchParams
+      items: []
+    - uid: '@microsoft/teams-ai.AI'
+      name: AI
+      items: []
+    - uid: '@microsoft/teams-ai.AIHistoryOptions'
+      name: AIHistoryOptions
+      items: []
+    - uid: '@microsoft/teams-ai.AIOptions'
+      name: AIOptions
+      items: []
+    - uid: '@microsoft/teams-ai.Application'
+      name: Application
+      items: []
+    - uid: '@microsoft/teams-ai.ApplicationOptions'
+      name: ApplicationOptions
+      items: []
+    - uid: '@microsoft/teams-ai.Authentication'
+      name: Authentication
+      items: []
+    - uid: '@microsoft/teams-ai.AzureOpenAIPlanner'
+      name: AzureOpenAIPlanner
+      items: []
+    - uid: '@microsoft/teams-ai.AzureOpenAIPlannerOptions'
+      name: AzureOpenAIPlannerOptions
+      items: []
+    - uid: '@microsoft/teams-ai.CompletionConfig'
+      name: CompletionConfig
+      items: []
+    - uid: '@microsoft/teams-ai.ConfiguredAIOptions'
+      name: ConfiguredAIOptions
+      items: []
+    - uid: '@microsoft/teams-ai.ConversationHistory'
+      name: ConversationHistory
+      items: []
+    - uid: '@microsoft/teams-ai.ConversationUpdateEvents'
+      name: ConversationUpdateEvents
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultConversationState'
+      name: DefaultConversationState
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultModerator'
+      name: DefaultModerator
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultPromptManager'
+      name: DefaultPromptManager
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultPromptManagerOptions'
+      name: DefaultPromptManagerOptions
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultTempState'
+      name: DefaultTempState
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultTurnState'
+      name: DefaultTurnState
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultTurnStateManager'
+      name: DefaultTurnStateManager
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultUserState'
+      name: DefaultUserState
+      items: []
+    - uid: '@microsoft/teams-ai.MessageExtensions'
+      name: MessageExtensions
+      items: []
+    - uid: '@microsoft/teams-ai.MessageReactionEvents'
+      name: MessageReactionEvents
+      items: []
+    - uid: '@microsoft/teams-ai.Moderator'
+      name: Moderator
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIModerator'
+      name: OpenAIModerator
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIModeratorOptions'
+      name: OpenAIModeratorOptions
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIPlanner'
+      name: OpenAIPlanner
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIPlannerOptions'
+      name: OpenAIPlannerOptions
+      items: []
+    - uid: '@microsoft/teams-ai.Plan'
+      name: Plan
+      items: []
+    - uid: '@microsoft/teams-ai.Planner'
+      name: Planner
+      items: []
+    - uid: '@microsoft/teams-ai.PredictedCommand'
+      name: PredictedCommand
+      items: []
+    - uid: '@microsoft/teams-ai.PredictedDoCommand'
+      name: PredictedDoCommand
+      items: []
+    - uid: '@microsoft/teams-ai.PredictedDoCommandAndHandler'
+      name: PredictedDoCommandAndHandler
+      items: []
+    - uid: '@microsoft/teams-ai.PredictedSayCommand'
+      name: PredictedSayCommand
+      items: []
+    - uid: '@microsoft/teams-ai.PromptManager'
+      name: PromptManager
+      items: []
+    - uid: '@microsoft/teams-ai.PromptSelector'
+      name: PromptSelector
+      items: []
+    - uid: '@microsoft/teams-ai.PromptTemplate'
+      name: PromptTemplate
+      items: []
+    - uid: '@microsoft/teams-ai.PromptTemplateConfig'
+      name: PromptTemplateConfig
+      items: []
+    - uid: '@microsoft/teams-ai.Query'
+      name: Query
+      items: []
+    - uid: '@microsoft/teams-ai.ResponseParser'
+      name: ResponseParser
+      items: []
+    - uid: '@microsoft/teams-ai.RouteHandler'
+      name: RouteHandler
+      items: []
+    - uid: '@microsoft/teams-ai.RouteSelector'
+      name: RouteSelector
+      items: []
+    - uid: '@microsoft/teams-ai.TaskModules'
+      name: TaskModules
+      items: []
+    - uid: '@microsoft/teams-ai.TaskModulesOptions'
+      name: TaskModulesOptions
+      items: []
+    - uid: '@microsoft/teams-ai.TurnEvents'
+      name: TurnEvents
+      items: []
+    - uid: '@microsoft/teams-ai.TurnState'
+      name: TurnState
+      items: []
+    - uid: '@microsoft/teams-ai.TurnStateEntry'
+      name: TurnStateEntry
+      items: []
+    - uid: '@microsoft/teams-ai.TurnStateManager'
+      name: TurnStateManager
+      items: []
+    - uid: '@microsoft/teams-ai.TurnStateProperty'
+      name: TurnStateProperty
+      items: []
 - name: '@microsoft/teams-js'
   items:
     - name: Overview
@@ -1025,6 +1188,12 @@
     - uid: '@microsoft/teamsfx.ConversationOptions'
       name: ConversationOptions
       items: []
+    - uid: '@microsoft/teamsfx.ConversationReferenceStore'
+      name: ConversationReferenceStore
+      items: []
+    - uid: '@microsoft/teamsfx.ConversationReferenceStoreAddOptions'
+      name: ConversationReferenceStoreAddOptions
+      items: []
     - uid: '@microsoft/teamsfx.ErrorCode'
       name: ErrorCode
       items: []
@@ -1084,6 +1253,9 @@
       items: []
     - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
       name: OnBehalfOfUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.PagedData'
+      name: PagedData
       items: []
     - uid: '@microsoft/teamsfx.SearchScope'
       name: SearchScope

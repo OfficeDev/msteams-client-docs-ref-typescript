@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: AdaptiveCardsSearchParams
+uid: '@microsoft/teams-ai.AdaptiveCardsSearchParams'
+package: '@microsoft/teams-ai'
+summary: Parameters passed to AdaptiveCards.search() handler.
+fullName: AdaptiveCardsSearchParams
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: dataset
+    uid: '@microsoft/teams-ai.AdaptiveCardsSearchParams.dataset'
+    package: '@microsoft/teams-ai'
+    summary: The dataset to search.
+    fullName: dataset
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'dataset: string'
+      return:
+        description: ''
+        type: string
+  - name: queryText
+    uid: '@microsoft/teams-ai.AdaptiveCardsSearchParams.queryText'
+    package: '@microsoft/teams-ai'
+    summary: The query text.
+    fullName: queryText
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'queryText: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,26 @@
+### YamlMime:TSTypeAlias
+name: TurnEvents
+uid: '@microsoft/teams-ai.TurnEvents'
+package: '@microsoft/teams-ai'
+summary: Turn event types.
+fullName: TurnEvents
+remarks: >-
+  The `beforeTurn` event is triggered before the turn is processed. This allows
+  for the turn state to be
+
+  modified before the turn is processed. Returning false from the event handler
+  will prevent the turn from
+
+  being processed.
+
+
+  The `afterTurn` event is triggered after the turn is processed. This allows
+  for the turn state to be
+
+  modified or inspected after the turn is processed. Returning false from the
+  event handler will prevent
+
+  the turn state from being saved.
+isDeprecated: false
+syntax: |
+  type TurnEvents = "beforeTurn" | "afterTurn"
