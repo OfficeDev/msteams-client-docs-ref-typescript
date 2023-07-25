@@ -1025,6 +1025,12 @@
     - uid: '@microsoft/teamsfx.ConversationOptions'
       name: ConversationOptions
       items: []
+    - uid: '@microsoft/teamsfx.ConversationReferenceStore'
+      name: ConversationReferenceStore
+      items: []
+    - uid: '@microsoft/teamsfx.ConversationReferenceStoreAddOptions'
+      name: ConversationReferenceStoreAddOptions
+      items: []
     - uid: '@microsoft/teamsfx.ErrorCode'
       name: ErrorCode
       items: []
@@ -1084,6 +1090,9 @@
       items: []
     - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
       name: OnBehalfOfUserCredential
+      items: []
+    - uid: '@microsoft/teamsfx.PagedData'
+      name: PagedData
       items: []
     - uid: '@microsoft/teamsfx.SearchScope'
       name: SearchScope

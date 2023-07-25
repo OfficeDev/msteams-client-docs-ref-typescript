@@ -536,6 +536,17 @@ methods:
     isDeprecated: false
     syntax:
       content: function componentWillUnmount()
+  - name: layout()
+    uid: '@microsoft/teamsfx-react.BaseDashboard.layout'
+    package: '@microsoft/teamsfx-react'
+    summary: Override this method to define the layout of the widget in the dashboard.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function layout(): undefined | Element'
+      return:
+        description: The layout of the widget in the dashboard.
+        type: undefined | Element
   - name: render()
     uid: '@microsoft/teamsfx-react.BaseDashboard.render'
     package: '@microsoft/teamsfx-react'
@@ -547,17 +558,6 @@ methods:
       return:
         description: ''
         type: Element
-  - name: layout()
-    uid: '@microsoft/teamsfx-react.BaseDashboard.layout'
-    package: '@microsoft/teamsfx-react'
-    summary: Override this method to define the layout of the widget in the dashboard.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function layout(): Element | undefined'
-      return:
-        description: The layout of the widget in the dashboard.
-        type: Element | undefined
   - name: styling()
     uid: '@microsoft/teamsfx-react.BaseDashboard.styling'
     package: '@microsoft/teamsfx-react'

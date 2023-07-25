@@ -17,7 +17,6 @@ functions:
     package: '@microsoft/teamsfx-react'
     summary: Helper function to fetch data with status and error.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
@@ -40,7 +39,6 @@ functions:
     package: '@microsoft/teamsfx-react'
     summary: Helper function to call Microsoft Graph API with authentication.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
@@ -65,7 +63,6 @@ functions:
     package: '@microsoft/teamsfx-react'
     summary: Helper function to call Microsoft Graph API with authentication.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
@@ -124,7 +121,6 @@ functions:
     package: '@microsoft/teamsfx-react'
     summary: Initialize TeamsFx SDK with customized configuration.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
@@ -142,7 +138,6 @@ functions:
     package: '@microsoft/teamsfx-react'
     summary: Initialize TeamsFx SDK with customized configuration.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
