@@ -524,6 +524,26 @@ inheritedMethods:
           description: ''
     inheritanceDescription: <b>Inherited From</b> Component.UNSAFE_componentWillUpdate
 methods:
+  - name: body()
+    uid: '@microsoft/teamsfx-react.BaseWidget.body'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      The purpose of this method is to provide a way for you to add custom body
+      content to the widget.
+
+      By overriding this method, you can add additional functionality or styling
+      to the widget's body.
+
+      If the method is not overridden, the widget will return undefined as the
+      default value for the body, indicating that no custom body content has
+      been defined.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function body(): undefined | Element'
+      return:
+        description: An optional JSX.Element representing the body of the widget.
+        type: undefined | Element
   - name: componentDidMount()
     uid: '@microsoft/teamsfx-react.BaseWidget.componentDidMount'
     package: '@microsoft/teamsfx-react'
@@ -538,6 +558,76 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+  - name: footer()
+    uid: '@microsoft/teamsfx-react.BaseWidget.footer'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      The purpose of this method is to provide a way for you to add custom
+      footer content to the widget.
+
+      By overriding this method, you can add additional functionality or styling
+      to the widget's footer.
+
+      If the method is not overridden, the widget will return undefined as the
+      default value for the footer, indicating that no custom footer content has
+      been defined.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function footer(): undefined | Element'
+      return:
+        description: An optional JSX.Element representing the footer of the widget.
+        type: undefined | Element
+  - name: getData()
+    uid: '@microsoft/teamsfx-react.BaseWidget.getData'
+    package: '@microsoft/teamsfx-react'
+    summary: Get data required by the widget
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getData(): Promise<S>'
+      return:
+        description: Data for the widget
+        type: Promise&lt;S&gt;
+  - name: header()
+    uid: '@microsoft/teamsfx-react.BaseWidget.header'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      The purpose of this method is to provide a way for you to add custom
+      header content to the widget.
+
+      By overriding this method, you can add additional functionality or styling
+      to the widget's header.
+
+      If the method is not overridden, the widget will return undefined as the
+      default value for the header, indicating that no custom header content has
+      been defined.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function header(): undefined | Element'
+      return:
+        description: An optional JSX.Element representing the header of the widget.
+        type: undefined | Element
+  - name: loading()
+    uid: '@microsoft/teamsfx-react.BaseWidget.loading'
+    package: '@microsoft/teamsfx-react'
+    summary: >-
+      This method is typically called when the widget is in the process of
+      fetching data.
+
+      The `undefined` return value is used to indicate that no loading indicator
+      is required.
+
+      If a loading indicator is required, the method can return a `JSX.Element`
+      containing the necessary components to render the loading indicator.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function loading(): undefined | Element'
+      return:
+        description: A JSX element or `undefined` if no loading indicator is required.
+        type: undefined | Element
   - name: render()
     uid: '@microsoft/teamsfx-react.BaseWidget.render'
     package: '@microsoft/teamsfx-react'
@@ -549,89 +639,23 @@ methods:
       return:
         description: ''
         type: Element
-  - name: getData()
-    uid: '@microsoft/teamsfx-react.BaseWidget.getData'
-    package: '@microsoft/teamsfx-react'
-    summary: Get data required by the widget.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function getData(): Promise<S>'
-      return:
-        description: Data for the widget.
-        type: Promise&lt;S&gt;
-  - name: header()
-    uid: '@microsoft/teamsfx-react.BaseWidget.header'
-    package: '@microsoft/teamsfx-react'
-    summary: >-
-      The purpose of this method is to provide a way for you to add custom header content to the widget. 
-      By overriding this method, you can add additional functionality or styling to the widget's header. 
-      If the method is not overridden, the widget will return undefined as the default value for the header, 
-      indicating that no custom header content has been defined.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function header(): Element | undefined'
-      return:
-        description: An optional Element representing the header of the widget.
-        type: Element | undefined;
-  - name: body()
-    uid: '@microsoft/teamsfx-react.BaseWidget.body'
-    package: '@microsoft/teamsfx-react'
-    summary: >-
-      The purpose of this method is to provide a way for you to add custom body content to the widget.
-      By overriding this method, you can add additional functionality or styling to the widget's body.
-      If the method is not overridden, the widget will return undefined as the default value for the body, 
-      indicating that no custom body content has been defined.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function body(): Element | undefined'
-      return:
-        description: An optional Element representing the header of the widget.
-        type: Element | undefined;
-  - name: footer()
-    uid: '@microsoft/teamsfx-react.BaseWidget.footer'
-    package: '@microsoft/teamsfx-react'
-    summary: >-
-      The purpose of this method is to provide a way for you to add custom footer content to the widget.
-      By overriding this method, you can add additional functionality or styling to the widget's footer.
-      If the method is not overridden, the widget will return undefined as the default value for the footer, 
-      indicating that no custom footer content has been defined.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function footer(): Element | undefined'
-      return:
-        description: An optional Element representing the footer of the widget.
-        type: Element | undefined;
-  - name: loading()
-    uid: '@microsoft/teamsfx-react.BaseWidget.loading'
-    package: '@microsoft/teamsfx-react'
-    summary: >-
-      This method is typically called when the widget is in the process of fetching data.
-      The undefined return value is used to indicate that no loading indicator is required.
-      If a loading indicator is required, the method can return a Element
-      containing the necessary components to render the loading indicator.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function loading(): Element | undefined'
-      return:
-        description: A Element or undefined if no loading indicator is required.
-        type: Element | undefined;
   - name: styling()
     uid: '@microsoft/teamsfx-react.BaseWidget.styling'
     package: '@microsoft/teamsfx-react'
     summary: >-
-      Override this method to returns an object that defines the class names for the different parts of the widget.
-      The returned object conforms to the IWidgetClassNames interface 
-      which defines the possible keys and values for the class names.
+      Override this method to returns an object that defines the class names for
+      the different parts of the widget.
+
+      The returned object conforms to the
+      [IWidgetClassNames](xref:@microsoft/teamsfx-react.IWidgetClassNames)
+      interface which defines the possible keys and values for the class names.
     remarks: ''
     isDeprecated: false
     syntax:
       content: 'function styling(): IWidgetClassNames'
       return:
-        description: An object that defines the class names for the different parts of the widget.
+        description: >-
+          An object that defines the class names for the different parts of the
+          widget.
         type: <xref uid="@microsoft/teamsfx-react.IWidgetClassNames" />
 extends: Component&lt;P, S & BaseWidgetState&gt;

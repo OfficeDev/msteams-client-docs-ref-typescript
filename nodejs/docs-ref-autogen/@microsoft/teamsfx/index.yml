@@ -45,12 +45,15 @@ interfaces:
   - '@microsoft/teamsfx.CommandMessage'
   - '@microsoft/teamsfx.CommandOptions'
   - '@microsoft/teamsfx.ConversationOptions'
+  - '@microsoft/teamsfx.ConversationReferenceStore'
+  - '@microsoft/teamsfx.ConversationReferenceStoreAddOptions'
   - '@microsoft/teamsfx.GetTeamsUserTokenOptions'
   - '@microsoft/teamsfx.Logger'
   - '@microsoft/teamsfx.MessageExtensionTokenResponse'
   - '@microsoft/teamsfx.NotificationOptions'
   - '@microsoft/teamsfx.NotificationTarget'
   - '@microsoft/teamsfx.NotificationTargetStorage'
+  - '@microsoft/teamsfx.PagedData'
   - '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
   - '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
   - '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler'
@@ -135,7 +138,7 @@ functions:
       };
       const prompt = new TeamsBotSsoPrompt(dialogId, {
          config: config
-         scopes: ["User.Read"],
+         scopes: '["User.Read"],
       });
       this.addDialog(prompt);
 
