@@ -49,6 +49,21 @@ inheritedProperties:
         description: ''
         type: string
     inheritanceDescription: <b>Inherited From</b> GetTokenOptions.claims
+  - name: enableCae
+    uid: '@microsoft/teamsfx.GetTeamsUserTokenOptions.enableCae'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Indicates whether to enable the Continuous Access Evaluation
+      authentication flow
+    fullName: enableCae
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enableCae?: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: <b>Inherited From</b> GetTokenOptions.enableCae
   - name: requestOptions
     uid: '@microsoft/teamsfx.GetTeamsUserTokenOptions.requestOptions'
     package: '@microsoft/teamsfx'

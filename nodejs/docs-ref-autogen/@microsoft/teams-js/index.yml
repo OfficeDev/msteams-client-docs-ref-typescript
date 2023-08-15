@@ -18,6 +18,7 @@ interfaces:
   - '@microsoft/teams-js.app.TenantInfo'
   - '@microsoft/teams-js.app.UserInfo'
   - '@microsoft/teams-js.appInstallDialog.OpenAppInstallDialogParams'
+  - '@microsoft/teams-js.appNotification.NotificationDisplayParam'
   - '@microsoft/teams-js.authentication.AuthenticatePopUpParameters'
   - '@microsoft/teams-js.authentication.AuthTokenRequestParameters'
   - '@microsoft/teams-js.authentication.LegacyCallBacks'
@@ -147,6 +148,7 @@ classes:
   - '@microsoft/teams-js.ChildAppWindow'
   - '@microsoft/teams-js.LiveShareHost'
   - '@microsoft/teams-js.ParentAppWindow'
+  - '@microsoft/teams-js.VideoPerformanceMonitor'
 functions:
   - name: enablePrintCapability()
     uid: '@microsoft/teams-js.enablePrintCapability'
