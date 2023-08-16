@@ -1,0 +1,55 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.appNotification'
+name: appNotification
+summary: Namespace to interact with the appNotification specific part of the SDK
+type: module
+interfaces:
+  - '@microsoft/teams-js.appNotification.NotificationDisplayParam'
+package: '@microsoft/teams-js'
+previewState: beta
+functions:
+  - name: displayInAppNotification(NotificationDisplayParam)
+    uid: '@microsoft/teams-js.appNotification.displayInAppNotification'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Displays appNotification after making a validiity check on all of the
+      required parameters, by calling the validateNotificationDisplayParams
+      helper function
+
+      An interface object containing all the required parameters to be displayed
+      on the notification would be passed in here
+
+      The notificationDisplayParam would be serialized before passing across to
+      the message handler to ensure all objects passed contain simple parameters
+      that would properly pass across the Iframe
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function displayInAppNotification(notificationDisplayParam:
+        NotificationDisplayParam): Promise<void>
+      parameters:
+        - id: notificationDisplayParam
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.appNotification.NotificationDisplayParam"
+            />
+          description: ''
+      return:
+        description: a promise resolution upon conclusion
+        type: Promise&lt;void&gt;
+  - name: isSupported()
+    uid: '@microsoft/teams-js.appNotification.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if appNotification is supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: >-
+          boolean to represent whether the appNotification capability is
+          supported
+        type: boolean
