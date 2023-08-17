@@ -70,7 +70,8 @@ functions:
       provider](https://learn.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab)
 
 
-      This function is *not* needed for "standard" Azure SSO usage. Using
+      This function is *not* needed for "standard" Azure SSO usage.
+      Using
       [getAuthToken](xref:@microsoft/teams-js.authentication.getAuthToken_1) is
       usually sufficient in that case. For more, see
 
@@ -146,8 +147,8 @@ functions:
     uid: '@microsoft/teams-js.authentication.getAuthToken'
     package: '@microsoft/teams-js'
     summary: >-
-      Requests an Azure AD token to be issued on behalf of your app in an SSO
-      flow.
+      Requests an Azure AD token to be issued on behalf of your app in an
+      SSO flow.
 
       The token is acquired from the cache if it is not expired. Otherwise a
       request is sent to Azure AD to

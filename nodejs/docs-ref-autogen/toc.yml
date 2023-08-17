@@ -415,6 +415,13 @@
         - uid: '@microsoft/teams-js.appInstallDialog.OpenAppInstallDialogParams'
           name: OpenAppInstallDialogParams
           items: []
+    - name: appNotification
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.appNotification'
+        - uid: '@microsoft/teams-js.appNotification.NotificationDisplayParam'
+          name: NotificationDisplayParam
+          items: []
     - name: authentication
       items:
         - name: Overview
@@ -912,6 +919,9 @@
         - uid: '@microsoft/teams-js.video.VideoFrameHandler'
           name: VideoFrameHandler
           items: []
+    - uid: '@microsoft/teams-js.VideoPerformanceMonitor'
+      name: VideoPerformanceMonitor
+      items: []
     - uid: '@microsoft/teams-js.webStorage'
       name: webStorage
       items: []

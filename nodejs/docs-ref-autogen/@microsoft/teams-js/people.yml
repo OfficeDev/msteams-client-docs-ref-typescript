@@ -76,7 +76,8 @@ functions:
             uid="@microsoft/teams-js.people.selectPeopleCallbackFunctionType" />
           description: >-
             Returns list of JSON object of type PeoplePickerResult which
-            consists of AAD IDs, display names and emails of the selected users
+            consists of Azure AD IDs, display names and emails of the
+            selected users
         - id: peoplePickerInputs
           type: <xref uid="@microsoft/teams-js.people.PeoplePickerInputs" />
           description: Input parameters to launch customized people picker

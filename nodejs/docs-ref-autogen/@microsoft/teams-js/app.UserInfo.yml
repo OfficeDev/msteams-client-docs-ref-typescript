@@ -97,8 +97,8 @@ properties:
     uid: '@microsoft/teams-js.app.UserInfo.loginHint'
     package: '@microsoft/teams-js'
     summary: >-
-      A value suitable for use when providing a login_hint to Azure Active
-      Directory for authentication purposes.
+      A value suitable for use when providing a login_hint to Azure Active Directory
+      for authentication purposes.
 
       See [Provide optional claims to your
       app](https://learn.microsoft.com/azure/active-directory/develop/active-directory-optional-claims#v10-and-v20-optional-claims-set)
