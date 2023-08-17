@@ -61,7 +61,7 @@ properties:
   - name: ownerGroupId
     uid: '@microsoft/teams-js.app.ChannelInfo.ownerGroupId'
     package: '@microsoft/teams-js'
-    summary: The Microsoft Entra group ID of the team which owns the channel.
+    summary: The AAD group ID of the team which owns the channel.
     fullName: ownerGroupId
     remarks: ''
     isDeprecated: false
