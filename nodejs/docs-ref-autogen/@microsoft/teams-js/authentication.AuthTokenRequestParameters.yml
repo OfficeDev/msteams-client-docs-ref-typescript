@@ -12,7 +12,7 @@ properties:
     uid: '@microsoft/teams-js.authentication.AuthTokenRequestParameters.claims'
     package: '@microsoft/teams-js'
     summary: >-
-      An optional list of claims which to pass to Microsoft Entra when
+      An optional list of claims which to pass to AAD when
       requesting the access token.
     fullName: claims
     remarks: ''
