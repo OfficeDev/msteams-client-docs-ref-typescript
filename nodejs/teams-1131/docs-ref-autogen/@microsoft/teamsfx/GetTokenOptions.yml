@@ -34,6 +34,20 @@ properties:
       return:
         description: ''
         type: string
+  - name: enableCae
+    uid: '@microsoft/teamsfx.GetTokenOptions.enableCae'
+    package: '@microsoft/teamsfx'
+    summary: >-
+      Indicates whether to enable the Continuous Access Evaluation
+      authentication flow
+    fullName: enableCae
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enableCae?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: requestOptions
     uid: '@microsoft/teamsfx.GetTokenOptions.requestOptions'
     package: '@microsoft/teamsfx'
