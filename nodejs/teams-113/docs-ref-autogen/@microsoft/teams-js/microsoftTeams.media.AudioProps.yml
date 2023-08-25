@@ -1,0 +1,27 @@
+### YamlMime:TSType
+name: AudioProps
+uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps'
+package: '@microsoft/teams-js'
+summary: >-
+  *  All properties in AudioProps are optional and have default values in the
+  platform
+fullName: AudioProps
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: maxDuration
+    uid: '@microsoft/teams-js.microsoftTeams.media.AudioProps.maxDuration'
+    package: '@microsoft/teams-js'
+    summary: >-
+      * Optional; the maximum duration in minutes after which the recording
+      should terminate automatically           * Default value is defined by the
+      platform serving the API.
+    fullName: maxDuration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'maxDuration?: number'
+      return:
+        description: ''
+        type: number

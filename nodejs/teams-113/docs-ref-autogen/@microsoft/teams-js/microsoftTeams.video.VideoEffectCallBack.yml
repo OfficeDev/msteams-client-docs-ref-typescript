@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: VideoEffectCallBack
+uid: '@microsoft/teams-js.microsoftTeams.video.VideoEffectCallBack'
+package: '@microsoft/teams-js'
+summary: '*  Video effect change call back function definition'
+fullName: VideoEffectCallBack
+remarks: ''
+isDeprecated: false
+syntax: |
+  type VideoEffectCallBack = (effectId: string | undefined) => void
