@@ -2,7 +2,7 @@
 name: ImageUri
 uid: '@microsoft/teams-js.microsoftTeams.media.ImageUri'
 package: '@microsoft/teams-js'
- summary: 'Input for view images API'
+summary: 'Input for view images API'
 fullName: ImageUri
 remarks: ''
 isDeprecated: false

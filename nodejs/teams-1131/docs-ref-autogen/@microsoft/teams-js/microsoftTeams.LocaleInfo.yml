@@ -2,7 +2,7 @@
 name: LocaleInfo
 uid: '@microsoft/teams-js.microsoftTeams.LocaleInfo'
 package: '@microsoft/teams-js'
- summary: 'Represents OS locale info used for formatting date and time data'
+summary: 'Represents OS locale info used for formatting date and time data'
 fullName: LocaleInfo
 remarks: ''
 isDeprecated: false
