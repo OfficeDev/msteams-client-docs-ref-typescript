@@ -3,4 +3,4 @@ uid: '@microsoft/teams-js.@microsoft.teams-js.conversations'
 name: conversations
 type: module
 package: '@microsoft/teams-js'
-summary: 'Namespace to interact with the conversational subEntities inside the tab'
+summary: '* Namespace to interact with the conversational subEntities inside the tab'
