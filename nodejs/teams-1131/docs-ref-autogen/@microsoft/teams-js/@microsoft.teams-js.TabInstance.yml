@@ -2,7 +2,7 @@
 name: TabInstance
 uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance'
 package: '@microsoft/teams-js'
-summary: '* Represents information about a tab instance'
+summary: 'Represents information about a tab instance'
 fullName: TabInstance
 remarks: ''
 isDeprecated: false
@@ -12,7 +12,7 @@ properties:
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.channelId'
     package: '@microsoft/teams-js'
     summary: >-
-      * The Microsoft Teams ID for the channel with which the content is
+      The Microsoft Teams ID for the channel with which the content is
       associated.
     fullName: channelId
     remarks: ''
@@ -25,7 +25,7 @@ properties:
   - name: channelIsFavorite
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.channelIsFavorite'
     package: '@microsoft/teams-js'
-    summary: '* Is this tab in a favorite channel?'
+    summary: 'Is this tab in a favorite channel?'
     fullName: channelIsFavorite
     remarks: ''
     isDeprecated: false
@@ -37,7 +37,7 @@ properties:
   - name: channelName
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.channelName'
     package: '@microsoft/teams-js'
-    summary: '* The name for the channel with which the content is associated.'
+    summary: 'The name for the channel with which the content is associated.'
     fullName: channelName
     remarks: ''
     isDeprecated: false
@@ -49,7 +49,7 @@ properties:
   - name: entityId
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.entityId'
     package: '@microsoft/teams-js'
-    summary: '* The developer-defined unique ID for the entity this content points to.'
+    summary: 'The developer-defined unique ID for the entity this content points to.'
     fullName: entityId
     remarks: ''
     isDeprecated: false
@@ -62,8 +62,8 @@ properties:
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.groupId'
     package: '@microsoft/teams-js'
     summary: >-
-      * The Office 365 group ID for the team with which the content is
-      associated.       * This field is available only when the identity
+      The Office 365 group ID for the team with which the content is
+      associated. This field is available only when the identity
       permission is requested in the manifest.
     fullName: groupId
     remarks: ''
@@ -76,7 +76,7 @@ properties:
   - name: lastViewUnixEpochTime
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.lastViewUnixEpochTime'
     package: '@microsoft/teams-js'
-    summary: '* Last viewed time of this tab. null means unknown'
+    summary: 'Last viewed time of this tab. null means unknown'
     fullName: lastViewUnixEpochTime
     remarks: ''
     isDeprecated: false
@@ -88,7 +88,7 @@ properties:
   - name: tabName
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.tabName'
     package: '@microsoft/teams-js'
-    summary: '* The name of the tab'
+    summary: 'The name of the tab'
     fullName: tabName
     remarks: ''
     isDeprecated: false
@@ -101,7 +101,7 @@ properties:
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.teamId'
     package: '@microsoft/teams-js'
     summary: >-
-      * The Microsoft Teams ID for the team with which the content is
+      The Microsoft Teams ID for the team with which the content is
       associated.
     fullName: teamId
     remarks: ''
@@ -114,7 +114,7 @@ properties:
   - name: teamIsFavorite
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.teamIsFavorite'
     package: '@microsoft/teams-js'
-    summary: '* Is this tab in a favorite team?'
+    summary: 'Is this tab in a favorite team?'
     fullName: teamIsFavorite
     remarks: ''
     isDeprecated: false
@@ -126,7 +126,7 @@ properties:
   - name: teamName
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.teamName'
     package: '@microsoft/teams-js'
-    summary: '* The name for the team with which the content is associated.'
+    summary: 'The name for the team with which the content is associated.'
     fullName: teamName
     remarks: ''
     isDeprecated: false
@@ -138,7 +138,7 @@ properties:
   - name: url
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.url'
     package: '@microsoft/teams-js'
-    summary: '* Content URL of this tab'
+    summary: 'Content URL of this tab'
     fullName: url
     remarks: ''
     isDeprecated: false
@@ -150,7 +150,7 @@ properties:
   - name: websiteUrl
     uid: '@microsoft/teams-js.@microsoft.teams-js.TabInstance.websiteUrl'
     package: '@microsoft/teams-js'
-    summary: '* Website URL of this tab'
+    summary: 'Website URL of this tab'
     fullName: websiteUrl
     remarks: ''
     isDeprecated: false

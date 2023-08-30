@@ -4,13 +4,13 @@ name: tasks
 type: module
 package: '@microsoft/teams-js'
 summary: >-
-  * Namespace to interact with the task module-specific part of the SDK.   *
+  Namespace to interact with the task module-specific part of the SDK.   *
   This object is usable only on the content frame.
 functions:
   - name: 'startTask(TaskInfo, (err: string, result: string) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.tasks.startTask'
     package: '@microsoft/teams-js'
-    summary: '* Allows an app to open the task module.       *'
+    summary: 'Allows an app to open the task module.       *'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -30,7 +30,7 @@ functions:
   - name: submitTask(string | object, string | string[])
     uid: '@microsoft/teams-js.microsoftTeams.tasks.submitTask'
     package: '@microsoft/teams-js'
-    summary: '* Submit the task module.       *'
+    summary: 'Submit the task module.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ functions:
           type: string | object
           description: >-
             Contains the result to be sent to the bot or the app. Typically a
-            JSON object or a serialized version of it       *
+            JSON object or a serialized version of it
         - id: appIds
           type: string | string[]
           description: >-
@@ -51,7 +51,7 @@ functions:
   - name: updateTask(TaskInfo)
     uid: '@microsoft/teams-js.microsoftTeams.tasks.updateTask'
     package: '@microsoft/teams-js'
-    summary: '* Update height/width task info properties.       *'
+    summary: 'Update height/width task info properties.'
     remarks: ''
     isDeprecated: false
     syntax:

@@ -11,23 +11,23 @@ fields:
     uid: >-
       @microsoft/teams-js.@microsoft.teams-js.ErrorCode.NOT_SUPPORTED_ON_PLATFORM
     package: '@microsoft/teams-js'
-    summary: '* API not supported in the current platform.'
+    summary: 'API not supported in the current platform.'
     numericValue: 100
   - name: FILE_NOT_FOUND
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.FILE_NOT_FOUND'
     package: '@microsoft/teams-js'
-    summary: '* The file specified was not found on the given location'
+    summary: 'The file specified was not found on the given location'
     numericValue: 404
   - name: INTERNAL_ERROR
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.INTERNAL_ERROR'
     package: '@microsoft/teams-js'
-    summary: '* Internal error encountered while performing the required operation.'
+    summary: 'Internal error encountered while performing the required operation.'
     numericValue: 500
   - name: NOT_SUPPORTED_IN_CURRENT_CONTEXT
     uid: >-
       @microsoft/teams-js.@microsoft.teams-js.ErrorCode.NOT_SUPPORTED_IN_CURRENT_CONTEXT
     package: '@microsoft/teams-js'
-    summary: '* API is not supported in the current context'
+    summary: 'API is not supported in the current context'
     numericValue: 501
   - name: PERMISSION_DENIED
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.PERMISSION_DENIED'
@@ -37,51 +37,51 @@ fields:
   - name: NETWORK_ERROR
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.NETWORK_ERROR'
     package: '@microsoft/teams-js'
-    summary: '* Network issue'
+    summary: 'Network issue'
     numericValue: 2000
   - name: NO_HW_SUPPORT
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.NO_HW_SUPPORT'
     package: '@microsoft/teams-js'
-    summary: '* Underlying hardware doesn''t support the capability'
+    summary: 'Underlying hardware doesn''t support the capability'
     numericValue: 3000
   - name: INVALID_ARGUMENTS
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.INVALID_ARGUMENTS'
     package: '@microsoft/teams-js'
-    summary: '* One or more arguments are invalid'
+    summary: 'One or more arguments are invalid'
     numericValue: 4000
   - name: UNAUTHORIZED_USER_OPERATION
     uid: >-
       @microsoft/teams-js.@microsoft.teams-js.ErrorCode.UNAUTHORIZED_USER_OPERATION
     package: '@microsoft/teams-js'
-    summary: '* User is not authorized for this operation'
+    summary: 'User is not authorized for this operation'
     numericValue: 5000
   - name: INSUFFICIENT_RESOURCES
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.INSUFFICIENT_RESOURCES'
     package: '@microsoft/teams-js'
-    summary: '* Could not complete the operation due to insufficient resources'
+    summary: 'Could not complete the operation due to insufficient resources'
     numericValue: 6000
   - name: THROTTLE
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.THROTTLE'
     package: '@microsoft/teams-js'
-    summary: '* Platform throttled the request because of API was invoked too frequently'
+    summary: 'Platform throttled the request because of API was invoked too frequently'
     numericValue: 7000
   - name: USER_ABORT
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.USER_ABORT'
     package: '@microsoft/teams-js'
-    summary: '* User aborted the operation'
+    summary: 'User aborted the operation'
     numericValue: 8000
   - name: OPERATION_TIMED_OUT
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.OPERATION_TIMED_OUT'
     package: '@microsoft/teams-js'
-    summary: '* Could not complete the operation in the given time interval'
+    summary: 'Could not complete the operation in the given time interval'
     numericValue: 8001
   - name: OLD_PLATFORM
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.OLD_PLATFORM'
     package: '@microsoft/teams-js'
-    summary: '* Platform code is old and doesn''t implement this API'
+    summary: 'Platform code is old and doesn''t implement this API'
     numericValue: 9000
   - name: SIZE_EXCEEDED
     uid: '@microsoft/teams-js.@microsoft.teams-js.ErrorCode.SIZE_EXCEEDED'
     package: '@microsoft/teams-js'
-    summary: '* The return value is too big and has exceeded our size boundries'
+    summary: 'The return value is too big and has exceeded our size boundries'
     numericValue: 10000

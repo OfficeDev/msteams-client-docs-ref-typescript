@@ -58,7 +58,7 @@ functions:
   - name: compareSDKVersions(string, string)
     uid: '@microsoft/teams-js.@microsoft.teams-js.compareSDKVersions'
     package: '@microsoft/teams-js'
-    summary: '* Compares SDK versions.   *'
+    summary: 'Compares SDK versions.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -66,17 +66,16 @@ functions:
       parameters:
         - id: v1
           type: string
-          description: first version   *
+          description: first version
         - id: v2
           type: string
           description: >-
-            second version   * returns NaN in case inputs are not in right
-            format   *         -1 if v1 < v2   *          1 if v1 > v2  
-            *          0 otherwise   * For example,   *   
-            compareSDKVersions('1.2', '1.2.0') returns 0   *   
-            compareSDKVersions('1.2a', '1.2b') returns NaN   *   
-            compareSDKVersions('1.2', '1.3') returns -1   *   
-            compareSDKVersions('2.0', '1.3.2') returns 1   *   
+            second version returns NaN in case inputs are not in right
+            format, -1 if v1 < v2, 1 if v1 > v2, and 0 otherwise. For example,
+            compareSDKVersions('1.2', '1.2.0') returns 0   
+            compareSDKVersions('1.2a', '1.2b') returns NaN   
+            compareSDKVersions('1.2', '1.3') returns -1   
+            compareSDKVersions('2.0', '1.3.2') returns 1   
             compareSDKVersions('2.0', 2.0) returns NaN
       return:
         description: ''
@@ -85,8 +84,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.createFile'
     package: '@microsoft/teams-js'
     summary: >-
-      * Helper function to create a blob from media chunks based on their
-      sequence
+      Helper function to create a blob from media chunks based on their
+      sequence.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -109,9 +108,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.decodeAttachment'
     package: '@microsoft/teams-js'
     summary: >-
-      * Helper function to convert Media chunks into another object type which
-      can be later assemebled   * Converts base 64 encoded string to byte array
-      and then into an array of blobs
+      Helper function to convert Media chunks into another object type which
+      can be later assembled. Converts base 64 encoded string to byte array
+      and then into an array of blobs.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -135,7 +134,7 @@ functions:
   - name: enablePrintCapability()
     uid: '@microsoft/teams-js.@microsoft.teams-js.enablePrintCapability'
     package: '@microsoft/teams-js'
-    summary: '* Enable print capability to support printing page using Ctrl+P and cmd+P'
+    summary: 'Enable print capability to support printing page using Ctrl+P and cmd+P'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -155,7 +154,7 @@ functions:
   - name: 'executeDeepLink(string, (status: boolean, reason?: string) => void)'
     uid: '@microsoft/teams-js.@microsoft.teams-js.executeDeepLink'
     package: '@microsoft/teams-js'
-    summary: '* execute deep link API.   *'
+    summary: 'Execute deep link API.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -172,7 +171,7 @@ functions:
   - name: generateGUID()
     uid: '@microsoft/teams-js.@microsoft.teams-js.generateGUID'
     package: '@microsoft/teams-js'
-    summary: '* Generates a GUID'
+    summary: 'Generates a GUID'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -198,7 +197,7 @@ functions:
   - name: 'getContext((context: Context) => void)'
     uid: '@microsoft/teams-js.@microsoft.teams-js.getContext'
     package: '@microsoft/teams-js'
-    summary: '* Retrieves the current context the frame is running in.   *'
+    summary: 'Retrieves the current context the frame is running in.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -232,7 +231,7 @@ functions:
       TabInstanceParameters)
     uid: '@microsoft/teams-js.@microsoft.teams-js.getMruTabInstances'
     package: '@microsoft/teams-js'
-    summary: '* Allows an app to retrieve the most recently used tabs for this user.   *'
+    summary: 'Allows an app to retrieve the most recently used tabs for this user.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -245,7 +244,7 @@ functions:
           description: >-
             The callback to invoke when the
             [TabInformation](xref:@microsoft/teams-js.@microsoft.teams-js.TabInformation)
-            object is retrieved.   *
+            object is retrieved.
         - id: tabInstanceParameters
           type: >-
             @microsoft/teams-js.<xref
@@ -255,9 +254,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.getTabInstances'
     package: '@microsoft/teams-js'
     summary: >-
-      * Allows an app to retrieve for this user tabs that are owned by this
-      app.   * If no TabInstanceParameters are passed, the app defaults to
-      favorite teams and favorite channels.   *
+      Allows an app to retrieve for this user tabs that are owned by this
+      app. If no TabInstanceParameters are passed, the app defaults to
+      favorite teams and favorite channels.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -270,7 +269,7 @@ functions:
           description: >-
             The callback to invoke when the
             [TabInstanceParameters](xref:@microsoft/teams-js.@microsoft.teams-js.TabInstanceParameters)
-            object is retrieved.   *
+            object is retrieved.
         - id: tabInstanceParameters
           type: >-
             @microsoft/teams-js.<xref
@@ -294,8 +293,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.initialize'
     package: '@microsoft/teams-js'
     summary: >-
-      * Initializes the library. This must be called before any other SDK
-      calls   * but after the frame is loaded successfully.   *
+      Initializes the library. This must be called before any other SDK
+      calls but after the frame is loaded successfully.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -307,12 +306,12 @@ functions:
           type: () =&gt; void
           description: >-
             Optionally specify a callback to invoke when Teams SDK has
-            successfully initialized   *
+            successfully initialized.
         - id: validMessageOrigins
           type: string[]
           description: >-
             Optionally specify a list of cross frame message origins. There must
-            have   * https: protocol otherwise they will be ignored. Example:
+            have https: protocol otherwise they will be ignored. Example:
             https://www.example.com
   - name: initializeCommunication(Function, undefined | string[])
     uid: '@microsoft/teams-js.@microsoft.teams-js.initializeCommunication'
@@ -371,9 +370,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.isAPISupportedByPlatform'
     package: '@microsoft/teams-js'
     summary: >-
-      * Checks whether the platform has knowledge of this API by doing a
-      comparison   * on API required version and platform supported version of
-      the SDK   *
+      Checks whether the platform has knowledge of this API by doing a
+      comparison on API required version and platform supported version of
+      the SDK.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -389,8 +388,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.isApiSupportedOnMobile'
     package: '@microsoft/teams-js'
     summary: >-
-      * Helper function which indicates if current API is supported on mobile or
-      not.   *
+      Helper function which indicates if current API is supported on mobile or
+      not.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -402,13 +401,13 @@ functions:
       return:
         description: >-
           SdkError if host client is not android/ios or if the requiredVersion
-          is not   *          supported by platform or not. Null is returned in
+          is not supported by platform or not. Null is returned in
           case of success.
         type: '@microsoft/teams-js.<xref uid="@microsoft.teams-js.SdkError" />'
   - name: isHostClientMobile()
     uid: '@microsoft/teams-js.@microsoft.teams-js.isHostClientMobile'
     package: '@microsoft/teams-js'
-    summary: '* Helper function to identify if host client is either android or ios'
+    summary: 'Helper function to identify if host client is either android or ios'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -420,8 +419,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.isMediaCallForImageOutputFormats'
     package: '@microsoft/teams-js'
     summary: >-
-      * Returns true if the mediaInput params are called for mediatype Image and
-      contains Image outputs formats, false otherwise
+      Returns true if the mediaInput params are called for mediatype Image and
+      contains Image outputs formats, false otherwise.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -442,8 +441,8 @@ functions:
       @microsoft/teams-js.@microsoft.teams-js.isMediaCallForNonFullScreenVideoMode
     package: '@microsoft/teams-js'
     summary: >-
-      * Returns true if the mediaInput params are called for non-full screen
-      video mode and false otherwise
+      Returns true if the mediaInput params are called for non-full screen
+      video mode and false otherwise.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -463,8 +462,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.isMediaCallForVideoAndImageInputs'
     package: '@microsoft/teams-js'
     summary: >-
-      * Returns true if the mediaInput params are called for mediatype
-      VideoAndImage and false otherwise
+      Returns true if the mediaInput params are called for mediatype
+      VideoAndImage and false otherwise.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -484,7 +483,7 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.isMediaCallSupportedOnMobile'
     package: '@microsoft/teams-js'
     summary: >-
-      * Function returns null if the media call is supported on current mobile
+      Function returns null if the media call is supported on current mobile
       version, else SdkError.
     remarks: ''
     isDeprecated: false
@@ -505,7 +504,7 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.isVideoControllerRegistered'
     package: '@microsoft/teams-js'
     summary: >-
-      * Function returns true if the app has registered to listen to video
+      Function returns true if the app has registered to listen to video
       controller events, else false.
     remarks: ''
     isDeprecated: false
@@ -524,8 +523,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.navigateBack'
     package: '@microsoft/teams-js'
     summary: >-
-      * Navigates back in the Teams client. See registerBackButtonHandler for
-      more information on when   * it's appropriate to use this method.
+      Navigates back in the Teams client. See registerBackButtonHandler for
+      more information on when it's appropriate to use this method.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -540,12 +539,12 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.navigateCrossDomain'
     package: '@microsoft/teams-js'
     summary: >-
-      * Navigates the frame to a new cross-domain URL. The domain of this URL
-      must match at least one of the   * valid domains specified in the
-      validDomains block of the manifest; otherwise, an exception will be   *
+      Navigates the frame to a new cross-domain URL. The domain of this URL
+      must match at least one of the valid domains specified in the
+      validDomains block of the manifest; otherwise, an exception will be
       thrown. This function needs to be used only when navigating the frame to a
-      URL in a different domain   * than the current one in a way that keeps the
-      app informed of the change and allows the SDK to   * continue working.   *
+      URL in a different domain than the current one in a way that keeps the
+      app informed of the change and allows the SDK to continue working.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -562,7 +561,7 @@ functions:
   - name: 'navigateToTab(TabInstance, (status: boolean, reason?: string) => void)'
     uid: '@microsoft/teams-js.@microsoft.teams-js.navigateToTab'
     package: '@microsoft/teams-js'
-    summary: '* Navigates the Microsoft Teams app to the specified tab instance.   *'
+    summary: 'Navigates the Microsoft Teams app to the specified tab instance.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -579,7 +578,7 @@ functions:
   - name: print()
     uid: '@microsoft/teams-js.@microsoft.teams-js.print'
     package: '@microsoft/teams-js'
-    summary: '* default print handler'
+    summary: 'default print handler'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -588,9 +587,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.processAdditionalValidOrigins'
     package: '@microsoft/teams-js'
     summary: >-
-      * Processes the valid origins specifuied by the user, de-duplicates and
-      converts them into a regexp   * which is used later for message
-      source/origin validation
+      Processes the valid origins specifuied by the user, de-duplicates and
+      converts them into a regexp which is used later for message
+      source/origin validation.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -603,9 +602,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.registerAppButtonClickHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for clicking the app button.   * Only one handler
+      Registers a handler for clicking the app button. Only one handler
       can be registered at a time. A subsequent registration replaces an
-      existing registration.   *
+      existing registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -620,9 +619,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.registerAppButtonHoverEnterHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for entering hover of the app button.   * Only one
+      Registers a handler for entering hover of the app button. Only one
       handler can be registered at a time. A subsequent registration replaces an
-      existing registration.   *
+      existing registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -637,9 +636,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.registerAppButtonHoverLeaveHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for exiting hover of the app button.   * Only one
+      Registers a handler for exiting hover of the app button. Only one
       handler can be registered at a time. A subsequent registration replaces an
-      existing registration.   *
+      existing registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -666,12 +665,12 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.registerBackButtonHandler_1'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for user presses of the Team client's back button.
-      Experiences that maintain an internal   * navigation stack should use this
+      Registers a handler for user presses of the Team client's back button.
+      Experiences that maintain an internal navigation stack should use this
       handler to navigate the user back within their frame. If an app finds   *
       that after running its back button handler it cannot handle the event it
-      should call the navigateBack   * method to ask the Teams client to handle
-      it instead.   *
+      should call the navigateBack method to ask the Teams client to handle
+      it instead.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -685,7 +684,7 @@ functions:
   - name: registerChangeSettingsHandler(() => void)
     uid: '@microsoft/teams-js.@microsoft.teams-js.registerChangeSettingsHandler'
     package: '@microsoft/teams-js'
-    summary: '* Registers a handler for when the user reconfigurated tab   *'
+    summary: 'Registers a handler for when the user reconfigurated tab.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -698,9 +697,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.registerFullScreenHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for changes from or to full-screen view for a tab.  
-      * Only one handler can be registered at a time. A subsequent registration
-      replaces an existing registration.   *
+      Registers a handler for changes from or to full-screen view for a tab.  
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -752,9 +751,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.registerOnThemeChangeHandler_1'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for theme changes.   * Only one handler can be
+      Registers a handler for theme changes. Only one handler can be
       registered at a time. A subsequent registration replaces an existing
-      registration.   *
+      registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -779,8 +778,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.returnFocus'
     package: '@microsoft/teams-js'
     summary: >-
-      * Return focus to the main Teams app. Will focus search bar if navigating
-      forward and app bar if navigating back.   *
+      Return focus to the main Teams app. Will focus search bar if navigating
+      forward and app bar if navigating back.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -793,8 +792,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.sendMessageEventToChild'
     package: '@microsoft/teams-js'
     summary: >-
-      * Send a custom message object that can be sent to child window,   *
-      instead of a response message to a child
+      Send a custom message object that can be sent to child window, 
+      instead of a response message to a child.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -810,8 +809,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.sendMessageToParent_1'
     package: '@microsoft/teams-js'
     summary: >-
-      * Send a message to parent. Uses nativeInterface on mobile to communicate
-      with parent context
+      Send a message to parent. Uses nativeInterface on mobile to communicate
+      with parent context.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -832,8 +831,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.sendMessageToParent'
     package: '@microsoft/teams-js'
     summary: >-
-      * Send a message to parent. Uses nativeInterface on mobile to communicate
-      with parent context
+      Send a message to parent. Uses nativeInterface on mobile to communicate
+      with parent context.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -861,8 +860,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.shareDeepLink'
     package: '@microsoft/teams-js'
     summary: >-
-      * Shares a deep link that a user can use to navigate back to a specific
-      state in this page.   *
+      Shares a deep link that a user can use to navigate back to a specific
+      state in this page.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -884,7 +883,7 @@ functions:
   - name: validateGetMediaInputs(string, FileFormat, string)
     uid: '@microsoft/teams-js.@microsoft.teams-js.validateGetMediaInputs'
     package: '@microsoft/teams-js'
-    summary: '* Returns true if the get Media params are valid and false otherwise'
+    summary: 'Returns true if the get Media params are valid and false otherwise'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -909,7 +908,7 @@ functions:
   - name: validatePeoplePickerInput(PeoplePickerInputs)
     uid: '@microsoft/teams-js.@microsoft.teams-js.validatePeoplePickerInput'
     package: '@microsoft/teams-js'
-    summary: '* Returns true if the people picker params are valid and false otherwise'
+    summary: 'Returns true if the people picker params are valid and false otherwise'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -928,7 +927,7 @@ functions:
   - name: validateScanBarCodeInput(BarCodeConfig)
     uid: '@microsoft/teams-js.@microsoft.teams-js.validateScanBarCodeInput'
     package: '@microsoft/teams-js'
-    summary: '* Returns true if the scan barcode param is valid and false otherwise'
+    summary: 'Returns true if the scan barcode param is valid and false otherwise'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -945,7 +944,7 @@ functions:
   - name: validateSelectMediaInputs(MediaInputs)
     uid: '@microsoft/teams-js.@microsoft.teams-js.validateSelectMediaInputs'
     package: '@microsoft/teams-js'
-    summary: '* Returns true if the mediaInput params are valid and false otherwise'
+    summary: 'Returns true if the mediaInput params are valid and false otherwise'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -962,7 +961,7 @@ functions:
   - name: validateViewImagesInput(ImageUri[])
     uid: '@microsoft/teams-js.@microsoft.teams-js.validateViewImagesInput'
     package: '@microsoft/teams-js'
-    summary: '* Returns true if the view images param is valid and false otherwise'
+    summary: 'Returns true if the view images param is valid and false otherwise'
     remarks: ''
     isDeprecated: false
     syntax:

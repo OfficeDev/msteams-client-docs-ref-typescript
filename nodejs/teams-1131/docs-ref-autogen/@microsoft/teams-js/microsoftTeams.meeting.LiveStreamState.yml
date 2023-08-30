@@ -11,7 +11,7 @@ properties:
   - name: error
     uid: '@microsoft/teams-js.microsoftTeams.meeting.LiveStreamState.error'
     package: '@microsoft/teams-js'
-    summary: '* error object in case there is a failure'
+    summary: 'error object in case there is a failure'
     fullName: error
     remarks: ''
     isDeprecated: false
@@ -23,7 +23,7 @@ properties:
   - name: isStreaming
     uid: '@microsoft/teams-js.microsoftTeams.meeting.LiveStreamState.isStreaming'
     package: '@microsoft/teams-js'
-    summary: '* indicates whether meeting is streaming'
+    summary: 'indicates whether meeting is streaming'
     fullName: isStreaming
     remarks: ''
     isDeprecated: false

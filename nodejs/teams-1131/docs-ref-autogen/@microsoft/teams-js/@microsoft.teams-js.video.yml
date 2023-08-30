@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.@microsoft.teams-js.video'
 name: video
-summary: '* Namespace to video extensibility of the SDK.   *'
+summary: 'Namespace to video extensibility of the SDK.'
 type: module
 enums:
   - '@microsoft/teams-js.@microsoft.teams-js.video.EffectChangeType'
@@ -19,11 +19,11 @@ functions:
       @microsoft/teams-js.@microsoft.teams-js.video.notifySelectedVideoEffectChanged
     package: '@microsoft/teams-js'
     summary: >-
-      * video extension should call this to notify Teams Client current selected
-      effect parameter changed.       * If it's pre-meeting, Teams client will
+      video extension should call this to notify Teams Client current selected
+      effect parameter changed. If it's pre-meeting, Teams client will
       call videoEffectCallback immediately then use the videoEffect.       *
       in-meeting scenario, we will call videoEffectCallback when apply button
-      clicked.       *
+      clicked.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -35,7 +35,7 @@ functions:
           type: >-
             @microsoft/teams-js.<xref
             uid="@microsoft.teams-js.video.EffectChangeType" />
-          description: the effect change type.       *
+          description: The effect change type.
         - id: effectId
           type: undefined | string
           description: Newly selected effect id.
@@ -43,7 +43,7 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.video.registerForVideoEffect'
     package: '@microsoft/teams-js'
     summary: >-
-      * Register the video effect callback, Teams client uses this to notify the
+      Register the video effect callback, Teams client uses this to notify the
       video extension the new video effect will by applied.
     remarks: ''
     isDeprecated: false
@@ -58,7 +58,7 @@ functions:
   - name: registerForVideoFrame(VideoFrameCallback, VideoFrameConfig)
     uid: '@microsoft/teams-js.@microsoft.teams-js.video.registerForVideoFrame'
     package: '@microsoft/teams-js'
-    summary: '* register to read the video frames in Permissions section.'
+    summary: 'Register to read the video frames in Permissions section.'
     remarks: ''
     isDeprecated: false
     syntax:

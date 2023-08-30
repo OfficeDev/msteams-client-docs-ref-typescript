@@ -12,8 +12,8 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.location.getLocation'
     package: '@microsoft/teams-js'
     summary: >-
-      * Fetches current user coordinates or allows user to choose location on
-      map       *
+      Fetches current user coordinates or allows user to choose location on
+      map.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -32,7 +32,7 @@ functions:
   - name: 'showLocation(Location, (error: SdkError, status: boolean) => void)'
     uid: '@microsoft/teams-js.@microsoft.teams-js.location.showLocation'
     package: '@microsoft/teams-js'
-    summary: '* Shows the location on map corresponding to the given coordinates       *'
+    summary: 'Shows the location on map corresponding to the given coordinates.'
     remarks: ''
     isDeprecated: false
     syntax:

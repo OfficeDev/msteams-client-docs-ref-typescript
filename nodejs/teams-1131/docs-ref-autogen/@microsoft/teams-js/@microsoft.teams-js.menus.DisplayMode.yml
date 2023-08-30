@@ -2,7 +2,7 @@
 name: DisplayMode
 uid: '@microsoft/teams-js.@microsoft.teams-js.menus.DisplayMode'
 package: '@microsoft/teams-js'
-summary: '* Defines how a menu item should appear in the NavBar.'
+summary: 'Defines how a menu item should appear in the NavBar.'
 fullName: DisplayMode
 remarks: ''
 isDeprecated: false
@@ -11,13 +11,13 @@ fields:
     uid: '@microsoft/teams-js.@microsoft.teams-js.menus.DisplayMode.ifRoom'
     package: '@microsoft/teams-js'
     summary: >-
-      * Only place this item in the NavBar if there's room for it.           *
+      Only place this item in the NavBar if there's room for it.           *
       If there's no room, item is shown in the overflow menu.
     numericValue: 0
   - name: overflowOnly
     uid: '@microsoft/teams-js.@microsoft.teams-js.menus.DisplayMode.overflowOnly'
     package: '@microsoft/teams-js'
     summary: >-
-      * Never place this item in the NavBar.           * The item would always
+      Never place this item in the NavBar. The item would always
       be shown in NavBar's overflow menu.
     numericValue: 1

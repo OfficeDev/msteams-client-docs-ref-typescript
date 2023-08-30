@@ -2,7 +2,7 @@
 uid: '@microsoft/teams-js.microsoftTeams.settings'
 name: settings
 summary: >-
-  * Namespace to interact with the settings-specific part of the SDK.   * This
+  Namespace to interact with the settings-specific part of the SDK. This
   object is usable only on the settings frame.
 type: module
 interfaces:
@@ -15,7 +15,7 @@ functions:
   - name: 'getSettings((instanceSettings: Settings) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.settings.getSettings'
     package: '@microsoft/teams-js'
-    summary: '* Gets the settings for the current instance.       *'
+    summary: 'Gets the settings for the current instance.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -39,12 +39,12 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.settings.registerOnRemoveHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for user attempts to remove content. This handler
-      should be used       * to remove the underlying resource powering the
-      content.       * The object passed to the handler must be used to indicate
-      whether to proceed with the removal.       * Only one handler may be
+      Registers a handler for user attempts to remove content. This handler
+      should be used to remove the underlying resource powering the
+      content. The object passed to the handler must be used to indicate
+      whether to proceed with the removal. Only one handler may be
       registered at a time. Subsequent registrations will override the
-      first.       *
+      first.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -57,12 +57,12 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.settings.registerOnSaveHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for when the user attempts to save the settings.
-      This handler should be used       * to create or update the underlying
-      resource powering the content.       * The object passed to the handler
-      must be used to notify whether to proceed with the save.       * Only one
+      Registers a handler for when the user attempts to save the settings.
+      This handler should be used to create or update the underlying
+      resource powering the content. The object passed to the handler
+      must be used to notify whether to proceed with the save. Only one
       handler can be registered at a time. A subsequent registration replaces an
-      existing registration.       *
+      existing registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -75,9 +75,9 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.settings.setSettings'
     package: '@microsoft/teams-js'
     summary: >-
-      * Sets the settings for the current instance.       * This is an
+      Sets the settings for the current instance. This is an
       asynchronous operation; calls to getSettings are not guaranteed to reflect
-      the changed state.       *
+      the changed state.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -97,9 +97,9 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.settings.setValidityState'
     package: '@microsoft/teams-js'
     summary: >-
-      * Sets the validity state for the settings.       * The initial value is
+      Sets the validity state for the settings. The initial value is
       false, so the user cannot save the settings until this is called with
-      true.       *
+      true.
     remarks: ''
     isDeprecated: false
     syntax:

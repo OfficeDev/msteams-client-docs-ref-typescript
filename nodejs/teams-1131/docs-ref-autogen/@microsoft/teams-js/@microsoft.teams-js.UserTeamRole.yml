@@ -2,7 +2,7 @@
 name: UserTeamRole
 uid: '@microsoft/teams-js.@microsoft.teams-js.UserTeamRole'
 package: '@microsoft/teams-js'
-summary: '* Indicates the various types of roles of a user in a team.'
+summary: 'Indicates the various types of roles of a user in a team.'
 fullName: UserTeamRole
 remarks: ''
 isDeprecated: false
