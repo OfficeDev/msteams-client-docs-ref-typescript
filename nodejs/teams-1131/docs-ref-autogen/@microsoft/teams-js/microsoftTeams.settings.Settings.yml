@@ -11,7 +11,7 @@ properties:
   - name: contentUrl
     uid: '@microsoft/teams-js.microsoftTeams.settings.Settings.contentUrl'
     package: '@microsoft/teams-js'
-    summary: '* Sets the URL to use for the content of this instance.'
+    summary: 'Sets the URL to use for the content of this instance.'
     fullName: contentUrl
     remarks: ''
     isDeprecated: false
@@ -24,7 +24,7 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.settings.Settings.entityId'
     package: '@microsoft/teams-js'
     summary: >-
-      * The developer-defined unique ID for the entity to which this content
+      The developer-defined unique ID for the entity to which this content
       points.
     fullName: entityId
     remarks: ''
@@ -37,7 +37,7 @@ properties:
   - name: removeUrl
     uid: '@microsoft/teams-js.microsoftTeams.settings.Settings.removeUrl'
     package: '@microsoft/teams-js'
-    summary: '* Sets the URL for the removal configuration experience.'
+    summary: 'Sets the URL for the removal configuration experience.'
     fullName: removeUrl
     remarks: ''
     isDeprecated: false
@@ -50,7 +50,7 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.settings.Settings.suggestedDisplayName'
     package: '@microsoft/teams-js'
     summary: >-
-      * A suggested display name for the new content.           * In the
+      A suggested display name for the new content. In the
       settings for an existing instance being updated, this call has no effect.
     fullName: suggestedDisplayName
     remarks: ''
@@ -64,7 +64,7 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.settings.Settings.websiteUrl'
     package: '@microsoft/teams-js'
     summary: >-
-      * Sets the URL to use for the external link to view the underlying
+      Sets the URL to use for the external link to view the underlying
       resource in a browser.
     fullName: websiteUrl
     remarks: ''

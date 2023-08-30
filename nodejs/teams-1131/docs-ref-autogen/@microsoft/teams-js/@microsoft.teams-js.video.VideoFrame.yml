@@ -2,7 +2,7 @@
 name: VideoFrame
 uid: '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrame'
 package: '@microsoft/teams-js'
-summary: '* Represents a video frame.'
+summary: 'Represents a video frame.'
 fullName: VideoFrame
 remarks: ''
 isDeprecated: false
@@ -11,7 +11,7 @@ properties:
   - name: chromaStride
     uid: '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrame.chromaStride'
     package: '@microsoft/teams-js'
-    summary: '* NV12 chroma stride, valid only when video frame format is NV12'
+    summary: 'NV12 chroma stride, valid only when video frame format is NV12'
     fullName: chromaStride
     remarks: ''
     isDeprecated: false
@@ -23,7 +23,7 @@ properties:
   - name: data
     uid: '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrame.data'
     package: '@microsoft/teams-js'
-    summary: '* Video frame buffer'
+    summary: 'Video frame buffer'
     fullName: data
     remarks: ''
     isDeprecated: false
@@ -35,7 +35,7 @@ properties:
   - name: height
     uid: '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrame.height'
     package: '@microsoft/teams-js'
-    summary: '* Video frame height.'
+    summary: 'Video frame height.'
     fullName: height
     remarks: ''
     isDeprecated: false
@@ -47,7 +47,7 @@ properties:
   - name: lumaStride
     uid: '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrame.lumaStride'
     package: '@microsoft/teams-js'
-    summary: '* NV12 luma stride, valid only when video frame format is NV12'
+    summary: 'NV12 luma stride, valid only when video frame format is NV12'
     fullName: lumaStride
     remarks: ''
     isDeprecated: false
@@ -59,7 +59,7 @@ properties:
   - name: stride
     uid: '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrame.stride'
     package: '@microsoft/teams-js'
-    summary: '* RGB stride, valid only when video frame format is RGB'
+    summary: 'RGB stride, valid only when video frame format is RGB'
     fullName: stride
     remarks: ''
     isDeprecated: false
@@ -71,7 +71,7 @@ properties:
   - name: width
     uid: '@microsoft/teams-js.@microsoft.teams-js.video.VideoFrame.width'
     package: '@microsoft/teams-js'
-    summary: '* Video frame width.'
+    summary: 'Video frame width.'
     fullName: width
     remarks: ''
     isDeprecated: false

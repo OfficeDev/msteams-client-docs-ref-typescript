@@ -12,8 +12,8 @@ methods:
     uid: '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent.notifyFailure'
     package: '@microsoft/teams-js'
     summary: >-
-      * Indicates that removal of the underlying resource failed and that the
-      content cannot be removed.           *
+      Indicates that removal of the underlying resource failed and that the
+      content cannot be removed.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -28,7 +28,7 @@ methods:
     uid: '@microsoft/teams-js.microsoftTeams.settings.RemoveEvent.notifySuccess'
     package: '@microsoft/teams-js'
     summary: >-
-      * Indicates that the underlying resource has been removed and the content
+      Indicates that the underlying resource has been removed and the content
       can be removed.
     remarks: ''
     isDeprecated: false

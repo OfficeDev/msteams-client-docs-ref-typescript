@@ -15,7 +15,7 @@ functions:
   - name: 'shareWebContent(IShareRequest<IURLContent>, (err?: SdkError) => void)'
     uid: '@microsoft/teams-js.microsoftTeams.sharing.shareWebContent'
     package: '@microsoft/teams-js'
-    summary: '* Opens a share dialog for web content       *'
+    summary: 'Opens a share dialog for web content.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -29,7 +29,7 @@ functions:
             uid="@microsoft.teams-js.sharing.IShareRequest"
             />&lt;@microsoft/teams-js.<xref
             uid="@microsoft.teams-js.sharing.IURLContent" />&gt;
-          description: web content info       *
+          description: web content info
         - id: callback
           type: '(err?: SdkError) =&gt; void'
           description: optional callback

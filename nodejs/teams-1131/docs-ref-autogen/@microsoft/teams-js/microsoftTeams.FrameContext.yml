@@ -12,7 +12,7 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.FrameContext.contentUrl'
     package: '@microsoft/teams-js'
     summary: >-
-      * The current URL that needs to be used in the iframe if the tab is
+      The current URL that needs to be used in the iframe if the tab is
       reloaded
     fullName: contentUrl
     remarks: ''
@@ -26,7 +26,7 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.FrameContext.websiteUrl'
     package: '@microsoft/teams-js'
     summary: >-
-      * The current URL that needs to be used for opening the website when the
+      The current URL that needs to be used for opening the website when the
       user clicks on 'Go to website'
     fullName: websiteUrl
     remarks: ''

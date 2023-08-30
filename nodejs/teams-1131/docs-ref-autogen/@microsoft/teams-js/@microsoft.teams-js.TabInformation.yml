@@ -2,7 +2,7 @@
 name: TabInformation
 uid: '@microsoft/teams-js.@microsoft.teams-js.TabInformation'
 package: '@microsoft/teams-js'
-summary: '* Represents information about tabs for an app'
+ summary: 'Represents information about tabs for an app'
 fullName: TabInformation
 remarks: ''
 isDeprecated: false

@@ -12,7 +12,7 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.settings.SaveParameters.webhookUrl'
     package: '@microsoft/teams-js'
     summary: >-
-      * Connector's webhook Url returned as arguments to settings.save event as
+      Connector's webhook Url returned as arguments to settings.save event as
       part of user clicking on Save
     fullName: webhookUrl
     remarks: ''

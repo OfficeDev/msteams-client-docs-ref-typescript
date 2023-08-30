@@ -2,7 +2,7 @@
 name: ImageOutputFormats
 uid: '@microsoft/teams-js.@microsoft.teams-js.media.ImageOutputFormats'
 package: '@microsoft/teams-js'
-summary: '* Specifies the image output formats.'
+summary: 'Specifies the image output formats.'
 fullName: ImageOutputFormats
 remarks: ''
 isDeprecated: false

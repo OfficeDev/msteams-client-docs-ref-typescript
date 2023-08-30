@@ -2,7 +2,7 @@
 name: MediaInputs
 uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs'
 package: '@microsoft/teams-js'
-summary: '* Input parameter supplied to the select Media API'
+summary: 'Input parameter supplied to the select Media API'
 fullName: MediaInputs
 remarks: ''
 isDeprecated: false
@@ -11,7 +11,7 @@ properties:
   - name: audioProps
     uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.audioProps'
     package: '@microsoft/teams-js'
-    summary: '* Additional properties for audio capture flows.'
+    summary: 'Additional properties for audio capture flows.'
     fullName: audioProps
     remarks: ''
     isDeprecated: false
@@ -26,8 +26,8 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.imageProps'
     package: '@microsoft/teams-js'
     summary: >-
-      * Additional properties for customization of select media - Image in
-      mobile devices
+      Additional properties for customization of select media - Image in
+      mobile devices.
     fullName: imageProps
     remarks: ''
     isDeprecated: false
@@ -42,7 +42,7 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.maxMediaCount'
     package: '@microsoft/teams-js'
     summary: >-
-      * max limit of media allowed to be selected in one go, current max limit
+      max limit of media allowed to be selected in one go, current max limit
       is 10 set by office lens.
     fullName: maxMediaCount
     remarks: ''
@@ -55,7 +55,7 @@ properties:
   - name: mediaType
     uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.mediaType'
     package: '@microsoft/teams-js'
-    summary: '* Only one media type can be selected at a time'
+    summary: 'Only one media type can be selected at a time'
     fullName: mediaType
     remarks: ''
     isDeprecated: false
@@ -68,8 +68,8 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.videoAndImageProps'
     package: '@microsoft/teams-js'
     summary: >-
-      * Additional properties for customization of select media - VideoAndImage
-      in mobile devices
+      Additional properties for customization of select media - VideoAndImage
+      in mobile devices.
     fullName: videoAndImageProps
     remarks: ''
     isDeprecated: false
@@ -84,8 +84,8 @@ properties:
     uid: '@microsoft/teams-js.microsoftTeams.media.MediaInputs.videoProps'
     package: '@microsoft/teams-js'
     summary: >-
-      * Additional properties for customization of select media - Video in
-      mobile devices
+      Additional properties for customization of select media - Video in
+      mobile devices.
     fullName: videoProps
     remarks: ''
     isDeprecated: false

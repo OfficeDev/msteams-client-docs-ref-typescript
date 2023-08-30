@@ -11,7 +11,7 @@ properties:
   - name: items
     uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters.items'
     package: '@microsoft/teams-js'
-    summary: '* List of MenuItems for Action Menu'
+    summary: 'List of MenuItems for Action Menu'
     fullName: items
     remarks: ''
     isDeprecated: false
@@ -25,7 +25,7 @@ properties:
   - name: title
     uid: '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters.title'
     package: '@microsoft/teams-js'
-    summary: '* Display title for Action Menu'
+    summary: 'Display title for Action Menu'
     fullName: title
     remarks: ''
     isDeprecated: false

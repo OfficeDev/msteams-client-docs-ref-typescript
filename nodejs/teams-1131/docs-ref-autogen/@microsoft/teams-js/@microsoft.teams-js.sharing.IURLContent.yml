@@ -11,7 +11,7 @@ properties:
   - name: message
     uid: '@microsoft/teams-js.@microsoft.teams-js.sharing.IURLContent.message'
     package: '@microsoft/teams-js'
-    summary: '* Default initial message text'
+    summary: 'Default initial message text'
     fullName: message
     remarks: ''
     isDeprecated: false
@@ -23,7 +23,7 @@ properties:
   - name: preview
     uid: '@microsoft/teams-js.@microsoft.teams-js.sharing.IURLContent.preview'
     package: '@microsoft/teams-js'
-    summary: '* Show URL preview, defaults to true'
+    summary: 'Show URL preview, defaults to true'
     fullName: preview
     remarks: ''
     isDeprecated: false
@@ -47,7 +47,7 @@ properties:
   - name: url
     uid: '@microsoft/teams-js.@microsoft.teams-js.sharing.IURLContent.url'
     package: '@microsoft/teams-js'
-    summary: '* Required URL'
+    summary: 'Required URL'
     fullName: url
     remarks: ''
     isDeprecated: false

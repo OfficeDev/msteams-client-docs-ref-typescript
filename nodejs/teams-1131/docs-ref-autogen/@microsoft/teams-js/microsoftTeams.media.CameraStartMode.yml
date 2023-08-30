@@ -2,7 +2,7 @@
 name: CameraStartMode
 uid: '@microsoft/teams-js.microsoftTeams.media.CameraStartMode'
 package: '@microsoft/teams-js'
-summary: '* The modes in which camera can be launched in select Media API'
+summary: 'The modes in which camera can be launched in select Media API'
 fullName: CameraStartMode
 remarks: ''
 isDeprecated: false

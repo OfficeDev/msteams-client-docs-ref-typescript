@@ -2,7 +2,7 @@
 name: MediaChunk
 uid: '@microsoft/teams-js.microsoftTeams.media.MediaChunk'
 package: '@microsoft/teams-js'
-summary: '* Media chunks an output of getMedia API from platform'
+summary: 'Media chunks an output of getMedia API from platform'
 fullName: MediaChunk
 remarks: ''
 isDeprecated: false
@@ -11,7 +11,7 @@ properties:
   - name: chunk
     uid: '@microsoft/teams-js.microsoftTeams.media.MediaChunk.chunk'
     package: '@microsoft/teams-js'
-    summary: '* Base 64 data for the requested uri'
+    summary: 'Base 64 data for the requested uri'
     fullName: chunk
     remarks: ''
     isDeprecated: false
@@ -23,7 +23,7 @@ properties:
   - name: chunkSequence
     uid: '@microsoft/teams-js.microsoftTeams.media.MediaChunk.chunkSequence'
     package: '@microsoft/teams-js'
-    summary: '* chunk sequence number​'
+    summary: 'chunk sequence number​'
     fullName: chunkSequence
     remarks: ''
     isDeprecated: false

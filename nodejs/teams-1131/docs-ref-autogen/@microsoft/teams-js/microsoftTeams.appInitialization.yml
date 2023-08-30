@@ -15,7 +15,7 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.appInitialization.notifyAppLoaded'
     package: '@microsoft/teams-js'
     summary: >-
-      * Notifies the frame that app has loaded and to hide the loading indicator
+      Notifies the frame that app has loaded and to hide the loading indicator
       if one is shown.
     remarks: ''
     isDeprecated: false
@@ -24,7 +24,7 @@ functions:
   - name: notifyExpectedFailure(IExpectedFailureRequest)
     uid: '@microsoft/teams-js.microsoftTeams.appInitialization.notifyExpectedFailure'
     package: '@microsoft/teams-js'
-    summary: '* Notifies the frame that app initialized with some expected errors.'
+    summary: 'Notifies the frame that app initialized with some expected errors.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.appInitialization.notifyFailure'
     package: '@microsoft/teams-js'
     summary: >-
-      * Notifies the frame that app initialization has failed and to show an
+      Notifies the frame that app initialization has failed and to show an
       error page in its place.
     remarks: ''
     isDeprecated: false
@@ -58,7 +58,7 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.appInitialization.notifySuccess'
     package: '@microsoft/teams-js'
     summary: >-
-      * Notifies the frame that app initialization is successful and is ready
+      Notifies the frame that app initialization is successful and is ready
       for user interaction.
     remarks: ''
     isDeprecated: false

@@ -13,7 +13,7 @@ properties:
       @microsoft/teams-js.@microsoft.teams-js.authentication.AuthTokenRequest.claims
     package: '@microsoft/teams-js'
     summary: >-
-      * An optional list of claims which to pass to AAD when requesting the
+      An optional list of claims which to pass to AAD when requesting the
       access token.
     fullName: claims
     remarks: ''
@@ -28,7 +28,7 @@ properties:
       @microsoft/teams-js.@microsoft.teams-js.authentication.AuthTokenRequest.failureCallback
     package: '@microsoft/teams-js'
     summary: >-
-      * A function that is called if the token request fails, with the reason
+      A function that is called if the token request fails, with the reason
       for the failure.
     fullName: failureCallback
     remarks: ''
@@ -43,7 +43,7 @@ properties:
       @microsoft/teams-js.@microsoft.teams-js.authentication.AuthTokenRequest.resources
     package: '@microsoft/teams-js'
     summary: >-
-      * An optional list of resource for which to acquire the access token; only
+      An optional list of resource for which to acquire the access token; only
       used for full trust apps.
     fullName: resources
     remarks: ''
@@ -58,7 +58,7 @@ properties:
       @microsoft/teams-js.@microsoft.teams-js.authentication.AuthTokenRequest.silent
     package: '@microsoft/teams-js'
     summary: >-
-      * An optional flag indicating whether to attempt the token acquisition
+      An optional flag indicating whether to attempt the token acquisition
       silently or allow a prompt to be shown.
     fullName: silent
     remarks: ''
@@ -73,7 +73,7 @@ properties:
       @microsoft/teams-js.@microsoft.teams-js.authentication.AuthTokenRequest.successCallback
     package: '@microsoft/teams-js'
     summary: >-
-      * A function that is called if the token request succeeds, with the
+      A function that is called if the token request succeeds, with the
       resulting token.
     fullName: successCallback
     remarks: ''

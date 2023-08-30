@@ -3,8 +3,8 @@ name: VideoController
 uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoController'
 package: '@microsoft/teams-js'
 summary: >-
-  * VideoController class is used to communicate between the app and the host
-  client during the video capture flow
+  VideoController class is used to communicate between the app and the host
+  client during the video capture flow.
 fullName: VideoController
 remarks: ''
 isDeprecated: false
@@ -29,8 +29,7 @@ inheritedMethods:
     uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoController.stop'
     package: '@microsoft/teams-js'
     summary: >-
-      * Function to programatically stop the ongoing media event           *
-      Optional;
+      Optional; Function to programatically stop the ongoing media event.
     remarks: ''
     isDeprecated: false
     syntax:

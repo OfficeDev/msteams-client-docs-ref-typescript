@@ -3,8 +3,8 @@ name: VideoControllerCallback
 uid: '@microsoft/teams-js.@microsoft.teams-js.media.VideoControllerCallback'
 package: '@microsoft/teams-js'
 summary: >-
-  * Callback which will register your app to listen to lifecycle events during
-  the video capture flow
+  Callback which will register your app to listen to lifecycle events during
+  the video capture flow.
 fullName: VideoControllerCallback
 remarks: ''
 isDeprecated: false
