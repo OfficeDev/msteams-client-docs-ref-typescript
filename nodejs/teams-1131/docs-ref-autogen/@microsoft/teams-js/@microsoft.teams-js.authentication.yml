@@ -2,7 +2,7 @@
 uid: '@microsoft/teams-js.@microsoft.teams-js.authentication'
 name: authentication
 summary: >-
-  * Namespace to interact with the authentication-specific part of the SDK.   *
+  Namespace to interact with the authentication-specific part of the SDK.   *
   This object is used for starting or completing authentication flows.
 type: module
 interfaces:
@@ -15,7 +15,7 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.authentication.authenticate'
     package: '@microsoft/teams-js'
     summary: >-
-      * Initiates an authentication request, which opens a new window with the
+      Initiates an authentication request, which opens a new window with the
       specified settings.
     remarks: ''
     isDeprecated: false
@@ -31,9 +31,9 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.authentication.getAuthToken'
     package: '@microsoft/teams-js'
     summary: >-
-      * Requests an Azure AD token to be issued on behalf of the app. The token
-      is acquired from the cache       * if it is not expired. Otherwise a
-      request is sent to Azure AD to obtain a new token.       *
+      Requests an Azure AD token to be issued on behalf of the app. The token
+      is acquired from the cache if it is not expired. Otherwise a
+      request is sent to Azure AD to obtain a new token.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -56,10 +56,10 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.authentication.notifyFailure'
     package: '@microsoft/teams-js'
     summary: >-
-      * Notifies the frame that initiated this authentication request that the
-      request failed.       * This function is usable only on the authentication
-      window.       * This call causes the authentication window to be
-      closed.       *
+      Notifies the frame that initiated this authentication request that the
+      request failed. This function is usable only on the authentication
+      window. This call causes the authentication window to be
+      closed.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -77,10 +77,10 @@ functions:
     uid: '@microsoft/teams-js.@microsoft.teams-js.authentication.notifySuccess'
     package: '@microsoft/teams-js'
     summary: >-
-      * Notifies the frame that initiated this authentication request that the
-      request was successful.       * This function is usable only on the
-      authentication window.       * This call causes the authentication window
-      to be closed.       *
+      Notifies the frame that initiated this authentication request that the
+      request was successful. This function is usable only on the
+      authentication window. This call causes the authentication window
+      to be closed.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -91,7 +91,7 @@ functions:
           description: >-
             Specifies a result for the authentication. If specified, the frame
             that initiated the authentication pop-up receives this value in its
-            callback.       *
+            callback.
         - id: callbackUrl
           type: string
           description: >-
@@ -101,7 +101,7 @@ functions:
     uid: >-
       @microsoft/teams-js.@microsoft.teams-js.authentication.registerAuthenticationHandlers
     package: '@microsoft/teams-js'
-    summary: '* Registers the authentication Communication.handlers       *'
+    summary: 'Registers the authentication Communication.handlers'
     remarks: ''
     isDeprecated: false
     syntax:

@@ -2,9 +2,9 @@
 uid: '@microsoft/teams-js.microsoftTeams.menus'
 name: menus
 summary: >-
-  * Namespace to interact with the menu-specific part of the SDK.   * This
+  Namespace to interact with the menu-specific part of the SDK. This
   object is used to show View Configuration, Action Menu and Navigation Bar
-  Menu.   *
+  Menu.
 type: module
 interfaces:
   - '@microsoft/teams-js.microsoftTeams.menus.ActionMenuParameters'
@@ -29,8 +29,8 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.menus.setNavBarMenu'
     package: '@microsoft/teams-js'
     summary: >-
-      * Used to set menu items on the Navigation Bar. If icon is available, icon
-      will be shown, otherwise title will be shown.       *
+      Used to set menu items on the Navigation Bar. If icon is available, icon
+      will be shown, otherwise title will be shown.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -42,7 +42,7 @@ functions:
           type: >-
             @microsoft/teams-js.<xref uid="@microsoft.teams-js.menus.MenuItem"
             />[]
-          description: List of MenuItems for Navigation Bar Menu.       *
+          description: List of MenuItems for Navigation Bar Menu.
         - id: handler
           type: '(id: string) =&gt; boolean'
           description: The handler to invoke when the user selects menu item.
@@ -50,8 +50,8 @@ functions:
     uid: '@microsoft/teams-js.microsoftTeams.menus.setUpViews'
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers list of view configurations and it's handler.       * Handler
-      is responsible for listening selection of View Configuration.       *
+      Registers list of view configurations and it's handler. Handler
+      is responsible for listening selection of View Configuration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -70,7 +70,7 @@ functions:
   - name: 'showActionMenu(ActionMenuParameters, (id: string) => boolean)'
     uid: '@microsoft/teams-js.microsoftTeams.menus.showActionMenu'
     package: '@microsoft/teams-js'
-    summary: '* Used to show Action Menu.       *'
+    summary: 'Used to show Action Menu.'
     remarks: ''
     isDeprecated: false
     syntax:
@@ -82,7 +82,7 @@ functions:
           type: >-
             @microsoft/teams-js.<xref
             uid="@microsoft.teams-js.menus.ActionMenuParameters" />
-          description: Parameters for Menu Parameters       *
+          description: Parameters for Menu Parameters
         - id: handler
           type: '(id: string) =&gt; boolean'
           description: The handler to invoke when the user selects menu item.

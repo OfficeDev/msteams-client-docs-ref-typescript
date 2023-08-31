@@ -12,9 +12,9 @@ functions:
       @microsoft/teams-js.@microsoft.teams-js.remoteCamera.registerOnCapableParticipantsChangeHandler
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for change in participants with
-      controllable-cameras.       * Only one handler can be registered at a
-      time. A subsequent registration replaces an existing registration.       *
+      Registers a handler for change in participants with
+      controllable-cameras. Only one handler can be registered at a
+      time. A subsequent registration replaces an existing registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -34,9 +34,9 @@ functions:
       @microsoft/teams-js.@microsoft.teams-js.remoteCamera.registerOnDeviceStateChangeHandler
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for device state change.       * Only one handler
+      Registers a handler for device state change. Only one handler
       can be registered at a time. A subsequent registration replaces an
-      existing registration.       *
+      existing registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -52,9 +52,9 @@ functions:
       @microsoft/teams-js.@microsoft.teams-js.remoteCamera.registerOnErrorHandler
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for error.       * Only one handler can be
+      Registers a handler for error. Only one handler can be
       registered at a time. A subsequent registration replaces an existing
-      registration.       *
+      registration.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -72,9 +72,9 @@ functions:
       @microsoft/teams-js.@microsoft.teams-js.remoteCamera.registerOnSessionStatusChangeHandler
     package: '@microsoft/teams-js'
     summary: >-
-      * Registers a handler for session status change.       * Only one handler
+      Registers a handler for session status change. Only one handler
       can be registered at a time. A subsequent registration replaces an
-      existing registration.       *
+      existing registration.
     remarks: ''
     isDeprecated: false
     syntax:

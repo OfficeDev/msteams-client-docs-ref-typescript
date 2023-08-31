@@ -2,7 +2,7 @@
 name: EffectChangeType
 uid: '@microsoft/teams-js.@microsoft.teams-js.video.EffectChangeType'
 package: '@microsoft/teams-js'
-summary: '*  Video effect change type enum'
+summary: 'Video effect change type enum'
 fullName: EffectChangeType
 remarks: ''
 isDeprecated: false
@@ -11,11 +11,11 @@ fields:
     uid: >-
       @microsoft/teams-js.@microsoft.teams-js.video.EffectChangeType.EffectChanged
     package: '@microsoft/teams-js'
-    summary: '* current video effect changed.'
+    summary: 'current video effect changed.'
     numericValue: 0
   - name: EffectDisabled
     uid: >-
       @microsoft/teams-js.@microsoft.teams-js.video.EffectChangeType.EffectDisabled
     package: '@microsoft/teams-js'
-    summary: '* disable the video effect'
+    summary: 'disable the video effect'
     numericValue: 1

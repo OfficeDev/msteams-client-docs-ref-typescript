@@ -2,7 +2,7 @@
 name: MenuListType
 uid: '@microsoft/teams-js.microsoftTeams.menus.MenuListType'
 package: '@microsoft/teams-js'
-summary: '* Represents information about type of list to display in Navigation Bar Menu.'
+summary: 'Represents information about type of list to display in Navigation Bar Menu.'
 fullName: MenuListType
 remarks: ''
 isDeprecated: false

@@ -13,7 +13,7 @@ properties:
       @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters.failureCallback
     package: '@microsoft/teams-js'
     summary: >-
-      * A function that is called if the authentication fails, with the reason
+      A function that is called if the authentication fails, with the reason
       for the failure returned from the authentication pop-up.
     fullName: failureCallback
     remarks: ''
@@ -28,7 +28,7 @@ properties:
       @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters.height
     package: '@microsoft/teams-js'
     summary: >-
-      * The preferred height for the pop-up. This value can be ignored if
+      The preferred height for the pop-up. This value can be ignored if
       outside the acceptable bounds.
     fullName: height
     remarks: ''
@@ -43,7 +43,7 @@ properties:
       @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters.isExternal
     package: '@microsoft/teams-js'
     summary: >-
-      * The flag which indicates whether the auth page should be opened in an
+      The flag which indicates whether the auth page should be opened in an
       external browser. This flag has no effect on the web client.
     fullName: isExternal
     remarks: ''
@@ -58,7 +58,7 @@ properties:
       @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters.successCallback
     package: '@microsoft/teams-js'
     summary: >-
-      * A function that is called if the authentication succeeds, with the
+      A function that is called if the authentication succeeds, with the
       result returned from the authentication pop-up.
     fullName: successCallback
     remarks: ''
@@ -72,7 +72,7 @@ properties:
     uid: >-
       @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters.url
     package: '@microsoft/teams-js'
-    summary: '* The URL for the authentication pop-up.'
+    summary: 'The URL for the authentication pop-up.'
     fullName: url
     remarks: ''
     isDeprecated: false
@@ -86,7 +86,7 @@ properties:
       @microsoft/teams-js.microsoftTeams.authentication.AuthenticateParameters.width
     package: '@microsoft/teams-js'
     summary: >-
-      * The preferred width for the pop-up. This value can be ignored if outside
+      The preferred width for the pop-up. This value can be ignored if outside
       the acceptable bounds.
     fullName: width
     remarks: ''

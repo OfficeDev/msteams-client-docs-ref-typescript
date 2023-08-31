@@ -2,7 +2,7 @@
 name: TaskModuleDimension
 uid: '@microsoft/teams-js.@microsoft.teams-js.TaskModuleDimension'
 package: '@microsoft/teams-js'
-summary: '* Task module dimension enum'
+summary: 'Task module dimension enum'
 fullName: TaskModuleDimension
 remarks: ''
 isDeprecated: false
