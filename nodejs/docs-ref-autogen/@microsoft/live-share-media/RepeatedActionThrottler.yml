@@ -23,7 +23,9 @@ properties:
         description: ''
         type: number
 methods:
-  - name: throttled(ExtendedMediaSessionActionDetails, MediaSessionActionHandler)
+  - name: >-
+      throttled(ExtendedMediaSessionActionDetails | MediaSessionActionDetails,
+      MediaSessionActionHandler)
     uid: '@microsoft/live-share-media.RepeatedActionThrottler.throttled'
     package: '@microsoft/live-share-media'
     summary: ''
@@ -31,14 +33,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function throttled(details: ExtendedMediaSessionActionDetails, handler?:
-        MediaSessionActionHandler)
+        function throttled(details: ExtendedMediaSessionActionDetails |
+        MediaSessionActionDetails, handler?: MediaSessionActionHandler)
       parameters:
         - id: details
           type: >-
             <xref
             uid="@microsoft/live-share-media.ExtendedMediaSessionActionDetails"
-            />
+            /> | MediaSessionActionDetails
           description: ''
         - id: handler
           type: MediaSessionActionHandler

@@ -1,0 +1,55 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.clipboard'
+name: clipboard
+type: module
+package: '@microsoft/teams-js'
+summary: Interact with the system clipboard
+previewState: beta
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.clipboard.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if clipboard capability is supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether the clipboard capability is supported
+        type: boolean
+  - name: read()
+    uid: '@microsoft/teams-js.clipboard.read'
+    package: '@microsoft/teams-js'
+    summary: Function to read data from clipboard.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function read(): Promise<Blob>'
+      return:
+        description: |-
+          A promise blob which resolves to the data read from the clipboard or
+                   rejects stating the reason for failure.
+                   Note: Returned blob type will contain one of the MIME type `image/png`, `text/plain` or `text/html`.
+        type: Promise&lt;Blob&gt;
+  - name: write(Blob)
+    uid: '@microsoft/teams-js.clipboard.write'
+    package: '@microsoft/teams-js'
+    summary: Function to copy data to clipboard.
+    remarks: |-
+      Note: clipboard.write only supports Text, HTML, PNG, and JPEG data format.
+            MIME type for Text -> `text/plain`, HTML -> `text/html`, PNG/JPEG -> `image/(png | jpeg)`
+            Also, JPEG will be converted to PNG image when copying to clipboard.
+    isDeprecated: false
+    syntax:
+      content: 'function write(blob: Blob): Promise<void>'
+      parameters:
+        - id: blob
+          type: Blob
+          description: A Blob object representing the data to be copied to clipboard.
+      return:
+        description: >-
+          A string promise which resolves to success message from the clipboard
+          or
+                   rejects with error stating the reason for failure.
+        type: Promise&lt;void&gt;

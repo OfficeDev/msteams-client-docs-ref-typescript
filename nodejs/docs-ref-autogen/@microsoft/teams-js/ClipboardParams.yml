@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: ClipboardParams
+uid: '@microsoft/teams-js.ClipboardParams'
+package: '@microsoft/teams-js'
+summary: Clipboard write parameters
+fullName: ClipboardParams
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: '@microsoft/teams-js.ClipboardParams.content'
+    package: '@microsoft/teams-js'
+    summary: Blob content in Base64 string format
+    fullName: content
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'content: string'
+      return:
+        description: ''
+        type: string
+  - name: mimeType
+    uid: '@microsoft/teams-js.ClipboardParams.mimeType'
+    package: '@microsoft/teams-js'
+    summary: Mime Type of data to be copied to Clipboard
+    fullName: mimeType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'mimeType: ClipboardSupportedMimeType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.ClipboardSupportedMimeType" />

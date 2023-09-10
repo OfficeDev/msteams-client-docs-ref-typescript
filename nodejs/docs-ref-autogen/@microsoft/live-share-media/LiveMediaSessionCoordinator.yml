@@ -73,6 +73,25 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: canSendPositionUpdates
+    uid: >-
+      @microsoft/live-share-media.LiveMediaSessionCoordinator.canSendPositionUpdates
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Controls whether or not the local client is allowed to send position
+      updates to the group.
+    fullName: canSendPositionUpdates
+    remarks: >-
+      This flag largely meant to limit the number of signals sent to the group
+      for performance reasons.
+
+      It does not provide any security in itself.
+    isDeprecated: false
+    syntax:
+      content: 'canSendPositionUpdates: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: canSetTrack
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.canSetTrack'
     package: '@microsoft/live-share-media'

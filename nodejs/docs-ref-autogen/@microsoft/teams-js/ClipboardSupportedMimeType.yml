@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: ClipboardSupportedMimeType
+uid: '@microsoft/teams-js.ClipboardSupportedMimeType'
+package: '@microsoft/teams-js'
+summary: Currently supported Mime type
+fullName: ClipboardSupportedMimeType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: ImageJPEG
+    uid: '@microsoft/teams-js.ClipboardSupportedMimeType.ImageJPEG'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: ImagePNG
+    uid: '@microsoft/teams-js.ClipboardSupportedMimeType.ImagePNG'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: TextHtml
+    uid: '@microsoft/teams-js.ClipboardSupportedMimeType.TextHtml'
+    package: '@microsoft/teams-js'
+    summary: ''
+  - name: TextPlain
+    uid: '@microsoft/teams-js.ClipboardSupportedMimeType.TextPlain'
+    package: '@microsoft/teams-js'
+    summary: ''

@@ -34,6 +34,18 @@ properties:
         type: >-
           null | <xref
           uid="@microsoft/live-share-media.ExtendedMediaSessionAction" />
+  - name: clientId
+    uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.clientId'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: clientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'clientId: string'
+      return:
+        description: ''
+        type: string
   - name: data
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.data'
     package: '@microsoft/live-share-media'
