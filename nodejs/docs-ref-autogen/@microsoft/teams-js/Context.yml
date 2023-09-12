@@ -327,7 +327,7 @@ properties:
       instead
 
 
-      The Azure AD group ID of the host team.
+      The Microsoft Entra group ID of the host team.
     syntax:
       content: 'hostTeamGroupId?: string'
       return:
@@ -485,7 +485,7 @@ properties:
 
 
       A value suitable for use as a login_hint when authenticating with
-      Azure AD ID.
+      Microsoft Entra ID.
 
       Because a malicious party can run your content in a browser, this value
       should
@@ -906,7 +906,7 @@ properties:
       instead
 
 
-      The Azure AD tenant ID of the current user.
+      The Microsoft Entra tenant ID of the current user.
 
       Because a malicious party can run your content in a browser, this value
       should
@@ -1040,7 +1040,7 @@ properties:
       [app.Context.user.id](xref:@microsoft/teams-js.app.UserInfo.id) instead
 
 
-      The Azure AD object ID of the current user.
+      The Microsoft Entra object ID of the current user.
 
       Because a malicious party run your content in a browser, this value should
 

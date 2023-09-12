@@ -292,6 +292,9 @@
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails'
       name: ExtendedMediaSessionActionDetails
       items: []
+    - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionHandler'
+      name: ExtendedMediaSessionActionHandler
+      items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionPlaybackState'
       name: ExtendedMediaSessionPlaybackState
       items: []
@@ -415,13 +418,6 @@
         - uid: '@microsoft/teams-js.appInstallDialog.OpenAppInstallDialogParams'
           name: OpenAppInstallDialogParams
           items: []
-    - name: appNotification
-      items:
-        - name: Overview
-          uid: '@microsoft/teams-js.appNotification'
-        - uid: '@microsoft/teams-js.appNotification.NotificationDisplayParam'
-          name: NotificationDisplayParam
-          items: []
     - name: authentication
       items:
         - name: Overview
@@ -485,6 +481,15 @@
       items: []
     - uid: '@microsoft/teams-js.ChildAppWindow'
       name: ChildAppWindow
+      items: []
+    - uid: '@microsoft/teams-js.clipboard'
+      name: clipboard
+      items: []
+    - uid: '@microsoft/teams-js.ClipboardParams'
+      name: ClipboardParams
+      items: []
+    - uid: '@microsoft/teams-js.ClipboardSupportedMimeType'
+      name: ClipboardSupportedMimeType
       items: []
     - uid: '@microsoft/teams-js.Context'
       name: Context

@@ -61,12 +61,13 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'platform: android | ios | "macos" | "windows"'
+      content: 'platform: android | ios | macos | "windows"'
       return:
         description: ''
         type: >-
           <xref uid="@microsoft/teams-js.HostClientType.android" /> | <xref
-          uid="@microsoft/teams-js.HostClientType.ios" /> | "macos" | "windows"
+          uid="@microsoft/teams-js.HostClientType.ios" /> | <xref
+          uid="@microsoft/teams-js.HostClientType.macos" /> | "windows"
   - name: regionalFormat
     uid: '@microsoft/teams-js.LocaleInfo.regionalFormat'
     package: '@microsoft/teams-js'

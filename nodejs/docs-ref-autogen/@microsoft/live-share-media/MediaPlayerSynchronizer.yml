@@ -20,7 +20,9 @@ remarks: >-
 isDeprecated: false
 type: class
 constructors:
-  - name: MediaPlayerSynchronizer(IMediaPlayer, LiveMediaSession, () => void)
+  - name: >-
+      MediaPlayerSynchronizer(IMediaPlayer, LiveMediaSession, IRuntimeSignaler,
+      () => void)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.constructor'
     package: '@microsoft/live-share-media'
     summary: Creates a new `MediaElementSynchronizer` instance.
@@ -29,7 +31,7 @@ constructors:
     syntax:
       content: >-
         new MediaPlayerSynchronizer(player: IMediaPlayer, mediaSession:
-        LiveMediaSession, onEnd: () => void)
+        LiveMediaSession, runtime: IRuntimeSignaler, onEnd: () => void)
       parameters:
         - id: player
           type: <xref uid="@microsoft/live-share-media.IMediaPlayer" />
@@ -39,6 +41,9 @@ constructors:
         - id: mediaSession
           type: <xref uid="@microsoft/live-share-media.LiveMediaSession" />
           description: Group MediaSession object being used.
+        - id: runtime
+          type: IRuntimeSignaler
+          description: ''
         - id: onEnd
           type: () =&gt; void
           description: >-

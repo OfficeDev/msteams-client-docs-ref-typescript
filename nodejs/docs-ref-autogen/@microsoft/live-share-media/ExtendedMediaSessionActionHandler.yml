@@ -1,0 +1,9 @@
+### YamlMime:TSType
+name: ExtendedMediaSessionActionHandler
+uid: '@microsoft/live-share-media.ExtendedMediaSessionActionHandler'
+package: '@microsoft/live-share-media'
+summary: ''
+fullName: ExtendedMediaSessionActionHandler
+remarks: ''
+isDeprecated: false
+type: interface

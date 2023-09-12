@@ -1326,7 +1326,7 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       setActionHandler(ExtendedMediaSessionAction, null |
-      MediaSessionActionHandler)
+      ExtendedMediaSessionActionHandler | MediaSessionActionHandler)
     uid: '@microsoft/live-share-media.LiveMediaSession.setActionHandler'
     package: '@microsoft/live-share-media'
     summary: Registers an action handler with the session.
@@ -1335,7 +1335,7 @@ methods:
     syntax:
       content: >-
         function setActionHandler(action: ExtendedMediaSessionAction, handler:
-        null | MediaSessionActionHandler)
+        null | ExtendedMediaSessionActionHandler | MediaSessionActionHandler)
       parameters:
         - id: action
           type: >-
@@ -1343,7 +1343,10 @@ methods:
             />
           description: Name of the action to register a handler for.
         - id: handler
-          type: null | MediaSessionActionHandler
+          type: >-
+            null | <xref
+            uid="@microsoft/live-share-media.ExtendedMediaSessionActionHandler"
+            /> | MediaSessionActionHandler
           description: Function called when the action is triggered.
   - name: setRequestPlayerStateHandler(() => IMediaPlayerState)
     uid: '@microsoft/live-share-media.LiveMediaSession.setRequestPlayerStateHandler'

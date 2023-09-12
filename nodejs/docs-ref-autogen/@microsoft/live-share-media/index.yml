@@ -19,6 +19,7 @@ interfaces:
   - '@microsoft/live-share-media.CoordinationWaitPoint'
   - '@microsoft/live-share-media.ExtendedMediaMetadata'
   - '@microsoft/live-share-media.ExtendedMediaSessionActionDetails'
+  - '@microsoft/live-share-media.ExtendedMediaSessionActionHandler'
   - '@microsoft/live-share-media.IMediaPlayer'
   - '@microsoft/live-share-media.IMediaPlayerState'
   - '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent'
