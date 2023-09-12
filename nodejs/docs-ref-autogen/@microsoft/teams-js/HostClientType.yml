@@ -33,6 +33,12 @@ fields:
     summary: >-
       Represents the iPadOS client of host, which runs on iOS devices such as
       iPads.
+  - name: macos
+    uid: '@microsoft/teams-js.HostClientType.macos'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The host is running on a macOS client, which runs on devices such as
+      MacBooks.
   - name: rigel
     uid: '@microsoft/teams-js.HostClientType.rigel'
     package: '@microsoft/teams-js'

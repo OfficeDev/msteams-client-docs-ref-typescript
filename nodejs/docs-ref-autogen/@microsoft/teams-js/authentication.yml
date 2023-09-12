@@ -60,17 +60,17 @@ functions:
       There are two primary uses for this function:
 
       1. When your app needs to authenticate using a 3rd-party identity provider
-      (not Azure Active Directory)
+      (not AAD ID)
 
       2. When your app needs to show authentication UI that is blocked from
-      being shown in an iframe (e.g., Azure Active Directory consent prompts)
+      being shown in an iframe (e.g., Azure AD consent prompts)
 
 
       For more details, see [Enable authentication using third-party OAuth
       provider](https://learn.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab)
 
 
-      This function is *not* needed for "standard" Azure SSO usage.
+      This function is *not* needed for "standard" Azure AD SSO usage.
       Using
       [getAuthToken](xref:@microsoft/teams-js.authentication.getAuthToken_1) is
       usually sufficient in that case. For more, see

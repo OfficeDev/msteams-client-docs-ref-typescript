@@ -485,7 +485,7 @@ properties:
 
 
       A value suitable for use as a login_hint when authenticating with
-      Azure AD ID.
+      AAD ID.
 
       Because a malicious party can run your content in a browser, this value
       should

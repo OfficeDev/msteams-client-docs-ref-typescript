@@ -8,7 +8,9 @@ remarks: ''
 isDeprecated: false
 type: class
 methods:
-  - name: throttled(ExtendedMediaSessionActionDetails, MediaSessionActionHandler)
+  - name: >-
+      throttled(ExtendedMediaSessionActionDetails | MediaSessionActionDetails,
+      ExtendedMediaSessionActionHandler | MediaSessionActionHandler)
     uid: '@microsoft/live-share-media.MediaSessionActionThrottler.throttled'
     package: '@microsoft/live-share-media'
     summary: ''
@@ -16,15 +18,19 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function throttled(details: ExtendedMediaSessionActionDetails, handler?:
+        function throttled(details: ExtendedMediaSessionActionDetails |
+        MediaSessionActionDetails, handler?: ExtendedMediaSessionActionHandler |
         MediaSessionActionHandler)
       parameters:
         - id: details
           type: >-
             <xref
             uid="@microsoft/live-share-media.ExtendedMediaSessionActionDetails"
-            />
+            /> | MediaSessionActionDetails
           description: ''
         - id: handler
-          type: MediaSessionActionHandler
+          type: >-
+            <xref
+            uid="@microsoft/live-share-media.ExtendedMediaSessionActionHandler"
+            /> | MediaSessionActionHandler
           description: ''
