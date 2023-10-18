@@ -197,7 +197,7 @@ methods:
         type: >-
           Promise&lt;undefined | <xref
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />&gt;
-  - name: getPagedInstallations(number, string)
+  - name: getPagedInstallations(number, string, boolean)
     uid: >-
       @microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.getPagedInstallations
     package: '@microsoft/teamsfx'
@@ -207,7 +207,8 @@ methods:
     syntax:
       content: >-
         function getPagedInstallations(pageSize?: number, continuationToken?:
-        string): Promise<PagedData<TeamsBotInstallation_2>>
+        string, validationEnabled?: boolean):
+        Promise<PagedData<TeamsBotInstallation_2>>
       parameters:
         - id: pageSize
           type: number
@@ -215,6 +216,9 @@ methods:
         - id: continuationToken
           type: string
           description: A continuation token.
+        - id: validationEnabled
+          type: boolean
+          description: ''
       return:
         description: >-
           An array of
@@ -241,3 +245,23 @@ methods:
           Promise&lt;<xref
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
           />[]&gt;
+  - name: validateInstallation(Partial<ConversationReference>)
+    uid: >-
+      @microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.validateInstallation
+    package: '@microsoft/teamsfx'
+    summary: Validate the installation by getting paged memebers.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validateInstallation(conversationReference:
+        Partial<ConversationReference>): Promise<boolean>
+      parameters:
+        - id: conversationReference
+          type: Partial&lt;ConversationReference&gt;
+          description: The bound `ConversationReference`.
+      return:
+        description: >-
+          Returns false if recieves `BotNotInConversationRoster` error,
+          otherwise returns true.
+        type: Promise&lt;boolean&gt;

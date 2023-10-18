@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: FollowModePresenceUser
+uid: '@microsoft/live-share.FollowModePresenceUser'
+package: '@microsoft/live-share'
+summary: Convenience type for a LivePresenceUser in LiveFollowMode
+fullName: FollowModePresenceUser<TData>
+remarks: ''
+previewState: beta
+isDeprecated: false
+syntax: |
+  type FollowModePresenceUser<TData> = LivePresenceUser<
+    IFollowModePresenceUserData<TData>
+  >

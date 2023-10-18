@@ -10,34 +10,45 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: >-
-      LiveShareRuntime(ILiveShareHost, ITimestampProvider, IRoleVerifier,
-      boolean)
+  - name: LiveShareRuntime(ILiveShareHost, ILiveShareClientOptions, boolean)
     uid: '@microsoft/live-share.LiveShareRuntime.constructor'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: Runtime for `LiveDataObject`.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        new LiveShareRuntime(host: ILiveShareHost, timestampProvider?:
-        ITimestampProvider, roleVerifier?: IRoleVerifier, decorate?: boolean)
+        new LiveShareRuntime(host: ILiveShareHost, options?:
+        ILiveShareClientOptions, decorate?: boolean)
       parameters:
         - id: host
           type: <xref uid="@microsoft/live-share.ILiveShareHost" />
           description: Host for the current Live Share session.
-        - id: timestampProvider
-          type: ITimestampProvider
-          description: ''
-        - id: roleVerifier
-          type: IRoleVerifier
-          description: ''
+        - id: options
+          type: <xref uid="@microsoft/live-share.ILiveShareClientOptions" />
+          description: Optional. Options used for initializing `LiveShareClient`.
         - id: decorate
           type: boolean
           description: >-
             choose whether or not to automatically decorate host with
             `BackwardsCompatibilityHostDecorator` and `LiveShareHostDecorator`
 properties:
+  - name: canSendBackgroundUpdates
+    uid: '@microsoft/live-share.LiveShareRuntime.canSendBackgroundUpdates'
+    package: '@microsoft/live-share'
+    summary: >-
+      Setting for whether `LiveDataObject` instances using
+      `LiveObjectSynchronizer` can send background updates.
+
+      Default value is `true`.
+    fullName: canSendBackgroundUpdates
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean canSendBackgroundUpdates
+      return:
+        description: ''
+        type: boolean
   - name: host
     uid: '@microsoft/live-share.LiveShareRuntime.host'
     package: '@microsoft/live-share'
@@ -138,30 +149,6 @@ methods:
           description: >-
             choose whether or not to automatically decorate host with
             `BackwardsCompatibilityHostDecorator` and `LiveShareHostDecorator`
-  - name: setRoleVerifier(IRoleVerifier)
-    uid: '@microsoft/live-share.LiveShareRuntime.setRoleVerifier'
-    package: '@microsoft/live-share'
-    summary: Set the role verifier for the runtime
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function setRoleVerifier(roleVerifier: IRoleVerifier)'
-      parameters:
-        - id: roleVerifier
-          type: IRoleVerifier
-          description: role verifier to set
-  - name: setTimestampProvider(ITimestampProvider)
-    uid: '@microsoft/live-share.LiveShareRuntime.setTimestampProvider'
-    package: '@microsoft/live-share'
-    summary: Set the timestamp provider for the runtime
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'function setTimestampProvider(timestampProvider: ITimestampProvider)'
-      parameters:
-        - id: timestampProvider
-          type: ITimestampProvider
-          description: timestamp provider to set
   - name: start()
     uid: '@microsoft/live-share.LiveShareRuntime.start'
     package: '@microsoft/live-share'

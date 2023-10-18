@@ -2,9 +2,9 @@
 name: LiveMediaSessionCoordinatorSuspension
 uid: '@microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension'
 package: '@microsoft/live-share-media'
-summary: |-
-  Copyright (c) Microsoft Corporation. All rights reserved.
-  Licensed under the Microsoft Live Share SDK License.
+summary: >-
+  Suspension object for when group synchronization is suspended for the local
+  user.
 fullName: LiveMediaSessionCoordinatorSuspension
 remarks: ''
 isDeprecated: false
@@ -39,7 +39,7 @@ properties:
     package: '@microsoft/live-share-media'
     summary: Returns an optional wait point associated with the suspension.
     fullName: waitPoint
-    remarks: ''
+    remarks: If undefined, the suspension was not created with a wait point.
     isDeprecated: false
     syntax:
       content: undefined | CoordinationWaitPoint waitPoint

@@ -384,7 +384,7 @@ inheritedMethods:
           type: '(event: Event) =&gt; void'
           description: ''
       return:
-        description: that removes the `abort` listener.
+        description: Disposable that removes the `abort` listener.
         type: Disposable
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.addAbortListener
   - name: emit(string | symbol, any[])
@@ -1087,6 +1087,27 @@ inheritedMethods:
           type: (_DOMEventTarget | EventEmitter)[]
           description: ''
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.setMaxListeners
+  - name: '[captureRejectionSymbol](Error, string, any[])'
+    uid: '@microsoft/live-share.LiveEventScope.[captureRejectionSymbol]'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function [captureRejectionSymbol](error: Error, event: string, args:
+        any[])
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: event
+          type: string
+          description: ''
+        - id: args
+          type: any[]
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.__@captureRejectionSymbol@277
 methods:
   - name: offEvent<TEvent>(string, LiveEventListener<TEvent>)
     uid: '@microsoft/live-share.LiveEventScope.offEvent'

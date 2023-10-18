@@ -5,7 +5,15 @@ package: '@microsoft/teamsfx'
 summary: Authentication related configuration.
 fullName: AuthenticationConfiguration
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  Please use
+  [TeamsUserCredentialAuthConfig](xref:@microsoft/teamsfx.TeamsUserCredentialAuthConfig)
+
+  or
+  [OnBehalfOfCredentialAuthConfig](xref:@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig)
+  or [AppCredentialAuthConfig](xref:@microsoft/teamsfx.AppCredentialAuthConfig)
+  instead.
 type: interface
 properties:
   - name: applicationIdUri

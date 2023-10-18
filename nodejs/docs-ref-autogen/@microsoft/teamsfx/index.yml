@@ -138,7 +138,7 @@ functions:
       };
       const prompt = new TeamsBotSsoPrompt(dialogId, {
          config: config
-         scopes: '["User.Read"],
+         scopes: ["User.Read"],
       });
       this.addDialog(prompt);
 
@@ -158,7 +158,21 @@ functions:
       ```
 
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use `TokenCredentialAuthenticationProvider` and
+      `Client.initWithMiddleware` instead.
+
+      ```typescript
+
+      const authProvider = new TokenCredentialAuthenticationProvider(credential,
+      { scopes: scope });
+
+      const graph = Client.initWithMiddleware({
+        authProvider: authProvider,
+      });
+
+      ```
     syntax:
       content: >-
         function createMicrosoftGraphClient(teamsfx: TeamsFxConfiguration,
@@ -253,7 +267,21 @@ functions:
       ```
 
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use `TokenCredentialAuthenticationProvider` and
+      `Client.initWithMiddleware` instead.
+
+      ```typescript
+
+      const authProvider = new TokenCredentialAuthenticationProvider(credential,
+      { scopes: scope });
+
+      const graph = Client.initWithMiddleware({
+        authProvider: authProvider,
+      });
+
+      ```
     syntax:
       content: >-
         function createMicrosoftGraphClientWithCredential(credential:
@@ -398,7 +426,11 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Users execute query in message extension with SSO or access token.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use
+      [handleMessageExtensionQueryWithSSO](xref:@microsoft/teamsfx.handleMessageExtensionQueryWithSSO)
+      instead.
     syntax:
       content: >-
         function handleMessageExtensionQueryWithToken(context: TurnContext,

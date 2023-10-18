@@ -136,10 +136,22 @@ properties:
       return:
         description: ''
         type: this
+  - name: initializeState
+    uid: '@microsoft/live-share-media.LiveMediaSession.initializeState'
+    package: '@microsoft/live-share-media'
+    summary: The initialization status of the data object.
+    fullName: initializeState
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: LiveDataObjectInitializeState initializeState
+      return:
+        description: ''
+        type: LiveDataObjectInitializeState
   - name: isInitialized
     uid: '@microsoft/live-share-media.LiveMediaSession.isInitialized'
     package: '@microsoft/live-share-media'
-    summary: Returns true if the object has been initialized.
+    summary: Flag that indicates whether initialization has succeeded or not.
     fullName: isInitialized
     remarks: ''
     isDeprecated: false
@@ -479,7 +491,7 @@ inheritedMethods:
           type: '(event: Event) =&gt; void'
           description: ''
       return:
-        description: that removes the `abort` listener.
+        description: Disposable that removes the `abort` listener.
         type: Disposable
     inheritanceDescription: <b>Inherited From</b> LiveDataObject.addAbortListener
   - name: dispose()
@@ -628,6 +640,26 @@ inheritedMethods:
         description: ''
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> LiveDataObject.finishInitialization
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share-media.LiveMediaSession.getClientInfo'
+    package: '@microsoft/live-share-media'
+    summary: Get the client info for a given clientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getClientInfo(clientId: string): Promise<undefined |
+        IClientInfo>
+      parameters:
+        - id: clientId
+          type: string
+          description: Fluid clientId we are requesting user info for
+      return:
+        description: >-
+          IClientInfo object if the user is known, otherwise it will return
+          undefined
+        type: Promise&lt;undefined | IClientInfo&gt;
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getClientInfo
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share-media.LiveMediaSession.getDataObject'
     package: '@microsoft/live-share-media'
@@ -1306,11 +1338,34 @@ inheritedMethods:
           type: (_DOMEventTarget | EventEmitter)[]
           description: ''
     inheritanceDescription: <b>Inherited From</b> LiveDataObject.setMaxListeners
+  - name: '[captureRejectionSymbol](Error, string, any[])'
+    uid: '@microsoft/live-share-media.LiveMediaSession.[captureRejectionSymbol]'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function [captureRejectionSymbol](error: Error, event: string, args:
+        any[])
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: event
+          type: string
+          description: ''
+        - id: args
+          type: any[]
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.__@captureRejectionSymbol@116
 methods:
   - name: initialize(UserMeetingRole[])
     uid: '@microsoft/live-share-media.LiveMediaSession.initialize'
     package: '@microsoft/live-share-media'
-    summary: initialize the object.
+    summary: >-
+      Initialize the object to begin sending/receiving group playback updates
+      through this DDS.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -1318,11 +1373,11 @@ methods:
       parameters:
         - id: allowedRoles
           type: UserMeetingRole[]
-          description: |-
-            Optional. List of roles allowed to group transport
-            operations like play/pause/seek/setTrack.
+          description: >-
+            Optional. List of roles allowed to group transport operations like
+            play/pause/seek/setTrack.
       return:
-        description: a void promise that resolves once complete
+        description: a void promise that resolves once complete.
         type: Promise&lt;void&gt;
   - name: >-
       setActionHandler(ExtendedMediaSessionAction, null |

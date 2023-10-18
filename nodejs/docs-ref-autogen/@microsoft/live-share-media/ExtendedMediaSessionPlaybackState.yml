@@ -2,9 +2,13 @@
 name: ExtendedMediaSessionPlaybackState
 uid: '@microsoft/live-share-media.ExtendedMediaSessionPlaybackState'
 package: '@microsoft/live-share-media'
-summary: ''
+summary: Extended playback state for `LiveMediaSession`.
 fullName: ExtendedMediaSessionPlaybackState
-remarks: ''
+remarks: >-
+  These types extend the default state types supported by the `MediaSession`
+  specification in browsers.
+
+  These additional types help with group synchronization.
 isDeprecated: false
 syntax: |
   type ExtendedMediaSessionPlaybackState =

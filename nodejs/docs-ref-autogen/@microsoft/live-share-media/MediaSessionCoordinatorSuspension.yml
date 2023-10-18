@@ -2,9 +2,9 @@
 name: MediaSessionCoordinatorSuspension
 uid: '@microsoft/live-share-media.MediaSessionCoordinatorSuspension'
 package: '@microsoft/live-share-media'
-summary: |-
-  Copyright (c) Microsoft Corporation. All rights reserved.
-  Licensed under the Microsoft Live Share SDK License.
+summary: >-
+  Suspension object for when group synchronization is suspended for the local
+  user.
 fullName: MediaSessionCoordinatorSuspension
 remarks: ''
 isDeprecated: false
@@ -13,9 +13,9 @@ properties:
   - name: waitPoint
     uid: '@microsoft/live-share-media.MediaSessionCoordinatorSuspension.waitPoint'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: The wait point that the suspension was created with.
     fullName: waitPoint
-    remarks: ''
+    remarks: If undefined, the suspension was not created with a wait point.
     isDeprecated: false
     syntax:
       content: 'waitPoint?: CoordinationWaitPoint'
@@ -26,12 +26,18 @@ methods:
   - name: end(number)
     uid: '@microsoft/live-share-media.MediaSessionCoordinatorSuspension.end'
     package: '@microsoft/live-share-media'
-    summary: ''
-    remarks: ''
+    summary: Ends the suspension.
+    remarks: >-
+      If there are other suspensions active, all other suspensions must be ended
+      before group synchronization can resume.
     isDeprecated: false
     syntax:
       content: 'function end(seekTo?: number)'
       parameters:
         - id: seekTo
           type: number
-          description: ''
+          description: >-
+            the timestamp to seek to after the suspension ends.
+
+            If no value is provided, the local user will return to the group
+            playback position.

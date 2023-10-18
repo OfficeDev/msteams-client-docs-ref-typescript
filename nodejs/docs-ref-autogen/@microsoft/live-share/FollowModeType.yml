@@ -1,0 +1,48 @@
+### YamlMime:TSEnum
+name: FollowModeType
+uid: '@microsoft/live-share.FollowModeType'
+package: '@microsoft/live-share'
+summary: The follow mode type.
+fullName: FollowModeType
+remarks: >-
+  Determines which user's `stateValue` is being referenced by `LiveFollowMode`'s
+  `state.value` field.
+
+  Use to tell the user the current state of follow mode (e.g., "You are actively
+  presenting").
+
+  Use to determine any relevant button(s) to show to the user (e.g., "Stop
+  presenting").
+previewState: beta
+isDeprecated: false
+fields:
+  - name: activeFollowers
+    uid: '@microsoft/live-share.FollowModeType.activeFollowers'
+    package: '@microsoft/live-share'
+    summary: Local user is being followed by other remote users.
+  - name: activePresenter
+    uid: '@microsoft/live-share.FollowModeType.activePresenter'
+    package: '@microsoft/live-share'
+    summary: Local user is actively presenting to other users.
+  - name: followPresenter
+    uid: '@microsoft/live-share.FollowModeType.followPresenter'
+    package: '@microsoft/live-share'
+    summary: Local user is following the presenter and is in sync.
+  - name: followUser
+    uid: '@microsoft/live-share.FollowModeType.followUser'
+    package: '@microsoft/live-share'
+    summary: Local user is following a specific user and is in sync.
+  - name: local
+    uid: '@microsoft/live-share.FollowModeType.local'
+    package: '@microsoft/live-share'
+    summary: >-
+      Local user is not following anyone, there is no presenter, and nobody is
+      following them.
+  - name: suspendFollowPresenter
+    uid: '@microsoft/live-share.FollowModeType.suspendFollowPresenter'
+    package: '@microsoft/live-share'
+    summary: The local user is suspended from the remote active presenter.
+  - name: suspendFollowUser
+    uid: '@microsoft/live-share.FollowModeType.suspendFollowUser'
+    package: '@microsoft/live-share'
+    summary: The local user is suspended from following a specific user.

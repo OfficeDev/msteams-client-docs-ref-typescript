@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: VideoFrame
-uid: '@microsoft/teams-js.video.VideoFrame'
+uid: '@microsoft/teams-js.videoEffects.VideoFrame'
 package: '@microsoft/teams-js'
 summary: >-
   VideoFrame definition, align with the W3C spec:

@@ -2,28 +2,32 @@
 name: ExtendedMediaMetadata
 uid: '@microsoft/live-share-media.ExtendedMediaMetadata'
 package: '@microsoft/live-share-media'
-summary: ''
+summary: Metadata for `LiveMediaSession`.
 fullName: ExtendedMediaMetadata
-remarks: ''
+remarks: >-
+  These types extend the default session metadata supported by the
+  `MediaSession` specification in browsers.
+
+  These additional types help with group synchronization.
 isDeprecated: false
 type: interface
 properties:
   - name: liveStream
     uid: '@microsoft/live-share-media.ExtendedMediaMetadata.liveStream'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Flag indicating whether or not the stream is a live broadcast.
     fullName: liveStream
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'liveStream: boolean'
+      content: 'liveStream?: boolean'
       return:
         description: ''
         type: boolean
   - name: trackIdentifier
     uid: '@microsoft/live-share-media.ExtendedMediaMetadata.trackIdentifier'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: A unique identifier for the track (e.g., UUID, URL, etc.)
     fullName: trackIdentifier
     remarks: ''
     isDeprecated: false

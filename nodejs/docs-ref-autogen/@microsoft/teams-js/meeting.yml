@@ -8,10 +8,10 @@ summary: >-
   This namespace is used to handle meeting related functionality like
 
   get meeting details, get/update state of mic, sharing app content and more.
+
+
+  To learn more, visit https://aka.ms/teamsmeetingapps
 type: module
-enums:
-  - '@microsoft/teams-js.meeting.CallType'
-  - '@microsoft/teams-js.meeting.MeetingType'
 interfaces:
   - '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
   - '@microsoft/teams-js.meeting.IAppContentStageSharingState'
@@ -22,8 +22,20 @@ functions:
   - name: getAppContentStageSharingCapabilities(getAppContentCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.getAppContentStageSharingCapabilities'
     package: '@microsoft/teams-js'
-    summary: Provides information related app's in-meeting sharing capabilities
-    remarks: ''
+    summary: >-
+      Allows an app to request whether the local user's app version has the
+      required app manifest permissions to share content to meeting stage.
+
+      To learn more, visit
+      https://aka.ms/teamsjs/getAppContentStageSharingCapabilities
+    remarks: >-
+      If you are updating your published app to include the share to stage
+      feature, you can use this API to prompt users to update their app if they
+      are using an older version.
+
+      Your app's `configurableTabs` or `staticTabs` entry's `context` array must
+      include `meetingStage` for `doesAppHaveSharePermission` to be `true` in
+      the `callback` response.
     isDeprecated: false
     syntax:
       content: >-
@@ -33,21 +45,33 @@ functions:
         - id: callback
           type: getAppContentCallbackFunctionType
           description: >-
-            Callback contains 2 parameters, error and result.
+            Completion callback contains 2 parameters: `error` and
+            `appContentStageSharingCapabilities`.
 
-            error can either contain an error of type SdkError (error
-            indication), or null (non-error indication)
+            `error` can either contain an error of type `SdkError` (error
+            indication), or null (non-error indication).
 
-            appContentStageSharingCapabilities can either contain an
-            IAppContentStageSharingCapabilities object
-
-            (indication of successful retrieval), or null (indication of failed
-            retrieval)
+            `appContentStageSharingCapabilities` will contain an
+            [IAppContentStageSharingCapabilities](xref:@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities)
+            object if the request succeeds, or null if it failed.
   - name: getAppContentStageSharingState(getAppContentStageCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.getAppContentStageSharingState'
     package: '@microsoft/teams-js'
-    summary: Provides information related to current stage sharing state for app
-    remarks: ''
+    summary: |-
+      Provides information related to current stage sharing state for your app.
+      To learn more, visit https://aka.ms/teamsjs/getAppContentStageSharingState
+    remarks: >-
+      This API can only be used in the `sidePanel` and `meetingStage` frame
+      contexts.
+
+      For private scheduled meetings, meet now, or calls, include the
+      `MeetingStage.Write.Chat` RSC permission in your app manifest.
+
+      For channel meetings, include the `ChannelMeetingStage.Write.Group` RSC
+      permission in your app manifest.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/authorization.
     isDeprecated: false
     syntax:
       content: >-
@@ -57,23 +81,37 @@ functions:
         - id: callback
           type: getAppContentStageCallbackFunctionType
           description: >-
-            Callback contains 2 parameters, error and result.
+            Callback contains 2 parameters, `error` and
+            `appContentStageSharingState`.
 
             error can either contain an error of type SdkError (error
             indication), or null (non-error indication)
 
-            appContentStageSharingState can either contain an
-            IAppContentStageSharingState object
-
-            (indication of successful retrieval), or null (indication of failed
-            retrieval)
+            `appContentStageSharingState` can either contain an
+            `IAppContentStageSharingState` object if the request succeeds, or
+            null if it failed
   - name: getIncomingClientAudioState(errorCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.getIncomingClientAudioState'
     package: '@microsoft/teams-js'
     summary: >-
       Allows an app to get the incoming audio speaker setting for the meeting
-      user
-    remarks: ''
+      user.
+
+      To learn more, visit https://aka.ms/teamsjs/getIncomingClientAudioState
+    remarks: >-
+      Use
+      [toggleIncomingClientAudio](xref:@microsoft/teams-js.meeting.toggleIncomingClientAudio)
+      to toggle the current audio state.
+
+      For private scheduled meetings, meet now, or calls, include the
+      `OnlineMeetingParticipant.ToggleIncomingAudio.Chat` RSC permission in your
+      app manifest.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/authorization.
+
+      This API can only be used in the `sidePanel` and `meetingStage` frame
+      contexts.
     isDeprecated: false
     syntax:
       content: >-
@@ -83,22 +121,33 @@ functions:
         - id: callback
           type: errorCallbackFunctionType
           description: >-
-            Callback contains 2 parameters, error and result.
+            Callback contains 2 parameters, `error` and `result`.
 
+            `error` can either contain an error of type `SdkError`, in case of
+            an error, or null when fetch is successful.
 
-            error can either contain an error of type SdkError, incase of an
-            error, or null when fetch is successful
-
-            result can either contain the true/false value, incase of a
-            successful fetch or null when the fetching fails
-
-            result: True means incoming audio is muted and false means incoming
-            audio is unmuted
+            `result` will be true when incoming audio is muted and false when
+            incoming audio is unmuted, or null when the request fails.
   - name: getLiveStreamState(getLiveStreamStateCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.getLiveStreamState'
     package: '@microsoft/teams-js'
-    summary: Allows an app to get the state of the live stream in the current meeting
-    remarks: ''
+    summary: >-
+      Allows an app to get the state of the outgoing live stream in the current
+      meeting.
+    remarks: >-
+      Use
+      [requestStartLiveStreaming](xref:@microsoft/teams-js.meeting.requestStartLiveStreaming)
+      or
+      [requestStopLiveStreaming](xref:@microsoft/teams-js.meeting.requestStopLiveStreaming)
+      to start/stop a live stream.
+
+      This API can only be used in the `sidePanel` frame context.
+
+      The `meetingExtensionDefinition.supportsStreaming` field in your app
+      manifest must be `true` to use this API.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/meetingExtensionDefinition.
     isDeprecated: false
     syntax:
       content: >-
@@ -108,21 +157,35 @@ functions:
         - id: callback
           type: getLiveStreamStateCallbackFunctionType
           description: >-
-            Callback contains 2 parameters: error and liveStreamState.
+            Callback contains 2 parameters: `error` and `liveStreamState`.
 
-            error can either contain an error of type SdkError, in case of an
-            error, or null when get is successful
+            `error` can either contain an error of type `SdkError`, in case of
+            an error, or null when the request is successful
 
-            liveStreamState can either contain a LiveStreamState value, or null
-            when operation fails
+            `liveStreamState` can either contain a `LiveStreamState` value, or
+            null when operation fails
   - name: >-
       registerLiveStreamChangedHandler(registerLiveStreamChangedHandlerFunctionType)
     uid: '@microsoft/teams-js.meeting.registerLiveStreamChangedHandler'
     package: '@microsoft/teams-js'
-    summary: Registers a handler for changes to the live stream.
+    summary: Registers an event handler for state changes to the live stream.
     remarks: >-
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
+
+      Use
+      [requestStartLiveStreaming](xref:@microsoft/teams-js.meeting.requestStartLiveStreaming)
+      or
+      [requestStopLiveStreaming](xref:@microsoft/teams-js.meeting.requestStopLiveStreaming)
+      to start/stop a live stream.
+
+      This API can only be used in the `sidePanel` frame context.
+
+      The `meetingExtensionDefinition.supportsStreaming` field in your app
+      manifest must be `true` to use this API.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/meetingExtensionDefinition.
     isDeprecated: false
     syntax:
       content: >-
@@ -137,16 +200,34 @@ functions:
     uid: '@microsoft/teams-js.meeting.registerSpeakingStateChangeHandler'
     package: '@microsoft/teams-js'
     summary: >-
-      Registers a handler for changes to paticipant speaking states. This API
-      returns [ISpeakingState](xref:@microsoft/teams-js.meeting.ISpeakingState),
-      which will have isSpeakingDetected
+      Registers a handler for changes to participant speaking states.
 
-      and/or an error object. If any participant is speaking, isSpeakingDetected
-      will be true. If no participants are speaking, isSpeakingDetected
+      To learn more, visit
+      https://aka.ms/teamsjs/registerSpeakingStateChangeHandler
+    remarks: >-
+      This API returns
+      [ISpeakingState](xref:@microsoft/teams-js.meeting.ISpeakingState), which
+      will have `isSpeakingDetected` and/or an error object.
 
-      will be false. Default value is false. Only one handler can be registered
-      at a time. A subsequent registration replaces an existing registration.
-    remarks: ''
+      If any participant is speaking, `isSpeakingDetected` will be true, or
+      false if no participants are speaking.
+
+      Only one handler can be registered at a time. Subsequent registrations
+      replace existing registrations.
+
+      This API can only be used in the `sidePanel` and `meetingStage` frame
+      contexts.
+
+      For private scheduled meetings, meet now, or calls, include the
+      `OnlineMeetingIncomingAudio.Detect.Chat` RSC permission in your app
+      manifest.
+
+      For channel meetings, include the
+      `OnlineMeetingIncomingAudio.Detect.Group` RSC permission in your app
+      manifest.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/authorization.
     isDeprecated: false
     syntax:
       content: >-
@@ -164,11 +245,32 @@ functions:
     uid: '@microsoft/teams-js.meeting.requestStartLiveStreaming'
     package: '@microsoft/teams-js'
     summary: >-
-      Allows an app to request the live streaming be started at the given
-      streaming url
+      Allows an app to ask the local user to begin live streaming the current
+      meeting to the given Real-Time Messaging Protocol (RTMP) stream url.
+
+      A confirmation dialog will be shown to the local user with options to
+      "Allow" or "Cancel" this request.
     remarks: >-
-      Use getLiveStreamState or registerLiveStreamChangedHandler to get updates
-      on the live stream state
+      Meeting content (e.g., user video, screenshare, audio, etc.) can be
+      externally streamed to any platform that supports the popular RTMP
+      standard.
+
+      Content broadcasted through RTMP is automatically formatted and cannot be
+      customized.
+
+      Use
+      [getLiveStreamState](xref:@microsoft/teams-js.meeting.getLiveStreamState)
+      or
+      [registerLiveStreamChangedHandler](xref:@microsoft/teams-js.meeting.registerLiveStreamChangedHandler)
+      to get updates on the live stream state.
+
+      This API can only be used in the `sidePanel` frame context.
+
+      The `meetingExtensionDefinition.supportsStreaming` field in your app
+      manifest must be `true` to use this API.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/meetingExtensionDefinition.
     isDeprecated: false
     syntax:
       content: >-
@@ -179,23 +281,33 @@ functions:
         - id: callback
           type: liveStreamErrorCallbackFunctionType
           description: >-
-            Callback contains error parameter which can be of type SdkError in
-            case of an error, or null when operation is successful
+            completion callback that contains an `error` parameter, which can be
+            of type `SdkError` in case of an error, or null when operation is
+            successful
         - id: streamUrl
           type: string
-          description: the url to the stream resource
+          description: the url to the RTMP stream resource
         - id: streamKey
           type: string
-          description: the key to the stream resource
+          description: the key to the RTMP stream resource
   - name: requestStopLiveStreaming(liveStreamErrorCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.requestStopLiveStreaming'
     package: '@microsoft/teams-js'
-    summary: >-
-      Allows an app to request the live streaming be stopped at the given
-      streaming url
+    summary: Allows an app to request that live streaming be stopped.
     remarks: >-
-      Use getLiveStreamState or registerLiveStreamChangedHandler to get updates
-      on the live stream state
+      Use
+      [getLiveStreamState](xref:@microsoft/teams-js.meeting.getLiveStreamState)
+      or
+      [registerLiveStreamChangedHandler](xref:@microsoft/teams-js.meeting.registerLiveStreamChangedHandler)
+      to get updates on the live stream state.
+
+      This API can only be used in the `sidePanel` frame context.
+
+      The `meetingExtensionDefinition.supportsStreaming` field in your app
+      manifest must be `true` to use this API.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/meetingExtensionDefinition.
     isDeprecated: false
     syntax:
       content: >-
@@ -205,13 +317,38 @@ functions:
         - id: callback
           type: liveStreamErrorCallbackFunctionType
           description: >-
-            Callback contains error parameter which can be of type SdkError in
-            case of an error, or null when operation is successful
+            completion callback that contains an error parameter, which can be
+            of type `SdkError` in case of an error, or null when operation is
+            successful
   - name: shareAppContentToStage(errorCallbackFunctionType, string)
     uid: '@microsoft/teams-js.meeting.shareAppContentToStage'
     package: '@microsoft/teams-js'
-    summary: Allows an app to share contents in the meeting
-    remarks: ''
+    summary: >-
+      Allows an app to share a given URL to the meeting stage for all users in
+      the meeting.
+
+      To learn more, visit https://aka.ms/teamsjs/shareAppContentToStage
+    remarks: >-
+      This API can only be used in the `sidePanel` and `meetingStage` frame
+      contexts.
+
+      For private scheduled meetings, meet now, or calls, include the
+      `MeetingStage.Write.Chat` RSC permission in your app manifest.
+
+      For channel meetings, include the `ChannelMeetingStage.Write.Group` RSC
+      permission in your app manifest.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/authorization.
+
+      Use
+      [getAppContentStageSharingCapabilities](xref:@microsoft/teams-js.meeting.getAppContentStageSharingCapabilities)
+      to determine if the local user is eligible to use this API.
+
+      Use
+      [getAppContentStageSharingState](xref:@microsoft/teams-js.meeting.getAppContentStageSharingState)
+      to determine whether app content is already being shared to the meeting
+      stage.
     isDeprecated: false
     syntax:
       content: >-
@@ -221,23 +358,42 @@ functions:
         - id: callback
           type: errorCallbackFunctionType
           description: >-
-            Callback contains 2 parameters, error and result.
+            Callback contains 2 parameters, `error` and `result`.
 
-            error can either contain an error of type SdkError, incase of an
-            error, or null when share is successful
+            `error` can either contain an error of type `SdkError`, in case of
+            an error, or null when share is successful
 
-            result can either contain a true value, incase of a successful share
-            or null when the share fails
+            `result` can either contain a true value, in case of a successful
+            share or null when the share fails
         - id: appContentUrl
           type: string
-          description: is the input URL which needs to be shared on to the stage
+          description: >-
+            is the input URL to be shared to the meeting stage.
+
+            the URL origin must be included in your app manifest's
+            `validDomains` field.
   - name: toggleIncomingClientAudio(errorCallbackFunctionType)
     uid: '@microsoft/teams-js.meeting.toggleIncomingClientAudio'
     package: '@microsoft/teams-js'
     summary: >-
       Allows an app to toggle the incoming audio speaker setting for the meeting
-      user from mute to unmute or vice-versa
-    remarks: ''
+      user from mute to unmute or vice-versa.
+
+      To learn more, visit https://aka.ms/teamsjs/toggleIncomingClientAudio
+    remarks: >-
+      Use
+      [getIncomingClientAudioState](xref:@microsoft/teams-js.meeting.getIncomingClientAudioState)
+      to get the current audio state.
+
+      For private scheduled meetings, meet now, or calls, include the
+      `OnlineMeetingParticipant.ToggleIncomingAudio.Chat` RSC permission in your
+      app manifest.
+
+      Find the app manifest reference at
+      https://aka.ms/teamsAppManifest/authorization.
+
+      This API can only be used in the `sidePanel` and `meetingStage` frame
+      contexts.
     isDeprecated: false
     syntax:
       content: 'function toggleIncomingClientAudio(callback: errorCallbackFunctionType)'
@@ -245,13 +401,10 @@ functions:
         - id: callback
           type: errorCallbackFunctionType
           description: >-
-            Callback contains 2 parameters, error and result.
+            Callback contains 2 parameters, `error` and `result`.
 
-            error can either contain an error of type SdkError, incase of an
-            error, or null when toggle is successful
+            `error` can either contain an error of type `SdkError`, in case of
+            an error, or null when toggle is successful.
 
-            result can either contain the true/false value, incase of a
-            successful toggle or null when the toggling fails
-
-            result: True means incoming audio is muted and false means incoming
-            audio is unmuted
+            `result` will be true when incoming audio is muted and false when
+            incoming audio is unmuted, or null when the toggling fails.

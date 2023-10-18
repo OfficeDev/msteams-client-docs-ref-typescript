@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: IFollowModePresenceUserData
+uid: '@microsoft/live-share.IFollowModePresenceUserData'
+package: '@microsoft/live-share'
+summary: The presence data for a user's personal follow mode state.
+fullName: IFollowModePresenceUserData<TData>
+remarks: ''
+previewState: beta
+isDeprecated: false
+type: interface
+properties:
+  - name: followingUserId
+    uid: '@microsoft/live-share.IFollowModePresenceUserData.followingUserId'
+    package: '@microsoft/live-share'
+    summary: The user that this user is following.
+    fullName: followingUserId
+    remarks: >-
+      This will be ignored when `LiveFollowMode["presentingUserIdState"]` is
+      set.
+    isDeprecated: false
+    syntax:
+      content: 'followingUserId: undefined | string'
+      return:
+        description: ''
+        type: undefined | string
+  - name: stateValue
+    uid: '@microsoft/live-share.IFollowModePresenceUserData.stateValue'
+    package: '@microsoft/live-share'
+    summary: User's personal state
+    fullName: stateValue
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'stateValue: TData'
+      return:
+        description: ''
+        type: TData

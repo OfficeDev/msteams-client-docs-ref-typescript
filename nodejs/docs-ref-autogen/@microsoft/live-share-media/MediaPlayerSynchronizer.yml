@@ -300,7 +300,7 @@ inheritedMethods:
           type: '(event: Event) =&gt; void'
           description: ''
       return:
-        description: that removes the `abort` listener.
+        description: Disposable that removes the `abort` listener.
         type: Disposable
     inheritanceDescription: <b>Inherited From</b> EventEmitter.addAbortListener
   - name: 'addListener(string | symbol, (args: any[]) => void)'
@@ -1427,6 +1427,28 @@ inheritedMethods:
           type: (_DOMEventTarget | EventEmitter)[]
           description: ''
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
+  - name: '[captureRejectionSymbol](Error, string, any[])'
+    uid: >-
+      @microsoft/live-share-media.MediaPlayerSynchronizer.[captureRejectionSymbol]
+    package: '@microsoft/live-share-media'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function [captureRejectionSymbol](error: Error, event: string, args:
+        any[])
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: event
+          type: string
+          description: ''
+        - id: args
+          type: any[]
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@116
 methods:
   - name: >-
       addEventListener(MediaPlayerSynchronizerEvents, (evt:

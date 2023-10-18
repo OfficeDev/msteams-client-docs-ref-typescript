@@ -1,41 +1,41 @@
 ### YamlMime:TSType
-name: LiveCanvas
-uid: '@microsoft/live-share-canvas.LiveCanvas'
-package: '@microsoft/live-share-canvas'
-summary: Enables live and collaborative inking.
-fullName: LiveCanvas
+name: LiveFollowMode
+uid: '@microsoft/live-share.LiveFollowMode'
+package: '@microsoft/live-share'
+summary: >-
+  Live object that allows users to present and/or follow other users.
+
+  Provides a [state](xref:@microsoft/live-share.LiveFollowMode.state) value,
+  which reflects the relevant value to reference (e.g., the presenting user's
+  state value).
+fullName: LiveFollowMode<TData>
 remarks: ''
+previewState: beta
 isDeprecated: false
 type: class
 constructors:
-  - name: LiveCanvas(IDataObjectProps<DataObjectTypes>)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.constructor'
-    package: '@microsoft/live-share-canvas'
+  - name: >-
+      LiveFollowMode<TData>(IDataObjectProps<{ Events:
+      ILiveFollowModeEvents<TData> }>)
+    uid: '@microsoft/live-share.LiveFollowMode.constructor'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new LiveCanvas(props: IDataObjectProps<DataObjectTypes>)'
+      content: >-
+        new LiveFollowMode(props: IDataObjectProps<{ Events:
+        ILiveFollowModeEvents<TData> }>)
       parameters:
         - id: props
-          type: IDataObjectProps&lt;DataObjectTypes&gt;
+          type: >-
+            IDataObjectProps&lt;{ Events: ILiveFollowModeEvents&lt;TData&gt;
+            }&gt;
           description: ''
 properties:
-  - name: allowedRoles
-    uid: '@microsoft/live-share-canvas.LiveCanvas.allowedRoles'
-    package: '@microsoft/live-share-canvas'
-    summary: Gets the list of roles that are allowed to emit wet stroke events.
-    fullName: allowedRoles
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: UserMeetingRole[] allowedRoles
-      return:
-        description: ''
-        type: UserMeetingRole[]
   - name: disposed
-    uid: '@microsoft/live-share-canvas.LiveCanvas.disposed'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.disposed'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: disposed
     remarks: ''
@@ -46,22 +46,22 @@ properties:
         description: ''
         type: boolean
   - name: factory
-    uid: '@microsoft/live-share-canvas.LiveCanvas.factory'
-    package: '@microsoft/live-share-canvas'
-    summary: The object's Fluid type factory.
+    uid: '@microsoft/live-share.LiveFollowMode.factory'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type factory.
     fullName: factory
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'static factory: DataObjectFactory<LiveCanvas, DataObjectTypes>'
+      content: 'static factory: DataObjectFactory<LiveFollowMode<any>, DataObjectTypes>'
       return:
         description: ''
         type: >-
-          DataObjectFactory&lt;<xref
-          uid="@microsoft/live-share-canvas.LiveCanvas" />, DataObjectTypes&gt;
+          DataObjectFactory&lt;<xref uid="@microsoft/live-share.LiveFollowMode"
+          />&lt;any&gt;, DataObjectTypes&gt;
   - name: handle
-    uid: '@microsoft/live-share-canvas.LiveCanvas.handle'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.handle'
+    package: '@microsoft/live-share'
     summary: Handle to a data store
     fullName: handle
     remarks: ''
@@ -72,8 +72,8 @@ properties:
         description: ''
         type: IFluidHandle&lt;this&gt;
   - name: id
-    uid: '@microsoft/live-share-canvas.LiveCanvas.id'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.id'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: id
     remarks: ''
@@ -84,8 +84,8 @@ properties:
         description: ''
         type: string
   - name: IFluidHandle
-    uid: '@microsoft/live-share-canvas.LiveCanvas.IFluidHandle'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.IFluidHandle'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidHandle
     remarks: ''
@@ -96,8 +96,8 @@ properties:
         description: ''
         type: IFluidHandle&lt;this&gt;
   - name: IFluidLoadable
-    uid: '@microsoft/live-share-canvas.LiveCanvas.IFluidLoadable'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.IFluidLoadable'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidLoadable
     remarks: ''
@@ -108,8 +108,8 @@ properties:
         description: ''
         type: this
   - name: IFluidRouter
-    uid: '@microsoft/live-share-canvas.LiveCanvas.IFluidRouter'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.IFluidRouter'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: IFluidRouter
     remarks: ''
@@ -120,8 +120,8 @@ properties:
         description: ''
         type: this
   - name: initializeState
-    uid: '@microsoft/live-share-canvas.LiveCanvas.initializeState'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.initializeState'
+    package: '@microsoft/live-share'
     summary: The initialization status of the data object.
     fullName: initializeState
     remarks: ''
@@ -130,22 +130,10 @@ properties:
       content: LiveDataObjectInitializeState initializeState
       return:
         description: ''
-        type: LiveDataObjectInitializeState
-  - name: isCursorShared
-    uid: '@microsoft/live-share-canvas.LiveCanvas.isCursorShared'
-    package: '@microsoft/live-share-canvas'
-    summary: Gets the current cursor sharing status of this client.
-    fullName: isCursorShared
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: boolean isCursorShared
-      return:
-        description: ''
-        type: boolean
+        type: <xref uid="@microsoft/live-share.LiveDataObjectInitializeState" />
   - name: isInitialized
-    uid: '@microsoft/live-share-canvas.LiveCanvas.isInitialized'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.isInitialized'
+    package: '@microsoft/live-share'
     summary: Flag that indicates whether initialization has succeeded or not.
     fullName: isInitialized
     remarks: ''
@@ -155,73 +143,75 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: onCreateLiveCursor
-    uid: '@microsoft/live-share-canvas.LiveCanvas.onCreateLiveCursor'
-    package: '@microsoft/live-share-canvas'
+  - name: localUser
+    uid: '@microsoft/live-share.LiveFollowMode.localUser'
+    package: '@microsoft/live-share'
     summary: |-
-      Optional callback that allows the consuming application to provide its own
-      live cursor visual representation by extending the abstract `LiveCursor`
-      class. The callback is passed the user information retrieved via the
-      `onGetLocalUserInfo` calback, if provided.
-    fullName: onCreateLiveCursor
+      Local LivePresenceUser.
+      Can be undefined before LiveFollowMode is initialized.
+    fullName: localUser
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        onCreateLiveCursor?: (clientId: string, userInfo?: IUserInfo) =>
-        LiveCursor
+      content: undefined | FollowModePresenceUser<TData> localUser
       return:
         description: ''
-        type: '(clientId: string, userInfo?: IUserInfo) =&gt; LiveCursor'
-  - name: onGetLocalUserPictureUrl
-    uid: '@microsoft/live-share-canvas.LiveCanvas.onGetLocalUserPictureUrl'
-    package: '@microsoft/live-share-canvas'
-    summary: >-
-      Optional callback that allows the consuming application to provide a
-
-      a profile picture that will be used on remote devices to render shared
-      cursors.
-    fullName: onGetLocalUserPictureUrl
+        type: >-
+          undefined | <xref uid="@microsoft/live-share.FollowModePresenceUser"
+          />&lt;TData&gt;
+  - name: state
+    uid: '@microsoft/live-share.LiveFollowMode.state'
+    package: '@microsoft/live-share'
+    summary: Gets the current follow mode state.
+    fullName: state
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'onGetLocalUserPictureUrl?: () => undefined | string'
+      content: undefined | IFollowModeState<TData> state
       return:
         description: ''
-        type: () =&gt; undefined | string
+        type: >-
+          undefined | <xref uid="@microsoft/live-share.IFollowModeState"
+          />&lt;TData&gt;
   - name: TypeName
-    uid: '@microsoft/live-share-canvas.LiveCanvas.TypeName'
-    package: '@microsoft/live-share-canvas'
-    summary: The object's Fluid type/name.
+    uid: '@microsoft/live-share.LiveFollowMode.TypeName'
+    package: '@microsoft/live-share'
+    summary: The objects fluid type/name.
     fullName: TypeName
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        static TypeName: "@microsoft/shared-inking-session" =
-        "@microsoft/shared-inking-session"
+        static TypeName: "@microsoft/live-share:LiveFollowMode" =
+        "@microsoft/live-share:LiveFollowMode"
       return:
         description: ''
-        type: '"@microsoft/shared-inking-session"'
+        type: '"@microsoft/live-share:LiveFollowMode"'
 inheritedProperties:
   - name: addListener
-    uid: '@microsoft/live-share-canvas.LiveCanvas.addListener'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.addListener'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: addListener
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'addListener: TypedEventTransform<LiveCanvas, IEvent>'
+      content: >-
+        addListener: TypedEventTransform<LiveFollowMode<TData>,
+        ILiveFollowModeEvents<TData> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref
-          uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.addListener
+          uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;, <xref
+          uid="@microsoft/live-share.ILiveFollowModeEvents" />&lt;TData&gt; &
+          IEvent&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.addListener](xref:@microsoft/live-share.LiveDataObject.addListener)
   - name: captureRejections
-    uid: '@microsoft/live-share-canvas.LiveCanvas.captureRejections'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.captureRejections'
+    package: '@microsoft/live-share'
     summary: >-
       Value:
       [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type)
@@ -237,10 +227,12 @@ inheritedProperties:
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.captureRejections
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.captureRejections](xref:@microsoft/live-share.LiveDataObject.captureRejections)
   - name: captureRejectionSymbol
-    uid: '@microsoft/live-share-canvas.LiveCanvas.captureRejectionSymbol'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.captureRejectionSymbol'
+    package: '@microsoft/live-share'
     summary: |-
       Value: `Symbol.for('nodejs.rejection')`
 
@@ -253,10 +245,12 @@ inheritedProperties:
       return:
         description: ''
         type: typeof captureRejectionSymbol
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.captureRejectionSymbol
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.captureRejectionSymbol](xref:@microsoft/live-share.LiveDataObject.captureRejectionSymbol)
   - name: defaultMaxListeners
-    uid: '@microsoft/live-share-canvas.LiveCanvas.defaultMaxListeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.defaultMaxListeners'
+    package: '@microsoft/live-share'
     summary: >-
       By default, a maximum of `10` listeners can be registered for any single
 
@@ -331,10 +325,12 @@ inheritedProperties:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.defaultMaxListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.defaultMaxListeners](xref:@microsoft/live-share.LiveDataObject.defaultMaxListeners)
   - name: errorMonitor
-    uid: '@microsoft/live-share-canvas.LiveCanvas.errorMonitor'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.errorMonitor'
+    package: '@microsoft/live-share'
     summary: >-
       This symbol shall be used to install a listener for only monitoring
       `'error'`events. Listeners installed using this symbol are called before
@@ -354,101 +350,139 @@ inheritedProperties:
       return:
         description: ''
         type: typeof errorMonitor
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.errorMonitor
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.errorMonitor](xref:@microsoft/live-share.LiveDataObject.errorMonitor)
   - name: 'off'
-    uid: '@microsoft/live-share-canvas.LiveCanvas.off'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.off'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: 'off'
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'off: TypedEventTransform<LiveCanvas, IEvent>'
+      content: >-
+        off: TypedEventTransform<LiveFollowMode<TData>,
+        ILiveFollowModeEvents<TData> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref
-          uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.off
+          uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;, <xref
+          uid="@microsoft/live-share.ILiveFollowModeEvents" />&lt;TData&gt; &
+          IEvent&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.off](xref:@microsoft/live-share.LiveDataObject.off)
   - name: 'on'
-    uid: '@microsoft/live-share-canvas.LiveCanvas.on'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.on'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: 'on'
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'on: TypedEventTransform<LiveCanvas, IEvent>'
+      content: >-
+        on: TypedEventTransform<LiveFollowMode<TData>,
+        ILiveFollowModeEvents<TData> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref
-          uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.on
+          uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;, <xref
+          uid="@microsoft/live-share.ILiveFollowModeEvents" />&lt;TData&gt; &
+          IEvent&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.on](xref:@microsoft/live-share.LiveDataObject.on)
   - name: once
-    uid: '@microsoft/live-share-canvas.LiveCanvas.once'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.once'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: once
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'once: TypedEventTransform<LiveCanvas, IEvent>'
+      content: >-
+        once: TypedEventTransform<LiveFollowMode<TData>,
+        ILiveFollowModeEvents<TData> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref
-          uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.once
+          uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;, <xref
+          uid="@microsoft/live-share.ILiveFollowModeEvents" />&lt;TData&gt; &
+          IEvent&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
   - name: prependListener
-    uid: '@microsoft/live-share-canvas.LiveCanvas.prependListener'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.prependListener'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: prependListener
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'prependListener: TypedEventTransform<LiveCanvas, IEvent>'
+      content: >-
+        prependListener: TypedEventTransform<LiveFollowMode<TData>,
+        ILiveFollowModeEvents<TData> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref
-          uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.prependListener
+          uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;, <xref
+          uid="@microsoft/live-share.ILiveFollowModeEvents" />&lt;TData&gt; &
+          IEvent&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.prependListener](xref:@microsoft/live-share.LiveDataObject.prependListener)
   - name: prependOnceListener
-    uid: '@microsoft/live-share-canvas.LiveCanvas.prependOnceListener'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.prependOnceListener'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: prependOnceListener
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'prependOnceListener: TypedEventTransform<LiveCanvas, IEvent>'
+      content: >-
+        prependOnceListener: TypedEventTransform<LiveFollowMode<TData>,
+        ILiveFollowModeEvents<TData> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref
-          uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.prependOnceListener
+          uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;, <xref
+          uid="@microsoft/live-share.ILiveFollowModeEvents" />&lt;TData&gt; &
+          IEvent&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.prependOnceListener](xref:@microsoft/live-share.LiveDataObject.prependOnceListener)
   - name: removeListener
-    uid: '@microsoft/live-share-canvas.LiveCanvas.removeListener'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.removeListener'
+    package: '@microsoft/live-share'
     summary: ''
     fullName: removeListener
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'removeListener: TypedEventTransform<LiveCanvas, IEvent>'
+      content: >-
+        removeListener: TypedEventTransform<LiveFollowMode<TData>,
+        ILiveFollowModeEvents<TData> & IEvent>
       return:
         description: ''
         type: >-
           TypedEventTransform&lt;<xref
-          uid="@microsoft/live-share-canvas.LiveCanvas" />, IEvent&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.removeListener
+          uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;, <xref
+          uid="@microsoft/live-share.ILiveFollowModeEvents" />&lt;TData&gt; &
+          IEvent&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.removeListener](xref:@microsoft/live-share.LiveDataObject.removeListener)
 inheritedMethods:
   - name: 'addAbortListener(AbortSignal, (event: Event) => void)'
-    uid: '@microsoft/live-share-canvas.LiveCanvas.addAbortListener'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.addAbortListener'
+    package: '@microsoft/live-share'
     summary: >-
       Listens once to the `abort` event on the provided `signal`.
 
@@ -510,19 +544,12 @@ inheritedMethods:
       return:
         description: Disposable that removes the `abort` listener.
         type: Disposable
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.addAbortListener
-  - name: dispose()
-    uid: '@microsoft/live-share-canvas.LiveCanvas.dispose'
-    package: '@microsoft/live-share-canvas'
-    summary: Called when the host container closes and disposes itself
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: function dispose()
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.dispose
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.addAbortListener](xref:@microsoft/live-share.LiveDataObject.addAbortListener)
   - name: emit(string | symbol, any[])
-    uid: '@microsoft/live-share-canvas.LiveCanvas.emit'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.emit'
+    package: '@microsoft/live-share'
     summary: >-
       Synchronously calls each of the listeners registered for the event
       named`eventName`, in the order they were registered, passing the supplied
@@ -600,10 +627,12 @@ inheritedMethods:
       return:
         description: ''
         type: boolean
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.emit
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.emit](xref:@microsoft/live-share.LiveDataObject.emit)
   - name: eventNames()
-    uid: '@microsoft/live-share-canvas.LiveCanvas.eventNames'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.eventNames'
+    package: '@microsoft/live-share'
     summary: |-
       Returns an array listing the events for which the emitter has registered
       listeners. The values in the array are strings or `Symbol`s.
@@ -628,10 +657,12 @@ inheritedMethods:
       return:
         description: ''
         type: (string | symbol)[]
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.eventNames
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.eventNames](xref:@microsoft/live-share.LiveDataObject.eventNames)
   - name: finishInitialization(boolean)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.finishInitialization'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.finishInitialization'
+    package: '@microsoft/live-share'
     summary: >-
       Call this API to ensure PureDataObject is fully initialized.
 
@@ -656,10 +687,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.finishInitialization
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.finishInitialization](xref:@microsoft/live-share.LiveDataObject.finishInitialization)
   - name: getClientInfo(string)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.getClientInfo'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.getClientInfo'
+    package: '@microsoft/live-share'
     summary: Get the client info for a given clientId
     remarks: ''
     isDeprecated: false
@@ -675,11 +708,15 @@ inheritedMethods:
         description: >-
           IClientInfo object if the user is known, otherwise it will return
           undefined
-        type: Promise&lt;undefined | IClientInfo&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getClientInfo
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getClientInfo](xref:@microsoft/live-share.LiveDataObject.getClientInfo)
   - name: getDataObject(IFluidDataStoreRuntime)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.getDataObject'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.getDataObject'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -694,10 +731,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PureDataObject&lt;DataObjectTypes&gt;&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getDataObject
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getDataObject](xref:@microsoft/live-share.LiveDataObject.getDataObject)
   - name: getEventListeners(_DOMEventTarget | EventEmitter, string | symbol)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.getEventListeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.getEventListeners'
+    package: '@microsoft/live-share'
     summary: >-
       Returns a copy of the array of listeners for the event named `eventName`.
 
@@ -749,13 +788,15 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getEventListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getEventListeners](xref:@microsoft/live-share.LiveDataObject.getEventListeners)
   - name: >-
       getFluidObjectFromDirectory<T>(string, IDirectory, (id: string, directory:
       IDirectory) => undefined | IFluidHandle<FluidObject<unknown> &
       IFluidLoadable>)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.getFluidObjectFromDirectory'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.getFluidObjectFromDirectory'
+    package: '@microsoft/live-share'
     summary: Retrieve Fluid object using the handle get
     remarks: ''
     isDeprecated: false
@@ -784,16 +825,18 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;undefined | T&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getFluidObjectFromDirectory
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getFluidObjectFromDirectory](xref:@microsoft/live-share.LiveDataObject.getFluidObjectFromDirectory)
   - name: getMaxListeners()
-    uid: '@microsoft/live-share-canvas.LiveCanvas.getMaxListeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.getMaxListeners'
+    package: '@microsoft/live-share'
     summary: >-
       Returns the current max listener value for the `EventEmitter` which is
       either
 
       set by `emitter.setMaxListeners(n)` or defaults to
-      [defaultMaxListeners](xref:@microsoft/live-share-canvas.LiveCanvas.defaultMaxListeners).
+      [defaultMaxListeners](xref:@microsoft/live-share.LiveFollowMode.defaultMaxListeners).
     remarks: ''
     isDeprecated: false
     syntax:
@@ -801,10 +844,12 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getMaxListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getMaxListeners](xref:@microsoft/live-share.LiveDataObject.getMaxListeners)
   - name: getMaxListeners(_DOMEventTarget | EventEmitter)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.getMaxListeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.getMaxListeners'
+    package: '@microsoft/live-share'
     summary: >-
       Returns the currently set max amount of listeners.
 
@@ -858,10 +903,12 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.getMaxListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getMaxListeners](xref:@microsoft/live-share.LiveDataObject.getMaxListeners)
   - name: initializeInternal(boolean)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.initializeInternal'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.initializeInternal'
+    package: '@microsoft/live-share'
     summary: |-
       Initializes internal objects and calls initialization overrides.
       Caller is responsible for ensuring this is only invoked once.
@@ -876,10 +923,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.initializeInternal
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.initializeInternal](xref:@microsoft/live-share.LiveDataObject.initializeInternal)
   - name: listenerCount(EventEmitter, string | symbol)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.listenerCount'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.listenerCount'
+    package: '@microsoft/live-share'
     summary: >-
       A class method that returns the number of listeners for the given
       `eventName`registered on the given `emitter`.
@@ -918,10 +967,12 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.listenerCount
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.listenerCount](xref:@microsoft/live-share.LiveDataObject.listenerCount)
   - name: listenerCount(string | symbol, Function)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.listenerCount'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.listenerCount'
+    package: '@microsoft/live-share'
     summary: >-
       Returns the number of listeners listening for the event named `eventName`.
 
@@ -945,10 +996,12 @@ inheritedMethods:
       return:
         description: ''
         type: number
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.listenerCount
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.listenerCount](xref:@microsoft/live-share.LiveDataObject.listenerCount)
   - name: listeners(string | symbol)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.listeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.listeners'
+    package: '@microsoft/live-share'
     summary: |-
       Returns a copy of the array of listeners for the event named `eventName`.
 
@@ -970,10 +1023,12 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.listeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.listeners](xref:@microsoft/live-share.LiveDataObject.listeners)
   - name: on(EventEmitter, string, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.on'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.on'
+    package: '@microsoft/live-share'
     summary: |-
       ```js
       import { on, EventEmitter } from 'node:events';
@@ -1048,10 +1103,12 @@ inheritedMethods:
       return:
         description: that iterates `eventName` events emitted by the `emitter`
         type: AsyncIterableIterator&lt;any&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.on
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.on](xref:@microsoft/live-share.LiveDataObject.on)
   - name: once(_DOMEventTarget, string, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.once_1'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.once_1'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1072,10 +1129,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;any[]&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.once
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
   - name: once(_NodeEventTarget, string | symbol, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.once'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.once'
+    package: '@microsoft/live-share'
     summary: >-
       Creates a `Promise` that is fulfilled when the `EventEmitter` emits the
       given
@@ -1215,10 +1274,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;any[]&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.once
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
   - name: rawListeners(string | symbol)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.rawListeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.rawListeners'
+    package: '@microsoft/live-share'
     summary: |-
       Returns a copy of the array of listeners for the event named `eventName`,
       including any wrappers (such as those created by `.once()`).
@@ -1258,10 +1319,12 @@ inheritedMethods:
       return:
         description: ''
         type: Function[]
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.rawListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.rawListeners](xref:@microsoft/live-share.LiveDataObject.rawListeners)
   - name: removeAllListeners(string | symbol)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.removeAllListeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.removeAllListeners'
+    package: '@microsoft/live-share'
     summary: |-
       Removes all listeners, or those of the specified `eventName`.
 
@@ -1273,18 +1336,22 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function removeAllListeners(event?: string | symbol): LiveCanvas'
+      content: >-
+        function removeAllListeners(event?: string | symbol):
+        LiveFollowMode<TData>
       parameters:
         - id: event
           type: string | symbol
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.LiveCanvas" />
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.removeAllListeners
+        type: <xref uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.removeAllListeners](xref:@microsoft/live-share.LiveDataObject.removeAllListeners)
   - name: request(IRequest)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.request'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.request'
+    package: '@microsoft/live-share'
     summary: '{@inheritDoc PureDataObject.request}'
     remarks: ''
     isDeprecated: false
@@ -1297,10 +1364,12 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;IResponse&gt;
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.request
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.request](xref:@microsoft/live-share.LiveDataObject.request)
   - name: setMaxListeners(number)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.setMaxListeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.setMaxListeners'
+    package: '@microsoft/live-share'
     summary: >-
       By default `EventEmitter`s will print a warning if more than `10`
       listeners are
@@ -1318,18 +1387,20 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): LiveCanvas'
+      content: 'function setMaxListeners(n: number): LiveFollowMode<TData>'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.LiveCanvas" />
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.setMaxListeners
+        type: <xref uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
   - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
-    uid: '@microsoft/live-share-canvas.LiveCanvas.setMaxListeners'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.setMaxListeners'
+    package: '@microsoft/live-share'
     summary: |-
       ```js
       import { setMaxListeners, EventEmitter } from 'node:events';
@@ -1354,10 +1425,12 @@ inheritedMethods:
         - id: eventTargets
           type: (_DOMEventTarget | EventEmitter)[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.setMaxListeners
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
   - name: '[captureRejectionSymbol](Error, string, any[])'
-    uid: '@microsoft/live-share-canvas.LiveCanvas.[captureRejectionSymbol]'
-    package: '@microsoft/live-share-canvas'
+    uid: '@microsoft/live-share.LiveFollowMode.[captureRejectionSymbol]'
+    package: '@microsoft/live-share'
     summary: ''
     remarks: ''
     isDeprecated: false
@@ -1375,28 +1448,252 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.__@captureRejectionSymbol@232
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.[captureRejectionSymbol]](xref:@microsoft/live-share.LiveDataObject.[captureRejectionSymbol])
 methods:
-  - name: initialize(InkingManager, UserMeetingRole[])
-    uid: '@microsoft/live-share-canvas.LiveCanvas.initialize'
-    package: '@microsoft/live-share-canvas'
-    summary: Initializes the live inking session.
+  - name: beginSuspension()
+    uid: '@microsoft/live-share.LiveFollowMode.beginSuspension'
+    package: '@microsoft/live-share'
+    summary: Temporarily stop following presenter/follower.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function beginSuspension(): Promise<void>'
+      return:
+        description: a void promise once the operation succeeds.
+        type: Promise&lt;void&gt;
+  - name: dispose()
+    uid: '@microsoft/live-share.LiveFollowMode.dispose'
+    package: '@microsoft/live-share'
+    summary: Disposes of the object when its container is disposed of.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function dispose()
+  - name: endSuspension()
+    uid: '@microsoft/live-share.LiveFollowMode.endSuspension'
+    package: '@microsoft/live-share'
+    summary: Resume following presenter/follower.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function endSuspension(): Promise<void>'
+      return:
+        description: a void promise once the operation succeeds.
+        type: Promise&lt;void&gt;
+  - name: followUser(string)
+    uid: '@microsoft/live-share.LiveFollowMode.followUser'
+    package: '@microsoft/live-share'
+    summary: Follows another user in the session.
+    remarks: >-
+      If another user is presenting,
+      [state](xref:@microsoft/live-share.LiveFollowMode.state) will not reflect
+      following this user until there is no longer a presenter.
+    isDeprecated: false
+    syntax:
+      content: 'function followUser(userId: string): Promise<void>'
+      parameters:
+        - id: userId
+          type: string
+          description: the userId for the user to follow.
+      return:
+        description: >-
+          a void promise that resolves once the event has been sent to the
+          server.
+        type: Promise&lt;void&gt;
+  - name: getUser(string)
+    uid: '@microsoft/live-share.LiveFollowMode.getUser'
+    package: '@microsoft/live-share'
+    summary: Returns the current presence info for a specific user.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        function initialize(inkingManager: InkingManager, allowedRoles?:
+        function getUser(userId: string): undefined |
+        FollowModePresenceUser<TData>
+      parameters:
+        - id: userId
+          type: string
+          description: The ID of the user to retrieve.
+      return:
+        description: >-
+          The current presence information for the user if they've connected to
+          the space.
+        type: >-
+          undefined | <xref uid="@microsoft/live-share.FollowModePresenceUser"
+          />&lt;TData&gt;
+  - name: getUserFollowers(string, PresenceState)
+    uid: '@microsoft/live-share.LiveFollowMode.getUserFollowers'
+    package: '@microsoft/live-share'
+    summary: Get the users that are following a given userId.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getUserFollowers(userId: string, stateFilter?: PresenceState):
+        FollowModePresenceUser<TData>[]
+      parameters:
+        - id: userId
+          type: string
+          description: the userId of the person being followed.
+        - id: stateFilter
+          type: <xref uid="@microsoft/live-share.PresenceState" />
+          description: the presence state to filter results by.
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/live-share.FollowModePresenceUser"
+          />&lt;TData&gt;[]
+  - name: getUserForClient(string)
+    uid: '@microsoft/live-share.LiveFollowMode.getUserForClient'
+    package: '@microsoft/live-share'
+    summary: Returns the current presence info for a specific client ID.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getUserForClient(clientId: string): undefined |
+        FollowModePresenceUser<TData>
+      parameters:
+        - id: clientId
+          type: string
+          description: The ID of the client to retrieve.
+      return:
+        description: >-
+          The current presence information for the client if they've connected
+          to the space.
+        type: >-
+          undefined | <xref uid="@microsoft/live-share.FollowModePresenceUser"
+          />&lt;TData&gt;
+  - name: getUsers(PresenceState)
+    uid: '@microsoft/live-share.LiveFollowMode.getUsers'
+    package: '@microsoft/live-share'
+    summary: Returns a snapshot of the current list of presence objects being tracked.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getUsers(filter?: PresenceState):
+        FollowModePresenceUser<TData>[]
+      parameters:
+        - id: filter
+          type: <xref uid="@microsoft/live-share.PresenceState" />
+          description: Optional. Presence state to filter enumeration to.
+      return:
+        description: Array of presence objects.
+        type: >-
+          <xref uid="@microsoft/live-share.FollowModePresenceUser"
+          />&lt;TData&gt;[]
+  - name: initialize(TData, UserMeetingRole[])
+    uid: '@microsoft/live-share.LiveFollowMode.initialize'
+    package: '@microsoft/live-share'
+    summary: >-
+      Initialize the object to begin sending/receiving state updates through
+      this DDS.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function initialize(initialState: TData, allowedRoles?:
         UserMeetingRole[]): Promise<void>
       parameters:
-        - id: inkingManager
-          type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
-          description: >-
-            The InkingManager instance providing the drawing and events that
-            will be synchronized across clients.
+        - id: initialState
+          type: TData
+          description: Initial state value
         - id: allowedRoles
-          type: UserMeetingRole[]
-          description: ''
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
+          description: Optional. List of roles allowed to make state changes.
       return:
-        description: a void promise that resolves once complete.
+        description: a void promise that resolves once complete
         type: Promise&lt;void&gt;
-extends: LiveDataObject
+  - name: startPresenting()
+    uid: '@microsoft/live-share.LiveFollowMode.startPresenting'
+    package: '@microsoft/live-share'
+    summary: Start presenting the local user's state.
+    remarks: >-
+      If another user is already presenting, the local user will take control of
+      presenting from the previous presenter.
+
+      To update the local user's state that both the local and remote users will
+      reference, use the
+      [update](xref:@microsoft/live-share.LiveFollowMode.update) function.
+
+      This API will override any `followingUserId` value that was set through
+      [followUser](xref:@microsoft/live-share.LiveFollowMode.followUser) until
+      presenting has stopped.
+
+      To stop presenting, use the
+      [stopPresenting](xref:@microsoft/live-share.LiveFollowMode.stopPresenting)
+      API.
+    isDeprecated: false
+    syntax:
+      content: 'function startPresenting(): Promise<void>'
+      return:
+        description: >-
+          a void promise that resolves once the event has been sent to the
+          server.
+        type: Promise&lt;void&gt;
+  - name: stopFollowing()
+    uid: '@microsoft/live-share.LiveFollowMode.stopFollowing'
+    package: '@microsoft/live-share'
+    summary: Stop following the currently following user.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function stopFollowing(): Promise<void>'
+      return:
+        description: >-
+          a void promise that resolves once the event has been sent to the
+          server.
+        type: Promise&lt;void&gt;
+  - name: stopPresenting()
+    uid: '@microsoft/live-share.LiveFollowMode.stopPresenting'
+    package: '@microsoft/live-share'
+    summary: Stop presenting the presenting user's current state.
+    remarks: >-
+      This API allows any user with valid roles to cancel presenting, though we
+      generally recommend only allowing the active presenter to do so.
+
+      To start presenting, use the
+      [startPresenting](xref:@microsoft/live-share.LiveFollowMode.startPresenting)
+      API.
+    isDeprecated: false
+    syntax:
+      content: 'function stopPresenting(): Promise<void>'
+      return:
+        description: >-
+          a void promise that resolves once the event has been sent to the
+          server.
+        type: Promise&lt;void&gt;
+  - name: update(TData)
+    uid: '@microsoft/live-share.LiveFollowMode.update'
+    package: '@microsoft/live-share'
+    summary: Broadcast a new custom data value for the local user's current state.
+    remarks: >-
+      Each user has their own state value, though it will differ from what is
+      shown in [state](xref:@microsoft/live-share.LiveFollowMode.state)
+      depending on the value of
+      [FollowModeType](xref:@microsoft/live-share.FollowModeType).
+
+      Will cause the user to become out of sync if another user is presenting or
+      the local user is following another user.
+
+      To see each user's state, use the
+      [getUsers](xref:@microsoft/live-share.LiveFollowMode.getUsers) API, or
+      listen to "presenceChanged" updates.
+    isDeprecated: false
+    syntax:
+      content: 'function update(newValue: TData): Promise<void>'
+      parameters:
+        - id: newValue
+          type: TData
+          description: the state value for the local user's presence record.
+      return:
+        description: >-
+          a void promise that resolves once the update event has been sent to
+          the server.
+        type: Promise&lt;void&gt;
+extends: >-
+  <xref uid="@microsoft/live-share.LiveDataObject" />&lt;{ Events:
+  ILiveFollowModeEvents&lt;TData&gt; }&gt;

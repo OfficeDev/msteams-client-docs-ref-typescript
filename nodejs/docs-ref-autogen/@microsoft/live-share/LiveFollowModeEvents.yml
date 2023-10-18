@@ -1,0 +1,18 @@
+### YamlMime:TSEnum
+name: LiveFollowModeEvents
+uid: '@microsoft/live-share.LiveFollowModeEvents'
+package: '@microsoft/live-share'
+summary: Events supported by `LiveFollowMode` object.
+fullName: LiveFollowModeEvents
+remarks: ''
+previewState: beta
+isDeprecated: false
+fields:
+  - name: presenceChanged
+    uid: '@microsoft/live-share.LiveFollowModeEvents.presenceChanged'
+    package: '@microsoft/live-share'
+    summary: A user's presence state changed.
+  - name: stateChanged
+    uid: '@microsoft/live-share.LiveFollowModeEvents.stateChanged'
+    package: '@microsoft/live-share'
+    summary: The follow mode state changed.

@@ -1,0 +1,39 @@
+### YamlMime:TSType
+name: ResumeContext
+uid: '@microsoft/teams-js.ResumeContext'
+package: '@microsoft/teams-js'
+summary: >-
+  Data structure to be used with the
+  [app.lifecycle.registerOnResumeHandler(handler: (context: ResumeContext) =>
+  void): void](xref:@microsoft/teams-js.app.lifecycle.registerOnResumeHandler)
+  to pass the context to the app.
+fullName: ResumeContext
+remarks: ''
+previewState: beta
+isDeprecated: false
+type: interface
+properties:
+  - name: contentUrl
+    uid: '@microsoft/teams-js.ResumeContext.contentUrl'
+    package: '@microsoft/teams-js'
+    summary: The content URL that is requested to be loaded
+    fullName: contentUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentUrl: string'
+      return:
+        description: ''
+        type: string
+  - name: entityId
+    uid: '@microsoft/teams-js.ResumeContext.entityId'
+    package: '@microsoft/teams-js'
+    summary: The entity that is requested to be loaded
+    fullName: entityId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'entityId: string'
+      return:
+        description: ''
+        type: string
