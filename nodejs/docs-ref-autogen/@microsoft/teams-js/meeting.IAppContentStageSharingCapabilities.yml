@@ -12,7 +12,11 @@ properties:
     uid: >-
       @microsoft/teams-js.meeting.IAppContentStageSharingCapabilities.doesAppHaveSharePermission
     package: '@microsoft/teams-js'
-    summary: indicates whether app has permission to share contents to meeting stage
+    summary: >-
+      indicates whether app has permission to share contents to meeting stage.
+
+      true when your `configurableTabs` or `staticTabs` entry's `context` array
+      includes `meetingStage`.
     fullName: doesAppHaveSharePermission
     remarks: ''
     isDeprecated: false

@@ -1,0 +1,12 @@
+### YamlMime:TSType
+name: ILiveFollowModeEvents
+uid: '@microsoft/live-share.ILiveFollowModeEvents'
+package: '@microsoft/live-share'
+summary: ''
+fullName: ILiveFollowModeEvents<TData>
+remarks: ''
+isDeprecated: false
+type: interface
+extends: >-
+  <xref uid="@microsoft/live-share.ILivePresenceEvents" />&lt;<xref
+  uid="@microsoft/live-share.IFollowModePresenceUserData" />&lt;TData&gt;&gt;

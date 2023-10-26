@@ -5,7 +5,13 @@ package: '@microsoft/teamsfx'
 summary: A class providing credential and configuration.
 fullName: TeamsFx
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  Please use [TeamsUserCredential](xref:@microsoft/teamsfx.TeamsUserCredential)
+
+  in browser environment and
+  [OnBehalfOfUserCredential](xref:@microsoft/teamsfx.OnBehalfOfUserCredential)
+  or [AppCredential](xref:@microsoft/teamsfx.AppCredential) in NodeJS.
 type: class
 constructors:
   - name: >-

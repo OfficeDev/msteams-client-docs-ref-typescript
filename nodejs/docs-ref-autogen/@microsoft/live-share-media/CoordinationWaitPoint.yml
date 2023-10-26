@@ -2,16 +2,19 @@
 name: CoordinationWaitPoint
 uid: '@microsoft/live-share-media.CoordinationWaitPoint'
 package: '@microsoft/live-share-media'
-summary: ''
+summary: Wait point interface for a suspension.
 fullName: CoordinationWaitPoint
-remarks: ''
+remarks: >-
+  Used by
+  [MediaSessionCoordinatorSuspension](xref:@microsoft/live-share-media.MediaSessionCoordinatorSuspension)
+  to schedule a suspension at a specific media position.
 isDeprecated: false
 type: interface
 properties:
   - name: maxClients
     uid: '@microsoft/live-share-media.CoordinationWaitPoint.maxClients'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Optional. The max clients to wait for before a suspension ends.
     fullName: maxClients
     remarks: ''
     isDeprecated: false
@@ -23,7 +26,7 @@ properties:
   - name: position
     uid: '@microsoft/live-share-media.CoordinationWaitPoint.position'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: The position in milliseconds that the suspension should begin.
     fullName: position
     remarks: ''
     isDeprecated: false
@@ -35,7 +38,7 @@ properties:
   - name: reason
     uid: '@microsoft/live-share-media.CoordinationWaitPoint.reason'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Optional. The reason for the suspension.
     fullName: reason
     remarks: ''
     isDeprecated: false

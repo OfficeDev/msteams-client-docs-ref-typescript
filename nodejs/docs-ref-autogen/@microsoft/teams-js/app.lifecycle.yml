@@ -1,0 +1,81 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.app.lifecycle'
+name: lifecycle
+type: module
+package: '@microsoft/teams-js'
+summary: >-
+  A namespace for enabling the suspension or delayed termination of an app when
+  the user navigates away.
+
+  When an app registers for the registerBeforeSuspendOrTerminateHandler, it
+  chooses to delay termination.
+
+  When an app registers for both registerBeforeSuspendOrTerminateHandler and
+  registerOnResumeHandler, it chooses the suspension of the app .
+
+  Please note that selecting suspension doesn't guarantee prevention of
+  background termination.
+
+  The outcome is influenced by factors such as available memory and the number
+  of suspended apps.
+previewState: beta
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.app.lifecycle.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if app.lifecycle is supported by the host.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether the lifecycle capability is supported
+        type: boolean
+  - name: >-
+      registerBeforeSuspendOrTerminateHandler(registerBeforeSuspendOrTerminateHandlerFunctionType)
+    uid: '@microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandler'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Registers a handler to be called before the page is suspended or
+      terminated. Once a user navigates away from an app,
+
+      the handler will be invoked. App developers can use this handler to save
+      unsaved data, pause sync calls etc.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerBeforeSuspendOrTerminateHandler(handler:
+        registerBeforeSuspendOrTerminateHandlerFunctionType)
+      parameters:
+        - id: handler
+          type: registerBeforeSuspendOrTerminateHandlerFunctionType
+          description: >-
+            The handler to invoke before the page is suspended or terminated.
+            When invoked, app can perform tasks like cleanups, logging etc.
+
+            Upon returning, the app will be suspended or terminated.
+  - name: registerOnResumeHandler(registerOnResumeHandlerFunctionType)
+    uid: '@microsoft/teams-js.app.lifecycle.registerOnResumeHandler'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Registers a handler to be called when the page has been requested to
+      resume from being suspended.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerOnResumeHandler(handler:
+        registerOnResumeHandlerFunctionType)
+      parameters:
+        - id: handler
+          type: registerOnResumeHandlerFunctionType
+          description: >-
+            The handler to invoke when the page is requested to be resumed. The
+            app is supposed to navigate to
+
+            the appropriate page using the ResumeContext. Once done, the app
+            should then call
+            [notifySuccess](xref:@microsoft/teams-js.app.notifySuccess).

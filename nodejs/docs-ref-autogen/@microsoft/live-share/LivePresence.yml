@@ -127,10 +127,22 @@ properties:
       return:
         description: ''
         type: this
+  - name: initializeState
+    uid: '@microsoft/live-share.LivePresence.initializeState'
+    package: '@microsoft/live-share'
+    summary: The initialization status of the data object.
+    fullName: initializeState
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: LiveDataObjectInitializeState initializeState
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.LiveDataObjectInitializeState" />
   - name: isInitialized
     uid: '@microsoft/live-share.LivePresence.isInitialized'
     package: '@microsoft/live-share'
-    summary: Returns true if the object has been initialized.
+    summary: Flag that indicates whether initialization has succeeded or not.
     fullName: isInitialized
     remarks: ''
     isDeprecated: false
@@ -517,7 +529,7 @@ inheritedMethods:
           type: '(event: Event) =&gt; void'
           description: ''
       return:
-        description: that removes the `abort` listener.
+        description: Disposable that removes the `abort` listener.
         type: Disposable
     inheritanceDescription: >-
       <b>Inherited From</b>
@@ -665,6 +677,30 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.finishInitialization](xref:@microsoft/live-share.LiveDataObject.finishInitialization)
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share.LivePresence.getClientInfo'
+    package: '@microsoft/live-share'
+    summary: Get the client info for a given clientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getClientInfo(clientId: string): Promise<undefined |
+        IClientInfo>
+      parameters:
+        - id: clientId
+          type: string
+          description: Fluid clientId we are requesting user info for
+      return:
+        description: >-
+          IClientInfo object if the user is known, otherwise it will return
+          undefined
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getClientInfo](xref:@microsoft/live-share.LiveDataObject.getClientInfo)
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share.LivePresence.getDataObject'
     package: '@microsoft/live-share'
@@ -1379,6 +1415,29 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
+  - name: '[captureRejectionSymbol](Error, string, any[])'
+    uid: '@microsoft/live-share.LivePresence.[captureRejectionSymbol]'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function [captureRejectionSymbol](error: Error, event: string, args:
+        any[])
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: event
+          type: string
+          description: ''
+        - id: args
+          type: any[]
+          description: ''
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.[captureRejectionSymbol]](xref:@microsoft/live-share.LiveDataObject.[captureRejectionSymbol])
 methods:
   - name: dispose()
     uid: '@microsoft/live-share.LivePresence.dispose'
@@ -1446,7 +1505,9 @@ methods:
   - name: initialize(TData, PresenceState, UserMeetingRole[])
     uid: '@microsoft/live-share.LivePresence.initialize'
     package: '@microsoft/live-share'
-    summary: Starts sharing presence information.
+    summary: >-
+      Initialize the object to begin sending/receiving presence updates through
+      this DDS.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -1457,7 +1518,7 @@ methods:
         - id: data
           type: TData
           description: >-
-            Optional. Custom data object to sshare. A deep copy of the data
+            Optional. Custom data object to share. A deep copy of the data
             object is saved to avoid any accidental modifications.
         - id: state
           type: <xref uid="@microsoft/live-share.PresenceState" />
@@ -1468,7 +1529,7 @@ methods:
           type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
           description: Optional. List of roles allowed to emit presence changes.
       return:
-        description: ''
+        description: a void promise that resolves once complete.
         type: Promise&lt;void&gt;
   - name: update(TData, PresenceState)
     uid: '@microsoft/live-share.LivePresence.update'
@@ -1491,8 +1552,8 @@ methods:
           description: Optional. Presence state to change.
       return:
         description: >-
-          a void promise, and will throw if the user does not have the required
-          roles
+          a void promise that resolves once the update event has been sent to
+          the server.
         type: Promise&lt;void&gt;
 extends: >-
   <xref uid="@microsoft/live-share.LiveDataObject" />&lt;{ Events:

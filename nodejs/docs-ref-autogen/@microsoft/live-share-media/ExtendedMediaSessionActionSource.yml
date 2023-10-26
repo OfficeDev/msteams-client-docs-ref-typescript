@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: ExtendedMediaSessionActionSource
+uid: '@microsoft/live-share-media.ExtendedMediaSessionActionSource'
+package: '@microsoft/live-share-media'
+summary: The source of the action for `LiveMediaSession`.
+fullName: ExtendedMediaSessionActionSource
+remarks: >-
+  Is `user` when the action was explicitly invoked via the
+  `LiveMediaSessionCoordinator`.
+
+  Is `system` when the action was invoked via `GroupCoordinatorState` when the
+  local client is out of sync.
+isDeprecated: false
+syntax: |
+  type ExtendedMediaSessionActionSource = "user" | "system"

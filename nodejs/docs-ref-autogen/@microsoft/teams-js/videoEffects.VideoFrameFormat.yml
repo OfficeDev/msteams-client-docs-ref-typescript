@@ -1,6 +1,6 @@
 ### YamlMime:TSEnum
 name: VideoFrameFormat
-uid: '@microsoft/teams-js.video.VideoFrameFormat'
+uid: '@microsoft/teams-js.videoEffects.VideoFrameFormat'
 package: '@microsoft/teams-js'
 summary: Video frame format enum, currently only support NV12
 fullName: VideoFrameFormat
@@ -9,7 +9,7 @@ previewState: beta
 isDeprecated: false
 fields:
   - name: NV12
-    uid: '@microsoft/teams-js.video.VideoFrameFormat.NV12'
+    uid: '@microsoft/teams-js.videoEffects.VideoFrameFormat.NV12'
     package: '@microsoft/teams-js'
     summary: >-
       Video format used for encoding and decoding YUV color data in video

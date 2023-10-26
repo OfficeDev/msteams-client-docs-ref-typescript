@@ -24,7 +24,7 @@ properties:
     uid: '@microsoft/teams-js.app.UserInfo.id'
     package: '@microsoft/teams-js'
     summary: >-
-      The Azure AD object id of the current user.
+      The Microsoft Entra object id of the current user.
 
 
       Because a malicious party can run your content in a browser, this value
@@ -97,7 +97,7 @@ properties:
     uid: '@microsoft/teams-js.app.UserInfo.loginHint'
     package: '@microsoft/teams-js'
     summary: >-
-      A value suitable for use when providing a login_hint to Azure AD ID
+      A value suitable for use when providing a login_hint to Microsoft Entra ID
       for authentication purposes.
 
       See [Provide optional claims to your

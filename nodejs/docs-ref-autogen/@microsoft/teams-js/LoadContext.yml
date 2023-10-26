@@ -1,39 +1,11 @@
-### YamlMime:TSType
+### YamlMime:TSTypeAlias
 name: LoadContext
 uid: '@microsoft/teams-js.LoadContext'
 package: '@microsoft/teams-js'
-summary: >-
-  Data structure to be used with the [teamsCore.registerOnLoadHandler(handler:
-  (context: LoadContext) => void):
-  void](xref:@microsoft/teams-js.teamsCore.registerOnLoadHandler) to pass the
-  context to the app.
+summary: ''
 fullName: LoadContext
 remarks: ''
-previewState: beta
-isDeprecated: false
-type: interface
-properties:
-  - name: contentUrl
-    uid: '@microsoft/teams-js.LoadContext.contentUrl'
-    package: '@microsoft/teams-js'
-    summary: The content URL that is requested to be loaded
-    fullName: contentUrl
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'contentUrl: string'
-      return:
-        description: ''
-        type: string
-  - name: entityId
-    uid: '@microsoft/teams-js.LoadContext.entityId'
-    package: '@microsoft/teams-js'
-    summary: The entity that is requested to be loaded
-    fullName: entityId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'entityId: string'
-      return:
-        description: ''
-        type: string
+isDeprecated: true
+customDeprecatedMessage: As of 2.14.1, please use ResumeContext instead.
+syntax: |
+  type LoadContext = ResumeContext

@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: LiveDataObjectInitializeState
+uid: '@microsoft/live-share.LiveDataObjectInitializeState'
+package: '@microsoft/live-share'
+summary: The initialization state for the `LiveDataObject` class.
+fullName: LiveDataObjectInitializeState
+remarks: ''
+isDeprecated: false
+fields:
+  - name: fatalError
+    uid: '@microsoft/live-share.LiveDataObjectInitializeState.fatalError'
+    package: '@microsoft/live-share'
+    summary: >-
+      The state when `.initialize()` has a fatal error and `.initialize()` is
+      never expected to succeed
+  - name: needed
+    uid: '@microsoft/live-share.LiveDataObjectInitializeState.needed'
+    package: '@microsoft/live-share'
+    summary: >-
+      The default state when `.initialize()` has not been called and/or a
+      previous call to `.initialize()` failed
+  - name: pending
+    uid: '@microsoft/live-share.LiveDataObjectInitializeState.pending'
+    package: '@microsoft/live-share'
+    summary: The state when `.initialize()` has been called but has not yet succeeded
+  - name: succeeded
+    uid: '@microsoft/live-share.LiveDataObjectInitializeState.succeeded'
+    package: '@microsoft/live-share'
+    summary: The state when `.initialize()` has succeeded

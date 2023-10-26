@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: VideoBufferData
-uid: '@microsoft/teams-js.video.VideoBufferData'
+uid: '@microsoft/teams-js.videoEffects.VideoBufferData'
 package: '@microsoft/teams-js'
 summary: Represents a video frame
 fullName: VideoBufferData
@@ -10,7 +10,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: chromaStride
-    uid: '@microsoft/teams-js.video.VideoBufferData.chromaStride'
+    uid: '@microsoft/teams-js.videoEffects.VideoBufferData.chromaStride'
     package: '@microsoft/teams-js'
     summary: NV12 chroma stride, valid only when video frame format is NV12
     fullName: chromaStride
@@ -22,7 +22,7 @@ properties:
         description: ''
         type: number
   - name: height
-    uid: '@microsoft/teams-js.video.VideoBufferData.height'
+    uid: '@microsoft/teams-js.videoEffects.VideoBufferData.height'
     package: '@microsoft/teams-js'
     summary: Video frame height
     fullName: height
@@ -34,7 +34,7 @@ properties:
         description: ''
         type: number
   - name: lumaStride
-    uid: '@microsoft/teams-js.video.VideoBufferData.lumaStride'
+    uid: '@microsoft/teams-js.videoEffects.VideoBufferData.lumaStride'
     package: '@microsoft/teams-js'
     summary: NV12 luma stride, valid only when video frame format is NV12
     fullName: lumaStride
@@ -46,7 +46,7 @@ properties:
         description: ''
         type: number
   - name: stride
-    uid: '@microsoft/teams-js.video.VideoBufferData.stride'
+    uid: '@microsoft/teams-js.videoEffects.VideoBufferData.stride'
     package: '@microsoft/teams-js'
     summary: RGB stride, valid only when video frame format is RGB
     fullName: stride
@@ -58,7 +58,7 @@ properties:
         description: ''
         type: number
   - name: timestamp
-    uid: '@microsoft/teams-js.video.VideoBufferData.timestamp'
+    uid: '@microsoft/teams-js.videoEffects.VideoBufferData.timestamp'
     package: '@microsoft/teams-js'
     summary: The time stamp of the current video frame
     fullName: timestamp
@@ -70,7 +70,7 @@ properties:
         description: ''
         type: number
   - name: videoFrameBuffer
-    uid: '@microsoft/teams-js.video.VideoBufferData.videoFrameBuffer'
+    uid: '@microsoft/teams-js.videoEffects.VideoBufferData.videoFrameBuffer'
     package: '@microsoft/teams-js'
     summary: Video frame buffer
     fullName: videoFrameBuffer
@@ -82,7 +82,7 @@ properties:
         description: ''
         type: Uint8ClampedArray
   - name: width
-    uid: '@microsoft/teams-js.video.VideoBufferData.width'
+    uid: '@microsoft/teams-js.videoEffects.VideoBufferData.width'
     package: '@microsoft/teams-js'
     summary: Video frame width
     fullName: width

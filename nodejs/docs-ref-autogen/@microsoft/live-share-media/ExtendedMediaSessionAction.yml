@@ -2,9 +2,13 @@
 name: ExtendedMediaSessionAction
 uid: '@microsoft/live-share-media.ExtendedMediaSessionAction'
 package: '@microsoft/live-share-media'
-summary: ''
+summary: Action types supported for `LiveMediaSession`.
 fullName: ExtendedMediaSessionAction
-remarks: ''
+remarks: >-
+  These types extend the default actions supported by the `MediaSession`
+  specification in browsers.
+
+  These additional actions help with group synchronization.
 isDeprecated: false
 syntax: |
   type ExtendedMediaSessionAction =

@@ -29,7 +29,7 @@ properties:
     uid: '@microsoft/teams-js.people.PeoplePickerInputs.setSelected'
     package: '@microsoft/teams-js'
     summary: >-
-      Optional; Azure AD IDs of the users to be pre-populated in the
+      Optional; Microsoft Entra IDs of the users to be pre-populated in the
       search box of people picker control
 
       If single select is enabled this value, only the first user in the list
