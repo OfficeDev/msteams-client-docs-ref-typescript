@@ -30,7 +30,7 @@ properties:
     uid: '@microsoft/teams-js.OpenGroupChatRequest.users'
     package: '@microsoft/teams-js'
     summary: >-
-      Array containing Microsoft Entra UPNs (e-mail addresss) of users to open
+      Array containing Azure AD UPNs (e-mail addresss) of users to open
       chat with
     fullName: users
     remarks: ''
