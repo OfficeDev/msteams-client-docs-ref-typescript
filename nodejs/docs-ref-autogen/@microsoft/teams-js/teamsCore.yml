@@ -44,7 +44,8 @@ functions:
 
       for a more detailed explanation about using this API.
     previewState: beta
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: ''
     syntax:
       content: >-
         function registerBeforeUnloadHandler(handler:
@@ -68,7 +69,11 @@ functions:
 
       for a more detailed explanation about using this API.
     previewState: beta
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.14.1, please use
+      [registerOnResumeHandler](xref:@microsoft/teams-js.app.lifecycle.registerOnResumeHandler)
+      instead.
     syntax:
       content: >-
         function registerOnLoadHandler(handler:

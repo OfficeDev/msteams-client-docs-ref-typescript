@@ -1,27 +1,27 @@
 ### YamlMime:TSPackage
-uid: '@microsoft/teams-js.video'
-name: video
+uid: '@microsoft/teams-js.videoEffects'
+name: videoEffects
 summary: Namespace to video extensibility of the SDK
 type: module
 enums:
-  - '@microsoft/teams-js.video.EffectChangeType'
-  - '@microsoft/teams-js.video.EffectFailureReason'
-  - '@microsoft/teams-js.video.VideoFrameFormat'
+  - '@microsoft/teams-js.videoEffects.EffectChangeType'
+  - '@microsoft/teams-js.videoEffects.EffectFailureReason'
+  - '@microsoft/teams-js.videoEffects.VideoFrameFormat'
 typeAliases:
-  - '@microsoft/teams-js.video.RegisterForVideoFrameParameters'
-  - '@microsoft/teams-js.video.VideoBufferHandler'
-  - '@microsoft/teams-js.video.VideoEffectCallback'
-  - '@microsoft/teams-js.video.VideoFrameData'
-  - '@microsoft/teams-js.video.VideoFrameHandler'
+  - '@microsoft/teams-js.videoEffects.RegisterForVideoFrameParameters'
+  - '@microsoft/teams-js.videoEffects.VideoBufferHandler'
+  - '@microsoft/teams-js.videoEffects.VideoEffectCallback'
+  - '@microsoft/teams-js.videoEffects.VideoFrameData'
+  - '@microsoft/teams-js.videoEffects.VideoFrameHandler'
 interfaces:
-  - '@microsoft/teams-js.video.VideoBufferData'
-  - '@microsoft/teams-js.video.VideoFrame'
-  - '@microsoft/teams-js.video.VideoFrameConfig'
+  - '@microsoft/teams-js.videoEffects.VideoBufferData'
+  - '@microsoft/teams-js.videoEffects.VideoFrame'
+  - '@microsoft/teams-js.videoEffects.VideoFrameConfig'
 package: '@microsoft/teams-js'
 previewState: beta
 functions:
   - name: isSupported()
-    uid: '@microsoft/teams-js.video.isSupported'
+    uid: '@microsoft/teams-js.videoEffects.isSupported'
     package: '@microsoft/teams-js'
     summary: Checks if video capability is supported by the host.
     remarks: ''
@@ -33,7 +33,7 @@ functions:
         description: boolean to represent whether the video capability is supported
         type: boolean
   - name: notifySelectedVideoEffectChanged(EffectChangeType, undefined | string)
-    uid: '@microsoft/teams-js.video.notifySelectedVideoEffectChanged'
+    uid: '@microsoft/teams-js.videoEffects.notifySelectedVideoEffectChanged'
     package: '@microsoft/teams-js'
     summary: >-
       Video extension should call this to notify host that the current selected
@@ -53,13 +53,13 @@ functions:
         EffectChangeType, effectId: undefined | string)
       parameters:
         - id: effectChangeType
-          type: <xref uid="@microsoft/teams-js.video.EffectChangeType" />
+          type: <xref uid="@microsoft/teams-js.videoEffects.EffectChangeType" />
           description: the effect change type.
         - id: effectId
           type: undefined | string
           description: Newly selected effect id.
   - name: registerForVideoEffect(VideoEffectCallback)
-    uid: '@microsoft/teams-js.video.registerForVideoEffect'
+    uid: '@microsoft/teams-js.videoEffects.registerForVideoEffect'
     package: '@microsoft/teams-js'
     summary: Register a callback to be notified when a new video effect is applied.
     remarks: ''
@@ -69,10 +69,10 @@ functions:
       content: 'function registerForVideoEffect(callback: VideoEffectCallback)'
       parameters:
         - id: callback
-          type: <xref uid="@microsoft/teams-js.video.VideoEffectCallback" />
+          type: <xref uid="@microsoft/teams-js.videoEffects.VideoEffectCallback" />
           description: Function to be called when new video effect is applied.
   - name: registerForVideoFrame(RegisterForVideoFrameParameters)
-    uid: '@microsoft/teams-js.video.registerForVideoFrame'
+    uid: '@microsoft/teams-js.videoEffects.registerForVideoFrame'
     package: '@microsoft/teams-js'
     summary: |+
       Register callbacks to process the video frames if the host supports it.
@@ -80,7 +80,7 @@ functions:
       **Example**
 
       ```typescript
-      video.registerForVideoFrame({
+      videoEffects.registerForVideoFrame({
         videoFrameHandler: async (videoFrameData) => {
           const originalFrame = videoFrameData.videoFrame as VideoFrame;
           try {
@@ -103,7 +103,7 @@ functions:
             }
           },
         config: {
-          format: video.VideoPixelFormat.NV12,
+          format: videoEffects.VideoPixelFormat.NV12,
         }
       });
       ```
@@ -119,20 +119,21 @@ functions:
         - id: parameters
           type: >-
             <xref
-            uid="@microsoft/teams-js.video.RegisterForVideoFrameParameters" />
+            uid="@microsoft/teams-js.videoEffects.RegisterForVideoFrameParameters"
+            />
           description: >-
             Callbacks and configuration to process the video frames. A host may
             support either
-            [VideoFrameHandler](xref:@microsoft/teams-js.video.VideoFrameHandler)
+            [VideoFrameHandler](xref:@microsoft/teams-js.videoEffects.VideoFrameHandler)
             or
-            [VideoBufferHandler](xref:@microsoft/teams-js.video.VideoBufferHandler),
+            [VideoBufferHandler](xref:@microsoft/teams-js.videoEffects.VideoBufferHandler),
             but not both.
 
             To ensure the video effect works on all supported hosts, the video
             app must provide both
-            [VideoFrameHandler](xref:@microsoft/teams-js.video.VideoFrameHandler)
+            [VideoFrameHandler](xref:@microsoft/teams-js.videoEffects.VideoFrameHandler)
             and
-            [VideoBufferHandler](xref:@microsoft/teams-js.video.VideoBufferHandler).
+            [VideoBufferHandler](xref:@microsoft/teams-js.videoEffects.VideoBufferHandler).
 
             The host will choose the appropriate callback based on the host's
             capability.

@@ -8,6 +8,42 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: canSendBackgroundUpdates
+    uid: '@microsoft/live-share.ILiveShareClientOptions.canSendBackgroundUpdates'
+    package: '@microsoft/live-share'
+    summary: >-
+      Optional. Setting for whether `LiveDataObject` instances using
+      `LiveObjectSynchronizer` can send background updates.
+
+      Default value is `true`.
+    fullName: canSendBackgroundUpdates
+    remarks: >-
+      This is useful for scenarios where there are a large number of
+      participants in a session, since service performance degrades as more
+      socket connections are opened.
+
+      Intended for use when a small number of users are intended to be "in
+      control", such as the `LiveFollowMode` class's `startPresenting()`
+      feature.
+
+      There should always be at least one user in the session that has
+      `canSendBackgroundUpdates` set to true.
+
+      Set to true when the user is eligible to send background updates (e.g.,
+      "in control"), or false when that user is not in control.
+
+      This setting will not prevent the local user from explicitly changing the
+      state of objects using `LiveObjectSynchronizer`, such as `.set()` in
+      `LiveState`.
+
+      Impacts background updates of `LiveState`, `LivePresence`, `LiveTimer`,
+      and `LiveFollowMode`.
+    isDeprecated: false
+    syntax:
+      content: 'canSendBackgroundUpdates?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: connection
     uid: '@microsoft/live-share.ILiveShareClientOptions.connection'
     package: '@microsoft/live-share'

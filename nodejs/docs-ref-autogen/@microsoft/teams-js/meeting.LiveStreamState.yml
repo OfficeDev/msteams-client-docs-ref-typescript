@@ -2,9 +2,13 @@
 name: LiveStreamState
 uid: '@microsoft/teams-js.meeting.LiveStreamState'
 package: '@microsoft/teams-js'
-summary: Represents the current live streaming state of a meeting
+summary: >-
+  Represents the current Real-Time Messaging Protocol (RTMP) live streaming
+  state of a meeting.
 fullName: LiveStreamState
-remarks: ''
+remarks: >-
+  RTMP is a popular communication protocol for streaming audio, video, and data
+  over the Internet.
 isDeprecated: false
 type: interface
 properties:
@@ -23,7 +27,9 @@ properties:
   - name: isStreaming
     uid: '@microsoft/teams-js.meeting.LiveStreamState.isStreaming'
     package: '@microsoft/teams-js'
-    summary: indicates whether meeting is streaming
+    summary: >-
+      true when the current meeting is being streamed through RTMP, or false if
+      it is not.
     fullName: isStreaming
     remarks: ''
     isDeprecated: false

@@ -39,7 +39,11 @@ functions:
     package: '@microsoft/teamsfx-react'
     summary: Helper function to call Microsoft Graph API with authentication.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Please use
+      [useGraphWithCredential](xref:@microsoft/teamsfx-react.useGraphWithCredential)
+      instead.
     syntax:
       content: >-
         function useGraph<T>(fetchGraphDataAsync: (graph: Client, teamsfx:

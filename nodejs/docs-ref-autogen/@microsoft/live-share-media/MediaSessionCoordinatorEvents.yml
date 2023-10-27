@@ -2,7 +2,7 @@
 name: MediaSessionCoordinatorEvents
 uid: '@microsoft/live-share-media.MediaSessionCoordinatorEvents'
 package: '@microsoft/live-share-media'
-summary: ''
+summary: Event types of `LiveMediaSessionCoordinator`.
 fullName: MediaSessionCoordinatorEvents
 remarks: ''
 isDeprecated: false
@@ -11,8 +11,8 @@ fields:
     uid: >-
       @microsoft/live-share-media.MediaSessionCoordinatorEvents.coordinatorstatechange
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Event emitted after the coordinator's state changed
   - name: triggeraction
     uid: '@microsoft/live-share-media.MediaSessionCoordinatorEvents.triggeraction'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Event emitted when an action was triggered.

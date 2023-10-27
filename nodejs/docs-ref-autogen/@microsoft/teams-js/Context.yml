@@ -91,7 +91,10 @@ properties:
       instead
 
 
-      Unique ID for the current session for use in correlating telemetry data.
+      Unique ID for the current session for use in correlating telemetry data. A
+      session corresponds to the lifecycle of an app. A new session begins upon
+      the creation of a webview (on Teams mobile) or iframe (in Teams desktop)
+      hosting the app, and ends when it is destroyed.
     syntax:
       content: 'appSessionId?: string'
       return:
@@ -485,7 +488,7 @@ properties:
 
 
       A value suitable for use as a login_hint when authenticating with
-      AAD ID.
+      Azure AD ID.
 
       Because a malicious party can run your content in a browser, this value
       should

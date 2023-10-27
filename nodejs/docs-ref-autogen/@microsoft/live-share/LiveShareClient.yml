@@ -26,6 +26,22 @@ constructors:
           type: <xref uid="@microsoft/live-share.ILiveShareClientOptions" />
           description: Optional. Configuration options for the client.
 properties:
+  - name: canSendBackgroundUpdates
+    uid: '@microsoft/live-share.LiveShareClient.canSendBackgroundUpdates'
+    package: '@microsoft/live-share'
+    summary: >-
+      Setting for whether `LiveDataObject` instances using
+      `LiveObjectSynchronizer` can send background updates.
+
+      Default value is `true`.
+    fullName: canSendBackgroundUpdates
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean canSendBackgroundUpdates
+      return:
+        description: ''
+        type: boolean
   - name: isTesting
     uid: '@microsoft/live-share.LiveShareClient.isTesting'
     package: '@microsoft/live-share'

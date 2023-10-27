@@ -2,16 +2,20 @@
 name: ExtendedMediaSessionActionDetails
 uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails'
 package: '@microsoft/live-share-media'
-summary: ''
+summary: Details for emitted actions from `LiveMediaSession`.
 fullName: ExtendedMediaSessionActionDetails
-remarks: ''
+remarks: >-
+  These types extend the default event details supported by the `MediaSession`
+  specification in browsers.
+
+  These additional types help with group synchronization.
 isDeprecated: false
 type: interface
 properties:
   - name: action
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.action'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: The action type of this event.
     fullName: action
     remarks: ''
     isDeprecated: false
@@ -23,7 +27,7 @@ properties:
   - name: blocked
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.blocked'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Action type that was blocked.
     fullName: blocked
     remarks: ''
     isDeprecated: false
@@ -37,7 +41,7 @@ properties:
   - name: clientId
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.clientId'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Unique identifier of the client that triggered this action.
     fullName: clientId
     remarks: ''
     isDeprecated: false
@@ -49,7 +53,7 @@ properties:
   - name: data
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.data'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Custom data associated with this action.
     fullName: data
     remarks: ''
     isDeprecated: false
@@ -61,7 +65,7 @@ properties:
   - name: fastSeek
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.fastSeek'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Flag indicating whether or not this was a fast seek action.
     fullName: fastSeek
     remarks: ''
     isDeprecated: false
@@ -70,10 +74,24 @@ properties:
       return:
         description: ''
         type: null | boolean
+  - name: local
+    uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.local'
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Flag indicating whether or not the action was triggered by the local
+      client.
+    fullName: local
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'local: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: metadata
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.metadata'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Updated session metadata that was changed via this action.
     fullName: metadata
     remarks: ''
     isDeprecated: false
@@ -87,7 +105,7 @@ properties:
   - name: seekOffset
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.seekOffset'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: The offset of the seek.
     fullName: seekOffset
     remarks: ''
     isDeprecated: false
@@ -99,7 +117,7 @@ properties:
   - name: seekTime
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.seekTime'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Timestamp of the seek event.
     fullName: seekTime
     remarks: ''
     isDeprecated: false
@@ -108,10 +126,29 @@ properties:
       return:
         description: ''
         type: null | number
+  - name: source
+    uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.source'
+    package: '@microsoft/live-share-media'
+    summary: The source of the action.
+    fullName: source
+    remarks: >-
+      Is `user` when the action was explicitly invoked via the
+      `LiveMediaSessionCoordinator`.
+
+      Is `system` when the action was invoked via `GroupCoordinatorState` when
+      the local client is out of sync.
+    isDeprecated: false
+    syntax:
+      content: 'source: ExtendedMediaSessionActionSource'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@microsoft/live-share-media.ExtendedMediaSessionActionSource" />
   - name: suspension
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.suspension'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: Suspension associated with this action.
     fullName: suspension
     remarks: ''
     isDeprecated: false

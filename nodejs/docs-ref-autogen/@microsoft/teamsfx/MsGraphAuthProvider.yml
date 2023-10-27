@@ -5,7 +5,11 @@ package: '@microsoft/teamsfx'
 summary: Microsoft Graph auth provider for Teams Framework
 fullName: MsGraphAuthProvider
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  Use `TokenCredentialAuthenticationProvider` from
+  `@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials`
+  instead.
 type: class
 constructors:
   - name: MsGraphAuthProvider(TeamsFxConfiguration, string | string[])

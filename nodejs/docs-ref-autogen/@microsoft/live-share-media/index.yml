@@ -26,5 +26,6 @@ interfaces:
   - '@microsoft/live-share-media.MediaSessionCoordinatorSuspension'
 typeAliases:
   - '@microsoft/live-share-media.ExtendedMediaSessionAction'
+  - '@microsoft/live-share-media.ExtendedMediaSessionActionSource'
   - '@microsoft/live-share-media.ExtendedMediaSessionPlaybackState'
   - '@microsoft/live-share-media.MediaSessionCoordinatorState'

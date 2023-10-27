@@ -60,7 +60,7 @@ functions:
       There are two primary uses for this function:
 
       1. When your app needs to authenticate using a 3rd-party identity provider
-      (not AAD ID)
+      (not Azure AD ID)
 
       2. When your app needs to show authentication UI that is blocked from
       being shown in an iframe (e.g., Azure AD consent prompts)

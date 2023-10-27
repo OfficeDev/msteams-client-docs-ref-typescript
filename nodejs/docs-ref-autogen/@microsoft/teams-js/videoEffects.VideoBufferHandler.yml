@@ -1,6 +1,6 @@
 ### YamlMime:TSTypeAlias
 name: VideoBufferHandler
-uid: '@microsoft/teams-js.video.VideoBufferHandler'
+uid: '@microsoft/teams-js.videoEffects.VideoBufferHandler'
 package: '@microsoft/teams-js'
 summary: >-
   Video frame call back function definition

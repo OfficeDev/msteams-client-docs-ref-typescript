@@ -1,0 +1,108 @@
+### YamlMime:TSType
+name: IFollowModeState
+uid: '@microsoft/live-share.IFollowModeState'
+package: '@microsoft/live-share'
+summary: Information about the state of the local user's follow mode.
+fullName: IFollowModeState<TData>
+remarks: >-
+  This includes information such as whether there is a presenting user and which
+  user's state is relevant to the local user.
+previewState: beta
+isDeprecated: false
+type: interface
+properties:
+  - name: followingUserId
+    uid: '@microsoft/live-share.IFollowModeState.followingUserId'
+    package: '@microsoft/live-share'
+    summary: >-
+      The userId of the user that the user is following.
+
+      This value can be either the presenting user or a specific user the local
+      user is following.
+    fullName: followingUserId
+    remarks: >-
+      Is a string when [type](xref:@microsoft/live-share.IFollowModeState.type)
+      is `followPresenter`, `suspendFollowPresenter`, `followUser`, or
+      `suspendFollowUser`.
+
+      Is undefined when [type](xref:@microsoft/live-share.IFollowModeState.type)
+      is `local` or `activePresenter`.
+
+      Presenting takes precedence over following a specific user.
+    isDeprecated: false
+    syntax:
+      content: 'followingUserId: string'
+      return:
+        description: ''
+        type: string
+  - name: isLocalValue
+    uid: '@microsoft/live-share.IFollowModeState.isLocalValue'
+    package: '@microsoft/live-share'
+    summary: >-
+      Indicates that is true when the
+      [value](xref:@microsoft/live-share.IFollowModeState.value) is referencing
+      the local user's
+      [["stateValue"]](xref:@microsoft/live-share.IFollowModePresenceUserData).
+    fullName: isLocalValue
+    remarks: >-
+      When true,
+      [followingUserId](xref:@microsoft/live-share.IFollowModeState.followingUserId)
+      may not be the local user's id when
+      [type](xref:@microsoft/live-share.IFollowModeState.type) is
+      `suspendFollowUser` or `suspendFollowPresenter`.
+    isDeprecated: false
+    syntax:
+      content: 'isLocalValue: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: otherUsersCount
+    uid: '@microsoft/live-share.IFollowModeState.otherUsersCount'
+    package: '@microsoft/live-share'
+    summary: >-
+      Number of other non-local users following along with this current state
+      value
+    fullName: otherUsersCount
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'otherUsersCount: number'
+      return:
+        description: ''
+        type: number
+  - name: type
+    uid: '@microsoft/live-share.IFollowModeState.type'
+    package: '@microsoft/live-share'
+    summary: The follow mode type for the local user.
+    fullName: type
+    remarks: >-
+      Determines which user's
+      [["stateValue"]](xref:@microsoft/live-share.IFollowModePresenceUserData)
+      to use for [value](xref:@microsoft/live-share.IFollowModeState.value).
+
+      Calculated using a combination of different conditions, such as whether
+      there is an active presenter.
+    isDeprecated: false
+    syntax:
+      content: 'type: FollowModeType'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.FollowModeType" />
+  - name: value
+    uid: '@microsoft/live-share.IFollowModeState.value'
+    package: '@microsoft/live-share'
+    summary: The custom value the app should use locally to reflect the follow state.
+    fullName: value
+    remarks: >-
+      The relevant user's
+      [["stateValue"]](xref:@microsoft/live-share.IFollowModePresenceUserData),
+      as determined by [type](xref:@microsoft/live-share.IFollowModeState.type).
+
+      For example, if `FollowModeType` is `activePresenter`, this value will be
+      the actively presenting user's `stateValue`.
+    isDeprecated: false
+    syntax:
+      content: 'value: TData'
+      return:
+        description: ''
+        type: TData

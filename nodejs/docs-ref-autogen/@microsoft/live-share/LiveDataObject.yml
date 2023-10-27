@@ -95,6 +95,30 @@ properties:
       return:
         description: ''
         type: this
+  - name: initializeState
+    uid: '@microsoft/live-share.LiveDataObject.initializeState'
+    package: '@microsoft/live-share'
+    summary: The initialization status of the data object.
+    fullName: initializeState
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: LiveDataObjectInitializeState initializeState
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.LiveDataObjectInitializeState" />
+  - name: isInitialized
+    uid: '@microsoft/live-share.LiveDataObject.isInitialized'
+    package: '@microsoft/live-share'
+    summary: Flag that indicates whether initialization has succeeded or not.
+    fullName: isInitialized
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isInitialized
+      return:
+        description: ''
+        type: boolean
 inheritedProperties:
   - name: addListener
     uid: '@microsoft/live-share.LiveDataObject.addListener'
@@ -415,7 +439,7 @@ inheritedMethods:
           type: '(event: Event) =&gt; void'
           description: ''
       return:
-        description: that removes the `abort` listener.
+        description: Disposable that removes the `abort` listener.
         type: Disposable
     inheritanceDescription: <b>Inherited From</b> DataObject.addAbortListener
   - name: dispose()
@@ -1242,4 +1266,47 @@ inheritedMethods:
           type: (_DOMEventTarget | EventEmitter)[]
           description: ''
     inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
+  - name: '[captureRejectionSymbol](Error, string, any[])'
+    uid: '@microsoft/live-share.LiveDataObject.[captureRejectionSymbol]'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function [captureRejectionSymbol](error: Error, event: string, args:
+        any[])
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: event
+          type: string
+          description: ''
+        - id: args
+          type: any[]
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> DataObject.__@captureRejectionSymbol@277
+methods:
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share.LiveDataObject.getClientInfo'
+    package: '@microsoft/live-share'
+    summary: Get the client info for a given clientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getClientInfo(clientId: string): Promise<undefined |
+        IClientInfo>
+      parameters:
+        - id: clientId
+          type: string
+          description: Fluid clientId we are requesting user info for
+      return:
+        description: >-
+          IClientInfo object if the user is known, otherwise it will return
+          undefined
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
 extends: DataObject&lt;I&gt;

@@ -96,7 +96,11 @@ properties:
   - name: sessionId
     uid: '@microsoft/teams-js.app.AppInfo.sessionId'
     package: '@microsoft/teams-js'
-    summary: Unique ID for the current session for use in correlating telemetry data.
+    summary: >-
+      Unique ID for the current session for use in correlating telemetry data. A
+      session corresponds to the lifecycle of an app. A new session begins upon
+      the creation of a webview (on Teams mobile) or iframe (in Teams desktop)
+      hosting the app, and ends when it is destroyed.
     fullName: sessionId
     remarks: ''
     isDeprecated: false

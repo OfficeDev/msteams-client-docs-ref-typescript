@@ -11,6 +11,12 @@
     - uid: '@microsoft/live-share.DynamicObjectRegistry'
       name: DynamicObjectRegistry
       items: []
+    - uid: '@microsoft/live-share.FollowModePresenceUser'
+      name: FollowModePresenceUser
+      items: []
+    - uid: '@microsoft/live-share.FollowModeType'
+      name: FollowModeType
+      items: []
     - uid: '@microsoft/live-share.GetLocalUserCanSend'
       name: GetLocalUserCanSend
       items: []
@@ -35,11 +41,20 @@
     - uid: '@microsoft/live-share.IFluidTenantInfo'
       name: IFluidTenantInfo
       items: []
+    - uid: '@microsoft/live-share.IFollowModePresenceUserData'
+      name: IFollowModePresenceUserData
+      items: []
+    - uid: '@microsoft/live-share.IFollowModeState'
+      name: IFollowModeState
+      items: []
     - uid: '@microsoft/live-share.ILiveEvent'
       name: ILiveEvent
       items: []
     - uid: '@microsoft/live-share.ILiveEventEvents'
       name: ILiveEventEvents
+      items: []
+    - uid: '@microsoft/live-share.ILiveFollowModeEvents'
+      name: ILiveFollowModeEvents
       items: []
     - uid: '@microsoft/live-share.ILivePresenceEvents'
       name: ILivePresenceEvents
@@ -77,6 +92,9 @@
     - uid: '@microsoft/live-share.LiveDataObject'
       name: LiveDataObject
       items: []
+    - uid: '@microsoft/live-share.LiveDataObjectInitializeState'
+      name: LiveDataObjectInitializeState
+      items: []
     - uid: '@microsoft/live-share.LiveEvent'
       name: LiveEvent
       items: []
@@ -97,6 +115,12 @@
       items: []
     - uid: '@microsoft/live-share.LiveEventTimer'
       name: LiveEventTimer
+      items: []
+    - uid: '@microsoft/live-share.LiveFollowMode'
+      name: LiveFollowMode
+      items: []
+    - uid: '@microsoft/live-share.LiveFollowModeEvents'
+      name: LiveFollowModeEvents
       items: []
     - uid: '@microsoft/live-share.LivePresence'
       name: LivePresence
@@ -295,6 +319,9 @@
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionHandler'
       name: ExtendedMediaSessionActionHandler
       items: []
+    - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionSource'
+      name: ExtendedMediaSessionActionSource
+      items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionPlaybackState'
       name: ExtendedMediaSessionPlaybackState
       items: []
@@ -389,6 +416,9 @@
           items: []
         - uid: '@microsoft/teams-js.app.IFailedRequest'
           name: IFailedRequest
+          items: []
+        - uid: '@microsoft/teams-js.app.lifecycle'
+          name: lifecycle
           items: []
         - uid: '@microsoft/teams-js.app.MeetingInfo'
           name: MeetingInfo
@@ -685,16 +715,6 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.meeting'
-        - name: appShareButton
-          items:
-            - name: Overview
-              uid: '@microsoft/teams-js.meeting.appShareButton'
-            - uid: '@microsoft/teams-js.meeting.appShareButton.ShareInformation'
-              name: ShareInformation
-              items: []
-        - uid: '@microsoft/teams-js.meeting.CallType'
-          name: CallType
-          items: []
         - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
           name: IAppContentStageSharingCapabilities
           items: []
@@ -706,9 +726,6 @@
           items: []
         - uid: '@microsoft/teams-js.meeting.LiveStreamState'
           name: LiveStreamState
-          items: []
-        - uid: '@microsoft/teams-js.meeting.MeetingType'
-          name: MeetingType
           items: []
     - name: menus
       items:
@@ -809,6 +826,9 @@
     - uid: '@microsoft/teams-js.Rectangle'
       name: Rectangle
       items: []
+    - uid: '@microsoft/teams-js.ResumeContext'
+      name: ResumeContext
+      items: []
     - uid: '@microsoft/teams-js.SdkError'
       name: SdkError
       items: []
@@ -887,41 +907,41 @@
     - uid: '@microsoft/teams-js.UserTeamRole'
       name: UserTeamRole
       items: []
-    - name: video
+    - name: videoEffects
       items:
         - name: Overview
-          uid: '@microsoft/teams-js.video'
-        - uid: '@microsoft/teams-js.video.EffectChangeType'
+          uid: '@microsoft/teams-js.videoEffects'
+        - uid: '@microsoft/teams-js.videoEffects.EffectChangeType'
           name: EffectChangeType
           items: []
-        - uid: '@microsoft/teams-js.video.EffectFailureReason'
+        - uid: '@microsoft/teams-js.videoEffects.EffectFailureReason'
           name: EffectFailureReason
           items: []
-        - uid: '@microsoft/teams-js.video.RegisterForVideoFrameParameters'
+        - uid: '@microsoft/teams-js.videoEffects.RegisterForVideoFrameParameters'
           name: RegisterForVideoFrameParameters
           items: []
-        - uid: '@microsoft/teams-js.video.VideoBufferData'
+        - uid: '@microsoft/teams-js.videoEffects.VideoBufferData'
           name: VideoBufferData
           items: []
-        - uid: '@microsoft/teams-js.video.VideoBufferHandler'
+        - uid: '@microsoft/teams-js.videoEffects.VideoBufferHandler'
           name: VideoBufferHandler
           items: []
-        - uid: '@microsoft/teams-js.video.VideoEffectCallback'
+        - uid: '@microsoft/teams-js.videoEffects.VideoEffectCallback'
           name: VideoEffectCallback
           items: []
-        - uid: '@microsoft/teams-js.video.VideoFrame'
+        - uid: '@microsoft/teams-js.videoEffects.VideoFrame'
           name: VideoFrame
           items: []
-        - uid: '@microsoft/teams-js.video.VideoFrameConfig'
+        - uid: '@microsoft/teams-js.videoEffects.VideoFrameConfig'
           name: VideoFrameConfig
           items: []
-        - uid: '@microsoft/teams-js.video.VideoFrameData'
+        - uid: '@microsoft/teams-js.videoEffects.VideoFrameData'
           name: VideoFrameData
           items: []
-        - uid: '@microsoft/teams-js.video.VideoFrameFormat'
+        - uid: '@microsoft/teams-js.videoEffects.VideoFrameFormat'
           name: VideoFrameFormat
           items: []
-        - uid: '@microsoft/teams-js.video.VideoFrameHandler'
+        - uid: '@microsoft/teams-js.videoEffects.VideoFrameHandler'
           name: VideoFrameHandler
           items: []
     - uid: '@microsoft/teams-js.VideoPerformanceMonitor'

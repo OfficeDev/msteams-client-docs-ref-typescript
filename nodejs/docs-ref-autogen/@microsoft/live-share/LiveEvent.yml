@@ -127,10 +127,22 @@ properties:
       return:
         description: ''
         type: this
+  - name: initializeState
+    uid: '@microsoft/live-share.LiveEvent.initializeState'
+    package: '@microsoft/live-share'
+    summary: The initialization status of the data object.
+    fullName: initializeState
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: LiveDataObjectInitializeState initializeState
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share.LiveDataObjectInitializeState" />
   - name: isInitialized
     uid: '@microsoft/live-share.LiveEvent.isInitialized'
     package: '@microsoft/live-share'
-    summary: Returns true if the object has been initialized.
+    summary: Flag that indicates whether initialization has succeeded or not.
     fullName: isInitialized
     remarks: ''
     isDeprecated: false
@@ -501,7 +513,7 @@ inheritedMethods:
           type: '(event: Event) =&gt; void'
           description: ''
       return:
-        description: that removes the `abort` listener.
+        description: Disposable that removes the `abort` listener.
         type: Disposable
     inheritanceDescription: >-
       <b>Inherited From</b>
@@ -660,6 +672,30 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.finishInitialization](xref:@microsoft/live-share.LiveDataObject.finishInitialization)
+  - name: getClientInfo(string)
+    uid: '@microsoft/live-share.LiveEvent.getClientInfo'
+    package: '@microsoft/live-share'
+    summary: Get the client info for a given clientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getClientInfo(clientId: string): Promise<undefined |
+        IClientInfo>
+      parameters:
+        - id: clientId
+          type: string
+          description: Fluid clientId we are requesting user info for
+      return:
+        description: >-
+          IClientInfo object if the user is known, otherwise it will return
+          undefined
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.getClientInfo](xref:@microsoft/live-share.LiveDataObject.getClientInfo)
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share.LiveEvent.getDataObject'
     package: '@microsoft/live-share'
@@ -1372,12 +1408,39 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
+  - name: '[captureRejectionSymbol](Error, string, any[])'
+    uid: '@microsoft/live-share.LiveEvent.[captureRejectionSymbol]'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function [captureRejectionSymbol](error: Error, event: string, args:
+        any[])
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: event
+          type: string
+          description: ''
+        - id: args
+          type: any[]
+          description: ''
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LiveDataObject.[captureRejectionSymbol]](xref:@microsoft/live-share.LiveDataObject.[captureRejectionSymbol])
 methods:
   - name: initialize(UserMeetingRole[])
     uid: '@microsoft/live-share.LiveEvent.initialize'
     package: '@microsoft/live-share'
-    summary: initialize the object.
-    remarks: ''
+    summary: Initialize the object to begin sending/receiving events through this DDS.
+    remarks: >-
+      You should register `received` event listeners before calling this
+      function to ensure no incoming events are missed.
+
+      `received` events will not be emitted until after this function is called.
     isDeprecated: false
     syntax:
       content: 'function initialize(allowedRoles?: UserMeetingRole[]): Promise<void>'
@@ -1386,17 +1449,13 @@ methods:
           type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
           description: Optional. List of roles allowed to send events.
       return:
-        description: ''
+        description: a void promise that resolves once complete.
         type: Promise&lt;void&gt;
   - name: isNewer(undefined | IClientTimestamp, IClientTimestamp, number)
     uid: '@microsoft/live-share.LiveEvent.isNewer'
     package: '@microsoft/live-share'
-    summary: >-
-      Returns true if a received event is newer then the current event.
-
-
-      #### remarks
-
+    summary: Returns true if a received event is newer then the current event.
+    remarks: >-
       Used when building new Live objects to process state change events. The
       `isNewer()`
 
@@ -1417,7 +1476,6 @@ methods:
       eventually reach a
 
       consistent state with one other.
-    remarks: ''
     isDeprecated: false
     syntax:
       content: >-
@@ -1443,33 +1501,26 @@ methods:
   - name: send(TEvent)
     uid: '@microsoft/live-share.LiveEvent.send'
     package: '@microsoft/live-share'
-    summary: >-
-      Broadcasts an event to all other clients.
-
-
-      #### remarks
-
+    summary: Broadcasts an event to all other clients.
+    remarks: >-
       The event will be queued for delivery if the client isn't currently
       connected.
-    remarks: ''
     isDeprecated: false
     syntax:
       content: 'function send(evt: TEvent): Promise<ILiveEvent<TEvent>>'
       parameters:
         - id: evt
           type: TEvent
-          description: |-
+          description: >-
             Event to send. If omitted, an event will still be sent but it won't
             include any custom event data.
       return:
         description: >-
           A promise with the full event object that was sent, including the
-          timestamp of when the event
+          timestamp of when the event was sent and the clientId if known.
 
-          was sent and the clientId if known. The clientId will be `undefined`
-          if the client is
-
-          disconnected at time of delivery.
+          The clientId will be `undefined` if the client is disconnected at time
+          of delivery.
         type: >-
           Promise&lt;<xref uid="@microsoft/live-share.ILiveEvent"
           />&lt;TEvent&gt;&gt;
