@@ -32,7 +32,7 @@ functions:
       content: 'function registerChangeConfigHandler(handler: handlerFunctionType)'
       parameters:
         - id: handler
-          type: handlerFunctionType
+          type: <xref uid="@microsoft/teams-js.pages.handlerFunctionType" />
           description: The handler to invoke when the user clicks on Settings.
   - name: registerOnRemoveHandler(removeEventType)
     uid: '@microsoft/teams-js.pages.config.registerOnRemoveHandler'
@@ -54,7 +54,7 @@ functions:
       content: 'function registerOnRemoveHandler(handler: removeEventType)'
       parameters:
         - id: handler
-          type: removeEventType
+          type: <xref uid="@microsoft/teams-js.pages.removeEventType" />
           description: The handler to invoke when the user selects the Remove button.
   - name: registerOnSaveHandler(saveEventType)
     uid: '@microsoft/teams-js.pages.config.registerOnSaveHandler'
@@ -76,7 +76,7 @@ functions:
       content: 'function registerOnSaveHandler(handler: saveEventType)'
       parameters:
         - id: handler
-          type: saveEventType
+          type: <xref uid="@microsoft/teams-js.pages.saveEventType" />
           description: The handler to invoke when the user selects the Save button.
   - name: setConfig(InstanceConfig)
     uid: '@microsoft/teams-js.pages.config.setConfig'

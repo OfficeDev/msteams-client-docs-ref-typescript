@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: registerOnLoadHandlerFunctionType
+uid: '@microsoft/teams-js.teamsCore.registerOnLoadHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register on load handler function type
+fullName: registerOnLoadHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerOnLoadHandlerFunctionType = (context: LoadContext) => void

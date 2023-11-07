@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: getLocationCallbackFunctionType
+uid: '@microsoft/teams-js.location.getLocationCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Get location callback function type
+fullName: getLocationCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type getLocationCallbackFunctionType = (
+    error: SdkError,
+    location: Location
+  ) => void

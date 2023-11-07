@@ -1,9 +1,14 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.settings'
 name: settings
-type: module
-package: '@microsoft/teams-js'
 summary: ''
+type: module
+typeAliases:
+  - '@microsoft/teams-js.settings.getSettingsCallbackFunctionType'
+  - '@microsoft/teams-js.settings.registerOnRemoveHandlerFunctionType'
+  - '@microsoft/teams-js.settings.registerOnSaveHandlerFunctionType'
+  - '@microsoft/teams-js.settings.setSettingsOnCompleteFunctionType'
+package: '@microsoft/teams-js'
 functions:
   - name: getSettings(getSettingsCallbackFunctionType)
     uid: '@microsoft/teams-js.settings.getSettings'
@@ -22,7 +27,10 @@ functions:
       content: 'function getSettings(callback: getSettingsCallbackFunctionType)'
       parameters:
         - id: callback
-          type: getSettingsCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.settings.getSettingsCallbackFunctionType"
+            />
           description: >-
             The callback to invoke when the
             [Settings](xref:@microsoft/teams-js.pages.InstanceConfig) object is
@@ -56,7 +64,10 @@ functions:
         registerOnRemoveHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerOnRemoveHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.settings.registerOnRemoveHandlerFunctionType"
+            />
           description: The handler to invoke when the user selects the remove button.
   - name: registerOnSaveHandler(registerOnSaveHandlerFunctionType)
     uid: '@microsoft/teams-js.settings.registerOnSaveHandler'
@@ -87,7 +98,10 @@ functions:
         registerOnSaveHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerOnSaveHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.settings.registerOnSaveHandlerFunctionType"
+            />
           description: The handler to invoke when the user selects the save button.
   - name: setSettings(InstanceConfig, setSettingsOnCompleteFunctionType)
     uid: '@microsoft/teams-js.settings.setSettings'
@@ -113,7 +127,10 @@ functions:
           type: <xref uid="@microsoft/teams-js.pages.InstanceConfig" />
           description: ''
         - id: onComplete
-          type: setSettingsOnCompleteFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.settings.setSettingsOnCompleteFunctionType"
+            />
           description: ''
   - name: setValidityState(boolean)
     uid: '@microsoft/teams-js.settings.setValidityState'

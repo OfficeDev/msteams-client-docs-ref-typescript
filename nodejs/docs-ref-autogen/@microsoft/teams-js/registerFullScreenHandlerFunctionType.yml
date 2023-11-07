@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: registerFullScreenHandlerFunctionType
+uid: '@microsoft/teams-js.registerFullScreenHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register full screen handler function type
+fullName: registerFullScreenHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerFullScreenHandlerFunctionType = (isFullScreen: boolean) => void

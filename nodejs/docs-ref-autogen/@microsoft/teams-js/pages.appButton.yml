@@ -32,7 +32,7 @@ functions:
       content: 'function onClick(handler: handlerFunctionType)'
       parameters:
         - id: handler
-          type: handlerFunctionType
+          type: <xref uid="@microsoft/teams-js.pages.handlerFunctionType" />
           description: >-
             The handler to invoke when the personal app button is clicked in the
             app bar.
@@ -50,7 +50,7 @@ functions:
       content: 'function onHoverEnter(handler: handlerFunctionType)'
       parameters:
         - id: handler
-          type: handlerFunctionType
+          type: <xref uid="@microsoft/teams-js.pages.handlerFunctionType" />
           description: >-
             The handler to invoke when entering hover of the personal app button
             in the app bar.
@@ -68,7 +68,7 @@ functions:
       content: 'function onHoverLeave(handler: handlerFunctionType)'
       parameters:
         - id: handler
-          type: handlerFunctionType
+          type: <xref uid="@microsoft/teams-js.pages.handlerFunctionType" />
           description: >-
             The handler to invoke when exiting hover of the personal app button
             in the app bar.

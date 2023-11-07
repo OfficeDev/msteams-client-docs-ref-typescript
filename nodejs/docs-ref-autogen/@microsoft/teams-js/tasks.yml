@@ -1,9 +1,11 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.tasks'
 name: tasks
-type: module
-package: '@microsoft/teams-js'
 summary: ''
+type: module
+typeAliases:
+  - '@microsoft/teams-js.tasks.startTaskSubmitHandlerFunctionType'
+package: '@microsoft/teams-js'
 functions:
   - name: getDefaultSizeIfNotProvided(DialogInfo)
     uid: '@microsoft/teams-js.tasks.getDefaultSizeIfNotProvided'
@@ -60,7 +62,10 @@ functions:
           type: <xref uid="@microsoft/teams-js.DialogInfo" />
           description: An object containing the parameters of the task module
         - id: submitHandler
-          type: startTaskSubmitHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.tasks.startTaskSubmitHandlerFunctionType"
+            />
           description: Handler to call when the task module is completed
       return:
         description: ''

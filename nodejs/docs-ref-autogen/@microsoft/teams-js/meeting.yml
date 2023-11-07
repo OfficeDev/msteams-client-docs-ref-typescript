@@ -12,6 +12,14 @@ summary: >-
 
   To learn more, visit https://aka.ms/teamsmeetingapps
 type: module
+typeAliases:
+  - '@microsoft/teams-js.meeting.errorCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.getAppContentCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.getAppContentStageCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.getLiveStreamStateCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.registerLiveStreamChangedHandlerFunctionType'
+  - '@microsoft/teams-js.meeting.registerSpeakingStateChangeHandlerFunctionType'
 interfaces:
   - '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
   - '@microsoft/teams-js.meeting.IAppContentStageSharingState'
@@ -43,7 +51,10 @@ functions:
         getAppContentCallbackFunctionType)
       parameters:
         - id: callback
-          type: getAppContentCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.meeting.getAppContentCallbackFunctionType"
+            />
           description: >-
             Completion callback contains 2 parameters: `error` and
             `appContentStageSharingCapabilities`.
@@ -79,7 +90,10 @@ functions:
         getAppContentStageCallbackFunctionType)
       parameters:
         - id: callback
-          type: getAppContentStageCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.meeting.getAppContentStageCallbackFunctionType"
+            />
           description: >-
             Callback contains 2 parameters, `error` and
             `appContentStageSharingState`.
@@ -119,7 +133,7 @@ functions:
         errorCallbackFunctionType)
       parameters:
         - id: callback
-          type: errorCallbackFunctionType
+          type: <xref uid="@microsoft/teams-js.meeting.errorCallbackFunctionType" />
           description: >-
             Callback contains 2 parameters, `error` and `result`.
 
@@ -155,7 +169,10 @@ functions:
         getLiveStreamStateCallbackFunctionType)
       parameters:
         - id: callback
-          type: getLiveStreamStateCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.meeting.getLiveStreamStateCallbackFunctionType"
+            />
           description: >-
             Callback contains 2 parameters: `error` and `liveStreamState`.
 
@@ -193,7 +210,10 @@ functions:
         registerLiveStreamChangedHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerLiveStreamChangedHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.meeting.registerLiveStreamChangedHandlerFunctionType"
+            />
           description: The handler to invoke when the live stream state changes
   - name: >-
       registerSpeakingStateChangeHandler(registerSpeakingStateChangeHandlerFunctionType)
@@ -235,7 +255,10 @@ functions:
         registerSpeakingStateChangeHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerSpeakingStateChangeHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.meeting.registerSpeakingStateChangeHandlerFunctionType"
+            />
           description: >-
             The handler to invoke when the speaking state of any participant
             changes (start/stop speaking).
@@ -279,7 +302,10 @@ functions:
         string)
       parameters:
         - id: callback
-          type: liveStreamErrorCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType"
+            />
           description: >-
             completion callback that contains an `error` parameter, which can be
             of type `SdkError` in case of an error, or null when operation is
@@ -315,7 +341,10 @@ functions:
         liveStreamErrorCallbackFunctionType)
       parameters:
         - id: callback
-          type: liveStreamErrorCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType"
+            />
           description: >-
             completion callback that contains an error parameter, which can be
             of type `SdkError` in case of an error, or null when operation is
@@ -356,7 +385,7 @@ functions:
         appContentUrl: string)
       parameters:
         - id: callback
-          type: errorCallbackFunctionType
+          type: <xref uid="@microsoft/teams-js.meeting.errorCallbackFunctionType" />
           description: >-
             Callback contains 2 parameters, `error` and `result`.
 
@@ -399,7 +428,7 @@ functions:
       content: 'function toggleIncomingClientAudio(callback: errorCallbackFunctionType)'
       parameters:
         - id: callback
-          type: errorCallbackFunctionType
+          type: <xref uid="@microsoft/teams-js.meeting.errorCallbackFunctionType" />
           description: >-
             Callback contains 2 parameters, `error` and `result`.
 

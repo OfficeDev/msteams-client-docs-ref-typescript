@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: removeEventType
+uid: '@microsoft/teams-js.pages.removeEventType'
+package: '@microsoft/teams-js'
+summary: Remove event function
+fullName: removeEventType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type removeEventType = (evt: pages.config.RemoveEvent) => void

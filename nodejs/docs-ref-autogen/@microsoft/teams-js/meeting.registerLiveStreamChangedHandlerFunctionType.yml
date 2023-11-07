@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: registerLiveStreamChangedHandlerFunctionType
+uid: '@microsoft/teams-js.meeting.registerLiveStreamChangedHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register live stream changed handler function type
+fullName: registerLiveStreamChangedHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerLiveStreamChangedHandlerFunctionType = (
+    liveStreamState: LiveStreamState
+  ) => void

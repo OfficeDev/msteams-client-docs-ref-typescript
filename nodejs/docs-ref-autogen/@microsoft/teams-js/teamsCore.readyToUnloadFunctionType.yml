@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: readyToUnloadFunctionType
+uid: '@microsoft/teams-js.teamsCore.readyToUnloadFunctionType'
+package: '@microsoft/teams-js'
+summary: Ready to unload function type
+fullName: readyToUnloadFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type readyToUnloadFunctionType = () => void

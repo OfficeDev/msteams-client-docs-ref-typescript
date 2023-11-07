@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: registerBackButtonHandlerFunctionType
+uid: '@microsoft/teams-js.registerBackButtonHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register back button handler function type
+fullName: registerBackButtonHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerBackButtonHandlerFunctionType = () => boolean

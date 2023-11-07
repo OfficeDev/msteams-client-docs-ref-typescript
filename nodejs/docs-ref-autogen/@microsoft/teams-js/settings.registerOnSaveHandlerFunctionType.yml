@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: registerOnSaveHandlerFunctionType
+uid: '@microsoft/teams-js.settings.registerOnSaveHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register on save handler function type
+fullName: registerOnSaveHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerOnSaveHandlerFunctionType = (evt: SaveEvent) => void

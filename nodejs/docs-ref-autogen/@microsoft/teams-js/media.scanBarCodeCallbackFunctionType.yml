@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: scanBarCodeCallbackFunctionType
+uid: '@microsoft/teams-js.media.scanBarCodeCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Scan BarCode callback function type.
+fullName: scanBarCodeCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type scanBarCodeCallbackFunctionType = (
+    error: SdkError,
+    decodedText: string
+  ) => void
