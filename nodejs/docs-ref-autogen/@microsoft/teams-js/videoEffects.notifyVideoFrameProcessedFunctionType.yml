@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: notifyVideoFrameProcessedFunctionType
+uid: '@microsoft/teams-js.videoEffects.notifyVideoFrameProcessedFunctionType'
+package: '@microsoft/teams-js'
+summary: Notify video frame processed function type
+fullName: notifyVideoFrameProcessedFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type notifyVideoFrameProcessedFunctionType = () => void

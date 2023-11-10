@@ -1,11 +1,15 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.teamsCore'
 name: teamsCore
-type: module
-package: '@microsoft/teams-js'
 summary: >-
   Namespace containing the set of APIs that support Teams-specific
   functionalities.
+type: module
+typeAliases:
+  - '@microsoft/teams-js.teamsCore.readyToUnloadFunctionType'
+  - '@microsoft/teams-js.teamsCore.registerBeforeUnloadHandlerFunctionType'
+  - '@microsoft/teams-js.teamsCore.registerOnLoadHandlerFunctionType'
+package: '@microsoft/teams-js'
 functions:
   - name: enablePrintCapability()
     uid: '@microsoft/teams-js.teamsCore.enablePrintCapability'
@@ -44,15 +48,17 @@ functions:
 
       for a more detailed explanation about using this API.
     previewState: beta
-    isDeprecated: true
-    customDeprecatedMessage: ''
+    isDeprecated: false
     syntax:
       content: >-
         function registerBeforeUnloadHandler(handler:
         registerBeforeUnloadHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerBeforeUnloadHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.teamsCore.registerBeforeUnloadHandlerFunctionType"
+            />
           description: >-
             The handler to invoke before the page is unloaded. If this handler
             returns true the page should
@@ -69,16 +75,15 @@ functions:
 
       for a more detailed explanation about using this API.
     previewState: beta
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      As of 2.14.1, please use
-      [registerOnResumeHandler](xref:@microsoft/teams-js.app.lifecycle.registerOnResumeHandler)
-      instead.
+    isDeprecated: false
     syntax:
       content: >-
         function registerOnLoadHandler(handler:
         registerOnLoadHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerOnLoadHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.teamsCore.registerOnLoadHandlerFunctionType"
+            />
           description: The handler to invoke when the page is loaded.

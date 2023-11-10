@@ -386,6 +386,9 @@
     - uid: '@microsoft/teams-js.AdaptiveCardVersion'
       name: AdaptiveCardVersion
       items: []
+    - uid: '@microsoft/teams-js.addEventListnerFunctionType'
+      name: addEventListnerFunctionType
+      items: []
     - name: app
       items:
         - name: Overview
@@ -417,9 +420,18 @@
         - uid: '@microsoft/teams-js.app.IFailedRequest'
           name: IFailedRequest
           items: []
-        - uid: '@microsoft/teams-js.app.lifecycle'
-          name: lifecycle
-          items: []
+        - name: lifecycle
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.app.lifecycle'
+            - uid: >-
+                @microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandlerFunctionType
+              name: registerBeforeSuspendOrTerminateHandlerFunctionType
+              items: []
+            - uid: >-
+                @microsoft/teams-js.app.lifecycle.registerOnResumeHandlerFunctionType
+              name: registerOnResumeHandlerFunctionType
+              items: []
         - uid: '@microsoft/teams-js.app.MeetingInfo'
           name: MeetingInfo
           items: []
@@ -434,6 +446,9 @@
           items: []
         - uid: '@microsoft/teams-js.app.TenantInfo'
           name: TenantInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.themeHandler'
+          name: themeHandler
           items: []
         - uid: '@microsoft/teams-js.app.UserInfo'
           name: UserInfo
@@ -503,6 +518,9 @@
         - uid: '@microsoft/teams-js.call.StartCallParams'
           name: StartCallParams
           items: []
+    - uid: '@microsoft/teams-js.callbackFunctionType'
+      name: callbackFunctionType
+      items: []
     - uid: '@microsoft/teams-js.ChannelType'
       name: ChannelType
       items: []
@@ -569,6 +587,9 @@
     - uid: '@microsoft/teams-js.ErrorCode'
       name: ErrorCode
       items: []
+    - uid: '@microsoft/teams-js.executeDeepLinkOnCompleteFunctionType'
+      name: executeDeepLinkOnCompleteFunctionType
+      items: []
     - uid: '@microsoft/teams-js.FileOpenPreference'
       name: FileOpenPreference
       items: []
@@ -591,6 +612,12 @@
         - uid: '@microsoft/teams-js.geoLocation.map'
           name: map
           items: []
+    - uid: '@microsoft/teams-js.getContextCallbackFunctionType'
+      name: getContextCallbackFunctionType
+      items: []
+    - uid: '@microsoft/teams-js.getTabInstancesCallbackFunctionType'
+      name: getTabInstancesCallbackFunctionType
+      items: []
     - uid: '@microsoft/teams-js.HostClientType'
       name: HostClientType
       items: []
@@ -616,11 +643,17 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.location'
+        - uid: '@microsoft/teams-js.location.getLocationCallbackFunctionType'
+          name: getLocationCallbackFunctionType
+          items: []
         - uid: '@microsoft/teams-js.location.Location'
           name: Location
           items: []
         - uid: '@microsoft/teams-js.location.LocationProps'
           name: LocationProps
+          items: []
+        - uid: '@microsoft/teams-js.location.showLocationCallbackFunctionType'
+          name: showLocationCallbackFunctionType
           items: []
     - uid: '@microsoft/teams-js.M365ContentAction'
       name: M365ContentAction
@@ -660,11 +693,20 @@
         - uid: '@microsoft/teams-js.media.CameraStartMode'
           name: CameraStartMode
           items: []
+        - uid: '@microsoft/teams-js.media.captureImageCallbackFunctionType'
+          name: captureImageCallbackFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.media.errorCallbackFunctionType'
+          name: errorCallbackFunctionType
+          items: []
         - uid: '@microsoft/teams-js.media.File'
           name: File
           items: []
         - uid: '@microsoft/teams-js.media.FileFormat'
           name: FileFormat
+          items: []
+        - uid: '@microsoft/teams-js.media.getMediaCallbackFunctionType'
+          name: getMediaCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.media.ImageOutputFormats'
           name: ImageOutputFormats
@@ -696,6 +738,12 @@
         - uid: '@microsoft/teams-js.media.MediaType'
           name: MediaType
           items: []
+        - uid: '@microsoft/teams-js.media.scanBarCodeCallbackFunctionType'
+          name: scanBarCodeCallbackFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.media.selectMediaCallbackFunctionType'
+          name: selectMediaCallbackFunctionType
+          items: []
         - uid: '@microsoft/teams-js.media.Source'
           name: Source
           items: []
@@ -715,6 +763,18 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.meeting'
+        - uid: '@microsoft/teams-js.meeting.errorCallbackFunctionType'
+          name: errorCallbackFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.meeting.getAppContentCallbackFunctionType'
+          name: getAppContentCallbackFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.meeting.getAppContentStageCallbackFunctionType'
+          name: getAppContentStageCallbackFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.meeting.getLiveStreamStateCallbackFunctionType'
+          name: getLiveStreamStateCallbackFunctionType
+          items: []
         - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
           name: IAppContentStageSharingCapabilities
           items: []
@@ -724,8 +784,19 @@
         - uid: '@microsoft/teams-js.meeting.ISpeakingState'
           name: ISpeakingState
           items: []
+        - uid: '@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType'
+          name: liveStreamErrorCallbackFunctionType
+          items: []
         - uid: '@microsoft/teams-js.meeting.LiveStreamState'
           name: LiveStreamState
+          items: []
+        - uid: >-
+            @microsoft/teams-js.meeting.registerLiveStreamChangedHandlerFunctionType
+          name: registerLiveStreamChangedHandlerFunctionType
+          items: []
+        - uid: >-
+            @microsoft/teams-js.meeting.registerSpeakingStateChangeHandlerFunctionType
+          name: registerSpeakingStateChangeHandlerFunctionType
           items: []
     - name: menus
       items:
@@ -743,6 +814,12 @@
     - uid: '@microsoft/teams-js.notifications'
       name: notifications
       items: []
+    - uid: '@microsoft/teams-js.onCompleteFunctionType'
+      name: onCompleteFunctionType
+      items: []
+    - uid: '@microsoft/teams-js.onCompleteHandlerFunctionType'
+      name: onCompleteHandlerFunctionType
+      items: []
     - uid: '@microsoft/teams-js.OpenGroupChatRequest'
       name: OpenGroupChatRequest
       items: []
@@ -755,6 +832,9 @@
           uid: '@microsoft/teams-js.pages'
         - uid: '@microsoft/teams-js.pages.appButton'
           name: appButton
+          items: []
+        - uid: '@microsoft/teams-js.pages.backButtonHandlerFunctionType'
+          name: backButtonHandlerFunctionType
           items: []
         - uid: '@microsoft/teams-js.pages.backStack'
           name: backStack
@@ -779,11 +859,23 @@
             - uid: '@microsoft/teams-js.pages.currentApp.NavigateWithinAppParams'
               name: NavigateWithinAppParams
               items: []
+        - uid: '@microsoft/teams-js.pages.fullScreenChangeFunctionType'
+          name: fullScreenChangeFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.pages.handlerFunctionType'
+          name: handlerFunctionType
+          items: []
         - uid: '@microsoft/teams-js.pages.InstanceConfig'
           name: InstanceConfig
           items: []
         - uid: '@microsoft/teams-js.pages.NavigateToAppParams'
           name: NavigateToAppParams
+          items: []
+        - uid: '@microsoft/teams-js.pages.removeEventType'
+          name: removeEventType
+          items: []
+        - uid: '@microsoft/teams-js.pages.saveEventType'
+          name: saveEventType
           items: []
         - uid: '@microsoft/teams-js.pages.tabs'
           name: tabs
@@ -826,6 +918,15 @@
     - uid: '@microsoft/teams-js.Rectangle'
       name: Rectangle
       items: []
+    - uid: '@microsoft/teams-js.registerBackButtonHandlerFunctionType'
+      name: registerBackButtonHandlerFunctionType
+      items: []
+    - uid: '@microsoft/teams-js.registerFullScreenHandlerFunctionType'
+      name: registerFullScreenHandlerFunctionType
+      items: []
+    - uid: '@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType'
+      name: registerOnThemeChangeHandlerFunctionType
+      items: []
     - uid: '@microsoft/teams-js.ResumeContext'
       name: ResumeContext
       items: []
@@ -851,9 +952,22 @@
     - uid: '@microsoft/teams-js.SecondaryM365ContentIdName'
       name: SecondaryM365ContentIdName
       items: []
-    - uid: '@microsoft/teams-js.settings'
-      name: settings
-      items: []
+    - name: settings
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.settings'
+        - uid: '@microsoft/teams-js.settings.getSettingsCallbackFunctionType'
+          name: getSettingsCallbackFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.settings.registerOnRemoveHandlerFunctionType'
+          name: registerOnRemoveHandlerFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.settings.registerOnSaveHandlerFunctionType'
+          name: registerOnSaveHandlerFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.settings.setSettingsOnCompleteFunctionType'
+          name: setSettingsOnCompleteFunctionType
+          items: []
     - uid: '@microsoft/teams-js.ShareDeepLinkParameters'
       name: ShareDeepLinkParameters
       items: []
@@ -870,10 +984,16 @@
         - uid: '@microsoft/teams-js.sharing.IURLContent'
           name: IURLContent
           items: []
+        - uid: '@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType'
+          name: shareWebContentCallbackFunctionType
+          items: []
     - name: stageView
       items:
         - name: Overview
           uid: '@microsoft/teams-js.stageView'
+        - uid: '@microsoft/teams-js.stageView.StageViewOpenMode'
+          name: StageViewOpenMode
+          items: []
         - uid: '@microsoft/teams-js.stageView.StageViewParams'
           name: StageViewParams
           items: []
@@ -889,15 +1009,30 @@
     - uid: '@microsoft/teams-js.TaskInfo'
       name: TaskInfo
       items: []
-    - uid: '@microsoft/teams-js.tasks'
-      name: tasks
-      items: []
+    - name: tasks
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.tasks'
+        - uid: '@microsoft/teams-js.tasks.startTaskSubmitHandlerFunctionType'
+          name: startTaskSubmitHandlerFunctionType
+          items: []
     - uid: '@microsoft/teams-js.TeamInformation'
       name: TeamInformation
       items: []
-    - uid: '@microsoft/teams-js.teamsCore'
-      name: teamsCore
-      items: []
+    - name: teamsCore
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.teamsCore'
+        - uid: '@microsoft/teams-js.teamsCore.readyToUnloadFunctionType'
+          name: readyToUnloadFunctionType
+          items: []
+        - uid: >-
+            @microsoft/teams-js.teamsCore.registerBeforeUnloadHandlerFunctionType
+          name: registerBeforeUnloadHandlerFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.teamsCore.registerOnLoadHandlerFunctionType'
+          name: registerOnLoadHandlerFunctionType
+          items: []
     - uid: '@microsoft/teams-js.TeamType'
       name: TeamType
       items: []
@@ -916,6 +1051,13 @@
           items: []
         - uid: '@microsoft/teams-js.videoEffects.EffectFailureReason'
           name: EffectFailureReason
+          items: []
+        - uid: '@microsoft/teams-js.videoEffects.notifyErrorFunctionType'
+          name: notifyErrorFunctionType
+          items: []
+        - uid: >-
+            @microsoft/teams-js.videoEffects.notifyVideoFrameProcessedFunctionType
+          name: notifyVideoFrameProcessedFunctionType
           items: []
         - uid: '@microsoft/teams-js.videoEffects.RegisterForVideoFrameParameters'
           name: RegisterForVideoFrameParameters

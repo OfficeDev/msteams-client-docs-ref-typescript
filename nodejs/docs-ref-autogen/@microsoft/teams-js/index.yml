@@ -104,6 +104,7 @@ enums:
   - '@microsoft/teams-js.media.MediaType'
   - '@microsoft/teams-js.media.Source'
   - '@microsoft/teams-js.menus.DisplayMode'
+  - '@microsoft/teams-js.stageView.StageViewOpenMode'
   - '@microsoft/teams-js.videoEffects.EffectChangeType'
   - '@microsoft/teams-js.videoEffects.EffectFailureReason'
   - '@microsoft/teams-js.videoEffects.VideoFrameFormat'
@@ -120,17 +121,51 @@ enums:
   - '@microsoft/teams-js.TeamType'
   - '@microsoft/teams-js.UserTeamRole'
 typeAliases:
+  - >-
+    @microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandlerFunctionType
+  - '@microsoft/teams-js.app.lifecycle.registerOnResumeHandlerFunctionType'
+  - '@microsoft/teams-js.app.themeHandler'
   - '@microsoft/teams-js.authentication.AuthenticateParameters'
   - '@microsoft/teams-js.authentication.AuthTokenRequest'
   - '@microsoft/teams-js.dialog.DialogSubmitHandler'
   - '@microsoft/teams-js.dialog.PostMessageChannel'
+  - '@microsoft/teams-js.location.getLocationCallbackFunctionType'
+  - '@microsoft/teams-js.location.showLocationCallbackFunctionType'
   - '@microsoft/teams-js.mail.ComposeMailParams'
+  - '@microsoft/teams-js.media.captureImageCallbackFunctionType'
+  - '@microsoft/teams-js.media.errorCallbackFunctionType'
+  - '@microsoft/teams-js.media.getMediaCallbackFunctionType'
+  - '@microsoft/teams-js.media.scanBarCodeCallbackFunctionType'
+  - '@microsoft/teams-js.media.selectMediaCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.errorCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.getAppContentCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.getAppContentStageCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.getLiveStreamStateCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType'
+  - '@microsoft/teams-js.meeting.registerLiveStreamChangedHandlerFunctionType'
+  - '@microsoft/teams-js.meeting.registerSpeakingStateChangeHandlerFunctionType'
+  - '@microsoft/teams-js.pages.backButtonHandlerFunctionType'
+  - '@microsoft/teams-js.pages.fullScreenChangeFunctionType'
+  - '@microsoft/teams-js.pages.handlerFunctionType'
+  - '@microsoft/teams-js.pages.removeEventType'
+  - '@microsoft/teams-js.pages.saveEventType'
   - '@microsoft/teams-js.people.selectPeopleCallbackFunctionType'
   - '@microsoft/teams-js.profile.Modality'
   - '@microsoft/teams-js.profile.PersonaIdentifiers'
   - '@microsoft/teams-js.profile.TriggerType'
   - '@microsoft/teams-js.search.SearchQueryHandler'
+  - '@microsoft/teams-js.settings.getSettingsCallbackFunctionType'
+  - '@microsoft/teams-js.settings.registerOnRemoveHandlerFunctionType'
+  - '@microsoft/teams-js.settings.registerOnSaveHandlerFunctionType'
+  - '@microsoft/teams-js.settings.setSettingsOnCompleteFunctionType'
   - '@microsoft/teams-js.sharing.IShareRequestContentType'
+  - '@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType'
+  - '@microsoft/teams-js.tasks.startTaskSubmitHandlerFunctionType'
+  - '@microsoft/teams-js.teamsCore.readyToUnloadFunctionType'
+  - '@microsoft/teams-js.teamsCore.registerBeforeUnloadHandlerFunctionType'
+  - '@microsoft/teams-js.teamsCore.registerOnLoadHandlerFunctionType'
+  - '@microsoft/teams-js.videoEffects.notifyErrorFunctionType'
+  - '@microsoft/teams-js.videoEffects.notifyVideoFrameProcessedFunctionType'
   - '@microsoft/teams-js.videoEffects.RegisterForVideoFrameParameters'
   - '@microsoft/teams-js.videoEffects.VideoBufferHandler'
   - '@microsoft/teams-js.videoEffects.VideoEffectCallback'
@@ -140,6 +175,16 @@ typeAliases:
   - '@microsoft/teams-js.LoadContext'
   - '@microsoft/teams-js.Rectangle'
   - '@microsoft/teams-js.TaskInfo'
+  - '@microsoft/teams-js.addEventListnerFunctionType'
+  - '@microsoft/teams-js.callbackFunctionType'
+  - '@microsoft/teams-js.executeDeepLinkOnCompleteFunctionType'
+  - '@microsoft/teams-js.getContextCallbackFunctionType'
+  - '@microsoft/teams-js.getTabInstancesCallbackFunctionType'
+  - '@microsoft/teams-js.onCompleteFunctionType'
+  - '@microsoft/teams-js.onCompleteHandlerFunctionType'
+  - '@microsoft/teams-js.registerBackButtonHandlerFunctionType'
+  - '@microsoft/teams-js.registerFullScreenHandlerFunctionType'
+  - '@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType'
 classes:
   - '@microsoft/teams-js.media.File'
   - '@microsoft/teams-js.media.Media'
@@ -184,7 +229,9 @@ functions:
           type: string
           description: deep link.
         - id: onComplete
-          type: executeDeepLinkOnCompleteFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.executeDeepLinkOnCompleteFunctionType" />
           description: ''
   - name: getAdaptiveCardSchemaVersion()
     uid: '@microsoft/teams-js.getAdaptiveCardSchemaVersion'
@@ -218,7 +265,7 @@ functions:
       content: 'function getContext(callback: getContextCallbackFunctionType)'
       parameters:
         - id: callback
-          type: getContextCallbackFunctionType
+          type: <xref uid="@microsoft/teams-js.getContextCallbackFunctionType" />
           description: >-
             The callback to invoke when the
             [Context](xref:@microsoft/teams-js.Context) object is retrieved.
@@ -246,7 +293,9 @@ functions:
         TabInstanceParameters)
       parameters:
         - id: callback
-          type: getTabInstancesCallbackFunctionType
+          type: >-
+            <xref uid="@microsoft/teams-js.getTabInstancesCallbackFunctionType"
+            />
           description: >-
             The callback to invoke when the
             [TabInformation](xref:@microsoft/teams-js.TabInformation) object is
@@ -280,7 +329,9 @@ functions:
         tabInstanceParameters?: TabInstanceParameters)
       parameters:
         - id: callback
-          type: getTabInstancesCallbackFunctionType
+          type: >-
+            <xref uid="@microsoft/teams-js.getTabInstancesCallbackFunctionType"
+            />
           description: >-
             The callback to invoke when the
             [TabInstanceParameters](xref:@microsoft/teams-js.TabInstanceParameters)
@@ -310,7 +361,7 @@ functions:
         validMessageOrigins?: string[])
       parameters:
         - id: callback
-          type: callbackFunctionType
+          type: <xref uid="@microsoft/teams-js.callbackFunctionType" />
           description: >-
             Optionally specify a callback to invoke when Teams SDK has
             successfully initialized
@@ -345,7 +396,7 @@ functions:
           type: <xref uid="@microsoft/teams-js.FrameInfo" />
           description: FrameContext information to be set
         - id: callback
-          type: callbackFunctionType
+          type: <xref uid="@microsoft/teams-js.callbackFunctionType" />
           description: >-
             The optional callback to be invoked be invoked after initilizing the
             frame context
@@ -376,7 +427,7 @@ functions:
       content: 'function navigateBack(onComplete?: onCompleteHandlerFunctionType)'
       parameters:
         - id: onComplete
-          type: onCompleteHandlerFunctionType
+          type: <xref uid="@microsoft/teams-js.onCompleteHandlerFunctionType" />
           description: The callback to invoke when the action is complete.
   - name: navigateCrossDomain(string, onCompleteHandlerFunctionType)
     uid: '@microsoft/teams-js.navigateCrossDomain'
@@ -412,7 +463,7 @@ functions:
           type: string
           description: The URL to navigate the frame to.
         - id: onComplete
-          type: onCompleteHandlerFunctionType
+          type: <xref uid="@microsoft/teams-js.onCompleteHandlerFunctionType" />
           description: The callback to invoke when the action is complete.
   - name: navigateToTab(TabInstance, onCompleteHandlerFunctionType)
     uid: '@microsoft/teams-js.navigateToTab'
@@ -437,7 +488,7 @@ functions:
           type: <xref uid="@microsoft/teams-js.TabInstance" />
           description: The tab instance to navigate to.
         - id: onComplete
-          type: onCompleteHandlerFunctionType
+          type: <xref uid="@microsoft/teams-js.onCompleteHandlerFunctionType" />
           description: The callback to invoke when the action is complete.
   - name: print()
     uid: '@microsoft/teams-js.print'
@@ -473,7 +524,7 @@ functions:
       content: 'function registerAppButtonClickHandler(handler: callbackFunctionType)'
       parameters:
         - id: handler
-          type: callbackFunctionType
+          type: <xref uid="@microsoft/teams-js.callbackFunctionType" />
           description: >-
             The handler to invoke when the personal app button is clicked in the
             app bar.
@@ -499,7 +550,7 @@ functions:
         callbackFunctionType)
       parameters:
         - id: handler
-          type: callbackFunctionType
+          type: <xref uid="@microsoft/teams-js.callbackFunctionType" />
           description: >-
             The handler to invoke when entering hover of the personal app button
             in the app bar.
@@ -525,7 +576,7 @@ functions:
         callbackFunctionType)
       parameters:
         - id: handler
-          type: callbackFunctionType
+          type: <xref uid="@microsoft/teams-js.callbackFunctionType" />
           description: >-
             The handler to invoke when exiting hover of the personal app button
             in the app bar.
@@ -559,7 +610,9 @@ functions:
         registerBackButtonHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerBackButtonHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.registerBackButtonHandlerFunctionType" />
           description: >-
             The handler to invoke when the user presses their Team client's back
             button.
@@ -581,7 +634,7 @@ functions:
       content: 'function registerChangeSettingsHandler(handler: callbackFunctionType)'
       parameters:
         - id: handler
-          type: callbackFunctionType
+          type: <xref uid="@microsoft/teams-js.callbackFunctionType" />
           description: The handler to invoke when the user click on Settings.
   - name: registerFullScreenHandler(registerFullScreenHandlerFunctionType)
     uid: '@microsoft/teams-js.registerFullScreenHandler'
@@ -605,7 +658,9 @@ functions:
         registerFullScreenHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerFullScreenHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.registerFullScreenHandlerFunctionType" />
           description: >-
             The handler to invoke when the user toggles full-screen view for a
             tab.
@@ -631,7 +686,10 @@ functions:
         registerOnThemeChangeHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerOnThemeChangeHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType"
+            />
           description: The handler to invoke when the user changes their theme.
   - name: returnFocus(boolean)
     uid: '@microsoft/teams-js.returnFocus'

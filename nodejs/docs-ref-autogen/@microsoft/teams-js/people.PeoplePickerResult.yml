@@ -35,7 +35,7 @@ properties:
   - name: objectId
     uid: '@microsoft/teams-js.people.PeoplePickerResult.objectId'
     package: '@microsoft/teams-js'
-    summary: user object ID (also known as Azure AD ID) of the selected user
+    summary: user object ID (also known as Microsoft Entra ID) of the selected user
     fullName: objectId
     remarks: ''
     isDeprecated: false

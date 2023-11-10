@@ -8,6 +8,8 @@ enums:
   - '@microsoft/teams-js.videoEffects.EffectFailureReason'
   - '@microsoft/teams-js.videoEffects.VideoFrameFormat'
 typeAliases:
+  - '@microsoft/teams-js.videoEffects.notifyErrorFunctionType'
+  - '@microsoft/teams-js.videoEffects.notifyVideoFrameProcessedFunctionType'
   - '@microsoft/teams-js.videoEffects.RegisterForVideoFrameParameters'
   - '@microsoft/teams-js.videoEffects.VideoBufferHandler'
   - '@microsoft/teams-js.videoEffects.VideoEffectCallback'

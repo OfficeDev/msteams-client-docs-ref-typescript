@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: saveEventType
+uid: '@microsoft/teams-js.pages.saveEventType'
+package: '@microsoft/teams-js'
+summary: Save event function
+fullName: saveEventType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type saveEventType = (evt: pages.config.SaveEvent) => void

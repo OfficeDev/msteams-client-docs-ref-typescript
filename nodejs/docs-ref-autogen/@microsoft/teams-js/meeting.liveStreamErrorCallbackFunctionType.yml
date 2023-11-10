@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: liveStreamErrorCallbackFunctionType
+uid: '@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Live stream error callback function type
+fullName: liveStreamErrorCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type liveStreamErrorCallbackFunctionType = (error: SdkError | null) => void

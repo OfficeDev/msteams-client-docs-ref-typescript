@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: getMediaCallbackFunctionType
+uid: '@microsoft/teams-js.media.getMediaCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Get media callback function type.
+fullName: getMediaCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type getMediaCallbackFunctionType = (error: SdkError, blob: Blob) => void

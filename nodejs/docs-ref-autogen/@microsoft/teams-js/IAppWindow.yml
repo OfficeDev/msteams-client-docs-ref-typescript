@@ -40,5 +40,5 @@ methods:
           type: any
           description: The message to send
         - id: onComplete
-          type: onCompleteFunctionType
+          type: <xref uid="@microsoft/teams-js.onCompleteFunctionType" />
           description: The callback to know if the postMessage has been success/failed.

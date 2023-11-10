@@ -29,7 +29,7 @@ methods:
             The event to listen to. Currently the only supported type is
             'message'.
         - id: listener
-          type: addEventListnerFunctionType
+          type: <xref uid="@microsoft/teams-js.addEventListnerFunctionType" />
           description: The listener that will be called
   - name: postMessage(any, onCompleteFunctionType)
     uid: '@microsoft/teams-js.ChildAppWindow.postMessage'
@@ -44,5 +44,5 @@ methods:
           type: any
           description: The message to send
         - id: onComplete
-          type: onCompleteFunctionType
+          type: <xref uid="@microsoft/teams-js.onCompleteFunctionType" />
           description: The callback to know if the postMessage has been success/failed.

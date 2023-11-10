@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: getContextCallbackFunctionType
+uid: '@microsoft/teams-js.getContextCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Get context callback function type
+fullName: getContextCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type getContextCallbackFunctionType = (context: Context) => void

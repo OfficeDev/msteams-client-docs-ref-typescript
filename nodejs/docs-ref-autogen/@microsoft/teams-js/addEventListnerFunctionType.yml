@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: addEventListnerFunctionType
+uid: '@microsoft/teams-js.addEventListnerFunctionType'
+package: '@microsoft/teams-js'
+summary: addEventListner function type
+fullName: addEventListnerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type addEventListnerFunctionType = (message: any) => void

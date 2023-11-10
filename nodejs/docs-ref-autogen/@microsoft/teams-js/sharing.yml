@@ -12,6 +12,7 @@ interfaces:
   - '@microsoft/teams-js.sharing.IURLContent'
 typeAliases:
   - '@microsoft/teams-js.sharing.IShareRequestContentType'
+  - '@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType'
 package: '@microsoft/teams-js'
 functions:
   - name: isSupported()
@@ -76,5 +77,8 @@ functions:
             uid="@microsoft/teams-js.sharing.IURLContent" />&gt;
           description: web content info
         - id: callback
-          type: shareWebContentCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType"
+            />
           description: optional callback

@@ -20,6 +20,8 @@ interfaces:
 enums:
   - '@microsoft/teams-js.app.ExpectedFailureReason'
   - '@microsoft/teams-js.app.FailedReason'
+typeAliases:
+  - '@microsoft/teams-js.app.themeHandler'
 package: '@microsoft/teams-js'
 functions:
   - name: getContext()
@@ -163,5 +165,5 @@ functions:
       content: 'function registerOnThemeChangeHandler(handler: themeHandler)'
       parameters:
         - id: handler
-          type: themeHandler
+          type: <xref uid="@microsoft/teams-js.app.themeHandler" />
           description: The handler to invoke when the user changes their theme.

@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: themeHandler
+uid: '@microsoft/teams-js.app.themeHandler'
+package: '@microsoft/teams-js'
+summary: >-
+  This function is passed to registerOnThemeHandler. It is called every time the
+  user changes their theme.
+fullName: themeHandler
+remarks: ''
+isDeprecated: false
+syntax: |
+  type themeHandler = (theme: string) => void

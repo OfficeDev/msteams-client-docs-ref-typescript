@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: registerSpeakingStateChangeHandlerFunctionType
+uid: '@microsoft/teams-js.meeting.registerSpeakingStateChangeHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register speaking state change handler function type
+fullName: registerSpeakingStateChangeHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerSpeakingStateChangeHandlerFunctionType = (
+    speakingState: ISpeakingState
+  ) => void

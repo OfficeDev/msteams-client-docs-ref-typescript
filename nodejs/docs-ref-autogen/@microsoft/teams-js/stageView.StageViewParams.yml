@@ -44,6 +44,24 @@ properties:
       return:
         description: ''
         type: string
+  - name: openMode
+    uid: '@microsoft/teams-js.stageView.StageViewParams.openMode'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The open mode for stage content.
+
+      Optional param: if not passed, hosts can choose their default openMode.
+
+      If a host does not support any specific openMode, It will fallback to
+      StageViewOpenMode.modal.
+    fullName: openMode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'openMode?: StageViewOpenMode'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.stageView.StageViewOpenMode" />
   - name: threadId
     uid: '@microsoft/teams-js.stageView.StageViewParams.threadId'
     package: '@microsoft/teams-js'

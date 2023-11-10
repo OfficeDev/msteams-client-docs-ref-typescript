@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: getTabInstancesCallbackFunctionType
+uid: '@microsoft/teams-js.getTabInstancesCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Get tab instances callback function type
+fullName: getTabInstancesCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type getTabInstancesCallbackFunctionType = (tabInfo: TabInformation) => void

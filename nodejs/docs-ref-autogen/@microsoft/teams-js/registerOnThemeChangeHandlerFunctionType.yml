@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: registerOnThemeChangeHandlerFunctionType
+uid: '@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register on theme change handler function type
+fullName: registerOnThemeChangeHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerOnThemeChangeHandlerFunctionType = (theme: string) => void

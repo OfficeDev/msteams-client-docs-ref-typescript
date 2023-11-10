@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: setSettingsOnCompleteFunctionType
+uid: '@microsoft/teams-js.settings.setSettingsOnCompleteFunctionType'
+package: '@microsoft/teams-js'
+summary: Set settings on complete function type
+fullName: setSettingsOnCompleteFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type setSettingsOnCompleteFunctionType = (
+    status: boolean,
+    reason?: string
+  ) => void

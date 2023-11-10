@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: registerOnResumeHandlerFunctionType
+uid: '@microsoft/teams-js.app.lifecycle.registerOnResumeHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register on resume handler function type
+fullName: registerOnResumeHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerOnResumeHandlerFunctionType = (context: ResumeContext) => void
