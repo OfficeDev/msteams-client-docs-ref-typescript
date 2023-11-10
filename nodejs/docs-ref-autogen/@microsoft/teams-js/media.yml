@@ -23,6 +23,12 @@ enums:
   - '@microsoft/teams-js.media.MediaControllerEvent'
   - '@microsoft/teams-js.media.MediaType'
   - '@microsoft/teams-js.media.Source'
+typeAliases:
+  - '@microsoft/teams-js.media.captureImageCallbackFunctionType'
+  - '@microsoft/teams-js.media.errorCallbackFunctionType'
+  - '@microsoft/teams-js.media.getMediaCallbackFunctionType'
+  - '@microsoft/teams-js.media.scanBarCodeCallbackFunctionType'
+  - '@microsoft/teams-js.media.selectMediaCallbackFunctionType'
 classes:
   - '@microsoft/teams-js.media.File'
   - '@microsoft/teams-js.media.Media'
@@ -54,7 +60,9 @@ functions:
       content: 'function captureImage(callback: captureImageCallbackFunctionType)'
       parameters:
         - id: callback
-          type: captureImageCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.media.captureImageCallbackFunctionType" />
           description: ''
   - name: hasPermission()
     uid: '@microsoft/teams-js.media.hasPermission'
@@ -110,7 +118,9 @@ functions:
         BarCodeConfig)
       parameters:
         - id: callback
-          type: scanBarCodeCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.media.scanBarCodeCallbackFunctionType" />
           description: callback to invoke after scanning the barcode
         - id: config
           type: <xref uid="@microsoft/teams-js.media.BarCodeConfig" />
@@ -132,7 +142,9 @@ functions:
           type: <xref uid="@microsoft/teams-js.media.MediaInputs" />
           description: The input params to customize the media to be selected
         - id: callback
-          type: selectMediaCallbackFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.media.selectMediaCallbackFunctionType" />
           description: The callback to invoke after fetching the media
   - name: viewImages(ImageUri[], errorCallbackFunctionType)
     uid: '@microsoft/teams-js.media.viewImages'
@@ -151,5 +163,5 @@ functions:
             list of URIs for images to be viewed - can be content URI or server
             URL. Supports up to 10 Images in a single call
         - id: callback
-          type: errorCallbackFunctionType
+          type: <xref uid="@microsoft/teams-js.media.errorCallbackFunctionType" />
           description: returns back error if encountered, returns null in case of success

@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: onCompleteHandlerFunctionType
+uid: '@microsoft/teams-js.onCompleteHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Navigation on complete handler function type
+fullName: onCompleteHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: >
+  type onCompleteHandlerFunctionType = (status: boolean, reason?: string) =>
+  void

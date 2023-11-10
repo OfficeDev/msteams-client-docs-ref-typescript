@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: getAppContentStageCallbackFunctionType
+uid: '@microsoft/teams-js.meeting.getAppContentStageCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Get app content stage sharing state callback function type
+fullName: getAppContentStageCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type getAppContentStageCallbackFunctionType = (
+    error: SdkError | null,
+    appContentStageSharingState: IAppContentStageSharingState | null
+  ) => void

@@ -54,7 +54,9 @@ functions:
         backButtonHandlerFunctionType)
       parameters:
         - id: handler
-          type: backButtonHandlerFunctionType
+          type: >-
+            <xref uid="@microsoft/teams-js.pages.backButtonHandlerFunctionType"
+            />
           description: >-
             The handler to invoke when the user presses the host client's back
             button.

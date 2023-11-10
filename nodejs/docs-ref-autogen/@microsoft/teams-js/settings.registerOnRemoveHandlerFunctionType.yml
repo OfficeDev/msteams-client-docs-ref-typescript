@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: registerOnRemoveHandlerFunctionType
+uid: '@microsoft/teams-js.settings.registerOnRemoveHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register on remove handler function type
+fullName: registerOnRemoveHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerOnRemoveHandlerFunctionType = (evt: RemoveEvent) => void

@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: shareWebContentCallbackFunctionType
+uid: '@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: shareWebContent callback function type
+fullName: shareWebContentCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type shareWebContentCallbackFunctionType = (err?: SdkError) => void

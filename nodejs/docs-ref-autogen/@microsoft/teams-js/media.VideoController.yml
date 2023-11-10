@@ -35,7 +35,7 @@ inheritedMethods:
       content: 'function stop(callback?: errorCallbackFunctionType)'
       parameters:
         - id: callback
-          type: errorCallbackFunctionType
+          type: <xref uid="@microsoft/teams-js.media.errorCallbackFunctionType" />
           description: >-
             is used to send app if host client has successfully stopped the
             event or not

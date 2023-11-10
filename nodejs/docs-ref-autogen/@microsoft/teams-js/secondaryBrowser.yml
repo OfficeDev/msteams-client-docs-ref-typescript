@@ -4,8 +4,8 @@ name: secondaryBrowser
 type: module
 package: '@microsoft/teams-js'
 summary: |-
-  Namespace to power up the in-app browser experiences in the Host App.
-  For e.g., opening a URL in the Host App inside a browser
+  Namespace to power up the in-app browser experiences in the host app.
+  For e.g., opening a URL in the host app inside a browser
 previewState: beta
 functions:
   - name: isSupported()
@@ -23,7 +23,15 @@ functions:
   - name: open(URL)
     uid: '@microsoft/teams-js.secondaryBrowser.open'
     package: '@microsoft/teams-js'
-    summary: Open a URL in the secondary browser aka in-app browser
+    summary: >-
+      Open a URL in the secondary browser.
+
+
+      On mobile, this is the in-app browser.
+
+
+      On web and desktop, please use the `window.open()` method or other native
+      external browser methods.
     remarks: >-
       Any error that happens after navigation begins is handled by the platform
       browser component and not returned from this function.

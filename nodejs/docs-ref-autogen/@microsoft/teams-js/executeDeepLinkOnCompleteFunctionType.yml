@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: executeDeepLinkOnCompleteFunctionType
+uid: '@microsoft/teams-js.executeDeepLinkOnCompleteFunctionType'
+package: '@microsoft/teams-js'
+summary: Execute deep link on complete function type
+fullName: executeDeepLinkOnCompleteFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type executeDeepLinkOnCompleteFunctionType = (
+    status: boolean,
+    reason?: string
+  ) => void

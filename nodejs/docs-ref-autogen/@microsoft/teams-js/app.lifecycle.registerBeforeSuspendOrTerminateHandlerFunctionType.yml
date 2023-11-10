@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: registerBeforeSuspendOrTerminateHandlerFunctionType
+uid: >-
+  @microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandlerFunctionType
+package: '@microsoft/teams-js'
+summary: Register before suspendOrTerminate handler function type
+fullName: registerBeforeSuspendOrTerminateHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerBeforeSuspendOrTerminateHandlerFunctionType = () => void

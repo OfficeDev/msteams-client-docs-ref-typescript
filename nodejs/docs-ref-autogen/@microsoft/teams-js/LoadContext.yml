@@ -6,6 +6,8 @@ summary: ''
 fullName: LoadContext
 remarks: ''
 isDeprecated: true
-customDeprecatedMessage: As of 2.14.1, please use ResumeContext instead.
+customDeprecatedMessage: >-
+  As of 2.14.1, please use
+  [ResumeContext](xref:@microsoft/teams-js.ResumeContext) instead.
 syntax: |
   type LoadContext = ResumeContext

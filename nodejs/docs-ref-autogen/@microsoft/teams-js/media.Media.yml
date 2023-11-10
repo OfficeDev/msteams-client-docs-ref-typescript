@@ -139,6 +139,8 @@ methods:
       content: 'function getMedia(callback: getMediaCallbackFunctionType)'
       parameters:
         - id: callback
-          type: getMediaCallbackFunctionType
+          type: >-
+            <xref uid="@microsoft/teams-js.media.getMediaCallbackFunctionType"
+            />
           description: callback is called with the
 extends: <xref uid="@microsoft/teams-js.media.File" />

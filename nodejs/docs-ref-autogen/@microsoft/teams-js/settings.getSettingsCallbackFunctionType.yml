@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: getSettingsCallbackFunctionType
+uid: '@microsoft/teams-js.settings.getSettingsCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Get settings callback function type
+fullName: getSettingsCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type getSettingsCallbackFunctionType = (instanceSettings: Settings) => void

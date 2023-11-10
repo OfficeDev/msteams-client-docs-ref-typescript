@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: registerBeforeUnloadHandlerFunctionType
+uid: '@microsoft/teams-js.teamsCore.registerBeforeUnloadHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Register before unload handler function type
+fullName: registerBeforeUnloadHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type registerBeforeUnloadHandlerFunctionType = (
+    readyToUnload: readyToUnloadFunctionType
+  ) => boolean

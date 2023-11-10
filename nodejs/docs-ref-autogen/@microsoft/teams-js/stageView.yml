@@ -3,6 +3,8 @@ uid: '@microsoft/teams-js.stageView'
 name: stageView
 summary: Namespace to interact with the stage view specific part of the SDK.
 type: module
+enums:
+  - '@microsoft/teams-js.stageView.StageViewOpenMode'
 interfaces:
   - '@microsoft/teams-js.stageView.StageViewParams'
 package: '@microsoft/teams-js'

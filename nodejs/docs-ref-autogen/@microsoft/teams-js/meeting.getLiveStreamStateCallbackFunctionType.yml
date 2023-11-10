@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: getLiveStreamStateCallbackFunctionType
+uid: '@microsoft/teams-js.meeting.getLiveStreamStateCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Get live stream state callback function type
+fullName: getLiveStreamStateCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type getLiveStreamStateCallbackFunctionType = (
+    error: SdkError | null,
+    liveStreamState: LiveStreamState | null
+  ) => void

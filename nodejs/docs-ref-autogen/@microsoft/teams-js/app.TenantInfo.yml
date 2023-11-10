@@ -12,7 +12,7 @@ properties:
     uid: '@microsoft/teams-js.app.TenantInfo.id'
     package: '@microsoft/teams-js'
     summary: >-
-      The Azure AD tenant ID of the current user.
+      The Microsoft Entra tenant ID of the current user.
 
 
       Because a malicious party can run your content in a browser, this value
@@ -40,7 +40,9 @@ properties:
   - name: teamsSku
     uid: '@microsoft/teams-js.app.TenantInfo.teamsSku'
     package: '@microsoft/teams-js'
-    summary: The type of license for the current users tenant.
+    summary: >-
+      The type of license for the current user's tenant. Possible values are
+      enterprise, free, edu, and unknown.
     fullName: teamsSku
     remarks: ''
     isDeprecated: false

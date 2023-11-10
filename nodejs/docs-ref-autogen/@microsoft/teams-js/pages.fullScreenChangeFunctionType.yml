@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: fullScreenChangeFunctionType
+uid: '@microsoft/teams-js.pages.fullScreenChangeFunctionType'
+package: '@microsoft/teams-js'
+summary: Full screen function
+fullName: fullScreenChangeFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type fullScreenChangeFunctionType = (isFullScreen: boolean) => void

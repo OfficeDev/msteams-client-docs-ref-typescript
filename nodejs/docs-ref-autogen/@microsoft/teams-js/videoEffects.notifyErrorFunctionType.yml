@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: notifyErrorFunctionType
+uid: '@microsoft/teams-js.videoEffects.notifyErrorFunctionType'
+package: '@microsoft/teams-js'
+summary: Notify error function type
+fullName: notifyErrorFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type notifyErrorFunctionType = (errorMessage: string) => void

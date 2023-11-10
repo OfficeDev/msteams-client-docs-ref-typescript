@@ -1,0 +1,21 @@
+### YamlMime:TSEnum
+name: StageViewOpenMode
+uid: '@microsoft/teams-js.stageView.StageViewOpenMode'
+package: '@microsoft/teams-js'
+summary: The open mode for stage content.
+fullName: StageViewOpenMode
+remarks: ''
+isDeprecated: false
+fields:
+  - name: modal
+    uid: '@microsoft/teams-js.stageView.StageViewOpenMode.modal'
+    package: '@microsoft/teams-js'
+    summary: Open the content in a modal.
+  - name: popout
+    uid: '@microsoft/teams-js.stageView.StageViewOpenMode.popout'
+    package: '@microsoft/teams-js'
+    summary: Open the content in a popped-out window.
+  - name: popoutWithChat
+    uid: '@microsoft/teams-js.stageView.StageViewOpenMode.popoutWithChat'
+    package: '@microsoft/teams-js'
+    summary: Open the content in a popped-out window with chat collaboration.

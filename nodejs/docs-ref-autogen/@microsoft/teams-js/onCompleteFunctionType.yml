@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: onCompleteFunctionType
+uid: '@microsoft/teams-js.onCompleteFunctionType'
+package: '@microsoft/teams-js'
+summary: onComplete function type
+fullName: onCompleteFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type onCompleteFunctionType = (status: boolean, reason?: string) => void

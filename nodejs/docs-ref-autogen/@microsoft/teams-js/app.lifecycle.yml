@@ -1,8 +1,6 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.app.lifecycle'
 name: lifecycle
-type: module
-package: '@microsoft/teams-js'
 summary: >-
   A namespace for enabling the suspension or delayed termination of an app when
   the user navigates away.
@@ -18,6 +16,12 @@ summary: >-
 
   The outcome is influenced by factors such as available memory and the number
   of suspended apps.
+type: module
+typeAliases:
+  - >-
+    @microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandlerFunctionType
+  - '@microsoft/teams-js.app.lifecycle.registerOnResumeHandlerFunctionType'
+package: '@microsoft/teams-js'
 previewState: beta
 functions:
   - name: isSupported()
@@ -50,7 +54,10 @@ functions:
         registerBeforeSuspendOrTerminateHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerBeforeSuspendOrTerminateHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandlerFunctionType"
+            />
           description: >-
             The handler to invoke before the page is suspended or terminated.
             When invoked, app can perform tasks like cleanups, logging etc.
@@ -71,7 +78,10 @@ functions:
         registerOnResumeHandlerFunctionType)
       parameters:
         - id: handler
-          type: registerOnResumeHandlerFunctionType
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.app.lifecycle.registerOnResumeHandlerFunctionType"
+            />
           description: >-
             The handler to invoke when the page is requested to be resumed. The
             app is supposed to navigate to

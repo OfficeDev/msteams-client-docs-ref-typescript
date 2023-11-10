@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: errorCallbackFunctionType
+uid: '@microsoft/teams-js.meeting.errorCallbackFunctionType'
+package: '@microsoft/teams-js'
+summary: Error callback function type
+fullName: errorCallbackFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type errorCallbackFunctionType = (
+    error: SdkError | null,
+    result: boolean | null
+  ) => void

@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: backButtonHandlerFunctionType
+uid: '@microsoft/teams-js.pages.backButtonHandlerFunctionType'
+package: '@microsoft/teams-js'
+summary: Back button handler function
+fullName: backButtonHandlerFunctionType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type backButtonHandlerFunctionType = () => boolean
