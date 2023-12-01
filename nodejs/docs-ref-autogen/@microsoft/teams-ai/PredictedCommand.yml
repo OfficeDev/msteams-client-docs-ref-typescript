@@ -1,0 +1,26 @@
+### YamlMime:TSType
+name: PredictedCommand
+uid: '@microsoft/teams-ai.PredictedCommand'
+package: '@microsoft/teams-ai'
+summary: A predicted command is a command that the AI system should execute.
+fullName: PredictedCommand
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: '@microsoft/teams-ai.PredictedCommand.type'
+    package: '@microsoft/teams-ai'
+    summary: Type of command to execute.
+    fullName: type
+    remarks: >-
+      DO commands are actions that the AI system should perform. SAY commands
+      are responses that
+
+      the AI system should say.
+    isDeprecated: false
+    syntax:
+      content: 'type: "DO" | "SAY"'
+      return:
+        description: ''
+        type: '"DO" | "SAY"'

@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: TeamsSsoSettings
+uid: '@microsoft/teams-ai.TeamsSsoSettings'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: TeamsSsoSettings
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: endOnInvalidMessage
+    uid: '@microsoft/teams-ai.TeamsSsoSettings.endOnInvalidMessage'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: endOnInvalidMessage
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endOnInvalidMessage?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: msalConfig
+    uid: '@microsoft/teams-ai.TeamsSsoSettings.msalConfig'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: msalConfig
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'msalConfig: Configuration'
+      return:
+        description: ''
+        type: Configuration
+  - name: scopes
+    uid: '@microsoft/teams-ai.TeamsSsoSettings.scopes'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: scopes
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'scopes: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: signInLink
+    uid: '@microsoft/teams-ai.TeamsSsoSettings.signInLink'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: signInLink
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'signInLink: string'
+      return:
+        description: ''
+        type: string
+  - name: timeout
+    uid: '@microsoft/teams-ai.TeamsSsoSettings.timeout'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: timeout
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timeout?: number'
+      return:
+        description: ''
+        type: number

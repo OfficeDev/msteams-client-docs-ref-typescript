@@ -1,0 +1,86 @@
+### YamlMime:TSType
+name: ActionResponseValidator
+uid: '@microsoft/teams-ai.ActionResponseValidator'
+package: '@microsoft/teams-ai'
+summary: Validates action calls returned by the model.
+fullName: ActionResponseValidator
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: ActionResponseValidator(ChatCompletionAction[], boolean, string, string)
+    uid: '@microsoft/teams-ai.ActionResponseValidator.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `ActionResponseValidator` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new ActionResponseValidator(actions: ChatCompletionAction[], isRequired:
+        boolean, noun?: string, Noun?: string)
+      parameters:
+        - id: actions
+          type: <xref uid="@microsoft/teams-ai.ChatCompletionAction" />[]
+          description: List of supported actions.
+        - id: isRequired
+          type: boolean
+          description: Whether the response is required to call an action.
+        - id: noun
+          type: string
+          description: >-
+            Optional. Name of the action to use in feedback messages. Defaults
+            to `action`.
+        - id: Noun
+          type: string
+          description: >-
+            Optional. Name of the action to use in feedback messages. Defaults
+            to `Action`.
+properties:
+  - name: actions
+    uid: '@microsoft/teams-ai.ActionResponseValidator.actions'
+    package: '@microsoft/teams-ai'
+    summary: Gets a list of the actions configured for the validator.
+    fullName: actions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: ChatCompletionAction[] actions
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.ChatCompletionAction" />[]
+methods:
+  - name: >-
+      validateResponse(TurnContext, Memory, Tokenizer, PromptResponse<string>,
+      number)
+    uid: '@microsoft/teams-ai.ActionResponseValidator.validateResponse'
+    package: '@microsoft/teams-ai'
+    summary: Validates a response to a prompt.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validateResponse(context: TurnContext, memory: Memory,
+        tokenizer: Tokenizer, response: PromptResponse<string>,
+        remaining_attempts: number):
+        Promise<Validation<ValidatedChatCompletionAction>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding and decoding text.
+        - id: response
+          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          description: Response to validate.
+        - id: remaining_attempts
+          type: number
+          description: Number of remaining attempts to validate the response.
+      return:
+        description: A `Validation` object.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.Validation" />&lt;<xref
+          uid="@microsoft/teams-ai.ValidatedChatCompletionAction" />&gt;&gt;

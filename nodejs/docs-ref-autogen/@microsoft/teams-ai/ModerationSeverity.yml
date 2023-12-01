@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: ModerationSeverity
+uid: '@microsoft/teams-ai.ModerationSeverity'
+package: '@microsoft/teams-ai'
+summary: The moderation severity level.
+fullName: ModerationSeverity
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Safe
+    uid: '@microsoft/teams-ai.ModerationSeverity.Safe'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    numericValue: 0
+  - name: Low
+    uid: '@microsoft/teams-ai.ModerationSeverity.Low'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    numericValue: 2
+  - name: Medium
+    uid: '@microsoft/teams-ai.ModerationSeverity.Medium'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    numericValue: 4
+  - name: High
+    uid: '@microsoft/teams-ai.ModerationSeverity.High'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    numericValue: 6

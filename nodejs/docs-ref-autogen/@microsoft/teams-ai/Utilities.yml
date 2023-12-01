@@ -1,0 +1,37 @@
+### YamlMime:TSType
+name: Utilities
+uid: '@microsoft/teams-ai.Utilities'
+package: '@microsoft/teams-ai'
+summary: Utility functions for manipulating .
+fullName: Utilities
+remarks: ''
+isDeprecated: false
+type: class
+methods:
+  - name: toString(Tokenizer, any, boolean)
+    uid: '@microsoft/teams-ai.Utilities.toString'
+    package: '@microsoft/teams-ai'
+    summary: Converts a value to a string.
+    remarks: >-
+      Dates are converted to ISO strings and Objects are converted to JSON or
+      YAML, whichever is shorter.
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function toString(tokenizer: Tokenizer, value: any, asJSON?:
+        boolean): string
+      parameters:
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding.
+        - id: value
+          type: any
+          description: Value to convert.
+        - id: asJSON
+          type: boolean
+          description: >-
+            Optional. If true objects will always be converted to JSON instead
+            of YAML. Defaults to false.
+      return:
+        description: Converted value.
+        type: string

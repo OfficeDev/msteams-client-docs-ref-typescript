@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: SignInResponse
+uid: '@microsoft/teams-ai.SignInResponse'
+package: '@microsoft/teams-ai'
+summary: The sign in response.
+fullName: SignInResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type SignInResponse = {
+    cause?: AuthErrorReason
+    error?: unknown
+    status: SignInStatus
+  }

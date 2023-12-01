@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: EmbeddingsResponse
+uid: '@microsoft/teams-ai.EmbeddingsResponse'
+package: '@microsoft/teams-ai'
+summary: Response returned by a `EmbeddingsClient`.
+fullName: EmbeddingsResponse
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: message
+    uid: '@microsoft/teams-ai.EmbeddingsResponse.message'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Message when status is not equal to `success`.
+    fullName: message
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'message?: string'
+      return:
+        description: ''
+        type: string
+  - name: output
+    uid: '@microsoft/teams-ai.EmbeddingsResponse.output'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Embeddings for the given inputs.
+    fullName: output
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'output?: number[][]'
+      return:
+        description: ''
+        type: number[][]
+  - name: status
+    uid: '@microsoft/teams-ai.EmbeddingsResponse.status'
+    package: '@microsoft/teams-ai'
+    summary: Status of the embeddings response.
+    fullName: status
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'status: EmbeddingsResponseStatus'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.EmbeddingsResponseStatus" />

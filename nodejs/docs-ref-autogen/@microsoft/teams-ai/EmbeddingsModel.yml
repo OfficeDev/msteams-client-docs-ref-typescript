@@ -1,0 +1,29 @@
+### YamlMime:TSType
+name: EmbeddingsModel
+uid: '@microsoft/teams-ai.EmbeddingsModel'
+package: '@microsoft/teams-ai'
+summary: An AI model that can be used to create embeddings.
+fullName: EmbeddingsModel
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: createEmbeddings(string | string[])
+    uid: '@microsoft/teams-ai.EmbeddingsModel.createEmbeddings'
+    package: '@microsoft/teams-ai'
+    summary: Creates embeddings for the given inputs.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createEmbeddings(inputs: string | string[]):
+        Promise<EmbeddingsResponse>
+      parameters:
+        - id: inputs
+          type: string | string[]
+          description: Text inputs to create embeddings for.
+      return:
+        description: >-
+          A `EmbeddingsResponse` with a status and the generated embeddings or a
+          message when an error occurs.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.EmbeddingsResponse" />&gt;

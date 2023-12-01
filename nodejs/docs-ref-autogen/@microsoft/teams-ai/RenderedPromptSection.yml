@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: RenderedPromptSection
+uid: '@microsoft/teams-ai.RenderedPromptSection'
+package: '@microsoft/teams-ai'
+summary: The result of rendering a section.
+fullName: RenderedPromptSection<T>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: length
+    uid: '@microsoft/teams-ai.RenderedPromptSection.length'
+    package: '@microsoft/teams-ai'
+    summary: The number of tokens that were rendered.
+    fullName: length
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'length: number'
+      return:
+        description: ''
+        type: number
+  - name: output
+    uid: '@microsoft/teams-ai.RenderedPromptSection.output'
+    package: '@microsoft/teams-ai'
+    summary: The section that was rendered.
+    fullName: output
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'output: T'
+      return:
+        description: ''
+        type: T
+  - name: tooLong
+    uid: '@microsoft/teams-ai.RenderedPromptSection.tooLong'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      If true the section was truncated because it exceeded the maxTokens
+      budget.
+    fullName: tooLong
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tooLong: boolean'
+      return:
+        description: ''
+        type: boolean

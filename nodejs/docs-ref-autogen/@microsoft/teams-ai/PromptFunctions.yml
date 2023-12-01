@@ -1,0 +1,69 @@
+### YamlMime:TSType
+name: PromptFunctions
+uid: '@microsoft/teams-ai.PromptFunctions'
+package: '@microsoft/teams-ai'
+summary: A collection of functions that can be called from a prompt template string.
+fullName: PromptFunctions
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: getFunction(string)
+    uid: '@microsoft/teams-ai.PromptFunctions.getFunction'
+    package: '@microsoft/teams-ai'
+    summary: Looks up the given function.
+    remarks: Throws an error if the function is not defined.
+    isDeprecated: false
+    syntax:
+      content: 'function getFunction(name: string): PromptFunction'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the function to lookup.
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptFunction" />
+  - name: hasFunction(string)
+    uid: '@microsoft/teams-ai.PromptFunctions.hasFunction'
+    package: '@microsoft/teams-ai'
+    summary: Returns true if the given function is defined.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function hasFunction(name: string): boolean'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the function to lookup.
+      return:
+        description: ''
+        type: boolean
+  - name: invokeFunction(string, TurnContext, Memory, Tokenizer, string[])
+    uid: '@microsoft/teams-ai.PromptFunctions.invokeFunction'
+    package: '@microsoft/teams-ai'
+    summary: Calls the given function.
+    remarks: Throws an error if the function is not defined.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function invokeFunction(name: string, context: TurnContext, memory:
+        Memory, tokenizer: Tokenizer, args: string[]): Promise<any>
+      parameters:
+        - id: name
+          type: string
+          description: Name of the function to invoke.
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: Interface used to access state variables.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer used to encode/decode strings.
+        - id: args
+          type: string[]
+          description: Arguments to pass to the function as an array of strings.
+      return:
+        description: ''
+        type: Promise&lt;any&gt;

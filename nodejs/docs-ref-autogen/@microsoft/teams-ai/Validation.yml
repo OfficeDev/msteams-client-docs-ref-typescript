@@ -1,0 +1,66 @@
+### YamlMime:TSType
+name: Validation
+uid: '@microsoft/teams-ai.Validation'
+package: '@microsoft/teams-ai'
+summary: Response returned by a `PromptResponseValidator`.
+fullName: Validation<TValue>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: feedback
+    uid: '@microsoft/teams-ai.Validation.feedback'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Repair instructions to send to the model.
+    fullName: feedback
+    remarks: Should be set if the validation fails.
+    isDeprecated: false
+    syntax:
+      content: 'feedback?: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@microsoft/teams-ai.Validation.type'
+    package: '@microsoft/teams-ai'
+    summary: Type of the validation object.
+    fullName: type
+    remarks: This is used for type checking.
+    isDeprecated: false
+    syntax:
+      content: 'type: "Validation"'
+      return:
+        description: ''
+        type: '"Validation"'
+  - name: valid
+    uid: '@microsoft/teams-ai.Validation.valid'
+    package: '@microsoft/teams-ai'
+    summary: Whether the validation is valid.
+    fullName: valid
+    remarks: >-
+      If this is `false` the `feedback` property will be set, otherwise the
+      `value` property
+
+      MAY be set.
+    isDeprecated: false
+    syntax:
+      content: 'valid: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: value
+    uid: '@microsoft/teams-ai.Validation.value'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Replacement value to use for the response.
+    fullName: value
+    remarks: >-
+      Can be set if the validation succeeds. If set, the value will replace the
+      responses
+
+      `message.content` property.
+    isDeprecated: false
+    syntax:
+      content: 'value?: TValue'
+      return:
+        description: ''
+        type: TValue

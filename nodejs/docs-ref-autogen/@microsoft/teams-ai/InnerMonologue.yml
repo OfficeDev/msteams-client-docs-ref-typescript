@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: InnerMonologue
+uid: '@microsoft/teams-ai.InnerMonologue'
+package: '@microsoft/teams-ai'
+summary: Structure used to track the inner monologue of an LLM.
+fullName: InnerMonologue
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: action
+    uid: '@microsoft/teams-ai.InnerMonologue.action'
+    package: '@microsoft/teams-ai'
+    summary: The next action to perform.
+    fullName: action
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'action: { name: string, parameters?: Record<string, any> }'
+      return:
+        description: ''
+        type: '{ name: string, parameters?: Record&lt;string, any&gt; }'
+  - name: thoughts
+    uid: '@microsoft/teams-ai.InnerMonologue.thoughts'
+    package: '@microsoft/teams-ai'
+    summary: The LLM's thoughts.
+    fullName: thoughts
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'thoughts: { plan: string, reasoning: string, thought: string }'
+      return:
+        description: ''
+        type: '{ plan: string, reasoning: string, thought: string }'

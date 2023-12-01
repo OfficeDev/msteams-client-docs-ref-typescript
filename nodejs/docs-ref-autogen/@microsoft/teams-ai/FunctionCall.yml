@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: FunctionCall
+uid: '@microsoft/teams-ai.FunctionCall'
+package: '@microsoft/teams-ai'
+summary: A named function to call.
+fullName: FunctionCall
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: arguments
+    uid: '@microsoft/teams-ai.FunctionCall.arguments'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Arguments to pass to the function. Must be deserialized.
+    fullName: arguments
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'arguments?: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@microsoft/teams-ai.FunctionCall.name'
+    package: '@microsoft/teams-ai'
+    summary: Name of the function to call.
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,61 @@
+### YamlMime:TSType
+name: OpenAIEmbeddings
+uid: '@microsoft/teams-ai.OpenAIEmbeddings'
+package: '@microsoft/teams-ai'
+summary: A `EmbeddingsModel` for calling OpenAI and Azure OpenAI hosted models.
+fullName: OpenAIEmbeddings
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: OpenAIEmbeddings(OpenAIEmbeddingsOptions | AzureOpenAIEmbeddingsOptions)
+    uid: '@microsoft/teams-ai.OpenAIEmbeddings.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `OpenAIEmbeddings` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new OpenAIEmbeddings(options: OpenAIEmbeddingsOptions |
+        AzureOpenAIEmbeddingsOptions)
+      parameters:
+        - id: options
+          type: >-
+            <xref uid="@microsoft/teams-ai.OpenAIEmbeddingsOptions" /> | <xref
+            uid="@microsoft/teams-ai.AzureOpenAIEmbeddingsOptions" />
+          description: Options for configuring the embeddings client.
+properties:
+  - name: options
+    uid: '@microsoft/teams-ai.OpenAIEmbeddings.options'
+    package: '@microsoft/teams-ai'
+    summary: Options the client was configured with.
+    fullName: options
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'options: OpenAIEmbeddingsOptions | AzureOpenAIEmbeddingsOptions'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/teams-ai.OpenAIEmbeddingsOptions" /> | <xref
+          uid="@microsoft/teams-ai.AzureOpenAIEmbeddingsOptions" />
+methods:
+  - name: createEmbeddings(string | string[])
+    uid: '@microsoft/teams-ai.OpenAIEmbeddings.createEmbeddings'
+    package: '@microsoft/teams-ai'
+    summary: Creates embeddings for the given inputs using the OpenAI API.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createEmbeddings(inputs: string | string[]):
+        Promise<EmbeddingsResponse>
+      parameters:
+        - id: inputs
+          type: string | string[]
+          description: Text inputs to create embeddings for.
+      return:
+        description: >-
+          A `EmbeddingsResponse` with a status and the generated embeddings or a
+          message when an error occurs.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.EmbeddingsResponse" />&gt;

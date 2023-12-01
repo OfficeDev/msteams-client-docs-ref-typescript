@@ -1,0 +1,127 @@
+### YamlMime:TSType
+name: AuthError
+uid: '@microsoft/teams-ai.AuthError'
+package: '@microsoft/teams-ai'
+summary: An error thrown when an authentication error occurs.
+fullName: AuthError
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: AuthError(string, AuthErrorReason)
+    uid: '@microsoft/teams-ai.AuthError.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the `AuthError` class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new AuthError(message?: string, reason?: AuthErrorReason)'
+      parameters:
+        - id: message
+          type: string
+          description: The error message.
+        - id: reason
+          type: <xref uid="@microsoft/teams-ai.AuthErrorReason" />
+          description: Optional. Cause of the error. Defaults to `other`.
+properties:
+  - name: cause
+    uid: '@microsoft/teams-ai.AuthError.cause'
+    package: '@microsoft/teams-ai'
+    summary: The cause of the error.
+    fullName: cause
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'cause: AuthErrorReason'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.AuthErrorReason" />
+inheritedProperties:
+  - name: message
+    uid: '@microsoft/teams-ai.AuthError.message'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: message
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'message: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> Error.message
+  - name: name
+    uid: '@microsoft/teams-ai.AuthError.name'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> Error.name
+  - name: prepareStackTrace
+    uid: '@microsoft/teams-ai.AuthError.prepareStackTrace'
+    package: '@microsoft/teams-ai'
+    summary: |-
+      Optional override for formatting stack traces
+
+      See https://v8.dev/docs/stack-trace-api#customizing-stack-traces
+    fullName: prepareStackTrace
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static prepareStackTrace?: (err: Error, stackTraces: CallSite[]) => any'
+      return:
+        description: ''
+        type: '(err: Error, stackTraces: CallSite[]) =&gt; any'
+    inheritanceDescription: <b>Inherited From</b> Error.prepareStackTrace
+  - name: stack
+    uid: '@microsoft/teams-ai.AuthError.stack'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: stack
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'stack?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: <b>Inherited From</b> Error.stack
+  - name: stackTraceLimit
+    uid: '@microsoft/teams-ai.AuthError.stackTraceLimit'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: stackTraceLimit
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static stackTraceLimit: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> Error.stackTraceLimit
+inheritedMethods:
+  - name: captureStackTrace(object, Function)
+    uid: '@microsoft/teams-ai.AuthError.captureStackTrace'
+    package: '@microsoft/teams-ai'
+    summary: Create .stack property on a target object
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function captureStackTrace(targetObject: object, constructorOpt?:
+        Function)
+      parameters:
+        - id: targetObject
+          type: object
+          description: ''
+        - id: constructorOpt
+          type: Function
+          description: ''
+    inheritanceDescription: <b>Inherited From</b> Error.captureStackTrace
+extends: Error

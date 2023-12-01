@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: AdaptiveCardSearchResult
+uid: '@microsoft/teams-ai.AdaptiveCardSearchResult'
+package: '@microsoft/teams-ai'
+summary: Individual result returned from AdaptiveCards.search() handler.
+fullName: AdaptiveCardSearchResult
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: title
+    uid: '@microsoft/teams-ai.AdaptiveCardSearchResult.title'
+    package: '@microsoft/teams-ai'
+    summary: The title of the result.
+    fullName: title
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'title: string'
+      return:
+        description: ''
+        type: string
+  - name: value
+    uid: '@microsoft/teams-ai.AdaptiveCardSearchResult.value'
+    package: '@microsoft/teams-ai'
+    summary: The subtitle of the result.
+    fullName: value
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'value: string'
+      return:
+        description: ''
+        type: string

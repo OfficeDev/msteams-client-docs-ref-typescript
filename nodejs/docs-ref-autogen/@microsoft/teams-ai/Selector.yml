@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: Selector
+uid: '@microsoft/teams-ai.Selector'
+package: '@microsoft/teams-ai'
+summary: A selector function for matching incoming activities.
+fullName: Selector
+remarks: ''
+isDeprecated: false
+syntax: |
+  type Selector = (context: TurnContext) => Promise<boolean>

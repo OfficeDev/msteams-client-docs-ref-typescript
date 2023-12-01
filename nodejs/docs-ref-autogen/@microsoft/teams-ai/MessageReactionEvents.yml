@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: MessageReactionEvents
+uid: '@microsoft/teams-ai.MessageReactionEvents'
+package: '@microsoft/teams-ai'
+summary: Message reaction event types.
+fullName: MessageReactionEvents
+remarks: ''
+isDeprecated: false
+syntax: |
+  type MessageReactionEvents = "reactionsAdded" | "reactionsRemoved"

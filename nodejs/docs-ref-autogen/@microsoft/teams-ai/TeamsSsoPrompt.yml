@@ -1,0 +1,360 @@
+### YamlMime:TSType
+name: TeamsSsoPrompt
+uid: '@microsoft/teams-ai.TeamsSsoPrompt'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: TeamsSsoPrompt
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      TeamsSsoPrompt(string, string, TeamsSsoSettings,
+      ConfidentialClientApplication)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.constructor'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TeamsSsoPrompt(dialogId: string, settingName: string, settings:
+        TeamsSsoSettings, msal: ConfidentialClientApplication)
+      parameters:
+        - id: dialogId
+          type: string
+          description: ''
+        - id: settingName
+          type: string
+          description: ''
+        - id: settings
+          type: <xref uid="@microsoft/teams-ai.TeamsSsoSettings" />
+          description: ''
+        - id: msal
+          type: ConfidentialClientApplication
+          description: ''
+properties:
+  - name: id
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.id'
+    package: '@microsoft/teams-ai'
+    summary: Unique ID of the dialog.
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: string id
+      return:
+        description: The Id for the dialog.
+        type: string
+  - name: telemetryClient
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.telemetryClient'
+    package: '@microsoft/teams-ai'
+    summary: Gets the telemetry client for this dialog.
+    fullName: telemetryClient
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: BotTelemetryClient telemetryClient
+      return:
+        description: >-
+          The [BotTelemetryClient](xref:botbuilder.BotTelemetryClient) to use
+          for logging.
+        type: BotTelemetryClient
+inheritedProperties:
+  - name: EndOfTurn
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.EndOfTurn'
+    package: '@microsoft/teams-ai'
+    summary: Gets a default end-of-turn result.
+    fullName: EndOfTurn
+    remarks: >-
+      This result indicates that a dialog (or a logical step within a dialog)
+      has completed
+
+      processing for the current turn, is still active, and is waiting for more
+      input.
+    isDeprecated: false
+    syntax:
+      content: 'static EndOfTurn: DialogTurnResult<any>'
+      return:
+        description: ''
+        type: DialogTurnResult&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.EndOfTurn
+inheritedMethods:
+  - name: configure(Record<string, unknown>)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.configure'
+    package: '@microsoft/teams-ai'
+    summary: Fluent method for configuring the object.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function configure(config: Record<string, unknown>): TeamsSsoPrompt'
+      parameters:
+        - id: config
+          type: Record&lt;string, unknown&gt;
+          description: Configuration settings to apply.
+      return:
+        description: >-
+          The [Configurable](xref:botbuilder-dialogs.Configurable) after the
+          operation is complete.
+        type: <xref uid="@microsoft/teams-ai.TeamsSsoPrompt" />
+    inheritanceDescription: <b>Inherited From</b> Dialog.configure
+  - name: endDialog(TurnContext, DialogInstance<any>, DialogReason)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.endDialog'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      When overridden in a derived class, performs clean up for the dialog
+      before it ends.
+    remarks: >-
+      Derived dialogs that need to perform logging or cleanup before ending
+      should override this method.
+
+      By default, this method has no effect.
+
+
+      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      method when the current
+
+      dialog is ending.
+
+
+      **See also**
+
+      -
+      [DialogContext.cancelAllDialogs](xref:botbuilder-dialogs.DialogContext.cancelAllDialogs)
+
+      -
+      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+
+      -
+      [DialogContext.replaceDialog](xref:botbuilder-dialogs.DialogContext.replaceDialog)
+    isDeprecated: false
+    syntax:
+      content: >-
+        function endDialog(_context: TurnContext, _instance:
+        DialogInstance<any>, _reason: DialogReason): Promise<void>
+      parameters:
+        - id: _context
+          type: TurnContext
+          description: The context object for the turn.
+        - id: _instance
+          type: DialogInstance&lt;any&gt;
+          description: Current state information for this dialog.
+        - id: _reason
+          type: DialogReason
+          description: The reason the dialog is ending.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.endDialog
+  - name: getConverter(string)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.getConverter'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getConverter(_property: string): Converter<unknown, unknown> |
+        ConverterFactory<unknown, unknown>
+      parameters:
+        - id: _property
+          type: string
+          description: The key of the conditional selector configuration.
+      return:
+        description: The converter for the selector configuration.
+        type: >-
+          Converter&lt;unknown, unknown&gt; | ConverterFactory&lt;unknown,
+          unknown&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.getConverter
+  - name: getVersion()
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.getVersion'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      An encoded string used to aid in the detection of bot changes on
+      re-deployment.
+    remarks: >-
+      This defaults to returning the dialogs [id](#id) but can be overridden to
+      provide more
+
+      precise change detection logic. Any dialog on the stack that has its
+      version change will
+
+      result in a `versionChanged` event will be raised. If this event is not
+      handled by the bot,
+
+      an error will be thrown resulting in the bots error handler logic being
+      run.
+
+
+      Returning an empty string will disable version tracking for the component
+      all together.
+    isDeprecated: false
+    syntax:
+      content: 'function getVersion(): string'
+      return:
+        description: >-
+          Unique string which should only change when dialog has changed in a
+          way that should restart the dialog.
+        type: string
+    inheritanceDescription: <b>Inherited From</b> Dialog.getVersion
+  - name: onDialogEvent(DialogContext, DialogEvent)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.onDialogEvent'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Called when an event has been raised, using `DialogContext.emitEvent()`,
+      by either the current dialog or a dialog that the current dialog started.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function onDialogEvent(dc: DialogContext, e: DialogEvent):
+        Promise<boolean>
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: The dialog context for the current turn of conversation.
+        - id: e
+          type: DialogEvent
+          description: The event being raised.
+      return:
+        description: >-
+          True if the event is handled by the current dialog and bubbling should
+          stop.
+        type: Promise&lt;boolean&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.onDialogEvent
+  - name: repromptDialog(TurnContext, DialogInstance<any>)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.repromptDialog'
+    package: '@microsoft/teams-ai'
+    summary: When overridden in a derived class, reprompts the user for input.
+    remarks: >-
+      Derived dialogs that support validation and re-prompt logic should
+      override this method.
+
+      By default, this method has no effect.
+
+
+      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      method when the current
+
+      dialog should re-request input from the user. This method is implemented
+      for prompt dialogs.
+
+
+      **See also**
+
+      -
+      [DialogContext.repromptDialog](xref:botbuilder-dialogs.DialogContext.repromptDialog)
+
+      - [Prompt](xref:botbuilder-dialogs.Prompt)
+    isDeprecated: false
+    syntax:
+      content: >-
+        function repromptDialog(_context: TurnContext, _instance:
+        DialogInstance<any>): Promise<void>
+      parameters:
+        - id: _context
+          type: TurnContext
+          description: The context object for the turn.
+        - id: _instance
+          type: DialogInstance&lt;any&gt;
+          description: Current state information for this dialog.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.repromptDialog
+  - name: resumeDialog(DialogContext, DialogReason, any)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.resumeDialog'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      When overridden in a derived class, resumes the dialog after the dialog
+      above it on the stack completes.
+    remarks: >-
+      Derived dialogs that support multiple-turn conversations should override
+      this method.
+
+      By default, this method signals that the dialog is complete and returns.
+
+
+      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
+      method when it resumes
+
+      the dialog. If the previous dialog on the stack returned a value, that
+      value is in the `result`
+
+      parameter.
+
+
+      To start a _child_ dialog, use
+      [DialogContext.beginDialog](xref:botbuilder-dialogs.DialogContext.beginDialog)
+
+      or [DialogContext.prompt](xref:botbuilder-dialogs.DialogContext.prompt);
+      however, this dialog will not
+
+      necessarily be the one that started the child dialog.
+
+      To signal to the dialog context that this dialog has completed, await
+
+      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+      before exiting this method.
+
+
+      **See also**
+
+      -
+      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+    isDeprecated: false
+    syntax:
+      content: >-
+        function resumeDialog(dc: DialogContext, reason: DialogReason, result?:
+        any): Promise<DialogTurnResult<any>>
+      parameters:
+        - id: dc
+          type: DialogContext
+          description: The context for the current dialog turn.
+        - id: reason
+          type: DialogReason
+          description: |-
+            The reason the dialog is resuming. This will typically be
+                 [DialogReason.endCalled](xref:botbuilder-dialogs.DialogReason.endCalled)
+        - id: result
+          type: any
+          description: Optional. The return value, if any, from the dialog that ended.
+      return:
+        description: A promise resolving to the dialog turn result.
+        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+    inheritanceDescription: <b>Inherited From</b> Dialog.resumeDialog
+methods:
+  - name: beginDialog(any, any)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.beginDialog'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function beginDialog(dc: any, options: any): Promise<any>'
+      parameters:
+        - id: dc
+          type: any
+          description: ''
+        - id: options
+          type: any
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;any&gt;
+  - name: continueDialog(any)
+    uid: '@microsoft/teams-ai.TeamsSsoPrompt.continueDialog'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function continueDialog(dc: any): Promise<any>'
+      parameters:
+        - id: dc
+          type: any
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;any&gt;
+extends: Dialog

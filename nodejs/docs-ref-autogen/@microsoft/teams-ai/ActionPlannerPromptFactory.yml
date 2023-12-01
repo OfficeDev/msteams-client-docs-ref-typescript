@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: ActionPlannerPromptFactory
+uid: '@microsoft/teams-ai.ActionPlannerPromptFactory'
+package: '@microsoft/teams-ai'
+summary: Factory function used to create a prompt template.
+fullName: ActionPlannerPromptFactory<TState>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ActionPlannerPromptFactory<TState> = (
+    context: TurnContext,
+    state: TState,
+    planner: ActionPlanner<TState>
+  ) => Promise<PromptTemplate>

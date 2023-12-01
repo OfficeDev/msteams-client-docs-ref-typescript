@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: Message
+uid: '@microsoft/teams-ai.Message'
+package: '@microsoft/teams-ai'
+summary: A message object sent to or received from an LLM.
+fullName: Message<TContent>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: '@microsoft/teams-ai.Message.content'
+    package: '@microsoft/teams-ai'
+    summary: Text of the message.
+    fullName: content
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'content: undefined | TContent'
+      return:
+        description: ''
+        type: undefined | TContent
+  - name: function_call
+    uid: '@microsoft/teams-ai.Message.function_call'
+    package: '@microsoft/teams-ai'
+    summary: Optional. A named function to call.
+    fullName: function_call
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function_call?: FunctionCall'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.FunctionCall" />
+  - name: name
+    uid: '@microsoft/teams-ai.Message.name'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Name of the function that was called.
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name?: string'
+      return:
+        description: ''
+        type: string
+  - name: role
+    uid: '@microsoft/teams-ai.Message.role'
+    package: '@microsoft/teams-ai'
+    summary: The messages role. Typically 'system', 'user', 'assistant', 'function'.
+    fullName: role
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'role: string'
+      return:
+        description: ''
+        type: string

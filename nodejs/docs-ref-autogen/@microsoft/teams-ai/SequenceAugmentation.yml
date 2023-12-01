@@ -1,0 +1,95 @@
+### YamlMime:TSType
+name: SequenceAugmentation
+uid: '@microsoft/teams-ai.SequenceAugmentation'
+package: '@microsoft/teams-ai'
+summary: The 'sequence' augmentation.
+fullName: SequenceAugmentation
+remarks: This augmentation allows the model to return a sequence of actions to perform.
+isDeprecated: false
+type: class
+constructors:
+  - name: SequenceAugmentation(ChatCompletionAction[])
+    uid: '@microsoft/teams-ai.SequenceAugmentation.constructor'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new SequenceAugmentation(actions: ChatCompletionAction[])'
+      parameters:
+        - id: actions
+          type: <xref uid="@microsoft/teams-ai.ChatCompletionAction" />[]
+          description: ''
+methods:
+  - name: >-
+      createPlanFromResponse(TurnContext, Memory, PromptResponse<undefined |
+      Plan>)
+    uid: '@microsoft/teams-ai.SequenceAugmentation.createPlanFromResponse'
+    package: '@microsoft/teams-ai'
+    summary: Creates a plan given validated response value.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createPlanFromResponse(context: TurnContext, memory: Memory,
+        response: PromptResponse<undefined | Plan>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state variables.
+        - id: response
+          type: >-
+            <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;undefined |
+            <xref uid="@microsoft/teams-ai.Plan" />&gt;
+          description: The validated and transformed response for the prompt.
+      return:
+        description: The created plan.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+  - name: createPromptSection()
+    uid: '@microsoft/teams-ai.SequenceAugmentation.createPromptSection'
+    package: '@microsoft/teams-ai'
+    summary: Creates an optional prompt section for the augmentation.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function createPromptSection(): undefined | PromptSection'
+      return:
+        description: ''
+        type: undefined | <xref uid="@microsoft/teams-ai.PromptSection" />
+  - name: >-
+      validateResponse(TurnContext, Memory, Tokenizer, PromptResponse<string>,
+      number)
+    uid: '@microsoft/teams-ai.SequenceAugmentation.validateResponse'
+    package: '@microsoft/teams-ai'
+    summary: Validates a response to a prompt.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validateResponse(context: TurnContext, memory: Memory,
+        tokenizer: Tokenizer, response: PromptResponse<string>,
+        remaining_attempts: number): Promise<Validation<undefined | Plan>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding and decoding text.
+        - id: response
+          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          description: Response to validate.
+        - id: remaining_attempts
+          type: number
+          description: Number of remaining attempts to validate the response.
+      return:
+        description: A `Validation` object.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.Validation" />&lt;undefined
+          | <xref uid="@microsoft/teams-ai.Plan" />&gt;&gt;

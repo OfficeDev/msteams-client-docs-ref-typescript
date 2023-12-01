@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: PromptFunction
+uid: '@microsoft/teams-ai.PromptFunction'
+package: '@microsoft/teams-ai'
+summary: A function that can be called from a prompt template string.
+fullName: PromptFunction
+remarks: ''
+isDeprecated: false
+syntax: |
+  type PromptFunction = (
+    context: TurnContext,
+    memory: Memory,
+    functions: PromptFunctions,
+    tokenizer: Tokenizer,
+    args: string[]
+  ) => Promise<any>

@@ -1,0 +1,191 @@
+### YamlMime:TSType
+name: ApplicationOptions
+uid: '@microsoft/teams-ai.ApplicationOptions'
+package: '@microsoft/teams-ai'
+summary: Options for the Application class.
+fullName: ApplicationOptions<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: adapter
+    uid: '@microsoft/teams-ai.ApplicationOptions.adapter'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Bot adapter being used.
+    fullName: adapter
+    remarks: >-
+      If using the `longRunningMessages` option or calling the
+      continueConversationAsync() method,
+
+      this property is required.
+    isDeprecated: false
+    syntax:
+      content: 'adapter?: BotAdapter'
+      return:
+        description: ''
+        type: BotAdapter
+  - name: adaptiveCards
+    uid: '@microsoft/teams-ai.ApplicationOptions.adaptiveCards'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Options used to customize the processing of Adaptive Card
+      requests.
+    fullName: adaptiveCards
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'adaptiveCards?: AdaptiveCardsOptions'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.AdaptiveCardsOptions" />
+  - name: ai
+    uid: '@microsoft/teams-ai.ApplicationOptions.ai'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. AI options to use. When provided, a new instance of the AI
+      system will be created.
+    fullName: ai
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ai?: AIOptions<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.AIOptions" />&lt;TState&gt;
+  - name: authentication
+    uid: '@microsoft/teams-ai.ApplicationOptions.authentication'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OAuth prompt settings to use for authentication.
+    fullName: authentication
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'authentication?: AuthenticationOptions'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.AuthenticationOptions" />
+  - name: botAppId
+    uid: '@microsoft/teams-ai.ApplicationOptions.botAppId'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Application ID of the bot.
+    fullName: botAppId
+    remarks: >-
+      If using the `longRunningMessages` option or calling the
+      continueConversationAsync() method,
+
+      this property is required.
+    isDeprecated: false
+    syntax:
+      content: 'botAppId?: string'
+      return:
+        description: ''
+        type: string
+  - name: fileDownloaders
+    uid: '@microsoft/teams-ai.ApplicationOptions.fileDownloaders'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Array of input file download plugins to use.
+    fullName: fileDownloaders
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fileDownloaders?: InputFileDownloader<TState>[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.InputFileDownloader" />&lt;TState&gt;[]
+  - name: longRunningMessages
+    uid: '@microsoft/teams-ai.ApplicationOptions.longRunningMessages'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. If true, the bot supports long running messages that can take
+      longer then the 10 - 15
+
+      second timeout imposed by most channels. Defaults to false.
+    fullName: longRunningMessages
+    remarks: >-
+      This works by immediately converting the incoming request to a proactive
+      conversation. Care should
+
+      be used for bots that operate in a shared hosting environment. The
+      incoming request is immediately
+
+      completed and many shared hosting environments will mark the bot's process
+      as idle and shut it down.
+    isDeprecated: false
+    syntax:
+      content: 'longRunningMessages: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: removeRecipientMention
+    uid: '@microsoft/teams-ai.ApplicationOptions.removeRecipientMention'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. If true, the bot will automatically remove mentions of the bot's
+      name from incoming
+
+      messages. Defaults to true.
+    fullName: removeRecipientMention
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'removeRecipientMention: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: startTypingTimer
+    uid: '@microsoft/teams-ai.ApplicationOptions.startTypingTimer'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. If true, the bot will automatically start a typing timer when
+      messages are received.
+
+      This allows the bot to automatically indicate that it's received the
+      message and is processing
+
+      the request. Defaults to true.
+    fullName: startTypingTimer
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'startTypingTimer: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: storage
+    uid: '@microsoft/teams-ai.ApplicationOptions.storage'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Storage provider to use for the application.
+    fullName: storage
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'storage?: Storage'
+      return:
+        description: ''
+        type: Storage
+  - name: taskModules
+    uid: '@microsoft/teams-ai.ApplicationOptions.taskModules'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Options used to customize the processing of task module
+      requests.
+    fullName: taskModules
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'taskModules?: TaskModulesOptions'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TaskModulesOptions" />
+  - name: turnStateFactory
+    uid: '@microsoft/teams-ai.ApplicationOptions.turnStateFactory'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Factory used to create a custom turn state instance.
+    fullName: turnStateFactory
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'turnStateFactory: () => TState'
+      return:
+        description: ''
+        type: () =&gt; TState
