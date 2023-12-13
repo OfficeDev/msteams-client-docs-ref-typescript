@@ -1375,7 +1375,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.__@captureRejectionSymbol@232
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.__@captureRejectionSymbol@233
 methods:
   - name: initialize(InkingManager, UserMeetingRole[])
     uid: '@microsoft/live-share-canvas.LiveCanvas.initialize'

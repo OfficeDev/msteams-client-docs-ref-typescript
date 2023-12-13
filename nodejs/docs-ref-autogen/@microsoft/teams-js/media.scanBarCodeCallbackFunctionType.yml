@@ -2,7 +2,9 @@
 name: scanBarCodeCallbackFunctionType
 uid: '@microsoft/teams-js.media.scanBarCodeCallbackFunctionType'
 package: '@microsoft/teams-js'
-summary: Scan BarCode callback function type.
+summary: >-
+  Function callback type used when calling
+  [scanBarCode](xref:@microsoft/teams-js.media.scanBarCode).
 fullName: scanBarCodeCallbackFunctionType
 remarks: ''
 isDeprecated: false

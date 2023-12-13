@@ -15,7 +15,12 @@ properties:
   - name: user
     uid: '@microsoft/teams-js.OpenSingleChatRequest.user'
     package: '@microsoft/teams-js'
-    summary: The Microsoft Entra UPN (e-mail address) of the user to chat with
+    summary: >-
+      The [Microsoft Entra
+      UPNs](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/plan-connect-userprincipalname)
+      (usually but not always an e-mail address)
+
+      of the user with whom to begin a chat
     fullName: user
     remarks: ''
     isDeprecated: false

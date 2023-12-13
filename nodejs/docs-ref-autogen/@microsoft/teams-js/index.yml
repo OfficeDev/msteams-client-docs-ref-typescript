@@ -194,6 +194,69 @@ classes:
   - '@microsoft/teams-js.ParentAppWindow'
   - '@microsoft/teams-js.VideoPerformanceMonitor'
 functions:
+  - name: appInitializeHelper(string, string[])
+    uid: '@microsoft/teams-js.appInitializeHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function appInitializeHelper(apiVersionTag: string,
+        validMessageOrigins?: string[]): Promise<void>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: validMessageOrigins
+          type: string[]
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: backStackNavigateBackHelper(string)
+    uid: '@microsoft/teams-js.backStackNavigateBackHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function backStackNavigateBackHelper(apiVersionTag: string):
+        Promise<void>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      botUrlOpenHelper(string, BotUrlDialogInfo, DialogSubmitHandler,
+      PostMessageChannel)
+    uid: '@microsoft/teams-js.botUrlOpenHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function botUrlOpenHelper(apiVersionTag: string, urlDialogInfo:
+        BotUrlDialogInfo, submitHandler?: DialogSubmitHandler,
+        messageFromChildHandler?: PostMessageChannel)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: urlDialogInfo
+          type: <xref uid="@microsoft/teams-js.BotUrlDialogInfo" />
+          description: ''
+        - id: submitHandler
+          type: <xref uid="@microsoft/teams-js.dialog.DialogSubmitHandler" />
+          description: ''
+        - id: messageFromChildHandler
+          type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
+          description: ''
   - name: enablePrintCapability()
     uid: '@microsoft/teams-js.enablePrintCapability'
     package: '@microsoft/teams-js'
@@ -303,6 +366,26 @@ functions:
         - id: tabInstanceParameters
           type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
           description: OPTIONAL Ignored, kept for future use
+  - name: getMruTabInstancesHelper(string, TabInstanceParameters)
+    uid: '@microsoft/teams-js.getMruTabInstancesHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getMruTabInstancesHelper(apiVersionTag: string,
+        tabInstanceParameters?: TabInstanceParameters): Promise<TabInformation>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: tabInstanceParameters
+          type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
   - name: >-
       getTabInstances(getTabInstancesCallbackFunctionType,
       TabInstanceParameters)
@@ -341,6 +424,26 @@ functions:
           description: >-
             OPTIONAL Flags that specify whether to scope call to favorite teams
             or channels.
+  - name: getTabInstancesHelper(string, TabInstanceParameters)
+    uid: '@microsoft/teams-js.getTabInstancesHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTabInstancesHelper(apiVersionTag: string,
+        tabInstanceParameters?: TabInstanceParameters): Promise<TabInformation>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: tabInstanceParameters
+          type: <xref uid="@microsoft/teams-js.TabInstanceParameters" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/teams-js.TabInformation" />&gt;
   - name: initialize(callbackFunctionType, string[])
     uid: '@microsoft/teams-js.initialize'
     package: '@microsoft/teams-js'
@@ -407,6 +510,21 @@ functions:
 
             They must have https: protocol otherwise they will be ignored.
             Example: https:www.example.com
+  - name: isSdkError(unknown)
+    uid: '@microsoft/teams-js.isSdkError'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function isSdkError(err: unknown): err'
+      parameters:
+        - id: err
+          type: unknown
+          description: ''
+      return:
+        description: ''
+        type: err
   - name: navigateBack(onCompleteHandlerFunctionType)
     uid: '@microsoft/teams-js.navigateBack'
     package: '@microsoft/teams-js'
@@ -465,6 +583,26 @@ functions:
         - id: onComplete
           type: <xref uid="@microsoft/teams-js.onCompleteHandlerFunctionType" />
           description: The callback to invoke when the action is complete.
+  - name: navigateCrossDomainHelper(string, string)
+    uid: '@microsoft/teams-js.navigateCrossDomainHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function navigateCrossDomainHelper(apiVersionTag: string, url: string):
+        Promise<void>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: url
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: navigateToTab(TabInstance, onCompleteHandlerFunctionType)
     uid: '@microsoft/teams-js.navigateToTab'
     package: '@microsoft/teams-js'
@@ -490,6 +628,26 @@ functions:
         - id: onComplete
           type: <xref uid="@microsoft/teams-js.onCompleteHandlerFunctionType" />
           description: The callback to invoke when the action is complete.
+  - name: openLinkHelper(string, string)
+    uid: '@microsoft/teams-js.openLinkHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function openLinkHelper(apiVersionTag: string, deepLink: string):
+        Promise<void>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: deepLink
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: print()
     uid: '@microsoft/teams-js.print'
     package: '@microsoft/teams-js'
@@ -691,6 +849,23 @@ functions:
             uid="@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType"
             />
           description: The handler to invoke when the user changes their theme.
+  - name: registerOnThemeChangeHandlerHelper(string, themeHandler)
+    uid: '@microsoft/teams-js.registerOnThemeChangeHandlerHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerOnThemeChangeHandlerHelper(apiVersionTag: string,
+        handler: themeHandler)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: handler
+          type: <xref uid="@microsoft/teams-js.app.themeHandler" />
+          description: ''
   - name: returnFocus(boolean)
     uid: '@microsoft/teams-js.returnFocus'
     package: '@microsoft/teams-js'
@@ -710,6 +885,40 @@ functions:
         - id: navigateForward
           type: boolean
           description: Determines the direction to focus in teams app.
+  - name: returnFocusHelper(string, boolean)
+    uid: '@microsoft/teams-js.returnFocusHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function returnFocusHelper(apiVersionTag: string, navigateForward?:
+        boolean)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: navigateForward
+          type: boolean
+          description: ''
+  - name: setCurrentFrameHelper(string, FrameInfo)
+    uid: '@microsoft/teams-js.setCurrentFrameHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setCurrentFrameHelper(apiVersionTag: string, frameInfo:
+        FrameInfo)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: frameInfo
+          type: <xref uid="@microsoft/teams-js.FrameInfo" />
+          description: ''
   - name: setFrameContext(FrameInfo)
     uid: '@microsoft/teams-js.setFrameContext'
     package: '@microsoft/teams-js'
@@ -748,3 +957,103 @@ functions:
         - id: deepLinkParameters
           type: <xref uid="@microsoft/teams-js.DeepLinkParameters" />
           description: ID and label for the link and fallback URL.
+  - name: shareDeepLinkHelper(string, ShareDeepLinkParameters)
+    uid: '@microsoft/teams-js.shareDeepLinkHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function shareDeepLinkHelper(apiVersionTag: string, deepLinkParameters:
+        ShareDeepLinkParameters)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: deepLinkParameters
+          type: <xref uid="@microsoft/teams-js.ShareDeepLinkParameters" />
+          description: ''
+  - name: tabsNavigateToTabHelper(string, TabInstance)
+    uid: '@microsoft/teams-js.tabsNavigateToTabHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function tabsNavigateToTabHelper(apiVersionTag: string, tabInstance:
+        TabInstance): Promise<void>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: tabInstance
+          type: <xref uid="@microsoft/teams-js.TabInstance" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: updateResizeHelper(string, DialogSize)
+    uid: '@microsoft/teams-js.updateResizeHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateResizeHelper(apiVersionTag: string, dimensions:
+        DialogSize)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: dimensions
+          type: <xref uid="@microsoft/teams-js.DialogSize" />
+          description: ''
+  - name: >-
+      urlOpenHelper(string, UrlDialogInfo, DialogSubmitHandler,
+      PostMessageChannel)
+    uid: '@microsoft/teams-js.urlOpenHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function urlOpenHelper(apiVersionTag: string, urlDialogInfo:
+        UrlDialogInfo, submitHandler?: DialogSubmitHandler,
+        messageFromChildHandler?: PostMessageChannel)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: urlDialogInfo
+          type: <xref uid="@microsoft/teams-js.UrlDialogInfo" />
+          description: ''
+        - id: submitHandler
+          type: <xref uid="@microsoft/teams-js.dialog.DialogSubmitHandler" />
+          description: ''
+        - id: messageFromChildHandler
+          type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
+          description: ''
+  - name: urlSubmitHelper(string, string | object, string | string[])
+    uid: '@microsoft/teams-js.urlSubmitHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function urlSubmitHelper(apiVersionTag: string, result?: string |
+        object, appIds?: string | string[])
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: result
+          type: string | object
+          description: ''
+        - id: appIds
+          type: string | string[]
+          description: ''

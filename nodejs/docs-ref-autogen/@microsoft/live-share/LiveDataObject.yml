@@ -1286,7 +1286,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> DataObject.__@captureRejectionSymbol@277
+    inheritanceDescription: <b>Inherited From</b> DataObject.__@captureRejectionSymbol@278
 methods:
   - name: getClientInfo(string)
     uid: '@microsoft/live-share.LiveDataObject.getClientInfo'
