@@ -2,7 +2,9 @@
 name: selectMediaCallbackFunctionType
 uid: '@microsoft/teams-js.media.selectMediaCallbackFunctionType'
 package: '@microsoft/teams-js'
-summary: Select media callback function type.
+summary: >-
+  Function callback type used when calling
+  [selectMedia](xref:@microsoft/teams-js.media.selectMedia).
 fullName: selectMediaCallbackFunctionType
 remarks: ''
 isDeprecated: false

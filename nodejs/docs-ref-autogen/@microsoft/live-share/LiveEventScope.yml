@@ -1107,7 +1107,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.__@captureRejectionSymbol@277
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.__@captureRejectionSymbol@278
 methods:
   - name: offEvent<TEvent>(string, LiveEventListener<TEvent>)
     uid: '@microsoft/live-share.LiveEventScope.offEvent'

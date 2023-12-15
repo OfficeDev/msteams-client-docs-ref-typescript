@@ -30,8 +30,11 @@ properties:
     uid: '@microsoft/teams-js.OpenGroupChatRequest.users'
     package: '@microsoft/teams-js'
     summary: >-
-      Array containing Microsoft Entra UPNs (e-mail addresss) of users to open
-      chat with
+      Array containing [Microsoft Entra
+      UPNs](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/plan-connect-userprincipalname)
+      (usually but not always an e-mail address)
+
+      of users with whom to begin a chat
     fullName: users
     remarks: ''
     isDeprecated: false

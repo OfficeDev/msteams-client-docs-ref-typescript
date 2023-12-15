@@ -47,10 +47,10 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getFrameContext(): FrameContexts'
+      content: 'function getFrameContext(): FrameContexts | undefined'
       return:
         description: the Frame Context.
-        type: <xref uid="@microsoft/teams-js.FrameContexts" />
+        type: <xref uid="@microsoft/teams-js.FrameContexts" /> | undefined
   - name: initialize(string[])
     uid: '@microsoft/teams-js.app.initialize'
     package: '@microsoft/teams-js'

@@ -1616,7 +1616,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@232
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@233
 methods:
   - name: activate()
     uid: '@microsoft/live-share-canvas.InkingManager.activate'
