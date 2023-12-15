@@ -24,18 +24,6 @@ typeAliases:
 package: '@microsoft/teams-js'
 previewState: beta
 functions:
-  - name: isSupported()
-    uid: '@microsoft/teams-js.app.lifecycle.isSupported'
-    package: '@microsoft/teams-js'
-    summary: Checks if app.lifecycle is supported by the host.
-    remarks: ''
-    previewState: beta
-    isDeprecated: false
-    syntax:
-      content: 'function isSupported(): boolean'
-      return:
-        description: boolean to represent whether the lifecycle capability is supported
-        type: boolean
   - name: >-
       registerBeforeSuspendOrTerminateHandler(registerBeforeSuspendOrTerminateHandlerFunctionType)
     uid: '@microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandler'

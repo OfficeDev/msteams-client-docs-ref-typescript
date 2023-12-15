@@ -2,7 +2,9 @@
 name: getMediaCallbackFunctionType
 uid: '@microsoft/teams-js.media.getMediaCallbackFunctionType'
 package: '@microsoft/teams-js'
-summary: Get media callback function type.
+summary: >-
+  Function callback type used when calling
+  [getMedia](xref:@microsoft/teams-js.media.Media.getMedia)
 fullName: getMediaCallbackFunctionType
 remarks: ''
 isDeprecated: false

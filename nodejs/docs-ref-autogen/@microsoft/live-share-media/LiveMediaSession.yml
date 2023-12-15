@@ -1358,7 +1358,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> LiveDataObject.__@captureRejectionSymbol@116
+    inheritanceDescription: <b>Inherited From</b> LiveDataObject.__@captureRejectionSymbol@117
 methods:
   - name: initialize(UserMeetingRole[])
     uid: '@microsoft/live-share-media.LiveMediaSession.initialize'
