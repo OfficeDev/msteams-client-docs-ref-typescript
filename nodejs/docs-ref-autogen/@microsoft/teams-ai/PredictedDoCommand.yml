@@ -1,0 +1,47 @@
+### YamlMime:TSType
+name: PredictedDoCommand
+uid: '@microsoft/teams-ai.PredictedDoCommand'
+package: '@microsoft/teams-ai'
+summary: A predicted DO command is an action that the AI system should perform.
+fullName: PredictedDoCommand
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: action
+    uid: '@microsoft/teams-ai.PredictedDoCommand.action'
+    package: '@microsoft/teams-ai'
+    summary: The named action that the AI system should perform.
+    fullName: action
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'action: string'
+      return:
+        description: ''
+        type: string
+  - name: parameters
+    uid: '@microsoft/teams-ai.PredictedDoCommand.parameters'
+    package: '@microsoft/teams-ai'
+    summary: Any parameters that the AI system should use to perform the action.
+    fullName: parameters
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'parameters: Record<string, any>'
+      return:
+        description: ''
+        type: Record&lt;string, any&gt;
+  - name: type
+    uid: '@microsoft/teams-ai.PredictedDoCommand.type'
+    package: '@microsoft/teams-ai'
+    summary: Type to indicate that a DO command is being returned.
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: "DO"'
+      return:
+        description: ''
+        type: '"DO"'
+extends: <xref uid="@microsoft/teams-ai.PredictedCommand" />

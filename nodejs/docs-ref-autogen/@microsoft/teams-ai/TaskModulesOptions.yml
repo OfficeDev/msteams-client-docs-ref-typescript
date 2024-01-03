@@ -1,0 +1,29 @@
+### YamlMime:TSType
+name: TaskModulesOptions
+uid: '@microsoft/teams-ai.TaskModulesOptions'
+package: '@microsoft/teams-ai'
+summary: Options for TaskModules class.
+fullName: TaskModulesOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: taskDataFilter
+    uid: '@microsoft/teams-ai.TaskModulesOptions.taskDataFilter'
+    package: '@microsoft/teams-ai'
+    summary: Data field to use to identify the verb of the handler to trigger.
+    fullName: taskDataFilter
+    remarks: >-
+      When a task module is triggered, the field name specified here will be
+      used to determine
+
+      the name of the verb for the handler to route the request to.
+
+
+      Defaults to a value of 'verb'.
+    isDeprecated: false
+    syntax:
+      content: 'taskDataFilter?: string'
+      return:
+        description: ''
+        type: string

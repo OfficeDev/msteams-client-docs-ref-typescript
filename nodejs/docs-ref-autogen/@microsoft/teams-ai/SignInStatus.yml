@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: SignInStatus
+uid: '@microsoft/teams-ai.SignInStatus'
+package: '@microsoft/teams-ai'
+summary: The sign in status.
+fullName: SignInStatus
+remarks: >-
+  `pending` - The user is not signed in and the bot has initiated the sign in
+  flow.
+
+  `complete` - The user has successfully signed in.
+
+  `error` - An error occurred while signing the user in.
+isDeprecated: false
+syntax: |
+  type SignInStatus = "pending" | "complete" | "error"

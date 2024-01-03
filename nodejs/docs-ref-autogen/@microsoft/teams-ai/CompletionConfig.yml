@@ -1,0 +1,168 @@
+### YamlMime:TSType
+name: CompletionConfig
+uid: '@microsoft/teams-ai.CompletionConfig'
+package: '@microsoft/teams-ai'
+summary: Interface for the completion configuration portion of a prompt template.
+fullName: CompletionConfig
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: completion_type
+    uid: '@microsoft/teams-ai.CompletionConfig.completion_type'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Type of completion to use. Defaults to using the completion type
+      of the configured default model.
+    fullName: completion_type
+    remarks: New in schema version 1.1.
+    isDeprecated: false
+    syntax:
+      content: 'completion_type?: "chat" | "text"'
+      return:
+        description: ''
+        type: '"chat" | "text"'
+  - name: frequency_penalty
+    uid: '@microsoft/teams-ai.CompletionConfig.frequency_penalty'
+    package: '@microsoft/teams-ai'
+    summary: The models frequency_penalty as a number between 0 and 1.
+    fullName: frequency_penalty
+    remarks: Defaults to 0.
+    isDeprecated: false
+    syntax:
+      content: 'frequency_penalty: number'
+      return:
+        description: ''
+        type: number
+  - name: include_history
+    uid: '@microsoft/teams-ai.CompletionConfig.include_history'
+    package: '@microsoft/teams-ai'
+    summary: If true, the prompt will be augmented with the conversation history.
+    fullName: include_history
+    remarks: |-
+      New in schema version 1.1.
+      Defaults to true.
+    isDeprecated: false
+    syntax:
+      content: 'include_history: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: include_images
+    uid: '@microsoft/teams-ai.CompletionConfig.include_images'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      If true, the prompt will be augmented with any images uploaded by the
+      user.
+    fullName: include_images
+    remarks: |-
+      New in schema version 1.1.
+      Defaults to false.
+    isDeprecated: false
+    syntax:
+      content: 'include_images: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: include_input
+    uid: '@microsoft/teams-ai.CompletionConfig.include_input'
+    package: '@microsoft/teams-ai'
+    summary: If true, the prompt will be augmented with the users input.
+    fullName: include_input
+    remarks: |-
+      New in schema version 1.1.
+      Defaults to true.
+    isDeprecated: false
+    syntax:
+      content: 'include_input: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: max_input_tokens
+    uid: '@microsoft/teams-ai.CompletionConfig.max_input_tokens'
+    package: '@microsoft/teams-ai'
+    summary: The maximum number of tokens allowed in the input.
+    fullName: max_input_tokens
+    remarks: |-
+      New in schema version 1.1.
+      Defaults to 2048.
+    isDeprecated: false
+    syntax:
+      content: 'max_input_tokens: number'
+      return:
+        description: ''
+        type: number
+  - name: max_tokens
+    uid: '@microsoft/teams-ai.CompletionConfig.max_tokens'
+    package: '@microsoft/teams-ai'
+    summary: The maximum number of tokens to generate.
+    fullName: max_tokens
+    remarks: Defaults to 150.
+    isDeprecated: false
+    syntax:
+      content: 'max_tokens: number'
+      return:
+        description: ''
+        type: number
+  - name: model
+    uid: '@microsoft/teams-ai.CompletionConfig.model'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Name of the model to use otherwise the configured default model
+      is used.
+    fullName: model
+    remarks: New in schema version 1.1.
+    isDeprecated: false
+    syntax:
+      content: 'model?: string'
+      return:
+        description: ''
+        type: string
+  - name: presence_penalty
+    uid: '@microsoft/teams-ai.CompletionConfig.presence_penalty'
+    package: '@microsoft/teams-ai'
+    summary: The models presence_penalty as a number between 0 and 1.
+    fullName: presence_penalty
+    remarks: Defaults to 0.
+    isDeprecated: false
+    syntax:
+      content: 'presence_penalty: number'
+      return:
+        description: ''
+        type: number
+  - name: stop_sequences
+    uid: '@microsoft/teams-ai.CompletionConfig.stop_sequences'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Array of stop sequences that when hit will stop generation.
+    fullName: stop_sequences
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'stop_sequences?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: temperature
+    uid: '@microsoft/teams-ai.CompletionConfig.temperature'
+    package: '@microsoft/teams-ai'
+    summary: The models temperature as a number between 0 and 2.
+    fullName: temperature
+    remarks: Defaults to 0.
+    isDeprecated: false
+    syntax:
+      content: 'temperature: number'
+      return:
+        description: ''
+        type: number
+  - name: top_p
+    uid: '@microsoft/teams-ai.CompletionConfig.top_p'
+    package: '@microsoft/teams-ai'
+    summary: The models top_p as a number between 0 and 2.
+    fullName: top_p
+    remarks: Defaults to 0.
+    isDeprecated: false
+    syntax:
+      content: 'top_p: number'
+      return:
+        description: ''
+        type: number

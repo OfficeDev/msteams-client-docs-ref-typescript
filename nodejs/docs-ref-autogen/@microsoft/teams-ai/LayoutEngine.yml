@@ -1,0 +1,93 @@
+### YamlMime:TSType
+name: LayoutEngine
+uid: '@microsoft/teams-ai.LayoutEngine'
+package: '@microsoft/teams-ai'
+summary: >-
+  Base layout engine that renders a set of `auto`, `fixed`, or `proportional`
+  length sections.
+fullName: LayoutEngine
+remarks: >-
+  This class is used internally by the `Prompt` and `GroupSection` classes to
+  render their sections.
+isDeprecated: false
+type: class
+constructors:
+  - name: LayoutEngine(PromptSection[], number, boolean, string)
+    uid: '@microsoft/teams-ai.LayoutEngine.constructor'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new LayoutEngine(sections: PromptSection[], tokens: number, required:
+        boolean, separator: string)
+      parameters:
+        - id: sections
+          type: <xref uid="@microsoft/teams-ai.PromptSection" />[]
+          description: List of sections to layout.
+        - id: tokens
+          type: number
+          description: Sizing strategy for this section.
+        - id: required
+          type: boolean
+          description: Indicates if this section is required.
+        - id: separator
+          type: string
+          description: Separator to use between sections when rendering as text.
+properties:
+  - name: required
+    uid: '@microsoft/teams-ai.LayoutEngine.required'
+    package: '@microsoft/teams-ai'
+    summary: If true the section is mandatory otherwise it can be safely dropped.
+    fullName: required
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'required: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: sections
+    uid: '@microsoft/teams-ai.LayoutEngine.sections'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: sections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sections: PromptSection[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptSection" />[]
+  - name: separator
+    uid: '@microsoft/teams-ai.LayoutEngine.separator'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: separator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'separator: string'
+      return:
+        description: ''
+        type: string
+  - name: tokens
+    uid: '@microsoft/teams-ai.LayoutEngine.tokens'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The requested token budget for this section.
+
+      - Values between 0.0 and 1.0 represent a percentage of the total budget
+      and the section will be layed out proportionally to all other sections.
+
+      - Values greater than 1.0 represent the max number of tokens the section
+      should be allowed to consume.
+    fullName: tokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tokens: number'
+      return:
+        description: ''
+        type: number

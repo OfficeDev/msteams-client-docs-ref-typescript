@@ -1,0 +1,400 @@
+### YamlMime:TSType
+name: AI
+uid: '@microsoft/teams-ai.AI'
+package: '@microsoft/teams-ai'
+summary: AI System.
+fullName: AI<TState>
+remarks: >-
+  The AI system is responsible for generating plans, moderating input and
+  output, and
+
+  generating prompts. It can be used free standing or routed to by the
+  Application object.
+isDeprecated: false
+type: class
+constructors:
+  - name: AI<TState>(AIOptions<TState>)
+    uid: '@microsoft/teams-ai.AI.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new AI system.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new AI(options: AIOptions<TState>)'
+      parameters:
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.AIOptions" />&lt;TState&gt;
+          description: The options used to configure the AI system.
+properties:
+  - name: DoCommandActionName
+    uid: '@microsoft/teams-ai.AI.DoCommandActionName'
+    package: '@microsoft/teams-ai'
+    summary: An action that is called to DO an action.
+    fullName: DoCommandActionName
+    remarks: >-
+      The action system is used to do other actions. Overriding this action lets
+      you customize the
+
+      execution of an individual action. You can use it to log actions being
+      used or to prevent
+
+      certain actions from being executed based on policy.
+
+
+      The default behavior is to simply execute the action handler passed in so
+      you will need to
+
+      perform that logic yourself should you override this action.
+    isDeprecated: false
+    syntax:
+      content: 'static DoCommandActionName: "___DO___" = "___DO___"'
+      return:
+        description: ''
+        type: '"___DO___"'
+  - name: FlaggedInputActionName
+    uid: '@microsoft/teams-ai.AI.FlaggedInputActionName'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      An action that will be called anytime an input is flagged by the
+      moderator.
+    fullName: FlaggedInputActionName
+    remarks: >-
+      The default behavior is to simply log an error to the console. Override to
+      send a custom
+
+      message to the user.
+    isDeprecated: false
+    syntax:
+      content: >-
+        static FlaggedInputActionName: "___FlaggedInput___" =
+        "___FlaggedInput___"
+      return:
+        description: ''
+        type: '"___FlaggedInput___"'
+  - name: FlaggedOutputActionName
+    uid: '@microsoft/teams-ai.AI.FlaggedOutputActionName'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      An action that will be called anytime an output is flagged by the
+      moderator.
+    fullName: FlaggedOutputActionName
+    remarks: >-
+      The default behavior is to simply log an error to the console. Override to
+      send a custom
+
+      message to the user.
+    isDeprecated: false
+    syntax:
+      content: >-
+        static FlaggedOutputActionName: "___FlaggedOutput___" =
+        "___FlaggedOutput___"
+      return:
+        description: ''
+        type: '"___FlaggedOutput___"'
+  - name: HttpErrorActionName
+    uid: '@microsoft/teams-ai.AI.HttpErrorActionName'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      An action that will be called anytime the planner encounters an HTTP
+      response with
+
+      status code >= `400`.
+    fullName: HttpErrorActionName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static HttpErrorActionName: "___HttpError___" = "___HttpError___"'
+      return:
+        description: ''
+        type: '"___HttpError___"'
+  - name: moderator
+    uid: '@microsoft/teams-ai.AI.moderator'
+    package: '@microsoft/teams-ai'
+    summary: Returns the moderator being used by the AI system.
+    fullName: moderator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: Moderator<TState> moderator
+      return:
+        description: The AI's moderator
+        type: <xref uid="@microsoft/teams-ai.Moderator" />&lt;TState&gt;
+  - name: planner
+    uid: '@microsoft/teams-ai.AI.planner'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: planner
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: Planner<TState> planner
+      return:
+        description: Returns the planner being used by the AI system.
+        type: <xref uid="@microsoft/teams-ai.Planner" />&lt;TState&gt;
+  - name: PlanReadyActionName
+    uid: '@microsoft/teams-ai.AI.PlanReadyActionName'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      An action that will be called after the plan has been predicted by the
+      planner and it has
+
+      passed moderation.
+    fullName: PlanReadyActionName
+    remarks: >-
+      Overriding this action lets you customize the decision to execute a plan
+      separately from the
+
+      moderator. The default behavior is to proceed with the plans execution
+      only with a plan
+
+      contains one or more commands. Returning false from this action can be
+      used to prevent the plan
+
+      from being executed.
+    isDeprecated: false
+    syntax:
+      content: 'static PlanReadyActionName: "___PlanReady___" = "___PlanReady___"'
+      return:
+        description: ''
+        type: '"___PlanReady___"'
+  - name: SayCommandActionName
+    uid: '@microsoft/teams-ai.AI.SayCommandActionName'
+    package: '@microsoft/teams-ai'
+    summary: An action that is called to SAY something.
+    fullName: SayCommandActionName
+    remarks: >-
+      Overriding this action lets you customize the execution of the SAY
+      command. You can use it
+
+      to log the output being generated or to add support for sending certain
+      types of output as
+
+      message attachments.
+
+
+      The default behavior attempts to look for an Adaptive Card in the output
+      and if found sends
+
+      it as an attachment. If no Adaptive Card is found then the output is sent
+      as a plain text
+
+      message.
+
+
+      If you override this action and want to automatically send Adaptive Cards
+      as attachments you
+
+      will need to handle that yourself.
+    isDeprecated: false
+    syntax:
+      content: 'static SayCommandActionName: "___SAY___" = "___SAY___"'
+      return:
+        description: ''
+        type: '"___SAY___"'
+  - name: StopCommandName
+    uid: '@microsoft/teams-ai.AI.StopCommandName'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      A text string that can be returned from an action to stop the AI system
+      from continuing
+
+      to execute the current plan.
+    fullName: StopCommandName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static StopCommandName: "STOP" = "STOP"'
+      return:
+        description: ''
+        type: '"STOP"'
+  - name: TooManyStepsActionName
+    uid: '@microsoft/teams-ai.AI.TooManyStepsActionName'
+    package: '@microsoft/teams-ai'
+    summary: The task either executed too many steps or timed out.
+    fullName: TooManyStepsActionName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static TooManyStepsActionName: "___TooManySteps___" =
+        "___TooManySteps___"
+      return:
+        description: ''
+        type: '"___TooManySteps___"'
+  - name: UnknownActionName
+    uid: '@microsoft/teams-ai.AI.UnknownActionName'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      An action that will be called anytime an unknown action is predicted by
+      the planner.
+    fullName: UnknownActionName
+    remarks: >-
+      The default behavior is to simply log an error to the console. The plan is
+      allowed to
+
+      continue execution by default.
+    isDeprecated: false
+    syntax:
+      content: 'static UnknownActionName: "___UnknownAction___" = "___UnknownAction___"'
+      return:
+        description: ''
+        type: '"___UnknownAction___"'
+methods:
+  - name: >-
+      action<TParameters>(string | string[], (context: TurnContext, state:
+      TState, parameters: TParameters, action?: string) => Promise<string>)
+    uid: '@microsoft/teams-ai.AI.action'
+    package: '@microsoft/teams-ai'
+    summary: Registers a handler for a named action.
+    remarks: >-
+      The AI systems planner returns plans that are made up of a series of
+      commands or actions
+
+      that should be performed. Registering a handler lets you provide code that
+      should be run in
+
+      response to one of the predicted actions.
+
+
+      Plans support a DO command which specifies the name of an action to call
+      and an optional
+
+      set of entities that should be passed to the action. The internal plan
+      executor will call
+
+      the registered handler for the action passing in the current context,
+      state, and entities.
+
+
+      Additionally, the AI system itself uses actions to handle things like
+      unknown actions,
+
+      flagged input, and flagged output. You can override these actions by
+      registering your own
+
+      handler for them. The names of the built-in actions are available as
+      static properties on
+
+      the AI class.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function action<TParameters>(name: string | string[], handler: (context:
+        TurnContext, state: TState, parameters: TParameters, action?: string) =>
+        Promise<string>): AI<TState>
+      parameters:
+        - id: name
+          type: string | string[]
+          description: Unique name of the action.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, parameters: TParameters,
+            action?: string) =&gt; Promise&lt;string&gt;
+          description: Function to call when the action is triggered.
+      return:
+        description: The AI system instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+  - name: >-
+      defaultAction<TParameters>(string | string[], (context: TurnContext,
+      state: TState, parameters: TParameters, action?: string) =>
+      Promise<string>)
+    uid: '@microsoft/teams-ai.AI.defaultAction'
+    package: '@microsoft/teams-ai'
+    summary: Registers the default handler for a named action.
+    remarks: >-
+      Default handlers can be replaced by calling the action() method with the
+      same name.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function defaultAction<TParameters>(name: string | string[], handler:
+        (context: TurnContext, state: TState, parameters: TParameters, action?:
+        string) => Promise<string>): AI<TState>
+      parameters:
+        - id: name
+          type: string | string[]
+          description: Unique name of the action.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, parameters: TParameters,
+            action?: string) =&gt; Promise&lt;string&gt;
+          description: Function to call when the action is triggered.
+      return:
+        description: The AI system instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+  - name: doAction<TParameters>(TurnContext, TState, string, TParameters)
+    uid: '@microsoft/teams-ai.AI.doAction'
+    package: '@microsoft/teams-ai'
+    summary: Manually executes a named action.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function doAction<TParameters>(context: TurnContext, state: TState,
+        action: string, parameters?: TParameters): Promise<string>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: state
+          type: TState
+          description: Current turn state.
+        - id: action
+          type: string
+          description: Name of the action to execute.
+        - id: parameters
+          type: TParameters
+          description: Optional. Entities to pass to the action.
+      return:
+        description: True if the action thinks other actions should be executed.
+        type: Promise&lt;string&gt;
+  - name: hasAction(string)
+    uid: '@microsoft/teams-ai.AI.hasAction'
+    package: '@microsoft/teams-ai'
+    summary: Checks to see if the AI system has a handler for a given action.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function hasAction(action: string): boolean'
+      parameters:
+        - id: action
+          type: string
+          description: Name of the action to check.
+      return:
+        description: True if the AI system has a handler for the given action.
+        type: boolean
+  - name: run(TurnContext, TState, number, number)
+    uid: '@microsoft/teams-ai.AI.run'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Calls the configured planner to generate a plan and executes the plan that
+      is returned.
+    remarks: >-
+      The moderator is called to review the input and output of the plan. If the
+      moderator flags
+
+      the input or output then the appropriate action is called. If the
+      moderator allows the input
+
+      and output then the plan is executed.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function run(context: TurnContext, state: TState, start_time?: number,
+        step_count?: number): Promise<boolean>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: state
+          type: TState
+          description: Current turn state.
+        - id: start_time
+          type: number
+          description: Optional. Time the AI system started running
+        - id: step_count
+          type: number
+          description: Optional. Number of steps that have been executed.
+      return:
+        description: True if the plan was completely executed, otherwise false.
+        type: Promise&lt;boolean&gt;

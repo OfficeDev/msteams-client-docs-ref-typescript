@@ -1,0 +1,71 @@
+### YamlMime:TSType
+name: ConfiguredPromptManagerOptions
+uid: '@microsoft/teams-ai.ConfiguredPromptManagerOptions'
+package: '@microsoft/teams-ai'
+summary: The configured PromptManager options.
+fullName: ConfiguredPromptManagerOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: max_conversation_history_tokens
+    uid: >-
+      @microsoft/teams-ai.ConfiguredPromptManagerOptions.max_conversation_history_tokens
+    package: '@microsoft/teams-ai'
+    summary: Maximum number of tokens to of conversation history to include in prompts.
+    fullName: max_conversation_history_tokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_conversation_history_tokens: number'
+      return:
+        description: ''
+        type: number
+  - name: max_history_messages
+    uid: '@microsoft/teams-ai.ConfiguredPromptManagerOptions.max_history_messages'
+    package: '@microsoft/teams-ai'
+    summary: Maximum number of messages to use when rendering conversation_history.
+    fullName: max_history_messages
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_history_messages: number'
+      return:
+        description: ''
+        type: number
+  - name: max_input_tokens
+    uid: '@microsoft/teams-ai.ConfiguredPromptManagerOptions.max_input_tokens'
+    package: '@microsoft/teams-ai'
+    summary: Maximum number of tokens user input to include in prompts.
+    fullName: max_input_tokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_input_tokens: number'
+      return:
+        description: ''
+        type: number
+  - name: promptsFolder
+    uid: '@microsoft/teams-ai.ConfiguredPromptManagerOptions.promptsFolder'
+    package: '@microsoft/teams-ai'
+    summary: Path to the filesystem folder containing all the applications prompts.
+    fullName: promptsFolder
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'promptsFolder: string'
+      return:
+        description: ''
+        type: string
+  - name: role
+    uid: '@microsoft/teams-ai.ConfiguredPromptManagerOptions.role'
+    package: '@microsoft/teams-ai'
+    summary: Message role to use for loaded prompts.
+    fullName: role
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'role: string'
+      return:
+        description: ''
+        type: string

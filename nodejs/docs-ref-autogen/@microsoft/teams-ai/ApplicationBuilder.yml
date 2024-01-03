@@ -1,0 +1,186 @@
+### YamlMime:TSType
+name: ApplicationBuilder
+uid: '@microsoft/teams-ai.ApplicationBuilder'
+package: '@microsoft/teams-ai'
+summary: A builder class for simplifying the creation of an Application instance.
+fullName: ApplicationBuilder<TState>
+remarks: ''
+isDeprecated: false
+type: class
+methods:
+  - name: build()
+    uid: '@microsoft/teams-ai.ApplicationBuilder.build'
+    package: '@microsoft/teams-ai'
+    summary: Builds and returns a new Application instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function build(): Application<TState>'
+      return:
+        description: The Application instance.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: setRemoveRecipientMention(boolean)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.setRemoveRecipientMention'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Configures the removing of mentions of the bot's name from incoming
+      messages.
+
+      Default state for removeRecipientMention is true
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setRemoveRecipientMention(removeRecipientMention: boolean):
+        ApplicationBuilder<TState>
+      parameters:
+        - id: removeRecipientMention
+          type: boolean
+          description: The boolean for removing reciepient mentions.
+      return:
+        description: The ApplicationBuilder instance.
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
+  - name: setStartTypingTimer(boolean)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.setStartTypingTimer'
+    package: '@microsoft/teams-ai'
+    summary: |-
+      Configures the typing timer when messages are received.
+      Default state for startTypingTimer is true
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setStartTypingTimer(startTypingTimer: boolean):
+        ApplicationBuilder<TState>
+      parameters:
+        - id: startTypingTimer
+          type: boolean
+          description: The boolean for starting the typing timer.
+      return:
+        description: The ApplicationBuilder instance.
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
+  - name: withAdaptiveCardOptions(AdaptiveCardsOptions)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.withAdaptiveCardOptions'
+    package: '@microsoft/teams-ai'
+    summary: Configures the processing of Adaptive Card requests.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function withAdaptiveCardOptions(adaptiveCardOptions:
+        AdaptiveCardsOptions): ApplicationBuilder<TState>
+      parameters:
+        - id: adaptiveCardOptions
+          type: <xref uid="@microsoft/teams-ai.AdaptiveCardsOptions" />
+          description: The options for the Adaptive Cards.
+      return:
+        description: The ApplicationBuilder instance.
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
+  - name: withAIOptions(AIOptions<TState>)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.withAIOptions'
+    package: '@microsoft/teams-ai'
+    summary: Configures the AI system to use for processing incoming messages.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function withAIOptions(aiOptions: AIOptions<TState>):
+        ApplicationBuilder<TState>
+      parameters:
+        - id: aiOptions
+          type: <xref uid="@microsoft/teams-ai.AIOptions" />&lt;TState&gt;
+          description: The options for the AI system.
+      return:
+        description: The ApplicationBuilder instance.
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
+  - name: withAuthentication(BotAdapter, AuthenticationOptions)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.withAuthentication'
+    package: '@microsoft/teams-ai'
+    summary: Configures user authentication settings.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function withAuthentication(adapter: BotAdapter, authenticationOptions:
+        AuthenticationOptions): ApplicationBuilder<TState>
+      parameters:
+        - id: adapter
+          type: BotAdapter
+          description: The adapter to use for user authentication.
+        - id: authenticationOptions
+          type: <xref uid="@microsoft/teams-ai.AuthenticationOptions" />
+          description: The options to configure the authentication manager.
+      return:
+        description: The ApplicationBuilder instance.
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
+  - name: withLongRunningMessages(BotAdapter, string)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.withLongRunningMessages'
+    package: '@microsoft/teams-ai'
+    summary: |-
+      Configures the application to use long running messages.
+      Default state for longRunningMessages is false
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function withLongRunningMessages(adapter: BotAdapter, botAppId: string):
+        ApplicationBuilder<TState>
+      parameters:
+        - id: adapter
+          type: BotAdapter
+          description: The adapter to use for routing incoming requests.
+        - id: botAppId
+          type: string
+          description: The Microsoft App ID for the bot.
+      return:
+        description: The ApplicationBuilder instance.
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
+  - name: withStorage(Storage)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.withStorage'
+    package: '@microsoft/teams-ai'
+    summary: Configures the storage system to use for storing the bot's state.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function withStorage(storage: Storage): ApplicationBuilder<TState>'
+      parameters:
+        - id: storage
+          type: Storage
+          description: The storage system to use.
+      return:
+        description: The ApplicationBuilder instance.
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
+  - name: withTaskModuleOptions(TaskModulesOptions)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.withTaskModuleOptions'
+    package: '@microsoft/teams-ai'
+    summary: Configures the processing of Task Module requests.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function withTaskModuleOptions(taskModuleOptions: TaskModulesOptions):
+        ApplicationBuilder<TState>
+      parameters:
+        - id: taskModuleOptions
+          type: <xref uid="@microsoft/teams-ai.TaskModulesOptions" />
+          description: The options for the Task Modules.
+      return:
+        description: The ApplicationBuilder instance.
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
+  - name: withTurnStateFactory(() => TState)
+    uid: '@microsoft/teams-ai.ApplicationBuilder.withTurnStateFactory'
+    package: '@microsoft/teams-ai'
+    summary: Configures the turn state factory for managing the bot's turn state.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function withTurnStateFactory(turnStateFactory: () => TState):
+        ApplicationBuilder<TState>
+      parameters:
+        - id: turnStateFactory
+          type: () =&gt; TState
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;

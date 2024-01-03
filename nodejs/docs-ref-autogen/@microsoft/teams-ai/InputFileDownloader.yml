@@ -1,0 +1,32 @@
+### YamlMime:TSType
+name: InputFileDownloader
+uid: '@microsoft/teams-ai.InputFileDownloader'
+package: '@microsoft/teams-ai'
+summary: >-
+  A plugin responsible for downloading files relative to the current user's
+  input.
+fullName: InputFileDownloader<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: downloadFiles(TurnContext, TState)
+    uid: '@microsoft/teams-ai.InputFileDownloader.downloadFiles'
+    package: '@microsoft/teams-ai'
+    summary: Download any files relative to the current user's input.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function downloadFiles(context: TurnContext, state: TState):
+        Promise<InputFile[]>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.InputFile" />[]&gt;

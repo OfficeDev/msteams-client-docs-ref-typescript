@@ -1,0 +1,199 @@
+### YamlMime:TSType
+name: ActionAugmentationSection
+uid: '@microsoft/teams-ai.ActionAugmentationSection'
+package: '@microsoft/teams-ai'
+summary: A prompt section that renders a list of actions to the prompt.
+fullName: ActionAugmentationSection
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: ActionAugmentationSection(ChatCompletionAction[], string)
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `ActionAugmentationSection` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new ActionAugmentationSection(actions: ChatCompletionAction[],
+        callToAction: string)
+      parameters:
+        - id: actions
+          type: <xref uid="@microsoft/teams-ai.ChatCompletionAction" />[]
+          description: List of actions to render.
+        - id: callToAction
+          type: string
+          description: Text to display after the list of actions.
+properties:
+  - name: actions
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.actions'
+    package: '@microsoft/teams-ai'
+    summary: Map of action names to actions.
+    fullName: actions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: Map<string, ChatCompletionAction> actions
+      return:
+        description: ''
+        type: >-
+          Map&lt;string, <xref uid="@microsoft/teams-ai.ChatCompletionAction"
+          />&gt;
+inheritedProperties:
+  - name: required
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.required'
+    package: '@microsoft/teams-ai'
+    summary: If true the section is mandatory otherwise it can be safely dropped.
+    fullName: required
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'required: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.required](xref:@microsoft/teams-ai.PromptSectionBase.required)
+  - name: separator
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.separator'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: separator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'separator: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.separator](xref:@microsoft/teams-ai.PromptSectionBase.separator)
+  - name: textPrefix
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.textPrefix'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: textPrefix
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'textPrefix: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.textPrefix](xref:@microsoft/teams-ai.PromptSectionBase.textPrefix)
+  - name: tokens
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.tokens'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The requested token budget for this section.
+
+      - Values between 0.0 and 1.0 represent a percentage of the total budget
+      and the section will be layed out proportionally to all other sections.
+
+      - Values greater than 1.0 represent the max number of tokens the section
+      should be allowed to consume.
+    fullName: tokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tokens: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.tokens](xref:@microsoft/teams-ai.PromptSectionBase.tokens)
+inheritedMethods:
+  - name: getMessageText(Message<string>)
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.getMessageText'
+    package: '@microsoft/teams-ai'
+    summary: Returns the content of a message as a string.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function getMessageText(message: Message<string>): string'
+      parameters:
+        - id: message
+          type: <xref uid="@microsoft/teams-ai.Message" />&lt;string&gt;
+          description: Message to get the text of.
+      return:
+        description: The message content as a string.
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.getMessageText](xref:@microsoft/teams-ai.PromptSectionBase.getMessageText)
+  - name: renderAsText(TurnContext, Memory, PromptFunctions, Tokenizer, number)
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.renderAsText'
+    package: '@microsoft/teams-ai'
+    summary: Renders the prompt section as a string of text.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function renderAsText(context: TurnContext, memory: Memory, functions:
+        PromptFunctions, tokenizer: Tokenizer, maxTokens: number):
+        Promise<RenderedPromptSection<string>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: Interface for accessing state variables.
+        - id: functions
+          type: <xref uid="@microsoft/teams-ai.PromptFunctions" />
+          description: Functions for rendering prompts.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding/decoding text.
+        - id: maxTokens
+          type: number
+          description: Maximum number of tokens allowed for the rendered prompt.
+      return:
+        description: The rendered prompt section.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.RenderedPromptSection"
+          />&lt;string&gt;&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.renderAsText](xref:@microsoft/teams-ai.PromptSectionBase.renderAsText)
+methods:
+  - name: renderAsMessages(TurnContext, Memory, PromptFunctions, Tokenizer, number)
+    uid: '@microsoft/teams-ai.ActionAugmentationSection.renderAsMessages'
+    package: '@microsoft/teams-ai'
+    summary: Renders the prompt section as a list of `Message` objects.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function renderAsMessages(context: TurnContext, memory: Memory,
+        functions: PromptFunctions, tokenizer: Tokenizer, maxTokens: number):
+        Promise<RenderedPromptSection<Message<string>[]>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: Interface for accessing state variables.
+        - id: functions
+          type: <xref uid="@microsoft/teams-ai.PromptFunctions" />
+          description: Functions for rendering prompts.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding/decoding text.
+        - id: maxTokens
+          type: number
+          description: Maximum number of tokens allowed for the rendered prompt.
+      return:
+        description: The rendered prompt section.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.RenderedPromptSection"
+          />&lt;<xref uid="@microsoft/teams-ai.Message"
+          />&lt;string&gt;[]&gt;&gt;
+extends: <xref uid="@microsoft/teams-ai.PromptSectionBase" />

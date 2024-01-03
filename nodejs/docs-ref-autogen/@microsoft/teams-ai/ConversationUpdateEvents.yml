@@ -1,0 +1,24 @@
+### YamlMime:TSTypeAlias
+name: ConversationUpdateEvents
+uid: '@microsoft/teams-ai.ConversationUpdateEvents'
+package: '@microsoft/teams-ai'
+summary: Conversation update events.
+fullName: ConversationUpdateEvents
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ConversationUpdateEvents =
+    | "channelCreated"
+    | "channelRenamed"
+    | "channelDeleted"
+    | "channelRestored"
+    | "membersAdded"
+    | "membersRemoved"
+    | "teamRenamed"
+    | "teamDeleted"
+    | "teamHardDeleted"
+    | "teamArchived"
+    | "teamUnarchived"
+    | "teamRestored"
+    | "topicName"
+    | "historyDisclosed"

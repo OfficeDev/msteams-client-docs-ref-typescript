@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: PromptCompletionModel
+uid: '@microsoft/teams-ai.PromptCompletionModel'
+package: '@microsoft/teams-ai'
+summary: An AI model that can be used to complete prompts.
+fullName: PromptCompletionModel
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: >-
+      completePrompt(TurnContext, Memory, PromptFunctions, Tokenizer,
+      PromptTemplate)
+    uid: '@microsoft/teams-ai.PromptCompletionModel.completePrompt'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completePrompt(context: TurnContext, memory: Memory, functions:
+        PromptFunctions, tokenizer: Tokenizer, template: PromptTemplate):
+        Promise<PromptResponse<string>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: functions
+          type: <xref uid="@microsoft/teams-ai.PromptFunctions" />
+          description: Functions to use when rendering the prompt.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use when rendering the prompt.
+        - id: template
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt template to complete.
+      return:
+        description: A `PromptResponse` with the status and message.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.PromptResponse"
+          />&lt;string&gt;&gt;

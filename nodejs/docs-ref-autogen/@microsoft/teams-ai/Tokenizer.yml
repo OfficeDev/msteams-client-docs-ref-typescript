@@ -1,0 +1,42 @@
+### YamlMime:TSType
+name: Tokenizer
+uid: '@microsoft/teams-ai.Tokenizer'
+package: '@microsoft/teams-ai'
+summary: |-
+  Copyright (c) Microsoft Corporation. All rights reserved.
+  Licensed under the MIT License.
+fullName: Tokenizer
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: decode(number[])
+    uid: '@microsoft/teams-ai.Tokenizer.decode'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function decode(tokens: number[]): string'
+      parameters:
+        - id: tokens
+          type: number[]
+          description: ''
+      return:
+        description: ''
+        type: string
+  - name: encode(string)
+    uid: '@microsoft/teams-ai.Tokenizer.encode'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function encode(text: string): number[]'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: number[]

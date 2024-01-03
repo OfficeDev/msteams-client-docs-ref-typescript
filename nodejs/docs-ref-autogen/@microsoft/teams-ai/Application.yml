@@ -1,0 +1,654 @@
+### YamlMime:TSType
+name: Application
+uid: '@microsoft/teams-ai.Application'
+package: '@microsoft/teams-ai'
+summary: Application class for routing and processing incoming requests.
+fullName: Application<TState>
+remarks: >-
+  The Application object replaces the traditional ActivityHandler that a bot
+  would use. It supports
+
+  a simpler fluent style of authoring bots versus the inheritance based approach
+  used by the
+
+  ActivityHandler class.
+
+
+  Additionally, it has built-in support for calling into the SDK's AI system and
+  can be used to create
+
+  bots that leverage Large Language Models (LLM) and other AI capabilities.
+isDeprecated: false
+type: class
+constructors:
+  - name: Application<TState>(Partial<ApplicationOptions<TState>>)
+    uid: '@microsoft/teams-ai.Application.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new Application instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new Application(options?: Partial<ApplicationOptions<TState>>)'
+      parameters:
+        - id: options
+          type: >-
+            Partial&lt;<xref uid="@microsoft/teams-ai.ApplicationOptions"
+            />&lt;TState&gt;&gt;
+          description: Optional. Options used to configure the application.
+properties:
+  - name: adapter
+    uid: '@microsoft/teams-ai.Application.adapter'
+    package: '@microsoft/teams-ai'
+    summary: The bot's adapter.
+    fullName: adapter
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: BotAdapter adapter
+      return:
+        description: The bot's adapter that is configured for the application.
+        type: BotAdapter
+  - name: adaptiveCards
+    uid: '@microsoft/teams-ai.Application.adaptiveCards'
+    package: '@microsoft/teams-ai'
+    summary: Fluent interface for accessing Adaptive Card specific features.
+    fullName: adaptiveCards
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: AdaptiveCards<TState> adaptiveCards
+      return:
+        description: The AdaptiveCards instance.
+        type: <xref uid="@microsoft/teams-ai.AdaptiveCards" />&lt;TState&gt;
+  - name: ai
+    uid: '@microsoft/teams-ai.Application.ai'
+    package: '@microsoft/teams-ai'
+    summary: Fluent interface for accessing AI specific features.
+    fullName: ai
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: AI<TState> ai
+      return:
+        description: The AI instance.
+        type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+  - name: authentication
+    uid: '@microsoft/teams-ai.Application.authentication'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      This property is only available if the Application was configured with
+      `authentication` options. An
+
+      exception will be thrown if you attempt to access it otherwise.
+    fullName: authentication
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: AuthenticationManager<TState> authentication
+      return:
+        description: The Authentication instance.
+        type: <xref uid="@microsoft/teams-ai.AuthenticationManager" />&lt;TState&gt;
+  - name: meetings
+    uid: '@microsoft/teams-ai.Application.meetings'
+    package: '@microsoft/teams-ai'
+    summary: Fluent interface for accessing Meetings specific features.
+    fullName: meetings
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: Meetings<TState> meetings
+      return:
+        description: The Meetings instance.
+        type: Meetings&lt;TState&gt;
+  - name: messageExtensions
+    uid: '@microsoft/teams-ai.Application.messageExtensions'
+    package: '@microsoft/teams-ai'
+    summary: Fluent interface for accessing Message Extensions' specific features.
+    fullName: messageExtensions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: MessageExtensions<TState> messageExtensions
+      return:
+        description: The MessageExtensions instance.
+        type: <xref uid="@microsoft/teams-ai.MessageExtensions" />&lt;TState&gt;
+  - name: options
+    uid: '@microsoft/teams-ai.Application.options'
+    package: '@microsoft/teams-ai'
+    summary: The application's configured options.
+    fullName: options
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: ApplicationOptions<TState> options
+      return:
+        description: The application's configured options.
+        type: <xref uid="@microsoft/teams-ai.ApplicationOptions" />&lt;TState&gt;
+  - name: taskModules
+    uid: '@microsoft/teams-ai.Application.taskModules'
+    package: '@microsoft/teams-ai'
+    summary: Fluent interface for accessing Task Module specific features.
+    fullName: taskModules
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: TaskModules<TState> taskModules
+      return:
+        description: The TaskModules instance.
+        type: <xref uid="@microsoft/teams-ai.TaskModules" />&lt;TState&gt;
+methods:
+  - name: >-
+      activity(string | RegExp | Selector | (string | RegExp | Selector)[],
+      (context: TurnContext, state: TState) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.activity'
+    package: '@microsoft/teams-ai'
+    summary: Handles incoming activities of a given type.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function activity(type: string | RegExp | Selector | (string | RegExp |
+        Selector)[], handler: (context: TurnContext, state: TState) =>
+        Promise<void>): Application<TState>
+      parameters:
+        - id: type
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: >-
+            Name of the activity type to match or a regular expression to match
+            against the incoming activity type. An array of type names or
+            expression can also be passed in.
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;void&gt;'
+          description: Function to call when the route is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: addRoute(Selector, RouteHandler<TState>, boolean)
+    uid: '@microsoft/teams-ai.Application.addRoute'
+    package: '@microsoft/teams-ai'
+    summary: Adds a new route to the application.
+    remarks: >-
+      Developers won't typically need to call this method directly as it's used
+      internally by all
+
+      of the fluent interfaces to register routes for their specific activity
+      types.
+
+
+      Routes will be matched in the order they're added to the application. The
+      first selector to
+
+      return `true` when an activity is received will have its handler called.
+
+
+      Invoke-based activities receive special treatment and are matched
+      separately as they typically
+
+      have shorter execution timeouts.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addRoute(selector: Selector, handler: RouteHandler<TState>,
+        isInvokeRoute?: boolean): Application<TState>
+      parameters:
+        - id: selector
+          type: <xref uid="@microsoft/teams-ai.Selector" />
+          description: >-
+            Function thats used to select a route. The function should return
+            true to trigger the route.
+        - id: handler
+          type: <xref uid="@microsoft/teams-ai.RouteHandler" />&lt;TState&gt;
+          description: Function to call when the route is triggered.
+        - id: isInvokeRoute
+          type: boolean
+          description: >-
+            Optional. Boolean indicating if the RouteSelector is for an activity
+            that uses "invoke" which require special handling. Defaults to
+            `false`.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      conversationUpdate(ConversationUpdateEvents, (context: TurnContext, state:
+      TState) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.conversationUpdate'
+    package: '@microsoft/teams-ai'
+    summary: Handles conversation update events.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function conversationUpdate(event: ConversationUpdateEvents, handler:
+        (context: TurnContext, state: TState) => Promise<void>):
+        Application<TState>
+      parameters:
+        - id: event
+          type: <xref uid="@microsoft/teams-ai.ConversationUpdateEvents" />
+          description: Name of the conversation update event to handle.
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;void&gt;'
+          description: Function to call when the route is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      fileConsentAccept((context: TurnContext, state: TState,
+      fileConsentResponse: FileConsentCardResponse) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.fileConsentAccept'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler to process when a file consent card is accepted by the
+      user.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function fileConsentAccept(handler: (context: TurnContext, state:
+        TState, fileConsentResponse: FileConsentCardResponse) => Promise<void>):
+        Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, fileConsentResponse:
+            FileConsentCardResponse) =&gt; Promise&lt;void&gt;
+          description: Function to call when the route is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      fileConsentDecline((context: TurnContext, state: TState,
+      fileConsentResponse: FileConsentCardResponse) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.fileConsentDecline'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler to process when a file consent card is declined by the
+      user.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function fileConsentDecline(handler: (context: TurnContext, state:
+        TState, fileConsentResponse: FileConsentCardResponse) => Promise<void>):
+        Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, fileConsentResponse:
+            FileConsentCardResponse) =&gt; Promise&lt;void&gt;
+          description: Function to call when the route is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: getTokenOrStartSignIn(TurnContext, TState, string)
+    uid: '@microsoft/teams-ai.Application.getTokenOrStartSignIn'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      If the user is signed in, get the access token. If not, triggers the sign
+      in flow for the provided authentication setting name
+
+      and returns. In this case, the bot should end the turn until the sign in
+      flow is completed.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTokenOrStartSignIn(context: TurnContext, state: TState,
+        settingName: string): Promise<undefined | string>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context for the current turn with the user.
+        - id: state
+          type: TState
+          description: The current state of the conversation.
+        - id: settingName
+          type: string
+          description: The name of the authentication setting.
+      return:
+        description: The token for the user if they are signed in, otherwise undefined.
+        type: Promise&lt;undefined | string&gt;
+  - name: >-
+      message(string | RegExp | Selector | (string | RegExp | Selector)[],
+      (context: TurnContext, state: TState) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.message'
+    package: '@microsoft/teams-ai'
+    summary: Handles incoming messages with a given keyword.
+    remarks: >-
+      This method provides a simple way to have a bot respond anytime a user
+      sends your bot a
+
+      message with a specific word or phrase.
+
+
+      For example, you can easily clear the current conversation anytime a user
+      sends "/reset":
+
+
+      ```JavaScript
+
+      bot.message('/reset', async (context, state) => {
+          await state.conversation.delete();
+          await context.sendActivity(`I have reset your state.`);
+      });
+
+      ```
+    isDeprecated: false
+    syntax:
+      content: >-
+        function message(keyword: string | RegExp | Selector | (string | RegExp
+        | Selector)[], handler: (context: TurnContext, state: TState) =>
+        Promise<void>): Application<TState>
+      parameters:
+        - id: keyword
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: >-
+            Substring of text or a regular expression to match against the text
+            of an incoming message. An array of keywords or expression can also
+            be passed in.
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;void&gt;'
+          description: Function to call when the route is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      messageEventUpdate(TeamsMessageEvents, (context: TurnContext, state:
+      TState) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.messageEventUpdate'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function messageEventUpdate(event: TeamsMessageEvents, handler:
+        (context: TurnContext, state: TState) => Promise<void>):
+        Application<TState>
+      parameters:
+        - id: event
+          type: <xref uid="@microsoft/teams-ai.TeamsMessageEvents" />
+          description: ''
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;void&gt;'
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      messageReactions(MessageReactionEvents, (context: TurnContext, state:
+      TState) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.messageReactions'
+    package: '@microsoft/teams-ai'
+    summary: Handles message reaction events.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function messageReactions(event: MessageReactionEvents, handler:
+        (context: TurnContext, state: TState) => Promise<void>):
+        Application<TState>
+      parameters:
+        - id: event
+          type: <xref uid="@microsoft/teams-ai.MessageReactionEvents" />
+          description: Name of the message reaction event(s) to handle.
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;void&gt;'
+          description: Function to call when the route is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      O365ConnectorCardAction((context: TurnContext, state: TState, query:
+      O365ConnectorCardActionQuery) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.O365ConnectorCardAction'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler to process when a O365 Connector Card Action activity
+      is received from the user.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function O365ConnectorCardAction(handler: (context: TurnContext, state:
+        TState, query: O365ConnectorCardActionQuery) => Promise<void>):
+        Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, query:
+            O365ConnectorCardActionQuery) =&gt; Promise&lt;void&gt;
+          description: Function to call when the route is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: run(TurnContext)
+    uid: '@microsoft/teams-ai.Application.run'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Dispatches an incoming activity to a handler registered with the
+      application.
+    remarks: >-
+      This method should be called from your bot's "turn handler" (its primary
+      message handler)
+
+
+      ```JavaScript
+
+      server.post('/api/messages', async (req, res) => {
+         await adapter.processActivity(req, res, async (context) => {
+           await bot.run(context);
+        });
+      });
+
+      ```
+    isDeprecated: false
+    syntax:
+      content: 'function run(turnContext: TurnContext): Promise<boolean>'
+      parameters:
+        - id: turnContext
+          type: TurnContext
+          description: Context class for the current turn of conversation with the user.
+      return:
+        description: >-
+          True if the activity was successfully dispatched to a handler. False
+          if no matching handlers could be found.
+        type: Promise&lt;boolean&gt;
+  - name: >-
+      sendProactiveActivity(Partial<Activity>, string | Partial<Activity>,
+      string, string)
+    uid: '@microsoft/teams-ai.Application.sendProactiveActivity_2'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendProactiveActivity(activity: Partial<Activity>,
+        activityOrText: string | Partial<Activity>, speak?: string, inputHint?:
+        string): Promise<undefined | ResourceResponse>
+      parameters:
+        - id: activity
+          type: Partial&lt;Activity&gt;
+          description: ''
+        - id: activityOrText
+          type: string | Partial&lt;Activity&gt;
+          description: ''
+        - id: speak
+          type: string
+          description: ''
+        - id: inputHint
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;undefined | ResourceResponse&gt;
+  - name: >-
+      sendProactiveActivity(Partial<ConversationReference>, string |
+      Partial<Activity>, string, string)
+    uid: '@microsoft/teams-ai.Application.sendProactiveActivity_1'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendProactiveActivity(conversationReference:
+        Partial<ConversationReference>, activityOrText: string |
+        Partial<Activity>, speak?: string, inputHint?: string):
+        Promise<undefined | ResourceResponse>
+      parameters:
+        - id: conversationReference
+          type: Partial&lt;ConversationReference&gt;
+          description: ''
+        - id: activityOrText
+          type: string | Partial&lt;Activity&gt;
+          description: ''
+        - id: speak
+          type: string
+          description: ''
+        - id: inputHint
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;undefined | ResourceResponse&gt;
+  - name: >-
+      sendProactiveActivity(TurnContext, string | Partial<Activity>, string,
+      string)
+    uid: '@microsoft/teams-ai.Application.sendProactiveActivity'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Sends a proactive activity to an existing conversation the bot is a member
+      of.
+    remarks: >-
+      This method provides a simple way to send a proactive message to a
+      conversation the bot is a member of.
+
+
+      Use of the method requires you configure the Application with the
+      `adapter` and `botAppId`
+
+      options. An exception will be thrown if either is missing.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendProactiveActivity(context: TurnContext, activityOrText:
+        string | Partial<Activity>, speak?: string, inputHint?: string):
+        Promise<undefined | ResourceResponse>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: >-
+            Context of the conversation to proactively message. This can be
+            derived from either a TurnContext, ConversationReference, or
+            Activity.
+        - id: activityOrText
+          type: string | Partial&lt;Activity&gt;
+          description: Activity or message to send to the conversation.
+        - id: speak
+          type: string
+          description: Optional. Text to speak for channels that support voice.
+        - id: inputHint
+          type: string
+          description: Optional. Input hint for channels that support voice.
+      return:
+        description: A Resource response containing the ID of the activity that was sent.
+        type: Promise&lt;undefined | ResourceResponse&gt;
+  - name: startTypingTimer(TurnContext)
+    uid: '@microsoft/teams-ai.Application.startTypingTimer'
+    package: '@microsoft/teams-ai'
+    summary: Manually start a timer to periodically send "typing" activities.
+    remarks: >-
+      The timer waits 1000ms to send its initial "typing" activity and then send
+      an additional
+
+      "typing" activity every 1000ms. The timer will automatically end once an
+      outgoing activity
+
+      has been sent. If the timer is already running or the current activity, is
+      not a "message"
+
+      the call is ignored.
+    isDeprecated: false
+    syntax:
+      content: 'function startTypingTimer(context: TurnContext)'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context for the current turn with the user.
+  - name: stopTypingTimer()
+    uid: '@microsoft/teams-ai.Application.stopTypingTimer'
+    package: '@microsoft/teams-ai'
+    summary: Manually stop the typing timer.
+    remarks: If the timer isn't running nothing happens.
+    isDeprecated: false
+    syntax:
+      content: function stopTypingTimer()
+  - name: >-
+      teamsReadReceipt((context: TurnContext, state: TState, readReceiptInfo:
+      ReadReceiptInfo) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.teamsReadReceipt'
+    package: '@microsoft/teams-ai'
+    summary: Adds a handler for Teams' readReceiptInfo event
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function teamsReadReceipt(handler: (context: TurnContext, state: TState,
+        readReceiptInfo: ReadReceiptInfo) => Promise<void>): Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, readReceiptInfo:
+            ReadReceiptInfo) =&gt; Promise&lt;void&gt;
+          description: Function to call when the event is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      turn(TurnEvents | TurnEvents[], (context: TurnContext, state: TState) =>
+      Promise<boolean>)
+    uid: '@microsoft/teams-ai.Application.turn'
+    package: '@microsoft/teams-ai'
+    summary: Registers a turn event handler.
+    remarks: >-
+      Turn events let you do something before or after a turn is run. Returning
+      false from
+
+      `beforeTurn` lets you prevent the turn from running and returning false
+      from `afterTurn`
+
+      lets you prevent the bots state from being saved.
+
+
+      Returning false from `beforeTurn` does result in the bots state being
+      saved which lets you
+
+      track the reason why the turn was not processed. It also means you can use
+      `beforeTurn` as
+
+      a way to call into the dialog system. For example, you could use the
+      OAuthPrompt to sign the
+
+      user in before allowing the AI system to run.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function turn(event: TurnEvents | TurnEvents[], handler: (context:
+        TurnContext, state: TState) => Promise<boolean>): Application<TState>
+      parameters:
+        - id: event
+          type: >-
+            <xref uid="@microsoft/teams-ai.TurnEvents" /> | <xref
+            uid="@microsoft/teams-ai.TurnEvents" />[]
+          description: Name of the turn event to handle.
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;boolean&gt;'
+          description: Function to call when the event is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;

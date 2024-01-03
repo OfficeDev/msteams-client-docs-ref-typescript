@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: ConfigResponseConfig
+uid: '@microsoft/teams-ai.ConfigResponseConfig'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: ConfigResponseConfig
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ConfigResponseConfig = BotConfigAuth | TaskModuleResponse

@@ -1,0 +1,120 @@
+### YamlMime:TSType
+name: JSONResponseValidator
+uid: '@microsoft/teams-ai.JSONResponseValidator'
+package: '@microsoft/teams-ai'
+summary: >-
+  Parses any JSON returned by the model and optionally verifies it against a
+  JSON schema.
+fullName: JSONResponseValidator<TValue>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: JSONResponseValidator<TValue>(Schema, string, string)
+    uid: '@microsoft/teams-ai.JSONResponseValidator.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `JSONResponseValidator` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new JSONResponseValidator(schema?: Schema, missingJsonFeedback?: string,
+        errorFeedback?: string)
+      parameters:
+        - id: schema
+          type: Schema
+          description: Optional. JSON schema to validate the response against.
+        - id: missingJsonFeedback
+          type: string
+          description: Optional. Custom feedback to give when no JSON is returned.
+        - id: errorFeedback
+          type: string
+          description: >-
+            Optional. Custom feedback prefix to use when schema errors are
+            detected.
+properties:
+  - name: errorFeedback
+    uid: '@microsoft/teams-ai.JSONResponseValidator.errorFeedback'
+    package: '@microsoft/teams-ai'
+    summary: Feedback prefix given when schema errors are detected.
+    fullName: errorFeedback
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'errorFeedback: string'
+      return:
+        description: ''
+        type: string
+  - name: instanceName
+    uid: '@microsoft/teams-ai.JSONResponseValidator.instanceName'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Substitution for the word "instance" to use in feedback
+      messages.
+    fullName: instanceName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'instanceName?: string'
+      return:
+        description: ''
+        type: string
+  - name: missingJsonFeedback
+    uid: '@microsoft/teams-ai.JSONResponseValidator.missingJsonFeedback'
+    package: '@microsoft/teams-ai'
+    summary: Feedback given when no JSON is returned.
+    fullName: missingJsonFeedback
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'missingJsonFeedback: string'
+      return:
+        description: ''
+        type: string
+  - name: schema
+    uid: '@microsoft/teams-ai.JSONResponseValidator.schema'
+    package: '@microsoft/teams-ai'
+    summary: JSON schema to validate the response against.
+    fullName: schema
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'schema?: Schema'
+      return:
+        description: ''
+        type: Schema
+methods:
+  - name: >-
+      validateResponse(TurnContext, Memory, Tokenizer, PromptResponse<string>,
+      number)
+    uid: '@microsoft/teams-ai.JSONResponseValidator.validateResponse'
+    package: '@microsoft/teams-ai'
+    summary: Validates a response to a prompt.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validateResponse(context: TurnContext, memory: Memory,
+        tokenizer: Tokenizer, response: PromptResponse<string>,
+        remaining_attempts: number): Promise<Validation<TValue>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding and decoding text.
+        - id: response
+          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          description: Response to validate.
+        - id: remaining_attempts
+          type: number
+          description: Number of remaining attempts to validate the response.
+      return:
+        description: A `Validation` object.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.Validation"
+          />&lt;TValue&gt;&gt;

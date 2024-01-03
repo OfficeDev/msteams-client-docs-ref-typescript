@@ -1,0 +1,169 @@
+### YamlMime:TSType
+name: Authentication
+uid: '@microsoft/teams-ai.Authentication'
+package: '@microsoft/teams-ai'
+summary: User authentication service.
+fullName: Authentication<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      Authentication<TState>(Application<TState>, string, OAuthSettings |
+      TeamsSsoSettings, Storage, MessageExtensionAuthenticationBase,
+      BotAuthenticationBase<TState>, AdaptiveCardAuthenticationBase)
+    uid: '@microsoft/teams-ai.Authentication.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the `Authentication` class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new Authentication(app: Application<TState>, name: string, settings:
+        OAuthSettings | TeamsSsoSettings, storage?: Storage,
+        messageExtensionsAuth?: MessageExtensionAuthenticationBase, botAuth?:
+        BotAuthenticationBase<TState>, adaptiveCardAuth?:
+        AdaptiveCardAuthenticationBase)
+      parameters:
+        - id: app
+          type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+          description: The application instance.
+        - id: name
+          type: string
+          description: The name of the connection.
+        - id: settings
+          type: <xref uid="@microsoft/teams-ai.OAuthSettings" /> | TeamsSsoSettings
+          description: Authentication settings.
+        - id: storage
+          type: Storage
+          description: A storage instance otherwise Memory Storage is used.
+        - id: messageExtensionsAuth
+          type: MessageExtensionAuthenticationBase
+          description: Handles message extension flow authentication.
+        - id: botAuth
+          type: BotAuthenticationBase&lt;TState&gt;
+          description: Handles bot-flow authentication.
+        - id: adaptiveCardAuth
+          type: AdaptiveCardAuthenticationBase
+          description: Handles adaptive card authentication.
+properties:
+  - name: settings
+    uid: '@microsoft/teams-ai.Authentication.settings'
+    package: '@microsoft/teams-ai'
+    summary: The authentication settings.
+    fullName: settings
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'settings: OAuthSettings | TeamsSsoSettings'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.OAuthSettings" /> | TeamsSsoSettings
+methods:
+  - name: isUserSignedIn(TurnContext)
+    uid: '@microsoft/teams-ai.Authentication.isUserSignedIn'
+    package: '@microsoft/teams-ai'
+    summary: Check if the user is signed, if they are then return the token.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function isUserSignedIn(context: TurnContext): Promise<undefined |
+        string>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+      return:
+        description: The token string or undefined if the user is not signed in.
+        type: Promise&lt;undefined | string&gt;
+  - name: >-
+      onUserSignInFailure((context: TurnContext, state: TState, error:
+      AuthError) => Promise<void>)
+    uid: '@microsoft/teams-ai.Authentication.onUserSignInFailure'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      This handler function is called when the user sign in flow fails.
+
+      This only applies if sign in was initiated by the user sending a message
+      to the bot.
+
+      This handler will not be triggered if a message extension triggered the
+      authentication flow.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function onUserSignInFailure(handler: (context: TurnContext, state:
+        TState, error: AuthError) => Promise<void>)
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, error: AuthError) =&gt;
+            Promise&lt;void&gt;
+          description: The handler function to call when the user failed to signed in.
+  - name: >-
+      onUserSignInSuccess((context: TurnContext, state: TState) =>
+      Promise<void>)
+    uid: '@microsoft/teams-ai.Authentication.onUserSignInSuccess'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The handler function is called when the user has successfully signed in.
+
+      This only applies if sign in was initiated by the user sending a message
+      to the bot.
+
+      This handler will not be triggered if a message extension triggered the
+      authentication flow.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function onUserSignInSuccess(handler: (context: TurnContext, state:
+        TState) => Promise<void>)
+      parameters:
+        - id: handler
+          type: '(context: TurnContext, state: TState) =&gt; Promise&lt;void&gt;'
+          description: >-
+            The handler function to call when the user has successfully signed
+            in
+  - name: signInUser(TurnContext, TState)
+    uid: '@microsoft/teams-ai.Authentication.signInUser'
+    package: '@microsoft/teams-ai'
+    summary: |-
+      Signs in a user.
+      This method will be called automatically by the Application class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function signInUser(context: TurnContext, state: TState):
+        Promise<undefined | string>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: state
+          type: TState
+          description: Application state.
+      return:
+        description: The authentication token or undefined if the user is still login in.
+        type: Promise&lt;undefined | string&gt;
+  - name: signOutUser(TurnContext, TState)
+    uid: '@microsoft/teams-ai.Authentication.signOutUser'
+    package: '@microsoft/teams-ai'
+    summary: Signs out a user.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function signOutUser(context: TurnContext, state: TState): Promise<void>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: state
+          type: TState
+          description: Application state.
+      return:
+        description: A Promise representing the asynchronous operation.
+        type: Promise&lt;void&gt;

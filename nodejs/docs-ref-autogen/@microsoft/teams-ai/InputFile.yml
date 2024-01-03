@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: InputFile
+uid: '@microsoft/teams-ai.InputFile'
+package: '@microsoft/teams-ai'
+summary: A file sent by the user to the bot.
+fullName: InputFile
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: '@microsoft/teams-ai.InputFile.content'
+    package: '@microsoft/teams-ai'
+    summary: The downloaded content of the file.
+    fullName: content
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'content: Buffer'
+      return:
+        description: ''
+        type: Buffer
+  - name: contentType
+    uid: '@microsoft/teams-ai.InputFile.contentType'
+    package: '@microsoft/teams-ai'
+    summary: The content type of the file.
+    fullName: contentType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentType: string'
+      return:
+        description: ''
+        type: string
+  - name: contentUrl
+    uid: '@microsoft/teams-ai.InputFile.contentUrl'
+    package: '@microsoft/teams-ai'
+    summary: Optional. URL to the content of the file.
+    fullName: contentUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentUrl?: string'
+      return:
+        description: ''
+        type: string

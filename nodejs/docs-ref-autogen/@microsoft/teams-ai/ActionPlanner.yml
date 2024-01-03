@@ -1,0 +1,256 @@
+### YamlMime:TSType
+name: ActionPlanner
+uid: '@microsoft/teams-ai.ActionPlanner'
+package: '@microsoft/teams-ai'
+summary: A planner that uses a Large Language Model (LLM) to generate plans.
+fullName: ActionPlanner<TState>
+remarks: >-
+  The ActionPlanner is a powerful planner that uses a LLM to generate plans. The
+  planner can
+
+  trigger parameterized actions and send text based responses to the user. The
+  ActionPlanner
+
+  supports the following advanced features:
+
+  - **Augmentations:** Augmentations virtually eliminate the need for prompt
+  engineering. Prompts
+    can be configured to use a named augmentation which will be automatically appended to the outgoing
+    prompt. Augmentations let the developer specify whether they want to support multi-step plans (sequence),
+    use OpenAI's functions support (functions), or create an AutoGPT style agent (monologue).
+  - **Validations:** Validators are used to validate the response returned by
+  the LLM and can guarantee
+    that the parameters passed to an action mach a supplied schema. The validator used is automatically
+    selected based on the augmentation being used. Validators also prevent hallucinated action names
+    making it impossible for the LLM to trigger an action that doesn't exist.
+  - **Repair:** The ActionPlanner will automatically attempt to repair invalid
+  responses returned by the
+    LLM using a feedback loop. When a validation fails, the ActionPlanner sends the error back to the
+    model, along with an instruction asking it to fix its mistake. This feedback technique leads to a
+    dramatic reduction in the number of invalid responses returned by the model.
+isDeprecated: false
+type: class
+constructors:
+  - name: ActionPlanner<TState>(ActionPlannerOptions<TState>)
+    uid: '@microsoft/teams-ai.ActionPlanner.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `ActionPlanner` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new ActionPlanner(options: ActionPlannerOptions<TState>)'
+      parameters:
+        - id: options
+          type: >-
+            <xref uid="@microsoft/teams-ai.ActionPlannerOptions"
+            />&lt;TState&gt;
+          description: Options used to configure the planner.
+properties:
+  - name: defaultPrompt
+    uid: '@microsoft/teams-ai.ActionPlanner.defaultPrompt'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: defaultPrompt
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: undefined | string defaultPrompt
+      return:
+        description: ''
+        type: undefined | string
+  - name: model
+    uid: '@microsoft/teams-ai.ActionPlanner.model'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: model
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: PromptCompletionModel model
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptCompletionModel" />
+  - name: prompts
+    uid: '@microsoft/teams-ai.ActionPlanner.prompts'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: prompts
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: PromptManager prompts
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />
+methods:
+  - name: addSemanticFunction(string | PromptTemplate, PromptResponseValidator<any>)
+    uid: '@microsoft/teams-ai.ActionPlanner.addSemanticFunction'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Creates a semantic function that can be registered with the apps prompt
+      manager.
+    remarks: >-
+      Semantic functions are functions that make model calls and return their
+      results as template
+
+      parameters to other prompts. For example, you could define a semantic
+      function called
+
+      'translator' that first translates the user's input to English before
+      calling your main prompt:
+
+
+      ```JavaScript
+
+      app.ai.prompts.addFunction('translator',
+      app.ai.createSemanticFunction('translator-prompt'));
+
+      ```
+
+
+      You would then create a prompt called "translator-prompt" that does the
+      translation and then in
+
+      your main prompt you can call it using the template expression
+      `{{translator}}`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addSemanticFunction(prompt: string | PromptTemplate,
+        validator?: PromptResponseValidator<any>): ActionPlanner<TState>
+      parameters:
+        - id: prompt
+          type: string | <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: ''
+        - id: validator
+          type: >-
+            <xref uid="@microsoft/teams-ai.PromptResponseValidator"
+            />&lt;any&gt;
+          description: ''
+      return:
+        description: A promise that resolves to the result of the semantic function.
+        type: <xref uid="@microsoft/teams-ai.ActionPlanner" />&lt;TState&gt;
+  - name: beginTask(TurnContext, TState, AI<TState>)
+    uid: '@microsoft/teams-ai.ActionPlanner.beginTask'
+    package: '@microsoft/teams-ai'
+    summary: Starts a new task.
+    remarks: >-
+      This method is called when the AI system is ready to start a new task. The
+      planner should
+
+      generate a plan that the AI system will execute. Returning an empty plan
+      signals that
+
+      there is no work to be performed.
+
+
+      The planner should take the users input from `state.temp.input`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginTask(context: TurnContext, state: TState, ai: AI<TState>):
+        Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: ai
+          type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+          description: The AI system that is generating the plan.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+  - name: >-
+      completePrompt<TContent>(TurnContext, Memory, string | PromptTemplate,
+      PromptResponseValidator<TContent>)
+    uid: '@microsoft/teams-ai.ActionPlanner.completePrompt'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt using an optional validator.
+    remarks: >-
+      This method allows the developer to manually complete a prompt and access
+      the models
+
+      response. If a validator is specified, the response will be validated and
+      repaired if
+
+      necessary. If no validator is specified, the response will be returned
+      as-is.
+
+
+      If a validator like the `JSONResponseValidator` is used, the response
+      returned will be
+
+      a message containing a JSON object. If no validator is used, the response
+      will be a
+
+      message containing the response text as a string.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completePrompt<TContent>(context: TurnContext, memory: Memory,
+        prompt: string | PromptTemplate, validator?:
+        PromptResponseValidator<TContent>): Promise<PromptResponse<TContent>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: >-
+            A memory interface used to access state variables (the turn state
+            object implements this interface.)
+        - id: prompt
+          type: string | <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Name of the prompt to use or a prompt template.
+        - id: validator
+          type: >-
+            <xref uid="@microsoft/teams-ai.PromptResponseValidator"
+            />&lt;TContent&gt;
+          description: >-
+            Optional. A validator to use to validate the response returned by
+            the model.
+      return:
+        description: The result of the LLM call.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.PromptResponse"
+          />&lt;TContent&gt;&gt;
+  - name: continueTask(TurnContext, TState, AI<TState>)
+    uid: '@microsoft/teams-ai.ActionPlanner.continueTask'
+    package: '@microsoft/teams-ai'
+    summary: Continues the current task.
+    remarks: >-
+      This method is called when the AI system has finished executing the
+      previous plan and is
+
+      ready to continue the current task. The planner should generate a plan
+      that the AI system
+
+      will execute. Returning an empty plan signals that the task is completed
+      and there is no work
+
+      to be performed.
+
+
+      The output from the last plan step that was executed is passed to the
+      planner via `state.temp.input`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function continueTask(context: TurnContext, state: TState, ai:
+        AI<TState>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: ai
+          type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+          description: The AI system that is generating the plan.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
