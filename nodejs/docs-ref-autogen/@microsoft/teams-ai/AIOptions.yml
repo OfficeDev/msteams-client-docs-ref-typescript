@@ -1,0 +1,93 @@
+### YamlMime:TSType
+name: AIOptions
+uid: '@microsoft/teams-ai.AIOptions'
+package: '@microsoft/teams-ai'
+summary: Options for configuring the AI system.
+fullName: AIOptions<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: allow_looping
+    uid: '@microsoft/teams-ai.AIOptions.allow_looping'
+    package: '@microsoft/teams-ai'
+    summary: Optional. If true, the AI system will allow the planner to loop.
+    fullName: allow_looping
+    remarks: >-
+      The default value is `true`.
+
+
+      Looping is needed for augmentations like `functions` and `monologue` where
+      the LLM needs to
+
+      see the result of the last action that was performed. The AI system will
+      attempt to autodetect
+
+      if it needs to loop so you generally don't need to worry about this
+      setting.
+
+
+      If you're using an augmentation like `sequence` you can set this to
+      `false` to guard against
+
+      any accidental looping.
+    isDeprecated: false
+    syntax:
+      content: 'allow_looping?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: max_actions
+    uid: '@microsoft/teams-ai.AIOptions.max_actions'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Maximum number of actions to execute in a single turn.
+    fullName: max_actions
+    remarks: The default value is 25.
+    isDeprecated: false
+    syntax:
+      content: 'max_actions?: number'
+      return:
+        description: ''
+        type: number
+  - name: max_time
+    uid: '@microsoft/teams-ai.AIOptions.max_time'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Maximum amount of time to spend executing a single turn in
+      milliseconds.
+    fullName: max_time
+    remarks: The default value is 300000 or 5 minutes.
+    isDeprecated: false
+    syntax:
+      content: 'max_time?: number'
+      return:
+        description: ''
+        type: number
+  - name: moderator
+    uid: '@microsoft/teams-ai.AIOptions.moderator'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. The moderator to use for moderating input passed to the model
+      and the output
+
+      returned by the model.
+    fullName: moderator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'moderator?: Moderator<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Moderator" />&lt;TState&gt;
+  - name: planner
+    uid: '@microsoft/teams-ai.AIOptions.planner'
+    package: '@microsoft/teams-ai'
+    summary: The planner to use for generating plans.
+    fullName: planner
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'planner: Planner<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Planner" />&lt;TState&gt;

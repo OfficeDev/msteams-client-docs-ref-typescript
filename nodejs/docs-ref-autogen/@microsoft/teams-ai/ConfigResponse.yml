@@ -1,0 +1,54 @@
+### YamlMime:TSType
+name: ConfigResponse
+uid: '@microsoft/teams-ai.ConfigResponse'
+package: '@microsoft/teams-ai'
+summary: >-
+  temporary types
+
+  Due to an error found in botbuilder-js, we need to temporarily define these
+  types here in order to avoid being blocked by botbuilder-js bugfix release.
+  corinagum is tracking; message her for updates. Merged PR:
+  https://github.com/microsoft/botbuilder-js/pull/4570
+
+  release tbd
+fullName: ConfigResponse
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: cacheInfo
+    uid: '@microsoft/teams-ai.ConfigResponse.cacheInfo'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: cacheInfo
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'cacheInfo?: CacheInfo'
+      return:
+        description: ''
+        type: CacheInfo
+  - name: config
+    uid: '@microsoft/teams-ai.ConfigResponse.config'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: config
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'config: ConfigResponseConfig'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.ConfigResponseConfig" />
+  - name: responseType
+    uid: '@microsoft/teams-ai.ConfigResponse.responseType'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: responseType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'responseType: "config"'
+      return:
+        description: ''
+        type: '"config"'

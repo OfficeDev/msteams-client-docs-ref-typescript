@@ -1,0 +1,86 @@
+### YamlMime:TSType
+name: DefaultTempState
+uid: '@microsoft/teams-ai.DefaultTempState'
+package: '@microsoft/teams-ai'
+summary: Default temp state
+fullName: DefaultTempState
+remarks: >-
+  Inherit a new interface from this base interface to strongly type the
+  applications temp
+
+  state.
+isDeprecated: false
+type: interface
+properties:
+  - name: actionOutputs
+    uid: '@microsoft/teams-ai.DefaultTempState.actionOutputs'
+    package: '@microsoft/teams-ai'
+    summary: All outputs returned from the action sequence that was executed
+    fullName: actionOutputs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'actionOutputs: Record<string, string>'
+      return:
+        description: ''
+        type: Record&lt;string, string&gt;
+  - name: authTokens
+    uid: '@microsoft/teams-ai.DefaultTempState.authTokens'
+    package: '@microsoft/teams-ai'
+    summary: User authentication tokens
+    fullName: authTokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'authTokens: {[key: string]: string}'
+      return:
+        description: ''
+        type: '{[key: string]: string}'
+  - name: duplicateTokenExchange
+    uid: '@microsoft/teams-ai.DefaultTempState.duplicateTokenExchange'
+    package: '@microsoft/teams-ai'
+    summary: Flag indicating whether a token exchange event has already been processed
+    fullName: duplicateTokenExchange
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'duplicateTokenExchange?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: input
+    uid: '@microsoft/teams-ai.DefaultTempState.input'
+    package: '@microsoft/teams-ai'
+    summary: Input passed from the user to the AI Library
+    fullName: input
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'input: string'
+      return:
+        description: ''
+        type: string
+  - name: inputFiles
+    uid: '@microsoft/teams-ai.DefaultTempState.inputFiles'
+    package: '@microsoft/teams-ai'
+    summary: Downloaded files passed by the user to the AI Library
+    fullName: inputFiles
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'inputFiles: InputFile[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.InputFile" />[]
+  - name: lastOutput
+    uid: '@microsoft/teams-ai.DefaultTempState.lastOutput'
+    package: '@microsoft/teams-ai'
+    summary: Output returned from the last executed action
+    fullName: lastOutput
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'lastOutput: string'
+      return:
+        description: ''
+        type: string

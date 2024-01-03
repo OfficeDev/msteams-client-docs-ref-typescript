@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: OAuthSettings
+uid: '@microsoft/teams-ai.OAuthSettings'
+package: '@microsoft/teams-ai'
+summary: Settings used to configure user authentication through the OAuthPrompt.
+fullName: OAuthSettings
+remarks: ''
+isDeprecated: false
+syntax: |
+  type OAuthSettings = OAuthPromptSettings & { tokenExchangeUri?: string }

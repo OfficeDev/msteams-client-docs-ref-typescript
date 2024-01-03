@@ -1,0 +1,87 @@
+### YamlMime:TSType
+name: PromptTemplateConfig
+uid: '@microsoft/teams-ai.PromptTemplateConfig'
+package: '@microsoft/teams-ai'
+summary: Serialized prompt template configuration.
+fullName: PromptTemplateConfig
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: augmentation
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.augmentation'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Augmentation settings for the prompt.
+    fullName: augmentation
+    remarks: New in schema version 1.1.
+    isDeprecated: false
+    syntax:
+      content: 'augmentation?: AugmentationConfig'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.AugmentationConfig" />
+  - name: completion
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.completion'
+    package: '@microsoft/teams-ai'
+    summary: Completion settings for the prompt.
+    fullName: completion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'completion: CompletionConfig'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.CompletionConfig" />
+  - name: default_backends
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.default_backends'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: default_backends
+    remarks: >-
+      Passing the name of a model to use here will override the default model
+      used by a planner.
+    isDeprecated: true
+    customDeprecatedMessage: |-
+      Use `completion.model` instead.
+      Optional. Array of backends (models) to use for the prompt.
+    syntax:
+      content: 'default_backends?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: description
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.description'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Description of the prompts purpose.
+    fullName: description
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
+  - name: schema
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.schema'
+    package: '@microsoft/teams-ai'
+    summary: The schema version of the prompt template. Can be '1' or '1.1'.
+    fullName: schema
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'schema: number'
+      return:
+        description: ''
+        type: number
+  - name: type
+    uid: '@microsoft/teams-ai.PromptTemplateConfig.type'
+    package: '@microsoft/teams-ai'
+    summary: Type of prompt template. Should always be 'completion'.
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: "completion"'
+      return:
+        description: ''
+        type: '"completion"'

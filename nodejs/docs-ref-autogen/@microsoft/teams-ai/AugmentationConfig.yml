@@ -1,0 +1,36 @@
+### YamlMime:TSType
+name: AugmentationConfig
+uid: '@microsoft/teams-ai.AugmentationConfig'
+package: '@microsoft/teams-ai'
+summary: Interface for the augmentation configuration portion of a prompt template.
+fullName: AugmentationConfig
+remarks: New in schema version 1.1.
+isDeprecated: false
+type: interface
+properties:
+  - name: augmentation_type
+    uid: '@microsoft/teams-ai.AugmentationConfig.augmentation_type'
+    package: '@microsoft/teams-ai'
+    summary: The type of augmentation to use.
+    fullName: augmentation_type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'augmentation_type: "none" | "sequence" | "monologue"'
+      return:
+        description: ''
+        type: '"none" | "sequence" | "monologue"'
+  - name: data_sources
+    uid: '@microsoft/teams-ai.AugmentationConfig.data_sources'
+    package: '@microsoft/teams-ai'
+    summary: Optional. List of named data sources to augment the prompt with.
+    fullName: data_sources
+    remarks: >-
+      For each data source, the value is the max number of tokens to use from
+      the data source.
+    isDeprecated: false
+    syntax:
+      content: 'data_sources?: {[name: string]: number}'
+      return:
+        description: ''
+        type: '{[name: string]: number}'

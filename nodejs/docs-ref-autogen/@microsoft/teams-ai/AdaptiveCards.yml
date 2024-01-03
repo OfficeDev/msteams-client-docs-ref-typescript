@@ -1,0 +1,141 @@
+### YamlMime:TSType
+name: AdaptiveCards
+uid: '@microsoft/teams-ai.AdaptiveCards'
+package: '@microsoft/teams-ai'
+summary: >-
+  AdaptiveCards class to enable fluent style registration of handlers related to
+  Adaptive Cards.
+fullName: AdaptiveCards<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: AdaptiveCards<TState>(Application<TState>)
+    uid: '@microsoft/teams-ai.AdaptiveCards.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the AdaptiveCards class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new AdaptiveCards(app: Application<TState>)'
+      parameters:
+        - id: app
+          type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+          description: The top level application class to register handlers with.
+methods:
+  - name: >-
+      actionExecute<TData>(string | RegExp | Selector | (string | RegExp |
+      Selector)[], (context: TurnContext, state: TState, data: TData) =>
+      Promise<string | AdaptiveCard>)
+    uid: '@microsoft/teams-ai.AdaptiveCards.actionExecute'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Adds a route to the application for handling Adaptive Card Action.Execute
+      events.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function actionExecute<TData>(verb: string | RegExp | Selector | (string
+        | RegExp | Selector)[], handler: (context: TurnContext, state: TState,
+        data: TData) => Promise<string | AdaptiveCard>): Application<TState>
+      parameters:
+        - id: verb
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: The named action(s) to be handled.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, data: TData) =&gt;
+            Promise&lt;string | AdaptiveCard&gt;
+          description: The code to execute when the action is triggered.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      actionSubmit<TData>(string | RegExp | Selector | (string | RegExp |
+      Selector)[], (context: TurnContext, state: TState, data: TData) =>
+      Promise<void>)
+    uid: '@microsoft/teams-ai.AdaptiveCards.actionSubmit'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Adds a route to the application for handling Adaptive Card Action.Submit
+      events.
+    remarks: >-
+      The route will be added for the specified verb(s) and will be filtered
+      using the
+
+      `actionSubmitFilter` option. The default filter is to use the `verb`
+      field.
+
+
+      For outgoing AdaptiveCards you will need to include the verb's name in the
+      cards Action.Submit.
+
+      For example:
+
+
+      ```JSON
+
+      {
+        "type": "Action.Submit",
+        "title": "OK",
+        "data": {
+           "verb": "ok"
+        }
+      }
+
+      ```
+    isDeprecated: false
+    syntax:
+      content: >-
+        function actionSubmit<TData>(verb: string | RegExp | Selector | (string
+        | RegExp | Selector)[], handler: (context: TurnContext, state: TState,
+        data: TData) => Promise<void>): Application<TState>
+      parameters:
+        - id: verb
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: The named action(s) to be handled.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, data: TData) =&gt;
+            Promise&lt;void&gt;
+          description: The code to execute when the action is triggered.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      search(string | RegExp | Selector | (string | RegExp | Selector)[],
+      (context: TurnContext, state: TState, query:
+      Query<AdaptiveCardsSearchParams>) => Promise<AdaptiveCardSearchResult[]>)
+    uid: '@microsoft/teams-ai.AdaptiveCards.search'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Adds a route to the application for handling the `Data.Query` request for
+      an `Input.ChoiceSet`.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function search(dataset: string | RegExp | Selector | (string | RegExp |
+        Selector)[], handler: (context: TurnContext, state: TState, query:
+        Query<AdaptiveCardsSearchParams>) =>
+        Promise<AdaptiveCardSearchResult[]>): Application<TState>
+      parameters:
+        - id: dataset
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: The named dataset(s) to be handled.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, query:
+            Query&lt;AdaptiveCardsSearchParams&gt;) =&gt;
+            Promise&lt;AdaptiveCardSearchResult[]&gt;
+          description: The code to execute when the query is triggered.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;

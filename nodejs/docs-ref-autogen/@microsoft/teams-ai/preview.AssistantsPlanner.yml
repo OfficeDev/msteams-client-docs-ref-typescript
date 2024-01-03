@@ -1,0 +1,126 @@
+### YamlMime:TSType
+name: AssistantsPlanner
+uid: '@microsoft/teams-ai.preview.AssistantsPlanner'
+package: '@microsoft/teams-ai'
+summary: A Planner that uses the OpenAI Assistants API.
+fullName: AssistantsPlanner<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: AssistantsPlanner<TState>(AssistantsPlannerOptions)
+    uid: '@microsoft/teams-ai.preview.AssistantsPlanner.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `AssistantsPlanner` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new AssistantsPlanner(options: AssistantsPlannerOptions)'
+      parameters:
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.preview.AssistantsPlannerOptions" />
+          description: Options for configuring the AssistantsPlanner.
+properties:
+  - name: openai
+    uid: '@microsoft/teams-ai.preview.AssistantsPlanner.openai'
+    package: '@microsoft/teams-ai'
+    summary: Gets the OpenAI SDK instance being used.
+    fullName: openai
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: OpenAI openai
+      return:
+        description: ''
+        type: OpenAI
+methods:
+  - name: beginTask(TurnContext, TState, AI<TState>)
+    uid: '@microsoft/teams-ai.preview.AssistantsPlanner.beginTask'
+    package: '@microsoft/teams-ai'
+    summary: Starts a new task.
+    remarks: >-
+      This method is called when the AI system is ready to start a new task. The
+      planner should
+
+      generate a plan that the AI system will execute. Returning an empty plan
+      signals that
+
+      there is no work to be performed.
+
+
+      The planner should take the users input from `state.temp.input`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginTask(context: TurnContext, state: TState, ai: AI<TState>):
+        Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: ai
+          type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+          description: The AI system that is generating the plan.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+  - name: continueTask(TurnContext, TState, AI<TState>)
+    uid: '@microsoft/teams-ai.preview.AssistantsPlanner.continueTask'
+    package: '@microsoft/teams-ai'
+    summary: Continues the current task.
+    remarks: >-
+      This method is called when the AI system has finished executing the
+      previous plan and is
+
+      ready to continue the current task. The planner should generate a plan
+      that the AI system
+
+      will execute. Returning an empty plan signals that the task is completed
+      and there is no work
+
+      to be performed.
+
+
+      The output from the last plan step that was executed is passed to the
+      planner via `state.temp.input`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function continueTask(context: TurnContext, state: TState, ai:
+        AI<TState>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: ai
+          type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+          description: The AI system that is generating the plan.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+  - name: createAssistant(string, AssistantCreateParams)
+    uid: '@microsoft/teams-ai.preview.AssistantsPlanner.createAssistant'
+    package: '@microsoft/teams-ai'
+    summary: Static helper method for programmatically creating an assistant.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createAssistant(apiKey: string, request:
+        AssistantCreateParams): Promise<Assistant>
+      parameters:
+        - id: apiKey
+          type: string
+          description: OpenAI API key.
+        - id: request
+          type: AssistantCreateParams
+          description: Definition of the assistant to create.
+      return:
+        description: The created assistant.
+        type: Promise&lt;Assistant&gt;

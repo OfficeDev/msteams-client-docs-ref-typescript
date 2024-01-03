@@ -1,0 +1,97 @@
+### YamlMime:TSType
+name: TestEmbeddings
+uid: '@microsoft/teams-ai.TestEmbeddings'
+package: '@microsoft/teams-ai'
+summary: A test model that can be used to test the prompt completion system.
+fullName: TestEmbeddings
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: TestEmbeddings(EmbeddingsResponseStatus, number[][], string)
+    uid: '@microsoft/teams-ai.TestEmbeddings.constructor'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TestEmbeddings(status?: EmbeddingsResponseStatus, output?:
+        number[][], message?: string)
+      parameters:
+        - id: status
+          type: <xref uid="@microsoft/teams-ai.EmbeddingsResponseStatus" />
+          description: Optional. Status of the embeddings response. Defaults to `success`.
+        - id: output
+          type: number[][]
+          description: Optional. Embeddings to generate. Defaults to `[[1,2,3,4,5]]`.
+        - id: message
+          type: string
+          description: Optional. Message to return with response.
+properties:
+  - name: message
+    uid: '@microsoft/teams-ai.TestEmbeddings.message'
+    package: '@microsoft/teams-ai'
+    summary: Message to return with response.
+    fullName: message
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'message?: string'
+      return:
+        description: ''
+        type: string
+  - name: output
+    uid: '@microsoft/teams-ai.TestEmbeddings.output'
+    package: '@microsoft/teams-ai'
+    summary: Generated embeddings.
+    fullName: output
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'output: undefined | number[][]'
+      return:
+        description: ''
+        type: undefined | number[][]
+  - name: status
+    uid: '@microsoft/teams-ai.TestEmbeddings.status'
+    package: '@microsoft/teams-ai'
+    summary: Status of the embeddings response.
+    fullName: status
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'status: EmbeddingsResponseStatus'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.EmbeddingsResponseStatus" />
+  - name: TEST_OUTPUT
+    uid: '@microsoft/teams-ai.TestEmbeddings.TEST_OUTPUT'
+    package: '@microsoft/teams-ai'
+    summary: Default output to return for test embeddings.
+    fullName: TEST_OUTPUT
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static TEST_OUTPUT: number[][]'
+      return:
+        description: ''
+        type: number[][]
+methods:
+  - name: createEmbeddings(string | string[])
+    uid: '@microsoft/teams-ai.TestEmbeddings.createEmbeddings'
+    package: '@microsoft/teams-ai'
+    summary: Returns a generated set of test embeddings
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createEmbeddings(inputs: string | string[]):
+        Promise<EmbeddingsResponse>
+      parameters:
+        - id: inputs
+          type: string | string[]
+          description: Input to generate embeddings for.
+      return:
+        description: The generated embeddings.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.EmbeddingsResponse" />&gt;

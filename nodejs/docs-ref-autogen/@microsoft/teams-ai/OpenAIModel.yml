@@ -1,0 +1,74 @@
+### YamlMime:TSType
+name: OpenAIModel
+uid: '@microsoft/teams-ai.OpenAIModel'
+package: '@microsoft/teams-ai'
+summary: A `PromptCompletionModel` for calling OpenAI and Azure OpenAI hosted models.
+fullName: OpenAIModel
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: OpenAIModel(OpenAIModelOptions | AzureOpenAIModelOptions)
+    uid: '@microsoft/teams-ai.OpenAIModel.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `OpenAIModel` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new OpenAIModel(options: OpenAIModelOptions | AzureOpenAIModelOptions)'
+      parameters:
+        - id: options
+          type: >-
+            <xref uid="@microsoft/teams-ai.OpenAIModelOptions" /> | <xref
+            uid="@microsoft/teams-ai.AzureOpenAIModelOptions" />
+          description: Options for configuring the model client.
+properties:
+  - name: options
+    uid: '@microsoft/teams-ai.OpenAIModel.options'
+    package: '@microsoft/teams-ai'
+    summary: Options the client was configured with.
+    fullName: options
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'options: OpenAIModelOptions | AzureOpenAIModelOptions'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/teams-ai.OpenAIModelOptions" /> | <xref
+          uid="@microsoft/teams-ai.AzureOpenAIModelOptions" />
+methods:
+  - name: >-
+      completePrompt(TurnContext, Memory, PromptFunctions, Tokenizer,
+      PromptTemplate)
+    uid: '@microsoft/teams-ai.OpenAIModel.completePrompt'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt using OpenAI or Azure OpenAI.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completePrompt(context: TurnContext, memory: Memory, functions:
+        PromptFunctions, tokenizer: Tokenizer, template: PromptTemplate):
+        Promise<PromptResponse<string>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: functions
+          type: <xref uid="@microsoft/teams-ai.PromptFunctions" />
+          description: Functions to use when rendering the prompt.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use when rendering the prompt.
+        - id: template
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt template to complete.
+      return:
+        description: A `PromptResponse` with the status and message.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.PromptResponse"
+          />&lt;string&gt;&gt;

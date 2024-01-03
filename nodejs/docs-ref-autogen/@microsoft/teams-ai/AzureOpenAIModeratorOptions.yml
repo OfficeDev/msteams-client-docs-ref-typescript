@@ -1,0 +1,153 @@
+### YamlMime:TSType
+name: AzureOpenAIModeratorOptions
+uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions'
+package: '@microsoft/teams-ai'
+summary: Options for the OpenAI based moderator.
+fullName: AzureOpenAIModeratorOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: blocklistNames
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.blocklistNames'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Text blocklist Name. Only support following characters: 0-9 A-Z a-z - . _
+      ~. You could attach multiple lists name here.
+    fullName: blocklistNames
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'blocklistNames?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: breakByBlocklists
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.breakByBlocklists'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      When set to true, further analyses of harmful content will not be
+      performed in cases where blocklists are hit.
+
+      When set to false, all analyses of harmful content will be performed,
+      whether or not blocklists are hit.
+
+      Default value is false.
+    fullName: breakByBlocklists
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'breakByBlocklists?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: categories
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.categories'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Azure OpenAI Content Safety Categories.
+
+      Each category is provided with a severity level threshold from 0 to 6.
+
+      If the severity level of a category is greater than or equal to the
+      threshold, the category is flagged.
+    fullName: categories
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'categories?: ContentSafetyHarmCategory[]'
+      return:
+        description: ''
+        type: ContentSafetyHarmCategory[]
+inheritedProperties:
+  - name: apiKey
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.apiKey'
+    package: '@microsoft/teams-ai'
+    summary: OpenAI API key
+    fullName: apiKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiKey: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIModeratorOptions.apiKey](xref:@microsoft/teams-ai.OpenAIModeratorOptions.apiKey)
+  - name: apiVersion
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.apiVersion'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Azure Content Safety API version.
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIModeratorOptions.apiVersion](xref:@microsoft/teams-ai.OpenAIModeratorOptions.apiVersion)
+  - name: endpoint
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.endpoint'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI endpoint.
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIModeratorOptions.endpoint](xref:@microsoft/teams-ai.OpenAIModeratorOptions.endpoint)
+  - name: model
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.model'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI model to use.
+    fullName: model
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'model?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIModeratorOptions.model](xref:@microsoft/teams-ai.OpenAIModeratorOptions.model)
+  - name: moderate
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.moderate'
+    package: '@microsoft/teams-ai'
+    summary: Which parts of the conversation to moderate.
+    fullName: moderate
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'moderate: "input" | "output" | "both"'
+      return:
+        description: ''
+        type: '"input" | "output" | "both"'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIModeratorOptions.moderate](xref:@microsoft/teams-ai.OpenAIModeratorOptions.moderate)
+  - name: organization
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.organization'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI organization.
+    fullName: organization
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'organization?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [OpenAIModeratorOptions.organization](xref:@microsoft/teams-ai.OpenAIModeratorOptions.organization)
+extends: <xref uid="@microsoft/teams-ai.OpenAIModeratorOptions" />

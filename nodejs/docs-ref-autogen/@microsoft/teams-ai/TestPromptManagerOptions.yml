@@ -1,0 +1,125 @@
+### YamlMime:TSType
+name: TestPromptManagerOptions
+uid: '@microsoft/teams-ai.TestPromptManagerOptions'
+package: '@microsoft/teams-ai'
+summary: Options used to configure a `TestPromptManager` instance.
+fullName: TestPromptManagerOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: prompts
+    uid: '@microsoft/teams-ai.TestPromptManagerOptions.prompts'
+    package: '@microsoft/teams-ai'
+    summary: Optional. List of prompts to pre-load.
+    fullName: prompts
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'prompts?: PromptTemplate[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptTemplate" />[]
+inheritedProperties:
+  - name: max_conversation_history_tokens
+    uid: >-
+      @microsoft/teams-ai.TestPromptManagerOptions.max_conversation_history_tokens
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Maximum number of tokens to of conversation history to include
+      in prompts.
+    fullName: max_conversation_history_tokens
+    remarks: >-
+      The default is to let conversation history consume the remainder of the
+      prompts
+
+      `max_input_tokens` budget. Setting this a value greater then 1 will
+      override that and
+
+      all prompts will use a fixed token budget.
+    isDeprecated: false
+    syntax:
+      content: 'max_conversation_history_tokens?: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptManagerOptions.max_conversation_history_tokens](xref:@microsoft/teams-ai.PromptManagerOptions.max_conversation_history_tokens)
+  - name: max_history_messages
+    uid: '@microsoft/teams-ai.TestPromptManagerOptions.max_history_messages'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Maximum number of messages to use when rendering
+      conversation_history.
+    fullName: max_history_messages
+    remarks: >-
+      This controls the automatic pruning of the conversation history that's
+      done by the planners
+
+      LLMClient instance. This helps keep your memory from getting too big and
+      defaults to a value
+
+      of `10` (or 5 turns.)
+    isDeprecated: false
+    syntax:
+      content: 'max_history_messages?: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptManagerOptions.max_history_messages](xref:@microsoft/teams-ai.PromptManagerOptions.max_history_messages)
+  - name: max_input_tokens
+    uid: '@microsoft/teams-ai.TestPromptManagerOptions.max_input_tokens'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Maximum number of tokens user input to include in prompts.
+    fullName: max_input_tokens
+    remarks: >-
+      This defaults to unlimited but can set to a value greater then `1` to
+      limit the length of
+
+      user input included in prompts. For example, if set to `100` then the any
+      user input over
+
+      100 tokens in length will be truncated.
+    isDeprecated: false
+    syntax:
+      content: 'max_input_tokens?: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptManagerOptions.max_input_tokens](xref:@microsoft/teams-ai.PromptManagerOptions.max_input_tokens)
+  - name: promptsFolder
+    uid: '@microsoft/teams-ai.TestPromptManagerOptions.promptsFolder'
+    package: '@microsoft/teams-ai'
+    summary: Path to the filesystem folder containing all the applications prompts.
+    fullName: promptsFolder
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'promptsFolder: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptManagerOptions.promptsFolder](xref:@microsoft/teams-ai.PromptManagerOptions.promptsFolder)
+  - name: role
+    uid: '@microsoft/teams-ai.TestPromptManagerOptions.role'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Message role to use for loaded prompts.
+    fullName: role
+    remarks: Defaults to 'system'.
+    isDeprecated: false
+    syntax:
+      content: 'role?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptManagerOptions.role](xref:@microsoft/teams-ai.PromptManagerOptions.role)
+extends: <xref uid="@microsoft/teams-ai.PromptManagerOptions" />

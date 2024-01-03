@@ -1,0 +1,111 @@
+### YamlMime:TSType
+name: AuthenticationManager
+uid: '@microsoft/teams-ai.AuthenticationManager'
+package: '@microsoft/teams-ai'
+summary: The user authentication manager.
+fullName: AuthenticationManager<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      AuthenticationManager<TState>(Application<TState>, AuthenticationOptions,
+      Storage)
+    uid: '@microsoft/teams-ai.AuthenticationManager.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the `AuthenticationManager` class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new AuthenticationManager(app: Application<TState>, options:
+        AuthenticationOptions, storage?: Storage)
+      parameters:
+        - id: app
+          type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+          description: The application instance.
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.AuthenticationOptions" />
+          description: Authentication options.
+        - id: storage
+          type: Storage
+          description: A storage instance otherwise Memory Storage is used.
+properties:
+  - name: default
+    uid: '@microsoft/teams-ai.AuthenticationManager.default'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: default
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'default: string'
+      return:
+        description: ''
+        type: string
+methods:
+  - name: get(string)
+    uid: '@microsoft/teams-ai.AuthenticationManager.get'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function get(name: string): Authentication<TState>'
+      parameters:
+        - id: name
+          type: string
+          description: The setting name.
+      return:
+        description: The authentication instance.
+        type: <xref uid="@microsoft/teams-ai.Authentication" />&lt;TState&gt;
+  - name: signOutUser(TurnContext, TState, string)
+    uid: '@microsoft/teams-ai.AuthenticationManager.signOutUser'
+    package: '@microsoft/teams-ai'
+    summary: Signs out a user.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function signOutUser(context: TurnContext, state: TState, settingName?:
+        string): Promise<void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The turn context.
+        - id: state
+          type: TState
+          description: The turn state.
+        - id: settingName
+          type: string
+          description: >-
+            Optional. The name of the setting to use. If not specified, the
+            default setting name is used.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: signUserIn(TurnContext, TState, string)
+    uid: '@microsoft/teams-ai.AuthenticationManager.signUserIn'
+    package: '@microsoft/teams-ai'
+    summary: Signs in a user.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function signUserIn(context: TurnContext, state: TState, settingName?:
+        string): Promise<SignInResponse>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The turn context.
+        - id: state
+          type: TState
+          description: The turn state.
+        - id: settingName
+          type: string
+          description: >-
+            Optional. The name of the setting to use. If not specified, the
+            default setting name is used.
+      return:
+        description: The sign in response.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.SignInResponse" />&gt;

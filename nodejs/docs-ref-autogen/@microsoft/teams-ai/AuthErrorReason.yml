@@ -1,0 +1,16 @@
+### YamlMime:TSTypeAlias
+name: AuthErrorReason
+uid: '@microsoft/teams-ai.AuthErrorReason'
+package: '@microsoft/teams-ai'
+summary: |-
+  Cause of an authentication error.
+      *
+fullName: AuthErrorReason
+remarks: >-
+  * `invalidActivity` - The activity is not a valid activity to initiate
+  authentication flow.
+      * `completionWithoutToken` - The authentication flow completed without a token.
+      * `other` - Other error.
+isDeprecated: false
+syntax: |
+  type AuthErrorReason = "invalidActivity" | "completionWithoutToken" | "other"

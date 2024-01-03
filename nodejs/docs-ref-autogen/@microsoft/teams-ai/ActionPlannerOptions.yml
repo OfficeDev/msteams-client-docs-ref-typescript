@@ -1,0 +1,93 @@
+### YamlMime:TSType
+name: ActionPlannerOptions
+uid: '@microsoft/teams-ai.ActionPlannerOptions'
+package: '@microsoft/teams-ai'
+summary: Options used to configure an `ActionPlanner` instance.
+fullName: ActionPlannerOptions<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: defaultPrompt
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.defaultPrompt'
+    package: '@microsoft/teams-ai'
+    summary: The default prompt to use.
+    fullName: defaultPrompt
+    remarks: >-
+      This can either be the name of a prompt template or a function that
+      returns a prompt template.
+    isDeprecated: false
+    syntax:
+      content: 'defaultPrompt: string | ActionPlannerPromptFactory<TState>'
+      return:
+        description: ''
+        type: >-
+          string | <xref uid="@microsoft/teams-ai.ActionPlannerPromptFactory"
+          />&lt;TState&gt;
+  - name: logRepairs
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.logRepairs'
+    package: '@microsoft/teams-ai'
+    summary: If true, repair attempts will be logged to the console.
+    fullName: logRepairs
+    remarks: The default value is false.
+    isDeprecated: false
+    syntax:
+      content: 'logRepairs?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: max_repair_attempts
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.max_repair_attempts'
+    package: '@microsoft/teams-ai'
+    summary: Maximum number of repair attempts to make.
+    fullName: max_repair_attempts
+    remarks: >-
+      The ActionPlanner uses validators and a feedback loop to repair invalid
+      responses returned
+
+      by the model. This value controls the maximum number of repair attempts
+      that will be made
+
+      before returning an error. The default value is 3.
+    isDeprecated: false
+    syntax:
+      content: 'max_repair_attempts?: number'
+      return:
+        description: ''
+        type: number
+  - name: model
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.model'
+    package: '@microsoft/teams-ai'
+    summary: Model instance to use.
+    fullName: model
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'model: PromptCompletionModel'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptCompletionModel" />
+  - name: prompts
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.prompts'
+    package: '@microsoft/teams-ai'
+    summary: Prompt manager used to manage prompts.
+    fullName: prompts
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'prompts: PromptManager'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />
+  - name: tokenizer
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.tokenizer'
+    package: '@microsoft/teams-ai'
+    summary: Optional tokenizer to use.
+    fullName: tokenizer
+    remarks: If not specified, a new `GPT3Tokenizer` instance will be created.
+    isDeprecated: false
+    syntax:
+      content: 'tokenizer?: Tokenizer'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Tokenizer" />

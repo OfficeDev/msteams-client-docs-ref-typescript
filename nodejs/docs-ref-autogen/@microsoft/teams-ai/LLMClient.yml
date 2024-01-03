@@ -1,0 +1,258 @@
+### YamlMime:TSType
+name: LLMClient
+uid: '@microsoft/teams-ai.LLMClient'
+package: '@microsoft/teams-ai'
+summary: LLMClient class that's used to complete prompts.
+fullName: LLMClient<TContent>
+remarks: >-
+  Each wave, at a minimum needs to be configured with a `client`, `prompt`, and
+  `prompt_options`.
+
+
+  Configuring the wave to use a `validator` is optional but recommended. The
+  primary benefit to
+
+  using LLMClient is it's response validation and automatic response repair
+  features. The
+
+  validator acts as guard and guarantees that you never get an malformed
+  response back from the
+
+  model. At least not without it being flagged as an `invalid_response`.
+
+
+  Using the `JSONResponseValidator`, for example, guarantees that you only ever
+  get a valid
+
+  object back from `completePrompt()`. In fact, you'll get back a fully parsed
+  object and any
+
+  additional response text from the model will be dropped. If you give the
+  `JSONResponseValidator`
+
+  a JSON Schema, you will get back a strongly typed and validated instance of an
+  object in
+
+  the returned `response.message.content`.
+
+
+  When a validator detects a bad response from the model, it gives the model
+  "feedback" as to the
+
+  problem it detected with its response and more importantly an instruction that
+  tells the model
+
+  how it should repair the problem. This puts the wave into a special repair
+  mode where it first
+
+  forks the memory for the conversation and then has a side conversation with
+  the model in an
+
+  effort to get it to repair its response. By forking the conversation, this
+  isolates the bad
+
+  response and prevents it from contaminating the main conversation history. If
+  the response can
+
+  be repaired, the wave will un-fork the memory and use the repaired response in
+  place of the
+
+  original bad response. To the model it's as if it never made a mistake which
+  is important for
+
+  future turns with the model. If the response can't be repaired, a response
+  status of
+
+  `invalid_response` will be returned.
+
+
+  When using a well designed validator, like the `JSONResponseValidator`, the
+  wave can typically
+
+  repair a bad response in a single additional model call. Sometimes it takes a
+  couple of calls
+
+  to effect a repair and occasionally it won't be able to repair it at all. If
+  your prompt is
+
+  well designed and you only occasionally see failed repair attempts, I'd
+  recommend just calling
+
+  the wave a second time. Given the stochastic nature of these models, there's a
+  decent chance
+
+  it won't make the same mistake on the second call. A well designed prompt
+  coupled with a well
+
+  designed validator should get the reliability of calling these models
+  somewhere close to 99%
+
+  reliable.
+
+
+  This "feedback" technique works with all the GPT-3 generation of models and
+  I've tested it with
+
+  `text-davinci-003`, `gpt-3.5-turbo`, and `gpt-4`. There's a good chance it
+  will work with other
+
+  open source models like `LLaMA` and Googles `Bard` but I have yet to test it
+  with those models.
+
+
+  LLMClient supports OpenAI's functions feature and can validate the models
+  response against the
+
+  schema for the supported functions. When an LLMClient is configured with both
+  a `OpenAIModel`
+
+  and a `FunctionResponseValidator`, the model will be cloned and configured to
+  send the
+
+  validators configured list of functions with the request. There's no need to
+  separately
+
+  configure the models `functions` list, but if you do, the models functions
+  list will be sent
+
+  instead.
+isDeprecated: false
+type: class
+constructors:
+  - name: LLMClient<TContent>(LLMClientOptions<TContent>)
+    uid: '@microsoft/teams-ai.LLMClient.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `LLMClient` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new LLMClient(options: LLMClientOptions<TContent>)'
+      parameters:
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.LLMClientOptions" />&lt;TContent&gt;
+          description: Options to configure the instance with.
+properties:
+  - name: options
+    uid: '@microsoft/teams-ai.LLMClient.options'
+    package: '@microsoft/teams-ai'
+    summary: Configured options for this LLMClient instance.
+    fullName: options
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'options: ConfiguredLLMClientOptions<TContent>'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/teams-ai.ConfiguredLLMClientOptions"
+          />&lt;TContent&gt;
+methods:
+  - name: addFunctionResultToHistory(Memory, string, any)
+    uid: '@microsoft/teams-ai.LLMClient.addFunctionResultToHistory'
+    package: '@microsoft/teams-ai'
+    summary: Adds a result from a `function_call` to the history.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function addFunctionResultToHistory(memory: Memory, name: string,
+        results: any)
+      parameters:
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: name
+          type: string
+          description: Name of the function that was called.
+        - id: results
+          type: any
+          description: Results returned by the function.
+  - name: completePrompt(TurnContext, Memory, PromptFunctions)
+    uid: '@microsoft/teams-ai.LLMClient.completePrompt'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt.
+    remarks: >-
+      The `input` parameter is optional but if passed in, will be assigned to
+      memory using the
+
+      configured `input_variable`. If it's not passed in an attempt will be made
+      to read it
+
+      from memory so passing it in or assigning to memory works. In either case,
+      the `input`
+
+      variable is only used when constructing a user message that, will be added
+      to the
+
+      conversation history and formatted like `{ role: 'user', content: input
+      }`.
+
+
+      It's important to note that if you want the users input sent to the model
+      as part of the
+
+      prompt, you will need to add a `UserMessage` section to your prompt. The
+      wave does not do
+
+      anything to modify your prompt, except when performing repairs and those
+      changes are
+
+      temporary.
+
+
+      When the model successfully returns a valid (or repaired) response, a
+      'user' message (if
+
+      input was detected) and 'assistant' message will be automatically added to
+      the conversation
+
+      history. You can disable that behavior by setting `max_history_messages`
+      to `0`.
+
+
+      The response returned by `completePrompt()` will be strongly typed by the
+      validator you're
+
+      using. The `DefaultResponseValidator` returns a `string` and the
+      `JSONResponseValidator`
+
+      will return either an `object` or if a JSON Schema is provided, an
+      instance of `TContent`.
+
+      When using a custom validator, the validator is return any type of content
+      it likes.
+
+
+      A successful response is indicated by `response.status == 'success'` and
+      the content can be
+
+      accessed via `response.message.content`.  If a response is invalid it will
+      have a
+
+      `response.status == 'invalid_response'` and the `response.message` will be
+      a string containing
+
+      the validator feedback message.  There are other status codes for various
+      errors and in all
+
+      cases except `success` the `response.message` will be of type `string`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completePrompt(context: TurnContext, memory: Memory, functions:
+        PromptFunctions): Promise<PromptResponse<TContent>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: functions
+          type: <xref uid="@microsoft/teams-ai.PromptFunctions" />
+          description: Functions to use when rendering the prompt.
+      return:
+        description: A `PromptResponse` with the status and message.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.PromptResponse"
+          />&lt;TContent&gt;&gt;

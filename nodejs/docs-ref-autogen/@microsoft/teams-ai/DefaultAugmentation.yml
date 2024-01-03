@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: DefaultAugmentation
+uid: '@microsoft/teams-ai.DefaultAugmentation'
+package: '@microsoft/teams-ai'
+summary: The default 'none' augmentation.
+fullName: DefaultAugmentation
+remarks: >-
+  This augmentation does not add any additional functionality to the prompt. It
+  always
+
+  returns a `Plan` with a single `SAY` command containing the models response.
+isDeprecated: false
+type: class
+methods:
+  - name: createPlanFromResponse(TurnContext, Memory, PromptResponse<string>)
+    uid: '@microsoft/teams-ai.DefaultAugmentation.createPlanFromResponse'
+    package: '@microsoft/teams-ai'
+    summary: Creates a plan given validated response value.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createPlanFromResponse(context: TurnContext, memory: Memory,
+        response: PromptResponse<string>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state variables.
+        - id: response
+          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          description: The validated and transformed response for the prompt.
+      return:
+        description: The created plan.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+  - name: createPromptSection()
+    uid: '@microsoft/teams-ai.DefaultAugmentation.createPromptSection'
+    package: '@microsoft/teams-ai'
+    summary: Creates an optional prompt section for the augmentation.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function createPromptSection(): undefined | PromptSection'
+      return:
+        description: ''
+        type: undefined | <xref uid="@microsoft/teams-ai.PromptSection" />
+  - name: >-
+      validateResponse(TurnContext, Memory, Tokenizer, PromptResponse<string>,
+      number)
+    uid: '@microsoft/teams-ai.DefaultAugmentation.validateResponse'
+    package: '@microsoft/teams-ai'
+    summary: Validates a response to a prompt.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validateResponse(context: TurnContext, memory: Memory,
+        tokenizer: Tokenizer, response: PromptResponse<string>,
+        remaining_attempts: number): Promise<Validation<string>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding and decoding text.
+        - id: response
+          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          description: Response to validate.
+        - id: remaining_attempts
+          type: number
+          description: Number of remaining attempts to validate the response.
+      return:
+        description: A `Validation` object.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.Validation"
+          />&lt;string&gt;&gt;

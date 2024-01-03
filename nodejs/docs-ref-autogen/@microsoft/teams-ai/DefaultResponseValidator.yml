@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: DefaultResponseValidator
+uid: '@microsoft/teams-ai.DefaultResponseValidator'
+package: '@microsoft/teams-ai'
+summary: Default response validator that always returns true.
+fullName: DefaultResponseValidator<TValue>
+remarks: ''
+isDeprecated: false
+type: class
+methods:
+  - name: >-
+      validateResponse(TurnContext, Memory, Tokenizer, PromptResponse<string>,
+      number)
+    uid: '@microsoft/teams-ai.DefaultResponseValidator.validateResponse'
+    package: '@microsoft/teams-ai'
+    summary: Validates a response to a prompt.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function validateResponse(context: TurnContext, memory: Memory,
+        tokenizer: Tokenizer, response: PromptResponse<string>,
+        remaining_attempts: number): Promise<Validation<TValue>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding and decoding text.
+        - id: response
+          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          description: Response to validate.
+        - id: remaining_attempts
+          type: number
+          description: Number of remaining attempts to validate the response.
+      return:
+        description: A `Validation` object.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.Validation"
+          />&lt;TValue&gt;&gt;

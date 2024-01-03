@@ -1,0 +1,46 @@
+### YamlMime:TSEnum
+name: MessageExtensionsInvokeNames
+uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames'
+package: '@microsoft/teams-ai'
+summary: Names of the invoke activities for Message Extensions.
+fullName: MessageExtensionsInvokeNames
+remarks: ''
+isDeprecated: false
+fields:
+  - name: ANONYMOUS_QUERY_LINK_INVOKE
+    uid: >-
+      @microsoft/teams-ai.MessageExtensionsInvokeNames.ANONYMOUS_QUERY_LINK_INVOKE
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for anonymous link unfurling.
+  - name: CONFIGURE_SETTINGS
+    uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames.CONFIGURE_SETTINGS'
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for configuring settings.
+  - name: FETCH_TASK_INVOKE
+    uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames.FETCH_TASK_INVOKE'
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for fetching task module.
+  - name: QUERY_CARD_BUTTON_CLICKED
+    uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames.QUERY_CARD_BUTTON_CLICKED'
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for handling on card button clicked.
+  - name: QUERY_INVOKE
+    uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames.QUERY_INVOKE'
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for query.
+  - name: QUERY_LINK_INVOKE
+    uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames.QUERY_LINK_INVOKE'
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for query link.
+  - name: QUERY_SETTING_URL
+    uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames.QUERY_SETTING_URL'
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for querying configuration settings.
+  - name: SELECT_ITEM_INVOKE
+    uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames.SELECT_ITEM_INVOKE'
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for selecting an item.
+  - name: SUBMIT_ACTION_INVOKE
+    uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames.SUBMIT_ACTION_INVOKE'
+    package: '@microsoft/teams-ai'
+    summary: Name of the invoke activity for submit action.

@@ -97,8 +97,9 @@ functions:
       content: >-
         function useTeams(options?: { initialTheme?: string, setThemeHandler?:
         (theme?: string) => void }): [{ context?: app.Context, fullScreen?:
-        boolean, inTeams?: boolean, theme: Theme, themeString: string }, {
-        setTheme: (theme: string | undefined) => void }]
+        boolean, inTeams?: boolean, loading?: boolean, theme: Theme,
+        themeString: string }, { setTheme: (theme: string | undefined) => void
+        }]
       parameters:
         - id: options
           type: >-
@@ -118,8 +119,8 @@ functions:
            - setTheme - manually set the theme
         type: >-
           [{ context?: <xref uid="app.Context" />, fullScreen?: boolean,
-          inTeams?: boolean, theme: Theme, themeString: string }, { setTheme:
-          (theme: string | undefined) =&gt; void }]
+          inTeams?: boolean, loading?: boolean, theme: Theme, themeString:
+          string }, { setTheme: (theme: string | undefined) =&gt; void }]
   - name: useTeamsFx(Record<string, string>)
     uid: '@microsoft/teamsfx-react.useTeamsFx'
     package: '@microsoft/teamsfx-react'

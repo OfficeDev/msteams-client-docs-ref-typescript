@@ -1,0 +1,233 @@
+### YamlMime:TSType
+name: PromptManager
+uid: '@microsoft/teams-ai.PromptManager'
+package: '@microsoft/teams-ai'
+summary: A filesystem based prompt manager.
+fullName: PromptManager
+remarks: >-
+  The default prompt manager uses the file system to define prompts that are
+  compatible with
+
+  Microsoft's Semantic Kernel SDK (see:
+  https://github.com/microsoft/semantic-kernel)
+
+
+  Each prompt is a separate folder under a root prompts folder. The folder
+  should contain the following files:
+
+
+  - "config.json": Required. Contains the prompts configuration and is a
+  serialized instance of `PromptTemplateConfig`.
+
+  - "skprompt.txt": Required. Contains the text of the prompt and supports
+  Semantic Kernels prompt template syntax.
+
+  - "actions.json": Optional. Contains a list of actions that can be called by
+  the prompt.
+
+
+  Prompts can be loaded and used by name and new dynamically defined prompt
+  templates can be
+
+  registered with the prompt manager.
+isDeprecated: false
+type: class
+constructors:
+  - name: PromptManager(PromptManagerOptions)
+    uid: '@microsoft/teams-ai.PromptManager.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new 'PromptManager' instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new PromptManager(options: PromptManagerOptions)'
+      parameters:
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.PromptManagerOptions" />
+          description: Options used to configure the prompt manager.
+properties:
+  - name: options
+    uid: '@microsoft/teams-ai.PromptManager.options'
+    package: '@microsoft/teams-ai'
+    summary: Gets the configured prompt manager options.
+    fullName: options
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: ConfiguredPromptManagerOptions options
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.ConfiguredPromptManagerOptions" />
+methods:
+  - name: addDataSource(DataSource)
+    uid: '@microsoft/teams-ai.PromptManager.addDataSource'
+    package: '@microsoft/teams-ai'
+    summary: Registers a new data source with the prompt manager.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function addDataSource(dataSource: DataSource): PromptManager'
+      parameters:
+        - id: dataSource
+          type: <xref uid="@microsoft/teams-ai.DataSource" />
+          description: Data source to add.
+      return:
+        description: The prompt manager for chaining.
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />
+  - name: addFunction(string, PromptFunction)
+    uid: '@microsoft/teams-ai.PromptManager.addFunction'
+    package: '@microsoft/teams-ai'
+    summary: Registers a new prompt template function with the prompt manager.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function addFunction(name: string, fn: PromptFunction): PromptManager'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the function to add.
+        - id: fn
+          type: <xref uid="@microsoft/teams-ai.PromptFunction" />
+          description: Function to add.
+      return:
+        description: The prompt manager for chaining.
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />
+  - name: addPrompt(PromptTemplate)
+    uid: '@microsoft/teams-ai.PromptManager.addPrompt'
+    package: '@microsoft/teams-ai'
+    summary: Registers a new prompt template with the prompt manager.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function addPrompt(prompt: PromptTemplate): PromptManager'
+      parameters:
+        - id: prompt
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt template to add.
+      return:
+        description: The prompt manager for chaining.
+        type: <xref uid="@microsoft/teams-ai.PromptManager" />
+  - name: getDataSource(string)
+    uid: '@microsoft/teams-ai.PromptManager.getDataSource'
+    package: '@microsoft/teams-ai'
+    summary: Looks up a data source by name.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getDataSource(name: string): DataSource'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the data source to lookup.
+      return:
+        description: The data source.
+        type: <xref uid="@microsoft/teams-ai.DataSource" />
+  - name: getFunction(string)
+    uid: '@microsoft/teams-ai.PromptManager.getFunction'
+    package: '@microsoft/teams-ai'
+    summary: Looks up a prompt template function by name.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getFunction(name: string): PromptFunction'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the function to lookup.
+      return:
+        description: The function.
+        type: <xref uid="@microsoft/teams-ai.PromptFunction" />
+  - name: getPrompt(string)
+    uid: '@microsoft/teams-ai.PromptManager.getPrompt'
+    package: '@microsoft/teams-ai'
+    summary: Loads a named prompt template from the filesystem.
+    remarks: >-
+      The template will be pre-parsed and cached for use when the template is
+      rendered by name.
+
+
+      Any augmentations will also be added to the template.
+    isDeprecated: false
+    syntax:
+      content: 'function getPrompt(name: string): Promise<PromptTemplate>'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the prompt to load.
+      return:
+        description: The loaded and parsed prompt template.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.PromptTemplate" />&gt;
+  - name: hasDataSource(string)
+    uid: '@microsoft/teams-ai.PromptManager.hasDataSource'
+    package: '@microsoft/teams-ai'
+    summary: Checks for the existence of a named data source.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function hasDataSource(name: string): boolean'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the data source to lookup.
+      return:
+        description: True if the data source exists.
+        type: boolean
+  - name: hasFunction(string)
+    uid: '@microsoft/teams-ai.PromptManager.hasFunction'
+    package: '@microsoft/teams-ai'
+    summary: Checks for the existence of a named prompt template function.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function hasFunction(name: string): boolean'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the function to lookup.
+      return:
+        description: True if the function exists.
+        type: boolean
+  - name: hasPrompt(string)
+    uid: '@microsoft/teams-ai.PromptManager.hasPrompt'
+    package: '@microsoft/teams-ai'
+    summary: Checks for the existence of a named prompt.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function hasPrompt(name: string): Promise<boolean>'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the prompt to load.
+      return:
+        description: True if the prompt exists.
+        type: Promise&lt;boolean&gt;
+  - name: invokeFunction(string, TurnContext, Memory, Tokenizer, string[])
+    uid: '@microsoft/teams-ai.PromptManager.invokeFunction'
+    package: '@microsoft/teams-ai'
+    summary: Invokes a prompt template function by name.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function invokeFunction(name: string, context: TurnContext, memory:
+        Memory, tokenizer: Tokenizer, args: string[]): Promise<any>
+      parameters:
+        - id: name
+          type: string
+          description: Name of the function to invoke.
+        - id: context
+          type: TurnContext
+          description: Turn context for the current turn of conversation with the user.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use when rendering the prompt.
+        - id: args
+          type: string[]
+          description: Arguments to pass to the function.
+      return:
+        description: Value returned by the function.
+        type: Promise&lt;any&gt;

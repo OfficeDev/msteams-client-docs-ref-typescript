@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: RouteSelector
+uid: '@microsoft/teams-ai.RouteSelector'
+package: '@microsoft/teams-ai'
+summary: Function for selecting whether a route handler should be triggered.
+fullName: RouteSelector
+remarks: ''
+isDeprecated: false
+syntax: |
+  type RouteSelector = Selector

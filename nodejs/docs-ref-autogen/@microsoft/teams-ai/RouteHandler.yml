@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: RouteHandler
+uid: '@microsoft/teams-ai.RouteHandler'
+package: '@microsoft/teams-ai'
+summary: Function for handling an incoming request.
+fullName: RouteHandler<TState>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type RouteHandler<TState> = (
+    context: TurnContext,
+    state: TState
+  ) => Promise<void>

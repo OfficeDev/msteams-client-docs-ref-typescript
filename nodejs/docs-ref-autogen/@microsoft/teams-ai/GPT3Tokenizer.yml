@@ -1,0 +1,40 @@
+### YamlMime:TSType
+name: GPT3Tokenizer
+uid: '@microsoft/teams-ai.GPT3Tokenizer'
+package: '@microsoft/teams-ai'
+summary: Tokenizer that uses GPT-3's encoder.
+fullName: GPT3Tokenizer
+remarks: ''
+isDeprecated: false
+type: class
+methods:
+  - name: decode(number[])
+    uid: '@microsoft/teams-ai.GPT3Tokenizer.decode'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function decode(tokens: number[]): string'
+      parameters:
+        - id: tokens
+          type: number[]
+          description: ''
+      return:
+        description: ''
+        type: string
+  - name: encode(string)
+    uid: '@microsoft/teams-ai.GPT3Tokenizer.encode'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function encode(text: string): number[]'
+      parameters:
+        - id: text
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: number[]

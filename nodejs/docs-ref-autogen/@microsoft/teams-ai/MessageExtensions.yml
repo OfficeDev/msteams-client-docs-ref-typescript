@@ -1,0 +1,386 @@
+### YamlMime:TSType
+name: MessageExtensions
+uid: '@microsoft/teams-ai.MessageExtensions'
+package: '@microsoft/teams-ai'
+summary: >-
+  MessageExtensions class to enable fluent style registration of handlers
+  related to Message Extensions.
+fullName: MessageExtensions<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: MessageExtensions<TState>(Application<TState>)
+    uid: '@microsoft/teams-ai.MessageExtensions.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the MessageExtensions class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new MessageExtensions(app: Application<TState>)'
+      parameters:
+        - id: app
+          type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+          description: Top level application class to register handlers with.
+methods:
+  - name: >-
+      anonymousQueryLink((context: TurnContext, state: TState, url: string) =>
+      Promise<MessagingExtensionResult>)
+    uid: '@microsoft/teams-ai.MessageExtensions.anonymousQueryLink'
+    package: '@microsoft/teams-ai'
+    summary: Registers a handler for a command that performs anonymous link unfurling.
+    remarks: >-
+      The `composeExtension/anonymousQueryLink` INVOKE activity does not contain
+      any sort of command ID,
+
+      so only a single select item handler can be registered.
+
+      For more information visit
+      https://learn.microsoft.com/microsoftteams/platform/messaging-extensions/how-to/link-unfurling?#enable-zero-install-link-unfurling
+    isDeprecated: false
+    syntax:
+      content: >-
+        function anonymousQueryLink(handler: (context: TurnContext, state:
+        TState, url: string) => Promise<MessagingExtensionResult>):
+        Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, url: string) =&gt;
+            Promise&lt;MessagingExtensionResult&gt;
+          description: >-
+            Function to call when the command is received. The handler should
+            return a `MessagingExtensionResult`.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      botMessagePreviewEdit(string | RegExp | Selector | (string | RegExp |
+      Selector)[], (context: TurnContext, state: TState, previewActivity:
+      Partial<Activity>) => Promise<undefined | null | string |
+      MessagingExtensionResult | TaskModuleTaskInfo>)
+    uid: '@microsoft/teams-ai.MessageExtensions.botMessagePreviewEdit'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler to process the 'edit' action of a message that's being
+      previewed by the
+
+      user prior to sending.
+    remarks: >-
+      This handler is called when the user clicks the 'Edit' button on a message
+      that's being
+
+      previewed prior to insertion into the current chat. The handler should
+      return a new
+
+      view that allows the user to edit the message.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function botMessagePreviewEdit(commandId: string | RegExp | Selector |
+        (string | RegExp | Selector)[], handler: (context: TurnContext, state:
+        TState, previewActivity: Partial<Activity>) => Promise<undefined | null
+        | string | MessagingExtensionResult | TaskModuleTaskInfo>):
+        Application<TState>
+      parameters:
+        - id: commandId
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: ID of the command(s) to register the handler for.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, previewActivity:
+            Partial&lt;Activity&gt;) =&gt; Promise&lt;undefined | null | string
+            | MessagingExtensionResult | TaskModuleTaskInfo&gt;
+          description: Function to call when the command is received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      botMessagePreviewSend(string | RegExp | Selector | (string | RegExp |
+      Selector)[], (context: TurnContext, state: TState, previewActivity:
+      Partial<Activity>) => Promise<void>)
+    uid: '@microsoft/teams-ai.MessageExtensions.botMessagePreviewSend'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler to process the 'send' action of a message that's being
+      previewed by the
+
+      user prior to sending.
+    remarks: >-
+      This handler is called when the user clicks the 'Send' button on a message
+      that's being
+
+      previewed prior to insertion into the current chat. The handler should
+      complete the flow
+
+      by sending the message to the current chat.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function botMessagePreviewSend(commandId: string | RegExp | Selector |
+        (string | RegExp | Selector)[], handler: (context: TurnContext, state:
+        TState, previewActivity: Partial<Activity>) => Promise<void>):
+        Application<TState>
+      parameters:
+        - id: commandId
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: ID of the command(s) to register the handler for.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, previewActivity:
+            Partial&lt;Activity&gt;) =&gt; Promise&lt;void&gt;
+          description: Function to call when the command is received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      configureSettings<TData>((context: TurnContext, state: TState, settings:
+      TData) => Promise<void>)
+    uid: '@microsoft/teams-ai.MessageExtensions.configureSettings'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler that implements the logic to invoke configuring
+      Message Extension settings
+    remarks: >-
+      The `composeExtension/setting` INVOKE activity does not contain a command
+      ID, so only a single select item handler can be registered.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function configureSettings<TData>(handler: (context: TurnContext, state:
+        TState, settings: TData) => Promise<void>): Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, settings: TData) =&gt;
+            Promise&lt;void&gt;
+          description: >-
+            Function defined by the developer to call when the command is
+            received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      fetchTask(string | RegExp | Selector | (string | RegExp | Selector)[],
+      (context: TurnContext, state: TState) => Promise<string |
+      TaskModuleTaskInfo>)
+    uid: '@microsoft/teams-ai.MessageExtensions.fetchTask'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler to process the initial fetch task for an Action based
+      message extension.
+    remarks: >-
+      Handlers should response with either an initial TaskInfo object or a
+      string containing
+
+      a message to display to the user.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function fetchTask(commandId: string | RegExp | Selector | (string |
+        RegExp | Selector)[], handler: (context: TurnContext, state: TState) =>
+        Promise<string | TaskModuleTaskInfo>): Application<TState>
+      parameters:
+        - id: commandId
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: ID of the command(s) to register the handler for.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState) =&gt; Promise&lt;string |
+            TaskModuleTaskInfo&gt;
+          description: Function to call when the command is received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      handleOnButtonClicked<TData>((context: TurnContext, state: TState, data:
+      TData) => Promise<void>)
+    uid: '@microsoft/teams-ai.MessageExtensions.handleOnButtonClicked'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler that implements the logic when a user has clicked on a
+      button in a Message Extension card.
+    remarks: >-
+      The `composeExtension/onCardButtonClicked` INVOKE activity does not
+      contain any sort of command ID,
+
+      so only a single select item handler can be registered. Developers will
+      need to include a
+
+      type name of some sort in the preview item they return if they need to
+      support multiple select item handlers.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handleOnButtonClicked<TData>(handler: (context: TurnContext,
+        state: TState, data: TData) => Promise<void>): Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, data: TData) =&gt;
+            Promise&lt;void&gt;
+          description: >-
+            Function defined by the developer to call when the command is
+            received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      query<TParams>(string | RegExp | Selector | (string | RegExp |
+      Selector)[], (context: TurnContext, state: TState, query: Query<TParams>)
+      => Promise<MessagingExtensionResult>)
+    uid: '@microsoft/teams-ai.MessageExtensions.query'
+    package: '@microsoft/teams-ai'
+    summary: Registers a handler that implements a Search based Message Extension.
+    remarks: >-
+      This handler is called when the user submits a query to a Search based
+      Message Extension.
+
+      The handler should return a MessagingExtensionResult containing the
+      results of the query.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function query<TParams>(commandId: string | RegExp | Selector | (string
+        | RegExp | Selector)[], handler: (context: TurnContext, state: TState,
+        query: Query<TParams>) => Promise<MessagingExtensionResult>):
+        Application<TState>
+      parameters:
+        - id: commandId
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: ID of the command(s) to register the handler for.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, query: Query&lt;TParams&gt;)
+            =&gt; Promise&lt;MessagingExtensionResult&gt;
+          description: Function to call when the command is received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      queryLink((context: TurnContext, state: TState, url: string) =>
+      Promise<MessagingExtensionResult>)
+    uid: '@microsoft/teams-ai.MessageExtensions.queryLink'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler that implements a Link Unfurling based Message
+      Extension.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function queryLink(handler: (context: TurnContext, state: TState, url:
+        string) => Promise<MessagingExtensionResult>): Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, url: string) =&gt;
+            Promise&lt;MessagingExtensionResult&gt;
+          description: Function to call when the command is received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      queryUrlSetting((context: TurnContext, state: TState) =>
+      Promise<MessagingExtensionResult>)
+    uid: '@microsoft/teams-ai.MessageExtensions.queryUrlSetting'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler that invokes the fetch of the configuration settings
+      for a Message Extension.
+    remarks: >-
+      The `composeExtension/querySettingUrl` INVOKE activity does not contain a
+      command ID, so only a single select item handler can be registered.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function queryUrlSetting(handler: (context: TurnContext, state: TState)
+        => Promise<MessagingExtensionResult>): Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState) =&gt;
+            Promise&lt;MessagingExtensionResult&gt;
+          description: >-
+            Function defined by the developer to call when the command is
+            received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      selectItem<TItem>((context: TurnContext, state: TState, item: TItem) =>
+      Promise<MessagingExtensionResult>)
+    uid: '@microsoft/teams-ai.MessageExtensions.selectItem'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler that implements the logic to handle the tap actions
+      for items returned
+
+      by a Search based message extension.
+    remarks: >-
+      The `composeExtension/selectItem` INVOKE activity does not contain any
+      sort of command ID,
+
+      so only a single select item handler can be registered. Developers will
+      need to include a
+
+      type name of some sort in the preview item they return if they need to
+      support multiple
+
+      select item handlers.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function selectItem<TItem>(handler: (context: TurnContext, state:
+        TState, item: TItem) => Promise<MessagingExtensionResult>):
+        Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, item: TItem) =&gt;
+            Promise&lt;MessagingExtensionResult&gt;
+          description: Function to call when the command is received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      submitAction<TData>(string | RegExp | Selector | (string | RegExp |
+      Selector)[], (context: TurnContext, state: TState, data: TData) =>
+      Promise<undefined | null | string | MessagingExtensionResult |
+      TaskModuleTaskInfo>)
+    uid: '@microsoft/teams-ai.MessageExtensions.submitAction'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler that implements the submit action for an Action based
+      Message Extension.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function submitAction<TData>(commandId: string | RegExp | Selector |
+        (string | RegExp | Selector)[], handler: (context: TurnContext, state:
+        TState, data: TData) => Promise<undefined | null | string |
+        MessagingExtensionResult | TaskModuleTaskInfo>): Application<TState>
+      parameters:
+        - id: commandId
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: ID of the command(s) to register the handler for.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, data: TData) =&gt;
+            Promise&lt;undefined | null | string | MessagingExtensionResult |
+            TaskModuleTaskInfo&gt;
+          description: Function to call when the command is received.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;

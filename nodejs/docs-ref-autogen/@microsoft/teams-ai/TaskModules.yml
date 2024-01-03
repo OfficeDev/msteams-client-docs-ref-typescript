@@ -1,0 +1,139 @@
+### YamlMime:TSType
+name: TaskModules
+uid: '@microsoft/teams-ai.TaskModules'
+package: '@microsoft/teams-ai'
+summary: >-
+  TaskModules class to enable fluent style registration of handlers related to
+  Task Modules.
+fullName: TaskModules<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: TaskModules<TState>(Application<TState>)
+    uid: '@microsoft/teams-ai.TaskModules.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the TaskModules class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new TaskModules(app: Application<TState>)'
+      parameters:
+        - id: app
+          type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+          description: Top level application class to register handlers with.
+methods:
+  - name: >-
+      configFetch<TData>((context: TurnContext, state: TState, data: TData) =>
+      Promise<BotConfigAuth | TaskModuleResponse>)
+    uid: '@microsoft/teams-ai.TaskModules.configFetch'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler for fetching Teams config data for Auth or Task
+      Modules
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function configFetch<TData>(handler: (context: TurnContext, state:
+        TState, data: TData) => Promise<BotConfigAuth | TaskModuleResponse>):
+        Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, data: TData) =&gt;
+            Promise&lt;BotConfigAuth | TaskModuleResponse&gt;
+          description: Function to call when the handler is triggered.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      configSubmit<TData>((context: TurnContext, state: TState, data: TData) =>
+      Promise<BotConfigAuth | TaskModuleResponse>)
+    uid: '@microsoft/teams-ai.TaskModules.configSubmit'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler for submitting Teams config data for Auth or Task
+      Modules
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function configSubmit<TData>(handler: (context: TurnContext, state:
+        TState, data: TData) => Promise<BotConfigAuth | TaskModuleResponse>):
+        Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, data: TData) =&gt;
+            Promise&lt;BotConfigAuth | TaskModuleResponse&gt;
+          description: Function to call when the handler is triggered.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      fetch<TData>(string | RegExp | Selector | (string | RegExp | Selector)[],
+      (context: TurnContext, state: TState, data: TData) => Promise<string |
+      TaskModuleTaskInfo>)
+    uid: '@microsoft/teams-ai.TaskModules.fetch'
+    package: '@microsoft/teams-ai'
+    summary: Registers a handler to process the initial fetch of the task module.
+    remarks: >-
+      Handlers should respond with either an initial TaskInfo object or a string
+      containing
+
+      a message to display to the user.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function fetch<TData>(verb: string | RegExp | Selector | (string |
+        RegExp | Selector)[], handler: (context: TurnContext, state: TState,
+        data: TData) => Promise<string | TaskModuleTaskInfo>):
+        Application<TState>
+      parameters:
+        - id: verb
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: Name of the verb(s) to register the handler for.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, data: TData) =&gt;
+            Promise&lt;string | TaskModuleTaskInfo&gt;
+          description: Function to call when the handler is triggered.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
+      submit<TData>(string | RegExp | Selector | (string | RegExp | Selector)[],
+      (context: TurnContext, state: TState, data: TData) => Promise<undefined |
+      null | string | TaskModuleTaskInfo>)
+    uid: '@microsoft/teams-ai.TaskModules.submit'
+    package: '@microsoft/teams-ai'
+    summary: Registers a handler to process the submission of a task module.
+    remarks: >-
+      Handlers should respond with another TaskInfo object, message string, or
+      `null` to indicate
+
+      the task is completed.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function submit<TData>(verb: string | RegExp | Selector | (string |
+        RegExp | Selector)[], handler: (context: TurnContext, state: TState,
+        data: TData) => Promise<undefined | null | string |
+        TaskModuleTaskInfo>): Application<TState>
+      parameters:
+        - id: verb
+          type: >-
+            string | RegExp | <xref uid="@microsoft/teams-ai.Selector" /> |
+            (string | RegExp | <xref uid="@microsoft/teams-ai.Selector" />)[]
+          description: Name of the verb(s) to register the handler for.
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, data: TData) =&gt;
+            Promise&lt;undefined | null | string | TaskModuleTaskInfo&gt;
+          description: Function to call when the handler is triggered.
+      return:
+        description: The application for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;

@@ -1,0 +1,122 @@
+### YamlMime:TSType
+name: ConfiguredLLMClientOptions
+uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions'
+package: '@microsoft/teams-ai'
+summary: The configuration of the LLMClient instance.
+fullName: ConfiguredLLMClientOptions<TContent>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: history_variable
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.history_variable'
+    package: '@microsoft/teams-ai'
+    summary: Memory variable used for storing conversation history.
+    fullName: history_variable
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'history_variable: string'
+      return:
+        description: ''
+        type: string
+  - name: input_variable
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.input_variable'
+    package: '@microsoft/teams-ai'
+    summary: Memory variable used for storing the users input message.
+    fullName: input_variable
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'input_variable: string'
+      return:
+        description: ''
+        type: string
+  - name: logRepairs
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.logRepairs'
+    package: '@microsoft/teams-ai'
+    summary: If true, any repair attempts will be logged to the console.
+    fullName: logRepairs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'logRepairs: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: max_history_messages
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.max_history_messages'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Maximum number of conversation history messages that will be persisted to
+      memory.
+    fullName: max_history_messages
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_history_messages: number'
+      return:
+        description: ''
+        type: number
+  - name: max_repair_attempts
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.max_repair_attempts'
+    package: '@microsoft/teams-ai'
+    summary: Maximum number of automatic repair attempts that will be made.
+    fullName: max_repair_attempts
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_repair_attempts: number'
+      return:
+        description: ''
+        type: number
+  - name: model
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.model'
+    package: '@microsoft/teams-ai'
+    summary: AI model used for completing prompts.
+    fullName: model
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'model: PromptCompletionModel'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptCompletionModel" />
+  - name: template
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.template'
+    package: '@microsoft/teams-ai'
+    summary: Prompt used for the conversation.
+    fullName: template
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'template: PromptTemplate'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+  - name: tokenizer
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.tokenizer'
+    package: '@microsoft/teams-ai'
+    summary: Tokenizer used when rendering the prompt or counting tokens.
+    fullName: tokenizer
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tokenizer: Tokenizer'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+  - name: validator
+    uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions.validator'
+    package: '@microsoft/teams-ai'
+    summary: Response validator used when completing prompts.
+    fullName: validator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'validator: PromptResponseValidator<TContent>'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@microsoft/teams-ai.PromptResponseValidator"
+          />&lt;TContent&gt;

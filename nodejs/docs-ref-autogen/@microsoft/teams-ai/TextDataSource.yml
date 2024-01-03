@@ -1,0 +1,73 @@
+### YamlMime:TSType
+name: TextDataSource
+uid: '@microsoft/teams-ai.TextDataSource'
+package: '@microsoft/teams-ai'
+summary: A data source that can be used to add a static block of text to a prompt.
+fullName: TextDataSource
+remarks: >-
+  Primarily used for testing but could be used to inject some externally define
+  text into a
+
+  prompt. The text will be truncated to fit within the `maxTokens` limit.
+isDeprecated: false
+type: class
+constructors:
+  - name: TextDataSource(string, string)
+    uid: '@microsoft/teams-ai.TextDataSource.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `TextDataSource` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new TextDataSource(name: string, text: string)'
+      parameters:
+        - id: name
+          type: string
+          description: Name of the data source.
+        - id: text
+          type: string
+          description: Text to inject into the prompt.
+properties:
+  - name: name
+    uid: '@microsoft/teams-ai.TextDataSource.name'
+    package: '@microsoft/teams-ai'
+    summary: Name of the data source.
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: string name
+      return:
+        description: ''
+        type: string
+methods:
+  - name: renderData(TurnContext, Memory, Tokenizer, number)
+    uid: '@microsoft/teams-ai.TextDataSource.renderData'
+    package: '@microsoft/teams-ai'
+    summary: Renders the data source as a string of text.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function renderData(context: TurnContext, memory: Memory, tokenizer:
+        Tokenizer, maxTokens: number): Promise<RenderedPromptSection<string>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Turn context for the current turn of conversation with the user.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use when rendering the data source.
+        - id: maxTokens
+          type: number
+          description: Maximum number of tokens allowed to be rendered.
+      return:
+        description: >-
+          The text to inject into the prompt as a `RenderedPromptSection`
+          object.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.RenderedPromptSection"
+          />&lt;string&gt;&gt;

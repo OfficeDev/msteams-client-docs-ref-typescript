@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: TeamsMessageEvents
+uid: '@microsoft/teams-ai.TeamsMessageEvents'
+package: '@microsoft/teams-ai'
+summary: Message related events.
+fullName: TeamsMessageEvents
+remarks: ''
+isDeprecated: false
+syntax: |
+  type TeamsMessageEvents =
+    | "undeleteMessage"
+    | "softDeleteMessage"
+    | "editMessage"

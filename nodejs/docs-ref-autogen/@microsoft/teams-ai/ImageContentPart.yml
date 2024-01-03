@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: ImageContentPart
+uid: '@microsoft/teams-ai.ImageContentPart'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: ImageContentPart
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: image_url
+    uid: '@microsoft/teams-ai.ImageContentPart.image_url'
+    package: '@microsoft/teams-ai'
+    summary: The URL of the image.
+    fullName: image_url
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'image_url: string | { url: string }'
+      return:
+        description: ''
+        type: 'string | { url: string }'
+  - name: type
+    uid: '@microsoft/teams-ai.ImageContentPart.type'
+    package: '@microsoft/teams-ai'
+    summary: Type of the message content. Should always be 'image'.
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: "image"'
+      return:
+        description: ''
+        type: '"image"'

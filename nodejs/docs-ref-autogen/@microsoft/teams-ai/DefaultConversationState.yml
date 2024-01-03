@@ -1,0 +1,13 @@
+### YamlMime:TSType
+name: DefaultConversationState
+uid: '@microsoft/teams-ai.DefaultConversationState'
+package: '@microsoft/teams-ai'
+summary: Default conversation state
+fullName: DefaultConversationState
+remarks: >-
+  Inherit a new interface from this base interface to strongly type the
+  applications conversation
+
+  state.
+isDeprecated: false
+type: interface

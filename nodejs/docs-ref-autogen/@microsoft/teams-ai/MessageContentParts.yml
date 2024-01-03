@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: MessageContentParts
+uid: '@microsoft/teams-ai.MessageContentParts'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: MessageContentParts
+remarks: ''
+isDeprecated: false
+syntax: |
+  type MessageContentParts = TextContentPart | ImageContentPart

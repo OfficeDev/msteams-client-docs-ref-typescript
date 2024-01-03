@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: Planner
+uid: '@microsoft/teams-ai.Planner'
+package: '@microsoft/teams-ai'
+summary: >-
+  A planner is responsible for generating a plan that the AI system will
+  execute.
+fullName: Planner<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: beginTask(TurnContext, TState, AI<TState>)
+    uid: '@microsoft/teams-ai.Planner.beginTask'
+    package: '@microsoft/teams-ai'
+    summary: Starts a new task.
+    remarks: >-
+      This method is called when the AI system is ready to start a new task. The
+      planner should
+
+      generate a plan that the AI system will execute. Returning an empty plan
+      signals that
+
+      there is no work to be performed.
+
+
+      The planner should take the users input from `state.temp.input`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginTask(context: TurnContext, state: TState, ai: AI<TState>):
+        Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: ai
+          type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+          description: The AI system that is generating the plan.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+  - name: continueTask(TurnContext, TState, AI<TState>)
+    uid: '@microsoft/teams-ai.Planner.continueTask'
+    package: '@microsoft/teams-ai'
+    summary: Continues the current task.
+    remarks: >-
+      This method is called when the AI system has finished executing the
+      previous plan and is
+
+      ready to continue the current task. The planner should generate a plan
+      that the AI system
+
+      will execute. Returning an empty plan signals that the task is completed
+      and there is no work
+
+      to be performed.
+
+
+      The output from the last plan step that was executed is passed to the
+      planner via `state.temp.input`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function continueTask(context: TurnContext, state: TState, ai:
+        AI<TState>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+        - id: ai
+          type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
+          description: The AI system that is generating the plan.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;

@@ -1,0 +1,20 @@
+### YamlMime:TSTypeAlias
+name: PromptResponseStatus
+uid: '@microsoft/teams-ai.PromptResponseStatus'
+package: '@microsoft/teams-ai'
+summary: Status of the prompt response.
+fullName: PromptResponseStatus
+remarks: |-
+  `success` - The prompt was successfully completed.
+  `error` - An error occurred while completing the prompt.
+  `rate_limited` - The request was rate limited.
+  `invalid_response` - The response was invalid.
+  `too_long` - The rendered prompt exceeded the `max_input_tokens` limit.
+isDeprecated: false
+syntax: |
+  type PromptResponseStatus =
+    | "success"
+    | "error"
+    | "rate_limited"
+    | "invalid_response"
+    | "too_long"
