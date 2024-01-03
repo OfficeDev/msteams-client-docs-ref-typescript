@@ -1,0 +1,22 @@
+### YamlMime:TSType
+name: AdaptiveCard
+uid: '@microsoft/teams-ai.AdaptiveCard'
+package: '@microsoft/teams-ai'
+summary: Strongly typed Adaptive Card.
+fullName: AdaptiveCard
+remarks: see https://adaptivecards.io/explorer/ for schema details.
+isDeprecated: false
+type: interface
+properties:
+  - name: type
+    uid: '@microsoft/teams-ai.AdaptiveCard.type'
+    package: '@microsoft/teams-ai'
+    summary: Required type field.
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: "AdaptiveCard"'
+      return:
+        description: ''
+        type: '"AdaptiveCard"'

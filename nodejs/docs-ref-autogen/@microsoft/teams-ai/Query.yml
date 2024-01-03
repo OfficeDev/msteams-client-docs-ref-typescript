@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: Query
+uid: '@microsoft/teams-ai.Query'
+package: '@microsoft/teams-ai'
+summary: Query arguments for a search-based message extension.
+fullName: Query<TParams>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: count
+    uid: '@microsoft/teams-ai.Query.count'
+    package: '@microsoft/teams-ai'
+    summary: Number of items to return in the result set.
+    fullName: count
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'count: number'
+      return:
+        description: ''
+        type: number
+  - name: parameters
+    uid: '@microsoft/teams-ai.Query.parameters'
+    package: '@microsoft/teams-ai'
+    summary: Query parameters.
+    fullName: parameters
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'parameters: TParams'
+      return:
+        description: ''
+        type: TParams
+  - name: skip
+    uid: '@microsoft/teams-ai.Query.skip'
+    package: '@microsoft/teams-ai'
+    summary: Number of items to skip in the result set.
+    fullName: skip
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'skip: number'
+      return:
+        description: ''
+        type: number

@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: PromptResponse
+uid: '@microsoft/teams-ai.PromptResponse'
+package: '@microsoft/teams-ai'
+summary: Response returned by a `PromptCompletionClient`.
+fullName: PromptResponse<TContent>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: error
+    uid: '@microsoft/teams-ai.PromptResponse.error'
+    package: '@microsoft/teams-ai'
+    summary: Error returned.
+    fullName: error
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'error?: Error'
+      return:
+        description: ''
+        type: Error
+  - name: input
+    uid: '@microsoft/teams-ai.PromptResponse.input'
+    package: '@microsoft/teams-ai'
+    summary: User input message sent to the model. `undefined` if no input was sent.
+    fullName: input
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'input?: Message<any>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Message" />&lt;any&gt;
+  - name: message
+    uid: '@microsoft/teams-ai.PromptResponse.message'
+    package: '@microsoft/teams-ai'
+    summary: Message returned.
+    fullName: message
+    remarks: >-
+      This will be a `Message<TContent>` object if the status is `success`,
+      otherwise it will be a `string`.
+    isDeprecated: false
+    syntax:
+      content: 'message?: Message<TContent>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Message" />&lt;TContent&gt;
+  - name: status
+    uid: '@microsoft/teams-ai.PromptResponse.status'
+    package: '@microsoft/teams-ai'
+    summary: Status of the prompt response.
+    fullName: status
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'status: PromptResponseStatus'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptResponseStatus" />

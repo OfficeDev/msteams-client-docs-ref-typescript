@@ -1,0 +1,184 @@
+### YamlMime:TSType
+name: FunctionResponseMessage
+uid: '@microsoft/teams-ai.FunctionResponseMessage'
+package: '@microsoft/teams-ai'
+summary: Message containing the response to a function call.
+fullName: FunctionResponseMessage
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: FunctionResponseMessage(string, any, number, string)
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new 'FunctionResponseMessage' instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new FunctionResponseMessage(name: string, response: any, tokens?:
+        number, functionPrefix?: string)
+      parameters:
+        - id: name
+          type: string
+          description: Name of the function that was called.
+        - id: response
+          type: any
+          description: The response returned by the called function.
+        - id: tokens
+          type: number
+          description: Optional. Sizing strategy for this section. Defaults to `auto`.
+        - id: functionPrefix
+          type: string
+          description: >-
+            Optional. Prefix to use for function messages when rendering as
+            text. Defaults to `user: ` to simulate the response coming from the
+            user.
+properties:
+  - name: name
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.name'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: response
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.response'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: response
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'response: any'
+      return:
+        description: ''
+        type: any
+inheritedProperties:
+  - name: required
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.required'
+    package: '@microsoft/teams-ai'
+    summary: If true the section is mandatory otherwise it can be safely dropped.
+    fullName: required
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'required: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.required](xref:@microsoft/teams-ai.PromptSectionBase.required)
+  - name: separator
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.separator'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: separator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'separator: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.separator](xref:@microsoft/teams-ai.PromptSectionBase.separator)
+  - name: textPrefix
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.textPrefix'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: textPrefix
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'textPrefix: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.textPrefix](xref:@microsoft/teams-ai.PromptSectionBase.textPrefix)
+  - name: tokens
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.tokens'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The requested token budget for this section.
+
+      - Values between 0.0 and 1.0 represent a percentage of the total budget
+      and the section will be layed out proportionally to all other sections.
+
+      - Values greater than 1.0 represent the max number of tokens the section
+      should be allowed to consume.
+    fullName: tokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tokens: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.tokens](xref:@microsoft/teams-ai.PromptSectionBase.tokens)
+inheritedMethods:
+  - name: getMessageText(Message<string>)
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.getMessageText'
+    package: '@microsoft/teams-ai'
+    summary: Returns the content of a message as a string.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function getMessageText(message: Message<string>): string'
+      parameters:
+        - id: message
+          type: <xref uid="@microsoft/teams-ai.Message" />&lt;string&gt;
+          description: Message to get the text of.
+      return:
+        description: The message content as a string.
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.getMessageText](xref:@microsoft/teams-ai.PromptSectionBase.getMessageText)
+  - name: renderAsText(TurnContext, Memory, PromptFunctions, Tokenizer, number)
+    uid: '@microsoft/teams-ai.FunctionResponseMessage.renderAsText'
+    package: '@microsoft/teams-ai'
+    summary: Renders the prompt section as a string of text.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function renderAsText(context: TurnContext, memory: Memory, functions:
+        PromptFunctions, tokenizer: Tokenizer, maxTokens: number):
+        Promise<RenderedPromptSection<string>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: Interface for accessing state variables.
+        - id: functions
+          type: <xref uid="@microsoft/teams-ai.PromptFunctions" />
+          description: Functions for rendering prompts.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding/decoding text.
+        - id: maxTokens
+          type: number
+          description: Maximum number of tokens allowed for the rendered prompt.
+      return:
+        description: The rendered prompt section.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.RenderedPromptSection"
+          />&lt;string&gt;&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.renderAsText](xref:@microsoft/teams-ai.PromptSectionBase.renderAsText)
+extends: <xref uid="@microsoft/teams-ai.PromptSectionBase" />

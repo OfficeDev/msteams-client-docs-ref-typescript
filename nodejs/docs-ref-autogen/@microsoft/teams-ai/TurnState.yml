@@ -1,0 +1,233 @@
+### YamlMime:TSType
+name: TurnState
+uid: '@microsoft/teams-ai.TurnState'
+package: '@microsoft/teams-ai'
+summary: Base class defining a collection of turn state scopes.
+fullName: TurnState<TConversationState, TUserState, TTempState>
+remarks: >-
+  Developers can create a derived class that extends `TurnState` to add
+  additional state scopes.
+
+  ```JavaScript
+
+  class MyTurnState extends TurnState {
+    protected async onComputeStorageKeys(context) {
+      const keys = await super.onComputeStorageKeys(context);
+      keys['myScope'] = `myScopeKey`;
+      return keys;
+    }
+
+    public get myScope() {
+      const scope = this.getScope('myScope');
+      if (!scope) {
+        throw new Error(`MyTurnState hasn't been loaded. Call loadState() first.`);
+      }
+      return scope.value;
+    }
+
+    public set myScope(value) {
+      const scope = this.getScope('myScope');
+      if (!scope) {
+        throw new Error(`MyTurnState hasn't been loaded. Call loadState() first.`);
+      }
+      scope.replace(value);
+    }
+  }
+
+  ```
+isDeprecated: false
+type: class
+properties:
+  - name: conversation
+    uid: '@microsoft/teams-ai.TurnState.conversation'
+    package: '@microsoft/teams-ai'
+    summary: Accessor for the conversation state.
+    fullName: conversation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: TConversationState conversation
+      return:
+        description: ''
+        type: TConversationState
+  - name: isLoaded
+    uid: '@microsoft/teams-ai.TurnState.isLoaded'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Gets a value indicating whether the applications turn state has been
+      loaded.
+    fullName: isLoaded
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isLoaded
+      return:
+        description: ''
+        type: boolean
+  - name: temp
+    uid: '@microsoft/teams-ai.TurnState.temp'
+    package: '@microsoft/teams-ai'
+    summary: Accessor for the temp state.
+    fullName: temp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: TTempState temp
+      return:
+        description: ''
+        type: TTempState
+  - name: user
+    uid: '@microsoft/teams-ai.TurnState.user'
+    package: '@microsoft/teams-ai'
+    summary: Accessor for the user state.
+    fullName: user
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: TUserState user
+      return:
+        description: ''
+        type: TUserState
+methods:
+  - name: deleteConversationState()
+    uid: '@microsoft/teams-ai.TurnState.deleteConversationState'
+    package: '@microsoft/teams-ai'
+    summary: Deletes the state object for the current conversation from storage.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function deleteConversationState()
+  - name: deleteTempState()
+    uid: '@microsoft/teams-ai.TurnState.deleteTempState'
+    package: '@microsoft/teams-ai'
+    summary: Deletes the temp state object.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function deleteTempState()
+  - name: deleteUserState()
+    uid: '@microsoft/teams-ai.TurnState.deleteUserState'
+    package: '@microsoft/teams-ai'
+    summary: Deletes the state object for the current user from storage.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function deleteUserState()
+  - name: deleteValue(string)
+    uid: '@microsoft/teams-ai.TurnState.deleteValue'
+    package: '@microsoft/teams-ai'
+    summary: Deletes a value from the memory.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function deleteValue(path: string)'
+      parameters:
+        - id: path
+          type: string
+          description: >-
+            Path to the value to delete in the form of `[scope].property`. If
+            scope is omitted, the value is deleted from the temporary scope.
+  - name: getScope(string)
+    uid: '@microsoft/teams-ai.TurnState.getScope'
+    package: '@microsoft/teams-ai'
+    summary: Gets a state scope by name.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getScope(scope: string): undefined | TurnStateEntry'
+      parameters:
+        - id: scope
+          type: string
+          description: >-
+            Name of the state scope to return. (i.e. 'conversation', 'user', or
+            'temp')
+      return:
+        description: The state scope or undefined if not found.
+        type: undefined | <xref uid="@microsoft/teams-ai.TurnStateEntry" />
+  - name: getValue<TValue>(string)
+    uid: '@microsoft/teams-ai.TurnState.getValue'
+    package: '@microsoft/teams-ai'
+    summary: Retrieves a value from the memory.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getValue<TValue>(path: string): TValue'
+      parameters:
+        - id: path
+          type: string
+          description: >-
+            Path to the value to retrieve in the form of `[scope].property`. If
+            scope is omitted, the value is retrieved from the temporary scope.
+      return:
+        description: The value or undefined if not found.
+        type: TValue
+  - name: hasValue(string)
+    uid: '@microsoft/teams-ai.TurnState.hasValue'
+    package: '@microsoft/teams-ai'
+    summary: Checks if a value exists in the memory.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function hasValue(path: string): boolean'
+      parameters:
+        - id: path
+          type: string
+          description: >-
+            Path to the value to check in the form of `[scope].property`. If
+            scope is omitted, the value is checked in the temporary scope.
+      return:
+        description: True if the value exists, false otherwise.
+        type: boolean
+  - name: load(TurnContext, Storage)
+    uid: '@microsoft/teams-ai.TurnState.load'
+    package: '@microsoft/teams-ai'
+    summary: Loads all of the state scopes for the current turn.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function load(context: TurnContext, storage?: Storage): Promise<boolean>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: storage
+          type: Storage
+          description: Optional. Storage provider to load state scopes from.
+      return:
+        description: True if the states needed to be loaded.
+        type: Promise&lt;boolean&gt;
+  - name: save(TurnContext, Storage)
+    uid: '@microsoft/teams-ai.TurnState.save'
+    package: '@microsoft/teams-ai'
+    summary: Saves all of the state scopes for the current turn.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function save(context: TurnContext, storage?: Storage): Promise<void>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+        - id: storage
+          type: Storage
+          description: Optional. Storage provider to save state scopes to.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: setValue(string, unknown)
+    uid: '@microsoft/teams-ai.TurnState.setValue'
+    package: '@microsoft/teams-ai'
+    summary: Assigns a value to the memory.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setValue(path: string, value: unknown)'
+      parameters:
+        - id: path
+          type: string
+          description: >-
+            Path to the value to assign in the form of `[scope].property`. If
+            scope is omitted, the value is assigned to the temporary scope.
+        - id: value
+          type: unknown
+          description: Value to assign.

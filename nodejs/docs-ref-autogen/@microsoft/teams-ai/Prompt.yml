@@ -1,0 +1,106 @@
+### YamlMime:TSType
+name: Prompt
+uid: '@microsoft/teams-ai.Prompt'
+package: '@microsoft/teams-ai'
+summary: Top level prompt section.
+fullName: Prompt
+remarks: >-
+  Prompts are compositional such that they can be nested to create complex
+  prompt hierarchies.
+isDeprecated: false
+type: class
+constructors:
+  - name: Prompt(PromptSection[], number, boolean, string)
+    uid: '@microsoft/teams-ai.Prompt.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new 'Prompt' instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new Prompt(sections: PromptSection[], tokens?: number, required?:
+        boolean, separator?: string)
+      parameters:
+        - id: sections
+          type: <xref uid="@microsoft/teams-ai.PromptSection" />[]
+          description: Sections to render.
+        - id: tokens
+          type: number
+          description: Optional. Sizing strategy for this section. Defaults to `auto`.
+        - id: required
+          type: boolean
+          description: Optional. Indicates if this section is required. Defaults to `true`.
+        - id: separator
+          type: string
+          description: >-
+            Optional. Separator to use between sections when rendering as text.
+            Defaults to `\n\n`.
+inheritedProperties:
+  - name: required
+    uid: '@microsoft/teams-ai.Prompt.required'
+    package: '@microsoft/teams-ai'
+    summary: If true the section is mandatory otherwise it can be safely dropped.
+    fullName: required
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'required: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LayoutEngine.required](xref:@microsoft/teams-ai.LayoutEngine.required)
+  - name: sections
+    uid: '@microsoft/teams-ai.Prompt.sections'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: sections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sections: PromptSection[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptSection" />[]
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LayoutEngine.sections](xref:@microsoft/teams-ai.LayoutEngine.sections)
+  - name: separator
+    uid: '@microsoft/teams-ai.Prompt.separator'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: separator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'separator: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LayoutEngine.separator](xref:@microsoft/teams-ai.LayoutEngine.separator)
+  - name: tokens
+    uid: '@microsoft/teams-ai.Prompt.tokens'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The requested token budget for this section.
+
+      - Values between 0.0 and 1.0 represent a percentage of the total budget
+      and the section will be layed out proportionally to all other sections.
+
+      - Values greater than 1.0 represent the max number of tokens the section
+      should be allowed to consume.
+    fullName: tokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tokens: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [LayoutEngine.tokens](xref:@microsoft/teams-ai.LayoutEngine.tokens)
+extends: <xref uid="@microsoft/teams-ai.LayoutEngine" />

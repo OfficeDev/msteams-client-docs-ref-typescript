@@ -1,0 +1,29 @@
+### YamlMime:TSEnum
+name: TaskModuleInvokeNames
+uid: '@microsoft/teams-ai.TaskModuleInvokeNames'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: TaskModuleInvokeNames
+remarks: ''
+isDeprecated: false
+fields:
+  - name: CONFIG_FETCH_INVOKE_NAME
+    uid: '@microsoft/teams-ai.TaskModuleInvokeNames.CONFIG_FETCH_INVOKE_NAME'
+    package: '@microsoft/teams-ai'
+    summary: ''
+  - name: CONFIG_SUBMIT_INVOKE_NAME
+    uid: '@microsoft/teams-ai.TaskModuleInvokeNames.CONFIG_SUBMIT_INVOKE_NAME'
+    package: '@microsoft/teams-ai'
+    summary: ''
+  - name: DEFAULT_TASK_DATA_FILTER
+    uid: '@microsoft/teams-ai.TaskModuleInvokeNames.DEFAULT_TASK_DATA_FILTER'
+    package: '@microsoft/teams-ai'
+    summary: ''
+  - name: FETCH_INVOKE_NAME
+    uid: '@microsoft/teams-ai.TaskModuleInvokeNames.FETCH_INVOKE_NAME'
+    package: '@microsoft/teams-ai'
+    summary: ''
+  - name: SUBMIT_INVOKE_NAME
+    uid: '@microsoft/teams-ai.TaskModuleInvokeNames.SUBMIT_INVOKE_NAME'
+    package: '@microsoft/teams-ai'
+    summary: ''

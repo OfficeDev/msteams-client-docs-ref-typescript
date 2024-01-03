@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: TooManyStepsParameters
+uid: '@microsoft/teams-ai.TooManyStepsParameters'
+package: '@microsoft/teams-ai'
+summary: Parameters passed to the AI.TooManyStepsActionName action.
+fullName: TooManyStepsParameters
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: max_steps
+    uid: '@microsoft/teams-ai.TooManyStepsParameters.max_steps'
+    package: '@microsoft/teams-ai'
+    summary: Configured maximum number of steps allowed.
+    fullName: max_steps
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_steps: number'
+      return:
+        description: ''
+        type: number
+  - name: max_time
+    uid: '@microsoft/teams-ai.TooManyStepsParameters.max_time'
+    package: '@microsoft/teams-ai'
+    summary: Configured maximum amount of time allowed.
+    fullName: max_time
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_time: number'
+      return:
+        description: ''
+        type: number
+  - name: start_time
+    uid: '@microsoft/teams-ai.TooManyStepsParameters.start_time'
+    package: '@microsoft/teams-ai'
+    summary: Time the AI system started processing the current activity.
+    fullName: start_time
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'start_time: number'
+      return:
+        description: ''
+        type: number
+  - name: step_count
+    uid: '@microsoft/teams-ai.TooManyStepsParameters.step_count'
+    package: '@microsoft/teams-ai'
+    summary: Number of steps that have been executed.
+    fullName: step_count
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'step_count: number'
+      return:
+        description: ''
+        type: number

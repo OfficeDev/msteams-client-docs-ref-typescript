@@ -1,0 +1,72 @@
+### YamlMime:TSType
+name: ConfiguredAIOptions
+uid: '@microsoft/teams-ai.ConfiguredAIOptions'
+package: '@microsoft/teams-ai'
+summary: The configured options for the AI system after all defaults have been applied.
+fullName: ConfiguredAIOptions<TState>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: allow_looping
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.allow_looping'
+    package: '@microsoft/teams-ai'
+    summary: If true, the AI system will allow the planner to loop.
+    fullName: allow_looping
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'allow_looping: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: max_steps
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.max_steps'
+    package: '@microsoft/teams-ai'
+    summary: Maximum number of actions to execute in a single turn.
+    fullName: max_steps
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_steps: number'
+      return:
+        description: ''
+        type: number
+  - name: max_time
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.max_time'
+    package: '@microsoft/teams-ai'
+    summary: Maximum amount of time to spend executing a single turn in milliseconds.
+    fullName: max_time
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'max_time: number'
+      return:
+        description: ''
+        type: number
+  - name: moderator
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.moderator'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The moderator being used for moderating input passed to the model and the
+      output
+    fullName: moderator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'moderator: Moderator<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Moderator" />&lt;TState&gt;
+  - name: planner
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.planner'
+    package: '@microsoft/teams-ai'
+    summary: The planner being used for generating plans.
+    fullName: planner
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'planner: Planner<TState>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Planner" />&lt;TState&gt;

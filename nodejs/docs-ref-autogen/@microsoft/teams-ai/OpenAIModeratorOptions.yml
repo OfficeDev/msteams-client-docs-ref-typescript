@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: OpenAIModeratorOptions
+uid: '@microsoft/teams-ai.OpenAIModeratorOptions'
+package: '@microsoft/teams-ai'
+summary: Options for the OpenAI based moderator.
+fullName: OpenAIModeratorOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: apiKey
+    uid: '@microsoft/teams-ai.OpenAIModeratorOptions.apiKey'
+    package: '@microsoft/teams-ai'
+    summary: OpenAI API key
+    fullName: apiKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiKey: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@microsoft/teams-ai.OpenAIModeratorOptions.apiVersion'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Azure Content Safety API version.
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion?: string'
+      return:
+        description: ''
+        type: string
+  - name: endpoint
+    uid: '@microsoft/teams-ai.OpenAIModeratorOptions.endpoint'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI endpoint.
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: string'
+      return:
+        description: ''
+        type: string
+  - name: model
+    uid: '@microsoft/teams-ai.OpenAIModeratorOptions.model'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI model to use.
+    fullName: model
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'model?: string'
+      return:
+        description: ''
+        type: string
+  - name: moderate
+    uid: '@microsoft/teams-ai.OpenAIModeratorOptions.moderate'
+    package: '@microsoft/teams-ai'
+    summary: Which parts of the conversation to moderate.
+    fullName: moderate
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'moderate: "input" | "output" | "both"'
+      return:
+        description: ''
+        type: '"input" | "output" | "both"'
+  - name: organization
+    uid: '@microsoft/teams-ai.OpenAIModeratorOptions.organization'
+    package: '@microsoft/teams-ai'
+    summary: Optional. OpenAI organization.
+    fullName: organization
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'organization?: string'
+      return:
+        description: ''
+        type: string

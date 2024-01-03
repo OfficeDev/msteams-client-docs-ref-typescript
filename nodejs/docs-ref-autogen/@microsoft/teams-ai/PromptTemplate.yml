@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: PromptTemplate
+uid: '@microsoft/teams-ai.PromptTemplate'
+package: '@microsoft/teams-ai'
+summary: Prompt template cached by the prompt manager.
+fullName: PromptTemplate
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: actions
+    uid: '@microsoft/teams-ai.PromptTemplate.actions'
+    package: '@microsoft/teams-ai'
+    summary: Optional list of actions the model may generate JSON inputs for.
+    fullName: actions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'actions?: ChatCompletionAction[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.ChatCompletionAction" />[]
+  - name: augmentation
+    uid: '@microsoft/teams-ai.PromptTemplate.augmentation'
+    package: '@microsoft/teams-ai'
+    summary: Optional augmentation for the prompt template.
+    fullName: augmentation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'augmentation?: Augmentation<any>'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Augmentation" />&lt;any&gt;
+  - name: config
+    uid: '@microsoft/teams-ai.PromptTemplate.config'
+    package: '@microsoft/teams-ai'
+    summary: Configuration settings for the prompt template.
+    fullName: config
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'config: PromptTemplateConfig'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptTemplateConfig" />
+  - name: name
+    uid: '@microsoft/teams-ai.PromptTemplate.name'
+    package: '@microsoft/teams-ai'
+    summary: Name of the prompt template.
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: prompt
+    uid: '@microsoft/teams-ai.PromptTemplate.prompt'
+    package: '@microsoft/teams-ai'
+    summary: Text of the prompt template.
+    fullName: prompt
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'prompt: PromptSection'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptSection" />

@@ -1,0 +1,75 @@
+### YamlMime:TSType
+name: Memory
+uid: '@microsoft/teams-ai.Memory'
+package: '@microsoft/teams-ai'
+summary: Represents a memory.
+fullName: Memory
+remarks: A memory is a key-value store that can be used to store and retrieve values.
+isDeprecated: false
+type: interface
+methods:
+  - name: deleteValue(string)
+    uid: '@microsoft/teams-ai.Memory.deleteValue'
+    package: '@microsoft/teams-ai'
+    summary: Deletes a value from the memory.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function deleteValue(path: string)'
+      parameters:
+        - id: path
+          type: string
+          description: >-
+            Path to the value to delete in the form of `[scope].property`. If
+            scope is omitted, the value is deleted from the temporary scope.
+  - name: getValue<TValue>(string)
+    uid: '@microsoft/teams-ai.Memory.getValue'
+    package: '@microsoft/teams-ai'
+    summary: Retrieves a value from the memory.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getValue<TValue>(path: string): TValue'
+      parameters:
+        - id: path
+          type: string
+          description: >-
+            Path to the value to retrieve in the form of `[scope].property`. If
+            scope is omitted, the value is retrieved from the temporary scope.
+      return:
+        description: The value or undefined if not found.
+        type: TValue
+  - name: hasValue(string)
+    uid: '@microsoft/teams-ai.Memory.hasValue'
+    package: '@microsoft/teams-ai'
+    summary: Checks if a value exists in the memory.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function hasValue(path: string): boolean'
+      parameters:
+        - id: path
+          type: string
+          description: >-
+            Path to the value to check in the form of `[scope].property`. If
+            scope is omitted, the value is checked in the temporary scope.
+      return:
+        description: True if the value exists, false otherwise.
+        type: boolean
+  - name: setValue(string, unknown)
+    uid: '@microsoft/teams-ai.Memory.setValue'
+    package: '@microsoft/teams-ai'
+    summary: Assigns a value to the memory.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setValue(path: string, value: unknown)'
+      parameters:
+        - id: path
+          type: string
+          description: >-
+            Path to the value to assign in the form of `[scope].property`. If
+            scope is omitted, the value is assigned to the temporary scope.
+        - id: value
+          type: unknown
+          description: Value to assign.

@@ -1,0 +1,10 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-ai.preview'
+name: preview
+summary: ''
+type: module
+classes:
+  - '@microsoft/teams-ai.preview.AssistantsPlanner'
+interfaces:
+  - '@microsoft/teams-ai.preview.AssistantsPlannerOptions'
+package: '@microsoft/teams-ai'

@@ -1,0 +1,99 @@
+### YamlMime:TSType
+name: TurnStateEntry
+uid: '@microsoft/teams-ai.TurnStateEntry'
+package: '@microsoft/teams-ai'
+summary: Accessor class for managing an individual state scope.
+fullName: TurnStateEntry
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: TurnStateEntry(Record<string, unknown>, string)
+    uid: '@microsoft/teams-ai.TurnStateEntry.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the `TurnStateEntry` class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new TurnStateEntry(value?: Record<string, unknown>, storageKey?: string)'
+      parameters:
+        - id: value
+          type: Record&lt;string, unknown&gt;
+          description: >-
+            Optional. Value to initialize the state scope with. The default is
+            an {} object.
+        - id: storageKey
+          type: string
+          description: Optional. Storage key to use when persisting the state scope.
+properties:
+  - name: hasChanged
+    uid: '@microsoft/teams-ai.TurnStateEntry.hasChanged'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Gets a value indicating whether the state scope has changed since it was
+      last loaded.
+    fullName: hasChanged
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean hasChanged
+      return:
+        description: A value indicating whether the state scope has changed.
+        type: boolean
+  - name: isDeleted
+    uid: '@microsoft/teams-ai.TurnStateEntry.isDeleted'
+    package: '@microsoft/teams-ai'
+    summary: Gets a value indicating whether the state scope has been deleted.
+    fullName: isDeleted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean isDeleted
+      return:
+        description: A value indicating whether the state scope has been deleted.
+        type: boolean
+  - name: storageKey
+    uid: '@microsoft/teams-ai.TurnStateEntry.storageKey'
+    package: '@microsoft/teams-ai'
+    summary: Gets the storage key used to persist the state scope.
+    fullName: storageKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: undefined | string storageKey
+      return:
+        description: The storage key used to persist the state scope.
+        type: undefined | string
+  - name: value
+    uid: '@microsoft/teams-ai.TurnStateEntry.value'
+    package: '@microsoft/teams-ai'
+    summary: Gets the value of the state scope.
+    fullName: value
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: Record<string, unknown> value
+      return:
+        description: The value of the state scope.
+        type: Record&lt;string, unknown&gt;
+methods:
+  - name: delete()
+    uid: '@microsoft/teams-ai.TurnStateEntry.delete'
+    package: '@microsoft/teams-ai'
+    summary: Clears the state scope.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function delete()
+  - name: replace(Record<string, unknown>)
+    uid: '@microsoft/teams-ai.TurnStateEntry.replace'
+    package: '@microsoft/teams-ai'
+    summary: Replaces the state scope with a new value.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function replace(value?: Record<string, unknown>)'
+      parameters:
+        - id: value
+          type: Record&lt;string, unknown&gt;
+          description: New value to replace the state scope with.

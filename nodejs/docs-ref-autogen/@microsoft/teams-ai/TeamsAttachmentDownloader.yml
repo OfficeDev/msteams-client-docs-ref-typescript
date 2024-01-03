@@ -1,0 +1,43 @@
+### YamlMime:TSType
+name: TeamsAttachmentDownloader
+uid: '@microsoft/teams-ai.TeamsAttachmentDownloader'
+package: '@microsoft/teams-ai'
+summary: Downloads attachments from Teams using the bots access token.
+fullName: TeamsAttachmentDownloader<TState>
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: TeamsAttachmentDownloader<TState>(TeamsAttachmentDownloaderOptions)
+    uid: '@microsoft/teams-ai.TeamsAttachmentDownloader.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new instance of the `TeamsAttachmentDownloader` class.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new TeamsAttachmentDownloader(options: TeamsAttachmentDownloaderOptions)'
+      parameters:
+        - id: options
+          type: <xref uid="@microsoft/teams-ai.TeamsAttachmentDownloaderOptions" />
+          description: Options for the `TeamsAttachmentDownloader` class.
+methods:
+  - name: downloadFiles(TurnContext, TState)
+    uid: '@microsoft/teams-ai.TeamsAttachmentDownloader.downloadFiles'
+    package: '@microsoft/teams-ai'
+    summary: Download any files relative to the current user's input.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function downloadFiles(context: TurnContext, state: TState):
+        Promise<InputFile[]>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: TState
+          description: Application state for the current turn of conversation.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.InputFile" />[]&gt;

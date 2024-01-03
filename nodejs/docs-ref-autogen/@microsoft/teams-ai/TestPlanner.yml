@@ -1,0 +1,155 @@
+### YamlMime:TSType
+name: TestPlanner
+uid: '@microsoft/teams-ai.TestPlanner'
+package: '@microsoft/teams-ai'
+summary: A planner used for testing.
+fullName: TestPlanner
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: TestPlanner(Plan, Plan)
+    uid: '@microsoft/teams-ai.TestPlanner.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `TestPlanner` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new TestPlanner(beginPlan?: Plan, continuePlan?: Plan)'
+      parameters:
+        - id: beginPlan
+          type: <xref uid="@microsoft/teams-ai.Plan" />
+          description: >-
+            Optional. The plan to return when `beginTask()` is called. Defaults
+            to a plan that says "Hello World".
+        - id: continuePlan
+          type: <xref uid="@microsoft/teams-ai.Plan" />
+          description: >-
+            Optional. The plan to return when `continueTask()` is called.
+            Defaults to an empty plan.
+properties:
+  - name: beginPlan
+    uid: '@microsoft/teams-ai.TestPlanner.beginPlan'
+    package: '@microsoft/teams-ai'
+    summary: The plan to return when `beginTask()` is called.
+    fullName: beginPlan
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'beginPlan: Plan'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Plan" />
+  - name: continuePlan
+    uid: '@microsoft/teams-ai.TestPlanner.continuePlan'
+    package: '@microsoft/teams-ai'
+    summary: The plan to return when `continueTask()` is called.
+    fullName: continuePlan
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'continuePlan: Plan'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Plan" />
+methods:
+  - name: >-
+      beginTask(TurnContext, TurnState<DefaultConversationState,
+      DefaultUserState, DefaultTempState>,
+      AI<TurnState<DefaultConversationState, DefaultUserState,
+      DefaultTempState>>)
+    uid: '@microsoft/teams-ai.TestPlanner.beginTask'
+    package: '@microsoft/teams-ai'
+    summary: Starts a new task.
+    remarks: >-
+      This method is called when the AI system is ready to start a new task. The
+      planner should
+
+      generate a plan that the AI system will execute. Returning an empty plan
+      signals that
+
+      there is no work to be performed.
+
+
+      The planner should take the users input from `state.temp.input`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginTask(context: TurnContext, state:
+        TurnState<DefaultConversationState, DefaultUserState, DefaultTempState>,
+        ai: AI<TurnState<DefaultConversationState, DefaultUserState,
+        DefaultTempState>>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: >-
+            <xref uid="@microsoft/teams-ai.TurnState" />&lt;<xref
+            uid="@microsoft/teams-ai.DefaultConversationState" />, <xref
+            uid="@microsoft/teams-ai.DefaultUserState" />, <xref
+            uid="@microsoft/teams-ai.DefaultTempState" />&gt;
+          description: Application state for the current turn of conversation.
+        - id: ai
+          type: >-
+            <xref uid="@microsoft/teams-ai.AI" />&lt;<xref
+            uid="@microsoft/teams-ai.TurnState" />&lt;<xref
+            uid="@microsoft/teams-ai.DefaultConversationState" />, <xref
+            uid="@microsoft/teams-ai.DefaultUserState" />, <xref
+            uid="@microsoft/teams-ai.DefaultTempState" />&gt;&gt;
+          description: The AI system that is generating the plan.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
+  - name: >-
+      continueTask(TurnContext, TurnState<DefaultConversationState,
+      DefaultUserState, DefaultTempState>,
+      AI<TurnState<DefaultConversationState, DefaultUserState,
+      DefaultTempState>>)
+    uid: '@microsoft/teams-ai.TestPlanner.continueTask'
+    package: '@microsoft/teams-ai'
+    summary: Continues the current task.
+    remarks: >-
+      This method is called when the AI system has finished executing the
+      previous plan and is
+
+      ready to continue the current task. The planner should generate a plan
+      that the AI system
+
+      will execute. Returning an empty plan signals that the task is completed
+      and there is no work
+
+      to be performed.
+
+
+      The output from the last plan step that was executed is passed to the
+      planner via `state.temp.input`.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function continueTask(context: TurnContext, state:
+        TurnState<DefaultConversationState, DefaultUserState, DefaultTempState>,
+        ai: AI<TurnState<DefaultConversationState, DefaultUserState,
+        DefaultTempState>>): Promise<Plan>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: state
+          type: >-
+            <xref uid="@microsoft/teams-ai.TurnState" />&lt;<xref
+            uid="@microsoft/teams-ai.DefaultConversationState" />, <xref
+            uid="@microsoft/teams-ai.DefaultUserState" />, <xref
+            uid="@microsoft/teams-ai.DefaultTempState" />&gt;
+          description: Application state for the current turn of conversation.
+        - id: ai
+          type: >-
+            <xref uid="@microsoft/teams-ai.AI" />&lt;<xref
+            uid="@microsoft/teams-ai.TurnState" />&lt;<xref
+            uid="@microsoft/teams-ai.DefaultConversationState" />, <xref
+            uid="@microsoft/teams-ai.DefaultUserState" />, <xref
+            uid="@microsoft/teams-ai.DefaultTempState" />&gt;&gt;
+          description: The AI system that is generating the plan.
+      return:
+        description: The plan that was generated.
+        type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;

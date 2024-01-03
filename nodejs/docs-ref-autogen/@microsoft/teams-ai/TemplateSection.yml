@@ -1,0 +1,210 @@
+### YamlMime:TSType
+name: TemplateSection
+uid: '@microsoft/teams-ai.TemplateSection'
+package: '@microsoft/teams-ai'
+summary: A template section that will be rendered as a message.
+fullName: TemplateSection
+remarks: >-
+  This section type is used to render a template as a message. The template can
+  contain
+
+  parameters that will be replaced with values from memory or call functions to
+  generate
+
+  dynamic content.
+
+
+  Template syntax:
+
+  - `{{$memoryKey}}` - Renders the value of the specified memory key.
+
+  - `{{functionName}}` - Calls the specified function and renders the result.
+
+  - `{{functionName arg1 arg2 ...}}` - Calls the specified function with the
+  provided list of arguments.
+
+
+  Function arguments are optional and separated by spaces. They can be quoted
+  using `'`, `"`, or `\`` delimiters.
+isDeprecated: false
+type: class
+constructors:
+  - name: TemplateSection(string, string, number, boolean, string, string)
+    uid: '@microsoft/teams-ai.TemplateSection.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new 'TemplateSection' instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TemplateSection(template: string, role: string, tokens?: number,
+        required?: boolean, separator?: string, textPrefix?: string)
+      parameters:
+        - id: template
+          type: string
+          description: Template to use for this section.
+        - id: role
+          type: string
+          description: Message role to use for this section.
+        - id: tokens
+          type: number
+          description: Optional. Sizing strategy for this section. Defaults to `auto`.
+        - id: required
+          type: boolean
+          description: Optional. Indicates if this section is required. Defaults to `true`.
+        - id: separator
+          type: string
+          description: >-
+            Optional. Separator to use between sections when rendering as text.
+            Defaults to `\n`.
+        - id: textPrefix
+          type: string
+          description: Optional. Prefix to use for text output. Defaults to `undefined`.
+properties:
+  - name: role
+    uid: '@microsoft/teams-ai.TemplateSection.role'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: role
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'role: string'
+      return:
+        description: ''
+        type: string
+  - name: template
+    uid: '@microsoft/teams-ai.TemplateSection.template'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: template
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'template: string'
+      return:
+        description: ''
+        type: string
+inheritedProperties:
+  - name: required
+    uid: '@microsoft/teams-ai.TemplateSection.required'
+    package: '@microsoft/teams-ai'
+    summary: If true the section is mandatory otherwise it can be safely dropped.
+    fullName: required
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'required: boolean'
+      return:
+        description: ''
+        type: boolean
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.required](xref:@microsoft/teams-ai.PromptSectionBase.required)
+  - name: separator
+    uid: '@microsoft/teams-ai.TemplateSection.separator'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: separator
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'separator: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.separator](xref:@microsoft/teams-ai.PromptSectionBase.separator)
+  - name: textPrefix
+    uid: '@microsoft/teams-ai.TemplateSection.textPrefix'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: textPrefix
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'textPrefix: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.textPrefix](xref:@microsoft/teams-ai.PromptSectionBase.textPrefix)
+  - name: tokens
+    uid: '@microsoft/teams-ai.TemplateSection.tokens'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The requested token budget for this section.
+
+      - Values between 0.0 and 1.0 represent a percentage of the total budget
+      and the section will be layed out proportionally to all other sections.
+
+      - Values greater than 1.0 represent the max number of tokens the section
+      should be allowed to consume.
+    fullName: tokens
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tokens: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.tokens](xref:@microsoft/teams-ai.PromptSectionBase.tokens)
+inheritedMethods:
+  - name: getMessageText(Message<string>)
+    uid: '@microsoft/teams-ai.TemplateSection.getMessageText'
+    package: '@microsoft/teams-ai'
+    summary: Returns the content of a message as a string.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function getMessageText(message: Message<string>): string'
+      parameters:
+        - id: message
+          type: <xref uid="@microsoft/teams-ai.Message" />&lt;string&gt;
+          description: Message to get the text of.
+      return:
+        description: The message content as a string.
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.getMessageText](xref:@microsoft/teams-ai.PromptSectionBase.getMessageText)
+  - name: renderAsText(TurnContext, Memory, PromptFunctions, Tokenizer, number)
+    uid: '@microsoft/teams-ai.TemplateSection.renderAsText'
+    package: '@microsoft/teams-ai'
+    summary: Renders the prompt section as a string of text.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function renderAsText(context: TurnContext, memory: Memory, functions:
+        PromptFunctions, tokenizer: Tokenizer, maxTokens: number):
+        Promise<RenderedPromptSection<string>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: Interface for accessing state variables.
+        - id: functions
+          type: <xref uid="@microsoft/teams-ai.PromptFunctions" />
+          description: Functions for rendering prompts.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use for encoding/decoding text.
+        - id: maxTokens
+          type: number
+          description: Maximum number of tokens allowed for the rendered prompt.
+      return:
+        description: The rendered prompt section.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-ai.RenderedPromptSection"
+          />&lt;string&gt;&gt;
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PromptSectionBase.renderAsText](xref:@microsoft/teams-ai.PromptSectionBase.renderAsText)
+extends: <xref uid="@microsoft/teams-ai.PromptSectionBase" />

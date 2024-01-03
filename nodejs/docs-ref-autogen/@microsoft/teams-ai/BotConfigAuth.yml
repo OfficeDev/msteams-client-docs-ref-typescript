@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: BotConfigAuth
+uid: '@microsoft/teams-ai.BotConfigAuth'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: BotConfigAuth
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: suggestedActions
+    uid: '@microsoft/teams-ai.BotConfigAuth.suggestedActions'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: suggestedActions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'suggestedActions?: SuggestedActions'
+      return:
+        description: ''
+        type: SuggestedActions
+  - name: type
+    uid: '@microsoft/teams-ai.BotConfigAuth.type'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: "auth"'
+      return:
+        description: ''
+        type: '"auth"'

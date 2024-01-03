@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: ValidatedChatCompletionAction
+uid: '@microsoft/teams-ai.ValidatedChatCompletionAction'
+package: '@microsoft/teams-ai'
+summary: A validated action call.
+fullName: ValidatedChatCompletionAction
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: name
+    uid: '@microsoft/teams-ai.ValidatedChatCompletionAction.name'
+    package: '@microsoft/teams-ai'
+    summary: Name of the action to call.
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: parameters
+    uid: '@microsoft/teams-ai.ValidatedChatCompletionAction.parameters'
+    package: '@microsoft/teams-ai'
+    summary: Arguments to pass to the action.
+    fullName: parameters
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'parameters: Record<string, any>'
+      return:
+        description: ''
+        type: Record&lt;string, any&gt;

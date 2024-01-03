@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: EmbeddingsResponseStatus
+uid: '@microsoft/teams-ai.EmbeddingsResponseStatus'
+package: '@microsoft/teams-ai'
+summary: Status of the embeddings response.
+fullName: EmbeddingsResponseStatus
+remarks: |-
+  `success` - The embeddings were successfully created.
+  `error` - An error occurred while creating the embeddings.
+  `rate_limited` - The request was rate limited.
+isDeprecated: false
+syntax: |
+  type EmbeddingsResponseStatus = "success" | "error" | "rate_limited"

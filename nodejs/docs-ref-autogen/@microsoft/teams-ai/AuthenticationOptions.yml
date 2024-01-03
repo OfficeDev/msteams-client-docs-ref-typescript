@@ -1,0 +1,62 @@
+### YamlMime:TSType
+name: AuthenticationOptions
+uid: '@microsoft/teams-ai.AuthenticationOptions'
+package: '@microsoft/teams-ai'
+summary: The options to configure the authentication manager
+fullName: AuthenticationOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: autoSignIn
+    uid: '@microsoft/teams-ai.AuthenticationOptions.autoSignIn'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Defaults to true.
+
+      Indicates whether the bot should start the sign in flow when the user
+      sends a message to the bot or triggers a message extension.
+
+      If set to false, the bot will not start the sign in flow before routing
+      the activity to the bot logic.
+
+
+      To set custom logic, set this property to the selector function.
+    fullName: autoSignIn
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'autoSignIn?: boolean | Selector'
+      return:
+        description: ''
+        type: boolean | <xref uid="@microsoft/teams-ai.Selector" />
+  - name: default
+    uid: '@microsoft/teams-ai.AuthenticationOptions.default'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Describes the setting the bot should use if the user does not specify a
+      setting name.
+    fullName: default
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'default?: string'
+      return:
+        description: ''
+        type: string
+  - name: settings
+    uid: '@microsoft/teams-ai.AuthenticationOptions.settings'
+    package: '@microsoft/teams-ai'
+    summary: |-
+      The authentication settings.
+      Key uniquely identifies the connection string.
+    fullName: settings
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'settings: {[key: string]: OAuthSettings | TeamsSsoSettings}'
+      return:
+        description: ''
+        type: >-
+          {[key: string]: <xref uid="@microsoft/teams-ai.OAuthSettings" /> |
+          TeamsSsoSettings}

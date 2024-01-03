@@ -1,0 +1,55 @@
+### YamlMime:TSType
+name: ChatCompletionAction
+uid: '@microsoft/teams-ai.ChatCompletionAction'
+package: '@microsoft/teams-ai'
+summary: An action that can be called by an LLM.
+fullName: ChatCompletionAction
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: description
+    uid: '@microsoft/teams-ai.ChatCompletionAction.description'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Description of what the action does.
+    fullName: description
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
+  - name: name
+    uid: '@microsoft/teams-ai.ChatCompletionAction.name'
+    package: '@microsoft/teams-ai'
+    summary: Name of the action to be called.
+    fullName: name
+    remarks: >-
+      Must be a-z, A-Z, 0-9, or contain underscores and dashes, with a maximum
+      length of 64.
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: parameters
+    uid: '@microsoft/teams-ai.ChatCompletionAction.parameters'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Parameters the action accepts, described as a JSON Schema
+      object.
+    fullName: parameters
+    remarks: >-
+      See [JSON Schema
+      reference](https://json-schema.org/understanding-json-schema/) for
+      documentation
+
+      about the format.
+    isDeprecated: false
+    syntax:
+      content: 'parameters?: Schema'
+      return:
+        description: ''
+        type: Schema

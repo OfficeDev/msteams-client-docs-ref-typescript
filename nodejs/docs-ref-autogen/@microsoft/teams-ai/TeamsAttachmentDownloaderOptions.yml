@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: TeamsAttachmentDownloaderOptions
+uid: '@microsoft/teams-ai.TeamsAttachmentDownloaderOptions'
+package: '@microsoft/teams-ai'
+summary: Options for the `TeamsAttachmentDownloader` class.
+fullName: TeamsAttachmentDownloaderOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: botAppId
+    uid: '@microsoft/teams-ai.TeamsAttachmentDownloaderOptions.botAppId'
+    package: '@microsoft/teams-ai'
+    summary: The Microsoft App ID of the bot.
+    fullName: botAppId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'botAppId: string'
+      return:
+        description: ''
+        type: string
+  - name: botAppPassword
+    uid: '@microsoft/teams-ai.TeamsAttachmentDownloaderOptions.botAppPassword'
+    package: '@microsoft/teams-ai'
+    summary: The Microsoft App Password of the bot.
+    fullName: botAppPassword
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'botAppPassword: string'
+      return:
+        description: ''
+        type: string

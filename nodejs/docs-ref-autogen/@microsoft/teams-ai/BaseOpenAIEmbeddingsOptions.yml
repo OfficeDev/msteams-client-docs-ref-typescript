@@ -1,0 +1,50 @@
+### YamlMime:TSType
+name: BaseOpenAIEmbeddingsOptions
+uid: '@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions'
+package: '@microsoft/teams-ai'
+summary: Base model options common to both OpenAI and Azure OpenAI services.
+fullName: BaseOpenAIEmbeddingsOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: logRequests
+    uid: '@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.logRequests'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Whether to log requests to the console.
+    fullName: logRequests
+    remarks: This is useful for debugging prompts and defaults to `false`.
+    isDeprecated: false
+    syntax:
+      content: 'logRequests?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: requestConfig
+    uid: '@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.requestConfig'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Request options to use when calling the OpenAI API.
+    fullName: requestConfig
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestConfig?: AxiosRequestConfig<any>'
+      return:
+        description: ''
+        type: AxiosRequestConfig&lt;any&gt;
+  - name: retryPolicy
+    uid: '@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.retryPolicy'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Retry policy to use when calling the OpenAI API.
+    fullName: retryPolicy
+    remarks: >-
+      The default retry policy is `[2000, 5000]` which means that the first
+      retry will be after
+
+      2 seconds and the second retry will be after 5 seconds.
+    isDeprecated: false
+    syntax:
+      content: 'retryPolicy?: number[]'
+      return:
+        description: ''
+        type: number[]

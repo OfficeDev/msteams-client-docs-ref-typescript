@@ -370,6 +370,419 @@
     - uid: '@microsoft/live-share-media.VolumeManager'
       name: VolumeManager
       items: []
+- name: '@microsoft/teams-ai'
+  items:
+    - name: Overview
+      uid: '@microsoft/teams-ai'
+    - uid: '@microsoft/teams-ai.ActionAugmentationSection'
+      name: ActionAugmentationSection
+      items: []
+    - uid: '@microsoft/teams-ai.ActionPlanner'
+      name: ActionPlanner
+      items: []
+    - uid: '@microsoft/teams-ai.ActionPlannerOptions'
+      name: ActionPlannerOptions
+      items: []
+    - uid: '@microsoft/teams-ai.ActionPlannerPromptFactory'
+      name: ActionPlannerPromptFactory
+      items: []
+    - uid: '@microsoft/teams-ai.ActionResponseValidator'
+      name: ActionResponseValidator
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCard'
+      name: AdaptiveCard
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCards'
+      name: AdaptiveCards
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCardSearchResult'
+      name: AdaptiveCardSearchResult
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCardsOptions'
+      name: AdaptiveCardsOptions
+      items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCardsSearchParams'
+      name: AdaptiveCardsSearchParams
+      items: []
+    - uid: '@microsoft/teams-ai.AI'
+      name: AI
+      items: []
+    - uid: '@microsoft/teams-ai.AIOptions'
+      name: AIOptions
+      items: []
+    - uid: '@microsoft/teams-ai.Application'
+      name: Application
+      items: []
+    - uid: '@microsoft/teams-ai.ApplicationBuilder'
+      name: ApplicationBuilder
+      items: []
+    - uid: '@microsoft/teams-ai.ApplicationOptions'
+      name: ApplicationOptions
+      items: []
+    - uid: '@microsoft/teams-ai.AssistantMessage'
+      name: AssistantMessage
+      items: []
+    - uid: '@microsoft/teams-ai.Augmentation'
+      name: Augmentation
+      items: []
+    - uid: '@microsoft/teams-ai.AugmentationConfig'
+      name: AugmentationConfig
+      items: []
+    - uid: '@microsoft/teams-ai.Authentication'
+      name: Authentication
+      items: []
+    - uid: '@microsoft/teams-ai.AuthenticationManager'
+      name: AuthenticationManager
+      items: []
+    - uid: '@microsoft/teams-ai.AuthenticationOptions'
+      name: AuthenticationOptions
+      items: []
+    - uid: '@microsoft/teams-ai.AuthError'
+      name: AuthError
+      items: []
+    - uid: '@microsoft/teams-ai.AuthErrorReason'
+      name: AuthErrorReason
+      items: []
+    - uid: '@microsoft/teams-ai.AzureContentSafetyModerator'
+      name: AzureContentSafetyModerator
+      items: []
+    - uid: '@microsoft/teams-ai.AzureOpenAIEmbeddingsOptions'
+      name: AzureOpenAIEmbeddingsOptions
+      items: []
+    - uid: '@microsoft/teams-ai.AzureOpenAIModelOptions'
+      name: AzureOpenAIModelOptions
+      items: []
+    - uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions'
+      name: AzureOpenAIModeratorOptions
+      items: []
+    - uid: '@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions'
+      name: BaseOpenAIEmbeddingsOptions
+      items: []
+    - uid: '@microsoft/teams-ai.BaseOpenAIModelOptions'
+      name: BaseOpenAIModelOptions
+      items: []
+    - uid: '@microsoft/teams-ai.BotConfigAuth'
+      name: BotConfigAuth
+      items: []
+    - uid: '@microsoft/teams-ai.ChatCompletionAction'
+      name: ChatCompletionAction
+      items: []
+    - uid: '@microsoft/teams-ai.CompletionConfig'
+      name: CompletionConfig
+      items: []
+    - uid: '@microsoft/teams-ai.ConfigResponse'
+      name: ConfigResponse
+      items: []
+    - uid: '@microsoft/teams-ai.ConfigResponseConfig'
+      name: ConfigResponseConfig
+      items: []
+    - uid: '@microsoft/teams-ai.ConfiguredAIOptions'
+      name: ConfiguredAIOptions
+      items: []
+    - uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions'
+      name: ConfiguredLLMClientOptions
+      items: []
+    - uid: '@microsoft/teams-ai.ConfiguredPromptManagerOptions'
+      name: ConfiguredPromptManagerOptions
+      items: []
+    - uid: '@microsoft/teams-ai.ConversationHistory'
+      name: ConversationHistory
+      items: []
+    - uid: '@microsoft/teams-ai.ConversationUpdateEvents'
+      name: ConversationUpdateEvents
+      items: []
+    - uid: '@microsoft/teams-ai.DataSource'
+      name: DataSource
+      items: []
+    - uid: '@microsoft/teams-ai.DataSourceSection'
+      name: DataSourceSection
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultAugmentation'
+      name: DefaultAugmentation
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultConversationState'
+      name: DefaultConversationState
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultModerator'
+      name: DefaultModerator
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultResponseValidator'
+      name: DefaultResponseValidator
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultTempState'
+      name: DefaultTempState
+      items: []
+    - uid: '@microsoft/teams-ai.DefaultUserState'
+      name: DefaultUserState
+      items: []
+    - uid: '@microsoft/teams-ai.EmbeddingsModel'
+      name: EmbeddingsModel
+      items: []
+    - uid: '@microsoft/teams-ai.EmbeddingsResponse'
+      name: EmbeddingsResponse
+      items: []
+    - uid: '@microsoft/teams-ai.EmbeddingsResponseStatus'
+      name: EmbeddingsResponseStatus
+      items: []
+    - uid: '@microsoft/teams-ai.FunctionCall'
+      name: FunctionCall
+      items: []
+    - uid: '@microsoft/teams-ai.FunctionCallMessage'
+      name: FunctionCallMessage
+      items: []
+    - uid: '@microsoft/teams-ai.FunctionResponseMessage'
+      name: FunctionResponseMessage
+      items: []
+    - uid: '@microsoft/teams-ai.GPT3Tokenizer'
+      name: GPT3Tokenizer
+      items: []
+    - uid: '@microsoft/teams-ai.GroupSection'
+      name: GroupSection
+      items: []
+    - uid: '@microsoft/teams-ai.ImageContentPart'
+      name: ImageContentPart
+      items: []
+    - uid: '@microsoft/teams-ai.InnerMonologue'
+      name: InnerMonologue
+      items: []
+    - uid: '@microsoft/teams-ai.InputFile'
+      name: InputFile
+      items: []
+    - uid: '@microsoft/teams-ai.InputFileDownloader'
+      name: InputFileDownloader
+      items: []
+    - uid: '@microsoft/teams-ai.JSONResponseValidator'
+      name: JSONResponseValidator
+      items: []
+    - uid: '@microsoft/teams-ai.LayoutEngine'
+      name: LayoutEngine
+      items: []
+    - uid: '@microsoft/teams-ai.LLMClient'
+      name: LLMClient
+      items: []
+    - uid: '@microsoft/teams-ai.LLMClientOptions'
+      name: LLMClientOptions
+      items: []
+    - uid: '@microsoft/teams-ai.Memory'
+      name: Memory
+      items: []
+    - uid: '@microsoft/teams-ai.MemoryFork'
+      name: MemoryFork
+      items: []
+    - uid: '@microsoft/teams-ai.Message'
+      name: Message
+      items: []
+    - uid: '@microsoft/teams-ai.MessageContentParts'
+      name: MessageContentParts
+      items: []
+    - uid: '@microsoft/teams-ai.MessageExtensions'
+      name: MessageExtensions
+      items: []
+    - uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames'
+      name: MessageExtensionsInvokeNames
+      items: []
+    - uid: '@microsoft/teams-ai.MessageReactionEvents'
+      name: MessageReactionEvents
+      items: []
+    - uid: '@microsoft/teams-ai.ModerationSeverity'
+      name: ModerationSeverity
+      items: []
+    - uid: '@microsoft/teams-ai.Moderator'
+      name: Moderator
+      items: []
+    - uid: '@microsoft/teams-ai.MonologueAugmentation'
+      name: MonologueAugmentation
+      items: []
+    - uid: '@microsoft/teams-ai.OAuthSettings'
+      name: OAuthSettings
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIEmbeddings'
+      name: OpenAIEmbeddings
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions'
+      name: OpenAIEmbeddingsOptions
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIModel'
+      name: OpenAIModel
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIModelOptions'
+      name: OpenAIModelOptions
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIModerator'
+      name: OpenAIModerator
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAIModeratorOptions'
+      name: OpenAIModeratorOptions
+      items: []
+    - uid: '@microsoft/teams-ai.Plan'
+      name: Plan
+      items: []
+    - uid: '@microsoft/teams-ai.Planner'
+      name: Planner
+      items: []
+    - uid: '@microsoft/teams-ai.PredictedCommand'
+      name: PredictedCommand
+      items: []
+    - uid: '@microsoft/teams-ai.PredictedDoCommand'
+      name: PredictedDoCommand
+      items: []
+    - uid: '@microsoft/teams-ai.PredictedDoCommandAndHandler'
+      name: PredictedDoCommandAndHandler
+      items: []
+    - uid: '@microsoft/teams-ai.PredictedSayCommand'
+      name: PredictedSayCommand
+      items: []
+    - name: preview
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-ai.preview'
+        - uid: '@microsoft/teams-ai.preview.AssistantsPlanner'
+          name: AssistantsPlanner
+          items: []
+        - uid: '@microsoft/teams-ai.preview.AssistantsPlannerOptions'
+          name: AssistantsPlannerOptions
+          items: []
+    - uid: '@microsoft/teams-ai.Prompt'
+      name: Prompt
+      items: []
+    - uid: '@microsoft/teams-ai.PromptCompletionModel'
+      name: PromptCompletionModel
+      items: []
+    - uid: '@microsoft/teams-ai.PromptFunction'
+      name: PromptFunction
+      items: []
+    - uid: '@microsoft/teams-ai.PromptFunctions'
+      name: PromptFunctions
+      items: []
+    - uid: '@microsoft/teams-ai.PromptManager'
+      name: PromptManager
+      items: []
+    - uid: '@microsoft/teams-ai.PromptManagerOptions'
+      name: PromptManagerOptions
+      items: []
+    - uid: '@microsoft/teams-ai.PromptResponse'
+      name: PromptResponse
+      items: []
+    - uid: '@microsoft/teams-ai.PromptResponseStatus'
+      name: PromptResponseStatus
+      items: []
+    - uid: '@microsoft/teams-ai.PromptResponseValidator'
+      name: PromptResponseValidator
+      items: []
+    - uid: '@microsoft/teams-ai.PromptSection'
+      name: PromptSection
+      items: []
+    - uid: '@microsoft/teams-ai.PromptSectionBase'
+      name: PromptSectionBase
+      items: []
+    - uid: '@microsoft/teams-ai.PromptTemplate'
+      name: PromptTemplate
+      items: []
+    - uid: '@microsoft/teams-ai.PromptTemplateConfig'
+      name: PromptTemplateConfig
+      items: []
+    - uid: '@microsoft/teams-ai.Query'
+      name: Query
+      items: []
+    - uid: '@microsoft/teams-ai.RenderedPromptSection'
+      name: RenderedPromptSection
+      items: []
+    - uid: '@microsoft/teams-ai.RouteHandler'
+      name: RouteHandler
+      items: []
+    - uid: '@microsoft/teams-ai.RouteSelector'
+      name: RouteSelector
+      items: []
+    - uid: '@microsoft/teams-ai.Selector'
+      name: Selector
+      items: []
+    - uid: '@microsoft/teams-ai.SequenceAugmentation'
+      name: SequenceAugmentation
+      items: []
+    - uid: '@microsoft/teams-ai.SignInResponse'
+      name: SignInResponse
+      items: []
+    - uid: '@microsoft/teams-ai.SignInStatus'
+      name: SignInStatus
+      items: []
+    - uid: '@microsoft/teams-ai.SystemMessage'
+      name: SystemMessage
+      items: []
+    - uid: '@microsoft/teams-ai.TaskModuleInvokeNames'
+      name: TaskModuleInvokeNames
+      items: []
+    - uid: '@microsoft/teams-ai.TaskModules'
+      name: TaskModules
+      items: []
+    - uid: '@microsoft/teams-ai.TaskModulesOptions'
+      name: TaskModulesOptions
+      items: []
+    - uid: '@microsoft/teams-ai.TeamsAttachmentDownloader'
+      name: TeamsAttachmentDownloader
+      items: []
+    - uid: '@microsoft/teams-ai.TeamsAttachmentDownloaderOptions'
+      name: TeamsAttachmentDownloaderOptions
+      items: []
+    - uid: '@microsoft/teams-ai.TeamsMessageEvents'
+      name: TeamsMessageEvents
+      items: []
+    - uid: '@microsoft/teams-ai.TemplateSection'
+      name: TemplateSection
+      items: []
+    - uid: '@microsoft/teams-ai.TestEmbeddings'
+      name: TestEmbeddings
+      items: []
+    - uid: '@microsoft/teams-ai.TestPlanner'
+      name: TestPlanner
+      items: []
+    - uid: '@microsoft/teams-ai.TestPromptManager'
+      name: TestPromptManager
+      items: []
+    - uid: '@microsoft/teams-ai.TestPromptManagerOptions'
+      name: TestPromptManagerOptions
+      items: []
+    - uid: '@microsoft/teams-ai.TestTurnState'
+      name: TestTurnState
+      items: []
+    - uid: '@microsoft/teams-ai.TextContentPart'
+      name: TextContentPart
+      items: []
+    - uid: '@microsoft/teams-ai.TextDataSource'
+      name: TextDataSource
+      items: []
+    - uid: '@microsoft/teams-ai.TextSection'
+      name: TextSection
+      items: []
+    - uid: '@microsoft/teams-ai.Tokenizer'
+      name: Tokenizer
+      items: []
+    - uid: '@microsoft/teams-ai.TooManyStepsParameters'
+      name: TooManyStepsParameters
+      items: []
+    - uid: '@microsoft/teams-ai.TurnEvents'
+      name: TurnEvents
+      items: []
+    - uid: '@microsoft/teams-ai.TurnState'
+      name: TurnState
+      items: []
+    - uid: '@microsoft/teams-ai.TurnStateEntry'
+      name: TurnStateEntry
+      items: []
+    - uid: '@microsoft/teams-ai.UserInputMessage'
+      name: UserInputMessage
+      items: []
+    - uid: '@microsoft/teams-ai.UserMessage'
+      name: UserMessage
+      items: []
+    - uid: '@microsoft/teams-ai.Utilities'
+      name: Utilities
+      items: []
+    - uid: '@microsoft/teams-ai.ValidatedChatCompletionAction'
+      name: ValidatedChatCompletionAction
+      items: []
+    - uid: '@microsoft/teams-ai.Validation'
+      name: Validation
+      items: []
 - name: '@microsoft/teams-js'
   items:
     - name: Overview
