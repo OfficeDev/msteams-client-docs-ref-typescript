@@ -1,0 +1,25 @@
+### YamlMime:TSEnum
+name: SharingProtocol
+uid: '@microsoft/teams-js.meeting.SharingProtocol'
+package: '@microsoft/teams-js'
+summary: Represents the protocol option for sharing app content to the meeting stage.
+fullName: SharingProtocol
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Collaborative
+    uid: '@microsoft/teams-js.meeting.SharingProtocol.Collaborative'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The default protocol for sharing app content to stage. To learn more,
+      visit https://aka.ms/teamsjs/shareAppContentToStage
+  - name: ScreenShare
+    uid: '@microsoft/teams-js.meeting.SharingProtocol.ScreenShare'
+    package: '@microsoft/teams-js'
+    summary: >-
+      A read-only protocol for sharing app content to stage, which uses screen
+      sharing in meetings. If provided, this protocol will open
+
+      the specified `contentUrl` passed to the
+      [shareAppContentToStage](xref:@microsoft/teams-js.meeting.shareAppContentToStage)
+      API in a new instance and screen share that instance.

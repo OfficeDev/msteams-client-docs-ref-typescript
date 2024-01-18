@@ -1,0 +1,35 @@
+### YamlMime:TSType
+name: AssembleAttachment
+uid: '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment'
+package: '@microsoft/teams-js'
+summary: Interface to assemble file chunks
+fullName: AssembleAttachment
+remarks: ''
+previewState: beta
+isDeprecated: false
+type: interface
+properties:
+  - name: file
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment.file'
+    package: '@microsoft/teams-js'
+    summary: A Blob object representing the data of the file chunks.
+    fullName: file
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'file: Blob'
+      return:
+        description: ''
+        type: Blob
+  - name: sequence
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment.sequence'
+    package: '@microsoft/teams-js'
+    summary: A number representing the sequence of the attachment in the file chunks.
+    fullName: sequence
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sequence: number'
+      return:
+        description: ''
+        type: number

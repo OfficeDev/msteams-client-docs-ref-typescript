@@ -1,0 +1,83 @@
+### YamlMime:TSType
+name: FileResult
+uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult'
+package: '@microsoft/teams-js'
+summary: Output of getDragAndDropFiles API from platform
+fullName: FileResult
+remarks: ''
+previewState: beta
+isDeprecated: false
+type: interface
+properties:
+  - name: error
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult.error'
+    package: '@microsoft/teams-js'
+    summary: Error encountered in getDragAndDropFiles API
+    fullName: error
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'error?: SdkError'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.SdkError" />
+  - name: fileChunk
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult.fileChunk'
+    package: '@microsoft/teams-js'
+    summary: File chunk which will be assemebled and converted into a blob
+    fullName: fileChunk
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fileChunk: FileChunk'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.thirdPartyCloudStorage.FileChunk" />
+  - name: fileIndex
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult.fileIndex'
+    package: '@microsoft/teams-js'
+    summary: File index of the file for which chunk data is getting recieved
+    fullName: fileIndex
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fileIndex: number'
+      return:
+        description: ''
+        type: number
+  - name: fileName
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult.fileName'
+    package: '@microsoft/teams-js'
+    summary: The name of the file.
+    fullName: fileName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fileName: string'
+      return:
+        description: ''
+        type: string
+  - name: fileType
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult.fileType'
+    package: '@microsoft/teams-js'
+    summary: File type/MIME type which is getting recieved
+    fullName: fileType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fileType: string'
+      return:
+        description: ''
+        type: string
+  - name: isLastFile
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult.isLastFile'
+    package: '@microsoft/teams-js'
+    summary: Indicates whether this file is the last one in a sequence.
+    fullName: isLastFile
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'isLastFile: boolean'
+      return:
+        description: ''
+        type: boolean
