@@ -1,0 +1,30 @@
+### YamlMime:TSType
+name: IShareAppContentToStageOptions
+uid: '@microsoft/teams-js.meeting.IShareAppContentToStageOptions'
+package: '@microsoft/teams-js'
+summary: >-
+  Defines additional sharing options which can be provided to the
+  [shareAppContentToStage](xref:@microsoft/teams-js.meeting.shareAppContentToStage)
+  API.
+fullName: IShareAppContentToStageOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: sharingProtocol
+    uid: '@microsoft/teams-js.meeting.IShareAppContentToStageOptions.sharingProtocol'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The protocol option for sharing app content to the meeting stage. Defaults
+      to `Collaborative`.
+
+      See [SharingProtocol](xref:@microsoft/teams-js.meeting.SharingProtocol)
+      for more information.
+    fullName: sharingProtocol
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sharingProtocol?: SharingProtocol'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.meeting.SharingProtocol" />

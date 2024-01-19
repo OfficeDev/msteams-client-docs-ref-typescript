@@ -1,0 +1,136 @@
+### YamlMime:TSType
+name: FilesFor3PStorage
+uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage'
+package: '@microsoft/teams-js'
+summary: Object used to represent a file
+fullName: FilesFor3PStorage
+remarks: ''
+previewState: beta
+isDeprecated: false
+type: interface
+properties:
+  - name: lastModified
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.lastModified'
+    package: '@microsoft/teams-js'
+    summary: A number that represents the number of milliseconds since the Unix epoch
+    fullName: lastModified
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'lastModified: number'
+      return:
+        description: ''
+        type: number
+  - name: name
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.name'
+    package: '@microsoft/teams-js'
+    summary: Name of the file
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
+  - name: type
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.type'
+    package: '@microsoft/teams-js'
+    summary: file type
+    fullName: type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'type: string'
+      return:
+        description: ''
+        type: string
+  - name: webkitRelativePath
+    uid: >-
+      @microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.webkitRelativePath
+    package: '@microsoft/teams-js'
+    summary: >-
+      A string containing the path of the file relative to the ancestor
+      directory the user selected
+    fullName: webkitRelativePath
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'webkitRelativePath?: string'
+      return:
+        description: ''
+        type: string
+inheritedProperties:
+  - name: size
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.size'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: size
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'size: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: <b>Inherited From</b> Blob.size
+inheritedMethods:
+  - name: arrayBuffer()
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.arrayBuffer'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function arrayBuffer(): Promise<ArrayBuffer>'
+      return:
+        description: ''
+        type: Promise&lt;ArrayBuffer&gt;
+    inheritanceDescription: <b>Inherited From</b> Blob.arrayBuffer
+  - name: slice(number, number, string)
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.slice'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function slice(start?: number, end?: number, contentType?: string): Blob'
+      parameters:
+        - id: start
+          type: number
+          description: ''
+        - id: end
+          type: number
+          description: ''
+        - id: contentType
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Blob
+    inheritanceDescription: <b>Inherited From</b> Blob.slice
+  - name: stream()
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.stream'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function stream(): ReadableStream<Uint8Array>'
+      return:
+        description: ''
+        type: ReadableStream&lt;Uint8Array&gt;
+    inheritanceDescription: <b>Inherited From</b> Blob.stream
+  - name: text()
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage.text'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function text(): Promise<string>'
+      return:
+        description: ''
+        type: Promise&lt;string&gt;
+    inheritanceDescription: <b>Inherited From</b> Blob.text
+extends: Blob

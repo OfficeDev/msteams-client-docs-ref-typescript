@@ -1,0 +1,9 @@
+### YamlMime:TSType
+name: DragAndDropFileCallback
+uid: '@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: DragAndDropFileCallback
+remarks: ''
+isDeprecated: false
+type: interface

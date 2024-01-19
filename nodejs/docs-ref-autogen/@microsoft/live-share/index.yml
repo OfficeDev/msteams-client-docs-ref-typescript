@@ -64,13 +64,17 @@ typeAliases:
   - '@microsoft/live-share.LiveEventListener'
   - '@microsoft/live-share.UpdateSynchronizationState'
 functions:
-  - name: getLiveShareContainerSchemaProxy(ContainerSchema, LiveShareRuntime)
-    uid: '@microsoft/live-share.getLiveShareContainerSchemaProxy'
+  - name: getLiveContainerSchema(ContainerSchema, LiveShareRuntime)
+    uid: '@microsoft/live-share.getLiveContainerSchema'
     package: '@microsoft/live-share'
     summary: |-
       Inject Live Share dependencies into your Fluid container schema.
       This should only be done once, right before connecting to a container.
     remarks: >-
+      Needed because Fluid uses static factories to construct data objects
+      internally, and `LiveDataObject` instances require access to the
+      `LiveShareRuntime` before use.
+
       Users should not use this method if you are connecting to a container
       using `LiveShareClient`.
 
@@ -79,8 +83,8 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function getLiveShareContainerSchemaProxy(schema: ContainerSchema,
-        liveRuntime: LiveShareRuntime): ContainerSchema
+        function getLiveContainerSchema(schema: ContainerSchema, liveRuntime:
+        LiveShareRuntime): ContainerSchema
       parameters:
         - id: schema
           type: ContainerSchema
@@ -91,3 +95,68 @@ functions:
       return:
         description: ContainerSchema with injected dependencies
         type: ContainerSchema
+  - name: getLiveContainerSchemaProxy(ContainerSchema, LiveShareRuntime)
+    uid: '@microsoft/live-share.getLiveContainerSchemaProxy'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Use
+      [getLiveContainerSchema](xref:@microsoft/live-share.getLiveContainerSchema)
+      instead.
+    syntax:
+      content: >-
+        function getLiveContainerSchemaProxy(schema: ContainerSchema,
+        liveRuntime: LiveShareRuntime): ContainerSchema
+      parameters:
+        - id: schema
+          type: ContainerSchema
+          description: ''
+        - id: liveRuntime
+          type: <xref uid="@microsoft/live-share.LiveShareRuntime" />
+          description: ''
+      return:
+        description: ''
+        type: ContainerSchema
+  - name: >-
+      getLiveDataObjectClass<TClass>(LoadableObjectClass<any>, LiveShareRuntime,
+      Map<string, LoadableObjectClass<any>>)
+    uid: '@microsoft/live-share.getLiveDataObjectClass'
+    package: '@microsoft/live-share'
+    summary: >-
+      Inject Live Share dependencies to relevant `LiveDataObject` derived
+      classes.
+
+      Regular `DataObject` classes are not injected.
+    remarks: >-
+      Can be used to follow the pattern of this package's unit tests for custom
+      `LiveDataObject` implementations.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getLiveDataObjectClass<TClass>(ObjectClass:
+        LoadableObjectClass<any>, liveRuntime: LiveShareRuntime,
+        injectedClasses?: Map<string, LoadableObjectClass<any>>):
+        LoadableObjectClass<TClass>
+      parameters:
+        - id: ObjectClass
+          type: LoadableObjectClass&lt;any&gt;
+          description: >-
+            a `LoadableObjectClass` instance to inject with the `liveRuntime`
+            provided, if needed.
+        - id: liveRuntime
+          type: <xref uid="@microsoft/live-share.LiveShareRuntime" />
+          description: >-
+            the `LiveShareRuntime` instance to inject into provided
+            `LiveDataObject` instances.
+        - id: injectedClasses
+          type: Map&lt;string, LoadableObjectClass&lt;any&gt;&gt;
+          description: >-
+            Optional. Map of classes that have already been injected. Default
+            value is an empty map.
+      return:
+        description: >-
+          the new `LoadableObjectClass` if injected, or the same `ObjectClass`
+          passed in if not.
+        type: LoadableObjectClass&lt;TClass&gt;

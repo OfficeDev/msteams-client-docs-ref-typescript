@@ -12,7 +12,7 @@ summary: >-
 fullName: AzureLiveShareHost
 remarks: >-
   To use this API, first pass your `ContainerSchema` through the
-  `getLiveShareContainerSchemaProxy` function.
+  `getLiveContainerSchema` function.
 
   This should be done before calling `.getContainer()` or `createContainer()`.
 
