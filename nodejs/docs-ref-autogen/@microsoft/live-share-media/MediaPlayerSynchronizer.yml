@@ -50,6 +50,21 @@ constructors:
             Optional. Function to call when synchronizers `end()` method is
             called.
 properties:
+  - name: blockUnexpectedPlayerEvents
+    uid: >-
+      @microsoft/live-share-media.MediaPlayerSynchronizer.blockUnexpectedPlayerEvents
+    package: '@microsoft/live-share-media'
+    summary: >-
+      If true, pause and play actions will be ignored unless explicitly invoked
+      from the corresponding play() and pause() functions.
+    fullName: blockUnexpectedPlayerEvents
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean blockUnexpectedPlayerEvents
+      return:
+        description: ''
+        type: boolean
   - name: mediaSession
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.mediaSession'
     package: '@microsoft/live-share-media'

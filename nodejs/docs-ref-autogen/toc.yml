@@ -1194,6 +1194,9 @@
         - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingState'
           name: IAppContentStageSharingState
           items: []
+        - uid: '@microsoft/teams-js.meeting.IShareAppContentToStageOptions'
+          name: IShareAppContentToStageOptions
+          items: []
         - uid: '@microsoft/teams-js.meeting.ISpeakingState'
           name: ISpeakingState
           items: []
@@ -1211,6 +1214,9 @@
             @microsoft/teams-js.meeting.registerSpeakingStateChangeHandlerFunctionType
           name: registerSpeakingStateChangeHandlerFunctionType
           items: []
+        - uid: '@microsoft/teams-js.meeting.SharingProtocol'
+          name: SharingProtocol
+          items: []
     - name: menus
       items:
         - name: Overview
@@ -1221,12 +1227,6 @@
         - uid: '@microsoft/teams-js.menus.DisplayMode'
           name: DisplayMode
           items: []
-    - uid: '@microsoft/teams-js.monetization'
-      name: monetization
-      items: []
-    - uid: '@microsoft/teams-js.notifications'
-      name: notifications
-      items: []
     - uid: '@microsoft/teams-js.onCompleteFunctionType'
       name: onCompleteFunctionType
       items: []
@@ -1449,6 +1449,28 @@
     - uid: '@microsoft/teams-js.TeamType'
       name: TeamType
       items: []
+    - name: thirdPartyCloudStorage
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.thirdPartyCloudStorage'
+        - uid: '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment'
+          name: AssembleAttachment
+          items: []
+        - uid: '@microsoft/teams-js.thirdPartyCloudStorage.AttachmentListHelper'
+          name: AttachmentListHelper
+          items: []
+        - uid: '@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback'
+          name: DragAndDropFileCallback
+          items: []
+        - uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileChunk'
+          name: FileChunk
+          items: []
+        - uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult'
+          name: FileResult
+          items: []
+        - uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage'
+          name: FilesFor3PStorage
+          items: []
     - uid: '@microsoft/teams-js.UrlDialogInfo'
       name: UrlDialogInfo
       items: []

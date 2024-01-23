@@ -1,0 +1,56 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.thirdPartyCloudStorage'
+name: thirdPartyCloudStorage
+summary: >-
+  Extended files API 3P storage providers, features like sending Blob from Teams
+  to 3P app on user
+
+  actions like drag and drop to compose
+type: module
+interfaces:
+  - '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment'
+  - '@microsoft/teams-js.thirdPartyCloudStorage.AttachmentListHelper'
+  - '@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback'
+  - '@microsoft/teams-js.thirdPartyCloudStorage.FileChunk'
+  - '@microsoft/teams-js.thirdPartyCloudStorage.FileResult'
+  - '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage'
+package: '@microsoft/teams-js'
+previewState: beta
+functions:
+  - name: getDragAndDropFiles(string, DragAndDropFileCallback)
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.getDragAndDropFiles'
+    package: '@microsoft/teams-js'
+    summary: Get drag-and-drop files using a callback.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getDragAndDropFiles(dragAndDropInput: string,
+        dragAndDropFileCallback: DragAndDropFileCallback)
+      parameters:
+        - id: dragAndDropInput
+          type: string
+          description: Teams thread id or Teams conversation id from a Teams chat/channel
+        - id: dragAndDropFileCallback
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback"
+            />
+          description: |-
+            callback
+              A callback function to handle the result of the operation
+  - name: isSupported()
+    uid: '@microsoft/teams-js.thirdPartyCloudStorage.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if the thirdPartyCloudStorage capability is supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: >-
+          boolean to represent whether the thirdPartyCloudStorage capability is
+          supported
+        type: boolean
