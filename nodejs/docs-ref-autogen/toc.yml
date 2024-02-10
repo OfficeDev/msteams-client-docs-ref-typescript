@@ -358,9 +358,6 @@
     - uid: '@microsoft/live-share-media.MediaSessionCoordinatorEvents'
       name: MediaSessionCoordinatorEvents
       items: []
-    - uid: '@microsoft/live-share-media.MediaSessionCoordinatorState'
-      name: MediaSessionCoordinatorState
-      items: []
     - uid: '@microsoft/live-share-media.MediaSessionCoordinatorSuspension'
       name: MediaSessionCoordinatorSuspension
       items: []
@@ -461,20 +458,11 @@
     - uid: '@microsoft/teams-ai.BaseOpenAIModelOptions'
       name: BaseOpenAIModelOptions
       items: []
-    - uid: '@microsoft/teams-ai.BotConfigAuth'
-      name: BotConfigAuth
-      items: []
     - uid: '@microsoft/teams-ai.ChatCompletionAction'
       name: ChatCompletionAction
       items: []
     - uid: '@microsoft/teams-ai.CompletionConfig'
       name: CompletionConfig
-      items: []
-    - uid: '@microsoft/teams-ai.ConfigResponse'
-      name: ConfigResponse
-      items: []
-    - uid: '@microsoft/teams-ai.ConfigResponseConfig'
-      name: ConfigResponseConfig
       items: []
     - uid: '@microsoft/teams-ai.ConfiguredAIOptions'
       name: ConfiguredAIOptions
@@ -716,6 +704,9 @@
       items: []
     - uid: '@microsoft/teams-ai.TaskModulesOptions'
       name: TaskModulesOptions
+      items: []
+    - uid: '@microsoft/teams-ai.TeamsAdapter'
+      name: TeamsAdapter
       items: []
     - uid: '@microsoft/teams-ai.TeamsAttachmentDownloader'
       name: TeamsAttachmentDownloader
@@ -988,6 +979,9 @@
             - uid: '@microsoft/teams-js.dialog.url.bot'
               name: bot
               items: []
+            - uid: '@microsoft/teams-js.dialog.url.parentCommunication'
+              name: parentCommunication
+              items: []
     - uid: '@microsoft/teams-js.DialogDimension'
       name: DialogDimension
       items: []
@@ -1005,6 +999,9 @@
       items: []
     - uid: '@microsoft/teams-js.FileOpenPreference'
       name: FileOpenPreference
+      items: []
+    - uid: '@microsoft/teams-js.files'
+      name: files
       items: []
     - uid: '@microsoft/teams-js.FrameContext'
       name: FrameContext
@@ -1068,6 +1065,9 @@
         - uid: '@microsoft/teams-js.location.showLocationCallbackFunctionType'
           name: showLocationCallbackFunctionType
           items: []
+    - uid: '@microsoft/teams-js.logs'
+      name: logs
+      items: []
     - uid: '@microsoft/teams-js.M365ContentAction'
       name: M365ContentAction
       items: []
@@ -1217,6 +1217,9 @@
         - uid: '@microsoft/teams-js.meeting.SharingProtocol'
           name: SharingProtocol
           items: []
+    - uid: '@microsoft/teams-js.meetingRoom'
+      name: meetingRoom
+      items: []
     - name: menus
       items:
         - name: Overview
@@ -1227,11 +1230,20 @@
         - uid: '@microsoft/teams-js.menus.DisplayMode'
           name: DisplayMode
           items: []
+    - uid: '@microsoft/teams-js.monetization'
+      name: monetization
+      items: []
+    - uid: '@microsoft/teams-js.notifications'
+      name: notifications
+      items: []
     - uid: '@microsoft/teams-js.onCompleteFunctionType'
       name: onCompleteFunctionType
       items: []
     - uid: '@microsoft/teams-js.onCompleteHandlerFunctionType'
       name: onCompleteHandlerFunctionType
+      items: []
+    - uid: '@microsoft/teams-js.OpenConversationRequest'
+      name: OpenConversationRequest
       items: []
     - uid: '@microsoft/teams-js.OpenGroupChatRequest'
       name: OpenGroupChatRequest
@@ -1340,6 +1352,9 @@
     - uid: '@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType'
       name: registerOnThemeChangeHandlerFunctionType
       items: []
+    - uid: '@microsoft/teams-js.remoteCamera'
+      name: remoteCamera
+      items: []
     - uid: '@microsoft/teams-js.ResumeContext'
       name: ResumeContext
       items: []
@@ -1432,6 +1447,13 @@
     - uid: '@microsoft/teams-js.TeamInformation'
       name: TeamInformation
       items: []
+    - name: teams
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.teams'
+        - uid: '@microsoft/teams-js.teams.ChannelType'
+          name: ChannelType
+          items: []
     - name: teamsCore
       items:
         - name: Overview
@@ -1455,9 +1477,6 @@
           uid: '@microsoft/teams-js.thirdPartyCloudStorage'
         - uid: '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment'
           name: AssembleAttachment
-          items: []
-        - uid: '@microsoft/teams-js.thirdPartyCloudStorage.AttachmentListHelper'
-          name: AttachmentListHelper
           items: []
         - uid: '@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback'
           name: DragAndDropFileCallback
@@ -1521,6 +1540,9 @@
         - uid: '@microsoft/teams-js.videoEffects.VideoFrameHandler'
           name: VideoFrameHandler
           items: []
+    - uid: '@microsoft/teams-js.videoEffectsEx'
+      name: videoEffectsEx
+      items: []
     - uid: '@microsoft/teams-js.VideoPerformanceMonitor'
       name: VideoPerformanceMonitor
       items: []

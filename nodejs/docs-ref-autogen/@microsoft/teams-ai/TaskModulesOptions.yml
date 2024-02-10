@@ -11,7 +11,7 @@ properties:
   - name: taskDataFilter
     uid: '@microsoft/teams-ai.TaskModulesOptions.taskDataFilter'
     package: '@microsoft/teams-ai'
-    summary: Data field to use to identify the verb of the handler to trigger.
+    summary: Data field to use to ide1ntify the verb of the handler to trigger.
     fullName: taskDataFilter
     remarks: >-
       When a task module is triggered, the field name specified here will be

@@ -23,12 +23,12 @@ properties:
   - name: type
     uid: '@microsoft/teams-ai.ImageContentPart.type'
     package: '@microsoft/teams-ai'
-    summary: Type of the message content. Should always be 'image'.
+    summary: Type of the message content. Should always be 'image_url'.
     fullName: type
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'type: "image"'
+      content: 'type: "image_url"'
       return:
         description: ''
-        type: '"image"'
+        type: '"image_url"'

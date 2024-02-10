@@ -40,7 +40,7 @@ properties:
           <xref uid="@microsoft/teams-ai.OpenAIEmbeddingsOptions" /> | <xref
           uid="@microsoft/teams-ai.AzureOpenAIEmbeddingsOptions" />
 methods:
-  - name: createEmbeddings(string | string[])
+  - name: createEmbeddings(string, string | string[])
     uid: '@microsoft/teams-ai.OpenAIEmbeddings.createEmbeddings'
     package: '@microsoft/teams-ai'
     summary: Creates embeddings for the given inputs using the OpenAI API.
@@ -48,9 +48,12 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function createEmbeddings(inputs: string | string[]):
+        function createEmbeddings(model: string, inputs: string | string[]):
         Promise<EmbeddingsResponse>
       parameters:
+        - id: model
+          type: string
+          description: Name of the model to use (or deployment for Azure).
         - id: inputs
           type: string | string[]
           description: Text inputs to create embeddings for.

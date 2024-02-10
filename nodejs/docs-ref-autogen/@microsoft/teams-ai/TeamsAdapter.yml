@@ -1,0 +1,432 @@
+### YamlMime:TSType
+name: TeamsAdapter
+uid: '@microsoft/teams-ai.TeamsAdapter'
+package: '@microsoft/teams-ai'
+summary: >-
+  An adapter that implements the Bot Framework Protocol and can be hosted in
+  different cloud environments both public and private.
+fullName: TeamsAdapter
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      TeamsAdapter({ BotOpenIdMetadata?: string, CallerId?: string,
+      CertificatePrivateKey?: string, CertificateThumbprint?: string,
+      ChannelService?: string, MicrosoftAppId?: string, MicrosoftAppTenantId?:
+      string, OAuthApiEndpoint?: string, OAuthUrl?: string,
+      ToBotFromChannelOpenIdMetadataUrl?: string, ToBotFromChannelTokenIssuer?:
+      string, ToBotFromEmulatorOpenIdMetadataUrl?: string,
+      ToChannelFromBotLoginUrl?: string, ToChannelFromBotOAuthScope?: string,
+      ValidateAuthority?: string | boolean }, ServiceClientCredentialsFactory,
+      AuthenticationConfiguration, ConnectorClientOptions)
+    uid: '@microsoft/teams-ai.TeamsAdapter.constructor'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TeamsAdapter(botFrameworkAuthConfig?: { BotOpenIdMetadata?: string,
+        CallerId?: string, CertificatePrivateKey?: string,
+        CertificateThumbprint?: string, ChannelService?: string,
+        MicrosoftAppId?: string, MicrosoftAppTenantId?: string,
+        OAuthApiEndpoint?: string, OAuthUrl?: string,
+        ToBotFromChannelOpenIdMetadataUrl?: string,
+        ToBotFromChannelTokenIssuer?: string,
+        ToBotFromEmulatorOpenIdMetadataUrl?: string, ToChannelFromBotLoginUrl?:
+        string, ToChannelFromBotOAuthScope?: string, ValidateAuthority?: string
+        | boolean }, credentialsFactory?: ServiceClientCredentialsFactory,
+        authConfiguration?: AuthenticationConfiguration,
+        connectorClientOptions?: ConnectorClientOptions)
+      parameters:
+        - id: botFrameworkAuthConfig
+          type: >-
+            { BotOpenIdMetadata?: string, CallerId?: string,
+            CertificatePrivateKey?: string, CertificateThumbprint?: string,
+            ChannelService?: string, MicrosoftAppId?: string,
+            MicrosoftAppTenantId?: string, OAuthApiEndpoint?: string, OAuthUrl?:
+            string, ToBotFromChannelOpenIdMetadataUrl?: string,
+            ToBotFromChannelTokenIssuer?: string,
+            ToBotFromEmulatorOpenIdMetadataUrl?: string,
+            ToChannelFromBotLoginUrl?: string, ToChannelFromBotOAuthScope?:
+            string, ValidateAuthority?: string | boolean }
+          description: ''
+        - id: credentialsFactory
+          type: ServiceClientCredentialsFactory
+          description: ''
+        - id: authConfiguration
+          type: AuthenticationConfiguration
+          description: ''
+        - id: connectorClientOptions
+          type: ConnectorClientOptions
+          description: ''
+properties:
+  - name: onTurnError
+    uid: '@microsoft/teams-ai.TeamsAdapter.onTurnError'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Gets or sets an error handler that can catch exceptions in the middleware
+      or application.
+    fullName: onTurnError
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '(context: TurnContext, error: Error) => Promise<void> onTurnError'
+      return:
+        description: A promise representing the async operation.
+        type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+inheritedProperties:
+  - name: BotIdentityKey
+    uid: '@microsoft/teams-ai.TeamsAdapter.BotIdentityKey'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: BotIdentityKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'BotIdentityKey: symbol'
+      return:
+        description: ''
+        type: symbol
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.BotIdentityKey
+  - name: ConnectorClientKey
+    uid: '@microsoft/teams-ai.TeamsAdapter.ConnectorClientKey'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: ConnectorClientKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ConnectorClientKey: symbol'
+      return:
+        description: ''
+        type: symbol
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.ConnectorClientKey
+  - name: ConnectorFactoryKey
+    uid: '@microsoft/teams-ai.TeamsAdapter.ConnectorFactoryKey'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: ConnectorFactoryKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ConnectorFactoryKey: symbol'
+      return:
+        description: ''
+        type: symbol
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.ConnectorFactoryKey
+  - name: OAuthScopeKey
+    uid: '@microsoft/teams-ai.TeamsAdapter.OAuthScopeKey'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: OAuthScopeKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'OAuthScopeKey: symbol'
+      return:
+        description: ''
+        type: symbol
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.OAuthScopeKey
+  - name: UserTokenClientKey
+    uid: '@microsoft/teams-ai.TeamsAdapter.UserTokenClientKey'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: UserTokenClientKey
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'UserTokenClientKey: symbol'
+      return:
+        description: ''
+        type: symbol
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.UserTokenClientKey
+inheritedMethods:
+  - name: >-
+      connectNamedPipe(string, (context: TurnContext) => Promise<void>, string,
+      string, string, number)
+    uid: '@microsoft/teams-ai.TeamsAdapter.connectNamedPipe'
+    package: '@microsoft/teams-ai'
+    summary: Used to connect the adapter to a named pipe.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function connectNamedPipe(pipeName: string, logic: (context:
+        TurnContext) => Promise<void>, appId: string, audience: string,
+        callerId?: string, retryCount?: number): Promise<void>
+      parameters:
+        - id: pipeName
+          type: string
+          description: >-
+            Pipe name to connect to (note: yields two named pipe servers by
+            appending ".incoming" and ".outgoing" to this name)
+        - id: logic
+          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
+          description: The logic function to call for resulting bot turns.
+        - id: appId
+          type: string
+          description: The Bot application ID
+        - id: audience
+          type: string
+          description: >-
+            The audience to use for outbound communication. The will vary by
+            cloud environment.
+        - id: callerId
+          type: string
+          description: Optional, the caller ID
+        - id: retryCount
+          type: number
+          description: >-
+            Optional, the number of times to retry a failed connection (defaults
+            to 7)
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.connectNamedPipe
+  - name: >-
+      continueConversation(Partial<ConversationReference>, (context:
+      TurnContext) => Promise<void>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.continueConversation'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: ''
+    syntax:
+      content: >-
+        function continueConversation(_reference:
+        Partial<ConversationReference>, _logic: (context: TurnContext) =>
+        Promise<void>): Promise<void>
+      parameters:
+        - id: _reference
+          type: Partial&lt;ConversationReference&gt;
+          description: ''
+        - id: _logic
+          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.continueConversation
+  - name: >-
+      createConversationAsync(string, string, string, string,
+      ConversationParameters, (context: TurnContext) => Promise<void>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.createConversationAsync'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createConversationAsync(botAppId: string, channelId: string,
+        serviceUrl: string, audience: string, conversationParameters:
+        ConversationParameters, logic: (context: TurnContext) => Promise<void>):
+        Promise<void>
+      parameters:
+        - id: botAppId
+          type: string
+          description: ''
+        - id: channelId
+          type: string
+          description: ''
+        - id: serviceUrl
+          type: string
+          description: ''
+        - id: audience
+          type: string
+          description: ''
+        - id: conversationParameters
+          type: ConversationParameters
+          description: ''
+        - id: logic
+          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.createConversationAsync
+  - name: deleteActivity(TurnContext, Partial<ConversationReference>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.deleteActivity'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function deleteActivity(context: TurnContext, reference:
+        Partial<ConversationReference>): Promise<void>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+        - id: reference
+          type: Partial&lt;ConversationReference&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.deleteActivity
+  - name: >-
+      process(Request<Record<string, unknown>, Record<string, undefined | string
+      | string[]>>, INodeSocket, INodeBuffer, (context: TurnContext) =>
+      Promise<void>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.process_1'
+    package: '@microsoft/teams-ai'
+    summary: |-
+      Handle a web socket connection by applying a logic function to
+      each streaming request.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function process(req: Request<Record<string, unknown>, Record<string,
+        undefined | string | string[]>>, socket: INodeSocket, head: INodeBuffer,
+        logic: (context: TurnContext) => Promise<void>): Promise<void>
+      parameters:
+        - id: req
+          type: >-
+            Request&lt;Record&lt;string, unknown&gt;, Record&lt;string,
+            undefined | string | string[]&gt;&gt;
+          description: An incoming HTTP [Request](xref:botbuilder.Request)
+        - id: socket
+          type: INodeSocket
+          description: >-
+            The corresponding
+            [INodeSocket](xref:botframework-streaming.INodeSocket)
+        - id: head
+          type: INodeBuffer
+          description: >-
+            The corresponding
+            [INodeBuffer](xref:botframework-streaming.INodeBuffer)
+        - id: logic
+          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
+          description: The logic function to apply
+      return:
+        description: a promise representing the asynchronous operation.
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.process
+  - name: >-
+      process(Request<Record<string, unknown>, Record<string, undefined | string
+      | string[]>>, Response, (context: TurnContext) => Promise<void>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.process'
+    package: '@microsoft/teams-ai'
+    summary: Process a web request by applying a logic function.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function process(req: Request<Record<string, unknown>, Record<string,
+        undefined | string | string[]>>, res: Response, logic: (context:
+        TurnContext) => Promise<void>): Promise<void>
+      parameters:
+        - id: req
+          type: >-
+            Request&lt;Record&lt;string, unknown&gt;, Record&lt;string,
+            undefined | string | string[]&gt;&gt;
+          description: An incoming HTTP [Request](xref:botbuilder.Request)
+        - id: res
+          type: Response
+          description: ''
+        - id: logic
+          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
+          description: The logic function to apply
+      return:
+        description: a promise representing the asynchronous operation.
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.process
+  - name: >-
+      processActivityDirect(string | AuthenticateRequestResult, Activity,
+      (context: TurnContext) => Promise<void>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.processActivityDirect'
+    package: '@microsoft/teams-ai'
+    summary: Asynchronously process an activity running the provided logic function.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function processActivityDirect(authorization: string |
+        AuthenticateRequestResult, activity: Activity, logic: (context:
+        TurnContext) => Promise<void>): Promise<void>
+      parameters:
+        - id: authorization
+          type: string | AuthenticateRequestResult
+          description: >-
+            The authorization header in the format: "Bearer [longString]" or the
+            AuthenticateRequestResult for this turn.
+        - id: activity
+          type: Activity
+          description: The activity to process.
+        - id: logic
+          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
+          description: The logic function to apply.
+      return:
+        description: a promise representing the asynchronous operation.
+        type: Promise&lt;void&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.processActivityDirect
+  - name: sendActivities(TurnContext, Partial<Activity>[])
+    uid: '@microsoft/teams-ai.TeamsAdapter.sendActivities'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendActivities(context: TurnContext, activities:
+        Partial<Activity>[]): Promise<ResourceResponse[]>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+        - id: activities
+          type: Partial&lt;Activity&gt;[]
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;ResourceResponse[]&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.sendActivities
+  - name: updateActivity(TurnContext, Partial<Activity>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.updateActivity'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateActivity(context: TurnContext, activity:
+        Partial<Activity>): Promise<void | ResourceResponse>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: ''
+        - id: activity
+          type: Partial&lt;Activity&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void | ResourceResponse&gt;
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.updateActivity
+  - name: use((MiddlewareHandler | Middleware)[])
+    uid: '@microsoft/teams-ai.TeamsAdapter.use'
+    package: '@microsoft/teams-ai'
+    summary: Adds middleware to the adapter's pipeline.
+    remarks: >-
+      Middleware is added to the adapter at initialization time.
+
+      Each turn, the adapter calls its middleware in the order in which you
+      added it.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function use(middlewares: (MiddlewareHandler | Middleware)[]):
+        TeamsAdapter
+      parameters:
+        - id: middlewares
+          type: (MiddlewareHandler | Middleware)[]
+          description: The middleware or middleware handlers to add.
+      return:
+        description: The updated adapter object.
+        type: <xref uid="@microsoft/teams-ai.TeamsAdapter" />
+    inheritanceDescription: <b>Inherited From</b> CloudAdapter.use
+extends: CloudAdapter
