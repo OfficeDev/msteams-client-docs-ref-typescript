@@ -1,9 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.people'
 name: people
-summary: >-
-  Allows your app to add a people picker enabling users to search for and select
-  people in their organization.
+summary: ''
 type: module
 interfaces:
   - '@microsoft/teams-js.people.PeoplePickerInputs'

@@ -11,19 +11,15 @@ properties:
   - name: adapter
     uid: '@microsoft/teams-ai.ApplicationOptions.adapter'
     package: '@microsoft/teams-ai'
-    summary: Optional. Bot adapter being used.
+    summary: Optional. Options used to initialize your `BotAdapter`
     fullName: adapter
-    remarks: >-
-      If using the `longRunningMessages` option or calling the
-      continueConversationAsync() method,
-
-      this property is required.
+    remarks: ''
     isDeprecated: false
     syntax:
-      content: 'adapter?: BotAdapter'
+      content: 'adapter?: TeamsAdapter'
       return:
         description: ''
-        type: BotAdapter
+        type: <xref uid="@microsoft/teams-ai.TeamsAdapter" />
   - name: adaptiveCards
     uid: '@microsoft/teams-ai.ApplicationOptions.adaptiveCards'
     package: '@microsoft/teams-ai'

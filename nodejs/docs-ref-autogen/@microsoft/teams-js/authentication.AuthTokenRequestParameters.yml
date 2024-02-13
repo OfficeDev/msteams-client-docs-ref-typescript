@@ -36,3 +36,17 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: tenantId
+    uid: '@microsoft/teams-js.authentication.AuthTokenRequestParameters.tenantId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      An optional identifier of the home tenant for which to acquire the access
+      token for (used in cross-tenant shared channels).
+    fullName: tenantId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tenantId?: string'
+      return:
+        description: ''
+        type: string

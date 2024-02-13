@@ -18,10 +18,10 @@ properties:
     remarks: New in schema version 1.1.
     isDeprecated: false
     syntax:
-      content: 'completion_type?: "chat" | "text"'
+      content: 'completion_type?: "text" | "chat"'
       return:
         description: ''
-        type: '"chat" | "text"'
+        type: '"text" | "chat"'
   - name: frequency_penalty
     uid: '@microsoft/teams-ai.CompletionConfig.frequency_penalty'
     package: '@microsoft/teams-ai'

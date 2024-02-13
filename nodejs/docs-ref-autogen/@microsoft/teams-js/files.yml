@@ -1,0 +1,6 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.files'
+name: files
+type: module
+package: '@microsoft/teams-js'
+summary: ''

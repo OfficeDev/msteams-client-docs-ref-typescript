@@ -93,7 +93,7 @@ methods:
       return:
         description: The ApplicationBuilder instance.
         type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
-  - name: withAuthentication(BotAdapter, AuthenticationOptions)
+  - name: withAuthentication(TeamsAdapter, AuthenticationOptions)
     uid: '@microsoft/teams-ai.ApplicationBuilder.withAuthentication'
     package: '@microsoft/teams-ai'
     summary: Configures user authentication settings.
@@ -101,11 +101,12 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function withAuthentication(adapter: BotAdapter, authenticationOptions:
-        AuthenticationOptions): ApplicationBuilder<TState>
+        function withAuthentication(adapter: TeamsAdapter,
+        authenticationOptions: AuthenticationOptions):
+        ApplicationBuilder<TState>
       parameters:
         - id: adapter
-          type: BotAdapter
+          type: <xref uid="@microsoft/teams-ai.TeamsAdapter" />
           description: The adapter to use for user authentication.
         - id: authenticationOptions
           type: <xref uid="@microsoft/teams-ai.AuthenticationOptions" />
@@ -113,7 +114,7 @@ methods:
       return:
         description: The ApplicationBuilder instance.
         type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;
-  - name: withLongRunningMessages(BotAdapter, string)
+  - name: withLongRunningMessages(TeamsAdapter, string)
     uid: '@microsoft/teams-ai.ApplicationBuilder.withLongRunningMessages'
     package: '@microsoft/teams-ai'
     summary: |-
@@ -123,11 +124,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function withLongRunningMessages(adapter: BotAdapter, botAppId: string):
-        ApplicationBuilder<TState>
+        function withLongRunningMessages(adapter: TeamsAdapter, botAppId:
+        string): ApplicationBuilder<TState>
       parameters:
         - id: adapter
-          type: BotAdapter
+          type: <xref uid="@microsoft/teams-ai.TeamsAdapter" />
           description: The adapter to use for routing incoming requests.
         - id: botAppId
           type: string
@@ -180,7 +181,7 @@ methods:
       parameters:
         - id: turnStateFactory
           type: () =&gt; TState
-          description: ''
+          description: Factory used to create a custom turn state instance.
       return:
-        description: ''
+        description: The ApplicationBuilder instance.
         type: <xref uid="@microsoft/teams-ai.ApplicationBuilder" />&lt;TState&gt;

@@ -8,7 +8,7 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
-  - name: createEmbeddings(string | string[])
+  - name: createEmbeddings(string, string | string[])
     uid: '@microsoft/teams-ai.EmbeddingsModel.createEmbeddings'
     package: '@microsoft/teams-ai'
     summary: Creates embeddings for the given inputs.
@@ -16,9 +16,12 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function createEmbeddings(inputs: string | string[]):
+        function createEmbeddings(model: string, inputs: string | string[]):
         Promise<EmbeddingsResponse>
       parameters:
+        - id: model
+          type: string
+          description: Name of the model to use (or deployment for Azure).
         - id: inputs
           type: string | string[]
           description: Text inputs to create embeddings for.

@@ -1176,4 +1176,33 @@ methods:
         type: >-
           Promise&lt;<xref uid="@microsoft/live-share.ILiveEvent"
           />&lt;TEvent&gt;&gt;
+  - name: sendLocalEvent<TEvent>(string, TEvent)
+    uid: '@microsoft/live-share.LiveEventScope.sendLocalEvent'
+    package: '@microsoft/live-share'
+    summary: >-
+      Sends a local only event to local event scope instance for the Fluid
+      object.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function sendLocalEvent<TEvent>(eventName: string, evt: TEvent):
+        Promise<ILiveEvent<TEvent>>
+      parameters:
+        - id: eventName
+          type: string
+          description: Name of the event to send.
+        - id: evt
+          type: TEvent
+          description: |-
+            Optional. Partial event object to send. The `ILiveEvent.name`,
+            `ILiveEvent.timestamp`, and `ILiveEvent.clientId`
+            fields will be automatically populated prior to sending.
+      return:
+        description: |-
+          The full event, including `ILiveEvent.name`,
+          `ILiveEvent.timestamp`, and `ILiveEvent.clientId` fields if known.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/live-share.ILiveEvent"
+          />&lt;TEvent&gt;&gt;
 extends: TypedEventEmitter&lt;IErrorEvent&gt;

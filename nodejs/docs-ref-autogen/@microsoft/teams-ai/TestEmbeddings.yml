@@ -78,7 +78,7 @@ properties:
         description: ''
         type: number[][]
 methods:
-  - name: createEmbeddings(string | string[])
+  - name: createEmbeddings(string, string | string[])
     uid: '@microsoft/teams-ai.TestEmbeddings.createEmbeddings'
     package: '@microsoft/teams-ai'
     summary: Returns a generated set of test embeddings
@@ -86,9 +86,12 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function createEmbeddings(inputs: string | string[]):
+        function createEmbeddings(model: string, inputs: string | string[]):
         Promise<EmbeddingsResponse>
       parameters:
+        - id: model
+          type: string
+          description: Name of the model to use (or deployment for Azure).
         - id: inputs
           type: string | string[]
           description: Input to generate embeddings for.

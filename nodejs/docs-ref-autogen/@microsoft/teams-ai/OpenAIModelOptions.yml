@@ -59,23 +59,6 @@ properties:
         description: ''
         type: string
 inheritedProperties:
-  - name: completion_type
-    uid: '@microsoft/teams-ai.OpenAIModelOptions.completion_type'
-    package: '@microsoft/teams-ai'
-    summary: >-
-      Optional. Type of completion to use for the default model. Defaults to
-      'chat'.
-    fullName: completion_type
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'completion_type?: "chat" | "text"'
-      return:
-        description: ''
-        type: '"chat" | "text"'
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [BaseOpenAIModelOptions.completion_type](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.completion_type)
   - name: logRequests
     uid: '@microsoft/teams-ai.OpenAIModelOptions.logRequests'
     package: '@microsoft/teams-ai'
