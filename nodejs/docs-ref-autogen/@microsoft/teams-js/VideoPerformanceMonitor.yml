@@ -10,7 +10,9 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: 'VideoPerformanceMonitor((actionName: string, args: unknown[]) => void)'
+  - name: >-
+      VideoPerformanceMonitor((apiVersionTag: string, actionName: string, args:
+      unknown[]) => void)
     uid: '@microsoft/teams-js.VideoPerformanceMonitor.constructor'
     package: '@microsoft/teams-js'
     summary: ''
@@ -18,11 +20,13 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new VideoPerformanceMonitor(reportPerformanceEvent: (actionName: string,
-        args: unknown[]) => void)
+        new VideoPerformanceMonitor(reportPerformanceEvent: (apiVersionTag:
+        string, actionName: string, args: unknown[]) => void)
       parameters:
         - id: reportPerformanceEvent
-          type: '(actionName: string, args: unknown[]) =&gt; void'
+          type: >-
+            (apiVersionTag: string, actionName: string, args: unknown[]) =&gt;
+            void
           description: ''
 methods:
   - name: reportApplyingVideoEffect(string, string)

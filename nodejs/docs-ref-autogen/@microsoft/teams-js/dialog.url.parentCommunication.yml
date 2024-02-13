@@ -1,0 +1,71 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.dialog.url.parentCommunication'
+name: parentCommunication
+type: module
+package: '@microsoft/teams-js'
+summary: Subcapability that allows communication between the dialog and the parent app.
+previewState: beta
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.dialog.url.parentCommunication.isSupported'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Checks if dialog.url.parentCommunication capability is supported by the
+      host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: >-
+          boolean to represent whether dialog.url.parentCommunication capability
+          is supported
+        type: boolean
+  - name: registerOnMessageFromParent(PostMessageChannel)
+    uid: >-
+      @microsoft/teams-js.dialog.url.parentCommunication.registerOnMessageFromParent
+    package: '@microsoft/teams-js'
+    summary: >-
+      Register a listener that will be triggered when a message is received from
+      the app that opened the dialog.
+    remarks: >-
+      This function is only intended to be called from code running within the
+      dialog. Calling it from outside the dialog will have no effect.
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function registerOnMessageFromParent(listener: PostMessageChannel)'
+      parameters:
+        - id: listener
+          type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
+          description: The listener that will be triggered.
+  - name: sendMessageToDialog(any)
+    uid: '@microsoft/teams-js.dialog.url.parentCommunication.sendMessageToDialog'
+    package: '@microsoft/teams-js'
+    summary: Send message to the dialog from the parent
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function sendMessageToDialog(message: any)'
+      parameters:
+        - id: message
+          type: any
+          description: The message to send
+  - name: sendMessageToParentFromDialog(any)
+    uid: >-
+      @microsoft/teams-js.dialog.url.parentCommunication.sendMessageToParentFromDialog
+    package: '@microsoft/teams-js'
+    summary: Send message to the parent from dialog
+    remarks: >-
+      This function is only intended to be called from code running within the
+      dialog. Calling it from outside the dialog will have no effect.
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function sendMessageToParentFromDialog(message: any)'
+      parameters:
+        - id: message
+          type: any
+          description: The message to send to the parent

@@ -233,6 +233,23 @@ methods:
       return:
         description: The application instance for chaining purposes.
         type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: 'error((context: TurnContext, error: Error) => Promise<void>)'
+    uid: '@microsoft/teams-ai.Application.error'
+    package: '@microsoft/teams-ai'
+    summary: Sets the bot's error handler
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function error(handler: (context: TurnContext, error: Error) =>
+        Promise<void>): Application<TState>
+      parameters:
+        - id: handler
+          type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+          description: Function to call when an error is encountered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
   - name: >-
       fileConsentAccept((context: TurnContext, state: TState,
       fileConsentResponse: FileConsentCardResponse) => Promise<void>)
@@ -530,7 +547,7 @@ methods:
 
 
       Use of the method requires you configure the Application with the
-      `adapter` and `botAppId`
+      `adapter.appId`
 
       options. An exception will be thrown if either is missing.
     isDeprecated: false

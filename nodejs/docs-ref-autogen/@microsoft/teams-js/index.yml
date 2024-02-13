@@ -64,7 +64,6 @@ interfaces:
   - '@microsoft/teams-js.sharing.IURLContent'
   - '@microsoft/teams-js.stageView.StageViewParams'
   - '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment'
-  - '@microsoft/teams-js.thirdPartyCloudStorage.AttachmentListHelper'
   - '@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback'
   - '@microsoft/teams-js.thirdPartyCloudStorage.FileChunk'
   - '@microsoft/teams-js.thirdPartyCloudStorage.FileResult'
@@ -87,6 +86,7 @@ interfaces:
   - '@microsoft/teams-js.IAppWindow'
   - '@microsoft/teams-js.LocaleInfo'
   - '@microsoft/teams-js.M365ContentAction'
+  - '@microsoft/teams-js.OpenConversationRequest'
   - '@microsoft/teams-js.OpenGroupChatRequest'
   - '@microsoft/teams-js.OpenSingleChatRequest'
   - '@microsoft/teams-js.ResumeContext'
@@ -113,6 +113,7 @@ enums:
   - '@microsoft/teams-js.meeting.SharingProtocol'
   - '@microsoft/teams-js.menus.DisplayMode'
   - '@microsoft/teams-js.stageView.StageViewOpenMode'
+  - '@microsoft/teams-js.teams.ChannelType'
   - '@microsoft/teams-js.videoEffects.EffectChangeType'
   - '@microsoft/teams-js.videoEffects.EffectFailureReason'
   - '@microsoft/teams-js.videoEffects.VideoFrameFormat'
@@ -265,6 +266,43 @@ functions:
         - id: messageFromChildHandler
           type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
           description: ''
+  - name: configSetConfigHelper(string, InstanceConfig)
+    uid: '@microsoft/teams-js.configSetConfigHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function configSetConfigHelper(apiVersionTag: string, instanceConfig:
+        InstanceConfig): Promise<void>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: instanceConfig
+          type: <xref uid="@microsoft/teams-js.pages.InstanceConfig" />
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: configSetValidityStateHelper(string, boolean)
+    uid: '@microsoft/teams-js.configSetValidityStateHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function configSetValidityStateHelper(apiVersionTag: string,
+        validityState: boolean)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: validityState
+          type: boolean
+          description: ''
   - name: enablePrintCapability()
     uid: '@microsoft/teams-js.enablePrintCapability'
     package: '@microsoft/teams-js'
@@ -320,6 +358,23 @@ functions:
           version supported by the host, or undefined if the host does not
           support Adaptive Cards
         type: <xref uid="@microsoft/teams-js.AdaptiveCardVersion" /> | undefined
+  - name: getConfigHelper(string)
+    uid: '@microsoft/teams-js.getConfigHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getConfigHelper(apiVersionTag: string):
+        Promise<pages.InstanceConfig>
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@microsoft/teams-js.pages.InstanceConfig" />&gt;
   - name: getContext(getContextCallbackFunctionType)
     uid: '@microsoft/teams-js.getContext'
     package: '@microsoft/teams-js'
@@ -636,6 +691,64 @@ functions:
         - id: onComplete
           type: <xref uid="@microsoft/teams-js.onCompleteHandlerFunctionType" />
           description: The callback to invoke when the action is complete.
+  - name: notifyAppLoadedHelper(string)
+    uid: '@microsoft/teams-js.notifyAppLoadedHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function notifyAppLoadedHelper(apiVersionTag: string)'
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+  - name: notifyExpectedFailureHelper(string, IExpectedFailureRequest)
+    uid: '@microsoft/teams-js.notifyExpectedFailureHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function notifyExpectedFailureHelper(apiVersionTag: string,
+        expectedFailureRequest: IExpectedFailureRequest)
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
+        - id: expectedFailureRequest
+          type: <xref uid="@microsoft/teams-js.app.IExpectedFailureRequest" />
+          description: ''
+  - name: notifyFailureHelper(string, IFailedRequest)
+    uid: '@microsoft/teams-js.notifyFailureHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function notifyFailureHelper(apiVersiontag: string,
+        appInitializationFailedRequest: IFailedRequest)
+      parameters:
+        - id: apiVersiontag
+          type: string
+          description: ''
+        - id: appInitializationFailedRequest
+          type: <xref uid="@microsoft/teams-js.app.IFailedRequest" />
+          description: ''
+  - name: notifySuccessHelper(string)
+    uid: '@microsoft/teams-js.notifySuccessHelper'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function notifySuccessHelper(apiVersionTag: string)'
+      parameters:
+        - id: apiVersionTag
+          type: string
+          description: ''
   - name: openLinkHelper(string, string)
     uid: '@microsoft/teams-js.openLinkHelper'
     package: '@microsoft/teams-js'
@@ -1018,6 +1131,23 @@ functions:
           description: ''
         - id: dimensions
           type: <xref uid="@microsoft/teams-js.DialogSize" />
+          description: ''
+  - name: 'uploadCustomApp(Blob, (status: boolean, reason?: string) => void)'
+    uid: '@microsoft/teams-js.uploadCustomApp'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function uploadCustomApp(manifestBlob: Blob, onComplete?: (status:
+        boolean, reason?: string) => void)
+      parameters:
+        - id: manifestBlob
+          type: Blob
+          description: ''
+        - id: onComplete
+          type: '(status: boolean, reason?: string) =&gt; void'
           description: ''
   - name: >-
       urlOpenHelper(string, UrlDialogInfo, DialogSubmitHandler,

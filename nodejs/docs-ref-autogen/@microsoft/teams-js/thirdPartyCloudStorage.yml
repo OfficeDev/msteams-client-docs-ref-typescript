@@ -9,7 +9,6 @@ summary: >-
 type: module
 interfaces:
   - '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment'
-  - '@microsoft/teams-js.thirdPartyCloudStorage.AttachmentListHelper'
   - '@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback'
   - '@microsoft/teams-js.thirdPartyCloudStorage.FileChunk'
   - '@microsoft/teams-js.thirdPartyCloudStorage.FileResult'

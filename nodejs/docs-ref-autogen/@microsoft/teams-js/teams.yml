@@ -1,0 +1,8 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.teams'
+name: teams
+summary: ''
+type: module
+enums:
+  - '@microsoft/teams-js.teams.ChannelType'
+package: '@microsoft/teams-js'

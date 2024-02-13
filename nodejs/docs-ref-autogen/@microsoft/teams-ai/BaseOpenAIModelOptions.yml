@@ -8,20 +8,6 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: completion_type
-    uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.completion_type'
-    package: '@microsoft/teams-ai'
-    summary: >-
-      Optional. Type of completion to use for the default model. Defaults to
-      'chat'.
-    fullName: completion_type
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'completion_type?: "chat" | "text"'
-      return:
-        description: ''
-        type: '"chat" | "text"'
   - name: logRequests
     uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.logRequests'
     package: '@microsoft/teams-ai'

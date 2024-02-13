@@ -29,6 +29,8 @@ inheritedProperties:
       `React.ContextType` of your `static contextType`.
       Should be used with type annotation or static contextType.
 
+      **Example**
+
       ```ts
       static contextType = MyContext
       // For TS pre-3.7:
@@ -36,6 +38,8 @@ inheritedProperties:
       // For TS 3.7 and above:
       declare context: React.ContextType<typeof MyContext>
       ```
+
+
 
       See https://react.dev/reference/react/Component#context
     fullName: context
@@ -55,7 +59,7 @@ inheritedProperties:
       given Context.
 
 
-      Usage:
+      **Example**
 
 
       ```ts
@@ -74,6 +78,8 @@ inheritedProperties:
       }
 
       ```
+
+
 
 
       See https://react.dev/reference/react/Component#static-contexttype
@@ -156,8 +162,9 @@ inheritedMethods:
       render.
 
 
-      The snapshot is only present if getSnapshotBeforeUpdate is present and
-      returns non-null.
+      The snapshot is only present if
+      [getSnapshotBeforeUpdate](xref:@microsoft/teamsfx-react.BaseDashboard.getSnapshotBeforeUpdate)
+      is present and returns non-null.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -179,14 +186,20 @@ inheritedMethods:
     uid: '@microsoft/teamsfx-react.BaseDashboard.componentWillMount'
     package: '@microsoft/teamsfx-react'
     summary: >-
-      Called immediately before mounting occurs, and before `Component#render`.
+      Called immediately before mounting occurs, and before
+      <xref:Component.render>.
 
       Avoid introducing any side-effects or subscriptions in this method.
 
 
-      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+      Note: the presence of
+      [getSnapshotBeforeUpdate](xref:NewLifecycle.getSnapshotBeforeUpdate)
 
-      prevents this from being invoked.
+      or
+      [getDerivedStateFromProps](xref:StaticLifecycle.getDerivedStateFromProps)
+      prevents
+
+      this from being invoked.
 
 
       See
@@ -214,12 +227,17 @@ inheritedMethods:
       props if you only want to handle changes.
 
 
-      Calling `Component#setState` generally does not trigger this method.
+      Calling <xref:Component.setState> generally does not trigger this method.
 
 
-      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+      Note: the presence of
+      [getSnapshotBeforeUpdate](xref:NewLifecycle.getSnapshotBeforeUpdate)
 
-      prevents this from being invoked.
+      or
+      [getDerivedStateFromProps](xref:StaticLifecycle.getDerivedStateFromProps)
+      prevents
+
+      this from being invoked.
 
 
       See
@@ -252,12 +270,17 @@ inheritedMethods:
       Not called for the initial render.
 
 
-      Note: You cannot call `Component#setState` here.
+      Note: You cannot call <xref:Component.setState> here.
 
 
-      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+      Note: the presence of
+      [getSnapshotBeforeUpdate](xref:NewLifecycle.getSnapshotBeforeUpdate)
 
-      prevents this from being invoked.
+      or
+      [getDerivedStateFromProps](xref:StaticLifecycle.getDerivedStateFromProps)
+      prevents
+
+      this from being invoked.
 
 
       See
@@ -300,15 +323,18 @@ inheritedMethods:
     uid: '@microsoft/teamsfx-react.BaseDashboard.getSnapshotBeforeUpdate'
     package: '@microsoft/teamsfx-react'
     summary: >-
-      Runs before React applies the result of `render` to the document, and
+      Runs before React applies the result of [render](xref:Component.render) to
+      the document, and
 
-      returns an object to be given to componentDidUpdate. Useful for saving
+      returns an object to be given to
+      [componentDidUpdate](xref:@microsoft/teamsfx-react.BaseDashboard.componentDidUpdate).
+      Useful for saving
 
-      things such as scroll position before `render` causes changes to it.
+      things such as scroll position before [render](xref:Component.render)
+      causes changes to it.
 
 
-      Note: the presence of getSnapshotBeforeUpdate prevents any of the
-      deprecated
+      Note: the presence of this method prevents any of the deprecated
 
       lifecycle events from running.
     remarks: ''
@@ -372,7 +398,7 @@ inheritedMethods:
       props or states have changed.
 
 
-      If false is returned, `Component#render`, `componentWillUpdate`
+      If false is returned, <xref:Component.render>, `componentWillUpdate`
 
       and `componentDidUpdate` will not be called.
     remarks: ''
@@ -399,7 +425,8 @@ inheritedMethods:
     uid: '@microsoft/teamsfx-react.BaseDashboard.UNSAFE_componentWillMount'
     package: '@microsoft/teamsfx-react'
     summary: >-
-      Called immediately before mounting occurs, and before `Component#render`.
+      Called immediately before mounting occurs, and before
+      <xref:Component.render>.
 
       Avoid introducing any side-effects or subscriptions in this method.
 
@@ -407,9 +434,14 @@ inheritedMethods:
       This method will not stop working in React 17.
 
 
-      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+      Note: the presence of
+      [getSnapshotBeforeUpdate](xref:NewLifecycle.getSnapshotBeforeUpdate)
 
-      prevents this from being invoked.
+      or
+      [getDerivedStateFromProps](xref:StaticLifecycle.getDerivedStateFromProps)
+      prevents
+
+      this from being invoked.
 
 
       See
@@ -435,15 +467,20 @@ inheritedMethods:
       props if you only want to handle changes.
 
 
-      Calling `Component#setState` generally does not trigger this method.
+      Calling <xref:Component.setState> generally does not trigger this method.
 
 
       This method will not stop working in React 17.
 
 
-      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+      Note: the presence of
+      [getSnapshotBeforeUpdate](xref:NewLifecycle.getSnapshotBeforeUpdate)
 
-      prevents this from being invoked.
+      or
+      [getDerivedStateFromProps](xref:StaticLifecycle.getDerivedStateFromProps)
+      prevents
+
+      this from being invoked.
 
 
       See
@@ -476,15 +513,20 @@ inheritedMethods:
       Not called for the initial render.
 
 
-      Note: You cannot call `Component#setState` here.
+      Note: You cannot call <xref:Component.setState> here.
 
 
       This method will not stop working in React 17.
 
 
-      Note: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps
+      Note: the presence of
+      [getSnapshotBeforeUpdate](xref:NewLifecycle.getSnapshotBeforeUpdate)
 
-      prevents this from being invoked.
+      or
+      [getDerivedStateFromProps](xref:StaticLifecycle.getDerivedStateFromProps)
+      prevents
+
+      this from being invoked.
 
 
       See

@@ -52,3 +52,27 @@ methods:
         type: >-
           Promise&lt;<xref uid="@microsoft/live-share.ILiveEvent"
           />&lt;TEvent&gt;&gt;
+  - name: sendLocalEvent(TEvent)
+    uid: '@microsoft/live-share.LiveEventSource.sendLocalEvent'
+    package: '@microsoft/live-share'
+    summary: >-
+      Same as `SendEvent` but only sent locally. Useful for events that do not
+      need to be sent as a signal.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function sendLocalEvent(evt: TEvent): Promise<ILiveEvent<TEvent>>'
+      parameters:
+        - id: evt
+          type: TEvent
+          description: |-
+            Optional. Partial event object. The `ILiveEvent.name`,
+            `ILiveEvent.timestamp`, and `ILiveEvent.clientId`
+            fields will be automatically populated.
+      return:
+        description: |-
+          The full event, including `ILiveEvent.name`,
+          `ILiveEvent.timestamp`, and `ILiveEvent.clientId` fields if known.
+        type: >-
+          Promise&lt;<xref uid="@microsoft/live-share.ILiveEvent"
+          />&lt;TEvent&gt;&gt;

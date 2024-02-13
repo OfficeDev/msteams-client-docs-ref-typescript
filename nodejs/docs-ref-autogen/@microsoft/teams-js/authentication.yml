@@ -109,9 +109,9 @@ functions:
           provided in the parameter
 
           passed by your app when it calls
-          [notifySuccess](xref:@microsoft/teams-js.authentication.notifySuccess)
-          in the pop-up window after returning from the identity provider
-          redirect.
+          [authentication.notifySuccess(result?: string):
+          void](xref:@microsoft/teams-js.authentication.notifySuccess) in the
+          pop-up window after returning from the identity provider redirect.
         type: Promise&lt;string&gt;
   - name: getAuthToken(AuthTokenRequest)
     uid: '@microsoft/teams-js.authentication.getAuthToken_1'
@@ -175,7 +175,7 @@ functions:
       return:
         description: '`Promise` that will be resolved with the token, if successful.'
         type: Promise&lt;string&gt;
-  - name: notifyFailure(string, string)
+  - name: notifyFailure(string)
     uid: '@microsoft/teams-js.authentication.notifyFailure'
     package: '@microsoft/teams-js'
     summary: >-
@@ -198,17 +198,16 @@ functions:
       This call causes the authentication window to be closed.
     isDeprecated: false
     syntax:
-      content: 'function notifyFailure(reason?: string, callbackUrl?: string)'
+      content: 'function notifyFailure(result?: string)'
       parameters:
-        - id: reason
-          type: string
-          description: ''
-        - id: callbackUrl
+        - id: result
           type: string
           description: >-
-            Specifies the url to redirect back to if the client is Win32
-            Outlook.
-  - name: notifySuccess(string, string)
+            Specifies a result for the authentication. If specified, the frame
+            that initiated the authentication pop-up receives
+
+            this value in its callback or via the `Promise` return value
+  - name: notifySuccess(string)
     uid: '@microsoft/teams-js.authentication.notifySuccess'
     package: '@microsoft/teams-js'
     summary: >-
@@ -231,7 +230,7 @@ functions:
       This call causes the authentication window to be closed.
     isDeprecated: false
     syntax:
-      content: 'function notifySuccess(result?: string, callbackUrl?: string)'
+      content: 'function notifySuccess(result?: string)'
       parameters:
         - id: result
           type: string
@@ -240,11 +239,6 @@ functions:
             that initiated the authentication pop-up receives
 
             this value in its callback or via the `Promise` return value
-        - id: callbackUrl
-          type: string
-          description: >-
-            Specifies the url to redirect back to if the client is Win32
-            Outlook.
   - name: registerAuthenticationHandlers(AuthenticateParameters)
     uid: '@microsoft/teams-js.authentication.registerAuthenticationHandlers'
     package: '@microsoft/teams-js'

@@ -1,0 +1,24 @@
+### YamlMime:TSEnum
+name: ChannelType
+uid: '@microsoft/teams-js.teams.ChannelType'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: ChannelType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Regular
+    uid: '@microsoft/teams-js.teams.ChannelType.Regular'
+    package: '@microsoft/teams-js'
+    summary: ''
+    numericValue: 0
+  - name: Private
+    uid: '@microsoft/teams-js.teams.ChannelType.Private'
+    package: '@microsoft/teams-js'
+    summary: ''
+    numericValue: 1
+  - name: Shared
+    uid: '@microsoft/teams-js.teams.ChannelType.Shared'
+    package: '@microsoft/teams-js'
+    summary: ''
+    numericValue: 2
