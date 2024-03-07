@@ -1,0 +1,36 @@
+### YamlMime:TSType
+name: AuthenticatorResult
+uid: '@microsoft/teams-ai.AuthenticatorResult'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: AuthenticatorResult
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: accessToken
+    uid: '@microsoft/teams-ai.AuthenticatorResult.accessToken'
+    package: '@microsoft/teams-ai'
+    summary: The value of the access token resulting from an authentication process.
+    fullName: accessToken
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'accessToken: string'
+      return:
+        description: ''
+        type: string
+  - name: expiresOn
+    uid: '@microsoft/teams-ai.AuthenticatorResult.expiresOn'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The date and time of expiration relative to Coordinated Universal Time
+      (UTC).
+    fullName: expiresOn
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expiresOn: Date'
+      return:
+        description: ''
+        type: Date

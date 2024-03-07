@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: adapter
+    uid: '@microsoft/teams-ai.TeamsAttachmentDownloaderOptions.adapter'
+    package: '@microsoft/teams-ai'
+    summary: ServiceClientCredentialsFactory
+    fullName: adapter
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'adapter: TeamsAdapter'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TeamsAdapter" />
   - name: botAppId
     uid: '@microsoft/teams-ai.TeamsAttachmentDownloaderOptions.botAppId'
     package: '@microsoft/teams-ai'
@@ -17,18 +29,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'botAppId: string'
-      return:
-        description: ''
-        type: string
-  - name: botAppPassword
-    uid: '@microsoft/teams-ai.TeamsAttachmentDownloaderOptions.botAppPassword'
-    package: '@microsoft/teams-ai'
-    summary: The Microsoft App Password of the bot.
-    fullName: botAppPassword
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'botAppPassword: string'
       return:
         description: ''
         type: string

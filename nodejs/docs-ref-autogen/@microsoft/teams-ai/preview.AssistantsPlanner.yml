@@ -31,7 +31,7 @@ properties:
     syntax:
       content: OpenAI openai
       return:
-        description: ''
+        description: The OpenAI instance
         type: OpenAI
 methods:
   - name: beginTask(TurnContext, TState, AI<TState>)

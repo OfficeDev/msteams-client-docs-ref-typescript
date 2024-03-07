@@ -38,13 +38,13 @@ methods:
   - name: createPromptSection()
     uid: '@microsoft/teams-ai.DefaultAugmentation.createPromptSection'
     package: '@microsoft/teams-ai'
-    summary: Creates an optional prompt section for the augmentation.
+    summary: ''
     remarks: ''
     isDeprecated: false
     syntax:
       content: 'function createPromptSection(): undefined | PromptSection'
       return:
-        description: ''
+        description: Returns an optional prompt section for the augmentation.
         type: undefined | <xref uid="@microsoft/teams-ai.PromptSection" />
   - name: >-
       validateResponse(TurnContext, Memory, Tokenizer, PromptResponse<string>,

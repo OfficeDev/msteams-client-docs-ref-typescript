@@ -12,14 +12,14 @@ properties:
     uid: '@microsoft/teams-ai.PromptManagerOptions.max_conversation_history_tokens'
     package: '@microsoft/teams-ai'
     summary: >-
-      Optional. Maximum number of tokens to of conversation history to include
-      in prompts.
+      Optional. Maximum number of tokens of conversation history to include in
+      prompts.
     fullName: max_conversation_history_tokens
     remarks: >-
       The default is to let conversation history consume the remainder of the
       prompts
 
-      `max_input_tokens` budget. Setting this a value greater then 1 will
+      `max_input_tokens` budget. Setting this to a value greater than 1 will
       override that and
 
       all prompts will use a fixed token budget.
@@ -56,7 +56,7 @@ properties:
     summary: Optional. Maximum number of tokens user input to include in prompts.
     fullName: max_input_tokens
     remarks: >-
-      This defaults to unlimited but can set to a value greater then `1` to
+      This defaults to unlimited but can be set to a value greater than `1` to
       limit the length of
 
       user input included in prompts. For example, if set to `100` then the any
@@ -72,7 +72,7 @@ properties:
   - name: promptsFolder
     uid: '@microsoft/teams-ai.PromptManagerOptions.promptsFolder'
     package: '@microsoft/teams-ai'
-    summary: Path to the filesystem folder containing all the applications prompts.
+    summary: Path to the filesystem folder containing all the application's prompts.
     fullName: promptsFolder
     remarks: ''
     isDeprecated: false

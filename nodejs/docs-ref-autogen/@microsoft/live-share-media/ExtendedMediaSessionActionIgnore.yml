@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ExtendedMediaSessionActionIgnore
+uid: '@microsoft/live-share-media.ExtendedMediaSessionActionIgnore'
+package: '@microsoft/live-share-media'
+summary: The reasons why an action is ignored.
+fullName: ExtendedMediaSessionActionIgnore
+remarks: >-
+  Is `localusersuspended` when the action updated the group state, but ignored
+  locally due to the local client being suspended.
+isDeprecated: false
+syntax: |
+  type ExtendedMediaSessionActionIgnore = "localusersuspended"

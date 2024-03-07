@@ -29,14 +29,14 @@ properties:
   - name: actions
     uid: '@microsoft/teams-ai.ActionAugmentationSection.actions'
     package: '@microsoft/teams-ai'
-    summary: Map of action names to actions.
+    summary: ''
     fullName: actions
     remarks: ''
     isDeprecated: false
     syntax:
       content: Map<string, ChatCompletionAction> actions
       return:
-        description: ''
+        description: Map of action names to actions.
         type: >-
           Map&lt;string, <xref uid="@microsoft/teams-ai.ChatCompletionAction"
           />&gt;

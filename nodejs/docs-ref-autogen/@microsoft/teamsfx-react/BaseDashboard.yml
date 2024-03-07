@@ -41,7 +41,7 @@ inheritedProperties:
 
 
 
-      See https://react.dev/reference/react/Component#context
+      See [React Docs](https://react.dev/reference/react/Component#context)
     fullName: context
     remarks: ''
     isDeprecated: false
@@ -108,12 +108,15 @@ inheritedProperties:
   - name: refs
     uid: '@microsoft/teamsfx-react.BaseDashboard.refs'
     package: '@microsoft/teamsfx-react'
-    summary: ''
+    summary: >-
+
+
+      See [Legacy React
+      Docs](https://legacy.reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs)
     fullName: refs
     remarks: ''
     isDeprecated: true
-    customDeprecatedMessage: >-
-      https://legacy.reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs
+    customDeprecatedMessage: ''
     syntax:
       content: 'refs: {[key: string]: ReactInstance}'
       return:
@@ -210,8 +213,8 @@ inheritedMethods:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      16.3, use componentDidMount or the constructor instead; will stop working
-      in React 17
+      16.3, use [componentDidMount](xref:ComponentLifecycle.componentDidMount)
+      or the constructor instead; will stop working in React 17
     syntax:
       content: function componentWillMount()
     inheritanceDescription: <b>Inherited From</b> Component.componentWillMount
@@ -248,8 +251,9 @@ inheritedMethods:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      16.3, use static getDerivedStateFromProps instead; will stop working in
-      React 17
+      16.3, use static
+      [getDerivedStateFromProps](xref:StaticLifecycle.getDerivedStateFromProps)
+      instead; will stop working in React 17
     syntax:
       content: >-
         function componentWillReceiveProps(nextProps: Readonly<P>, nextContext:
@@ -451,7 +455,9 @@ inheritedMethods:
       https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     remarks: ''
     isDeprecated: true
-    customDeprecatedMessage: 16.3, use componentDidMount or the constructor instead
+    customDeprecatedMessage: >-
+      16.3, use [componentDidMount](xref:ComponentLifecycle.componentDidMount)
+      or the constructor instead
     syntax:
       content: function UNSAFE_componentWillMount()
     inheritanceDescription: <b>Inherited From</b> Component.UNSAFE_componentWillMount
@@ -490,7 +496,10 @@ inheritedMethods:
       https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path
     remarks: ''
     isDeprecated: true
-    customDeprecatedMessage: 16.3, use static getDerivedStateFromProps instead
+    customDeprecatedMessage: >-
+      16.3, use static
+      [getDerivedStateFromProps](xref:StaticLifecycle.getDerivedStateFromProps)
+      instead
     syntax:
       content: >-
         function UNSAFE_componentWillReceiveProps(nextProps: Readonly<P>,

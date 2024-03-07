@@ -57,7 +57,7 @@ methods:
     syntax:
       content: 'function createPromptSection(): undefined | PromptSection'
       return:
-        description: ''
+        description: The new PromptSection or undefined.
         type: undefined | <xref uid="@microsoft/teams-ai.PromptSection" />
   - name: >-
       validateResponse(TurnContext, Memory, Tokenizer, PromptResponse<string>,

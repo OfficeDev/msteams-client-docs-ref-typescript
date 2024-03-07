@@ -84,7 +84,7 @@ properties:
     package: '@microsoft/teams-ai'
     summary: Optional tokenizer to use.
     fullName: tokenizer
-    remarks: If not specified, a new `GPT3Tokenizer` instance will be created.
+    remarks: If not specified, a new `GPTTokenizer` instance will be created.
     isDeprecated: false
     syntax:
       content: 'tokenizer?: Tokenizer'

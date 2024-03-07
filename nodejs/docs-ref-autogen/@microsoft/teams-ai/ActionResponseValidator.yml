@@ -46,7 +46,7 @@ properties:
     syntax:
       content: ChatCompletionAction[] actions
       return:
-        description: ''
+        description: A list of the actions configured for the validator.
         type: <xref uid="@microsoft/teams-ai.ChatCompletionAction" />[]
 methods:
   - name: >-

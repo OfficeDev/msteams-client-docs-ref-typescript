@@ -56,7 +56,7 @@ properties:
     syntax:
       content: ConfiguredPromptManagerOptions options
       return:
-        description: ''
+        description: The configured prompt manager options.
         type: <xref uid="@microsoft/teams-ai.ConfiguredPromptManagerOptions" />
 methods:
   - name: addDataSource(DataSource)
@@ -90,7 +90,7 @@ methods:
           type: <xref uid="@microsoft/teams-ai.PromptFunction" />
           description: Function to add.
       return:
-        description: The prompt manager for chaining.
+        description: '- The prompt manager for chaining.'
         type: <xref uid="@microsoft/teams-ai.PromptManager" />
   - name: addPrompt(PromptTemplate)
     uid: '@microsoft/teams-ai.PromptManager.addPrompt'

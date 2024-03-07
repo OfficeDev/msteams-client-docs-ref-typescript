@@ -319,6 +319,9 @@
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionHandler'
       name: ExtendedMediaSessionActionHandler
       items: []
+    - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionIgnore'
+      name: ExtendedMediaSessionActionIgnore
+      items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionSource'
       name: ExtendedMediaSessionActionSource
       items: []
@@ -434,6 +437,9 @@
     - uid: '@microsoft/teams-ai.AuthenticationOptions'
       name: AuthenticationOptions
       items: []
+    - uid: '@microsoft/teams-ai.AuthenticatorResult'
+      name: AuthenticatorResult
+      items: []
     - uid: '@microsoft/teams-ai.AuthError'
       name: AuthError
       items: []
@@ -523,6 +529,9 @@
       items: []
     - uid: '@microsoft/teams-ai.GPT3Tokenizer'
       name: GPT3Tokenizer
+      items: []
+    - uid: '@microsoft/teams-ai.GPTTokenizer'
+      name: GPTTokenizer
       items: []
     - uid: '@microsoft/teams-ai.GroupSection'
       name: GroupSection
@@ -719,21 +728,6 @@
       items: []
     - uid: '@microsoft/teams-ai.TemplateSection'
       name: TemplateSection
-      items: []
-    - uid: '@microsoft/teams-ai.TestEmbeddings'
-      name: TestEmbeddings
-      items: []
-    - uid: '@microsoft/teams-ai.TestPlanner'
-      name: TestPlanner
-      items: []
-    - uid: '@microsoft/teams-ai.TestPromptManager'
-      name: TestPromptManager
-      items: []
-    - uid: '@microsoft/teams-ai.TestPromptManagerOptions'
-      name: TestPromptManagerOptions
-      items: []
-    - uid: '@microsoft/teams-ai.TestTurnState'
-      name: TestTurnState
       items: []
     - uid: '@microsoft/teams-ai.TextContentPart'
       name: TextContentPart
@@ -1179,6 +1173,9 @@
         - uid: '@microsoft/teams-js.meeting.errorCallbackFunctionType'
           name: errorCallbackFunctionType
           items: []
+        - uid: '@microsoft/teams-js.meeting.EventActionSource'
+          name: EventActionSource
+          items: []
         - uid: '@microsoft/teams-js.meeting.getAppContentCallbackFunctionType'
           name: getAppContentCallbackFunctionType
           items: []
@@ -1199,6 +1196,9 @@
           items: []
         - uid: '@microsoft/teams-js.meeting.ISpeakingState'
           name: ISpeakingState
+          items: []
+        - uid: '@microsoft/teams-js.meeting.JoinMeetingParams'
+          name: JoinMeetingParams
           items: []
         - uid: '@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType'
           name: liveStreamErrorCallbackFunctionType

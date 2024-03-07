@@ -1,0 +1,44 @@
+### YamlMime:TSType
+name: JoinMeetingParams
+uid: '@microsoft/teams-js.meeting.JoinMeetingParams'
+package: '@microsoft/teams-js'
+summary: >-
+  Contains information associated with parameters required for joining the
+  Microsoft Teams meetings.
+
+  More details regarding parameters can be found at:
+
+  [Online Meeting Base - Microsoft Graph
+  v1.0](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeetingbase?view=graph-rest-1.0)
+fullName: JoinMeetingParams
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: joinWebUrl
+    uid: '@microsoft/teams-js.meeting.JoinMeetingParams.joinWebUrl'
+    package: '@microsoft/teams-js'
+    summary: The join URL of the online meeting.
+    fullName: joinWebUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'joinWebUrl: URL'
+      return:
+        description: ''
+        type: URL
+  - name: source
+    uid: '@microsoft/teams-js.meeting.JoinMeetingParams.source'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The source of the join button click. If not passed, 'Other' is the default
+      value of source.
+      [EventActionSource](xref:@microsoft/teams-js.meeting.EventActionSource)
+    fullName: source
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'source?: EventActionSource'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.meeting.EventActionSource" />
