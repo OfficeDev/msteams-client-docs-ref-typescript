@@ -31,14 +31,14 @@ properties:
   - name: name
     uid: '@microsoft/teams-ai.TextDataSource.name'
     package: '@microsoft/teams-ai'
-    summary: Name of the data source.
+    summary: ''
     fullName: name
     remarks: ''
     isDeprecated: false
     syntax:
       content: string name
       return:
-        description: ''
+        description: Name of the data source.
         type: string
 methods:
   - name: renderData(TurnContext, Memory, Tokenizer, number)

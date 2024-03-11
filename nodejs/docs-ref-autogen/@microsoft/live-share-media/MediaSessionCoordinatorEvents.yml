@@ -16,3 +16,10 @@ fields:
     uid: '@microsoft/live-share-media.MediaSessionCoordinatorEvents.triggeraction'
     package: '@microsoft/live-share-media'
     summary: Event emitted when an action was triggered.
+  - name: triggeractionignored
+    uid: >-
+      @microsoft/live-share-media.MediaSessionCoordinatorEvents.triggeractionignored
+    package: '@microsoft/live-share-media'
+    summary: >-
+      Event emitted when an action would have been triggered, but a suspension
+      is active for the local client.

@@ -2,53 +2,26 @@
 name: TurnState
 uid: '@microsoft/teams-ai.TurnState'
 package: '@microsoft/teams-ai'
-summary: Base class defining a collection of turn state scopes.
+summary: |-
+  Represents the turn state for a conversation.
+  Turn state includes conversation state, user state, and temporary state.
+  Provides methods to access, modify, and delete the state objects.
 fullName: TurnState<TConversationState, TUserState, TTempState>
-remarks: >-
-  Developers can create a derived class that extends `TurnState` to add
-  additional state scopes.
-
-  ```JavaScript
-
-  class MyTurnState extends TurnState {
-    protected async onComputeStorageKeys(context) {
-      const keys = await super.onComputeStorageKeys(context);
-      keys['myScope'] = `myScopeKey`;
-      return keys;
-    }
-
-    public get myScope() {
-      const scope = this.getScope('myScope');
-      if (!scope) {
-        throw new Error(`MyTurnState hasn't been loaded. Call loadState() first.`);
-      }
-      return scope.value;
-    }
-
-    public set myScope(value) {
-      const scope = this.getScope('myScope');
-      if (!scope) {
-        throw new Error(`MyTurnState hasn't been loaded. Call loadState() first.`);
-      }
-      scope.replace(value);
-    }
-  }
-
-  ```
+remarks: ''
 isDeprecated: false
 type: class
 properties:
   - name: conversation
     uid: '@microsoft/teams-ai.TurnState.conversation'
     package: '@microsoft/teams-ai'
-    summary: Accessor for the conversation state.
+    summary: Gets the conversation state from the turn state.
     fullName: conversation
     remarks: ''
     isDeprecated: false
     syntax:
       content: TConversationState conversation
       return:
-        description: ''
+        description: The conversation state.
         type: TConversationState
   - name: isLoaded
     uid: '@microsoft/teams-ai.TurnState.isLoaded'
@@ -62,7 +35,7 @@ properties:
     syntax:
       content: boolean isLoaded
       return:
-        description: ''
+        description: True if the applications turn state has been loaded, false otherwise.
         type: boolean
   - name: temp
     uid: '@microsoft/teams-ai.TurnState.temp'
@@ -74,7 +47,7 @@ properties:
     syntax:
       content: TTempState temp
       return:
-        description: ''
+        description: The temp TurnState.
         type: TTempState
   - name: user
     uid: '@microsoft/teams-ai.TurnState.user'
@@ -86,7 +59,7 @@ properties:
     syntax:
       content: TUserState user
       return:
-        description: ''
+        description: The user TurnState.
         type: TUserState
 methods:
   - name: deleteConversationState()

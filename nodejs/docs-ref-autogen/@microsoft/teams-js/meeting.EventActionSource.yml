@@ -1,0 +1,36 @@
+### YamlMime:TSEnum
+name: EventActionSource
+uid: '@microsoft/teams-js.meeting.EventActionSource'
+package: '@microsoft/teams-js'
+summary: The source of the join button click.
+fullName: EventActionSource
+remarks: ''
+isDeprecated: false
+fields:
+  - name: M365CalendarFormJoinTeamsMeetingButton
+    uid: >-
+      @microsoft/teams-js.meeting.EventActionSource.M365CalendarFormJoinTeamsMeetingButton
+    package: '@microsoft/teams-js'
+    summary: Source is calendar form join teams meeting button.
+  - name: M365CalendarFormRibbonJoinButton
+    uid: >-
+      @microsoft/teams-js.meeting.EventActionSource.M365CalendarFormRibbonJoinButton
+    package: '@microsoft/teams-js'
+    summary: Source is calendar form ribbon join button.
+  - name: M365CalendarGridContextMenu
+    uid: '@microsoft/teams-js.meeting.EventActionSource.M365CalendarGridContextMenu'
+    package: '@microsoft/teams-js'
+    summary: Source is calendar grid context menu.
+  - name: M365CalendarGridEventCardJoinButton
+    uid: >-
+      @microsoft/teams-js.meeting.EventActionSource.M365CalendarGridEventCardJoinButton
+    package: '@microsoft/teams-js'
+    summary: Source is calendar grid event card join button.
+  - name: M365CalendarGridPeek
+    uid: '@microsoft/teams-js.meeting.EventActionSource.M365CalendarGridPeek'
+    package: '@microsoft/teams-js'
+    summary: Source is calendar grid peek.
+  - name: Other
+    uid: '@microsoft/teams-js.meeting.EventActionSource.Other'
+    package: '@microsoft/teams-js'
+    summary: Other sources.

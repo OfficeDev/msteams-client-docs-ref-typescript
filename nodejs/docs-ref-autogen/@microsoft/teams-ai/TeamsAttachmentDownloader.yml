@@ -39,5 +39,5 @@ methods:
           type: TState
           description: Application state for the current turn of conversation.
       return:
-        description: ''
+        description: Promise that resolves to an array of downloaded input files.
         type: Promise&lt;<xref uid="@microsoft/teams-ai.InputFile" />[]&gt;

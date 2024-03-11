@@ -521,7 +521,7 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.addAbortListener](xref:@microsoft/live-share.LiveDataObject.addAbortListener)
-  - name: emit(string | symbol, any[])
+  - name: emit<K>(string | symbol, AnyRest)
     uid: '@microsoft/live-share.LiveState.emit'
     package: '@microsoft/live-share'
     summary: >-
@@ -590,13 +590,13 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function emit(eventName: string | symbol, args: any[]): boolean'
+      content: 'function emit<K>(eventName: string | symbol, args: AnyRest): boolean'
       parameters:
         - id: eventName
           type: string | symbol
           description: ''
         - id: args
-          type: any[]
+          type: AnyRest
           description: ''
       return:
         description: ''
@@ -708,7 +708,9 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.getDataObject](xref:@microsoft/live-share.LiveDataObject.getDataObject)
-  - name: getEventListeners(_DOMEventTarget | EventEmitter, string | symbol)
+  - name: >-
+      getEventListeners(_DOMEventTarget | EventEmitter<DefaultEventMap>, string
+      | symbol)
     uid: '@microsoft/live-share.LiveState.getEventListeners'
     package: '@microsoft/live-share'
     summary: >-
@@ -751,10 +753,10 @@ inheritedMethods:
     syntax:
       content: >-
         static function getEventListeners(emitter: _DOMEventTarget |
-        EventEmitter, name: string | symbol): Function[]
+        EventEmitter<DefaultEventMap>, name: string | symbol): Function[]
       parameters:
         - id: emitter
-          type: _DOMEventTarget | EventEmitter
+          type: _DOMEventTarget | EventEmitter&lt;DefaultEventMap&gt;
           description: ''
         - id: name
           type: string | symbol
@@ -821,7 +823,7 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.getMaxListeners](xref:@microsoft/live-share.LiveDataObject.getMaxListeners)
-  - name: getMaxListeners(_DOMEventTarget | EventEmitter)
+  - name: getMaxListeners(_DOMEventTarget | EventEmitter<DefaultEventMap>)
     uid: '@microsoft/live-share.LiveState.getMaxListeners'
     package: '@microsoft/live-share'
     summary: >-
@@ -869,10 +871,10 @@ inheritedMethods:
     syntax:
       content: >-
         static function getMaxListeners(emitter: _DOMEventTarget |
-        EventEmitter): number
+        EventEmitter<DefaultEventMap>): number
       parameters:
         - id: emitter
-          type: _DOMEventTarget | EventEmitter
+          type: _DOMEventTarget | EventEmitter&lt;DefaultEventMap&gt;
           description: ''
       return:
         description: ''
@@ -900,7 +902,7 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.initializeInternal](xref:@microsoft/live-share.LiveDataObject.initializeInternal)
-  - name: listenerCount(EventEmitter, string | symbol)
+  - name: listenerCount(EventEmitter<DefaultEventMap>, string | symbol)
     uid: '@microsoft/live-share.LiveState.listenerCount'
     package: '@microsoft/live-share'
     summary: >-
@@ -929,11 +931,11 @@ inheritedMethods:
     customDeprecatedMessage: Since v3.2.0 - Use `listenerCount` instead.
     syntax:
       content: >-
-        static function listenerCount(emitter: EventEmitter, eventName: string |
-        symbol): number
+        static function listenerCount(emitter: EventEmitter<DefaultEventMap>,
+        eventName: string | symbol): number
       parameters:
         - id: emitter
-          type: EventEmitter
+          type: EventEmitter&lt;DefaultEventMap&gt;
           description: The emitter to query
         - id: eventName
           type: string | symbol
@@ -944,7 +946,7 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.listenerCount](xref:@microsoft/live-share.LiveDataObject.listenerCount)
-  - name: listenerCount(string | symbol, Function)
+  - name: listenerCount<K>(string | symbol, Function)
     uid: '@microsoft/live-share.LiveState.listenerCount'
     package: '@microsoft/live-share'
     summary: >-
@@ -958,8 +960,8 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function listenerCount(eventName: string | symbol, listener?: Function):
-        number
+        function listenerCount<K>(eventName: string | symbol, listener?:
+        Function): number
       parameters:
         - id: eventName
           type: string | symbol
@@ -973,7 +975,7 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.listenerCount](xref:@microsoft/live-share.LiveDataObject.listenerCount)
-  - name: listeners(string | symbol)
+  - name: listeners<K>(string | symbol)
     uid: '@microsoft/live-share.LiveState.listeners'
     package: '@microsoft/live-share'
     summary: |-
@@ -989,7 +991,7 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function listeners(eventName: string | symbol): Function[]'
+      content: 'function listeners<K>(eventName: string | symbol): Function[]'
       parameters:
         - id: eventName
           type: string | symbol
@@ -1000,7 +1002,7 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.listeners](xref:@microsoft/live-share.LiveDataObject.listeners)
-  - name: on(EventEmitter, string, StaticEventEmitterOptions)
+  - name: on(EventEmitter<DefaultEventMap>, string, StaticEventEmitterOptions)
     uid: '@microsoft/live-share.LiveState.on'
     package: '@microsoft/live-share'
     summary: |-
@@ -1062,11 +1064,11 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        static function on(emitter: EventEmitter, eventName: string, options?:
-        StaticEventEmitterOptions): AsyncIterableIterator<any>
+        static function on(emitter: EventEmitter<DefaultEventMap>, eventName:
+        string, options?: StaticEventEmitterOptions): AsyncIterableIterator<any>
       parameters:
         - id: emitter
-          type: EventEmitter
+          type: EventEmitter&lt;DefaultEventMap&gt;
           description: ''
         - id: eventName
           type: string
@@ -1251,7 +1253,7 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.once](xref:@microsoft/live-share.LiveDataObject.once)
-  - name: rawListeners(string | symbol)
+  - name: rawListeners<K>(string | symbol)
     uid: '@microsoft/live-share.LiveState.rawListeners'
     package: '@microsoft/live-share'
     summary: |-
@@ -1285,7 +1287,7 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function rawListeners(eventName: string | symbol): Function[]'
+      content: 'function rawListeners<K>(eventName: string | symbol): Function[]'
       parameters:
         - id: eventName
           type: string | symbol
@@ -1370,7 +1372,9 @@ inheritedMethods:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
-  - name: setMaxListeners(number, (_DOMEventTarget | EventEmitter)[])
+  - name: >-
+      setMaxListeners(number, (_DOMEventTarget |
+      EventEmitter<DefaultEventMap>)[])
     uid: '@microsoft/live-share.LiveState.setMaxListeners'
     package: '@microsoft/live-share'
     summary: |-
@@ -1387,7 +1391,7 @@ inheritedMethods:
     syntax:
       content: >-
         static function setMaxListeners(n?: number, eventTargets:
-        (_DOMEventTarget | EventEmitter)[])
+        (_DOMEventTarget | EventEmitter<DefaultEventMap>)[])
       parameters:
         - id: 'n'
           type: number
@@ -1395,12 +1399,12 @@ inheritedMethods:
             A non-negative number. The maximum number of listeners per
             `EventTarget` event.
         - id: eventTargets
-          type: (_DOMEventTarget | EventEmitter)[]
+          type: (_DOMEventTarget | EventEmitter&lt;DefaultEventMap&gt;)[]
           description: ''
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
-  - name: '[captureRejectionSymbol](Error, string, any[])'
+  - name: '[captureRejectionSymbol]<K>(Error, string | symbol, AnyRest)'
     uid: '@microsoft/live-share.LiveState.[captureRejectionSymbol]'
     package: '@microsoft/live-share'
     summary: ''
@@ -1408,17 +1412,17 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function [captureRejectionSymbol](error: Error, event: string, args:
-        any[])
+        function [captureRejectionSymbol]<K>(error: Error, event: string |
+        symbol, args: AnyRest)
       parameters:
         - id: error
           type: Error
           description: ''
         - id: event
-          type: string
+          type: string | symbol
           description: ''
         - id: args
-          type: any[]
+          type: AnyRest
           description: ''
     inheritanceDescription: >-
       <b>Inherited From</b>

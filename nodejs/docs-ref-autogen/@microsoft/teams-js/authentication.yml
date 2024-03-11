@@ -1,10 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.authentication'
 name: authentication
-summary: |-
-  Namespace to interact with the authentication-specific part of the SDK.
-
-  This object is used for starting or completing authentication flows.
+summary: ''
 type: module
 typeAliases:
   - '@microsoft/teams-js.authentication.AuthenticateParameters'

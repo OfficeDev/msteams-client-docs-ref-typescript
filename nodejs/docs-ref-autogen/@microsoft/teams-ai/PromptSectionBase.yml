@@ -25,7 +25,7 @@ constructors:
       parameters:
         - id: tokens
           type: number
-          description: Optional. Sizing strategy for this section. Defaults to `auto`.
+          description: Optional. Sizing strategy for this section. Defaults to -1, 'auto'.
         - id: required
           type: boolean
           description: Optional. Indicates if this section is required. Defaults to `true`.
@@ -36,7 +36,9 @@ constructors:
             Defaults to `\n`.
         - id: textPrefix
           type: string
-          description: Optional. Prefix to use for text output. Defaults to `undefined`.
+          description: >-
+            Optional. Prefix to use for text output. Defaults to an empty
+            string.
 properties:
   - name: required
     uid: '@microsoft/teams-ai.PromptSectionBase.required'

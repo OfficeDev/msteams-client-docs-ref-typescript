@@ -74,7 +74,7 @@ properties:
     syntax:
       content: Record<string, unknown> value
       return:
-        description: The value of the state scope.
+        description: value of the state scope.
         type: Record&lt;string, unknown&gt;
 methods:
   - name: delete()

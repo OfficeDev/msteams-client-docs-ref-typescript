@@ -12,7 +12,7 @@ properties:
     uid: >-
       @microsoft/teams-ai.ConfiguredPromptManagerOptions.max_conversation_history_tokens
     package: '@microsoft/teams-ai'
-    summary: Maximum number of tokens to of conversation history to include in prompts.
+    summary: Maximum number of tokens of conversation history to include in prompts.
     fullName: max_conversation_history_tokens
     remarks: ''
     isDeprecated: false
@@ -36,7 +36,7 @@ properties:
   - name: max_input_tokens
     uid: '@microsoft/teams-ai.ConfiguredPromptManagerOptions.max_input_tokens'
     package: '@microsoft/teams-ai'
-    summary: Maximum number of tokens user input to include in prompts.
+    summary: Maximum number of tokens of user input to include in prompts.
     fullName: max_input_tokens
     remarks: ''
     isDeprecated: false
