@@ -45,20 +45,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: instanceName
-    uid: '@microsoft/teams-ai.JSONResponseValidator.instanceName'
-    package: '@microsoft/teams-ai'
-    summary: >-
-      Optional. Substitution for the word "instance" to use in feedback
-      messages.
-    fullName: instanceName
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'instanceName?: string'
-      return:
-        description: ''
-        type: string
   - name: missingJsonFeedback
     uid: '@microsoft/teams-ai.JSONResponseValidator.missingJsonFeedback'
     package: '@microsoft/teams-ai'

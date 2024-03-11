@@ -24,20 +24,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@microsoft/live-share-media.ExtendedMediaSessionAction" />
-  - name: blocked
-    uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.blocked'
-    package: '@microsoft/live-share-media'
-    summary: Action type that was blocked.
-    fullName: blocked
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'blocked?: null | ExtendedMediaSessionAction'
-      return:
-        description: ''
-        type: >-
-          null | <xref
-          uid="@microsoft/live-share-media.ExtendedMediaSessionAction" />
   - name: clientId
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.clientId'
     package: '@microsoft/live-share-media'
@@ -74,6 +60,18 @@ properties:
       return:
         description: ''
         type: null | boolean
+  - name: ignoreReason
+    uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.ignoreReason'
+    package: '@microsoft/live-share-media'
+    summary: Reason an action is ignored by the local client, undefined if not ignored.
+    fullName: ignoreReason
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ignoreReason?: null | "localusersuspended"'
+      return:
+        description: ''
+        type: null | "localusersuspended"
   - name: local
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.local'
     package: '@microsoft/live-share-media'
@@ -102,6 +100,18 @@ properties:
         type: >-
           null | <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata"
           />
+  - name: playbackRate
+    uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.playbackRate'
+    package: '@microsoft/live-share-media'
+    summary: ''
+    fullName: playbackRate
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'playbackRate?: null | number'
+      return:
+        description: ''
+        type: null | number
   - name: seekOffset
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.seekOffset'
     package: '@microsoft/live-share-media'

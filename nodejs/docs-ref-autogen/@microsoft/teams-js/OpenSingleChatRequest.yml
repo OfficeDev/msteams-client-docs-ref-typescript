@@ -8,7 +8,6 @@ summary: |-
   See OpenGroupChatRequest for use when a chat with more than one person
 fullName: OpenSingleChatRequest
 remarks: ''
-previewState: beta
 isDeprecated: false
 type: interface
 properties:
@@ -17,7 +16,7 @@ properties:
     package: '@microsoft/teams-js'
     summary: >-
       The [Microsoft Entra
-      UPNs](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/plan-connect-userprincipalname)
+      UPN](https://learn.microsoft.com/entra/identity/hybrid/connect/plan-connect-userprincipalname)
       (usually but not always an e-mail address)
 
       of the user with whom to begin a chat

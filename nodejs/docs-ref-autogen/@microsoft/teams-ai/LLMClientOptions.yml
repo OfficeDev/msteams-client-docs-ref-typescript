@@ -115,7 +115,9 @@ properties:
     package: '@microsoft/teams-ai'
     summary: Optional. Tokenizer to use when rendering the prompt or counting tokens.
     fullName: tokenizer
-    remarks: If not specified a new instance of `GPT3Tokenizer` will be created.
+    remarks: >-
+      If not specified, a new instance of `GPTTokenizer` will be created.
+      GPT3Tokenizer can be passed in for gpt-3 models.
     isDeprecated: false
     syntax:
       content: 'tokenizer?: Tokenizer'

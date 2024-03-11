@@ -88,7 +88,9 @@ methods:
   - name: getConnection(string)
     uid: '@microsoft/live-share.LivePresenceUser.getConnection'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: |-
+      Returns the user's connection associated with clientId.
+      See <xref:LivePresenceConnection>
     remarks: ''
     isDeprecated: false
     syntax:
@@ -98,14 +100,16 @@ methods:
       parameters:
         - id: clientId
           type: string
-          description: ''
+          description: The ID of the client to lookup.
       return:
         description: ''
         type: undefined | LivePresenceConnection&lt;TData&gt;
   - name: getConnections(PresenceState)
     uid: '@microsoft/live-share.LivePresenceUser.getConnections'
     package: '@microsoft/live-share'
-    summary: Returns the user's connections.
+    summary: |-
+      Returns the user's connections.
+      See <xref:LivePresenceConnection>
     remarks: ''
     isDeprecated: false
     syntax:

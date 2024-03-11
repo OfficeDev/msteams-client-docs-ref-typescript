@@ -26,7 +26,7 @@ constructors:
           description: Sections to render.
         - id: tokens
           type: number
-          description: Optional. Sizing strategy for this section. Defaults to `auto`.
+          description: Optional. Sizing strategy for this section. Defaults to -1, 'auto'.
         - id: required
           type: boolean
           description: Optional. Indicates if this section is required. Defaults to `true`.

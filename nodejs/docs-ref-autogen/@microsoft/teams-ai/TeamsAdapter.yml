@@ -62,6 +62,51 @@ constructors:
           type: ConnectorClientOptions
           description: ''
 properties:
+  - name: botFrameworkAuthConfig
+    uid: '@microsoft/teams-ai.TeamsAdapter.botFrameworkAuthConfig'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: botFrameworkAuthConfig
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        botFrameworkAuthConfig?: { BotOpenIdMetadata?: string, CallerId?:
+        string, CertificatePrivateKey?: string, CertificateThumbprint?: string,
+        ChannelService?: string, MicrosoftAppId?: string, MicrosoftAppTenantId?:
+        string, OAuthApiEndpoint?: string, OAuthUrl?: string,
+        ToBotFromChannelOpenIdMetadataUrl?: string,
+        ToBotFromChannelTokenIssuer?: string,
+        ToBotFromEmulatorOpenIdMetadataUrl?: string, ToChannelFromBotLoginUrl?:
+        string, ToChannelFromBotOAuthScope?: string, ValidateAuthority?: string
+        | boolean }
+      return:
+        description: ''
+        type: >-
+          { BotOpenIdMetadata?: string, CallerId?: string,
+          CertificatePrivateKey?: string, CertificateThumbprint?: string,
+          ChannelService?: string, MicrosoftAppId?: string,
+          MicrosoftAppTenantId?: string, OAuthApiEndpoint?: string, OAuthUrl?:
+          string, ToBotFromChannelOpenIdMetadataUrl?: string,
+          ToBotFromChannelTokenIssuer?: string,
+          ToBotFromEmulatorOpenIdMetadataUrl?: string,
+          ToChannelFromBotLoginUrl?: string, ToChannelFromBotOAuthScope?:
+          string, ValidateAuthority?: string | boolean }
+  - name: credentialsFactory
+    uid: '@microsoft/teams-ai.TeamsAdapter.credentialsFactory'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The credentials factory used by the bot adapter to create a
+      [ServiceClientCredentials](xref:botframework-connector.ServiceClientCredentials)
+      object.
+    fullName: credentialsFactory
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'credentialsFactory: ServiceClientCredentialsFactory'
+      return:
+        description: ''
+        type: ServiceClientCredentialsFactory
   - name: onTurnError
     uid: '@microsoft/teams-ai.TeamsAdapter.onTurnError'
     package: '@microsoft/teams-ai'
@@ -76,6 +121,18 @@ properties:
       return:
         description: A promise representing the async operation.
         type: '(context: TurnContext, error: Error) =&gt; Promise&lt;void&gt;'
+  - name: userAgent
+    uid: '@microsoft/teams-ai.TeamsAdapter.userAgent'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: userAgent
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: string userAgent
+      return:
+        description: ''
+        type: string
 inheritedProperties:
   - name: BotIdentityKey
     uid: '@microsoft/teams-ai.TeamsAdapter.BotIdentityKey'
@@ -269,74 +326,6 @@ inheritedMethods:
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> CloudAdapter.deleteActivity
   - name: >-
-      process(Request<Record<string, unknown>, Record<string, undefined | string
-      | string[]>>, INodeSocket, INodeBuffer, (context: TurnContext) =>
-      Promise<void>)
-    uid: '@microsoft/teams-ai.TeamsAdapter.process_1'
-    package: '@microsoft/teams-ai'
-    summary: |-
-      Handle a web socket connection by applying a logic function to
-      each streaming request.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function process(req: Request<Record<string, unknown>, Record<string,
-        undefined | string | string[]>>, socket: INodeSocket, head: INodeBuffer,
-        logic: (context: TurnContext) => Promise<void>): Promise<void>
-      parameters:
-        - id: req
-          type: >-
-            Request&lt;Record&lt;string, unknown&gt;, Record&lt;string,
-            undefined | string | string[]&gt;&gt;
-          description: An incoming HTTP [Request](xref:botbuilder.Request)
-        - id: socket
-          type: INodeSocket
-          description: >-
-            The corresponding
-            [INodeSocket](xref:botframework-streaming.INodeSocket)
-        - id: head
-          type: INodeBuffer
-          description: >-
-            The corresponding
-            [INodeBuffer](xref:botframework-streaming.INodeBuffer)
-        - id: logic
-          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
-          description: The logic function to apply
-      return:
-        description: a promise representing the asynchronous operation.
-        type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> CloudAdapter.process
-  - name: >-
-      process(Request<Record<string, unknown>, Record<string, undefined | string
-      | string[]>>, Response, (context: TurnContext) => Promise<void>)
-    uid: '@microsoft/teams-ai.TeamsAdapter.process'
-    package: '@microsoft/teams-ai'
-    summary: Process a web request by applying a logic function.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function process(req: Request<Record<string, unknown>, Record<string,
-        undefined | string | string[]>>, res: Response, logic: (context:
-        TurnContext) => Promise<void>): Promise<void>
-      parameters:
-        - id: req
-          type: >-
-            Request&lt;Record&lt;string, unknown&gt;, Record&lt;string,
-            undefined | string | string[]&gt;&gt;
-          description: An incoming HTTP [Request](xref:botbuilder.Request)
-        - id: res
-          type: Response
-          description: ''
-        - id: logic
-          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
-          description: The logic function to apply
-      return:
-        description: a promise representing the asynchronous operation.
-        type: Promise&lt;void&gt;
-    inheritanceDescription: <b>Inherited From</b> CloudAdapter.process
-  - name: >-
       processActivityDirect(string | AuthenticateRequestResult, Activity,
       (context: TurnContext) => Promise<void>)
     uid: '@microsoft/teams-ai.TeamsAdapter.processActivityDirect'
@@ -429,4 +418,65 @@ inheritedMethods:
         description: The updated adapter object.
         type: <xref uid="@microsoft/teams-ai.TeamsAdapter" />
     inheritanceDescription: <b>Inherited From</b> CloudAdapter.use
+methods:
+  - name: >-
+      process(Request<Record<string, unknown>, Record<string, undefined | string
+      | string[]>>, INodeSocket, INodeBuffer, (context: TurnContext) =>
+      Promise<void>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.process_1'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function process(req: Request<Record<string, unknown>, Record<string,
+        undefined | string | string[]>>, socket: INodeSocket, head: INodeBuffer,
+        logic: (context: TurnContext) => Promise<void>): Promise<void>
+      parameters:
+        - id: req
+          type: >-
+            Request&lt;Record&lt;string, unknown&gt;, Record&lt;string,
+            undefined | string | string[]&gt;&gt;
+          description: ''
+        - id: socket
+          type: INodeSocket
+          description: ''
+        - id: head
+          type: INodeBuffer
+          description: ''
+        - id: logic
+          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      process(Request<Record<string, unknown>, Record<string, undefined | string
+      | string[]>>, Response, (context: TurnContext) => Promise<void>)
+    uid: '@microsoft/teams-ai.TeamsAdapter.process'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function process(req: Request<Record<string, unknown>, Record<string,
+        undefined | string | string[]>>, res: Response, logic: (context:
+        TurnContext) => Promise<void>): Promise<void>
+      parameters:
+        - id: req
+          type: >-
+            Request&lt;Record&lt;string, unknown&gt;, Record&lt;string,
+            undefined | string | string[]&gt;&gt;
+          description: ''
+        - id: res
+          type: Response
+          description: ''
+        - id: logic
+          type: '(context: TurnContext) =&gt; Promise&lt;void&gt;'
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
 extends: CloudAdapter

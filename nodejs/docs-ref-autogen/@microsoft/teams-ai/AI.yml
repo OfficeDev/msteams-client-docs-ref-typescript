@@ -290,7 +290,7 @@ methods:
           type: >-
             (context: TurnContext, state: TState, parameters: TParameters,
             action?: string) =&gt; Promise&lt;string&gt;
-          description: Function to call when the action is triggered.
+          description: The code to execute when the action's name is triggered.
       return:
         description: The AI system instance for chaining purposes.
         type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
@@ -318,7 +318,7 @@ methods:
           type: >-
             (context: TurnContext, state: TState, parameters: TParameters,
             action?: string) =&gt; Promise&lt;string&gt;
-          description: Function to call when the action is triggered.
+          description: The code to execute when the action's name is triggered.
       return:
         description: The AI system instance for chaining purposes.
         type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
@@ -346,7 +346,7 @@ methods:
           type: TParameters
           description: Optional. Entities to pass to the action.
       return:
-        description: True if the action thinks other actions should be executed.
+        description: The result of the action.
         type: Promise&lt;string&gt;
   - name: hasAction(string)
     uid: '@microsoft/teams-ai.AI.hasAction'
