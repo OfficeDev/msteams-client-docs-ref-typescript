@@ -158,9 +158,7 @@
       "searchScope": [
         "Teams"
       ],
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/msteams-docs",
-      "feedback_product_url": "https://microsoftteams.uservoice.com/forums/555103-public",
+      "feedback_system": "Standard",
       "ms.date": "11/13/2017",
       "titleSuffix": "Teams",
       "extendBreadcrumb": "true",
