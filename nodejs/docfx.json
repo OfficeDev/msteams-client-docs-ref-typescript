@@ -158,10 +158,8 @@
       "searchScope": [
         "Teams"
       ],
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/msteams-docs",
-      "feedback_product_url": "https://microsoftteams.uservoice.com/forums/555103-public",
-      "ms.date": "11/13/2017",
+      "feedback_system": "Standard",
+      "ms.date": "03/27/2024",
       "titleSuffix": "Teams",
       "extendBreadcrumb": "true",
       "breadcrumb_path": "/javascript/api/msteams-client-docs-ref-typescript/breadcrumb/toc.json",
