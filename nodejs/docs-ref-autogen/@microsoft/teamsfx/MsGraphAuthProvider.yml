@@ -41,7 +41,7 @@ constructors:
         string[])
       parameters:
         - id: credential
-          type: TokenCredential
+          type: <xref uid="@azure/core-auth.TokenCredential" />
           description: credential used to provide configuration and auth.
         - id: scopes
           type: string | string[]

@@ -45,7 +45,9 @@ constructors:
             text. Defaults to `assistant: `.
         - id: separator
           type: string
-          description: ''
+          description: >-
+            Optional. Separator to use between messages when rendering as text.
+            Defaults to `\n`.
 properties:
   - name: assistantPrefix
     uid: '@microsoft/teams-ai.ConversationHistory.assistantPrefix'

@@ -48,7 +48,9 @@ methods:
     uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler.handleActionInvoked'
     package: '@microsoft/teamsfx'
     summary: The handler function that will be invoked when the action is fired.
-    remarks: ''
+    remarks: >-
+      For more details about the invoke response format, refer to
+      https://docs.microsoft.com/en-us/adaptive-cards/authoring-cards/universal-action-model#response-format.
     isDeprecated: false
     syntax:
       content: >-

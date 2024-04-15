@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: Citation
+uid: '@microsoft/teams-ai.Citation'
+package: '@microsoft/teams-ai'
+summary: Citations returned by the model.
+fullName: Citation
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: '@microsoft/teams-ai.Citation.content'
+    package: '@microsoft/teams-ai'
+    summary: The content of the citation.
+    fullName: content
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'content: string'
+      return:
+        description: ''
+        type: string
+  - name: title
+    uid: '@microsoft/teams-ai.Citation.title'
+    package: '@microsoft/teams-ai'
+    summary: The title of the citation.
+    fullName: title
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'title: string'
+      return:
+        description: ''
+        type: string
+  - name: url
+    uid: '@microsoft/teams-ai.Citation.url'
+    package: '@microsoft/teams-ai'
+    summary: The URL of the citation.
+    fullName: url
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'url: string'
+      return:
+        description: ''
+        type: string

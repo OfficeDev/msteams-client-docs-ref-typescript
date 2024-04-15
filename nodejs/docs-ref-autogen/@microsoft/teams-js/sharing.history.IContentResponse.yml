@@ -1,0 +1,88 @@
+### YamlMime:TSType
+name: IContentResponse
+uid: '@microsoft/teams-js.sharing.history.IContentResponse'
+package: '@microsoft/teams-js'
+summary: >-
+  Represents the data returned when calling
+  [getContent](xref:@microsoft/teams-js.sharing.history.getContent)
+fullName: IContentResponse
+remarks: ''
+previewState: beta
+isDeprecated: false
+type: interface
+properties:
+  - name: appId
+    uid: '@microsoft/teams-js.sharing.history.IContentResponse.appId'
+    package: '@microsoft/teams-js'
+    summary: Id of the app where the content was shared from
+    fullName: appId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'appId: string'
+      return:
+        description: ''
+        type: string
+  - name: author
+    uid: '@microsoft/teams-js.sharing.history.IContentResponse.author'
+    package: '@microsoft/teams-js'
+    summary: Id of the user who shared the content. This is a UUID
+    fullName: author
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'author: string'
+      return:
+        description: ''
+        type: string
+  - name: contentReference
+    uid: '@microsoft/teams-js.sharing.history.IContentResponse.contentReference'
+    package: '@microsoft/teams-js'
+    summary: Reference of the shared content
+    fullName: contentReference
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentReference: string'
+      return:
+        description: ''
+        type: string
+  - name: contentType
+    uid: '@microsoft/teams-js.sharing.history.IContentResponse.contentType'
+    package: '@microsoft/teams-js'
+    summary: |-
+      Type of the shared content.
+      For sharing to Teams stage scenarios, this value would be `ShareToStage`
+      Other `contentType` values will be added and documented here over time
+    fullName: contentType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentType: string'
+      return:
+        description: ''
+        type: string
+  - name: threadId
+    uid: '@microsoft/teams-js.sharing.history.IContentResponse.threadId'
+    package: '@microsoft/teams-js'
+    summary: Id of the thread where the content was shared. This is a UUID
+    fullName: threadId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'threadId: string'
+      return:
+        description: ''
+        type: string
+  - name: title
+    uid: '@microsoft/teams-js.sharing.history.IContentResponse.title'
+    package: '@microsoft/teams-js'
+    summary: Title of the shared content
+    fullName: title
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'title: string'
+      return:
+        description: ''
+        type: string

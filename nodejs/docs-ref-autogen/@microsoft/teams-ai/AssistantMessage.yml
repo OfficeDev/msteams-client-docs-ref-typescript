@@ -24,7 +24,7 @@ constructors:
           description: Template to use for this section.
         - id: tokens
           type: number
-          description: Optional. Sizing strategy for this section. Defaults to `auto`.
+          description: Optional. Sizing strategy for this section. Defaults to -1, `auto`.
         - id: assistantPrefix
           type: string
           description: >-
