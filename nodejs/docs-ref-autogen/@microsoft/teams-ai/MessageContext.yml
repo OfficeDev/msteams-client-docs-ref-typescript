@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: MessageContext
+uid: '@microsoft/teams-ai.MessageContext'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: MessageContext
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: citations
+    uid: '@microsoft/teams-ai.MessageContext.citations'
+    package: '@microsoft/teams-ai'
+    summary: Citations used in the message.
+    fullName: citations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'citations: Citation[]'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.Citation" />[]
+  - name: intent
+    uid: '@microsoft/teams-ai.MessageContext.intent'
+    package: '@microsoft/teams-ai'
+    summary: The intent of the message.
+    fullName: intent
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'intent: string'
+      return:
+        description: ''
+        type: string

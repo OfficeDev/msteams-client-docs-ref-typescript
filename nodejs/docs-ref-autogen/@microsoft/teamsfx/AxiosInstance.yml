@@ -7,7 +7,7 @@ fullName: AxiosInstance
 remarks: ''
 isDeprecated: false
 type: interface
-inheritedProperties:
+properties:
   - name: defaults
     uid: '@microsoft/teamsfx.AxiosInstance.defaults'
     package: '@microsoft/teamsfx'
@@ -16,11 +16,15 @@ inheritedProperties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'defaults: AxiosDefaults<any>'
+      content: >-
+        defaults: Omit<AxiosDefaults<any>, "headers"> & { headers:
+        HeadersDefaults & {[key: string]: AxiosHeaderValue} }
       return:
         description: ''
-        type: AxiosDefaults&lt;any&gt;
-    inheritanceDescription: <b>Inherited From</b> Axios.defaults
+        type: >-
+          Omit&lt;AxiosDefaults&lt;any&gt;, "headers"&gt; & { headers:
+          HeadersDefaults & {[key: string]: AxiosHeaderValue} }
+inheritedProperties:
   - name: interceptors
     uid: '@microsoft/teamsfx.AxiosInstance.interceptors'
     package: '@microsoft/teamsfx'
@@ -31,13 +35,13 @@ inheritedProperties:
     syntax:
       content: >-
         interceptors: { request:
-        AxiosInterceptorManager<AxiosRequestConfig<any>>, response:
+        AxiosInterceptorManager<InternalAxiosRequestConfig<any>>, response:
         AxiosInterceptorManager<AxiosResponse<any, any>> }
       return:
         description: ''
         type: >-
           { request:
-          AxiosInterceptorManager&lt;AxiosRequestConfig&lt;any&gt;&gt;,
+          AxiosInterceptorManager&lt;InternalAxiosRequestConfig&lt;any&gt;&gt;,
           response: AxiosInterceptorManager&lt;AxiosResponse&lt;any, any&gt;&gt;
           }
     inheritanceDescription: <b>Inherited From</b> Axios.interceptors

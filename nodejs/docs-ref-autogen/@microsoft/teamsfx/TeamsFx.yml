@@ -83,7 +83,7 @@ methods:
       content: 'function getCredential(): TokenCredential'
       return:
         description: instance implements TokenCredential interface.
-        type: TokenCredential
+        type: <xref uid="@azure/core-auth.TokenCredential" />
   - name: getIdentityType()
     uid: '@microsoft/teamsfx.TeamsFx.getIdentityType'
     package: '@microsoft/teamsfx'

@@ -121,12 +121,14 @@ methods:
       parameters:
         - id: prompt
           type: string | <xref uid="@microsoft/teams-ai.PromptTemplate" />
-          description: ''
+          description: The name of the prompt to use.
         - id: validator
           type: >-
             <xref uid="@microsoft/teams-ai.PromptResponseValidator"
             />&lt;any&gt;
-          description: ''
+          description: >-
+            Optional. A validator to use to validate the response returned by
+            the model.
       return:
         description: A promise that resolves to the result of the semantic function.
         type: <xref uid="@microsoft/teams-ai.ActionPlanner" />&lt;TState&gt;

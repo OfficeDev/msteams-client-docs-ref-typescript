@@ -467,6 +467,9 @@
     - uid: '@microsoft/teams-ai.ChatCompletionAction'
       name: ChatCompletionAction
       items: []
+    - uid: '@microsoft/teams-ai.Citation'
+      name: Citation
+      items: []
     - uid: '@microsoft/teams-ai.CompletionConfig'
       name: CompletionConfig
       items: []
@@ -554,6 +557,12 @@
     - uid: '@microsoft/teams-ai.LayoutEngine'
       name: LayoutEngine
       items: []
+    - uid: '@microsoft/teams-ai.LlamaModel'
+      name: LlamaModel
+      items: []
+    - uid: '@microsoft/teams-ai.LlamaModelOptions'
+      name: LlamaModelOptions
+      items: []
     - uid: '@microsoft/teams-ai.LLMClient'
       name: LLMClient
       items: []
@@ -571,6 +580,9 @@
       items: []
     - uid: '@microsoft/teams-ai.MessageContentParts'
       name: MessageContentParts
+      items: []
+    - uid: '@microsoft/teams-ai.MessageContext'
+      name: MessageContext
       items: []
     - uid: '@microsoft/teams-ai.MessageExtensions'
       name: MessageExtensions
@@ -1233,6 +1245,9 @@
     - uid: '@microsoft/teams-js.monetization'
       name: monetization
       items: []
+    - uid: '@microsoft/teams-js.nestedAppAuth'
+      name: nestedAppAuth
+      items: []
     - uid: '@microsoft/teams-js.notifications'
       name: notifications
       items: []
@@ -1403,6 +1418,13 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.sharing'
+        - name: history
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.sharing.history'
+            - uid: '@microsoft/teams-js.sharing.history.IContentResponse'
+              name: IContentResponse
+              items: []
         - uid: '@microsoft/teams-js.sharing.IShareRequest'
           name: IShareRequest
           items: []

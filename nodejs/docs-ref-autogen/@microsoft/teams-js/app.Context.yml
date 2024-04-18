@@ -61,6 +61,28 @@ properties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.app.ChatInfo" />
+  - name: dialogParameters
+    uid: '@microsoft/teams-js.app.Context.dialogParameters'
+    package: '@microsoft/teams-js'
+    summary: >-
+      When `processActionCommand` activates a dialog, this dialog should
+      automatically fill in some fields with information. This information comes
+      from M365 and is given to `processActionCommand` as `extractedParameters`.
+
+      App developers need to use these `extractedParameters` in their dialog.
+
+      They help pre-fill the dialog with necessary information
+      (`dialogParameters`) along with other details.
+
+      If there's no key/value pairs passed, the object will be empty in the case
+    fullName: dialogParameters
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'dialogParameters: Record<string, string>'
+      return:
+        description: ''
+        type: Record&lt;string, string&gt;
   - name: meeting
     uid: '@microsoft/teams-js.app.Context.meeting'
     package: '@microsoft/teams-js'
