@@ -61,6 +61,7 @@ interfaces:
   - '@microsoft/teams-js.profile.Persona'
   - '@microsoft/teams-js.profile.ShowProfileRequest'
   - '@microsoft/teams-js.search.SearchQuery'
+  - '@microsoft/teams-js.sharing.history.IContentResponse'
   - '@microsoft/teams-js.sharing.IShareRequest'
   - '@microsoft/teams-js.sharing.IURLContent'
   - '@microsoft/teams-js.stageView.StageViewParams'

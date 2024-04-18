@@ -6,19 +6,13 @@ summary: >-
   Provides methods for formatting various invoke responses a bot can send to
   respond to an invoke request.
 fullName: InvokeResponseFactory
-remarks: >-
-  All of these functions return an
-  <xref:@microsoft/teamsfx.InvokeResponseFactory.createInvokeResponse> object,
-  which can be
-
+remarks: |-
+  All of these functions return an `InvokeResponse` object, which can be
   passed as input to generate a new `invokeResponse` activity.
-
 
   This example sends an invoke response that contains an adaptive card.
 
-
   ```typescript
-
 
   const myCard = {
      type: "AdaptiveCard",
@@ -32,7 +26,6 @@ remarks: >-
    };
 
   const invokeResponse = InvokeResponseFactory.adaptiveCard(myCard);
-
   await context.sendActivity({
      type: ActivityTypes.InvokeResponse,
      value: invokeResponse,

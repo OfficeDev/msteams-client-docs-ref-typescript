@@ -1,0 +1,41 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.sharing.history'
+name: history
+summary: Namespace to get the list of content shared in a Teams meeting
+type: module
+interfaces:
+  - '@microsoft/teams-js.sharing.history.IContentResponse'
+package: '@microsoft/teams-js'
+previewState: beta
+functions:
+  - name: getContent()
+    uid: '@microsoft/teams-js.sharing.history.getContent'
+    package: '@microsoft/teams-js'
+    summary: Get the list of content shared in a Teams meeting
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function getContent(): Promise<IContentResponse[]>'
+      return:
+        description: >-
+          Promise that will resolve with the
+          [IContentResponse](xref:@microsoft/teams-js.sharing.history.IContentResponse)
+          objects array
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/teams-js.sharing.history.IContentResponse" />[]&gt;
+  - name: isSupported()
+    uid: '@microsoft/teams-js.sharing.history.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if sharing.history capability is supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: >-
+          boolean to represent whether the sharing.history capability is
+          supported
+        type: boolean

@@ -288,7 +288,7 @@ functions:
         TokenCredential, scopes?: string | string[]): Client
       parameters:
         - id: credential
-          type: TokenCredential
+          type: <xref uid="@azure/core-auth.TokenCredential" />
           description: Used to provide configuration and auth.
         - id: scopes
           type: string | string[]
@@ -380,6 +380,44 @@ functions:
       return:
         description: Connection configuration of tedious for the SQL.
         type: Promise&lt;ConnectionConfig&gt;
+  - name: >-
+      handleMessageExtensionLinkQueryWithSSO(TurnContext,
+      OnBehalfOfCredentialAuthConfig, string, string | string[], (token:
+      MessageExtensionTokenResponse) => Promise<any>)
+    uid: '@microsoft/teamsfx.handleMessageExtensionLinkQueryWithSSO'
+    package: '@microsoft/teamsfx'
+    summary: Users execute link query in message extension with SSO or access token.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handleMessageExtensionLinkQueryWithSSO(context: TurnContext,
+        config: OnBehalfOfCredentialAuthConfig, initiateLoginEndpoint: string,
+        scopes: string | string[], logic: (token: MessageExtensionTokenResponse)
+        => Promise<any>): Promise<void | MessagingExtensionResponse>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context object for the current turn.
+        - id: config
+          type: <xref uid="@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig" />
+          description: User custom the message extension authentication configuration.
+        - id: initiateLoginEndpoint
+          type: string
+          description: Login page for Teams to redirect to.
+        - id: scopes
+          type: string | string[]
+          description: The list of scopes for which the token will have access.
+        - id: logic
+          type: '(token: MessageExtensionTokenResponse) =&gt; Promise&lt;any&gt;'
+          description: >-
+            Business logic when executing the link query in message extension
+            with SSO or access token.
+      return:
+        description: >-
+          A MessageExtension Response for the activity. If the logic not return
+          any, return void instead.
+        type: Promise&lt;void | MessagingExtensionResponse&gt;
   - name: >-
       handleMessageExtensionQueryWithSSO(TurnContext,
       OnBehalfOfCredentialAuthConfig, string, string | string[], (token:

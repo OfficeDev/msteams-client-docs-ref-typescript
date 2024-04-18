@@ -1,0 +1,20 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.nestedAppAuth'
+name: nestedAppAuth
+type: module
+package: '@microsoft/teams-js'
+summary: Nested app auth capabilities
+previewState: beta
+functions:
+  - name: isNAAChannelRecommended()
+    uid: '@microsoft/teams-js.nestedAppAuth.isNAAChannelRecommended'
+    package: '@microsoft/teams-js'
+    summary: Checks if MSAL-NAA channel recommended by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isNAAChannelRecommended(): boolean'
+      return:
+        description: true if host is recommending NAA channel and false otherwise
+        type: boolean

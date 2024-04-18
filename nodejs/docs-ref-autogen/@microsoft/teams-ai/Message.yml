@@ -20,6 +20,18 @@ properties:
       return:
         description: ''
         type: undefined | TContent
+  - name: context
+    uid: '@microsoft/teams-ai.Message.context'
+    package: '@microsoft/teams-ai'
+    summary: The context used for the message.
+    fullName: context
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'context?: MessageContext'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.MessageContext" />
   - name: function_call
     uid: '@microsoft/teams-ai.Message.function_call'
     package: '@microsoft/teams-ai'
