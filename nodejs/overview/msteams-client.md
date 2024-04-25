@@ -112,13 +112,13 @@ TeamsJS can also be referenced from its CDN endpoints:
 ```javascript
 <!-- Microsoft Teams JavaScript API (via CDN) -->
 <script
-  src="https://res.cdn.office.net/teams-js/2.21.0/js/MicrosoftTeams.min.js"
-  integrity="sha384-8IiFmUTxC/bV/D3X+IBPbfibh4oRJIbu7E14dqbrDjvMRs5JDg7p4sz0/JT74f2a"
+  src="https://res.cdn.office.net/teams-js/2.22.0/js/MicrosoftTeams.min.js"
+  integrity="sha384-WSG/sWulIv7rel5TnFlH8JTpxl2OxzZh9Lux2mIzBFiTRLFvMBeFv9VURu/3vQdx"
   crossorigin="anonymous"
 ></script>
 
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@2.21.0/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@2.22.0/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (via local) -->
 <script src="MicrosoftTeams.min.js"></script>
