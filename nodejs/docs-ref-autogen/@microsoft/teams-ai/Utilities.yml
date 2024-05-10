@@ -8,6 +8,64 @@ remarks: ''
 isDeprecated: false
 type: class
 methods:
+  - name: formatCitationsResponse(string)
+    uid: '@microsoft/teams-ai.Utilities.formatCitationsResponse'
+    package: '@microsoft/teams-ai'
+    summary: Convert citation tags `[doc(s)n]` to `[n]` where n is a number.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function formatCitationsResponse(text: string): string'
+      parameters:
+        - id: text
+          type: string
+          description: The text to format.
+      return:
+        description: The formatted text.
+        type: string
+  - name: getUsedCitations(string, ClientCitation[])
+    uid: '@microsoft/teams-ai.Utilities.getUsedCitations'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Get the citations used in the text. This will remove any citations that
+      are included in the citations array from the response but not referenced
+      in the text.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function getUsedCitations(text: string, citations:
+        ClientCitation[]): undefined | ClientCitation[]
+      parameters:
+        - id: text
+          type: string
+          description: The text to search for citation references, i.e. [1], [2], etc.
+        - id: citations
+          type: <xref uid="@microsoft/teams-ai.ClientCitation" />[]
+          description: The list of citations to search for.
+      return:
+        description: The list of citations used in the text.
+        type: undefined | <xref uid="@microsoft/teams-ai.ClientCitation" />[]
+  - name: snippet(string, number)
+    uid: '@microsoft/teams-ai.Utilities.snippet'
+    package: '@microsoft/teams-ai'
+    summary: Clips the text to a maximum length in case it exceeds the limit.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function snippet(text: string, maxLength: number): string'
+      parameters:
+        - id: text
+          type: string
+          description: The text to clip.
+        - id: maxLength
+          type: number
+          description: >-
+            The maximum length of the text to return, cutting off the last whole
+            word.
+      return:
+        description: The modified text
+        type: string
   - name: toString(Tokenizer, any, boolean)
     uid: '@microsoft/teams-ai.Utilities.toString'
     package: '@microsoft/teams-ai'

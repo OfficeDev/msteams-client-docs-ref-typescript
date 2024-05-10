@@ -377,6 +377,9 @@
     - uid: '@microsoft/teams-ai.ActionAugmentationSection'
       name: ActionAugmentationSection
       items: []
+    - uid: '@microsoft/teams-ai.ActionHandler'
+      name: ActionHandler
+      items: []
     - uid: '@microsoft/teams-ai.ActionPlanner'
       name: ActionPlanner
       items: []
@@ -470,6 +473,9 @@
     - uid: '@microsoft/teams-ai.Citation'
       name: Citation
       items: []
+    - uid: '@microsoft/teams-ai.ClientCitation'
+      name: ClientCitation
+      items: []
     - uid: '@microsoft/teams-ai.CompletionConfig'
       name: CompletionConfig
       items: []
@@ -520,6 +526,9 @@
       items: []
     - uid: '@microsoft/teams-ai.EmbeddingsResponseStatus'
       name: EmbeddingsResponseStatus
+      items: []
+    - uid: '@microsoft/teams-ai.FeedbackLoopData'
+      name: FeedbackLoopData
       items: []
     - uid: '@microsoft/teams-ai.FunctionCall'
       name: FunctionCall
@@ -610,6 +619,12 @@
       items: []
     - uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions'
       name: OpenAIEmbeddingsOptions
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions'
+      name: OpenAILikeEmbeddingsOptions
+      items: []
+    - uid: '@microsoft/teams-ai.OpenAILikeModelOptions'
+      name: OpenAILikeModelOptions
       items: []
     - uid: '@microsoft/teams-ai.OpenAIModel'
       name: OpenAIModel
@@ -704,6 +719,9 @@
       items: []
     - uid: '@microsoft/teams-ai.Selector'
       name: Selector
+      items: []
+    - uid: '@microsoft/teams-ai.SensitivityUsageInfo'
+      name: SensitivityUsageInfo
       items: []
     - uid: '@microsoft/teams-ai.SequenceAugmentation'
       name: SequenceAugmentation

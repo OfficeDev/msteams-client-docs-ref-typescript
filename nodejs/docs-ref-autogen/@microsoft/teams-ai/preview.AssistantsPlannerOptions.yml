@@ -11,7 +11,7 @@ properties:
   - name: apiKey
     uid: '@microsoft/teams-ai.preview.AssistantsPlannerOptions.apiKey'
     package: '@microsoft/teams-ai'
-    summary: The OpenAI API key.
+    summary: The OpenAI or Azure OpenAI API key.
     fullName: apiKey
     remarks: ''
     isDeprecated: false
@@ -42,6 +42,18 @@ properties:
     isDeprecated: false
     syntax:
       content: 'assistant_id: string'
+      return:
+        description: ''
+        type: string
+  - name: endpoint
+    uid: '@microsoft/teams-ai.preview.AssistantsPlannerOptions.endpoint'
+    package: '@microsoft/teams-ai'
+    summary: The Azure OpenAI resource endpoint.
+    fullName: endpoint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endpoint?: string'
       return:
         description: ''
         type: string

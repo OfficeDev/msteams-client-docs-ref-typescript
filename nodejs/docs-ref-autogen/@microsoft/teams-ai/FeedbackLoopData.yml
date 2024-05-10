@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: FeedbackLoopData
+uid: '@microsoft/teams-ai.FeedbackLoopData'
+package: '@microsoft/teams-ai'
+summary: >-
+  Data returned when the thumbsup or thumbsdown button is clicked and response
+  sent when enable_feedback_loop is set to true in the AI Module.
+fullName: FeedbackLoopData
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: actionName
+    uid: '@microsoft/teams-ai.FeedbackLoopData.actionName'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: actionName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'actionName: "feedback"'
+      return:
+        description: ''
+        type: '"feedback"'
+  - name: actionValue
+    uid: '@microsoft/teams-ai.FeedbackLoopData.actionValue'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: actionValue
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'actionValue: { feedback: string, reaction: string }'
+      return:
+        description: ''
+        type: '{ feedback: string, reaction: string }'
+  - name: replyToId
+    uid: '@microsoft/teams-ai.FeedbackLoopData.replyToId'
+    package: '@microsoft/teams-ai'
+    summary: The activity ID that the feedback was provided on.
+    fullName: replyToId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'replyToId: string'
+      return:
+        description: ''
+        type: string

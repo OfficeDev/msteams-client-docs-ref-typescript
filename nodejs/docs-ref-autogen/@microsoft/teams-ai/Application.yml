@@ -251,6 +251,31 @@ methods:
         description: The application instance for chaining purposes.
         type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
   - name: >-
+      feedbackLoop((context: TurnContext, state: TState, feedbackLoopData:
+      FeedbackLoopData) => Promise<void>)
+    uid: '@microsoft/teams-ai.Application.feedbackLoop'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Registers a handler for feedbackloop events when a user clicks the
+      thumbsup or thumbsdown button on a response from AI. enable_feedback_loop
+      must be set to true in the AI Module.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function feedbackLoop(handler: (context: TurnContext, state: TState,
+        feedbackLoopData: FeedbackLoopData) => Promise<void>):
+        Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, feedbackLoopData:
+            FeedbackLoopData) =&gt; Promise&lt;void&gt;
+          description: Function to call when the route is triggered
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: >-
       fileConsentAccept((context: TurnContext, state: TState,
       fileConsentResponse: FileConsentCardResponse) => Promise<void>)
     uid: '@microsoft/teams-ai.Application.fileConsentAccept'
@@ -326,6 +351,27 @@ methods:
       return:
         description: The token for the user if they are signed in, otherwise undefined.
         type: Promise&lt;undefined | string&gt;
+  - name: >-
+      handoff((context: TurnContext, state: TState, continuation: string) =>
+      Promise<void>)
+    uid: '@microsoft/teams-ai.Application.handoff'
+    package: '@microsoft/teams-ai'
+    summary: Registers a handler to handoff conversations from one copilot to another.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function handoff(handler: (context: TurnContext, state: TState,
+        continuation: string) => Promise<void>): Application<TState>
+      parameters:
+        - id: handler
+          type: >-
+            (context: TurnContext, state: TState, continuation: string) =&gt;
+            Promise&lt;void&gt;
+          description: Function to call when the route is triggered.
+      return:
+        description: The application instance for chaining purposes.
+        type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
   - name: >-
       message(string | RegExp | Selector | (string | RegExp | Selector)[],
       (context: TurnContext, state: TState) => Promise<void>)

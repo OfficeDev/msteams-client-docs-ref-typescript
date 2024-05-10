@@ -3,7 +3,9 @@ uid: '@microsoft/teams-js.webStorage'
 name: webStorage
 type: module
 package: '@microsoft/teams-js'
-summary: Contains functionality to allow web apps to store data in webview cache
+summary: >-
+  Contains functionality enabling apps to query properties about how the host
+  manages web storage (`Window.LocalStorage`)
 previewState: beta
 functions:
   - name: isSupported()
@@ -21,12 +23,14 @@ functions:
   - name: isWebStorageClearedOnUserLogOut()
     uid: '@microsoft/teams-js.webStorage.isWebStorageClearedOnUserLogOut'
     package: '@microsoft/teams-js'
-    summary: Checks if web storage gets cleared when a user logs out from host client
+    summary: >-
+      Checks if web storage (`Window.LocalStorage`) gets cleared when a user
+      logs out from host
     remarks: ''
     previewState: beta
     isDeprecated: false
     syntax:
-      content: 'function isWebStorageClearedOnUserLogOut(): boolean'
+      content: 'function isWebStorageClearedOnUserLogOut(): Promise<boolean>'
       return:
-        description: true is web storage gets cleared on logout and false if it does not
-        type: boolean
+        description: '`true` if web storage gets cleared on logout and `false` if not'
+        type: Promise&lt;boolean&gt;

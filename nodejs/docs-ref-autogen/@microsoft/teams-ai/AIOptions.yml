@@ -37,6 +37,24 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: enable_feedback_loop
+    uid: '@microsoft/teams-ai.AIOptions.enable_feedback_loop'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. If true, the AI system will enable the feedback loop in Teams
+      that allows a user to give thumbs up or down to a response. Default is
+      `false`.
+
+      NOTE: At this time, there is no activity handler support in the Teams AI
+      Library to handle when a user gives feedback.
+    fullName: enable_feedback_loop
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enable_feedback_loop?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: max_actions
     uid: '@microsoft/teams-ai.AIOptions.max_actions'
     package: '@microsoft/teams-ai'

@@ -23,7 +23,7 @@ properties:
   - name: intent
     uid: '@microsoft/teams-ai.MessageContext.intent'
     package: '@microsoft/teams-ai'
-    summary: The intent of the message.
+    summary: The intent of the message (what the user wrote).
     fullName: intent
     remarks: ''
     isDeprecated: false
