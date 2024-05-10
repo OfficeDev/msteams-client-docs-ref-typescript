@@ -55,7 +55,7 @@
       "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
       "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json?view=msteams-client-js",
-      "ConceptualTOCUrl": "/microsoftteams/platform/toc.json",
+      "ConceptualTOCUrl": "/microsoft-365/extensibility/toc.json&branch=reference-library-inclusion",
       "OutputFolder": "nodejs/overview",
       "HideEmptyNode": false,
       "ContainerPageMetadata": {
@@ -71,19 +71,6 @@
       "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-beta/toc.json?view=msteams-client-js-1.13.1",
       "OutputFolder": "nodejs/teams-1131/overview",
       "HideEmptyNode": true,
-      "ContainerPageMetadata": {
-        "langs": [
-          "js"
-        ]
-      }
-    },
-    {
-      "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
-      "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
-      "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json?view=msteams-client-js",
-      "ConceptualTOCUrl": "/microsoft-365/extensibility/toc.json&branch=reference-library-inclusion",
-      "OutputFolder": "nodejs/overview",
-      "HideEmptyNode": false,
       "ContainerPageMetadata": {
         "langs": [
           "js"
