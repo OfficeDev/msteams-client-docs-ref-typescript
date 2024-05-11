@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: ActionHandler
+uid: '@microsoft/teams-ai.ActionHandler'
+package: '@microsoft/teams-ai'
+summary: The code to execute when the action's name is triggered.
+fullName: ActionHandler<TState, TData>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ActionHandler<TState, TData> = (
+    context: TurnContext,
+    state: TState,
+    data: TData,
+    action?: string
+  ) => Promise<string>

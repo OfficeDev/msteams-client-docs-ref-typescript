@@ -33,11 +33,14 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'options: OpenAIEmbeddingsOptions | AzureOpenAIEmbeddingsOptions'
+      content: >-
+        options: OpenAIEmbeddingsOptions | OpenAILikeEmbeddingsOptions |
+        AzureOpenAIEmbeddingsOptions
       return:
         description: ''
         type: >-
           <xref uid="@microsoft/teams-ai.OpenAIEmbeddingsOptions" /> | <xref
+          uid="@microsoft/teams-ai.OpenAILikeEmbeddingsOptions" /> | <xref
           uid="@microsoft/teams-ai.AzureOpenAIEmbeddingsOptions" />
 methods:
   - name: createEmbeddings(string, string | string[])

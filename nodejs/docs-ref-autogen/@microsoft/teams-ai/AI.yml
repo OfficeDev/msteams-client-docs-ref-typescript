@@ -240,9 +240,7 @@ properties:
         description: ''
         type: '"___UnknownAction___"'
 methods:
-  - name: >-
-      action<TParameters>(string | string[], (context: TurnContext, state:
-      TState, parameters: TParameters, action?: string) => Promise<string>)
+  - name: action<TParameters>(string | string[], ActionHandler<TState, TParameters>)
     uid: '@microsoft/teams-ai.AI.action'
     package: '@microsoft/teams-ai'
     summary: Registers a handler for a named action.
@@ -279,46 +277,45 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function action<TParameters>(name: string | string[], handler: (context:
-        TurnContext, state: TState, parameters: TParameters, action?: string) =>
-        Promise<string>): AI<TState>
+        function action<TParameters>(name: string | string[], handler:
+        ActionHandler<TState, TParameters>): AI<TState>
       parameters:
         - id: name
           type: string | string[]
           description: Unique name of the action.
         - id: handler
           type: >-
-            (context: TurnContext, state: TState, parameters: TParameters,
-            action?: string) =&gt; Promise&lt;string&gt;
+            <xref uid="@microsoft/teams-ai.ActionHandler" />&lt;TState,
+            TParameters&gt;
           description: The code to execute when the action's name is triggered.
       return:
         description: The AI system instance for chaining purposes.
         type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;
   - name: >-
-      defaultAction<TParameters>(string | string[], (context: TurnContext,
-      state: TState, parameters: TParameters, action?: string) =>
-      Promise<string>)
+      defaultAction<TParameters>(string | string[], ActionHandler<TState,
+      TParameters>)
     uid: '@microsoft/teams-ai.AI.defaultAction'
     package: '@microsoft/teams-ai'
     summary: Registers the default handler for a named action.
-    remarks: >-
-      Default handlers can be replaced by calling the action() method with the
-      same name.
+    remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         function defaultAction<TParameters>(name: string | string[], handler:
-        (context: TurnContext, state: TState, parameters: TParameters, action?:
-        string) => Promise<string>): AI<TState>
+        ActionHandler<TState, TParameters>): AI<TState>
       parameters:
         - id: name
           type: string | string[]
           description: Unique name of the action.
         - id: handler
           type: >-
-            (context: TurnContext, state: TState, parameters: TParameters,
-            action?: string) =&gt; Promise&lt;string&gt;
-          description: The code to execute when the action's name is triggered.
+            <xref uid="@microsoft/teams-ai.ActionHandler" />&lt;TState,
+            TParameters&gt;
+          description: >-
+            The code to execute when the action's name is triggered.
+
+            Default handlers can be replaced by calling the action() method with
+            the same name.
       return:
         description: The AI system instance for chaining purposes.
         type: <xref uid="@microsoft/teams-ai.AI" />&lt;TState&gt;

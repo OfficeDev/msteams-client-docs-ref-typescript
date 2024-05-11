@@ -1,64 +1,59 @@
 ### YamlMime:TSType
-name: AzureOpenAIModelOptions
-uid: '@microsoft/teams-ai.AzureOpenAIModelOptions'
+name: OpenAILikeModelOptions
+uid: '@microsoft/teams-ai.OpenAILikeModelOptions'
 package: '@microsoft/teams-ai'
-summary: Options for configuring an `OpenAIModel` to call an Azure OpenAI hosted model.
-fullName: AzureOpenAIModelOptions
-remarks: ''
+summary: Options for configuring a model that calls and `OpenAI` compliant endpoint.
+fullName: OpenAILikeModelOptions
+remarks: |-
+  The endpoint should comply with the OpenAPI spec for OpenAI's API:
+
+  https://github.com/openai/openai-openapi
+
+  And an example of a compliant endpoint is LLaMA.cpp's reference server:
+
+  https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md
 isDeprecated: false
 type: interface
 properties:
-  - name: azureApiKey
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.azureApiKey'
+  - name: apiKey
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.apiKey'
     package: '@microsoft/teams-ai'
-    summary: API key to use when making requests to Azure OpenAI.
-    fullName: azureApiKey
+    summary: Optional. API key to use when calling the models endpoint.
+    fullName: apiKey
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'azureApiKey: string'
+      content: 'apiKey?: string'
       return:
         description: ''
         type: string
-  - name: azureApiVersion
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.azureApiVersion'
+  - name: defaultModel
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.defaultModel'
     package: '@microsoft/teams-ai'
-    summary: Optional. Version of the API being called. Defaults to `2023-05-15`.
-    fullName: azureApiVersion
+    summary: Default model to use for completions.
+    fullName: defaultModel
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'azureApiVersion?: string'
+      content: 'defaultModel: string'
       return:
         description: ''
         type: string
-  - name: azureDefaultDeployment
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.azureDefaultDeployment'
+  - name: endpoint
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.endpoint'
     package: '@microsoft/teams-ai'
-    summary: Default name of the Azure OpenAI deployment (model) to use.
-    fullName: azureDefaultDeployment
+    summary: Endpoint of the model server to call.
+    fullName: endpoint
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'azureDefaultDeployment: string'
-      return:
-        description: ''
-        type: string
-  - name: azureEndpoint
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.azureEndpoint'
-    package: '@microsoft/teams-ai'
-    summary: Deployment endpoint to use.
-    fullName: azureEndpoint
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'azureEndpoint: string'
+      content: 'endpoint: string'
       return:
         description: ''
         type: string
 inheritedProperties:
   - name: logRequests
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.logRequests'
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.logRequests'
     package: '@microsoft/teams-ai'
     summary: Optional. Whether to log requests to the console.
     fullName: logRequests
@@ -73,7 +68,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [BaseOpenAIModelOptions.logRequests](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.logRequests)
   - name: requestConfig
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.requestConfig'
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.requestConfig'
     package: '@microsoft/teams-ai'
     summary: Optional. Request options to use when calling the OpenAI API.
     fullName: requestConfig
@@ -88,7 +83,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [BaseOpenAIModelOptions.requestConfig](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.requestConfig)
   - name: responseFormat
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.responseFormat'
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.responseFormat'
     package: '@microsoft/teams-ai'
     summary: Optional. Forces the model return a specific response format.
     fullName: responseFormat
@@ -103,7 +98,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [BaseOpenAIModelOptions.responseFormat](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.responseFormat)
   - name: retryPolicy
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.retryPolicy'
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.retryPolicy'
     package: '@microsoft/teams-ai'
     summary: Optional. Retry policy to use when calling the OpenAI API.
     fullName: retryPolicy
@@ -122,7 +117,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [BaseOpenAIModelOptions.retryPolicy](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.retryPolicy)
   - name: seed
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.seed'
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.seed'
     package: '@microsoft/teams-ai'
     summary: Optional. A static seed to use when making model calls.
     fullName: seed
@@ -139,7 +134,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [BaseOpenAIModelOptions.seed](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.seed)
   - name: useSystemMessages
-    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.useSystemMessages'
+    uid: '@microsoft/teams-ai.OpenAILikeModelOptions.useSystemMessages'
     package: '@microsoft/teams-ai'
     summary: Optional. Whether to use `system` messages when calling the OpenAI API.
     fullName: useSystemMessages

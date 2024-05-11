@@ -1,43 +1,45 @@
 ### YamlMime:TSType
-name: OpenAIEmbeddingsOptions
-uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions'
+name: OpenAILikeEmbeddingsOptions
+uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions'
 package: '@microsoft/teams-ai'
 summary: >-
-  Options for configuring an `OpenAIEmbeddings` to generate embeddings using an
-  OpenAI hosted model.
-fullName: OpenAIEmbeddingsOptions
-remarks: ''
+  Options for configuring an embeddings object that calls an `OpenAI` compliant
+  endpoint.
+fullName: OpenAILikeEmbeddingsOptions
+remarks: |-
+  The endpoint should comply with the OpenAPI spec for OpenAI's API:
+  https://github.com/openai/openai-openapi
+  And an example of a compliant endpoint is LLaMA.cpp's reference server:
+  https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md
 isDeprecated: false
 type: interface
 properties:
   - name: apiKey
-    uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions.apiKey'
+    uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions.apiKey'
     package: '@microsoft/teams-ai'
-    summary: API key to use when calling the OpenAI API.
+    summary: Optional. API key to use when calling the embeddings server.
     fullName: apiKey
-    remarks: >-
-      A new API key can be created at
-      https://platform.openai.com/account/api-keys.
+    remarks: ''
     isDeprecated: false
     syntax:
-      content: 'apiKey: string'
+      content: 'apiKey?: string'
       return:
         description: ''
         type: string
   - name: endpoint
-    uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions.endpoint'
+    uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions.endpoint'
     package: '@microsoft/teams-ai'
-    summary: Optional. Endpoint to use when calling the OpenAI API.
+    summary: Endpoint of the embeddings server to call.
     fullName: endpoint
-    remarks: For Azure OpenAI this is the deployment endpoint.
+    remarks: ''
     isDeprecated: false
     syntax:
-      content: 'endpoint?: string'
+      content: 'endpoint: string'
       return:
         description: ''
         type: string
   - name: model
-    uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions.model'
+    uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions.model'
     package: '@microsoft/teams-ai'
     summary: Embeddings Model to use.
     fullName: model
@@ -48,21 +50,9 @@ properties:
       return:
         description: ''
         type: string
-  - name: organization
-    uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions.organization'
-    package: '@microsoft/teams-ai'
-    summary: Optional. Organization to use when calling the OpenAI API.
-    fullName: organization
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'organization?: string'
-      return:
-        description: ''
-        type: string
 inheritedProperties:
   - name: dimensions
-    uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions.dimensions'
+    uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions.dimensions'
     package: '@microsoft/teams-ai'
     summary: Optional. Number of dimensions to use when generating embeddings.
     fullName: dimensions
@@ -77,7 +67,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [BaseOpenAIEmbeddingsOptions.dimensions](xref:@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.dimensions)
   - name: logRequests
-    uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions.logRequests'
+    uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions.logRequests'
     package: '@microsoft/teams-ai'
     summary: Optional. Whether to log requests to the console.
     fullName: logRequests
@@ -92,7 +82,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [BaseOpenAIEmbeddingsOptions.logRequests](xref:@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.logRequests)
   - name: requestConfig
-    uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions.requestConfig'
+    uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions.requestConfig'
     package: '@microsoft/teams-ai'
     summary: Optional. Request options to use when calling the OpenAI API.
     fullName: requestConfig
@@ -107,7 +97,7 @@ inheritedProperties:
       <b>Inherited From</b>
       [BaseOpenAIEmbeddingsOptions.requestConfig](xref:@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.requestConfig)
   - name: retryPolicy
-    uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions.retryPolicy'
+    uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions.retryPolicy'
     package: '@microsoft/teams-ai'
     summary: Optional. Retry policy to use when calling the OpenAI API.
     fullName: retryPolicy

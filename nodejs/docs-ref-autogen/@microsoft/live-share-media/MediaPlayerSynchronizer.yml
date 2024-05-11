@@ -161,14 +161,16 @@ inheritedProperties:
 
       using the `emitter.setMaxListeners(n)` method. To change the default
 
-      for _all_`EventEmitter` instances, the
-      `events.defaultMaxListeners`property can be used. If this value is not a
-      positive number, a `RangeError`is thrown.
+      for _all_`EventEmitter` instances, the `events.defaultMaxListeners`
+      property
+
+      can be used. If this value is not a positive number, a `RangeError` is
+      thrown.
 
 
       Take caution when setting the `events.defaultMaxListeners` because the
 
-      change affects _all_`EventEmitter` instances, including those created
+      change affects _all_ `EventEmitter` instances, including those created
       before
 
       the change is made. However, calling `emitter.setMaxListeners(n)` still
@@ -183,8 +185,10 @@ inheritedProperties:
       indicating
 
       that a "possible EventEmitter memory leak" has been detected. For any
-      single`EventEmitter`, the `emitter.getMaxListeners()` and
-      `emitter.setMaxListeners()`methods can be used to
+      single
+
+      `EventEmitter`, the `emitter.getMaxListeners()` and
+      `emitter.setMaxListeners()` methods can be used to
 
       temporarily avoid this warning:
 
@@ -234,12 +238,12 @@ inheritedProperties:
     package: '@microsoft/live-share-media'
     summary: >-
       This symbol shall be used to install a listener for only monitoring
-      `'error'`events. Listeners installed using this symbol are called before
-      the regular`'error'` listeners are called.
+      `'error'` events. Listeners installed using this symbol are called before
+      the regular `'error'` listeners are called.
 
 
       Installing a listener using this symbol does not change the behavior once
-      an`'error'` event is emitted. Therefore, the process will still crash if
+      an `'error'` event is emitted. Therefore, the process will still crash if
       no
 
       regular `'error'` listener is installed.
@@ -343,8 +347,8 @@ inheritedMethods:
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.emit'
     package: '@microsoft/live-share-media'
     summary: >-
-      Synchronously calls each of the listeners registered for the event
-      named`eventName`, in the order they were registered, passing the supplied
+      Synchronously calls each of the listeners registered for the event named
+      `eventName`, in the order they were registered, passing the supplied
       arguments
 
       to each.
@@ -449,8 +453,8 @@ inheritedMethods:
         type: (string | symbol)[]
     inheritanceDescription: <b>Inherited From</b> EventEmitter.eventNames
   - name: >-
-      getEventListeners(EventEmitter<DefaultEventMap> | _DOMEventTarget, string
-      | symbol)
+      getEventListeners(EventEmitter<DefaultEventMap> | EventTarget, string |
+      symbol)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.getEventListeners'
     package: '@microsoft/live-share-media'
     summary: >-
@@ -493,10 +497,10 @@ inheritedMethods:
     syntax:
       content: >-
         static function getEventListeners(emitter: EventEmitter<DefaultEventMap>
-        | _DOMEventTarget, name: string | symbol): Function[]
+        | EventTarget, name: string | symbol): Function[]
       parameters:
         - id: emitter
-          type: EventEmitter&lt;DefaultEventMap&gt; | _DOMEventTarget
+          type: EventEmitter&lt;DefaultEventMap&gt; | EventTarget
           description: ''
         - id: name
           type: string | symbol
@@ -522,7 +526,7 @@ inheritedMethods:
         description: ''
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
-  - name: getMaxListeners(EventEmitter<DefaultEventMap> | _DOMEventTarget)
+  - name: getMaxListeners(EventEmitter<DefaultEventMap> | EventTarget)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.getMaxListeners'
     package: '@microsoft/live-share-media'
     summary: >-
@@ -570,10 +574,10 @@ inheritedMethods:
     syntax:
       content: >-
         static function getMaxListeners(emitter: EventEmitter<DefaultEventMap> |
-        _DOMEventTarget): number
+        EventTarget): number
       parameters:
         - id: emitter
-          type: EventEmitter&lt;DefaultEventMap&gt; | _DOMEventTarget
+          type: EventEmitter&lt;DefaultEventMap&gt; | EventTarget
           description: ''
       return:
         description: ''
@@ -584,7 +588,7 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: >-
       A class method that returns the number of listeners for the given
-      `eventName`registered on the given `emitter`.
+      `eventName` registered on the given `emitter`.
 
 
       ```js
@@ -769,7 +773,9 @@ inheritedMethods:
           type: StaticEventEmitterOptions
           description: ''
       return:
-        description: that iterates `eventName` events emitted by the `emitter`
+        description: >-
+          An `AsyncIterator` that iterates `eventName` events emitted by the
+          `emitter`
         type: AsyncIterableIterator&lt;any&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'on<K>(string | symbol, (args: any[]) => void)'
@@ -777,13 +783,13 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: >-
       Adds the `listener` function to the end of the listeners array for the
+      event
 
-      event named `eventName`. No checks are made to see if the `listener` has
+      named `eventName`. No checks are made to see if the `listener` has already
 
-      already been added. Multiple calls passing the same combination of
-      `eventName`and `listener` will result in the `listener` being added, and
-      called, multiple
+      been added. Multiple calls passing the same combination of `eventName` and
 
+      `listener` will result in the `listener` being added, and called, multiple
       times.
 
 
@@ -799,8 +805,8 @@ inheritedMethods:
       Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 
-      By default, event listeners are invoked in the order they are added.
-      The`emitter.prependListener()` method can be used as an alternative to add
+      By default, event listeners are invoked in the order they are added. The
+      `emitter.prependListener()` method can be used as an alternative to add
       the
 
       event listener to the beginning of the listeners array.
@@ -904,7 +910,7 @@ inheritedMethods:
 
 
       The special handling of the `'error'` event is only used when
-      `events.once()`is used to wait for another event. If `events.once()` is
+      `events.once()` is used to wait for another event. If `events.once()` is
       used to wait for the
 
       '`error'` event itself, then it is treated as any other kind of event
@@ -987,7 +993,7 @@ inheritedMethods:
         description: ''
         type: Promise&lt;any[]&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
-  - name: once(_DOMEventTarget, string, StaticEventEmitterOptions)
+  - name: once(EventTarget, string, StaticEventEmitterOptions)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once_1'
     package: '@microsoft/live-share-media'
     summary: ''
@@ -995,11 +1001,11 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        static function once(emitter: _DOMEventTarget, eventName: string,
-        options?: StaticEventEmitterOptions): Promise<any[]>
+        static function once(emitter: EventTarget, eventName: string, options?:
+        StaticEventEmitterOptions): Promise<any[]>
       parameters:
         - id: emitter
-          type: _DOMEventTarget
+          type: EventTarget
           description: ''
         - id: eventName
           type: string
@@ -1015,7 +1021,7 @@ inheritedMethods:
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once'
     package: '@microsoft/live-share-media'
     summary: >-
-      Adds a **one-time**`listener` function for the event named `eventName`.
+      Adds a **one-time** `listener` function for the event named `eventName`.
       The
 
       next time `eventName` is triggered, this listener is removed and then
@@ -1034,8 +1040,8 @@ inheritedMethods:
       Returns a reference to the `EventEmitter`, so that calls can be chained.
 
 
-      By default, event listeners are invoked in the order they are added.
-      The`emitter.prependOnceListener()` method can be used as an alternative to
+      By default, event listeners are invoked in the order they are added. The
+      `emitter.prependOnceListener()` method can be used as an alternative to
       add the
 
       event listener to the beginning of the listeners array.
@@ -1087,10 +1093,10 @@ inheritedMethods:
       event named `eventName`. No checks are made to see if the `listener` has
 
       already been added. Multiple calls passing the same combination of
-      `eventName`and `listener` will result in the `listener` being added, and
-      called, multiple
+      `eventName`
 
-      times.
+      and `listener` will result in the `listener` being added, and called,
+      multiple times.
 
 
       ```js
@@ -1231,7 +1237,7 @@ inheritedMethods:
     package: '@microsoft/live-share-media'
     summary: >-
       Removes the specified `listener` from the listener array for the event
-      named`eventName`.
+      named `eventName`.
 
 
       ```js
@@ -1263,8 +1269,8 @@ inheritedMethods:
 
       Once an event is emitted, all listeners attached to it at the
 
-      time of emitting are called in order. This implies that
-      any`removeListener()` or `removeAllListeners()` calls _after_ emitting and
+      time of emitting are called in order. This implies that any
+      `removeListener()` or `removeAllListeners()` calls _after_ emitting and
       _before_ the last listener finishes execution
 
       will not remove them from`emit()` in progress. Subsequent events behave as
@@ -1341,7 +1347,7 @@ inheritedMethods:
 
       event (as in the example below), `removeListener()` will remove the most
 
-      recently added instance. In the example the `once('ping')`listener is
+      recently added instance. In the example the `once('ping')` listener is
       removed:
 
 
@@ -1402,7 +1408,7 @@ inheritedMethods:
       be
 
       modified for this specific `EventEmitter` instance. The value can be set
-      to`Infinity` (or `0`) to indicate an unlimited number of listeners.
+      to `Infinity` (or `0`) to indicate an unlimited number of listeners.
 
 
       Returns a reference to the `EventEmitter`, so that calls can be chained.
@@ -1418,9 +1424,7 @@ inheritedMethods:
         description: ''
         type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
-  - name: >-
-      setMaxListeners(number, (EventEmitter<DefaultEventMap> |
-      _DOMEventTarget)[])
+  - name: setMaxListeners(number, (EventEmitter<DefaultEventMap> | EventTarget)[])
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setMaxListeners'
     package: '@microsoft/live-share-media'
     summary: |-
@@ -1437,7 +1441,7 @@ inheritedMethods:
     syntax:
       content: >-
         static function setMaxListeners(n?: number, eventTargets:
-        (EventEmitter<DefaultEventMap> | _DOMEventTarget)[])
+        (EventEmitter<DefaultEventMap> | EventTarget)[])
       parameters:
         - id: 'n'
           type: number
@@ -1445,7 +1449,7 @@ inheritedMethods:
             A non-negative number. The maximum number of listeners per
             `EventTarget` event.
         - id: eventTargets
-          type: (EventEmitter&lt;DefaultEventMap&gt; | _DOMEventTarget)[]
+          type: (EventEmitter&lt;DefaultEventMap&gt; | EventTarget)[]
           description: ''
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
   - name: '[captureRejectionSymbol]<K>(Error, string | symbol, AnyRest)'
