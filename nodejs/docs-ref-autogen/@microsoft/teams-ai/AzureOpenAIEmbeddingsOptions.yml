@@ -59,6 +59,21 @@ properties:
         description: ''
         type: string
 inheritedProperties:
+  - name: dimensions
+    uid: '@microsoft/teams-ai.AzureOpenAIEmbeddingsOptions.dimensions'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Number of dimensions to use when generating embeddings.
+    fullName: dimensions
+    remarks: Only valid for embedding models that support dynamic dimensionality.
+    isDeprecated: false
+    syntax:
+      content: 'dimensions?: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [BaseOpenAIEmbeddingsOptions.dimensions](xref:@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.dimensions)
   - name: logRequests
     uid: '@microsoft/teams-ai.AzureOpenAIEmbeddingsOptions.logRequests'
     package: '@microsoft/teams-ai'

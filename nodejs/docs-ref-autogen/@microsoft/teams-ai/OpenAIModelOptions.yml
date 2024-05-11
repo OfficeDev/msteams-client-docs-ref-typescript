@@ -89,6 +89,21 @@ inheritedProperties:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [BaseOpenAIModelOptions.requestConfig](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.requestConfig)
+  - name: responseFormat
+    uid: '@microsoft/teams-ai.OpenAIModelOptions.responseFormat'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Forces the model return a specific response format.
+    fullName: responseFormat
+    remarks: This can be used to force the model to always return a valid JSON object.
+    isDeprecated: false
+    syntax:
+      content: 'responseFormat?: { type: "json_object" }'
+      return:
+        description: ''
+        type: '{ type: "json_object" }'
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [BaseOpenAIModelOptions.responseFormat](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.responseFormat)
   - name: retryPolicy
     uid: '@microsoft/teams-ai.OpenAIModelOptions.retryPolicy'
     package: '@microsoft/teams-ai'
@@ -108,6 +123,23 @@ inheritedProperties:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [BaseOpenAIModelOptions.retryPolicy](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.retryPolicy)
+  - name: seed
+    uid: '@microsoft/teams-ai.OpenAIModelOptions.seed'
+    package: '@microsoft/teams-ai'
+    summary: Optional. A static seed to use when making model calls.
+    fullName: seed
+    remarks: >-
+      The default is to use a random seed. Specifying a seed will make the model
+      deterministic.
+    isDeprecated: false
+    syntax:
+      content: 'seed?: number'
+      return:
+        description: ''
+        type: number
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [BaseOpenAIModelOptions.seed](xref:@microsoft/teams-ai.BaseOpenAIModelOptions.seed)
   - name: useSystemMessages
     uid: '@microsoft/teams-ai.OpenAIModelOptions.useSystemMessages'
     package: '@microsoft/teams-ai'

@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'response: string'
+      content: 'response: Message<string>'
       return:
         description: ''
-        type: string
+        type: <xref uid="@microsoft/teams-ai.Message" />&lt;string&gt;
   - name: type
     uid: '@microsoft/teams-ai.PredictedSayCommand.type'
     package: '@microsoft/teams-ai'

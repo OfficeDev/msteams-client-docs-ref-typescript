@@ -32,3 +32,15 @@ properties:
       return:
         description: ''
         type: string
+  - name: logRequests
+    uid: '@microsoft/teams-ai.LlamaModelOptions.logRequests'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: logRequests
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'logRequests?: boolean'
+      return:
+        description: ''
+        type: boolean

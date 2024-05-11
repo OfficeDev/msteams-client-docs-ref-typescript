@@ -8,18 +8,23 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: OpenAIModel(OpenAIModelOptions | AzureOpenAIModelOptions)
+  - name: >-
+      OpenAIModel(OpenAIModelOptions | OpenAILikeModelOptions |
+      AzureOpenAIModelOptions)
     uid: '@microsoft/teams-ai.OpenAIModel.constructor'
     package: '@microsoft/teams-ai'
     summary: Creates a new `OpenAIModel` instance.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'new OpenAIModel(options: OpenAIModelOptions | AzureOpenAIModelOptions)'
+      content: >-
+        new OpenAIModel(options: OpenAIModelOptions | OpenAILikeModelOptions |
+        AzureOpenAIModelOptions)
       parameters:
         - id: options
           type: >-
             <xref uid="@microsoft/teams-ai.OpenAIModelOptions" /> | <xref
+            uid="@microsoft/teams-ai.OpenAILikeModelOptions" /> | <xref
             uid="@microsoft/teams-ai.AzureOpenAIModelOptions" />
           description: Options for configuring the model client.
 properties:
@@ -31,11 +36,14 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'options: OpenAIModelOptions | AzureOpenAIModelOptions'
+      content: >-
+        options: OpenAIModelOptions | OpenAILikeModelOptions |
+        AzureOpenAIModelOptions
       return:
         description: ''
         type: >-
           <xref uid="@microsoft/teams-ai.OpenAIModelOptions" /> | <xref
+          uid="@microsoft/teams-ai.OpenAILikeModelOptions" /> | <xref
           uid="@microsoft/teams-ai.AzureOpenAIModelOptions" />
 methods:
   - name: >-

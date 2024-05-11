@@ -32,6 +32,18 @@ properties:
       return:
         description: ''
         type: AxiosRequestConfig&lt;any&gt;
+  - name: responseFormat
+    uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.responseFormat'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Forces the model return a specific response format.
+    fullName: responseFormat
+    remarks: This can be used to force the model to always return a valid JSON object.
+    isDeprecated: false
+    syntax:
+      content: 'responseFormat?: { type: "json_object" }'
+      return:
+        description: ''
+        type: '{ type: "json_object" }'
   - name: retryPolicy
     uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.retryPolicy'
     package: '@microsoft/teams-ai'
@@ -48,6 +60,20 @@ properties:
       return:
         description: ''
         type: number[]
+  - name: seed
+    uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.seed'
+    package: '@microsoft/teams-ai'
+    summary: Optional. A static seed to use when making model calls.
+    fullName: seed
+    remarks: >-
+      The default is to use a random seed. Specifying a seed will make the model
+      deterministic.
+    isDeprecated: false
+    syntax:
+      content: 'seed?: number'
+      return:
+        description: ''
+        type: number
   - name: useSystemMessages
     uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.useSystemMessages'
     package: '@microsoft/teams-ai'

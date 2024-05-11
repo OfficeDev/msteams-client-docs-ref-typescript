@@ -20,19 +20,6 @@ constructors:
         - id: options
           type: <xref uid="@microsoft/teams-ai.preview.AssistantsPlannerOptions" />
           description: Options for configuring the AssistantsPlanner.
-properties:
-  - name: openai
-    uid: '@microsoft/teams-ai.preview.AssistantsPlanner.openai'
-    package: '@microsoft/teams-ai'
-    summary: Gets the OpenAI SDK instance being used.
-    fullName: openai
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: OpenAI openai
-      return:
-        description: The OpenAI instance
-        type: OpenAI
 methods:
   - name: beginTask(TurnContext, TState, AI<TState>)
     uid: '@microsoft/teams-ai.preview.AssistantsPlanner.beginTask'
@@ -104,7 +91,7 @@ methods:
       return:
         description: The plan that was generated.
         type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
-  - name: createAssistant(string, AssistantCreateParams)
+  - name: createAssistant(string, AssistantCreationOptions, string)
     uid: '@microsoft/teams-ai.preview.AssistantsPlanner.createAssistant'
     package: '@microsoft/teams-ai'
     summary: Static helper method for programmatically creating an assistant.
@@ -113,14 +100,17 @@ methods:
     syntax:
       content: >-
         static function createAssistant(apiKey: string, request:
-        AssistantCreateParams): Promise<Assistant>
+        AssistantCreationOptions, endpoint?: string): Promise<Assistant>
       parameters:
         - id: apiKey
           type: string
           description: OpenAI API key.
         - id: request
-          type: AssistantCreateParams
+          type: <xref uid="@azure/openai-assistants.AssistantCreationOptions" />
           description: Definition of the assistant to create.
+        - id: endpoint
+          type: string
+          description: The Azure OpenAI resource endpoint.
       return:
         description: The created assistant.
-        type: Promise&lt;Assistant&gt;
+        type: Promise&lt;<xref uid="@azure/openai-assistants.Assistant" />&gt;

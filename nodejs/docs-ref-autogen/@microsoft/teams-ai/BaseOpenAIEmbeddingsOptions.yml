@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: dimensions
+    uid: '@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.dimensions'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Number of dimensions to use when generating embeddings.
+    fullName: dimensions
+    remarks: Only valid for embedding models that support dynamic dimensionality.
+    isDeprecated: false
+    syntax:
+      content: 'dimensions?: number'
+      return:
+        description: ''
+        type: number
   - name: logRequests
     uid: '@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions.logRequests'
     package: '@microsoft/teams-ai'

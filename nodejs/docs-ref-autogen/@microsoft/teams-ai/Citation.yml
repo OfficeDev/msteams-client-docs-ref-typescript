@@ -20,6 +20,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: filepath
+    uid: '@microsoft/teams-ai.Citation.filepath'
+    package: '@microsoft/teams-ai'
+    summary: The filepath of the document.
+    fullName: filepath
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'filepath: string'
+      return:
+        description: ''
+        type: string
   - name: title
     uid: '@microsoft/teams-ai.Citation.title'
     package: '@microsoft/teams-ai'
