@@ -34,6 +34,20 @@ properties:
       return:
         description: ''
         type: string
+  - name: isBackgroundLoad
+    uid: '@microsoft/teams-js.app.PageInfo.isBackgroundLoad'
+    package: '@microsoft/teams-js'
+    summary: |-
+      Indicates whether the page is being loaded in the background as
+      part of an opt-in performance enhancement.
+    fullName: isBackgroundLoad
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'isBackgroundLoad?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: isFullScreen
     uid: '@microsoft/teams-js.app.PageInfo.isFullScreen'
     package: '@microsoft/teams-js'

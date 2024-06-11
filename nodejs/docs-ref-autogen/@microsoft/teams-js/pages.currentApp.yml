@@ -1,9 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.pages.currentApp'
 name: currentApp
-summary: >-
-  Provides functions for navigating without needing to specify your application
-  ID.
+summary: Provides functions for navigating within your own app
 type: module
 interfaces:
   - '@microsoft/teams-js.pages.currentApp.NavigateWithinAppParams'
@@ -25,12 +23,10 @@ functions:
   - name: navigateTo(NavigateWithinAppParams)
     uid: '@microsoft/teams-js.pages.currentApp.navigateTo'
     package: '@microsoft/teams-js'
-    summary: >-
-      Navigate within the currently running application with page ID, and
-      sub-page ID (for navigating to
-
-      specific content within the page).
-    remarks: ''
+    summary: Navigate within the currently running app
+    remarks: >-
+      If you are looking to navigate to a different app, use
+      [navigateToApp](xref:@microsoft/teams-js.pages.navigateToApp).
     isDeprecated: false
     syntax:
       content: 'function navigateTo(params: NavigateWithinAppParams): Promise<void>'
@@ -42,14 +38,16 @@ functions:
             />
           description: Parameters for the navigation
       return:
-        description: a promise that will resolve if the navigation was successful
+        description: >-
+          `Promise` that will resolve if the navigation was successful and
+          reject if not
         type: Promise&lt;void&gt;
   - name: navigateToDefaultPage()
     uid: '@microsoft/teams-js.pages.currentApp.navigateToDefaultPage'
     package: '@microsoft/teams-js'
     summary: >-
-      Navigate to the currently running application's first static page defined
-      in the application
+      Navigate to the currently running app's first static page defined in the
+      application
 
       manifest.
     remarks: ''
@@ -57,5 +55,7 @@ functions:
     syntax:
       content: 'function navigateToDefaultPage(): Promise<void>'
       return:
-        description: ''
+        description: >-
+          `Promise` that will resolve if the navigation was successful and
+          reject if not
         type: Promise&lt;void&gt;

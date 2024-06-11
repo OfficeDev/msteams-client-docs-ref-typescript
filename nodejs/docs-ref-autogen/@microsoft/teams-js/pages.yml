@@ -100,19 +100,12 @@ functions:
     uid: '@microsoft/teams-js.pages.navigateToApp'
     package: '@microsoft/teams-js'
     summary: >-
-      Navigate to the given application ID and page ID, with optional parameters
-      for a WebURL (if the application
+      Used to navigate to apps other than your own.
 
-      cannot be navigated to, such as if it is not installed), Channel ID (for
-      applications installed as a channel tab),
 
-      and sub-page ID (for navigating to specific content within the page). This
-      is equivalent to navigating to
-
-      a deep link with the above data, but does not require the application to
-      build a URL or worry about different
-
-      deep link formats for different hosts.
+      If you are looking to navigate within your own app, use
+      [navigateToDefaultPage](xref:@microsoft/teams-js.pages.currentApp.navigateToDefaultPage)
+      or [navigateTo](xref:@microsoft/teams-js.pages.currentApp.navigateTo)
     remarks: ''
     isDeprecated: false
     syntax:
@@ -122,7 +115,9 @@ functions:
           type: <xref uid="@microsoft/teams-js.pages.NavigateToAppParams" />
           description: Parameters for the navigation
       return:
-        description: a promise that will resolve if the navigation was successful
+        description: >-
+          a `Promise` that will resolve if the navigation was successful or
+          reject if it was not
         type: Promise&lt;void&gt;
   - name: registerFullScreenHandler(fullScreenChangeFunctionType)
     uid: '@microsoft/teams-js.pages.registerFullScreenHandler'

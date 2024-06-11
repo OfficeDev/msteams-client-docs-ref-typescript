@@ -8,4 +8,4 @@ fullName: registerBeforeSuspendOrTerminateHandlerFunctionType
 remarks: ''
 isDeprecated: false
 syntax: |
-  type registerBeforeSuspendOrTerminateHandlerFunctionType = () => void
+  type registerBeforeSuspendOrTerminateHandlerFunctionType = () => Promise<void>

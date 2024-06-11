@@ -19,7 +19,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use
+      As of TeamsJS v2.0.0, please use
       [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
       Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
@@ -117,7 +117,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [authentication.getAuthToken(authTokenRequest:
+      As of TeamsJS v2.0.0, please use
+      [authentication.getAuthToken(authTokenRequest:
       AuthTokenRequestParameters):
       Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken_1)
       instead.
@@ -243,8 +244,9 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, this function has been deprecated in favor of a Promise-based
-      pattern using [authentication.authenticate(authenticateParameters:
+      As of TeamsJS v2.0.0, this function has been deprecated in favor of a
+      Promise-based pattern using
+      [authentication.authenticate(authenticateParameters:
       AuthenticatePopUpParameters):
       Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
 
