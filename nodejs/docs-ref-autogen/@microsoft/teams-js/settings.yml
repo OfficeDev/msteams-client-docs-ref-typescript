@@ -17,7 +17,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.getConfig():
+      As of TeamsJS v2.0.0, please use [pages.getConfig():
       Promise\<InstanceConfig\>](xref:@microsoft/teams-js.pages.getConfig)
       instead.
 
@@ -42,7 +42,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.config.registerOnRemoveHandler(handler:
+      As of TeamsJS v2.0.0, please use
+      [pages.config.registerOnRemoveHandler(handler:
       registerOnRemoveHandlerFunctionType):
       void](xref:@microsoft/teams-js.pages.config.registerOnRemoveHandler)
       instead.
@@ -76,7 +77,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.config.registerOnSaveHandler(handler:
+      As of TeamsJS v2.0.0, please use
+      [pages.config.registerOnSaveHandler(handler:
       registerOnSaveHandlerFunctionType):
       void](xref:@microsoft/teams-js.pages.config.registerOnSaveHandler)
       instead.
@@ -110,8 +112,9 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.config.setConfig(instanceSettings: Config):
-      Promise\<void\>](xref:@microsoft/teams-js.pages.config.setConfig) instead.
+      As of TeamsJS v2.0.0, please use [pages.config.setConfig(instanceSettings:
+      Config): Promise\<void\>](xref:@microsoft/teams-js.pages.config.setConfig)
+      instead.
 
 
       Sets the settings for the current instance.
@@ -139,9 +142,9 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.config.setValidityState(validityState:
-      boolean): void](xref:@microsoft/teams-js.pages.config.setValidityState)
-      instead.
+      As of TeamsJS v2.0.0, please use
+      [pages.config.setValidityState(validityState: boolean):
+      void](xref:@microsoft/teams-js.pages.config.setValidityState) instead.
 
 
       Sets the validity state for the settings.

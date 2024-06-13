@@ -888,7 +888,9 @@ inheritedMethods:
         description: ''
         type: Function[]
     inheritanceDescription: <b>Inherited From</b> DataObject.listeners
-  - name: on(EventEmitter<DefaultEventMap>, string, StaticEventEmitterOptions)
+  - name: >-
+      on(EventEmitter<DefaultEventMap>, string | symbol,
+      StaticEventEmitterOptions)
     uid: '@microsoft/live-share.LiveDataObject.on'
     package: '@microsoft/live-share'
     summary: |-
@@ -951,13 +953,14 @@ inheritedMethods:
     syntax:
       content: >-
         static function on(emitter: EventEmitter<DefaultEventMap>, eventName:
-        string, options?: StaticEventEmitterOptions): AsyncIterableIterator<any>
+        string | symbol, options?: StaticEventEmitterOptions):
+        AsyncIterableIterator<any>
       parameters:
         - id: emitter
           type: EventEmitter&lt;DefaultEventMap&gt;
           description: ''
         - id: eventName
-          type: string
+          type: string | symbol
           description: The name of the event being listened for
         - id: options
           type: StaticEventEmitterOptions
@@ -968,9 +971,33 @@ inheritedMethods:
           `emitter`
         type: AsyncIterableIterator&lt;any&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.on
+  - name: on(EventTarget, string, StaticEventEmitterOptions)
+    uid: '@microsoft/live-share.LiveDataObject.on_1'
+    package: '@microsoft/live-share'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function on(emitter: EventTarget, eventName: string, options?:
+        StaticEventEmitterOptions): AsyncIterableIterator<any>
+      parameters:
+        - id: emitter
+          type: EventTarget
+          description: ''
+        - id: eventName
+          type: string
+          description: ''
+        - id: options
+          type: StaticEventEmitterOptions
+          description: ''
+      return:
+        description: ''
+        type: AsyncIterableIterator&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> DataObject.on
   - name: >-
       once(EventEmitter<DefaultEventMap>, string | symbol,
-      StaticEventEmitterOptions)
+      Pick<StaticEventEmitterOptions, "signal">)
     uid: '@microsoft/live-share.LiveDataObject.once'
     package: '@microsoft/live-share'
     summary: >-
@@ -1098,7 +1125,8 @@ inheritedMethods:
     syntax:
       content: >-
         static function once(emitter: EventEmitter<DefaultEventMap>, eventName:
-        string | symbol, options?: StaticEventEmitterOptions): Promise<any[]>
+        string | symbol, options?: Pick<StaticEventEmitterOptions, "signal">):
+        Promise<any[]>
       parameters:
         - id: emitter
           type: EventEmitter&lt;DefaultEventMap&gt;
@@ -1107,7 +1135,7 @@ inheritedMethods:
           type: string | symbol
           description: ''
         - id: options
-          type: StaticEventEmitterOptions
+          type: Pick&lt;StaticEventEmitterOptions, "signal"&gt;
           description: ''
       return:
         description: ''
@@ -1298,7 +1326,7 @@ inheritedMethods:
         - id: args
           type: AnyRest
           description: ''
-    inheritanceDescription: <b>Inherited From</b> DataObject.__@captureRejectionSymbol@280
+    inheritanceDescription: <b>Inherited From</b> DataObject.__@captureRejectionSymbol@287
 methods:
   - name: getClientInfo(string)
     uid: '@microsoft/live-share.LiveDataObject.getClientInfo'

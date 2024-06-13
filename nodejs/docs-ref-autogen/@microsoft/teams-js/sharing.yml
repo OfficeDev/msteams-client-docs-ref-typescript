@@ -56,7 +56,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [sharing.shareWebContent(shareWebContentRequest:
+      As of TeamsJS v2.0.0, please use
+      [sharing.shareWebContent(shareWebContentRequest:
       IShareRequest\<IShareRequestContentType\>):
       Promise\<void\>](xref:@microsoft/teams-js.sharing.shareWebContent_1)
       instead.

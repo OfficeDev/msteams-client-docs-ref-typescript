@@ -107,8 +107,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [dialog.update.resize(dimensions: DialogSize):
-      void](xref:@microsoft/teams-js.dialog.update.resize) instead.
+      As of TeamsJS v2.0.0, please use [dialog.update.resize(dimensions:
+      DialogSize): void](xref:@microsoft/teams-js.dialog.update.resize) instead.
 
 
       Update height/width task info properties.

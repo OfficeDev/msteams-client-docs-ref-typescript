@@ -86,6 +86,7 @@ interfaces:
   - '@microsoft/teams-js.DialogSize'
   - '@microsoft/teams-js.FrameInfo'
   - '@microsoft/teams-js.IAppWindow'
+  - '@microsoft/teams-js.LoadContext'
   - '@microsoft/teams-js.LocaleInfo'
   - '@microsoft/teams-js.M365ContentAction'
   - '@microsoft/teams-js.OpenConversationRequest'
@@ -184,7 +185,6 @@ typeAliases:
   - '@microsoft/teams-js.videoEffects.VideoFrameData'
   - '@microsoft/teams-js.videoEffects.VideoFrameHandler'
   - '@microsoft/teams-js.FrameContext'
-  - '@microsoft/teams-js.LoadContext'
   - '@microsoft/teams-js.Rectangle'
   - '@microsoft/teams-js.TaskInfo'
   - '@microsoft/teams-js.addEventListnerFunctionType'
@@ -313,7 +313,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [teamsCore.enablePrintCapability():
+      As of TeamsJS v2.0.0, please use [teamsCore.enablePrintCapability():
       void](xref:@microsoft/teams-js.teamsCore.enablePrintCapability) instead.
 
 
@@ -327,11 +327,26 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.openLink(deepLink: string):
-      Promise\<void\>](xref:@microsoft/teams-js.app.openLink) instead.
+      This function was previously used for opening various types of links. As
+      of TeamsJS v2.0.0, it has been replaced with multiple different
+
+      functions depending on the type of link:
 
 
-      Execute deep link API.
+      - Use
+      [navigateToDefaultPage](xref:@microsoft/teams-js.pages.currentApp.navigateToDefaultPage)
+      to navigate to the default page of your own app
+
+      - Use [navigateTo](xref:@microsoft/teams-js.pages.currentApp.navigateTo)
+      to navigate to a section of your own app
+
+      - Use [navigateToApp](xref:@microsoft/teams-js.pages.navigateToApp) to
+      navigate to other apps besides your own
+
+      - Use [openLink](xref:@microsoft/teams-js.app.openLink) for opening deep
+      links to other parts of the host (e.g., to chats or channels) or
+
+      general-purpose links (e.g., to external websites).
     syntax:
       content: >-
         function executeDeepLink(deepLink: string, onComplete?:
@@ -385,7 +400,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.getContext():
+      As of TeamsJS v2.0.0, please use [app.getContext():
       Promise\<app.Context\>](xref:@microsoft/teams-js.app.getContext) instead.
 
 
@@ -407,7 +422,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use
+      As of TeamsJS v2.0.0, please use
       [pages.tabs.getMruTabInstances(tabInstanceParameters?:
       TabInstanceParameters):
       Promise\<TabInformation\>](xref:@microsoft/teams-js.pages.tabs.getMruTabInstances)
@@ -461,7 +476,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use
+      As of TeamsJS v2.0.0, please use
       [pages.tabs.getTabInstances(tabInstanceParameters?:
       TabInstanceParameters):
       Promise\<TabInformation\>](xref:@microsoft/teams-js.pages.tabs.getTabInstances)
@@ -517,8 +532,9 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.initialize(validMessageOrigins?: string[]):
-      Promise\<void\>](xref:@microsoft/teams-js.app.initialize) instead.
+      As of TeamsJS v2.0.0, please use [app.initialize(validMessageOrigins?:
+      string[]): Promise\<void\>](xref:@microsoft/teams-js.app.initialize)
+      instead.
 
 
       Initializes the library. This must be called before any other SDK calls
@@ -549,9 +565,9 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.initializeWithFrameContext(frameInfo:
-      FrameInfo, callback?: callbackFunctionType, validMessageOrigins?:
-      string[],):
+      As of TeamsJS v2.0.0, please use
+      [pages.initializeWithFrameContext(frameInfo: FrameInfo, callback?:
+      callbackFunctionType, validMessageOrigins?: string[],):
       void](xref:@microsoft/teams-js.pages.initializeWithFrameContext) instead.
 
 
@@ -598,7 +614,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.backStack.navigateBack():
+      As of TeamsJS v2.0.0, please use [pages.backStack.navigateBack():
       Promise\<void\>](xref:@microsoft/teams-js.pages.backStack.navigateBack)
       instead.
 
@@ -620,7 +636,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.navigateCrossDomain(url: string):
+      As of TeamsJS v2.0.0, please use [pages.navigateCrossDomain(url: string):
       Promise\<void\>](xref:@microsoft/teams-js.pages.navigateCrossDomain)
       instead.
 
@@ -676,7 +692,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.tabs.navigateToTab(tabInstance:
+      As of TeamsJS v2.0.0, please use [pages.tabs.navigateToTab(tabInstance:
       TabInstance):
       Promise\<void\>](xref:@microsoft/teams-js.pages.tabs.navigateToTab)
       instead.
@@ -779,7 +795,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [teamsCore.print():
+      As of TeamsJS v2.0.0, please use [teamsCore.print():
       void](xref:@microsoft/teams-js.teamsCore.print) instead.
 
 
@@ -793,7 +809,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.appButton.onClick(handler:
+      As of TeamsJS v2.0.0, please use [pages.appButton.onClick(handler:
       callbackFunctionType):
       void](xref:@microsoft/teams-js.pages.appButton.onClick) instead.
 
@@ -817,7 +833,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.appButton.onHoverEnter(handler:
+      As of TeamsJS v2.0.0, please use [pages.appButton.onHoverEnter(handler:
       callbackFunctionType):
       void](xref:@microsoft/teams-js.pages.appButton.onHoverEnter) instead.
 
@@ -843,7 +859,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.appButton.onHoverLeave(handler:
+      As of TeamsJS v2.0.0, please use [pages.appButton.onHoverLeave(handler:
       callbackFunctionType):
       void](xref:@microsoft/teams-js.pages.appButton.onHoverLeave) instead.
 
@@ -869,7 +885,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use
+      As of TeamsJS v2.0.0, please use
       [pages.backStack.registerBackButtonHandler(handler:
       registerBackButtonHandlerFunctionType):
       void](xref:@microsoft/teams-js.pages.backStack.registerBackButtonHandler)
@@ -905,8 +921,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.config.registerChangeConfigHandler(handler:
-      callbackFunctionType):
+      As of TeamsJS v2.0.0, please use
+      [pages.config.registerChangeConfigHandler(handler: callbackFunctionType):
       void](xref:@microsoft/teams-js.pages.config.registerChangeConfigHandler)
       instead.
 
@@ -925,7 +941,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.registerFullScreenHandler(handler:
+      As of TeamsJS v2.0.0, please use [pages.registerFullScreenHandler(handler:
       registerFullScreenHandlerFunctionType):
       void](xref:@microsoft/teams-js.pages.registerFullScreenHandler) instead.
 
@@ -953,7 +969,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.registerOnThemeChangeHandler(handler:
+      As of TeamsJS v2.0.0, please use
+      [app.registerOnThemeChangeHandler(handler:
       registerOnThemeChangeHandlerFunctionType):
       void](xref:@microsoft/teams-js.app.registerOnThemeChangeHandler) instead.
 
@@ -997,8 +1014,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.returnFocus(navigateForward?: boolean):
-      void](xref:@microsoft/teams-js.pages.returnFocus) instead.
+      As of TeamsJS v2.0.0, please use [pages.returnFocus(navigateForward?:
+      boolean): void](xref:@microsoft/teams-js.pages.returnFocus) instead.
 
 
       Return focus to the main Teams app. Will focus search bar if navigating
@@ -1050,8 +1067,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.setCurrentFrame(frameInfo: FrameInfo):
-      void](xref:@microsoft/teams-js.pages.setCurrentFrame) instead.
+      As of TeamsJS v2.0.0, please use [pages.setCurrentFrame(frameInfo:
+      FrameInfo): void](xref:@microsoft/teams-js.pages.setCurrentFrame) instead.
 
 
       Set the current Frame Context
@@ -1068,7 +1085,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [pages.shareDeepLink(deepLinkParameters:
+      As of TeamsJS v2.0.0, please use [pages.shareDeepLink(deepLinkParameters:
       DeepLinkParameters): void](xref:@microsoft/teams-js.pages.shareDeepLink)
       instead.
 

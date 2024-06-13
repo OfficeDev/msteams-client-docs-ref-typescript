@@ -12,7 +12,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.notifyAppLoaded():
+      As of TeamsJS v2.0.0, please use [app.notifyAppLoaded():
       void](xref:@microsoft/teams-js.app.notifyAppLoaded) instead.
 
 
@@ -27,7 +27,8 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.notifyExpectedFailure(expectedFailureRequest:
+      As of TeamsJS v2.0.0, please use
+      [app.notifyExpectedFailure(expectedFailureRequest:
       IExpectedFailureRequest):
       void](xref:@microsoft/teams-js.app.notifyExpectedFailure) instead.
 
@@ -50,9 +51,9 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.notifyFailure(appInitializationFailedRequest:
-      IFailedRequest): void](xref:@microsoft/teams-js.app.notifyFailure)
-      instead.
+      As of TeamsJS v2.0.0, please use
+      [app.notifyFailure(appInitializationFailedRequest: IFailedRequest):
+      void](xref:@microsoft/teams-js.app.notifyFailure) instead.
 
 
       Notifies the frame that app initialization has failed and to show an error
@@ -72,7 +73,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [app.notifySuccess():
+      As of TeamsJS v2.0.0, please use [app.notifySuccess():
       void](xref:@microsoft/teams-js.app.notifySuccess) instead.
 
 

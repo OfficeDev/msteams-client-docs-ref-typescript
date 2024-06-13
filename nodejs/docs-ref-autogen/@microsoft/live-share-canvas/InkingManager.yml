@@ -854,7 +854,9 @@ inheritedMethods:
         description: ''
         type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.off
-  - name: on(EventEmitter<DefaultEventMap>, string, StaticEventEmitterOptions)
+  - name: >-
+      on(EventEmitter<DefaultEventMap>, string | symbol,
+      StaticEventEmitterOptions)
     uid: '@microsoft/live-share-canvas.InkingManager.on'
     package: '@microsoft/live-share-canvas'
     summary: |-
@@ -917,13 +919,14 @@ inheritedMethods:
     syntax:
       content: >-
         static function on(emitter: EventEmitter<DefaultEventMap>, eventName:
-        string, options?: StaticEventEmitterOptions): AsyncIterableIterator<any>
+        string | symbol, options?: StaticEventEmitterOptions):
+        AsyncIterableIterator<any>
       parameters:
         - id: emitter
           type: EventEmitter&lt;DefaultEventMap&gt;
           description: ''
         - id: eventName
-          type: string
+          type: string | symbol
           description: The name of the event being listened for
         - id: options
           type: StaticEventEmitterOptions
@@ -932,6 +935,30 @@ inheritedMethods:
         description: >-
           An `AsyncIterator` that iterates `eventName` events emitted by the
           `emitter`
+        type: AsyncIterableIterator&lt;any&gt;
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.on
+  - name: on(EventTarget, string, StaticEventEmitterOptions)
+    uid: '@microsoft/live-share-canvas.InkingManager.on_1'
+    package: '@microsoft/live-share-canvas'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function on(emitter: EventTarget, eventName: string, options?:
+        StaticEventEmitterOptions): AsyncIterableIterator<any>
+      parameters:
+        - id: emitter
+          type: EventTarget
+          description: ''
+        - id: eventName
+          type: string
+          description: ''
+        - id: options
+          type: StaticEventEmitterOptions
+          description: ''
+      return:
+        description: ''
         type: AsyncIterableIterator&lt;any&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'on<K>(string | symbol, (args: any[]) => void)'
@@ -1006,7 +1033,7 @@ inheritedMethods:
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: >-
       once(EventEmitter<DefaultEventMap>, string | symbol,
-      StaticEventEmitterOptions)
+      Pick<StaticEventEmitterOptions, "signal">)
     uid: '@microsoft/live-share-canvas.InkingManager.once'
     package: '@microsoft/live-share-canvas'
     summary: >-
@@ -1134,7 +1161,8 @@ inheritedMethods:
     syntax:
       content: >-
         static function once(emitter: EventEmitter<DefaultEventMap>, eventName:
-        string | symbol, options?: StaticEventEmitterOptions): Promise<any[]>
+        string | symbol, options?: Pick<StaticEventEmitterOptions, "signal">):
+        Promise<any[]>
       parameters:
         - id: emitter
           type: EventEmitter&lt;DefaultEventMap&gt;
@@ -1143,7 +1171,7 @@ inheritedMethods:
           type: string | symbol
           description: ''
         - id: options
-          type: StaticEventEmitterOptions
+          type: Pick&lt;StaticEventEmitterOptions, "signal"&gt;
           description: ''
       return:
         description: ''
@@ -1626,7 +1654,7 @@ inheritedMethods:
         - id: args
           type: AnyRest
           description: ''
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@235
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@242
 methods:
   - name: activate()
     uid: '@microsoft/live-share-canvas.InkingManager.activate'

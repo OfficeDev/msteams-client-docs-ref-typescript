@@ -10,7 +10,8 @@ fullName: AuthenticateParameters
 remarks: ''
 isDeprecated: true
 customDeprecatedMessage: >-
-  As of 2.0.0, please use [authentication.authenticate(authenticateParameters:
+  As of TeamsJS v2.0.0, please use
+  [authentication.authenticate(authenticateParameters:
   AuthenticatePopUpParameters):
   Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1) and
 
