@@ -2,7 +2,9 @@
 name: NavigateWithinAppParams
 uid: '@microsoft/teams-js.pages.currentApp.NavigateWithinAppParams'
 package: '@microsoft/teams-js'
-summary: Parameters for the NavigateWithinApp
+summary: >-
+  Parameters provided to the
+  [navigateTo](xref:@microsoft/teams-js.pages.currentApp.navigateTo) function
 fullName: NavigateWithinAppParams
 remarks: ''
 isDeprecated: false
@@ -17,7 +19,7 @@ properties:
 
       the page. (Known as
       <code><xref:@microsoft/teams-js.Context.entityId></code> prior to TeamsJS
-      v.2.0.0)
+      v2.0.0)
     fullName: pageId
     remarks: ''
     isDeprecated: false

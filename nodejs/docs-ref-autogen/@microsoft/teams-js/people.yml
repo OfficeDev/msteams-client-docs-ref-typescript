@@ -53,7 +53,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.0.0, please use [people.selectPeople(peoplePickerInputs?:
+      As of TeamsJS v2.0.0, please use [people.selectPeople(peoplePickerInputs?:
       PeoplePickerInputs):
       Promise\<PeoplePickerResult[]\>](xref:@microsoft/teams-js.people.selectPeople_1)
       instead.

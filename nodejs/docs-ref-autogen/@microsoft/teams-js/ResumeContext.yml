@@ -21,10 +21,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'contentUrl: string'
+      content: 'contentUrl: URL'
       return:
         description: ''
-        type: string
+        type: URL
   - name: entityId
     uid: '@microsoft/teams-js.ResumeContext.entityId'
     package: '@microsoft/teams-js'

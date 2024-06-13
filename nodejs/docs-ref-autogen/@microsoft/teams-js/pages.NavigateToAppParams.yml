@@ -11,7 +11,7 @@ properties:
   - name: appId
     uid: '@microsoft/teams-js.pages.NavigateToAppParams.appId'
     package: '@microsoft/teams-js'
-    summary: ID of the application to navigate to
+    summary: ID of the app to navigate to
     fullName: appId
     remarks: ''
     isDeprecated: false
@@ -23,7 +23,9 @@ properties:
   - name: channelId
     uid: '@microsoft/teams-js.pages.NavigateToAppParams.channelId'
     package: '@microsoft/teams-js'
-    summary: Optional ID of the Teams Channel where the application should be opened
+    summary: >-
+      For apps installed as a channel tab, this ID can be supplied to indicate
+      in which Teams channel the app should be opened
     fullName: channelId
     remarks: ''
     isDeprecated: false
@@ -36,8 +38,8 @@ properties:
     uid: '@microsoft/teams-js.pages.NavigateToAppParams.pageId'
     package: '@microsoft/teams-js'
     summary: >-
-      Developer-defined ID of the Page to navigate to within the application
-      (Formerly EntityID)
+      Developer-defined ID of the page to navigate to within the app (formerly
+      called `entityId`)
     fullName: pageId
     remarks: ''
     isDeprecated: false
@@ -50,10 +52,13 @@ properties:
     uid: '@microsoft/teams-js.pages.NavigateToAppParams.subPageId'
     package: '@microsoft/teams-js'
     summary: >-
-      Optional developer-defined ID describing the content to navigate to within
-      the Page. This will be passed
+      Developer-defined ID describing the content to navigate to within the
+      page. This ID is passed to the application
 
-      back to the application via the Context object.
+      via the [subPageId](xref:@microsoft/teams-js.app.PageInfo.subPageId)
+      property on the [Context](xref:@microsoft/teams-js.app.Context) object
+      (retrieved by calling
+      [getContext](xref:@microsoft/teams-js.app.getContext))
     fullName: subPageId
     remarks: ''
     isDeprecated: false
@@ -65,7 +70,9 @@ properties:
   - name: webUrl
     uid: '@microsoft/teams-js.pages.NavigateToAppParams.webUrl'
     package: '@microsoft/teams-js'
-    summary: Optional URL to open if the navigation cannot be completed within the host
+    summary: >-
+      Fallback URL to open if the navigation cannot be completed within the host
+      (e.g. if the target app is not installed)
     fullName: webUrl
     remarks: ''
     isDeprecated: false

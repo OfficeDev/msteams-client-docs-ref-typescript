@@ -141,17 +141,79 @@ functions:
   - name: openLink(string)
     uid: '@microsoft/teams-js.app.openLink'
     package: '@microsoft/teams-js'
-    summary: open link API.
-    remarks: ''
+    summary: >-
+      This function opens deep links to other modules in the host such as chats
+      or channels or
+
+      general-purpose links (to external websites). It should not be used for
+      navigating to your
+
+      own or other apps.
+    remarks: >-
+      If you need to navigate to your own or other apps, use:
+
+
+      -
+      [navigateToDefaultPage](xref:@microsoft/teams-js.pages.currentApp.navigateToDefaultPage)
+      for navigating to the default page of your own app
+
+      - [navigateTo](xref:@microsoft/teams-js.pages.currentApp.navigateTo) for
+      navigating to a section of your own app
+
+      - [navigateToApp](xref:@microsoft/teams-js.pages.navigateToApp) for
+      navigating to other apps besides your own
+
+
+      Many areas of functionality previously provided by deep links are now
+      handled by strongly-typed functions in capabilities.
+
+      If your app is using a deep link to trigger these specific components, use
+      the strongly-typed alternatives.
+
+      For example (this list is not exhaustive):
+
+      - To open an app installation dialog, use the
+      [appInstallDialog](xref:@microsoft/teams-js.appInstallDialog) capability
+
+      - To start a call, use the [call](xref:@microsoft/teams-js.call)
+      capability
+
+      - To open a chat, use the [chat](xref:@microsoft/teams-js.chat) capability
+
+      - To open a dialog, use the [dialog](xref:@microsoft/teams-js.dialog)
+      capability
+
+      - To create a new meeting, use the
+      [composeMeeting](xref:@microsoft/teams-js.calendar.composeMeeting)
+      function
+
+      - To open a Stage View, use the
+      [stageView](xref:@microsoft/teams-js.stageView) capability
+
+
+      In each of these capabilities, you can use the `isSupported()` function to
+      determine if the host supports that capability.
+
+      When using a deep link to trigger these components, there's no way to
+      determine whether the host supports it.
+
+
+      For more information on crafting deep links to the host, see [Configure
+      deep
+      links](https://learn.microsoft.com/microsoftteams/platform/concepts/build-and-test/deep-links)
     isDeprecated: false
     syntax:
       content: 'function openLink(deepLink: string): Promise<void>'
       parameters:
         - id: deepLink
           type: string
-          description: deep link.
+          description: The host deep link or external web URL to which to navigate
       return:
-        description: Promise that will be fulfilled when the operation has completed
+        description: >-
+          `Promise` that will be fulfilled when the navigation has initiated. A
+          successful `Promise` resolution
+
+          does not necessarily indicate whether the target loaded successfully.
         type: Promise&lt;void&gt;
   - name: registerOnThemeChangeHandler(themeHandler)
     uid: '@microsoft/teams-js.app.registerOnThemeChangeHandler'

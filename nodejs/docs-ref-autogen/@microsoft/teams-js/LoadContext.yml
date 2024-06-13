@@ -1,4 +1,4 @@
-### YamlMime:TSTypeAlias
+### YamlMime:TSType
 name: LoadContext
 uid: '@microsoft/teams-js.LoadContext'
 package: '@microsoft/teams-js'
@@ -9,5 +9,29 @@ isDeprecated: true
 customDeprecatedMessage: >-
   As of 2.14.1, please use
   [ResumeContext](xref:@microsoft/teams-js.ResumeContext) instead.
-syntax: |
-  type LoadContext = ResumeContext
+type: interface
+properties:
+  - name: contentUrl
+    uid: '@microsoft/teams-js.LoadContext.contentUrl'
+    package: '@microsoft/teams-js'
+    summary: The content URL that is requested to be loaded
+    fullName: contentUrl
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'contentUrl: string'
+      return:
+        description: ''
+        type: string
+  - name: entityId
+    uid: '@microsoft/teams-js.LoadContext.entityId'
+    package: '@microsoft/teams-js'
+    summary: The entity that is requested to be loaded
+    fullName: entityId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'entityId: string'
+      return:
+        description: ''
+        type: string
