@@ -8,6 +8,22 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: azureADTokenProvider
+    uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.azureADTokenProvider'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. A function that returns an access token for Microsoft Entra
+      (formerly known as Azure Active Directory),
+
+      which will be invoked on every request.
+    fullName: azureADTokenProvider
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'azureADTokenProvider?: () => Promise<string>'
+      return:
+        description: ''
+        type: () =&gt; Promise&lt;string&gt;
   - name: azureApiKey
     uid: '@microsoft/teams-ai.AzureOpenAIModelOptions.azureApiKey'
     package: '@microsoft/teams-ai'
@@ -16,7 +32,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'azureApiKey: string'
+      content: 'azureApiKey?: string'
       return:
         description: ''
         type: string

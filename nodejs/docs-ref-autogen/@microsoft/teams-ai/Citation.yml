@@ -28,10 +28,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'filepath: string'
+      content: 'filepath: null | string'
       return:
         description: ''
-        type: string
+        type: null | string
   - name: title
     uid: '@microsoft/teams-ai.Citation.title'
     package: '@microsoft/teams-ai'
@@ -40,10 +40,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'title: string'
+      content: 'title: null | string'
       return:
         description: ''
-        type: string
+        type: null | string
   - name: url
     uid: '@microsoft/teams-ai.Citation.url'
     package: '@microsoft/teams-ai'
@@ -52,7 +52,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'url: string'
+      content: 'url: null | string'
       return:
         description: ''
-        type: string
+        type: null | string

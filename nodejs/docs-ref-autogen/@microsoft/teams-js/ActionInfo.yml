@@ -2,9 +2,11 @@
 name: ActionInfo
 uid: '@microsoft/teams-js.ActionInfo'
 package: '@microsoft/teams-js'
-summary: Information common to all actions
+summary: Information about an Action.
 fullName: ActionInfo
-remarks: ''
+remarks: >-
+  This contains Id of the action, and the information about the object that
+  triggered the action.
 previewState: beta
 isDeprecated: false
 type: interface
@@ -12,7 +14,7 @@ properties:
   - name: actionId
     uid: '@microsoft/teams-js.ActionInfo.actionId'
     package: '@microsoft/teams-js'
-    summary: Maps to the action id supplied inside the manifest
+    summary: Id of the action. Maps to the action id supplied inside the manifest
     fullName: actionId
     remarks: ''
     isDeprecated: false
