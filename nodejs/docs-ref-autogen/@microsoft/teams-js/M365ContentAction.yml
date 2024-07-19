@@ -2,9 +2,9 @@
 name: M365ContentAction
 uid: '@microsoft/teams-js.M365ContentAction'
 package: '@microsoft/teams-js'
-summary: |-
-  Stores information needed to represent M365 Content stored
-  in OneDrive or Sharepoint
+summary: >-
+  Stores information needed to represent content stored in OneDrive or
+  Sharepoint
 fullName: M365ContentAction
 remarks: ''
 previewState: beta
