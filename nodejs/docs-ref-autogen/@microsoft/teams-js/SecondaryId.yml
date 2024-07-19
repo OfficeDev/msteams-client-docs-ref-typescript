@@ -2,7 +2,9 @@
 name: SecondaryId
 uid: '@microsoft/teams-js.SecondaryId'
 package: '@microsoft/teams-js'
-summary: Contains information on what Graph item is being queried
+summary: >-
+  Contains additional IDs of the content that the action is triggered from. Maps
+  to ids used in the Graph.
 fullName: SecondaryId
 remarks: ''
 previewState: beta

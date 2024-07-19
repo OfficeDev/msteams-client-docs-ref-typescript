@@ -2,7 +2,7 @@
 name: ActionObjectType
 uid: '@microsoft/teams-js.ActionObjectType'
 package: '@microsoft/teams-js'
-summary: Possible Action Types
+summary: Types of Action Objects
 fullName: ActionObjectType
 remarks: ''
 previewState: beta
