@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams SDK reference
 description: Reference documentation for Microsoft Teams SDK
-ms.date: 06/21/2024
+ms.date: 07/30/2024
 ms.topic: reference
 keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
@@ -17,7 +17,7 @@ There are several libraries available to support various aspects of Teams app de
 
 ## Microsoft Teams Live Share
 
-The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is compromised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (sometimes called *Live Share core*) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. *Live Share media* allows for media synchronization of video and audio during a Teams session. *Live Share canvas* adds annotation tools for whiteboard and PowerPoint presentations. 
+The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is comprised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (sometimes called *Live Share core*) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. *Live Share media* allows for media synchronization of video and audio during a Teams session. *Live Share canvas* adds annotation tools for whiteboard and PowerPoint presentations. 
 
 ### Finding the library
 
@@ -112,13 +112,13 @@ TeamsJS can also be referenced from its CDN endpoints:
 ```javascript
 <!-- Microsoft Teams JavaScript API (via CDN) -->
 <script
-  src="https://res.cdn.office.net/teams-js/2.24.0/js/MicrosoftTeams.min.js"
-  integrity="sha384-79NK4sbfVpgLoDFqyfj18/S1Uj8jhLBeRGvKO1Cqw5634RznExQ90myY/qV/0gsN"
+  src="https://res.cdn.office.net/teams-js/2.25.0/js/MicrosoftTeams.min.js"
+  integrity="sha384-6royw0i5cEmf/8pzbTX9dVy1pjjJA8PQOaQbGvoL/m39OdjrlcWluhQZxqy5KbJA"
   crossorigin="anonymous"
 ></script>
 
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@2.24.0/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@2.25.0/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (via local) -->
 <script src="MicrosoftTeams.min.js"></script>
