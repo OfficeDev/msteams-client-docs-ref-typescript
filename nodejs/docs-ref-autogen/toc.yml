@@ -1459,6 +1459,9 @@
       items:
         - name: Overview
           uid: '@microsoft/teams-js.stageView'
+        - uid: '@microsoft/teams-js.stageView.self'
+          name: self
+          items: []
         - uid: '@microsoft/teams-js.stageView.StageViewOpenMode'
           name: StageViewOpenMode
           items: []
