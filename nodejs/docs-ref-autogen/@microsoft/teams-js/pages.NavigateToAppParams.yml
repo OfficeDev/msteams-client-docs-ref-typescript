@@ -34,6 +34,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: chatId
+    uid: '@microsoft/teams-js.pages.NavigateToAppParams.chatId'
+    package: '@microsoft/teams-js'
+    summary: Optional ID of the chat or meeting where the app should be opened
+    fullName: chatId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'chatId?: string'
+      return:
+        description: ''
+        type: string
   - name: pageId
     uid: '@microsoft/teams-js.pages.NavigateToAppParams.pageId'
     package: '@microsoft/teams-js'

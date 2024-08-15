@@ -71,22 +71,20 @@ functions:
   - name: navigateCrossDomain(string)
     uid: '@microsoft/teams-js.pages.navigateCrossDomain'
     package: '@microsoft/teams-js'
-    summary: >-
-      Navigates the frame to a new cross-domain URL. The domain of this URL must
-      match at least one of the
-
-      valid domains specified in the validDomains block of the manifest;
-      otherwise, an exception will be
-
-      thrown. This function needs to be used only when navigating the frame to a
-      URL in a different domain
-
-      than the current one in a way that keeps the application informed of the
-      change and allows the SDK to
-
-      continue working.
+    summary: ''
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of 2.0.0, this API is deprecated and can be replaced by the standard
+      JavaScript
+
+      API, window.location.href, when navigating the app to a new cross-domain
+      URL. Any URL
+
+      that is redirected to must be listed in the validDomains block of the
+      manifest. Please
+
+      remove any calls to this API.
     syntax:
       content: 'function navigateCrossDomain(url: string): Promise<void>'
       parameters:
