@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'augmentation_type: "none" | "sequence" | "monologue"'
+      content: 'augmentation_type: "none" | "monologue" | "sequence" | "tools"'
       return:
         description: ''
-        type: '"none" | "sequence" | "monologue"'
+        type: '"none" | "monologue" | "sequence" | "tools"'
   - name: data_sources
     uid: '@microsoft/teams-ai.AugmentationConfig.data_sources'
     package: '@microsoft/teams-ai'

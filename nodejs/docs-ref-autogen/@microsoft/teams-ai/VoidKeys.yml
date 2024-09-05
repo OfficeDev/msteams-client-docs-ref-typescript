@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: VoidKeys
+uid: '@microsoft/teams-ai.VoidKeys'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: VoidKeys<Record>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type VoidKeys<Record> = MatchingKeys<Record, void>

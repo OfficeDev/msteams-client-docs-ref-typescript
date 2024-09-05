@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: InnerEEMethodReturnType
+uid: '@microsoft/teams-ai.InnerEEMethodReturnType'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: InnerEEMethodReturnType<T, TValue, FValue>
+remarks: ''
+isDeprecated: false
+syntax: >
+  type InnerEEMethodReturnType<T, TValue, FValue> = T extends (args: any[]) =>
+  any
+    ? ReturnType<T> extends void | undefined
+      ? FValue
+      : TValue
+    : FValue

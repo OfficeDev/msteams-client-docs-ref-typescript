@@ -1,0 +1,24 @@
+### YamlMime:TSTypeAlias
+name: OverriddenMethods
+uid: '@microsoft/teams-ai.OverriddenMethods'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: OverriddenMethods<TEmitter, TEventRecord, TEmitRecord>
+remarks: ''
+isDeprecated: false
+syntax: >-
+  type OverriddenMethods<TEmitter, TEventRecord, TEmitRecord> = {
+  addEventListener(this: T, event: P, listener: (args:
+  ListenerType<TEventRecord[P]>) => void) => EEMethodReturnType<TEmitter,
+  "addEventListener", T, void>, addListener(this: T, event: P, listener: (args:
+  ListenerType<TEventRecord[P]>) => void) => EEMethodReturnType<TEmitter,
+  "addListener", T, void>, emit(this: T, event: P, args:
+  ListenerType<TEmitRecord[P]>) => EEMethodReturnType<TEmitter, "emit", T,
+  void>, on(this: T, event: P, listener: (args: ListenerType<TEventRecord[P]>)
+  => void) => EEMethodReturnType<TEmitter, "on", T, void>, once(this: T, event:
+  P, listener: (args: ListenerType<TEventRecord[P]>) => void) =>
+  EEMethodReturnType<TEmitter, "once", T, void>, removeEventListener(this: T,
+  event: P, listener: (args: any[]) => any) => EEMethodReturnType<TEmitter,
+  "removeEventListener", T, void>, removeListener(this: T, event: P, listener:
+  (args: any[]) => any) => EEMethodReturnType<TEmitter, "removeListener", T,
+  void> }

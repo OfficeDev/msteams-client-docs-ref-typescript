@@ -7,6 +7,19 @@ fullName: PromptCompletionModel
 remarks: ''
 isDeprecated: false
 type: interface
+properties:
+  - name: events
+    uid: '@microsoft/teams-ai.PromptCompletionModel.events'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Events emitted by the model.
+    fullName: events
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'events?: PromptCompletionModelEmitter'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.PromptCompletionModelEmitter" />
 methods:
   - name: >-
       completePrompt(TurnContext, Memory, PromptFunctions, Tokenizer,
@@ -39,6 +52,4 @@ methods:
           description: Prompt template to complete.
       return:
         description: A `PromptResponse` with the status and message.
-        type: >-
-          Promise&lt;<xref uid="@microsoft/teams-ai.PromptResponse"
-          />&lt;string&gt;&gt;
+        type: Promise&lt;PromptResponse&lt;string&gt;&gt;

@@ -1,0 +1,58 @@
+### YamlMime:TSType
+name: PromptCompletionModelEvents
+uid: '@microsoft/teams-ai.PromptCompletionModelEvents'
+package: '@microsoft/teams-ai'
+summary: Events emitted by a PromptCompletionModel.
+fullName: PromptCompletionModelEvents
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: beforeCompletion
+    uid: '@microsoft/teams-ai.PromptCompletionModelEvents.beforeCompletion'
+    package: '@microsoft/teams-ai'
+    summary: Triggered before the model is called to complete a prompt.
+    fullName: beforeCompletion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        beforeCompletion: (context: TurnContext, memory: Memory, functions:
+        PromptFunctions, tokenizer: Tokenizer, template: PromptTemplate,
+        streaming: boolean) => void
+      return:
+        description: ''
+        type: >-
+          (context: TurnContext, memory: Memory, functions: PromptFunctions,
+          tokenizer: Tokenizer, template: PromptTemplate, streaming: boolean)
+          =&gt; void
+  - name: chunkReceived
+    uid: '@microsoft/teams-ai.PromptCompletionModelEvents.chunkReceived'
+    package: '@microsoft/teams-ai'
+    summary: Triggered when a chunk is received from the model via streaming.
+    fullName: chunkReceived
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        chunkReceived: (context: TurnContext, memory: Memory, chunk:
+        PromptChunk) => void
+      return:
+        description: ''
+        type: '(context: TurnContext, memory: Memory, chunk: PromptChunk) =&gt; void'
+  - name: responseReceived
+    uid: '@microsoft/teams-ai.PromptCompletionModelEvents.responseReceived'
+    package: '@microsoft/teams-ai'
+    summary: Triggered after the model finishes returning a response.
+    fullName: responseReceived
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        responseReceived: (context: TurnContext, memory: Memory, response:
+        PromptResponse<string>) => void
+      return:
+        description: ''
+        type: >-
+          (context: TurnContext, memory: Memory, response:
+          PromptResponse&lt;string&gt;) =&gt; void

@@ -1,34 +1,34 @@
 ### YamlMime:TSType
-name: MonologueAugmentation
-uid: '@microsoft/teams-ai.MonologueAugmentation'
+name: ToolsAugmentation
+uid: '@microsoft/teams-ai.ToolsAugmentation'
 package: '@microsoft/teams-ai'
-summary: The 'monologue' augmentation.
-fullName: MonologueAugmentation
-remarks: >-
-  This augmentation adds support for an inner monologue to the prompt. The
-  monologue helps the LLM
+summary: >-
+  The 'tools' augmentation is for enabling server-side action/tools calling.
 
-  to perform chain-of-thought reasoning across multiple turns of conversation.
+  In the Teams AI Library, the equivalent to OpenAI's 'tools' functionality is
+  called an 'action'.
+
+  More information about OpenAI's tools can be found at [OpenAI API
+  docs](https://platform.openai.com/docs/api-reference/chat/create#chat-create-tool_choice).
+
+
+  Therefore, tools/actions are defined in `actions.json`, and when 'tools'
+  augmentation is set in `config.json`, the LLM model can specify which
+  action(s) to call.
+
+  To avoid using server-side tool-calling, do not set augmentation to 'tools' in
+  `config.json`.
+
+  Server-side tool-calling is not compatible with other augmentation types.
+fullName: ToolsAugmentation
+remarks: ''
 isDeprecated: false
 type: class
-constructors:
-  - name: MonologueAugmentation(ChatCompletionAction[])
-    uid: '@microsoft/teams-ai.MonologueAugmentation.constructor'
-    package: '@microsoft/teams-ai'
-    summary: Creates a new `MonologueAugmentation` instance.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'new MonologueAugmentation(actions: ChatCompletionAction[])'
-      parameters:
-        - id: actions
-          type: <xref uid="@microsoft/teams-ai.ChatCompletionAction" />[]
-          description: List of actions supported by the prompt.
 methods:
   - name: >-
-      createPlanFromResponse(TurnContext, Memory, PromptResponse<undefined |
-      InnerMonologue>)
-    uid: '@microsoft/teams-ai.MonologueAugmentation.createPlanFromResponse'
+      createPlanFromResponse(TurnContext, Memory, PromptResponse<string |
+      ActionCall[]>)
+    uid: '@microsoft/teams-ai.ToolsAugmentation.createPlanFromResponse'
     package: '@microsoft/teams-ai'
     summary: Creates a plan given validated response value.
     remarks: ''
@@ -36,7 +36,7 @@ methods:
     syntax:
       content: >-
         function createPlanFromResponse(context: TurnContext, memory: Memory,
-        response: PromptResponse<undefined | InnerMonologue>): Promise<Plan>
+        response: PromptResponse<string | ActionCall[]>): Promise<Plan>
       parameters:
         - id: context
           type: TurnContext
@@ -45,15 +45,13 @@ methods:
           type: <xref uid="@microsoft/teams-ai.Memory" />
           description: An interface for accessing state variables.
         - id: response
-          type: >-
-            PromptResponse&lt;undefined | <xref
-            uid="@microsoft/teams-ai.InnerMonologue" />&gt;
+          type: PromptResponse&lt;string | ActionCall[]&gt;
           description: The validated and transformed response for the prompt.
       return:
         description: The created plan.
         type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
   - name: createPromptSection()
-    uid: '@microsoft/teams-ai.MonologueAugmentation.createPromptSection'
+    uid: '@microsoft/teams-ai.ToolsAugmentation.createPromptSection'
     package: '@microsoft/teams-ai'
     summary: ''
     remarks: ''
@@ -66,7 +64,7 @@ methods:
   - name: >-
       validateResponse(TurnContext, Memory, Tokenizer, PromptResponse<string>,
       number)
-    uid: '@microsoft/teams-ai.MonologueAugmentation.validateResponse'
+    uid: '@microsoft/teams-ai.ToolsAugmentation.validateResponse'
     package: '@microsoft/teams-ai'
     summary: Validates a response to a prompt.
     remarks: ''
@@ -75,8 +73,7 @@ methods:
       content: >-
         function validateResponse(context: TurnContext, memory: Memory,
         tokenizer: Tokenizer, response: PromptResponse<string>,
-        remaining_attempts: number): Promise<Validation<undefined |
-        InnerMonologue>>
+        remaining_attempts: number): Promise<Validation<any>>
       parameters:
         - id: context
           type: TurnContext
@@ -96,5 +93,5 @@ methods:
       return:
         description: A `Validation` object.
         type: >-
-          Promise&lt;<xref uid="@microsoft/teams-ai.Validation" />&lt;undefined
-          | <xref uid="@microsoft/teams-ai.InnerMonologue" />&gt;&gt;
+          Promise&lt;<xref uid="@microsoft/teams-ai.Validation"
+          />&lt;any&gt;&gt;

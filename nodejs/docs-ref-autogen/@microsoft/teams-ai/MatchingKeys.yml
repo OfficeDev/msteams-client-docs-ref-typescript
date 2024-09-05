@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: MatchingKeys
+uid: '@microsoft/teams-ai.MatchingKeys'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: MatchingKeys<TRecord, TMatch, K>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type MatchingKeys<TRecord, TMatch, K> = K extends (
+    TRecord[K] extends TMatch ? K : never
+  )
+    ? K
+    : never

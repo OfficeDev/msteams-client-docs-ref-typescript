@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: ListenerType
+uid: '@microsoft/teams-ai.ListenerType'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: ListenerType<T>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ListenerType<T> = [T] extends [(args: U) => any]
+    ? U
+    : [T] extends [void]
+    ? Object
+    : [T]

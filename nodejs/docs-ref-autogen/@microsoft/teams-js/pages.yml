@@ -12,6 +12,8 @@ typeAliases:
 interfaces:
   - '@microsoft/teams-js.pages.InstanceConfig'
   - '@microsoft/teams-js.pages.NavigateToAppParams'
+enums:
+  - '@microsoft/teams-js.pages.ReturnFocusType'
 package: '@microsoft/teams-js'
 functions:
   - name: getConfig()
@@ -147,9 +149,32 @@ functions:
   - name: returnFocus(boolean)
     uid: '@microsoft/teams-js.pages.returnFocus'
     package: '@microsoft/teams-js'
-    summary: >-
+    summary: ''
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
       Return focus to the host. Will move focus forward or backward based on
       where the application container falls in
+
+      the F6/tab order in the host.
+
+      On mobile hosts or hosts where there is no keyboard interaction or UI
+      notion of "focus" this function has no
+
+      effect and will be a no-op when called.
+    syntax:
+      content: 'function returnFocus(navigateForward?: boolean)'
+      parameters:
+        - id: navigateForward
+          type: boolean
+          description: Determines the direction to focus in host.
+  - name: returnFocus(ReturnFocusType)
+    uid: '@microsoft/teams-js.pages.returnFocus_1'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Return focus to the host. Will attempt to send focus to the appropriate
+      part of the host (as specified by returnFocusType) based on where the
+      application container falls in
 
       the F6/tab order in the host.
 
@@ -160,11 +185,11 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function returnFocus(navigateForward?: boolean)'
+      content: 'function returnFocus(returnFocusType: ReturnFocusType)'
       parameters:
-        - id: navigateForward
-          type: boolean
-          description: Determines the direction to focus in host.
+        - id: returnFocusType
+          type: <xref uid="@microsoft/teams-js.pages.ReturnFocusType" />
+          description: Determines the type of focus to return to in the host.
   - name: setCurrentFrame(FrameInfo)
     uid: '@microsoft/teams-js.pages.setCurrentFrame'
     package: '@microsoft/teams-js'

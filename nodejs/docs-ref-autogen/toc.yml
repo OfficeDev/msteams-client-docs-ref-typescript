@@ -380,6 +380,9 @@
     - uid: '@microsoft/teams-ai.ActionHandler'
       name: ActionHandler
       items: []
+    - uid: '@microsoft/teams-ai.ActionOutputMessage'
+      name: ActionOutputMessage
+      items: []
     - uid: '@microsoft/teams-ai.ActionPlanner'
       name: ActionPlanner
       items: []
@@ -476,9 +479,6 @@
     - uid: '@microsoft/teams-ai.ClientCitation'
       name: ClientCitation
       items: []
-    - uid: '@microsoft/teams-ai.CompletionConfig'
-      name: CompletionConfig
-      items: []
     - uid: '@microsoft/teams-ai.ConfiguredAIOptions'
       name: ConfiguredAIOptions
       items: []
@@ -518,6 +518,9 @@
     - uid: '@microsoft/teams-ai.DefaultUserState'
       name: DefaultUserState
       items: []
+    - uid: '@microsoft/teams-ai.EEMethodReturnType'
+      name: EEMethodReturnType
+      items: []
     - uid: '@microsoft/teams-ai.EmbeddingsModel'
       name: EmbeddingsModel
       items: []
@@ -526,6 +529,12 @@
       items: []
     - uid: '@microsoft/teams-ai.EmbeddingsResponseStatus'
       name: EmbeddingsResponseStatus
+      items: []
+    - uid: '@microsoft/teams-ai.EmitEventNames'
+      name: EmitEventNames
+      items: []
+    - uid: '@microsoft/teams-ai.EventNames'
+      name: EventNames
       items: []
     - uid: '@microsoft/teams-ai.FeedbackLoopData'
       name: FeedbackLoopData
@@ -551,6 +560,9 @@
     - uid: '@microsoft/teams-ai.ImageContentPart'
       name: ImageContentPart
       items: []
+    - uid: '@microsoft/teams-ai.InnerEEMethodReturnType'
+      name: InnerEEMethodReturnType
+      items: []
     - uid: '@microsoft/teams-ai.InnerMonologue'
       name: InnerMonologue
       items: []
@@ -566,6 +578,9 @@
     - uid: '@microsoft/teams-ai.LayoutEngine'
       name: LayoutEngine
       items: []
+    - uid: '@microsoft/teams-ai.ListenerType'
+      name: ListenerType
+      items: []
     - uid: '@microsoft/teams-ai.LlamaModel'
       name: LlamaModel
       items: []
@@ -577,6 +592,9 @@
       items: []
     - uid: '@microsoft/teams-ai.LLMClientOptions'
       name: LLMClientOptions
+      items: []
+    - uid: '@microsoft/teams-ai.MatchingKeys'
+      name: MatchingKeys
       items: []
     - uid: '@microsoft/teams-ai.Memory'
       name: Memory
@@ -611,8 +629,14 @@
     - uid: '@microsoft/teams-ai.MonologueAugmentation'
       name: MonologueAugmentation
       items: []
+    - uid: '@microsoft/teams-ai.NoUndefined'
+      name: NoUndefined
+      items: []
     - uid: '@microsoft/teams-ai.OAuthSettings'
       name: OAuthSettings
+      items: []
+    - uid: '@microsoft/teams-ai.OnEventNames'
+      name: OnEventNames
       items: []
     - uid: '@microsoft/teams-ai.OpenAIEmbeddings'
       name: OpenAIEmbeddings
@@ -622,9 +646,6 @@
       items: []
     - uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions'
       name: OpenAILikeEmbeddingsOptions
-      items: []
-    - uid: '@microsoft/teams-ai.OpenAILikeModelOptions'
-      name: OpenAILikeModelOptions
       items: []
     - uid: '@microsoft/teams-ai.OpenAIModel'
       name: OpenAIModel
@@ -637,6 +658,12 @@
       items: []
     - uid: '@microsoft/teams-ai.OpenAIModeratorOptions'
       name: OpenAIModeratorOptions
+      items: []
+    - uid: '@microsoft/teams-ai.OverriddenKeys'
+      name: OverriddenKeys
+      items: []
+    - uid: '@microsoft/teams-ai.OverriddenMethods'
+      name: OverriddenMethods
       items: []
     - uid: '@microsoft/teams-ai.Plan'
       name: Plan
@@ -669,8 +696,26 @@
     - uid: '@microsoft/teams-ai.Prompt'
       name: Prompt
       items: []
+    - uid: '@microsoft/teams-ai.PromptChunk'
+      name: PromptChunk
+      items: []
     - uid: '@microsoft/teams-ai.PromptCompletionModel'
       name: PromptCompletionModel
+      items: []
+    - uid: '@microsoft/teams-ai.PromptCompletionModelBeforeCompletionEvent'
+      name: PromptCompletionModelBeforeCompletionEvent
+      items: []
+    - uid: '@microsoft/teams-ai.PromptCompletionModelChunkReceivedEvent'
+      name: PromptCompletionModelChunkReceivedEvent
+      items: []
+    - uid: '@microsoft/teams-ai.PromptCompletionModelEmitter'
+      name: PromptCompletionModelEmitter
+      items: []
+    - uid: '@microsoft/teams-ai.PromptCompletionModelEvents'
+      name: PromptCompletionModelEvents
+      items: []
+    - uid: '@microsoft/teams-ai.PromptCompletionModelResponseReceivedEvent'
+      name: PromptCompletionModelResponseReceivedEvent
       items: []
     - uid: '@microsoft/teams-ai.PromptFunction'
       name: PromptFunction
@@ -683,12 +728,6 @@
       items: []
     - uid: '@microsoft/teams-ai.PromptManagerOptions'
       name: PromptManagerOptions
-      items: []
-    - uid: '@microsoft/teams-ai.PromptResponse'
-      name: PromptResponse
-      items: []
-    - uid: '@microsoft/teams-ai.PromptResponseStatus'
-      name: PromptResponseStatus
       items: []
     - uid: '@microsoft/teams-ai.PromptResponseValidator'
       name: PromptResponseValidator
@@ -711,6 +750,12 @@
     - uid: '@microsoft/teams-ai.RenderedPromptSection'
       name: RenderedPromptSection
       items: []
+    - uid: '@microsoft/teams-ai.ReturnTypeOfMethod'
+      name: ReturnTypeOfMethod
+      items: []
+    - uid: '@microsoft/teams-ai.ReturnTypeOfMethodIfExists'
+      name: ReturnTypeOfMethodIfExists
+      items: []
     - uid: '@microsoft/teams-ai.RouteHandler'
       name: RouteHandler
       items: []
@@ -731,6 +776,15 @@
       items: []
     - uid: '@microsoft/teams-ai.SignInStatus'
       name: SignInStatus
+      items: []
+    - uid: '@microsoft/teams-ai.StreamingResponse'
+      name: StreamingResponse
+      items: []
+    - uid: '@microsoft/teams-ai.StrictBroadcast'
+      name: StrictBroadcast
+      items: []
+    - uid: '@microsoft/teams-ai.StrictEventEmitter'
+      name: StrictEventEmitter
       items: []
     - uid: '@microsoft/teams-ai.SystemMessage'
       name: SystemMessage
@@ -759,6 +813,9 @@
     - uid: '@microsoft/teams-ai.TemplateSection'
       name: TemplateSection
       items: []
+    - uid: '@microsoft/teams-ai.TestModel'
+      name: TestModel
+      items: []
     - uid: '@microsoft/teams-ai.TextContentPart'
       name: TextContentPart
       items: []
@@ -771,6 +828,9 @@
     - uid: '@microsoft/teams-ai.Tokenizer'
       name: Tokenizer
       items: []
+    - uid: '@microsoft/teams-ai.ToolsAugmentation'
+      name: ToolsAugmentation
+      items: []
     - uid: '@microsoft/teams-ai.TooManyStepsParameters'
       name: TooManyStepsParameters
       items: []
@@ -782,6 +842,9 @@
       items: []
     - uid: '@microsoft/teams-ai.TurnStateEntry'
       name: TurnStateEntry
+      items: []
+    - uid: '@microsoft/teams-ai.TypeRecord'
+      name: TypeRecord
       items: []
     - uid: '@microsoft/teams-ai.UserInputMessage'
       name: UserInputMessage
@@ -797,6 +860,9 @@
       items: []
     - uid: '@microsoft/teams-ai.Validation'
       name: Validation
+      items: []
+    - uid: '@microsoft/teams-ai.VoidKeys'
+      name: VoidKeys
       items: []
 - name: '@microsoft/teams-js'
   items:
@@ -881,6 +947,9 @@
         - uid: '@microsoft/teams-js.app.UserInfo'
           name: UserInfo
           items: []
+    - uid: '@microsoft/teams-js.AppId'
+      name: AppId
+      items: []
     - uid: '@microsoft/teams-js.appInitialization'
       name: appInitialization
       items: []
@@ -1331,6 +1400,9 @@
           items: []
         - uid: '@microsoft/teams-js.pages.removeEventType'
           name: removeEventType
+          items: []
+        - uid: '@microsoft/teams-js.pages.ReturnFocusType'
+          name: ReturnFocusType
           items: []
         - uid: '@microsoft/teams-js.pages.saveEventType'
           name: saveEventType

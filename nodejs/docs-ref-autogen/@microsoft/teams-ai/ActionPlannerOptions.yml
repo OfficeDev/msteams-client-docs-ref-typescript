@@ -79,6 +79,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-ai.PromptManager" />
+  - name: startStreamingMessage
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.startStreamingMessage'
+    package: '@microsoft/teams-ai'
+    summary: Optional message to send a client at the start of a streaming response.
+    fullName: startStreamingMessage
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'startStreamingMessage?: string'
+      return:
+        description: ''
+        type: string
   - name: tokenizer
     uid: '@microsoft/teams-ai.ActionPlannerOptions.tokenizer'
     package: '@microsoft/teams-ai'

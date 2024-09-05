@@ -20,6 +20,22 @@ properties:
       return:
         description: ''
         type: string
+  - name: actionId
+    uid: '@microsoft/teams-ai.PredictedDoCommand.actionId'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. The id mapped to the name action that the AI system should
+      perform.
+
+      In OpenAI, this is associated with the action_id tool calls.
+    fullName: actionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'actionId?: string'
+      return:
+        description: ''
+        type: string
   - name: parameters
     uid: '@microsoft/teams-ai.PredictedDoCommand.parameters'
     package: '@microsoft/teams-ai'
