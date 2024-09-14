@@ -116,6 +116,7 @@ enums:
   - '@microsoft/teams-js.meeting.EventActionSource'
   - '@microsoft/teams-js.meeting.SharingProtocol'
   - '@microsoft/teams-js.menus.DisplayMode'
+  - '@microsoft/teams-js.pages.ReturnFocusType'
   - '@microsoft/teams-js.stageView.StageViewOpenMode'
   - '@microsoft/teams-js.teams.ChannelType'
   - '@microsoft/teams-js.videoEffects.EffectChangeType'
@@ -201,6 +202,7 @@ classes:
   - '@microsoft/teams-js.media.File'
   - '@microsoft/teams-js.media.Media'
   - '@microsoft/teams-js.media.VideoController'
+  - '@microsoft/teams-js.AppId'
   - '@microsoft/teams-js.ChildAppWindow'
   - '@microsoft/teams-js.LiveShareHost'
   - '@microsoft/teams-js.ParentAppWindow'
@@ -269,6 +271,14 @@ functions:
         - id: messageFromChildHandler
           type: <xref uid="@microsoft/teams-js.dialog.PostMessageChannel" />
           description: ''
+  - name: clearWebStorageCachedHostNameForTests()
+    uid: '@microsoft/teams-js.clearWebStorageCachedHostNameForTests'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function clearWebStorageCachedHostNameForTests()
   - name: configSetConfigHelper(string, InstanceConfig)
     uid: '@microsoft/teams-js.configSetConfigHelper'
     package: '@microsoft/teams-js'
@@ -1007,7 +1017,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of TeamsJS v2.0.0, please use [pages.returnFocus(navigateForward?:
-      boolean): void](xref:@microsoft/teams-js.pages.returnFocus) instead.
+      boolean): void](xref:@microsoft/teams-js.pages.returnFocus_1) instead.
 
 
       Return focus to the main Teams app. Will focus search bar if navigating
@@ -1018,23 +1028,6 @@ functions:
         - id: navigateForward
           type: boolean
           description: Determines the direction to focus in teams app.
-  - name: returnFocusHelper(string, boolean)
-    uid: '@microsoft/teams-js.returnFocusHelper'
-    package: '@microsoft/teams-js'
-    summary: ''
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function returnFocusHelper(apiVersionTag: string, navigateForward?:
-        boolean)
-      parameters:
-        - id: apiVersionTag
-          type: string
-          description: ''
-        - id: navigateForward
-          type: boolean
-          description: ''
   - name: setCurrentFrameHelper(string, FrameInfo)
     uid: '@microsoft/teams-js.setCurrentFrameHelper'
     package: '@microsoft/teams-js'

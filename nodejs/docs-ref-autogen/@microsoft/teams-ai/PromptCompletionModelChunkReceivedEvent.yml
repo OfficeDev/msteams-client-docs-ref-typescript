@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: PromptCompletionModelChunkReceivedEvent
+uid: '@microsoft/teams-ai.PromptCompletionModelChunkReceivedEvent'
+package: '@microsoft/teams-ai'
+summary: Type signature for the `chunkReceived` event of a `PromptCompletionModel`.
+fullName: PromptCompletionModelChunkReceivedEvent
+remarks: ''
+isDeprecated: false
+syntax: |
+  type PromptCompletionModelChunkReceivedEvent = (
+    context: TurnContext,
+    memory: Memory,
+    chunk: PromptChunk
+  ) => void

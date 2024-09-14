@@ -31,7 +31,7 @@ properties:
       content: 'completion: CompletionConfig'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-ai.CompletionConfig" />
+        type: CompletionConfig
   - name: default_backends
     uid: '@microsoft/teams-ai.PromptTemplateConfig.default_backends'
     package: '@microsoft/teams-ai'

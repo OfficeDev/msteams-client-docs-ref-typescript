@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ReturnTypeOfMethodIfExists
+uid: '@microsoft/teams-ai.ReturnTypeOfMethodIfExists'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: ReturnTypeOfMethodIfExists<T, S>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ReturnTypeOfMethodIfExists<T, S> = S extends keyof T
+    ? ReturnTypeOfMethod<T[S]>
+    : void

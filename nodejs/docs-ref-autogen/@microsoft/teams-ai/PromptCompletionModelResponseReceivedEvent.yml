@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: PromptCompletionModelResponseReceivedEvent
+uid: '@microsoft/teams-ai.PromptCompletionModelResponseReceivedEvent'
+package: '@microsoft/teams-ai'
+summary: Type signature for the `responseReceived` event of a `PromptCompletionModel`.
+fullName: PromptCompletionModelResponseReceivedEvent
+remarks: ''
+isDeprecated: false
+syntax: |
+  type PromptCompletionModelResponseReceivedEvent = (
+    context: TurnContext,
+    memory: Memory,
+    response: PromptResponse<string>
+  ) => void

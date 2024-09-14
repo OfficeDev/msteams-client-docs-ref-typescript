@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: appId
+    uid: '@microsoft/teams-js.TabInstance.appId'
+    package: '@microsoft/teams-js'
+    summary: AppId of this tab
+    fullName: appId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'appId?: string'
+      return:
+        description: ''
+        type: string
   - name: channelId
     uid: '@microsoft/teams-js.TabInstance.channelId'
     package: '@microsoft/teams-js'
@@ -86,6 +98,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: order
+    uid: '@microsoft/teams-js.TabInstance.order'
+    package: '@microsoft/teams-js'
+    summary: Order of this tab. Order is 1-indexed.
+    fullName: order
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'order?: number'
+      return:
+        description: ''
+        type: number
   - name: tabName
     uid: '@microsoft/teams-js.TabInstance.tabName'
     package: '@microsoft/teams-js'

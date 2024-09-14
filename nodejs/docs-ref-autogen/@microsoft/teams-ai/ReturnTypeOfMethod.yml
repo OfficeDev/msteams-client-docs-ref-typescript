@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: ReturnTypeOfMethod
+uid: '@microsoft/teams-ai.ReturnTypeOfMethod'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: ReturnTypeOfMethod<T>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ReturnTypeOfMethod<T> = T extends (args: any[]) => any
+    ? ReturnType<T>
+    : void

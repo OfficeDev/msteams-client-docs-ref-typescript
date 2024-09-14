@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: StrictBroadcast
+uid: '@microsoft/teams-ai.StrictBroadcast'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: StrictBroadcast<TEmitter, TEmitRecord, VK, NVK>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type StrictBroadcast<TEmitter, TEmitRecord, VK, NVK> = (
+    event: E,
+    request: TEmitRecord[E]
+  ) => any

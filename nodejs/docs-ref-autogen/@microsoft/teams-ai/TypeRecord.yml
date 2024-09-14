@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: TypeRecord
+uid: '@microsoft/teams-ai.TypeRecord'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: TypeRecord<T, U, V>
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: ' _emitterType'
+    uid: '@microsoft/teams-ai.TypeRecord. _emitterType'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: ' _emitterType'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: ' _emitterType?: T'
+      return:
+        description: ''
+        type: T
+  - name: ' _emitType'
+    uid: '@microsoft/teams-ai.TypeRecord. _emitType'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: ' _emitType'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: ' _emitType?: V'
+      return:
+        description: ''
+        type: V
+  - name: ' _eventsType'
+    uid: '@microsoft/teams-ai.TypeRecord. _eventsType'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: ' _eventsType'
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: ' _eventsType?: U'
+      return:
+        description: ''
+        type: U

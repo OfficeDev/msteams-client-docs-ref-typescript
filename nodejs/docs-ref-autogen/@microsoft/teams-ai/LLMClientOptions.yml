@@ -98,6 +98,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-ai.PromptCompletionModel" />
+  - name: startStreamingMessage
+    uid: '@microsoft/teams-ai.LLMClientOptions.startStreamingMessage'
+    package: '@microsoft/teams-ai'
+    summary: Optional message to send a client at the start of a streaming response.
+    fullName: startStreamingMessage
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'startStreamingMessage?: string'
+      return:
+        description: ''
+        type: string
   - name: template
     uid: '@microsoft/teams-ai.LLMClientOptions.template'
     package: '@microsoft/teams-ai'

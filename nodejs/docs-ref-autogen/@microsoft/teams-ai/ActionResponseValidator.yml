@@ -74,7 +74,7 @@ methods:
           type: <xref uid="@microsoft/teams-ai.Tokenizer" />
           description: Tokenizer to use for encoding and decoding text.
         - id: response
-          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          type: PromptResponse&lt;string&gt;
           description: Response to validate.
         - id: remaining_attempts
           type: number

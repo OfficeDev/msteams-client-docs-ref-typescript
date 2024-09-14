@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: OverriddenKeys
+uid: '@microsoft/teams-ai.OverriddenKeys'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: OverriddenKeys
+remarks: ''
+isDeprecated: false
+syntax: |
+  type OverriddenKeys = keyof OverriddenMethods<any, any, any>

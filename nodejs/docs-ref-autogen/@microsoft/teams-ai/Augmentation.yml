@@ -36,7 +36,7 @@ inheritedMethods:
           type: <xref uid="@microsoft/teams-ai.Tokenizer" />
           description: Tokenizer to use for encoding and decoding text.
         - id: response
-          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          type: PromptResponse&lt;string&gt;
           description: Response to validate.
         - id: remaining_attempts
           type: number
@@ -68,7 +68,7 @@ methods:
           type: <xref uid="@microsoft/teams-ai.Memory" />
           description: An interface for accessing state variables.
         - id: response
-          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;TContent&gt;
+          type: PromptResponse&lt;TContent&gt;
           description: The validated and transformed response for the prompt.
       return:
         description: The created plan.

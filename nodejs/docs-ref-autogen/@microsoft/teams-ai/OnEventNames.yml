@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: OnEventNames
+uid: '@microsoft/teams-ai.OnEventNames'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: OnEventNames<TEmitter, TEventRecord, TEmitRecord>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type OnEventNames<TEmitter, TEventRecord, TEmitRecord> = keyof TEventRecord

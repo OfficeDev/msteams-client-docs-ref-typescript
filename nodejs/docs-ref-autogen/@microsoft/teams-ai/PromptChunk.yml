@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: PromptChunk
+uid: '@microsoft/teams-ai.PromptChunk'
+package: '@microsoft/teams-ai'
+summary: Streaming chunk passed in the `sendChunk` event of a `PromptCompletionClient`.
+fullName: PromptChunk
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: delta
+    uid: '@microsoft/teams-ai.PromptChunk.delta'
+    package: '@microsoft/teams-ai'
+    summary: Delta for the response message being buffered up.
+    fullName: delta
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'delta?: Partial<Message<string>>'
+      return:
+        description: ''
+        type: >-
+          Partial&lt;<xref uid="@microsoft/teams-ai.Message"
+          />&lt;string&gt;&gt;

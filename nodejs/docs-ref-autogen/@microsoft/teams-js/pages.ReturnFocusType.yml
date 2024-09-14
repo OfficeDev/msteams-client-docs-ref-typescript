@@ -1,0 +1,24 @@
+### YamlMime:TSEnum
+name: ReturnFocusType
+uid: '@microsoft/teams-js.pages.ReturnFocusType'
+package: '@microsoft/teams-js'
+summary: Return focus action items
+fullName: ReturnFocusType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: PreviousLandmark
+    uid: '@microsoft/teams-js.pages.ReturnFocusType.PreviousLandmark'
+    package: '@microsoft/teams-js'
+    summary: Determines the direction to focus in host for previous landmark.
+    numericValue: 0
+  - name: NextLandmark
+    uid: '@microsoft/teams-js.pages.ReturnFocusType.NextLandmark'
+    package: '@microsoft/teams-js'
+    summary: Determines the direction to focus in host for next landmark.
+    numericValue: 1
+  - name: GoToActivityFeed
+    uid: '@microsoft/teams-js.pages.ReturnFocusType.GoToActivityFeed'
+    package: '@microsoft/teams-js'
+    summary: Determines if the focus should go to the host's activity feed
+    numericValue: 2

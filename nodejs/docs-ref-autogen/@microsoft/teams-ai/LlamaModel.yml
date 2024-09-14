@@ -65,6 +65,4 @@ methods:
           description: Prompt template to complete.
       return:
         description: A `PromptResponse` with the status and message.
-        type: >-
-          Promise&lt;<xref uid="@microsoft/teams-ai.PromptResponse"
-          />&lt;string&gt;&gt;
+        type: Promise&lt;PromptResponse&lt;string&gt;&gt;

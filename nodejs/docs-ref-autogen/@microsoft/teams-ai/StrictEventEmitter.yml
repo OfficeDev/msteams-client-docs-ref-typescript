@@ -1,0 +1,23 @@
+### YamlMime:TSTypeAlias
+name: StrictEventEmitter
+uid: '@microsoft/teams-ai.StrictEventEmitter'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: >-
+  StrictEventEmitter<TEmitterType, TEventRecord, TEmitRecord, UnneededMethods,
+  NeededMethods>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type StrictEventEmitter<
+    TEmitterType,
+    TEventRecord,
+    TEmitRecord,
+    UnneededMethods,
+    NeededMethods
+  > = TypeRecord<TEmitterType, TEventRecord, TEmitRecord> &
+    Pick<TEmitterType, Exclude<keyof TEmitterType, OverriddenKeys>> &
+    Pick<
+      OverriddenMethods<TEmitterType, TEventRecord, TEmitRecord>,
+      NeededMethods
+    >

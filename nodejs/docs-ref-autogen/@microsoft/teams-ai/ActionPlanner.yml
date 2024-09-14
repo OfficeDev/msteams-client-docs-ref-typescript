@@ -216,9 +216,7 @@ methods:
             the model.
       return:
         description: The result of the LLM call.
-        type: >-
-          Promise&lt;<xref uid="@microsoft/teams-ai.PromptResponse"
-          />&lt;TContent&gt;&gt;
+        type: Promise&lt;PromptResponse&lt;TContent&gt;&gt;
   - name: continueTask(TurnContext, TState, AI<TState>)
     uid: '@microsoft/teams-ai.ActionPlanner.continueTask'
     package: '@microsoft/teams-ai'

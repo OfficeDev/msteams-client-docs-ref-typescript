@@ -1,0 +1,200 @@
+### YamlMime:TSType
+name: TestModel
+uid: '@microsoft/teams-ai.TestModel'
+package: '@microsoft/teams-ai'
+summary: A `PromptCompletionModel` used for testing.
+fullName: TestModel
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: >-
+      TestModel((model: TestModel, context: TurnContext, memory: Memory,
+      functions: PromptFunctions, tokenizer: Tokenizer, template:
+      PromptTemplate) => Promise<PromptResponse<string>>)
+    uid: '@microsoft/teams-ai.TestModel.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new `OpenAIModel` instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        new TestModel(handler: (model: TestModel, context: TurnContext, memory:
+        Memory, functions: PromptFunctions, tokenizer: Tokenizer, template:
+        PromptTemplate) => Promise<PromptResponse<string>>)
+      parameters:
+        - id: handler
+          type: >-
+            (model: TestModel, context: TurnContext, memory: Memory, functions:
+            PromptFunctions, tokenizer: Tokenizer, template: PromptTemplate)
+            =&gt; Promise&lt;PromptResponse&lt;string&gt;&gt;
+          description: ''
+properties:
+  - name: events
+    uid: '@microsoft/teams-ai.TestModel.events'
+    package: '@microsoft/teams-ai'
+    summary: Events emitted by the model.
+    fullName: events
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: PromptCompletionModelEmitter events
+      return:
+        description: An event emitter for the model.
+        type: <xref uid="@microsoft/teams-ai.PromptCompletionModelEmitter" />
+methods:
+  - name: >-
+      completePrompt(TurnContext, Memory, PromptFunctions, Tokenizer,
+      PromptTemplate)
+    uid: '@microsoft/teams-ai.TestModel.completePrompt'
+    package: '@microsoft/teams-ai'
+    summary: Completes a prompt using OpenAI or Azure OpenAI.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function completePrompt(context: TurnContext, memory: Memory, functions:
+        PromptFunctions, tokenizer: Tokenizer, template: PromptTemplate):
+        Promise<PromptResponse<string>>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Current turn context.
+        - id: memory
+          type: <xref uid="@microsoft/teams-ai.Memory" />
+          description: An interface for accessing state values.
+        - id: functions
+          type: <xref uid="@microsoft/teams-ai.PromptFunctions" />
+          description: Functions to use when rendering the prompt.
+        - id: tokenizer
+          type: <xref uid="@microsoft/teams-ai.Tokenizer" />
+          description: Tokenizer to use when rendering the prompt.
+        - id: template
+          type: <xref uid="@microsoft/teams-ai.PromptTemplate" />
+          description: Prompt template to complete.
+      return:
+        description: A `PromptResponse` with the status and message.
+        type: Promise&lt;PromptResponse&lt;string&gt;&gt;
+  - name: >-
+      createTestModel((model: TestModel, context: TurnContext, memory: Memory,
+      functions: PromptFunctions, tokenizer: Tokenizer, template:
+      PromptTemplate) => Promise<PromptResponse<string>>)
+    uid: '@microsoft/teams-ai.TestModel.createTestModel'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function createTestModel(handler: (model: TestModel, context:
+        TurnContext, memory: Memory, functions: PromptFunctions, tokenizer:
+        Tokenizer, template: PromptTemplate) =>
+        Promise<PromptResponse<string>>): TestModel
+      parameters:
+        - id: handler
+          type: >-
+            (model: TestModel, context: TurnContext, memory: Memory, functions:
+            PromptFunctions, tokenizer: Tokenizer, template: PromptTemplate)
+            =&gt; Promise&lt;PromptResponse&lt;string&gt;&gt;
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TestModel" />
+  - name: returnContent(string, number)
+    uid: '@microsoft/teams-ai.TestModel.returnContent'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function returnContent(content: string, delay?: number):
+        TestModel
+      parameters:
+        - id: content
+          type: string
+          description: ''
+        - id: delay
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TestModel" />
+  - name: returnError(Error, number)
+    uid: '@microsoft/teams-ai.TestModel.returnError'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'static function returnError(error: Error, delay?: number): TestModel'
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: delay
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TestModel" />
+  - name: returnRateLimited(Error, number)
+    uid: '@microsoft/teams-ai.TestModel.returnRateLimited'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function returnRateLimited(error: Error, delay?: number):
+        TestModel
+      parameters:
+        - id: error
+          type: Error
+          description: ''
+        - id: delay
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TestModel" />
+  - name: returnResponse(PromptResponse<string>, number)
+    uid: '@microsoft/teams-ai.TestModel.returnResponse'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function returnResponse(response: PromptResponse<string>, delay?:
+        number): TestModel
+      parameters:
+        - id: response
+          type: PromptResponse&lt;string&gt;
+          description: ''
+        - id: delay
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TestModel" />
+  - name: streamTextChunks(string[], number)
+    uid: '@microsoft/teams-ai.TestModel.streamTextChunks'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        static function streamTextChunks(chunks: string[], delay?: number):
+        TestModel
+      parameters:
+        - id: chunks
+          type: string[]
+          description: ''
+        - id: delay
+          type: number
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-ai.TestModel" />
