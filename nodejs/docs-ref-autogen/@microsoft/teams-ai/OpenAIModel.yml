@@ -8,26 +8,33 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: >-
-      OpenAIModel(OpenAIModelOptions | OpenAILikeModelOptions |
-      AzureOpenAIModelOptions)
+  - name: OpenAIModel(OpenAIModelOptions | AzureOpenAIModelOptions)
     uid: '@microsoft/teams-ai.OpenAIModel.constructor'
     package: '@microsoft/teams-ai'
     summary: Creates a new `OpenAIModel` instance.
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        new OpenAIModel(options: OpenAIModelOptions | OpenAILikeModelOptions |
-        AzureOpenAIModelOptions)
+      content: 'new OpenAIModel(options: OpenAIModelOptions | AzureOpenAIModelOptions)'
       parameters:
         - id: options
           type: >-
             <xref uid="@microsoft/teams-ai.OpenAIModelOptions" /> | <xref
-            uid="@microsoft/teams-ai.OpenAILikeModelOptions" /> | <xref
             uid="@microsoft/teams-ai.AzureOpenAIModelOptions" />
           description: Options for configuring the model client.
 properties:
+  - name: events
+    uid: '@microsoft/teams-ai.OpenAIModel.events'
+    package: '@microsoft/teams-ai'
+    summary: Events emitted by the model.
+    fullName: events
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: PromptCompletionModelEmitter events
+      return:
+        description: The events emitted by the model.
+        type: <xref uid="@microsoft/teams-ai.PromptCompletionModelEmitter" />
   - name: options
     uid: '@microsoft/teams-ai.OpenAIModel.options'
     package: '@microsoft/teams-ai'
@@ -36,14 +43,11 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        options: OpenAIModelOptions | OpenAILikeModelOptions |
-        AzureOpenAIModelOptions
+      content: 'options: OpenAIModelOptions | AzureOpenAIModelOptions'
       return:
         description: ''
         type: >-
           <xref uid="@microsoft/teams-ai.OpenAIModelOptions" /> | <xref
-          uid="@microsoft/teams-ai.OpenAILikeModelOptions" /> | <xref
           uid="@microsoft/teams-ai.AzureOpenAIModelOptions" />
 methods:
   - name: >-
@@ -77,6 +81,4 @@ methods:
           description: Prompt template to complete.
       return:
         description: A `PromptResponse` with the status and message.
-        type: >-
-          Promise&lt;<xref uid="@microsoft/teams-ai.PromptResponse"
-          />&lt;string&gt;&gt;
+        type: Promise&lt;PromptResponse&lt;string&gt;&gt;

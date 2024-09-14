@@ -8,6 +8,33 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: action_calls
+    uid: '@microsoft/teams-ai.Message.action_calls'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. The action or tool to be called by the model when using 'tools'
+      augmentation. In OpenAI, this is the tool_calls property returned from the
+      model.
+    fullName: action_calls
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'action_calls?: ActionCall[]'
+      return:
+        description: ''
+        type: ActionCall[]
+  - name: action_call_id
+    uid: '@microsoft/teams-ai.Message.action_call_id'
+    package: '@microsoft/teams-ai'
+    summary: Optional. The id of the action called.
+    fullName: action_call_id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'action_call_id?: string'
+      return:
+        description: ''
+        type: string
   - name: content
     uid: '@microsoft/teams-ai.Message.content'
     package: '@microsoft/teams-ai'
@@ -59,7 +86,9 @@ properties:
   - name: role
     uid: '@microsoft/teams-ai.Message.role'
     package: '@microsoft/teams-ai'
-    summary: The messages role. Typically 'system', 'user', 'assistant', 'function'.
+    summary: >-
+      The messages role. Typically 'system', 'user', 'assistant', 'tool',
+      'function'.
     fullName: role
     remarks: ''
     isDeprecated: false

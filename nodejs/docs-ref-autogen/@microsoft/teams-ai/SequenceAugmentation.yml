@@ -42,8 +42,8 @@ methods:
           description: An interface for accessing state variables.
         - id: response
           type: >-
-            <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;undefined |
-            <xref uid="@microsoft/teams-ai.Plan" />&gt;
+            PromptResponse&lt;undefined | <xref uid="@microsoft/teams-ai.Plan"
+            />&gt;
           description: The validated and transformed response for the prompt.
       return:
         description: The created plan.
@@ -83,7 +83,7 @@ methods:
           type: <xref uid="@microsoft/teams-ai.Tokenizer" />
           description: Tokenizer to use for encoding and decoding text.
         - id: response
-          type: <xref uid="@microsoft/teams-ai.PromptResponse" />&lt;string&gt;
+          type: PromptResponse&lt;string&gt;
           description: Response to validate.
         - id: remaining_attempts
           type: number

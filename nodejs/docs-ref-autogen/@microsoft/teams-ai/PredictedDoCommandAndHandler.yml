@@ -40,6 +40,25 @@ inheritedProperties:
     inheritanceDescription: >-
       <b>Inherited From</b>
       [PredictedDoCommand.action](xref:@microsoft/teams-ai.PredictedDoCommand.action)
+  - name: actionId
+    uid: '@microsoft/teams-ai.PredictedDoCommandAndHandler.actionId'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. The id mapped to the name action that the AI system should
+      perform.
+
+      In OpenAI, this is associated with the action_id tool calls.
+    fullName: actionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'actionId?: string'
+      return:
+        description: ''
+        type: string
+    inheritanceDescription: >-
+      <b>Inherited From</b>
+      [PredictedDoCommand.actionId](xref:@microsoft/teams-ai.PredictedDoCommand.actionId)
   - name: parameters
     uid: '@microsoft/teams-ai.PredictedDoCommandAndHandler.parameters'
     package: '@microsoft/teams-ai'

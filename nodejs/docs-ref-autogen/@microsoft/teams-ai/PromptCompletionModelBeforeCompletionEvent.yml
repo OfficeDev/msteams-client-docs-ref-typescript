@@ -1,0 +1,17 @@
+### YamlMime:TSTypeAlias
+name: PromptCompletionModelBeforeCompletionEvent
+uid: '@microsoft/teams-ai.PromptCompletionModelBeforeCompletionEvent'
+package: '@microsoft/teams-ai'
+summary: Type signature for the `beforeCompletion` event of a `PromptCompletionModel`.
+fullName: PromptCompletionModelBeforeCompletionEvent
+remarks: ''
+isDeprecated: false
+syntax: |
+  type PromptCompletionModelBeforeCompletionEvent = (
+    context: TurnContext,
+    memory: Memory,
+    functions: PromptFunctions,
+    tokenizer: Tokenizer,
+    template: PromptTemplate,
+    streaming: boolean
+  ) => void

@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: AppId
+uid: '@microsoft/teams-js.AppId'
+package: '@microsoft/teams-js'
+summary: >-
+  A strongly-typed class used to represent a "valid" app id.
+
+
+  Valid is a relative term, in this case. Truly valid app ids are UUIDs as
+  documented in the schema:
+
+  https://learn.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema#id
+
+  However, there are some older internal/hard-coded apps which violate this
+  schema and use names like
+
+  com.microsoft.teamspace.tab.youtube. For compatibility with these legacy apps,
+  we unfortunately cannot
+
+  securely and completely validate app ids as UUIDs. Based on this, the
+  validation is limited to checking
+
+  for script tags, length, and non-printable characters.
+fullName: AppId
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: AppId(string)
+    uid: '@microsoft/teams-js.AppId.constructor'
+    package: '@microsoft/teams-js'
+    summary: Creates a strongly-typed AppId from a string
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new AppId(appIdAsString: string)'
+      parameters:
+        - id: appIdAsString
+          type: string
+          description: An app id represented as a string
+methods:
+  - name: toString()
+    uid: '@microsoft/teams-js.AppId.toString'
+    package: '@microsoft/teams-js'
+    summary: Returns the app id as a string
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function toString(): string'
+      return:
+        description: ''
+        type: string

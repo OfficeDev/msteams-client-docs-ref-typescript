@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: clientOptions
+    uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.clientOptions'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Custom client options to use when calling the OpenAI API.
+    fullName: clientOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'clientOptions?: ClientOptions'
+      return:
+        description: ''
+        type: ClientOptions
   - name: logRequests
     uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.logRequests'
     package: '@microsoft/teams-ai'
@@ -20,13 +32,26 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: maxRetries
+    uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.maxRetries'
+    package: '@microsoft/teams-ai'
+    summary: Optional. Maximum number of retries to use when calling the OpenAI API.
+    fullName: maxRetries
+    remarks: The default is to retry twice.
+    isDeprecated: false
+    syntax:
+      content: 'maxRetries?: number'
+      return:
+        description: ''
+        type: number
   - name: requestConfig
     uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.requestConfig'
     package: '@microsoft/teams-ai'
-    summary: Optional. Request options to use when calling the OpenAI API.
+    summary: ''
     fullName: requestConfig
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: Optional. Request options to use when calling the OpenAI API.
     syntax:
       content: 'requestConfig?: AxiosRequestConfig<any>'
       return:
@@ -47,14 +72,11 @@ properties:
   - name: retryPolicy
     uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.retryPolicy'
     package: '@microsoft/teams-ai'
-    summary: Optional. Retry policy to use when calling the OpenAI API.
+    summary: ''
     fullName: retryPolicy
-    remarks: >-
-      The default retry policy is `[2000, 5000]` which means that the first
-      retry will be after
-
-      2 seconds and the second retry will be after 5 seconds.
-    isDeprecated: false
+    remarks: Use `maxRetries` instead.
+    isDeprecated: true
+    customDeprecatedMessage: Optional. Retry policy to use when calling the OpenAI API.
     syntax:
       content: 'retryPolicy?: number[]'
       return:
@@ -74,6 +96,20 @@ properties:
       return:
         description: ''
         type: number
+  - name: stream
+    uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.stream'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Whether the models responses should be streamed back using
+      Server Sent Events (SSE.)
+    fullName: stream
+    remarks: Defaults to `false`.
+    isDeprecated: false
+    syntax:
+      content: 'stream?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: useSystemMessages
     uid: '@microsoft/teams-ai.BaseOpenAIModelOptions.useSystemMessages'
     package: '@microsoft/teams-ai'

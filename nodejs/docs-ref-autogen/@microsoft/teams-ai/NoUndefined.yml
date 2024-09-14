@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: NoUndefined
+uid: '@microsoft/teams-ai.NoUndefined'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: NoUndefined<T>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type NoUndefined<T> = T extends undefined ? never : T

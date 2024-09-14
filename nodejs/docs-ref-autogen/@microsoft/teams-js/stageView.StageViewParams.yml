@@ -44,6 +44,22 @@ properties:
       return:
         description: ''
         type: string
+  - name: messageId
+    uid: '@microsoft/teams-js.stageView.StageViewParams.messageId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The messageId identifies a particular channel meeting within the channel
+      as specified by the threadId above. This should be used only when trying
+      to open the stage view for a channel meeting. It will be a no-op for other
+      scenarios
+    fullName: messageId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'messageId?: string'
+      return:
+        description: ''
+        type: string
   - name: openMode
     uid: '@microsoft/teams-js.stageView.StageViewParams.openMode'
     package: '@microsoft/teams-js'

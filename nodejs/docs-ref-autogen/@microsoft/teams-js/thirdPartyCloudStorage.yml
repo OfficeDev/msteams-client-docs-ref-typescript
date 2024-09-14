@@ -30,7 +30,10 @@ functions:
       parameters:
         - id: dragAndDropInput
           type: string
-          description: Teams thread id or Teams conversation id from a Teams chat/channel
+          description: >-
+            unique id which is a combination of replyToId + threadId of teams
+            chat and channel.
+              Both replyToId and threadId can be fetched from application context.
         - id: dragAndDropFileCallback
           type: >-
             <xref

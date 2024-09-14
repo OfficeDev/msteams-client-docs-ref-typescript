@@ -26,7 +26,7 @@ properties:
   - name: author
     uid: '@microsoft/teams-js.sharing.history.IContentResponse.author'
     package: '@microsoft/teams-js'
-    summary: Id of the user who shared the content. This is a UUID
+    summary: Id of the user who shared the content.
     fullName: author
     remarks: ''
     isDeprecated: false
@@ -65,7 +65,7 @@ properties:
   - name: threadId
     uid: '@microsoft/teams-js.sharing.history.IContentResponse.threadId'
     package: '@microsoft/teams-js'
-    summary: Id of the thread where the content was shared. This is a UUID
+    summary: Id of the thread where the content was shared.
     fullName: threadId
     remarks: ''
     isDeprecated: false

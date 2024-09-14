@@ -1,0 +1,110 @@
+### YamlMime:TSType
+name: StreamingResponse
+uid: '@microsoft/teams-ai.StreamingResponse'
+package: '@microsoft/teams-ai'
+summary: A helper class for streaming responses to the client.
+fullName: StreamingResponse
+remarks: >-
+  This class is used to send a series of updates to the client in a single
+  response. The expected
+
+  sequence of calls is:
+
+
+  `sendInformativeUpdate()`, `sendTextChunk()`, `sendTextChunk()`, ...,
+  `endStream()`.
+
+
+  Once `endStream()` is called, the stream is considered ended and no further
+  updates can be sent.
+isDeprecated: false
+type: class
+constructors:
+  - name: StreamingResponse(TurnContext)
+    uid: '@microsoft/teams-ai.StreamingResponse.constructor'
+    package: '@microsoft/teams-ai'
+    summary: Creates a new StreamingResponse instance.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new StreamingResponse(context: TurnContext)'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: Context for the current turn of conversation with the user.
+properties:
+  - name: streamId
+    uid: '@microsoft/teams-ai.StreamingResponse.streamId'
+    package: '@microsoft/teams-ai'
+    summary: Gets the stream ID of the current response.
+    fullName: streamId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: undefined | string streamId
+      return:
+        description: '- The stream ID of the current response.'
+        type: undefined | string
+  - name: updatesSent
+    uid: '@microsoft/teams-ai.StreamingResponse.updatesSent'
+    package: '@microsoft/teams-ai'
+    summary: Gets the number of updates sent for the stream.
+    fullName: updatesSent
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: number updatesSent
+      return:
+        description: '- The number of updates sent for the stream.'
+        type: number
+methods:
+  - name: endStream()
+    uid: '@microsoft/teams-ai.StreamingResponse.endStream'
+    package: '@microsoft/teams-ai'
+    summary: Ends the stream by sending the final message to the client.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function endStream(): Promise<void>'
+      return:
+        description: '- A promise representing the async operation'
+        type: Promise&lt;void&gt;
+  - name: queueInformativeUpdate(string)
+    uid: '@microsoft/teams-ai.StreamingResponse.queueInformativeUpdate'
+    package: '@microsoft/teams-ai'
+    summary: Queues an informative update to be sent to the client.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function queueInformativeUpdate(text: string)'
+      parameters:
+        - id: text
+          type: string
+          description: Text of the update to send.
+  - name: queueTextChunk(string)
+    uid: '@microsoft/teams-ai.StreamingResponse.queueTextChunk'
+    package: '@microsoft/teams-ai'
+    summary: Queues a chunk of partial message text to be sent to the client.
+    remarks: >-
+      The text we be sent as quickly as possible to the client. Chunks may be
+      combined before
+
+      delivery to the client.
+    isDeprecated: false
+    syntax:
+      content: 'function queueTextChunk(text: string)'
+      parameters:
+        - id: text
+          type: string
+          description: Partial text of the message to send.
+  - name: waitForQueue()
+    uid: '@microsoft/teams-ai.StreamingResponse.waitForQueue'
+    package: '@microsoft/teams-ai'
+    summary: Waits for the outgoing activity queue to be empty.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function waitForQueue(): Promise<void>'
+      return:
+        description: '- A promise representing the async operation.'
+        type: Promise&lt;void&gt;

@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: PromptCompletionModelEmitter
+uid: '@microsoft/teams-ai.PromptCompletionModelEmitter'
+package: '@microsoft/teams-ai'
+summary: >-
+  Helper type that strongly types the the EventEmitter for a
+  PromptCOmpletionModel instance.
+fullName: PromptCompletionModelEmitter
+remarks: ''
+isDeprecated: false
+syntax: |
+  type PromptCompletionModelEmitter = StrictEventEmitter<
+    EventEmitter,
+    PromptCompletionModelEvents
+  >
