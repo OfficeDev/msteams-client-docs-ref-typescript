@@ -1,0 +1,30 @@
+### YamlMime:TSEnum
+name: AdaptiveCardActionExecuteResponseType
+uid: '@microsoft/teams-ai.AdaptiveCardActionExecuteResponseType'
+package: '@microsoft/teams-ai'
+summary: ''
+fullName: AdaptiveCardActionExecuteResponseType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: REPLACE_FOR_INTERACTOR
+    uid: >-
+      @microsoft/teams-ai.AdaptiveCardActionExecuteResponseType.REPLACE_FOR_INTERACTOR
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The response card will be replaced the current one for the interactor who
+      trigger the action.
+    numericValue: 0
+  - name: REPLACE_FOR_ALL
+    uid: '@microsoft/teams-ai.AdaptiveCardActionExecuteResponseType.REPLACE_FOR_ALL'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      The response card will be replaced the current one for all users in the
+      chat.
+    numericValue: 1
+  - name: NEW_MESSAGE_FOR_ALL
+    uid: >-
+      @microsoft/teams-ai.AdaptiveCardActionExecuteResponseType.NEW_MESSAGE_FOR_ALL
+    package: '@microsoft/teams-ai'
+    summary: The response card will be sent as a new message for all users in the chat.
+    numericValue: 2

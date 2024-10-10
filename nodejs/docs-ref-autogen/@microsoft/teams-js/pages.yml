@@ -3,15 +3,16 @@ uid: '@microsoft/teams-js.pages'
 name: pages
 summary: Navigation-specific part of the SDK.
 type: module
+interfaces:
+  - '@microsoft/teams-js.pages.AppNavigationParameters'
+  - '@microsoft/teams-js.pages.InstanceConfig'
+  - '@microsoft/teams-js.pages.NavigateToAppParams'
 typeAliases:
   - '@microsoft/teams-js.pages.backButtonHandlerFunctionType'
   - '@microsoft/teams-js.pages.fullScreenChangeFunctionType'
   - '@microsoft/teams-js.pages.handlerFunctionType'
   - '@microsoft/teams-js.pages.removeEventType'
   - '@microsoft/teams-js.pages.saveEventType'
-interfaces:
-  - '@microsoft/teams-js.pages.InstanceConfig'
-  - '@microsoft/teams-js.pages.NavigateToAppParams'
 enums:
   - '@microsoft/teams-js.pages.ReturnFocusType'
 package: '@microsoft/teams-js'
@@ -96,7 +97,7 @@ functions:
       return:
         description: Promise that resolves when the navigation has completed.
         type: Promise&lt;void&gt;
-  - name: navigateToApp(NavigateToAppParams)
+  - name: navigateToApp(AppNavigationParameters | NavigateToAppParams)
     uid: '@microsoft/teams-js.pages.navigateToApp'
     package: '@microsoft/teams-js'
     summary: >-
@@ -109,10 +110,14 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function navigateToApp(params: NavigateToAppParams): Promise<void>'
+      content: >-
+        function navigateToApp(params: AppNavigationParameters |
+        NavigateToAppParams): Promise<void>
       parameters:
         - id: params
-          type: <xref uid="@microsoft/teams-js.pages.NavigateToAppParams" />
+          type: >-
+            <xref uid="@microsoft/teams-js.pages.AppNavigationParameters" /> |
+            <xref uid="@microsoft/teams-js.pages.NavigateToAppParams" />
           description: Parameters for the navigation
       return:
         description: >-

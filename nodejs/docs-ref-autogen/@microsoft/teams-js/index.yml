@@ -50,6 +50,7 @@ interfaces:
   - '@microsoft/teams-js.meeting.JoinMeetingParams'
   - '@microsoft/teams-js.meeting.LiveStreamState'
   - '@microsoft/teams-js.menus.ActionMenuParameters'
+  - '@microsoft/teams-js.pages.AppNavigationParameters'
   - '@microsoft/teams-js.pages.config.RemoveEvent'
   - '@microsoft/teams-js.pages.config.SaveEvent'
   - '@microsoft/teams-js.pages.config.SaveParameters'
@@ -204,6 +205,7 @@ classes:
   - '@microsoft/teams-js.media.VideoController'
   - '@microsoft/teams-js.AppId'
   - '@microsoft/teams-js.ChildAppWindow'
+  - '@microsoft/teams-js.EmailAddress'
   - '@microsoft/teams-js.LiveShareHost'
   - '@microsoft/teams-js.ParentAppWindow'
   - '@microsoft/teams-js.VideoPerformanceMonitor'
@@ -316,6 +318,41 @@ functions:
         - id: validityState
           type: boolean
           description: ''
+  - name: >-
+      convertAppNavigationParametersToNavigateToAppParams(AppNavigationParameters)
+    uid: '@microsoft/teams-js.convertAppNavigationParametersToNavigateToAppParams'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function convertAppNavigationParametersToNavigateToAppParams(params:
+        AppNavigationParameters): pages.NavigateToAppParams
+      parameters:
+        - id: params
+          type: <xref uid="@microsoft/teams-js.pages.AppNavigationParameters" />
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.pages.NavigateToAppParams" />
+  - name: convertNavigateToAppParamsToAppNavigationParameters(NavigateToAppParams)
+    uid: '@microsoft/teams-js.convertNavigateToAppParamsToAppNavigationParameters'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function convertNavigateToAppParamsToAppNavigationParameters(params:
+        NavigateToAppParams): pages.AppNavigationParameters
+      parameters:
+        - id: params
+          type: <xref uid="@microsoft/teams-js.pages.NavigateToAppParams" />
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.pages.AppNavigationParameters" />
   - name: enablePrintCapability()
     uid: '@microsoft/teams-js.enablePrintCapability'
     package: '@microsoft/teams-js'
@@ -602,6 +639,27 @@ functions:
 
             They must have https: protocol otherwise they will be ignored.
             Example: https:www.example.com
+  - name: >-
+      isAppNavigationParametersObject(AppNavigationParameters |
+      NavigateToAppParams)
+    uid: '@microsoft/teams-js.isAppNavigationParametersObject'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function isAppNavigationParametersObject(obj: AppNavigationParameters |
+        NavigateToAppParams): obj
+      parameters:
+        - id: obj
+          type: >-
+            <xref uid="@microsoft/teams-js.pages.AppNavigationParameters" /> |
+            <xref uid="@microsoft/teams-js.pages.NavigateToAppParams" />
+          description: ''
+      return:
+        description: ''
+        type: obj
   - name: isSdkError(unknown)
     uid: '@microsoft/teams-js.isSdkError'
     package: '@microsoft/teams-js'

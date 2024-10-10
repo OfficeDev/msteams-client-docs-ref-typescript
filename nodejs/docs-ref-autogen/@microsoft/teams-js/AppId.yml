@@ -20,7 +20,10 @@ summary: >-
   securely and completely validate app ids as UUIDs. Based on this, the
   validation is limited to checking
 
-  for script tags, length, and non-printable characters.
+  for script tags, length, and non-printable characters. Validation will be
+  updated in the future to ensure
+
+  the app id is a valid UUID as legacy apps update.
 fullName: AppId
 remarks: ''
 isDeprecated: false
