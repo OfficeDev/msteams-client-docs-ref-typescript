@@ -1,39 +1,36 @@
 ### YamlMime:TSType
-name: NavigateToAppParams
-uid: '@microsoft/teams-js.pages.NavigateToAppParams'
+name: AppNavigationParameters
+uid: '@microsoft/teams-js.pages.AppNavigationParameters'
 package: '@microsoft/teams-js'
-summary: ''
-fullName: NavigateToAppParams
-remarks: ''
-isDeprecated: true
-customDeprecatedMessage: >-
-  This interface has been deprecated in favor of a more type-safe interface
-  using
-  [AppNavigationParameters](xref:@microsoft/teams-js.pages.AppNavigationParameters)
-
-
-  Parameters for the
+summary: >-
+  Type-safer version of parameters for the
   [navigateToApp](xref:@microsoft/teams-js.pages.navigateToApp) function
+fullName: AppNavigationParameters
+remarks: ''
+isDeprecated: false
 type: interface
 properties:
   - name: appId
-    uid: '@microsoft/teams-js.pages.NavigateToAppParams.appId'
+    uid: '@microsoft/teams-js.pages.AppNavigationParameters.appId'
     package: '@microsoft/teams-js'
     summary: ID of the app to navigate to
     fullName: appId
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'appId: string'
+      content: 'appId: AppId'
       return:
         description: ''
-        type: string
+        type: <xref uid="@microsoft/teams-js.AppId" />
   - name: channelId
-    uid: '@microsoft/teams-js.pages.NavigateToAppParams.channelId'
+    uid: '@microsoft/teams-js.pages.AppNavigationParameters.channelId'
     package: '@microsoft/teams-js'
     summary: >-
       For apps installed as a channel tab, this ID can be supplied to indicate
       in which Teams channel the app should be opened
+
+      This property has no effect in hosts where apps cannot be opened in
+      channels
     fullName: channelId
     remarks: ''
     isDeprecated: false
@@ -43,9 +40,13 @@ properties:
         description: ''
         type: string
   - name: chatId
-    uid: '@microsoft/teams-js.pages.NavigateToAppParams.chatId'
+    uid: '@microsoft/teams-js.pages.AppNavigationParameters.chatId'
     package: '@microsoft/teams-js'
-    summary: Optional ID of the chat or meeting where the app should be opened
+    summary: >-
+      Optional ID of the chat or meeting where the app should be opened
+
+      This property has no effect in hosts where apps cannot be opened in chats
+      or meetings
     fullName: chatId
     remarks: ''
     isDeprecated: false
@@ -55,7 +56,7 @@ properties:
         description: ''
         type: string
   - name: pageId
-    uid: '@microsoft/teams-js.pages.NavigateToAppParams.pageId'
+    uid: '@microsoft/teams-js.pages.AppNavigationParameters.pageId'
     package: '@microsoft/teams-js'
     summary: >-
       Developer-defined ID of the page to navigate to within the app (formerly
@@ -69,7 +70,7 @@ properties:
         description: ''
         type: string
   - name: subPageId
-    uid: '@microsoft/teams-js.pages.NavigateToAppParams.subPageId'
+    uid: '@microsoft/teams-js.pages.AppNavigationParameters.subPageId'
     package: '@microsoft/teams-js'
     summary: >-
       Developer-defined ID describing the content to navigate to within the
@@ -88,16 +89,16 @@ properties:
         description: ''
         type: string
   - name: webUrl
-    uid: '@microsoft/teams-js.pages.NavigateToAppParams.webUrl'
+    uid: '@microsoft/teams-js.pages.AppNavigationParameters.webUrl'
     package: '@microsoft/teams-js'
     summary: >-
       Fallback URL to open if the navigation cannot be completed within the host
-      (e.g. if the target app is not installed)
+      (e.g., if the target app is not installed)
     fullName: webUrl
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'webUrl?: string'
+      content: 'webUrl?: URL'
       return:
         description: ''
-        type: string
+        type: URL

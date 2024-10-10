@@ -50,9 +50,9 @@ properties:
     syntax:
       content: >-
         responseReceived: (context: TurnContext, memory: Memory, response:
-        PromptResponse<string>) => void
+        PromptResponse<string>, streamer: StreamingResponse) => void
       return:
         description: ''
         type: >-
           (context: TurnContext, memory: Memory, response:
-          PromptResponse&lt;string&gt;) =&gt; void
+          PromptResponse&lt;string&gt;, streamer: StreamingResponse) =&gt; void

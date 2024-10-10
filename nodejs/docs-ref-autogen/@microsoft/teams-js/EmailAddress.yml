@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: EmailAddress
+uid: '@microsoft/teams-js.EmailAddress'
+package: '@microsoft/teams-js'
+summary: Represents a validated email.
+fullName: EmailAddress
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: EmailAddress(string)
+    uid: '@microsoft/teams-js.EmailAddress.constructor'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new EmailAddress(val: string)'
+      parameters:
+        - id: val
+          type: string
+          description: ''
+methods:
+  - name: toString()
+    uid: '@microsoft/teams-js.EmailAddress.toString'
+    package: '@microsoft/teams-js'
+    summary: Retrieve the validated email address as a string.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function toString(): string'
+      return:
+        description: ''
+        type: string

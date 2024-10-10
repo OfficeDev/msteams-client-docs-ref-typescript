@@ -69,6 +69,17 @@ methods:
       return:
         description: '- A promise representing the async operation'
         type: Promise&lt;void&gt;
+  - name: getMessage()
+    uid: '@microsoft/teams-ai.StreamingResponse.getMessage'
+    package: '@microsoft/teams-ai'
+    summary: Returns the most recently streamed message.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getMessage(): string'
+      return:
+        description: The streamed message.
+        type: string
   - name: queueInformativeUpdate(string)
     uid: '@microsoft/teams-ai.StreamingResponse.queueInformativeUpdate'
     package: '@microsoft/teams-ai'
@@ -97,6 +108,18 @@ methods:
         - id: text
           type: string
           description: Partial text of the message to send.
+  - name: setAttachments(Attachment[])
+    uid: '@microsoft/teams-ai.StreamingResponse.setAttachments'
+    package: '@microsoft/teams-ai'
+    summary: Sets the attachments to attach to the final chunk.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setAttachments(attachments: Attachment[])'
+      parameters:
+        - id: attachments
+          type: Attachment[]
+          description: List of attachments.
   - name: waitForQueue()
     uid: '@microsoft/teams-ai.StreamingResponse.waitForQueue'
     package: '@microsoft/teams-ai'

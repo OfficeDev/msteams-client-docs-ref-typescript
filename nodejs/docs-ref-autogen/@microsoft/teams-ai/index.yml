@@ -130,6 +130,7 @@ interfaces:
   - '@microsoft/teams-ai.ValidatedChatCompletionAction'
   - '@microsoft/teams-ai.Validation'
 enums:
+  - '@microsoft/teams-ai.AdaptiveCardActionExecuteResponseType'
   - '@microsoft/teams-ai.MessageExtensionsInvokeNames'
   - '@microsoft/teams-ai.ModerationSeverity'
   - '@microsoft/teams-ai.TaskModuleInvokeNames'

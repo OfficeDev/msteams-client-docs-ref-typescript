@@ -8,6 +8,21 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: endStreamHandler
+    uid: '@microsoft/teams-ai.LLMClientOptions.endStreamHandler'
+    package: '@microsoft/teams-ai'
+    summary: Optional handler to run when a stream is about to conclude.
+    fullName: endStreamHandler
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endStreamHandler?: PromptCompletionModelResponseReceivedEvent'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@microsoft/teams-ai.PromptCompletionModelResponseReceivedEvent"
+          />
   - name: history_variable
     uid: '@microsoft/teams-ai.LLMClientOptions.history_variable'
     package: '@microsoft/teams-ai'
