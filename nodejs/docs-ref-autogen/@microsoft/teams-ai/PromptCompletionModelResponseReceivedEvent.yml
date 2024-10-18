@@ -10,5 +10,6 @@ syntax: |
   type PromptCompletionModelResponseReceivedEvent = (
     context: TurnContext,
     memory: Memory,
-    response: PromptResponse<string>
+    response: PromptResponse<string>,
+    streamer: StreamingResponse
   ) => void
