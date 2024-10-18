@@ -398,6 +398,9 @@
     - uid: '@microsoft/teams-ai.AdaptiveCard'
       name: AdaptiveCard
       items: []
+    - uid: '@microsoft/teams-ai.AdaptiveCardActionExecuteResponseType'
+      name: AdaptiveCardActionExecuteResponseType
+      items: []
     - uid: '@microsoft/teams-ai.AdaptiveCards'
       name: AdaptiveCards
       items: []
@@ -1084,6 +1087,9 @@
     - uid: '@microsoft/teams-js.DialogSize'
       name: DialogSize
       items: []
+    - uid: '@microsoft/teams-js.EmailAddress'
+      name: EmailAddress
+      items: []
     - uid: '@microsoft/teams-js.ErrorCode'
       name: ErrorCode
       items: []
@@ -1359,6 +1365,9 @@
           uid: '@microsoft/teams-js.pages'
         - uid: '@microsoft/teams-js.pages.appButton'
           name: appButton
+          items: []
+        - uid: '@microsoft/teams-js.pages.AppNavigationParameters'
+          name: AppNavigationParameters
           items: []
         - uid: '@microsoft/teams-js.pages.backButtonHandlerFunctionType'
           name: backButtonHandlerFunctionType

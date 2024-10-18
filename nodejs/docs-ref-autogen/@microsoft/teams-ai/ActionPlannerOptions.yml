@@ -24,6 +24,21 @@ properties:
         type: >-
           string | <xref uid="@microsoft/teams-ai.ActionPlannerPromptFactory"
           />&lt;TState&gt;
+  - name: endStreamHandler
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.endStreamHandler'
+    package: '@microsoft/teams-ai'
+    summary: Optional handler to run when a stream is about to conclude.
+    fullName: endStreamHandler
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endStreamHandler?: PromptCompletionModelResponseReceivedEvent'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@microsoft/teams-ai.PromptCompletionModelResponseReceivedEvent"
+          />
   - name: logRepairs
     uid: '@microsoft/teams-ai.ActionPlannerOptions.logRepairs'
     package: '@microsoft/teams-ai'
