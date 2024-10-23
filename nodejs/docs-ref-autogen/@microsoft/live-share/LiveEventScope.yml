@@ -845,7 +845,7 @@ inheritedMethods:
       content: >-
         static function on(emitter: EventEmitter<DefaultEventMap>, eventName:
         string | symbol, options?: StaticEventEmitterIteratorOptions):
-        AsyncIterableIterator<any[]>
+        AsyncIterator<any[], any, any>
       parameters:
         - id: emitter
           type: EventEmitter&lt;DefaultEventMap&gt;
@@ -860,7 +860,7 @@ inheritedMethods:
         description: >-
           An `AsyncIterator` that iterates `eventName` events emitted by the
           `emitter`
-        type: AsyncIterableIterator&lt;any[]&gt;
+        type: AsyncIterator&lt;any[], any, any&gt;
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.on
   - name: on(EventTarget, string, StaticEventEmitterIteratorOptions)
     uid: '@microsoft/live-share.LiveEventScope.on_1'
@@ -871,7 +871,7 @@ inheritedMethods:
     syntax:
       content: >-
         static function on(emitter: EventTarget, eventName: string, options?:
-        StaticEventEmitterIteratorOptions): AsyncIterableIterator<any[]>
+        StaticEventEmitterIteratorOptions): AsyncIterator<any[], any, any>
       parameters:
         - id: emitter
           type: EventTarget
@@ -884,7 +884,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: AsyncIterableIterator&lt;any[]&gt;
+        type: AsyncIterator&lt;any[], any, any&gt;
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.on
   - name: >-
       once(EventEmitter<DefaultEventMap>, string | symbol,
@@ -1203,7 +1203,7 @@ inheritedMethods:
         - id: args
           type: AnyRest
           description: ''
-    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.__@captureRejectionSymbol@284
+    inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.__@captureRejectionSymbol@283
 methods:
   - name: offEvent<TEvent>(string, LiveEventListener<TEvent>)
     uid: '@microsoft/live-share.LiveEventScope.offEvent'

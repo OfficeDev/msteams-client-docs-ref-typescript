@@ -600,10 +600,16 @@ functions:
         - id: validMessageOrigins
           type: string[]
           description: >-
-            Optionally specify a list of cross frame message origins. There must
-            have
+            Optionally specify a list of cross-frame message origins. This
+            parameter is used if you know that your app
 
-            https: protocol otherwise they will be ignored. Example:
+            will be hosted on a custom domain (i.e., not a standard Microsoft
+            365 host like Teams, Outlook, etc.) Most apps will never need
+
+            to pass a value for this parameter.
+
+            Any domains passed in the array must have the https: protocol on the
+            string otherwise they will be ignored. Example:
             https://www.example.com
   - name: initializeWithFrameContext(FrameInfo, callbackFunctionType, string[])
     uid: '@microsoft/teams-js.initializeWithFrameContext'
