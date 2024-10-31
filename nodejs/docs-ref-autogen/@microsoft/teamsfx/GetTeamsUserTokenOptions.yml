@@ -64,6 +64,23 @@ inheritedProperties:
         description: ''
         type: boolean
     inheritanceDescription: <b>Inherited From</b> GetTokenOptions.enableCae
+  - name: proofOfPossessionOptions
+    uid: '@microsoft/teamsfx.GetTeamsUserTokenOptions.proofOfPossessionOptions'
+    package: '@microsoft/teamsfx'
+    summary: Options for Proof of Possession token requests
+    fullName: proofOfPossessionOptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        proofOfPossessionOptions?: { nonce: string, resourceRequestMethod:
+        HttpMethods, resourceRequestUrl: string }
+      return:
+        description: ''
+        type: >-
+          { nonce: string, resourceRequestMethod: HttpMethods,
+          resourceRequestUrl: string }
+    inheritanceDescription: <b>Inherited From</b> GetTokenOptions.proofOfPossessionOptions
   - name: requestOptions
     uid: '@microsoft/teamsfx.GetTeamsUserTokenOptions.requestOptions'
     package: '@microsoft/teamsfx'

@@ -25,7 +25,14 @@ properties:
   - name: breakByBlocklists
     uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.breakByBlocklists'
     package: '@microsoft/teams-ai'
-    summary: >-
+    summary: ''
+    fullName: breakByBlocklists
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      use `haltOnBlocklistHit`
+
+
       When set to true, further analyses of harmful content will not be
       performed in cases where blocklists are hit.
 
@@ -33,9 +40,6 @@ properties:
       whether or not blocklists are hit.
 
       Default value is false.
-    fullName: breakByBlocklists
-    remarks: ''
-    isDeprecated: false
     syntax:
       content: 'breakByBlocklists?: boolean'
       return:
@@ -59,6 +63,25 @@ properties:
       return:
         description: ''
         type: ContentSafetyHarmCategory[]
+  - name: haltOnBlocklistHit
+    uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.haltOnBlocklistHit'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      When set to true, further analyses of harmful content will not be
+      performed in cases where blocklists are hit.
+
+      When set to false, all analyses of harmful content will be performed,
+      whether or not blocklists are hit.
+
+      Default value is false.
+    fullName: haltOnBlocklistHit
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'haltOnBlocklistHit?: boolean'
+      return:
+        description: ''
+        type: boolean
 inheritedProperties:
   - name: apiKey
     uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions.apiKey'

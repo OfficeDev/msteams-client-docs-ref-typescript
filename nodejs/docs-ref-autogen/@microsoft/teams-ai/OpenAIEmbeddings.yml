@@ -64,4 +64,4 @@ methods:
         description: >-
           A `EmbeddingsResponse` with a status and the generated embeddings or a
           message when an error occurs.
-        type: Promise&lt;<xref uid="@microsoft/teams-ai.EmbeddingsResponse" />&gt;
+        type: Promise&lt;EmbeddingsResponse&gt;
