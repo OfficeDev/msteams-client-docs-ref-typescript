@@ -200,7 +200,9 @@ properties:
 
       to execute the current plan.
     fullName: StopCommandName
-    remarks: ''
+    remarks: >-
+      This command is incompatible and should not be used with `tools`
+      augmentation
     isDeprecated: false
     syntax:
       content: 'static StopCommandName: "STOP" = "STOP"'

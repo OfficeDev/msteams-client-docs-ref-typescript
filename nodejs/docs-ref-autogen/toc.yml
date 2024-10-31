@@ -479,9 +479,6 @@
     - uid: '@microsoft/teams-ai.Citation'
       name: Citation
       items: []
-    - uid: '@microsoft/teams-ai.ClientCitation'
-      name: ClientCitation
-      items: []
     - uid: '@microsoft/teams-ai.ConfiguredAIOptions'
       name: ConfiguredAIOptions
       items: []
@@ -524,15 +521,6 @@
     - uid: '@microsoft/teams-ai.EEMethodReturnType'
       name: EEMethodReturnType
       items: []
-    - uid: '@microsoft/teams-ai.EmbeddingsModel'
-      name: EmbeddingsModel
-      items: []
-    - uid: '@microsoft/teams-ai.EmbeddingsResponse'
-      name: EmbeddingsResponse
-      items: []
-    - uid: '@microsoft/teams-ai.EmbeddingsResponseStatus'
-      name: EmbeddingsResponseStatus
-      items: []
     - uid: '@microsoft/teams-ai.EmitEventNames'
       name: EmitEventNames
       items: []
@@ -565,9 +553,6 @@
       items: []
     - uid: '@microsoft/teams-ai.InnerEEMethodReturnType'
       name: InnerEEMethodReturnType
-      items: []
-    - uid: '@microsoft/teams-ai.InnerMonologue'
-      name: InnerMonologue
       items: []
     - uid: '@microsoft/teams-ai.InputFile'
       name: InputFile
@@ -768,9 +753,6 @@
     - uid: '@microsoft/teams-ai.Selector'
       name: Selector
       items: []
-    - uid: '@microsoft/teams-ai.SensitivityUsageInfo'
-      name: SensitivityUsageInfo
-      items: []
     - uid: '@microsoft/teams-ai.SequenceAugmentation'
       name: SequenceAugmentation
       items: []
@@ -833,9 +815,6 @@
       items: []
     - uid: '@microsoft/teams-ai.ToolsAugmentation'
       name: ToolsAugmentation
-      items: []
-    - uid: '@microsoft/teams-ai.TooManyStepsParameters'
-      name: TooManyStepsParameters
       items: []
     - uid: '@microsoft/teams-ai.TurnEvents'
       name: TurnEvents

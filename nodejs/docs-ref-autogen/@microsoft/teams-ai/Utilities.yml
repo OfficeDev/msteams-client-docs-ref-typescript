@@ -41,11 +41,11 @@ methods:
           type: string
           description: The text to search for citation references, i.e. [1], [2], etc.
         - id: citations
-          type: <xref uid="@microsoft/teams-ai.ClientCitation" />[]
+          type: ClientCitation[]
           description: The list of citations to search for.
       return:
         description: The list of citations used in the text.
-        type: undefined | <xref uid="@microsoft/teams-ai.ClientCitation" />[]
+        type: undefined | ClientCitation[]
   - name: snippet(string, number)
     uid: '@microsoft/teams-ai.Utilities.snippet'
     package: '@microsoft/teams-ai'

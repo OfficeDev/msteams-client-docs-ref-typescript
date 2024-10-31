@@ -45,9 +45,7 @@ methods:
           type: <xref uid="@microsoft/teams-ai.Memory" />
           description: An interface for accessing state variables.
         - id: response
-          type: >-
-            PromptResponse&lt;undefined | <xref
-            uid="@microsoft/teams-ai.InnerMonologue" />&gt;
+          type: PromptResponse&lt;undefined | InnerMonologue&gt;
           description: The validated and transformed response for the prompt.
       return:
         description: The created plan.
@@ -97,4 +95,4 @@ methods:
         description: A `Validation` object.
         type: >-
           Promise&lt;<xref uid="@microsoft/teams-ai.Validation" />&lt;undefined
-          | <xref uid="@microsoft/teams-ai.InnerMonologue" />&gt;&gt;
+          | InnerMonologue&gt;&gt;
