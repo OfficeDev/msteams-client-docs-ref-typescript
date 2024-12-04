@@ -1,0 +1,6 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.externalAppAuthenticationForCEA'
+name: externalAppAuthenticationForCEA
+type: module
+package: '@microsoft/teams-js'
+summary: ''

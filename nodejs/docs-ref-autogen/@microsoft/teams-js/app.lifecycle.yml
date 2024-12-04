@@ -2,8 +2,8 @@
 uid: '@microsoft/teams-js.app.lifecycle'
 name: lifecycle
 summary: >-
-  A namespace for enabling the suspension or delayed termination of an app when
-  the user navigates away.
+  A module for enabling the suspension or delayed termination of an app when the
+  user navigates away.
 
   When an app registers for the registerBeforeSuspendOrTerminateHandler, it
   chooses to delay termination.

@@ -3,7 +3,7 @@ uid: '@microsoft/teams-js.dialog.url.bot'
 name: bot
 type: module
 package: '@microsoft/teams-js'
-summary: Namespace to open a dialog that sends results to the bot framework
+summary: Module to open a dialog that sends results to the bot framework
 previewState: beta
 functions:
   - name: isSupported()

@@ -7,4 +7,4 @@ fullName: saveEventType
 remarks: ''
 isDeprecated: false
 syntax: |
-  type saveEventType = (evt: pages.config.SaveEvent) => void
+  type saveEventType = (evt: config.SaveEvent) => void

@@ -4,7 +4,7 @@ name: secondaryBrowser
 type: module
 package: '@microsoft/teams-js'
 summary: |-
-  Namespace to power up the in-app browser experiences in the host app.
+  Module to power up the in-app browser experiences in the host app.
   For e.g., opening a URL in the host app inside a browser
 previewState: beta
 functions:

@@ -1,0 +1,24 @@
+### YamlMime:TSType
+name: NotifySuccessResponse
+uid: '@microsoft/teams-js.app.NotifySuccessResponse'
+package: '@microsoft/teams-js'
+summary: The response of the notify success callback.
+fullName: NotifySuccessResponse
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: hasFinishedSuccessfully
+    uid: '@microsoft/teams-js.app.NotifySuccessResponse.hasFinishedSuccessfully'
+    package: '@microsoft/teams-js'
+    summary: >-
+      It shows if the callback resolved successfully in the host. If the host
+      does not support answering back to the callback, the result is unknown.
+    fullName: hasFinishedSuccessfully
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'hasFinishedSuccessfully: true | "unknown"'
+      return:
+        description: ''
+        type: true | "unknown"

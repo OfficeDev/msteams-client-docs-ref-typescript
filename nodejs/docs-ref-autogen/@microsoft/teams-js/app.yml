@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.app'
 name: app
-summary: Namespace to interact with app initialization and lifecycle.
+summary: Module to interact with app initialization and lifecycle.
 type: module
 interfaces:
   - '@microsoft/teams-js.app.AppHostInfo'
@@ -12,6 +12,7 @@ interfaces:
   - '@microsoft/teams-js.app.IExpectedFailureRequest'
   - '@microsoft/teams-js.app.IFailedRequest'
   - '@microsoft/teams-js.app.MeetingInfo'
+  - '@microsoft/teams-js.app.NotifySuccessResponse'
   - '@microsoft/teams-js.app.PageInfo'
   - '@microsoft/teams-js.app.SharePointSiteInfo'
   - '@microsoft/teams-js.app.TeamInfo'
@@ -21,6 +22,7 @@ enums:
   - '@microsoft/teams-js.app.ExpectedFailureReason'
   - '@microsoft/teams-js.app.FailedReason'
 typeAliases:
+  - '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
   - '@microsoft/teams-js.app.themeHandler'
 package: '@microsoft/teams-js'
 functions:
@@ -31,7 +33,7 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getContext(): Promise<app.Context>'
+      content: 'function getContext(): Promise<Context>'
       return:
         description: >-
           Promise that will resolve with the
@@ -143,7 +145,12 @@ functions:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: function notifySuccess()
+      content: 'function notifySuccess(): Promise<appHelpers.NotifySuccessResponse>'
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@microsoft/teams-js.app.NotifySuccessResponse"
+          />&gt;
   - name: openLink(string)
     uid: '@microsoft/teams-js.app.openLink'
     package: '@microsoft/teams-js'
@@ -221,6 +228,27 @@ functions:
 
           does not necessarily indicate whether the target loaded successfully.
         type: Promise&lt;void&gt;
+  - name: >-
+      registerHostToAppPerformanceMetricsHandler(HostToAppPerformanceMetricsHandler)
+    uid: '@microsoft/teams-js.app.registerHostToAppPerformanceMetricsHandler'
+    package: '@microsoft/teams-js'
+    summary: Registers a function for handling data of host to app message delay.
+    remarks: >-
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerHostToAppPerformanceMetricsHandler(handler:
+        HostToAppPerformanceMetricsHandler)
+      parameters:
+        - id: handler
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler" />
+          description: >-
+            The handler to invoke when the metrics are available on each
+            function response.
   - name: registerOnThemeChangeHandler(themeHandler)
     uid: '@microsoft/teams-js.app.registerOnThemeChangeHandler'
     package: '@microsoft/teams-js'

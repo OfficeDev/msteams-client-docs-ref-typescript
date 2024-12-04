@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.media'
 name: media
-summary: Interact with media, including capturing and viewing images.
+summary: ''
 type: module
 interfaces:
   - '@microsoft/teams-js.media.AssembleAttachment'
