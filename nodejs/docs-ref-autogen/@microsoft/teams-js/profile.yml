@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.profile'
 name: profile
-summary: Namespace for profile related APIs.
+summary: Module for profile related APIs.
 type: module
 typeAliases:
   - '@microsoft/teams-js.profile.Modality'

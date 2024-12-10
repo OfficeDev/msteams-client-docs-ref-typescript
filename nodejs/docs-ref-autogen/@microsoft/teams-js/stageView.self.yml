@@ -3,7 +3,7 @@ uid: '@microsoft/teams-js.stageView.self'
 name: self
 type: module
 package: '@microsoft/teams-js'
-summary: Namespace for actions that can be taken by the stage view itself.
+summary: Module for actions that can be taken by the stage view itself.
 previewState: beta
 functions:
   - name: close()

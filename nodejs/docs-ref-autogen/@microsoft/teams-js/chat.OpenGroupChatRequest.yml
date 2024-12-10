@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: OpenGroupChatRequest
-uid: '@microsoft/teams-js.OpenGroupChatRequest'
+uid: '@microsoft/teams-js.chat.OpenGroupChatRequest'
 package: '@microsoft/teams-js'
 summary: |-
   Used when starting a chat with more than one person
@@ -12,7 +12,7 @@ isDeprecated: false
 type: interface
 properties:
   - name: topic
-    uid: '@microsoft/teams-js.OpenGroupChatRequest.topic'
+    uid: '@microsoft/teams-js.chat.OpenGroupChatRequest.topic'
     package: '@microsoft/teams-js'
     summary: >-
       The display name of a conversation for 3 or more users (chats with fewer
@@ -26,7 +26,7 @@ properties:
         description: ''
         type: string
   - name: users
-    uid: '@microsoft/teams-js.OpenGroupChatRequest.users'
+    uid: '@microsoft/teams-js.chat.OpenGroupChatRequest.users'
     package: '@microsoft/teams-js'
     summary: >-
       Array containing [Microsoft Entra
@@ -44,7 +44,7 @@ properties:
         type: string[]
 inheritedProperties:
   - name: message
-    uid: '@microsoft/teams-js.OpenGroupChatRequest.message'
+    uid: '@microsoft/teams-js.chat.OpenGroupChatRequest.message'
     package: '@microsoft/teams-js'
     summary: An optional message used when initiating chat
     fullName: message

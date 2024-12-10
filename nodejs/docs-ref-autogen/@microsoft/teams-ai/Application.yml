@@ -112,6 +112,18 @@ properties:
       return:
         description: The MessageExtensions instance.
         type: <xref uid="@microsoft/teams-ai.MessageExtensions" />&lt;TState&gt;
+  - name: messages
+    uid: '@microsoft/teams-ai.Application.messages'
+    package: '@microsoft/teams-ai'
+    summary: Fluent interface for accessing Messages specific features.
+    fullName: messages
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: Messages<TState> messages
+      return:
+        description: The Messages instance.
+        type: Messages&lt;TState&gt;
   - name: options
     uid: '@microsoft/teams-ai.Application.options'
     package: '@microsoft/teams-ai'
@@ -323,6 +335,188 @@ methods:
       return:
         description: The application instance for chaining purposes.
         type: <xref uid="@microsoft/teams-ai.Application" />&lt;TState&gt;
+  - name: getPagedMembers(Partial<Activity>, number, string)
+    uid: '@microsoft/teams-ai.Application.getPagedMembers_2'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPagedMembers(activity: Partial<Activity>, pageSize?: number,
+        continuationToken?: string): Promise<TeamsPagedMembersResult>
+      parameters:
+        - id: activity
+          type: Partial&lt;Activity&gt;
+          description: ''
+        - id: pageSize
+          type: number
+          description: ''
+        - id: continuationToken
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;TeamsPagedMembersResult&gt;
+  - name: getPagedMembers(Partial<ConversationReference>, number, string)
+    uid: '@microsoft/teams-ai.Application.getPagedMembers_1'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPagedMembers(reference: Partial<ConversationReference>,
+        pageSize?: number, continuationToken?: string):
+        Promise<TeamsPagedMembersResult>
+      parameters:
+        - id: reference
+          type: Partial&lt;ConversationReference&gt;
+          description: ''
+        - id: pageSize
+          type: number
+          description: ''
+        - id: continuationToken
+          type: string
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;TeamsPagedMembersResult&gt;
+  - name: getPagedMembers(TurnContext, number, string)
+    uid: '@microsoft/teams-ai.Application.getPagedMembers'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Gets a paginated list of members of one-on-one, group, or team
+      conversation.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getPagedMembers(context: TurnContext, pageSize?: number,
+        continuationToken?: string): Promise<TeamsPagedMembersResult>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: The context for the current turn with the user.
+        - id: pageSize
+          type: number
+          description: >-
+            Suggested number of entries on a page. Page sizes with less than 50
+            are treated as 50, and greater than 500, are capped at 500.
+        - id: continuationToken
+          type: string
+          description: A continuation token.
+      return:
+        description: The TeamsPagedMembersResult with the list of members.
+        type: Promise&lt;TeamsPagedMembersResult&gt;
+  - name: getTeamChannels(Partial<Activity>)
+    uid: '@microsoft/teams-ai.Application.getTeamChannels_2'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTeamChannels(activity: Partial<Activity>):
+        Promise<ChannelInfo[]>
+      parameters:
+        - id: activity
+          type: Partial&lt;Activity&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;ChannelInfo[]&gt;
+  - name: getTeamChannels(Partial<ConversationReference>)
+    uid: '@microsoft/teams-ai.Application.getTeamChannels_1'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTeamChannels(conversationReference:
+        Partial<ConversationReference>): Promise<ChannelInfo[]>
+      parameters:
+        - id: conversationReference
+          type: Partial&lt;ConversationReference&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;ChannelInfo[]&gt;
+  - name: getTeamChannels(TurnContext)
+    uid: '@microsoft/teams-ai.Application.getTeamChannels'
+    package: '@microsoft/teams-ai'
+    summary: Retrieves the list of team channels for a given context.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getTeamChannels(context: TurnContext): Promise<ChannelInfo[]>'
+      parameters:
+        - id: context
+          type: TurnContext
+          description: |-
+            The context of the conversation, which can be a TurnContext,
+                             Partial<ConversationReference>, or Partial<Activity>.
+      return:
+        description: >-
+          A promise that resolves to an array of ChannelInfo objects if the bot
+          is installed into a team, otherwise returns an empty array.
+        type: Promise&lt;ChannelInfo[]&gt;
+  - name: getTeamDetails(Partial<Activity>)
+    uid: '@microsoft/teams-ai.Application.getTeamDetails_2'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTeamDetails(activity: Partial<Activity>): Promise<undefined
+        | TeamDetails>
+      parameters:
+        - id: activity
+          type: Partial&lt;Activity&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;undefined | TeamDetails&gt;
+  - name: getTeamDetails(Partial<ConversationReference>)
+    uid: '@microsoft/teams-ai.Application.getTeamDetails_1'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTeamDetails(conversationReference:
+        Partial<ConversationReference>): Promise<undefined | TeamDetails>
+      parameters:
+        - id: conversationReference
+          type: Partial&lt;ConversationReference&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;undefined | TeamDetails&gt;
+  - name: getTeamDetails(TurnContext)
+    uid: '@microsoft/teams-ai.Application.getTeamDetails'
+    package: '@microsoft/teams-ai'
+    summary: Retrieves the team details for a given context.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function getTeamDetails(context: TurnContext): Promise<undefined |
+        TeamDetails>
+      parameters:
+        - id: context
+          type: TurnContext
+          description: |-
+            The context of the conversation, which can be a TurnContext,
+                             Partial<ConversationReference>, or Partial<Activity>.
+      return:
+        description: >-
+          A promise that resolves to an array of ChannelInfo objects if the bot
+          is installed into a team, otherwise returns an empty array.
+        type: Promise&lt;undefined | TeamDetails&gt;
   - name: getTokenOrStartSignIn(TurnContext, TState, string)
     uid: '@microsoft/teams-ai.Application.getTokenOrStartSignIn'
     package: '@microsoft/teams-ai'

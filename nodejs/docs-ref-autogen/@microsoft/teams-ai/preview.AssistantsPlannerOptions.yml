@@ -11,7 +11,7 @@ properties:
   - name: apiKey
     uid: '@microsoft/teams-ai.preview.AssistantsPlannerOptions.apiKey'
     package: '@microsoft/teams-ai'
-    summary: The OpenAI or Azure OpenAI API key.
+    summary: The OpenAI or Azure OpenAI API key. Required.
     fullName: apiKey
     remarks: ''
     isDeprecated: false
@@ -36,7 +36,7 @@ properties:
   - name: assistant_id
     uid: '@microsoft/teams-ai.preview.AssistantsPlannerOptions.assistant_id'
     package: '@microsoft/teams-ai'
-    summary: The ID of the assistant to use.
+    summary: The ID of the assistant to use. Required.
     fullName: assistant_id
     remarks: ''
     isDeprecated: false
@@ -50,7 +50,7 @@ properties:
     package: '@microsoft/teams-ai'
     summary: The Azure OpenAI resource endpoint.
     fullName: endpoint
-    remarks: ''
+    remarks: Required when using Azure OpenAI. Not used for OpenAI.
     isDeprecated: false
     syntax:
       content: 'endpoint?: string'

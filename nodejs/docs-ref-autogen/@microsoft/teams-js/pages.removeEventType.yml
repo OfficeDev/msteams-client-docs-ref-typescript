@@ -7,4 +7,4 @@ fullName: removeEventType
 remarks: ''
 isDeprecated: false
 syntax: |
-  type removeEventType = (evt: pages.config.RemoveEvent) => void
+  type removeEventType = (evt: config.RemoveEvent) => void

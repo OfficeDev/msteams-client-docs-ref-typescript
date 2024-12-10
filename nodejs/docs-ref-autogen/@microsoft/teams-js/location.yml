@@ -53,7 +53,7 @@ functions:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of 2.1.0, please use geoLocation namespace, and use
+      As of 2.1.0, please use geoLocation module, and use
       [geoLocation.isSupported:
       boolean](xref:@microsoft/teams-js.geoLocation.isSupported) to check if
       geoLocation is supported.

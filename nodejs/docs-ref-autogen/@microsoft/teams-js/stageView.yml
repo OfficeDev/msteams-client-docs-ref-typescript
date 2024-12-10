@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.stageView'
 name: stageView
-summary: Namespace to interact with the stage view specific part of the SDK.
+summary: Module to interact with the stage view specific part of the SDK.
 type: module
 enums:
   - '@microsoft/teams-js.stageView.StageViewOpenMode'

@@ -1,10 +1,9 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.dialog.adaptiveCard'
 name: adaptiveCard
-summary: Subcapability for interacting with adaptive card dialogs
+summary: ''
 type: module
 package: '@microsoft/teams-js'
-previewState: beta
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.dialog.adaptiveCard.isSupported'
@@ -38,6 +37,6 @@ functions:
         - id: submitHandler
           type: <xref uid="@microsoft/teams-js.dialog.DialogSubmitHandler" />
           description: >-
-            Handler that triggers when a dialog calls the
-            <code><xref:@microsoft/teams-js.dialog.url.submit></code> function
+            Handler that triggers when a dialog fires an
+            [Action.Submit](https://adaptivecards.io/explorer/Action.Submit.html)
             or when the user closes the dialog.

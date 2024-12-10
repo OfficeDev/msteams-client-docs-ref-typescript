@@ -4,7 +4,7 @@ name: bot
 type: module
 package: '@microsoft/teams-js'
 summary: >-
-  Namespace for interaction with adaptive card dialogs that need to communicate
+  Module for interaction with adaptive card dialogs that need to communicate
   with the bot framework
 previewState: beta
 functions:

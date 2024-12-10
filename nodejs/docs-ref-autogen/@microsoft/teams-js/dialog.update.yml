@@ -3,7 +3,7 @@ uid: '@microsoft/teams-js.dialog.update'
 name: update
 type: module
 package: '@microsoft/teams-js'
-summary: Namespace to update the dialog
+summary: Module to update the dialog
 previewState: beta
 functions:
   - name: isSupported()

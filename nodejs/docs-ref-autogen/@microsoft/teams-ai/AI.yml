@@ -51,6 +51,18 @@ properties:
       return:
         description: ''
         type: '"___DO___"'
+  - name: enableFeedbackLoop
+    uid: '@microsoft/teams-ai.AI.enableFeedbackLoop'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: enableFeedbackLoop
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: boolean enableFeedbackLoop
+      return:
+        description: Returns the feedback loop flag.
+        type: boolean
   - name: FlaggedInputActionName
     uid: '@microsoft/teams-ai.AI.FlaggedInputActionName'
     package: '@microsoft/teams-ai'
