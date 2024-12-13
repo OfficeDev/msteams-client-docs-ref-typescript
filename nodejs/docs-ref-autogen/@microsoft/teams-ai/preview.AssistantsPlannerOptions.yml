@@ -20,6 +20,20 @@ properties:
       return:
         description: ''
         type: string
+  - name: api_version
+    uid: '@microsoft/teams-ai.preview.AssistantsPlannerOptions.api_version'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Version of the API being called. Default is
+      '2024-02-15-preview'.
+    fullName: api_version
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'api_version?: string'
+      return:
+        description: ''
+        type: string
   - name: assistants_state_variable
     uid: >-
       @microsoft/teams-ai.preview.AssistantsPlannerOptions.assistants_state_variable
