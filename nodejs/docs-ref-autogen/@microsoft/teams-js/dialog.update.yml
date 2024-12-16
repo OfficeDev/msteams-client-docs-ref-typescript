@@ -4,14 +4,12 @@ name: update
 type: module
 package: '@microsoft/teams-js'
 summary: Module to update the dialog
-previewState: beta
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.dialog.update.isSupported'
     package: '@microsoft/teams-js'
     summary: Checks if dialog.update capability is supported by the host
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -23,7 +21,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Update dimensions - height/width of a dialog.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function resize(dimensions: DialogSize)'

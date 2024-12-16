@@ -1533,6 +1533,9 @@
         - uid: '@microsoft/teams-js.stageView.StageViewParams'
           name: StageViewParams
           items: []
+    - uid: '@microsoft/teams-js.store'
+      name: store
+      items: []
     - uid: '@microsoft/teams-js.TabInformation'
       name: TabInformation
       items: []

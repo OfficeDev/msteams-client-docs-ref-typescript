@@ -10,7 +10,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Checks if dialog.adaptiveCard module is supported by the host
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -22,7 +21,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Allows app to open an adaptive card based dialog.
     remarks: This function cannot be called from inside of a dialog
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-

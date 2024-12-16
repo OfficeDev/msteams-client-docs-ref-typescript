@@ -4,7 +4,6 @@ name: parentCommunication
 type: module
 package: '@microsoft/teams-js'
 summary: Subcapability that allows communication between the dialog and the parent app.
-previewState: beta
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.dialog.url.parentCommunication.isSupported'
@@ -13,7 +12,6 @@ functions:
       Checks if dialog.url.parentCommunication capability is supported by the
       host
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -32,7 +30,6 @@ functions:
     remarks: >-
       This function is only intended to be called from code running within the
       dialog. Calling it from outside the dialog will have no effect.
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function registerOnMessageFromParent(listener: PostMessageChannel)'
@@ -45,7 +42,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Send message to the dialog from the parent
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function sendMessageToDialog(message: any)'
@@ -61,7 +57,6 @@ functions:
     remarks: >-
       This function is only intended to be called from code running within the
       dialog. Calling it from outside the dialog will have no effect.
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function sendMessageToParentFromDialog(message: any)'
