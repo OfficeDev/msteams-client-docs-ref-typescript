@@ -24,6 +24,18 @@ properties:
         type: >-
           string | <xref uid="@microsoft/teams-ai.ActionPlannerPromptFactory"
           />&lt;TState&gt;
+  - name: enableFeedbackLoop
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.enableFeedbackLoop'
+    package: '@microsoft/teams-ai'
+    summary: If true, the feedback loop will be enabled for streaming responses.
+    fullName: enableFeedbackLoop
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enableFeedbackLoop?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: endStreamHandler
     uid: '@microsoft/teams-ai.ActionPlannerOptions.endStreamHandler'
     package: '@microsoft/teams-ai'

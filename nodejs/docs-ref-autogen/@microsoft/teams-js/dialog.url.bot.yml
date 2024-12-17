@@ -3,15 +3,13 @@ uid: '@microsoft/teams-js.dialog.url.bot'
 name: bot
 type: module
 package: '@microsoft/teams-js'
-summary: Namespace to open a dialog that sends results to the bot framework
-previewState: beta
+summary: Module to open a dialog that sends results to the bot framework
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.dialog.url.bot.isSupported'
     package: '@microsoft/teams-js'
     summary: Checks if dialog.url.bot capability is supported by the host
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -23,7 +21,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Allows an app to open a dialog that sends submitted data to a bot.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-

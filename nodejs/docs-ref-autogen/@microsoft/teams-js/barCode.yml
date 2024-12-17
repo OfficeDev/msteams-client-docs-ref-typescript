@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.barCode'
 name: barCode
-summary: Namespace to interact with the barcode scanning-specific part of the SDK.
+summary: Module to interact with the barcode scanning-specific part of the SDK.
 type: module
 interfaces:
   - '@microsoft/teams-js.barCode.BarCodeConfig'

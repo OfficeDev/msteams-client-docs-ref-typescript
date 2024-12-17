@@ -10,7 +10,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Checks if dialog.url module is supported by the host
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -22,7 +21,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Allows app to open a url based dialog.
     remarks: This function cannot be called from inside of a dialog
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-
@@ -48,7 +46,6 @@ functions:
     remarks: >-
       This function is only intended to be called from code running within the
       dialog. Calling it from outside the dialog will have no effect.
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function submit(result?: string | object, appIds?: string | string[])'

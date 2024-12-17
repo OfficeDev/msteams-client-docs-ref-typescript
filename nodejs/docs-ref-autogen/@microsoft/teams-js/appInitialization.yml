@@ -74,7 +74,8 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of TeamsJS v2.0.0, please use [app.notifySuccess():
-      void](xref:@microsoft/teams-js.app.notifySuccess) instead.
+      Promise<NotifySuccessResponse>](xref:@microsoft/teams-js.app.notifySuccess)
+      instead.
 
 
       Notifies the frame that app initialization is successful and is ready for
