@@ -1,8 +1,6 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.liveShare'
 name: liveShare
-type: module
-package: '@microsoft/teams-js'
 summary: >-
   APIs involving Live Share, a framework for building real-time collaborative
   apps.
@@ -11,6 +9,10 @@ summary: >-
 
 
   See LiveShareHost
+type: module
+classes:
+  - '@microsoft/teams-js.liveShare.LiveShareHost'
+package: '@microsoft/teams-js'
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.liveShare.isSupported'

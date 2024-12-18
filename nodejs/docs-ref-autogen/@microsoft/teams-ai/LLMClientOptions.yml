@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: enableFeedbackLoop
+    uid: '@microsoft/teams-ai.LLMClientOptions.enableFeedbackLoop'
+    package: '@microsoft/teams-ai'
+    summary: If true, the feedback loop will be enabled for streaming responses.
+    fullName: enableFeedbackLoop
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enableFeedbackLoop?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: endStreamHandler
     uid: '@microsoft/teams-ai.LLMClientOptions.endStreamHandler'
     package: '@microsoft/teams-ai'

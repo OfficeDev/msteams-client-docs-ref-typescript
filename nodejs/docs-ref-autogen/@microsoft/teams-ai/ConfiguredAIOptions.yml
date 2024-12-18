@@ -34,6 +34,22 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: feedback_loop_type
+    uid: '@microsoft/teams-ai.ConfiguredAIOptions.feedback_loop_type'
+    package: '@microsoft/teams-ai'
+    summary: >-
+      Optional. Only used when `enable_feedback_loop` == `true`. When set to
+      `custom` the user will be presented with a text input
+
+      to provide feedback.
+    fullName: feedback_loop_type
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'feedback_loop_type?: "default" | "custom"'
+      return:
+        description: ''
+        type: '"default" | "custom"'
   - name: max_steps
     uid: '@microsoft/teams-ai.ConfiguredAIOptions.max_steps'
     package: '@microsoft/teams-ai'

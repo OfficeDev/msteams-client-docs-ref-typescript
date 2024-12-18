@@ -2,9 +2,21 @@
 name: AssistantsPlanner
 uid: '@microsoft/teams-ai.preview.AssistantsPlanner'
 package: '@microsoft/teams-ai'
-summary: A Planner that uses the OpenAI Assistants API.
+summary: >-
+  A Planner that uses the OpenAI Assistants API to generate plans for the AI
+  system.
 fullName: AssistantsPlanner<TState>
-remarks: ''
+remarks: >-
+  This planner manages conversations through OpenAI's thread-based system,
+  handling:
+
+  - Thread creation and management
+
+  - Message submission
+
+  - Tool/function calling
+
+  - Response processing
 isDeprecated: false
 type: class
 constructors:
@@ -26,8 +38,10 @@ methods:
     package: '@microsoft/teams-ai'
     summary: Starts a new task.
     remarks: >-
-      This method is called when the AI system is ready to start a new task. The
-      planner should
+      This method is called when the AI system is ready to start a new task. It
+      delegates the
+
+      task handling to the `continueTask` method. The planner should
 
       generate a plan that the AI system will execute. Returning an empty plan
       signals that
@@ -59,16 +73,21 @@ methods:
     package: '@microsoft/teams-ai'
     summary: Continues the current task.
     remarks: >-
-      This method is called when the AI system has finished executing the
-      previous plan and is
+      This method is called when the AI system is ready to continue the current
+      task. It handles:
 
-      ready to continue the current task. The planner should generate a plan
-      that the AI system
+      - Creating a new thread if one doesn't exist
 
-      will execute. Returning an empty plan signals that the task is completed
-      and there is no work
+      - Submitting tool outputs if required
 
-      to be performed.
+      - Waiting for any in-progress runs to complete
+
+      - Submitting user input and creating a new run
+
+      The method generates a plan that the AI system will execute. Returning an
+      empty plan signals
+
+      that the task is completed and there is no work to be performed.
 
 
       The output from the last plan step that was executed is passed to the
@@ -91,26 +110,32 @@ methods:
       return:
         description: The plan that was generated.
         type: Promise&lt;<xref uid="@microsoft/teams-ai.Plan" />&gt;
-  - name: createAssistant(string, AssistantCreationOptions, string)
+  - name: createAssistant(string, AssistantCreateParams, string, AzureClientOptions)
     uid: '@microsoft/teams-ai.preview.AssistantsPlanner.createAssistant'
     package: '@microsoft/teams-ai'
-    summary: Static helper method for programmatically creating an assistant.
+    summary: Creates a new assistant using the OpenAI Assistants API.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
         static function createAssistant(apiKey: string, request:
-        AssistantCreationOptions, endpoint?: string): Promise<Assistant>
+        AssistantCreateParams, endpoint?: string, azureClientOptions?:
+        AzureClientOptions): Promise<Assistant>
       parameters:
         - id: apiKey
           type: string
           description: OpenAI API key.
         - id: request
-          type: <xref uid="@azure/openai-assistants.AssistantCreationOptions" />
+          type: AssistantCreateParams
           description: Definition of the assistant to create.
         - id: endpoint
           type: string
-          description: The Azure OpenAI resource endpoint.
+          description: >-
+            Optional. The Azure OpenAI resource endpoint. Required when using
+            Azure OpenAI.
+        - id: azureClientOptions
+          type: AzureClientOptions
+          description: Optional. The Azure OpenAI client options.
       return:
         description: The created assistant.
-        type: Promise&lt;<xref uid="@azure/openai-assistants.Assistant" />&gt;
+        type: Promise&lt;Assistant&gt;

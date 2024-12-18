@@ -1013,9 +1013,39 @@ properties:
       instead
 
 
-      Time when the user clicked on the tab
+      Time when the user clicked on the tab using the date.
+
+
+      For measuring elapsed time between the moment the user click the tab, use
+      [app.Context.app.userClickTimeV2](xref:@microsoft/teams-js.app.AppInfo.userClickTimeV2)
+      instead as it uses the performance timer API.
     syntax:
       content: 'userClickTime?: number'
+      return:
+        description: ''
+        type: number
+  - name: userClickTimeV2
+    uid: '@microsoft/teams-js.Context.userClickTimeV2'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: userClickTimeV2
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of TeamsJS v2.0.0, please use
+      [app.Context.app.userClickTimeV2](xref:@microsoft/teams-js.app.AppInfo.userClickTimeV2)
+      instead
+
+
+      Time when the user click on the app by using the performance timer API.
+      Useful for measuring elapsed time accurately.
+
+
+      For displaying the time when the user clicked on the app, please use
+      [app.Context.app.userClickTime](xref:@microsoft/teams-js.app.AppInfo.userClickTime)
+      as it uses the date.
+    syntax:
+      content: 'userClickTimeV2?: number'
       return:
         description: ''
         type: number

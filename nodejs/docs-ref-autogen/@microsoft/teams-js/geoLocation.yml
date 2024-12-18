@@ -2,8 +2,8 @@
 uid: '@microsoft/teams-js.geoLocation'
 name: geoLocation
 summary: >-
-  Namespace to interact with the geoLocation module-specific part of the SDK.
-  This is the newer version of location module.
+  Module to interact with the geoLocation module-specific part of the SDK. This
+  is the newer version of location module.
 type: module
 interfaces:
   - '@microsoft/teams-js.geoLocation.Location'

@@ -12,7 +12,6 @@ summary: >-
   See <code><xref:@microsoft/teams-js.dialog.ISdkResponse></code>
 fullName: DialogSubmitHandler
 remarks: ''
-previewState: beta
 isDeprecated: false
 syntax: |
   type DialogSubmitHandler = (result: ISdkResponse) => void
