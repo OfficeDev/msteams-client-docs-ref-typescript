@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.videoEffects'
 name: videoEffects
-summary: Namespace to video extensibility of the SDK
+summary: Module to support video extensibility of the SDK
 type: module
 enums:
   - '@microsoft/teams-js.videoEffects.EffectChangeType'

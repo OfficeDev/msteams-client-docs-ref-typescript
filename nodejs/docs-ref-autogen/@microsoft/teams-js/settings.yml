@@ -7,7 +7,11 @@ typeAliases:
   - '@microsoft/teams-js.settings.getSettingsCallbackFunctionType'
   - '@microsoft/teams-js.settings.registerOnRemoveHandlerFunctionType'
   - '@microsoft/teams-js.settings.registerOnSaveHandlerFunctionType'
+  - '@microsoft/teams-js.settings.RemoveEvent'
+  - '@microsoft/teams-js.settings.SaveEvent'
+  - '@microsoft/teams-js.settings.SaveParameters'
   - '@microsoft/teams-js.settings.setSettingsOnCompleteFunctionType'
+  - '@microsoft/teams-js.settings.Settings'
 package: '@microsoft/teams-js'
 functions:
   - name: getSettings(getSettingsCallbackFunctionType)
@@ -33,7 +37,7 @@ functions:
             />
           description: >-
             The callback to invoke when the
-            [Settings](xref:@microsoft/teams-js.pages.InstanceConfig) object is
+            [Settings](xref:@microsoft/teams-js.settings.Settings) object is
             retrieved.
   - name: registerOnRemoveHandler(registerOnRemoveHandlerFunctionType)
     uid: '@microsoft/teams-js.settings.registerOnRemoveHandler'

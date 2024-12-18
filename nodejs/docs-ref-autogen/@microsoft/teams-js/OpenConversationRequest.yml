@@ -1,9 +1,0 @@
-### YamlMime:TSType
-name: OpenConversationRequest
-uid: '@microsoft/teams-js.OpenConversationRequest'
-package: '@microsoft/teams-js'
-summary: ''
-fullName: OpenConversationRequest
-remarks: ''
-isDeprecated: false
-type: interface

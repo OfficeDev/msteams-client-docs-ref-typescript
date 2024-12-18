@@ -890,6 +890,9 @@
         - uid: '@microsoft/teams-js.app.FailedReason'
           name: FailedReason
           items: []
+        - uid: '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
+          name: HostToAppPerformanceMetricsHandler
+          items: []
         - uid: '@microsoft/teams-js.app.IExpectedFailureRequest'
           name: IExpectedFailureRequest
           items: []
@@ -910,6 +913,9 @@
               items: []
         - uid: '@microsoft/teams-js.app.MeetingInfo'
           name: MeetingInfo
+          items: []
+        - uid: '@microsoft/teams-js.app.NotifySuccessResponse'
+          name: NotifySuccessResponse
           items: []
         - uid: '@microsoft/teams-js.app.PageInfo'
           name: PageInfo
@@ -1003,23 +1009,27 @@
     - uid: '@microsoft/teams-js.ChannelType'
       name: ChannelType
       items: []
-    - uid: '@microsoft/teams-js.chat'
-      name: chat
-      items: []
+    - name: chat
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.chat'
+        - uid: '@microsoft/teams-js.chat.OpenGroupChatRequest'
+          name: OpenGroupChatRequest
+          items: []
+        - uid: '@microsoft/teams-js.chat.OpenSingleChatRequest'
+          name: OpenSingleChatRequest
+          items: []
     - uid: '@microsoft/teams-js.ChildAppWindow'
       name: ChildAppWindow
       items: []
     - uid: '@microsoft/teams-js.clipboard'
       name: clipboard
       items: []
-    - uid: '@microsoft/teams-js.ClipboardParams'
-      name: ClipboardParams
-      items: []
-    - uid: '@microsoft/teams-js.ClipboardSupportedMimeType'
-      name: ClipboardSupportedMimeType
-      items: []
     - uid: '@microsoft/teams-js.Context'
       name: Context
+      items: []
+    - uid: '@microsoft/teams-js.copilot'
+      name: copilot
       items: []
     - uid: '@microsoft/teams-js.DeepLinkParameters'
       name: DeepLinkParameters
@@ -1075,11 +1085,11 @@
     - uid: '@microsoft/teams-js.executeDeepLinkOnCompleteFunctionType'
       name: executeDeepLinkOnCompleteFunctionType
       items: []
+    - uid: '@microsoft/teams-js.externalAppAuthenticationForCEA'
+      name: externalAppAuthenticationForCEA
+      items: []
     - uid: '@microsoft/teams-js.FileOpenPreference'
       name: FileOpenPreference
-      items: []
-    - uid: '@microsoft/teams-js.files'
-      name: files
       items: []
     - uid: '@microsoft/teams-js.FrameContext'
       name: FrameContext
@@ -1112,15 +1122,22 @@
     - uid: '@microsoft/teams-js.HostName'
       name: HostName
       items: []
+    - uid: '@microsoft/teams-js.HostToAppPerformanceMetrics'
+      name: HostToAppPerformanceMetrics
+      items: []
     - uid: '@microsoft/teams-js.IAppWindow'
       name: IAppWindow
       items: []
-    - uid: '@microsoft/teams-js.liveShare'
-      name: liveShare
+    - uid: '@microsoft/teams-js.ISerializable'
+      name: ISerializable
       items: []
-    - uid: '@microsoft/teams-js.LiveShareHost'
-      name: LiveShareHost
-      items: []
+    - name: liveShare
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.liveShare'
+        - uid: '@microsoft/teams-js.liveShare.LiveShareHost'
+          name: LiveShareHost
+          items: []
     - uid: '@microsoft/teams-js.LoadContext'
       name: LoadContext
       items: []
@@ -1301,9 +1318,6 @@
         - uid: '@microsoft/teams-js.meeting.SharingProtocol'
           name: SharingProtocol
           items: []
-    - uid: '@microsoft/teams-js.meetingRoom'
-      name: meetingRoom
-      items: []
     - name: menus
       items:
         - name: Overview
@@ -1314,29 +1328,14 @@
         - uid: '@microsoft/teams-js.menus.DisplayMode'
           name: DisplayMode
           items: []
-    - uid: '@microsoft/teams-js.monetization'
-      name: monetization
-      items: []
     - uid: '@microsoft/teams-js.nestedAppAuth'
       name: nestedAppAuth
-      items: []
-    - uid: '@microsoft/teams-js.notifications'
-      name: notifications
       items: []
     - uid: '@microsoft/teams-js.onCompleteFunctionType'
       name: onCompleteFunctionType
       items: []
     - uid: '@microsoft/teams-js.onCompleteHandlerFunctionType'
       name: onCompleteHandlerFunctionType
-      items: []
-    - uid: '@microsoft/teams-js.OpenConversationRequest'
-      name: OpenConversationRequest
-      items: []
-    - uid: '@microsoft/teams-js.OpenGroupChatRequest'
-      name: OpenGroupChatRequest
-      items: []
-    - uid: '@microsoft/teams-js.OpenSingleChatRequest'
-      name: OpenSingleChatRequest
       items: []
     - name: pages
       items:
@@ -1433,9 +1432,6 @@
         - uid: '@microsoft/teams-js.profile.TriggerType'
           name: TriggerType
           items: []
-    - uid: '@microsoft/teams-js.Rectangle'
-      name: Rectangle
-      items: []
     - uid: '@microsoft/teams-js.registerBackButtonHandlerFunctionType'
       name: registerBackButtonHandlerFunctionType
       items: []
@@ -1444,9 +1440,6 @@
       items: []
     - uid: '@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType'
       name: registerOnThemeChangeHandlerFunctionType
-      items: []
-    - uid: '@microsoft/teams-js.remoteCamera'
-      name: remoteCamera
       items: []
     - uid: '@microsoft/teams-js.ResumeContext'
       name: ResumeContext
@@ -1486,8 +1479,20 @@
         - uid: '@microsoft/teams-js.settings.registerOnSaveHandlerFunctionType'
           name: registerOnSaveHandlerFunctionType
           items: []
+        - uid: '@microsoft/teams-js.settings.RemoveEvent'
+          name: RemoveEvent
+          items: []
+        - uid: '@microsoft/teams-js.settings.SaveEvent'
+          name: SaveEvent
+          items: []
+        - uid: '@microsoft/teams-js.settings.SaveParameters'
+          name: SaveParameters
+          items: []
         - uid: '@microsoft/teams-js.settings.setSettingsOnCompleteFunctionType'
           name: setSettingsOnCompleteFunctionType
+          items: []
+        - uid: '@microsoft/teams-js.settings.Settings'
+          name: Settings
           items: []
     - uid: '@microsoft/teams-js.ShareDeepLinkParameters'
       name: ShareDeepLinkParameters
@@ -1528,6 +1533,9 @@
         - uid: '@microsoft/teams-js.stageView.StageViewParams'
           name: StageViewParams
           items: []
+    - uid: '@microsoft/teams-js.store'
+      name: store
+      items: []
     - uid: '@microsoft/teams-js.TabInformation'
       name: TabInformation
       items: []
@@ -1550,13 +1558,6 @@
     - uid: '@microsoft/teams-js.TeamInformation'
       name: TeamInformation
       items: []
-    - name: teams
-      items:
-        - name: Overview
-          uid: '@microsoft/teams-js.teams'
-        - uid: '@microsoft/teams-js.teams.ChannelType'
-          name: ChannelType
-          items: []
     - name: teamsCore
       items:
         - name: Overview
@@ -1643,12 +1644,6 @@
         - uid: '@microsoft/teams-js.videoEffects.VideoFrameHandler'
           name: VideoFrameHandler
           items: []
-    - uid: '@microsoft/teams-js.videoEffectsEx'
-      name: videoEffectsEx
-      items: []
-    - uid: '@microsoft/teams-js.VideoPerformanceMonitor'
-      name: VideoPerformanceMonitor
-      items: []
     - uid: '@microsoft/teams-js.webStorage'
       name: webStorage
       items: []

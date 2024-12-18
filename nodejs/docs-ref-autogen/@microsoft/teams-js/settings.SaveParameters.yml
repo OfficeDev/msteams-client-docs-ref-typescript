@@ -1,0 +1,14 @@
+### YamlMime:TSTypeAlias
+name: SaveParameters
+uid: '@microsoft/teams-js.settings.SaveParameters'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: SaveParameters
+remarks: See pages.SaveParameters
+isDeprecated: true
+customDeprecatedMessage: >-
+  As of TeamsJS v2.0.0, please use
+  [SaveParameters](xref:@microsoft/teams-js.pages.config.SaveParameters)
+  instead.
+syntax: |
+  type SaveParameters = pages.config.SaveParameters

@@ -1,7 +1,7 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.teamsCore'
 name: teamsCore
-summary: ''
+summary: Module containing the set of APIs that support Teams-specific functionalities.
 type: module
 typeAliases:
   - '@microsoft/teams-js.teamsCore.readyToUnloadFunctionType'

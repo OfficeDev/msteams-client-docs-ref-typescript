@@ -1,0 +1,17 @@
+### YamlMime:TSTypeAlias
+name: HostToAppPerformanceMetricsHandler
+uid: '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
+package: '@microsoft/teams-js'
+summary: >-
+  This function is passed to registerHostToAppPerformanceMetricsHandler. It is
+  called every time a response is received from the host with metrics for
+  analyzing message delay. See
+  [HostToAppPerformanceMetrics](xref:@microsoft/teams-js.HostToAppPerformanceMetrics)
+  to see which metrics are passed to the handler.
+fullName: HostToAppPerformanceMetricsHandler
+remarks: ''
+isDeprecated: false
+syntax: |
+  type HostToAppPerformanceMetricsHandler = (
+    metrics: HostToAppPerformanceMetrics
+  ) => void

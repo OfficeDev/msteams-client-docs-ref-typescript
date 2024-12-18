@@ -1,9 +1,12 @@
 ### YamlMime:TSPackage
 uid: '@microsoft/teams-js.chat'
 name: chat
+summary: Describes information needed to start a chat
 type: module
+interfaces:
+  - '@microsoft/teams-js.chat.OpenGroupChatRequest'
+  - '@microsoft/teams-js.chat.OpenSingleChatRequest'
 package: '@microsoft/teams-js'
-summary: Contains functionality to start chat with others
 functions:
   - name: isSupported()
     uid: '@microsoft/teams-js.chat.isSupported'
@@ -28,7 +31,7 @@ functions:
       content: 'function openChat(openChatRequest: OpenSingleChatRequest): Promise<void>'
       parameters:
         - id: openChatRequest
-          type: <xref uid="@microsoft/teams-js.OpenSingleChatRequest" />
+          type: <xref uid="@microsoft/teams-js.chat.OpenSingleChatRequest" />
           description: ''
       return:
         description: Promise resolved upon completion
@@ -51,7 +54,7 @@ functions:
         Promise<void>
       parameters:
         - id: openChatRequest
-          type: <xref uid="@microsoft/teams-js.OpenGroupChatRequest" />
+          type: <xref uid="@microsoft/teams-js.chat.OpenGroupChatRequest" />
           description: ''
       return:
         description: Promise resolved upon completion

@@ -1,0 +1,48 @@
+### YamlMime:TSType
+name: HostToAppPerformanceMetrics
+uid: '@microsoft/teams-js.HostToAppPerformanceMetrics'
+package: '@microsoft/teams-js'
+summary: >-
+  Meant for passing data to the app related to host-to-app message performance
+  metrics.
+fullName: HostToAppPerformanceMetrics
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: actionName
+    uid: '@microsoft/teams-js.HostToAppPerformanceMetrics.actionName'
+    package: '@microsoft/teams-js'
+    summary: The name of the action the host is responding to.
+    fullName: actionName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'actionName: string'
+      return:
+        description: ''
+        type: string
+  - name: messageDelay
+    uid: '@microsoft/teams-js.HostToAppPerformanceMetrics.messageDelay'
+    package: '@microsoft/teams-js'
+    summary: The delay the message took traveling from host to app
+    fullName: messageDelay
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'messageDelay: number'
+      return:
+        description: ''
+        type: number
+  - name: requestStartedAt
+    uid: '@microsoft/teams-js.HostToAppPerformanceMetrics.requestStartedAt'
+    package: '@microsoft/teams-js'
+    summary: The time when the request was dispatched
+    fullName: requestStartedAt
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestStartedAt: number'
+      return:
+        description: ''
+        type: number

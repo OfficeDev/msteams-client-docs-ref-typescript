@@ -1,0 +1,23 @@
+### YamlMime:TSType
+name: ISerializable
+uid: '@microsoft/teams-js.ISerializable'
+package: '@microsoft/teams-js'
+summary: Interface for objects that can be serialized and passed to the host
+fullName: ISerializable
+remarks: ''
+isDeprecated: false
+type: interface
+methods:
+  - name: serialize()
+    uid: '@microsoft/teams-js.ISerializable.serialize'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function serialize(): string | object'
+      return:
+        description: >-
+          A serializable representation of the object, used for passing objects
+          to the host.
+        type: string | object
