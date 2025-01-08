@@ -94,7 +94,7 @@ remarks: >-
 isDeprecated: false
 type: class
 constructors:
-  - name: ConversationBot(ConversationOptions_2)
+  - name: ConversationBot(ConversationOptions)
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Create new instance of the `ConversationBot`.
@@ -103,7 +103,7 @@ constructors:
       environment instead of the default one.
     isDeprecated: false
     syntax:
-      content: 'new ConversationBot(options: ConversationOptions_2)'
+      content: 'new ConversationBot(options: ConversationOptions)'
       parameters:
         - id: options
           type: >-
@@ -132,7 +132,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'cardAction?: CardActionBot_2'
+      content: 'cardAction?: CardActionBot'
       return:
         description: ''
         type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot" />
@@ -144,7 +144,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'command?: CommandBot_2'
+      content: 'command?: CommandBot'
       return:
         description: ''
         type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot" />
@@ -156,7 +156,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'notification?: NotificationBot_2'
+      content: 'notification?: NotificationBot'
       return:
         description: ''
         type: >-
@@ -173,15 +173,17 @@ methods:
 
       **Example**
 
-      For example, to use with Restify:
+      For example, to use with Express:
       ``` typescript
       // The default/empty behavior
-      server.use(restify.plugins.bodyParser());
-      server.post("api/messages", conversationBot.requestHandler);
+      const expressApp = express();
+      expressApp.use(express.json());
+      expressApp.post("/api/notification", conversationBot.requestHandler);
 
       // Or, add your own logic
-      server.use(restify.plugins.bodyParser());
-      server.post("api/messages", async (req, res) => {
+      const expressApp = express();
+      expressApp.use(express.json());
+      expressApp.post("/api/notification", async (req, res) => {
         await conversationBot.requestHandler(req, res, async (context) => {
           // your-own-context-logic
         });

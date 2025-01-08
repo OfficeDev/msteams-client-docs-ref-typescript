@@ -1666,9 +1666,6 @@
     - uid: '@microsoft/teamsfx.AppCredentialAuthConfig'
       name: AppCredentialAuthConfig
       items: []
-    - uid: '@microsoft/teamsfx.AuthenticationConfiguration'
-      name: AuthenticationConfiguration
-      items: []
     - uid: '@microsoft/teamsfx.AuthProvider'
       name: AuthProvider
       items: []
@@ -1730,32 +1727,17 @@
     - uid: '@microsoft/teamsfx.BotSsoExecutionDialogHandler'
       name: BotSsoExecutionDialogHandler
       items: []
-    - uid: '@microsoft/teamsfx.CardActionBot'
-      name: CardActionBot
-      items: []
     - uid: '@microsoft/teamsfx.CardActionOptions'
       name: CardActionOptions
       items: []
     - uid: '@microsoft/teamsfx.CertificateAuthProvider'
       name: CertificateAuthProvider
       items: []
-    - uid: '@microsoft/teamsfx.Channel'
-      name: Channel
-      items: []
-    - uid: '@microsoft/teamsfx.CommandBot'
-      name: CommandBot
-      items: []
     - uid: '@microsoft/teamsfx.CommandMessage'
       name: CommandMessage
       items: []
     - uid: '@microsoft/teamsfx.CommandOptions'
       name: CommandOptions
-      items: []
-    - uid: '@microsoft/teamsfx.ConversationBot'
-      name: ConversationBot
-      items: []
-    - uid: '@microsoft/teamsfx.ConversationOptions'
-      name: ConversationOptions
       items: []
     - uid: '@microsoft/teamsfx.ConversationReferenceStore'
       name: ConversationReferenceStore
@@ -1772,9 +1754,6 @@
     - uid: '@microsoft/teamsfx.GetTeamsUserTokenOptions'
       name: GetTeamsUserTokenOptions
       items: []
-    - uid: '@microsoft/teamsfx.IdentityType'
-      name: IdentityType
-      items: []
     - uid: '@microsoft/teamsfx.InvokeResponseErrorCode'
       name: InvokeResponseErrorCode
       items: []
@@ -1790,29 +1769,14 @@
     - uid: '@microsoft/teamsfx.LogLevel'
       name: LogLevel
       items: []
-    - uid: '@microsoft/teamsfx.Member'
-      name: Member
-      items: []
     - uid: '@microsoft/teamsfx.MessageBuilder'
       name: MessageBuilder
       items: []
     - uid: '@microsoft/teamsfx.MessageExtensionTokenResponse'
       name: MessageExtensionTokenResponse
       items: []
-    - uid: '@microsoft/teamsfx.MsGraphAuthProvider'
-      name: MsGraphAuthProvider
-      items: []
-    - uid: '@microsoft/teamsfx.NotificationBot'
-      name: NotificationBot
-      items: []
-    - uid: '@microsoft/teamsfx.NotificationOptions'
-      name: NotificationOptions
-      items: []
     - uid: '@microsoft/teamsfx.NotificationTarget'
       name: NotificationTarget
-      items: []
-    - uid: '@microsoft/teamsfx.NotificationTargetStorage'
-      name: NotificationTargetStorage
       items: []
     - uid: '@microsoft/teamsfx.NotificationTargetType'
       name: NotificationTargetType
@@ -1826,12 +1790,6 @@
     - uid: '@microsoft/teamsfx.PagedData'
       name: PagedData
       items: []
-    - uid: '@microsoft/teamsfx.SearchScope'
-      name: SearchScope
-      items: []
-    - uid: '@microsoft/teamsfx.TeamsBotInstallation'
-      name: TeamsBotInstallation
-      items: []
     - uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
       name: TeamsBotSsoPrompt
       items: []
@@ -1840,9 +1798,6 @@
       items: []
     - uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
       name: TeamsBotSsoPromptTokenResponse
-      items: []
-    - uid: '@microsoft/teamsfx.TeamsFx'
-      name: TeamsFx
       items: []
     - uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler'
       name: TeamsFxAdaptiveCardActionHandler
@@ -1880,7 +1835,4 @@
       items: []
     - uid: '@microsoft/teamsfx-react.TeamsContextWithCredential'
       name: TeamsContextWithCredential
-      items: []
-    - uid: '@microsoft/teamsfx-react.TeamsFxContext'
-      name: TeamsFxContext
       items: []

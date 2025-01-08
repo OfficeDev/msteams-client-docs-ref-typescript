@@ -24,29 +24,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: storage
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions.storage'
-    package: '@microsoft/teamsfx'
-    summary: An optional storage to persist bot notification target references.
-    fullName: storage
-    remarks: >-
-      If `storage` is not provided, a default local file storage will be used,
-
-      which stores notification target references into:
-        - `.notification.localstore.json` if running locally
-        - `${process.env.TEMP}/.notification.localstore.json` if `process.env.RUNNING_ON_AZURE` is set to "1"
-
-      It's recommended to use your own shared storage for production
-      environment.
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      Use `store` to customize the way to persist bot notification target
-      references instead.
-    syntax:
-      content: 'storage?: NotificationTargetStorage'
-      return:
-        description: ''
-        type: <xref uid="@microsoft/teamsfx.NotificationTargetStorage" />
   - name: store
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions.store'
     package: '@microsoft/teamsfx'
