@@ -51,6 +51,18 @@ properties:
           <xref
           uid="@microsoft/teams-ai.PromptCompletionModelResponseReceivedEvent"
           />
+  - name: feedbackLoopType
+    uid: '@microsoft/teams-ai.ActionPlannerOptions.feedbackLoopType'
+    package: '@microsoft/teams-ai'
+    summary: The feedback loop type.
+    fullName: feedbackLoopType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'feedbackLoopType?: "default" | "custom"'
+      return:
+        description: ''
+        type: '"default" | "custom"'
   - name: logRepairs
     uid: '@microsoft/teams-ai.ActionPlannerOptions.logRepairs'
     package: '@microsoft/teams-ai'
