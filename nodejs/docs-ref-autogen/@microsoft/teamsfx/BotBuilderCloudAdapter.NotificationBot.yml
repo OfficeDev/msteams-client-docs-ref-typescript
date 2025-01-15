@@ -10,7 +10,7 @@ remarks: ''
 isDeprecated: false
 type: class
 constructors:
-  - name: NotificationBot(CloudAdapter, NotificationOptions_3)
+  - name: NotificationBot(CloudAdapter, NotificationOptions_2)
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of the notification bot.
@@ -21,7 +21,7 @@ constructors:
     syntax:
       content: >-
         new NotificationBot(adapter: CloudAdapter, options?:
-        NotificationOptions_3)
+        NotificationOptions_2)
       parameters:
         - id: adapter
           type: CloudAdapter
@@ -46,7 +46,7 @@ methods:
     syntax:
       content: >-
         function buildTeamsBotInstallation(conversationReference:
-        Partial<ConversationReference>): null | TeamsBotInstallation_2
+        Partial<ConversationReference>): null | TeamsBotInstallation
       parameters:
         - id: conversationReference
           type: Partial&lt;ConversationReference&gt;
@@ -61,7 +61,7 @@ methods:
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
           />
   - name: >-
-      findAllChannels((channel: Channel_2, teamDetails: undefined | TeamDetails)
+      findAllChannels((channel: Channel, teamDetails: undefined | TeamDetails)
       => Promise<boolean>)
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findAllChannels'
     package: '@microsoft/teamsfx'
@@ -76,12 +76,12 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function findAllChannels(predicate: (channel: Channel_2, teamDetails:
-        undefined | TeamDetails) => Promise<boolean>): Promise<Channel_2[]>
+        function findAllChannels(predicate: (channel: Channel, teamDetails:
+        undefined | TeamDetails) => Promise<boolean>): Promise<Channel[]>
       parameters:
         - id: predicate
           type: >-
-            (channel: Channel_2, teamDetails: undefined | TeamDetails) =&gt;
+            (channel: Channel, teamDetails: undefined | TeamDetails) =&gt;
             Promise&lt;boolean&gt;
           description: Find calls predicate for each channel of the installation.
       return:
@@ -92,7 +92,7 @@ methods:
         type: >-
           Promise&lt;<xref
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />[]&gt;
-  - name: 'findAllMembers((member: Member_2) => Promise<boolean>, SearchScope_2)'
+  - name: 'findAllMembers((member: Member) => Promise<boolean>, SearchScope)'
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findAllMembers'
     package: '@microsoft/teamsfx'
     summary: >-
@@ -102,11 +102,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function findAllMembers(predicate: (member: Member_2) =>
-        Promise<boolean>, scope?: SearchScope_2): Promise<Member_2[]>
+        function findAllMembers(predicate: (member: Member) => Promise<boolean>,
+        scope?: SearchScope): Promise<Member[]>
       parameters:
         - id: predicate
-          type: '(member: Member_2) =&gt; Promise&lt;boolean&gt;'
+          type: '(member: Member) =&gt; Promise&lt;boolean&gt;'
           description: Find calls predicate for each member of the installation.
         - id: scope
           type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope" />
@@ -122,7 +122,7 @@ methods:
           Promise&lt;<xref
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />[]&gt;
   - name: >-
-      findChannel((channel: Channel_2, teamDetails: undefined | TeamDetails) =>
+      findChannel((channel: Channel, teamDetails: undefined | TeamDetails) =>
       Promise<boolean>)
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findChannel'
     package: '@microsoft/teamsfx'
@@ -137,13 +137,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function findChannel(predicate: (channel: Channel_2, teamDetails:
+        function findChannel(predicate: (channel: Channel, teamDetails:
         undefined | TeamDetails) => Promise<boolean>): Promise<undefined |
-        Channel_2>
+        Channel>
       parameters:
         - id: predicate
           type: >-
-            (channel: Channel_2, teamDetails: undefined | TeamDetails) =&gt;
+            (channel: Channel, teamDetails: undefined | TeamDetails) =&gt;
             Promise&lt;boolean&gt;
           description: >-
             Find calls predicate once for each channel of the installation,
@@ -161,7 +161,7 @@ methods:
         type: >-
           Promise&lt;undefined | <xref
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />&gt;
-  - name: 'findMember((member: Member_2) => Promise<boolean>, SearchScope_2)'
+  - name: 'findMember((member: Member) => Promise<boolean>, SearchScope)'
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findMember'
     package: '@microsoft/teamsfx'
     summary: >-
@@ -172,11 +172,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function findMember(predicate: (member: Member_2) => Promise<boolean>,
-        scope?: SearchScope_2): Promise<undefined | Member_2>
+        function findMember(predicate: (member: Member) => Promise<boolean>,
+        scope?: SearchScope): Promise<undefined | Member>
       parameters:
         - id: predicate
-          type: '(member: Member_2) =&gt; Promise&lt;boolean&gt;'
+          type: '(member: Member) =&gt; Promise&lt;boolean&gt;'
           description: >-
             Find calls predicate once for each member of the installation,
 
@@ -208,7 +208,7 @@ methods:
       content: >-
         function getPagedInstallations(pageSize?: number, continuationToken?:
         string, validationEnabled?: boolean):
-        Promise<PagedData<TeamsBotInstallation_2>>
+        Promise<PagedData<TeamsBotInstallation>>
       parameters:
         - id: pageSize
           type: number
@@ -228,23 +228,6 @@ methods:
           Promise&lt;<xref uid="@microsoft/teamsfx.PagedData" />&lt;<xref
           uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
           />&gt;&gt;
-  - name: installations()
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.installations'
-    package: '@microsoft/teamsfx'
-    summary: Get all targets where the bot is installed.
-    remarks: The result is retrieving from the persisted storage.
-    isDeprecated: true
-    customDeprecatedMessage: Use getPagedInstallations instead.
-    syntax:
-      content: 'function installations(): Promise<TeamsBotInstallation_2[]>'
-      return:
-        description: >-
-          An array of
-          [TeamsBotInstallation](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation).
-        type: >-
-          Promise&lt;<xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
-          />[]&gt;
   - name: validateInstallation(Partial<ConversationReference>)
     uid: >-
       @microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.validateInstallation

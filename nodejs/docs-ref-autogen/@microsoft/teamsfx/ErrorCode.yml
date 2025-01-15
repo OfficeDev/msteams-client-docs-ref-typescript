@@ -43,10 +43,6 @@ fields:
     uid: '@microsoft/teamsfx.ErrorCode.FailedToRunSsoStep'
     package: '@microsoft/teamsfx'
     summary: Failed to run sso step
-  - name: IdentityTypeNotSupported
-    uid: '@microsoft/teamsfx.ErrorCode.IdentityTypeNotSupported'
-    package: '@microsoft/teamsfx'
-    summary: Identity type error.
   - name: InternalError
     uid: '@microsoft/teamsfx.ErrorCode.InternalError'
     package: '@microsoft/teamsfx'

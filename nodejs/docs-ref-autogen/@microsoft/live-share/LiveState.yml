@@ -816,7 +816,7 @@ inheritedMethods:
       either
 
       set by `emitter.setMaxListeners(n)` or defaults to
-      [defaultMaxListeners](xref:@microsoft/live-share.LiveState.defaultMaxListeners).
+      <xref:EventEmitter.defaultMaxListeners>.
     remarks: ''
     isDeprecated: false
     syntax:

@@ -6,23 +6,20 @@ summary: >-
   A [NotificationTarget](xref:@microsoft/teamsfx.NotificationTarget) that
   represents a team member.
 fullName: Member
-remarks: >-
-  It's recommended to get members from
-  [()](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.members).
+remarks: It's recommended to get members from <xref:TeamsBotInstallation.members()>.
 isDeprecated: false
 type: class
 constructors:
-  - name: Member(TeamsBotInstallation_2, TeamsChannelAccount)
+  - name: Member(TeamsBotInstallation, TeamsChannelAccount)
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.Member.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor.
     remarks: >-
       It's recommended to get members from
-      [()](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.members),
-      instead of using this constructor.
+      <xref:TeamsBotInstallation.members()>, instead of using this constructor.
     isDeprecated: false
     syntax:
-      content: 'new Member(parent: TeamsBotInstallation_2, account: TeamsChannelAccount)'
+      content: 'new Member(parent: TeamsBotInstallation, account: TeamsChannelAccount)'
       parameters:
         - id: parent
           type: >-
@@ -60,7 +57,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'parent: TeamsBotInstallation_2'
+      content: 'parent: TeamsBotInstallation'
       return:
         description: ''
         type: >-

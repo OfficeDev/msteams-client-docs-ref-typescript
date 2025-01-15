@@ -2,7 +2,9 @@
 name: CardActionOptions
 uid: '@microsoft/teamsfx.CardActionOptions'
 package: '@microsoft/teamsfx'
-summary: Options to initialize [CardActionBot](xref:@microsoft/teamsfx.CardActionBot).
+summary: >-
+  Options to initialize
+  <xref:@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot>.
 fullName: CardActionOptions
 remarks: ''
 isDeprecated: false
