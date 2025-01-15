@@ -12,7 +12,7 @@ remarks: >-
 isDeprecated: false
 type: class
 constructors:
-  - name: Channel(TeamsBotInstallation_2, ChannelInfo)
+  - name: Channel(TeamsBotInstallation, ChannelInfo)
     uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.Channel.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor.
@@ -22,7 +22,7 @@ constructors:
       instead of using this constructor.
     isDeprecated: false
     syntax:
-      content: 'new Channel(parent: TeamsBotInstallation_2, info: ChannelInfo)'
+      content: 'new Channel(parent: TeamsBotInstallation, info: ChannelInfo)'
       parameters:
         - id: parent
           type: >-
@@ -60,7 +60,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'parent: TeamsBotInstallation_2'
+      content: 'parent: TeamsBotInstallation'
       return:
         description: ''
         type: >-

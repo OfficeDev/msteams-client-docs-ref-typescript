@@ -2,7 +2,9 @@
 name: CommandOptions
 uid: '@microsoft/teamsfx.CommandOptions'
 package: '@microsoft/teamsfx'
-summary: Options to initialize [CommandBot](xref:@microsoft/teamsfx.CommandBot).
+summary: >-
+  Options to initialize
+  <xref:@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot>.
 fullName: CommandOptions
 remarks: ''
 isDeprecated: false

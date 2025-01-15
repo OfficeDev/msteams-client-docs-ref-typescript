@@ -10,7 +10,6 @@ interfaces:
   - '@microsoft/teamsfx-react.IWidgetClassNames'
 typeAliases:
   - '@microsoft/teamsfx-react.TeamsContextWithCredential'
-  - '@microsoft/teamsfx-react.TeamsFxContext'
 functions:
   - name: 'useData<T>(() => Promise<T>, { autoLoad: boolean })'
     uid: '@microsoft/teamsfx-react.useData'
@@ -29,34 +28,6 @@ functions:
         - id: options
           type: '{ autoLoad: boolean }'
           description: if autoLoad is true, reload data immediately
-      return:
-        description: data, loading status, error and reload function
-        type: Data&lt;T&gt;
-  - name: >-
-      useGraph<T>((graph: Client, teamsfx: TeamsFx, scope: string[]) =>
-      Promise<T>, GraphOption)
-    uid: '@microsoft/teamsfx-react.useGraph'
-    package: '@microsoft/teamsfx-react'
-    summary: Helper function to call Microsoft Graph API with authentication.
-    remarks: ''
-    isDeprecated: true
-    customDeprecatedMessage: >-
-      Please use
-      [useGraphWithCredential](xref:@microsoft/teamsfx-react.useGraphWithCredential)
-      instead.
-    syntax:
-      content: >-
-        function useGraph<T>(fetchGraphDataAsync: (graph: Client, teamsfx:
-        TeamsFx, scope: string[]) => Promise<T>, options?: GraphOption): Data<T>
-      parameters:
-        - id: fetchGraphDataAsync
-          type: >-
-            (graph: Client, teamsfx: TeamsFx, scope: string[]) =&gt;
-            Promise&lt;T&gt;
-          description: async function of how to call Graph API and fetch data.
-        - id: options
-          type: GraphOption
-          description: teamsfx instance and OAuth resource scope.
       return:
         description: data, loading status, error and reload function
         type: Data&lt;T&gt;
@@ -121,23 +92,6 @@ functions:
           [{ context?: <xref uid="app.Context" />, fullScreen?: boolean,
           inTeams?: boolean, loading?: boolean, theme: Theme, themeString:
           string }, { setTheme: (theme: string | undefined) =&gt; void }]
-  - name: useTeamsFx(Record<string, string>)
-    uid: '@microsoft/teamsfx-react.useTeamsFx'
-    package: '@microsoft/teamsfx-react'
-    summary: Initialize TeamsFx SDK with customized configuration.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function useTeamsFx(teamsfxConfig?: Record<string, string>):
-        TeamsFxContext
-      parameters:
-        - id: teamsfxConfig
-          type: Record&lt;string, string&gt;
-          description: custom configuration to override default ones.
-      return:
-        description: TeamsFxContext object
-        type: <xref uid="@microsoft/teamsfx-react.TeamsFxContext" />
   - name: useTeamsUserCredential(TeamsUserCredentialAuthConfig)
     uid: '@microsoft/teamsfx-react.useTeamsUserCredential'
     package: '@microsoft/teamsfx-react'

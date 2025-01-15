@@ -63,6 +63,18 @@ properties:
       return:
         description: Returns the feedback loop flag.
         type: boolean
+  - name: feedbackLoopType
+    uid: '@microsoft/teams-ai.AI.feedbackLoopType'
+    package: '@microsoft/teams-ai'
+    summary: ''
+    fullName: feedbackLoopType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: undefined | "default" | "custom" feedbackLoopType
+      return:
+        description: Returns the feedback loop type.
+        type: undefined | "default" | "custom"
   - name: FlaggedInputActionName
     uid: '@microsoft/teams-ai.AI.FlaggedInputActionName'
     package: '@microsoft/teams-ai'

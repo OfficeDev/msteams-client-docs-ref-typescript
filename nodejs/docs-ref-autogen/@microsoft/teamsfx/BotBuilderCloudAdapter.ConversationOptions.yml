@@ -83,7 +83,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'notification?: NotificationOptions_3 & { enabled?: boolean }'
+      content: 'notification?: NotificationOptions_2 & { enabled?: boolean }'
       return:
         description: ''
         type: >-

@@ -135,6 +135,18 @@ methods:
         - id: attachments
           type: Attachment[]
           description: List of attachments.
+  - name: setCitations(Citation[])
+    uid: '@microsoft/teams-ai.StreamingResponse.setCitations'
+    package: '@microsoft/teams-ai'
+    summary: Sets the citations for the full message.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setCitations(citations: Citation[])'
+      parameters:
+        - id: citations
+          type: <xref uid="@microsoft/teams-ai.Citation" />[]
+          description: Citations to be included in the message.
   - name: setFeedbackLoop(boolean)
     uid: '@microsoft/teams-ai.StreamingResponse.setFeedbackLoop'
     package: '@microsoft/teams-ai'
@@ -150,6 +162,18 @@ methods:
         - id: enableFeedbackLoop
           type: boolean
           description: If true, the feedback loop is enabled.
+  - name: setFeedbackLoopType("default" | "custom")
+    uid: '@microsoft/teams-ai.StreamingResponse.setFeedbackLoopType'
+    package: '@microsoft/teams-ai'
+    summary: Sets the type of UI to use for the feedback loop.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setFeedbackLoopType(feedbackLoopType: "default" | "custom")'
+      parameters:
+        - id: feedbackLoopType
+          type: '"default" | "custom"'
+          description: The type of the feedback loop.
   - name: setGeneratedByAILabel(boolean)
     uid: '@microsoft/teams-ai.StreamingResponse.setGeneratedByAILabel'
     package: '@microsoft/teams-ai'

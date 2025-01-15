@@ -83,7 +83,7 @@ constructors:
   - name: >-
       TeamsBotSsoPrompt(OnBehalfOfCredentialAuthConfig, string, string,
       TeamsBotSsoPromptSettings)
-    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.constructor_1'
+    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of TeamsBotSsoPrompt.
     remarks: ''
@@ -100,28 +100,6 @@ constructors:
         - id: initiateLoginEndpoint
           type: string
           description: Login URL for Teams to redirect to
-        - id: dialogId
-          type: string
-          description: >-
-            Unique ID of the dialog within its parent `DialogSet` or
-            `ComponentDialog`.
-        - id: settings
-          type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
-          description: Settings used to configure the prompt.
-  - name: TeamsBotSsoPrompt(TeamsFx, string, TeamsBotSsoPromptSettings)
-    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.constructor'
-    package: '@microsoft/teamsfx'
-    summary: Constructor of TeamsBotSsoPrompt.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        new TeamsBotSsoPrompt(teamsfx: TeamsFx, dialogId: string, settings:
-        TeamsBotSsoPromptSettings)
-      parameters:
-        - id: teamsfx
-          type: <xref uid="@microsoft/teamsfx.TeamsFx" />
-          description: Used to provide configuration and auth
         - id: dialogId
           type: string
           description: >-

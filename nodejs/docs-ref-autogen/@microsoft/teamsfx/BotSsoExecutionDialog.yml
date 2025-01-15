@@ -11,7 +11,7 @@ constructors:
   - name: >-
       BotSsoExecutionDialog(Storage, TeamsBotSsoPromptSettings,
       OnBehalfOfCredentialAuthConfig, string, string)
-    uid: '@microsoft/teamsfx.BotSsoExecutionDialog.constructor_1'
+    uid: '@microsoft/teamsfx.BotSsoExecutionDialog.constructor'
     package: '@microsoft/teamsfx'
     summary: Creates a new instance of the BotSsoExecutionDialog.
     remarks: ''
@@ -36,29 +36,6 @@ constructors:
           description: |-
             Login URL for Teams to redirect to.
                         *
-        - id: dialogName
-          type: string
-          description: custom dialog name
-  - name: BotSsoExecutionDialog(Storage, TeamsBotSsoPromptSettings, TeamsFx, string)
-    uid: '@microsoft/teamsfx.BotSsoExecutionDialog.constructor'
-    package: '@microsoft/teamsfx'
-    summary: Creates a new instance of the BotSsoExecutionDialog.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        new BotSsoExecutionDialog(dedupStorage: Storage, ssoPromptSettings:
-        TeamsBotSsoPromptSettings, teamsfx: TeamsFx, dialogName?: string)
-      parameters:
-        - id: dedupStorage
-          type: Storage
-          description: ''
-        - id: ssoPromptSettings
-          type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
-          description: ''
-        - id: teamsfx
-          type: <xref uid="@microsoft/teamsfx.TeamsFx" />
-          description: ''
         - id: dialogName
           type: string
           description: custom dialog name
