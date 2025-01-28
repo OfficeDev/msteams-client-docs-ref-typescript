@@ -5,7 +5,7 @@ ms.date: 01/17/2025
 ms.topic: reference
 keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
-# Microsoft Teams SDK reference
+# Microsoft Teams Reference
 
 There are several libraries available to support various aspects of Teams app development. This article provides an overview of each, along with basic installation instructions.
  
