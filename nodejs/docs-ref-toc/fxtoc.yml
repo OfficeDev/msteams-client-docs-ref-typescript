@@ -1,7 +1,7 @@
-- name: Reference
+- name: SDK reference
   uid: msteams.sdk.landingPage.reference
   landingPageType: Root
   expanded: true
   href: ~/overview/msteams-client.md
   children:
-    - /graph/api/overview
+    - '**'
