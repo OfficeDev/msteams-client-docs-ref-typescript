@@ -1,12 +1,12 @@
 - name: Overview
-  href: /microsoft-365/extensibility/schema/index
+  href: /microsoft-365/extensibility/schema/index?toc=/microsoftteams/platform/toc.json&bc=/microsoftteams/platform/breadcrumb/toc.json
 - name: App manifest root
-  href: /microsoft-365/extensibility/schema/root
+  href: /microsoft-365/extensibility/schema/root?toc=/microsoftteams/platform/toc.json&bc=/microsoftteams/platform/breadcrumb/toc.json
   displayName: root
 - name: actions
   items:
   - name: Overview
-    href: /microsoft-365/extensibility/schema/element-actions
+    href: /microsoft-365/extensibility/schema/element-actions?toc=/javascript/api/toc.json
     displayName: elementActions
   - name: handlers
     items:
