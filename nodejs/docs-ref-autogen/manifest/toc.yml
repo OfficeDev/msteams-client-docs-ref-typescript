@@ -1,2 +1,18 @@
-- name: 'App manifest'
-  href: /microsoft-365/extensibility/schema/
+- name: Overview
+  href: /microsoft-365/extensibility/schema/index
+- name: App manifest root
+  href: /microsoft-365/extensibility/schema/root
+  displayName: root
+- name: actions
+  items:
+  - name: Overview
+    href: /microsoft-365/extensibility/schema/element-actions
+    displayName: elementActions
+  - name: handlers
+    items:
+    - name: Overview
+      href: /microsoft-365/extensibility/schema/element-actions-handlers
+      displayName: handlers
+    - name: botInfo
+      href: /microsoft-365/extensibility/schema/element-actions-handlers-bot-info
+      displayName: botInfo
