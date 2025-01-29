@@ -1,5 +1,5 @@
 - name: 'App manifest reference'
-  uid: 'manifest/toc.yml'
+  href: 'manifest/toc.yml'
 - name: '@microsoft/live-share'
   items:
     - name: Overview
