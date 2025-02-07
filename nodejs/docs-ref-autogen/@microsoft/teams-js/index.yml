@@ -34,6 +34,7 @@ interfaces:
   - '@microsoft/teams-js.location.LocationProps'
   - '@microsoft/teams-js.mail.ComposeNewParams'
   - '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
+  - '@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff'
   - '@microsoft/teams-js.mail.OpenMailItemParams'
   - '@microsoft/teams-js.media.AssembleAttachment'
   - '@microsoft/teams-js.media.AudioProps'

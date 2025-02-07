@@ -8,6 +8,13 @@ summary: >-
   mail item
 
 
+  For ComposeMailType.New, it is valid to pass empty arrays for toRecipients,
+  ccRecipients, and bccRecipients.
+
+  This will result in a new email with (pre-populated) body content but no
+  pre-populated recipients.
+
+
   See [ComposeNewParams](xref:@microsoft/teams-js.mail.ComposeNewParams)
 
   See

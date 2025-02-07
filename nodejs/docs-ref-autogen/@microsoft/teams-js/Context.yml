@@ -59,6 +59,27 @@ properties:
       return:
         description: ''
         type: number
+  - name: appId
+    uid: '@microsoft/teams-js.Context.appId'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: appId
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of TeamsJS v2.0.0, please use
+      [app.Context.app.appId](xref:@microsoft/teams-js.app.AppInfo.appId)
+      instead
+
+
+      This ID is the unique identifier assigned to the app after deployment and
+      is critical for ensuring the correct app instance is recognized across
+      hosts.
+    syntax:
+      content: 'appId?: string'
+      return:
+        description: ''
+        type: string
   - name: appLaunchId
     uid: '@microsoft/teams-js.Context.appLaunchId'
     package: '@microsoft/teams-js'
@@ -546,6 +567,25 @@ properties:
       the manifest.
     syntax:
       content: 'loginHint?: string'
+      return:
+        description: ''
+        type: string
+  - name: manifestVersion
+    uid: '@microsoft/teams-js.Context.manifestVersion'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: manifestVersion
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of TeamsJS v2.0.0, please use
+      [app.Context.app.manifestVersion](xref:@microsoft/teams-js.app.AppInfo.manifestVersion)
+      instead
+
+
+      The version of the manifest that the app is running.
+    syntax:
+      content: 'manifestVersion?: string'
       return:
         description: ''
         type: string
