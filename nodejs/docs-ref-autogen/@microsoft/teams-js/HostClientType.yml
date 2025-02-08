@@ -77,6 +77,12 @@ fields:
       devices. More information on Microsoft Teams Rooms on Windows can be found
       [Microsoft Teams Rooms
       (Windows)](https://support.microsoft.com/office/microsoft-teams-rooms-windows-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
+  - name: visionOS
+    uid: '@microsoft/teams-js.HostClientType.visionOS'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The host is running on a visionOS client, which runs on devices such as
+      Apple Vision.
   - name: web
     uid: '@microsoft/teams-js.HostClientType.web'
     package: '@microsoft/teams-js'

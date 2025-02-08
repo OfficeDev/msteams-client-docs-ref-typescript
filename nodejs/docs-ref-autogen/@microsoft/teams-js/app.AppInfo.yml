@@ -8,6 +8,21 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: appId
+    uid: '@microsoft/teams-js.app.AppInfo.appId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      This ID is the unique identifier assigned to the app after deployment and
+      is critical for ensuring the correct app instance is recognized across
+      hosts.
+    fullName: appId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'appId?: AppId'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.AppId" />
   - name: appLaunchId
     uid: '@microsoft/teams-js.app.AppInfo.appLaunchId'
     package: '@microsoft/teams-js'
@@ -57,6 +72,18 @@ properties:
     isDeprecated: false
     syntax:
       content: 'locale: string'
+      return:
+        description: ''
+        type: string
+  - name: manifestVersion
+    uid: '@microsoft/teams-js.app.AppInfo.manifestVersion'
+    package: '@microsoft/teams-js'
+    summary: The version of the manifest that the app is running.
+    fullName: manifestVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'manifestVersion?: string'
       return:
         description: ''
         type: string

@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: ComposeMailParamsWithHandoff
+uid: '@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff'
+package: '@microsoft/teams-js'
+summary: >-
+  Extended parameters for
+  [composeMail](xref:@microsoft/teams-js.mail.composeMail), including support
+  for external handoff.
+
+
+  This interface wraps
+  [ComposeMailParamsWithHandoff](xref:@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff)
+  to provide additional functionality for scenarios
+
+  where an external handoff is needed, such as transferring a draft email
+  created in BizChat.
+
+
+  See [ComposeNewParams](xref:@microsoft/teams-js.mail.ComposeNewParams) for
+  parameters when composing a new mail item.
+
+  See
+  [ComposeReplyOrForwardParams](xref:@microsoft/teams-js.mail.ComposeReplyOrForwardParams)
+  for reply or forward-specific parameters.
+
+  See [ComposeMailType](xref:@microsoft/teams-js.mail.ComposeMailType) for
+  supported mail operation types.
+fullName: ComposeMailParamsWithHandoff
+remarks: ''
+previewState: beta
+isDeprecated: false
+type: interface
+properties:
+  - name: composeMailParams
+    uid: >-
+      @microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff.composeMailParams
+    package: '@microsoft/teams-js'
+    summary: Base parameters for composing a mail item.
+    fullName: composeMailParams
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'composeMailParams: ComposeMailParams'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.mail.ComposeMailParams" />
+  - name: handoffId
+    uid: '@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff.handoffId'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Use this endpoint to retrieve the handoff payload when BizChat creates an
+      email draft for external handoff.
+    fullName: handoffId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'handoffId: string'
+      return:
+        description: ''
+        type: string
