@@ -1182,6 +1182,13 @@
         - uid: '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
           name: ComposeReplyOrForwardParams
           items: []
+        - name: handoff
+          items:
+            - name: Overview
+              uid: '@microsoft/teams-js.mail.handoff'
+            - uid: '@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff'
+              name: ComposeMailParamsWithHandoff
+              items: []
         - uid: '@microsoft/teams-js.mail.OpenMailItemParams'
           name: OpenMailItemParams
           items: []

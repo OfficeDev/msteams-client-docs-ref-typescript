@@ -1,0 +1,51 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.mail.handoff'
+name: handoff
+summary: Used to interact with mail capability, including opening and composing mail.
+type: module
+interfaces:
+  - '@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff'
+package: '@microsoft/teams-js'
+previewState: beta
+functions:
+  - name: composeMailWithHandoff(ComposeMailParamsWithHandoff)
+    uid: '@microsoft/teams-js.mail.handoff.composeMailWithHandoff'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Compose a new email in the user's mailbox, opening it in the drafts UX
+      instead of the standard email.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function composeMailWithHandoff(composeMailParamsWithHandoff:
+        ComposeMailParamsWithHandoff): Promise<void>
+      parameters:
+        - id: composeMailParamsWithHandoff
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff"
+            />
+          description: >-
+            Object that specifies the type of mail item to compose and the
+            details of the mail item.
+      return:
+        description: >-
+          - promise resolves after the compose window has opened successfully in
+          host SDK.
+        type: Promise&lt;void&gt;
+  - name: isSupported()
+    uid: '@microsoft/teams-js.mail.handoff.isSupported'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Checks if the mail capability and handoff sub-capability is supported by
+      the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether the handoff sub-capability is supported
+        type: boolean
