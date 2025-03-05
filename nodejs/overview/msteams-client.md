@@ -9,15 +9,20 @@ keywords: sdk msteams live-share teamsfx teams client javascript library referen
 
 There are several libraries available to support various aspects of Teams app development. This article provides an overview of each, along with basic installation instructions.
  
-| Library | Description | API reference |
+| Resource | Description | Reference |
 |-|-|-|
+| **App manifest** | App manifest describes the functionality and configuration of your app.  | [Microsoft 365 app manifest schema reference](/microsoft-365/extensibility/schema) |
 | **Live Share SDK** | Live Share enables collaborative app experiences | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
 | **TeamsJS library** | Teams JavaScript client library enables you to create hosted experiences in Teams, Outlook, and the Microsoft 365 app | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml) |
 | **TeamsFx SDK** | TeamsFx helps to reduce tasks by using Microsoft Teams single sign-on (SSO) and accessing cloud resources down to single line statements with little configuration | [Teamsfx](../docs-ref-autogen/%40microsoft/teamsfx/index.yml) |
 
+## App manifest
+
+App manifest is a JSON file that describes the functionality and configuration of your app, and how it integrates with Microsoft 365 products, including Microsoft 365 Copilot, Teams, Outlook, and more. App manifest is a key component of the unified [Microsoft 365 app package](/microsoft-365/extensibility/schema), with which you can submit Microsoft 365 Copilot agents, Teams apps, SharePoint Framework apps, Graph connectors, and Office Add-ins to the *Microsoft 365 and Copilot* program in Microsoft Partner Center as a Store offer, or  directly to your organization's app catalog. You can also use the public [developer preview](/microsoftteams/platform/resources/schema/manifest-schema-dev-preview) schema to try out platform features in development.
+
 ## Microsoft Teams Live Share
 
-The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is comprised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (sometimes called *Live Share core*) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. *Live Share media* allows for media synchronization of video and audio during a Teams session. *Live Share canvas* adds annotation tools for whiteboard and PowerPoint presentations. 
+The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is comprised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (sometimes called *Live Share core*) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. *Live Share media* allows for media synchronization of video and audio during a Teams session. *Live Share canvas* adds annotation tools for whiteboard and PowerPoint presentations.
 
 ### Finding the library
 
