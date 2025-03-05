@@ -1,5 +1,5 @@
 - name: 'App manifest'
-  href: 'manifest/toc.yml'
+  href: '/microsoft-365/extensibility/schema'
 - name: '@microsoft/live-share'
   items:
     - name: Overview
