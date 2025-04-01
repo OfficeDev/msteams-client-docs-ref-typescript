@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams SDK reference
 description: Reference documentation for Microsoft Teams SDK
-ms.date: 02/10/2025
+ms.date: 04/01/2025
 ms.topic: reference
 keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
@@ -13,6 +13,7 @@ There are several libraries available to support various aspects of Teams app de
 |-|-|-|
 | **Live Share SDK** | Live Share enables collaborative app experiences | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
 | **TeamsJS library** | Teams JavaScript client library enables you to create hosted experiences in Teams, Outlook, and the Microsoft 365 app | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml) |
+| **Teams AI library** | Teams AI library is a Teams-centric interface for integrating GPT-based language models and user intent engines. | [Teams AI](../docs-ref-autogen/%40microsoft/teams-ai/index.yml) |
 | **TeamsFx SDK** | TeamsFx helps to reduce tasks by using Microsoft Teams single sign-on (SSO) and accessing cloud resources down to single line statements with little configuration | [Teamsfx](../docs-ref-autogen/%40microsoft/teamsfx/index.yml) |
 
 ## Microsoft Teams Live Share
@@ -115,17 +116,32 @@ TeamsJS can also be referenced from its CDN endpoints:
 ```javascript
 <!-- Microsoft Teams JavaScript API (via CDN) -->
 <script
-  src="https://res.cdn.office.net/teams-js/2.34.0/js/MicrosoftTeams.min.js"
-  integrity="sha384-brW9AazbKR2dYw2DucGgWCCcmrm2oBFV4HQidyuyZRI/TnAkmOOnTARSTdps3Hwt"
+  src="https://res.cdn.office.net/teams-js/2.35.0/js/MicrosoftTeams.min.js"
+  integrity="sha384-+BJaBAKaVHkTxIQPXEDWQAfzfE5ubUTdQ19h6hIISv77a10ncK/MEBhngmpxyyEv"
   crossorigin="anonymous"
 ></script>
 
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@2.34.0/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@2.35.0/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (via local) -->
 <script src="MicrosoftTeams.min.js"></script>
 ```
+
+## Microsoft Teams AI library
+
+The [Teams AI library](/microsoftteams/platform/bots/how-to/teams-conversational-ai/teams-conversation-ai-overview.md) is a Teams-centric interface for integrating GPT-based language models and user intent engines. It simplifies the development process by reducing the need to write and maintain complex conversational bot logic. You can leverage prebuilt, reusable code snippets that allow you to quickly build intelligent apps. This capabilities-driven approach allows you to focus on business logic rather than learning the intricacies of Microsoft Teams conversational frameworks.
+
+You can leverage Teams AI library to:
+
+* Use prebuilt templates to add Teams app capabilities.
+* Use techniques like prompt engineering to add ChatGPT like conversational experiences to your bot and built-in safety features, like moderation, help ensure your bot always responds in an appropriate manner.
+* Use the library's planning engine that allows the model to identify the user's intent and then maps that intent to actions that you implement.
+* Add support for any LLM of your choice without changing the bot logic.
+
+### Finding the library
+
+The Teams AI library is available in a number of package formats to support different programming languages, more information is available on the [library GitHub page](https://github.com/microsoft/teams-ai).
 
 ## Microsoft TeamsFx SDK
 
