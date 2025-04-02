@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: ValidatedSafeString
+uid: '@microsoft/teams-js.ValidatedSafeString'
+package: '@microsoft/teams-js'
+summary: A strongly typed class used to represent a "valid" string id.
+fullName: ValidatedSafeString
+remarks: ''
+isDeprecated: false
+type: class
+constructors:
+  - name: ValidatedSafeString(string)
+    uid: '@microsoft/teams-js.ValidatedSafeString.constructor'
+    package: '@microsoft/teams-js'
+    summary: Creates a strongly-typed Id from a string
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'new ValidatedSafeString(idAsString: string)'
+      parameters:
+        - id: idAsString
+          type: string
+          description: An id represented as a string
+methods:
+  - name: toString()
+    uid: '@microsoft/teams-js.ValidatedSafeString.toString'
+    package: '@microsoft/teams-js'
+    summary: Returns the app id as a string
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function toString(): string'
+      return:
+        description: ''
+        type: string

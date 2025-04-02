@@ -1338,6 +1338,9 @@
     - uid: '@microsoft/teams-js.nestedAppAuth'
       name: nestedAppAuth
       items: []
+    - uid: '@microsoft/teams-js.nestedAppAuthBridge'
+      name: nestedAppAuthBridge
+      items: []
     - uid: '@microsoft/teams-js.onCompleteFunctionType'
       name: onCompleteFunctionType
       items: []
@@ -1450,6 +1453,9 @@
       items: []
     - uid: '@microsoft/teams-js.ResumeContext'
       name: ResumeContext
+      items: []
+    - uid: '@microsoft/teams-js.RuntimeFeatureFlags'
+      name: RuntimeFeatureFlags
       items: []
     - uid: '@microsoft/teams-js.SdkError'
       name: SdkError
@@ -1606,6 +1612,9 @@
       items: []
     - uid: '@microsoft/teams-js.UserTeamRole'
       name: UserTeamRole
+      items: []
+    - uid: '@microsoft/teams-js.ValidatedSafeString'
+      name: ValidatedSafeString
       items: []
     - name: videoEffects
       items:

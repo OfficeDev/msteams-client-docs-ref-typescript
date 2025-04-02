@@ -96,6 +96,7 @@ interfaces:
   - '@microsoft/teams-js.LocaleInfo'
   - '@microsoft/teams-js.M365ContentAction'
   - '@microsoft/teams-js.ResumeContext'
+  - '@microsoft/teams-js.RuntimeFeatureFlags'
   - '@microsoft/teams-js.SdkError'
   - '@microsoft/teams-js.SecondaryId'
   - '@microsoft/teams-js.ShareDeepLinkParameters'
@@ -212,7 +213,21 @@ classes:
   - '@microsoft/teams-js.ChildAppWindow'
   - '@microsoft/teams-js.EmailAddress'
   - '@microsoft/teams-js.ParentAppWindow'
+  - '@microsoft/teams-js.ValidatedSafeString'
 functions:
+  - name: activateChildProxyingCommunication()
+    uid: '@microsoft/teams-js.activateChildProxyingCommunication'
+    package: '@microsoft/teams-js'
+    summary: >-
+      This function enables child proxying communication for apps that still
+      needs it.
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      Child proxying is considered an insecure feature and will be removed in
+      future releases.
+    syntax:
+      content: function activateChildProxyingCommunication()
   - name: enablePrintCapability()
     uid: '@microsoft/teams-js.enablePrintCapability'
     package: '@microsoft/teams-js'
@@ -303,6 +318,17 @@ functions:
           description: >-
             The callback to invoke when the
             [Context](xref:@microsoft/teams-js.Context) object is retrieved.
+  - name: getCurrentFeatureFlagsState()
+    uid: '@microsoft/teams-js.getCurrentFeatureFlagsState'
+    package: '@microsoft/teams-js'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getCurrentFeatureFlagsState(): RuntimeFeatureFlags'
+      return:
+        description: The current state of the runtime feature flags.
+        type: <xref uid="@microsoft/teams-js.RuntimeFeatureFlags" />
   - name: >-
       getMruTabInstances(getTabInstancesCallbackFunctionType,
       TabInstanceParameters)
@@ -523,6 +549,27 @@ functions:
         - id: onComplete
           type: <xref uid="@microsoft/teams-js.onCompleteHandlerFunctionType" />
           description: The callback to invoke when the action is complete.
+  - name: overwriteFeatureFlagsState(Partial<RuntimeFeatureFlags>)
+    uid: '@microsoft/teams-js.overwriteFeatureFlagsState'
+    package: '@microsoft/teams-js'
+    summary: >-
+      It overwrites all the feature flags in the runtime feature flags object
+      with the new feature flags provided.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function overwriteFeatureFlagsState(newFeatureFlags:
+        Partial<RuntimeFeatureFlags>): RuntimeFeatureFlags
+      parameters:
+        - id: newFeatureFlags
+          type: >-
+            Partial&lt;<xref uid="@microsoft/teams-js.RuntimeFeatureFlags"
+            />&gt;
+          description: The new feature flags to set.
+      return:
+        description: The current state of the runtime feature flags.
+        type: <xref uid="@microsoft/teams-js.RuntimeFeatureFlags" />
   - name: print()
     uid: '@microsoft/teams-js.print'
     package: '@microsoft/teams-js'
@@ -744,6 +791,18 @@ functions:
         - id: navigateForward
           type: boolean
           description: Determines the direction to focus in teams app.
+  - name: setFeatureFlagsState(RuntimeFeatureFlags)
+    uid: '@microsoft/teams-js.setFeatureFlagsState'
+    package: '@microsoft/teams-js'
+    summary: It sets the runtime feature flags to the new feature flags provided.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function setFeatureFlagsState(featureFlags: RuntimeFeatureFlags)'
+      parameters:
+        - id: featureFlags
+          type: <xref uid="@microsoft/teams-js.RuntimeFeatureFlags" />
+          description: The new feature flags to set.
   - name: setFrameContext(FrameInfo)
     uid: '@microsoft/teams-js.setFrameContext'
     package: '@microsoft/teams-js'
