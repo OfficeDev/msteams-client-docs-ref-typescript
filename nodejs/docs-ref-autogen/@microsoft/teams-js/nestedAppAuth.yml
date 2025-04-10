@@ -3,9 +3,96 @@ uid: '@microsoft/teams-js.nestedAppAuth'
 name: nestedAppAuth
 type: module
 package: '@microsoft/teams-js'
-summary: Nested app auth capabilities
-previewState: beta
+summary: ''
 functions:
+  - name: addNAATrustedOrigins(string[])
+    uid: '@microsoft/teams-js.nestedAppAuth.addNAATrustedOrigins'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Registers the origins of child apps as trusted for Nested App Auth (NAA).
+
+
+      This allows a top-level parent app to specify which child app origins are
+      considered trusted
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function addNAATrustedOrigins(appOrigins: string[]): Promise<string>'
+      parameters:
+        - id: appOrigins
+          type: string[]
+          description: An array of child app origins to trust (must be a non-empty array).
+      return:
+        description: A Promise resolving with the result of the action.
+        type: Promise&lt;string&gt;
+  - name: canParentManageNAATrustedOrigins()
+    uid: '@microsoft/teams-js.nestedAppAuth.canParentManageNAATrustedOrigins'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Checks if the parent has the capability to manage its list of trusted
+      child origins
+
+      for Nested App Auth (NAA).
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function canParentManageNAATrustedOrigins(): boolean'
+      return:
+        description: true if parent can manage NAA TrustedOrigins, false otherwise
+        type: boolean
+  - name: deleteNAATrustedOrigins(string[])
+    uid: '@microsoft/teams-js.nestedAppAuth.deleteNAATrustedOrigins'
+    package: '@microsoft/teams-js'
+    summary: |-
+      Removes previously trusted child app origins from Nested App Auth (NAA).
+
+      The specified origins will no longer be considered trusted.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function deleteNAATrustedOrigins(appOrigins: string[]): Promise<string>'
+      parameters:
+        - id: appOrigins
+          type: string[]
+          description: >-
+            An array of child app origins to remove from the trusted list (must
+            be a non-empty array).
+      return:
+        description: A Promise resolving with the result of the action.
+        type: Promise&lt;string&gt;
+  - name: getParentOrigin()
+    uid: '@microsoft/teams-js.nestedAppAuth.getParentOrigin'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Gets the origin of the parent window if available.
+
+      This will be the top-level origin in the case of a parent app.
+
+      It is used to pass to the embedded child app to initialize the Nested App
+      Auth bridge.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function getParentOrigin(): string | null'
+      return:
+        description: The origin string if available, otherwise null
+        type: string | null
+  - name: isDeeplyNestedAuthSupported()
+    uid: '@microsoft/teams-js.nestedAppAuth.isDeeplyNestedAuthSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if NAA deeply nested scenario supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isDeeplyNestedAuthSupported(): boolean'
+      return:
+        description: true if host supports
+        type: boolean
   - name: isNAAChannelRecommended()
     uid: '@microsoft/teams-js.nestedAppAuth.isNAAChannelRecommended'
     package: '@microsoft/teams-js'
