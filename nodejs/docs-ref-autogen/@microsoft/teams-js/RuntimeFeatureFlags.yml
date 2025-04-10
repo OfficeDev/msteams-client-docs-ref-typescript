@@ -1,0 +1,31 @@
+### YamlMime:TSType
+name: RuntimeFeatureFlags
+uid: '@microsoft/teams-js.RuntimeFeatureFlags'
+package: '@microsoft/teams-js'
+summary: >-
+  Feature flags to activate or deactivate certain features at runtime for an
+  app.
+fullName: RuntimeFeatureFlags
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: disableEnforceOriginMatchForChildResponses
+    uid: >-
+      @microsoft/teams-js.RuntimeFeatureFlags.disableEnforceOriginMatchForChildResponses
+    package: '@microsoft/teams-js'
+    summary: >-
+      Disables origin validation for responses to child windows. When enabled,
+      this flag bypasses security checks that verify the origin of child window
+      that receives the response.
+
+
+      Default: false
+    fullName: disableEnforceOriginMatchForChildResponses
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'disableEnforceOriginMatchForChildResponses: boolean'
+      return:
+        description: ''
+        type: boolean
