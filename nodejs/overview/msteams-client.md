@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams SDK reference
 description: Reference documentation for Microsoft Teams SDK
-ms.date: 04/013/2025
+ms.date: 04/13/2025
 ms.topic: reference
 keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
