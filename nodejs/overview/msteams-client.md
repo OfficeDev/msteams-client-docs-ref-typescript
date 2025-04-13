@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams SDK reference
 description: Reference documentation for Microsoft Teams SDK
-ms.date: 04/01/2025
+ms.date: 04/013/2025
 ms.topic: reference
 keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
@@ -116,13 +116,13 @@ TeamsJS can also be referenced from its CDN endpoints:
 ```javascript
 <!-- Microsoft Teams JavaScript API (via CDN) -->
 <script
-  src="https://res.cdn.office.net/teams-js/2.35.0/js/MicrosoftTeams.min.js"
-  integrity="sha384-+BJaBAKaVHkTxIQPXEDWQAfzfE5ubUTdQ19h6hIISv77a10ncK/MEBhngmpxyyEv"
+  src="https://res.cdn.office.net/teams-js/2.36.0/js/MicrosoftTeams.min.js"
+  integrity="sha384-Vg2zZJuta2CG1wHGm8f5belcapTREs0cxiGzaMgVWI/apjFxwHqOgYOon/OqPXP7"
   crossorigin="anonymous"
 ></script>
 
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@2.35.0/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@2.36.0/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (via local) -->
 <script src="MicrosoftTeams.min.js"></script>
