@@ -1,3 +1,5 @@
+- name: `AI Library v2`
+  href: `/javascript/api/teams-sdk-typescript/`
 - name: '@microsoft/live-share'
   items:
     - name: Overview
