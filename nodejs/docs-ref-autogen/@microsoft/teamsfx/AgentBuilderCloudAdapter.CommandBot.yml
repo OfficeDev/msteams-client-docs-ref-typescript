@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: CommandBot
-uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot'
+uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot'
 package: '@microsoft/teamsfx'
 summary: A command bot for receiving commands and sending responses in Teams.
 fullName: CommandBot
@@ -14,7 +14,7 @@ constructors:
   - name: >-
       CommandBot(CloudAdapter, CommandOptions, BotSsoExecutionActivityHandler,
       BotSsoConfig)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.constructor'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Create a new instance of the `CommandBot`.
     remarks: ''
@@ -39,7 +39,7 @@ constructors:
           description: SSO configuration for Bot SSO.
 methods:
   - name: registerCommand(TeamsFxBotCommandHandler)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.registerCommand'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot.registerCommand'
     package: '@microsoft/teamsfx'
     summary: Register a command into the command bot.
     remarks: ''
@@ -51,7 +51,7 @@ methods:
           type: <xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />
           description: The command to be registered.
   - name: registerCommands(TeamsFxBotCommandHandler[])
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.registerCommands'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot.registerCommands'
     package: '@microsoft/teamsfx'
     summary: Register commands into the command bot.
     remarks: ''
@@ -63,7 +63,7 @@ methods:
           type: <xref uid="@microsoft/teamsfx.TeamsFxBotCommandHandler" />[]
           description: The commands to be registered.
   - name: registerSsoCommand(TeamsFxBotSsoCommandHandler)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.registerSsoCommand'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot.registerSsoCommand'
     package: '@microsoft/teamsfx'
     summary: Register a sso command into the command bot.
     remarks: ''
@@ -75,7 +75,7 @@ methods:
           type: <xref uid="@microsoft/teamsfx.TeamsFxBotSsoCommandHandler" />
           description: The sso command to be registered.
   - name: registerSsoCommands(TeamsFxBotSsoCommandHandler[])
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot.registerSsoCommands'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot.registerSsoCommands'
     package: '@microsoft/teamsfx'
     summary: Register sso commands into the command bot.
     remarks: ''

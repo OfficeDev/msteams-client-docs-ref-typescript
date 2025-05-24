@@ -1,12 +1,12 @@
 ### YamlMime:TSEnum
 name: SearchScope
-uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope'
+uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope'
 package: '@microsoft/teamsfx'
 summary: >-
   The search scope when calling
-  [findMember](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findMember)
+  [findMember](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.findMember)
   and
-  [findAllMembers](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findAllMembers).
+  [findAllMembers](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.findAllMembers).
 
   The search scope is a flagged enum and it can be combined with `|`.
 
@@ -17,22 +17,22 @@ remarks: ''
 isDeprecated: false
 fields:
   - name: Person
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope.Person'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope.Person'
     package: '@microsoft/teamsfx'
     summary: Search members from the installations in personal chat only.
     numericValue: 1
   - name: Group
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope.Group'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope.Group'
     package: '@microsoft/teamsfx'
     summary: Search members from the installations in group chat only.
     numericValue: 2
   - name: Channel
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope.Channel'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope.Channel'
     package: '@microsoft/teamsfx'
     summary: Search members from the installations in Teams channel only.
     numericValue: 4
   - name: All
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope.All'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope.All'
     package: '@microsoft/teamsfx'
     summary: >-
       Search members from all installations including personal chat, group chat
