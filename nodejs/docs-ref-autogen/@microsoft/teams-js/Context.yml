@@ -692,6 +692,25 @@ properties:
       return:
         description: ''
         type: string
+  - name: renderingSurface
+    uid: '@microsoft/teams-js.Context.renderingSurface'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: renderingSurface
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of TeamsJS v2.0.0, please use
+      [app.Context.page.renderingSurface](xref:@microsoft/teams-js.app.PageInfo.renderingSurface)
+      instead
+
+
+      The surface where the tab is rendered (sidePanel, meeting, chat, channel)
+    syntax:
+      content: 'renderingSurface?: copilotSidePanel'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.RenderingSurfaces.copilotSidePanel" />
   - name: ringId
     uid: '@microsoft/teams-js.Context.ringId'
     package: '@microsoft/teams-js'

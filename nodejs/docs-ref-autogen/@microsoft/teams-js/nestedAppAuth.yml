@@ -98,7 +98,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Checks if MSAL-NAA channel recommended by the host
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isNAAChannelRecommended(): boolean'

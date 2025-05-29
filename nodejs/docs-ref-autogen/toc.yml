@@ -1451,6 +1451,9 @@
     - uid: '@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType'
       name: registerOnThemeChangeHandlerFunctionType
       items: []
+    - uid: '@microsoft/teams-js.RenderingSurfaces'
+      name: RenderingSurfaces
+      items: []
     - uid: '@microsoft/teams-js.ResumeContext'
       name: ResumeContext
       items: []
