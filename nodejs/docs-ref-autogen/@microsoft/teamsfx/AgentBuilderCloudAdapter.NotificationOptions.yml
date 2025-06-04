@@ -1,17 +1,17 @@
 ### YamlMime:TSType
 name: NotificationOptions
-uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions'
+uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationOptions'
 package: '@microsoft/teamsfx'
 summary: >-
   Options to initialize
-  [NotificationBot](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot).
+  [NotificationBot](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot).
 fullName: NotificationOptions
 remarks: ''
 isDeprecated: false
 type: interface
 properties:
   - name: botAppId
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions.botAppId'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationOptions.botAppId'
     package: '@microsoft/teamsfx'
     summary: An optional input of bot app Id.
     fullName: botAppId
@@ -25,7 +25,7 @@ properties:
         description: ''
         type: string
   - name: store
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions.store'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationOptions.store'
     package: '@microsoft/teamsfx'
     summary: An optional store to persist bot notification target references.
     fullName: store

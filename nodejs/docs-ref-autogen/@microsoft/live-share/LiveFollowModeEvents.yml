@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: Events supported by `LiveFollowMode` object.
 fullName: LiveFollowModeEvents
 remarks: ''
-previewState: beta
 isDeprecated: false
 fields:
   - name: presenceChanged

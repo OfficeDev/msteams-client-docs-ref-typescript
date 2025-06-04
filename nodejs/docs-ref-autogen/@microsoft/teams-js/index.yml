@@ -133,6 +133,7 @@ enums:
   - '@microsoft/teams-js.FrameContexts'
   - '@microsoft/teams-js.HostClientType'
   - '@microsoft/teams-js.HostName'
+  - '@microsoft/teams-js.RenderingSurfaces'
   - '@microsoft/teams-js.SecondaryM365ContentIdName'
   - '@microsoft/teams-js.TeamType'
   - '@microsoft/teams-js.UserTeamRole'

@@ -72,6 +72,23 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: renderingSurface
+    uid: '@microsoft/teams-js.app.PageInfo.renderingSurface'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The mode or surface where the page is rendered (e.g. sidePanel,
+      meetingStage, etc.)
+
+      This will be used by the app developers in future to know where in the
+      host the app is rendered instead of the frameContext.
+    fullName: renderingSurface
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'renderingSurface?: copilotSidePanel'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.RenderingSurfaces.copilotSidePanel" />
   - name: sourceOrigin
     uid: '@microsoft/teams-js.app.PageInfo.sourceOrigin'
     package: '@microsoft/teams-js'

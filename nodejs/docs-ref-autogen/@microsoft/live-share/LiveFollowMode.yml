@@ -10,7 +10,6 @@ summary: >-
   state value).
 fullName: LiveFollowMode<TData>
 remarks: ''
-previewState: beta
 isDeprecated: false
 type: class
 constructors:

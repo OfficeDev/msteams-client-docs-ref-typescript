@@ -52,20 +52,6 @@ properties:
       return:
         description: The Id for the dialog.
         type: string
-  - name: telemetryClient
-    uid: '@microsoft/teamsfx.BotSsoExecutionDialog.telemetryClient'
-    package: '@microsoft/teamsfx'
-    summary: Get the current telemetry client.
-    fullName: telemetryClient
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: BotTelemetryClient telemetryClient
-      return:
-        description: >-
-          The [BotTelemetryClient](xref:botbuilder.BotTelemetryClient) to use
-          for logging.
-        type: BotTelemetryClient
 inheritedProperties:
   - name: dialogs
     uid: '@microsoft/teamsfx.BotSsoExecutionDialog.dialogs'
@@ -102,26 +88,22 @@ inheritedMethods:
   - name: addDialog(Dialog<{}>)
     uid: '@microsoft/teamsfx.BotSsoExecutionDialog.addDialog'
     package: '@microsoft/teamsfx'
-    summary: >-
-      Adds a child [Dialog](xref:botbuilder-dialogs.Dialog) or prompt to the
-      components internal [DialogSet](xref:botbuilder-dialogs.DialogSet).
+    summary: Adds a child Dialog or prompt to the components internal DialogSet.
     remarks: >-
-      The [Dialog.id](xref:botbuilder-dialogs.Dialog.id) of the first child
-      added to the component will be assigned to the initialDialogId property.
+      The Dialog.id of the first child added to the component will be assigned
+      to the initialDialogId property.
     isDeprecated: false
     syntax:
       content: 'function addDialog(dialog: Dialog<{}>): BotSsoExecutionDialog'
       parameters:
         - id: dialog
           type: Dialog&lt;{}&gt;
-          description: The child [Dialog](xref:botbuilder-dialogs.Dialog) or prompt to add.
+          description: The child Dialog or prompt to add.
       return:
-        description: >-
-          The [ComponentDialog](xref:botbuilder-dialogs.ComponentDialog) after
-          the operation is complete.
+        description: The ComponentDialog after the operation is complete.
         type: >-
           <xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog"
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.BotSsoExecutionDialog"
           />
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.addDialog
   - name: beginDialog(DialogContext, {})
@@ -146,14 +128,12 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function beginDialog(outerDC: DialogContext, options?: {}):
+        function beginDialog(outerDialogContext: DialogContext, options?: {}):
         Promise<DialogTurnResult<any>>
       parameters:
-        - id: outerDC
+        - id: outerDialogContext
           type: DialogContext
-          description: >-
-            The parent [DialogContext](xref:botbuilder-dialogs.DialogContext)
-            for the current turn of conversation.
+          description: The parent DialogContext for the current turn of conversation.
         - id: options
           type: '{}'
           description: Optional, initial information to pass to the dialog.
@@ -176,12 +156,10 @@ inheritedMethods:
           type: Record&lt;string, unknown&gt;
           description: Configuration settings to apply.
       return:
-        description: >-
-          The [Configurable](xref:botbuilder-dialogs.Configurable) after the
-          operation is complete.
+        description: The Configurable after the operation is complete.
         type: >-
           <xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog"
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.BotSsoExecutionDialog"
           />
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.configure
   - name: continueDialog(DialogContext)
@@ -191,7 +169,7 @@ inheritedMethods:
       Called when the dialog is _continued_, where it is the active dialog and
       the
 
-      user replies with a new [Activity](xref:botframework-schema.Activity).
+      user replies with a new Activity.
 
       If this method is *not* overridden, the dialog automatically ends when the
       user replies.
@@ -206,14 +184,12 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function continueDialog(outerDC: DialogContext):
+        function continueDialog(outerDialogContext: DialogContext):
         Promise<DialogTurnResult<any>>
       parameters:
-        - id: outerDC
+        - id: outerDialogContext
           type: DialogContext
-          description: >-
-            The parent [DialogContext](xref:botbuilder-dialogs.DialogContext)
-            for the current turn of conversation.
+          description: The parent DialogContext for the current turn of conversation.
       return:
         description: A Promise representing the asynchronous operation.
         type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
@@ -225,9 +201,11 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function createChildContext(outerDC: DialogContext): DialogContext'
+      content: >-
+        function createChildContext(outerDialogContext: DialogContext):
+        DialogContext
       parameters:
-        - id: outerDC
+        - id: outerDialogContext
           type: DialogContext
           description: the outer dialog context
       return:
@@ -237,10 +215,10 @@ inheritedMethods:
   - name: endDialog(TurnContext, DialogInstance<any>, DialogReason)
     uid: '@microsoft/teamsfx.BotSsoExecutionDialog.endDialog'
     package: '@microsoft/teamsfx'
-    summary: Called when the [Dialog](xref:botbuilder-dialogs.Dialog) is ending.
+    summary: Called when the Dialog is ending.
     remarks: >-
       When this method is called from the parent dialog's context, the component
-      [Dialog](xref:botbuilder-dialogs.Dialog)
+      Dialog
 
       cancels all of the dialogs on its inner dialog stack before ending.
     isDeprecated: false
@@ -251,19 +229,15 @@ inheritedMethods:
       parameters:
         - id: context
           type: TurnContext
-          description: >-
-            The [TurnContext](xref:botbuilder-core.TurnContext) object for this
-            turn.
+          description: The TurnContext object for this turn.
         - id: instance
           type: DialogInstance&lt;any&gt;
           description: >-
             State information associated with the instance of this component
-
-            [Dialog](xref:botbuilder-dialogs.Dialog) on its parent's dialog
-            stack.
+            Dialog on its parent's dialog stack.
         - id: reason
           type: DialogReason
-          description: Reason why the [Dialog](xref:botbuilder-dialogs.Dialog) ended.
+          description: Reason why the Dialog ended.
       return:
         description: A Promise representing the asynchronous operation.
         type: Promise&lt;void&gt;
@@ -308,7 +282,7 @@ inheritedMethods:
     uid: '@microsoft/teamsfx.BotSsoExecutionDialog.getVersion'
     package: '@microsoft/teamsfx'
     summary: >-
-      An encoded string used to aid in the detection of bot changes on
+      An encoded string used to aid in the detection of agent changes on
       re-deployment.
     remarks: >-
       This defaults to returning the dialogs [id](#id) but can be overridden to
@@ -318,9 +292,9 @@ inheritedMethods:
       version change will
 
       result in a `versionChanged` event will be raised. If this event is not
-      handled by the bot,
+      handled by the agent,
 
-      an error will be thrown resulting in the bots error handler logic being
+      an error will be thrown resulting in the agent error handler logic being
       run.
 
 
@@ -345,13 +319,13 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function onDialogEvent(dc: DialogContext, e: DialogEvent):
-        Promise<boolean>
+        function onDialogEvent(dialogContext: DialogContext, event:
+        DialogEvent): Promise<boolean>
       parameters:
-        - id: dc
+        - id: dialogContext
           type: DialogContext
           description: The dialog context for the current turn of conversation.
-        - id: e
+        - id: event
           type: DialogEvent
           description: The event being raised.
       return:
@@ -373,9 +347,7 @@ inheritedMethods:
       parameters:
         - id: context
           type: TurnContext
-          description: >-
-            The [TurnContext](xref:botbuilder-core.TurnContext) object for this
-            turn.
+          description: The TurnContext object for this turn.
         - id: instance
           type: DialogInstance&lt;any&gt;
           description: State information for this dialog.
@@ -412,14 +384,12 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function resumeDialog(outerDC: DialogContext, _reason: DialogReason,
-        _result?: any): Promise<DialogTurnResult<any>>
+        function resumeDialog(outerDialogContext: DialogContext, _reason:
+        DialogReason, _result?: any): Promise<DialogTurnResult<any>>
       parameters:
-        - id: outerDC
+        - id: outerDialogContext
           type: DialogContext
-          description: >-
-            The [DialogContext](xref:botbuilder-dialogs.DialogContext) for the
-            current turn of conversation.
+          description: The DialogContext for the current turn of conversation.
         - id: _reason
           type: DialogReason
           description: Reason why the dialog resumed.
@@ -452,7 +422,7 @@ methods:
         - id: triggerPatterns
           type: <xref uid="@microsoft/teamsfx.TriggerPatterns" />
           description: The trigger pattern
-  - name: run(TurnContext, StatePropertyAccessor<any>)
+  - name: run(TurnContext, AgentStatePropertyAccessor<any>)
     uid: '@microsoft/teamsfx.BotSsoExecutionDialog.run'
     package: '@microsoft/teamsfx'
     summary: >-
@@ -463,13 +433,13 @@ methods:
     syntax:
       content: >-
         function run(context: TurnContext, accessor:
-        StatePropertyAccessor<any>): Promise<void>
+        AgentStatePropertyAccessor<any>): Promise<void>
       parameters:
         - id: context
           type: TurnContext
           description: The context object for the current turn.
         - id: accessor
-          type: StatePropertyAccessor&lt;any&gt;
+          type: AgentStatePropertyAccessor&lt;any&gt;
           description: The instance of StatePropertyAccessor for dialog system.
       return:
         description: ''

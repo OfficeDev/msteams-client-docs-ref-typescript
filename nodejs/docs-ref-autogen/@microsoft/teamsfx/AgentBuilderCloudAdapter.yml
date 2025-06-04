@@ -1,28 +1,28 @@
 ### YamlMime:TSPackage
-uid: '@microsoft/teamsfx.BotBuilderCloudAdapter'
-name: BotBuilderCloudAdapter
+uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter'
+name: AgentBuilderCloudAdapter
 summary: ''
 type: module
 classes:
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.BotSsoExecutionDialog'
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot'
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.Channel'
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot'
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot'
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.Member'
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot'
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.BotSsoExecutionDialog'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.CardActionBot'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.Member'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation'
 interfaces:
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions'
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationOptions'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationOptions'
 enums:
-  - '@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope'
+  - '@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope'
 package: '@microsoft/teamsfx'
 functions:
   - name: >-
       sendAdaptiveCard(NotificationTarget, unknown, (context: TurnContext,
       error: Error) => Promise<void>)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.sendAdaptiveCard'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.sendAdaptiveCard'
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message to a notification target.
     remarks: ''
@@ -52,7 +52,7 @@ functions:
   - name: >-
       sendMessage(NotificationTarget, string, (context: TurnContext, error:
       Error) => Promise<void>)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.sendMessage'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.sendMessage'
     package: '@microsoft/teamsfx'
     summary: Send a plain text message to a notification target.
     remarks: ''

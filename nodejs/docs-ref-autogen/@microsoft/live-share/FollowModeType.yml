@@ -13,7 +13,6 @@ remarks: >-
 
   Use to determine any relevant button(s) to show to the user (e.g., "Stop
   presenting").
-previewState: beta
 isDeprecated: false
 fields:
   - name: activeFollowers

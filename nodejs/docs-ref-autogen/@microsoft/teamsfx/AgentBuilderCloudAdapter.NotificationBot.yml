@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: NotificationBot
-uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot'
+uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot'
 package: '@microsoft/teamsfx'
 summary: >-
   Provide utilities to send notification to varies targets (e.g., member, group,
@@ -11,7 +11,7 @@ isDeprecated: false
 type: class
 constructors:
   - name: NotificationBot(CloudAdapter, NotificationOptions_2)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.constructor'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Constructor of the notification bot.
     remarks: >-
@@ -29,17 +29,17 @@ constructors:
         - id: options
           type: >-
             <xref
-            uid="@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationOptions"
+            uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationOptions"
             />
           description: The initialize options
 methods:
   - name: buildTeamsBotInstallation(Partial<ConversationReference>)
     uid: >-
-      @microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.buildTeamsBotInstallation
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.buildTeamsBotInstallation
     package: '@microsoft/teamsfx'
     summary: >-
       Create a
-      [TeamsBotInstallation](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation)
+      [TeamsBotInstallation](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation)
       instance with conversation reference.
     remarks: ''
     isDeprecated: false
@@ -54,20 +54,21 @@ methods:
       return:
         description: >-
           - The
-          [TeamsBotInstallation](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation)
+          [TeamsBotInstallation](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation)
           instance or null.
         type: >-
           null | <xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation"
           />
   - name: >-
       findAllChannels((channel: Channel, teamDetails: undefined | TeamDetails)
       => Promise<boolean>)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findAllChannels'
+    uid: >-
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.findAllChannels
     package: '@microsoft/teamsfx'
     summary: >-
       Return all
-      [Channel](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Channel) where
+      [Channel](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel) where
       predicate is true, and empty array otherwise.
 
       (Ensure the bot app is installed into the `General` channel, otherwise
@@ -87,17 +88,18 @@ methods:
       return:
         description: >-
           An array of
-          [Channel](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Channel)
+          [Channel](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel)
           where predicate is true, and empty array otherwise.
         type: >-
           Promise&lt;<xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />[]&gt;
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel" />[]&gt;
   - name: 'findAllMembers((member: Member) => Promise<boolean>, SearchScope)'
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findAllMembers'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.findAllMembers'
     package: '@microsoft/teamsfx'
     summary: >-
-      Return all [Member](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Member)
-      where predicate is true, and empty array otherwise.
+      Return all
+      [Member](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.Member) where
+      predicate is true, and empty array otherwise.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -109,26 +111,28 @@ methods:
           type: '(member: Member) =&gt; Promise&lt;boolean&gt;'
           description: Find calls predicate for each member of the installation.
         - id: scope
-          type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope" />
+          type: >-
+            <xref uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope"
+            />
           description: |-
             The scope to find members from the installations
             (personal chat, group chat, Teams channel).
       return:
         description: >-
           An array of
-          [Member](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Member) where
-          predicate is true, and empty array otherwise.
+          [Member](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.Member)
+          where predicate is true, and empty array otherwise.
         type: >-
           Promise&lt;<xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />[]&gt;
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.Member" />[]&gt;
   - name: >-
       findChannel((channel: Channel, teamDetails: undefined | TeamDetails) =>
       Promise<boolean>)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findChannel'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.findChannel'
     package: '@microsoft/teamsfx'
     summary: >-
       Return the first
-      [Channel](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Channel) where
+      [Channel](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel) where
       predicate is true, and undefined otherwise.
 
       (Ensure the bot app is installed into the `General` channel, otherwise
@@ -156,17 +160,17 @@ methods:
       return:
         description: >-
           The first
-          [Channel](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Channel)
+          [Channel](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel)
           where predicate is true, and `undefined` otherwise.
         type: >-
           Promise&lt;undefined | <xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />&gt;
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel" />&gt;
   - name: 'findMember((member: Member) => Promise<boolean>, SearchScope)'
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.findMember'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.findMember'
     package: '@microsoft/teamsfx'
     summary: >-
       Return the first
-      [Member](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Member) where
+      [Member](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.Member) where
       predicate is true, and undefined otherwise.
     remarks: ''
     isDeprecated: false
@@ -185,21 +189,23 @@ methods:
 
             immediately returns that member. Otherwise, find returns undefined.
         - id: scope
-          type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.SearchScope" />
+          type: >-
+            <xref uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope"
+            />
           description: |-
             The scope to find members from the installations
             (personal chat, group chat, Teams channel).
       return:
         description: >-
           The first
-          [Member](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.Member) where
-          predicate is true, and `undefined` otherwise.
+          [Member](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.Member)
+          where predicate is true, and `undefined` otherwise.
         type: >-
           Promise&lt;undefined | <xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />&gt;
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.Member" />&gt;
   - name: getPagedInstallations(number, string, boolean)
     uid: >-
-      @microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.getPagedInstallations
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.getPagedInstallations
     package: '@microsoft/teamsfx'
     summary: Gets a pagined list of targets where the bot is installed.
     remarks: The result is retrieving from the persisted storage.
@@ -222,15 +228,15 @@ methods:
       return:
         description: >-
           An array of
-          [TeamsBotInstallation](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation)
+          [TeamsBotInstallation](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation)
           with paged data and continuation token.
         type: >-
           Promise&lt;<xref uid="@microsoft/teamsfx.PagedData" />&lt;<xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation"
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation"
           />&gt;&gt;
   - name: validateInstallation(Partial<ConversationReference>)
     uid: >-
-      @microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot.validateInstallation
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot.validateInstallation
     package: '@microsoft/teamsfx'
     summary: Validate the installation by getting paged memebers.
     remarks: ''
