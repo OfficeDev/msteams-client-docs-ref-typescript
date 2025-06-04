@@ -121,20 +121,6 @@ properties:
       return:
         description: The Id for the dialog.
         type: string
-  - name: telemetryClient
-    uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.telemetryClient'
-    package: '@microsoft/teamsfx'
-    summary: Gets the telemetry client for this dialog.
-    fullName: telemetryClient
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: BotTelemetryClient telemetryClient
-      return:
-        description: >-
-          The [BotTelemetryClient](xref:botbuilder.BotTelemetryClient) to use
-          for logging.
-        type: BotTelemetryClient
 inheritedProperties:
   - name: EndOfTurn
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.EndOfTurn'
@@ -168,9 +154,7 @@ inheritedMethods:
           type: Record&lt;string, unknown&gt;
           description: Configuration settings to apply.
       return:
-        description: >-
-          The [Configurable](xref:botbuilder-dialogs.Configurable) after the
-          operation is complete.
+        description: The Configurable after the operation is complete.
         type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPrompt" />
     inheritanceDescription: <b>Inherited From</b> Dialog.configure
   - name: endDialog(TurnContext, DialogInstance<any>, DialogReason)
@@ -186,22 +170,9 @@ inheritedMethods:
       By default, this method has no effect.
 
 
-      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
-      method when the current
+      The DialogContext calls this method when the current
 
       dialog is ending.
-
-
-      **See also**
-
-      -
-      [DialogContext.cancelAllDialogs](xref:botbuilder-dialogs.DialogContext.cancelAllDialogs)
-
-      -
-      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
-
-      -
-      [DialogContext.replaceDialog](xref:botbuilder-dialogs.DialogContext.replaceDialog)
     isDeprecated: false
     syntax:
       content: >-
@@ -245,7 +216,7 @@ inheritedMethods:
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getVersion'
     package: '@microsoft/teamsfx'
     summary: >-
-      An encoded string used to aid in the detection of bot changes on
+      An encoded string used to aid in the detection of agent changes on
       re-deployment.
     remarks: >-
       This defaults to returning the dialogs [id](#id) but can be overridden to
@@ -255,9 +226,9 @@ inheritedMethods:
       version change will
 
       result in a `versionChanged` event will be raised. If this event is not
-      handled by the bot,
+      handled by the agent,
 
-      an error will be thrown resulting in the bots error handler logic being
+      an error will be thrown resulting in the agent error handler logic being
       run.
 
 
@@ -282,13 +253,13 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function onDialogEvent(dc: DialogContext, e: DialogEvent):
-        Promise<boolean>
+        function onDialogEvent(dialogContext: DialogContext, event:
+        DialogEvent): Promise<boolean>
       parameters:
-        - id: dc
+        - id: dialogContext
           type: DialogContext
           description: The dialog context for the current turn of conversation.
-        - id: e
+        - id: event
           type: DialogEvent
           description: The event being raised.
       return:
@@ -308,19 +279,10 @@ inheritedMethods:
       By default, this method has no effect.
 
 
-      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
-      method when the current
+      The DialogContext calls this method when the current
 
       dialog should re-request input from the user. This method is implemented
       for prompt dialogs.
-
-
-      **See also**
-
-      -
-      [DialogContext.repromptDialog](xref:botbuilder-dialogs.DialogContext.repromptDialog)
-
-      - [Prompt](xref:botbuilder-dialogs.Prompt)
     isDeprecated: false
     syntax:
       content: >-
@@ -350,8 +312,7 @@ inheritedMethods:
       By default, this method signals that the dialog is complete and returns.
 
 
-      The [DialogContext](xref:botbuilder-dialogs.DialogContext) calls this
-      method when it resumes
+      The DialogContext calls this method when it resumes
 
       the dialog. If the previous dialog on the stack returned a value, that
       value is in the `result`
@@ -359,24 +320,13 @@ inheritedMethods:
       parameter.
 
 
-      To start a _child_ dialog, use
-      [DialogContext.beginDialog](xref:botbuilder-dialogs.DialogContext.beginDialog)
-
-      or [DialogContext.prompt](xref:botbuilder-dialogs.DialogContext.prompt);
-      however, this dialog will not
+      To start a _child_ dialog, use DialogContext.beginDialog or
+      DialogContext.prompt; however, this dialog will not
 
       necessarily be the one that started the child dialog.
 
       To signal to the dialog context that this dialog has completed, await
-
-      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
-      before exiting this method.
-
-
-      **See also**
-
-      -
-      [DialogContext.endDialog](xref:botbuilder-dialogs.DialogContext.endDialog)
+      DialogContext.endDialog before exiting this method.
     isDeprecated: false
     syntax:
       content: >-
@@ -388,9 +338,9 @@ inheritedMethods:
           description: The context for the current dialog turn.
         - id: reason
           type: DialogReason
-          description: |-
+          description: >-
             The reason the dialog is resuming. This will typically be
-                 [DialogReason.endCalled](xref:botbuilder-dialogs.DialogReason.endCalled)
+            DialogReason.endCalled
         - id: result
           type: any
           description: Optional. The return value, if any, from the dialog that ended.

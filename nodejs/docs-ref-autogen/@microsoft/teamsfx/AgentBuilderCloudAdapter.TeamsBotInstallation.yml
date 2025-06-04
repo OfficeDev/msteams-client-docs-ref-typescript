@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: TeamsBotInstallation
-uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation'
+uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation'
 package: '@microsoft/teamsfx'
 summary: >-
   A [NotificationTarget](xref:@microsoft/teamsfx.NotificationTarget) that
@@ -19,7 +19,8 @@ isDeprecated: false
 type: class
 constructors:
   - name: TeamsBotInstallation(CloudAdapter, Partial<ConversationReference>, string)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.constructor'
+    uid: >-
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.constructor
     package: '@microsoft/teamsfx'
     summary: Constructor
     remarks: >-
@@ -42,7 +43,7 @@ constructors:
           description: The bot app id.
 properties:
   - name: adapter
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.adapter'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.adapter'
     package: '@microsoft/teamsfx'
     summary: The bound `CloudAdapter`.
     fullName: adapter
@@ -54,7 +55,7 @@ properties:
         description: ''
         type: CloudAdapter
   - name: botAppId
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.botAppId'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.botAppId'
     package: '@microsoft/teamsfx'
     summary: The bot app id.
     fullName: botAppId
@@ -67,7 +68,7 @@ properties:
         type: string
   - name: conversationReference
     uid: >-
-      @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.conversationReference
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.conversationReference
     package: '@microsoft/teamsfx'
     summary: The bound `ConversationReference`.
     fullName: conversationReference
@@ -79,7 +80,7 @@ properties:
         description: ''
         type: Partial&lt;ConversationReference&gt;
   - name: type
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.type'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.type'
     package: '@microsoft/teamsfx'
     summary: Notification target type.
     fullName: type
@@ -99,7 +100,7 @@ properties:
         type: <xref uid="@microsoft/teamsfx.NotificationTargetType" />
 methods:
   - name: channels()
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.channels'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.channels'
     package: '@microsoft/teamsfx'
     summary: Get channels from this bot installation.
     remarks: ''
@@ -112,10 +113,10 @@ methods:
           returns an empty array.
         type: >-
           Promise&lt;<xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Channel" />[]&gt;
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel" />[]&gt;
   - name: getPagedMembers(number, string)
     uid: >-
-      @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.getPagedMembers
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.getPagedMembers
     package: '@microsoft/teamsfx'
     summary: Gets a pagined list of members from this bot installation.
     remarks: ''
@@ -135,10 +136,10 @@ methods:
         description: An array of members from where the bot is installed.
         type: >-
           Promise&lt;<xref uid="@microsoft/teamsfx.PagedData" />&lt;<xref
-          uid="@microsoft/teamsfx.BotBuilderCloudAdapter.Member" />&gt;&gt;
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.Member" />&gt;&gt;
   - name: getTeamDetails()
     uid: >-
-      @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.getTeamDetails
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.getTeamDetails
     package: '@microsoft/teamsfx'
     summary: Get team details from this bot installation
     remarks: ''
@@ -154,7 +155,7 @@ methods:
       sendAdaptiveCard(unknown, (context: TurnContext, error: Error) =>
       Promise<void>)
     uid: >-
-      @microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.sendAdaptiveCard
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.sendAdaptiveCard
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message.
     remarks: ''
@@ -178,7 +179,8 @@ methods:
         description: The response of sending adaptive card message.
         type: Promise&lt;MessageResponse&gt;
   - name: 'sendMessage(string, (context: TurnContext, error: Error) => Promise<void>)'
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.TeamsBotInstallation.sendMessage'
+    uid: >-
+      @microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.sendMessage
     package: '@microsoft/teamsfx'
     summary: Send a plain text message.
     remarks: ''

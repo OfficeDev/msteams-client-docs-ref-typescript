@@ -7,7 +7,6 @@ fullName: IFollowModeState<TData>
 remarks: >-
   This includes information such as whether there is a presenting user and which
   user's state is relevant to the local user.
-previewState: beta
 isDeprecated: false
 type: interface
 properties:

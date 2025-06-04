@@ -306,4 +306,20 @@ inheritedMethods:
         description: ''
         type: Promise&lt;R&gt;
     inheritanceDescription: <b>Inherited From</b> Axios.request
+methods:
+  - name: create(CreateAxiosDefaults<any>)
+    uid: '@microsoft/teamsfx.AxiosInstance.create'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function create(config?: CreateAxiosDefaults<any>): AxiosInstance'
+      parameters:
+        - id: config
+          type: CreateAxiosDefaults&lt;any&gt;
+          description: ''
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teamsfx.AxiosInstance" />
 extends: Axios

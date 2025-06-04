@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: CardActionBot
-uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot'
+uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CardActionBot'
 package: '@microsoft/teamsfx'
 summary: A card action bot to respond to adaptive card universal actions.
 fullName: CardActionBot
@@ -9,7 +9,7 @@ isDeprecated: false
 type: class
 constructors:
   - name: CardActionBot(CloudAdapter, CardActionOptions)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot.constructor'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CardActionBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Create a new instance of the `CardActionBot`.
     remarks: ''
@@ -25,7 +25,7 @@ constructors:
           description: The initialize options.
 methods:
   - name: registerHandler(TeamsFxAdaptiveCardActionHandler)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot.registerHandler'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CardActionBot.registerHandler'
     package: '@microsoft/teamsfx'
     summary: Register a card action handler to the bot.
     remarks: ''
@@ -39,7 +39,7 @@ methods:
           type: <xref uid="@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler" />
           description: A card action handler to be registered.
   - name: registerHandlers(TeamsFxAdaptiveCardActionHandler[])
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot.registerHandlers'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CardActionBot.registerHandlers'
     package: '@microsoft/teamsfx'
     summary: Register card action handlers to the bot.
     remarks: ''

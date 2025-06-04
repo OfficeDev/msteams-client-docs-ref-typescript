@@ -1,6 +1,6 @@
 ### YamlMime:TSType
 name: ConversationBot
-uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot'
+uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot'
 package: '@microsoft/teamsfx'
 summary: >+
   Provide utilities for bot conversation, including:
@@ -79,7 +79,7 @@ summary: >+
 fullName: ConversationBot
 remarks: >-
   Set `adapter` in
-  [ConversationOptions](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions)
+  [ConversationOptions](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationOptions)
   to use your own bot adapter.
 
 
@@ -89,13 +89,13 @@ remarks: >-
 
 
   For notification, set `notification.storage` in
-  [ConversationOptions](xref:@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions)
+  [ConversationOptions](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationOptions)
   to use your own storage implementation.
 isDeprecated: false
 type: class
 constructors:
   - name: ConversationBot(ConversationOptions)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.constructor'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot.constructor'
     package: '@microsoft/teamsfx'
     summary: Create new instance of the `ConversationBot`.
     remarks: >-
@@ -108,12 +108,12 @@ constructors:
         - id: options
           type: >-
             <xref
-            uid="@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationOptions"
+            uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationOptions"
             />
           description: The initialize options.
 properties:
   - name: adapter
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.adapter'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot.adapter'
     package: '@microsoft/teamsfx'
     summary: The bot adapter.
     fullName: adapter
@@ -125,7 +125,7 @@ properties:
         description: ''
         type: CloudAdapter
   - name: cardAction
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.cardAction'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot.cardAction'
     package: '@microsoft/teamsfx'
     summary: The action handler used for adaptive card universal actions.
     fullName: cardAction
@@ -135,9 +135,11 @@ properties:
       content: 'cardAction?: CardActionBot'
       return:
         description: ''
-        type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.CardActionBot" />
+        type: >-
+          <xref uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.CardActionBot"
+          />
   - name: command
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.command'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot.command'
     package: '@microsoft/teamsfx'
     summary: The entrypoint of command and response.
     fullName: command
@@ -147,9 +149,9 @@ properties:
       content: 'command?: CommandBot'
       return:
         description: ''
-        type: <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.CommandBot" />
+        type: <xref uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot" />
   - name: notification
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.notification'
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot.notification'
     package: '@microsoft/teamsfx'
     summary: The entrypoint of notification.
     fullName: notification
@@ -160,13 +162,13 @@ properties:
       return:
         description: ''
         type: >-
-          <xref uid="@microsoft/teamsfx.BotBuilderCloudAdapter.NotificationBot"
-          />
+          <xref
+          uid="@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot" />
 methods:
   - name: >-
       requestHandler(Request<Record<string, unknown>, Record<string, undefined |
-      string | string[]>>, Response, (context: TurnContext) => Promise<any>)
-    uid: '@microsoft/teamsfx.BotBuilderCloudAdapter.ConversationBot.requestHandler'
+      string | string[]>>, any, (context: TurnContext) => Promise<any>)
+    uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot.requestHandler'
     package: '@microsoft/teamsfx'
     summary: |+
       The request handler to integrate with web request.
@@ -195,7 +197,7 @@ methods:
     syntax:
       content: >-
         function requestHandler(req: Request<Record<string, unknown>,
-        Record<string, undefined | string | string[]>>, res: Response, logic?:
+        Record<string, undefined | string | string[]>>, res: any, logic?:
         (context: TurnContext) => Promise<any>): Promise<void>
       parameters:
         - id: req
@@ -204,7 +206,7 @@ methods:
             undefined | string | string[]&gt;&gt;
           description: An incoming HTTP [Request](xref:botbuilder.Request).
         - id: res
-          type: Response
+          type: any
           description: The corresponding HTTP [Response](xref:botbuilder.Response).
         - id: logic
           type: '(context: TurnContext) =&gt; Promise&lt;any&gt;'
