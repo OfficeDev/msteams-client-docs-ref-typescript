@@ -5,7 +5,6 @@ package: '@microsoft/live-share'
 summary: The presence data for a user's personal follow mode state.
 fullName: IFollowModePresenceUserData<TData>
 remarks: ''
-previewState: beta
 isDeprecated: false
 type: interface
 properties:
