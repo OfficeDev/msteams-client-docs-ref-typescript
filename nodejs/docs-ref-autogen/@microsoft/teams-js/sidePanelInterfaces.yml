@@ -1,0 +1,11 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.sidePanelInterfaces'
+name: sidePanelInterfaces
+summary: ''
+type: module
+interfaces:
+  - '@microsoft/teams-js.sidePanelInterfaces.Content'
+  - '@microsoft/teams-js.sidePanelInterfaces.ContentRequest'
+typeAliases:
+  - '@microsoft/teams-js.sidePanelInterfaces.EmailContent'
+package: '@microsoft/teams-js'
