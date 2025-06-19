@@ -61,7 +61,7 @@ methods:
           description: card data used to render the template.
       return:
         description: A bot message activity attached with an adaptive card.
-        type: Partial&lt;Activity&gt;
+        type: Partial&lt;<xref uid="@microsoft/agents-activity.Activity" />&gt;
   - name: attachAdaptiveCardWithoutData(unknown)
     uid: '@microsoft/teamsfx.MessageBuilder.attachAdaptiveCardWithoutData'
     package: '@microsoft/teamsfx'
@@ -78,7 +78,7 @@ methods:
           description: The adaptive card content.
       return:
         description: A bot message activity attached with an adaptive card.
-        type: Partial&lt;Activity&gt;
+        type: Partial&lt;<xref uid="@microsoft/agents-activity.Activity" />&gt;
   - name: attachContent(Attachment)
     uid: '@microsoft/teamsfx.MessageBuilder.attachContent'
     package: '@microsoft/teamsfx'
@@ -91,11 +91,11 @@ methods:
         Partial<Activity>
       parameters:
         - id: attachement
-          type: Attachment
+          type: <xref uid="@microsoft/agents-activity.Attachment" />
           description: The attachment object to attach.
       return:
         description: A message activity with an attachment.
-        type: Partial&lt;Activity&gt;
+        type: Partial&lt;<xref uid="@microsoft/agents-activity.Activity" />&gt;
   - name: >-
       attachHeroCard(string, (string | CardImage)[], (string | CardAction)[],
       Partial<HeroCard>)
@@ -126,20 +126,20 @@ methods:
           type: string
           description: The card title.
         - id: images
-          type: (string | CardImage)[]
+          type: (string | <xref uid="@microsoft/agents-hosting.CardImage" />)[]
           description: Optional. The array of images to include on the card.
         - id: buttons
-          type: (string | CardAction)[]
+          type: (string | <xref uid="@microsoft/agents-activity.CardAction" />)[]
           description: >-
             Optional. The array of buttons to include on the card. Each `string`
             in the array
                  is converted to an `imBack` button with a title and value set to the value of the string.
         - id: other
-          type: Partial&lt;HeroCard&gt;
+          type: Partial&lt;<xref uid="@microsoft/agents-hosting.HeroCard" />&gt;
           description: Optional. Any additional properties to include on the card.
       return:
         description: A bot message activity attached with a hero card.
-        type: Partial&lt;Activity&gt;
+        type: Partial&lt;<xref uid="@microsoft/agents-activity.Activity" />&gt;
   - name: attachO365ConnectorCard(O365ConnectorCard)
     uid: '@microsoft/teamsfx.MessageBuilder.attachO365ConnectorCard'
     package: '@microsoft/teamsfx'
@@ -152,11 +152,11 @@ methods:
         Partial<Activity>
       parameters:
         - id: card
-          type: O365ConnectorCard
+          type: <xref uid="@microsoft/agents-hosting.O365ConnectorCard" />
           description: A description of the Office 365 connector card.
       return:
         description: A bot message activity attached with an Office 365 connector card.
-        type: Partial&lt;Activity&gt;
+        type: Partial&lt;<xref uid="@microsoft/agents-activity.Activity" />&gt;
   - name: AttachReceiptCard(ReceiptCard)
     uid: '@microsoft/teamsfx.MessageBuilder.AttachReceiptCard'
     package: '@microsoft/teamsfx'
@@ -167,11 +167,11 @@ methods:
       content: 'static function AttachReceiptCard(card: ReceiptCard): Partial<Activity>'
       parameters:
         - id: card
-          type: ReceiptCard
+          type: <xref uid="@microsoft/agents-hosting.ReceiptCard" />
           description: A description of the receipt card.
       return:
         description: A message activity attached with a receipt card.
-        type: Partial&lt;Activity&gt;
+        type: Partial&lt;<xref uid="@microsoft/agents-activity.Activity" />&gt;
   - name: attachSigninCard(string, string, string)
     uid: '@microsoft/teamsfx.MessageBuilder.attachSigninCard'
     package: '@microsoft/teamsfx'
@@ -196,7 +196,7 @@ methods:
           description: Optional. Additional text to include on the card.
       return:
         description: A bot message activity attached with a sign-in card.
-        type: Partial&lt;Activity&gt;
+        type: Partial&lt;<xref uid="@microsoft/agents-activity.Activity" />&gt;
   - name: >-
       attachThumbnailCard(string, (string | CardImage)[], (string |
       CardAction)[], Partial<ThumbnailCard>)
@@ -215,17 +215,19 @@ methods:
           type: string
           description: The card title.
         - id: images
-          type: (string | CardImage)[]
+          type: (string | <xref uid="@microsoft/agents-hosting.CardImage" />)[]
           description: Optional. The array of images to include on the card.
         - id: buttons
-          type: (string | CardAction)[]
+          type: (string | <xref uid="@microsoft/agents-activity.CardAction" />)[]
           description: >-
             Optional. The array of buttons to include on the card. Each `string`
             in the array
                  is converted to an `imBack` button with a title and value set to the value of the string.
         - id: other
-          type: Partial&lt;ThumbnailCard&gt;
+          type: >-
+            Partial&lt;<xref uid="@microsoft/agents-hosting.ThumbnailCard"
+            />&gt;
           description: Optional. Any additional properties to include on the card.
       return:
         description: A message activity attached with a thumbnail card
-        type: Partial&lt;Activity&gt;
+        type: Partial&lt;<xref uid="@microsoft/agents-activity.Activity" />&gt;

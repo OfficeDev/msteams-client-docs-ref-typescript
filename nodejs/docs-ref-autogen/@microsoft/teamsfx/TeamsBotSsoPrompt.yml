@@ -138,7 +138,9 @@ inheritedProperties:
       content: 'static EndOfTurn: DialogTurnResult<any>'
       return:
         description: ''
-        type: DialogTurnResult&lt;any&gt;
+        type: >-
+          <xref uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
+          />&lt;any&gt;
     inheritanceDescription: <b>Inherited From</b> Dialog.EndOfTurn
 inheritedMethods:
   - name: configure(Record<string, unknown>)
@@ -180,13 +182,15 @@ inheritedMethods:
         DialogInstance<any>, _reason: DialogReason): Promise<void>
       parameters:
         - id: _context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The context object for the turn.
         - id: _instance
-          type: DialogInstance&lt;any&gt;
+          type: >-
+            <xref uid="@microsoft/agents-hosting-dialogs.DialogInstance"
+            />&lt;any&gt;
           description: Current state information for this dialog.
         - id: _reason
-          type: DialogReason
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogReason" />
           description: The reason the dialog is ending.
       return:
         description: ''
@@ -209,8 +213,10 @@ inheritedMethods:
       return:
         description: The converter for the selector configuration.
         type: >-
-          Converter&lt;unknown, unknown&gt; | ConverterFactory&lt;unknown,
-          unknown&gt;
+          <xref uid="@microsoft/agents-hosting-dialogs.Converter" />&lt;unknown,
+          unknown&gt; | <xref
+          uid="@microsoft/agents-hosting-dialogs.ConverterFactory"
+          />&lt;unknown, unknown&gt;
     inheritanceDescription: <b>Inherited From</b> Dialog.getConverter
   - name: getVersion()
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getVersion'
@@ -257,10 +263,10 @@ inheritedMethods:
         DialogEvent): Promise<boolean>
       parameters:
         - id: dialogContext
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The dialog context for the current turn of conversation.
         - id: event
-          type: DialogEvent
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogEvent" />
           description: The event being raised.
       return:
         description: >-
@@ -290,10 +296,12 @@ inheritedMethods:
         DialogInstance<any>): Promise<void>
       parameters:
         - id: _context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The context object for the turn.
         - id: _instance
-          type: DialogInstance&lt;any&gt;
+          type: >-
+            <xref uid="@microsoft/agents-hosting-dialogs.DialogInstance"
+            />&lt;any&gt;
           description: Current state information for this dialog.
       return:
         description: ''
@@ -334,10 +342,10 @@ inheritedMethods:
         any): Promise<DialogTurnResult<any>>
       parameters:
         - id: dc
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The context for the current dialog turn.
         - id: reason
-          type: DialogReason
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogReason" />
           description: >-
             The reason the dialog is resuming. This will typically be
             DialogReason.endCalled
@@ -346,7 +354,10 @@ inheritedMethods:
           description: Optional. The return value, if any, from the dialog that ended.
       return:
         description: A promise resolving to the dialog turn result.
-        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
+          />&lt;any&gt;&gt;
     inheritanceDescription: <b>Inherited From</b> Dialog.resumeDialog
 methods:
   - name: beginDialog(DialogContext)
@@ -365,11 +376,14 @@ methods:
       content: 'function beginDialog(dc: DialogContext): Promise<DialogTurnResult<any>>'
       parameters:
         - id: dc
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The DialogContext for the current turn of the conversation.
       return:
         description: A `Promise` representing the asynchronous operation.
-        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
+          />&lt;any&gt;&gt;
   - name: continueDialog(DialogContext)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.continueDialog'
     package: '@microsoft/teamsfx'
@@ -393,9 +407,12 @@ methods:
         Promise<DialogTurnResult<any>>
       parameters:
         - id: dc
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The DialogContext for the current turn of the conversation.
       return:
         description: A `Promise` representing the asynchronous operation.
-        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
-extends: Dialog
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
+          />&lt;any&gt;&gt;
+extends: <xref uid="@microsoft/agents-hosting-dialogs.Dialog" />
