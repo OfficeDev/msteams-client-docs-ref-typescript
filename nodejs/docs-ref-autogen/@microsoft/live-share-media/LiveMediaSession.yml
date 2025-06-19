@@ -147,7 +147,7 @@ properties:
       content: LiveDataObjectInitializeState initializeState
       return:
         description: ''
-        type: LiveDataObjectInitializeState
+        type: <xref uid="@microsoft/live-share.LiveDataObjectInitializeState" />
   - name: isInitialized
     uid: '@microsoft/live-share-media.LiveMediaSession.isInitialized'
     package: '@microsoft/live-share-media'
@@ -171,7 +171,7 @@ properties:
       content: LiveTelemetryLogger logger
       return:
         description: ''
-        type: LiveTelemetryLogger
+        type: <xref uid="@microsoft/live-share.LiveTelemetryLogger" />
   - name: TypeName
     uid: '@microsoft/live-share-media.LiveMediaSession.TypeName'
     package: '@microsoft/live-share-media'
@@ -662,7 +662,9 @@ inheritedMethods:
         description: >-
           IClientInfo object if the user is known, otherwise it will return
           undefined
-        type: Promise&lt;undefined | IClientInfo&gt;
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
     inheritanceDescription: <b>Inherited From</b> LiveDataObject.getClientInfo
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share-media.LiveMediaSession.getDataObject'
@@ -1470,7 +1472,7 @@ methods:
       content: 'function initialize(allowedRoles?: UserMeetingRole[]): Promise<void>'
       parameters:
         - id: allowedRoles
-          type: UserMeetingRole[]
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
           description: >-
             Optional. List of roles allowed to group transport operations like
             play/pause/seek/setTrack.
@@ -1534,4 +1536,4 @@ methods:
           A new synchronizer instance. Call `synchronizer.end()` to stop
           synchronizing the elements playback.
         type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
-extends: LiveDataObject
+extends: <xref uid="@microsoft/live-share.LiveDataObject" />

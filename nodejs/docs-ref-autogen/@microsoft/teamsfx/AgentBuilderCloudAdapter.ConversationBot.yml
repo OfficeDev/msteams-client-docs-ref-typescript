@@ -123,7 +123,7 @@ properties:
       content: 'adapter: CloudAdapter'
       return:
         description: ''
-        type: CloudAdapter
+        type: <xref uid="@microsoft/agents-hosting.CloudAdapter" />
   - name: cardAction
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot.cardAction'
     package: '@microsoft/teamsfx'
@@ -202,8 +202,9 @@ methods:
       parameters:
         - id: req
           type: >-
-            Request&lt;Record&lt;string, unknown&gt;, Record&lt;string,
-            undefined | string | string[]&gt;&gt;
+            <xref uid="@microsoft/agents-hosting.Request"
+            />&lt;Record&lt;string, unknown&gt;, Record&lt;string, undefined |
+            string | string[]&gt;&gt;
           description: An incoming HTTP [Request](xref:botbuilder.Request).
         - id: res
           type: any

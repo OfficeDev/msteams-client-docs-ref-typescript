@@ -35,7 +35,7 @@ methods:
         CommandMessage): Promise<string | void | Partial<Activity>>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The bot context.
         - id: message
           type: <xref uid="@microsoft/teamsfx.CommandMessage" />
@@ -47,4 +47,6 @@ methods:
 
           Or no return value if developers want to send the response activity by
           themselves in this method.
-        type: Promise&lt;string | void | Partial&lt;Activity&gt;&gt;
+        type: >-
+          Promise&lt;string | void | Partial&lt;<xref
+          uid="@microsoft/agents-activity.Activity" />&gt;&gt;

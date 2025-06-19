@@ -42,7 +42,7 @@ constructors:
           type: <xref uid="@microsoft/live-share-media.LiveMediaSession" />
           description: Group MediaSession object being used.
         - id: runtime
-          type: IRuntimeSignaler
+          type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
           description: ''
         - id: onEnd
           type: () =&gt; void

@@ -26,7 +26,7 @@ constructors:
         BotSsoConfig)
       parameters:
         - id: adapter
-          type: CloudAdapter
+          type: <xref uid="@microsoft/agents-hosting.CloudAdapter" />
           description: The bound `CloudAdapter`.
         - id: options
           type: <xref uid="@microsoft/teamsfx.CommandOptions" />

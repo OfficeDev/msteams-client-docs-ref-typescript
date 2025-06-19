@@ -32,7 +32,7 @@ properties:
       content: UserMeetingRole[] allowedRoles
       return:
         description: ''
-        type: UserMeetingRole[]
+        type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
   - name: disposed
     uid: '@microsoft/live-share-canvas.LiveCanvas.disposed'
     package: '@microsoft/live-share-canvas'
@@ -130,7 +130,7 @@ properties:
       content: LiveDataObjectInitializeState initializeState
       return:
         description: ''
-        type: LiveDataObjectInitializeState
+        type: <xref uid="@microsoft/live-share.LiveDataObjectInitializeState" />
   - name: isCursorShared
     uid: '@microsoft/live-share-canvas.LiveCanvas.isCursorShared'
     package: '@microsoft/live-share-canvas'
@@ -679,7 +679,9 @@ inheritedMethods:
         description: >-
           IClientInfo object if the user is known, otherwise it will return
           undefined
-        type: Promise&lt;undefined | IClientInfo&gt;
+        type: >-
+          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
+          />&gt;
     inheritanceDescription: <b>Inherited From</b> LiveDataObject.getClientInfo
   - name: getDataObject(IFluidDataStoreRuntime)
     uid: '@microsoft/live-share-canvas.LiveCanvas.getDataObject'
@@ -1490,9 +1492,9 @@ methods:
             The InkingManager instance providing the drawing and events that
             will be synchronized across clients.
         - id: allowedRoles
-          type: UserMeetingRole[]
+          type: <xref uid="@microsoft/live-share.UserMeetingRole" />[]
           description: ''
       return:
         description: a void promise that resolves once complete.
         type: Promise&lt;void&gt;
-extends: LiveDataObject
+extends: <xref uid="@microsoft/live-share.LiveDataObject" />

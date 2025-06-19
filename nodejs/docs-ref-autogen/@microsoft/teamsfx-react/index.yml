@@ -104,7 +104,7 @@ functions:
         TeamsUserCredentialAuthConfig): TeamsContextWithCredential
       parameters:
         - id: authConfig
-          type: TeamsUserCredentialAuthConfig
+          type: <xref uid="@microsoft/teamsfx.TeamsUserCredentialAuthConfig" />
           description: custom configuration to override default ones.
       return:
         description: TeamsContextWithCredential object
