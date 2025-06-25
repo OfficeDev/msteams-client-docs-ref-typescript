@@ -29,7 +29,7 @@ properties:
       content: 'adapter?: CloudAdapter'
       return:
         description: ''
-        type: CloudAdapter
+        type: <xref uid="@microsoft/agents-hosting.CloudAdapter" />
   - name: adapterConfig
     uid: >-
       @microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationOptions.adapterConfig
@@ -46,7 +46,7 @@ properties:
       content: 'adapterConfig?: AuthConfiguration'
       return:
         description: ''
-        type: AuthConfiguration
+        type: <xref uid="@microsoft/agents-hosting.AuthConfiguration" />
   - name: cardAction
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationOptions.cardAction'
     package: '@microsoft/teamsfx'

@@ -1536,6 +1536,9 @@
         - uid: '@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType'
           name: shareWebContentCallbackFunctionType
           items: []
+    - uid: '@microsoft/teams-js.sidePanelInterfaces'
+      name: sidePanelInterfaces
+      items: []
     - name: stageView
       items:
         - name: Overview

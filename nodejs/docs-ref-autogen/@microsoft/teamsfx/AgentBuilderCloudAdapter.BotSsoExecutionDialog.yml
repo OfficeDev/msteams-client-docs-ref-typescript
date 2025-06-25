@@ -24,7 +24,7 @@ constructors:
         initiateLoginEndpoint: string, dialogName?: string)
       parameters:
         - id: dedupStorage
-          type: Storage
+          type: <xref uid="@microsoft/agents-hosting.Storage" />
           description: ''
         - id: ssoPromptSettings
           type: <xref uid="@microsoft/teamsfx.TeamsBotSsoPromptSettings" />
@@ -65,7 +65,7 @@ inheritedProperties:
       content: 'dialogs: DialogSet'
       return:
         description: ''
-        type: DialogSet
+        type: <xref uid="@microsoft/agents-hosting-dialogs.DialogSet" />
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.dialogs
   - name: EndOfTurn
     uid: >-
@@ -84,7 +84,9 @@ inheritedProperties:
       content: 'static EndOfTurn: DialogTurnResult<any>'
       return:
         description: ''
-        type: DialogTurnResult&lt;any&gt;
+        type: >-
+          <xref uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
+          />&lt;any&gt;
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.EndOfTurn
 inheritedMethods:
   - name: addDialog(Dialog<{}>)
@@ -100,7 +102,7 @@ inheritedMethods:
       content: 'function addDialog(dialog: Dialog<{}>): BotSsoExecutionDialog'
       parameters:
         - id: dialog
-          type: Dialog&lt;{}&gt;
+          type: <xref uid="@microsoft/agents-hosting-dialogs.Dialog" />&lt;{}&gt;
           description: The child Dialog or prompt to add.
       return:
         description: The ComponentDialog after the operation is complete.
@@ -136,14 +138,17 @@ inheritedMethods:
         Promise<DialogTurnResult<any>>
       parameters:
         - id: outerDialogContext
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The parent DialogContext for the current turn of conversation.
         - id: options
           type: '{}'
           description: Optional, initial information to pass to the dialog.
       return:
         description: A Promise representing the asynchronous operation.
-        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
+          />&lt;any&gt;&gt;
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.beginDialog
   - name: configure(Record<string, unknown>)
     uid: >-
@@ -194,11 +199,14 @@ inheritedMethods:
         Promise<DialogTurnResult<any>>
       parameters:
         - id: outerDialogContext
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The parent DialogContext for the current turn of conversation.
       return:
         description: A Promise representing the asynchronous operation.
-        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
+          />&lt;any&gt;&gt;
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.continueDialog
   - name: createChildContext(DialogContext)
     uid: >-
@@ -213,11 +221,11 @@ inheritedMethods:
         DialogContext
       parameters:
         - id: outerDialogContext
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: the outer dialog context
       return:
         description: The created Dialog Context.
-        type: DialogContext
+        type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.createChildContext
   - name: endDialog(TurnContext, DialogInstance<any>, DialogReason)
     uid: >-
@@ -236,15 +244,17 @@ inheritedMethods:
         reason: DialogReason): Promise<void>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The TurnContext object for this turn.
         - id: instance
-          type: DialogInstance&lt;any&gt;
+          type: >-
+            <xref uid="@microsoft/agents-hosting-dialogs.DialogInstance"
+            />&lt;any&gt;
           description: >-
             State information associated with the instance of this component
             Dialog on its parent's dialog stack.
         - id: reason
-          type: DialogReason
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogReason" />
           description: Reason why the Dialog ended.
       return:
         description: A Promise representing the asynchronous operation.
@@ -265,7 +275,9 @@ inheritedMethods:
           description: ID of the dialog to lookup.
       return:
         description: The Dialog if found; otherwise null.
-        type: undefined | Dialog&lt;{}&gt;
+        type: >-
+          undefined | <xref uid="@microsoft/agents-hosting-dialogs.Dialog"
+          />&lt;{}&gt;
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.findDialog
   - name: getConverter(string)
     uid: >-
@@ -285,8 +297,10 @@ inheritedMethods:
       return:
         description: The converter for the selector configuration.
         type: >-
-          Converter&lt;unknown, unknown&gt; | ConverterFactory&lt;unknown,
-          unknown&gt;
+          <xref uid="@microsoft/agents-hosting-dialogs.Converter" />&lt;unknown,
+          unknown&gt; | <xref
+          uid="@microsoft/agents-hosting-dialogs.ConverterFactory"
+          />&lt;unknown, unknown&gt;
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.getConverter
   - name: getVersion()
     uid: >-
@@ -335,10 +349,10 @@ inheritedMethods:
         DialogEvent): Promise<boolean>
       parameters:
         - id: dialogContext
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The dialog context for the current turn of conversation.
         - id: event
-          type: DialogEvent
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogEvent" />
           description: The event being raised.
       return:
         description: >-
@@ -359,10 +373,12 @@ inheritedMethods:
         DialogInstance<any>): Promise<void>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The TurnContext object for this turn.
         - id: instance
-          type: DialogInstance&lt;any&gt;
+          type: >-
+            <xref uid="@microsoft/agents-hosting-dialogs.DialogInstance"
+            />&lt;any&gt;
           description: State information for this dialog.
       return:
         description: A Promise representing the asynchronous operation.
@@ -402,10 +418,10 @@ inheritedMethods:
         DialogReason, _result?: any): Promise<DialogTurnResult<any>>
       parameters:
         - id: outerDialogContext
-          type: DialogContext
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The DialogContext for the current turn of conversation.
         - id: _reason
-          type: DialogReason
+          type: <xref uid="@microsoft/agents-hosting-dialogs.DialogReason" />
           description: Reason why the dialog resumed.
         - id: _result
           type: any
@@ -414,7 +430,10 @@ inheritedMethods:
             of the value returned is dependent on the child dialog.
       return:
         description: A Promise representing the asynchronous operation.
-        type: Promise&lt;DialogTurnResult&lt;any&gt;&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
+          />&lt;any&gt;&gt;
     inheritanceDescription: <b>Inherited From</b> ComponentDialog.resumeDialog
 methods:
   - name: addCommand(BotSsoExecutionDialogHandler, TriggerPatterns)
@@ -451,12 +470,14 @@ methods:
         AgentStatePropertyAccessor<any>): Promise<void>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The context object for the current turn.
         - id: accessor
-          type: AgentStatePropertyAccessor&lt;any&gt;
+          type: >-
+            <xref uid="@microsoft/agents-hosting.AgentStatePropertyAccessor"
+            />&lt;any&gt;
           description: The instance of StatePropertyAccessor for dialog system.
       return:
         description: ''
         type: Promise&lt;void&gt;
-extends: ComponentDialog
+extends: <xref uid="@microsoft/agents-hosting-dialogs.ComponentDialog" />

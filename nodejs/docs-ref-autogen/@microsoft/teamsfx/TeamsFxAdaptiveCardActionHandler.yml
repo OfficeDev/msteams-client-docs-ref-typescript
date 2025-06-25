@@ -58,7 +58,7 @@ methods:
         Promise<InvokeResponse<any>>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The turn context.
         - id: actionData
           type: any
@@ -83,4 +83,6 @@ methods:
               ```typescript
               return InvokeResponseFactory.errorResponse(InvokeResponseErrorCode.BadRequest, "Invalid request");
               ```
-        type: Promise&lt;InvokeResponse&lt;any&gt;&gt;
+        type: >-
+          Promise&lt;<xref uid="@microsoft/agents-hosting.InvokeResponse"
+          />&lt;any&gt;&gt;

@@ -87,4 +87,4 @@ inheritedProperties:
         description: ''
         type: number
     inheritanceDescription: <b>Inherited From</b> ILiveEvent.timestamp
-extends: ILiveEvent
+extends: <xref uid="@microsoft/live-share.ILiveEvent" />
