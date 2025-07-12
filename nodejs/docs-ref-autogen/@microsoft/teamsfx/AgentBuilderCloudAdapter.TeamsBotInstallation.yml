@@ -33,10 +33,12 @@ constructors:
         Partial<ConversationReference>, botAppId: string)
       parameters:
         - id: adapter
-          type: CloudAdapter
+          type: <xref uid="@microsoft/agents-hosting.CloudAdapter" />
           description: The bound `CloudAdapter`.
         - id: conversationReference
-          type: Partial&lt;ConversationReference&gt;
+          type: >-
+            Partial&lt;<xref
+            uid="@microsoft/agents-activity.ConversationReference" />&gt;
           description: The bound `ConversationReference`.
         - id: botAppId
           type: string
@@ -53,7 +55,7 @@ properties:
       content: 'adapter: CloudAdapter'
       return:
         description: ''
-        type: CloudAdapter
+        type: <xref uid="@microsoft/agents-hosting.CloudAdapter" />
   - name: botAppId
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.botAppId'
     package: '@microsoft/teamsfx'
@@ -78,7 +80,9 @@ properties:
       content: 'conversationReference: Partial<ConversationReference>'
       return:
         description: ''
-        type: Partial&lt;ConversationReference&gt;
+        type: >-
+          Partial&lt;<xref
+          uid="@microsoft/agents-activity.ConversationReference" />&gt;
   - name: type
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation.type'
     package: '@microsoft/teamsfx'
@@ -150,7 +154,9 @@ methods:
         description: >-
           The team details if bot is installed into a team, otherwise returns
           `undefined`.
-        type: Promise&lt;undefined | TeamDetails&gt;
+        type: >-
+          Promise&lt;undefined | <xref
+          uid="@microsoft/agents-hosting-teams.TeamDetails" />&gt;
   - name: >-
       sendAdaptiveCard(unknown, (context: TurnContext, error: Error) =>
       Promise<void>)

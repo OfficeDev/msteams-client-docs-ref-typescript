@@ -77,10 +77,13 @@ methods:
         SigninStateVerificationQuery): Promise<void>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: A context object for this turn.
         - id: query
-          type: SigninStateVerificationQuery
+          type: >-
+            <xref
+            uid="@microsoft/agents-hosting-teams.SigninStateVerificationQuery"
+            />
           description: >-
             Signin state (part of signin action auth flow) verification invoke
             query
@@ -103,10 +106,13 @@ methods:
         SigninStateVerificationQuery): Promise<void>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: A context object for this turn.
         - id: query
-          type: SigninStateVerificationQuery
+          type: >-
+            <xref
+            uid="@microsoft/agents-hosting-teams.SigninStateVerificationQuery"
+            />
           description: >-
             Signin state (part of signin action auth flow) verification invoke
             query.
@@ -123,7 +129,7 @@ methods:
       content: 'function run(context: TurnContext): Promise<void>'
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The context object for the current turn.
       return:
         description: ''

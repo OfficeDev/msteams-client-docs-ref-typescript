@@ -31,7 +31,7 @@ constructors:
             [TeamsBotInstallation](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation)
             where this member is created from.
         - id: account
-          type: TeamsChannelAccount
+          type: <xref uid="@microsoft/agents-hosting-teams.TeamsChannelAccount" />
           description: Detailed member account information.
 properties:
   - name: account
@@ -45,7 +45,7 @@ properties:
       content: 'account: TeamsChannelAccount'
       return:
         description: ''
-        type: TeamsChannelAccount
+        type: <xref uid="@microsoft/agents-hosting-teams.TeamsChannelAccount" />
   - name: parent
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.Member.parent'
     package: '@microsoft/teamsfx'

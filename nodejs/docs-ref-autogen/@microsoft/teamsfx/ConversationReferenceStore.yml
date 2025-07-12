@@ -27,7 +27,9 @@ methods:
           type: string
           description: the key of the conversation reference.
         - id: reference
-          type: Partial&lt;ConversationReference&gt;
+          type: >-
+            Partial&lt;<xref
+            uid="@microsoft/agents-activity.ConversationReference" />&gt;
           description: the conversation reference to add.
         - id: options
           type: >-
@@ -58,7 +60,8 @@ methods:
         description: a paged list of conversation references.
         type: >-
           Promise&lt;<xref uid="@microsoft/teamsfx.PagedData"
-          />&lt;Partial&lt;ConversationReference&gt;&gt;&gt;
+          />&lt;Partial&lt;<xref
+          uid="@microsoft/agents-activity.ConversationReference" />&gt;&gt;&gt;
   - name: remove(string, Partial<ConversationReference>)
     uid: '@microsoft/teamsfx.ConversationReferenceStore.remove'
     package: '@microsoft/teamsfx'
@@ -74,7 +77,9 @@ methods:
           type: string
           description: the key of the conversation reference.
         - id: reference
-          type: Partial&lt;ConversationReference&gt;
+          type: >-
+            Partial&lt;<xref
+            uid="@microsoft/agents-activity.ConversationReference" />&gt;
           description: the conversation reference to remove.
       return:
         description: true if exist and removed, false if not changed.
