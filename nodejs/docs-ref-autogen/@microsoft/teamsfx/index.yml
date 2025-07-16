@@ -170,7 +170,7 @@ functions:
         => Promise<any>): Promise<void | MessagingExtensionResponse>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The context object for the current turn.
         - id: config
           type: <xref uid="@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig" />
@@ -190,7 +190,10 @@ functions:
         description: >-
           A MessageExtension Response for the activity. If the logic not return
           any, return void instead.
-        type: Promise&lt;void | MessagingExtensionResponse&gt;
+        type: >-
+          Promise&lt;void | <xref
+          uid="@microsoft/agents-hosting-teams.MessagingExtensionResponse"
+          />&gt;
   - name: >-
       handleMessageExtensionQueryWithSSO(TurnContext,
       OnBehalfOfCredentialAuthConfig, string, string | string[], (token:
@@ -208,7 +211,7 @@ functions:
         => Promise<any>): Promise<void | MessagingExtensionResponse>
       parameters:
         - id: context
-          type: TurnContext
+          type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: The context object for the current turn.
         - id: config
           type: <xref uid="@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig" />
@@ -228,7 +231,10 @@ functions:
         description: >-
           A MessageExtension Response for the activity. If the logic not return
           any, return void instead.
-        type: Promise&lt;void | MessagingExtensionResponse&gt;
+        type: >-
+          Promise&lt;void | <xref
+          uid="@microsoft/agents-hosting-teams.MessagingExtensionResponse"
+          />&gt;
   - name: setLogFunction(LogFunction)
     uid: '@microsoft/teamsfx.setLogFunction'
     package: '@microsoft/teamsfx'
