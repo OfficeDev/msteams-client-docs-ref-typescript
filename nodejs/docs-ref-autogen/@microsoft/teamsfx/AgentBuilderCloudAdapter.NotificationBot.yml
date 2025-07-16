@@ -24,7 +24,7 @@ constructors:
         NotificationOptions_2)
       parameters:
         - id: adapter
-          type: CloudAdapter
+          type: <xref uid="@microsoft/agents-hosting.CloudAdapter" />
           description: The bound `CloudAdapter`
         - id: options
           type: >-
@@ -49,7 +49,9 @@ methods:
         Partial<ConversationReference>): null | TeamsBotInstallation
       parameters:
         - id: conversationReference
-          type: Partial&lt;ConversationReference&gt;
+          type: >-
+            Partial&lt;<xref
+            uid="@microsoft/agents-activity.ConversationReference" />&gt;
           description: The bound `ConversationReference`.
       return:
         description: >-
@@ -247,7 +249,9 @@ methods:
         Partial<ConversationReference>): Promise<boolean>
       parameters:
         - id: conversationReference
-          type: Partial&lt;ConversationReference&gt;
+          type: >-
+            Partial&lt;<xref
+            uid="@microsoft/agents-activity.ConversationReference" />&gt;
           description: The bound `ConversationReference`.
       return:
         description: >-

@@ -34,7 +34,7 @@ constructors:
             [TeamsBotInstallation](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation)
             where this channel is created from.
         - id: info
-          type: ChannelInfo
+          type: <xref uid="@microsoft/agents-hosting-teams.ChannelInfo" />
           description: Detailed channel information.
 properties:
   - name: info
@@ -48,7 +48,7 @@ properties:
       content: 'info: ChannelInfo'
       return:
         description: ''
-        type: ChannelInfo
+        type: <xref uid="@microsoft/agents-hosting-teams.ChannelInfo" />
   - name: parent
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel.parent'
     package: '@microsoft/teamsfx'

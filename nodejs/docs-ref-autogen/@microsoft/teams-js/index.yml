@@ -182,6 +182,7 @@ typeAliases:
   - '@microsoft/teams-js.settings.Settings'
   - '@microsoft/teams-js.sharing.IShareRequestContentType'
   - '@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType'
+  - '@microsoft/teams-js.sidePanelInterfaces.EmailContent'
   - '@microsoft/teams-js.tasks.startTaskSubmitHandlerFunctionType'
   - '@microsoft/teams-js.teamsCore.readyToUnloadFunctionType'
   - '@microsoft/teams-js.teamsCore.registerBeforeUnloadHandlerFunctionType'

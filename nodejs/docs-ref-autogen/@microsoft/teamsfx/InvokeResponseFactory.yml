@@ -58,7 +58,7 @@ methods:
           description: The adaptive card JSON payload.
       return:
         description: An `InvokeResponse` object.
-        type: InvokeResponse&lt;any&gt;
+        type: <xref uid="@microsoft/agents-hosting.InvokeResponse" />&lt;any&gt;
   - name: createInvokeResponse(StatusCodes, unknown)
     uid: '@microsoft/teamsfx.InvokeResponseFactory.createInvokeResponse'
     package: '@microsoft/teamsfx'
@@ -71,14 +71,14 @@ methods:
         unknown): InvokeResponse<any>
       parameters:
         - id: statusCode
-          type: StatusCodes
+          type: <xref uid="@microsoft/agents-hosting.StatusCodes" />
           description: The status code.
         - id: body
           type: unknown
           description: The value of the response body.
       return:
         description: An `InvokeResponse` object.
-        type: InvokeResponse&lt;any&gt;
+        type: <xref uid="@microsoft/agents-hosting.InvokeResponse" />&lt;any&gt;
   - name: errorResponse(InvokeResponseErrorCode, string)
     uid: '@microsoft/teamsfx.InvokeResponseFactory.errorResponse'
     package: '@microsoft/teamsfx'
@@ -108,7 +108,7 @@ methods:
           description: The error message.
       return:
         description: An `InvokeResponse` object.
-        type: InvokeResponse&lt;any&gt;
+        type: <xref uid="@microsoft/agents-hosting.InvokeResponse" />&lt;any&gt;
   - name: textMessage(string)
     uid: '@microsoft/teamsfx.InvokeResponseFactory.textMessage'
     package: '@microsoft/teamsfx'
@@ -129,4 +129,4 @@ methods:
           description: A text message included in a invoke response.
       return:
         description: An `InvokeResponse` object.
-        type: InvokeResponse&lt;any&gt;
+        type: <xref uid="@microsoft/agents-hosting.InvokeResponse" />&lt;any&gt;
