@@ -707,10 +707,10 @@ properties:
 
       The surface where the tab is rendered (sidePanel, meeting, chat, channel)
     syntax:
-      content: 'renderingSurface?: copilotSidePanel'
+      content: 'renderingSurface?: RenderingSurfaces'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.RenderingSurfaces.copilotSidePanel" />
+        type: <xref uid="@microsoft/teams-js.RenderingSurfaces" />
   - name: ringId
     uid: '@microsoft/teams-js.Context.ringId'
     package: '@microsoft/teams-js'

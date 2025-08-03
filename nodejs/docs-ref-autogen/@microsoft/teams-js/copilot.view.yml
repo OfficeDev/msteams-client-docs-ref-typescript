@@ -1,6 +1,6 @@
 ### YamlMime:TSPackage
-uid: '@microsoft/teams-js.copilot'
-name: copilot
-summary: ''
+uid: '@microsoft/teams-js.copilot.view'
+name: view
 type: module
 package: '@microsoft/teams-js'
+summary: ''
