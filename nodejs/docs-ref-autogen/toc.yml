@@ -1028,9 +1028,13 @@
     - uid: '@microsoft/teams-js.Context'
       name: Context
       items: []
-    - uid: '@microsoft/teams-js.copilot'
-      name: copilot
-      items: []
+    - name: copilot
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.copilot'
+        - uid: '@microsoft/teams-js.copilot.view'
+          name: view
+          items: []
     - uid: '@microsoft/teams-js.DeepLinkParameters'
       name: DeepLinkParameters
       items: []

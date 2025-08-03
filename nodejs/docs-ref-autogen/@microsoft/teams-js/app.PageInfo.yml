@@ -85,10 +85,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'renderingSurface?: copilotSidePanel'
+      content: 'renderingSurface?: RenderingSurfaces'
       return:
         description: ''
-        type: <xref uid="@microsoft/teams-js.RenderingSurfaces.copilotSidePanel" />
+        type: <xref uid="@microsoft/teams-js.RenderingSurfaces" />
   - name: sourceOrigin
     uid: '@microsoft/teams-js.app.PageInfo.sourceOrigin'
     package: '@microsoft/teams-js'

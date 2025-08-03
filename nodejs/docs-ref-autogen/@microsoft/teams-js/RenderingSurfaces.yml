@@ -24,7 +24,17 @@ fullName: RenderingSurfaces
 remarks: ''
 isDeprecated: false
 fields:
+  - name: copilotFullScreen
+    uid: '@microsoft/teams-js.RenderingSurfaces.copilotFullScreen'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Copilot running in full screen mode as an embedded app in the host
+      application.
+  - name: copilotMainPane
+    uid: '@microsoft/teams-js.RenderingSurfaces.copilotMainPane'
+    package: '@microsoft/teams-js'
+    summary: Copilot running in the main pane of the host application.
   - name: copilotSidePanel
     uid: '@microsoft/teams-js.RenderingSurfaces.copilotSidePanel'
     package: '@microsoft/teams-js'
-    summary: The mode the copilot app rendered by the host.
+    summary: Copilot running as a side panel in the host application.
