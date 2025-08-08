@@ -575,7 +575,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.getMaxListeners
   - name: getMaxListeners(EventEmitter<DefaultEventMap> | EventTarget)
-    uid: '@microsoft/live-share.LiveEventScope.getMaxListeners'
+    uid: '@microsoft/live-share.LiveEventScope.getMaxListeners_1'
     package: '@microsoft/live-share'
     summary: >-
       Returns the currently set max amount of listeners.
@@ -632,7 +632,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.getMaxListeners
   - name: listenerCount(EventEmitter<DefaultEventMap>, string | symbol)
-    uid: '@microsoft/live-share.LiveEventScope.listenerCount'
+    uid: '@microsoft/live-share.LiveEventScope.listenerCount_1'
     package: '@microsoft/live-share'
     summary: >-
       A class method that returns the number of listeners for the given
@@ -1151,7 +1151,7 @@ inheritedMethods:
         type: <xref uid="@microsoft/live-share.LiveEventScope" />
     inheritanceDescription: <b>Inherited From</b> TypedEventEmitter.setMaxListeners
   - name: setMaxListeners(number, (EventEmitter<DefaultEventMap> | EventTarget)[])
-    uid: '@microsoft/live-share.LiveEventScope.setMaxListeners'
+    uid: '@microsoft/live-share.LiveEventScope.setMaxListeners_1'
     package: '@microsoft/live-share'
     summary: |-
       ```js
