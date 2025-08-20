@@ -2542,6 +2542,22 @@
           no-loc:
             - shareWebContentCallbackFunctionType
           items: []
+    - name: shortcutRelay
+      no-loc:
+        - shortcutRelay
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.shortcutRelay'
+        - uid: '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler'
+          name: OverridableShortcutHandler
+          no-loc:
+            - OverridableShortcutHandler
+          items: []
+        - uid: '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandlerData'
+          name: OverridableShortcutHandlerData
+          no-loc:
+            - OverridableShortcutHandlerData
+          items: []
     - name: sidePanelInterfaces
       no-loc:
         - sidePanelInterfaces
