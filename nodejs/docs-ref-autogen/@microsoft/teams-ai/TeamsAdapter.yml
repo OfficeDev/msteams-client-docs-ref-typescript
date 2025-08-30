@@ -11,15 +11,9 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
-      TeamsAdapter({ BotOpenIdMetadata?: string, CallerId?: string,
-      CertificatePrivateKey?: string, CertificateThumbprint?: string,
-      ChannelService?: string, MicrosoftAppId?: string, MicrosoftAppTenantId?:
-      string, OAuthApiEndpoint?: string, OAuthUrl?: string,
-      ToBotFromChannelOpenIdMetadataUrl?: string, ToBotFromChannelTokenIssuer?:
-      string, ToBotFromEmulatorOpenIdMetadataUrl?: string,
-      ToChannelFromBotLoginUrl?: string, ToChannelFromBotOAuthScope?: string,
-      ValidateAuthority?: string | boolean }, ServiceClientCredentialsFactory,
-      AuthenticationConfiguration, ConnectorClientOptions)
+      TeamsAdapter(ConfigurationBotFrameworkAuthenticationOptions,
+      ServiceClientCredentialsFactory, AuthenticationConfiguration,
+      ConnectorClientOptions)
     uid: '@microsoft/teams-ai.TeamsAdapter.constructor'
     package: '@microsoft/teams-ai'
     summary: ''
@@ -27,30 +21,14 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new TeamsAdapter(botFrameworkAuthConfig?: { BotOpenIdMetadata?: string,
-        CallerId?: string, CertificatePrivateKey?: string,
-        CertificateThumbprint?: string, ChannelService?: string,
-        MicrosoftAppId?: string, MicrosoftAppTenantId?: string,
-        OAuthApiEndpoint?: string, OAuthUrl?: string,
-        ToBotFromChannelOpenIdMetadataUrl?: string,
-        ToBotFromChannelTokenIssuer?: string,
-        ToBotFromEmulatorOpenIdMetadataUrl?: string, ToChannelFromBotLoginUrl?:
-        string, ToChannelFromBotOAuthScope?: string, ValidateAuthority?: string
-        | boolean }, credentialsFactory?: ServiceClientCredentialsFactory,
-        authConfiguration?: AuthenticationConfiguration,
-        connectorClientOptions?: ConnectorClientOptions)
+        new TeamsAdapter(botFrameworkAuthConfig?:
+        ConfigurationBotFrameworkAuthenticationOptions, credentialsFactory?:
+        ServiceClientCredentialsFactory, authConfiguration?:
+        AuthenticationConfiguration, connectorClientOptions?:
+        ConnectorClientOptions)
       parameters:
         - id: botFrameworkAuthConfig
-          type: >-
-            { BotOpenIdMetadata?: string, CallerId?: string,
-            CertificatePrivateKey?: string, CertificateThumbprint?: string,
-            ChannelService?: string, MicrosoftAppId?: string,
-            MicrosoftAppTenantId?: string, OAuthApiEndpoint?: string, OAuthUrl?:
-            string, ToBotFromChannelOpenIdMetadataUrl?: string,
-            ToBotFromChannelTokenIssuer?: string,
-            ToBotFromEmulatorOpenIdMetadataUrl?: string,
-            ToChannelFromBotLoginUrl?: string, ToChannelFromBotOAuthScope?:
-            string, ValidateAuthority?: string | boolean }
+          type: ConfigurationBotFrameworkAuthenticationOptions
           description: ''
         - id: credentialsFactory
           type: ServiceClientCredentialsFactory
@@ -70,28 +48,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        botFrameworkAuthConfig?: { BotOpenIdMetadata?: string, CallerId?:
-        string, CertificatePrivateKey?: string, CertificateThumbprint?: string,
-        ChannelService?: string, MicrosoftAppId?: string, MicrosoftAppTenantId?:
-        string, OAuthApiEndpoint?: string, OAuthUrl?: string,
-        ToBotFromChannelOpenIdMetadataUrl?: string,
-        ToBotFromChannelTokenIssuer?: string,
-        ToBotFromEmulatorOpenIdMetadataUrl?: string, ToChannelFromBotLoginUrl?:
-        string, ToChannelFromBotOAuthScope?: string, ValidateAuthority?: string
-        | boolean }
+      content: 'botFrameworkAuthConfig?: ConfigurationBotFrameworkAuthenticationOptions'
       return:
         description: ''
-        type: >-
-          { BotOpenIdMetadata?: string, CallerId?: string,
-          CertificatePrivateKey?: string, CertificateThumbprint?: string,
-          ChannelService?: string, MicrosoftAppId?: string,
-          MicrosoftAppTenantId?: string, OAuthApiEndpoint?: string, OAuthUrl?:
-          string, ToBotFromChannelOpenIdMetadataUrl?: string,
-          ToBotFromChannelTokenIssuer?: string,
-          ToBotFromEmulatorOpenIdMetadataUrl?: string,
-          ToChannelFromBotLoginUrl?: string, ToChannelFromBotOAuthScope?:
-          string, ValidateAuthority?: string | boolean }
+        type: ConfigurationBotFrameworkAuthenticationOptions
   - name: credentialsFactory
     uid: '@microsoft/teams-ai.TeamsAdapter.credentialsFactory'
     package: '@microsoft/teams-ai'
