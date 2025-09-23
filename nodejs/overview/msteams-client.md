@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams SDK reference
 description: Reference documentation for Microsoft Teams SDK
-ms.date: 08/05/2025
+ms.date: 09/23/2025
 ms.topic: reference
 keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
@@ -130,7 +130,10 @@ TeamsJS can also be referenced from its CDN endpoints:
 
 ## Microsoft Teams AI library
 
-The [Teams AI library](/microsoftteams/platform/bots/how-to/teams-conversational-ai/teams-conversation-ai-overview) is a Teams-centric interface for integrating GPT-based language models and user intent engines. It simplifies the development process by reducing the need to write and maintain complex conversational bot logic. You can leverage prebuilt, reusable code snippets that allow you to quickly build intelligent apps. This capabilities-driven approach allows you to focus on business logic rather than learning the intricacies of Microsoft Teams conversational frameworks.
+The [Teams AI library](/microsoftteams/platform/teams-ai-library/welcome) is a Teams-centric interface for integrating GPT-based language models and user intent engines. It simplifies the development process by reducing the need to write and maintain complex conversational bot logic. You can leverage prebuilt, reusable code snippets that allow you to quickly build intelligent apps. This capabilities-driven approach allows you to focus on business logic rather than learning the intricacies of Microsoft Teams conversational frameworks.
+
+> [!IMPORTANT]
+> Teams AI library v1 is deprecated. We recommend that you upgrade your agents to use the updated [Teams AI library](/microsoftteams/platform/teams-ai-library/welcome). Teams AI library is now generally available for JavaScript and C#, supports Python in developer preview. It provides a simplified SDK, support for Model Context Protocol (MCP), Agent-to-Agent communication (A2A), and streamlined tools to enable developers to build intelligent agents for Teams.
 
 You can leverage Teams AI library to:
 
@@ -144,6 +147,10 @@ You can leverage Teams AI library to:
 The Teams AI library is available in a number of package formats to support different programming languages, more information is available on the [library GitHub page](https://github.com/microsoft/teams-ai).
 
 ## Microsoft TeamsFx SDK
+
+> [!IMPORTANT]
+>
+> TeamsFx SDK will be officially deprecated by September 2025, with support continuing until September 2026. We recommend planning your transition to the [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/) for ongoing and future development needs.
 
 The [TeamsFx SDK](/microsoftteams/platform/toolkit/teamsfx-sdk) greatly simplifies Microsoft Teams single sign-on (SSO) and cloud resource access in your app.
 
