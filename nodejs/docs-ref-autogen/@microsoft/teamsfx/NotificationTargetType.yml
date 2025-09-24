@@ -11,7 +11,10 @@ remarks: >-
   - "Group" means to a group chat.
 
   - "Person" means to a personal chat.
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 fields:
   - name: Channel
     uid: '@microsoft/teamsfx.NotificationTargetType.Channel'

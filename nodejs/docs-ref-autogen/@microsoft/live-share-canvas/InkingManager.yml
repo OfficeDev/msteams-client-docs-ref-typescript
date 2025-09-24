@@ -683,7 +683,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: getMaxListeners(EventEmitter<DefaultEventMap> | EventTarget)
-    uid: '@microsoft/live-share-canvas.InkingManager.getMaxListeners'
+    uid: '@microsoft/live-share-canvas.InkingManager.getMaxListeners_1'
     package: '@microsoft/live-share-canvas'
     summary: >-
       Returns the currently set max amount of listeners.
@@ -740,7 +740,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: listenerCount(EventEmitter<DefaultEventMap>, string | symbol)
-    uid: '@microsoft/live-share-canvas.InkingManager.listenerCount'
+    uid: '@microsoft/live-share-canvas.InkingManager.listenerCount_1'
     package: '@microsoft/live-share-canvas'
     summary: >-
       A class method that returns the number of listeners for the given
@@ -857,7 +857,7 @@ inheritedMethods:
   - name: >-
       on(EventEmitter<DefaultEventMap>, string | symbol,
       StaticEventEmitterIteratorOptions)
-    uid: '@microsoft/live-share-canvas.InkingManager.on'
+    uid: '@microsoft/live-share-canvas.InkingManager.on_1'
     package: '@microsoft/live-share-canvas'
     summary: >-
       ```js
@@ -992,7 +992,7 @@ inheritedMethods:
         type: AsyncIterator&lt;any[], undefined, any&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: on(EventTarget, string, StaticEventEmitterIteratorOptions)
-    uid: '@microsoft/live-share-canvas.InkingManager.on_1'
+    uid: '@microsoft/live-share-canvas.InkingManager.on_2'
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
@@ -1088,7 +1088,7 @@ inheritedMethods:
   - name: >-
       once(EventEmitter<DefaultEventMap>, string | symbol,
       StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-canvas.InkingManager.once'
+    uid: '@microsoft/live-share-canvas.InkingManager.once_1'
     package: '@microsoft/live-share-canvas'
     summary: >-
       Creates a `Promise` that is fulfilled when the `EventEmitter` emits the
@@ -1231,7 +1231,7 @@ inheritedMethods:
         type: Promise&lt;any[]&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: once(EventTarget, string, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-canvas.InkingManager.once_1'
+    uid: '@microsoft/live-share-canvas.InkingManager.once_2'
     package: '@microsoft/live-share-canvas'
     summary: ''
     remarks: ''
@@ -1660,7 +1660,7 @@ inheritedMethods:
         type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
   - name: setMaxListeners(number, (EventEmitter<DefaultEventMap> | EventTarget)[])
-    uid: '@microsoft/live-share-canvas.InkingManager.setMaxListeners'
+    uid: '@microsoft/live-share-canvas.InkingManager.setMaxListeners_1'
     package: '@microsoft/live-share-canvas'
     summary: |-
       ```js

@@ -7,7 +7,10 @@ summary: >-
   Teams.
 fullName: MessageBuilder
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 methods:
   - name: attachAdaptiveCard<TData>(unknown, TData)
@@ -47,7 +50,11 @@ methods:
       ```
 
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function attachAdaptiveCard<TData>(cardTemplate: unknown, data:
@@ -67,7 +74,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Build a bot message activity attached with an adaptive card.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function attachAdaptiveCardWithoutData(card: unknown):
@@ -84,7 +95,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Add an attachement to a bot activity.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function attachContent(attachement: Attachment):
@@ -115,7 +130,11 @@ methods:
       ```
 
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function attachHeroCard(title: string, images?: (string |
@@ -145,7 +164,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Build a bot message activity attached with an Office 365 connector card.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function attachO365ConnectorCard(card: O365ConnectorCard):
@@ -162,7 +185,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Build a message activity attached with a receipt card.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'static function AttachReceiptCard(card: ReceiptCard): Partial<Activity>'
       parameters:
@@ -179,7 +206,11 @@ methods:
     remarks: >-
       For channels that don't natively support sign-in cards, an alternative
       message is rendered.
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function attachSigninCard(title: string, url: string, text?:
@@ -204,7 +235,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: ''
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function attachThumbnailCard(title: string, images?: (string |

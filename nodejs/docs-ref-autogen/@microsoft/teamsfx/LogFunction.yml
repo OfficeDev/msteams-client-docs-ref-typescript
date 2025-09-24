@@ -5,6 +5,9 @@ package: '@microsoft/teamsfx'
 summary: Log function for customized logging.
 fullName: LogFunction
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 syntax: |
   type LogFunction = (level: LogLevel, message: string) => void

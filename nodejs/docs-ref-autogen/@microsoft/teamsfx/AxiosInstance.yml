@@ -36,14 +36,14 @@ inheritedProperties:
       content: >-
         interceptors: { request:
         AxiosInterceptorManager<InternalAxiosRequestConfig<any>>, response:
-        AxiosInterceptorManager<AxiosResponse<any, any>> }
+        AxiosInterceptorManager<AxiosResponse<any, any, {}>> }
       return:
         description: ''
         type: >-
           { request:
           AxiosInterceptorManager&lt;InternalAxiosRequestConfig&lt;any&gt;&gt;,
-          response: AxiosInterceptorManager&lt;AxiosResponse&lt;any, any&gt;&gt;
-          }
+          response: AxiosInterceptorManager&lt;AxiosResponse&lt;any, any,
+          {}&gt;&gt; }
     inheritanceDescription: <b>Inherited From</b> Axios.interceptors
 inheritedMethods:
   - name: delete<T, R, D>(string, AxiosRequestConfig<D>)

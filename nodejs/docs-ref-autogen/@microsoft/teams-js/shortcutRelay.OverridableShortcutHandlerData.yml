@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: OverridableShortcutHandlerData
+uid: '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandlerData'
+package: '@microsoft/teams-js'
+summary: Data passed to the overridable shortcut handler.
+fullName: OverridableShortcutHandlerData
+remarks: ''
+isDeprecated: false
+syntax: |
+  type OverridableShortcutHandlerData = { matchedShortcut: string }

@@ -26,7 +26,11 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Send an adaptive card message to a notification target.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function sendAdaptiveCard(target: NotificationTarget, card: unknown,
@@ -56,7 +60,11 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Send a plain text message to a notification target.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function sendMessage(target: NotificationTarget, text: string, onError?:

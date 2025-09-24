@@ -7,7 +7,10 @@ summary: >-
   represents a team member.
 fullName: Member
 remarks: It's recommended to get members from <xref:TeamsBotInstallation.members()>.
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 constructors:
   - name: Member(TeamsBotInstallation, TeamsChannelAccount)
@@ -17,7 +20,11 @@ constructors:
     remarks: >-
       It's recommended to get members from
       <xref:TeamsBotInstallation.members()>, instead of using this constructor.
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'new Member(parent: TeamsBotInstallation, account: TeamsChannelAccount)'
       parameters:
@@ -31,7 +38,10 @@ constructors:
             [TeamsBotInstallation](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation)
             where this member is created from.
         - id: account
-          type: <xref uid="@microsoft/agents-hosting-teams.TeamsChannelAccount" />
+          type: >-
+            <xref
+            uid="@microsoft/agents-hosting-extensions-teams.TeamsChannelAccount"
+            />
           description: Detailed member account information.
 properties:
   - name: account
@@ -45,7 +55,10 @@ properties:
       content: 'account: TeamsChannelAccount'
       return:
         description: ''
-        type: <xref uid="@microsoft/agents-hosting-teams.TeamsChannelAccount" />
+        type: >-
+          <xref
+          uid="@microsoft/agents-hosting-extensions-teams.TeamsChannelAccount"
+          />
   - name: parent
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.Member.parent'
     package: '@microsoft/teamsfx'

@@ -5,7 +5,10 @@ package: '@microsoft/teamsfx'
 summary: Sso execution dialog, use to handle sso command
 fullName: BotSsoExecutionDialog
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 constructors:
   - name: >-
@@ -16,7 +19,11 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Creates a new instance of the BotSsoExecutionDialog.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         new BotSsoExecutionDialog(dedupStorage: Storage, ssoPromptSettings:
@@ -39,7 +46,9 @@ constructors:
                         *
         - id: dialogName
           type: string
-          description: custom dialog name
+          description: |-
+            custom dialog name
+                        *
 properties:
   - name: id
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.BotSsoExecutionDialog.id'
@@ -283,7 +292,9 @@ inheritedMethods:
     uid: >-
       @microsoft/teamsfx.AgentBuilderCloudAdapter.BotSsoExecutionDialog.getConverter
     package: '@microsoft/teamsfx'
-    summary: ''
+    summary: |-
+      Gets the converter for the selector configuration.
+        *
     remarks: ''
     isDeprecated: false
     syntax:
@@ -293,7 +304,9 @@ inheritedMethods:
       parameters:
         - id: _property
           type: string
-          description: The key of the conditional selector configuration.
+          description: |-
+            The key of the conditional selector configuration.
+              *
       return:
         description: The converter for the selector configuration.
         type: >-
@@ -310,7 +323,7 @@ inheritedMethods:
       An encoded string used to aid in the detection of agent changes on
       re-deployment.
     remarks: >-
-      This defaults to returning the dialogs [id](#id) but can be overridden to
+      This defaults to returning the dialog's `id` but can be overridden to
       provide more
 
       precise change detection logic. Any dialog on the stack that has its
@@ -442,7 +455,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Add TeamsFxBotSsoCommandHandler instance
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function addCommand(handler: BotSsoExecutionDialogHandler,
@@ -463,7 +480,11 @@ methods:
       The run method handles the incoming activity (in the form of a
       DialogContext) and passes it through the dialog system.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function run(context: TurnContext, accessor:

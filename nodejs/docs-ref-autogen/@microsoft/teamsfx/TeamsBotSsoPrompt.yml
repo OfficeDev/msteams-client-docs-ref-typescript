@@ -77,7 +77,10 @@ remarks: >-
   Sign On(SSO):
 
   https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/authentication/auth-aad-sso-bots
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 constructors:
   - name: >-
@@ -87,7 +90,11 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Constructor of TeamsBotSsoPrompt.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         new TeamsBotSsoPrompt(authConfig: OnBehalfOfCredentialAuthConfig,
@@ -172,7 +179,7 @@ inheritedMethods:
       By default, this method has no effect.
 
 
-      The DialogContext calls this method when the current
+      The <xref:DialogContext> calls this method when the current
 
       dialog is ending.
     isDeprecated: false
@@ -199,7 +206,9 @@ inheritedMethods:
   - name: getConverter(string)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.getConverter'
     package: '@microsoft/teamsfx'
-    summary: ''
+    summary: |-
+      Gets the converter for the selector configuration.
+        *
     remarks: ''
     isDeprecated: false
     syntax:
@@ -209,7 +218,9 @@ inheritedMethods:
       parameters:
         - id: _property
           type: string
-          description: The key of the conditional selector configuration.
+          description: |-
+            The key of the conditional selector configuration.
+              *
       return:
         description: The converter for the selector configuration.
         type: >-
@@ -225,7 +236,7 @@ inheritedMethods:
       An encoded string used to aid in the detection of agent changes on
       re-deployment.
     remarks: >-
-      This defaults to returning the dialogs [id](#id) but can be overridden to
+      This defaults to returning the dialog's `id` but can be overridden to
       provide more
 
       precise change detection logic. Any dialog on the stack that has its
@@ -253,7 +264,9 @@ inheritedMethods:
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.onDialogEvent'
     package: '@microsoft/teamsfx'
     summary: >-
-      Called when an event has been raised, using `DialogContext.emitEvent()`,
+      Called when an event has been raised, using [| DialogContext.emitEvent
+      method](xref:DialogContext.emitEvent),
+
       by either the current dialog or a dialog that the current dialog started.
     remarks: ''
     isDeprecated: false
@@ -277,7 +290,7 @@ inheritedMethods:
   - name: repromptDialog(TurnContext, DialogInstance<any>)
     uid: '@microsoft/teamsfx.TeamsBotSsoPrompt.repromptDialog'
     package: '@microsoft/teamsfx'
-    summary: When overridden in a derived class, reprompts the user for input.
+    summary: When overridden in a derived class, prompts the user again for input.
     remarks: >-
       Derived dialogs that support validation and re-prompt logic should
       override this method.
@@ -285,7 +298,7 @@ inheritedMethods:
       By default, this method has no effect.
 
 
-      The DialogContext calls this method when the current
+      The <xref:DialogContext> calls this method when the current
 
       dialog should re-request input from the user. This method is implemented
       for prompt dialogs.
@@ -320,7 +333,7 @@ inheritedMethods:
       By default, this method signals that the dialog is complete and returns.
 
 
-      The DialogContext calls this method when it resumes
+      The <xref:DialogContext> calls this method when it resumes
 
       the dialog. If the previous dialog on the stack returned a value, that
       value is in the `result`
@@ -328,13 +341,13 @@ inheritedMethods:
       parameter.
 
 
-      To start a _child_ dialog, use DialogContext.beginDialog or
-      DialogContext.prompt; however, this dialog will not
+      To start a _child_ dialog, use <xref:DialogContext.beginDialog> or
+      <xref:DialogContext.prompt>; however, this dialog will not
 
       necessarily be the one that started the child dialog.
 
       To signal to the dialog context that this dialog has completed, await
-      DialogContext.endDialog before exiting this method.
+      <xref:DialogContext.endDialog> before exiting this method.
     isDeprecated: false
     syntax:
       content: >-
@@ -371,7 +384,11 @@ methods:
       still
 
       active after the turn has been processed by the prompt.
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function beginDialog(dc: DialogContext): Promise<DialogTurnResult<any>>'
       parameters:
@@ -379,7 +396,9 @@ methods:
           type: <xref uid="@microsoft/agents-hosting-dialogs.DialogContext" />
           description: The DialogContext for the current turn of the conversation.
       return:
-        description: A `Promise` representing the asynchronous operation.
+        description: |-
+          A `Promise` representing the asynchronous operation.
+                      *
         type: >-
           Promise&lt;<xref
           uid="@microsoft/agents-hosting-dialogs.DialogTurnResult"
@@ -400,7 +419,11 @@ methods:
       accepts the
 
       user's reply as valid input for the prompt.
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function continueDialog(dc: DialogContext):

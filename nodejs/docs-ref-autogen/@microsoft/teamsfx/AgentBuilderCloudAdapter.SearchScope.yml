@@ -14,7 +14,10 @@ summary: >-
   `SearchScope.Person | SearchScope.Group`.
 fullName: SearchScope
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 fields:
   - name: Person
     uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope.Person'

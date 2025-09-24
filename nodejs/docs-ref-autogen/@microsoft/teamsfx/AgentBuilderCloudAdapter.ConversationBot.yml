@@ -91,7 +91,10 @@ remarks: >-
   For notification, set `notification.storage` in
   [ConversationOptions](xref:@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationOptions)
   to use your own storage implementation.
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 constructors:
   - name: ConversationBot(ConversationOptions)
@@ -101,7 +104,11 @@ constructors:
     remarks: >-
       It's recommended to create your own adapter and storage for production
       environment instead of the default one.
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'new ConversationBot(options: ConversationOptions)'
       parameters:
@@ -193,7 +200,11 @@ methods:
       ```
 
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function requestHandler(req: Request<Record<string, unknown>,
