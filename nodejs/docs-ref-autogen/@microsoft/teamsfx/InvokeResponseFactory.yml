@@ -31,7 +31,10 @@ remarks: |-
      value: invokeResponse,
    });
   ```
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 methods:
   - name: adaptiveCard(unknown)
@@ -49,7 +52,11 @@ methods:
 
       that the client should display in place of the current one.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'static function adaptiveCard(card: unknown): InvokeResponse<any>'
       parameters:
@@ -64,7 +71,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Create an invoke response with status code and response value.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function createInvokeResponse(statusCode: StatusCodes, body?:
@@ -91,7 +102,11 @@ methods:
 
       the request was failed to processed.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         static function errorResponse(errorCode: InvokeResponseErrorCode,
@@ -120,7 +135,11 @@ methods:
 
       indicates the request was successfully processed.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'static function textMessage(message: string): InvokeResponse<any>'
       parameters:

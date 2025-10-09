@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: OverridableShortcutHandler
+uid: '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler'
+package: '@microsoft/teams-js'
+summary: |-
+  A handler must return `true` when it wants to **consume** the shortcut
+  (i.e. prevent forwarding to host). Any other return value forwards it.
+fullName: OverridableShortcutHandler
+remarks: ''
+isDeprecated: false
+syntax: |
+  type OverridableShortcutHandler = (
+    event: KeyboardEvent,
+    data: OverridableShortcutHandlerData
+  ) => boolean

@@ -608,6 +608,27 @@ properties:
       return:
         description: ''
         type: string
+  - name: messageId
+    uid: '@microsoft/teams-js.Context.messageId'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: messageId
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of TeamsJS v2.0.0, please use
+      [app.Context.app.messageId](xref:@microsoft/teams-js.app.AppInfo.messageId)
+      instead
+
+
+      The ID of the message from which this task module was launched.
+
+      This is only available in task modules launched from bot cards.
+    syntax:
+      content: 'messageId?: string'
+      return:
+        description: ''
+        type: string
   - name: mySiteDomain
     uid: '@microsoft/teams-js.Context.mySiteDomain'
     package: '@microsoft/teams-js'

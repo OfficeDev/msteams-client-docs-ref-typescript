@@ -15,7 +15,10 @@ fullName: TeamsBotInstallation
 remarks: >-
   It's recommended to get bot installations from
   <xref:ConversationBot.installations()>.
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 constructors:
   - name: TeamsBotInstallation(CloudAdapter, Partial<ConversationReference>, string)
@@ -156,7 +159,7 @@ methods:
           `undefined`.
         type: >-
           Promise&lt;undefined | <xref
-          uid="@microsoft/agents-hosting-teams.TeamDetails" />&gt;
+          uid="@microsoft/agents-hosting-extensions-teams.TeamDetails" />&gt;
   - name: >-
       sendAdaptiveCard(unknown, (context: TurnContext, error: Error) =>
       Promise<void>)

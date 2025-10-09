@@ -811,7 +811,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> LiveDataObject.getMaxListeners
   - name: getMaxListeners(EventEmitter<DefaultEventMap> | EventTarget)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.getMaxListeners'
+    uid: '@microsoft/live-share-canvas.LiveCanvas.getMaxListeners_1'
     package: '@microsoft/live-share-canvas'
     summary: >-
       Returns the currently set max amount of listeners.
@@ -886,7 +886,7 @@ inheritedMethods:
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> LiveDataObject.initializeInternal
   - name: listenerCount(EventEmitter<DefaultEventMap>, string | symbol)
-    uid: '@microsoft/live-share-canvas.LiveCanvas.listenerCount'
+    uid: '@microsoft/live-share-canvas.LiveCanvas.listenerCount_1'
     package: '@microsoft/live-share-canvas'
     summary: >-
       A class method that returns the number of listeners for the given
@@ -1421,7 +1421,7 @@ inheritedMethods:
         type: <xref uid="@microsoft/live-share-canvas.LiveCanvas" />
     inheritanceDescription: <b>Inherited From</b> LiveDataObject.setMaxListeners
   - name: setMaxListeners(number, (EventEmitter<DefaultEventMap> | EventTarget)[])
-    uid: '@microsoft/live-share-canvas.LiveCanvas.setMaxListeners'
+    uid: '@microsoft/live-share-canvas.LiveCanvas.setMaxListeners_1'
     package: '@microsoft/live-share-canvas'
     summary: |-
       ```js

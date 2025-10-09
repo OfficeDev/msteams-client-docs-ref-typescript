@@ -5,7 +5,10 @@ package: '@microsoft/teamsfx'
 summary: Options used to control how the response card will be sent to users.
 fullName: AdaptiveCardResponse
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 fields:
   - name: ReplaceForInteractor
     uid: '@microsoft/teamsfx.AdaptiveCardResponse.ReplaceForInteractor'

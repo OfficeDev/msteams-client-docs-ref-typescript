@@ -527,7 +527,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: getMaxListeners(EventEmitter<DefaultEventMap> | EventTarget)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.getMaxListeners'
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.getMaxListeners_1'
     package: '@microsoft/live-share-media'
     summary: >-
       Returns the currently set max amount of listeners.
@@ -584,7 +584,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> EventEmitter.getMaxListeners
   - name: listenerCount(EventEmitter<DefaultEventMap>, string | symbol)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.listenerCount'
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.listenerCount_1'
     package: '@microsoft/live-share-media'
     summary: >-
       A class method that returns the number of listeners for the given
@@ -701,7 +701,7 @@ inheritedMethods:
   - name: >-
       on(EventEmitter<DefaultEventMap>, string | symbol,
       StaticEventEmitterIteratorOptions)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on'
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on_1'
     package: '@microsoft/live-share-media'
     summary: >-
       ```js
@@ -836,7 +836,7 @@ inheritedMethods:
         type: AsyncIterator&lt;any[], undefined, any&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: on(EventTarget, string, StaticEventEmitterIteratorOptions)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on_1'
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on_2'
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
@@ -932,7 +932,7 @@ inheritedMethods:
   - name: >-
       once(EventEmitter<DefaultEventMap>, string | symbol,
       StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once'
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once_1'
     package: '@microsoft/live-share-media'
     summary: >-
       Creates a `Promise` that is fulfilled when the `EventEmitter` emits the
@@ -1075,7 +1075,7 @@ inheritedMethods:
         type: Promise&lt;any[]&gt;
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: once(EventTarget, string, StaticEventEmitterOptions)
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once_1'
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once_2'
     package: '@microsoft/live-share-media'
     summary: ''
     remarks: ''
@@ -1506,7 +1506,7 @@ inheritedMethods:
         type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
   - name: setMaxListeners(number, (EventEmitter<DefaultEventMap> | EventTarget)[])
-    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setMaxListeners'
+    uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setMaxListeners_1'
     package: '@microsoft/live-share-media'
     summary: |-
       ```js

@@ -8,7 +8,10 @@ remarks: >-
   Ensure each command should ONLY be registered with the command once, otherwise
   it'll cause unexpected behavior if you register the same command more than
   once.
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 constructors:
   - name: >-
@@ -18,7 +21,11 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Create a new instance of the `CommandBot`.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         new CommandBot(adapter: CloudAdapter, options?: CommandOptions,
@@ -43,7 +50,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Register a command into the command bot.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function registerCommand(command: TeamsFxBotCommandHandler)'
       parameters:
@@ -55,7 +66,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Register commands into the command bot.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function registerCommands(commands: TeamsFxBotCommandHandler[])'
       parameters:
@@ -67,7 +82,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Register a sso command into the command bot.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function registerSsoCommand(ssoCommand: TeamsFxBotSsoCommandHandler)'
       parameters:
@@ -79,7 +98,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Register sso commands into the command bot.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function registerSsoCommands(ssoCommands: TeamsFxBotSsoCommandHandler[])'
       parameters:

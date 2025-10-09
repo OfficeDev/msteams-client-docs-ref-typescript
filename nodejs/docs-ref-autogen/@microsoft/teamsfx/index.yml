@@ -81,7 +81,11 @@ functions:
       ```
 
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function createApiClient(apiEndpoint: string, authProvider:
@@ -103,7 +107,12 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Helper to create SecureContextOptions from PEM format cert
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
+          *
     syntax:
       content: >-
         function createPemCertOption(cert: string | Buffer, key: string |
@@ -127,7 +136,12 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Helper to create SecureContextOptions from PFX format cert
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
+          *
     syntax:
       content: >-
         function createPfxCertOption(pfx: string | Buffer, options?: {
@@ -147,7 +161,11 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Get log level.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function getLogLevel(): LogLevel | undefined'
       return:
@@ -161,7 +179,11 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Users execute link query in message extension with SSO or access token.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function handleMessageExtensionLinkQueryWithSSO(context: TurnContext,
@@ -192,7 +214,7 @@ functions:
           any, return void instead.
         type: >-
           Promise&lt;void | <xref
-          uid="@microsoft/agents-hosting-teams.MessagingExtensionResponse"
+          uid="@microsoft/agents-hosting-extensions-teams.MessagingExtensionResponse"
           />&gt;
   - name: >-
       handleMessageExtensionQueryWithSSO(TurnContext,
@@ -202,7 +224,11 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Users execute query in message extension with SSO or access token.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function handleMessageExtensionQueryWithSSO(context: TurnContext,
@@ -233,7 +259,7 @@ functions:
           any, return void instead.
         type: >-
           Promise&lt;void | <xref
-          uid="@microsoft/agents-hosting-teams.MessagingExtensionResponse"
+          uid="@microsoft/agents-hosting-extensions-teams.MessagingExtensionResponse"
           />&gt;
   - name: setLogFunction(LogFunction)
     uid: '@microsoft/teamsfx.setLogFunction'
@@ -257,7 +283,11 @@ functions:
       ```
 
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function setLogFunction(logFunction?: LogFunction)'
       parameters:
@@ -271,7 +301,11 @@ functions:
     package: '@microsoft/teamsfx'
     summary: Update log level helper.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function setLogLevel(level: LogLevel)'
       parameters:
@@ -301,7 +335,11 @@ functions:
       ```
 
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'function setLogger(logger?: Logger)'
       parameters:
