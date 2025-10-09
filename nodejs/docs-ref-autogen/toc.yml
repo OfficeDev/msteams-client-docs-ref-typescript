@@ -1,1854 +1,3072 @@
 - name: '@microsoft/live-share'
+  no-loc:
+    - '@microsoft/live-share'
   items:
     - name: Overview
       uid: '@microsoft/live-share'
     - uid: '@microsoft/live-share.AzureLiveShareHost'
       name: AzureLiveShareHost
+      no-loc:
+        - AzureLiveShareHost
       items: []
     - uid: '@microsoft/live-share.ContainerState'
       name: ContainerState
+      no-loc:
+        - ContainerState
       items: []
     - uid: '@microsoft/live-share.DynamicObjectRegistry'
       name: DynamicObjectRegistry
+      no-loc:
+        - DynamicObjectRegistry
       items: []
     - uid: '@microsoft/live-share.FollowModePresenceUser'
       name: FollowModePresenceUser
+      no-loc:
+        - FollowModePresenceUser
       items: []
     - uid: '@microsoft/live-share.FollowModeType'
       name: FollowModeType
+      no-loc:
+        - FollowModeType
       items: []
     - uid: '@microsoft/live-share.GetLocalUserCanSend'
       name: GetLocalUserCanSend
+      no-loc:
+        - GetLocalUserCanSend
       items: []
     - uid: '@microsoft/live-share.HostTimestampProvider'
       name: HostTimestampProvider
+      no-loc:
+        - HostTimestampProvider
       items: []
     - uid: '@microsoft/live-share.IClientInfo'
       name: IClientInfo
+      no-loc:
+        - IClientInfo
       items: []
     - uid: '@microsoft/live-share.IClientTimestamp'
       name: IClientTimestamp
+      no-loc:
+        - IClientTimestamp
       items: []
     - uid: '@microsoft/live-share.IContainerRuntimeSignaler'
       name: IContainerRuntimeSignaler
+      no-loc:
+        - IContainerRuntimeSignaler
       items: []
     - uid: '@microsoft/live-share.IEvent'
       name: IEvent
+      no-loc:
+        - IEvent
       items: []
     - uid: '@microsoft/live-share.IFluidContainerInfo'
       name: IFluidContainerInfo
+      no-loc:
+        - IFluidContainerInfo
       items: []
     - uid: '@microsoft/live-share.IFluidTenantInfo'
       name: IFluidTenantInfo
+      no-loc:
+        - IFluidTenantInfo
       items: []
     - uid: '@microsoft/live-share.IFollowModePresenceUserData'
       name: IFollowModePresenceUserData
+      no-loc:
+        - IFollowModePresenceUserData
       items: []
     - uid: '@microsoft/live-share.IFollowModeState'
       name: IFollowModeState
+      no-loc:
+        - IFollowModeState
       items: []
     - uid: '@microsoft/live-share.ILiveEvent'
       name: ILiveEvent
+      no-loc:
+        - ILiveEvent
       items: []
     - uid: '@microsoft/live-share.ILiveEventEvents'
       name: ILiveEventEvents
+      no-loc:
+        - ILiveEventEvents
       items: []
     - uid: '@microsoft/live-share.ILiveFollowModeEvents'
       name: ILiveFollowModeEvents
+      no-loc:
+        - ILiveFollowModeEvents
       items: []
     - uid: '@microsoft/live-share.ILivePresenceEvents'
       name: ILivePresenceEvents
+      no-loc:
+        - ILivePresenceEvents
       items: []
     - uid: '@microsoft/live-share.ILiveShareClientOptions'
       name: ILiveShareClientOptions
+      no-loc:
+        - ILiveShareClientOptions
       items: []
     - uid: '@microsoft/live-share.ILiveShareHost'
       name: ILiveShareHost
+      no-loc:
+        - ILiveShareHost
       items: []
     - uid: '@microsoft/live-share.ILiveShareJoinResults'
       name: ILiveShareJoinResults
+      no-loc:
+        - ILiveShareJoinResults
       items: []
     - uid: '@microsoft/live-share.ILiveStateEvents'
       name: ILiveStateEvents
+      no-loc:
+        - ILiveStateEvents
       items: []
     - uid: '@microsoft/live-share.ILiveTelemetryProperties'
       name: ILiveTelemetryProperties
+      no-loc:
+        - ILiveTelemetryProperties
       items: []
     - uid: '@microsoft/live-share.ILiveTimerEvents'
       name: ILiveTimerEvents
+      no-loc:
+        - ILiveTimerEvents
       items: []
     - uid: '@microsoft/live-share.INtpTimeInfo'
       name: INtpTimeInfo
+      no-loc:
+        - INtpTimeInfo
       items: []
     - uid: '@microsoft/live-share.IRuntimeSignaler'
       name: IRuntimeSignaler
+      no-loc:
+        - IRuntimeSignaler
       items: []
     - uid: '@microsoft/live-share.ITimerConfig'
       name: ITimerConfig
+      no-loc:
+        - ITimerConfig
       items: []
     - uid: '@microsoft/live-share.ITimerConfigData'
       name: ITimerConfigData
+      no-loc:
+        - ITimerConfigData
       items: []
     - uid: '@microsoft/live-share.LiveDataObject'
       name: LiveDataObject
+      no-loc:
+        - LiveDataObject
       items: []
     - uid: '@microsoft/live-share.LiveDataObjectInitializeState'
       name: LiveDataObjectInitializeState
+      no-loc:
+        - LiveDataObjectInitializeState
       items: []
     - uid: '@microsoft/live-share.LiveEvent'
       name: LiveEvent
+      no-loc:
+        - LiveEvent
       items: []
     - uid: '@microsoft/live-share.LiveEventEvents'
       name: LiveEventEvents
+      no-loc:
+        - LiveEventEvents
       items: []
     - uid: '@microsoft/live-share.LiveEventListener'
       name: LiveEventListener
+      no-loc:
+        - LiveEventListener
       items: []
     - uid: '@microsoft/live-share.LiveEventScope'
       name: LiveEventScope
+      no-loc:
+        - LiveEventScope
       items: []
     - uid: '@microsoft/live-share.LiveEventSource'
       name: LiveEventSource
+      no-loc:
+        - LiveEventSource
       items: []
     - uid: '@microsoft/live-share.LiveEventTarget'
       name: LiveEventTarget
+      no-loc:
+        - LiveEventTarget
       items: []
     - uid: '@microsoft/live-share.LiveEventTimer'
       name: LiveEventTimer
+      no-loc:
+        - LiveEventTimer
       items: []
     - uid: '@microsoft/live-share.LiveFollowMode'
       name: LiveFollowMode
+      no-loc:
+        - LiveFollowMode
       items: []
     - uid: '@microsoft/live-share.LiveFollowModeEvents'
       name: LiveFollowModeEvents
+      no-loc:
+        - LiveFollowModeEvents
       items: []
     - uid: '@microsoft/live-share.LivePresence'
       name: LivePresence
+      no-loc:
+        - LivePresence
       items: []
     - uid: '@microsoft/live-share.LivePresenceEvents'
       name: LivePresenceEvents
+      no-loc:
+        - LivePresenceEvents
       items: []
     - uid: '@microsoft/live-share.LivePresenceUser'
       name: LivePresenceUser
+      no-loc:
+        - LivePresenceUser
       items: []
     - uid: '@microsoft/live-share.LiveShareClient'
       name: LiveShareClient
+      no-loc:
+        - LiveShareClient
       items: []
     - uid: '@microsoft/live-share.LiveShareRuntime'
       name: LiveShareRuntime
+      no-loc:
+        - LiveShareRuntime
       items: []
     - uid: '@microsoft/live-share.LiveState'
       name: LiveState
+      no-loc:
+        - LiveState
       items: []
     - uid: '@microsoft/live-share.LiveStateEvents'
       name: LiveStateEvents
+      no-loc:
+        - LiveStateEvents
       items: []
     - uid: '@microsoft/live-share.LiveTelemetryLogger'
       name: LiveTelemetryLogger
+      no-loc:
+        - LiveTelemetryLogger
       items: []
     - uid: '@microsoft/live-share.LiveTimer'
       name: LiveTimer
+      no-loc:
+        - LiveTimer
       items: []
     - uid: '@microsoft/live-share.LiveTimerEvents'
       name: LiveTimerEvents
+      no-loc:
+        - LiveTimerEvents
       items: []
     - uid: '@microsoft/live-share.LocalTimestampProvider'
       name: LocalTimestampProvider
+      no-loc:
+        - LocalTimestampProvider
       items: []
     - uid: '@microsoft/live-share.PresenceState'
       name: PresenceState
+      no-loc:
+        - PresenceState
       items: []
     - uid: '@microsoft/live-share.TestLiveShareHost'
       name: TestLiveShareHost
+      no-loc:
+        - TestLiveShareHost
       items: []
     - uid: '@microsoft/live-share.TimestampProvider'
       name: TimestampProvider
+      no-loc:
+        - TimestampProvider
       items: []
     - uid: '@microsoft/live-share.UpdateSynchronizationState'
       name: UpdateSynchronizationState
+      no-loc:
+        - UpdateSynchronizationState
       items: []
     - uid: '@microsoft/live-share.UserMeetingRole'
       name: UserMeetingRole
+      no-loc:
+        - UserMeetingRole
       items: []
 - name: '@microsoft/live-share-canvas'
+  no-loc:
+    - '@microsoft/live-share-canvas'
   items:
     - name: Overview
       uid: '@microsoft/live-share-canvas'
     - uid: '@microsoft/live-share-canvas.ArrowType'
       name: ArrowType
+      no-loc:
+        - ArrowType
       items: []
     - uid: '@microsoft/live-share-canvas.BrushTipShape'
       name: BrushTipShape
+      no-loc:
+        - BrushTipShape
       items: []
     - uid: '@microsoft/live-share-canvas.BrushType'
       name: BrushType
+      no-loc:
+        - BrushType
       items: []
     - uid: '@microsoft/live-share-canvas.CanvasReferencePoint'
       name: CanvasReferencePoint
+      no-loc:
+        - CanvasReferencePoint
       items: []
     - uid: '@microsoft/live-share-canvas.DryCanvas'
       name: DryCanvas
+      no-loc:
+        - DryCanvas
       items: []
     - uid: '@microsoft/live-share-canvas.DryWetCanvas'
       name: DryWetCanvas
+      no-loc:
+        - DryWetCanvas
       items: []
     - uid: '@microsoft/live-share-canvas.EventListener'
       name: EventListener
+      no-loc:
+        - EventListener
       items: []
     - uid: '@microsoft/live-share-canvas.IAddPointsEventArgs'
       name: IAddPointsEventArgs
+      no-loc:
+        - IAddPointsEventArgs
       items: []
     - uid: '@microsoft/live-share-canvas.IAddRemoveStrokeOptions'
       name: IAddRemoveStrokeOptions
+      no-loc:
+        - IAddRemoveStrokeOptions
       items: []
     - uid: '@microsoft/live-share-canvas.IBeginStrokeEventArgs'
       name: IBeginStrokeEventArgs
+      no-loc:
+        - IBeginStrokeEventArgs
       items: []
     - uid: '@microsoft/live-share-canvas.IBrush'
       name: IBrush
+      no-loc:
+        - IBrush
       items: []
     - uid: '@microsoft/live-share-canvas.IColor'
       name: IColor
+      no-loc:
+        - IColor
       items: []
     - uid: '@microsoft/live-share-canvas.IMulticastEvent'
       name: IMulticastEvent
+      no-loc:
+        - IMulticastEvent
       items: []
     - uid: '@microsoft/live-share-canvas.InkingCanvas'
       name: InkingCanvas
+      no-loc:
+        - InkingCanvas
       items: []
     - uid: '@microsoft/live-share-canvas.InkingManager'
       name: InkingManager
+      no-loc:
+        - InkingManager
       items: []
     - uid: '@microsoft/live-share-canvas.InkingTool'
       name: InkingTool
+      no-loc:
+        - InkingTool
       items: []
     - uid: '@microsoft/live-share-canvas.InputFilter'
       name: InputFilter
+      no-loc:
+        - InputFilter
       items: []
     - uid: '@microsoft/live-share-canvas.InputFilterCollection'
       name: InputFilterCollection
+      no-loc:
+        - InputFilterCollection
       items: []
     - uid: '@microsoft/live-share-canvas.InputProvider'
       name: InputProvider
+      no-loc:
+        - InputProvider
       items: []
     - uid: '@microsoft/live-share-canvas.IPoint'
       name: IPoint
+      no-loc:
+        - IPoint
       items: []
     - uid: '@microsoft/live-share-canvas.IPointerEvent'
       name: IPointerEvent
+      no-loc:
+        - IPointerEvent
       items: []
     - uid: '@microsoft/live-share-canvas.IPointerMovedEventArgs'
       name: IPointerMovedEventArgs
+      no-loc:
+        - IPointerMovedEventArgs
       items: []
     - uid: '@microsoft/live-share-canvas.IPointerMoveEvent'
       name: IPointerMoveEvent
+      no-loc:
+        - IPointerMoveEvent
       items: []
     - uid: '@microsoft/live-share-canvas.IPointerPoint'
       name: IPointerPoint
+      no-loc:
+        - IPointerPoint
       items: []
     - uid: '@microsoft/live-share-canvas.IRawStroke'
       name: IRawStroke
+      no-loc:
+        - IRawStroke
       items: []
     - uid: '@microsoft/live-share-canvas.IRect'
       name: IRect
+      no-loc:
+        - IRect
       items: []
     - uid: '@microsoft/live-share-canvas.ISegment'
       name: ISegment
+      no-loc:
+        - ISegment
       items: []
     - uid: '@microsoft/live-share-canvas.IStroke'
       name: IStroke
+      no-loc:
+        - IStroke
       items: []
     - uid: '@microsoft/live-share-canvas.IStrokeCreationOptions'
       name: IStrokeCreationOptions
+      no-loc:
+        - IStrokeCreationOptions
       items: []
     - uid: '@microsoft/live-share-canvas.IUserInfo'
       name: IUserInfo
+      no-loc:
+        - IUserInfo
       items: []
     - uid: '@microsoft/live-share-canvas.IWetStroke'
       name: IWetStroke
+      no-loc:
+        - IWetStroke
       items: []
     - uid: '@microsoft/live-share-canvas.JitterFilter'
       name: JitterFilter
+      no-loc:
+        - JitterFilter
       items: []
     - uid: '@microsoft/live-share-canvas.LaserPointerCanvas'
       name: LaserPointerCanvas
+      no-loc:
+        - LaserPointerCanvas
       items: []
     - uid: '@microsoft/live-share-canvas.LiveCanvas'
       name: LiveCanvas
+      no-loc:
+        - LiveCanvas
       items: []
     - uid: '@microsoft/live-share-canvas.LiveCursor'
       name: LiveCursor
+      no-loc:
+        - LiveCursor
       items: []
     - uid: '@microsoft/live-share-canvas.MulticastEvent'
       name: MulticastEvent
+      no-loc:
+        - MulticastEvent
       items: []
     - uid: '@microsoft/live-share-canvas.PointerInputProvider'
       name: PointerInputProvider
+      no-loc:
+        - PointerInputProvider
       items: []
     - uid: '@microsoft/live-share-canvas.Stroke'
       name: Stroke
+      no-loc:
+        - Stroke
       items: []
     - uid: '@microsoft/live-share-canvas.StrokeEndState'
       name: StrokeEndState
+      no-loc:
+        - StrokeEndState
       items: []
     - uid: '@microsoft/live-share-canvas.StrokeMode'
       name: StrokeMode
+      no-loc:
+        - StrokeMode
       items: []
     - uid: '@microsoft/live-share-canvas.StrokeType'
       name: StrokeType
+      no-loc:
+        - StrokeType
       items: []
     - uid: '@microsoft/live-share-canvas.WetCanvas'
       name: WetCanvas
+      no-loc:
+        - WetCanvas
       items: []
 - name: '@microsoft/live-share-media'
+  no-loc:
+    - '@microsoft/live-share-media'
   items:
     - name: Overview
       uid: '@microsoft/live-share-media'
     - uid: '@microsoft/live-share-media.CoordinationWaitPoint'
       name: CoordinationWaitPoint
+      no-loc:
+        - CoordinationWaitPoint
       items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaMetadata'
       name: ExtendedMediaMetadata
+      no-loc:
+        - ExtendedMediaMetadata
       items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionAction'
       name: ExtendedMediaSessionAction
+      no-loc:
+        - ExtendedMediaSessionAction
       items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails'
       name: ExtendedMediaSessionActionDetails
+      no-loc:
+        - ExtendedMediaSessionActionDetails
       items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionHandler'
       name: ExtendedMediaSessionActionHandler
+      no-loc:
+        - ExtendedMediaSessionActionHandler
       items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionIgnore'
       name: ExtendedMediaSessionActionIgnore
+      no-loc:
+        - ExtendedMediaSessionActionIgnore
       items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionActionSource'
       name: ExtendedMediaSessionActionSource
+      no-loc:
+        - ExtendedMediaSessionActionSource
       items: []
     - uid: '@microsoft/live-share-media.ExtendedMediaSessionPlaybackState'
       name: ExtendedMediaSessionPlaybackState
+      no-loc:
+        - ExtendedMediaSessionPlaybackState
       items: []
     - uid: '@microsoft/live-share-media.IMediaPlayer'
       name: IMediaPlayer
+      no-loc:
+        - IMediaPlayer
       items: []
     - uid: '@microsoft/live-share-media.IMediaPlayerState'
       name: IMediaPlayerState
+      no-loc:
+        - IMediaPlayerState
       items: []
     - uid: '@microsoft/live-share-media.IMediaPlayerSynchronizerEvent'
       name: IMediaPlayerSynchronizerEvent
+      no-loc:
+        - IMediaPlayerSynchronizerEvent
       items: []
     - uid: '@microsoft/live-share-media.LimitLevelType'
       name: LimitLevelType
+      no-loc:
+        - LimitLevelType
       items: []
     - uid: '@microsoft/live-share-media.LiveMediaSession'
       name: LiveMediaSession
+      no-loc:
+        - LiveMediaSession
       items: []
     - uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator'
       name: LiveMediaSessionCoordinator
+      no-loc:
+        - LiveMediaSessionCoordinator
       items: []
     - uid: '@microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension'
       name: LiveMediaSessionCoordinatorSuspension
+      no-loc:
+        - LiveMediaSessionCoordinatorSuspension
       items: []
     - uid: '@microsoft/live-share-media.MediaPlayerSynchronizer'
       name: MediaPlayerSynchronizer
+      no-loc:
+        - MediaPlayerSynchronizer
       items: []
     - uid: '@microsoft/live-share-media.MediaPlayerSynchronizerEvents'
       name: MediaPlayerSynchronizerEvents
+      no-loc:
+        - MediaPlayerSynchronizerEvents
       items: []
     - uid: '@microsoft/live-share-media.MediaSessionActionThrottler'
       name: MediaSessionActionThrottler
+      no-loc:
+        - MediaSessionActionThrottler
       items: []
     - uid: '@microsoft/live-share-media.MediaSessionCoordinatorEvents'
       name: MediaSessionCoordinatorEvents
+      no-loc:
+        - MediaSessionCoordinatorEvents
       items: []
     - uid: '@microsoft/live-share-media.MediaSessionCoordinatorSuspension'
       name: MediaSessionCoordinatorSuspension
+      no-loc:
+        - MediaSessionCoordinatorSuspension
       items: []
     - uid: '@microsoft/live-share-media.RepeatedActionThrottler'
       name: RepeatedActionThrottler
+      no-loc:
+        - RepeatedActionThrottler
       items: []
     - uid: '@microsoft/live-share-media.VolumeManager'
       name: VolumeManager
+      no-loc:
+        - VolumeManager
       items: []
 - name: '@microsoft/teams-ai'
+  no-loc:
+    - '@microsoft/teams-ai'
   items:
     - name: Overview
       uid: '@microsoft/teams-ai'
     - uid: '@microsoft/teams-ai.ActionAugmentationSection'
       name: ActionAugmentationSection
+      no-loc:
+        - ActionAugmentationSection
       items: []
     - uid: '@microsoft/teams-ai.ActionHandler'
       name: ActionHandler
+      no-loc:
+        - ActionHandler
       items: []
     - uid: '@microsoft/teams-ai.ActionOutputMessage'
       name: ActionOutputMessage
+      no-loc:
+        - ActionOutputMessage
       items: []
     - uid: '@microsoft/teams-ai.ActionPlanner'
       name: ActionPlanner
+      no-loc:
+        - ActionPlanner
       items: []
     - uid: '@microsoft/teams-ai.ActionPlannerOptions'
       name: ActionPlannerOptions
+      no-loc:
+        - ActionPlannerOptions
       items: []
     - uid: '@microsoft/teams-ai.ActionPlannerPromptFactory'
       name: ActionPlannerPromptFactory
+      no-loc:
+        - ActionPlannerPromptFactory
       items: []
     - uid: '@microsoft/teams-ai.ActionResponseValidator'
       name: ActionResponseValidator
+      no-loc:
+        - ActionResponseValidator
       items: []
     - uid: '@microsoft/teams-ai.AdaptiveCard'
       name: AdaptiveCard
+      no-loc:
+        - AdaptiveCard
       items: []
     - uid: '@microsoft/teams-ai.AdaptiveCardActionExecuteResponseType'
       name: AdaptiveCardActionExecuteResponseType
+      no-loc:
+        - AdaptiveCardActionExecuteResponseType
       items: []
     - uid: '@microsoft/teams-ai.AdaptiveCards'
       name: AdaptiveCards
+      no-loc:
+        - AdaptiveCards
       items: []
     - uid: '@microsoft/teams-ai.AdaptiveCardSearchResult'
       name: AdaptiveCardSearchResult
+      no-loc:
+        - AdaptiveCardSearchResult
       items: []
     - uid: '@microsoft/teams-ai.AdaptiveCardsOptions'
       name: AdaptiveCardsOptions
+      no-loc:
+        - AdaptiveCardsOptions
       items: []
     - uid: '@microsoft/teams-ai.AdaptiveCardsSearchParams'
       name: AdaptiveCardsSearchParams
+      no-loc:
+        - AdaptiveCardsSearchParams
       items: []
     - uid: '@microsoft/teams-ai.AI'
       name: AI
+      no-loc:
+        - AI
       items: []
     - uid: '@microsoft/teams-ai.AIOptions'
       name: AIOptions
+      no-loc:
+        - AIOptions
       items: []
     - uid: '@microsoft/teams-ai.Application'
       name: Application
+      no-loc:
+        - Application
       items: []
     - uid: '@microsoft/teams-ai.ApplicationBuilder'
       name: ApplicationBuilder
+      no-loc:
+        - ApplicationBuilder
       items: []
     - uid: '@microsoft/teams-ai.ApplicationOptions'
       name: ApplicationOptions
+      no-loc:
+        - ApplicationOptions
       items: []
     - uid: '@microsoft/teams-ai.AssistantMessage'
       name: AssistantMessage
+      no-loc:
+        - AssistantMessage
       items: []
     - uid: '@microsoft/teams-ai.Augmentation'
       name: Augmentation
+      no-loc:
+        - Augmentation
       items: []
     - uid: '@microsoft/teams-ai.AugmentationConfig'
       name: AugmentationConfig
+      no-loc:
+        - AugmentationConfig
       items: []
     - uid: '@microsoft/teams-ai.Authentication'
       name: Authentication
+      no-loc:
+        - Authentication
       items: []
     - uid: '@microsoft/teams-ai.AuthenticationManager'
       name: AuthenticationManager
+      no-loc:
+        - AuthenticationManager
       items: []
     - uid: '@microsoft/teams-ai.AuthenticationOptions'
       name: AuthenticationOptions
+      no-loc:
+        - AuthenticationOptions
       items: []
     - uid: '@microsoft/teams-ai.AuthenticatorResult'
       name: AuthenticatorResult
+      no-loc:
+        - AuthenticatorResult
       items: []
     - uid: '@microsoft/teams-ai.AuthError'
       name: AuthError
+      no-loc:
+        - AuthError
       items: []
     - uid: '@microsoft/teams-ai.AuthErrorReason'
       name: AuthErrorReason
+      no-loc:
+        - AuthErrorReason
       items: []
     - uid: '@microsoft/teams-ai.AzureContentSafetyModerator'
       name: AzureContentSafetyModerator
+      no-loc:
+        - AzureContentSafetyModerator
       items: []
     - uid: '@microsoft/teams-ai.AzureOpenAIEmbeddingsOptions'
       name: AzureOpenAIEmbeddingsOptions
+      no-loc:
+        - AzureOpenAIEmbeddingsOptions
       items: []
     - uid: '@microsoft/teams-ai.AzureOpenAIModelOptions'
       name: AzureOpenAIModelOptions
+      no-loc:
+        - AzureOpenAIModelOptions
       items: []
     - uid: '@microsoft/teams-ai.AzureOpenAIModeratorOptions'
       name: AzureOpenAIModeratorOptions
+      no-loc:
+        - AzureOpenAIModeratorOptions
       items: []
     - uid: '@microsoft/teams-ai.BaseOpenAIEmbeddingsOptions'
       name: BaseOpenAIEmbeddingsOptions
+      no-loc:
+        - BaseOpenAIEmbeddingsOptions
       items: []
     - uid: '@microsoft/teams-ai.BaseOpenAIModelOptions'
       name: BaseOpenAIModelOptions
+      no-loc:
+        - BaseOpenAIModelOptions
       items: []
     - uid: '@microsoft/teams-ai.ChatCompletionAction'
       name: ChatCompletionAction
+      no-loc:
+        - ChatCompletionAction
       items: []
     - uid: '@microsoft/teams-ai.Citation'
       name: Citation
+      no-loc:
+        - Citation
       items: []
     - uid: '@microsoft/teams-ai.ConfiguredAIOptions'
       name: ConfiguredAIOptions
+      no-loc:
+        - ConfiguredAIOptions
       items: []
     - uid: '@microsoft/teams-ai.ConfiguredLLMClientOptions'
       name: ConfiguredLLMClientOptions
+      no-loc:
+        - ConfiguredLLMClientOptions
       items: []
     - uid: '@microsoft/teams-ai.ConfiguredPromptManagerOptions'
       name: ConfiguredPromptManagerOptions
+      no-loc:
+        - ConfiguredPromptManagerOptions
       items: []
     - uid: '@microsoft/teams-ai.ConversationHistory'
       name: ConversationHistory
+      no-loc:
+        - ConversationHistory
       items: []
     - uid: '@microsoft/teams-ai.ConversationUpdateEvents'
       name: ConversationUpdateEvents
+      no-loc:
+        - ConversationUpdateEvents
       items: []
     - uid: '@microsoft/teams-ai.DataSource'
       name: DataSource
+      no-loc:
+        - DataSource
       items: []
     - uid: '@microsoft/teams-ai.DataSourceSection'
       name: DataSourceSection
+      no-loc:
+        - DataSourceSection
       items: []
     - uid: '@microsoft/teams-ai.DefaultAugmentation'
       name: DefaultAugmentation
+      no-loc:
+        - DefaultAugmentation
       items: []
     - uid: '@microsoft/teams-ai.DefaultConversationState'
       name: DefaultConversationState
+      no-loc:
+        - DefaultConversationState
       items: []
     - uid: '@microsoft/teams-ai.DefaultModerator'
       name: DefaultModerator
+      no-loc:
+        - DefaultModerator
       items: []
     - uid: '@microsoft/teams-ai.DefaultResponseValidator'
       name: DefaultResponseValidator
+      no-loc:
+        - DefaultResponseValidator
       items: []
     - uid: '@microsoft/teams-ai.DefaultTempState'
       name: DefaultTempState
+      no-loc:
+        - DefaultTempState
       items: []
     - uid: '@microsoft/teams-ai.DefaultUserState'
       name: DefaultUserState
+      no-loc:
+        - DefaultUserState
       items: []
     - uid: '@microsoft/teams-ai.EEMethodReturnType'
       name: EEMethodReturnType
+      no-loc:
+        - EEMethodReturnType
       items: []
     - uid: '@microsoft/teams-ai.EmitEventNames'
       name: EmitEventNames
+      no-loc:
+        - EmitEventNames
       items: []
     - uid: '@microsoft/teams-ai.EventNames'
       name: EventNames
+      no-loc:
+        - EventNames
       items: []
     - uid: '@microsoft/teams-ai.FeedbackLoopData'
       name: FeedbackLoopData
+      no-loc:
+        - FeedbackLoopData
       items: []
     - uid: '@microsoft/teams-ai.FunctionCall'
       name: FunctionCall
+      no-loc:
+        - FunctionCall
       items: []
     - uid: '@microsoft/teams-ai.FunctionCallMessage'
       name: FunctionCallMessage
+      no-loc:
+        - FunctionCallMessage
       items: []
     - uid: '@microsoft/teams-ai.FunctionResponseMessage'
       name: FunctionResponseMessage
+      no-loc:
+        - FunctionResponseMessage
       items: []
     - uid: '@microsoft/teams-ai.GPT3Tokenizer'
       name: GPT3Tokenizer
+      no-loc:
+        - GPT3Tokenizer
       items: []
     - uid: '@microsoft/teams-ai.GPTTokenizer'
       name: GPTTokenizer
+      no-loc:
+        - GPTTokenizer
       items: []
     - uid: '@microsoft/teams-ai.GroupSection'
       name: GroupSection
+      no-loc:
+        - GroupSection
       items: []
     - uid: '@microsoft/teams-ai.ImageContentPart'
       name: ImageContentPart
+      no-loc:
+        - ImageContentPart
       items: []
     - uid: '@microsoft/teams-ai.InnerEEMethodReturnType'
       name: InnerEEMethodReturnType
+      no-loc:
+        - InnerEEMethodReturnType
       items: []
     - uid: '@microsoft/teams-ai.InputFile'
       name: InputFile
+      no-loc:
+        - InputFile
       items: []
     - uid: '@microsoft/teams-ai.InputFileDownloader'
       name: InputFileDownloader
+      no-loc:
+        - InputFileDownloader
       items: []
     - uid: '@microsoft/teams-ai.JSONResponseValidator'
       name: JSONResponseValidator
+      no-loc:
+        - JSONResponseValidator
       items: []
     - uid: '@microsoft/teams-ai.LayoutEngine'
       name: LayoutEngine
+      no-loc:
+        - LayoutEngine
       items: []
     - uid: '@microsoft/teams-ai.ListenerType'
       name: ListenerType
+      no-loc:
+        - ListenerType
       items: []
     - uid: '@microsoft/teams-ai.LlamaModel'
       name: LlamaModel
+      no-loc:
+        - LlamaModel
       items: []
     - uid: '@microsoft/teams-ai.LlamaModelOptions'
       name: LlamaModelOptions
+      no-loc:
+        - LlamaModelOptions
       items: []
     - uid: '@microsoft/teams-ai.LLMClient'
       name: LLMClient
+      no-loc:
+        - LLMClient
       items: []
     - uid: '@microsoft/teams-ai.LLMClientOptions'
       name: LLMClientOptions
+      no-loc:
+        - LLMClientOptions
       items: []
     - uid: '@microsoft/teams-ai.MatchingKeys'
       name: MatchingKeys
+      no-loc:
+        - MatchingKeys
       items: []
     - uid: '@microsoft/teams-ai.Memory'
       name: Memory
+      no-loc:
+        - Memory
       items: []
     - uid: '@microsoft/teams-ai.MemoryFork'
       name: MemoryFork
+      no-loc:
+        - MemoryFork
       items: []
     - uid: '@microsoft/teams-ai.Message'
       name: Message
+      no-loc:
+        - Message
       items: []
     - uid: '@microsoft/teams-ai.MessageContentParts'
       name: MessageContentParts
+      no-loc:
+        - MessageContentParts
       items: []
     - uid: '@microsoft/teams-ai.MessageContext'
       name: MessageContext
+      no-loc:
+        - MessageContext
       items: []
     - uid: '@microsoft/teams-ai.MessageExtensions'
       name: MessageExtensions
+      no-loc:
+        - MessageExtensions
       items: []
     - uid: '@microsoft/teams-ai.MessageExtensionsInvokeNames'
       name: MessageExtensionsInvokeNames
+      no-loc:
+        - MessageExtensionsInvokeNames
       items: []
     - uid: '@microsoft/teams-ai.MessageReactionEvents'
       name: MessageReactionEvents
+      no-loc:
+        - MessageReactionEvents
       items: []
     - uid: '@microsoft/teams-ai.ModerationSeverity'
       name: ModerationSeverity
+      no-loc:
+        - ModerationSeverity
       items: []
     - uid: '@microsoft/teams-ai.Moderator'
       name: Moderator
+      no-loc:
+        - Moderator
       items: []
     - uid: '@microsoft/teams-ai.MonologueAugmentation'
       name: MonologueAugmentation
+      no-loc:
+        - MonologueAugmentation
       items: []
     - uid: '@microsoft/teams-ai.NoUndefined'
       name: NoUndefined
+      no-loc:
+        - NoUndefined
       items: []
     - uid: '@microsoft/teams-ai.OAuthSettings'
       name: OAuthSettings
+      no-loc:
+        - OAuthSettings
       items: []
     - uid: '@microsoft/teams-ai.OnEventNames'
       name: OnEventNames
+      no-loc:
+        - OnEventNames
       items: []
     - uid: '@microsoft/teams-ai.OpenAIEmbeddings'
       name: OpenAIEmbeddings
+      no-loc:
+        - OpenAIEmbeddings
       items: []
     - uid: '@microsoft/teams-ai.OpenAIEmbeddingsOptions'
       name: OpenAIEmbeddingsOptions
+      no-loc:
+        - OpenAIEmbeddingsOptions
       items: []
     - uid: '@microsoft/teams-ai.OpenAILikeEmbeddingsOptions'
       name: OpenAILikeEmbeddingsOptions
+      no-loc:
+        - OpenAILikeEmbeddingsOptions
       items: []
     - uid: '@microsoft/teams-ai.OpenAIModel'
       name: OpenAIModel
+      no-loc:
+        - OpenAIModel
       items: []
     - uid: '@microsoft/teams-ai.OpenAIModelOptions'
       name: OpenAIModelOptions
+      no-loc:
+        - OpenAIModelOptions
       items: []
     - uid: '@microsoft/teams-ai.OpenAIModerator'
       name: OpenAIModerator
+      no-loc:
+        - OpenAIModerator
       items: []
     - uid: '@microsoft/teams-ai.OpenAIModeratorOptions'
       name: OpenAIModeratorOptions
+      no-loc:
+        - OpenAIModeratorOptions
       items: []
     - uid: '@microsoft/teams-ai.OverriddenKeys'
       name: OverriddenKeys
+      no-loc:
+        - OverriddenKeys
       items: []
     - uid: '@microsoft/teams-ai.OverriddenMethods'
       name: OverriddenMethods
+      no-loc:
+        - OverriddenMethods
       items: []
     - uid: '@microsoft/teams-ai.Plan'
       name: Plan
+      no-loc:
+        - Plan
       items: []
     - uid: '@microsoft/teams-ai.Planner'
       name: Planner
+      no-loc:
+        - Planner
       items: []
     - uid: '@microsoft/teams-ai.PredictedCommand'
       name: PredictedCommand
+      no-loc:
+        - PredictedCommand
       items: []
     - uid: '@microsoft/teams-ai.PredictedDoCommand'
       name: PredictedDoCommand
+      no-loc:
+        - PredictedDoCommand
       items: []
     - uid: '@microsoft/teams-ai.PredictedDoCommandAndHandler'
       name: PredictedDoCommandAndHandler
+      no-loc:
+        - PredictedDoCommandAndHandler
       items: []
     - uid: '@microsoft/teams-ai.PredictedSayCommand'
       name: PredictedSayCommand
+      no-loc:
+        - PredictedSayCommand
       items: []
     - name: preview
+      no-loc:
+        - preview
       items:
         - name: Overview
           uid: '@microsoft/teams-ai.preview'
         - uid: '@microsoft/teams-ai.preview.AssistantsPlanner'
           name: AssistantsPlanner
+          no-loc:
+            - AssistantsPlanner
           items: []
         - uid: '@microsoft/teams-ai.preview.AssistantsPlannerOptions'
           name: AssistantsPlannerOptions
+          no-loc:
+            - AssistantsPlannerOptions
           items: []
     - uid: '@microsoft/teams-ai.Prompt'
       name: Prompt
+      no-loc:
+        - Prompt
       items: []
     - uid: '@microsoft/teams-ai.PromptChunk'
       name: PromptChunk
+      no-loc:
+        - PromptChunk
       items: []
     - uid: '@microsoft/teams-ai.PromptCompletionModel'
       name: PromptCompletionModel
+      no-loc:
+        - PromptCompletionModel
       items: []
     - uid: '@microsoft/teams-ai.PromptCompletionModelBeforeCompletionEvent'
       name: PromptCompletionModelBeforeCompletionEvent
+      no-loc:
+        - PromptCompletionModelBeforeCompletionEvent
       items: []
     - uid: '@microsoft/teams-ai.PromptCompletionModelChunkReceivedEvent'
       name: PromptCompletionModelChunkReceivedEvent
+      no-loc:
+        - PromptCompletionModelChunkReceivedEvent
       items: []
     - uid: '@microsoft/teams-ai.PromptCompletionModelEmitter'
       name: PromptCompletionModelEmitter
+      no-loc:
+        - PromptCompletionModelEmitter
       items: []
     - uid: '@microsoft/teams-ai.PromptCompletionModelEvents'
       name: PromptCompletionModelEvents
+      no-loc:
+        - PromptCompletionModelEvents
       items: []
     - uid: '@microsoft/teams-ai.PromptCompletionModelResponseReceivedEvent'
       name: PromptCompletionModelResponseReceivedEvent
+      no-loc:
+        - PromptCompletionModelResponseReceivedEvent
       items: []
     - uid: '@microsoft/teams-ai.PromptFunction'
       name: PromptFunction
+      no-loc:
+        - PromptFunction
       items: []
     - uid: '@microsoft/teams-ai.PromptFunctions'
       name: PromptFunctions
+      no-loc:
+        - PromptFunctions
       items: []
     - uid: '@microsoft/teams-ai.PromptManager'
       name: PromptManager
+      no-loc:
+        - PromptManager
       items: []
     - uid: '@microsoft/teams-ai.PromptManagerOptions'
       name: PromptManagerOptions
+      no-loc:
+        - PromptManagerOptions
       items: []
     - uid: '@microsoft/teams-ai.PromptResponseValidator'
       name: PromptResponseValidator
+      no-loc:
+        - PromptResponseValidator
       items: []
     - uid: '@microsoft/teams-ai.PromptSection'
       name: PromptSection
+      no-loc:
+        - PromptSection
       items: []
     - uid: '@microsoft/teams-ai.PromptSectionBase'
       name: PromptSectionBase
+      no-loc:
+        - PromptSectionBase
       items: []
     - uid: '@microsoft/teams-ai.PromptTemplate'
       name: PromptTemplate
+      no-loc:
+        - PromptTemplate
       items: []
     - uid: '@microsoft/teams-ai.PromptTemplateConfig'
       name: PromptTemplateConfig
+      no-loc:
+        - PromptTemplateConfig
       items: []
     - uid: '@microsoft/teams-ai.Query'
       name: Query
+      no-loc:
+        - Query
       items: []
     - uid: '@microsoft/teams-ai.RenderedPromptSection'
       name: RenderedPromptSection
+      no-loc:
+        - RenderedPromptSection
       items: []
     - uid: '@microsoft/teams-ai.ReturnTypeOfMethod'
       name: ReturnTypeOfMethod
+      no-loc:
+        - ReturnTypeOfMethod
       items: []
     - uid: '@microsoft/teams-ai.ReturnTypeOfMethodIfExists'
       name: ReturnTypeOfMethodIfExists
+      no-loc:
+        - ReturnTypeOfMethodIfExists
       items: []
     - uid: '@microsoft/teams-ai.RouteHandler'
       name: RouteHandler
+      no-loc:
+        - RouteHandler
       items: []
     - uid: '@microsoft/teams-ai.RouteSelector'
       name: RouteSelector
+      no-loc:
+        - RouteSelector
       items: []
     - uid: '@microsoft/teams-ai.Selector'
       name: Selector
+      no-loc:
+        - Selector
       items: []
     - uid: '@microsoft/teams-ai.SequenceAugmentation'
       name: SequenceAugmentation
+      no-loc:
+        - SequenceAugmentation
       items: []
     - uid: '@microsoft/teams-ai.SignInResponse'
       name: SignInResponse
+      no-loc:
+        - SignInResponse
       items: []
     - uid: '@microsoft/teams-ai.SignInStatus'
       name: SignInStatus
+      no-loc:
+        - SignInStatus
       items: []
     - uid: '@microsoft/teams-ai.StreamingResponse'
       name: StreamingResponse
+      no-loc:
+        - StreamingResponse
       items: []
     - uid: '@microsoft/teams-ai.StrictBroadcast'
       name: StrictBroadcast
+      no-loc:
+        - StrictBroadcast
       items: []
     - uid: '@microsoft/teams-ai.StrictEventEmitter'
       name: StrictEventEmitter
+      no-loc:
+        - StrictEventEmitter
       items: []
     - uid: '@microsoft/teams-ai.SystemMessage'
       name: SystemMessage
+      no-loc:
+        - SystemMessage
       items: []
     - uid: '@microsoft/teams-ai.TaskModuleInvokeNames'
       name: TaskModuleInvokeNames
+      no-loc:
+        - TaskModuleInvokeNames
       items: []
     - uid: '@microsoft/teams-ai.TaskModules'
       name: TaskModules
+      no-loc:
+        - TaskModules
       items: []
     - uid: '@microsoft/teams-ai.TaskModulesOptions'
       name: TaskModulesOptions
+      no-loc:
+        - TaskModulesOptions
       items: []
     - uid: '@microsoft/teams-ai.TeamsAdapter'
       name: TeamsAdapter
+      no-loc:
+        - TeamsAdapter
       items: []
     - uid: '@microsoft/teams-ai.TeamsAttachmentDownloader'
       name: TeamsAttachmentDownloader
+      no-loc:
+        - TeamsAttachmentDownloader
       items: []
     - uid: '@microsoft/teams-ai.TeamsAttachmentDownloaderOptions'
       name: TeamsAttachmentDownloaderOptions
+      no-loc:
+        - TeamsAttachmentDownloaderOptions
       items: []
     - uid: '@microsoft/teams-ai.TeamsMessageEvents'
       name: TeamsMessageEvents
+      no-loc:
+        - TeamsMessageEvents
       items: []
     - uid: '@microsoft/teams-ai.TemplateSection'
       name: TemplateSection
+      no-loc:
+        - TemplateSection
       items: []
     - uid: '@microsoft/teams-ai.TestModel'
       name: TestModel
+      no-loc:
+        - TestModel
       items: []
     - uid: '@microsoft/teams-ai.TextContentPart'
       name: TextContentPart
+      no-loc:
+        - TextContentPart
       items: []
     - uid: '@microsoft/teams-ai.TextDataSource'
       name: TextDataSource
+      no-loc:
+        - TextDataSource
       items: []
     - uid: '@microsoft/teams-ai.TextSection'
       name: TextSection
+      no-loc:
+        - TextSection
       items: []
     - uid: '@microsoft/teams-ai.Tokenizer'
       name: Tokenizer
+      no-loc:
+        - Tokenizer
       items: []
     - uid: '@microsoft/teams-ai.ToolsAugmentation'
       name: ToolsAugmentation
+      no-loc:
+        - ToolsAugmentation
       items: []
     - uid: '@microsoft/teams-ai.TurnEvents'
       name: TurnEvents
+      no-loc:
+        - TurnEvents
       items: []
     - uid: '@microsoft/teams-ai.TurnState'
       name: TurnState
+      no-loc:
+        - TurnState
       items: []
     - uid: '@microsoft/teams-ai.TurnStateEntry'
       name: TurnStateEntry
+      no-loc:
+        - TurnStateEntry
       items: []
     - uid: '@microsoft/teams-ai.TypeRecord'
       name: TypeRecord
+      no-loc:
+        - TypeRecord
       items: []
     - uid: '@microsoft/teams-ai.UserInputMessage'
       name: UserInputMessage
+      no-loc:
+        - UserInputMessage
       items: []
     - uid: '@microsoft/teams-ai.UserMessage'
       name: UserMessage
+      no-loc:
+        - UserMessage
       items: []
     - uid: '@microsoft/teams-ai.Utilities'
       name: Utilities
+      no-loc:
+        - Utilities
       items: []
     - uid: '@microsoft/teams-ai.ValidatedChatCompletionAction'
       name: ValidatedChatCompletionAction
+      no-loc:
+        - ValidatedChatCompletionAction
       items: []
     - uid: '@microsoft/teams-ai.Validation'
       name: Validation
+      no-loc:
+        - Validation
       items: []
     - uid: '@microsoft/teams-ai.VoidKeys'
       name: VoidKeys
+      no-loc:
+        - VoidKeys
       items: []
 - name: '@microsoft/teams-js'
+  no-loc:
+    - '@microsoft/teams-js'
   items:
     - name: Overview
       uid: '@microsoft/teams-js'
     - uid: '@microsoft/teams-js.ActionInfo'
       name: ActionInfo
+      no-loc:
+        - ActionInfo
       items: []
     - uid: '@microsoft/teams-js.ActionObjectType'
       name: ActionObjectType
+      no-loc:
+        - ActionObjectType
       items: []
     - uid: '@microsoft/teams-js.AdaptiveCardDialogInfo'
       name: AdaptiveCardDialogInfo
+      no-loc:
+        - AdaptiveCardDialogInfo
       items: []
     - uid: '@microsoft/teams-js.AdaptiveCardVersion'
       name: AdaptiveCardVersion
+      no-loc:
+        - AdaptiveCardVersion
       items: []
     - uid: '@microsoft/teams-js.addEventListnerFunctionType'
       name: addEventListnerFunctionType
+      no-loc:
+        - addEventListnerFunctionType
       items: []
     - name: app
+      no-loc:
+        - app
       items:
         - name: Overview
           uid: '@microsoft/teams-js.app'
         - uid: '@microsoft/teams-js.app.AppHostInfo'
           name: AppHostInfo
+          no-loc:
+            - AppHostInfo
           items: []
         - uid: '@microsoft/teams-js.app.AppInfo'
           name: AppInfo
+          no-loc:
+            - AppInfo
           items: []
         - uid: '@microsoft/teams-js.app.ChannelInfo'
           name: ChannelInfo
+          no-loc:
+            - ChannelInfo
           items: []
         - uid: '@microsoft/teams-js.app.ChatInfo'
           name: ChatInfo
+          no-loc:
+            - ChatInfo
           items: []
         - uid: '@microsoft/teams-js.app.Context'
           name: Context
+          no-loc:
+            - Context
           items: []
         - uid: '@microsoft/teams-js.app.ExpectedFailureReason'
           name: ExpectedFailureReason
+          no-loc:
+            - ExpectedFailureReason
           items: []
         - uid: '@microsoft/teams-js.app.FailedReason'
           name: FailedReason
+          no-loc:
+            - FailedReason
           items: []
         - uid: '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
           name: HostToAppPerformanceMetricsHandler
+          no-loc:
+            - HostToAppPerformanceMetricsHandler
           items: []
         - uid: '@microsoft/teams-js.app.IExpectedFailureRequest'
           name: IExpectedFailureRequest
+          no-loc:
+            - IExpectedFailureRequest
           items: []
         - uid: '@microsoft/teams-js.app.IFailedRequest'
           name: IFailedRequest
+          no-loc:
+            - IFailedRequest
           items: []
         - name: lifecycle
+          no-loc:
+            - lifecycle
           items:
             - name: Overview
               uid: '@microsoft/teams-js.app.lifecycle'
             - uid: >-
                 @microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandlerFunctionType
               name: registerBeforeSuspendOrTerminateHandlerFunctionType
+              no-loc:
+                - registerBeforeSuspendOrTerminateHandlerFunctionType
               items: []
             - uid: >-
                 @microsoft/teams-js.app.lifecycle.registerOnResumeHandlerFunctionType
               name: registerOnResumeHandlerFunctionType
+              no-loc:
+                - registerOnResumeHandlerFunctionType
               items: []
         - uid: '@microsoft/teams-js.app.MeetingInfo'
           name: MeetingInfo
+          no-loc:
+            - MeetingInfo
           items: []
         - uid: '@microsoft/teams-js.app.NotifySuccessResponse'
           name: NotifySuccessResponse
+          no-loc:
+            - NotifySuccessResponse
           items: []
         - uid: '@microsoft/teams-js.app.PageInfo'
           name: PageInfo
+          no-loc:
+            - PageInfo
           items: []
         - uid: '@microsoft/teams-js.app.SharePointSiteInfo'
           name: SharePointSiteInfo
+          no-loc:
+            - SharePointSiteInfo
           items: []
         - uid: '@microsoft/teams-js.app.TeamInfo'
           name: TeamInfo
+          no-loc:
+            - TeamInfo
           items: []
         - uid: '@microsoft/teams-js.app.TenantInfo'
           name: TenantInfo
+          no-loc:
+            - TenantInfo
           items: []
         - uid: '@microsoft/teams-js.app.themeHandler'
           name: themeHandler
+          no-loc:
+            - themeHandler
           items: []
         - uid: '@microsoft/teams-js.app.UserInfo'
           name: UserInfo
+          no-loc:
+            - UserInfo
           items: []
     - uid: '@microsoft/teams-js.AppId'
       name: AppId
+      no-loc:
+        - AppId
       items: []
     - uid: '@microsoft/teams-js.appInitialization'
       name: appInitialization
+      no-loc:
+        - appInitialization
       items: []
     - name: appInstallDialog
+      no-loc:
+        - appInstallDialog
       items:
         - name: Overview
           uid: '@microsoft/teams-js.appInstallDialog'
         - uid: '@microsoft/teams-js.appInstallDialog.OpenAppInstallDialogParams'
           name: OpenAppInstallDialogParams
+          no-loc:
+            - OpenAppInstallDialogParams
           items: []
     - name: authentication
+      no-loc:
+        - authentication
       items:
         - name: Overview
           uid: '@microsoft/teams-js.authentication'
         - uid: '@microsoft/teams-js.authentication.AuthenticateParameters'
           name: AuthenticateParameters
+          no-loc:
+            - AuthenticateParameters
           items: []
         - uid: '@microsoft/teams-js.authentication.AuthenticatePopUpParameters'
           name: AuthenticatePopUpParameters
+          no-loc:
+            - AuthenticatePopUpParameters
           items: []
         - uid: '@microsoft/teams-js.authentication.AuthTokenRequest'
           name: AuthTokenRequest
+          no-loc:
+            - AuthTokenRequest
           items: []
         - uid: '@microsoft/teams-js.authentication.AuthTokenRequestParameters'
           name: AuthTokenRequestParameters
+          no-loc:
+            - AuthTokenRequestParameters
           items: []
         - uid: '@microsoft/teams-js.authentication.LegacyCallBacks'
           name: LegacyCallBacks
+          no-loc:
+            - LegacyCallBacks
           items: []
     - name: barCode
+      no-loc:
+        - barCode
       items:
         - name: Overview
           uid: '@microsoft/teams-js.barCode'
         - uid: '@microsoft/teams-js.barCode.BarCodeConfig'
           name: BarCodeConfig
+          no-loc:
+            - BarCodeConfig
           items: []
     - uid: '@microsoft/teams-js.BaseActionObject'
       name: BaseActionObject
+      no-loc:
+        - BaseActionObject
       items: []
     - uid: '@microsoft/teams-js.BotAdaptiveCardDialogInfo'
       name: BotAdaptiveCardDialogInfo
+      no-loc:
+        - BotAdaptiveCardDialogInfo
       items: []
     - uid: '@microsoft/teams-js.BotUrlDialogInfo'
       name: BotUrlDialogInfo
+      no-loc:
+        - BotUrlDialogInfo
       items: []
     - name: calendar
+      no-loc:
+        - calendar
       items:
         - name: Overview
           uid: '@microsoft/teams-js.calendar'
         - uid: '@microsoft/teams-js.calendar.ComposeMeetingParams'
           name: ComposeMeetingParams
+          no-loc:
+            - ComposeMeetingParams
           items: []
         - uid: '@microsoft/teams-js.calendar.OpenCalendarItemParams'
           name: OpenCalendarItemParams
+          no-loc:
+            - OpenCalendarItemParams
           items: []
     - name: call
+      no-loc:
+        - call
       items:
         - name: Overview
           uid: '@microsoft/teams-js.call'
         - uid: '@microsoft/teams-js.call.CallModalities'
           name: CallModalities
+          no-loc:
+            - CallModalities
           items: []
         - uid: '@microsoft/teams-js.call.StartCallParams'
           name: StartCallParams
+          no-loc:
+            - StartCallParams
           items: []
     - uid: '@microsoft/teams-js.callbackFunctionType'
       name: callbackFunctionType
+      no-loc:
+        - callbackFunctionType
       items: []
     - uid: '@microsoft/teams-js.ChannelType'
       name: ChannelType
+      no-loc:
+        - ChannelType
       items: []
     - name: chat
+      no-loc:
+        - chat
       items:
         - name: Overview
           uid: '@microsoft/teams-js.chat'
         - uid: '@microsoft/teams-js.chat.OpenGroupChatRequest'
           name: OpenGroupChatRequest
+          no-loc:
+            - OpenGroupChatRequest
           items: []
         - uid: '@microsoft/teams-js.chat.OpenSingleChatRequest'
           name: OpenSingleChatRequest
+          no-loc:
+            - OpenSingleChatRequest
           items: []
     - uid: '@microsoft/teams-js.ChildAppWindow'
       name: ChildAppWindow
+      no-loc:
+        - ChildAppWindow
       items: []
     - uid: '@microsoft/teams-js.clipboard'
       name: clipboard
+      no-loc:
+        - clipboard
       items: []
     - uid: '@microsoft/teams-js.Context'
       name: Context
+      no-loc:
+        - Context
       items: []
     - name: copilot
+      no-loc:
+        - copilot
       items:
         - name: Overview
           uid: '@microsoft/teams-js.copilot'
         - uid: '@microsoft/teams-js.copilot.view'
           name: view
+          no-loc:
+            - view
           items: []
     - uid: '@microsoft/teams-js.DeepLinkParameters'
       name: DeepLinkParameters
+      no-loc:
+        - DeepLinkParameters
       items: []
     - name: dialog
+      no-loc:
+        - dialog
       items:
         - name: Overview
           uid: '@microsoft/teams-js.dialog'
         - name: adaptiveCard
+          no-loc:
+            - adaptiveCard
           items:
             - name: Overview
               uid: '@microsoft/teams-js.dialog.adaptiveCard'
             - uid: '@microsoft/teams-js.dialog.adaptiveCard.bot'
               name: bot
+              no-loc:
+                - bot
               items: []
         - uid: '@microsoft/teams-js.dialog.DialogSubmitHandler'
           name: DialogSubmitHandler
+          no-loc:
+            - DialogSubmitHandler
           items: []
         - uid: '@microsoft/teams-js.dialog.ISdkResponse'
           name: ISdkResponse
+          no-loc:
+            - ISdkResponse
           items: []
         - uid: '@microsoft/teams-js.dialog.PostMessageChannel'
           name: PostMessageChannel
+          no-loc:
+            - PostMessageChannel
           items: []
         - uid: '@microsoft/teams-js.dialog.update'
           name: update
+          no-loc:
+            - update
           items: []
         - name: url
+          no-loc:
+            - url
           items:
             - name: Overview
               uid: '@microsoft/teams-js.dialog.url'
             - uid: '@microsoft/teams-js.dialog.url.bot'
               name: bot
+              no-loc:
+                - bot
               items: []
             - uid: '@microsoft/teams-js.dialog.url.parentCommunication'
               name: parentCommunication
+              no-loc:
+                - parentCommunication
               items: []
     - uid: '@microsoft/teams-js.DialogDimension'
       name: DialogDimension
+      no-loc:
+        - DialogDimension
       items: []
     - uid: '@microsoft/teams-js.DialogInfo'
       name: DialogInfo
+      no-loc:
+        - DialogInfo
       items: []
     - uid: '@microsoft/teams-js.DialogSize'
       name: DialogSize
+      no-loc:
+        - DialogSize
       items: []
     - uid: '@microsoft/teams-js.EmailAddress'
       name: EmailAddress
+      no-loc:
+        - EmailAddress
       items: []
     - uid: '@microsoft/teams-js.ErrorCode'
       name: ErrorCode
+      no-loc:
+        - ErrorCode
       items: []
     - uid: '@microsoft/teams-js.executeDeepLinkOnCompleteFunctionType'
       name: executeDeepLinkOnCompleteFunctionType
+      no-loc:
+        - executeDeepLinkOnCompleteFunctionType
       items: []
     - uid: '@microsoft/teams-js.externalAppAuthenticationForCEA'
       name: externalAppAuthenticationForCEA
+      no-loc:
+        - externalAppAuthenticationForCEA
       items: []
     - uid: '@microsoft/teams-js.FileOpenPreference'
       name: FileOpenPreference
+      no-loc:
+        - FileOpenPreference
       items: []
     - uid: '@microsoft/teams-js.FrameContext'
       name: FrameContext
+      no-loc:
+        - FrameContext
       items: []
     - uid: '@microsoft/teams-js.FrameContexts'
       name: FrameContexts
+      no-loc:
+        - FrameContexts
       items: []
     - uid: '@microsoft/teams-js.FrameInfo'
       name: FrameInfo
+      no-loc:
+        - FrameInfo
       items: []
     - name: geoLocation
+      no-loc:
+        - geoLocation
       items:
         - name: Overview
           uid: '@microsoft/teams-js.geoLocation'
         - uid: '@microsoft/teams-js.geoLocation.Location'
           name: Location
+          no-loc:
+            - Location
           items: []
         - uid: '@microsoft/teams-js.geoLocation.map'
           name: map
+          no-loc:
+            - map
           items: []
     - uid: '@microsoft/teams-js.getContextCallbackFunctionType'
       name: getContextCallbackFunctionType
+      no-loc:
+        - getContextCallbackFunctionType
       items: []
     - uid: '@microsoft/teams-js.getTabInstancesCallbackFunctionType'
       name: getTabInstancesCallbackFunctionType
+      no-loc:
+        - getTabInstancesCallbackFunctionType
       items: []
     - uid: '@microsoft/teams-js.HostClientType'
       name: HostClientType
+      no-loc:
+        - HostClientType
       items: []
     - uid: '@microsoft/teams-js.HostName'
       name: HostName
+      no-loc:
+        - HostName
       items: []
     - uid: '@microsoft/teams-js.HostToAppPerformanceMetrics'
       name: HostToAppPerformanceMetrics
+      no-loc:
+        - HostToAppPerformanceMetrics
       items: []
     - uid: '@microsoft/teams-js.IAppWindow'
       name: IAppWindow
+      no-loc:
+        - IAppWindow
       items: []
     - uid: '@microsoft/teams-js.ISerializable'
       name: ISerializable
+      no-loc:
+        - ISerializable
       items: []
     - name: liveShare
+      no-loc:
+        - liveShare
       items:
         - name: Overview
           uid: '@microsoft/teams-js.liveShare'
         - uid: '@microsoft/teams-js.liveShare.LiveShareHost'
           name: LiveShareHost
+          no-loc:
+            - LiveShareHost
           items: []
     - uid: '@microsoft/teams-js.LoadContext'
       name: LoadContext
+      no-loc:
+        - LoadContext
       items: []
     - uid: '@microsoft/teams-js.LocaleInfo'
       name: LocaleInfo
+      no-loc:
+        - LocaleInfo
       items: []
     - name: location
+      no-loc:
+        - location
       items:
         - name: Overview
           uid: '@microsoft/teams-js.location'
         - uid: '@microsoft/teams-js.location.getLocationCallbackFunctionType'
           name: getLocationCallbackFunctionType
+          no-loc:
+            - getLocationCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.location.Location'
           name: Location
+          no-loc:
+            - Location
           items: []
         - uid: '@microsoft/teams-js.location.LocationProps'
           name: LocationProps
+          no-loc:
+            - LocationProps
           items: []
         - uid: '@microsoft/teams-js.location.showLocationCallbackFunctionType'
           name: showLocationCallbackFunctionType
+          no-loc:
+            - showLocationCallbackFunctionType
           items: []
     - uid: '@microsoft/teams-js.logs'
       name: logs
+      no-loc:
+        - logs
       items: []
     - uid: '@microsoft/teams-js.M365ContentAction'
       name: M365ContentAction
+      no-loc:
+        - M365ContentAction
       items: []
     - name: mail
+      no-loc:
+        - mail
       items:
         - name: Overview
           uid: '@microsoft/teams-js.mail'
         - uid: '@microsoft/teams-js.mail.ComposeMailParams'
           name: ComposeMailParams
+          no-loc:
+            - ComposeMailParams
           items: []
         - uid: '@microsoft/teams-js.mail.ComposeMailType'
           name: ComposeMailType
+          no-loc:
+            - ComposeMailType
           items: []
         - uid: '@microsoft/teams-js.mail.ComposeNewParams'
           name: ComposeNewParams
+          no-loc:
+            - ComposeNewParams
           items: []
         - uid: '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
           name: ComposeReplyOrForwardParams
+          no-loc:
+            - ComposeReplyOrForwardParams
           items: []
         - name: handoff
+          no-loc:
+            - handoff
           items:
             - name: Overview
               uid: '@microsoft/teams-js.mail.handoff'
             - uid: '@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff'
               name: ComposeMailParamsWithHandoff
+              no-loc:
+                - ComposeMailParamsWithHandoff
               items: []
         - uid: '@microsoft/teams-js.mail.OpenMailItemParams'
           name: OpenMailItemParams
+          no-loc:
+            - OpenMailItemParams
           items: []
     - name: media
+      no-loc:
+        - media
       items:
         - name: Overview
           uid: '@microsoft/teams-js.media'
         - uid: '@microsoft/teams-js.media.AssembleAttachment'
           name: AssembleAttachment
+          no-loc:
+            - AssembleAttachment
           items: []
         - uid: '@microsoft/teams-js.media.AudioProps'
           name: AudioProps
+          no-loc:
+            - AudioProps
           items: []
         - uid: '@microsoft/teams-js.media.BarCodeConfig'
           name: BarCodeConfig
+          no-loc:
+            - BarCodeConfig
           items: []
         - uid: '@microsoft/teams-js.media.CameraStartMode'
           name: CameraStartMode
+          no-loc:
+            - CameraStartMode
           items: []
         - uid: '@microsoft/teams-js.media.captureImageCallbackFunctionType'
           name: captureImageCallbackFunctionType
+          no-loc:
+            - captureImageCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.media.errorCallbackFunctionType'
           name: errorCallbackFunctionType
+          no-loc:
+            - errorCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.media.File'
           name: File
+          no-loc:
+            - File
           items: []
         - uid: '@microsoft/teams-js.media.FileFormat'
           name: FileFormat
+          no-loc:
+            - FileFormat
           items: []
         - uid: '@microsoft/teams-js.media.getMediaCallbackFunctionType'
           name: getMediaCallbackFunctionType
+          no-loc:
+            - getMediaCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.media.ImageOutputFormats'
           name: ImageOutputFormats
+          no-loc:
+            - ImageOutputFormats
           items: []
         - uid: '@microsoft/teams-js.media.ImageProps'
           name: ImageProps
+          no-loc:
+            - ImageProps
           items: []
         - uid: '@microsoft/teams-js.media.ImageUri'
           name: ImageUri
+          no-loc:
+            - ImageUri
           items: []
         - uid: '@microsoft/teams-js.media.ImageUriType'
           name: ImageUriType
+          no-loc:
+            - ImageUriType
           items: []
         - uid: '@microsoft/teams-js.media.Media'
           name: Media
+          no-loc:
+            - Media
           items: []
         - uid: '@microsoft/teams-js.media.MediaChunk'
           name: MediaChunk
+          no-loc:
+            - MediaChunk
           items: []
         - uid: '@microsoft/teams-js.media.MediaControllerEvent'
           name: MediaControllerEvent
+          no-loc:
+            - MediaControllerEvent
           items: []
         - uid: '@microsoft/teams-js.media.MediaInputs'
           name: MediaInputs
+          no-loc:
+            - MediaInputs
           items: []
         - uid: '@microsoft/teams-js.media.MediaResult'
           name: MediaResult
+          no-loc:
+            - MediaResult
           items: []
         - uid: '@microsoft/teams-js.media.MediaType'
           name: MediaType
+          no-loc:
+            - MediaType
           items: []
         - uid: '@microsoft/teams-js.media.scanBarCodeCallbackFunctionType'
           name: scanBarCodeCallbackFunctionType
+          no-loc:
+            - scanBarCodeCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.media.selectMediaCallbackFunctionType'
           name: selectMediaCallbackFunctionType
+          no-loc:
+            - selectMediaCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.media.Source'
           name: Source
+          no-loc:
+            - Source
           items: []
         - uid: '@microsoft/teams-js.media.VideoAndImageProps'
           name: VideoAndImageProps
+          no-loc:
+            - VideoAndImageProps
           items: []
         - uid: '@microsoft/teams-js.media.VideoController'
           name: VideoController
+          no-loc:
+            - VideoController
           items: []
         - uid: '@microsoft/teams-js.media.VideoControllerCallback'
           name: VideoControllerCallback
+          no-loc:
+            - VideoControllerCallback
           items: []
         - uid: '@microsoft/teams-js.media.VideoProps'
           name: VideoProps
+          no-loc:
+            - VideoProps
           items: []
     - name: meeting
+      no-loc:
+        - meeting
       items:
         - name: Overview
           uid: '@microsoft/teams-js.meeting'
         - uid: '@microsoft/teams-js.meeting.errorCallbackFunctionType'
           name: errorCallbackFunctionType
+          no-loc:
+            - errorCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.meeting.EventActionSource'
           name: EventActionSource
+          no-loc:
+            - EventActionSource
           items: []
         - uid: '@microsoft/teams-js.meeting.getAppContentCallbackFunctionType'
           name: getAppContentCallbackFunctionType
+          no-loc:
+            - getAppContentCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.meeting.getAppContentStageCallbackFunctionType'
           name: getAppContentStageCallbackFunctionType
+          no-loc:
+            - getAppContentStageCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.meeting.getLiveStreamStateCallbackFunctionType'
           name: getLiveStreamStateCallbackFunctionType
+          no-loc:
+            - getLiveStreamStateCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingCapabilities'
           name: IAppContentStageSharingCapabilities
+          no-loc:
+            - IAppContentStageSharingCapabilities
           items: []
         - uid: '@microsoft/teams-js.meeting.IAppContentStageSharingState'
           name: IAppContentStageSharingState
+          no-loc:
+            - IAppContentStageSharingState
           items: []
         - uid: '@microsoft/teams-js.meeting.IShareAppContentToStageOptions'
           name: IShareAppContentToStageOptions
+          no-loc:
+            - IShareAppContentToStageOptions
           items: []
         - uid: '@microsoft/teams-js.meeting.ISpeakingState'
           name: ISpeakingState
+          no-loc:
+            - ISpeakingState
           items: []
         - uid: '@microsoft/teams-js.meeting.JoinMeetingParams'
           name: JoinMeetingParams
+          no-loc:
+            - JoinMeetingParams
           items: []
         - uid: '@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType'
           name: liveStreamErrorCallbackFunctionType
+          no-loc:
+            - liveStreamErrorCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.meeting.LiveStreamState'
           name: LiveStreamState
+          no-loc:
+            - LiveStreamState
           items: []
         - uid: >-
             @microsoft/teams-js.meeting.registerLiveStreamChangedHandlerFunctionType
           name: registerLiveStreamChangedHandlerFunctionType
+          no-loc:
+            - registerLiveStreamChangedHandlerFunctionType
           items: []
         - uid: >-
             @microsoft/teams-js.meeting.registerSpeakingStateChangeHandlerFunctionType
           name: registerSpeakingStateChangeHandlerFunctionType
+          no-loc:
+            - registerSpeakingStateChangeHandlerFunctionType
           items: []
         - uid: '@microsoft/teams-js.meeting.SharingProtocol'
           name: SharingProtocol
+          no-loc:
+            - SharingProtocol
           items: []
     - name: menus
+      no-loc:
+        - menus
       items:
         - name: Overview
           uid: '@microsoft/teams-js.menus'
         - uid: '@microsoft/teams-js.menus.ActionMenuParameters'
           name: ActionMenuParameters
+          no-loc:
+            - ActionMenuParameters
           items: []
         - uid: '@microsoft/teams-js.menus.DisplayMode'
           name: DisplayMode
+          no-loc:
+            - DisplayMode
           items: []
     - uid: '@microsoft/teams-js.nestedAppAuth'
       name: nestedAppAuth
+      no-loc:
+        - nestedAppAuth
       items: []
     - uid: '@microsoft/teams-js.nestedAppAuthBridge'
       name: nestedAppAuthBridge
+      no-loc:
+        - nestedAppAuthBridge
       items: []
     - uid: '@microsoft/teams-js.onCompleteFunctionType'
       name: onCompleteFunctionType
+      no-loc:
+        - onCompleteFunctionType
       items: []
     - uid: '@microsoft/teams-js.onCompleteHandlerFunctionType'
       name: onCompleteHandlerFunctionType
+      no-loc:
+        - onCompleteHandlerFunctionType
       items: []
     - name: pages
+      no-loc:
+        - pages
       items:
         - name: Overview
           uid: '@microsoft/teams-js.pages'
         - uid: '@microsoft/teams-js.pages.appButton'
           name: appButton
+          no-loc:
+            - appButton
           items: []
         - uid: '@microsoft/teams-js.pages.AppNavigationParameters'
           name: AppNavigationParameters
+          no-loc:
+            - AppNavigationParameters
           items: []
         - uid: '@microsoft/teams-js.pages.backButtonHandlerFunctionType'
           name: backButtonHandlerFunctionType
+          no-loc:
+            - backButtonHandlerFunctionType
           items: []
         - uid: '@microsoft/teams-js.pages.backStack'
           name: backStack
+          no-loc:
+            - backStack
           items: []
         - name: config
+          no-loc:
+            - config
           items:
             - name: Overview
               uid: '@microsoft/teams-js.pages.config'
             - uid: '@microsoft/teams-js.pages.config.RemoveEvent'
               name: RemoveEvent
+              no-loc:
+                - RemoveEvent
               items: []
             - uid: '@microsoft/teams-js.pages.config.SaveEvent'
               name: SaveEvent
+              no-loc:
+                - SaveEvent
               items: []
             - uid: '@microsoft/teams-js.pages.config.SaveParameters'
               name: SaveParameters
+              no-loc:
+                - SaveParameters
               items: []
         - name: currentApp
+          no-loc:
+            - currentApp
           items:
             - name: Overview
               uid: '@microsoft/teams-js.pages.currentApp'
             - uid: '@microsoft/teams-js.pages.currentApp.NavigateWithinAppParams'
               name: NavigateWithinAppParams
+              no-loc:
+                - NavigateWithinAppParams
               items: []
         - uid: '@microsoft/teams-js.pages.fullScreenChangeFunctionType'
           name: fullScreenChangeFunctionType
+          no-loc:
+            - fullScreenChangeFunctionType
           items: []
         - uid: '@microsoft/teams-js.pages.handlerFunctionType'
           name: handlerFunctionType
+          no-loc:
+            - handlerFunctionType
           items: []
         - uid: '@microsoft/teams-js.pages.InstanceConfig'
           name: InstanceConfig
+          no-loc:
+            - InstanceConfig
           items: []
         - uid: '@microsoft/teams-js.pages.NavigateToAppParams'
           name: NavigateToAppParams
+          no-loc:
+            - NavigateToAppParams
           items: []
         - uid: '@microsoft/teams-js.pages.removeEventType'
           name: removeEventType
+          no-loc:
+            - removeEventType
           items: []
         - uid: '@microsoft/teams-js.pages.ReturnFocusType'
           name: ReturnFocusType
+          no-loc:
+            - ReturnFocusType
           items: []
         - uid: '@microsoft/teams-js.pages.saveEventType'
           name: saveEventType
+          no-loc:
+            - saveEventType
           items: []
         - uid: '@microsoft/teams-js.pages.tabs'
           name: tabs
+          no-loc:
+            - tabs
           items: []
     - uid: '@microsoft/teams-js.ParentAppWindow'
       name: ParentAppWindow
+      no-loc:
+        - ParentAppWindow
       items: []
     - name: people
+      no-loc:
+        - people
       items:
         - name: Overview
           uid: '@microsoft/teams-js.people'
         - uid: '@microsoft/teams-js.people.PeoplePickerInputs'
           name: PeoplePickerInputs
+          no-loc:
+            - PeoplePickerInputs
           items: []
         - uid: '@microsoft/teams-js.people.PeoplePickerResult'
           name: PeoplePickerResult
+          no-loc:
+            - PeoplePickerResult
           items: []
         - uid: '@microsoft/teams-js.people.selectPeopleCallbackFunctionType'
           name: selectPeopleCallbackFunctionType
+          no-loc:
+            - selectPeopleCallbackFunctionType
           items: []
     - name: profile
+      no-loc:
+        - profile
       items:
         - name: Overview
           uid: '@microsoft/teams-js.profile'
         - uid: '@microsoft/teams-js.profile.Modality'
           name: Modality
+          no-loc:
+            - Modality
           items: []
         - uid: '@microsoft/teams-js.profile.Persona'
           name: Persona
+          no-loc:
+            - Persona
           items: []
         - uid: '@microsoft/teams-js.profile.PersonaIdentifiers'
           name: PersonaIdentifiers
+          no-loc:
+            - PersonaIdentifiers
           items: []
         - uid: '@microsoft/teams-js.profile.ShowProfileRequest'
           name: ShowProfileRequest
+          no-loc:
+            - ShowProfileRequest
           items: []
         - uid: '@microsoft/teams-js.profile.TriggerType'
           name: TriggerType
+          no-loc:
+            - TriggerType
           items: []
     - uid: '@microsoft/teams-js.registerBackButtonHandlerFunctionType'
       name: registerBackButtonHandlerFunctionType
+      no-loc:
+        - registerBackButtonHandlerFunctionType
       items: []
     - uid: '@microsoft/teams-js.registerFullScreenHandlerFunctionType'
       name: registerFullScreenHandlerFunctionType
+      no-loc:
+        - registerFullScreenHandlerFunctionType
       items: []
     - uid: '@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType'
       name: registerOnThemeChangeHandlerFunctionType
+      no-loc:
+        - registerOnThemeChangeHandlerFunctionType
       items: []
     - uid: '@microsoft/teams-js.RenderingSurfaces'
       name: RenderingSurfaces
+      no-loc:
+        - RenderingSurfaces
       items: []
     - uid: '@microsoft/teams-js.ResumeContext'
       name: ResumeContext
+      no-loc:
+        - ResumeContext
       items: []
     - uid: '@microsoft/teams-js.RuntimeFeatureFlags'
       name: RuntimeFeatureFlags
+      no-loc:
+        - RuntimeFeatureFlags
       items: []
     - uid: '@microsoft/teams-js.SdkError'
       name: SdkError
+      no-loc:
+        - SdkError
       items: []
     - name: search
+      no-loc:
+        - search
       items:
         - name: Overview
           uid: '@microsoft/teams-js.search'
         - uid: '@microsoft/teams-js.search.SearchQuery'
           name: SearchQuery
+          no-loc:
+            - SearchQuery
           items: []
         - uid: '@microsoft/teams-js.search.SearchQueryHandler'
           name: SearchQueryHandler
+          no-loc:
+            - SearchQueryHandler
           items: []
     - uid: '@microsoft/teams-js.secondaryBrowser'
       name: secondaryBrowser
+      no-loc:
+        - secondaryBrowser
       items: []
     - uid: '@microsoft/teams-js.SecondaryId'
       name: SecondaryId
+      no-loc:
+        - SecondaryId
       items: []
     - uid: '@microsoft/teams-js.SecondaryM365ContentIdName'
       name: SecondaryM365ContentIdName
+      no-loc:
+        - SecondaryM365ContentIdName
       items: []
     - name: settings
+      no-loc:
+        - settings
       items:
         - name: Overview
           uid: '@microsoft/teams-js.settings'
         - uid: '@microsoft/teams-js.settings.getSettingsCallbackFunctionType'
           name: getSettingsCallbackFunctionType
+          no-loc:
+            - getSettingsCallbackFunctionType
           items: []
         - uid: '@microsoft/teams-js.settings.registerOnRemoveHandlerFunctionType'
           name: registerOnRemoveHandlerFunctionType
+          no-loc:
+            - registerOnRemoveHandlerFunctionType
           items: []
         - uid: '@microsoft/teams-js.settings.registerOnSaveHandlerFunctionType'
           name: registerOnSaveHandlerFunctionType
+          no-loc:
+            - registerOnSaveHandlerFunctionType
           items: []
         - uid: '@microsoft/teams-js.settings.RemoveEvent'
           name: RemoveEvent
+          no-loc:
+            - RemoveEvent
           items: []
         - uid: '@microsoft/teams-js.settings.SaveEvent'
           name: SaveEvent
+          no-loc:
+            - SaveEvent
           items: []
         - uid: '@microsoft/teams-js.settings.SaveParameters'
           name: SaveParameters
+          no-loc:
+            - SaveParameters
           items: []
         - uid: '@microsoft/teams-js.settings.setSettingsOnCompleteFunctionType'
           name: setSettingsOnCompleteFunctionType
+          no-loc:
+            - setSettingsOnCompleteFunctionType
           items: []
         - uid: '@microsoft/teams-js.settings.Settings'
           name: Settings
+          no-loc:
+            - Settings
           items: []
     - uid: '@microsoft/teams-js.ShareDeepLinkParameters'
       name: ShareDeepLinkParameters
+      no-loc:
+        - ShareDeepLinkParameters
       items: []
     - name: sharing
+      no-loc:
+        - sharing
       items:
         - name: Overview
           uid: '@microsoft/teams-js.sharing'
         - name: history
+          no-loc:
+            - history
           items:
             - name: Overview
               uid: '@microsoft/teams-js.sharing.history'
             - uid: '@microsoft/teams-js.sharing.history.IContentResponse'
               name: IContentResponse
+              no-loc:
+                - IContentResponse
               items: []
         - uid: '@microsoft/teams-js.sharing.IShareRequest'
           name: IShareRequest
+          no-loc:
+            - IShareRequest
           items: []
         - uid: '@microsoft/teams-js.sharing.IShareRequestContentType'
           name: IShareRequestContentType
+          no-loc:
+            - IShareRequestContentType
           items: []
         - uid: '@microsoft/teams-js.sharing.IURLContent'
           name: IURLContent
+          no-loc:
+            - IURLContent
           items: []
         - uid: '@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType'
           name: shareWebContentCallbackFunctionType
+          no-loc:
+            - shareWebContentCallbackFunctionType
+          items: []
+    - name: shortcutRelay
+      no-loc:
+        - shortcutRelay
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.shortcutRelay'
+        - uid: '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler'
+          name: OverridableShortcutHandler
+          no-loc:
+            - OverridableShortcutHandler
+          items: []
+        - uid: '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandlerData'
+          name: OverridableShortcutHandlerData
+          no-loc:
+            - OverridableShortcutHandlerData
           items: []
     - name: sidePanelInterfaces
+      no-loc:
+        - sidePanelInterfaces
       items:
         - name: Overview
           uid: '@microsoft/teams-js.sidePanelInterfaces'
         - uid: '@microsoft/teams-js.sidePanelInterfaces.EmailContent'
           name: EmailContent
+          no-loc:
+            - EmailContent
           items: []
     - name: stageView
+      no-loc:
+        - stageView
       items:
         - name: Overview
           uid: '@microsoft/teams-js.stageView'
         - uid: '@microsoft/teams-js.stageView.self'
           name: self
+          no-loc:
+            - self
           items: []
         - uid: '@microsoft/teams-js.stageView.StageViewOpenMode'
           name: StageViewOpenMode
+          no-loc:
+            - StageViewOpenMode
           items: []
         - uid: '@microsoft/teams-js.stageView.StageViewParams'
           name: StageViewParams
+          no-loc:
+            - StageViewParams
           items: []
     - uid: '@microsoft/teams-js.store'
       name: store
+      no-loc:
+        - store
       items: []
     - uid: '@microsoft/teams-js.TabInformation'
       name: TabInformation
+      no-loc:
+        - TabInformation
       items: []
     - uid: '@microsoft/teams-js.TabInstance'
       name: TabInstance
+      no-loc:
+        - TabInstance
       items: []
     - uid: '@microsoft/teams-js.TabInstanceParameters'
       name: TabInstanceParameters
+      no-loc:
+        - TabInstanceParameters
       items: []
     - uid: '@microsoft/teams-js.TaskInfo'
       name: TaskInfo
+      no-loc:
+        - TaskInfo
       items: []
     - name: tasks
+      no-loc:
+        - tasks
       items:
         - name: Overview
           uid: '@microsoft/teams-js.tasks'
         - uid: '@microsoft/teams-js.tasks.startTaskSubmitHandlerFunctionType'
           name: startTaskSubmitHandlerFunctionType
+          no-loc:
+            - startTaskSubmitHandlerFunctionType
           items: []
     - uid: '@microsoft/teams-js.TeamInformation'
       name: TeamInformation
+      no-loc:
+        - TeamInformation
       items: []
     - name: teamsCore
+      no-loc:
+        - teamsCore
       items:
         - name: Overview
           uid: '@microsoft/teams-js.teamsCore'
         - uid: '@microsoft/teams-js.teamsCore.readyToUnloadFunctionType'
           name: readyToUnloadFunctionType
+          no-loc:
+            - readyToUnloadFunctionType
           items: []
         - uid: >-
             @microsoft/teams-js.teamsCore.registerBeforeUnloadHandlerFunctionType
           name: registerBeforeUnloadHandlerFunctionType
+          no-loc:
+            - registerBeforeUnloadHandlerFunctionType
           items: []
         - uid: '@microsoft/teams-js.teamsCore.registerOnLoadHandlerFunctionType'
           name: registerOnLoadHandlerFunctionType
+          no-loc:
+            - registerOnLoadHandlerFunctionType
           items: []
     - uid: '@microsoft/teams-js.TeamType'
       name: TeamType
+      no-loc:
+        - TeamType
       items: []
     - name: thirdPartyCloudStorage
+      no-loc:
+        - thirdPartyCloudStorage
       items:
         - name: Overview
           uid: '@microsoft/teams-js.thirdPartyCloudStorage'
         - uid: '@microsoft/teams-js.thirdPartyCloudStorage.AssembleAttachment'
           name: AssembleAttachment
+          no-loc:
+            - AssembleAttachment
           items: []
         - uid: '@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback'
           name: DragAndDropFileCallback
+          no-loc:
+            - DragAndDropFileCallback
           items: []
         - uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileChunk'
           name: FileChunk
+          no-loc:
+            - FileChunk
           items: []
         - uid: '@microsoft/teams-js.thirdPartyCloudStorage.FileResult'
           name: FileResult
+          no-loc:
+            - FileResult
           items: []
         - uid: '@microsoft/teams-js.thirdPartyCloudStorage.FilesFor3PStorage'
           name: FilesFor3PStorage
+          no-loc:
+            - FilesFor3PStorage
           items: []
     - uid: '@microsoft/teams-js.UrlDialogInfo'
       name: UrlDialogInfo
+      no-loc:
+        - UrlDialogInfo
       items: []
     - uid: '@microsoft/teams-js.UserTeamRole'
       name: UserTeamRole
+      no-loc:
+        - UserTeamRole
       items: []
     - uid: '@microsoft/teams-js.ValidatedSafeString'
       name: ValidatedSafeString
+      no-loc:
+        - ValidatedSafeString
       items: []
     - name: videoEffects
+      no-loc:
+        - videoEffects
       items:
         - name: Overview
           uid: '@microsoft/teams-js.videoEffects'
         - uid: '@microsoft/teams-js.videoEffects.EffectChangeType'
           name: EffectChangeType
+          no-loc:
+            - EffectChangeType
           items: []
         - uid: '@microsoft/teams-js.videoEffects.EffectFailureReason'
           name: EffectFailureReason
+          no-loc:
+            - EffectFailureReason
           items: []
         - uid: '@microsoft/teams-js.videoEffects.notifyErrorFunctionType'
           name: notifyErrorFunctionType
+          no-loc:
+            - notifyErrorFunctionType
           items: []
         - uid: >-
             @microsoft/teams-js.videoEffects.notifyVideoFrameProcessedFunctionType
           name: notifyVideoFrameProcessedFunctionType
+          no-loc:
+            - notifyVideoFrameProcessedFunctionType
           items: []
         - uid: '@microsoft/teams-js.videoEffects.RegisterForVideoFrameParameters'
           name: RegisterForVideoFrameParameters
+          no-loc:
+            - RegisterForVideoFrameParameters
           items: []
         - uid: '@microsoft/teams-js.videoEffects.VideoBufferData'
           name: VideoBufferData
+          no-loc:
+            - VideoBufferData
           items: []
         - uid: '@microsoft/teams-js.videoEffects.VideoBufferHandler'
           name: VideoBufferHandler
+          no-loc:
+            - VideoBufferHandler
           items: []
         - uid: '@microsoft/teams-js.videoEffects.VideoEffectCallback'
           name: VideoEffectCallback
+          no-loc:
+            - VideoEffectCallback
           items: []
         - uid: '@microsoft/teams-js.videoEffects.VideoFrame'
           name: VideoFrame
+          no-loc:
+            - VideoFrame
           items: []
         - uid: '@microsoft/teams-js.videoEffects.VideoFrameConfig'
           name: VideoFrameConfig
+          no-loc:
+            - VideoFrameConfig
           items: []
         - uid: '@microsoft/teams-js.videoEffects.VideoFrameData'
           name: VideoFrameData
+          no-loc:
+            - VideoFrameData
           items: []
         - uid: '@microsoft/teams-js.videoEffects.VideoFrameFormat'
           name: VideoFrameFormat
+          no-loc:
+            - VideoFrameFormat
           items: []
         - uid: '@microsoft/teams-js.videoEffects.VideoFrameHandler'
           name: VideoFrameHandler
+          no-loc:
+            - VideoFrameHandler
           items: []
     - uid: '@microsoft/teams-js.webStorage'
       name: webStorage
+      no-loc:
+        - webStorage
       items: []
 - name: '@microsoft/teamsfx'
+  no-loc:
+    - '@microsoft/teamsfx'
   items:
     - name: Overview
       uid: '@microsoft/teamsfx'
     - uid: '@microsoft/teamsfx.AdaptiveCardResponse'
       name: AdaptiveCardResponse
+      no-loc:
+        - AdaptiveCardResponse
       items: []
     - name: AgentBuilderCloudAdapter
+      no-loc:
+        - AgentBuilderCloudAdapter
       items:
         - name: Overview
           uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter'
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.BotSsoExecutionDialog'
           name: BotSsoExecutionDialog
+          no-loc:
+            - BotSsoExecutionDialog
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CardActionBot'
           name: CardActionBot
+          no-loc:
+            - CardActionBot
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.Channel'
           name: Channel
+          no-loc:
+            - Channel
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.CommandBot'
           name: CommandBot
+          no-loc:
+            - CommandBot
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationBot'
           name: ConversationBot
+          no-loc:
+            - ConversationBot
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.ConversationOptions'
           name: ConversationOptions
+          no-loc:
+            - ConversationOptions
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.Member'
           name: Member
+          no-loc:
+            - Member
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationBot'
           name: NotificationBot
+          no-loc:
+            - NotificationBot
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.NotificationOptions'
           name: NotificationOptions
+          no-loc:
+            - NotificationOptions
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.SearchScope'
           name: SearchScope
+          no-loc:
+            - SearchScope
           items: []
         - uid: '@microsoft/teamsfx.AgentBuilderCloudAdapter.TeamsBotInstallation'
           name: TeamsBotInstallation
+          no-loc:
+            - TeamsBotInstallation
           items: []
     - uid: '@microsoft/teamsfx.ApiKeyLocation'
       name: ApiKeyLocation
+      no-loc:
+        - ApiKeyLocation
       items: []
     - uid: '@microsoft/teamsfx.ApiKeyProvider'
       name: ApiKeyProvider
+      no-loc:
+        - ApiKeyProvider
       items: []
     - uid: '@microsoft/teamsfx.AppCredential'
       name: AppCredential
+      no-loc:
+        - AppCredential
       items: []
     - uid: '@microsoft/teamsfx.AppCredentialAuthConfig'
       name: AppCredentialAuthConfig
+      no-loc:
+        - AppCredentialAuthConfig
       items: []
     - uid: '@microsoft/teamsfx.AuthProvider'
       name: AuthProvider
+      no-loc:
+        - AuthProvider
       items: []
     - uid: '@microsoft/teamsfx.AxiosInstance'
       name: AxiosInstance
+      no-loc:
+        - AxiosInstance
       items: []
     - uid: '@microsoft/teamsfx.BasicAuthProvider'
       name: BasicAuthProvider
+      no-loc:
+        - BasicAuthProvider
       items: []
     - uid: '@microsoft/teamsfx.BearerTokenAuthProvider'
       name: BearerTokenAuthProvider
+      no-loc:
+        - BearerTokenAuthProvider
       items: []
     - uid: '@microsoft/teamsfx.BotSsoConfig'
       name: BotSsoConfig
+      no-loc:
+        - BotSsoConfig
       items: []
     - uid: '@microsoft/teamsfx.BotSsoExecutionActivityHandler'
       name: BotSsoExecutionActivityHandler
+      no-loc:
+        - BotSsoExecutionActivityHandler
       items: []
     - uid: '@microsoft/teamsfx.BotSsoExecutionDialog'
       name: BotSsoExecutionDialog
+      no-loc:
+        - BotSsoExecutionDialog
       items: []
     - uid: '@microsoft/teamsfx.BotSsoExecutionDialogHandler'
       name: BotSsoExecutionDialogHandler
+      no-loc:
+        - BotSsoExecutionDialogHandler
       items: []
     - uid: '@microsoft/teamsfx.CardActionOptions'
       name: CardActionOptions
+      no-loc:
+        - CardActionOptions
       items: []
     - uid: '@microsoft/teamsfx.CertificateAuthProvider'
       name: CertificateAuthProvider
+      no-loc:
+        - CertificateAuthProvider
       items: []
     - uid: '@microsoft/teamsfx.CommandMessage'
       name: CommandMessage
+      no-loc:
+        - CommandMessage
       items: []
     - uid: '@microsoft/teamsfx.CommandOptions'
       name: CommandOptions
+      no-loc:
+        - CommandOptions
       items: []
     - uid: '@microsoft/teamsfx.ConversationReferenceStore'
       name: ConversationReferenceStore
+      no-loc:
+        - ConversationReferenceStore
       items: []
     - uid: '@microsoft/teamsfx.ConversationReferenceStoreAddOptions'
       name: ConversationReferenceStoreAddOptions
+      no-loc:
+        - ConversationReferenceStoreAddOptions
       items: []
     - uid: '@microsoft/teamsfx.ErrorCode'
       name: ErrorCode
+      no-loc:
+        - ErrorCode
       items: []
     - uid: '@microsoft/teamsfx.ErrorWithCode'
       name: ErrorWithCode
+      no-loc:
+        - ErrorWithCode
       items: []
     - uid: '@microsoft/teamsfx.GetTeamsUserTokenOptions'
       name: GetTeamsUserTokenOptions
+      no-loc:
+        - GetTeamsUserTokenOptions
       items: []
     - uid: '@microsoft/teamsfx.InvokeResponseErrorCode'
       name: InvokeResponseErrorCode
+      no-loc:
+        - InvokeResponseErrorCode
       items: []
     - uid: '@microsoft/teamsfx.InvokeResponseFactory'
       name: InvokeResponseFactory
+      no-loc:
+        - InvokeResponseFactory
       items: []
     - uid: '@microsoft/teamsfx.LogFunction'
       name: LogFunction
+      no-loc:
+        - LogFunction
       items: []
     - uid: '@microsoft/teamsfx.Logger'
       name: Logger
+      no-loc:
+        - Logger
       items: []
     - uid: '@microsoft/teamsfx.LogLevel'
       name: LogLevel
+      no-loc:
+        - LogLevel
       items: []
     - uid: '@microsoft/teamsfx.MessageBuilder'
       name: MessageBuilder
+      no-loc:
+        - MessageBuilder
       items: []
     - uid: '@microsoft/teamsfx.MessageExtensionTokenResponse'
       name: MessageExtensionTokenResponse
+      no-loc:
+        - MessageExtensionTokenResponse
       items: []
     - uid: '@microsoft/teamsfx.NotificationTarget'
       name: NotificationTarget
+      no-loc:
+        - NotificationTarget
       items: []
     - uid: '@microsoft/teamsfx.NotificationTargetType'
       name: NotificationTargetType
+      no-loc:
+        - NotificationTargetType
       items: []
     - uid: '@microsoft/teamsfx.OnBehalfOfCredentialAuthConfig'
       name: OnBehalfOfCredentialAuthConfig
+      no-loc:
+        - OnBehalfOfCredentialAuthConfig
       items: []
     - uid: '@microsoft/teamsfx.OnBehalfOfUserCredential'
       name: OnBehalfOfUserCredential
+      no-loc:
+        - OnBehalfOfUserCredential
       items: []
     - uid: '@microsoft/teamsfx.PagedData'
       name: PagedData
+      no-loc:
+        - PagedData
       items: []
     - uid: '@microsoft/teamsfx.TeamsBotSsoPrompt'
       name: TeamsBotSsoPrompt
+      no-loc:
+        - TeamsBotSsoPrompt
       items: []
     - uid: '@microsoft/teamsfx.TeamsBotSsoPromptSettings'
       name: TeamsBotSsoPromptSettings
+      no-loc:
+        - TeamsBotSsoPromptSettings
       items: []
     - uid: '@microsoft/teamsfx.TeamsBotSsoPromptTokenResponse'
       name: TeamsBotSsoPromptTokenResponse
+      no-loc:
+        - TeamsBotSsoPromptTokenResponse
       items: []
     - uid: '@microsoft/teamsfx.TeamsFxAdaptiveCardActionHandler'
       name: TeamsFxAdaptiveCardActionHandler
+      no-loc:
+        - TeamsFxAdaptiveCardActionHandler
       items: []
     - uid: '@microsoft/teamsfx.TeamsFxBotCommandHandler'
       name: TeamsFxBotCommandHandler
+      no-loc:
+        - TeamsFxBotCommandHandler
       items: []
     - uid: '@microsoft/teamsfx.TeamsFxBotSsoCommandHandler'
       name: TeamsFxBotSsoCommandHandler
+      no-loc:
+        - TeamsFxBotSsoCommandHandler
       items: []
     - uid: '@microsoft/teamsfx.TeamsUserCredential'
       name: TeamsUserCredential
+      no-loc:
+        - TeamsUserCredential
       items: []
     - uid: '@microsoft/teamsfx.TeamsUserCredentialAuthConfig'
       name: TeamsUserCredentialAuthConfig
+      no-loc:
+        - TeamsUserCredentialAuthConfig
       items: []
     - uid: '@microsoft/teamsfx.TriggerPatterns'
       name: TriggerPatterns
+      no-loc:
+        - TriggerPatterns
       items: []
     - uid: '@microsoft/teamsfx.UserInfo'
       name: UserInfo
+      no-loc:
+        - UserInfo
       items: []
 - name: '@microsoft/teamsfx-react'
   items:

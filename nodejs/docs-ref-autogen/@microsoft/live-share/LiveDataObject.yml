@@ -720,7 +720,7 @@ inheritedMethods:
         type: number
     inheritanceDescription: <b>Inherited From</b> DataObject.getMaxListeners
   - name: getMaxListeners(EventEmitter<DefaultEventMap> | EventTarget)
-    uid: '@microsoft/live-share.LiveDataObject.getMaxListeners'
+    uid: '@microsoft/live-share.LiveDataObject.getMaxListeners_1'
     package: '@microsoft/live-share'
     summary: >-
       Returns the currently set max amount of listeners.
@@ -795,7 +795,7 @@ inheritedMethods:
         type: Promise&lt;void&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.initializeInternal
   - name: listenerCount(EventEmitter<DefaultEventMap>, string | symbol)
-    uid: '@microsoft/live-share.LiveDataObject.listenerCount'
+    uid: '@microsoft/live-share.LiveDataObject.listenerCount_1'
     package: '@microsoft/live-share'
     summary: >-
       A class method that returns the number of listeners for the given
@@ -1332,7 +1332,7 @@ inheritedMethods:
         type: <xref uid="@microsoft/live-share.LiveDataObject" />&lt;I&gt;
     inheritanceDescription: <b>Inherited From</b> DataObject.setMaxListeners
   - name: setMaxListeners(number, (EventEmitter<DefaultEventMap> | EventTarget)[])
-    uid: '@microsoft/live-share.LiveDataObject.setMaxListeners'
+    uid: '@microsoft/live-share.LiveDataObject.setMaxListeners_1'
     package: '@microsoft/live-share'
     summary: |-
       ```js

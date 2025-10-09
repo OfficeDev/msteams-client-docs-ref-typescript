@@ -5,7 +5,10 @@ package: '@microsoft/teamsfx'
 summary: Provider that handles API Key authentication
 fullName: ApiKeyProvider
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 constructors:
   - name: ApiKeyProvider(string, string, ApiKeyLocation)
@@ -13,7 +16,11 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: ''
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         new ApiKeyProvider(keyName: string, keyValue: string, keyLocation:
@@ -34,7 +41,11 @@ methods:
     package: '@microsoft/teamsfx'
     summary: Adds authentication info to http requests
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: >-
         function AddAuthenticationInfo(config: AxiosRequestConfig<any>):

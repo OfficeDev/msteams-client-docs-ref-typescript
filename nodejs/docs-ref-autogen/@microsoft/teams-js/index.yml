@@ -182,6 +182,8 @@ typeAliases:
   - '@microsoft/teams-js.settings.Settings'
   - '@microsoft/teams-js.sharing.IShareRequestContentType'
   - '@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType'
+  - '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler'
+  - '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandlerData'
   - '@microsoft/teams-js.sidePanelInterfaces.EmailContent'
   - '@microsoft/teams-js.tasks.startTaskSubmitHandlerFunctionType'
   - '@microsoft/teams-js.teamsCore.readyToUnloadFunctionType'

@@ -1,0 +1,79 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.shortcutRelay'
+name: shortcutRelay
+summary: >-
+  Allows host shortcuts to function in your application by forwarding keyboard
+  shortcuts to the host.
+
+
+  This functionality is in Beta.
+type: module
+typeAliases:
+  - '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler'
+  - '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandlerData'
+package: '@microsoft/teams-js'
+previewState: beta
+functions:
+  - name: enableShortcutRelayCapability()
+    uid: '@microsoft/teams-js.shortcutRelay.enableShortcutRelayCapability'
+    package: '@microsoft/teams-js'
+    summary: Enable capability to support host shortcuts.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function enableShortcutRelayCapability(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: isSupported()
+    uid: '@microsoft/teams-js.shortcutRelay.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if shortcutRelay capability is supported by the host
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether the shortcutRelay capability is supported
+        type: boolean
+  - name: resetIsShortcutRelayCapabilityEnabled()
+    uid: '@microsoft/teams-js.shortcutRelay.resetIsShortcutRelayCapabilityEnabled'
+    package: '@microsoft/teams-js'
+    summary: |-
+      Reset the state of the shortcut relay capability.
+      This is useful for tests to ensure a clean state.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: function resetIsShortcutRelayCapabilityEnabled()
+  - name: setOverridableShortcutHandler(undefined | OverridableShortcutHandler)
+    uid: '@microsoft/teams-js.shortcutRelay.setOverridableShortcutHandler'
+    package: '@microsoft/teams-js'
+    summary: |-
+      Replace the current overridable-shortcut handler.
+
+      • Pass `undefined` to remove an existing handler.
+      • Returns the previous handler so callers can restore it if needed.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function setOverridableShortcutHandler(handler: undefined |
+        OverridableShortcutHandler): OverridableShortcutHandler | undefined
+      parameters:
+        - id: handler
+          type: >-
+            undefined | <xref
+            uid="@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler"
+            />
+          description: ''
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler" />
+          | undefined

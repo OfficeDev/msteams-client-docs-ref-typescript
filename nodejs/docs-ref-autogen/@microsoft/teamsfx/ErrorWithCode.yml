@@ -5,7 +5,10 @@ package: '@microsoft/teamsfx'
 summary: Error class with code and message thrown by the SDK.
 fullName: ErrorWithCode
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: class
 constructors:
   - name: ErrorWithCode(string, ErrorCode)
@@ -13,7 +16,11 @@ constructors:
     package: '@microsoft/teamsfx'
     summary: Constructor of ErrorWithCode.
     remarks: ''
-    isDeprecated: false
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      This package will be deprecated by 2026-07. Please use [Microsoft 365
+      Agents SDK](https://www.npmjs.com/package/@microsoft/agents-hosting)
+      instead.
     syntax:
       content: 'new ErrorWithCode(message?: string, code?: ErrorCode)'
       parameters:

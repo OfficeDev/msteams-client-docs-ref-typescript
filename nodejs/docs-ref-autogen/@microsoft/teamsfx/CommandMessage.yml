@@ -5,7 +5,10 @@ package: '@microsoft/teamsfx'
 summary: Interface for a command message that can handled in a command handler.
 fullName: CommandMessage
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: interface
 properties:
   - name: matches

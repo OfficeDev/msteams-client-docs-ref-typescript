@@ -7,7 +7,10 @@ summary: >-
   return a response.
 fullName: TeamsFxBotCommandHandler
 remarks: ''
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: interface
 properties:
   - name: triggerPatterns

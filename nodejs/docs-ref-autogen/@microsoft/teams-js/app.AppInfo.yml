@@ -87,6 +87,20 @@ properties:
       return:
         description: ''
         type: string
+  - name: messageId
+    uid: '@microsoft/teams-js.app.AppInfo.messageId'
+    package: '@microsoft/teams-js'
+    summary: |-
+      The ID of the message from which this task module was launched.
+      This is only available in task modules launched from bot cards.
+    fullName: messageId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'messageId?: string'
+      return:
+        description: ''
+        type: string
   - name: osLocaleInfo
     uid: '@microsoft/teams-js.app.AppInfo.osLocaleInfo'
     package: '@microsoft/teams-js'

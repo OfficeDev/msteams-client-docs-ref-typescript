@@ -32,7 +32,10 @@ remarks: >-
   BotSsoExecutionActivityHandler, please refer
   DefaultBotSsoExecutionActivityHandler class source code:
   https://aka.ms/teamsfx-default-sso-execution-activity-handler
-isDeprecated: false
+isDeprecated: true
+customDeprecatedMessage: >-
+  This package will be deprecated by 2026-07. Please use [Microsoft 365 Agents
+  SDK](https://www.npmjs.com/package/@microsoft/agents-hosting) instead.
 type: interface
 methods:
   - name: addCommand(BotSsoExecutionDialogHandler, TriggerPatterns)
@@ -61,7 +64,7 @@ methods:
         - id: triggerPatterns
           type: <xref uid="@microsoft/teamsfx.TriggerPatterns" />
           description: The trigger pattern
-  - name: handleTeamsSigninTokenExchange(TurnContext, SigninStateVerificationQuery)
+  - name: 'handleTeamsSigninTokenExchange(TurnContext, { state?: string })'
     uid: >-
       @microsoft/teamsfx.BotSsoExecutionActivityHandler.handleTeamsSigninTokenExchange
     package: '@microsoft/teamsfx'
@@ -73,24 +76,21 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function handleTeamsSigninTokenExchange(context: TurnContext, query:
-        SigninStateVerificationQuery): Promise<void>
+        function handleTeamsSigninTokenExchange(context: TurnContext, query: {
+        state?: string }): Promise<void>
       parameters:
         - id: context
           type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: A context object for this turn.
         - id: query
-          type: >-
-            <xref
-            uid="@microsoft/agents-hosting-teams.SigninStateVerificationQuery"
-            />
+          type: '{ state?: string }'
           description: >-
             Signin state (part of signin action auth flow) verification invoke
             query
       return:
         description: A promise that represents the work queued.
         type: Promise&lt;void&gt;
-  - name: handleTeamsSigninVerifyState(TurnContext, SigninStateVerificationQuery)
+  - name: 'handleTeamsSigninVerifyState(TurnContext, { state?: string })'
     uid: >-
       @microsoft/teamsfx.BotSsoExecutionActivityHandler.handleTeamsSigninVerifyState
     package: '@microsoft/teamsfx'
@@ -102,17 +102,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function handleTeamsSigninVerifyState(context: TurnContext, query:
-        SigninStateVerificationQuery): Promise<void>
+        function handleTeamsSigninVerifyState(context: TurnContext, query: {
+        state?: string }): Promise<void>
       parameters:
         - id: context
           type: <xref uid="@microsoft/agents-hosting.TurnContext" />
           description: A context object for this turn.
         - id: query
-          type: >-
-            <xref
-            uid="@microsoft/agents-hosting-teams.SigninStateVerificationQuery"
-            />
+          type: '{ state?: string }'
           description: >-
             Signin state (part of signin action auth flow) verification invoke
             query.
