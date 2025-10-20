@@ -1,3 +1,5 @@
+- name: 'App manifest'
+  href: '/microsoft-365/extensibility/schema'
 - name: '@microsoft/live-share'
   no-loc:
     - '@microsoft/live-share'
