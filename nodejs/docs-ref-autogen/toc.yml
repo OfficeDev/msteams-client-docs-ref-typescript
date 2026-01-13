@@ -3169,3 +3169,19 @@
       no-loc:
         - UserInfo
       items: []
+- name: '@microsoft/teamsfx-react'
+  items:
+    - name: Overview
+      uid: '@microsoft/teamsfx-react'
+    - uid: '@microsoft/teamsfx-react.BaseDashboard'
+      name: BaseDashboard
+      items: []
+    - uid: '@microsoft/teamsfx-react.BaseWidget'
+      name: BaseWidget
+      items: []
+    - uid: '@microsoft/teamsfx-react.IWidgetClassNames'
+      name: IWidgetClassNames
+      items: []
+    - uid: '@microsoft/teamsfx-react.TeamsContextWithCredential'
+      name: TeamsContextWithCredential
+      items: []
