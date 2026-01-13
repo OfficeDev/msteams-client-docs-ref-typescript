@@ -322,6 +322,30 @@ properties:
       return:
         description: ''
         type: string
+  - name: hostAncestors
+    uid: '@microsoft/teams-js.Context.hostAncestors'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: hostAncestors
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of TeamsJS v2.0.0, please use
+      [app.Context.app.host.ancestors](xref:@microsoft/teams-js.app.AppHostInfo.ancestors)
+      instead
+
+      An array representing the hierarchy of ancestor hosts that the app is
+      embedded inside of.
+
+      The array is ordered from immediate parent to root host.
+
+      For example, if Bizchat is running in Calendar in Teams, this would be
+      ["Calendar", "Teams"].
+    syntax:
+      content: 'hostAncestors?: string[]'
+      return:
+        description: ''
+        type: string[]
   - name: hostClientType
     uid: '@microsoft/teams-js.Context.hostClientType'
     package: '@microsoft/teams-js'

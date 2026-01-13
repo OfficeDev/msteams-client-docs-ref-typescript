@@ -18,12 +18,13 @@ interfaces:
   - '@microsoft/teams-js.app.TeamInfo'
   - '@microsoft/teams-js.app.TenantInfo'
   - '@microsoft/teams-js.app.UserInfo'
+typeAliases:
+  - '@microsoft/teams-js.app.contextHandler'
+  - '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
+  - '@microsoft/teams-js.app.themeHandler'
 enums:
   - '@microsoft/teams-js.app.ExpectedFailureReason'
   - '@microsoft/teams-js.app.FailedReason'
-typeAliases:
-  - '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
-  - '@microsoft/teams-js.app.themeHandler'
 package: '@microsoft/teams-js'
 functions:
   - name: getContext()
@@ -249,6 +250,20 @@ functions:
           description: >-
             The handler to invoke when the metrics are available on each
             function response.
+  - name: registerOnContextChangeHandler(contextHandler)
+    uid: '@microsoft/teams-js.app.registerOnContextChangeHandler'
+    package: '@microsoft/teams-js'
+    summary: Registers a handler for content (context) changes.
+    remarks: >-
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    isDeprecated: false
+    syntax:
+      content: 'function registerOnContextChangeHandler(handler: contextHandler)'
+      parameters:
+        - id: handler
+          type: <xref uid="@microsoft/teams-js.app.contextHandler" />
+          description: The handler to invoke when the app's content context changes.
   - name: registerOnThemeChangeHandler(themeHandler)
     uid: '@microsoft/teams-js.app.registerOnThemeChangeHandler'
     package: '@microsoft/teams-js'

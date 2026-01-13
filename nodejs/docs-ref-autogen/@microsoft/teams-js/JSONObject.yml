@@ -1,0 +1,9 @@
+### YamlMime:TSType
+name: JSONObject
+uid: '@microsoft/teams-js.JSONObject'
+package: '@microsoft/teams-js'
+summary: Declare generic JSON - serializable structure
+fullName: JSONObject
+remarks: ''
+isDeprecated: false
+type: interface

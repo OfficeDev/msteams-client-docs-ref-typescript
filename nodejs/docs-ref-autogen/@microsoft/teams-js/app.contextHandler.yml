@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: contextHandler
+uid: '@microsoft/teams-js.app.contextHandler'
+package: '@microsoft/teams-js'
+summary: >-
+  This function is passed to registerOnContextChangeHandler. It is called every
+  time the user changes their context.
+fullName: contextHandler
+remarks: ''
+isDeprecated: false
+syntax: |
+  type contextHandler = (context: Context) => void

@@ -1,0 +1,70 @@
+### YamlMime:TSType
+name: IModalOptions
+uid: '@microsoft/teams-js.IModalOptions'
+package: '@microsoft/teams-js'
+summary: Options for requesting a modal dialog
+fullName: IModalOptions
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: '@microsoft/teams-js.IModalOptions.content'
+    package: '@microsoft/teams-js'
+    summary: Inner HTML string inserted into the modal's body
+    fullName: content
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'content: string'
+      return:
+        description: ''
+        type: string
+  - name: height
+    uid: '@microsoft/teams-js.IModalOptions.height'
+    package: '@microsoft/teams-js'
+    summary: Preferred modal height in pixels
+    fullName: height
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'height?: number'
+      return:
+        description: ''
+        type: number
+  - name: id
+    uid: '@microsoft/teams-js.IModalOptions.id'
+    package: '@microsoft/teams-js'
+    summary: Unique identifier for the modal
+    fullName: id
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'id: string'
+      return:
+        description: ''
+        type: string
+  - name: title
+    uid: '@microsoft/teams-js.IModalOptions.title'
+    package: '@microsoft/teams-js'
+    summary: Title at the top of the modal window
+    fullName: title
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'title?: string'
+      return:
+        description: ''
+        type: string
+  - name: width
+    uid: '@microsoft/teams-js.IModalOptions.width'
+    package: '@microsoft/teams-js'
+    summary: Preferred modal width in pixels
+    fullName: width
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'width?: number'
+      return:
+        description: ''
+        type: number

@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: DisplayMode
+uid: '@microsoft/teams-js.DisplayMode'
+package: '@microsoft/teams-js'
+summary: Display mode
+fullName: DisplayMode
+remarks: ''
+isDeprecated: false
+syntax: |
+  type DisplayMode = "pip" | "inline" | "fullscreen"
