@@ -131,3 +131,23 @@ properties:
       return:
         description: ''
         type: string
+  - name: timezone
+    uid: '@microsoft/teams-js.LocaleInfo.timezone'
+    package: '@microsoft/teams-js'
+    summary: |+
+      A string representing the timezone of the user's locale in IANA format
+
+      **Example**
+
+      ```ts
+      'America/Los_Angeles'
+      ```
+
+    fullName: timezone
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timezone?: string'
+      return:
+        description: ''
+        type: string

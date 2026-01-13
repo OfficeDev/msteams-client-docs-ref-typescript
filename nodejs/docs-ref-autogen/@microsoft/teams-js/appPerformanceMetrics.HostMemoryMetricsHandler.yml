@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: HostMemoryMetricsHandler
+uid: '@microsoft/teams-js.appPerformanceMetrics.HostMemoryMetricsHandler'
+package: '@microsoft/teams-js'
+summary: >-
+  This function is passed to registerHostMemoryMetricsHandler. See
+  [HostMemoryMetrics](xref:@microsoft/teams-js.HostMemoryMetrics) to see which
+  metrics are passed to the handler during a certain interval of time.
+fullName: HostMemoryMetricsHandler
+remarks: ''
+isDeprecated: false
+syntax: |
+  type HostMemoryMetricsHandler = (metrics: HostMemoryMetrics) => void

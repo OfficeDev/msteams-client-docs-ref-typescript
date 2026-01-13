@@ -1,0 +1,17 @@
+### YamlMime:TSTypeAlias
+name: HostMemoryMetrics
+uid: '@microsoft/teams-js.HostMemoryMetrics'
+package: '@microsoft/teams-js'
+summary: Memory metrics provided by the host for the app.
+fullName: HostMemoryMetrics
+remarks: ''
+isDeprecated: false
+syntax: |
+  type HostMemoryMetrics = {
+    frameMemoryMetrics: HostToAppFrameMemoryMetrics[]
+    isCached: boolean
+    isPrecached: boolean
+    isSharingProcess: boolean
+    totalFrameCommitSizeKB: number
+    totalFrameWorkingSetSizeKB: number
+  }

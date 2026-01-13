@@ -1470,6 +1470,11 @@
           no-loc:
             - Context
           items: []
+        - uid: '@microsoft/teams-js.app.contextHandler'
+          name: contextHandler
+          no-loc:
+            - contextHandler
+          items: []
         - uid: '@microsoft/teams-js.app.ExpectedFailureReason'
           name: ExpectedFailureReason
           no-loc:
@@ -1573,6 +1578,17 @@
           name: OpenAppInstallDialogParams
           no-loc:
             - OpenAppInstallDialogParams
+          items: []
+    - name: appPerformanceMetrics
+      no-loc:
+        - appPerformanceMetrics
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.appPerformanceMetrics'
+        - uid: '@microsoft/teams-js.appPerformanceMetrics.HostMemoryMetricsHandler'
+          name: HostMemoryMetricsHandler
+          no-loc:
+            - HostMemoryMetricsHandler
           items: []
     - name: authentication
       no-loc:
@@ -1720,6 +1736,11 @@
       no-loc:
         - DeepLinkParameters
       items: []
+    - uid: '@microsoft/teams-js.DeviceType'
+      name: DeviceType
+      no-loc:
+        - DeviceType
+      items: []
     - name: dialog
       no-loc:
         - dialog
@@ -1787,6 +1808,11 @@
       name: DialogSize
       no-loc:
         - DialogSize
+      items: []
+    - uid: '@microsoft/teams-js.DisplayMode'
+      name: DisplayMode
+      no-loc:
+        - DisplayMode
       items: []
     - uid: '@microsoft/teams-js.EmailAddress'
       name: EmailAddress
@@ -1859,10 +1885,20 @@
       no-loc:
         - HostClientType
       items: []
+    - uid: '@microsoft/teams-js.HostMemoryMetrics'
+      name: HostMemoryMetrics
+      no-loc:
+        - HostMemoryMetrics
+      items: []
     - uid: '@microsoft/teams-js.HostName'
       name: HostName
       no-loc:
         - HostName
+      items: []
+    - uid: '@microsoft/teams-js.HostToAppFrameMemoryMetrics'
+      name: HostToAppFrameMemoryMetrics
+      no-loc:
+        - HostToAppFrameMemoryMetrics
       items: []
     - uid: '@microsoft/teams-js.HostToAppPerformanceMetrics'
       name: HostToAppPerformanceMetrics
@@ -1874,10 +1910,55 @@
       no-loc:
         - IAppWindow
       items: []
+    - uid: '@microsoft/teams-js.IModalOptions'
+      name: IModalOptions
+      no-loc:
+        - IModalOptions
+      items: []
+    - uid: '@microsoft/teams-js.IModalResponse'
+      name: IModalResponse
+      no-loc:
+        - IModalResponse
+      items: []
+    - uid: '@microsoft/teams-js.ISecurityPolicy'
+      name: ISecurityPolicy
+      no-loc:
+        - ISecurityPolicy
+      items: []
     - uid: '@microsoft/teams-js.ISerializable'
       name: ISerializable
       no-loc:
         - ISerializable
+      items: []
+    - uid: '@microsoft/teams-js.IToolInput'
+      name: IToolInput
+      no-loc:
+        - IToolInput
+      items: []
+    - uid: '@microsoft/teams-js.IToolOutput'
+      name: IToolOutput
+      no-loc:
+        - IToolOutput
+      items: []
+    - uid: '@microsoft/teams-js.IWidgetContext'
+      name: IWidgetContext
+      no-loc:
+        - IWidgetContext
+      items: []
+    - uid: '@microsoft/teams-js.JSONArray'
+      name: JSONArray
+      no-loc:
+        - JSONArray
+      items: []
+    - uid: '@microsoft/teams-js.JSONObject'
+      name: JSONObject
+      no-loc:
+        - JSONObject
+      items: []
+    - uid: '@microsoft/teams-js.JSONValue'
+      name: JSONValue
+      no-loc:
+        - JSONValue
       items: []
     - name: liveShare
       no-loc:
@@ -2418,6 +2499,16 @@
       no-loc:
         - RuntimeFeatureFlags
       items: []
+    - uid: '@microsoft/teams-js.SafeArea'
+      name: SafeArea
+      no-loc:
+        - SafeArea
+      items: []
+    - uid: '@microsoft/teams-js.SafeAreaInsets'
+      name: SafeAreaInsets
+      no-loc:
+        - SafeAreaInsets
+      items: []
     - uid: '@microsoft/teams-js.SdkError'
       name: SdkError
       no-loc:
@@ -2658,6 +2749,11 @@
       no-loc:
         - TeamType
       items: []
+    - uid: '@microsoft/teams-js.Theme'
+      name: Theme
+      no-loc:
+        - Theme
+      items: []
     - name: thirdPartyCloudStorage
       no-loc:
         - thirdPartyCloudStorage
@@ -2693,6 +2789,11 @@
       name: UrlDialogInfo
       no-loc:
         - UrlDialogInfo
+      items: []
+    - uid: '@microsoft/teams-js.UserAgent'
+      name: UserAgent
+      no-loc:
+        - UserAgent
       items: []
     - uid: '@microsoft/teams-js.UserTeamRole'
       name: UserTeamRole
@@ -3067,20 +3168,4 @@
       name: UserInfo
       no-loc:
         - UserInfo
-      items: []
-- name: '@microsoft/teamsfx-react'
-  items:
-    - name: Overview
-      uid: '@microsoft/teamsfx-react'
-    - uid: '@microsoft/teamsfx-react.BaseDashboard'
-      name: BaseDashboard
-      items: []
-    - uid: '@microsoft/teamsfx-react.BaseWidget'
-      name: BaseWidget
-      items: []
-    - uid: '@microsoft/teamsfx-react.IWidgetClassNames'
-      name: IWidgetClassNames
-      items: []
-    - uid: '@microsoft/teamsfx-react.TeamsContextWithCredential'
-      name: TeamsContextWithCredential
       items: []

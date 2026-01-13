@@ -164,7 +164,7 @@ properties:
       Info about the currently logged in user running the app.
 
       If the current user is not logged in/authenticated (e.g. a meeting app
-      running for an anonymously-joined partcipant) this will be `undefined`.
+      running for an anonymously-joined participant) this will be `undefined`.
     fullName: user
     remarks: ''
     isDeprecated: false

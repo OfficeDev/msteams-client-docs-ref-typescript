@@ -1,0 +1,22 @@
+### YamlMime:TSType
+name: IModalResponse
+uid: '@microsoft/teams-js.IModalResponse'
+package: '@microsoft/teams-js'
+summary: Response from requesting a modal dialog
+fullName: IModalResponse
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: modalElement
+    uid: '@microsoft/teams-js.IModalResponse.modalElement'
+    package: '@microsoft/teams-js'
+    summary: A DOM element representing the modal's root
+    fullName: modalElement
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'modalElement: HTMLElement'
+      return:
+        description: ''
+        type: HTMLElement

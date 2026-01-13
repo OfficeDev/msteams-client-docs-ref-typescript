@@ -1,0 +1,47 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.appPerformanceMetrics'
+name: appPerformanceMetrics
+summary: ''
+type: module
+typeAliases:
+  - '@microsoft/teams-js.appPerformanceMetrics.HostMemoryMetricsHandler'
+package: '@microsoft/teams-js'
+functions:
+  - name: isSupported()
+    uid: '@microsoft/teams-js.appPerformanceMetrics.isSupported'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Indicates whether the app performance metrics capability is supported in
+      the current host.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether the shortcutRelay capability is supported
+        type: boolean
+  - name: registerHostMemoryMetricsHandler(HostMemoryMetricsHandler)
+    uid: '@microsoft/teams-js.appPerformanceMetrics.registerHostMemoryMetricsHandler'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Registers a function to handle memory metrics heartbeat sent from the host
+      periodically.
+    remarks: >-
+      Only one handler can be registered at a time. A subsequent registration
+      replaces an existing registration.
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        function registerHostMemoryMetricsHandler(handler:
+        HostMemoryMetricsHandler)
+      parameters:
+        - id: handler
+          type: >-
+            <xref
+            uid="@microsoft/teams-js.appPerformanceMetrics.HostMemoryMetricsHandler"
+            />
+          description: >-
+            The handler to invoke each time memory metrics heartbeat is received
+            from the host.
