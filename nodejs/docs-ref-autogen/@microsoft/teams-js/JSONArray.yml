@@ -1062,7 +1062,7 @@ inheritedMethods:
       return:
         description: ''
         type: IterableIterator&lt;<xref uid="@microsoft/teams-js.JSONValue" />&gt;
-    inheritanceDescription: <b>Inherited From</b> Array.__@iterator@816
+    inheritanceDescription: <b>Inherited From</b> Array.__@iterator@819
   - name: '[unscopables]()'
     uid: '@microsoft/teams-js.JSONArray.[unscopables]'
     package: '@microsoft/teams-js'
@@ -1081,5 +1081,5 @@ inheritedMethods:
         type: >-
           { copyWithin: boolean, entries: boolean, fill: boolean, find: boolean,
           findIndex: boolean, keys: boolean, values: boolean }
-    inheritanceDescription: <b>Inherited From</b> Array.__@unscopables@1613
+    inheritanceDescription: <b>Inherited From</b> Array.__@unscopables@1616
 extends: Array&lt;<xref uid="@microsoft/teams-js.JSONValue" />&gt;

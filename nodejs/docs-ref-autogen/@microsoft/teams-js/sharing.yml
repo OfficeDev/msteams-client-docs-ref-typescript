@@ -83,3 +83,15 @@ functions:
             uid="@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType"
             />
           description: optional callback
+variables:
+  - name: SharingAPIMessages
+    uid: '@microsoft/teams-js.sharing.SharingAPIMessages'
+    package: '@microsoft/teams-js'
+    summary: Type of message that can be sent or received by the sharing APIs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'SharingAPIMessages: {}'
+      return:
+        description: ''
+        type: '{}'

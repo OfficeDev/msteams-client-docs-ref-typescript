@@ -49,6 +49,174 @@ typeAliases:
   - '@microsoft/live-share-canvas.BrushType'
   - '@microsoft/live-share-canvas.CanvasReferencePoint'
   - '@microsoft/live-share-canvas.EventListener'
+variables:
+  - name: AddPointsEvent
+    uid: '@microsoft/live-share-canvas.AddPointsEvent'
+    package: '@microsoft/live-share-canvas'
+    summary: |-
+      The event emitted by InkingManager when points are added to
+      the current stroke.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'AddPointsEvent: "AddPoints"'
+      return:
+        description: ''
+        type: '"AddPoints"'
+  - name: BasicColors
+    uid: '@microsoft/live-share-canvas.BasicColors'
+    package: '@microsoft/live-share-canvas'
+    summary: Pre-defined basic colors
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        BasicColors: { black: IColor, blue: IColor, gray: IColor, green: IColor,
+        magenta: IColor, purple: IColor, red: IColor, silver: IColor, violet:
+        IColor, white: IColor, yellow: IColor }
+      return:
+        description: ''
+        type: >-
+          { black: IColor, blue: IColor, gray: IColor, green: IColor, magenta:
+          IColor, purple: IColor, red: IColor, silver: IColor, violet: IColor,
+          white: IColor, yellow: IColor }
+  - name: BeginStrokeEvent
+    uid: '@microsoft/live-share-canvas.BeginStrokeEvent'
+    package: '@microsoft/live-share-canvas'
+    summary: The event emitted by InkingManager when a stroke begins.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'BeginStrokeEvent: "BeginStroke"'
+      return:
+        description: ''
+        type: '"BeginStroke"'
+  - name: ClearEvent
+    uid: '@microsoft/live-share-canvas.ClearEvent'
+    package: '@microsoft/live-share-canvas'
+    summary: The event emitted by InkingManager when the canvas is cleared.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ClearEvent: "Clear"'
+      return:
+        description: ''
+        type: '"Clear"'
+  - name: DefaultHighlighterBrush
+    uid: '@microsoft/live-share-canvas.DefaultHighlighterBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: The default highlighter brush.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'DefaultHighlighterBrush: IBrush'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: DefaultLaserPointerBrush
+    uid: '@microsoft/live-share-canvas.DefaultLaserPointerBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: The default laser pointer brush.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'DefaultLaserPointerBrush: IBrush'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/live-share-canvas.IBrush" />
+  - name: DefaultLineBrush
+    uid: '@microsoft/live-share-canvas.DefaultLineBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: The default line brush.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'DefaultLineBrush: Readonly<IBrush>'
+      return:
+        description: ''
+        type: Readonly&lt;<xref uid="@microsoft/live-share-canvas.IBrush" />&gt;
+  - name: DefaultPenBrush
+    uid: '@microsoft/live-share-canvas.DefaultPenBrush'
+    package: '@microsoft/live-share-canvas'
+    summary: The default pen brush.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'DefaultPenBrush: Readonly<IBrush>'
+      return:
+        description: ''
+        type: Readonly&lt;<xref uid="@microsoft/live-share-canvas.IBrush" />&gt;
+  - name: HighlighterColors
+    uid: '@microsoft/live-share-canvas.HighlighterColors'
+    package: '@microsoft/live-share-canvas'
+    summary: Pre-defined highlighter colors
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        HighlighterColors: { Pink: IColor, aqua: IColor, black: IColor, blue:
+        IColor, crimson: IColor, gray: IColor, green: IColor, lavender: IColor,
+        lightGray: IColor, lightGreen: IColor, lime: IColor, orange: IColor,
+        paleBlue: IColor, red: IColor, rose: IColor, yellow: IColor }
+      return:
+        description: ''
+        type: >-
+          { Pink: IColor, aqua: IColor, black: IColor, blue: IColor, crimson:
+          IColor, gray: IColor, green: IColor, lavender: IColor, lightGray:
+          IColor, lightGreen: IColor, lime: IColor, orange: IColor, paleBlue:
+          IColor, red: IColor, rose: IColor, yellow: IColor }
+  - name: PenColors
+    uid: '@microsoft/live-share-canvas.PenColors'
+    package: '@microsoft/live-share-canvas'
+    summary: Pre-defined pen colors
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        PenColors: { black: IColor, darkBlue: IColor, darkGray: IColor, green:
+        IColor, indigo: IColor, lightBlue: IColor, lightGray: IColor,
+        lightGreen: IColor, orange: IColor, pink: IColor, plum: IColor, purple:
+        IColor, red: IColor, skyBlue: IColor, white: IColor, yellow: IColor }
+      return:
+        description: ''
+        type: >-
+          { black: IColor, darkBlue: IColor, darkGray: IColor, green: IColor,
+          indigo: IColor, lightBlue: IColor, lightGray: IColor, lightGreen:
+          IColor, orange: IColor, pink: IColor, plum: IColor, purple: IColor,
+          red: IColor, skyBlue: IColor, white: IColor, yellow: IColor }
+  - name: PointerMovedEvent
+    uid: '@microsoft/live-share-canvas.PointerMovedEvent'
+    package: '@microsoft/live-share-canvas'
+    summary: The event emitted by InkingManager when the pointer moves over the canvas.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'PointerMovedEvent: "PointerMoved"'
+      return:
+        description: ''
+        type: '"PointerMoved"'
+  - name: StrokesAddedEvent
+    uid: '@microsoft/live-share-canvas.StrokesAddedEvent'
+    package: '@microsoft/live-share-canvas'
+    summary: The event emitted by InkingManager when a stroked is added.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'StrokesAddedEvent: "StrokesAdded"'
+      return:
+        description: ''
+        type: '"StrokesAdded"'
+  - name: StrokesRemovedEvent
+    uid: '@microsoft/live-share-canvas.StrokesRemovedEvent'
+    package: '@microsoft/live-share-canvas'
+    summary: The event emitted by InkingManager when a stroked is removed.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'StrokesRemovedEvent: "StrokesRemoved"'
+      return:
+        description: ''
+        type: '"StrokesRemoved"'
 functions:
   - name: combineRects(IRect, IRect)
     uid: '@microsoft/live-share-canvas.combineRects'

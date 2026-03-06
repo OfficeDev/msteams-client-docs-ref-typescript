@@ -13,6 +13,26 @@ typeAliases:
   - '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandlerData'
 package: '@microsoft/teams-js'
 previewState: beta
+variables:
+  - name: DISABLE_SHORTCUT_FORWARDING_ATTRIBUTE
+    uid: '@microsoft/teams-js.shortcutRelay.DISABLE_SHORTCUT_FORWARDING_ATTRIBUTE'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Allow apps to define zones where shortcuts should not be forwarded to the
+      host.
+
+      This is useful for input fields for password where shortcuts should not
+      trigger host actions.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: >-
+        DISABLE_SHORTCUT_FORWARDING_ATTRIBUTE:
+        "data-disable-shortcuts-forwarding"
+      return:
+        description: ''
+        type: '"data-disable-shortcuts-forwarding"'
 functions:
   - name: enableShortcutRelayCapability()
     uid: '@microsoft/teams-js.shortcutRelay.enableShortcutRelayCapability'
