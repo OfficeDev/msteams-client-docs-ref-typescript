@@ -1,0 +1,78 @@
+### YamlMime:TSType
+name: IWidgetContext
+uid: '@microsoft/teams-js.IWidgetContext'
+package: '@microsoft/teams-js'
+summary: >-
+  Widget context similar to IWidgetHost structure - simplified for widget
+  rendering
+fullName: IWidgetContext
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: domain
+    uid: '@microsoft/teams-js.IWidgetContext.domain'
+    package: '@microsoft/teams-js'
+    summary: widget domain that developer has registered their app to
+    fullName: domain
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'domain: string'
+      return:
+        description: ''
+        type: string
+  - name: html
+    uid: '@microsoft/teams-js.IWidgetContext.html'
+    package: '@microsoft/teams-js'
+    summary: Widget HTML content to render
+    fullName: html
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'html: string'
+      return:
+        description: ''
+        type: string
+  - name: openai
+    uid: '@microsoft/teams-js.IWidgetContext.openai'
+    package: '@microsoft/teams-js'
+    summary: OpenAI-compatible object with widget globals and API functions
+    fullName: openai
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        openai: { displayMode?: DisplayMode, locale?: string, maxHeight?:
+        number, safeArea?: SafeArea, theme?: Theme, userAgent?: UserAgent,
+        view?: RenderingSurfaces, widgetState?: JSONValue }
+      return:
+        description: ''
+        type: >-
+          { displayMode?: DisplayMode, locale?: string, maxHeight?: number,
+          safeArea?: SafeArea, theme?: Theme, userAgent?: UserAgent, view?:
+          RenderingSurfaces, widgetState?: JSONValue }
+  - name: securityPolicy
+    uid: '@microsoft/teams-js.IWidgetContext.securityPolicy'
+    package: '@microsoft/teams-js'
+    summary: Content Security policy for the widget
+    fullName: securityPolicy
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'securityPolicy?: ISecurityPolicy'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.ISecurityPolicy" />
+  - name: widgetId
+    uid: '@microsoft/teams-js.IWidgetContext.widgetId'
+    package: '@microsoft/teams-js'
+    summary: Unique identifier for the widget instance
+    fullName: widgetId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'widgetId: string'
+      return:
+        description: ''
+        type: string

@@ -1,0 +1,15 @@
+### YamlMime:TSTypeAlias
+name: SafeAreaInsets
+uid: '@microsoft/teams-js.SafeAreaInsets'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: SafeAreaInsets
+remarks: ''
+isDeprecated: false
+syntax: |
+  type SafeAreaInsets = {
+    bottom: number
+    left: number
+    right: number
+    top: number
+  }

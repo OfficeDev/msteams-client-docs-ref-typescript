@@ -4,22 +4,36 @@ name: shortcutRelay
 summary: >-
   Allows host shortcuts to function in your application by forwarding keyboard
   shortcuts to the host.
-
-
-  This functionality is in Beta.
 type: module
 typeAliases:
   - '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler'
   - '@microsoft/teams-js.shortcutRelay.OverridableShortcutHandlerData'
 package: '@microsoft/teams-js'
-previewState: beta
+variables:
+  - name: DISABLE_SHORTCUT_FORWARDING_ATTRIBUTE
+    uid: '@microsoft/teams-js.shortcutRelay.DISABLE_SHORTCUT_FORWARDING_ATTRIBUTE'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Allow apps to define zones where shortcuts should not be forwarded to the
+      host.
+
+      This is useful for input fields for password where shortcuts should not
+      trigger host actions.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        DISABLE_SHORTCUT_FORWARDING_ATTRIBUTE:
+        "data-disable-shortcuts-forwarding"
+      return:
+        description: ''
+        type: '"data-disable-shortcuts-forwarding"'
 functions:
   - name: enableShortcutRelayCapability()
     uid: '@microsoft/teams-js.shortcutRelay.enableShortcutRelayCapability'
     package: '@microsoft/teams-js'
     summary: Enable capability to support host shortcuts.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function enableShortcutRelayCapability(): Promise<void>'
@@ -31,7 +45,6 @@ functions:
     package: '@microsoft/teams-js'
     summary: Checks if shortcutRelay capability is supported by the host
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: 'function isSupported(): boolean'
@@ -45,7 +58,6 @@ functions:
       Reset the state of the shortcut relay capability.
       This is useful for tests to ensure a clean state.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: function resetIsShortcutRelayCapabilityEnabled()
@@ -58,7 +70,6 @@ functions:
       • Pass `undefined` to remove an existing handler.
       • Returns the previous handler so callers can restore it if needed.
     remarks: ''
-    previewState: beta
     isDeprecated: false
     syntax:
       content: >-

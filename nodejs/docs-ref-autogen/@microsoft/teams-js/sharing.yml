@@ -8,6 +8,7 @@ summary: >-
   tab](https://learn.microsoft.com/microsoftteams/platform/concepts/build-and-test/share-to-teams-from-personal-app-or-tab)
 type: module
 interfaces:
+  - '@microsoft/teams-js.sharing.IFileContent'
   - '@microsoft/teams-js.sharing.IShareRequest'
   - '@microsoft/teams-js.sharing.IURLContent'
 typeAliases:
@@ -26,7 +27,7 @@ functions:
       return:
         description: boolean to represent whether the sharing capability is supported
         type: boolean
-  - name: shareWebContent(IShareRequest<IURLContent>)
+  - name: shareWebContent(IShareRequest<IShareRequestContentType>)
     uid: '@microsoft/teams-js.sharing.shareWebContent'
     package: '@microsoft/teams-js'
     summary: |-
@@ -37,18 +38,18 @@ functions:
     syntax:
       content: >-
         function shareWebContent(shareWebContentRequest:
-        IShareRequest<IURLContent>): Promise<void>
+        IShareRequest<IShareRequestContentType>): Promise<void>
       parameters:
         - id: shareWebContentRequest
           type: >-
             <xref uid="@microsoft/teams-js.sharing.IShareRequest" />&lt;<xref
-            uid="@microsoft/teams-js.sharing.IURLContent" />&gt;
+            uid="@microsoft/teams-js.sharing.IShareRequestContentType" />&gt;
           description: web content info
       return:
         description: Promise that will be fulfilled when the operation has completed
         type: Promise&lt;void&gt;
   - name: >-
-      shareWebContent(IShareRequest<IURLContent>,
+      shareWebContent(IShareRequest<IShareRequestContentType>,
       shareWebContentCallbackFunctionType)
     uid: '@microsoft/teams-js.sharing.shareWebContent_1'
     package: '@microsoft/teams-js'
@@ -69,13 +70,13 @@ functions:
     syntax:
       content: >-
         function shareWebContent(shareWebContentRequest:
-        IShareRequest<IURLContent>, callback:
+        IShareRequest<IShareRequestContentType>, callback:
         shareWebContentCallbackFunctionType)
       parameters:
         - id: shareWebContentRequest
           type: >-
             <xref uid="@microsoft/teams-js.sharing.IShareRequest" />&lt;<xref
-            uid="@microsoft/teams-js.sharing.IURLContent" />&gt;
+            uid="@microsoft/teams-js.sharing.IShareRequestContentType" />&gt;
           description: web content info
         - id: callback
           type: >-
@@ -83,3 +84,15 @@ functions:
             uid="@microsoft/teams-js.sharing.shareWebContentCallbackFunctionType"
             />
           description: optional callback
+variables:
+  - name: SharingAPIMessages
+    uid: '@microsoft/teams-js.sharing.SharingAPIMessages'
+    package: '@microsoft/teams-js'
+    summary: Type of message that can be sent or received by the sharing APIs
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'SharingAPIMessages: {}'
+      return:
+        description: ''
+        type: '{}'

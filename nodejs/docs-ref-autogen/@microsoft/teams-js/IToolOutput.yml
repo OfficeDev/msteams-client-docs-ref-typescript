@@ -1,0 +1,52 @@
+### YamlMime:TSType
+name: IToolOutput
+uid: '@microsoft/teams-js.IToolOutput'
+package: '@microsoft/teams-js'
+summary: MCP-compatible tool output structure matching exact MCP schema
+fullName: IToolOutput
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: content
+    uid: '@microsoft/teams-js.IToolOutput.content'
+    package: '@microsoft/teams-js'
+    summary: Array of content blocks returned by the tool
+    fullName: content
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        content: { annotations?: { audience?: ("user" | "assistant")[],
+        priority?: number }, data?: string, mimeType?: string, text?: string,
+        type: "text" | "image" | "resource", uri?: string }[]
+      return:
+        description: ''
+        type: >-
+          { annotations?: { audience?: ("user" | "assistant")[], priority?:
+          number }, data?: string, mimeType?: string, text?: string, type:
+          "text" | "image" | "resource", uri?: string }[]
+  - name: isError
+    uid: '@microsoft/teams-js.IToolOutput.isError'
+    package: '@microsoft/teams-js'
+    summary: Whether the tool call resulted in an error
+    fullName: isError
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'isError?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: structuredContent
+    uid: '@microsoft/teams-js.IToolOutput.structuredContent'
+    package: '@microsoft/teams-js'
+    summary: UI widget data
+    fullName: structuredContent
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'structuredContent?: unknown'
+      return:
+        description: ''
+        type: unknown

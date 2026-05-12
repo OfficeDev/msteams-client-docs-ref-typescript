@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: ISecurityPolicy
+uid: '@microsoft/teams-js.ISecurityPolicy'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: ISecurityPolicy
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: connectDomains
+    uid: '@microsoft/teams-js.ISecurityPolicy.connectDomains'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: connectDomains
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'connectDomains?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: isTrusted
+    uid: '@microsoft/teams-js.ISecurityPolicy.isTrusted'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: isTrusted
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'isTrusted?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: resourceDomains
+    uid: '@microsoft/teams-js.ISecurityPolicy.resourceDomains'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: resourceDomains
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'resourceDomains?: string[]'
+      return:
+        description: ''
+        type: string[]

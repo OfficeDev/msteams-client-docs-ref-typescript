@@ -1,0 +1,34 @@
+### YamlMime:TSType
+name: IToolInput
+uid: '@microsoft/teams-js.IToolInput'
+package: '@microsoft/teams-js'
+summary: MCP-compatible tool input structure following OpenAI MCP server specification
+fullName: IToolInput
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: arguments
+    uid: '@microsoft/teams-js.IToolInput.arguments'
+    package: '@microsoft/teams-js'
+    summary: Arguments passed to the tool as key-value pairs
+    fullName: arguments
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'arguments?: Record<string, unknown>'
+      return:
+        description: ''
+        type: Record&lt;string, unknown&gt;
+  - name: name
+    uid: '@microsoft/teams-js.IToolInput.name'
+    package: '@microsoft/teams-js'
+    summary: The name of the tool to call
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string

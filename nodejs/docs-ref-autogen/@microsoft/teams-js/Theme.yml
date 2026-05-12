@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: Theme
+uid: '@microsoft/teams-js.Theme'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: Theme
+remarks: ''
+isDeprecated: false
+syntax: |
+  type Theme = "light" | "dark"
