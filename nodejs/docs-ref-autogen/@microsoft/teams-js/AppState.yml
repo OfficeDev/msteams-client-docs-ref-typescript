@@ -1,0 +1,12 @@
+### YamlMime:TSTypeAlias
+name: AppState
+uid: '@microsoft/teams-js.AppState'
+package: '@microsoft/teams-js'
+summary: >-
+  The state of the app in terms of its lifecycle and caching status, which can
+  impact its performance characteristics and memory usage.
+fullName: AppState
+remarks: ''
+isDeprecated: false
+syntax: |
+  type AppState = "cached" | "precached" | "active"

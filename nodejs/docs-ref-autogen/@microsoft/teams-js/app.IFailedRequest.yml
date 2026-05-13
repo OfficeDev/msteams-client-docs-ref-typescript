@@ -8,6 +8,22 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: authHeader
+    uid: '@microsoft/teams-js.app.IFailedRequest.authHeader'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Optional authorization header to be sent along with the failure
+      notification.
+
+      Currently only supported for SSR scenarios.
+    fullName: authHeader
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'authHeader?: string'
+      return:
+        description: ''
+        type: string
   - name: message
     uid: '@microsoft/teams-js.app.IFailedRequest.message'
     package: '@microsoft/teams-js'

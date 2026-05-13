@@ -8,6 +8,25 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: ancestors
+    uid: '@microsoft/teams-js.app.AppHostInfo.ancestors'
+    package: '@microsoft/teams-js'
+    summary: >-
+      An array representing the hierarchy of ancestor hosts that the app is
+      embedded inside of.
+
+      The array is ordered from immediate parent to root host.
+
+      For example, if Bizchat is running in Calendar in Teams, this would be
+      ["Calendar", "Teams"].
+    fullName: ancestors
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ancestors?: string[]'
+      return:
+        description: ''
+        type: string[]
   - name: clientType
     uid: '@microsoft/teams-js.app.AppHostInfo.clientType'
     package: '@microsoft/teams-js'
@@ -20,6 +39,23 @@ properties:
       return:
         description: ''
         type: <xref uid="@microsoft/teams-js.HostClientType" />
+  - name: features
+    uid: '@microsoft/teams-js.app.AppHostInfo.features'
+    package: '@microsoft/teams-js'
+    summary: >-
+      The features supported by the host. This is an optional field that may not
+      be populated by all hosts, and may be added to over time as new features
+      are added to hosts. Because of this, apps should always check for the
+      presence of a feature and its value before using it, and should gracefully
+      handle the case where the feature is not present.
+    fullName: features
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'features?: HostFeatures'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.app.HostFeatures" />
   - name: name
     uid: '@microsoft/teams-js.app.AppHostInfo.name'
     package: '@microsoft/teams-js'

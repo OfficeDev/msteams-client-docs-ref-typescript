@@ -290,6 +290,30 @@ inheritedMethods:
         description: ''
         type: Promise&lt;R&gt;
     inheritanceDescription: <b>Inherited From</b> Axios.putForm
+  - name: query<T, R, D>(string, D, AxiosRequestConfig<D>)
+    uid: '@microsoft/teamsfx.AxiosInstance.query'
+    package: '@microsoft/teamsfx'
+    summary: ''
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function query<T, R, D>(url: string, data?: D, config?:
+        AxiosRequestConfig<D>): Promise<R>
+      parameters:
+        - id: url
+          type: string
+          description: ''
+        - id: data
+          type: D
+          description: ''
+        - id: config
+          type: AxiosRequestConfig&lt;D&gt;
+          description: ''
+      return:
+        description: ''
+        type: Promise&lt;R&gt;
+    inheritanceDescription: <b>Inherited From</b> Axios.query
   - name: request<T, R, D>(AxiosRequestConfig<D>)
     uid: '@microsoft/teamsfx.AxiosInstance.request'
     package: '@microsoft/teamsfx'
