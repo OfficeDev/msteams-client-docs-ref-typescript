@@ -22,6 +22,7 @@ enums:
   - '@microsoft/teams-js.app.ExpectedFailureReason'
   - '@microsoft/teams-js.app.FailedReason'
 typeAliases:
+  - '@microsoft/teams-js.app.HostFeatures'
   - '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
   - '@microsoft/teams-js.app.themeHandler'
 package: '@microsoft/teams-js'
@@ -75,9 +76,8 @@ functions:
 
             to pass a value for this parameter.
 
-            Any domains passed in the array must have the https: protocol on the
-            string otherwise they will be ignored. Example:
-            https://www.example.com
+            Any domains passed in the array must define a scheme to be able to
+            be processed. Examples: https://www.example.com, chrome://
       return:
         description: >-
           Promise that will be fulfilled when initialization has completed, or
@@ -263,3 +263,19 @@ functions:
         - id: handler
           type: <xref uid="@microsoft/teams-js.app.themeHandler" />
           description: The handler to invoke when the user changes their theme.
+variables:
+  - name: Messages
+    uid: '@microsoft/teams-js.app.Messages'
+    package: '@microsoft/teams-js'
+    summary: App Initialization Messages
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        Messages: { AppLoaded: string, ExpectedFailure: string, Failure: string,
+        Success: string }
+      return:
+        description: ''
+        type: >-
+          { AppLoaded: string, ExpectedFailure: string, Failure: string,
+          Success: string }

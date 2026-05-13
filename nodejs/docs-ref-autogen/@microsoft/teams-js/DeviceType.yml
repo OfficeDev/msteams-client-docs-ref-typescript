@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: DeviceType
+uid: '@microsoft/teams-js.DeviceType'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: DeviceType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type DeviceType = "mobile" | "tablet" | "desktop" | "unknown"

@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: UserAgent
+uid: '@microsoft/teams-js.UserAgent'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: UserAgent
+remarks: ''
+isDeprecated: false
+syntax: |
+  type UserAgent = {
+    capabilities: { hover: boolean; touch: boolean }
+    device: { type: DeviceType }
+  }

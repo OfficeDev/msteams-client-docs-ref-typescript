@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: HostFeatures
+uid: '@microsoft/teams-js.app.HostFeatures'
+package: '@microsoft/teams-js'
+summary: Features supported by the host that the app can query for via getContext.
+fullName: HostFeatures
+remarks: ''
+isDeprecated: false
+syntax: |
+  type HostFeatures = {
+    nestedWildcardsInValidDomains?: boolean
+    serverSideRendering?: boolean
+  }

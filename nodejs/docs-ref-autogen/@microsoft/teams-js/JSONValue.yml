@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: JSONValue
+uid: '@microsoft/teams-js.JSONValue'
+package: '@microsoft/teams-js'
+summary: ''
+fullName: JSONValue
+remarks: ''
+isDeprecated: false
+syntax: |
+  type JSONValue = string | number | boolean | null | JSONObject | JSONArray
