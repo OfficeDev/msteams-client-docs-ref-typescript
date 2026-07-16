@@ -2299,6 +2299,17 @@
           no-loc:
             - DisplayMode
           items: []
+    - name: mouseRelay
+      no-loc:
+        - mouseRelay
+      items:
+        - name: Overview
+          uid: '@microsoft/teams-js.mouseRelay'
+        - uid: '@microsoft/teams-js.mouseRelay.NavigationDirection'
+          name: NavigationDirection
+          no-loc:
+            - NavigationDirection
+          items: []
     - uid: '@microsoft/teams-js.nestedAppAuth'
       name: nestedAppAuth
       no-loc:
@@ -3200,4 +3211,3 @@
     - uid: '@microsoft/teamsfx-react.TeamsContextWithCredential'
       name: TeamsContextWithCredential
       items: []
-

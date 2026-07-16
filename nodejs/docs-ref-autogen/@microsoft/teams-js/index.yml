@@ -173,6 +173,7 @@ typeAliases:
   - '@microsoft/teams-js.meeting.liveStreamErrorCallbackFunctionType'
   - '@microsoft/teams-js.meeting.registerLiveStreamChangedHandlerFunctionType'
   - '@microsoft/teams-js.meeting.registerSpeakingStateChangeHandlerFunctionType'
+  - '@microsoft/teams-js.mouseRelay.NavigationDirection'
   - '@microsoft/teams-js.pages.backButtonHandlerFunctionType'
   - '@microsoft/teams-js.pages.fullScreenChangeFunctionType'
   - '@microsoft/teams-js.pages.handlerFunctionType'
