@@ -30,6 +30,10 @@ fields:
     uid: '@microsoft/teams-js.meeting.EventActionSource.M365CalendarGridPeek'
     package: '@microsoft/teams-js'
     summary: Source is calendar grid peek.
+  - name: M365CalendarMeetNow
+    uid: '@microsoft/teams-js.meeting.EventActionSource.M365CalendarMeetNow'
+    package: '@microsoft/teams-js'
+    summary: Source is the M365 calendar Meet Now start action.
   - name: Other
     uid: '@microsoft/teams-js.meeting.EventActionSource.Other'
     package: '@microsoft/teams-js'

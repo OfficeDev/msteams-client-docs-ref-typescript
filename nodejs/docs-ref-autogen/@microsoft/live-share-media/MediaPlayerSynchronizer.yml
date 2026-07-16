@@ -878,7 +878,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@144
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@145
 methods:
   - name: >-
       addEventListener(MediaPlayerSynchronizerEvents, (evt:

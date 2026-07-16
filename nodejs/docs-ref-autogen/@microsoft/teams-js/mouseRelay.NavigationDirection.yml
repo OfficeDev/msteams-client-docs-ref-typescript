@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: NavigationDirection
+uid: '@microsoft/teams-js.mouseRelay.NavigationDirection'
+package: '@microsoft/teams-js'
+summary: The direction of a relayed history-navigation intent.
+fullName: NavigationDirection
+remarks: ''
+isDeprecated: false
+syntax: |
+  type NavigationDirection = "back" | "forward"
