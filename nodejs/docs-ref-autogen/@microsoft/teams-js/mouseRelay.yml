@@ -1,0 +1,47 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.mouseRelay'
+name: mouseRelay
+summary: |-
+  Lets an app inside a Teams iframe relay the mouse back (X1) / forward (X2)
+  buttons to the host so they drive Teams history navigation.
+type: module
+typeAliases:
+  - '@microsoft/teams-js.mouseRelay.NavigationDirection'
+package: '@microsoft/teams-js'
+functions:
+  - name: disableMouseRelayCapability()
+    uid: '@microsoft/teams-js.mouseRelay.disableMouseRelayCapability'
+    package: '@microsoft/teams-js'
+    summary: |-
+      Disable the mouse relay capability, detaching its listeners so the mouse
+      back (X1) / forward (X2) buttons no longer drive Teams history navigation.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: function disableMouseRelayCapability()
+  - name: enableMouseRelayCapability()
+    uid: '@microsoft/teams-js.mouseRelay.enableMouseRelayCapability'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Enable the capability so the mouse back (X1) / forward (X2) buttons
+      pressed
+
+      inside this iframe drive Teams history navigation in the host.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function enableMouseRelayCapability(): Promise<void>'
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: isSupported()
+    uid: '@microsoft/teams-js.mouseRelay.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks if the mouseRelay capability is supported by the host.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: boolean to represent whether the mouseRelay capability is supported.
+        type: boolean
