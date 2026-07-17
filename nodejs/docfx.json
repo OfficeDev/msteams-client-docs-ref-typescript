@@ -25,16 +25,7 @@
           "**/*.md"
         ],
         "src": "docs-ref-conceptual",
-        "dest": "api/msteams-client-docs-ref-typescript",
-        "version": "msteams-client-js-latest"
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "src": "docs-ref-conceptual",
-        "dest": "api/msteams-client-docs-ref-typescript",
-        "version": "msteams-client-js-1.13.1"
+        "dest": "api/msteams-client-docs-ref-typescript"
       },
       {
         "files": [
@@ -107,8 +98,7 @@
         ],
         "src": "docs-ref-conceptual",
         "dest": "api/msteams-client-docs-ref-typescript-conceptualtoc",
-        "exclude": [],
-        "version": "msteams-client-js-latest"
+        "exclude": []
       },
       {
         "files": [
