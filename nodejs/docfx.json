@@ -87,6 +87,15 @@
       },
       {
         "files": [
+          "toc.yml"
+        ],
+        "src": "docs-ref-conceptual",
+        "dest": "api/msteams-client-docs-ref-typescript-conceptualtoc",
+        "exclude": [],
+        "version": "msteams-client-js-latest"
+      },
+      {
+        "files": [
           "**/*.md"
         ],
         "src": "overview",
