@@ -70,7 +70,7 @@
       "ReferenceTOC": "nodejs/teams-1131/docs-ref-autogen/toc.yml",
       "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-beta/toc.json?view=msteams-client-js-1.13.1",
       "ConceptualTOC": "nodejs/docs-ref-conceptual/toc.yml",
-      "ConceptualTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-conceptualtoc-beta/toc.json",
+      "ConceptualTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-conceptualtoc/toc.json",
       "OutputFolder": "nodejs/teams-1131/overview",
       "HideEmptyNode": true,
       "ContainerPageMetadata": {

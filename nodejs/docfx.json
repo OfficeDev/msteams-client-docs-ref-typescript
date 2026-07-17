@@ -100,14 +100,6 @@
         "dest": "api/msteams-client-docs-ref-typescript-conceptualtoc",
         "exclude": []
       },
-            {
-        "files": [
-          "toc.yml"
-        ],
-        "src": "docs-ref-conceptual",
-        "dest": "api/msteams-client-docs-ref-typescript-conceptualtoc-beta",
-        "exclude": []
-      },
       {
         "files": [
           "**/*.md"
