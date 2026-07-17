@@ -54,6 +54,7 @@
     {
       "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
+      "ConceptualTOC": "nodejs/docs-ref-conceptual/toc.yml",
       "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json?view=msteams-client-js-latest",
       "ConceptualTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-conceptualtoc/toc.json",
       "OutputFolder": "nodejs/overview",
