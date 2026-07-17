@@ -22,6 +22,14 @@
       },
       {
         "files": [
+          "**/*.md"
+        ],
+        "src": "docs-ref-conceptual",
+        "dest": "api/msteams-client-docs-ref-typescript",
+        "version": "msteams-sdk-ts-latest"
+      },
+      {
+        "files": [
           "**/*.md",
           "**/*.yml"
         ],
