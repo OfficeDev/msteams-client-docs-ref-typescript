@@ -26,7 +26,6 @@
         ],
         "src": "docs-ref-conceptual",
         "dest": "api/msteams-client-docs-ref-typescript",
-        "group": "stable",
         "version": "msteams-client-js-latest"
       },
       {
@@ -35,7 +34,6 @@
         ],
         "src": "docs-ref-conceptual",
         "dest": "api/msteams-client-docs-ref-typescript",
-        "group": "1131",
         "version": "msteams-client-js-1.13.1"
       },
       {
