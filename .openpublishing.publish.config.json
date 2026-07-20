@@ -54,9 +54,7 @@
     {
       "TopLevelTOC": "nodejs/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/docs-ref-autogen/toc.yml",
-      "ConceptualTOC": "nodejs/docs-ref-conceptual/toc.yml",
       "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript/toc.json?view=msteams-client-js-latest",
-      "ConceptualTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-conceptualtoc/toc.json",
       "OutputFolder": "nodejs/overview",
       "HideEmptyNode": false,
       "ContainerPageMetadata": {
@@ -69,7 +67,6 @@
       "TopLevelTOC": "nodejs/teams-1131/docs-ref-toc/fxtoc.yml",
       "ReferenceTOC": "nodejs/teams-1131/docs-ref-autogen/toc.yml",
       "ReferenceTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-beta/toc.json?view=msteams-client-js-1.13.1",
-      "ConceptualTOCUrl": "/javascript/api/msteams-client-docs-ref-typescript-conceptualtoc/toc.json",
       "OutputFolder": "nodejs/teams-1131/overview",
       "HideEmptyNode": true,
       "ContainerPageMetadata": {

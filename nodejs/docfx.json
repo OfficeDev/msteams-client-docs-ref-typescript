@@ -22,13 +22,6 @@
       },
       {
         "files": [
-          "**/*.md"
-        ],
-        "src": "docs-ref-conceptual",
-        "dest": "api/msteams-client-docs-ref-typescript"
-      },
-      {
-        "files": [
           "**/*.md",
           "**/*.yml"
         ],
@@ -91,14 +84,6 @@
         "exclude": [],
         "group": "1131",
         "version": "msteams-client-js-1.13.1"
-      },
-      {
-        "files": [
-          "toc.yml"
-        ],
-        "src": "docs-ref-conceptual",
-        "dest": "api/msteams-client-docs-ref-typescript-conceptualtoc",
-        "exclude": []
       },
       {
         "files": [

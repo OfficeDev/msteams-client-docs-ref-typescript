@@ -1,5 +1,0 @@
-items:
-- name: Test
-  href: index.md?view=msteams-client-js-latest&preserve-view=true
-- name: Teams Platform documentation
-  href: /microsoftteams/platform/overview
