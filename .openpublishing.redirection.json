@@ -1,0 +1,1104 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ActionAugmentationSection.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ActionHandler.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ActionOutputMessage.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ActionPlanner.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ActionPlannerOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ActionPlannerPromptFactory.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ActionResponseValidator.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AdaptiveCard.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AdaptiveCardActionExecuteResponseType.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AdaptiveCards.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AdaptiveCardSearchResult.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AdaptiveCardsOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AdaptiveCardsSearchParams.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AI.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AIOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Application.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ApplicationBuilder.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ApplicationOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AssistantMessage.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Augmentation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AugmentationConfig.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Authentication.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AuthenticationManager.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AuthenticationOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AuthenticatorResult.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AuthError.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AuthErrorReason.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AzureContentSafetyModerator.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AzureOpenAIEmbeddingsOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AzureOpenAIModelOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/AzureOpenAIModeratorOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/BaseOpenAIEmbeddingsOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/BaseOpenAIModelOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ChatCompletionAction.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Citation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ConfiguredAIOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ConfiguredLLMClientOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ConfiguredPromptManagerOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ConversationHistory.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ConversationUpdateEvents.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/DataSource.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/DataSourceSection.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/DefaultAugmentation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/DefaultConversationState.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/DefaultModerator.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/DefaultResponseValidator.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/DefaultTempState.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/DefaultUserState.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/EEMethodReturnType.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/EmitEventNames.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/EventNames.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/FeedbackLoopData.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/FunctionCall.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/FunctionCallMessage.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/FunctionResponseMessage.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/GPT3Tokenizer.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/GPTTokenizer.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/GroupSection.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ImageContentPart.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/index.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/InnerEEMethodReturnType.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/InputFile.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/InputFileDownloader.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/JSONResponseValidator.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/LayoutEngine.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ListenerType.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/LlamaModel.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/LlamaModelOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/LLMClient.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/LLMClientOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/MatchingKeys.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Memory.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/MemoryFork.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Message.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/MessageContentParts.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/MessageContext.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/MessageExtensions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/MessageExtensionsInvokeNames.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/MessageReactionEvents.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ModerationSeverity.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Moderator.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/MonologueAugmentation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/NoUndefined.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OAuthSettings.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OnEventNames.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OpenAIEmbeddings.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OpenAIEmbeddingsOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OpenAILikeEmbeddingsOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OpenAIModel.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OpenAIModelOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OpenAIModerator.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OpenAIModeratorOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OverriddenKeys.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/OverriddenMethods.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Plan.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Planner.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PredictedCommand.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PredictedDoCommand.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PredictedDoCommandAndHandler.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PredictedSayCommand.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/preview.AssistantsPlanner.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/preview.AssistantsPlannerOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/preview.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Prompt.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptChunk.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptCompletionModel.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptCompletionModelBeforeCompletionEvent.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptCompletionModelChunkReceivedEvent.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptCompletionModelEmitter.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptCompletionModelEvents.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptCompletionModelResponseReceivedEvent.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptFunction.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptFunctions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptManager.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptManagerOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptResponseValidator.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptSection.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptSectionBase.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptTemplate.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/PromptTemplateConfig.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Query.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/RenderedPromptSection.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ReturnTypeOfMethod.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ReturnTypeOfMethodIfExists.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/RouteHandler.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/RouteSelector.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Selector.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/SequenceAugmentation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/SignInResponse.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/SignInStatus.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/StreamingResponse.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/StrictBroadcast.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/StrictEventEmitter.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/SystemMessage.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TaskModuleInvokeNames.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TaskModules.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TaskModulesOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TeamsAdapter.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TeamsAttachmentDownloader.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TeamsAttachmentDownloaderOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TeamsMessageEvents.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TemplateSection.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TestModel.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TextContentPart.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TextDataSource.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TextSection.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Tokenizer.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ToolsAugmentation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TurnEvents.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TurnState.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TurnStateEntry.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/TypeRecord.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/UserInputMessage.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/UserMessage.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Utilities.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/ValidatedChatCompletionAction.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/Validation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteams-ai/VoidKeys.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AdaptiveCardResponse.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.BotSsoExecutionDialog.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.CardActionBot.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.Channel.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.CommandBot.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.ConversationBot.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.ConversationOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.Member.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.NotificationBot.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.NotificationOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.SearchScope.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.TeamsBotInstallation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AgentBuilderCloudAdapter.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/ApiKeyLocation.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/ApiKeyProvider.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AppCredential.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AppCredentialAuthConfig.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AuthProvider.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/AxiosInstance.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/BasicAuthProvider.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/BearerTokenAuthProvider.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/BotSsoConfig.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/BotSsoExecutionActivityHandler.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/BotSsoExecutionDialog.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/BotSsoExecutionDialogHandler.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/CardActionOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/CertificateAuthProvider.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/CommandMessage.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/CommandOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/ConversationReferenceStore.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/ConversationReferenceStoreAddOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/ErrorCode.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/ErrorWithCode.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/GetTeamsUserTokenOptions.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/index.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/InvokeResponseErrorCode.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/InvokeResponseFactory.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/LogFunction.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/Logger.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/LogLevel.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/MessageBuilder.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/MessageExtensionTokenResponse.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/NotificationTarget.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/NotificationTargetType.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/OnBehalfOfCredentialAuthConfig.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/OnBehalfOfUserCredential.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/PagedData.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TeamsBotSsoPrompt.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TeamsBotSsoPromptSettings.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TeamsBotSsoPromptTokenResponse.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TeamsFxAdaptiveCardActionHandler.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TeamsFxBotCommandHandler.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TeamsFxBotSsoCommandHandler.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TeamsUserCredential.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TeamsUserCredentialAuthConfig.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/TriggerPatterns.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx/UserInfo.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx-react/BaseDashboard.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx-react/BaseWidget.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx-react/index.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx-react/IWidgetClassNames.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "nodejs/docs-ref-autogen/@microsoftteamsfx-react/TeamsContextWithCredential.yml",
+      "redirect_url": "https://learn.microsoft.com/microsoftteams/platform/overview",
+      "redirect_document_id": false
+    }
+  ]
+}
