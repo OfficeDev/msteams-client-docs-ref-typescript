@@ -54,6 +54,43 @@ functions:
       return:
         description: the Frame Context.
         type: <xref uid="@microsoft/teams-js.FrameContexts" /> | undefined
+  - name: getImmediateParentOrigin()
+    uid: '@microsoft/teams-js.app.getImmediateParentOrigin'
+    package: '@microsoft/teams-js'
+    summary: >+
+      Returns the immediate parent origin when this app is running inside an
+      iframe.
+
+
+      **Example**
+
+
+      ```typescript
+
+      import { app } from '@microsoft/teams-js';
+
+
+      const parentOrigin = app.getImmediateParentOrigin();
+
+      await app.initialize(parentOrigin ? [parentOrigin] : undefined);
+
+      ```
+
+    remarks: >-
+      This helper is useful for scenarios where the app must explicitly trust
+      the hosting parent origin during
+
+      [initialize](xref:@microsoft/teams-js.app.initialize) by passing
+      `[origin]` as `validMessageOrigins`.
+
+
+      If no parent origin can be determined, this function returns `null`.
+    isDeprecated: false
+    syntax:
+      content: 'function getImmediateParentOrigin(): string | null'
+      return:
+        description: The immediate parent origin, or `null` when unavailable.
+        type: string | null
   - name: initialize(string[])
     uid: '@microsoft/teams-js.app.initialize'
     package: '@microsoft/teams-js'
