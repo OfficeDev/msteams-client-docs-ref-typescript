@@ -13,8 +13,7 @@ There are several libraries available to support various aspects of Teams app de
 |-|-|-|
 | **Live Share SDK** | Live Share enables collaborative app experiences | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
 | **TeamsJS library** | Teams JavaScript client library enables you to create hosted experiences in Teams, Outlook, and the Microsoft 365 app | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml) |
-| **Teams AI library** | Teams AI library is a Teams-centric interface for integrating GPT-based language models and user intent engines. | [Teams AI](../docs-ref-autogen/%40microsoft/teams-ai/index.yml) |
-| **TeamsFx SDK** | TeamsFx helps to reduce tasks by using Microsoft Teams single sign-on (SSO) and accessing cloud resources down to single line statements with little configuration | [Teamsfx](../docs-ref-autogen/%40microsoft/teamsfx/index.yml) |
+
 
 ## Microsoft Teams Live Share
 
