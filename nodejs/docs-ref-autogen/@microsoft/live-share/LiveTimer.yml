@@ -480,8 +480,7 @@ inheritedMethods:
       [LiveDataObject.getDataObject](xref:@microsoft/live-share.LiveDataObject.getDataObject)
   - name: >-
       getFluidObjectFromDirectory<T>(string, IDirectory, (id: string, directory:
-      IDirectory) => undefined | IFluidHandle<FluidObject<unknown> &
-      IFluidLoadable>)
+      IDirectory) => undefined | IFluidHandle<FluidObject & IFluidLoadable>)
     uid: '@microsoft/live-share.LiveTimer.getFluidObjectFromDirectory'
     package: '@microsoft/live-share'
     summary: Retrieve Fluid object using the handle get
@@ -491,7 +490,7 @@ inheritedMethods:
       content: >-
         function getFluidObjectFromDirectory<T>(key: string, directory:
         IDirectory, getObjectFromDirectory?: (id: string, directory: IDirectory)
-        => undefined | IFluidHandle<FluidObject<unknown> & IFluidLoadable>):
+        => undefined | IFluidHandle<FluidObject & IFluidLoadable>):
         Promise<undefined | T>
       parameters:
         - id: key
@@ -503,7 +502,7 @@ inheritedMethods:
         - id: getObjectFromDirectory
           type: >-
             (id: string, directory: IDirectory) =&gt; undefined |
-            IFluidHandle&lt;FluidObject&lt;unknown&gt; & IFluidLoadable&gt;
+            IFluidHandle&lt;FluidObject & IFluidLoadable&gt;
           description: >-
             optional callback for fetching object from the directory, allows
             users to
