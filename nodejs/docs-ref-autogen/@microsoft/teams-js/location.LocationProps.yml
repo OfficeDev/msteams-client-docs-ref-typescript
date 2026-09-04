@@ -6,7 +6,20 @@ summary: ''
 fullName: LocationProps
 remarks: ''
 isDeprecated: true
-customDeprecatedMessage: Data Structure to set the location properties in getLocation call.
+customDeprecatedMessage: >-
+  As of 2.1.0, this interface is no longer needed. Instead of setting
+  `allowChooseLocation`, call one of the following functions:
+
+  - [geoLocation.getCurrentLocation():
+  Promise\<geoLocation.Location\>](xref:@microsoft/teams-js.geoLocation.getCurrentLocation)
+  to get the current location.
+
+  - [geoLocation.map.chooseLocation():
+  Promise\<geoLocation.Location\>](xref:@microsoft/teams-js.geoLocation.map.chooseLocation)
+  to choose location on map.
+
+
+  Data Structure to set the location properties in getLocation call.
 type: interface
 properties:
   - name: allowChooseLocation
