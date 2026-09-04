@@ -29,8 +29,18 @@ properties:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of TeamsJS v2.0.0, this property has been deprecated in favor of a
-      Promise-based pattern.
+      As of TeamsJS v2.0.0, this property has been deprecated in favor of the
+      `Promise` returned from
+
+      [authentication.authenticate(authenticateParameters:
+      AuthenticatePopUpParameters):
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
+
+      and [authentication.getAuthToken(authTokenRequest:
+      AuthTokenRequestParameters):
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken_1),
+
+      which rejects with the reason for the failure.
 
 
       A function that is called if the request fails, with the reason for the
@@ -48,8 +58,16 @@ properties:
     remarks: ''
     isDeprecated: true
     customDeprecatedMessage: >-
-      As of TeamsJS v2.0.0, this property has been deprecated in favor of a
-      Promise-based pattern.
+      As of TeamsJS v2.0.0, this property has been deprecated in favor of the
+      `Promise` returned from
+
+      [authentication.authenticate(authenticateParameters:
+      AuthenticatePopUpParameters):
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.authenticate_1)
+
+      and [authentication.getAuthToken(authTokenRequest:
+      AuthTokenRequestParameters):
+      Promise\<string\>](xref:@microsoft/teams-js.authentication.getAuthToken_1).
 
 
       A function that is called if the request succeeds.
