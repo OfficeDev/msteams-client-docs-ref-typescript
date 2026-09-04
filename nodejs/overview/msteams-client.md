@@ -1,23 +1,24 @@
 ---
-title: Microsoft Teams SDK reference
-description: Reference documentation for Microsoft Teams SDK
-ms.date: 12/02/2025
+title: Microsoft Teams JavaScript client library reference
+description: Reference documentation for JavaScript client libraries for Teams app development
+ms.date: 09/04/2026
+author: nickwalkmsft
+ms.author: nickwalk
+ms.reviewer: nickwalk
 ms.topic: reference
 keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
-# Microsoft Teams SDK reference
 
-There are several libraries available to support various aspects of Teams app development. This article provides an overview of each, along with basic installation instructions.
- 
-| Library | Description | API reference |
-|-|-|-|
-| **Live Share SDK** | Live Share enables collaborative app experiences | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
-| **TeamsJS library** | Teams JavaScript client library enables you to create hosted experiences in Teams, Outlook, and the Microsoft 365 app | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml) |
+# Microsoft Teams JavaScript client library reference
 
+| Library             | Description                                                                                                           | API reference                                                                                                                                                                                                                                           |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Live Share SDK**  | Live Share enables collaborative app experiences                                                                      | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
+| **TeamsJS library** | Teams JavaScript client library enables you to create hosted experiences in Teams, Outlook, and the Microsoft 365 app | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml)                                                                                                                                                                                         |
 
 ## Microsoft Teams Live Share
 
-The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is comprised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (sometimes called *Live Share core*) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. *Live Share media* allows for media synchronization of video and audio during a Teams session. *Live Share canvas* adds annotation tools for whiteboard and PowerPoint presentations. 
+The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is comprised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (sometimes called *Live Share core*) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. *Live Share media* allows for media synchronization of video and audio during a Teams session. *Live Share canvas* adds annotation tools for whiteboard and PowerPoint presentations.
 
 ### Finding the library
 
@@ -38,6 +39,7 @@ npm install @microsoft/live-share@next --save
 # [Yarn](#tab/yarn)
 
 To install using yarn
+
 ```bash
 yarn add @microsoft/live-share@next
 ```
@@ -89,6 +91,7 @@ yarn add @microsoft/live-share-canvas@next
 With the latest Microsoft TeamsJS client library, your Teams app can [run across Microsoft 365](/microsoftteams/platform/m365-apps/overview), including Outlook and the Microsoft 365 app. With TeamsJS you can deliver a cross-platform app to more users from a single codebase, and a more streamlined experience for your customers. The TeamsJS v.2.x.x SDK is a superset of TeamsJS `1.x` versions; it supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Microsoft 365 app. Refer to the [TeamsJS client library](/microsoftteams/platform/tabs/how-to/using-teams-client-library) overview for guidance on building Microsoft 365-enabled apps.
 
 ### JavaScript tree shaking
+
 Starting with version 2.31.0, the TeamsJS library is fully tree-shakeable. [Tree shaking](https://developer.mozilla.org/docs/Glossary/Tree_shaking) is a JavaScript optimization that eliminates unused code. By using tree shaking when an app is bundled for deployment you can reduce package size, which results in faster download and improved load time. For additional information see [How to use tree shaking with TeamsJS](/microsoftteams/platform/tabs/how-to/using-teams-client-library#improve-load-time-performance-with-javascript-tree-shaking).
 
 ### Finding the library
@@ -97,9 +100,9 @@ The TeamsJS client is distributed as an [npm package](https://npmjs.com/package/
 
 # [NPM](#tab/npm)
 
-  ```bash
+```bash
 npm install --save @microsoft/teams-js
-  ```
+```
 
 # [Yarn](#tab/yarn)
 
@@ -110,63 +113,20 @@ yarn add @microsoft/teams-js
 ---
 
 #### CDN
+
 TeamsJS can also be referenced from its CDN endpoints:
 
 ```javascript
 <!-- Microsoft Teams JavaScript API (via CDN) -->
 <script
-  src="https://res.cdn.office.net/teams-js/2.55.0/js/MicrosoftTeams.min.js"
-  integrity="sha384-qOOENVJGWr7UF7wvgyycjvq3sZen4SEYQwZMKqpquvV/PNMtSJb3VGZ/sAIKsZDw"
+  src="https://res.cdn.office.net/teams-js/2.56.0/js/MicrosoftTeams.min.js"
+  integrity="sha384-ftygCQXhLMbuUBdLMhfAnIFTGb2SAYYAPD9iyq2LRkbWpKkEifAGD+qPVcPgthO2"
   crossorigin="anonymous"
 ></script>
 
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@2.55.0/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@2.56.0/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (via local) -->
 <script src="MicrosoftTeams.min.js"></script>
 ```
-
-## Microsoft Teams AI library
-
-The [Teams AI library](/microsoftteams/platform/teams-ai-library/welcome) is a Teams-centric interface for integrating GPT-based language models and user intent engines. It simplifies the development process by reducing the need to write and maintain complex conversational bot logic. You can leverage prebuilt, reusable code snippets that allow you to quickly build intelligent apps. This capabilities-driven approach allows you to focus on business logic rather than learning the intricacies of Microsoft Teams conversational frameworks.
-
-> [!IMPORTANT]
-> Teams AI library v1 is deprecated. We recommend that you upgrade your agents to use the updated [Teams AI library](/microsoftteams/platform/teams-ai-library/welcome). Teams AI library is now generally available for JavaScript and C#, supports Python in developer preview. It provides a simplified SDK, support for Model Context Protocol (MCP), Agent-to-Agent communication (A2A), and streamlined tools to enable developers to build intelligent agents for Teams.
-
-You can leverage Teams AI library to:
-
-* Use prebuilt templates to add Teams app capabilities.
-* Use techniques like prompt engineering to add ChatGPT like conversational experiences to your bot and built-in safety features, like moderation, help ensure your bot always responds in an appropriate manner.
-* Use the library's planning engine that allows the model to identify the user's intent and then maps that intent to actions that you implement.
-* Add support for any LLM of your choice without changing the bot logic.
-
-### Finding the library
-
-The Teams AI library is available in a number of package formats to support different programming languages, more information is available on the [library GitHub page](https://github.com/microsoft/teams-ai).
-
-## Microsoft TeamsFx SDK
-
-> [!IMPORTANT]
->
-> TeamsFx SDK will be officially deprecated by September 2025, with support continuing until September 2026. We recommend planning your transition to the [Microsoft 365 Agents SDK](/microsoft-365/agents-sdk/) for ongoing and future development needs.
-
-The [TeamsFx SDK](/microsoftteams/platform/toolkit/teamsfx-sdk) greatly simplifies Microsoft Teams single sign-on (SSO) and cloud resource access in your app.
-
-### Finding the library
-
-The TeamsFx client is distributed as an [npm package](https://npmjs.com/package/@microsoft/teams-js/) for Typescript and JavaScript.
-
-# [NPM](#tab/npm)
-
-```bash
-npm install @microsoft/teamsfx
-```
-
-# [Yarn](#tab/yarn)
-
-```bash
-yarn add @microsoft/teamsfx
-```
-
----
