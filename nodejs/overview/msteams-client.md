@@ -5,19 +5,19 @@ ms.date: 12/02/2025
 ms.topic: reference
 keywords: sdk msteams live-share teamsfx teams client javascript library reference latest
 ---
+
 # Microsoft Teams SDK reference
 
 There are several libraries available to support various aspects of Teams app development. This article provides an overview of each, along with basic installation instructions.
- 
-| Library | Description | API reference |
-|-|-|-|
-| **Live Share SDK** | Live Share enables collaborative app experiences | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
-| **TeamsJS library** | Teams JavaScript client library enables you to create hosted experiences in Teams, Outlook, and the Microsoft 365 app | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml) |
 
+| Library             | Description                                                                                                           | API reference                                                                                                                                                                                                                                           |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Live Share SDK**  | Live Share enables collaborative app experiences                                                                      | [Live Share](../docs-ref-autogen/%40microsoft/live-share/index.yml)<br/><br/>[Live Share canvas](../docs-ref-autogen/%40microsoft/live-share-canvas/index.yml)<br/><br/>[Live Share media](../docs-ref-autogen/%40microsoft/live-share-media/index.yml) |
+| **TeamsJS library** | Teams JavaScript client library enables you to create hosted experiences in Teams, Outlook, and the Microsoft 365 app | [TeamsJS ](../docs-ref-autogen/%40microsoft/teams-js/index.yml)                                                                                                                                                                                         |
 
 ## Microsoft Teams Live Share
 
-The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is comprised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (sometimes called *Live Share core*) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. *Live Share media* allows for media synchronization of video and audio during a Teams session. *Live Share canvas* adds annotation tools for whiteboard and PowerPoint presentations. 
+The [Live Share SDK](https://github.com/microsoft/live-share-sdk) is comprised of three sub-packages with features to help developers create more collaborative moments across Microsoft Teams. Live Share (sometimes called *Live Share core*) is for connecting to Fluid Framework through `sidePanel` and `meetingStage` for in meeting pop-up cards. *Live Share media* allows for media synchronization of video and audio during a Teams session. *Live Share canvas* adds annotation tools for whiteboard and PowerPoint presentations.
 
 ### Finding the library
 
@@ -38,6 +38,7 @@ npm install @microsoft/live-share@next --save
 # [Yarn](#tab/yarn)
 
 To install using yarn
+
 ```bash
 yarn add @microsoft/live-share@next
 ```
@@ -89,6 +90,7 @@ yarn add @microsoft/live-share-canvas@next
 With the latest Microsoft TeamsJS client library, your Teams app can [run across Microsoft 365](/microsoftteams/platform/m365-apps/overview), including Outlook and the Microsoft 365 app. With TeamsJS you can deliver a cross-platform app to more users from a single codebase, and a more streamlined experience for your customers. The TeamsJS v.2.x.x SDK is a superset of TeamsJS `1.x` versions; it supports existing Teams app functionality while adding the ability to host Teams apps in Outlook and Microsoft 365 app. Refer to the [TeamsJS client library](/microsoftteams/platform/tabs/how-to/using-teams-client-library) overview for guidance on building Microsoft 365-enabled apps.
 
 ### JavaScript tree shaking
+
 Starting with version 2.31.0, the TeamsJS library is fully tree-shakeable. [Tree shaking](https://developer.mozilla.org/docs/Glossary/Tree_shaking) is a JavaScript optimization that eliminates unused code. By using tree shaking when an app is bundled for deployment you can reduce package size, which results in faster download and improved load time. For additional information see [How to use tree shaking with TeamsJS](/microsoftteams/platform/tabs/how-to/using-teams-client-library#improve-load-time-performance-with-javascript-tree-shaking).
 
 ### Finding the library
@@ -97,9 +99,9 @@ The TeamsJS client is distributed as an [npm package](https://npmjs.com/package/
 
 # [NPM](#tab/npm)
 
-  ```bash
+```bash
 npm install --save @microsoft/teams-js
-  ```
+```
 
 # [Yarn](#tab/yarn)
 
@@ -110,18 +112,19 @@ yarn add @microsoft/teams-js
 ---
 
 #### CDN
+
 TeamsJS can also be referenced from its CDN endpoints:
 
 ```javascript
 <!-- Microsoft Teams JavaScript API (via CDN) -->
 <script
-  src="https://res.cdn.office.net/teams-js/2.55.0/js/MicrosoftTeams.min.js"
-  integrity="sha384-qOOENVJGWr7UF7wvgyycjvq3sZen4SEYQwZMKqpquvV/PNMtSJb3VGZ/sAIKsZDw"
+  src="https://res.cdn.office.net/teams-js/2.56.0/js/MicrosoftTeams.min.js"
+  integrity="sha384-ftygCQXhLMbuUBdLMhfAnIFTGb2SAYYAPD9iyq2LRkbWpKkEifAGD+qPVcPgthO2"
   crossorigin="anonymous"
 ></script>
 
 <!-- Microsoft Teams JavaScript API (via npm) -->
-<script src="node_modules/@microsoft/teams-js@2.55.0/dist/MicrosoftTeams.min.js"></script>
+<script src="node_modules/@microsoft/teams-js@2.56.0/dist/MicrosoftTeams.min.js"></script>
 
 <!-- Microsoft Teams JavaScript API (via local) -->
 <script src="MicrosoftTeams.min.js"></script>
