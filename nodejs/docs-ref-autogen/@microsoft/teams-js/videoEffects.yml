@@ -34,7 +34,7 @@ functions:
       return:
         description: boolean to represent whether the video capability is supported
         type: boolean
-  - name: notifySelectedVideoEffectChanged(EffectChangeType, undefined | string)
+  - name: notifySelectedVideoEffectChanged(EffectChangeType, string | undefined)
     uid: '@microsoft/teams-js.videoEffects.notifySelectedVideoEffectChanged'
     package: '@microsoft/teams-js'
     summary: >-
@@ -52,13 +52,13 @@ functions:
     syntax:
       content: >-
         function notifySelectedVideoEffectChanged(effectChangeType:
-        EffectChangeType, effectId: undefined | string)
+        EffectChangeType, effectId: string | undefined)
       parameters:
         - id: effectChangeType
           type: <xref uid="@microsoft/teams-js.videoEffects.EffectChangeType" />
           description: the effect change type.
         - id: effectId
-          type: undefined | string
+          type: string | undefined
           description: Newly selected effect id.
   - name: registerForVideoEffect(VideoEffectCallback)
     uid: '@microsoft/teams-js.videoEffects.registerForVideoEffect'

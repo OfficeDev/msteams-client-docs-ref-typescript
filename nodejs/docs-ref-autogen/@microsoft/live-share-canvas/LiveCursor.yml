@@ -74,10 +74,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: undefined | IUserInfo userInfo
+      content: IUserInfo | undefined userInfo
       return:
         description: ''
-        type: undefined | <xref uid="@microsoft/live-share-canvas.IUserInfo" />
+        type: <xref uid="@microsoft/live-share-canvas.IUserInfo" /> | undefined
 methods:
   - name: setPosition(IPoint)
     uid: '@microsoft/live-share-canvas.LiveCursor.setPosition'

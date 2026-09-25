@@ -20,10 +20,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: undefined | TData data
+      content: TData | undefined data
       return:
         description: ''
-        type: undefined | TData
+        type: TData | undefined
   - name: displayName
     uid: '@microsoft/live-share.LivePresenceUser.displayName'
     package: '@microsoft/live-share'
@@ -32,10 +32,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: undefined | string displayName
+      content: string | undefined displayName
       return:
         description: ''
-        type: undefined | string
+        type: string | undefined
   - name: isLocalUser
     uid: '@microsoft/live-share.LivePresenceUser.isLocalUser'
     package: '@microsoft/live-share'
@@ -95,15 +95,15 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function getConnection(clientId: string): undefined |
-        LivePresenceConnection<TData>
+        function getConnection(clientId: string): LivePresenceConnection<TData>
+        | undefined
       parameters:
         - id: clientId
           type: string
           description: The ID of the client to lookup.
       return:
         description: ''
-        type: undefined | LivePresenceConnection&lt;TData&gt;
+        type: LivePresenceConnection&lt;TData&gt; | undefined
   - name: getConnections(PresenceState)
     uid: '@microsoft/live-share.LivePresenceUser.getConnections'
     package: '@microsoft/live-share'

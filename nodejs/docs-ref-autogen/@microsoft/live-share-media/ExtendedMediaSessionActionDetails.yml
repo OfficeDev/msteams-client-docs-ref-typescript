@@ -44,10 +44,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'data?: null | object'
+      content: 'data?: object | null'
       return:
         description: ''
-        type: null | object
+        type: object | null
   - name: fastSeek
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.fastSeek'
     package: '@microsoft/live-share-media'
@@ -56,10 +56,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'fastSeek?: null | boolean'
+      content: 'fastSeek?: boolean | null'
       return:
         description: ''
-        type: null | boolean
+        type: boolean | null
   - name: ignoreReason
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.ignoreReason'
     package: '@microsoft/live-share-media'
@@ -68,10 +68,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'ignoreReason?: null | "localusersuspended"'
+      content: 'ignoreReason?: "localusersuspended" | null'
       return:
         description: ''
-        type: null | "localusersuspended"
+        type: '"localusersuspended" | null'
   - name: local
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.local'
     package: '@microsoft/live-share-media'
@@ -94,12 +94,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'metadata?: null | ExtendedMediaMetadata'
+      content: 'metadata?: ExtendedMediaMetadata | null'
       return:
         description: ''
         type: >-
-          null | <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata"
-          />
+          <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata" /> |
+          null
   - name: playbackRate
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.playbackRate'
     package: '@microsoft/live-share-media'
@@ -108,10 +108,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'playbackRate?: null | number'
+      content: 'playbackRate?: number | null'
       return:
         description: ''
-        type: null | number
+        type: number | null
   - name: seekOffset
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.seekOffset'
     package: '@microsoft/live-share-media'
@@ -120,10 +120,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'seekOffset?: null | number'
+      content: 'seekOffset?: number | null'
       return:
         description: ''
-        type: null | number
+        type: number | null
   - name: seekTime
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.seekTime'
     package: '@microsoft/live-share-media'
@@ -132,10 +132,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'seekTime?: null | number'
+      content: 'seekTime?: number | null'
       return:
         description: ''
-        type: null | number
+        type: number | null
   - name: source
     uid: '@microsoft/live-share-media.ExtendedMediaSessionActionDetails.source'
     package: '@microsoft/live-share-media'
@@ -163,9 +163,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'suspension?: null | MediaSessionCoordinatorSuspension'
+      content: 'suspension?: MediaSessionCoordinatorSuspension | null'
       return:
         description: ''
         type: >-
-          null | <xref
+          <xref
           uid="@microsoft/live-share-media.MediaSessionCoordinatorSuspension" />
+          | null

@@ -8,7 +8,7 @@ remarks: See pages.SaveParameters
 isDeprecated: true
 customDeprecatedMessage: >-
   As of TeamsJS v2.0.0, please use
-  [SaveParameters](xref:@microsoft/teams-js.pages.config.SaveParameters)
+  [pages.config.SaveParameters](xref:@microsoft/teams-js.pages.config.SaveParameters)
   instead.
 syntax: |
   type SaveParameters = pages.config.SaveParameters

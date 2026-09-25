@@ -154,17 +154,17 @@ variables:
     isDeprecated: false
     syntax:
       content: >-
-        HighlighterColors: { Pink: IColor, aqua: IColor, black: IColor, blue:
-        IColor, crimson: IColor, gray: IColor, green: IColor, lavender: IColor,
-        lightGray: IColor, lightGreen: IColor, lime: IColor, orange: IColor,
-        paleBlue: IColor, red: IColor, rose: IColor, yellow: IColor }
+        HighlighterColors: { aqua: IColor, black: IColor, blue: IColor, crimson:
+        IColor, gray: IColor, green: IColor, lavender: IColor, lightGray:
+        IColor, lightGreen: IColor, lime: IColor, orange: IColor, paleBlue:
+        IColor, Pink: IColor, red: IColor, rose: IColor, yellow: IColor }
       return:
         description: ''
         type: >-
-          { Pink: IColor, aqua: IColor, black: IColor, blue: IColor, crimson:
-          IColor, gray: IColor, green: IColor, lavender: IColor, lightGray:
-          IColor, lightGreen: IColor, lime: IColor, orange: IColor, paleBlue:
-          IColor, red: IColor, rose: IColor, yellow: IColor }
+          { aqua: IColor, black: IColor, blue: IColor, crimson: IColor, gray:
+          IColor, green: IColor, lavender: IColor, lightGray: IColor,
+          lightGreen: IColor, lime: IColor, orange: IColor, paleBlue: IColor,
+          Pink: IColor, red: IColor, rose: IColor, yellow: IColor }
   - name: PenColors
     uid: '@microsoft/live-share-canvas.PenColors'
     package: '@microsoft/live-share-canvas'

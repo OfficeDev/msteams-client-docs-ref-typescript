@@ -20,10 +20,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'clientId: undefined | string'
+      content: 'clientId: string | undefined'
       return:
         description: ''
-        type: undefined | string
+        type: string | undefined
   - name: connected
     uid: '@microsoft/live-share.IRuntimeSignaler.connected'
     package: '@microsoft/live-share'
@@ -58,7 +58,7 @@ methods:
     syntax:
       content: >-
         function off(event: "connected", listener: (clientId: string) => void):
-        IRuntimeSignaler
+        this
       parameters:
         - id: event
           type: '"connected"'
@@ -68,7 +68,7 @@ methods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
+        type: this
   - name: 'on("connected", (clientId: string) => void)'
     uid: '@microsoft/live-share.IRuntimeSignaler.on'
     package: '@microsoft/live-share'
@@ -78,7 +78,7 @@ methods:
     syntax:
       content: >-
         function on(event: "connected", listener: (clientId: string) => void):
-        IRuntimeSignaler
+        this
       parameters:
         - id: event
           type: '"connected"'
@@ -88,7 +88,7 @@ methods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
+        type: this
   - name: 'on("signal", (message: IInboundSignalMessage, local: boolean) => void)'
     uid: '@microsoft/live-share.IRuntimeSignaler.on_1'
     package: '@microsoft/live-share'
@@ -98,7 +98,7 @@ methods:
     syntax:
       content: >-
         function on(event: "signal", listener: (message: IInboundSignalMessage,
-        local: boolean) => void): IRuntimeSignaler
+        local: boolean) => void): this
       parameters:
         - id: event
           type: '"signal"'
@@ -108,7 +108,7 @@ methods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.IRuntimeSignaler" />
+        type: this
   - name: submitSignal(string, any)
     uid: '@microsoft/live-share.IRuntimeSignaler.submitSignal'
     package: '@microsoft/live-share'

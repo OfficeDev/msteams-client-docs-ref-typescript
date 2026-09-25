@@ -52,9 +52,7 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function addClient(clientId: string, roles: UserMeetingRole[]):
-        TestLiveShareHost
+      content: 'function addClient(clientId: string, roles: UserMeetingRole[]): this'
       parameters:
         - id: clientId
           type: string
@@ -64,8 +62,8 @@ methods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.TestLiveShareHost" />
-  - name: 'create(() => undefined | string, (containerId: string) => void)'
+        type: this
+  - name: 'create(() => string | undefined, (containerId: string) => void)'
     uid: '@microsoft/live-share.TestLiveShareHost.create'
     package: '@microsoft/live-share'
     summary: Creates an new live share host for local testing.
@@ -73,12 +71,12 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        static function create(getLocalTestContainerId?: () => undefined |
-        string, setLocalTestContainerId?: (containerId: string) => void):
+        static function create(getLocalTestContainerId?: () => string |
+        undefined, setLocalTestContainerId?: (containerId: string) => void):
         ILiveShareHost
       parameters:
         - id: getLocalTestContainerId
-          type: () =&gt; undefined | string
+          type: () =&gt; string | undefined
           description: >-
             Optional. Function to customize reading the test container ID. The
             default implementation reads the ID from the browsers # URL.

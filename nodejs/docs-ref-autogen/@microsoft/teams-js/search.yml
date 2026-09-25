@@ -105,7 +105,7 @@ functions:
 
             Should be used to return your application to its most recent,
             non-search state. The value of
-            [searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
+            [SearchQuery.searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
 
             will be whatever the last query was before ending search.
         - id: onExecuteHandler
@@ -117,7 +117,7 @@ functions:
             the full list of search results.
 
             The value of
-            [searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
+            [SearchQuery.searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
             is the complete query the user entered in the search box.
         - id: onChangeHandler
           type: <xref uid="@microsoft/teams-js.search.SearchQueryHandler" />
@@ -132,7 +132,7 @@ functions:
 
 
             This handler will be called with an empty
-            [searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
+            [SearchQuery.searchTerm](xref:@microsoft/teams-js.search.SearchQuery.searchTerm)
             when search is beginning, and subsequently,
 
             with the current contents of the search box.

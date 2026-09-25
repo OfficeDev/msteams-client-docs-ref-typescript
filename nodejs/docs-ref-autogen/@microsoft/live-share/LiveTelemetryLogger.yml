@@ -30,7 +30,7 @@ constructors:
           type: <xref uid="@microsoft/live-share.LiveShareRuntime" />
           description: ''
 methods:
-  - name: formatCorrelationId(undefined | string, number)
+  - name: formatCorrelationId(string | undefined, number)
     uid: '@microsoft/live-share.LiveTelemetryLogger.formatCorrelationId'
     package: '@microsoft/live-share'
     summary: ''
@@ -38,11 +38,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        static function formatCorrelationId(clientId: undefined | string,
+        static function formatCorrelationId(clientId: string | undefined,
         timestamp: number): string
       parameters:
         - id: clientId
-          type: undefined | string
+          type: string | undefined
           description: ''
         - id: timestamp
           type: number
