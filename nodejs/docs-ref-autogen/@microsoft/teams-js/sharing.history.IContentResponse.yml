@@ -4,7 +4,7 @@ uid: '@microsoft/teams-js.sharing.history.IContentResponse'
 package: '@microsoft/teams-js'
 summary: >-
   Represents the data returned when calling
-  [getContent](xref:@microsoft/teams-js.sharing.history.getContent)
+  [sharing.history.getContent](xref:@microsoft/teams-js.sharing.history.getContent)
 fullName: IContentResponse
 remarks: ''
 previewState: beta

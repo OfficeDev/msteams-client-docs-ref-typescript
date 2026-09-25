@@ -26,7 +26,9 @@ methods:
   - name: getMaxTimestampError()
     uid: '@microsoft/live-share.LocalTimestampProvider.getMaxTimestampError'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Returns the maximum number of milliseconds a returned timestamp can be off
+      from the source.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -37,7 +39,9 @@ methods:
   - name: getTimestamp()
     uid: '@microsoft/live-share.LocalTimestampProvider.getTimestamp'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Returns the current timestamp as the number of milliseconds sine the Unix
+      Epoch.
     remarks: ''
     isDeprecated: false
     syntax:

@@ -26,8 +26,10 @@ properties:
 
       a resource; access tokens should be used for that.
 
-      See [getAuthToken](xref:@microsoft/teams-js.authentication.getAuthToken_1)
-      and [authenticate](xref:@microsoft/teams-js.authentication.authenticate_1)
+      See
+      [authentication.getAuthToken](xref:@microsoft/teams-js.authentication.getAuthToken_1)
+      and
+      [authentication.authenticate](xref:@microsoft/teams-js.authentication.authenticate_1)
       for more information on access tokens.
     fullName: id
     remarks: ''

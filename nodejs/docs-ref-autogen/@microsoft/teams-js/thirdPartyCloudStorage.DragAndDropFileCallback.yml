@@ -2,8 +2,9 @@
 name: DragAndDropFileCallback
 uid: '@microsoft/teams-js.thirdPartyCloudStorage.DragAndDropFileCallback'
 package: '@microsoft/teams-js'
-summary: ''
+summary: Defines the callback function received from Third Party App
 fullName: DragAndDropFileCallback
 remarks: ''
+previewState: beta
 isDeprecated: false
 type: interface

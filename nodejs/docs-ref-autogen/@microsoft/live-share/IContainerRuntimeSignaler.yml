@@ -24,7 +24,7 @@ methods:
     syntax:
       content: >-
         function off(event: "signal", listener: (message: IInboundSignalMessage,
-        local: boolean) => void): IContainerRuntimeSignaler
+        local: boolean) => void): this
       parameters:
         - id: event
           type: '"signal"'
@@ -34,7 +34,7 @@ methods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.IContainerRuntimeSignaler" />
+        type: this
   - name: 'on("signal", (message: IInboundSignalMessage, local: boolean) => void)'
     uid: '@microsoft/live-share.IContainerRuntimeSignaler.on'
     package: '@microsoft/live-share'
@@ -44,7 +44,7 @@ methods:
     syntax:
       content: >-
         function on(event: "signal", listener: (message: IInboundSignalMessage,
-        local: boolean) => void): IContainerRuntimeSignaler
+        local: boolean) => void): this
       parameters:
         - id: event
           type: '"signal"'
@@ -54,7 +54,7 @@ methods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.IContainerRuntimeSignaler" />
+        type: this
   - name: submitSignal(string, any)
     uid: '@microsoft/live-share.IContainerRuntimeSignaler.submitSignal'
     package: '@microsoft/live-share'

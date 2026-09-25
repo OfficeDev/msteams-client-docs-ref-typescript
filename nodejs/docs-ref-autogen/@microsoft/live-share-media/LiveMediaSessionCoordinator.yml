@@ -229,7 +229,7 @@ inheritedMethods:
     syntax:
       content: >-
         function addListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): LiveMediaSessionCoordinator
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -239,7 +239,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.addListener
   - name: emit<E>(string | symbol, any[])
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.emit'
@@ -432,7 +432,7 @@ inheritedMethods:
     syntax:
       content: >-
         function off<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): LiveMediaSessionCoordinator
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -442,7 +442,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.off
   - name: 'on<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.on'
@@ -505,7 +505,7 @@ inheritedMethods:
     syntax:
       content: >-
         function on<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): LiveMediaSessionCoordinator
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -515,7 +515,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'once<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.once'
@@ -572,7 +572,7 @@ inheritedMethods:
     syntax:
       content: >-
         function once<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): LiveMediaSessionCoordinator
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -582,7 +582,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: 'prependListener<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.prependListener'
@@ -617,7 +617,7 @@ inheritedMethods:
     syntax:
       content: >-
         function prependListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): LiveMediaSessionCoordinator
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -627,7 +627,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.prependListener
   - name: 'prependOnceListener<E>(string | symbol, (args: any[]) => void)'
     uid: >-
@@ -658,7 +658,7 @@ inheritedMethods:
     syntax:
       content: >-
         function prependOnceListener<E>(eventName: string | symbol, listener:
-        (args: any[]) => void): LiveMediaSessionCoordinator
+        (args: any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -668,7 +668,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.prependOnceListener
   - name: rawListeners<E>(string | symbol)
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.rawListeners'
@@ -729,16 +729,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function removeAllListeners<E>(eventName?: string | symbol):
-        LiveMediaSessionCoordinator
+      content: 'function removeAllListeners<E>(eventName?: string | symbol): this'
       parameters:
         - id: eventName
           type: string | symbol
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: 'removeListener<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.removeListener'
@@ -895,7 +893,7 @@ inheritedMethods:
     syntax:
       content: >-
         function removeListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): LiveMediaSessionCoordinator
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -905,7 +903,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeListener
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.setMaxListeners'
@@ -929,14 +927,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): LiveMediaSessionCoordinator'
+      content: 'function setMaxListeners(n: number): this'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.LiveMediaSessionCoordinator" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
   - name: '[captureRejectionSymbol](Error, string | symbol, any[])'
     uid: >-
@@ -983,7 +981,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@144
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.[captureRejectionSymbol]
 methods:
   - name: beginSuspension(CoordinationWaitPoint)
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.beginSuspension'
@@ -1114,7 +1112,7 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: setTrack(null | ExtendedMediaMetadata, CoordinationWaitPoint[])
+  - name: setTrack(ExtendedMediaMetadata | null, CoordinationWaitPoint[])
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.setTrack'
     package: '@microsoft/live-share-media'
     summary: Instructs the group to load a new track.
@@ -1126,13 +1124,13 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function setTrack(metadata: null | ExtendedMediaMetadata, waitPoints?:
+        function setTrack(metadata: ExtendedMediaMetadata | null, waitPoints?:
         CoordinationWaitPoint[]): Promise<void>
       parameters:
         - id: metadata
           type: >-
-            null | <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata"
-            />
+            <xref uid="@microsoft/live-share-media.ExtendedMediaMetadata" /> |
+            null
           description: >-
             The track to load or `null` to indicate that the end of the track is
             reached.
@@ -1146,7 +1144,7 @@ methods:
           a void promise that resolves once complete, throws if user does not
           have proper roles
         type: Promise&lt;void&gt;
-  - name: setTrackData(null | object)
+  - name: setTrackData(object | null)
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinator.setTrackData'
     package: '@microsoft/live-share-media'
     summary: Updates the track data object for the current track.
@@ -1164,10 +1162,10 @@ methods:
       false.
     isDeprecated: false
     syntax:
-      content: 'function setTrackData(data: null | object): Promise<void>'
+      content: 'function setTrackData(data: object | null): Promise<void>'
       parameters:
         - id: data
-          type: null | object
+          type: object | null
           description: >-
             New data object to sync with the group. This value will be
             synchronized using a last writer wins strategy.

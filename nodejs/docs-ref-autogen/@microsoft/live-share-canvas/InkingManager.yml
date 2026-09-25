@@ -281,7 +281,7 @@ inheritedMethods:
     syntax:
       content: >-
         function addListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): InkingManager
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -291,7 +291,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.addListener
   - name: emit<E>(string | symbol, any[])
     uid: '@microsoft/live-share-canvas.InkingManager.emit'
@@ -484,7 +484,7 @@ inheritedMethods:
     syntax:
       content: >-
         function off<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): InkingManager
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -494,7 +494,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.off
   - name: 'on<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-canvas.InkingManager.on'
@@ -557,7 +557,7 @@ inheritedMethods:
     syntax:
       content: >-
         function on<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): InkingManager
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -567,7 +567,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'once<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-canvas.InkingManager.once'
@@ -624,7 +624,7 @@ inheritedMethods:
     syntax:
       content: >-
         function once<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): InkingManager
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -634,7 +634,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: 'prependListener<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-canvas.InkingManager.prependListener'
@@ -669,7 +669,7 @@ inheritedMethods:
     syntax:
       content: >-
         function prependListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): InkingManager
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -679,7 +679,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.prependListener
   - name: 'prependOnceListener<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-canvas.InkingManager.prependOnceListener'
@@ -709,7 +709,7 @@ inheritedMethods:
     syntax:
       content: >-
         function prependOnceListener<E>(eventName: string | symbol, listener:
-        (args: any[]) => void): InkingManager
+        (args: any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -719,7 +719,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.prependOnceListener
   - name: rawListeners<E>(string | symbol)
     uid: '@microsoft/live-share-canvas.InkingManager.rawListeners'
@@ -780,16 +780,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function removeAllListeners<E>(eventName?: string | symbol):
-        InkingManager
+      content: 'function removeAllListeners<E>(eventName?: string | symbol): this'
       parameters:
         - id: eventName
           type: string | symbol
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: 'removeListener<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-canvas.InkingManager.removeListener'
@@ -946,7 +944,7 @@ inheritedMethods:
     syntax:
       content: >-
         function removeListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): InkingManager
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -956,7 +954,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeListener
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share-canvas.InkingManager.setMaxListeners'
@@ -980,14 +978,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): InkingManager'
+      content: 'function setMaxListeners(n: number): this'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-canvas.InkingManager" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
   - name: '[captureRejectionSymbol](Error, string | symbol, any[])'
     uid: '@microsoft/live-share-canvas.InkingManager.[captureRejectionSymbol]'
@@ -1033,7 +1031,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@202
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.[captureRejectionSymbol]
 methods:
   - name: activate()
     uid: '@microsoft/live-share-canvas.InkingManager.activate'
@@ -1180,14 +1178,14 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function getStroke(id: string): undefined | IStroke'
+      content: 'function getStroke(id: string): IStroke | undefined'
       parameters:
         - id: id
           type: string
           description: The id of the stroke to retrieve.
       return:
         description: The stroke with the specified id.
-        type: undefined | <xref uid="@microsoft/live-share-canvas.IStroke" />
+        type: <xref uid="@microsoft/live-share-canvas.IStroke" /> | undefined
   - name: importRaw(IRawStroke[])
     uid: '@microsoft/live-share-canvas.InkingManager.importRaw'
     package: '@microsoft/live-share-canvas'

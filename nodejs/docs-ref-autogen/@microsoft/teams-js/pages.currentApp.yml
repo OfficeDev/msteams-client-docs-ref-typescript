@@ -26,7 +26,7 @@ functions:
     summary: Navigate within the currently running app
     remarks: >-
       If you are looking to navigate to a different app, use
-      [navigateToApp](xref:@microsoft/teams-js.pages.navigateToApp).
+      [pages.navigateToApp](xref:@microsoft/teams-js.pages.navigateToApp).
     isDeprecated: false
     syntax:
       content: 'function navigateTo(params: NavigateWithinAppParams): Promise<void>'

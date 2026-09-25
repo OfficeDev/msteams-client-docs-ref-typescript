@@ -6,7 +6,7 @@ summary: ''
 fullName: Context
 remarks: >-
   For more details about the updated
-  [Context](xref:@microsoft/teams-js.app.Context) interface, visit the
+  [app.Context](xref:@microsoft/teams-js.app.Context) interface, visit the
 
   [Teams JavaScript client
   SDK](https://learn.microsoft.com/microsoftteams/platform/tabs/how-to/using-teams-client-sdk#updates-to-the-context-interface)
@@ -18,7 +18,7 @@ remarks: >-
 isDeprecated: true
 customDeprecatedMessage: >-
   As of TeamsJS v2.0.0, please use the
-  [Context](xref:@microsoft/teams-js.app.Context) interface and its updated
+  [app.Context](xref:@microsoft/teams-js.app.Context) interface and its updated
   properties instead.
 type: interface
 properties:
@@ -245,7 +245,7 @@ properties:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of TeamsJS v2.0.0, please use
-      [dialogParameters](xref:@microsoft/teams-js.app.Context.dialogParameters)
+      [app.Context.dialogParameters](xref:@microsoft/teams-js.app.Context.dialogParameters)
       instead
 
 

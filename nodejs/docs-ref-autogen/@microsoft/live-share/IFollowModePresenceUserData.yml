@@ -18,10 +18,10 @@ properties:
       set.
     isDeprecated: false
     syntax:
-      content: 'followingUserId: undefined | string'
+      content: 'followingUserId: string | undefined'
       return:
         description: ''
-        type: undefined | string
+        type: string | undefined
   - name: stateValue
     uid: '@microsoft/live-share.IFollowModePresenceUserData.stateValue'
     package: '@microsoft/live-share'

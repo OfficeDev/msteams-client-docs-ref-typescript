@@ -38,7 +38,7 @@ fields:
     summary: >-
       Frame context used when app is running in the authentication window
       launched by calling
-      [authenticate](xref:@microsoft/teams-js.authentication.authenticate_1)
+      [authentication.authenticate](xref:@microsoft/teams-js.authentication.authenticate_1)
   - name: content
     uid: '@microsoft/teams-js.FrameContexts.content'
     package: '@microsoft/teams-js'

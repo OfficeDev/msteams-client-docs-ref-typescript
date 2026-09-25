@@ -94,8 +94,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function getClientInfo(clientId: string): Promise<undefined |
-        IClientInfo>
+        function getClientInfo(clientId: string): Promise<IClientInfo |
+        undefined>
       parameters:
         - id: clientId
           type: string
@@ -105,8 +105,8 @@ methods:
           IClientInfo object if the user is known, otherwise it will return
           undefined
         type: >-
-          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
-          />&gt;
+          Promise&lt;<xref uid="@microsoft/live-share.IClientInfo" /> |
+          undefined&gt;
   - name: getTimestamp()
     uid: '@microsoft/live-share.LiveShareRuntime.getTimestamp'
     package: '@microsoft/live-share'

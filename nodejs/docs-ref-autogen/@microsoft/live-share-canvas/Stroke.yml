@@ -41,10 +41,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: undefined | string clientId
+      content: string | undefined clientId
       return:
         description: ''
-        type: undefined | string
+        type: string | undefined
   - name: id
     uid: '@microsoft/live-share-canvas.Stroke.id'
     package: '@microsoft/live-share-canvas'
@@ -203,7 +203,7 @@ methods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function pointErase(eraserRect: IRect): undefined | IStroke[]'
+      content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
       parameters:
         - id: eraserRect
           type: <xref uid="@microsoft/live-share-canvas.IRect" />
@@ -212,7 +212,7 @@ methods:
         description: |-
           An array of new strokes (which might be empty if the whole stroke
           was erased), or `undefined` if the stroke was unchanged.
-        type: undefined | <xref uid="@microsoft/live-share-canvas.IStroke" />[]
+        type: <xref uid="@microsoft/live-share-canvas.IStroke" />[] | undefined
   - name: serialize()
     uid: '@microsoft/live-share-canvas.Stroke.serialize'
     package: '@microsoft/live-share-canvas'

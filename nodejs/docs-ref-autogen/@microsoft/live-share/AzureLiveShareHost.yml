@@ -53,8 +53,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function getClientInfo(clientId: string): Promise<undefined |
-        IClientInfo>
+        function getClientInfo(clientId: string): Promise<IClientInfo |
+        undefined>
       parameters:
         - id: clientId
           type: string
@@ -62,8 +62,8 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
-          />&gt;
+          Promise&lt;<xref uid="@microsoft/live-share.IClientInfo" /> |
+          undefined&gt;
   - name: getClientRoles(string)
     uid: '@microsoft/live-share.AzureLiveShareHost.getClientRoles'
     package: '@microsoft/live-share'
@@ -76,8 +76,8 @@ methods:
     customDeprecatedMessage: ''
     syntax:
       content: >-
-        function getClientRoles(clientId: string): Promise<undefined |
-        UserMeetingRole[]>
+        function getClientRoles(clientId: string): Promise<UserMeetingRole[] |
+        undefined>
       parameters:
         - id: clientId
           type: string
@@ -85,8 +85,8 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;undefined | <xref
-          uid="@microsoft/live-share.UserMeetingRole" />[]&gt;
+          Promise&lt;<xref uid="@microsoft/live-share.UserMeetingRole" />[] |
+          undefined&gt;
   - name: getFluidContainerId()
     uid: '@microsoft/live-share.AzureLiveShareHost.getFluidContainerId'
     package: '@microsoft/live-share'

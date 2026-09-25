@@ -61,7 +61,7 @@ functions:
     isDeprecated: false
     syntax:
       content: function resetIsShortcutRelayCapabilityEnabled()
-  - name: setOverridableShortcutHandler(undefined | OverridableShortcutHandler)
+  - name: setOverridableShortcutHandler(OverridableShortcutHandler | undefined)
     uid: '@microsoft/teams-js.shortcutRelay.setOverridableShortcutHandler'
     package: '@microsoft/teams-js'
     summary: |-
@@ -73,14 +73,15 @@ functions:
     isDeprecated: false
     syntax:
       content: >-
-        function setOverridableShortcutHandler(handler: undefined |
-        OverridableShortcutHandler): OverridableShortcutHandler | undefined
+        function setOverridableShortcutHandler(handler:
+        OverridableShortcutHandler | undefined): OverridableShortcutHandler |
+        undefined
       parameters:
         - id: handler
           type: >-
-            undefined | <xref
+            <xref
             uid="@microsoft/teams-js.shortcutRelay.OverridableShortcutHandler"
-            />
+            /> | undefined
           description: ''
       return:
         description: ''

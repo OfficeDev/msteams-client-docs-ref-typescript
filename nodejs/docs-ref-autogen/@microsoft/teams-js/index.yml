@@ -32,9 +32,9 @@ interfaces:
   - '@microsoft/teams-js.geoLocation.Location'
   - '@microsoft/teams-js.location.Location'
   - '@microsoft/teams-js.location.LocationProps'
+  - '@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff'
   - '@microsoft/teams-js.mail.ComposeNewParams'
   - '@microsoft/teams-js.mail.ComposeReplyOrForwardParams'
-  - '@microsoft/teams-js.mail.handoff.ComposeMailParamsWithHandoff'
   - '@microsoft/teams-js.mail.OpenMailItemParams'
   - '@microsoft/teams-js.media.AssembleAttachment'
   - '@microsoft/teams-js.media.AudioProps'
@@ -54,11 +54,11 @@ interfaces:
   - '@microsoft/teams-js.meeting.JoinMeetingParams'
   - '@microsoft/teams-js.meeting.LiveStreamState'
   - '@microsoft/teams-js.menus.ActionMenuParameters'
-  - '@microsoft/teams-js.pages.AppNavigationParameters'
   - '@microsoft/teams-js.pages.config.RemoveEvent'
   - '@microsoft/teams-js.pages.config.SaveEvent'
   - '@microsoft/teams-js.pages.config.SaveParameters'
   - '@microsoft/teams-js.pages.currentApp.NavigateWithinAppParams'
+  - '@microsoft/teams-js.pages.AppNavigationParameters'
   - '@microsoft/teams-js.pages.InstanceConfig'
   - '@microsoft/teams-js.pages.NavigateToAppParams'
   - '@microsoft/teams-js.people.PeoplePickerInputs'
@@ -139,11 +139,11 @@ enums:
   - '@microsoft/teams-js.TeamType'
   - '@microsoft/teams-js.UserTeamRole'
 typeAliases:
-  - '@microsoft/teams-js.app.HostFeatures'
-  - '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
   - >-
     @microsoft/teams-js.app.lifecycle.registerBeforeSuspendOrTerminateHandlerFunctionType
   - '@microsoft/teams-js.app.lifecycle.registerOnResumeHandlerFunctionType'
+  - '@microsoft/teams-js.app.HostFeatures'
+  - '@microsoft/teams-js.app.HostToAppPerformanceMetricsHandler'
   - '@microsoft/teams-js.app.themeHandler'
   - '@microsoft/teams-js.appPerformanceMetrics.HostMemoryMetricsHandler'
   - '@microsoft/teams-js.authentication.AuthenticateParameters'
@@ -266,17 +266,18 @@ functions:
 
 
       - Use
-      [navigateToDefaultPage](xref:@microsoft/teams-js.pages.currentApp.navigateToDefaultPage)
+      [pages.currentApp.navigateToDefaultPage](xref:@microsoft/teams-js.pages.currentApp.navigateToDefaultPage)
       to navigate to the default page of your own app
 
-      - Use [navigateTo](xref:@microsoft/teams-js.pages.currentApp.navigateTo)
+      - Use
+      [pages.currentApp.navigateTo](xref:@microsoft/teams-js.pages.currentApp.navigateTo)
       to navigate to a section of your own app
 
-      - Use [navigateToApp](xref:@microsoft/teams-js.pages.navigateToApp) to
-      navigate to other apps besides your own
+      - Use [pages.navigateToApp](xref:@microsoft/teams-js.pages.navigateToApp)
+      to navigate to other apps besides your own
 
-      - Use [openLink](xref:@microsoft/teams-js.app.openLink) for opening deep
-      links to other parts of the host (e.g., to chats or channels) or
+      - Use [app.openLink](xref:@microsoft/teams-js.app.openLink) for opening
+      deep links to other parts of the host (e.g., to chats or channels) or
 
       general-purpose links (e.g., to external websites).
     syntax:

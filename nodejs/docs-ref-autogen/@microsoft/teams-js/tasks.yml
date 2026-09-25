@@ -48,8 +48,8 @@ functions:
       void](xref:@microsoft/teams-js.dialog.url.bot.open)
 
       - For Adaptive Card-based dialogs:
-        - In Teams, please continue to use this function until the new functions in [adaptiveCard](xref:@microsoft/teams-js.dialog.adaptiveCard) have been fully implemented. You can tell at runtime when they are implemented in Teams by checking
-          the return value of the [isSupported](xref:@microsoft/teams-js.dialog.adaptiveCard.isSupported) function. This documentation line will also be removed once they have been fully implemented in Teams.
+        - In Teams, please continue to use this function until the new functions in [dialog.adaptiveCard](xref:@microsoft/teams-js.dialog.adaptiveCard) have been fully implemented. You can tell at runtime when they are implemented in Teams by checking
+          the return value of the [dialog.adaptiveCard.isSupported](xref:@microsoft/teams-js.dialog.adaptiveCard.isSupported) function. This documentation line will also be removed once they have been fully implemented in Teams.
         - In all other hosts, please use [dialog.adaptiveCard.open(cardDialogInfo: CardDialogInfo, submitHandler?: DialogSubmitHandler, messageFromChildHandler?: PostMessageChannel): void](xref:@microsoft/teams-js.dialog.adaptiveCard.open)
 
       Allows an app to open the task module.
@@ -78,7 +78,7 @@ functions:
     isDeprecated: true
     customDeprecatedMessage: >-
       As of 2.8.0, please use
-      [submit](xref:@microsoft/teams-js.dialog.url.submit) instead.
+      [dialog.url.submit](xref:@microsoft/teams-js.dialog.url.submit) instead.
 
 
       Submit the task module.

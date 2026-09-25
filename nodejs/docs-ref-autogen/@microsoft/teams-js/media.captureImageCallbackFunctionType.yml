@@ -4,7 +4,7 @@ uid: '@microsoft/teams-js.media.captureImageCallbackFunctionType'
 package: '@microsoft/teams-js'
 summary: >-
   Function callback type used when calling
-  [captureImage](xref:@microsoft/teams-js.media.captureImage).
+  [media.captureImage](xref:@microsoft/teams-js.media.captureImage).
 fullName: captureImageCallbackFunctionType
 remarks: ''
 isDeprecated: false

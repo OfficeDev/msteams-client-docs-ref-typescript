@@ -152,12 +152,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: undefined | FollowModePresenceUser<TData> localUser
+      content: FollowModePresenceUser<TData> | undefined localUser
       return:
         description: ''
         type: >-
-          undefined | <xref uid="@microsoft/live-share.FollowModePresenceUser"
-          />&lt;TData&gt;
+          <xref uid="@microsoft/live-share.FollowModePresenceUser"
+          />&lt;TData&gt; | undefined
   - name: state
     uid: '@microsoft/live-share.LiveFollowMode.state'
     package: '@microsoft/live-share'
@@ -166,12 +166,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: undefined | IFollowModeState<TData> state
+      content: IFollowModeState<TData> | undefined state
       return:
         description: ''
         type: >-
-          undefined | <xref uid="@microsoft/live-share.IFollowModeState"
-          />&lt;TData&gt;
+          <xref uid="@microsoft/live-share.IFollowModeState" />&lt;TData&gt; |
+          undefined
   - name: TypeName
     uid: '@microsoft/live-share.LiveFollowMode.TypeName'
     package: '@microsoft/live-share'
@@ -190,7 +190,7 @@ inheritedProperties:
   - name: addListener
     uid: '@microsoft/live-share.LiveFollowMode.addListener'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: Alias for `emitter.on(eventName, listener)`.
     fullName: addListener
     remarks: ''
     isDeprecated: false
@@ -211,7 +211,7 @@ inheritedProperties:
   - name: 'off'
     uid: '@microsoft/live-share.LiveFollowMode.off'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: Alias for `emitter.removeListener()`.
     fullName: 'off'
     remarks: ''
     isDeprecated: false
@@ -232,7 +232,59 @@ inheritedProperties:
   - name: 'on'
     uid: '@microsoft/live-share.LiveFollowMode.on'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Adds the `listener` function to the end of the listeners array for the
+
+      event named `eventName`. No checks are made to see if the `listener` has
+
+      already been added. Multiple calls passing the same combination of
+      `eventName`
+
+      and `listener` will result in the `listener` being added, and called,
+      multiple
+
+      times.
+
+
+      ```js
+
+      server.on('connection', (stream) => {
+        console.log('someone connected!');
+      });
+
+      ```
+
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
+
+
+      By default, event listeners are invoked in the order they are added. The
+
+      `emitter.prependListener()` method can be used as an alternative to add
+      the
+
+      event listener to the beginning of the listeners array.
+
+
+      ```js
+
+      import { EventEmitter } from 'node:events';
+
+      const myEE = new EventEmitter();
+
+      myEE.on('foo', () => console.log('a'));
+
+      myEE.prependListener('foo', () => console.log('b'));
+
+      myEE.emit('foo');
+
+      // Prints:
+
+      //   b
+
+      //   a
+
+      ```
     fullName: 'on'
     remarks: ''
     isDeprecated: false
@@ -253,7 +305,53 @@ inheritedProperties:
   - name: once
     uid: '@microsoft/live-share.LiveFollowMode.once'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Adds a **one-time** `listener` function for the event named `eventName`.
+      The
+
+      next time `eventName` is triggered, this listener is removed and then
+      invoked.
+
+
+      ```js
+
+      server.once('connection', (stream) => {
+        console.log('Ah, we have our first user!');
+      });
+
+      ```
+
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
+
+
+      By default, event listeners are invoked in the order they are added. The
+
+      `emitter.prependOnceListener()` method can be used as an alternative to
+      add the
+
+      event listener to the beginning of the listeners array.
+
+
+      ```js
+
+      import { EventEmitter } from 'node:events';
+
+      const myEE = new EventEmitter();
+
+      myEE.once('foo', () => console.log('a'));
+
+      myEE.prependOnceListener('foo', () => console.log('b'));
+
+      myEE.emit('foo');
+
+      // Prints:
+
+      //   b
+
+      //   a
+
+      ```
     fullName: once
     remarks: ''
     isDeprecated: false
@@ -274,7 +372,31 @@ inheritedProperties:
   - name: prependListener
     uid: '@microsoft/live-share.LiveFollowMode.prependListener'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Adds the `listener` function to the _beginning_ of the listeners array for
+      the
+
+      event named `eventName`. No checks are made to see if the `listener` has
+
+      already been added. Multiple calls passing the same combination of
+      `eventName`
+
+      and `listener` will result in the `listener` being added, and called,
+      multiple
+
+      times.
+
+
+      ```js
+
+      server.prependListener('connection', (stream) => {
+        console.log('someone connected!');
+      });
+
+      ```
+
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
     fullName: prependListener
     remarks: ''
     isDeprecated: false
@@ -295,7 +417,26 @@ inheritedProperties:
   - name: prependOnceListener
     uid: '@microsoft/live-share.LiveFollowMode.prependOnceListener'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Adds a **one-time** `listener` function for the event named `eventName` to
+      the
+
+      _beginning_ of the listeners array. The next time `eventName` is
+      triggered, this
+
+      listener is removed, and then invoked.
+
+
+      ```js
+
+      server.prependOnceListener('connection', (stream) => {
+        console.log('Ah, we have our first user!');
+      });
+
+      ```
+
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
     fullName: prependOnceListener
     remarks: ''
     isDeprecated: false
@@ -316,7 +457,153 @@ inheritedProperties:
   - name: removeListener
     uid: '@microsoft/live-share.LiveFollowMode.removeListener'
     package: '@microsoft/live-share'
-    summary: ''
+    summary: >-
+      Removes the specified `listener` from the listener array for the event
+      named
+
+      `eventName`.
+
+
+      ```js
+
+      const callback = (stream) => {
+        console.log('someone connected!');
+      };
+
+      server.on('connection', callback);
+
+      // ...
+
+      server.removeListener('connection', callback);
+
+      ```
+
+
+      `removeListener()` will remove, at most, one instance of a listener from
+      the
+
+      listener array. If any single listener has been added multiple times to
+      the
+
+      listener array for the specified `eventName`, then `removeListener()` must
+      be
+
+      called multiple times to remove each instance.
+
+
+      Once an event is emitted, all listeners attached to it at the
+
+      time of emitting are called in order. This implies that any
+
+      `removeListener()` or `removeAllListeners()` calls _after_ emitting and
+
+      _before_ the last listener finishes execution will not remove them from
+
+      `emit()` in progress. Subsequent events behave as expected.
+
+
+      ```js
+
+      import { EventEmitter } from 'node:events';
+
+      class MyEmitter extends EventEmitter {}
+
+      const myEmitter = new MyEmitter();
+
+
+      const callbackA = () => {
+        console.log('A');
+        myEmitter.removeListener('event', callbackB);
+      };
+
+
+      const callbackB = () => {
+        console.log('B');
+      };
+
+
+      myEmitter.on('event', callbackA);
+
+
+      myEmitter.on('event', callbackB);
+
+
+      // callbackA removes listener callbackB but it will still be called.
+
+      // Internal listener array at time of emit [callbackA, callbackB]
+
+      myEmitter.emit('event');
+
+      // Prints:
+
+      //   A
+
+      //   B
+
+
+      // callbackB is now removed.
+
+      // Internal listener array [callbackA]
+
+      myEmitter.emit('event');
+
+      // Prints:
+
+      //   A
+
+      ```
+
+
+      Because listeners are managed using an internal array, calling this will
+
+      change the position indexes of any listener registered _after_ the
+      listener
+
+      being removed. This will not impact the order in which listeners are
+      called,
+
+      but it means that any copies of the listener array as returned by
+
+      the `emitter.listeners()` method will need to be recreated.
+
+
+      When a single function has been added as a handler multiple times for a
+      single
+
+      event (as in the example below), `removeListener()` will remove the most
+
+      recently added instance. In the example the `once('ping')`
+
+      listener is removed:
+
+
+      ```js
+
+      import { EventEmitter } from 'node:events';
+
+      const ee = new EventEmitter();
+
+
+      function pong() {
+        console.log('pong');
+      }
+
+
+      ee.on('ping', pong);
+
+      ee.once('ping', pong);
+
+      ee.removeListener('ping', pong);
+
+
+      ee.emit('ping');
+
+      ee.emit('ping');
+
+      ```
+
+
+      Returns a reference to the `EventEmitter`, so that calls can be chained.
     fullName: removeListener
     remarks: ''
     isDeprecated: false
@@ -487,8 +774,8 @@ inheritedMethods:
     isDeprecated: false
     syntax:
       content: >-
-        function getClientInfo(clientId: string): Promise<undefined |
-        IClientInfo>
+        function getClientInfo(clientId: string): Promise<IClientInfo |
+        undefined>
       parameters:
         - id: clientId
           type: string
@@ -498,8 +785,8 @@ inheritedMethods:
           IClientInfo object if the user is known, otherwise it will return
           undefined
         type: >-
-          Promise&lt;undefined | <xref uid="@microsoft/live-share.IClientInfo"
-          />&gt;
+          Promise&lt;<xref uid="@microsoft/live-share.IClientInfo" /> |
+          undefined&gt;
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.getClientInfo](xref:@microsoft/live-share.LiveDataObject.getClientInfo)
@@ -525,7 +812,7 @@ inheritedMethods:
       [LiveDataObject.getDataObject](xref:@microsoft/live-share.LiveDataObject.getDataObject)
   - name: >-
       getFluidObjectFromDirectory<T>(string, IDirectory, (id: string, directory:
-      IDirectory) => undefined | IFluidHandle<FluidObject & IFluidLoadable>)
+      IDirectory) => IFluidHandle<FluidObject & IFluidLoadable> | undefined)
     uid: '@microsoft/live-share.LiveFollowMode.getFluidObjectFromDirectory'
     package: '@microsoft/live-share'
     summary: Retrieve Fluid object using the handle get
@@ -535,8 +822,8 @@ inheritedMethods:
       content: >-
         function getFluidObjectFromDirectory<T>(key: string, directory:
         IDirectory, getObjectFromDirectory?: (id: string, directory: IDirectory)
-        => undefined | IFluidHandle<FluidObject & IFluidLoadable>):
-        Promise<undefined | T>
+        => IFluidHandle<FluidObject & IFluidLoadable> | undefined): Promise<T |
+        undefined>
       parameters:
         - id: key
           type: string
@@ -546,8 +833,8 @@ inheritedMethods:
           description: directory containing the object
         - id: getObjectFromDirectory
           type: >-
-            (id: string, directory: IDirectory) =&gt; undefined |
-            IFluidHandle&lt;FluidObject & IFluidLoadable&gt;
+            (id: string, directory: IDirectory) =&gt;
+            IFluidHandle&lt;FluidObject & IFluidLoadable&gt; | undefined
           description: >-
             optional callback for fetching object from the directory, allows
             users to
@@ -555,7 +842,7 @@ inheritedMethods:
             define custom types/getters for object retrieval
       return:
         description: ''
-        type: Promise&lt;undefined | T&gt;
+        type: Promise&lt;T | undefined&gt;
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.getFluidObjectFromDirectory](xref:@microsoft/live-share.LiveDataObject.getFluidObjectFromDirectory)
@@ -718,16 +1005,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function removeAllListeners<E>(eventName?: string | symbol):
-        LiveFollowMode<TData>
+      content: 'function removeAllListeners<E>(eventName?: string | symbol): this'
       parameters:
         - id: eventName
           type: string | symbol
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;
+        type: this
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.removeAllListeners](xref:@microsoft/live-share.LiveDataObject.removeAllListeners)
@@ -771,14 +1056,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): LiveFollowMode<TData>'
+      content: 'function setMaxListeners(n: number): this'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share.LiveFollowMode" />&lt;TData&gt;
+        type: this
     inheritanceDescription: >-
       <b>Inherited From</b>
       [LiveDataObject.setMaxListeners](xref:@microsoft/live-share.LiveDataObject.setMaxListeners)
@@ -888,8 +1173,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function getUser(userId: string): undefined |
-        FollowModePresenceUser<TData>
+        function getUser(userId: string): FollowModePresenceUser<TData> |
+        undefined
       parameters:
         - id: userId
           type: string
@@ -899,8 +1184,8 @@ methods:
           The current presence information for the user if they've connected to
           the space.
         type: >-
-          undefined | <xref uid="@microsoft/live-share.FollowModePresenceUser"
-          />&lt;TData&gt;
+          <xref uid="@microsoft/live-share.FollowModePresenceUser"
+          />&lt;TData&gt; | undefined
   - name: getUserFollowers(string, PresenceState)
     uid: '@microsoft/live-share.LiveFollowMode.getUserFollowers'
     package: '@microsoft/live-share'
@@ -931,8 +1216,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function getUserForClient(clientId: string): undefined |
-        FollowModePresenceUser<TData>
+        function getUserForClient(clientId: string):
+        FollowModePresenceUser<TData> | undefined
       parameters:
         - id: clientId
           type: string
@@ -942,8 +1227,8 @@ methods:
           The current presence information for the client if they've connected
           to the space.
         type: >-
-          undefined | <xref uid="@microsoft/live-share.FollowModePresenceUser"
-          />&lt;TData&gt;
+          <xref uid="@microsoft/live-share.FollowModePresenceUser"
+          />&lt;TData&gt; | undefined
   - name: getUsers(PresenceState)
     uid: '@microsoft/live-share.LiveFollowMode.getUsers'
     package: '@microsoft/live-share'
