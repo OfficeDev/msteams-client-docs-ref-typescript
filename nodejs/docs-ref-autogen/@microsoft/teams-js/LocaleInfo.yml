@@ -76,7 +76,9 @@ properties:
 
       **Example**
 
+      ```ts
       `en-us`.
+      ```
 
     fullName: regionalFormat
     remarks: ''

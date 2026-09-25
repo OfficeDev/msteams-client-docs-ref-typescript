@@ -11,7 +11,7 @@ isDeprecated: false
 type: class
 constructors:
   - name: >-
-      LiveMediaSessionCoordinatorSuspension(undefined | CoordinationWaitPoint,
+      LiveMediaSessionCoordinatorSuspension(CoordinationWaitPoint | undefined,
       (seekTo?: number) => void)
     uid: >-
       @microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension.constructor
@@ -21,13 +21,13 @@ constructors:
     isDeprecated: false
     syntax:
       content: >-
-        new LiveMediaSessionCoordinatorSuspension(waitPoint: undefined |
-        CoordinationWaitPoint, onEnd: (seekTo?: number) => void)
+        new LiveMediaSessionCoordinatorSuspension(waitPoint:
+        CoordinationWaitPoint | undefined, onEnd: (seekTo?: number) => void)
       parameters:
         - id: waitPoint
           type: >-
-            undefined | <xref
-            uid="@microsoft/live-share-media.CoordinationWaitPoint" />
+            <xref uid="@microsoft/live-share-media.CoordinationWaitPoint" /> |
+            undefined
           description: ''
         - id: onEnd
           type: '(seekTo?: number) =&gt; void'
@@ -42,12 +42,12 @@ properties:
     remarks: If undefined, the suspension was not created with a wait point.
     isDeprecated: false
     syntax:
-      content: undefined | CoordinationWaitPoint waitPoint
+      content: CoordinationWaitPoint | undefined waitPoint
       return:
         description: ''
         type: >-
-          undefined | <xref
-          uid="@microsoft/live-share-media.CoordinationWaitPoint" />
+          <xref uid="@microsoft/live-share-media.CoordinationWaitPoint" /> |
+          undefined
 methods:
   - name: end(number)
     uid: '@microsoft/live-share-media.LiveMediaSessionCoordinatorSuspension.end'

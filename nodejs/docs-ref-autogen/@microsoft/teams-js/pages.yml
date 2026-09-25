@@ -105,8 +105,9 @@ functions:
 
 
       If you are looking to navigate within your own app, use
-      [navigateToDefaultPage](xref:@microsoft/teams-js.pages.currentApp.navigateToDefaultPage)
-      or [navigateTo](xref:@microsoft/teams-js.pages.currentApp.navigateTo)
+      [pages.currentApp.navigateToDefaultPage](xref:@microsoft/teams-js.pages.currentApp.navigateToDefaultPage)
+      or
+      [pages.currentApp.navigateTo](xref:@microsoft/teams-js.pages.currentApp.navigateTo)
     remarks: ''
     isDeprecated: false
     syntax:

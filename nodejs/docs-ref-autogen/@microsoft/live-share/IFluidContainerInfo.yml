@@ -24,10 +24,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'containerId: undefined | string'
+      content: 'containerId: string | undefined'
       return:
         description: ''
-        type: undefined | string
+        type: string | undefined
   - name: containerState
     uid: '@microsoft/live-share.IFluidContainerInfo.containerState'
     package: '@microsoft/live-share'

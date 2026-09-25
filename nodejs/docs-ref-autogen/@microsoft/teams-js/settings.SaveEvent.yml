@@ -8,6 +8,7 @@ remarks: See pages.SaveEvent
 isDeprecated: true
 customDeprecatedMessage: >-
   As of TeamsJS v2.0.0, please use
-  [SaveEvent](xref:@microsoft/teams-js.pages.config.SaveEvent) instead.
+  [pages.config.SaveEvent](xref:@microsoft/teams-js.pages.config.SaveEvent)
+  instead.
 syntax: |
   type SaveEvent = pages.config.SaveEvent

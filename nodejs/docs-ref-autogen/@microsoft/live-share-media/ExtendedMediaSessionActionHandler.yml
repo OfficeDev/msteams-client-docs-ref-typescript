@@ -2,7 +2,7 @@
 name: ExtendedMediaSessionActionHandler
 uid: '@microsoft/live-share-media.ExtendedMediaSessionActionHandler'
 package: '@microsoft/live-share-media'
-summary: ''
+summary: Handler for `LiveMediaSession` actions.
 fullName: ExtendedMediaSessionActionHandler
 remarks: ''
 isDeprecated: false

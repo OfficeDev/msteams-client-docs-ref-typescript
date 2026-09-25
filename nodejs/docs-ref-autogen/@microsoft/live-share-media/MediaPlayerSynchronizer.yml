@@ -125,7 +125,7 @@ inheritedMethods:
     syntax:
       content: >-
         function addListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): MediaPlayerSynchronizer
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -135,7 +135,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.addListener
   - name: emit<E>(string | symbol, any[])
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.emit'
@@ -328,7 +328,7 @@ inheritedMethods:
     syntax:
       content: >-
         function off<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): MediaPlayerSynchronizer
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -338,7 +338,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.off
   - name: 'on<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.on'
@@ -401,7 +401,7 @@ inheritedMethods:
     syntax:
       content: >-
         function on<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): MediaPlayerSynchronizer
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -411,7 +411,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.on
   - name: 'once<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.once'
@@ -468,7 +468,7 @@ inheritedMethods:
     syntax:
       content: >-
         function once<E>(eventName: string | symbol, listener: (args: any[]) =>
-        void): MediaPlayerSynchronizer
+        void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -478,7 +478,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.once
   - name: 'prependListener<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.prependListener'
@@ -513,7 +513,7 @@ inheritedMethods:
     syntax:
       content: >-
         function prependListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): MediaPlayerSynchronizer
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -523,7 +523,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.prependListener
   - name: 'prependOnceListener<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.prependOnceListener'
@@ -553,7 +553,7 @@ inheritedMethods:
     syntax:
       content: >-
         function prependOnceListener<E>(eventName: string | symbol, listener:
-        (args: any[]) => void): MediaPlayerSynchronizer
+        (args: any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -563,7 +563,7 @@ inheritedMethods:
           description: The callback function
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.prependOnceListener
   - name: rawListeners<E>(string | symbol)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.rawListeners'
@@ -624,16 +624,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: >-
-        function removeAllListeners<E>(eventName?: string | symbol):
-        MediaPlayerSynchronizer
+      content: 'function removeAllListeners<E>(eventName?: string | symbol): this'
       parameters:
         - id: eventName
           type: string | symbol
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeAllListeners
   - name: 'removeListener<E>(string | symbol, (args: any[]) => void)'
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.removeListener'
@@ -790,7 +788,7 @@ inheritedMethods:
     syntax:
       content: >-
         function removeListener<E>(eventName: string | symbol, listener: (args:
-        any[]) => void): MediaPlayerSynchronizer
+        any[]) => void): this
       parameters:
         - id: eventName
           type: string | symbol
@@ -800,7 +798,7 @@ inheritedMethods:
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.removeListener
   - name: setMaxListeners(number)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setMaxListeners'
@@ -824,14 +822,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function setMaxListeners(n: number): MediaPlayerSynchronizer'
+      content: 'function setMaxListeners(n: number): this'
       parameters:
         - id: 'n'
           type: number
           description: ''
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
     inheritanceDescription: <b>Inherited From</b> EventEmitter.setMaxListeners
   - name: '[captureRejectionSymbol](Error, string | symbol, any[])'
     uid: >-
@@ -878,7 +876,7 @@ inheritedMethods:
         - id: args
           type: any[]
           description: ''
-    inheritanceDescription: <b>Inherited From</b> EventEmitter.__@captureRejectionSymbol@144
+    inheritanceDescription: <b>Inherited From</b> EventEmitter.[captureRejectionSymbol]
 methods:
   - name: >-
       addEventListener(MediaPlayerSynchronizerEvents, (evt:
@@ -891,8 +889,7 @@ methods:
     syntax:
       content: >-
         function addEventListener(event: MediaPlayerSynchronizerEvents,
-        listener: (evt: IMediaPlayerSynchronizerEvent) => void):
-        MediaPlayerSynchronizer
+        listener: (evt: IMediaPlayerSynchronizerEvent) => void): this
       parameters:
         - id: event
           type: >-
@@ -904,7 +901,7 @@ methods:
           description: Function to call when the event is triggered.
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
   - name: beginSeek()
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.beginSeek'
     package: '@microsoft/live-share-media'
@@ -989,8 +986,7 @@ methods:
     syntax:
       content: >-
         function removeEventListener(event: MediaPlayerSynchronizerEvents,
-        listener: (evt: IMediaPlayerSynchronizerEvent) => void):
-        MediaPlayerSynchronizer
+        listener: (evt: IMediaPlayerSynchronizerEvent) => void): this
       parameters:
         - id: event
           type: >-
@@ -1002,7 +998,7 @@ methods:
           description: Function that was registered in call to `addEventListener()`.
       return:
         description: ''
-        type: <xref uid="@microsoft/live-share-media.MediaPlayerSynchronizer" />
+        type: this
   - name: seekTo(number)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.seekTo'
     package: '@microsoft/live-share-media'
@@ -1065,7 +1061,7 @@ methods:
           a void promise that resolves once complete, throws if user does not
           have proper roles
         type: Promise&lt;void&gt;
-  - name: setTrackData(null | object)
+  - name: setTrackData(object | null)
     uid: '@microsoft/live-share-media.MediaPlayerSynchronizer.setTrackData'
     package: '@microsoft/live-share-media'
     summary: Updates the current tracks data object.
@@ -1076,10 +1072,10 @@ methods:
       and instead use the synchronizers `setTrackData()` method.
     isDeprecated: false
     syntax:
-      content: 'function setTrackData(data: null | object): Promise<void>'
+      content: 'function setTrackData(data: object | null): Promise<void>'
       parameters:
         - id: data
-          type: null | object
+          type: object | null
           description: ''
       return:
         description: >-

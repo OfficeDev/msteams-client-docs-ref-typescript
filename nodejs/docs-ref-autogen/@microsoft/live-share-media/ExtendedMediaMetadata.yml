@@ -40,7 +40,13 @@ inheritedProperties:
   - name: album
     uid: '@microsoft/live-share-media.ExtendedMediaMetadata.album'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: >-
+      The **`album`** property of the collection containing the media to be
+      played.
+
+
+      [MDN
+      Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/album)
     fullName: album
     remarks: ''
     isDeprecated: false
@@ -53,7 +59,12 @@ inheritedProperties:
   - name: artist
     uid: '@microsoft/live-share-media.ExtendedMediaMetadata.artist'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: >-
+      The **`artist`** property of the creator, etc., of the media to be played.
+
+
+      [MDN
+      Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/artist)
     fullName: artist
     remarks: ''
     isDeprecated: false
@@ -66,7 +77,13 @@ inheritedProperties:
   - name: artwork
     uid: '@microsoft/live-share-media.ExtendedMediaMetadata.artwork'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: >-
+      The **`artwork`** property of the objects representing images associated
+      with playing media.
+
+
+      [MDN
+      Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/artwork)
     fullName: artwork
     remarks: ''
     isDeprecated: false
@@ -79,7 +96,12 @@ inheritedProperties:
   - name: title
     uid: '@microsoft/live-share-media.ExtendedMediaMetadata.title'
     package: '@microsoft/live-share-media'
-    summary: ''
+    summary: >-
+      The **`title`** property of the played.
+
+
+      [MDN
+      Reference](https://developer.mozilla.org/docs/Web/API/MediaMetadata/title)
     fullName: title
     remarks: ''
     isDeprecated: false

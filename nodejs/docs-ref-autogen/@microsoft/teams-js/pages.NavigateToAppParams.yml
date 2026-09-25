@@ -75,10 +75,11 @@ properties:
       Developer-defined ID describing the content to navigate to within the
       page. This ID is passed to the application
 
-      via the [subPageId](xref:@microsoft/teams-js.app.PageInfo.subPageId)
-      property on the [Context](xref:@microsoft/teams-js.app.Context) object
+      via the
+      [app.PageInfo.subPageId](xref:@microsoft/teams-js.app.PageInfo.subPageId)
+      property on the [app.Context](xref:@microsoft/teams-js.app.Context) object
       (retrieved by calling
-      [getContext](xref:@microsoft/teams-js.app.getContext))
+      [app.getContext](xref:@microsoft/teams-js.app.getContext))
     fullName: subPageId
     remarks: ''
     isDeprecated: false

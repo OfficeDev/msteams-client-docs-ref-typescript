@@ -8,6 +8,7 @@ remarks: See pages.RemoveEvent
 isDeprecated: true
 customDeprecatedMessage: >-
   As of TeamsJS v2.0.0, please use
-  [RemoveEvent](xref:@microsoft/teams-js.pages.config.RemoveEvent) instead.
+  [pages.config.RemoveEvent](xref:@microsoft/teams-js.pages.config.RemoveEvent)
+  instead.
 syntax: |
   type RemoveEvent = pages.config.RemoveEvent

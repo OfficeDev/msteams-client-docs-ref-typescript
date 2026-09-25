@@ -2,7 +2,7 @@
 name: ILivePresenceEvents
 uid: '@microsoft/live-share.ILivePresenceEvents'
 package: '@microsoft/live-share'
-summary: ''
+summary: Event typings for `LivePresence` class.
 fullName: ILivePresenceEvents<TData>
 remarks: ''
 isDeprecated: false

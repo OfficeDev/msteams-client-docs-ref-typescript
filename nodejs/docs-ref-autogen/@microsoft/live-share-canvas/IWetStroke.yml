@@ -239,14 +239,14 @@ inheritedMethods:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'function pointErase(eraserRect: IRect): undefined | IStroke[]'
+      content: 'function pointErase(eraserRect: IRect): IStroke[] | undefined'
       parameters:
         - id: eraserRect
           type: <xref uid="@microsoft/live-share-canvas.IRect" />
           description: The eraser rectangle.
       return:
         description: ''
-        type: undefined | <xref uid="@microsoft/live-share-canvas.IStroke" />[]
+        type: <xref uid="@microsoft/live-share-canvas.IStroke" />[] | undefined
     inheritanceDescription: >-
       <b>Inherited From</b>
       [IStroke.pointErase](xref:@microsoft/live-share-canvas.IStroke.pointErase)

@@ -8,6 +8,6 @@ remarks: Renamed to config in pages.Config
 isDeprecated: true
 customDeprecatedMessage: >-
   As of TeamsJS v2.0.0, please use
-  [config](xref:@microsoft/teams-js.pages.config) instead.
+  [pages.config](xref:@microsoft/teams-js.pages.config) instead.
 syntax: |
   type Settings = pages.InstanceConfig

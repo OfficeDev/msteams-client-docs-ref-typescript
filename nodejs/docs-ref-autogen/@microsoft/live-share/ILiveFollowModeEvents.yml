@@ -2,7 +2,7 @@
 name: ILiveFollowModeEvents
 uid: '@microsoft/live-share.ILiveFollowModeEvents'
 package: '@microsoft/live-share'
-summary: ''
+summary: Event typings for `LiveFollowMode` class.
 fullName: ILiveFollowModeEvents<TData>
 remarks: ''
 isDeprecated: false

@@ -2,7 +2,7 @@
 name: ILiveEventEvents
 uid: '@microsoft/live-share.ILiveEventEvents'
 package: '@microsoft/live-share'
-summary: ''
+summary: Event typings for `LiveEvent` class.
 fullName: ILiveEventEvents<TEvent>
 remarks: ''
 isDeprecated: false
