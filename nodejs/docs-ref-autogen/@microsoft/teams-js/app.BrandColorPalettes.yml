@@ -1,0 +1,9 @@
+### YamlMime:TSType
+name: BrandColorPalettes
+uid: '@microsoft/teams-js.app.BrandColorPalettes'
+package: '@microsoft/teams-js'
+summary: Brand color palettes supplied by the host.
+fullName: BrandColorPalettes
+remarks: ''
+isDeprecated: false
+type: interface

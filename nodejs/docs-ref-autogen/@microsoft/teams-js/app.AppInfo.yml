@@ -37,6 +37,28 @@ properties:
       return:
         description: ''
         type: string
+  - name: brandColorPalettes
+    uid: '@microsoft/teams-js.app.AppInfo.brandColorPalettes'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Brand color palettes supplied by the host.
+
+
+      Each key identifies a palette format (for example, `"fluentui/v9"`), which
+      defines its required shades and color
+
+      syntax. Each update replaces the whole map rather than merging with it.
+      `undefined` means no palettes are available,
+
+      such as after the host clears them.
+    fullName: brandColorPalettes
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'brandColorPalettes?: BrandColorPalettes'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.app.BrandColorPalettes" />
   - name: host
     uid: '@microsoft/teams-js.app.AppInfo.host'
     package: '@microsoft/teams-js'

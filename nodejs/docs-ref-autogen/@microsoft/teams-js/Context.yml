@@ -122,6 +122,35 @@ properties:
       return:
         description: ''
         type: string
+  - name: brandColorPalettes
+    uid: '@microsoft/teams-js.Context.brandColorPalettes'
+    package: '@microsoft/teams-js'
+    summary: ''
+    fullName: brandColorPalettes
+    remarks: ''
+    isDeprecated: true
+    customDeprecatedMessage: >-
+      As of TeamsJS v2.0.0, please use
+
+      [app.Context.app.brandColorPalettes](xref:@microsoft/teams-js.app.AppInfo.brandColorPalettes)
+      instead
+
+
+      Brand color palettes supplied by the host.
+
+
+      Each key identifies a palette format (for example, `"fluentui/v9"`), which
+      defines its required shades and color
+
+      syntax. Each update replaces the whole map rather than merging with it.
+      `undefined` means no palettes are available,
+
+      such as after the host clears them.
+    syntax:
+      content: 'brandColorPalettes?: BrandColorPalettes'
+      return:
+        description: ''
+        type: <xref uid="@microsoft/teams-js.app.BrandColorPalettes" />
   - name: channelId
     uid: '@microsoft/teams-js.Context.channelId'
     package: '@microsoft/teams-js'

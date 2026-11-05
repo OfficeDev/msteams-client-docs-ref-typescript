@@ -1,0 +1,9 @@
+### YamlMime:TSType
+name: BrandColorRamp
+uid: '@microsoft/teams-js.app.BrandColorRamp'
+package: '@microsoft/teams-js'
+summary: A brand color ramp supplied by the host.
+fullName: BrandColorRamp
+remarks: ''
+isDeprecated: false
+type: interface

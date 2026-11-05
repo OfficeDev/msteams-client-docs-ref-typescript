@@ -6,6 +6,8 @@ type: package
 interfaces:
   - '@microsoft/teams-js.app.AppHostInfo'
   - '@microsoft/teams-js.app.AppInfo'
+  - '@microsoft/teams-js.app.BrandColorPalettes'
+  - '@microsoft/teams-js.app.BrandColorRamp'
   - '@microsoft/teams-js.app.ChannelInfo'
   - '@microsoft/teams-js.app.ChatInfo'
   - '@microsoft/teams-js.app.Context'
@@ -768,10 +770,12 @@ functions:
       void](xref:@microsoft/teams-js.app.registerOnThemeChangeHandler) instead.
 
 
-      Registers a handler for theme changes.
+      Registers a handler for host theme or brand color palette updates.
 
       Only one handler can be registered at a time. A subsequent registration
       replaces an existing registration.
+
+      The theme, palettes, or both may change with each update.
     syntax:
       content: >-
         function registerOnThemeChangeHandler(handler:
@@ -782,7 +786,7 @@ functions:
             <xref
             uid="@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType"
             />
-          description: The handler to invoke when the user changes their theme.
+          description: The handler to call when the host sends an update.
   - name: returnFocus(boolean)
     uid: '@microsoft/teams-js.returnFocus'
     package: '@microsoft/teams-js'
