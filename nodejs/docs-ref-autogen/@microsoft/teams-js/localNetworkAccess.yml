@@ -1,0 +1,56 @@
+### YamlMime:TSPackage
+uid: '@microsoft/teams-js.localNetworkAccess'
+name: localNetworkAccess
+type: module
+package: '@microsoft/teams-js'
+summary: APIs for requesting permission to access devices on the user's local network.
+previewState: beta
+functions:
+  - name: hasPermission()
+    uid: '@microsoft/teams-js.localNetworkAccess.hasPermission'
+    package: '@microsoft/teams-js'
+    summary: >-
+      Checks whether the app has permission to access devices on the user's
+      local network.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function hasPermission(): Promise<boolean>'
+      return:
+        description: >-
+          A promise that resolves to `true` if local network access permission
+          has been granted,
+
+          or `false` otherwise.
+        type: Promise&lt;boolean&gt;
+  - name: isSupported()
+    uid: '@microsoft/teams-js.localNetworkAccess.isSupported'
+    package: '@microsoft/teams-js'
+    summary: Checks whether the host supports local network access permission.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function isSupported(): boolean'
+      return:
+        description: >-
+          `true` if the host advertises local network access permission support,
+          or `false` otherwise.
+        type: boolean
+  - name: requestPermission()
+    uid: '@microsoft/teams-js.localNetworkAccess.requestPermission'
+    package: '@microsoft/teams-js'
+    summary: Requests permission to access devices on the user's local network.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function requestPermission(): Promise<boolean>'
+      return:
+        description: >-
+          A promise that resolves to `true` if local network access permission
+          was granted,
+
+          or `false` otherwise.
+        type: Promise&lt;boolean&gt;

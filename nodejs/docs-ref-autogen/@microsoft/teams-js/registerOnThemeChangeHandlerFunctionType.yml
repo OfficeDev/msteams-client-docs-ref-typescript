@@ -2,9 +2,12 @@
 name: registerOnThemeChangeHandlerFunctionType
 uid: '@microsoft/teams-js.registerOnThemeChangeHandlerFunctionType'
 package: '@microsoft/teams-js'
-summary: Register on theme change handler function type
+summary: Called when the host sends a theme or brand color palette update.
 fullName: registerOnThemeChangeHandlerFunctionType
 remarks: ''
 isDeprecated: false
 syntax: |
-  type registerOnThemeChangeHandlerFunctionType = (theme: string) => void
+  type registerOnThemeChangeHandlerFunctionType = (
+    theme: string,
+    brandColorPalettes?: BrandColorPalettes
+  ) => void

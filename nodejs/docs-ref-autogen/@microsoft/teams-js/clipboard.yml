@@ -3,9 +3,25 @@ uid: '@microsoft/teams-js.clipboard'
 name: clipboard
 type: module
 package: '@microsoft/teams-js'
-summary: Interact with the system clipboard
+summary: Interact with the system clipboard.
 previewState: beta
 functions:
+  - name: hasPermission()
+    uid: '@microsoft/teams-js.clipboard.hasPermission'
+    package: '@microsoft/teams-js'
+    summary: Checks whether the app has permission to read from the system clipboard.
+    remarks: ''
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function hasPermission(): Promise<boolean>'
+      return:
+        description: >-
+          A promise that resolves to `true` if clipboard-read permission has
+          been granted,
+
+          or `false` if permission has not been granted.
+        type: Promise&lt;boolean&gt;
   - name: isSupported()
     uid: '@microsoft/teams-js.clipboard.isSupported'
     package: '@microsoft/teams-js'
@@ -30,13 +46,12 @@ functions:
       API](https://developer.mozilla.org/docs/Web/API/Clipboard_API),
       `navigator.clipboard`).
 
-      Note that using the browser-native Clipboard API directly within Teams
-      hosts is not yet fully
+      For browser-native reads, use
+      [hasPermission](xref:@microsoft/teams-js.clipboard.hasPermission) and
+      [requestPermission](xref:@microsoft/teams-js.clipboard.requestPermission)
+      before calling
 
-      supported; it depends on native device permission handling that is still
-      being enabled as a
-
-      separate effort.
+      `navigator.clipboard.read()` from a user gesture.
     syntax:
       content: 'function isSupported(): boolean'
       return:
@@ -65,13 +80,12 @@ functions:
       API](https://developer.mozilla.org/docs/Web/API/Clipboard_API),
       `navigator.clipboard`).
 
-      Note that using the browser-native Clipboard API directly within Teams
-      hosts is not yet fully
+      For browser-native reads, use
+      [hasPermission](xref:@microsoft/teams-js.clipboard.hasPermission) and
+      [requestPermission](xref:@microsoft/teams-js.clipboard.requestPermission)
+      before calling
 
-      supported; it depends on native device permission handling that is still
-      being enabled as a
-
-      separate effort.
+      `navigator.clipboard.read()` from a user gesture.
     syntax:
       content: 'function read(): Promise<Blob>'
       return:
@@ -80,6 +94,26 @@ functions:
                    rejects stating the reason for failure.
                    Note: Returned blob type will contain one of the MIME type `image/png`, `text/plain` or `text/html`.
         type: Promise&lt;Blob&gt;
+  - name: requestPermission()
+    uid: '@microsoft/teams-js.clipboard.requestPermission'
+    package: '@microsoft/teams-js'
+    summary: Requests permission to read from the system clipboard.
+    remarks: >-
+      The host may need to reload the app frame after the permission is first
+      granted before
+
+      `navigator.clipboard.read()` is available to the existing frame.
+    previewState: beta
+    isDeprecated: false
+    syntax:
+      content: 'function requestPermission(): Promise<boolean>'
+      return:
+        description: >-
+          A promise that resolves to `true` if clipboard-read permission was
+          granted,
+
+          or `false` if permission was not granted.
+        type: Promise&lt;boolean&gt;
   - name: write(Blob)
     uid: '@microsoft/teams-js.clipboard.write'
     package: '@microsoft/teams-js'
@@ -106,13 +140,12 @@ functions:
       API](https://developer.mozilla.org/docs/Web/API/Clipboard_API),
       `navigator.clipboard`).
 
-      Note that using the browser-native Clipboard API directly within Teams
-      hosts is not yet fully
+      For browser-native reads, use
+      [hasPermission](xref:@microsoft/teams-js.clipboard.hasPermission) and
+      [requestPermission](xref:@microsoft/teams-js.clipboard.requestPermission)
+      before calling
 
-      supported; it depends on native device permission handling that is still
-      being enabled as a
-
-      separate effort.
+      `navigator.clipboard.read()` from a user gesture.
     syntax:
       content: 'function write(blob: Blob): Promise<void>'
       parameters:

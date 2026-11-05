@@ -663,6 +663,16 @@
           no-loc:
             - AppInfo
           items: []
+        - uid: '@microsoft/teams-js.app.BrandColorPalettes'
+          name: BrandColorPalettes
+          no-loc:
+            - BrandColorPalettes
+          items: []
+        - uid: '@microsoft/teams-js.app.BrandColorRamp'
+          name: BrandColorRamp
+          no-loc:
+            - BrandColorRamp
+          items: []
         - uid: '@microsoft/teams-js.app.ChannelInfo'
           name: ChannelInfo
           no-loc:
@@ -1138,6 +1148,11 @@
       name: LocaleInfo
       no-loc:
         - LocaleInfo
+      items: []
+    - uid: '@microsoft/teams-js.localNetworkAccess'
+      name: localNetworkAccess
+      no-loc:
+        - localNetworkAccess
       items: []
     - name: location
       no-loc:
